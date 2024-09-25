@@ -528,7 +528,6 @@ interface SVGAttributes<Target extends EventTarget = SVGElement> extends HTMLAtt
 	ascent?: number | string
 	attributeName?: string
 	attributeType?: string
-	autoReverse?: number | string
 	azimuth?: number | string
 	baseFrequency?: number | string
 	baselineShift?: number | string
@@ -763,8 +762,11 @@ interface SVGAttributes<Target extends EventTarget = SVGElement> extends HTMLAtt
 	'text-decoration'?: number | string
 	textLength?: number | string
 	textRendering?: number | string
+	'text-rendering'?: number | string
 	to?: number | string
 	transform?: string
+	transformOrigin?: string
+	'transform-origin'?: string
 	u1?: number | string
 	u2?: number | string
 	underlinePosition?: number | string

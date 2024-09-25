@@ -444,7 +444,6 @@ interface HTMLAttributes<RefType extends EventTarget = EventTarget> extends Clas
 	slot?: string
 	span?: number
 	spellcheck?: boolean
-	spellCheck?: boolean
 	src?: string
 	srcSet?: string
 	srcset?: string
