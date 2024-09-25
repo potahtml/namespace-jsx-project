@@ -1,0 +1,33 @@
+{
+	"name": "pota.jsx",
+	"type": "module",
+	"scripts": {
+		"dev": "node src/index.js"
+	},
+	"dependencies": {
+		"@types/react": "^18.3.7",
+		"glob": "^11.0.0",
+		"oxc-parser": "^0.29.0",
+		"preact": "^10.24.0",
+		"prettier": "^3.3.3",
+		"solid-js": "^1.8.22",
+		"typescript": "^5.6.2",
+		"voby": "^0.58.1",
+		"vue": "^3.5.6"
+	},
+	"prettier": {
+		"printWidth": 70,
+		"useTabs": true,
+		"semi": false,
+		"singleQuote": true,
+		"quoteProps": "as-needed",
+		"jsxSingleQuote": false,
+		"trailingComma": "all",
+		"bracketSpacing": true,
+		"bracketSameLine": false,
+		"arrowParens": "avoid",
+		"proseWrap": "never",
+		"endOfLine": "lf",
+		"singleAttributePerLine": true
+	}
+}
