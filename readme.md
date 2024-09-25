@@ -76,7 +76,8 @@ List of frameworks so far: Solid, Voby, Vue, Preact, React.
 
 To use this project, simply check the commit list. Over time, I will
 be commiting "updates" that show the diffs whenever a framework's
-`namespace JSX` changes. At least, that's the idea!
+`namespace JSX` changes. At least, that's the idea! See this example
+https://github.com/potahtml/namespace-jsx-project/commit/670323ea390fbc9d53ce889d7844b25f0e780ab7
 
 ## Generating the data
 
@@ -95,3 +96,4 @@ be commiting "updates" that show the diffs whenever a framework's
 
 Check out the Sponsor link! With enough support, I'll be able to
 dedicate more time to this project and work on it more frequently.
+https://opencollective.com/tito-bouzout
