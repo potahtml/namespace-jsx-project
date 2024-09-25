@@ -257,7 +257,8 @@ for (let i = 0; i < events.length; i++) {
 				s => 'on' + s[2].toUpperCase(),
 			)
 
-		events[i] = `${eventName}?: Events<${inter}, Element>`
+		events[i] = `${eventName}?: Events<${inter}, Element>
+"on:${eventName.toLowerCase().slice(2)}"?: Events<${inter}, Element>`
 	}
 }
 write(
