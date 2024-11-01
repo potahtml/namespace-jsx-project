@@ -317,7 +317,7 @@ This file is generated using \`./data.json\`
 for (const [tag, value] of Object.entries(DATA.tag)) {
 	value.interface = value.interface || 'HTMLUnknownElement'
 
-	attributesPropertiesTable += `\n\n${
+	attributesPropertiesTable += `\n\n## ${
 		value.interface.startsWith('HTML') &&
 		value.interface !== 'HTMLUnknownElement'
 			? `[${value.name}](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/${value.name})`
@@ -341,7 +341,7 @@ for (const [tag, value] of Object.entries(DATA.tag)) {
 
 	// attribute/properties
 	for (const [attr, val] of Object.entries(value.properties)) {
-		attributesPropertiesTable += `\n| ${attr}`
+		attributesPropertiesTable += `\n| [${attr}](https://developer.mozilla.org/en-US/search?q=${attr})`
 		for (const lib of libs) {
 			attributesPropertiesTable += ` | ${(val[lib.name]?.source || '❌').replace(/\|/g, '\\|')}`
 		}
