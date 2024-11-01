@@ -17,13 +17,17 @@ import {
 	ts,
 	tsTagNamesMap,
 } from './data.js'
-import { parse, parseFromFile } from './parse.js'
+import { parse, parseFromFile, parseFromString } from './parse.js'
 
 // clean output
 
 remove('./jsx/')
 
 copy(`./.prettierrc.json`, `./jsx/.prettierrc.json`)
+
+const DATA = {
+	tag: {},
+}
 
 for (const lib of libs) {
 	/** Split the source namespace JSX into interfaces */
@@ -43,7 +47,8 @@ for (const lib of libs) {
 	lib.tagInterface = {}
 	for (const [name, value] of Object.entries(inter)) {
 		value.properties.forEach(prop => {
-			const tagName = prop.name.toLowerCase()
+			const tagNameWithCase = prop.name
+			const tagName = tagNameWithCase.toLowerCase()
 
 			lib.tagNames.push(tagName)
 
@@ -60,6 +65,24 @@ for (const lib of libs) {
 				if (inter && !isBlacklisted[inter] && lib.interfaces[inter]) {
 					lib.tagInterface[tagName] +=
 						lib.interfaces[inter].source + '\n'
+				}
+			}
+
+			const tag = (DATA.tag[tagNameWithCase] = DATA.tag[
+				tagNameWithCase
+			] || { name: tagNameWithCase, properties: {} })
+			const properties = tag.properties
+
+			const parsed = parseFromString(lib.tagInterface[tagName])
+
+			for (const inter of parsed) {
+				for (const [name, value] of Object.entries(inter)) {
+					if (value.properties) {
+						for (const prop of value.properties) {
+							properties[prop.name] = properties[prop.name] || {}
+							properties[prop.name][lib.name] = prop
+						}
+					}
 				}
 			}
 		})
@@ -199,10 +222,22 @@ for (const [kind, value] of Object.entries(tsTagNamesMap)) {
 				append(file, banner + lib.tagInterface[element.tagName])
 			}
 		}
+		DATA.tag[element.tagName] = DATA.tag[element.tagName] || {
+			name: element.tagName,
+			properties: {},
+		}
+
+		// so HTMLAnchorElement doesnt end as SVGAElement
+		if (!DATA.tag[element.tagName].interface) {
+			DATA.tag[element.tagName].interface = element.interface
+		}
 	}
 }
 
-/** Write to disk Frameworks tags not included in TS data, ex webview. */
+/**
+ * Write to disk Frameworks tags not included in TS data, ex
+ * `webview`.
+ */
 
 const frameworkTags = unique(
 	libs.map(lib => lib.tagNames).flat(Infinity),
@@ -265,5 +300,55 @@ write(
 	`./jsx/generated/events.d.ts`,
 	events.join('\n').replace(/EventMap/g, 'Events<Element>'),
 )
+
+write(`./jsx/data.json`, JSON.stringify(DATA, null, 2))
+
+// create table.md
+
+let attributesPropertiesTable = `
+# namespace JSX
+
+This file is generated using \`./data.json\`
+
+# Element Types Table
+
+`
+
+for (const [tag, value] of Object.entries(DATA.tag)) {
+	value.interface = value.interface || 'HTMLUnknownElement'
+
+	attributesPropertiesTable += `\n\n${
+		value.interface.startsWith('HTML') &&
+		value.interface !== 'HTMLUnknownElement'
+			? `[${value.name}](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/${value.name})`
+			: value.interface.startsWith('SVG')
+				? `[${value.name}](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/${value.name})`
+				: `[${value.name}](https://developer.mozilla.org/en-US/search?q=${value.name})`
+	} - [${value.interface}](https://developer.mozilla.org/en-US/docs/Web/API/${value.interface})`
+
+	// headings
+	attributesPropertiesTable += `\n\n| `
+	for (const lib of libs) {
+		attributesPropertiesTable += ` | ${lib.name}`
+	}
+	attributesPropertiesTable += `|`
+	// separator
+	attributesPropertiesTable += `\n| --- `
+	for (const lib of libs) {
+		attributesPropertiesTable += ` |  --- `
+	}
+	attributesPropertiesTable += `|`
+
+	// attribute/properties
+	for (const [attr, val] of Object.entries(value.properties)) {
+		attributesPropertiesTable += `\n| ${attr}`
+		for (const lib of libs) {
+			attributesPropertiesTable += ` | ${(val[lib.name]?.source || '❌').replace(/\|/g, '\\|')}`
+		}
+		attributesPropertiesTable += `|`
+	}
+}
+
+write(`./jsx/readme.md`, attributesPropertiesTable)
 
 prettier('./jsx/**')

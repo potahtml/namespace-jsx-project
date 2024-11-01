@@ -4,8 +4,8 @@ The ultimate goal of this project is to become obsolete.
 
 ## Context
 
-`namespace JSX` provides typings for attributes and properties in HTML
-tags for various frameworks. This includes things like alignment
+`namespace JSX` provides typings for `attributes` and `properties` in
+HTML tags for various frameworks. This includes things like alignment
 styles or event listeners.
 
 _Typings_ is a loaded term, some expect
@@ -37,9 +37,6 @@ updates for these files automatically.
 
 ## Goals
 
-You may be thinking this project provides the glorious json data.
-Spoiler: sorry to disappoint!
-
 The ultimate goal of this project is to inspire the powers that
 be—HTML specification authors, MDN contributors, and TypeScript
 maintainers—to collaborate and provide this data in an easily
@@ -53,20 +50,21 @@ their interfaces into a unified structure.
 
 This makes it easier to quickly track and visualize whether any
 attribute or property for an HTML, SVG, or MathML element has been
-added or updated.
-
-So far, that's better than nothing. It tries to unify the efforts
-dedicated to updating this data.
+added or updated. So far, that's better than nothing. An attempt to
+unify the efforts dedicated to updating this data.
 
 Since the project maps interfaces for tag names, attributes, and
 possible values, there's potential to enhance this data by adding
 descriptions for what each attribute or property does, deprecation
 notices, links to MDN, and more.
 
-It's an ambitious, complex, and tedious task—likely the reason why
-such a comprehensive data file doesn't exist yet. I also refuse to
+It's an ambitious, complex, and tedious task(—likely the reason why
+such a comprehensive data file doesn't exist yet). I also refuse to
 rely on AI or blindly automate this process without carefully
 verifying the accuracy of the generated data.
+
+You can see the current table at
+https://github.com/potahtml/namespace-jsx-project/blob/master/jsx/readme.md
 
 ## Frameworks
 
@@ -74,10 +72,11 @@ List of frameworks so far: Solid, Voby, Vue, Preact, React.
 
 ## Usage
 
-To use this project, simply check the commit list. Over time, I will
-be commiting "updates" that show the diffs whenever a framework's
-`namespace JSX` changes. At least, that's the idea! See this example
-https://github.com/potahtml/namespace-jsx-project/commit/670323ea390fbc9d53ce889d7844b25f0e780ab7
+To use this project, simply check the commit list for this file
+https://github.com/potahtml/namespace-jsx-project/blob/master/jsx/readme.md
+. Over time, I will be commiting "updates" that show the diffs
+whenever a framework's `namespace JSX` changes. At least, that's the
+idea!
 
 ## Generating the data
 
@@ -91,6 +90,11 @@ https://github.com/potahtml/namespace-jsx-project/commit/670323ea390fbc9d53ce889
 3. Periodically, run npm update followed by npm run dev. This will
    generate new data and show diffs, allowing you to see whether you
    need to update your own `namespace JSX`.
+
+## Sponsor
+
+- theres a need to separate tagNames from namespaces. For example the
+  tag `a` lives in at least two different namespaces, HTML and SVG.
 
 ## Sponsor
 
