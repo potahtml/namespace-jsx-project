@@ -327,7 +327,7 @@ for (const [tag, value] of Object.entries(DATA.tag)) {
 	} - [${value.interface}](https://developer.mozilla.org/en-US/docs/Web/API/${value.interface})`
 
 	// headings
-	attributesPropertiesTable += `\n\n| `
+	attributesPropertiesTable += `\n\n| attribute `
 	for (const lib of libs) {
 		attributesPropertiesTable += ` | ${lib.name}`
 	}
@@ -340,13 +340,23 @@ for (const [tag, value] of Object.entries(DATA.tag)) {
 	attributesPropertiesTable += `|`
 
 	// attribute/properties
+	const props = []
 	for (const [attr, val] of Object.entries(value.properties)) {
-		attributesPropertiesTable += `\n| [${attr}](https://developer.mozilla.org/en-US/search?q=${attr})`
+		let prop = `| [${attr}](https://developer.mozilla.org/en-US/search?q=${attr})`
 		for (const lib of libs) {
-			attributesPropertiesTable += ` | ${(val[lib.name]?.source || '❌').replace(/\|/g, '\\|')}`
+			prop += ` | ${(val[lib.name]?.source || '❌').replace(/\|/g, '\\|')}`
 		}
-		attributesPropertiesTable += `|`
+		prop += `|`
+
+		props.push(prop)
 	}
+	attributesPropertiesTable +=
+		'\n' +
+		props
+			.sort((a, b) =>
+				a.localeCompare(b, undefined, { sensitivity: 'case' }),
+			)
+			.join('\n')
 }
 
 write(`./jsx/readme.md`, attributesPropertiesTable)
