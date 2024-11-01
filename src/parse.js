@@ -37,6 +37,12 @@ export function parseFromFile(file, map = {}) {
 
 	// parse
 	const source = read(file)
+	return parseFromString(source, map)
+}
+
+export function parseFromString(string, map = {}) {
+	// parse
+	const source = string
 	const lines = source.split('\n')
 
 	// for unwrapping simple types
