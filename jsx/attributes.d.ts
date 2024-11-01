@@ -19,7 +19,7 @@ interface AllHTMLAttributes<T> extends HTMLAttributes<T> {
 	// Standard HTML Attributes
 	accept?: string
 	acceptCharset?: string
-	action?: string | DO_NOT_USE_OR_YOU_WILL_BE_FIRED_EXPERIMENTAL_FORM_ACTIONS[keyof DO_NOT_USE_OR_YOU_WILL_BE_FIRED_EXPERIMENTAL_FORM_ACTIONS]
+	action?: string
 	allowFullScreen?: boolean
 	allowTransparency?: boolean
 	alt?: string
@@ -48,7 +48,7 @@ interface AllHTMLAttributes<T> extends HTMLAttributes<T> {
 	download?: any
 	encType?: string
 	form?: string
-	formAction?: string | DO_NOT_USE_OR_YOU_WILL_BE_FIRED_EXPERIMENTAL_FORM_ACTIONS[keyof DO_NOT_USE_OR_YOU_WILL_BE_FIRED_EXPERIMENTAL_FORM_ACTIONS]
+	formAction?: string
 	formEncType?: string
 	formMethod?: string
 	formNoValidate?: boolean

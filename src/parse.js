@@ -168,6 +168,10 @@ function unwrapTypes(source, types) {
 		// preact
 		.replace(/\| SignalLike<([^>]+)>/gi, ' ')
 		.replace(/ SignalLike<([^>]+)>\n/gi, '\n')
+		.replace(
+			/\| DO_NOT_USE_OR_YOU_WILL_BE_FIRED_EXPERIMENTAL_FORM_ACTIONS\[keyof DO_NOT_USE_OR_YOU_WILL_BE_FIRED_EXPERIMENTAL_FORM_ACTIONS\]/gi,
+			'',
+		)
 
 	for (const type of types) {
 		source = source

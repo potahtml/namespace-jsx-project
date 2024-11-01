@@ -56,7 +56,7 @@ interface ButtonHTMLAttributes extends HTMLAttributes {
 interface ButtonHTMLAttributes<T> extends HTMLAttributes<T> {
 	disabled?: boolean
 	form?: string
-	formAction?: string | DO_NOT_USE_OR_YOU_WILL_BE_FIRED_EXPERIMENTAL_FORM_ACTIONS[keyof DO_NOT_USE_OR_YOU_WILL_BE_FIRED_EXPERIMENTAL_FORM_ACTIONS]
+	formAction?: string
 	formEncType?: string
 	formMethod?: string
 	formNoValidate?: boolean
