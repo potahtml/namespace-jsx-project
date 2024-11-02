@@ -4,6 +4,7 @@ interface VideoHTMLAttributes<T> extends MediaHTMLAttributes<T> {
 	playsinline?: boolean
 	poster?: string
 	width?: number | string
+	disablepictureinpicture?: boolean
 }
 
 // Voby - https://github.com/vobyjs/voby

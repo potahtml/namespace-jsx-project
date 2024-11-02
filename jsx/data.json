@@ -6509,6 +6509,13 @@
 						"source": "number | string"
 					}
 				},
+				"disablepictureinpicture": {
+					"Solid": {
+						"name": "disablepictureinpicture",
+						"optional": true,
+						"source": "boolean"
+					}
+				},
 				"playsInline": {
 					"Voby": {
 						"name": "playsInline",

@@ -9,6 +9,7 @@ interface HTMLAttributes<T> extends AriaAttributes, DOMAttributes<T> {
 	draggable?: boolean | 'false' | 'true'
 	hidden?: boolean | 'hidden' | 'until-found'
 	id?: string
+	is?: string
 	inert?: boolean
 	lang?: string
 	spellcheck?: boolean
@@ -508,6 +509,7 @@ interface HTMLAttributes<T> extends AriaAttributes, DOMAttributes<T> {
 
 	// Standard HTML Attributes
 	accessKey?: string
+	autoCapitalize?: 'off' | 'none' | 'on' | 'sentences' | 'words' | 'characters' | (string & {})
 	autoFocus?: boolean
 	className?: string
 	contentEditable?: boolean | 'true' | 'false' | 'inherit' | 'plaintext-only'
@@ -546,7 +548,6 @@ interface HTMLAttributes<T> extends AriaAttributes, DOMAttributes<T> {
 	vocab?: string
 
 	// Non-standard Attributes
-	autoCapitalize?: string
 	autoCorrect?: string
 	autoSave?: string
 	color?: string

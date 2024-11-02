@@ -1,5 +1,5 @@
 // Solid - https://www.solidjs.com/
-interface DOMAttributes<T> extends CustomAttributes<T>, DirectiveAttributes, DirectiveFunctionAttributes<T>, PropAttributes, AttrAttributes, OnAttributes<T>, OnCaptureAttributes<T>, CustomEventHandlersCamelCase<T>, CustomEventHandlersLowerCase<T> {
+interface DOMAttributes<T> extends CustomAttributes<T>, DirectiveAttributes, DirectiveFunctionAttributes<T>, PropAttributes, AttrAttributes, BoolAttributes, OnAttributes<T>, OnCaptureAttributes<T>, CustomEventHandlersCamelCase<T>, CustomEventHandlersLowerCase<T>, CustomEventHandlersNamespaced<T> {
 	children?: Node | ArrayElement | (string & {}) | number | boolean | null
 	innerHTML?: string
 	innerText?: string | number
@@ -26,6 +26,17 @@ interface DOMAttributes<T> extends CustomAttributes<T>, DirectiveAttributes, Dir
 	onfocusin?: FocusEventHandlerUnion<T, FocusEvent>
 	onencrypted?: EventHandlerUnion<T, Event>
 	ondragexit?: EventHandlerUnion<T, DragEvent>
+	// lower case events
+	'on:copy'?: EventHandlerWithOptionsUnion<T, ClipboardEvent>
+	'on:cut'?: EventHandlerWithOptionsUnion<T, ClipboardEvent>
+	'on:paste'?: EventHandlerWithOptionsUnion<T, ClipboardEvent>
+	'on:compositionend'?: EventHandlerWithOptionsUnion<T, CompositionEvent>
+	'on:compositionstart'?: EventHandlerWithOptionsUnion<T, CompositionEvent>
+	'on:compositionupdate'?: EventHandlerWithOptionsUnion<T, CompositionEvent>
+	'on:focusout'?: EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>
+	'on:focusin'?: EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>
+	'on:encrypted'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:dragexit'?: EventHandlerWithOptionsUnion<T, DragEvent>
 }
 interface CustomEventHandlersCamelCase<T> {
 	onAbort?: EventHandlerUnion<T, Event>

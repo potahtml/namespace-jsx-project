@@ -915,6 +915,7 @@ This file is generated using `./data.json`
 | attribute                                                                                       | Solid            | Voby             | Vue                          | Preact | React            |
 | ----------------------------------------------------------------------------------------------- | ---------------- | ---------------- | ---------------------------- | ------ | ---------------- |
 | [disablePictureInPicture](https://developer.mozilla.org/en-US/search?q=disablePictureInPicture) | ❌               | boolean          | boolean \| 'true' \| 'false' | ❌     | boolean          |
+| [disablepictureinpicture](https://developer.mozilla.org/en-US/search?q=disablepictureinpicture) | boolean          | ❌               | ❌                           | ❌     | ❌               |
 | [disableRemotePlayback](https://developer.mozilla.org/en-US/search?q=disableRemotePlayback)     | ❌               | boolean          | boolean \| 'true' \| 'false' | ❌     | boolean          |
 | [height](https://developer.mozilla.org/en-US/search?q=height)                                   | number \| string | number \| string | number \| string             | ❌     | number \| string |
 | [playsInline](https://developer.mozilla.org/en-US/search?q=playsInline)                         | ❌               | boolean          | ❌                           | ❌     | boolean          |
