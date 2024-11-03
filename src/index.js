@@ -17,7 +17,11 @@ import {
 	ts,
 	tsTagNamesMap,
 } from './data.js'
-import { parse, parseFromFile, parseFromString } from './parse.js'
+import {
+	parseFromFile,
+	parseFromString,
+	parseFromURL,
+} from './parse.js'
 
 // clean output
 
@@ -32,7 +36,7 @@ const DATA = {
 for (const lib of libs) {
 	/** Split the source namespace JSX into interfaces */
 
-	lib.interfaces = parse(lib.file, lib.name, lib.map)
+	lib.interfaces = await parseFromURL(lib.file, lib.name, lib.map)
 
 	for (const [name, value] of Object.entries(lib.interfaces)) {
 		write(`./jsx/source/${lib.name}/${name}.d.ts`, value.source)

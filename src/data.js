@@ -1,4 +1,4 @@
-import { parse } from './parse.js'
+import { parseFromURL } from './parse.js'
 import { unique } from './utils.js'
 
 /**
@@ -9,7 +9,7 @@ import { unique } from './utils.js'
 export const libs = [
 	{
 		// SOLID
-		file: './node_modules/solid-js/types/jsx.d.ts',
+		file: 'https://raw.githubusercontent.com/ryansolid/dom-expressions/refs/heads/main/packages/dom-expressions/src/jsx.d.ts',
 		name: 'Solid',
 		url: 'https://www.solidjs.com/',
 		map: {
@@ -30,7 +30,7 @@ export const libs = [
 	},
 	{
 		// VOBY
-		file: './node_modules/voby/src/jsx/types.ts',
+		file: 'https://raw.githubusercontent.com/vobyjs/voby/refs/heads/master/src/jsx/types.ts',
 		name: 'Voby',
 		url: 'https://github.com/vobyjs/voby',
 		map: {
@@ -50,7 +50,7 @@ export const libs = [
 	},
 	{
 		// VUE
-		file: './node_modules/@vue/runtime-dom/dist/runtime-dom.d.ts',
+		file: 'https://raw.githubusercontent.com/vuejs/core/refs/heads/main/packages/runtime-dom/src/jsx.ts',
 		name: 'Vue',
 		url: 'https://vuejs.org/',
 		map: {
@@ -63,7 +63,7 @@ export const libs = [
 	},
 	{
 		// PREACT
-		file: './node_modules/preact/src/jsx.d.ts',
+		file: 'https://raw.githubusercontent.com/preactjs/preact/refs/heads/main/src/jsx.d.ts',
 		name: 'Preact',
 		url: 'https://preactjs.com/',
 		map: {
@@ -81,7 +81,7 @@ export const libs = [
 
 	{
 		// REACT
-		file: './node_modules/@types/react/ts5.0/index.d.ts',
+		file: 'https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/react/index.d.ts',
 		name: 'React',
 		url: 'https://react.dev/',
 		map: {
@@ -121,8 +121,8 @@ export const jsxcore = {
 
 /** Export lib.dom from Typescript */
 
-export const ts = parse(
-	'./node_modules/typescript/lib/lib.dom.d.ts',
+export const ts = await parseFromURL(
+	'https://raw.githubusercontent.com/microsoft/TypeScript-DOM-lib-generator/refs/heads/main/baselines/dom.generated.d.ts',
 	'typescript',
 )
 

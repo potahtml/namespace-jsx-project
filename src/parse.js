@@ -3,6 +3,13 @@ import oxc from 'oxc-parser'
 
 /** This is used to parse framework interfaces */
 
+export async function parseFromURL(file, name, map = {}) {
+	const text = await fetch(file).then(v => v.text())
+	file = './node_modules/.cache/' + name + '.d.ts'
+	write(file, text)
+	return parse(file, name, map)
+}
+
 export function parse(file, name, map = {}) {
 	// copy from `node_modules/lib/jsx.d.ts` to `source/$lib.d.ts`
 	copy(file, `./jsx/source/${name}.d.ts`)
