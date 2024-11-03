@@ -222,10 +222,10 @@ interface HTMLMediaElementEvents<Element> extends HTMLElementEvents<Element> {
 	'on:waitingforkey'?: Events<Event, Element>
 }
 interface HTMLVideoElementEvents<Element> extends HTMLMediaElementEvents<Element> {
-	onEnterPictureInPicture?: Events<Event, Element>
-	'on:enterpictureinpicture'?: Events<Event, Element>
-	onLeavePictureInPicture?: Events<Event, Element>
-	'on:leavepictureinpicture'?: Events<Event, Element>
+	onEnterPictureInPicture?: Events<PictureInPictureEvent, Element>
+	'on:enterpictureinpicture'?: Events<PictureInPictureEvent, Element>
+	onLeavePictureInPicture?: Events<PictureInPictureEvent, Element>
+	'on:leavepictureinpicture'?: Events<PictureInPictureEvent, Element>
 }
 interface MathMLElementEvents<Element> extends ElementEvents<Element>, GlobalEventHandlersEvents<Element> {}
 interface SVGElementEvents<Element> extends ElementEvents<Element>, GlobalEventHandlersEvents<Element> {}

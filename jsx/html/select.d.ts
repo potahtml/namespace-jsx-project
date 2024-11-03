@@ -35,7 +35,7 @@ interface SelectHTMLAttributes extends HTMLAttributes {
 	name?: string
 	required?: boolean | 'true' | 'false'
 	size?: number | string
-	value?: any
+	value?: any // we support :value to be bound to anything w/ v-model
 }
 
 // React - https://react.dev/

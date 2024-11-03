@@ -92,8 +92,8 @@ interface InputHTMLAttributes extends HTMLAttributes {
 	alt?: string
 	autocomplete?: string
 	autofocus?: boolean | 'true' | 'false'
-	capture?: boolean | 'user' | 'environment'
-	checked?: boolean | 'true' | 'false' | any[] | Set<any>
+	capture?: boolean | 'user' | 'environment' // https://www.w3.org/tr/html-media-capture/#the-capture-attribute
+	checked?: boolean | 'true' | 'false' | any[] | Set<any> // for IDE v-model multi-checkbox support
 	crossorigin?: string
 	disabled?: boolean | 'true' | 'false'
 	enterKeyHint?: 'enter' | 'done' | 'go' | 'next' | 'previous' | 'search' | 'send'
@@ -120,7 +120,7 @@ interface InputHTMLAttributes extends HTMLAttributes {
 	src?: string
 	step?: number | string
 	type?: InputTypeHTMLAttribute
-	value?: any
+	value?: any // we support :value to be bound to anything w/ v-model
 	width?: number | string
 }
 

@@ -643,7 +643,10 @@ interface IntrinsicElementAttributes {
 	video: VideoHTMLAttributes
 	wbr: HTMLAttributes
 	webview: WebViewHTMLAttributes
+
+	// SVG
 	svg: SVGAttributes
+
 	animate: SVGAttributes
 	animateMotion: SVGAttributes
 	animateTransform: SVGAttributes

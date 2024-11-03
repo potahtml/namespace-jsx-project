@@ -19,7 +19,7 @@ interface OptionHTMLAttributes extends HTMLAttributes {
 	disabled?: boolean | 'true' | 'false'
 	label?: string
 	selected?: boolean | 'true' | 'false'
-	value?: any
+	value?: any // we support :value to be bound to anything w/ v-model
 }
 
 // React - https://react.dev/

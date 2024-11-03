@@ -250,12 +250,14 @@ interface SVGAttributes<T extends EventTarget = SVGElement> extends HTMLAttribut
 // Vue - https://vuejs.org/
 interface SVGAttributes extends AriaAttributes, EventHandlers<Events> {
 	innerHTML?: string
+
 	/**
 	 * SVG Styling Attributes
 	 * @see https://www.w3.org/TR/SVG/styling.html#ElementSpecificStyling
 	 */
 	class?: any
 	style?: StyleValue
+
 	color?: string
 	height?: number | string
 	id?: string
@@ -268,9 +270,13 @@ interface SVGAttributes extends AriaAttributes, EventHandlers<Events> {
 	target?: string
 	type?: string
 	width?: number | string
+
+	// Other HTML properties supported by SVG elements in browsers
 	role?: string
 	tabindex?: number | string
 	crossOrigin?: 'anonymous' | 'use-credentials' | ''
+
+	// SVG Specific attributes
 	'accent-height'?: number | string
 	accumulate?: 'none' | 'sum'
 	additive?: 'replace' | 'sum'

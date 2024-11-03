@@ -230,8 +230,11 @@ interface HTMLAttributes<T extends EventTarget> extends VoidHTMLAttributes<T>, V
 // Vue - https://vuejs.org/
 interface HTMLAttributes extends AriaAttributes, EventHandlers<Events> {
 	innerHTML?: string
+
 	class?: any
 	style?: StyleValue
+
+	// Standard HTML Attributes
 	accesskey?: string
 	contenteditable?: boolean | 'true' | 'false' | 'inherit' | 'plaintext-only'
 	contextmenu?: string
@@ -246,8 +249,14 @@ interface HTMLAttributes extends AriaAttributes, EventHandlers<Events> {
 	tabindex?: number | string
 	title?: string
 	translate?: 'yes' | 'no'
-	radiogroup?: string
+
+	// Unknown
+	radiogroup?: string // <command>, <menuitem>
+
+	// WAI-ARIA
 	role?: string
+
+	// RDFa Attributes
 	about?: string
 	datatype?: string
 	inlist?: any
@@ -256,6 +265,8 @@ interface HTMLAttributes extends AriaAttributes, EventHandlers<Events> {
 	resource?: string
 	typeof?: string
 	vocab?: string
+
+	// Non-standard Attributes
 	autocapitalize?: string
 	autocorrect?: string
 	autosave?: string
@@ -268,6 +279,8 @@ interface HTMLAttributes extends AriaAttributes, EventHandlers<Events> {
 	results?: number | string
 	security?: string
 	unselectable?: 'on' | 'off'
+
+	// Living Standard
 	/**
 	 * Hints at the type of data that might be entered by the user while editing the element or its contents
 	 * @see https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute
