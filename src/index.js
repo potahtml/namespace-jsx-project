@@ -464,7 +464,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 # Elements Tables
 
 `
-const columns = ['Chrome', 'Solid', 'Voby', 'Vue', 'React', 'VSCode']
+const columns = ['Chrome', 'Solid', 'Voby', 'Vue', 'Preact', 'React', 'VSCode']
 
 for (const ns in DATA.elements) {
 	for (const [tag, value] of Object.entries(DATA.elements[ns])) {
