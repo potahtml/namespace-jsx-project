@@ -1,5 +1,5 @@
 import { parseFromURL } from './parse.js'
-import { unique } from './utils.js'
+import { read, unique } from './utils.js'
 
 /**
  * List of frameworks that provide a JSX namespace. Their interface
@@ -126,6 +126,41 @@ export const ts = await parseFromURL(
 	'typescript',
 )
 
+/** Export vsCode data */
+const vsCodeData = JSON.parse(
+	read(
+		'./node_modules/vscode-html-languageservice/lib/esm/languageFacts/data/webCustomData.js',
+	)
+		.trim()
+		.replace('export const htmlData =', '')
+		.replace(/^\/\*[^\/]+\*\//, '')
+		.replace(/\n\/\/[^\n]+\n/, '\n')
+		.replace(/;$/, ''),
+)
+
+const vsCode = {}
+
+for (const tag of vsCodeData.tags) {
+	vsCode[tag.name] = {
+		url: tag.references[0].url,
+		description: tag.description?.value || tag.description || '',
+		attributes: {},
+	}
+	for (const attr of tag.attributes) {
+		vsCode[tag.name].attributes[attr.name] = attr.valueSet
+			? vsCodeData.valueSets
+					.find(item => item.name === attr.valueSet)
+					?.values?.map(value => "'" + value.name + "'")
+					.join(' | ')
+			: 'string'
+
+		vsCode[tag.name].attributes[attr.name] =
+			vsCode[tag.name].attributes[attr.name] || 'boolean'
+	}
+}
+
+export { vsCode }
+
 /**
  * It prevents the following interfaces from being merge with each
  * tagName interface.
@@ -153,24 +188,28 @@ export const tsTagNamesMap = {
 		source: ts.htmlelementtagnamemap.source,
 		interface: 'HTMLElements',
 		attributes: 'HTMLAttributes',
+		namespace: 'http://www.w3.org/1999/xhtml',
 	},
 	htmldeprecated: {
 		properties: ts.htmlelementdeprecatedtagnamemap.properties,
 		source: ts.htmlelementdeprecatedtagnamemap.source,
 		interface: 'HTMLDeprecatedElements',
 		attributes: 'HTMLAttributes',
+		namespace: 'http://www.w3.org/1999/xhtml',
 	},
 	svg: {
 		properties: ts.svgelementtagnamemap.properties,
 		source: ts.svgelementtagnamemap.source,
 		interface: 'SVGElements',
 		attributes: 'SVGAttributes',
+		namespace: 'http://www.w3.org/2000/svg',
 	},
 	mathml: {
 		properties: ts.mathmlelementtagnamemap.properties,
 		source: ts.mathmlelementtagnamemap.source,
 		interface: 'MathMLElements',
 		attributes: 'MathMLAttributes',
+		namespace: 'http://www.w3.org/1998/Math/MathML',
 	},
 	mathmldeprecated: {
 		properties: [
@@ -183,6 +222,7 @@ export const tsTagNamesMap = {
 }`,
 		interface: 'MathMLDeprecatedElements',
 		attributes: 'MathMLAttributes',
+		namespace: 'http://www.w3.org/1998/Math/MathML',
 	},
 }
 

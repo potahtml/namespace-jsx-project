@@ -16,6 +16,7 @@ import {
 	libs,
 	ts,
 	tsTagNamesMap,
+	vsCode,
 } from './data.js'
 import {
 	parseFromFile,
@@ -29,8 +30,11 @@ remove('./jsx/')
 
 copy(`./.prettierrc.json`, `./jsx/.prettierrc.json`)
 
+const libraryTags = {}
+
 const DATA = {
-	tag: {},
+	events: {},
+	elements: {},
 }
 
 for (const lib of libs) {
@@ -72,19 +76,18 @@ for (const lib of libs) {
 				}
 			}
 
-			const tag = (DATA.tag[tagNameWithCase] = DATA.tag[
+			const tag = (libraryTags[tagNameWithCase] = libraryTags[
 				tagNameWithCase
-			] || { name: tagNameWithCase, properties: {} })
-			const properties = tag.properties
+			] || { attributes: {} })
+			const properties = tag.attributes
 
 			const parsed = parseFromString(lib.tagInterface[tagName])
-
 			for (const inter of parsed) {
 				for (const [name, value] of Object.entries(inter)) {
 					if (value.properties) {
 						for (const prop of value.properties) {
 							properties[prop.name] = properties[prop.name] || {}
-							properties[prop.name][lib.name] = prop
+							properties[prop.name][lib.name] = prop.source
 						}
 					}
 				}
@@ -177,6 +180,8 @@ for (const event of eventsNames) {
 	}
 }
 
+DATA.events = JSON.parse(JSON.stringify(eventsCapitalized))
+
 /** Typescript tag names maps. */
 
 const seenTags = {}
@@ -212,9 +217,18 @@ for (const [kind, value] of Object.entries(tsTagNamesMap)) {
 		),
 	)
 
+	DATA.elements[value.namespace] =
+		DATA.elements[value.namespace] || {}
+
 	/** For each tag name merge the the interfaces from the frameworks */
 
 	for (let element of elements) {
+		DATA.elements[value.namespace][element.id] =
+			DATA.elements[value.namespace][element.id] || {}
+
+		DATA.elements[value.namespace][element.id].deprecated =
+			kind.includes('deprecated')
+
 		seenTags[element.tagName] = true
 		seenEventsMaps.push(element.eventsMap)
 
@@ -225,15 +239,6 @@ for (const [kind, value] of Object.entries(tsTagNamesMap)) {
 				const banner = `\n\n// ${lib.name} - ${lib.url}  \n`
 				append(file, banner + lib.tagInterface[element.tagName])
 			}
-		}
-		DATA.tag[element.tagName] = DATA.tag[element.tagName] || {
-			name: element.tagName,
-			properties: {},
-		}
-
-		// so HTMLAnchorElement doesnt end as SVGAElement
-		if (!DATA.tag[element.tagName].interface) {
-			DATA.tag[element.tagName].interface = element.interface
 		}
 	}
 }
@@ -249,6 +254,9 @@ const frameworkTags = unique(
 
 for (const tag of frameworkTags) {
 	if (!seenTags[tag]) {
+		DATA.elements['http://www.w3.org/1999/xhtml'][tag] =
+			DATA.elements['http://www.w3.org/1999/xhtml'][tag] || {}
+
 		const file = `./jsx/unknown/${tag}.d.ts`
 
 		for (const lib of libs) {
@@ -284,11 +292,17 @@ for (const eventMap of allEventsMaps) {
  */
 
 const events = read(`./jsx/generated/events.d.ts`).split('\n')
+
 for (let i = 0; i < events.length; i++) {
 	const event = events[i]
 	if (event.includes(':')) {
 		let [eventName, inter] = event.split(':')
 		eventName = eventName.trim()
+		DATA.events[eventName] = {
+			name: eventName,
+			nameCapitalized: DATA.events[eventName] || eventName,
+			interface: inter.trim(),
+		}
 		eventName =
 			eventsCapitalized[eventName] ||
 			`on${eventName}`.replace(
@@ -305,6 +319,133 @@ write(
 	events.join('\n').replace(/EventMap/g, 'Events<Element>'),
 )
 
+// normalize events
+
+for (let eventName in DATA.events) {
+	if (typeof DATA.events[eventName] === 'string') {
+		DATA.events[eventName] = {
+			name: eventName,
+			nameCapitalized: DATA.events[eventName],
+			interface: 'Event',
+		}
+	}
+}
+
+function MDNURL(ns, tagName) {
+	switch (ns) {
+		case 'http://www.w3.org/1999/xhtml': {
+			return (
+				'https://developer.mozilla.org/docs/Web/HTML/Element/' +
+				tagName
+			)
+		}
+		case 'http://www.w3.org/1998/Math/MathML': {
+			return (
+				'https://developer.mozilla.org/en-US/docs/Web/MathML/Element/' +
+				tagName
+			)
+		}
+		case 'http://www.w3.org/2000/svg': {
+			return (
+				'https://developer.mozilla.org/en-US/docs/Web/SVG/Element/' +
+				tagName
+			)
+		}
+		default: {
+			return 'https://developer.mozilla.org/en-US/search?q=' + tagName
+		}
+	}
+}
+// copy library tags to data.elements
+for (const ns in DATA.elements) {
+	for (const tagName in DATA.elements[ns]) {
+		const tag = DATA.elements[ns][tagName]
+		if (libraryTags[tagName]) {
+			tag.attributes = libraryTags[tagName].attributes
+		} else {
+			tag.attributes = {}
+		}
+		tag.url = MDNURL(ns, tagName)
+		tag.description = ''
+		if (vsCode[tagName]) {
+			tag.description = vsCode[tagName].description
+			for (const attr in vsCode[tagName].attributes) {
+				tag.attributes[attr] = tag.attributes[attr] || {}
+				tag.attributes[attr]['VSCode'] =
+					vsCode[tagName].attributes[attr]
+			}
+		}
+	}
+}
+
+// get data from the browser
+
+import puppeteer from 'puppeteer'
+
+const chrome = await puppeteer.launch({
+	headless: true,
+	args: [
+		'--ash-no-nudges',
+		'--deny-permission-prompts',
+		'--disable-background-timer-throttling',
+		'--disable-backgrounding-occluded-windows',
+		'--disable-client-side-phishing-detection',
+		'--disable-default-apps',
+		'--disable-extensions',
+		'--disable-features=TranslateUI,Translate,InfiniteSessionRestore',
+		'--disable-infobars',
+		'--disable-ipc-flooding-protection',
+		'--disable-notifications',
+		'--disable-renderer-backgrounding',
+		'--disable-session-crashed-bubble',
+		'--ignore-certificate-errors',
+		'--mute-audio',
+		'--no-default-browser-check',
+		'--no-first-run',
+		'--start-maximized',
+	],
+	protocolTimeout: 300_000,
+	defaultViewport: null,
+})
+
+const page = await chrome.newPage()
+
+const browserData = {
+	'http://www.w3.org/1999/xhtml': Object.keys(
+		DATA.elements['http://www.w3.org/1999/xhtml'],
+	),
+	'http://www.w3.org/2000/svg': Object.keys(
+		DATA.elements['http://www.w3.org/2000/svg'],
+	),
+	'http://www.w3.org/1998/Math/MathML': Object.keys(
+		DATA.elements['http://www.w3.org/1998/Math/MathML'],
+	),
+}
+await page.exposeFunction('getData', () => browserData)
+await page.goto(process.cwd() + '/src/browser.html', {
+	waitUntil: 'networkidle0',
+})
+await page.evaluate(() => window.runFromPuppeteer())
+await new Promise(resolve => setTimeout(resolve, 2000))
+const browser = JSON.parse(
+	await page.evaluate(() => document.body.textContent),
+)
+chrome.close()
+
+// console.log(browser)
+
+for (const ns in DATA.elements) {
+	for (const tag in DATA.elements[ns]) {
+		const element = DATA.elements[ns][tag]
+		element.interface = browser[ns].elements[tag].interface
+		for (const attr in browser[ns].elements[tag].attributes) {
+			element.attributes[attr] = element.attributes[attr] || {}
+			element.attributes[attr].Chrome =
+				browser[ns].elements[tag].attributes[attr]
+		}
+	}
+}
+
 write(`./jsx/data.json`, JSON.stringify(DATA, null, 2))
 
 // create table.md
@@ -312,55 +453,55 @@ write(`./jsx/data.json`, JSON.stringify(DATA, null, 2))
 let attributesPropertiesTable = `
 # namespace JSX
 
-This file is generated using \`./data.json\`
+This file is generated using \`./data.json\`.
 
-# Element Types Table
+The possible \`tagNames\` come from a mashup between frameworks and TypeScript \`TagNamesMaps\` data.
+
+The \`interface\` names comes from \`document.createElementNS(ns, tagName).constructor.name\`.
+
+Chrome attribute names comes from brute-forcing the element setters till an attribute is added.
+
+# Elements Tables
 
 `
+const columns = ['Chrome', 'Solid', 'Voby', 'Vue', 'React', 'VSCode']
 
-for (const [tag, value] of Object.entries(DATA.tag)) {
-	value.interface = value.interface || 'HTMLUnknownElement'
+for (const ns in DATA.elements) {
+	for (const [tag, value] of Object.entries(DATA.elements[ns])) {
+		attributesPropertiesTable += `\n\n## [${tag}](${value.url}) - ${value.interface} - deprecated: ${value.deprecated} - ns: ${ns}`
 
-	attributesPropertiesTable += `\n\n## ${
-		value.interface.startsWith('HTML') &&
-		value.interface !== 'HTMLUnknownElement'
-			? `[${value.name}](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/${value.name})`
-			: value.interface.startsWith('SVG')
-				? `[${value.name}](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/${value.name})`
-				: `[${value.name}](https://developer.mozilla.org/en-US/search?q=${value.name})`
-	} - [${value.interface}](https://developer.mozilla.org/en-US/docs/Web/API/${value.interface})`
-
-	// headings
-	attributesPropertiesTable += `\n\n| attribute `
-	for (const lib of libs) {
-		attributesPropertiesTable += ` | ${lib.name}`
-	}
-	attributesPropertiesTable += `|`
-	// separator
-	attributesPropertiesTable += `\n| --- `
-	for (const lib of libs) {
-		attributesPropertiesTable += ` |  --- `
-	}
-	attributesPropertiesTable += `|`
-
-	// attribute/properties
-	const props = []
-	for (const [attr, val] of Object.entries(value.properties)) {
-		let prop = `| [${attr}](https://developer.mozilla.org/en-US/search?q=${attr})`
-		for (const lib of libs) {
-			prop += ` | ${(val[lib.name]?.source || '❌').replace(/\|/g, '\\|')}`
+		// headings
+		attributesPropertiesTable += `\n\n| attribute `
+		for (const lib of columns) {
+			attributesPropertiesTable += ` | ${lib}`
 		}
-		prop += `|`
+		attributesPropertiesTable += `|`
+		// separator
+		attributesPropertiesTable += `\n| --- `
+		for (const lib of columns) {
+			attributesPropertiesTable += ` |  --- `
+		}
+		attributesPropertiesTable += `|`
 
-		props.push(prop)
+		// attribute/properties
+		const props = []
+		for (const [attr, val] of Object.entries(value.attributes)) {
+			let prop = `| [${attr}](https://developer.mozilla.org/en-US/search?q=${attr})`
+			for (const lib of columns) {
+				prop += ` | ${(val[lib] !== undefined ? val[lib] : '❌').replace(/\|/g, '\\|')}`
+			}
+			prop += `|`
+
+			props.push(prop)
+		}
+		attributesPropertiesTable +=
+			'\n' +
+			props
+				.sort((a, b) =>
+					a.localeCompare(b, undefined, { sensitivity: 'case' }),
+				)
+				.join('\n')
 	}
-	attributesPropertiesTable +=
-		'\n' +
-		props
-			.sort((a, b) =>
-				a.localeCompare(b, undefined, { sensitivity: 'case' }),
-			)
-			.join('\n')
 }
 
 write(`./jsx/readme.md`, attributesPropertiesTable)

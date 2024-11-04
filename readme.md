@@ -14,7 +14,7 @@ with just `'left' | 'center' | 'right'`.
 
 The core of the issue is that everything is based on the same
 underlying data, `'left' | 'center' | 'right'`, as these possible
-values come from the HTML specification.
+values come from the HTML specification and browser implementations.
 
 Despite my best efforts, I couldn't find a comprehensive source, such
 as a JSON file, listing all tag names with their associated
@@ -46,7 +46,9 @@ consumable format.
 
 This project helps track some of the most popular frameworks
 `namespace JSX` by parsing, mapping (when necessary), and merging
-their interfaces into a unified structure.
+their interfaces into a unified structure. It also uses VSCode
+LSP-HTML and brute forces chrome element setters to see if a property
+is reflected as an attribute.
 
 This makes it easier to quickly track and visualize whether any
 attribute or property for an HTML, SVG, or MathML element has been
@@ -59,9 +61,7 @@ descriptions for what each attribute or property does, deprecation
 notices, links to MDN, and more.
 
 It's an ambitious, complex, and tedious task(—likely the reason why
-such a comprehensive data file doesn't exist yet). I also refuse to
-rely on AI or blindly automate this process without carefully
-verifying the accuracy of the generated data.
+such a comprehensive data file doesn't exist yet).
 
 You can see the current table at
 https://github.com/potahtml/namespace-jsx-project/blob/master/jsx/readme.md
@@ -72,7 +72,8 @@ List of frameworks so far: Solid, Voby, Vue, Preact, React.
 
 ## Usage
 
-To use this project, simply check the commit list for this file
+To use this project, simply use `jsx/data.json` or check the commit
+list for this file
 https://github.com/potahtml/namespace-jsx-project/blob/master/jsx/readme.md
 . Over time, I will be commiting "updates" that show the diffs
 whenever a framework's `namespace JSX` changes. At least, that's the
@@ -91,10 +92,11 @@ idea!
    generate new data and show diffs, allowing you to see whether you
    need to update your own `namespace JSX`.
 
-## Sponsor
+## TODO
 
-- theres a need to separate tagNames from namespaces. For example the
-  tag `a` lives in at least two different namespaces, HTML and SVG.
+- GLobal attributes needs to be generated in some way
+- Brute force chrome in reverse, set the attribute and then read the
+  getter, if the value changed then the attribute is valid.
 
 ## Sponsor
 
