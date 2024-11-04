@@ -486,7 +486,7 @@ for (const ns in DATA.elements) {
 		// attribute/properties
 		const props = []
 		for (const [attr, val] of Object.entries(value.attributes)) {
-			let prop = `| [${attr}](https://developer.mozilla.org/en-US/search?q=${attr})`
+			let prop = `| [${attr}](https://developer.mozilla.org/en-US/docs/Web/API/${value.interface}/${attr})`
 			for (const lib of columns) {
 				prop += ` | ${(val[lib] !== undefined ? val[lib] : '❌').replace(/\|/g, '\\|')}`
 			}
