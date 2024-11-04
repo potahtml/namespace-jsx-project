@@ -10,7 +10,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 
 # Elements Tables
 
-## [a](https://developer.mozilla.org/docs/Web/HTML/Element/a) - HTMLAnchorElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [a](https://developer.mozilla.org/docs/Web/HTML/Element/a) - [HTMLAnchorElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLAnchorElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                                     | Chrome | Solid                                                                                                                                                                            | Voby                                                                                                                                                                                   | Vue                                                                                                                                                                                    | React                                                                                                                                                                                  | VSCode                                         |
 | ----------------------------------------------------------------------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
@@ -32,17 +32,17 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [target](https://developer.mozilla.org/en-US/search?q=target)                 | string | string                                                                                                                                                                           | '\_self' \| '\_blank' \| '\_parent' \| '\_top'                                                                                                                                         | string                                                                                                                                                                                 | '\_self' \| '\_blank' \| '\_parent' \| '\_top' \| (string & {})                                                                                                                        | '\_self' \| '\_blank' \| '\_parent' \| '\_top' |
 | [type](https://developer.mozilla.org/en-US/search?q=type)                     | string | string                                                                                                                                                                           | string                                                                                                                                                                                 | string                                                                                                                                                                                 | string                                                                                                                                                                                 | string                                         |
 
-## [abbr](https://developer.mozilla.org/docs/Web/HTML/Element/abbr) - HTMLElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [abbr](https://developer.mozilla.org/docs/Web/HTML/Element/abbr) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [address](https://developer.mozilla.org/docs/Web/HTML/Element/address) - HTMLElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [address](https://developer.mozilla.org/docs/Web/HTML/Element/address) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [area](https://developer.mozilla.org/docs/Web/HTML/Element/area) - HTMLAreaElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [area](https://developer.mozilla.org/docs/Web/HTML/Element/area) - [HTMLAreaElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLAreaElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                                     | Chrome  | Solid                                                                                                                                                                            | Voby                                                                                                                                                                                   | Vue                                                                                                                                                                                    | React                                                                                                                                                                                  | VSCode                                         |
 | ----------------------------------------------------------------------------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
@@ -63,17 +63,17 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [target](https://developer.mozilla.org/en-US/search?q=target)                 | string  | string                                                                                                                                                                           | string                                                                                                                                                                                 | string                                                                                                                                                                                 | string                                                                                                                                                                                 | '\_self' \| '\_blank' \| '\_parent' \| '\_top' |
 | [type](https://developer.mozilla.org/en-US/search?q=type)                     | ❌      | ❌                                                                                                                                                                               | ❌                                                                                                                                                                                     | ❌                                                                                                                                                                                     | ❌                                                                                                                                                                                     | string                                         |
 
-## [article](https://developer.mozilla.org/docs/Web/HTML/Element/article) - HTMLElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [article](https://developer.mozilla.org/docs/Web/HTML/Element/article) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [aside](https://developer.mozilla.org/docs/Web/HTML/Element/aside) - HTMLElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [aside](https://developer.mozilla.org/docs/Web/HTML/Element/aside) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [audio](https://developer.mozilla.org/docs/Web/HTML/Element/audio) - HTMLAudioElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [audio](https://developer.mozilla.org/docs/Web/HTML/Element/audio) - [HTMLAudioElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                               | Chrome | Solid | Voby | Vue | React | VSCode                           |
 | ----------------------------------------------------------------------- | ------ | ----- | ---- | --- | ----- | -------------------------------- |
@@ -86,36 +86,36 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [preload](https://developer.mozilla.org/en-US/search?q=preload)         | ❌     | ❌    | ❌   | ❌  | ❌    | 'none' \| 'metadata' \| 'auto'   |
 | [src](https://developer.mozilla.org/en-US/search?q=src)                 | ❌     | ❌    | ❌   | ❌  | ❌    | string                           |
 
-## [b](https://developer.mozilla.org/docs/Web/HTML/Element/b) - HTMLElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [b](https://developer.mozilla.org/docs/Web/HTML/Element/b) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [base](https://developer.mozilla.org/docs/Web/HTML/Element/base) - HTMLBaseElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [base](https://developer.mozilla.org/docs/Web/HTML/Element/base) - [HTMLBaseElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLBaseElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                     | Chrome | Solid  | Voby   | Vue    | React  | VSCode                                         |
 | ------------------------------------------------------------- | ------ | ------ | ------ | ------ | ------ | ---------------------------------------------- |
 | [href](https://developer.mozilla.org/en-US/search?q=href)     | string | string | string | string | string | string                                         |
 | [target](https://developer.mozilla.org/en-US/search?q=target) | string | string | string | string | string | '\_self' \| '\_blank' \| '\_parent' \| '\_top' |
 
-## [bdi](https://developer.mozilla.org/docs/Web/HTML/Element/bdi) - HTMLElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [bdi](https://developer.mozilla.org/docs/Web/HTML/Element/bdi) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [bdo](https://developer.mozilla.org/docs/Web/HTML/Element/bdo) - HTMLElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [bdo](https://developer.mozilla.org/docs/Web/HTML/Element/bdo) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                               | Chrome | Solid | Voby | Vue | React | VSCode |
 | ------------------------------------------------------- | ------ | ----- | ---- | --- | ----- | ------ |
 | [dir](https://developer.mozilla.org/en-US/search?q=dir) | ❌     | ❌    | ❌   | ❌  | ❌    | string |
 
-## [blockquote](https://developer.mozilla.org/docs/Web/HTML/Element/blockquote) - HTMLQuoteElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [blockquote](https://developer.mozilla.org/docs/Web/HTML/Element/blockquote) - [HTMLQuoteElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLQuoteElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                 | Chrome | Solid  | Voby   | Vue    | React  | VSCode |
 | --------------------------------------------------------- | ------ | ------ | ------ | ------ | ------ | ------ |
 | [cite](https://developer.mozilla.org/en-US/search?q=cite) | string | string | string | string | string | string |
 
-## [body](https://developer.mozilla.org/docs/Web/HTML/Element/body) - HTMLBodyElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [body](https://developer.mozilla.org/docs/Web/HTML/Element/body) - [HTMLBodyElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                                                 | Chrome | Solid | Voby | Vue | React | VSCode |
 | ----------------------------------------------------------------------------------------- | ------ | ----- | ---- | --- | ----- | ------ |
@@ -154,13 +154,13 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [topmargin](https://developer.mozilla.org/en-US/search?q=topmargin)                       | ❌     | ❌    | ❌   | ❌  | ❌    | string |
 | [vlink](https://developer.mozilla.org/en-US/search?q=vlink)                               | string | ❌    | ❌   | ❌  | ❌    | string |
 
-## [br](https://developer.mozilla.org/docs/Web/HTML/Element/br) - HTMLBRElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [br](https://developer.mozilla.org/docs/Web/HTML/Element/br) - [HTMLBRElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLBRElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                   | Chrome | Solid | Voby | Vue | React | VSCode |
 | ----------------------------------------------------------- | ------ | ----- | ---- | --- | ----- | ------ |
 | [clear](https://developer.mozilla.org/en-US/search?q=clear) | string | ❌    | ❌   | ❌  | ❌    | string |
 
-## [button](https://developer.mozilla.org/docs/Web/HTML/Element/button) - HTMLButtonElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [button](https://developer.mozilla.org/docs/Web/HTML/Element/button) - [HTMLButtonElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLButtonElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                                               | Chrome  | Solid                                                                        | Voby                                  | Vue                                   | React                                 | VSCode                                                                       |
 | --------------------------------------------------------------------------------------- | ------- | ---------------------------------------------------------------------------- | ------------------------------------- | ------------------------------------- | ------------------------------------- | ---------------------------------------------------------------------------- |
@@ -188,7 +188,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [type](https://developer.mozilla.org/en-US/search?q=type)                               | string  | 'submit' \| 'reset' \| 'button'                                              | 'submit' \| 'reset' \| 'button'       | 'submit' \| 'reset' \| 'button'       | 'submit' \| 'reset' \| 'button'       | 'button' \| 'submit' \| 'reset' \| 'menu'                                    |
 | [value](https://developer.mozilla.org/en-US/search?q=value)                             | string  | string                                                                       | string \| readonly string[] \| number | string \| readonly string[] \| number | string \| readonly string[] \| number | string                                                                       |
 
-## [canvas](https://developer.mozilla.org/docs/Web/HTML/Element/canvas) - HTMLCanvasElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [canvas](https://developer.mozilla.org/docs/Web/HTML/Element/canvas) - [HTMLCanvasElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                             | Chrome           | Solid            | Voby             | Vue              | React            | VSCode |
 | --------------------------------------------------------------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- | ------ |
@@ -196,23 +196,23 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [moz-opaque](https://developer.mozilla.org/en-US/search?q=moz-opaque) | ❌               | ❌               | ❌               | ❌               | ❌               | string |
 | [width](https://developer.mozilla.org/en-US/search?q=width)           | number \| string | number \| string | number \| string | number \| string | number \| string | string |
 
-## [caption](https://developer.mozilla.org/docs/Web/HTML/Element/caption) - HTMLTableCaptionElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [caption](https://developer.mozilla.org/docs/Web/HTML/Element/caption) - [HTMLTableCaptionElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableCaptionElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                   | Chrome | Solid | Voby | Vue | React | VSCode |
 | ----------------------------------------------------------- | ------ | ----- | ---- | --- | ----- | ------ |
 | [align](https://developer.mozilla.org/en-US/search?q=align) | string | ❌    | ❌   | ❌  | ❌    | string |
 
-## [cite](https://developer.mozilla.org/docs/Web/HTML/Element/cite) - HTMLElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [cite](https://developer.mozilla.org/docs/Web/HTML/Element/cite) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [code](https://developer.mozilla.org/docs/Web/HTML/Element/code) - HTMLElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [code](https://developer.mozilla.org/docs/Web/HTML/Element/code) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [col](https://developer.mozilla.org/docs/Web/HTML/Element/col) - HTMLTableColElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [col](https://developer.mozilla.org/docs/Web/HTML/Element/col) - [HTMLTableColElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableColElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                       | Chrome           | Solid            | Voby             | Vue              | React            | VSCode |
 | --------------------------------------------------------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- | ------ |
@@ -223,7 +223,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [valign](https://developer.mozilla.org/en-US/search?q=valign)   | string           | ❌               | ❌               | ❌               | ❌               | ❌     |
 | [width](https://developer.mozilla.org/en-US/search?q=width)     | string           | number \| string | number \| string | number \| string | number \| string | ❌     |
 
-## [colgroup](https://developer.mozilla.org/docs/Web/HTML/Element/colgroup) - HTMLTableColElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [colgroup](https://developer.mozilla.org/docs/Web/HTML/Element/colgroup) - [HTMLTableColElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableColElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                       | Chrome           | Solid            | Voby   | Vue              | React  | VSCode |
 | --------------------------------------------------------------- | ---------------- | ---------------- | ------ | ---------------- | ------ | ------ |
@@ -234,24 +234,24 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [valign](https://developer.mozilla.org/en-US/search?q=valign)   | string           | ❌               | ❌     | ❌               | ❌     | ❌     |
 | [width](https://developer.mozilla.org/en-US/search?q=width)     | string           | ❌               | ❌     | ❌               | ❌     | ❌     |
 
-## [data](https://developer.mozilla.org/docs/Web/HTML/Element/data) - HTMLDataElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [data](https://developer.mozilla.org/docs/Web/HTML/Element/data) - [HTMLDataElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLDataElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                   | Chrome | Solid                        | Voby                                  | Vue                                   | React                                 | VSCode |
 | ----------------------------------------------------------- | ------ | ---------------------------- | ------------------------------------- | ------------------------------------- | ------------------------------------- | ------ |
 | [value](https://developer.mozilla.org/en-US/search?q=value) | string | string \| string[] \| number | string \| readonly string[] \| number | string \| readonly string[] \| number | string \| readonly string[] \| number | string |
 
-## [datalist](https://developer.mozilla.org/docs/Web/HTML/Element/datalist) - HTMLDataListElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [datalist](https://developer.mozilla.org/docs/Web/HTML/Element/datalist) - [HTMLDataListElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLDataListElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [dd](https://developer.mozilla.org/docs/Web/HTML/Element/dd) - HTMLElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [dd](https://developer.mozilla.org/docs/Web/HTML/Element/dd) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                     | Chrome | Solid | Voby | Vue | React | VSCode |
 | ------------------------------------------------------------- | ------ | ----- | ---- | --- | ----- | ------ |
 | [nowrap](https://developer.mozilla.org/en-US/search?q=nowrap) | ❌     | ❌    | ❌   | ❌  | ❌    | string |
 
-## [del](https://developer.mozilla.org/docs/Web/HTML/Element/del) - HTMLModElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [del](https://developer.mozilla.org/docs/Web/HTML/Element/del) - [HTMLModElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLModElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                         | Chrome | Solid | Voby   | Vue    | React  | VSCode |
 | ----------------------------------------------------------------- | ------ | ----- | ------ | ------ | ------ | ------ |
@@ -259,7 +259,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [dateTime](https://developer.mozilla.org/en-US/search?q=dateTime) | ❌     | ❌    | string | ❌     | string | ❌     |
 | [datetime](https://developer.mozilla.org/en-US/search?q=datetime) | string | ❌    | ❌     | string | ❌     | string |
 
-## [details](https://developer.mozilla.org/docs/Web/HTML/Element/details) - HTMLDetailsElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [details](https://developer.mozilla.org/docs/Web/HTML/Element/details) - [HTMLDetailsElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLDetailsElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                         | Chrome  | Solid                       | Voby                                              | Vue                            | React                | VSCode  |
 | ----------------------------------------------------------------- | ------- | --------------------------- | ------------------------------------------------- | ------------------------------ | -------------------- | ------- |
@@ -268,12 +268,12 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [onToggle](https://developer.mozilla.org/en-US/search?q=onToggle) | ❌      | EventHandlerUnion<T, Event> | ObservableMaybe<Nullable<GenericEventHandler<T>>> | (payload: ToggleEvent) => void | ReactEventHandler<T> | ❌      |
 | [open](https://developer.mozilla.org/en-US/search?q=open)         | boolean | boolean                     | boolean                                           | boolean \| 'true' \| 'false'   | boolean              | boolean |
 
-## [dfn](https://developer.mozilla.org/docs/Web/HTML/Element/dfn) - HTMLElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [dfn](https://developer.mozilla.org/docs/Web/HTML/Element/dfn) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [dialog](https://developer.mozilla.org/docs/Web/HTML/Element/dialog) - HTMLDialogElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [dialog](https://developer.mozilla.org/docs/Web/HTML/Element/dialog) - [HTMLDialogElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                         | Chrome  | Solid                       | Voby    | Vue                          | React                | VSCode |
 | ----------------------------------------------------------------- | ------- | --------------------------- | ------- | ---------------------------- | -------------------- | ------ |
@@ -281,29 +281,29 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [onClose](https://developer.mozilla.org/en-US/search?q=onClose)   | ❌      | EventHandlerUnion<T, Event> | ❌      | (payload: Event) => void     | ReactEventHandler<T> | ❌     |
 | [open](https://developer.mozilla.org/en-US/search?q=open)         | boolean | boolean                     | boolean | boolean \| 'true' \| 'false' | boolean              | string |
 
-## [div](https://developer.mozilla.org/docs/Web/HTML/Element/div) - HTMLDivElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [div](https://developer.mozilla.org/docs/Web/HTML/Element/div) - [HTMLDivElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLDivElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                   | Chrome | Solid | Voby | Vue | React | VSCode |
 | ----------------------------------------------------------- | ------ | ----- | ---- | --- | ----- | ------ |
 | [align](https://developer.mozilla.org/en-US/search?q=align) | string | ❌    | ❌   | ❌  | ❌    | ❌     |
 
-## [dl](https://developer.mozilla.org/docs/Web/HTML/Element/dl) - HTMLDListElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [dl](https://developer.mozilla.org/docs/Web/HTML/Element/dl) - [HTMLDListElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLDListElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                       | Chrome  | Solid | Voby | Vue | React | VSCode |
 | --------------------------------------------------------------- | ------- | ----- | ---- | --- | ----- | ------ |
 | [compact](https://developer.mozilla.org/en-US/search?q=compact) | boolean | ❌    | ❌   | ❌  | ❌    | ❌     |
 
-## [dt](https://developer.mozilla.org/docs/Web/HTML/Element/dt) - HTMLElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [dt](https://developer.mozilla.org/docs/Web/HTML/Element/dt) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [em](https://developer.mozilla.org/docs/Web/HTML/Element/em) - HTMLElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [em](https://developer.mozilla.org/docs/Web/HTML/Element/em) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [embed](https://developer.mozilla.org/docs/Web/HTML/Element/embed) - HTMLEmbedElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [embed](https://developer.mozilla.org/docs/Web/HTML/Element/embed) - [HTMLEmbedElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLEmbedElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                     | Chrome | Solid            | Voby             | Vue              | React            | VSCode |
 | ------------------------------------------------------------- | ------ | ---------------- | ---------------- | ---------------- | ---------------- | ------ |
@@ -314,7 +314,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [type](https://developer.mozilla.org/en-US/search?q=type)     | string | string           | string           | string           | string           | string |
 | [width](https://developer.mozilla.org/en-US/search?q=width)   | string | number \| string | number \| string | number \| string | number \| string | string |
 
-## [fieldset](https://developer.mozilla.org/docs/Web/HTML/Element/fieldset) - HTMLFieldSetElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [fieldset](https://developer.mozilla.org/docs/Web/HTML/Element/fieldset) - [HTMLFieldSetElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLFieldSetElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                         | Chrome  | Solid   | Voby    | Vue                          | React   | VSCode  |
 | ----------------------------------------------------------------- | ------- | ------- | ------- | ---------------------------- | ------- | ------- |
@@ -322,22 +322,22 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [form](https://developer.mozilla.org/en-US/search?q=form)         | ❌      | string  | string  | string                       | string  | string  |
 | [name](https://developer.mozilla.org/en-US/search?q=name)         | string  | string  | string  | string                       | string  | string  |
 
-## [figcaption](https://developer.mozilla.org/docs/Web/HTML/Element/figcaption) - HTMLElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [figcaption](https://developer.mozilla.org/docs/Web/HTML/Element/figcaption) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [figure](https://developer.mozilla.org/docs/Web/HTML/Element/figure) - HTMLElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [figure](https://developer.mozilla.org/docs/Web/HTML/Element/figure) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [footer](https://developer.mozilla.org/docs/Web/HTML/Element/footer) - HTMLElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [footer](https://developer.mozilla.org/docs/Web/HTML/Element/footer) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [form](https://developer.mozilla.org/docs/Web/HTML/Element/form) - HTMLFormElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [form](https://developer.mozilla.org/docs/Web/HTML/Element/form) - [HTMLFormElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                                     | Chrome  | Solid                                                                        | Voby    | Vue                          | React   | VSCode                                                                       |
 | ----------------------------------------------------------------------------- | ------- | ---------------------------------------------------------------------------- | ------- | ---------------------------- | ------- | ---------------------------------------------------------------------------- |
@@ -359,59 +359,59 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [rel](https://developer.mozilla.org/en-US/search?q=rel)                       | string  | ❌                                                                           | ❌      | ❌                           | ❌      | ❌                                                                           |
 | [target](https://developer.mozilla.org/en-US/search?q=target)                 | string  | string                                                                       | string  | string                       | string  | '\_self' \| '\_blank' \| '\_parent' \| '\_top'                               |
 
-## [h1](https://developer.mozilla.org/docs/Web/HTML/Element/h1) - HTMLHeadingElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [h1](https://developer.mozilla.org/docs/Web/HTML/Element/h1) - [HTMLHeadingElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLHeadingElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                   | Chrome | Solid | Voby | Vue | React | VSCode |
 | ----------------------------------------------------------- | ------ | ----- | ---- | --- | ----- | ------ |
 | [align](https://developer.mozilla.org/en-US/search?q=align) | string | ❌    | ❌   | ❌  | ❌    | ❌     |
 
-## [h2](https://developer.mozilla.org/docs/Web/HTML/Element/h2) - HTMLHeadingElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [h2](https://developer.mozilla.org/docs/Web/HTML/Element/h2) - [HTMLHeadingElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLHeadingElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                   | Chrome | Solid | Voby | Vue | React | VSCode |
 | ----------------------------------------------------------- | ------ | ----- | ---- | --- | ----- | ------ |
 | [align](https://developer.mozilla.org/en-US/search?q=align) | string | ❌    | ❌   | ❌  | ❌    | ❌     |
 
-## [h3](https://developer.mozilla.org/docs/Web/HTML/Element/h3) - HTMLHeadingElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [h3](https://developer.mozilla.org/docs/Web/HTML/Element/h3) - [HTMLHeadingElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLHeadingElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                   | Chrome | Solid | Voby | Vue | React | VSCode |
 | ----------------------------------------------------------- | ------ | ----- | ---- | --- | ----- | ------ |
 | [align](https://developer.mozilla.org/en-US/search?q=align) | string | ❌    | ❌   | ❌  | ❌    | ❌     |
 
-## [h4](https://developer.mozilla.org/docs/Web/HTML/Element/h4) - HTMLHeadingElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [h4](https://developer.mozilla.org/docs/Web/HTML/Element/h4) - [HTMLHeadingElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLHeadingElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                   | Chrome | Solid | Voby | Vue | React | VSCode |
 | ----------------------------------------------------------- | ------ | ----- | ---- | --- | ----- | ------ |
 | [align](https://developer.mozilla.org/en-US/search?q=align) | string | ❌    | ❌   | ❌  | ❌    | ❌     |
 
-## [h5](https://developer.mozilla.org/docs/Web/HTML/Element/h5) - HTMLHeadingElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [h5](https://developer.mozilla.org/docs/Web/HTML/Element/h5) - [HTMLHeadingElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLHeadingElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                   | Chrome | Solid | Voby | Vue | React | VSCode |
 | ----------------------------------------------------------- | ------ | ----- | ---- | --- | ----- | ------ |
 | [align](https://developer.mozilla.org/en-US/search?q=align) | string | ❌    | ❌   | ❌  | ❌    | ❌     |
 
-## [h6](https://developer.mozilla.org/docs/Web/HTML/Element/h6) - HTMLHeadingElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [h6](https://developer.mozilla.org/docs/Web/HTML/Element/h6) - [HTMLHeadingElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLHeadingElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                   | Chrome | Solid | Voby | Vue | React | VSCode |
 | ----------------------------------------------------------- | ------ | ----- | ---- | --- | ----- | ------ |
 | [align](https://developer.mozilla.org/en-US/search?q=align) | string | ❌    | ❌   | ❌  | ❌    | ❌     |
 
-## [head](https://developer.mozilla.org/docs/Web/HTML/Element/head) - HTMLHeadElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [head](https://developer.mozilla.org/docs/Web/HTML/Element/head) - [HTMLHeadElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLHeadElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                       | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------------------------------------------------------------- | ------ | ----- | ---- | --- | ----- | ------ |
 | [profile](https://developer.mozilla.org/en-US/search?q=profile) | ❌     | ❌    | ❌   | ❌  | ❌    | string |
 
-## [header](https://developer.mozilla.org/docs/Web/HTML/Element/header) - HTMLElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [header](https://developer.mozilla.org/docs/Web/HTML/Element/header) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [hgroup](https://developer.mozilla.org/docs/Web/HTML/Element/hgroup) - HTMLElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [hgroup](https://developer.mozilla.org/docs/Web/HTML/Element/hgroup) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [hr](https://developer.mozilla.org/docs/Web/HTML/Element/hr) - HTMLHRElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [hr](https://developer.mozilla.org/docs/Web/HTML/Element/hr) - [HTMLHRElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLHRElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                       | Chrome  | Solid | Voby | Vue | React | VSCode |
 | --------------------------------------------------------------- | ------- | ----- | ---- | --- | ----- | ------ |
@@ -421,7 +421,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [size](https://developer.mozilla.org/en-US/search?q=size)       | string  | ❌    | ❌   | ❌  | ❌    | string |
 | [width](https://developer.mozilla.org/en-US/search?q=width)     | string  | ❌    | ❌   | ❌  | ❌    | string |
 
-## [html](https://developer.mozilla.org/docs/Web/HTML/Element/html) - HTMLHtmlElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [html](https://developer.mozilla.org/docs/Web/HTML/Element/html) - [HTMLHtmlElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLHtmlElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                         | Chrome | Solid | Voby   | Vue    | React  | VSCode |
 | ----------------------------------------------------------------- | ------ | ----- | ------ | ------ | ------ | ------ |
@@ -429,12 +429,12 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [version](https://developer.mozilla.org/en-US/search?q=version)   | string | ❌    | ❌     | ❌     | ❌     | string |
 | [xmlns](https://developer.mozilla.org/en-US/search?q=xmlns)       | ❌     | ❌    | ❌     | ❌     | ❌     | string |
 
-## [i](https://developer.mozilla.org/docs/Web/HTML/Element/i) - HTMLElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [i](https://developer.mozilla.org/docs/Web/HTML/Element/i) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [iframe](https://developer.mozilla.org/docs/Web/HTML/Element/iframe) - HTMLIFrameElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [iframe](https://developer.mozilla.org/docs/Web/HTML/Element/iframe) - [HTMLIFrameElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLIFrameElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                                                   | Chrome  | Solid                                                                                                                                                                                                                                                                                                                                                                                                                                                     | Voby                                                                                                                                                                                   | Vue                                                                                                                                                                                    | React                                                                                                                                                                                  | VSCode                                                                                                                                                                            |
 | ------------------------------------------------------------------------------------------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -472,7 +472,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [srcdoc](https://developer.mozilla.org/en-US/search?q=srcdoc)                               | string  | string                                                                                                                                                                                                                                                                                                                                                                                                                                                    | ❌                                                                                                                                                                                     | string                                                                                                                                                                                 | ❌                                                                                                                                                                                     | string                                                                                                                                                                            |
 | [width](https://developer.mozilla.org/en-US/search?q=width)                                 | string  | number \| string                                                                                                                                                                                                                                                                                                                                                                                                                                          | number \| string                                                                                                                                                                       | number \| string                                                                                                                                                                       | number \| string                                                                                                                                                                       | string                                                                                                                                                                            |
 
-## [img](https://developer.mozilla.org/docs/Web/HTML/Element/img) - HTMLImageElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [img](https://developer.mozilla.org/docs/Web/HTML/Element/img) - [HTMLImageElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                                                   | Chrome           | Solid                                                                                                                                                                            | Voby                                                                                                                                                                                   | Vue                                                                                                                                                                                    | React                                                                                                                                                                                  | VSCode                                                                                                                                                                           |
 | ------------------------------------------------------------------------------------------- | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -508,7 +508,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [vspace](https://developer.mozilla.org/en-US/search?q=vspace)                               | number \| string | ❌                                                                                                                                                                               | ❌                                                                                                                                                                                     | ❌                                                                                                                                                                                     | ❌                                                                                                                                                                                     | ❌                                                                                                                                                                               |
 | [width](https://developer.mozilla.org/en-US/search?q=width)                                 | number \| string | number \| string                                                                                                                                                                 | number \| string                                                                                                                                                                       | number \| string                                                                                                                                                                       | number \| string                                                                                                                                                                       | string                                                                                                                                                                           |
 
-## [input](https://developer.mozilla.org/docs/Web/HTML/Element/input) - HTMLInputElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [input](https://developer.mozilla.org/docs/Web/HTML/Element/input) - [HTMLInputElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                                               | Chrome           | Solid                                                                        | Voby                                                                                                                                                                                                                                                      | Vue                                                                     | React                                                                                                                                                                                                                                                                      | VSCode                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | --------------------------------------------------------------------------------------- | ---------------- | ---------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -570,7 +570,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [webkitdirectory](https://developer.mozilla.org/en-US/search?q=webkitdirectory)         | boolean          | ❌                                                                           | ❌                                                                                                                                                                                                                                                        | ❌                                                                      | ❌                                                                                                                                                                                                                                                                         | ❌                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | [width](https://developer.mozilla.org/en-US/search?q=width)                             | number \| string | number \| string                                                             | number \| string                                                                                                                                                                                                                                          | number \| string                                                        | number \| string                                                                                                                                                                                                                                                           | string                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 
-## [ins](https://developer.mozilla.org/docs/Web/HTML/Element/ins) - HTMLModElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [ins](https://developer.mozilla.org/docs/Web/HTML/Element/ins) - [HTMLModElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLModElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                         | Chrome | Solid  | Voby   | Vue    | React  | VSCode |
 | ----------------------------------------------------------------- | ------ | ------ | ------ | ------ | ------ | ------ |
@@ -578,12 +578,12 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [dateTime](https://developer.mozilla.org/en-US/search?q=dateTime) | ❌     | string | string | ❌     | string | ❌     |
 | [datetime](https://developer.mozilla.org/en-US/search?q=datetime) | string | ❌     | ❌     | string | ❌     | string |
 
-## [kbd](https://developer.mozilla.org/docs/Web/HTML/Element/kbd) - HTMLElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [kbd](https://developer.mozilla.org/docs/Web/HTML/Element/kbd) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [label](https://developer.mozilla.org/docs/Web/HTML/Element/label) - HTMLLabelElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [label](https://developer.mozilla.org/docs/Web/HTML/Element/label) - [HTMLLabelElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLLabelElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                       | Chrome | Solid  | Voby   | Vue    | React  | VSCode |
 | --------------------------------------------------------------- | ------ | ------ | ------ | ------ | ------ | ------ |
@@ -591,20 +591,20 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [form](https://developer.mozilla.org/en-US/search?q=form)       | ❌     | string | string | string | string | string |
 | [htmlFor](https://developer.mozilla.org/en-US/search?q=htmlFor) | ❌     | ❌     | string | ❌     | string | ❌     |
 
-## [legend](https://developer.mozilla.org/docs/Web/HTML/Element/legend) - HTMLLegendElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [legend](https://developer.mozilla.org/docs/Web/HTML/Element/legend) - [HTMLLegendElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLLegendElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                   | Chrome | Solid | Voby | Vue | React | VSCode |
 | ----------------------------------------------------------- | ------ | ----- | ---- | --- | ----- | ------ |
 | [align](https://developer.mozilla.org/en-US/search?q=align) | string | ❌    | ❌   | ❌  | ❌    | ❌     |
 
-## [li](https://developer.mozilla.org/docs/Web/HTML/Element/li) - HTMLLIElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [li](https://developer.mozilla.org/docs/Web/HTML/Element/li) - [HTMLLIElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLLIElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                   | Chrome           | Solid            | Voby                                  | Vue                                   | React                                 | VSCode |
 | ----------------------------------------------------------- | ---------------- | ---------------- | ------------------------------------- | ------------------------------------- | ------------------------------------- | ------ |
 | [type](https://developer.mozilla.org/en-US/search?q=type)   | string           | ❌               | ❌                                    | ❌                                    | ❌                                    | string |
 | [value](https://developer.mozilla.org/en-US/search?q=value) | number \| string | number \| string | string \| readonly string[] \| number | string \| readonly string[] \| number | string \| readonly string[] \| number | string |
 
-## [link](https://developer.mozilla.org/docs/Web/HTML/Element/link) - HTMLLinkElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [link](https://developer.mozilla.org/docs/Web/HTML/Element/link) - [HTMLLinkElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLLinkElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                                     | Chrome  | Solid                                                                                                                                                                            | Voby                                                                                                                                                                                   | Vue                                                                                                                                                                                    | React                                                                                                                                                                                  | VSCode                           |
 | ----------------------------------------------------------------------------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- |
@@ -636,23 +636,23 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [title](https://developer.mozilla.org/en-US/search?q=title)                   | ❌      | ❌                                                                                                                                                                               | ❌                                                                                                                                                                                     | ❌                                                                                                                                                                                     | ❌                                                                                                                                                                                     | string                           |
 | [type](https://developer.mozilla.org/en-US/search?q=type)                     | string  | string                                                                                                                                                                           | string                                                                                                                                                                                 | string                                                                                                                                                                                 | string                                                                                                                                                                                 | string                           |
 
-## [main](https://developer.mozilla.org/docs/Web/HTML/Element/main) - HTMLElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [main](https://developer.mozilla.org/docs/Web/HTML/Element/main) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [map](https://developer.mozilla.org/docs/Web/HTML/Element/map) - HTMLMapElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [map](https://developer.mozilla.org/docs/Web/HTML/Element/map) - [HTMLMapElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMapElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                 | Chrome | Solid  | Voby   | Vue    | React  | VSCode |
 | --------------------------------------------------------- | ------ | ------ | ------ | ------ | ------ | ------ |
 | [name](https://developer.mozilla.org/en-US/search?q=name) | string | string | string | string | string | string |
 
-## [mark](https://developer.mozilla.org/docs/Web/HTML/Element/mark) - HTMLElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [mark](https://developer.mozilla.org/docs/Web/HTML/Element/mark) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [menu](https://developer.mozilla.org/docs/Web/HTML/Element/menu) - HTMLMenuElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [menu](https://developer.mozilla.org/docs/Web/HTML/Element/menu) - [HTMLMenuElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMenuElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                       | Chrome  | Solid                  | Voby   | Vue    | React  | VSCode |
 | --------------------------------------------------------------- | ------- | ---------------------- | ------ | ------ | ------ | ------ |
@@ -660,7 +660,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [label](https://developer.mozilla.org/en-US/search?q=label)     | ❌      | string                 | ❌     | ❌     | ❌     | ❌     |
 | [type](https://developer.mozilla.org/en-US/search?q=type)       | ❌      | 'context' \| 'toolbar' | string | string | string | ❌     |
 
-## [meta](https://developer.mozilla.org/docs/Web/HTML/Element/meta) - HTMLMetaElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [meta](https://developer.mozilla.org/docs/Web/HTML/Element/meta) - [HTMLMetaElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMetaElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                             | Chrome | Solid  | Voby   | Vue    | React  | VSCode |
 | --------------------------------------------------------------------- | ------ | ------ | ------ | ------ | ------ | ------ |
@@ -674,7 +674,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [name](https://developer.mozilla.org/en-US/search?q=name)             | string | string | string | string | string | string |
 | [scheme](https://developer.mozilla.org/en-US/search?q=scheme)         | string | ❌     | ❌     | ❌     | ❌     | string |
 
-## [meter](https://developer.mozilla.org/docs/Web/HTML/Element/meter) - HTMLMeterElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [meter](https://developer.mozilla.org/docs/Web/HTML/Element/meter) - [HTMLMeterElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMeterElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                       | Chrome           | Solid                        | Voby                                  | Vue                                   | React                                 | VSCode |
 | --------------------------------------------------------------- | ---------------- | ---------------------------- | ------------------------------------- | ------------------------------------- | ------------------------------------- | ------ |
@@ -686,17 +686,17 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [optimum](https://developer.mozilla.org/en-US/search?q=optimum) | number \| string | number \| string             | number                                | number \| string                      | number                                | string |
 | [value](https://developer.mozilla.org/en-US/search?q=value)     | number \| string | string \| string[] \| number | string \| readonly string[] \| number | string \| readonly string[] \| number | string \| readonly string[] \| number | string |
 
-## [nav](https://developer.mozilla.org/docs/Web/HTML/Element/nav) - HTMLElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [nav](https://developer.mozilla.org/docs/Web/HTML/Element/nav) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [noscript](https://developer.mozilla.org/docs/Web/HTML/Element/noscript) - HTMLElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [noscript](https://developer.mozilla.org/docs/Web/HTML/Element/noscript) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [object](https://developer.mozilla.org/docs/Web/HTML/Element/object) - HTMLObjectElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [object](https://developer.mozilla.org/docs/Web/HTML/Element/object) - [HTMLObjectElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLObjectElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                                   | Chrome           | Solid            | Voby             | Vue              | React            | VSCode  |
 | --------------------------------------------------------------------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- | ------- |
@@ -724,7 +724,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [width](https://developer.mozilla.org/en-US/search?q=width)                 | string           | number \| string | number \| string | number \| string | number \| string | string  |
 | [wmode](https://developer.mozilla.org/en-US/search?q=wmode)                 | ❌               | ❌               | string           | string           | string           | ❌      |
 
-## [ol](https://developer.mozilla.org/docs/Web/HTML/Element/ol) - HTMLOListElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [ol](https://developer.mozilla.org/docs/Web/HTML/Element/ol) - [HTMLOListElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLOListElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                         | Chrome           | Solid                           | Voby                            | Vue                             | React                           | VSCode                          |
 | ----------------------------------------------------------------- | ---------------- | ------------------------------- | ------------------------------- | ------------------------------- | ------------------------------- | ------------------------------- |
@@ -733,14 +733,14 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [start](https://developer.mozilla.org/en-US/search?q=start)       | number \| string | number \| string                | number                          | number \| string                | number                          | string                          |
 | [type](https://developer.mozilla.org/en-US/search?q=type)         | string           | '1' \| 'a' \| 'A' \| 'i' \| 'I' | '1' \| 'a' \| 'A' \| 'i' \| 'I' | '1' \| 'a' \| 'A' \| 'i' \| 'I' | '1' \| 'a' \| 'A' \| 'i' \| 'I' | '1' \| 'a' \| 'A' \| 'i' \| 'I' |
 
-## [optgroup](https://developer.mozilla.org/docs/Web/HTML/Element/optgroup) - HTMLOptGroupElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [optgroup](https://developer.mozilla.org/docs/Web/HTML/Element/optgroup) - [HTMLOptGroupElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLOptGroupElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                         | Chrome  | Solid   | Voby    | Vue                          | React   | VSCode  |
 | ----------------------------------------------------------------- | ------- | ------- | ------- | ---------------------------- | ------- | ------- |
 | [disabled](https://developer.mozilla.org/en-US/search?q=disabled) | boolean | boolean | boolean | boolean \| 'true' \| 'false' | boolean | boolean |
 | [label](https://developer.mozilla.org/en-US/search?q=label)       | string  | string  | string  | string                       | string  | string  |
 
-## [option](https://developer.mozilla.org/docs/Web/HTML/Element/option) - HTMLOptionElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [option](https://developer.mozilla.org/docs/Web/HTML/Element/option) - [HTMLOptionElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLOptionElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                         | Chrome  | Solid                        | Voby                                  | Vue                          | React                                 | VSCode  |
 | ----------------------------------------------------------------- | ------- | ---------------------------- | ------------------------------------- | ---------------------------- | ------------------------------------- | ------- |
@@ -749,7 +749,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [selected](https://developer.mozilla.org/en-US/search?q=selected) | boolean | boolean                      | boolean                               | boolean \| 'true' \| 'false' | boolean                               | boolean |
 | [value](https://developer.mozilla.org/en-US/search?q=value)       | string  | string \| string[] \| number | string \| readonly string[] \| number | any                          | string \| readonly string[] \| number | string  |
 
-## [output](https://developer.mozilla.org/docs/Web/HTML/Element/output) - HTMLOutputElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [output](https://developer.mozilla.org/docs/Web/HTML/Element/output) - [HTMLOutputElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLOutputElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                       | Chrome | Solid  | Voby   | Vue    | React  | VSCode |
 | --------------------------------------------------------------- | ------ | ------ | ------ | ------ | ------ | ------ |
@@ -758,18 +758,18 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [htmlFor](https://developer.mozilla.org/en-US/search?q=htmlFor) | ❌     | ❌     | string | ❌     | string | ❌     |
 | [name](https://developer.mozilla.org/en-US/search?q=name)       | string | string | string | string | string | string |
 
-## [p](https://developer.mozilla.org/docs/Web/HTML/Element/p) - HTMLParagraphElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [p](https://developer.mozilla.org/docs/Web/HTML/Element/p) - [HTMLParagraphElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLParagraphElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                   | Chrome | Solid | Voby | Vue | React | VSCode |
 | ----------------------------------------------------------- | ------ | ----- | ---- | --- | ----- | ------ |
 | [align](https://developer.mozilla.org/en-US/search?q=align) | string | ❌    | ❌   | ❌  | ❌    | ❌     |
 
-## [picture](https://developer.mozilla.org/docs/Web/HTML/Element/picture) - HTMLPictureElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [picture](https://developer.mozilla.org/docs/Web/HTML/Element/picture) - [HTMLPictureElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLPictureElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [pre](https://developer.mozilla.org/docs/Web/HTML/Element/pre) - HTMLPreElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [pre](https://developer.mozilla.org/docs/Web/HTML/Element/pre) - [HTMLPreElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLPreElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                   | Chrome           | Solid | Voby | Vue | React | VSCode |
 | ----------------------------------------------------------- | ---------------- | ----- | ---- | --- | ----- | ------ |
@@ -777,45 +777,45 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [width](https://developer.mozilla.org/en-US/search?q=width) | number \| string | ❌    | ❌   | ❌  | ❌    | string |
 | [wrap](https://developer.mozilla.org/en-US/search?q=wrap)   | ❌               | ❌    | ❌   | ❌  | ❌    | string |
 
-## [progress](https://developer.mozilla.org/docs/Web/HTML/Element/progress) - HTMLProgressElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [progress](https://developer.mozilla.org/docs/Web/HTML/Element/progress) - [HTMLProgressElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLProgressElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                   | Chrome           | Solid                        | Voby                                  | Vue                                   | React                                 | VSCode |
 | ----------------------------------------------------------- | ---------------- | ---------------------------- | ------------------------------------- | ------------------------------------- | ------------------------------------- | ------ |
 | [max](https://developer.mozilla.org/en-US/search?q=max)     | number \| string | number \| string             | number \| string                      | number \| string                      | number \| string                      | string |
 | [value](https://developer.mozilla.org/en-US/search?q=value) | number \| string | string \| string[] \| number | string \| readonly string[] \| number | string \| readonly string[] \| number | string \| readonly string[] \| number | string |
 
-## [q](https://developer.mozilla.org/docs/Web/HTML/Element/q) - HTMLQuoteElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [q](https://developer.mozilla.org/docs/Web/HTML/Element/q) - [HTMLQuoteElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLQuoteElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                 | Chrome | Solid  | Voby   | Vue    | React  | VSCode |
 | --------------------------------------------------------- | ------ | ------ | ------ | ------ | ------ | ------ |
 | [cite](https://developer.mozilla.org/en-US/search?q=cite) | string | string | string | string | string | string |
 
-## [rp](https://developer.mozilla.org/docs/Web/HTML/Element/rp) - HTMLElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [rp](https://developer.mozilla.org/docs/Web/HTML/Element/rp) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [rt](https://developer.mozilla.org/docs/Web/HTML/Element/rt) - HTMLElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [rt](https://developer.mozilla.org/docs/Web/HTML/Element/rt) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [ruby](https://developer.mozilla.org/docs/Web/HTML/Element/ruby) - HTMLElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [ruby](https://developer.mozilla.org/docs/Web/HTML/Element/ruby) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [s](https://developer.mozilla.org/docs/Web/HTML/Element/s) - HTMLElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [s](https://developer.mozilla.org/docs/Web/HTML/Element/s) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [samp](https://developer.mozilla.org/docs/Web/HTML/Element/samp) - HTMLElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [samp](https://developer.mozilla.org/docs/Web/HTML/Element/samp) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [script](https://developer.mozilla.org/docs/Web/HTML/Element/script) - HTMLScriptElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [script](https://developer.mozilla.org/docs/Web/HTML/Element/script) - [HTMLScriptElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLScriptElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                                     | Chrome  | Solid                                                                                                                                                                            | Voby                                                                                                                                                                                   | Vue                                                                                                                                                                                    | React                                                                                                                                                                                  | VSCode                           |
 | ----------------------------------------------------------------------------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- |
@@ -840,17 +840,17 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [text](https://developer.mozilla.org/en-US/search?q=text)                     | ❌      | ❌                                                                                                                                                                               | ❌                                                                                                                                                                                     | ❌                                                                                                                                                                                     | ❌                                                                                                                                                                                     | string                           |
 | [type](https://developer.mozilla.org/en-US/search?q=type)                     | string  | string                                                                                                                                                                           | string                                                                                                                                                                                 | string                                                                                                                                                                                 | string                                                                                                                                                                                 | string                           |
 
-## [search](https://developer.mozilla.org/docs/Web/HTML/Element/search) - HTMLElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [search](https://developer.mozilla.org/docs/Web/HTML/Element/search) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [section](https://developer.mozilla.org/docs/Web/HTML/Element/section) - HTMLElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [section](https://developer.mozilla.org/docs/Web/HTML/Element/section) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [select](https://developer.mozilla.org/docs/Web/HTML/Element/select) - HTMLSelectElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [select](https://developer.mozilla.org/docs/Web/HTML/Element/select) - [HTMLSelectElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLSelectElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                                 | Chrome           | Solid                        | Voby                                               | Vue                          | React                                 | VSCode                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | ------------------------------------------------------------------------- | ---------------- | ---------------------------- | -------------------------------------------------- | ---------------------------- | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -867,18 +867,18 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [size](https://developer.mozilla.org/en-US/search?q=size)                 | number \| string | number \| string             | number                                             | number \| string             | number                                | string                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | [value](https://developer.mozilla.org/en-US/search?q=value)               | ❌               | string \| string[] \| number | string                                             | any                          | string \| readonly string[] \| number | ❌                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 
-## [slot](https://developer.mozilla.org/docs/Web/HTML/Element/slot) - HTMLSlotElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [slot](https://developer.mozilla.org/docs/Web/HTML/Element/slot) - [HTMLSlotElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLSlotElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                 | Chrome | Solid  | Voby   | Vue | React  | VSCode |
 | --------------------------------------------------------- | ------ | ------ | ------ | --- | ------ | ------ |
 | [name](https://developer.mozilla.org/en-US/search?q=name) | string | string | string | ❌  | string | string |
 
-## [small](https://developer.mozilla.org/docs/Web/HTML/Element/small) - HTMLElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [small](https://developer.mozilla.org/docs/Web/HTML/Element/small) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [source](https://developer.mozilla.org/docs/Web/HTML/Element/source) - HTMLSourceElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [source](https://developer.mozilla.org/docs/Web/HTML/Element/source) - [HTMLSourceElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLSourceElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                     | Chrome           | Solid            | Voby             | Vue    | React            | VSCode |
 | ------------------------------------------------------------- | ---------------- | ---------------- | ---------------- | ------ | ---------------- | ------ |
@@ -891,17 +891,17 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [type](https://developer.mozilla.org/en-US/search?q=type)     | string           | string           | string           | string | string           | string |
 | [width](https://developer.mozilla.org/en-US/search?q=width)   | number \| string | number \| string | number \| string | ❌     | number \| string | ❌     |
 
-## [span](https://developer.mozilla.org/docs/Web/HTML/Element/span) - HTMLSpanElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [span](https://developer.mozilla.org/docs/Web/HTML/Element/span) - [HTMLSpanElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLSpanElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [strong](https://developer.mozilla.org/docs/Web/HTML/Element/strong) - HTMLElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [strong](https://developer.mozilla.org/docs/Web/HTML/Element/strong) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [style](https://developer.mozilla.org/docs/Web/HTML/Element/style) - HTMLStyleElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [style](https://developer.mozilla.org/docs/Web/HTML/Element/style) - [HTMLStyleElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLStyleElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                         | Chrome | Solid   | Voby    | Vue                          | React   | VSCode  |
 | ----------------------------------------------------------------- | ------ | ------- | ------- | ---------------------------- | ------- | ------- |
@@ -912,22 +912,22 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [title](https://developer.mozilla.org/en-US/search?q=title)       | string | ❌      | ❌      | ❌                           | ❌      | string  |
 | [type](https://developer.mozilla.org/en-US/search?q=type)         | string | string  | string  | string                       | string  | string  |
 
-## [sub](https://developer.mozilla.org/docs/Web/HTML/Element/sub) - HTMLElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [sub](https://developer.mozilla.org/docs/Web/HTML/Element/sub) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [summary](https://developer.mozilla.org/docs/Web/HTML/Element/summary) - HTMLElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [summary](https://developer.mozilla.org/docs/Web/HTML/Element/summary) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [sup](https://developer.mozilla.org/docs/Web/HTML/Element/sup) - HTMLElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [sup](https://developer.mozilla.org/docs/Web/HTML/Element/sup) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [table](https://developer.mozilla.org/docs/Web/HTML/Element/table) - HTMLTableElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [table](https://developer.mozilla.org/docs/Web/HTML/Element/table) - [HTMLTableElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                               | Chrome | Solid | Voby             | Vue              | React                                              | VSCode |
 | ----------------------------------------------------------------------- | ------ | ----- | ---------------- | ---------------- | -------------------------------------------------- | ------ |
@@ -943,7 +943,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [summary](https://developer.mozilla.org/en-US/search?q=summary)         | string | ❌    | string           | string           | string                                             | ❌     |
 | [width](https://developer.mozilla.org/en-US/search?q=width)             | string | ❌    | number \| string | number \| string | number \| string                                   | ❌     |
 
-## [tbody](https://developer.mozilla.org/docs/Web/HTML/Element/tbody) - HTMLTableSectionElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [tbody](https://developer.mozilla.org/docs/Web/HTML/Element/tbody) - [HTMLTableSectionElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableSectionElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                       | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------------------------------------------------------------- | ------ | ----- | ---- | --- | ----- | ------ |
@@ -952,7 +952,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [charoff](https://developer.mozilla.org/en-US/search?q=charoff) | string | ❌    | ❌   | ❌  | ❌    | ❌     |
 | [valign](https://developer.mozilla.org/en-US/search?q=valign)   | string | ❌    | ❌   | ❌  | ❌    | ❌     |
 
-## [td](https://developer.mozilla.org/docs/Web/HTML/Element/td) - HTMLTableCellElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [td](https://developer.mozilla.org/docs/Web/HTML/Element/td) - [HTMLTableCellElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableCellElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                       | Chrome           | Solid            | Voby                                                 | Vue                                                  | React                                                | VSCode |
 | --------------------------------------------------------------- | ---------------- | ---------------- | ---------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------------- | ------ |
@@ -973,7 +973,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [valign](https://developer.mozilla.org/en-US/search?q=valign)   | string           | ❌               | 'top' \| 'middle' \| 'bottom' \| 'baseline'          | 'top' \| 'middle' \| 'bottom' \| 'baseline'          | 'top' \| 'middle' \| 'bottom' \| 'baseline'          | ❌     |
 | [width](https://developer.mozilla.org/en-US/search?q=width)     | string           | ❌               | number \| string                                     | number \| string                                     | number \| string                                     | ❌     |
 
-## [template](https://developer.mozilla.org/docs/Web/HTML/Element/template) - HTMLTemplateElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [template](https://developer.mozilla.org/docs/Web/HTML/Element/template) - [HTMLTemplateElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTemplateElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                                                         | Chrome  | Solid            | Voby | Vue | React | VSCode |
 | ------------------------------------------------------------------------------------------------- | ------- | ---------------- | ---- | --- | ----- | ------ |
@@ -983,7 +983,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [shadowrootmode](https://developer.mozilla.org/en-US/search?q=shadowrootmode)                     | string  | ❌               | ❌   | ❌  | ❌    | ❌     |
 | [shadowrootserializable](https://developer.mozilla.org/en-US/search?q=shadowrootserializable)     | boolean | ❌               | ❌   | ❌  | ❌    | ❌     |
 
-## [textarea](https://developer.mozilla.org/docs/Web/HTML/Element/textarea) - HTMLTextAreaElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [textarea](https://developer.mozilla.org/docs/Web/HTML/Element/textarea) - [HTMLTextAreaElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTextAreaElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                                     | Chrome           | Solid                                                                   | Voby                                               | Vue                                           | React                                 | VSCode                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | ----------------------------------------------------------------------------- | ---------------- | ----------------------------------------------------------------------- | -------------------------------------------------- | --------------------------------------------- | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1014,7 +1014,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [value](https://developer.mozilla.org/en-US/search?q=value)                   | ❌               | string \| string[] \| number                                            | string \| readonly string[] \| number              | string \| readonly string[] \| number \| null | string \| readonly string[] \| number | ❌                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | [wrap](https://developer.mozilla.org/en-US/search?q=wrap)                     | string           | 'hard' \| 'soft' \| 'off'                                               | string                                             | string                                        | string                                | 'soft' \| 'hard'                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 
-## [tfoot](https://developer.mozilla.org/docs/Web/HTML/Element/tfoot) - HTMLTableSectionElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [tfoot](https://developer.mozilla.org/docs/Web/HTML/Element/tfoot) - [HTMLTableSectionElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableSectionElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                       | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------------------------------------------------------------- | ------ | ----- | ---- | --- | ----- | ------ |
@@ -1023,7 +1023,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [charoff](https://developer.mozilla.org/en-US/search?q=charoff) | string | ❌    | ❌   | ❌  | ❌    | ❌     |
 | [valign](https://developer.mozilla.org/en-US/search?q=valign)   | string | ❌    | ❌   | ❌  | ❌    | ❌     |
 
-## [th](https://developer.mozilla.org/docs/Web/HTML/Element/th) - HTMLTableCellElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [th](https://developer.mozilla.org/docs/Web/HTML/Element/th) - [HTMLTableCellElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableCellElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                       | Chrome           | Solid                                      | Voby                                                 | Vue                                                  | React                                                | VSCode                                     |
 | --------------------------------------------------------------- | ---------------- | ------------------------------------------ | ---------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------ |
@@ -1045,7 +1045,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [valign](https://developer.mozilla.org/en-US/search?q=valign)   | string           | ❌                                         | ❌                                                   | ❌                                                   | ❌                                                   | ❌                                         |
 | [width](https://developer.mozilla.org/en-US/search?q=width)     | string           | ❌                                         | ❌                                                   | ❌                                                   | ❌                                                   | ❌                                         |
 
-## [thead](https://developer.mozilla.org/docs/Web/HTML/Element/thead) - HTMLTableSectionElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [thead](https://developer.mozilla.org/docs/Web/HTML/Element/thead) - [HTMLTableSectionElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableSectionElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                       | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------------------------------------------------------------- | ------ | ----- | ---- | --- | ----- | ------ |
@@ -1054,19 +1054,19 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [charoff](https://developer.mozilla.org/en-US/search?q=charoff) | string | ❌    | ❌   | ❌  | ❌    | ❌     |
 | [valign](https://developer.mozilla.org/en-US/search?q=valign)   | string | ❌    | ❌   | ❌  | ❌    | ❌     |
 
-## [time](https://developer.mozilla.org/docs/Web/HTML/Element/time) - HTMLTimeElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [time](https://developer.mozilla.org/docs/Web/HTML/Element/time) - [HTMLTimeElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTimeElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                         | Chrome | Solid  | Voby   | Vue    | React  | VSCode |
 | ----------------------------------------------------------------- | ------ | ------ | ------ | ------ | ------ | ------ |
 | [dateTime](https://developer.mozilla.org/en-US/search?q=dateTime) | ❌     | string | string | ❌     | string | ❌     |
 | [datetime](https://developer.mozilla.org/en-US/search?q=datetime) | string | string | ❌     | string | ❌     | string |
 
-## [title](https://developer.mozilla.org/docs/Web/HTML/Element/title) - HTMLTitleElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [title](https://developer.mozilla.org/docs/Web/HTML/Element/title) - [HTMLTitleElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTitleElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [tr](https://developer.mozilla.org/docs/Web/HTML/Element/tr) - HTMLTableRowElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [tr](https://developer.mozilla.org/docs/Web/HTML/Element/tr) - [HTMLTableRowElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableRowElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                       | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------------------------------------------------------------- | ------ | ----- | ---- | --- | ----- | ------ |
@@ -1076,7 +1076,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [charoff](https://developer.mozilla.org/en-US/search?q=charoff) | string | ❌    | ❌   | ❌  | ❌    | ❌     |
 | [valign](https://developer.mozilla.org/en-US/search?q=valign)   | string | ❌    | ❌   | ❌  | ❌    | ❌     |
 
-## [track](https://developer.mozilla.org/docs/Web/HTML/Element/track) - HTMLTrackElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [track](https://developer.mozilla.org/docs/Web/HTML/Element/track) - [HTMLTrackElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTrackElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                       | Chrome  | Solid                                                                   | Voby    | Vue                          | React   | VSCode                                                                  |
 | --------------------------------------------------------------- | ------- | ----------------------------------------------------------------------- | ------- | ---------------------------- | ------- | ----------------------------------------------------------------------- |
@@ -1087,24 +1087,24 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [srcLang](https://developer.mozilla.org/en-US/search?q=srcLang) | ❌      | ❌                                                                      | string  | ❌                           | string  | ❌                                                                      |
 | [srclang](https://developer.mozilla.org/en-US/search?q=srclang) | string  | string                                                                  | ❌      | string                       | ❌      | string                                                                  |
 
-## [u](https://developer.mozilla.org/docs/Web/HTML/Element/u) - HTMLElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [u](https://developer.mozilla.org/docs/Web/HTML/Element/u) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [ul](https://developer.mozilla.org/docs/Web/HTML/Element/ul) - HTMLUListElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [ul](https://developer.mozilla.org/docs/Web/HTML/Element/ul) - [HTMLUListElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLUListElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                       | Chrome  | Solid | Voby | Vue | React | VSCode |
 | --------------------------------------------------------------- | ------- | ----- | ---- | --- | ----- | ------ |
 | [compact](https://developer.mozilla.org/en-US/search?q=compact) | boolean | ❌    | ❌   | ❌  | ❌    | string |
 | [type](https://developer.mozilla.org/en-US/search?q=type)       | string  | ❌    | ❌   | ❌  | ❌    | ❌     |
 
-## [var](https://developer.mozilla.org/docs/Web/HTML/Element/var) - HTMLElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [var](https://developer.mozilla.org/docs/Web/HTML/Element/var) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [video](https://developer.mozilla.org/docs/Web/HTML/Element/video) - HTMLVideoElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [video](https://developer.mozilla.org/docs/Web/HTML/Element/video) - [HTMLVideoElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                                                       | Chrome           | Solid            | Voby             | Vue                          | React            | VSCode                           |
 | ----------------------------------------------------------------------------------------------- | ---------------- | ---------------- | ---------------- | ---------------------------- | ---------------- | -------------------------------- |
@@ -1127,53 +1127,53 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [src](https://developer.mozilla.org/en-US/search?q=src)                                         | ❌               | ❌               | ❌               | ❌                           | ❌               | string                           |
 | [width](https://developer.mozilla.org/en-US/search?q=width)                                     | number \| string | number \| string | number \| string | number \| string             | number \| string | string                           |
 
-## [wbr](https://developer.mozilla.org/docs/Web/HTML/Element/wbr) - HTMLElement - deprecated: false - ns: http://www.w3.org/1999/xhtml
+## [wbr](https://developer.mozilla.org/docs/Web/HTML/Element/wbr) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: false - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [acronym](https://developer.mozilla.org/docs/Web/HTML/Element/acronym) - HTMLElement - deprecated: true - ns: http://www.w3.org/1999/xhtml
+## [acronym](https://developer.mozilla.org/docs/Web/HTML/Element/acronym) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: true - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [applet](https://developer.mozilla.org/docs/Web/HTML/Element/applet) - HTMLUnknownElement - deprecated: true - ns: http://www.w3.org/1999/xhtml
+## [applet](https://developer.mozilla.org/docs/Web/HTML/Element/applet) - [HTMLUnknownElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLUnknownElement) - deprecated: true - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [basefont](https://developer.mozilla.org/docs/Web/HTML/Element/basefont) - HTMLElement - deprecated: true - ns: http://www.w3.org/1999/xhtml
+## [basefont](https://developer.mozilla.org/docs/Web/HTML/Element/basefont) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: true - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [bgsound](https://developer.mozilla.org/docs/Web/HTML/Element/bgsound) - HTMLUnknownElement - deprecated: true - ns: http://www.w3.org/1999/xhtml
+## [bgsound](https://developer.mozilla.org/docs/Web/HTML/Element/bgsound) - [HTMLUnknownElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLUnknownElement) - deprecated: true - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [big](https://developer.mozilla.org/docs/Web/HTML/Element/big) - HTMLElement - deprecated: true - ns: http://www.w3.org/1999/xhtml
+## [big](https://developer.mozilla.org/docs/Web/HTML/Element/big) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: true - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [blink](https://developer.mozilla.org/docs/Web/HTML/Element/blink) - HTMLUnknownElement - deprecated: true - ns: http://www.w3.org/1999/xhtml
+## [blink](https://developer.mozilla.org/docs/Web/HTML/Element/blink) - [HTMLUnknownElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLUnknownElement) - deprecated: true - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [center](https://developer.mozilla.org/docs/Web/HTML/Element/center) - HTMLElement - deprecated: true - ns: http://www.w3.org/1999/xhtml
+## [center](https://developer.mozilla.org/docs/Web/HTML/Element/center) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: true - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [dir](https://developer.mozilla.org/docs/Web/HTML/Element/dir) - HTMLDirectoryElement - deprecated: true - ns: http://www.w3.org/1999/xhtml
+## [dir](https://developer.mozilla.org/docs/Web/HTML/Element/dir) - [HTMLDirectoryElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLDirectoryElement) - deprecated: true - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                       | Chrome  | Solid | Voby | Vue | React | VSCode |
 | --------------------------------------------------------------- | ------- | ----- | ---- | --- | ----- | ------ |
 | [compact](https://developer.mozilla.org/en-US/search?q=compact) | boolean | ❌    | ❌   | ❌  | ❌    | ❌     |
 
-## [font](https://developer.mozilla.org/docs/Web/HTML/Element/font) - HTMLFontElement - deprecated: true - ns: http://www.w3.org/1999/xhtml
+## [font](https://developer.mozilla.org/docs/Web/HTML/Element/font) - [HTMLFontElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLFontElement) - deprecated: true - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                   | Chrome | Solid | Voby | Vue | React | VSCode |
 | ----------------------------------------------------------- | ------ | ----- | ---- | --- | ----- | ------ |
@@ -1181,7 +1181,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [face](https://developer.mozilla.org/en-US/search?q=face)   | string | ❌    | ❌   | ❌  | ❌    | ❌     |
 | [size](https://developer.mozilla.org/en-US/search?q=size)   | string | ❌    | ❌   | ❌  | ❌    | ❌     |
 
-## [frame](https://developer.mozilla.org/docs/Web/HTML/Element/frame) - HTMLFrameElement - deprecated: true - ns: http://www.w3.org/1999/xhtml
+## [frame](https://developer.mozilla.org/docs/Web/HTML/Element/frame) - [HTMLFrameElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLFrameElement) - deprecated: true - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                                 | Chrome  | Solid | Voby | Vue | React | VSCode |
 | ------------------------------------------------------------------------- | ------- | ----- | ---- | --- | ----- | ------ |
@@ -1194,7 +1194,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [scrolling](https://developer.mozilla.org/en-US/search?q=scrolling)       | string  | ❌    | ❌   | ❌  | ❌    | ❌     |
 | [src](https://developer.mozilla.org/en-US/search?q=src)                   | string  | ❌    | ❌   | ❌  | ❌    | ❌     |
 
-## [frameset](https://developer.mozilla.org/docs/Web/HTML/Element/frameset) - HTMLFrameSetElement - deprecated: true - ns: http://www.w3.org/1999/xhtml
+## [frameset](https://developer.mozilla.org/docs/Web/HTML/Element/frameset) - [HTMLFrameSetElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLFrameSetElement) - deprecated: true - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                                                 | Chrome | Solid | Voby | Vue | React | VSCode |
 | ----------------------------------------------------------------------------------------- | ------ | ----- | ---- | --- | ----- | ------ |
@@ -1223,12 +1223,12 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [onunload](https://developer.mozilla.org/en-US/search?q=onunload)                         | event  | ❌    | ❌   | ❌  | ❌    | ❌     |
 | [rows](https://developer.mozilla.org/en-US/search?q=rows)                                 | string | ❌    | ❌   | ❌  | ❌    | ❌     |
 
-## [isindex](https://developer.mozilla.org/docs/Web/HTML/Element/isindex) - HTMLUnknownElement - deprecated: true - ns: http://www.w3.org/1999/xhtml
+## [isindex](https://developer.mozilla.org/docs/Web/HTML/Element/isindex) - [HTMLUnknownElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLUnknownElement) - deprecated: true - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [keygen](https://developer.mozilla.org/docs/Web/HTML/Element/keygen) - HTMLUnknownElement - deprecated: true - ns: http://www.w3.org/1999/xhtml
+## [keygen](https://developer.mozilla.org/docs/Web/HTML/Element/keygen) - [HTMLUnknownElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLUnknownElement) - deprecated: true - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                           | Chrome | Solid   | Voby    | Vue                          | React   | VSCode |
 | ------------------------------------------------------------------- | ------ | ------- | ------- | ---------------------------- | ------- | ------ |
@@ -1243,13 +1243,13 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [keytype](https://developer.mozilla.org/en-US/search?q=keytype)     | ❌     | string  | ❌      | string                       | ❌      | ❌     |
 | [name](https://developer.mozilla.org/en-US/search?q=name)           | ❌     | string  | string  | string                       | string  | ❌     |
 
-## [listing](https://developer.mozilla.org/docs/Web/HTML/Element/listing) - HTMLPreElement - deprecated: true - ns: http://www.w3.org/1999/xhtml
+## [listing](https://developer.mozilla.org/docs/Web/HTML/Element/listing) - [HTMLPreElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLPreElement) - deprecated: true - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                   | Chrome           | Solid | Voby | Vue | React | VSCode |
 | ----------------------------------------------------------- | ---------------- | ----- | ---- | --- | ----- | ------ |
 | [width](https://developer.mozilla.org/en-US/search?q=width) | number \| string | ❌    | ❌   | ❌  | ❌    | ❌     |
 
-## [marquee](https://developer.mozilla.org/docs/Web/HTML/Element/marquee) - HTMLMarqueeElement - deprecated: true - ns: http://www.w3.org/1999/xhtml
+## [marquee](https://developer.mozilla.org/docs/Web/HTML/Element/marquee) - [HTMLMarqueeElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMarqueeElement) - deprecated: true - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                                 | Chrome           | Solid | Voby | Vue | React | VSCode |
 | ------------------------------------------------------------------------- | ---------------- | ----- | ---- | --- | ----- | ------ |
@@ -1269,37 +1269,37 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [vspace](https://developer.mozilla.org/en-US/search?q=vspace)             | number \| string | ❌    | ❌   | ❌  | ❌    | ❌     |
 | [width](https://developer.mozilla.org/en-US/search?q=width)               | string           | ❌    | ❌   | ❌  | ❌    | ❌     |
 
-## [menuitem](https://developer.mozilla.org/docs/Web/HTML/Element/menuitem) - HTMLUnknownElement - deprecated: true - ns: http://www.w3.org/1999/xhtml
+## [menuitem](https://developer.mozilla.org/docs/Web/HTML/Element/menuitem) - [HTMLUnknownElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLUnknownElement) - deprecated: true - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [multicol](https://developer.mozilla.org/docs/Web/HTML/Element/multicol) - HTMLUnknownElement - deprecated: true - ns: http://www.w3.org/1999/xhtml
+## [multicol](https://developer.mozilla.org/docs/Web/HTML/Element/multicol) - [HTMLUnknownElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLUnknownElement) - deprecated: true - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [nextid](https://developer.mozilla.org/docs/Web/HTML/Element/nextid) - HTMLUnknownElement - deprecated: true - ns: http://www.w3.org/1999/xhtml
+## [nextid](https://developer.mozilla.org/docs/Web/HTML/Element/nextid) - [HTMLUnknownElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLUnknownElement) - deprecated: true - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [nobr](https://developer.mozilla.org/docs/Web/HTML/Element/nobr) - HTMLElement - deprecated: true - ns: http://www.w3.org/1999/xhtml
+## [nobr](https://developer.mozilla.org/docs/Web/HTML/Element/nobr) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: true - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [noembed](https://developer.mozilla.org/docs/Web/HTML/Element/noembed) - HTMLElement - deprecated: true - ns: http://www.w3.org/1999/xhtml
+## [noembed](https://developer.mozilla.org/docs/Web/HTML/Element/noembed) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: true - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [noframes](https://developer.mozilla.org/docs/Web/HTML/Element/noframes) - HTMLElement - deprecated: true - ns: http://www.w3.org/1999/xhtml
+## [noframes](https://developer.mozilla.org/docs/Web/HTML/Element/noframes) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: true - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [param](https://developer.mozilla.org/docs/Web/HTML/Element/param) - HTMLParamElement - deprecated: true - ns: http://www.w3.org/1999/xhtml
+## [param](https://developer.mozilla.org/docs/Web/HTML/Element/param) - [HTMLParamElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLParamElement) - deprecated: true - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                           | Chrome | Solid                        | Voby                                  | Vue                                   | React                                 | VSCode |
 | ------------------------------------------------------------------- | ------ | ---------------------------- | ------------------------------------- | ------------------------------------- | ------------------------------------- | ------ |
@@ -1308,48 +1308,48 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [value](https://developer.mozilla.org/en-US/search?q=value)         | string | string \| string[] \| number | string \| readonly string[] \| number | string \| readonly string[] \| number | string \| readonly string[] \| number | string |
 | [valuetype](https://developer.mozilla.org/en-US/search?q=valuetype) | string | ❌                           | ❌                                    | ❌                                    | ❌                                    | string |
 
-## [plaintext](https://developer.mozilla.org/docs/Web/HTML/Element/plaintext) - HTMLElement - deprecated: true - ns: http://www.w3.org/1999/xhtml
+## [plaintext](https://developer.mozilla.org/docs/Web/HTML/Element/plaintext) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: true - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [rb](https://developer.mozilla.org/docs/Web/HTML/Element/rb) - HTMLElement - deprecated: true - ns: http://www.w3.org/1999/xhtml
+## [rb](https://developer.mozilla.org/docs/Web/HTML/Element/rb) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: true - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [rtc](https://developer.mozilla.org/docs/Web/HTML/Element/rtc) - HTMLElement - deprecated: true - ns: http://www.w3.org/1999/xhtml
+## [rtc](https://developer.mozilla.org/docs/Web/HTML/Element/rtc) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: true - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [spacer](https://developer.mozilla.org/docs/Web/HTML/Element/spacer) - HTMLUnknownElement - deprecated: true - ns: http://www.w3.org/1999/xhtml
+## [spacer](https://developer.mozilla.org/docs/Web/HTML/Element/spacer) - [HTMLUnknownElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLUnknownElement) - deprecated: true - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [strike](https://developer.mozilla.org/docs/Web/HTML/Element/strike) - HTMLElement - deprecated: true - ns: http://www.w3.org/1999/xhtml
+## [strike](https://developer.mozilla.org/docs/Web/HTML/Element/strike) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: true - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [tt](https://developer.mozilla.org/docs/Web/HTML/Element/tt) - HTMLElement - deprecated: true - ns: http://www.w3.org/1999/xhtml
+## [tt](https://developer.mozilla.org/docs/Web/HTML/Element/tt) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: true - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [xmp](https://developer.mozilla.org/docs/Web/HTML/Element/xmp) - HTMLPreElement - deprecated: true - ns: http://www.w3.org/1999/xhtml
+## [xmp](https://developer.mozilla.org/docs/Web/HTML/Element/xmp) - [HTMLPreElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLPreElement) - deprecated: true - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                   | Chrome           | Solid | Voby | Vue | React | VSCode |
 | ----------------------------------------------------------- | ---------------- | ----- | ---- | --- | ----- | ------ |
 | [width](https://developer.mozilla.org/en-US/search?q=width) | number \| string | ❌    | ❌   | ❌  | ❌    | ❌     |
 
-## [noindex](https://developer.mozilla.org/docs/Web/HTML/Element/noindex) - HTMLUnknownElement - deprecated: undefined - ns: http://www.w3.org/1999/xhtml
+## [noindex](https://developer.mozilla.org/docs/Web/HTML/Element/noindex) - [HTMLUnknownElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLUnknownElement) - deprecated: undefined - ns: http://www.w3.org/1999/xhtml
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [webview](https://developer.mozilla.org/docs/Web/HTML/Element/webview) - HTMLElement - deprecated: undefined - ns: http://www.w3.org/1999/xhtml
+## [webview](https://developer.mozilla.org/docs/Web/HTML/Element/webview) - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) - deprecated: undefined - ns: http://www.w3.org/1999/xhtml
 
 | attribute                                                                                 | Chrome | Solid | Voby    | Vue                          | React   | VSCode |
 | ----------------------------------------------------------------------------------------- | ------ | ----- | ------- | ---------------------------- | ------- | ------ |
@@ -1372,7 +1372,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [useragent](https://developer.mozilla.org/en-US/search?q=useragent)                       | ❌     | ❌    | string  | string                       | string  | ❌     |
 | [webpreferences](https://developer.mozilla.org/en-US/search?q=webpreferences)             | ❌     | ❌    | string  | string                       | string  | ❌     |
 
-## [a](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/a) - SVGAElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [a](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/a) - [SVGAElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGAElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                                                     | Chrome | Solid                                                                                                                                                                            | Voby                                                                                                                                                                                   | Vue                                                                                                                                                                                    | React                                                                                                                                                                                  | VSCode                                         |
 | ----------------------------------------------------------------------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
@@ -1394,12 +1394,12 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [target](https://developer.mozilla.org/en-US/search?q=target)                 | string | string                                                                                                                                                                           | '\_self' \| '\_blank' \| '\_parent' \| '\_top'                                                                                                                                         | string                                                                                                                                                                                 | '\_self' \| '\_blank' \| '\_parent' \| '\_top' \| (string & {})                                                                                                                        | '\_self' \| '\_blank' \| '\_parent' \| '\_top' |
 | [type](https://developer.mozilla.org/en-US/search?q=type)                     | string | string                                                                                                                                                                           | string                                                                                                                                                                                 | string                                                                                                                                                                                 | string                                                                                                                                                                                 | string                                         |
 
-## [animate](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate) - SVGAnimateElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [animate](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animate) - [SVGAnimateElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGAnimateElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [animateMotion](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animateMotion) - SVGAnimateMotionElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [animateMotion](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animateMotion) - [SVGAnimateMotionElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGAnimateMotionElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                                           | Chrome | Solid                                        | Voby | Vue | React | VSCode |
 | ------------------------------------------------------------------- | ------ | -------------------------------------------- | ---- | --- | ----- | ------ |
@@ -1408,13 +1408,13 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [path](https://developer.mozilla.org/en-US/search?q=path)           | ❌     | string                                       | ❌   | ❌  | ❌    | ❌     |
 | [rotate](https://developer.mozilla.org/en-US/search?q=rotate)       | ❌     | number \| string \| 'auto' \| 'auto-reverse' | ❌   | ❌  | ❌    | ❌     |
 
-## [animateTransform](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animateTransform) - SVGAnimateTransformElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [animateTransform](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animateTransform) - [SVGAnimateTransformElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGAnimateTransformElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                                 | Chrome | Solid                                                    | Voby | Vue | React | VSCode |
 | --------------------------------------------------------- | ------ | -------------------------------------------------------- | ---- | --- | ----- | ------ |
 | [type](https://developer.mozilla.org/en-US/search?q=type) | ❌     | 'translate' \| 'scale' \| 'rotate' \| 'skewX' \| 'skewY' | ❌   | ❌  | ❌    | ❌     |
 
-## [circle](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/circle) - SVGCircleElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [circle](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/circle) - [SVGCircleElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGCircleElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                             | Chrome | Solid            | Voby | Vue | React | VSCode |
 | ----------------------------------------------------- | ------ | ---------------- | ---- | --- | ----- | ------ |
@@ -1422,23 +1422,23 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [cy](https://developer.mozilla.org/en-US/search?q=cy) | ❌     | number \| string | ❌   | ❌  | ❌    | ❌     |
 | [r](https://developer.mozilla.org/en-US/search?q=r)   | ❌     | number \| string | ❌   | ❌  | ❌    | ❌     |
 
-## [clipPath](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/clipPath) - SVGClipPathElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [clipPath](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/clipPath) - [SVGClipPathElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGClipPathElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                                                   | Chrome | Solid                                   | Voby | Vue | React | VSCode |
 | --------------------------------------------------------------------------- | ------ | --------------------------------------- | ---- | --- | ----- | ------ |
 | [clipPathUnits](https://developer.mozilla.org/en-US/search?q=clipPathUnits) | ❌     | 'userSpaceOnUse' \| 'objectBoundingBox' | ❌   | ❌  | ❌    | ❌     |
 
-## [defs](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/defs) - SVGDefsElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [defs](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/defs) - [SVGDefsElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGDefsElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [desc](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/desc) - SVGDescElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [desc](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/desc) - [SVGDescElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGDescElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [ellipse](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/ellipse) - SVGEllipseElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [ellipse](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/ellipse) - [SVGEllipseElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGEllipseElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                             | Chrome | Solid            | Voby | Vue | React | VSCode |
 | ----------------------------------------------------- | ------ | ---------------- | ---- | --- | ----- | ------ |
@@ -1447,25 +1447,25 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [rx](https://developer.mozilla.org/en-US/search?q=rx) | ❌     | number \| string | ❌   | ❌  | ❌    | ❌     |
 | [ry](https://developer.mozilla.org/en-US/search?q=ry) | ❌     | number \| string | ❌   | ❌  | ❌    | ❌     |
 
-## [feBlend](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feBlend) - SVGFEBlendElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [feBlend](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feBlend) - [SVGFEBlendElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGFEBlendElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                                 | Chrome | Solid                                                       | Voby | Vue | React | VSCode |
 | --------------------------------------------------------- | ------ | ----------------------------------------------------------- | ---- | --- | ----- | ------ |
 | [mode](https://developer.mozilla.org/en-US/search?q=mode) | ❌     | 'normal' \| 'multiply' \| 'screen' \| 'darken' \| 'lighten' | ❌   | ❌  | ❌    | ❌     |
 
-## [feColorMatrix](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feColorMatrix) - SVGFEColorMatrixElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [feColorMatrix](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feColorMatrix) - [SVGFEColorMatrixElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGFEColorMatrixElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                                     | Chrome | Solid                                                       | Voby | Vue | React | VSCode |
 | ------------------------------------------------------------- | ------ | ----------------------------------------------------------- | ---- | --- | ----- | ------ |
 | [type](https://developer.mozilla.org/en-US/search?q=type)     | ❌     | 'matrix' \| 'saturate' \| 'hueRotate' \| 'luminanceToAlpha' | ❌   | ❌  | ❌    | ❌     |
 | [values](https://developer.mozilla.org/en-US/search?q=values) | ❌     | string                                                      | ❌   | ❌  | ❌    | ❌     |
 
-## [feComponentTransfer](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feComponentTransfer) - SVGFEComponentTransferElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [feComponentTransfer](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feComponentTransfer) - [SVGFEComponentTransferElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGFEComponentTransferElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [feComposite](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feComposite) - SVGFECompositeElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [feComposite](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feComposite) - [SVGFECompositeElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGFECompositeElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                                         | Chrome | Solid                                                      | Voby | Vue | React | VSCode |
 | ----------------------------------------------------------------- | ------ | ---------------------------------------------------------- | ---- | --- | ----- | ------ |
@@ -1475,7 +1475,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [k4](https://developer.mozilla.org/en-US/search?q=k4)             | ❌     | number \| string                                           | ❌   | ❌  | ❌    | ❌     |
 | [operator](https://developer.mozilla.org/en-US/search?q=operator) | ❌     | 'over' \| 'in' \| 'out' \| 'atop' \| 'xor' \| 'arithmetic' | ❌   | ❌  | ❌    | ❌     |
 
-## [feConvolveMatrix](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feConvolveMatrix) - SVGFEConvolveMatrixElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [feConvolveMatrix](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feConvolveMatrix) - [SVGFEConvolveMatrixElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGFEConvolveMatrixElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                                                         | Chrome | Solid                           | Voby | Vue | React | VSCode |
 | --------------------------------------------------------------------------------- | ------ | ------------------------------- | ---- | --- | ----- | ------ |
@@ -1489,7 +1489,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [targetX](https://developer.mozilla.org/en-US/search?q=targetX)                   | ❌     | number \| string                | ❌   | ❌  | ❌    | ❌     |
 | [targetY](https://developer.mozilla.org/en-US/search?q=targetY)                   | ❌     | number \| string                | ❌   | ❌  | ❌    | ❌     |
 
-## [feDiffuseLighting](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feDiffuseLighting) - SVGFEDiffuseLightingElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [feDiffuseLighting](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feDiffuseLighting) - [SVGFEDiffuseLightingElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGFEDiffuseLightingElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                                                         | Chrome | Solid            | Voby | Vue | React | VSCode |
 | --------------------------------------------------------------------------------- | ------ | ---------------- | ---- | --- | ----- | ------ |
@@ -1497,7 +1497,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [kernelUnitLength](https://developer.mozilla.org/en-US/search?q=kernelUnitLength) | ❌     | number \| string | ❌   | ❌  | ❌    | ❌     |
 | [surfaceScale](https://developer.mozilla.org/en-US/search?q=surfaceScale)         | ❌     | number \| string | ❌   | ❌  | ❌    | ❌     |
 
-## [feDisplacementMap](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feDisplacementMap) - SVGFEDisplacementMapElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [feDisplacementMap](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feDisplacementMap) - [SVGFEDisplacementMapElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGFEDisplacementMapElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                                                         | Chrome | Solid                    | Voby | Vue | React | VSCode |
 | --------------------------------------------------------------------------------- | ------ | ------------------------ | ---- | --- | ----- | ------ |
@@ -1505,14 +1505,14 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [xChannelSelector](https://developer.mozilla.org/en-US/search?q=xChannelSelector) | ❌     | 'R' \| 'G' \| 'B' \| 'A' | ❌   | ❌  | ❌    | ❌     |
 | [yChannelSelector](https://developer.mozilla.org/en-US/search?q=yChannelSelector) | ❌     | 'R' \| 'G' \| 'B' \| 'A' | ❌   | ❌  | ❌    | ❌     |
 
-## [feDistantLight](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feDistantLight) - SVGFEDistantLightElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [feDistantLight](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feDistantLight) - [SVGFEDistantLightElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGFEDistantLightElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                                           | Chrome | Solid            | Voby | Vue | React | VSCode |
 | ------------------------------------------------------------------- | ------ | ---------------- | ---- | --- | ----- | ------ |
 | [azimuth](https://developer.mozilla.org/en-US/search?q=azimuth)     | ❌     | number \| string | ❌   | ❌  | ❌    | ❌     |
 | [elevation](https://developer.mozilla.org/en-US/search?q=elevation) | ❌     | number \| string | ❌   | ❌  | ❌    | ❌     |
 
-## [feDropShadow](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feDropShadow) - SVGFEDropShadowElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [feDropShadow](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feDropShadow) - [SVGFEDropShadowElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGFEDropShadowElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                                                 | Chrome | Solid            | Voby | Vue | React | VSCode |
 | ------------------------------------------------------------------------- | ------ | ---------------- | ---- | --- | ----- | ------ |
@@ -1520,12 +1520,12 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [dy](https://developer.mozilla.org/en-US/search?q=dy)                     | ❌     | number \| string | ❌   | ❌  | ❌    | ❌     |
 | [stdDeviation](https://developer.mozilla.org/en-US/search?q=stdDeviation) | ❌     | number \| string | ❌   | ❌  | ❌    | ❌     |
 
-## [feFlood](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFlood) - SVGFEFloodElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [feFlood](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFlood) - [SVGFEFloodElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGFEFloodElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [feFuncA](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFuncA) - SVGFEFuncAElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [feFuncA](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFuncA) - [SVGFEFuncAElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGFEFuncAElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                                               | Chrome | Solid                                                      | Voby | Vue | React | VSCode |
 | ----------------------------------------------------------------------- | ------ | ---------------------------------------------------------- | ---- | --- | ----- | ------ |
@@ -1537,7 +1537,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [tableValues](https://developer.mozilla.org/en-US/search?q=tableValues) | ❌     | string                                                     | ❌   | ❌  | ❌    | ❌     |
 | [type](https://developer.mozilla.org/en-US/search?q=type)               | ❌     | 'identity' \| 'table' \| 'discrete' \| 'linear' \| 'gamma' | ❌   | ❌  | ❌    | ❌     |
 
-## [feFuncB](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFuncB) - SVGFEFuncBElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [feFuncB](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFuncB) - [SVGFEFuncBElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGFEFuncBElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                                               | Chrome | Solid                                                      | Voby | Vue | React | VSCode |
 | ----------------------------------------------------------------------- | ------ | ---------------------------------------------------------- | ---- | --- | ----- | ------ |
@@ -1549,7 +1549,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [tableValues](https://developer.mozilla.org/en-US/search?q=tableValues) | ❌     | string                                                     | ❌   | ❌  | ❌    | ❌     |
 | [type](https://developer.mozilla.org/en-US/search?q=type)               | ❌     | 'identity' \| 'table' \| 'discrete' \| 'linear' \| 'gamma' | ❌   | ❌  | ❌    | ❌     |
 
-## [feFuncG](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFuncG) - SVGFEFuncGElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [feFuncG](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFuncG) - [SVGFEFuncGElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGFEFuncGElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                                               | Chrome | Solid                                                      | Voby | Vue | React | VSCode |
 | ----------------------------------------------------------------------- | ------ | ---------------------------------------------------------- | ---- | --- | ----- | ------ |
@@ -1561,7 +1561,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [tableValues](https://developer.mozilla.org/en-US/search?q=tableValues) | ❌     | string                                                     | ❌   | ❌  | ❌    | ❌     |
 | [type](https://developer.mozilla.org/en-US/search?q=type)               | ❌     | 'identity' \| 'table' \| 'discrete' \| 'linear' \| 'gamma' | ❌   | ❌  | ❌    | ❌     |
 
-## [feFuncR](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFuncR) - SVGFEFuncRElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [feFuncR](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFuncR) - [SVGFEFuncRElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGFEFuncRElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                                               | Chrome | Solid                                                      | Voby | Vue | React | VSCode |
 | ----------------------------------------------------------------------- | ------ | ---------------------------------------------------------- | ---- | --- | ----- | ------ |
@@ -1573,44 +1573,44 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [tableValues](https://developer.mozilla.org/en-US/search?q=tableValues) | ❌     | string                                                     | ❌   | ❌  | ❌    | ❌     |
 | [type](https://developer.mozilla.org/en-US/search?q=type)               | ❌     | 'identity' \| 'table' \| 'discrete' \| 'linear' \| 'gamma' | ❌   | ❌  | ❌    | ❌     |
 
-## [feGaussianBlur](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feGaussianBlur) - SVGFEGaussianBlurElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [feGaussianBlur](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feGaussianBlur) - [SVGFEGaussianBlurElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGFEGaussianBlurElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                                                 | Chrome | Solid            | Voby | Vue | React | VSCode |
 | ------------------------------------------------------------------------- | ------ | ---------------- | ---- | --- | ----- | ------ |
 | [stdDeviation](https://developer.mozilla.org/en-US/search?q=stdDeviation) | ❌     | number \| string | ❌   | ❌  | ❌    | ❌     |
 
-## [feImage](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feImage) - SVGFEImageElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [feImage](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feImage) - [SVGFEImageElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGFEImageElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                                                               | Chrome | Solid                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | Voby | Vue | React | VSCode |
 | --------------------------------------------------------------------------------------- | ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- | --- | ----- | ------ |
 | [href](https://developer.mozilla.org/en-US/search?q=href)                               | ❌     | string                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | ❌   | ❌  | ❌    | ❌     |
 | [preserveAspectRatio](https://developer.mozilla.org/en-US/search?q=preserveAspectRatio) | ❌     | 'none' \| 'xMinYMin' \| 'xMidYMin' \| 'xMaxYMin' \| 'xMinYMid' \| 'xMidYMid' \| 'xMaxYMid' \| 'xMinYMax' \| 'xMidYMax' \| 'xMaxYMax' \| 'xMinYMin meet' \| 'xMidYMin meet' \| 'xMaxYMin meet' \| 'xMinYMid meet' \| 'xMidYMid meet' \| 'xMaxYMid meet' \| 'xMinYMax meet' \| 'xMidYMax meet' \| 'xMaxYMax meet' \| 'xMinYMin slice' \| 'xMidYMin slice' \| 'xMaxYMin slice' \| 'xMinYMid slice' \| 'xMidYMid slice' \| 'xMaxYMid slice' \| 'xMinYMax slice' \| 'xMidYMax slice' \| 'xMaxYMax slice' | ❌   | ❌  | ❌    | ❌     |
 
-## [feMerge](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feMerge) - SVGFEMergeElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [feMerge](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feMerge) - [SVGFEMergeElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGFEMergeElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [feMergeNode](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feMergeNode) - SVGFEMergeNodeElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [feMergeNode](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feMergeNode) - [SVGFEMergeNodeElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGFEMergeNodeElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [feMorphology](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feMorphology) - SVGFEMorphologyElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [feMorphology](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feMorphology) - [SVGFEMorphologyElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGFEMorphologyElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                                         | Chrome | Solid               | Voby | Vue | React | VSCode |
 | ----------------------------------------------------------------- | ------ | ------------------- | ---- | --- | ----- | ------ |
 | [operator](https://developer.mozilla.org/en-US/search?q=operator) | ❌     | 'erode' \| 'dilate' | ❌   | ❌  | ❌    | ❌     |
 | [radius](https://developer.mozilla.org/en-US/search?q=radius)     | ❌     | number \| string    | ❌   | ❌  | ❌    | ❌     |
 
-## [feOffset](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feOffset) - SVGFEOffsetElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [feOffset](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feOffset) - [SVGFEOffsetElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGFEOffsetElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                             | Chrome | Solid            | Voby | Vue | React | VSCode |
 | ----------------------------------------------------- | ------ | ---------------- | ---- | --- | ----- | ------ |
 | [dx](https://developer.mozilla.org/en-US/search?q=dx) | ❌     | number \| string | ❌   | ❌  | ❌    | ❌     |
 | [dy](https://developer.mozilla.org/en-US/search?q=dy) | ❌     | number \| string | ❌   | ❌  | ❌    | ❌     |
 
-## [fePointLight](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/fePointLight) - SVGFEPointLightElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [fePointLight](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/fePointLight) - [SVGFEPointLightElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGFEPointLightElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                           | Chrome | Solid            | Voby | Vue | React | VSCode |
 | --------------------------------------------------- | ------ | ---------------- | ---- | --- | ----- | ------ |
@@ -1618,7 +1618,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [y](https://developer.mozilla.org/en-US/search?q=y) | ❌     | number \| string | ❌   | ❌  | ❌    | ❌     |
 | [z](https://developer.mozilla.org/en-US/search?q=z) | ❌     | number \| string | ❌   | ❌  | ❌    | ❌     |
 
-## [feSpecularLighting](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feSpecularLighting) - SVGFESpecularLightingElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [feSpecularLighting](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feSpecularLighting) - [SVGFESpecularLightingElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGFESpecularLightingElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                                                         | Chrome | Solid            | Voby | Vue | React | VSCode |
 | --------------------------------------------------------------------------------- | ------ | ---------------- | ---- | --- | ----- | ------ |
@@ -1627,7 +1627,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [specularExponent](https://developer.mozilla.org/en-US/search?q=specularExponent) | ❌     | string           | ❌   | ❌  | ❌    | ❌     |
 | [surfaceScale](https://developer.mozilla.org/en-US/search?q=surfaceScale)         | ❌     | string           | ❌   | ❌  | ❌    | ❌     |
 
-## [feSpotLight](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feSpotLight) - SVGFESpotLightElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [feSpotLight](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feSpotLight) - [SVGFESpotLightElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGFESpotLightElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                                                           | Chrome | Solid            | Voby | Vue | React | VSCode |
 | ----------------------------------------------------------------------------------- | ------ | ---------------- | ---- | --- | ----- | ------ |
@@ -1640,12 +1640,12 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [y](https://developer.mozilla.org/en-US/search?q=y)                                 | ❌     | number \| string | ❌   | ❌  | ❌    | ❌     |
 | [z](https://developer.mozilla.org/en-US/search?q=z)                                 | ❌     | number \| string | ❌   | ❌  | ❌    | ❌     |
 
-## [feTile](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feTile) - SVGFETileElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [feTile](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feTile) - [SVGFETileElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGFETileElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [feTurbulence](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feTurbulence) - SVGFETurbulenceElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [feTurbulence](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feTurbulence) - [SVGFETurbulenceElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGFETurbulenceElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                                                   | Chrome | Solid                          | Voby | Vue | React | VSCode |
 | --------------------------------------------------------------------------- | ------ | ------------------------------ | ---- | --- | ----- | ------ |
@@ -1655,7 +1655,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [stitchTiles](https://developer.mozilla.org/en-US/search?q=stitchTiles)     | ❌     | 'stitch' \| 'noStitch'         | ❌   | ❌  | ❌    | ❌     |
 | [type](https://developer.mozilla.org/en-US/search?q=type)                   | ❌     | 'fractalNoise' \| 'turbulence' | ❌   | ❌  | ❌    | ❌     |
 
-## [filter](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/filter) - SVGFilterElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [filter](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/filter) - [SVGFilterElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGFilterElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                                                     | Chrome | Solid                                   | Voby | Vue | React | VSCode |
 | ----------------------------------------------------------------------------- | ------ | --------------------------------------- | ---- | --- | ----- | ------ |
@@ -1667,7 +1667,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [x](https://developer.mozilla.org/en-US/search?q=x)                           | ❌     | number \| string                        | ❌   | ❌  | ❌    | ❌     |
 | [y](https://developer.mozilla.org/en-US/search?q=y)                           | ❌     | number \| string                        | ❌   | ❌  | ❌    | ❌     |
 
-## [foreignObject](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/foreignObject) - SVGForeignObjectElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [foreignObject](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/foreignObject) - [SVGForeignObjectElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGForeignObjectElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                                     | Chrome | Solid            | Voby | Vue | React | VSCode |
 | ------------------------------------------------------------- | ------ | ---------------- | ---- | --- | ----- | ------ |
@@ -1676,12 +1676,12 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [x](https://developer.mozilla.org/en-US/search?q=x)           | ❌     | number \| string | ❌   | ❌  | ❌    | ❌     |
 | [y](https://developer.mozilla.org/en-US/search?q=y)           | ❌     | number \| string | ❌   | ❌  | ❌    | ❌     |
 
-## [g](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/g) - SVGGElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [g](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/g) - [SVGGElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGGElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [image](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/image) - SVGImageElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [image](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/image) - [SVGImageElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGImageElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                                                               | Chrome | Solid                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | Voby | Vue | React | VSCode |
 | --------------------------------------------------------------------------------------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- | --- | ----- | ------ |
@@ -1694,7 +1694,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [x](https://developer.mozilla.org/en-US/search?q=x)                                     | ❌     | number \| string                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | ❌   | ❌  | ❌    | ❌     |
 | [y](https://developer.mozilla.org/en-US/search?q=y)                                     | ❌     | number \| string                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | ❌   | ❌  | ❌    | ❌     |
 
-## [line](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/line) - SVGLineElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [line](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/line) - [SVGLineElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGLineElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                             | Chrome | Solid            | Voby | Vue | React | VSCode |
 | ----------------------------------------------------- | ------ | ---------------- | ---- | --- | ----- | ------ |
@@ -1703,7 +1703,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [y1](https://developer.mozilla.org/en-US/search?q=y1) | ❌     | number \| string | ❌   | ❌  | ❌    | ❌     |
 | [y2](https://developer.mozilla.org/en-US/search?q=y2) | ❌     | number \| string | ❌   | ❌  | ❌    | ❌     |
 
-## [linearGradient](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/linearGradient) - SVGLinearGradientElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [linearGradient](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/linearGradient) - [SVGLinearGradientElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGLinearGradientElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                             | Chrome | Solid            | Voby | Vue | React | VSCode |
 | ----------------------------------------------------- | ------ | ---------------- | ---- | --- | ----- | ------ |
@@ -1712,7 +1712,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [y1](https://developer.mozilla.org/en-US/search?q=y1) | ❌     | number \| string | ❌   | ❌  | ❌    | ❌     |
 | [y2](https://developer.mozilla.org/en-US/search?q=y2) | ❌     | number \| string | ❌   | ❌  | ❌    | ❌     |
 
-## [marker](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/marker) - SVGMarkerElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [marker](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/marker) - [SVGMarkerElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGMarkerElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                                                 | Chrome | Solid                             | Voby | Vue | React | VSCode |
 | ------------------------------------------------------------------------- | ------ | --------------------------------- | ---- | --- | ----- | ------ |
@@ -1723,7 +1723,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [refX](https://developer.mozilla.org/en-US/search?q=refX)                 | ❌     | number \| string                  | ❌   | ❌  | ❌    | ❌     |
 | [refY](https://developer.mozilla.org/en-US/search?q=refY)                 | ❌     | number \| string                  | ❌   | ❌  | ❌    | ❌     |
 
-## [mask](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/mask) - SVGMaskElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [mask](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/mask) - [SVGMaskElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGMaskElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                                                         | Chrome | Solid                                   | Voby | Vue | React | VSCode |
 | --------------------------------------------------------------------------------- | ------ | --------------------------------------- | ---- | --- | ----- | ------ |
@@ -1734,24 +1734,24 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [x](https://developer.mozilla.org/en-US/search?q=x)                               | ❌     | number \| string                        | ❌   | ❌  | ❌    | ❌     |
 | [y](https://developer.mozilla.org/en-US/search?q=y)                               | ❌     | number \| string                        | ❌   | ❌  | ❌    | ❌     |
 
-## [metadata](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/metadata) - SVGMetadataElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [metadata](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/metadata) - [SVGMetadataElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGMetadataElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [mpath](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/mpath) - SVGMPathElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [mpath](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/mpath) - [SVGMPathElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGMPathElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [path](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/path) - SVGPathElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [path](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/path) - [SVGPathElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGPathElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                                             | Chrome | Solid            | Voby | Vue | React | VSCode |
 | --------------------------------------------------------------------- | ------ | ---------------- | ---- | --- | ----- | ------ |
 | [d](https://developer.mozilla.org/en-US/search?q=d)                   | ❌     | string           | ❌   | ❌  | ❌    | ❌     |
 | [pathLength](https://developer.mozilla.org/en-US/search?q=pathLength) | ❌     | number \| string | ❌   | ❌  | ❌    | ❌     |
 
-## [pattern](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/pattern) - SVGPatternElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [pattern](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/pattern) - [SVGPatternElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGPatternElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                                                               | Chrome | Solid                                   | Voby | Vue | React | VSCode |
 | --------------------------------------------------------------------------------------- | ------ | --------------------------------------- | ---- | --- | ----- | ------ |
@@ -1764,19 +1764,19 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [x](https://developer.mozilla.org/en-US/search?q=x)                                     | ❌     | number \| string                        | ❌   | ❌  | ❌    | ❌     |
 | [y](https://developer.mozilla.org/en-US/search?q=y)                                     | ❌     | number \| string                        | ❌   | ❌  | ❌    | ❌     |
 
-## [polygon](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/polygon) - SVGPolygonElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [polygon](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/polygon) - [SVGPolygonElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGPolygonElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                                     | Chrome | Solid  | Voby | Vue | React | VSCode |
 | ------------------------------------------------------------- | ------ | ------ | ---- | --- | ----- | ------ |
 | [points](https://developer.mozilla.org/en-US/search?q=points) | ❌     | string | ❌   | ❌  | ❌    | ❌     |
 
-## [polyline](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/polyline) - SVGPolylineElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [polyline](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/polyline) - [SVGPolylineElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGPolylineElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                                     | Chrome | Solid  | Voby | Vue | React | VSCode |
 | ------------------------------------------------------------- | ------ | ------ | ---- | --- | ----- | ------ |
 | [points](https://developer.mozilla.org/en-US/search?q=points) | ❌     | string | ❌   | ❌  | ❌    | ❌     |
 
-## [radialGradient](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/radialGradient) - SVGRadialGradientElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [radialGradient](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/radialGradient) - [SVGRadialGradientElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGRadialGradientElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                             | Chrome | Solid            | Voby | Vue | React | VSCode |
 | ----------------------------------------------------- | ------ | ---------------- | ---- | --- | ----- | ------ |
@@ -1786,7 +1786,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [fy](https://developer.mozilla.org/en-US/search?q=fy) | ❌     | number \| string | ❌   | ❌  | ❌    | ❌     |
 | [r](https://developer.mozilla.org/en-US/search?q=r)   | ❌     | number \| string | ❌   | ❌  | ❌    | ❌     |
 
-## [rect](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/rect) - SVGRectElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [rect](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/rect) - [SVGRectElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGRectElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                                     | Chrome | Solid            | Voby | Vue | React | VSCode |
 | ------------------------------------------------------------- | ------ | ---------------- | ---- | --- | ----- | ------ |
@@ -1797,7 +1797,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [x](https://developer.mozilla.org/en-US/search?q=x)           | ❌     | number \| string | ❌   | ❌  | ❌    | ❌     |
 | [y](https://developer.mozilla.org/en-US/search?q=y)           | ❌     | number \| string | ❌   | ❌  | ❌    | ❌     |
 
-## [script](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/script) - SVGScriptElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [script](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/script) - [SVGScriptElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGScriptElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                                                     | Chrome  | Solid                                                                                                                                                                            | Voby                                                                                                                                                                                   | Vue                                                                                                                                                                                    | React                                                                                                                                                                                  | VSCode                           |
 | ----------------------------------------------------------------------------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- |
@@ -1822,18 +1822,18 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [text](https://developer.mozilla.org/en-US/search?q=text)                     | ❌      | ❌                                                                                                                                                                               | ❌                                                                                                                                                                                     | ❌                                                                                                                                                                                     | ❌                                                                                                                                                                                     | string                           |
 | [type](https://developer.mozilla.org/en-US/search?q=type)                     | string  | string                                                                                                                                                                           | string                                                                                                                                                                                 | string                                                                                                                                                                                 | string                                                                                                                                                                                 | string                           |
 
-## [set](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/set) - SVGSetElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [set](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/set) - [SVGSetElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGSetElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [stop](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/stop) - SVGStopElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [stop](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/stop) - [SVGStopElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGStopElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                                     | Chrome | Solid            | Voby | Vue | React | VSCode |
 | ------------------------------------------------------------- | ------ | ---------------- | ---- | --- | ----- | ------ |
 | [offset](https://developer.mozilla.org/en-US/search?q=offset) | ❌     | number \| string | ❌   | ❌  | ❌    | ❌     |
 
-## [style](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/style) - SVGStyleElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [style](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/style) - [SVGStyleElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGStyleElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                                         | Chrome | Solid   | Voby    | Vue                          | React   | VSCode  |
 | ----------------------------------------------------------------- | ------ | ------- | ------- | ---------------------------- | ------- | ------- |
@@ -1844,7 +1844,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [title](https://developer.mozilla.org/en-US/search?q=title)       | string | ❌      | ❌      | ❌                           | ❌      | string  |
 | [type](https://developer.mozilla.org/en-US/search?q=type)         | string | string  | string  | string                       | string  | string  |
 
-## [svg](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/svg) - SVGSVGElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [svg](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/svg) - [SVGSVGElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                                                           | Chrome | Solid            | Voby | Vue | React | VSCode |
 | ----------------------------------------------------------------------------------- | ------ | ---------------- | ---- | --- | ----- | ------ |
@@ -1859,12 +1859,12 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [xmlns](https://developer.mozilla.org/en-US/search?q=xmlns)                         | ❌     | string           | ❌   | ❌  | ❌    | ❌     |
 | [y](https://developer.mozilla.org/en-US/search?q=y)                                 | ❌     | number \| string | ❌   | ❌  | ❌    | ❌     |
 
-## [switch](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/switch) - SVGSwitchElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [switch](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/switch) - [SVGSwitchElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGSwitchElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [symbol](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/symbol) - SVGSymbolElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [symbol](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/symbol) - [SVGSymbolElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGSymbolElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                                                               | Chrome | Solid                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | Voby | Vue | React | VSCode |
 | --------------------------------------------------------------------------------------- | ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- | --- | ----- | ------ |
@@ -1877,7 +1877,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [x](https://developer.mozilla.org/en-US/search?q=x)                                     | ❌     | number \| string                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | ❌   | ❌  | ❌    | ❌     |
 | [y](https://developer.mozilla.org/en-US/search?q=y)                                     | ❌     | number \| string                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | ❌   | ❌  | ❌    | ❌     |
 
-## [text](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/text) - SVGTextElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [text](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/text) - [SVGTextElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGTextElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                                                 | Chrome | Solid                           | Voby | Vue | React | VSCode |
 | ------------------------------------------------------------------------- | ------ | ------------------------------- | ---- | --- | ----- | ------ |
@@ -1889,7 +1889,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [x](https://developer.mozilla.org/en-US/search?q=x)                       | ❌     | number \| string                | ❌   | ❌  | ❌    | ❌     |
 | [y](https://developer.mozilla.org/en-US/search?q=y)                       | ❌     | number \| string                | ❌   | ❌  | ❌    | ❌     |
 
-## [textPath](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/textPath) - SVGTextPathElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [textPath](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/textPath) - [SVGTextPathElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGTextPathElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                                               | Chrome | Solid                | Voby | Vue | React | VSCode |
 | ----------------------------------------------------------------------- | ------ | -------------------- | ---- | --- | ----- | ------ |
@@ -1898,12 +1898,12 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [spacing](https://developer.mozilla.org/en-US/search?q=spacing)         | ❌     | 'auto' \| 'exact'    | ❌   | ❌  | ❌    | ❌     |
 | [startOffset](https://developer.mozilla.org/en-US/search?q=startOffset) | ❌     | number \| string     | ❌   | ❌  | ❌    | ❌     |
 
-## [title](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/title) - SVGTitleElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [title](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/title) - [SVGTitleElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGTitleElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [tspan](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/tspan) - SVGTSpanElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [tspan](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/tspan) - [SVGTSpanElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGTSpanElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                                                 | Chrome | Solid                           | Voby | Vue | React | VSCode |
 | ------------------------------------------------------------------------- | ------ | ------------------------------- | ---- | --- | ----- | ------ |
@@ -1915,7 +1915,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [x](https://developer.mozilla.org/en-US/search?q=x)                       | ❌     | number \| string                | ❌   | ❌  | ❌    | ❌     |
 | [y](https://developer.mozilla.org/en-US/search?q=y)                       | ❌     | number \| string                | ❌   | ❌  | ❌    | ❌     |
 
-## [use](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/use) - SVGUseElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [use](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/use) - [SVGUseElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGUseElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                                     | Chrome | Solid            | Voby | Vue | React | VSCode |
 | ------------------------------------------------------------- | ------ | ---------------- | ---- | --- | ----- | ------ |
@@ -1925,45 +1925,45 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [x](https://developer.mozilla.org/en-US/search?q=x)           | ❌     | number \| string | ❌   | ❌  | ❌    | ❌     |
 | [y](https://developer.mozilla.org/en-US/search?q=y)           | ❌     | number \| string | ❌   | ❌  | ❌    | ❌     |
 
-## [view](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/view) - SVGViewElement - deprecated: false - ns: http://www.w3.org/2000/svg
+## [view](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/view) - [SVGViewElement](https://developer.mozilla.org/en-US/docs/Web/API/SVGViewElement) - deprecated: false - ns: http://www.w3.org/2000/svg
 
 | attribute                                                             | Chrome | Solid  | Voby | Vue | React | VSCode |
 | --------------------------------------------------------------------- | ------ | ------ | ---- | --- | ----- | ------ |
 | [viewTarget](https://developer.mozilla.org/en-US/search?q=viewTarget) | ❌     | string | ❌   | ❌  | ❌    | ❌     |
 
-## [annotation](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/annotation) - MathMLElement - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
+## [annotation](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/annotation) - [MathMLElement](https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement) - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
 
 | attribute                                                         | Chrome | Solid | Voby | Vue | React | VSCode |
 | ----------------------------------------------------------------- | ------ | ----- | ---- | --- | ----- | ------ |
 | [encoding](https://developer.mozilla.org/en-US/search?q=encoding) | ❌     | ❌    | ❌   | ❌  | ❌    | ❌     |
 | [src](https://developer.mozilla.org/en-US/search?q=src)           | ❌     | ❌    | ❌   | ❌  | ❌    | ❌     |
 
-## [annotation-xml](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/annotation-xml) - MathMLElement - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
+## [annotation-xml](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/annotation-xml) - [MathMLElement](https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement) - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
 
 | attribute                                                         | Chrome | Solid | Voby | Vue | React | VSCode |
 | ----------------------------------------------------------------- | ------ | ----- | ---- | --- | ----- | ------ |
 | [encoding](https://developer.mozilla.org/en-US/search?q=encoding) | ❌     | ❌    | ❌   | ❌  | ❌    | ❌     |
 | [src](https://developer.mozilla.org/en-US/search?q=src)           | ❌     | ❌    | ❌   | ❌  | ❌    | ❌     |
 
-## [maction](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/maction) - MathMLElement - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
+## [maction](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/maction) - [MathMLElement](https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement) - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
 
 | attribute                                                             | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------------------------------------------------------------------- | ------ | ----- | ---- | --- | ----- | ------ |
 | [actiontype](https://developer.mozilla.org/en-US/search?q=actiontype) | ❌     | ❌    | ❌   | ❌  | ❌    | ❌     |
 | [selection](https://developer.mozilla.org/en-US/search?q=selection)   | ❌     | ❌    | ❌   | ❌  | ❌    | ❌     |
 
-## [math](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/math) - MathMLElement - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
+## [math](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/math) - [MathMLElement](https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement) - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
 
 | attribute                                                       | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------------------------------------------------------------- | ------ | ----- | ---- | --- | ----- | ------ |
 | [display](https://developer.mozilla.org/en-US/search?q=display) | ❌     | ❌    | ❌   | ❌  | ❌    | ❌     |
 
-## [merror](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/merror) - MathMLElement - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
+## [merror](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/merror) - [MathMLElement](https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement) - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [mfrac](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mfrac) - MathMLElement - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
+## [mfrac](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mfrac) - [MathMLElement](https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement) - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
 
 | attribute                                                                   | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------------------------------------------------------------------------- | ------ | ----- | ---- | --- | ----- | ------ |
@@ -1971,25 +1971,25 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [linethickness](https://developer.mozilla.org/en-US/search?q=linethickness) | ❌     | ❌    | ❌   | ❌  | ❌    | ❌     |
 | [numalign](https://developer.mozilla.org/en-US/search?q=numalign)           | ❌     | ❌    | ❌   | ❌  | ❌    | ❌     |
 
-## [mi](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mi) - MathMLElement - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
+## [mi](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mi) - [MathMLElement](https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement) - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
 
 | attribute                                                               | Chrome | Solid | Voby | Vue | React | VSCode |
 | ----------------------------------------------------------------------- | ------ | ----- | ---- | --- | ----- | ------ |
 | [mathvariant](https://developer.mozilla.org/en-US/search?q=mathvariant) | ❌     | ❌    | ❌   | ❌  | ❌    | ❌     |
 
-## [mmultiscripts](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mmultiscripts) - MathMLElement - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
+## [mmultiscripts](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mmultiscripts) - [MathMLElement](https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement) - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
 
 | attribute                                                                         | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------------------------------------------------------------------------------- | ------ | ----- | ---- | --- | ----- | ------ |
 | [subscriptshift](https://developer.mozilla.org/en-US/search?q=subscriptshift)     | ❌     | ❌    | ❌   | ❌  | ❌    | ❌     |
 | [superscriptshift](https://developer.mozilla.org/en-US/search?q=superscriptshift) | ❌     | ❌    | ❌   | ❌  | ❌    | ❌     |
 
-## [mn](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mn) - MathMLElement - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
+## [mn](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mn) - [MathMLElement](https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement) - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [mo](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mo) - MathMLElement - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
+## [mo](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mo) - [MathMLElement](https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement) - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
 
 | attribute                                                                   | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------------------------------------------------------------------------- | ------ | ----- | ---- | --- | ----- | ------ |
@@ -2005,13 +2005,13 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [stretchy](https://developer.mozilla.org/en-US/search?q=stretchy)           | ❌     | ❌    | ❌   | ❌  | ❌    | ❌     |
 | [symmetric](https://developer.mozilla.org/en-US/search?q=symmetric)         | ❌     | ❌    | ❌   | ❌  | ❌    | ❌     |
 
-## [mover](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mover) - MathMLElement - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
+## [mover](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mover) - [MathMLElement](https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement) - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
 
 | attribute                                                     | Chrome | Solid | Voby | Vue | React | VSCode |
 | ------------------------------------------------------------- | ------ | ----- | ---- | --- | ----- | ------ |
 | [accent](https://developer.mozilla.org/en-US/search?q=accent) | ❌     | ❌    | ❌   | ❌  | ❌    | ❌     |
 
-## [mpadded](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mpadded) - MathMLElement - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
+## [mpadded](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mpadded) - [MathMLElement](https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement) - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
 
 | attribute                                                       | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------------------------------------------------------------- | ------ | ----- | ---- | --- | ----- | ------ |
@@ -2021,34 +2021,34 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [voffset](https://developer.mozilla.org/en-US/search?q=voffset) | ❌     | ❌    | ❌   | ❌  | ❌    | ❌     |
 | [width](https://developer.mozilla.org/en-US/search?q=width)     | ❌     | ❌    | ❌   | ❌  | ❌    | ❌     |
 
-## [mphantom](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mphantom) - MathMLElement - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
+## [mphantom](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mphantom) - [MathMLElement](https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement) - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [mprescripts](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mprescripts) - MathMLElement - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
+## [mprescripts](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mprescripts) - [MathMLElement](https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement) - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [mroot](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mroot) - MathMLElement - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
+## [mroot](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mroot) - [MathMLElement](https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement) - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [mrow](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mrow) - MathMLElement - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
+## [mrow](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mrow) - [MathMLElement](https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement) - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [ms](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/ms) - MathMLElement - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
+## [ms](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/ms) - [MathMLElement](https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement) - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
 
 | attribute                                                     | Chrome | Solid | Voby | Vue | React | VSCode |
 | ------------------------------------------------------------- | ------ | ----- | ---- | --- | ----- | ------ |
 | [lquote](https://developer.mozilla.org/en-US/search?q=lquote) | ❌     | ❌    | ❌   | ❌  | ❌    | ❌     |
 | [rquote](https://developer.mozilla.org/en-US/search?q=rquote) | ❌     | ❌    | ❌   | ❌  | ❌    | ❌     |
 
-## [mspace](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mspace) - MathMLElement - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
+## [mspace](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mspace) - [MathMLElement](https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement) - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
 
 | attribute                                                     | Chrome | Solid | Voby | Vue | React | VSCode |
 | ------------------------------------------------------------- | ------ | ----- | ---- | --- | ----- | ------ |
@@ -2056,12 +2056,12 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [height](https://developer.mozilla.org/en-US/search?q=height) | ❌     | ❌    | ❌   | ❌  | ❌    | ❌     |
 | [width](https://developer.mozilla.org/en-US/search?q=width)   | ❌     | ❌    | ❌   | ❌  | ❌    | ❌     |
 
-## [msqrt](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/msqrt) - MathMLElement - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
+## [msqrt](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/msqrt) - [MathMLElement](https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement) - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [mstyle](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mstyle) - MathMLElement - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
+## [mstyle](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mstyle) - [MathMLElement](https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement) - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
 
 | attribute                                                                                 | Chrome | Solid | Voby | Vue | React | VSCode |
 | ----------------------------------------------------------------------------------------- | ------ | ----- | ---- | --- | ----- | ------ |
@@ -2073,26 +2073,26 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [scriptminsize](https://developer.mozilla.org/en-US/search?q=scriptminsize)               | ❌     | ❌    | ❌   | ❌  | ❌    | ❌     |
 | [scriptsizemultiplier](https://developer.mozilla.org/en-US/search?q=scriptsizemultiplier) | ❌     | ❌    | ❌   | ❌  | ❌    | ❌     |
 
-## [msub](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/msub) - MathMLElement - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
+## [msub](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/msub) - [MathMLElement](https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement) - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
 
 | attribute                                                                     | Chrome | Solid | Voby | Vue | React | VSCode |
 | ----------------------------------------------------------------------------- | ------ | ----- | ---- | --- | ----- | ------ |
 | [subscriptshift](https://developer.mozilla.org/en-US/search?q=subscriptshift) | ❌     | ❌    | ❌   | ❌  | ❌    | ❌     |
 
-## [msubsup](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/msubsup) - MathMLElement - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
+## [msubsup](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/msubsup) - [MathMLElement](https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement) - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
 
 | attribute                                                                         | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------------------------------------------------------------------------------- | ------ | ----- | ---- | --- | ----- | ------ |
 | [subscriptshift](https://developer.mozilla.org/en-US/search?q=subscriptshift)     | ❌     | ❌    | ❌   | ❌  | ❌    | ❌     |
 | [superscriptshift](https://developer.mozilla.org/en-US/search?q=superscriptshift) | ❌     | ❌    | ❌   | ❌  | ❌    | ❌     |
 
-## [msup](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/msup) - MathMLElement - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
+## [msup](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/msup) - [MathMLElement](https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement) - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
 
 | attribute                                                                         | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------------------------------------------------------------------------------- | ------ | ----- | ---- | --- | ----- | ------ |
 | [superscriptshift](https://developer.mozilla.org/en-US/search?q=superscriptshift) | ❌     | ❌    | ❌   | ❌  | ❌    | ❌     |
 
-## [mtable](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mtable) - MathMLElement - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
+## [mtable](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mtable) - [MathMLElement](https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement) - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
 
 | attribute                                                                   | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------------------------------------------------------------------------- | ------ | ----- | ---- | --- | ----- | ------ |
@@ -2107,7 +2107,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [rowspacing](https://developer.mozilla.org/en-US/search?q=rowspacing)       | ❌     | ❌    | ❌   | ❌  | ❌    | ❌     |
 | [width](https://developer.mozilla.org/en-US/search?q=width)                 | ❌     | ❌    | ❌   | ❌  | ❌    | ❌     |
 
-## [mtd](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mtd) - MathMLElement - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
+## [mtd](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mtd) - [MathMLElement](https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement) - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
 
 | attribute                                                               | Chrome | Solid | Voby | Vue | React | VSCode |
 | ----------------------------------------------------------------------- | ------ | ----- | ---- | --- | ----- | ------ |
@@ -2116,43 +2116,43 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 | [rowalign](https://developer.mozilla.org/en-US/search?q=rowalign)       | ❌     | ❌    | ❌   | ❌  | ❌    | ❌     |
 | [rowspan](https://developer.mozilla.org/en-US/search?q=rowspan)         | ❌     | ❌    | ❌   | ❌  | ❌    | ❌     |
 
-## [mtext](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mtext) - MathMLElement - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
+## [mtext](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mtext) - [MathMLElement](https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement) - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [mtr](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mtr) - MathMLElement - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
+## [mtr](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mtr) - [MathMLElement](https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement) - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
 
 | attribute                                                               | Chrome | Solid | Voby | Vue | React | VSCode |
 | ----------------------------------------------------------------------- | ------ | ----- | ---- | --- | ----- | ------ |
 | [columnalign](https://developer.mozilla.org/en-US/search?q=columnalign) | ❌     | ❌    | ❌   | ❌  | ❌    | ❌     |
 | [rowalign](https://developer.mozilla.org/en-US/search?q=rowalign)       | ❌     | ❌    | ❌   | ❌  | ❌    | ❌     |
 
-## [munder](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/munder) - MathMLElement - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
+## [munder](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/munder) - [MathMLElement](https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement) - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
 
 | attribute                                                               | Chrome | Solid | Voby | Vue | React | VSCode |
 | ----------------------------------------------------------------------- | ------ | ----- | ---- | --- | ----- | ------ |
 | [accentunder](https://developer.mozilla.org/en-US/search?q=accentunder) | ❌     | ❌    | ❌   | ❌  | ❌    | ❌     |
 
-## [munderover](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/munderover) - MathMLElement - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
+## [munderover](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/munderover) - [MathMLElement](https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement) - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
 
 | attribute                                                               | Chrome | Solid | Voby | Vue | React | VSCode |
 | ----------------------------------------------------------------------- | ------ | ----- | ---- | --- | ----- | ------ |
 | [accent](https://developer.mozilla.org/en-US/search?q=accent)           | ❌     | ❌    | ❌   | ❌  | ❌    | ❌     |
 | [accentunder](https://developer.mozilla.org/en-US/search?q=accentunder) | ❌     | ❌    | ❌   | ❌  | ❌    | ❌     |
 
-## [semantics](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/semantics) - MathMLElement - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
+## [semantics](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/semantics) - [MathMLElement](https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement) - deprecated: false - ns: http://www.w3.org/1998/Math/MathML
 
 | attribute | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------- | ------ | ----- | ---- | --- | ----- | ------ |
 
-## [menclose](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/menclose) - MathMLElement - deprecated: true - ns: http://www.w3.org/1998/Math/MathML
+## [menclose](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/menclose) - [MathMLElement](https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement) - deprecated: true - ns: http://www.w3.org/1998/Math/MathML
 
 | attribute                                                         | Chrome | Solid | Voby | Vue | React | VSCode |
 | ----------------------------------------------------------------- | ------ | ----- | ---- | --- | ----- | ------ |
 | [notation](https://developer.mozilla.org/en-US/search?q=notation) | ❌     | ❌    | ❌   | ❌  | ❌    | ❌     |
 
-## [mfenced](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mfenced) - MathMLElement - deprecated: true - ns: http://www.w3.org/1998/Math/MathML
+## [mfenced](https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mfenced) - [MathMLElement](https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement) - deprecated: true - ns: http://www.w3.org/1998/Math/MathML
 
 | attribute                                                             | Chrome | Solid | Voby | Vue | React | VSCode |
 | --------------------------------------------------------------------- | ------ | ----- | ---- | --- | ----- | ------ |

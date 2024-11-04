@@ -468,7 +468,7 @@ const columns = ['Chrome', 'Solid', 'Voby', 'Vue', 'React', 'VSCode']
 
 for (const ns in DATA.elements) {
 	for (const [tag, value] of Object.entries(DATA.elements[ns])) {
-		attributesPropertiesTable += `\n\n## [${tag}](${value.url}) - ${value.interface} - deprecated: ${value.deprecated} - ns: ${ns}`
+		attributesPropertiesTable += `\n\n## [${tag}](${value.url}) - [${value.interface}](https://developer.mozilla.org/en-US/docs/Web/API/${value.interface}) - deprecated: ${value.deprecated} - ns: ${ns}`
 
 		// headings
 		attributesPropertiesTable += `\n\n| attribute `
