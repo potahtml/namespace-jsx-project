@@ -478,7 +478,7 @@ const columns = [
 	'Vue',
 	'Preact',
 	'React',
-	// 'VSCode',
+	'VSCode',
 ]
 
 for (const ns in DATA.elements) {
