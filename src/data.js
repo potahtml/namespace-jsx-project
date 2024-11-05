@@ -319,3 +319,253 @@ ${content.join('\n')}
 }
 `
 }
+
+export const deprecatedAttributes = {
+	'audio.HTMLAudioElement.mediagroup': true,
+
+	'video.HTMLVideoElement.mediagroup': true,
+
+	'a.HTMLAnchorElement.charset': true,
+	'a.HTMLAnchorElement.coords': true,
+	'a.HTMLAnchorElement.name': true,
+	'a.HTMLAnchorElement.rev': true,
+	'a.HTMLAnchorElement.shape': true,
+
+	'br.HTMLBRElement.clear': true,
+
+	'body.HTMLBodyElement.alink': true,
+	'body.HTMLBodyElement.background': true,
+	'body.HTMLBodyElement.bgcolor': true,
+	'body.HTMLBodyElement.bottommargin': true,
+	'body.HTMLBodyElement.leftmargin': true,
+	'body.HTMLBodyElement.link': true,
+	'body.HTMLBodyElement.rightmargin': true,
+	'body.HTMLBodyElement.text': true,
+	'body.HTMLBodyElement.topmargin': true,
+	'body.HTMLBodyElement.vlink': true,
+
+	'dl.HTMLDListElement.compact': true,
+
+	'div.HTMLDivElement.align': true,
+
+	'embed.HTMLEmbedElement.align': true,
+	'embed.HTMLEmbedElement.name': true,
+
+	'form.HTMLFormElement.accept': true,
+
+	'hr.HTMLHRElement.align': true,
+	'hr.HTMLHRElement.color': true,
+	'hr.HTMLHRElement.noshade': true,
+	'hr.HTMLHRElement.size': true,
+	'hr.HTMLHRElement.width': true,
+
+	'html.HTMLHtmlElement.version': true,
+
+	'iframe.HTMLIFrameElement.allowpaymentrequest': true,
+	'iframe.HTMLIFrameElement.allowtransparency': true,
+	'iframe.HTMLIFrameElement.align': true,
+	'iframe.HTMLIFrameElement.frameborder': true,
+	'iframe.HTMLIFrameElement.longdesc': true,
+	'iframe.HTMLIFrameElement.marginheight': true,
+	'iframe.HTMLIFrameElement.marginwidth': true,
+	'iframe.HTMLIFrameElement.scrolling': true,
+	'iframe.HTMLIFrameElement.seamless': true,
+
+	'img.HTMLImageElement.align': true,
+	'img.HTMLImageElement.border': true,
+	'img.HTMLImageElement.hspace': true,
+	'img.HTMLImageElement.longdesc': true,
+	'img.HTMLImageElement.name': true,
+	'img.HTMLImageElement.vspace': true,
+
+	'input.HTMLInputElement.align': true,
+	'input.HTMLInputElement.usemap': true,
+
+	'li.HTMLLIElement.type': true,
+
+	'legend.HTMLLegendElement.align': true,
+
+	'link.HTMLLinkElement.charset': true,
+	'link.HTMLLinkElement.rev': true,
+	'link.HTMLLinkElement.target': true,
+
+	'menu.HTMLMenuElement.label': true,
+	'menu.HTMLMenuElement.type': true,
+	'menu.HTMLMenuElement.compact': true,
+
+	'meta.HTMLMetaElement.scheme': true,
+
+	'ol.HTMLOListElement.compact': true,
+
+	'object.HTMLObjectElement.align': true,
+	'object.HTMLObjectElement.archive': true,
+	'object.HTMLObjectElement.border': true,
+	'object.HTMLObjectElement.classid': true,
+	'object.HTMLObjectElement.code': true,
+	'object.HTMLObjectElement.codebase': true,
+	'object.HTMLObjectElement.codetype': true,
+	'object.HTMLObjectElement.declare': true,
+	'object.HTMLObjectElement.hspace': true,
+	'object.HTMLObjectElement.standby': true,
+	'object.HTMLObjectElement.usemap': true,
+	'object.HTMLObjectElement.vspace': true,
+	'object.HTMLObjectElement.typemustmatch': true,
+
+	'p.HTMLParagraphElement.align': true,
+
+	'pre.HTMLPreElement.width': true,
+	'pre.HTMLPreElement.wrap': true,
+	'listing.HTMLPreElement.width': true,
+	'xmp.HTMLPreElement.width': true,
+
+	'script.HTMLScriptElement.charset': true,
+	'script.HTMLScriptElement.event': true,
+	'script.HTMLScriptElement.language': true,
+
+	'style.HTMLStyleElement.scoped': true,
+	'style.HTMLStyleElement.type': true,
+
+	'caption.HTMLTableCaptionElement.align': true,
+
+	'td.HTMLTableCellElement.abbr': true,
+	'td.HTMLTableCellElement.align': true,
+	'td.HTMLTableCellElement.axis': true,
+	'td.HTMLTableCellElement.bgcolor': true,
+	'td.HTMLTableCellElement.char': true,
+	'td.HTMLTableCellElement.charoff': true,
+	'td.HTMLTableCellElement.height': true,
+	'td.HTMLTableCellElement.nowrap': true,
+	'td.HTMLTableCellElement.scope': true,
+	'td.HTMLTableCellElement.valign': true,
+	'td.HTMLTableCellElement.width': true,
+
+	'th.HTMLTableCellElement.align': true,
+	'th.HTMLTableCellElement.axis': true,
+	'th.HTMLTableCellElement.bgcolor': true,
+	'th.HTMLTableCellElement.char': true,
+	'th.HTMLTableCellElement.charoff': true,
+	'th.HTMLTableCellElement.height': true,
+	'th.HTMLTableCellElement.nowrap': true,
+	'th.HTMLTableCellElement.valign': true,
+	'th.HTMLTableCellElement.width': true,
+
+	'col.HTMLTableColElement.align': true,
+	'col.HTMLTableColElement.bgcolor': true,
+	'col.HTMLTableColElement.char': true,
+	'col.HTMLTableColElement.charoff': true,
+	'col.HTMLTableColElement.valign': true,
+	'col.HTMLTableColElement.width': true,
+
+	'table.HTMLTableElement.align': true,
+	'table.HTMLTableElement.bgcolor': true,
+	'table.HTMLTableElement.border': true,
+	'table.HTMLTableElement.cellpadding': true,
+	'table.HTMLTableElement.cellspacing': true,
+	'table.HTMLTableElement.frame': true,
+	'table.HTMLTableElement.rules': true,
+	'table.HTMLTableElement.summary': true,
+	'table.HTMLTableElement.width': true,
+
+	'tr.HTMLTableRowElement.align': true,
+	'tr.HTMLTableRowElement.bgcolor': true,
+	'tr.HTMLTableRowElement.char': true,
+	'tr.HTMLTableRowElement.charoff': true,
+	'tr.HTMLTableRowElement.valign': true,
+
+	'tbody.HTMLTableSectionElement.align': true,
+	'tbody.HTMLTableSectionElement.bgcolor': true,
+	'tbody.HTMLTableSectionElement.char': true,
+	'tbody.HTMLTableSectionElement.charoff': true,
+	'tbody.HTMLTableSectionElement.valign': true,
+
+	'tfoot.HTMLTableSectionElement.align': true,
+	'tfoot.HTMLTableSectionElement.bgcolor': true,
+	'tfoot.HTMLTableSectionElement.char': true,
+	'tfoot.HTMLTableSectionElement.charoff': true,
+	'tfoot.HTMLTableSectionElement.valign': true,
+
+	'thead.HTMLTableSectionElement.align': true,
+	'thead.HTMLTableSectionElement.bgcolor': true,
+	'thead.HTMLTableSectionElement.char': true,
+	'thead.HTMLTableSectionElement.charoff': true,
+	'thead.HTMLTableSectionElement.valign': true,
+
+	'ul.HTMLUListElement.compact': true,
+	'ul.HTMLUListElement.type': true,
+
+	'dir.HTMLDirectoryElement.compact': true,
+
+	'font.HTMLFontElement.color': true,
+	'font.HTMLFontElement.face': true,
+	'font.HTMLFontElement.size': true,
+
+	'frame.HTMLFrameElement.frameborder': true,
+	'frame.HTMLFrameElement.longdesc': true,
+	'frame.HTMLFrameElement.marginheight': true,
+	'frame.HTMLFrameElement.marginwidth': true,
+	'frame.HTMLFrameElement.name': true,
+	'frame.HTMLFrameElement.noresize': true,
+	'frame.HTMLFrameElement.scrolling': true,
+	'frame.HTMLFrameElement.src': true,
+
+	'frameset.HTMLFrameSetElement.cols': true,
+	'frameset.HTMLFrameSetElement.rows': true,
+
+	'marquee.HTMLMarqueeElement.behavior': true,
+	'marquee.HTMLMarqueeElement.bgcolor': true,
+	'marquee.HTMLMarqueeElement.direction': true,
+	'marquee.HTMLMarqueeElement.height': true,
+	'marquee.HTMLMarqueeElement.hspace': true,
+	'marquee.HTMLMarqueeElement.loop': true,
+	'marquee.HTMLMarqueeElement.scrollamount': true,
+	'marquee.HTMLMarqueeElement.scrolldelay': true,
+	'marquee.HTMLMarqueeElement.truespeed': true,
+	'marquee.HTMLMarqueeElement.vspace': true,
+	'marquee.HTMLMarqueeElement.width': true,
+
+	'param.HTMLParamElement.name': true,
+	'param.HTMLParamElement.value': true,
+	'param.HTMLParamElement.type': true,
+	'param.HTMLParamElement.valuetype': true,
+
+	'keygen.HTMLUnknownElement.autofocus': true,
+	'keygen.HTMLUnknownElement.challenge': true,
+	'keygen.HTMLUnknownElement.disabled': true,
+	'keygen.HTMLUnknownElement.form': true,
+	'keygen.HTMLUnknownElement.keyparams': true,
+	'keygen.HTMLUnknownElement.keytype': true,
+	'keygen.HTMLUnknownElement.name': true,
+
+	'annotation.MathMLElement.src': true,
+
+	'annotation-xml.MathMLElement.src': true,
+
+	'maction.MathMLElement.actiontype': true,
+	'maction.MathMLElement.selection': true,
+
+	'mfrac.MathMLElement.denomalign': true,
+	'mfrac.MathMLElement.numalign': true,
+
+	'mmultiscripts.MathMLElement.subscriptshift': true,
+	'mmultiscripts.MathMLElement.superscriptshift': true,
+
+	'mo.MathMLElement.accent': true,
+
+	'ms.MathMLElement.lquote': true,
+	'ms.MathMLElement.rquote': true,
+
+	'mstyle.MathMLElement.background': true,
+	'mstyle.MathMLElement.color': true,
+	'mstyle.MathMLElement.fontsize': true,
+	'mstyle.MathMLElement.fontstyle': true,
+	'mstyle.MathMLElement.fontweight': true,
+	'mstyle.MathMLElement.scriptminsize': true,
+	'mstyle.MathMLElement.scriptsizemultiplier': true,
+
+	'msub.MathMLElement.subscriptshift': true,
+
+	'msubsup.MathMLElement.subscriptshift': true,
+	'msubsup.MathMLElement.superscriptshift': true,
+
+	'msup.MathMLElement.superscriptshift': true,
+}

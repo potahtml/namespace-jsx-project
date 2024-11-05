@@ -9,6 +9,7 @@ import {
 } from './utils.js'
 
 import {
+	deprecatedAttributes,
 	generateElementsInterfaces,
 	getEventNameMaps,
 	isBlacklisted,
@@ -461,14 +462,24 @@ The \`interface\` names comes from \`document.createElementNS(ns, tagName).const
 
 Chrome attribute names comes from brute-forcing the element setters till an attribute is added.
 
+🗑️ means its deprecated
+
 # Elements Tables
 
 `
-const columns = ['Chrome', 'Solid', 'Voby', 'Vue', 'Preact', 'React', 'VSCode']
+const columns = [
+	'Chrome',
+	'Solid',
+	'Voby',
+	'Vue',
+	'Preact',
+	'React',
+	'VSCode',
+]
 
 for (const ns in DATA.elements) {
 	for (const [tag, value] of Object.entries(DATA.elements[ns])) {
-		attributesPropertiesTable += `\n\n## [${tag}](${value.url}) - [${value.interface}](https://developer.mozilla.org/en-US/docs/Web/API/${value.interface}) - deprecated: ${value.deprecated} - ns: ${ns}`
+		attributesPropertiesTable += `\n\n## ${value.deprecated ? '🗑️' : ''} [\`<${tag}>\`](${value.url}) - [${value.interface}](https://developer.mozilla.org/en-US/docs/Web/API/${value.interface})`
 
 		// headings
 		attributesPropertiesTable += `\n\n| attribute `
@@ -486,7 +497,7 @@ for (const ns in DATA.elements) {
 		// attribute/properties
 		const props = []
 		for (const [attr, val] of Object.entries(value.attributes)) {
-			let prop = `| [${attr}](https://developer.mozilla.org/en-US/docs/Web/API/${value.interface}/${attr})`
+			let prop = `| [${attr}](https://developer.mozilla.org/en-US/docs/Web/API/${value.interface}/${attr})${deprecatedAttributes[tag + '.' + value.interface + '.' + attr.toLowerCase()] ? '🗑️' : ''}`
 			for (const lib of columns) {
 				prop += ` | ${(val[lib] !== undefined ? val[lib] : '❌').replace(/\|/g, '\\|')}`
 			}
