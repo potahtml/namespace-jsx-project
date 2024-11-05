@@ -462,7 +462,7 @@ The \`interface\` names comes from \`document.createElementNS(ns, tagName).const
 
 Chrome attribute names comes from brute-forcing the element setters till an attribute is added.
 
-🗑️ means its deprecated
+🗑️ means the tag or attribute is deprecated
 
 # Elements Tables
 
