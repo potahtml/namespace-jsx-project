@@ -455,7 +455,7 @@ write(`./jsx/data.json`, JSON.stringify(DATA, null, 2))
 // create table.md
 
 let attributesPropertiesTable = `
-# namespace JSX
+# namespace JSX Elements Table
 
 This file is generated using \`./data.json\`.
 
@@ -463,11 +463,19 @@ The possible \`tagNames\` come from a mashup between frameworks and TypeScript \
 
 The \`interface\` names comes from \`document.createElementNS(ns, tagName).constructor.name\`.
 
-Chrome attribute names comes from brute-forcing the element setters till an attribute is added.
+Chrome attribute comes from brute-forcing the element setters till an attribute is added.
 
 🗑️ means the tag or attribute is deprecated
 
-# Elements Tables
+Data Links:
+
+- https://solidjs.com/
+- https://github.com/potahtml/pota
+- https://github.com/vobyjs/voby
+- https://vuejs.org/
+- https://preactjs.com/
+- https://react.dev/
+- https://github.com/microsoft/vscode-html-languageservice
 
 `
 const columns = [
