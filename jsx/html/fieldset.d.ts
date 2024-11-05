@@ -25,3 +25,10 @@ interface FieldsetHTMLAttributes<T> extends HTMLAttributes<T> {
 	form?: string
 	name?: string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface HTMLFieldSetElementAttributes {
+	disabled?: boolean
+	form?: string
+	name?: string
+}

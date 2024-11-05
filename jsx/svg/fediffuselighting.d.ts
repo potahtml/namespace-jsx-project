@@ -4,3 +4,6 @@ interface FeDiffuseLightingSVGAttributes<T> extends FilterPrimitiveElementSVGAtt
 	diffuseConstant?: number | string
 	kernelUnitLength?: number | string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface SVGFEDiffuseLightingElementAttributes {}

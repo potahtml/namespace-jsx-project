@@ -8,3 +8,6 @@ interface FeFuncSVGAttributes<T> extends CoreSVGAttributes<T> {
 	exponent?: number | string
 	offset?: number | string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface SVGFEFuncAElementAttributes {}

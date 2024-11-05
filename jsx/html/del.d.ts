@@ -15,3 +15,9 @@ interface DelHTMLAttributes<T> extends HTMLAttributes<T> {
 	cite?: string
 	dateTime?: string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface HTMLModElementAttributes {
+	cite?: string
+	datetime?: string
+}

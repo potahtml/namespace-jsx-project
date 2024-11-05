@@ -41,3 +41,14 @@ interface MeterHTMLAttributes<T> extends HTMLAttributes<T> {
 	optimum?: number
 	value?: string | readonly string[] | number
 }
+
+// Pota - https://github.com/potahtml/pota
+interface HTMLMeterElementAttributes {
+	form?: string
+	high?: number | string
+	low?: number | string
+	max?: number | string
+	min?: number | string
+	optimum?: number | string
+	value?: string | number
+}

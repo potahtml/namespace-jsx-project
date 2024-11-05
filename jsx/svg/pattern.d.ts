@@ -9,3 +9,6 @@ interface PatternSVGAttributes<T> extends ContainerElementSVGAttributes<T>, Cond
 	patternTransform?: string
 	href?: string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface SVGPatternElementAttributes {}

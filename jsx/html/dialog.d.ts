@@ -22,3 +22,9 @@ interface DialogHTMLAttributes<T> extends HTMLAttributes<T> {
 	onClose?: ReactEventHandler<T>
 	open?: boolean
 }
+
+// Pota - https://github.com/potahtml/pota
+interface HTMLDialogElementAttributes {
+	open?: boolean
+	tabindex?: never
+}

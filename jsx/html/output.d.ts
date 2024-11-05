@@ -26,3 +26,10 @@ interface OutputHTMLAttributes<T> extends HTMLAttributes<T> {
 	htmlFor?: string
 	name?: string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface HTMLOutputElementAttributes {
+	for?: string
+	form?: string
+	name?: string
+}

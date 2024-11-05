@@ -4,3 +4,6 @@ interface FePointLightSVGAttributes<T> extends LightSourceElementSVGAttributes<T
 	y?: number | string
 	z?: number | string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface SVGFEPointLightElementAttributes {}

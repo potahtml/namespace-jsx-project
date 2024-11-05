@@ -8,3 +8,6 @@ interface TSpanSVGAttributes<T> extends TextContentElementSVGAttributes<T>, Cond
 	textLength?: number | string
 	lengthAdjust?: 'spacing' | 'spacingAndGlyphs'
 }
+
+// Pota - https://github.com/potahtml/pota
+interface SVGTSpanElementAttributes {}

@@ -4,3 +4,6 @@ interface FeDisplacementMapSVGAttributes<T> extends FilterPrimitiveElementSVGAtt
 	xChannelSelector?: 'R' | 'G' | 'B' | 'A'
 	yChannelSelector?: 'R' | 'G' | 'B' | 'A'
 }
+
+// Pota - https://github.com/potahtml/pota
+interface SVGFEDisplacementMapElementAttributes {}

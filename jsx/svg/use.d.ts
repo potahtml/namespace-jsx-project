@@ -6,3 +6,6 @@ interface UseSVGAttributes<T> extends CoreSVGAttributes<T>, StylableSVGAttribute
 	height?: number | string
 	href?: string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface SVGUseElementAttributes {}

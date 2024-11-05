@@ -49,3 +49,29 @@ interface AnchorHTMLAttributes<T> extends HTMLAttributes<T> {
 	type?: string
 	referrerPolicy?: '' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
 }
+
+// Pota - https://github.com/potahtml/pota
+interface HTMLAnchorElementAttributes {
+	download?: string
+	href?: string
+	hreflang?: string
+	ping?: string
+	referrerpolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
+	rel?: string
+	target?: '_self' | '_blank' | '_parent' | '_top' | (string & {})
+	type?: string
+
+	/** @experimental */
+	attributionsrc?: string
+
+	/** @deprecated */
+	charset?: string
+	/** @deprecated */
+	coords?: string
+	/** @deprecated */
+	name?: string
+	/** @deprecated */
+	rev?: string
+	/** @deprecated */
+	shape?: 'rect' | 'circle' | 'poly' | 'default'
+}

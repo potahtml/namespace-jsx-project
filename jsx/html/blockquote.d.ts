@@ -17,3 +17,8 @@ interface BlockquoteHTMLAttributes extends HTMLAttributes {
 interface BlockquoteHTMLAttributes<T> extends HTMLAttributes<T> {
 	cite?: string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface HTMLQuoteElementAttributes {
+	cite?: string
+}

@@ -5,3 +5,11 @@ interface HTMLMSubsupElement extends MathMLElement {
 	/** @deprecated See https://developer.mozilla.org/en-US/docs/Web/MathML/Element/msubsup#superscriptshift */
 	superscriptshift?: string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface MathMLMsubsupElementAttributes {
+	/** @deprecated */
+	subscriptshift?: string
+	/** @deprecated */
+	superscriptshift?: string
+}

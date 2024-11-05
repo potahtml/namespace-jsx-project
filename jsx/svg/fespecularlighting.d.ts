@@ -5,3 +5,6 @@ interface FeSpecularLightingSVGAttributes<T> extends FilterPrimitiveElementSVGAt
 	specularExponent?: string
 	kernelUnitLength?: number | string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface SVGFESpecularLightingElementAttributes {}

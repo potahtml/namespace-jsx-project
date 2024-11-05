@@ -6,3 +6,6 @@ interface RadialGradientSVGAttributes<T> extends GradientElementSVGAttributes<T>
 	fx?: number | string
 	fy?: number | string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface SVGRadialGradientElementAttributes {}

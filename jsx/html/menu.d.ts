@@ -18,3 +18,13 @@ interface MenuHTMLAttributes extends HTMLAttributes {
 interface MenuHTMLAttributes<T> extends HTMLAttributes<T> {
 	type?: string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface HTMLMenuElementAttributes {
+	/** @deprecated */
+	label?: string
+	/** @deprecated */
+	type?: 'context' | 'toolbar'
+	/** @deprecated */
+	compact?: boolean
+}

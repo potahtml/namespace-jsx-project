@@ -3,3 +3,6 @@ interface FeMorphologySVGAttributes<T> extends FilterPrimitiveElementSVGAttribut
 	operator?: 'erode' | 'dilate'
 	radius?: number | string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface SVGFEMorphologyElementAttributes {}

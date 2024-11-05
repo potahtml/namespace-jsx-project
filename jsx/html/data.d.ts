@@ -17,3 +17,8 @@ interface DataHTMLAttributes extends HTMLAttributes {
 interface DataHTMLAttributes<T> extends HTMLAttributes<T> {
 	value?: string | readonly string[] | number
 }
+
+// Pota - https://github.com/potahtml/pota
+interface HTMLDataElementAttributes {
+	value?: string | number
+}

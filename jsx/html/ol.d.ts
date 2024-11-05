@@ -25,3 +25,13 @@ interface OlHTMLAttributes<T> extends HTMLAttributes<T> {
 	start?: number
 	type?: '1' | 'a' | 'A' | 'i' | 'I'
 }
+
+// Pota - https://github.com/potahtml/pota
+interface HTMLOListElementAttributes {
+	reversed?: boolean
+	start?: number | string
+	type?: '1' | 'a' | 'A' | 'i' | 'I'
+
+	/** @deprecated */
+	compact?: boolean
+}

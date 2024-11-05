@@ -4,3 +4,6 @@ interface FeDropShadowSVGAttributes<T> extends CoreSVGAttributes<T>, FilterPrimi
 	dy?: number | string
 	stdDeviation?: number | string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface SVGFEDropShadowElementAttributes {}

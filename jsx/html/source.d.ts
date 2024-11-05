@@ -39,3 +39,14 @@ interface SourceHTMLAttributes<T> extends HTMLAttributes<T> {
 	type?: string
 	width?: number | string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface HTMLSourceElementAttributes {
+	height?: number | string
+	media?: string
+	sizes?: string
+	src?: string
+	srcset?: string
+	type?: string
+	width?: number | string
+}

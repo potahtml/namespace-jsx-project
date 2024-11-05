@@ -48,6 +48,7 @@ export const libs = [
 			voidhtmlattributes: 'htmlattributes',
 		},
 	},
+
 	{
 		// VUE
 		file: 'https://raw.githubusercontent.com/vuejs/core/refs/heads/main/packages/runtime-dom/src/jsx.ts',
@@ -96,6 +97,36 @@ export const libs = [
 			// attributes
 			allhtmlattributes: 'attributes',
 			intrinsicattributes: 'attributes',
+		},
+	},
+	{
+		// POTA
+		file: 'https://raw.githubusercontent.com/potahtml/pota/refs/heads/master/jsx.d.ts',
+		name: 'Pota',
+		url: 'https://github.com/potahtml/pota',
+		map: {
+			// events
+
+			elementevents: 'events',
+			globaleventhandlersevents: 'events',
+			htmlmediaelementevents: 'events',
+			htmlvideoelementevents: 'events',
+			windoweventhandlersevents: 'events',
+
+			// elements
+
+			htmlelements: 'elements',
+			htmldeprecatedelements: 'elements',
+
+			mathmlelements: 'elements',
+			mathmldeprecatedelements: 'elements',
+
+			svgelements: 'elements',
+
+			htmlwebviewelements: 'elements',
+
+			domhtmlattributes: 'attributes',
+			domhtmlproperties: 'attributes',
 		},
 	},
 ]
@@ -175,6 +206,13 @@ export const isBlacklisted = {
 
 	detailedhtmlfactory: true,
 	svgfactory: true,
+
+	htmlelementevents: true,
+	mathmlelementevents: true,
+	svgelementevents: true,
+
+	htmlelementattributes: true,
+	htmlunknownelementattributes: true,
 }
 
 /**

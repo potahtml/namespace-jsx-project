@@ -21,3 +21,9 @@ interface CanvasHTMLAttributes<T> extends HTMLAttributes<T> {
 	height?: number | string
 	width?: number | string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface HTMLCanvasElementAttributes {
+	height?: number | string
+	width?: number | string
+}

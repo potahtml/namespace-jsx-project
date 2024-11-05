@@ -7,3 +7,6 @@ interface MarkerSVGAttributes<T> extends ContainerElementSVGAttributes<T>, Exter
 	markerHeight?: number | string
 	orient?: string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface SVGMarkerElementAttributes {}

@@ -17,3 +17,21 @@ interface ColgroupHTMLAttributes extends HTMLAttributes {
 interface ColgroupHTMLAttributes<T> extends HTMLAttributes<T> {
 	span?: number
 }
+
+// Pota - https://github.com/potahtml/pota
+interface HTMLTableColElementAttributes {
+	span?: number | string
+
+	/** @deprecated */
+	align?: 'left' | 'center' | 'right' | 'justify' | 'char'
+	/** @deprecated */
+	bgcolor?: string
+	/** @deprecated */
+	char?: string
+	/** @deprecated */
+	charoff?: string
+	/** @deprecated */
+	valign?: 'baseline' | 'bottom' | 'middle' | 'top'
+	/** @deprecated */
+	width?: number | string
+}

@@ -26,3 +26,25 @@ interface TableHTMLAttributes<T> extends HTMLAttributes<T> {
 	summary?: string
 	width?: number | string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface HTMLTableElementAttributes {
+	/** @deprecated */
+	align?: 'left' | 'center' | 'right'
+	/** @deprecated */
+	bgcolor?: string
+	/** @deprecated */
+	border?: string
+	/** @deprecated */
+	cellpadding?: number | string
+	/** @deprecated */
+	cellspacing?: number | string
+	/** @deprecated */
+	frame?: 'void' | 'above' | 'below' | 'hsides' | 'vsides' | 'lhs' | 'rhs' | 'box' | 'border'
+	/** @deprecated */
+	rules?: 'none' | 'groups' | 'rows' | 'cols' | 'all'
+	/** @deprecated */
+	summary?: string
+	/** @deprecated */
+	width?: number | string
+}

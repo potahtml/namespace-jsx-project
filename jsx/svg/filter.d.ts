@@ -8,3 +8,6 @@ interface FilterSVGAttributes<T> extends CoreSVGAttributes<T>, ExternalResourceS
 	height?: number | string
 	filterRes?: number | string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface SVGFilterElementAttributes {}

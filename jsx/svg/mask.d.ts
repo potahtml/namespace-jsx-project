@@ -7,3 +7,6 @@ interface MaskSVGAttributes<T> extends Omit<ContainerElementSVGAttributes<T>, 'o
 	width?: number | string
 	height?: number | string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface SVGMaskElementAttributes {}

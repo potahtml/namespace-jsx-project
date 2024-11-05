@@ -943,3 +943,138 @@ interface DOMAttributes<T> {
 	onTransitionEnd?: TransitionEventHandler<T>
 	onTransitionEndCapture?: TransitionEventHandler<T>
 }
+
+// Pota - https://github.com/potahtml/pota
+interface ElementEvents<Element> {
+	onFullscreenChange?: Events<Event, Element>
+	onFullscreenError?: Events<Event, Element>
+}
+interface GlobalEventHandlersEvents<Element> {
+	onAbort?: Events<UIEvent, Element>
+	onAnimationCancel?: Events<AnimationEvent, Element>
+	onAnimationEnd?: Events<AnimationEvent, Element>
+	onAnimationIteration?: Events<AnimationEvent, Element>
+	onAnimationStart?: Events<AnimationEvent, Element>
+	onAuxClick?: Events<MouseEvent, Element>
+	onBeforeInput?: Events<InputEvent, Element>
+	onBeforeToggle?: Events<Event, Element>
+	onBlur?: Events<FocusEvent, Element>
+	onCancel?: Events<Event, Element>
+	onCanPlay?: Events<Event, Element>
+	onCanPlayThrough?: Events<Event, Element>
+	onChange?: Events<Event, Element>
+	onClick?: Events<MouseEvent, Element>
+	onClose?: Events<Event, Element>
+	onCompositionEnd?: Events<CompositionEvent, Element>
+	onCompositionStart?: Events<CompositionEvent, Element>
+	onCompositionUpdate?: Events<CompositionEvent, Element>
+	onContextLost?: Events<Event, Element>
+	onContextMenu?: Events<MouseEvent, Element>
+	onContextRestored?: Events<Event, Element>
+	onCopy?: Events<ClipboardEvent, Element>
+	onCueChange?: Events<Event, Element>
+	onCut?: Events<ClipboardEvent, Element>
+	onDblClick?: Events<MouseEvent, Element>
+	onDrag?: Events<DragEvent, Element>
+	onDragEnd?: Events<DragEvent, Element>
+	onDragEnter?: Events<DragEvent, Element>
+	onDragLeave?: Events<DragEvent, Element>
+	onDragOver?: Events<DragEvent, Element>
+	onDragStart?: Events<DragEvent, Element>
+	onDrop?: Events<DragEvent, Element>
+	onDurationChange?: Events<Event, Element>
+	onEmptied?: Events<Event, Element>
+	onEnded?: Events<Event, Element>
+	onError?: Events<ErrorEvent, Element>
+	onFocus?: Events<FocusEvent, Element>
+	onFocusIn?: Events<FocusEvent, Element>
+	onFocusOut?: Events<FocusEvent, Element>
+	onFormData?: Events<FormDataEvent, Element>
+	onGotPointerCapture?: Events<PointerEvent, Element>
+	onInput?: Events<Event, Element>
+	onInvalid?: Events<Event, Element>
+	onKeyDown?: Events<KeyboardEvent, Element>
+	onKeyPress?: Events<KeyboardEvent, Element>
+	onKeyUp?: Events<KeyboardEvent, Element>
+	onLoad?: Events<Event, Element>
+	onLoadedData?: Events<Event, Element>
+	onLoadedMetadata?: Events<Event, Element>
+	onLoadStart?: Events<Event, Element>
+	onLostPointerCapture?: Events<PointerEvent, Element>
+	onMouseDown?: Events<MouseEvent, Element>
+	onMouseEnter?: Events<MouseEvent, Element>
+	onMouseLeave?: Events<MouseEvent, Element>
+	onMouseMove?: Events<MouseEvent, Element>
+	onMouseOut?: Events<MouseEvent, Element>
+	onMouseOver?: Events<MouseEvent, Element>
+	onMouseUp?: Events<MouseEvent, Element>
+	onPaste?: Events<ClipboardEvent, Element>
+	onPause?: Events<Event, Element>
+	onPlay?: Events<Event, Element>
+	onPlaying?: Events<Event, Element>
+	onPointerCancel?: Events<PointerEvent, Element>
+	onPointerDown?: Events<PointerEvent, Element>
+	onPointerEnter?: Events<PointerEvent, Element>
+	onPointerLeave?: Events<PointerEvent, Element>
+	onPointerMove?: Events<PointerEvent, Element>
+	onPointerOut?: Events<PointerEvent, Element>
+	onPointerOver?: Events<PointerEvent, Element>
+	onPointerUp?: Events<PointerEvent, Element>
+	onProgress?: Events<ProgressEvent, Element>
+	onRateChange?: Events<Event, Element>
+	onReset?: Events<Event, Element>
+	onResize?: Events<UIEvent, Element>
+	onScroll?: Events<Event, Element>
+	onScrollEnd?: Events<Event, Element>
+	onSecurityPolicyViolation?: Events<SecurityPolicyViolationEvent, Element>
+	onSeeked?: Events<Event, Element>
+	onSeeking?: Events<Event, Element>
+	onSelect?: Events<Event, Element>
+	onSelectionChange?: Events<Event, Element>
+	onSelectStart?: Events<Event, Element>
+	onSlotChange?: Events<Event, Element>
+	onStalled?: Events<Event, Element>
+	onSubmit?: Events<SubmitEvent, Element>
+	onSuspend?: Events<Event, Element>
+	onTimeUpdate?: Events<Event, Element>
+	onToggle?: Events<Event, Element>
+	onTouchCancel?: Events<TouchEvent, Element>
+	onTouchEnd?: Events<TouchEvent, Element>
+	onTouchMove?: Events<TouchEvent, Element>
+	onTouchStart?: Events<TouchEvent, Element>
+	onTransitionCancel?: Events<TransitionEvent, Element>
+	onTransitionEnd?: Events<TransitionEvent, Element>
+	onTransitionRun?: Events<TransitionEvent, Element>
+	onTransitionStart?: Events<TransitionEvent, Element>
+	onVolumeChange?: Events<Event, Element>
+	onWaiting?: Events<Event, Element>
+	onWheel?: Events<WheelEvent, Element>
+}
+interface HTMLMediaElementEvents<Element> extends HTMLElementEvents<Element> {
+	onEncrypted?: Events<MediaEncryptedEvent, Element>
+	onWaitingForKey?: Events<Event, Element>
+}
+interface HTMLVideoElementEvents<Element> extends HTMLMediaElementEvents<Element> {
+	onEnterPictureInPicture?: Events<PictureInPictureEvent, Element>
+	onLeavePictureInPicture?: Events<PictureInPictureEvent, Element>
+}
+interface WindowEventHandlersEvents<Element> {
+	onAfterPrint?: Events<Event, Element>
+	onBeforePrint?: Events<Event, Element>
+	onBeforeUnload?: Events<BeforeUnloadEvent, Element>
+	onGamepadConnected?: Events<GamepadEvent, Element>
+	onGamepadDisconnected?: Events<GamepadEvent, Element>
+	onHashChange?: Events<HashChangeEvent, Element>
+	onLanguageChange?: Events<Event, Element>
+	onMessage?: Events<MessageEvent, Element>
+	onMessageError?: Events<MessageEvent, Element>
+	onOffline?: Events<Event, Element>
+	onOnline?: Events<Event, Element>
+	onPageHide?: Events<PageTransitionEvent, Element>
+	onPageShow?: Events<PageTransitionEvent, Element>
+	onPopState?: Events<PopStateEvent, Element>
+	onRejectionHandled?: Events<PromiseRejectionEvent, Element>
+	onStorage?: Events<StorageEvent, Element>
+	onUnhandledRejection?: Events<PromiseRejectionEvent, Element>
+	onUnload?: Events<Event, Element>
+}

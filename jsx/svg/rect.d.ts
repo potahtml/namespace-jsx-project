@@ -7,3 +7,6 @@ interface RectSVGAttributes<T> extends GraphicsElementSVGAttributes<T>, ShapeEle
 	rx?: number | string
 	ry?: number | string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface SVGRectElementAttributes {}

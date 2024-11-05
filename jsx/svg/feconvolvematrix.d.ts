@@ -10,3 +10,6 @@ interface FeConvolveMatrixSVGAttributes<T> extends FilterPrimitiveElementSVGAttr
 	kernelUnitLength?: number | string
 	preserveAlpha?: 'true' | 'false'
 }
+
+// Pota - https://github.com/potahtml/pota
+interface SVGFEConvolveMatrixElementAttributes {}

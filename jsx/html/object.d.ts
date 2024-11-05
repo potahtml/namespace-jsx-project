@@ -48,3 +48,40 @@ interface ObjectHTMLAttributes<T> extends HTMLAttributes<T> {
 	width?: number | string
 	wmode?: string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface HTMLObjectElementAttributes {
+	data?: string
+	form?: string
+	height?: number | string
+	name?: string
+	type?: string
+	width?: number | string
+
+	/** @deprecated */
+	align?: string
+	/** @deprecated */
+	archive?: string
+	/** @deprecated */
+	border?: string
+	/** @deprecated */
+	classid?: string
+	/** @deprecated */
+	code?: string
+	/** @deprecated */
+	codebase?: string
+	/** @deprecated */
+	codetype?: string
+	/** @deprecated */
+	declare?: string
+	/** @deprecated */
+	hspace?: string
+	/** @deprecated */
+	standby?: string
+	/** @deprecated */
+	usemap?: string
+	/** @deprecated */
+	vspace?: string
+	/** @deprecated */
+	typemustmatch?: boolean
+}

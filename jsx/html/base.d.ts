@@ -21,3 +21,9 @@ interface BaseHTMLAttributes<T> extends HTMLAttributes<T> {
 	href?: string
 	target?: string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface HTMLBaseElementAttributes {
+	href?: string
+	target?: '_self' | '_blank' | '_parent' | '_top' | (string & {})
+}

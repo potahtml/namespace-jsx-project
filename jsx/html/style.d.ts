@@ -28,3 +28,17 @@ interface StyleHTMLAttributes<T> extends HTMLAttributes<T> {
 	scoped?: boolean
 	type?: string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface HTMLStyleElementAttributes {
+	media?: string
+	nonce?: string
+
+	/** @experimental */
+	blocking?: boolean
+
+	/** @deprecated */
+	scoped?: boolean
+	/** @deprecated */
+	type?: string
+}

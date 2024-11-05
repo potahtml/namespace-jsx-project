@@ -3,3 +3,6 @@ interface FeColorMatrixSVGAttributes<T> extends FilterPrimitiveElementSVGAttribu
 	type?: 'matrix' | 'saturate' | 'hueRotate' | 'luminanceToAlpha'
 	values?: string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface SVGFEColorMatrixElementAttributes {}

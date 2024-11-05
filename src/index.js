@@ -67,11 +67,14 @@ for (const lib of libs) {
 			const interfaces = prop.source
 				.replace(/</g, ' ')
 				.replace(/>/g, ' ')
+				.replace(/,/g, ' ')
 				.trim()
 				.toLowerCase()
 				.split(' ')
+				.map(i => i.trim())
+				.filter(i => i)
 			for (const inter of interfaces) {
-				if (inter && !isBlacklisted[inter] && lib.interfaces[inter]) {
+				if (!isBlacklisted[inter] && lib.interfaces[inter]) {
 					lib.tagInterface[tagName] +=
 						lib.interfaces[inter].source + '\n'
 				}
@@ -470,6 +473,7 @@ Chrome attribute names comes from brute-forcing the element setters till an attr
 const columns = [
 	'Chrome',
 	'Solid',
+	'Pota',
 	'Voby',
 	'Vue',
 	'Preact',

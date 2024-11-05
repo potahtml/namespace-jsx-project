@@ -4,3 +4,10 @@ interface HTMLMSpaceElement extends MathMLElement {
 	height?: string
 	width?: string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface MathMLMspaceElementAttributes {
+	depth?: string
+	height?: string
+	width?: string
+}

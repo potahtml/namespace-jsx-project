@@ -45,3 +45,33 @@ interface TdHTMLAttributes<T> extends HTMLAttributes<T> {
 	width?: number | string
 	valign?: 'top' | 'middle' | 'bottom' | 'baseline'
 }
+
+// Pota - https://github.com/potahtml/pota
+interface HTMLTableCellTdElementAttributes {
+	colspan?: number | string
+	headers?: string
+	rowspan?: number | string
+
+	/** @deprecated */
+	abbr?: string
+	/** @deprecated */
+	align?: 'left' | 'center' | 'right' | 'justify' | 'char'
+	/** @deprecated */
+	axis?: string
+	/** @deprecated */
+	bgcolor?: string
+	/** @deprecated */
+	char?: string
+	/** @deprecated */
+	charoff?: string
+	/** @deprecated */
+	height?: string
+	/** @deprecated */
+	nowrap?: boolean
+	/** @deprecated */
+	scope?: 'col' | 'row' | 'rowgroup' | 'colgroup'
+	/** @deprecated */
+	valign?: 'baseline' | 'bottom' | 'middle' | 'top'
+	/** @deprecated */
+	width?: number | string
+}

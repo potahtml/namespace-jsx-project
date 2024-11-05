@@ -3,3 +3,6 @@ interface FeOffsetSVGAttributes<T> extends FilterPrimitiveElementSVGAttributes<T
 	dx?: number | string
 	dy?: number | string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface SVGFEOffsetElementAttributes {}

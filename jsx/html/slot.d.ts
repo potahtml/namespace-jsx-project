@@ -12,3 +12,8 @@ interface SlotHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
 interface SlotHTMLAttributes<T> extends HTMLAttributes<T> {
 	name?: string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface HTMLSlotElementAttributes {
+	name?: string
+}

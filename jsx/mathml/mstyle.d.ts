@@ -15,3 +15,21 @@ interface HTMLMStyleElement extends MathMLElement {
 	/** @deprecated See https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mstyle#scriptsizemultiplier */
 	scriptsizemultiplier?: string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface MathMLMstyleElementAttributes {
+	/** @deprecated */
+	background?: string
+	/** @deprecated */
+	color?: string
+	/** @deprecated */
+	fontsize?: string
+	/** @deprecated */
+	fontstyle?: string
+	/** @deprecated */
+	fontweight?: string
+	/** @deprecated */
+	scriptminsize?: string
+	/** @deprecated */
+	scriptsizemultiplier?: string
+}

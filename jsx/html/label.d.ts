@@ -22,3 +22,9 @@ interface LabelHTMLAttributes<T> extends HTMLAttributes<T> {
 	form?: string
 	htmlFor?: string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface HTMLLabelElementAttributes {
+	for?: string
+	form?: string
+}

@@ -9,3 +9,6 @@ interface AudioHTMLAttributes extends MediaHTMLAttributes {}
 
 // React - https://react.dev/
 interface AudioHTMLAttributes<T> extends MediaHTMLAttributes<T> {}
+
+// Pota - https://github.com/potahtml/pota
+interface HTMLAudioElementAttributes extends HTMLMediaHTMLAttributes {}

@@ -5,3 +5,6 @@ interface TextPathSVGAttributes<T> extends TextContentElementSVGAttributes<T>, C
 	spacing?: 'auto' | 'exact'
 	href?: string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface SVGTextPathElementAttributes {}

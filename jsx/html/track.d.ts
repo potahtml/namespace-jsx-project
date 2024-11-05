@@ -33,3 +33,23 @@ interface TrackHTMLAttributes<T> extends HTMLAttributes<T> {
 	src?: string
 	srcLang?: string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface HTMLTrackElementAttributes {
+	default?: boolean
+	kind?:
+		| 'alternative'
+		| 'descriptions'
+		| 'main'
+		| 'main-desc'
+		| 'translation'
+		| 'commentary'
+		// ??
+		| 'subtitles'
+		| 'captions'
+		| 'chapters'
+		| 'metadata'
+	label?: string
+	src?: string
+	srclang?: string
+}

@@ -2,3 +2,8 @@
 interface HTMLMUnderElement extends MathMLElement {
 	accentunder?: boolean
 }
+
+// Pota - https://github.com/potahtml/pota
+interface MathMLMunderElementAttributes {
+	accentunder?: boolean
+}

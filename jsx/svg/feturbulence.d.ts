@@ -6,3 +6,6 @@ interface FeTurbulanceSVGAttributes<T> extends FilterPrimitiveElementSVGAttribut
 	stitchTiles?: 'stitch' | 'noStitch'
 	type?: 'fractalNoise' | 'turbulence'
 }
+
+// Pota - https://github.com/potahtml/pota
+interface SVGFETurbulenceElementAttributes {}

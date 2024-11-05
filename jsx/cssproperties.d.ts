@@ -33,3 +33,8 @@ interface CSSProperties extends CSS.Properties<string | number> {
 	 * https://github.com/frenic/csstype#what-should-i-do-when-i-get-type-errors
 	 */
 }
+
+// Pota - https://github.com/potahtml/pota
+interface CSSProperties extends csstype.PropertiesHyphen {
+	[key: `-${string}`]: string | number
+}

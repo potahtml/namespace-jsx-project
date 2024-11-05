@@ -17,3 +17,11 @@ interface LiHTMLAttributes extends HTMLAttributes {
 interface LiHTMLAttributes<T> extends HTMLAttributes<T> {
 	value?: string | readonly string[] | number
 }
+
+// Pota - https://github.com/potahtml/pota
+interface HTMLLIElementAttributes {
+	value?: number | string
+
+	/** @deprecated */
+	type?: '1' | 'a' | 'A' | 'i' | 'I'
+}

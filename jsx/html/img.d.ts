@@ -66,3 +66,35 @@ interface ImgHTMLAttributes<T> extends HTMLAttributes<T> {
 	useMap?: string
 	width?: number | string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface HTMLImageElementAttributes {
+	alt?: string
+	attributionsrc?: string
+	crossorigin?: 'anonymous' | 'use-credentials' | ''
+	decoding?: 'sync' | 'async' | 'auto'
+	elementtiming?: string
+	fetchpriority?: 'high' | 'low' | 'auto'
+	height?: number | string
+	ismap?: boolean
+	loading?: 'eager' | 'lazy'
+	referrerpolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
+	sizes?: string
+	src?: string
+	srcset?: string
+	usemap?: string
+	width?: number | string
+
+	/** @deprecated */
+	align?: 'top' | 'middle' | 'bottom' | 'left' | 'right'
+	/** @deprecated */
+	border?: string
+	/** @deprecated */
+	hspace?: number
+	/** @deprecated */
+	longdesc?: string
+	/** @deprecated */
+	name?: string
+	/** @deprecated */
+	vspace?: number
+}

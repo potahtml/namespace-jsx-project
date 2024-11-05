@@ -37,3 +37,31 @@ interface ThHTMLAttributes<T> extends HTMLAttributes<T> {
 	scope?: string
 	abbr?: string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface HTMLTableCellThElementAttributes {
+	abbr?: string
+	colspan?: number | string
+	headers?: string
+	rowspan?: number | string
+	scope?: 'col' | 'row' | 'rowgroup' | 'colgroup'
+
+	/** @deprecated */
+	align?: 'left' | 'center' | 'right' | 'justify' | 'char'
+	/** @deprecated */
+	axis?: string
+	/** @deprecated */
+	bgcolor?: string
+	/** @deprecated */
+	char?: string
+	/** @deprecated */
+	charoff?: string
+	/** @deprecated */
+	height?: string
+	/** @deprecated */
+	nowrap?: boolean
+	/** @deprecated */
+	valign?: 'baseline' | 'bottom' | 'middle' | 'top'
+	/** @deprecated */
+	width?: number | string
+}

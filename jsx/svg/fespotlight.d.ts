@@ -9,3 +9,6 @@ interface FeSpotLightSVGAttributes<T> extends LightSourceElementSVGAttributes<T>
 	specularExponent?: number | string
 	limitingConeAngle?: number | string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface SVGFESpotLightElementAttributes {}

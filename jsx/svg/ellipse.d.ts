@@ -5,3 +5,6 @@ interface EllipseSVGAttributes<T> extends GraphicsElementSVGAttributes<T>, Shape
 	rx?: number | string
 	ry?: number | string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface SVGEllipseElementAttributes {}

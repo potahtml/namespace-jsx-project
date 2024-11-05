@@ -11,3 +11,7 @@ interface SvgSVGAttributes<T> extends ContainerElementSVGAttributes<T>, NewViewp
 	xmlns?: string
 	'xmlns:xlink'?: string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface SVGSVGElementAttributes {}
+interface SVGSVGElementEvents<Element> extends SVGElementEvents<Element>, WindowEventHandlersEvents<Element> {}

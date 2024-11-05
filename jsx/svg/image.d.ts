@@ -7,3 +7,6 @@ interface ImageSVGAttributes<T> extends NewViewportSVGAttributes<T>, GraphicsEle
 	preserveAspectRatio?: SVGPreserveAspectRatio | 'defer none' | 'defer xMinYMin' | 'defer xMidYMin' | 'defer xMaxYMin' | 'defer xMinYMid' | 'defer xMidYMid' | 'defer xMaxYMid' | 'defer xMinYMax' | 'defer xMidYMax' | 'defer xMaxYMax' | 'defer xMinYMin meet' | 'defer xMidYMin meet' | 'defer xMaxYMin meet' | 'defer xMinYMid meet' | 'defer xMidYMid meet' | 'defer xMaxYMid meet' | 'defer xMinYMax meet' | 'defer xMidYMax meet' | 'defer xMaxYMax meet' | 'defer xMinYMin slice' | 'defer xMidYMin slice' | 'defer xMaxYMin slice' | 'defer xMinYMid slice' | 'defer xMidYMid slice' | 'defer xMaxYMid slice' | 'defer xMinYMax slice' | 'defer xMidYMax slice' | 'defer xMaxYMax slice'
 	href?: string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface SVGImageElementAttributes {}

@@ -5,3 +5,6 @@ interface ForeignObjectSVGAttributes<T> extends NewViewportSVGAttributes<T>, Con
 	width?: number | string
 	height?: number | string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface SVGForeignObjectElementAttributes {}

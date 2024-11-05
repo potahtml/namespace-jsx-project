@@ -21,3 +21,9 @@ interface ProgressHTMLAttributes<T> extends HTMLAttributes<T> {
 	max?: number | string
 	value?: string | readonly string[] | number
 }
+
+// Pota - https://github.com/potahtml/pota
+interface HTMLProgressElementAttributes {
+	max?: number | string
+	value?: string | number
+}

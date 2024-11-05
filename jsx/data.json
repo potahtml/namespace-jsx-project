@@ -540,6 +540,11 @@
 			"nameCapitalized": "onStalled",
 			"interface": "Event"
 		},
+		"storage": {
+			"name": "storage",
+			"nameCapitalized": "onStorage",
+			"interface": "StorageEvent"
+		},
 		"submit": {
 			"name": "submit",
 			"nameCapitalized": "onSubmit",
@@ -649,11 +654,6 @@
 			"name": "wheel",
 			"nameCapitalized": "onWheel",
 			"interface": "WheelEvent"
-		},
-		"storage": {
-			"name": "storage",
-			"nameCapitalized": "storage",
-			"interface": "StorageEvent"
 		}
 	},
 	"elements": {
@@ -666,6 +666,7 @@
 						"Voby": "boolean",
 						"Vue": "any",
 						"React": "any",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -674,12 +675,14 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"hreflang": {
 						"Solid": "string",
 						"Vue": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -694,12 +697,14 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"referrerpolicy": {
 						"Solid": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 						"Vue": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
+						"Pota": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -707,6 +712,7 @@
 						"Solid": "string",
 						"Voby": "string",
 						"Vue": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -715,6 +721,7 @@
 						"Voby": "'_self' | '_blank' | '_parent' | '_top'",
 						"Vue": "string",
 						"React": "'_self' | '_blank' | '_parent' | '_top' | (string & {})",
+						"Pota": "'_self' | '_blank' | '_parent' | '_top' | (string & {})",
 						"VSCode": "'_self' | '_blank' | '_parent' | '_top'",
 						"Chrome": "string"
 					},
@@ -723,6 +730,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -735,22 +743,28 @@
 						"Voby": "string",
 						"React": "string"
 					},
-					"coords": {
+					"attributionsrc": {
+						"Pota": "string",
 						"Chrome": "string"
 					},
 					"charset": {
+						"Pota": "string",
+						"Chrome": "string"
+					},
+					"coords": {
+						"Pota": "string",
 						"Chrome": "string"
 					},
 					"name": {
+						"Pota": "string",
 						"Chrome": "string"
 					},
 					"rev": {
+						"Pota": "string",
 						"Chrome": "string"
 					},
 					"shape": {
-						"Chrome": "string"
-					},
-					"attributionsrc": {
+						"Pota": "'rect' | 'circle' | 'poly' | 'default'",
 						"Chrome": "string"
 					}
 				},
@@ -780,6 +794,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -788,6 +803,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -796,6 +812,7 @@
 						"Voby": "boolean",
 						"Vue": "any",
 						"React": "any",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -804,6 +821,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -814,18 +832,21 @@
 					},
 					"ping": {
 						"Solid": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"referrerpolicy": {
 						"Solid": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 						"Vue": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
+						"Pota": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 						"Chrome": "string"
 					},
 					"rel": {
 						"Solid": "string",
 						"Voby": "string",
 						"Vue": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -834,6 +855,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "'rect' | 'circle' | 'poly' | 'default'",
 						"VSCode": "'circle' | 'default' | 'poly' | 'rect'",
 						"Chrome": "string"
 					},
@@ -842,6 +864,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "'_self' | '_blank' | '_parent' | '_top' | (string & {})",
 						"VSCode": "'_self' | '_blank' | '_parent' | '_top'",
 						"Chrome": "string"
 					},
@@ -934,6 +957,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -942,6 +966,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "'_self' | '_blank' | '_parent' | '_top' | (string & {})",
 						"VSCode": "'_self' | '_blank' | '_parent' | '_top'",
 						"Chrome": "string"
 					}
@@ -976,6 +1001,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					}
@@ -987,6 +1013,52 @@
 			"body": {
 				"deprecated": false,
 				"attributes": {
+					"alink": {
+						"Pota": "string",
+						"VSCode": "string",
+						"Chrome": "string"
+					},
+					"background": {
+						"Pota": "string",
+						"VSCode": "string",
+						"Chrome": "string"
+					},
+					"bgcolor": {
+						"Pota": "string",
+						"VSCode": "string",
+						"Chrome": "string"
+					},
+					"bottommargin": {
+						"Pota": "string",
+						"VSCode": "string"
+					},
+					"leftmargin": {
+						"Pota": "string",
+						"VSCode": "string"
+					},
+					"link": {
+						"Pota": "string",
+						"VSCode": "string",
+						"Chrome": "string"
+					},
+					"rightmargin": {
+						"Pota": "string",
+						"VSCode": "string"
+					},
+					"text": {
+						"Pota": "string",
+						"VSCode": "string",
+						"Chrome": "string"
+					},
+					"topmargin": {
+						"Pota": "string",
+						"VSCode": "string"
+					},
+					"vlink": {
+						"Pota": "string",
+						"VSCode": "string",
+						"Chrome": "string"
+					},
 					"onafterprint": {
 						"VSCode": "string",
 						"Chrome": "event"
@@ -1039,28 +1111,6 @@
 						"VSCode": "string",
 						"Chrome": "event"
 					},
-					"alink": {
-						"VSCode": "string",
-						"Chrome": "string"
-					},
-					"background": {
-						"VSCode": "string",
-						"Chrome": "string"
-					},
-					"bgcolor": {
-						"VSCode": "string",
-						"Chrome": "string"
-					},
-					"bottommargin": {
-						"VSCode": "string"
-					},
-					"leftmargin": {
-						"VSCode": "string"
-					},
-					"link": {
-						"VSCode": "string",
-						"Chrome": "string"
-					},
 					"onblur": {
 						"VSCode": "string",
 						"Chrome": "event"
@@ -1087,20 +1137,6 @@
 					"onundo": {
 						"VSCode": "string"
 					},
-					"rightmargin": {
-						"VSCode": "string"
-					},
-					"text": {
-						"VSCode": "string",
-						"Chrome": "string"
-					},
-					"topmargin": {
-						"VSCode": "string"
-					},
-					"vlink": {
-						"VSCode": "string",
-						"Chrome": "string"
-					},
 					"onscroll": {
 						"Chrome": "event"
 					},
@@ -1122,6 +1158,7 @@
 				"deprecated": false,
 				"attributes": {
 					"clear": {
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					}
@@ -1136,6 +1173,7 @@
 					"autofocus": {
 						"Solid": "boolean",
 						"Vue": "boolean | 'true' | 'false'",
+						"Pota": "boolean",
 						"VSCode": "boolean"
 					},
 					"disabled": {
@@ -1143,6 +1181,7 @@
 						"Voby": "boolean",
 						"Vue": "boolean | 'true' | 'false'",
 						"React": "boolean",
+						"Pota": "boolean",
 						"VSCode": "boolean",
 						"Chrome": "boolean"
 					},
@@ -1151,43 +1190,51 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string"
 					},
 					"formaction": {
 						"Solid": "string",
 						"Vue": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"formenctype": {
 						"Solid": "'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'",
 						"Vue": "string",
+						"Pota": "'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'",
 						"VSCode": "'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'",
 						"Chrome": "string"
 					},
 					"formmethod": {
 						"Solid": "'post' | 'get' | 'dialog'",
 						"Vue": "string",
+						"Pota": "'post' | 'get' | 'dialog'",
 						"VSCode": "'get' | 'post'",
 						"Chrome": "string"
 					},
 					"formnovalidate": {
 						"Solid": "boolean",
 						"Vue": "boolean | 'true' | 'false'",
+						"Pota": "boolean",
 						"VSCode": "boolean",
 						"Chrome": "boolean"
 					},
 					"formtarget": {
 						"Solid": "string",
 						"Vue": "string",
+						"Pota": "'_self' | '_blank' | '_parent' | '_top' | (string & {})",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"popovertarget": {
-						"Solid": "string"
+						"Solid": "string",
+						"Pota": "string"
 					},
 					"popovertargetaction": {
 						"Solid": "'hide' | 'show' | 'toggle'",
+						"Pota": "'hide' | 'show' | 'toggle'",
 						"Chrome": "string"
 					},
 					"name": {
@@ -1195,6 +1242,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -1203,6 +1251,7 @@
 						"Voby": "'submit' | 'reset' | 'button'",
 						"Vue": "'submit' | 'reset' | 'button'",
 						"React": "'submit' | 'reset' | 'button'",
+						"Pota": "'submit' | 'reset' | 'button' | 'menu'",
 						"VSCode": "'button' | 'submit' | 'reset' | 'menu'",
 						"Chrome": "string"
 					},
@@ -1211,6 +1260,7 @@
 						"Voby": "string | readonly string[] | number",
 						"Vue": "string | readonly string[] | number",
 						"React": "string | readonly string[] | number",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -1250,6 +1300,12 @@
 						"Voby": "string",
 						"React": "string"
 					},
+					"command": {
+						"Pota": "'show-modal' | 'close' | 'show-popover' | 'hide-popover' | 'toggle-popover' | (string & {})"
+					},
+					"commandfor": {
+						"Pota": "string"
+					},
 					"autocomplete": {
 						"VSCode": "string"
 					}
@@ -1266,6 +1322,7 @@
 						"Voby": "number | string",
 						"Vue": "number | string",
 						"React": "number | string",
+						"Pota": "number | string",
 						"VSCode": "string",
 						"Chrome": "number | string"
 					},
@@ -1274,6 +1331,7 @@
 						"Voby": "number | string",
 						"Vue": "number | string",
 						"React": "number | string",
+						"Pota": "number | string",
 						"VSCode": "string",
 						"Chrome": "number | string"
 					},
@@ -1289,6 +1347,7 @@
 				"deprecated": false,
 				"attributes": {
 					"align": {
+						"Pota": "'left' | 'top' | 'right' | 'bottom'",
 						"VSCode": "string",
 						"Chrome": "string"
 					}
@@ -1319,6 +1378,7 @@
 						"Voby": "number",
 						"Vue": "number | string",
 						"React": "number",
+						"Pota": "number | string",
 						"VSCode": "string",
 						"Chrome": "number | string"
 					},
@@ -1327,19 +1387,27 @@
 						"Voby": "number | string",
 						"Vue": "number | string",
 						"React": "number | string",
+						"Pota": "number | string",
 						"Chrome": "string"
 					},
 					"align": {
+						"Pota": "'left' | 'center' | 'right' | 'justify' | 'char'",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
+					"bgcolor": {
+						"Pota": "string"
+					},
 					"char": {
+						"Pota": "string",
 						"Chrome": "string"
 					},
 					"charoff": {
+						"Pota": "string",
 						"Chrome": "string"
 					},
 					"valign": {
+						"Pota": "'baseline' | 'bottom' | 'middle' | 'top'",
 						"Chrome": "string"
 					}
 				},
@@ -1355,23 +1423,32 @@
 						"Voby": "number",
 						"Vue": "number | string",
 						"React": "number",
+						"Pota": "number | string",
 						"VSCode": "string",
 						"Chrome": "number | string"
 					},
 					"align": {
+						"Pota": "'left' | 'center' | 'right' | 'justify' | 'char'",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
+					"bgcolor": {
+						"Pota": "string"
+					},
 					"char": {
+						"Pota": "string",
 						"Chrome": "string"
 					},
 					"charoff": {
+						"Pota": "string",
 						"Chrome": "string"
 					},
 					"valign": {
+						"Pota": "'baseline' | 'bottom' | 'middle' | 'top'",
 						"Chrome": "string"
 					},
 					"width": {
+						"Pota": "number | string",
 						"Chrome": "string"
 					}
 				},
@@ -1387,6 +1464,7 @@
 						"Voby": "string | readonly string[] | number",
 						"Vue": "string | readonly string[] | number",
 						"React": "string | readonly string[] | number",
+						"Pota": "string | number",
 						"VSCode": "string",
 						"Chrome": "string"
 					}
@@ -1420,6 +1498,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -1429,6 +1508,7 @@
 					},
 					"datetime": {
 						"Vue": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					}
@@ -1445,6 +1525,7 @@
 						"Voby": "boolean",
 						"Vue": "boolean | 'true' | 'false'",
 						"React": "boolean",
+						"Pota": "boolean",
 						"VSCode": "boolean",
 						"Chrome": "boolean"
 					},
@@ -1460,6 +1541,7 @@
 					"name": {
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"Chrome": "string"
 					}
 				},
@@ -1482,6 +1564,7 @@
 						"Voby": "boolean",
 						"Vue": "boolean | 'true' | 'false'",
 						"React": "boolean",
+						"Pota": "boolean",
 						"VSCode": "string",
 						"Chrome": "boolean"
 					},
@@ -1493,6 +1576,9 @@
 					"onCancel": {
 						"Solid": "EventHandlerUnion<T, Event>",
 						"React": "ReactEventHandler<T>"
+					},
+					"tabindex": {
+						"Pota": "never"
 					}
 				},
 				"url": "https://developer.mozilla.org/docs/Web/HTML/Element/dialog",
@@ -1503,6 +1589,7 @@
 				"deprecated": false,
 				"attributes": {
 					"align": {
+						"Pota": "'left' | 'right' | 'justify' | 'center'",
 						"Chrome": "string"
 					}
 				},
@@ -1514,6 +1601,7 @@
 				"deprecated": false,
 				"attributes": {
 					"compact": {
+						"Pota": "boolean",
 						"Chrome": "boolean"
 					}
 				},
@@ -1543,6 +1631,7 @@
 						"Voby": "number | string",
 						"Vue": "number | string",
 						"React": "number | string",
+						"Pota": "number | string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -1551,6 +1640,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -1559,6 +1649,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -1567,13 +1658,16 @@
 						"Voby": "number | string",
 						"Vue": "number | string",
 						"React": "number | string",
+						"Pota": "number | string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"align": {
+						"Pota": "'left' | 'right' | 'justify' | 'center'",
 						"Chrome": "string"
 					},
 					"name": {
+						"Pota": "string",
 						"Chrome": "string"
 					}
 				},
@@ -1589,6 +1683,7 @@
 						"Voby": "boolean",
 						"Vue": "boolean | 'true' | 'false'",
 						"React": "boolean",
+						"Pota": "boolean",
 						"VSCode": "boolean",
 						"Chrome": "boolean"
 					},
@@ -1597,6 +1692,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string"
 					},
 					"name": {
@@ -1604,6 +1700,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					}
@@ -1638,6 +1735,7 @@
 				"attributes": {
 					"accept-charset": {
 						"Solid": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -1646,21 +1744,25 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"autocomplete": {
 						"Solid": "string",
 						"Vue": "string",
+						"Pota": "'on' | 'off'",
 						"VSCode": "'on' | 'off'",
 						"Chrome": "string"
 					},
 					"encoding": {
-						"Solid": "'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'"
+						"Solid": "'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'",
+						"Pota": "'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'"
 					},
 					"enctype": {
 						"Solid": "'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'",
 						"Vue": "string",
+						"Pota": "'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'",
 						"VSCode": "'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'",
 						"Chrome": "string"
 					},
@@ -1669,6 +1771,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "'post' | 'get' | 'dialog'",
 						"VSCode": "'get' | 'post' | 'dialog'",
 						"Chrome": "string"
 					},
@@ -1677,12 +1780,14 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"novalidate": {
 						"Solid": "boolean",
 						"Vue": "boolean | 'true' | 'false'",
+						"Pota": "boolean",
 						"VSCode": "boolean",
 						"Chrome": "boolean"
 					},
@@ -1691,6 +1796,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "'_self' | '_blank' | '_parent' | '_top' | (string & {})",
 						"VSCode": "'_self' | '_blank' | '_parent' | '_top'",
 						"Chrome": "string"
 					},
@@ -1714,14 +1820,16 @@
 					"acceptcharset": {
 						"Vue": "string"
 					},
+					"rel": {
+						"Pota": "string",
+						"Chrome": "string"
+					},
 					"accept": {
+						"Pota": "string",
 						"VSCode": "string"
 					},
 					"autocapitalize": {
 						"VSCode": "string"
-					},
-					"rel": {
-						"Chrome": "string"
 					}
 				},
 				"url": "https://developer.mozilla.org/docs/Web/HTML/Element/form",
@@ -1823,22 +1931,27 @@
 				"deprecated": false,
 				"attributes": {
 					"align": {
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"color": {
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"noshade": {
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "boolean"
 					},
 					"size": {
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"width": {
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					}
@@ -1854,9 +1967,11 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string"
 					},
 					"version": {
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -1883,12 +1998,14 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"allowfullscreen": {
 						"Solid": "boolean",
 						"Vue": "boolean | 'true' | 'false'",
+						"Pota": "boolean",
 						"VSCode": "boolean",
 						"Chrome": "boolean"
 					},
@@ -1897,6 +2014,7 @@
 						"Voby": "number | string",
 						"Vue": "number | string",
 						"React": "number | string",
+						"Pota": "number | string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -1905,6 +2023,7 @@
 						"Voby": "'eager' | 'lazy'",
 						"Vue": "'eager' | 'lazy'",
 						"React": "'eager' | 'lazy'",
+						"Pota": "'eager' | 'lazy'",
 						"Chrome": "string"
 					},
 					"name": {
@@ -1912,12 +2031,14 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"referrerpolicy": {
 						"Solid": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 						"Vue": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
+						"Pota": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -1926,6 +2047,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "'allow-downloads-without-user-activation' | 'allow-downloads' | 'allow-forms' | 'allow-modals' | 'allow-orientation-lock' | 'allow-pointer-lock' | 'allow-popups' | 'allow-popups-to-escape-sandbox' | 'allow-presentation' | 'allow-same-origin' | 'allow-scripts' | 'allow-storage-access-by-user-activation' | 'allow-top-navigation' | 'allow-top-navigation-by-user-activation' | 'allow-top-navigation-to-custom-protocols' | string",
 						"VSCode": "'allow-forms' | 'allow-modals' | 'allow-pointer-lock' | 'allow-popups' | 'allow-popups-to-escape-sandbox' | 'allow-same-origin' | 'allow-scripts' | 'allow-top-navigation'",
 						"Chrome": "string"
 					},
@@ -1934,12 +2056,14 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"srcdoc": {
 						"Solid": "string",
 						"Vue": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -1948,6 +2072,7 @@
 						"Voby": "number | string",
 						"Vue": "number | string",
 						"React": "number | string",
+						"Pota": "number | string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -1980,12 +2105,14 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "'yes' | 'no' | 'auto'",
 						"Chrome": "string"
 					},
 					"seamless": {
 						"Voby": "boolean",
 						"Vue": "boolean | 'true' | 'false'",
 						"React": "boolean",
+						"Pota": "boolean",
 						"VSCode": "boolean"
 					},
 					"srcDoc": {
@@ -1993,45 +2120,55 @@
 						"React": "string"
 					},
 					"allowtransparency": {
-						"Vue": "boolean | 'true' | 'false'"
+						"Vue": "boolean | 'true' | 'false'",
+						"Pota": "boolean"
 					},
 					"frameborder": {
 						"Vue": "number | string",
+						"Pota": "string",
 						"Chrome": "string"
 					},
 					"marginheight": {
 						"Vue": "number | string",
+						"Pota": "string",
 						"Chrome": "string"
 					},
 					"marginwidth": {
 						"Vue": "number | string",
+						"Pota": "string",
 						"Chrome": "string"
 					},
-					"allowpaymentrequest": {
-						"VSCode": "string",
+					"browsingtopics": {
+						"Pota": "boolean",
+						"Chrome": "boolean"
+					},
+					"credentialless": {
+						"Pota": "boolean",
 						"Chrome": "boolean"
 					},
 					"csp": {
+						"Pota": "string",
 						"VSCode": "string",
+						"Chrome": "string"
+					},
+					"allowpaymentrequest": {
+						"Pota": "boolean",
+						"VSCode": "string",
+						"Chrome": "boolean"
+					},
+					"align": {
+						"Pota": "string",
+						"Chrome": "string"
+					},
+					"longdesc": {
+						"Pota": "string",
 						"Chrome": "string"
 					},
 					"importance": {
 						"VSCode": "string"
 					},
-					"align": {
-						"Chrome": "string"
-					},
-					"longdesc": {
-						"Chrome": "string"
-					},
-					"credentialless": {
-						"Chrome": "boolean"
-					},
 					"privatetoken": {
 						"Chrome": "string"
-					},
-					"browsingtopics": {
-						"Chrome": "boolean"
 					},
 					"adauctionheaders": {
 						"Chrome": "boolean"
@@ -2052,12 +2189,14 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"crossorigin": {
 						"Solid": "'anonymous' | 'use-credentials' | ''",
 						"Vue": "'anonymous' | 'use-credentials' | ''",
+						"Pota": "'anonymous' | 'use-credentials' | ''",
 						"VSCode": "'anonymous' | 'use-credentials'",
 						"Chrome": "string"
 					},
@@ -2066,6 +2205,7 @@
 						"Voby": "'async' | 'auto' | 'sync'",
 						"Vue": "'async' | 'auto' | 'sync'",
 						"React": "'async' | 'auto' | 'sync'",
+						"Pota": "'sync' | 'async' | 'auto'",
 						"VSCode": "'sync' | 'async' | 'auto'",
 						"Chrome": "string"
 					},
@@ -2074,11 +2214,13 @@
 						"Voby": "number | string",
 						"Vue": "number | string",
 						"React": "number | string",
+						"Pota": "number | string",
 						"VSCode": "string",
 						"Chrome": "number | string"
 					},
 					"ismap": {
 						"Solid": "boolean",
+						"Pota": "boolean",
 						"VSCode": "boolean",
 						"Chrome": "boolean"
 					},
@@ -2090,12 +2232,14 @@
 						"Voby": "'eager' | 'lazy'",
 						"Vue": "'eager' | 'lazy'",
 						"React": "'eager' | 'lazy'",
+						"Pota": "'eager' | 'lazy'",
 						"VSCode": "'eager' | 'lazy'",
 						"Chrome": "string"
 					},
 					"referrerpolicy": {
 						"Solid": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 						"Vue": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
+						"Pota": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 						"VSCode": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 						"Chrome": "string"
 					},
@@ -2109,6 +2253,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -2117,12 +2262,14 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"srcset": {
 						"Solid": "string",
 						"Vue": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -2134,6 +2281,7 @@
 					"usemap": {
 						"Solid": "string",
 						"Vue": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -2147,6 +2295,7 @@
 						"Voby": "number | string",
 						"Vue": "number | string",
 						"React": "number | string",
+						"Pota": "number | string",
 						"VSCode": "string",
 						"Chrome": "number | string"
 					},
@@ -2156,14 +2305,44 @@
 						"React": "'anonymous' | 'use-credentials' | ''"
 					},
 					"elementtiming": {
-						"Solid": "string"
+						"Solid": "string",
+						"Pota": "string"
 					},
 					"fetchpriority": {
 						"Solid": "'high' | 'low' | 'auto'",
+						"Pota": "'high' | 'low' | 'auto'",
 						"Chrome": "string"
 					},
 					"fetchPriority": {
 						"React": "'high' | 'low' | 'auto'"
+					},
+					"attributionsrc": {
+						"Pota": "string",
+						"Chrome": "string"
+					},
+					"align": {
+						"Pota": "'top' | 'middle' | 'bottom' | 'left' | 'right'",
+						"Chrome": "string"
+					},
+					"border": {
+						"Pota": "string",
+						"Chrome": "string"
+					},
+					"hspace": {
+						"Pota": "number",
+						"Chrome": "number | string"
+					},
+					"longdesc": {
+						"Pota": "string",
+						"Chrome": "string"
+					},
+					"name": {
+						"Pota": "string",
+						"Chrome": "string"
+					},
+					"vspace": {
+						"Pota": "number",
+						"Chrome": "number | string"
 					},
 					"importance": {
 						"VSCode": "string"
@@ -2171,28 +2350,7 @@
 					"intrinsicsize": {
 						"VSCode": "string"
 					},
-					"name": {
-						"Chrome": "string"
-					},
 					"lowsrc": {
-						"Chrome": "string"
-					},
-					"align": {
-						"Chrome": "string"
-					},
-					"hspace": {
-						"Chrome": "number | string"
-					},
-					"vspace": {
-						"Chrome": "number | string"
-					},
-					"longdesc": {
-						"Chrome": "string"
-					},
-					"border": {
-						"Chrome": "string"
-					},
-					"attributionsrc": {
 						"Chrome": "string"
 					},
 					"sharedstoragewritable": {
@@ -2211,6 +2369,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -2219,86 +2378,101 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"autocomplete": {
 						"Solid": "string",
 						"Vue": "string",
+						"Pota": "'additional-name' | 'address-level1' | 'address-level2' | 'address-level3' | 'address-level4' | 'address-line1' | 'address-line2' | 'address-line3' | 'bday' | 'bday-day' | 'bday-month' | 'bday-year' | 'billing' | 'cc-additional-name' | 'cc-csc' | 'cc-exp' | 'cc-exp-month' | 'cc-exp-year' | 'cc-family-name' | 'cc-given-name' | 'cc-name' | 'cc-number' | 'cc-type' | 'country' | 'country-name' | 'current-password' | 'email' | 'family-name' | 'fax' | 'given-name' | 'home' | 'honorific-prefix' | 'honorific-suffix' | 'impp' | 'language' | 'mobile' | 'name' | 'new-password' | 'nickname' | 'off' | 'on' | 'organization' | 'organization-title' | 'pager' | 'photo' | 'postal-code' | 'sex' | 'shipping' | 'street-address' | 'tel' | 'tel-area-code' | 'tel-country-code' | 'tel-extension' | 'tel-local' | 'tel-local-prefix' | 'tel-local-suffix' | 'tel-national' | 'transaction-amount' | 'transaction-currency' | 'url' | 'username' | 'work' | (string & {})",
 						"VSCode": "'additional-name' | 'address-level1' | 'address-level2' | 'address-level3' | 'address-level4' | 'address-line1' | 'address-line2' | 'address-line3' | 'bday' | 'bday-year' | 'bday-day' | 'bday-month' | 'billing' | 'cc-additional-name' | 'cc-csc' | 'cc-exp' | 'cc-exp-month' | 'cc-exp-year' | 'cc-family-name' | 'cc-given-name' | 'cc-name' | 'cc-number' | 'cc-type' | 'country' | 'country-name' | 'current-password' | 'email' | 'family-name' | 'fax' | 'given-name' | 'home' | 'honorific-prefix' | 'honorific-suffix' | 'impp' | 'language' | 'mobile' | 'name' | 'new-password' | 'nickname' | 'off' | 'on' | 'organization' | 'organization-title' | 'pager' | 'photo' | 'postal-code' | 'sex' | 'shipping' | 'street-address' | 'tel-area-code' | 'tel' | 'tel-country-code' | 'tel-extension' | 'tel-local' | 'tel-local-prefix' | 'tel-local-suffix' | 'tel-national' | 'transaction-amount' | 'transaction-currency' | 'url' | 'username' | 'work'",
 						"Chrome": "string"
 					},
 					"autocorrect": {
-						"Solid": "'on' | 'off'"
+						"Solid": "'on' | 'off'",
+						"Pota": "'on' | 'off'"
 					},
 					"autofocus": {
 						"Solid": "boolean",
 						"Vue": "boolean | 'true' | 'false'",
+						"Pota": "boolean",
 						"VSCode": "boolean"
 					},
 					"capture": {
 						"Solid": "boolean | string",
 						"Voby": "boolean | 'user' | 'environment'",
 						"Vue": "boolean | 'user' | 'environment'",
-						"React": "boolean | 'user' | 'environment'"
+						"React": "boolean | 'user' | 'environment'",
+						"Pota": "'user' | 'environment'"
 					},
 					"checked": {
 						"Solid": "boolean",
 						"Voby": "boolean",
 						"Vue": "boolean | 'true' | 'false' | any[] | Set<any>",
 						"React": "boolean",
+						"Pota": "boolean",
 						"VSCode": "boolean",
 						"Chrome": "boolean"
 					},
 					"crossorigin": {
 						"Solid": "'anonymous' | 'use-credentials' | ''",
-						"Vue": "string"
+						"Vue": "string",
+						"Pota": "'anonymous' | 'use-credentials' | ''"
 					},
 					"disabled": {
 						"Solid": "boolean",
 						"Voby": "boolean",
 						"Vue": "boolean | 'true' | 'false'",
 						"React": "boolean",
+						"Pota": "boolean",
 						"VSCode": "boolean",
 						"Chrome": "boolean"
 					},
 					"enterkeyhint": {
-						"Solid": "'enter' | 'done' | 'go' | 'next' | 'previous' | 'search' | 'send'"
+						"Solid": "'enter' | 'done' | 'go' | 'next' | 'previous' | 'search' | 'send'",
+						"Pota": "'enter' | 'done' | 'go' | 'next' | 'previous' | 'search' | 'send'"
 					},
 					"form": {
 						"Solid": "string",
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string"
 					},
 					"formaction": {
 						"Solid": "string",
 						"Vue": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"formenctype": {
 						"Solid": "'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'",
 						"Vue": "string",
+						"Pota": "'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'",
 						"VSCode": "'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'",
 						"Chrome": "string"
 					},
 					"formmethod": {
 						"Solid": "'post' | 'get' | 'dialog'",
 						"Vue": "string",
+						"Pota": "'post' | 'get' | 'dialog'",
 						"VSCode": "'get' | 'post'",
 						"Chrome": "string"
 					},
 					"formnovalidate": {
 						"Solid": "boolean",
 						"Vue": "boolean | 'true' | 'false'",
+						"Pota": "boolean",
 						"VSCode": "boolean",
 						"Chrome": "boolean"
 					},
 					"formtarget": {
 						"Solid": "string",
 						"Vue": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -2307,11 +2481,13 @@
 						"Voby": "number | string",
 						"Vue": "number | string",
 						"React": "number | string",
+						"Pota": "number | string",
 						"VSCode": "string",
 						"Chrome": "number | string"
 					},
 					"incremental": {
 						"Solid": "boolean",
+						"Pota": "boolean",
 						"Chrome": "boolean"
 					},
 					"list": {
@@ -2319,6 +2495,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string"
 					},
 					"max": {
@@ -2326,12 +2503,14 @@
 						"Voby": "number | string",
 						"Vue": "number | string",
 						"React": "number | string",
+						"Pota": "number | string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"maxlength": {
 						"Solid": "number | string",
 						"Vue": "number | string",
+						"Pota": "number | string",
 						"VSCode": "string",
 						"Chrome": "number | string"
 					},
@@ -2340,12 +2519,14 @@
 						"Voby": "number | string",
 						"Vue": "number | string",
 						"React": "number | string",
+						"Pota": "number | string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"minlength": {
 						"Solid": "number | string",
 						"Vue": "number | string",
+						"Pota": "number | string",
 						"VSCode": "string",
 						"Chrome": "number | string"
 					},
@@ -2354,6 +2535,7 @@
 						"Voby": "boolean",
 						"Vue": "boolean | 'true' | 'false'",
 						"React": "boolean",
+						"Pota": "boolean",
 						"VSCode": "boolean",
 						"Chrome": "boolean"
 					},
@@ -2362,6 +2544,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -2370,6 +2553,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -2378,12 +2562,14 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"readonly": {
 						"Solid": "boolean",
 						"Vue": "boolean | 'true' | 'false'",
+						"Pota": "boolean",
 						"VSCode": "boolean",
 						"Chrome": "boolean"
 					},
@@ -2395,6 +2581,7 @@
 						"Voby": "boolean",
 						"Vue": "boolean | 'true' | 'false'",
 						"React": "boolean",
+						"Pota": "boolean",
 						"VSCode": "boolean",
 						"Chrome": "boolean"
 					},
@@ -2403,6 +2590,7 @@
 						"Voby": "number",
 						"Vue": "number | string",
 						"React": "number",
+						"Pota": "number | string",
 						"VSCode": "string",
 						"Chrome": "number | string"
 					},
@@ -2411,6 +2599,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -2419,6 +2608,7 @@
 						"Voby": "number | string",
 						"Vue": "number | string",
 						"React": "number | string",
+						"Pota": "number | string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -2427,6 +2617,7 @@
 						"Voby": "'button' | 'checkbox' | 'color' | 'date' | 'datetime-local' | 'email' | 'file' | 'hidden' | 'image' | 'month' | 'number' | 'password' | 'radio' | 'range' | 'reset' | 'search' | 'submit' | 'tel' | 'text' | 'time' | 'url' | 'week'",
 						"Vue": "InputTypeHTMLAttribute",
 						"React": "'button' | 'checkbox' | 'color' | 'date' | 'datetime-local' | 'email' | 'file' | 'hidden' | 'image' | 'month' | 'number' | 'password' | 'radio' | 'range' | 'reset' | 'search' | 'submit' | 'tel' | 'text' | 'time' | 'url' | 'week' | (string & {})",
+						"Pota": "'button' | 'checkbox' | 'color' | 'date' | 'datetime-local' | 'email' | 'file' | 'hidden' | 'image' | 'month' | 'number' | 'password' | 'radio' | 'range' | 'reset' | 'search' | 'submit' | 'tel' | 'text' | 'time' | 'url' | 'week'",
 						"VSCode": "'hidden' | 'text' | 'search' | 'tel' | 'url' | 'email' | 'password' | 'datetime' | 'date' | 'month' | 'week' | 'time' | 'datetime-local' | 'number' | 'range' | 'color' | 'checkbox' | 'radio' | 'file' | 'submit' | 'image' | 'reset' | 'button'",
 						"Chrome": "string"
 					},
@@ -2435,6 +2626,7 @@
 						"Voby": "string | readonly string[] | number",
 						"Vue": "any",
 						"React": "string | readonly string[] | number",
+						"Pota": "string | number",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -2443,6 +2635,7 @@
 						"Voby": "number | string",
 						"Vue": "number | string",
 						"React": "number | string",
+						"Pota": "number | string",
 						"VSCode": "string",
 						"Chrome": "number | string"
 					},
@@ -2512,23 +2705,30 @@
 						"React": "ChangeEventHandler<T>"
 					},
 					"dirname": {
+						"Pota": "string",
 						"VSCode": "string",
+						"Chrome": "string"
+					},
+					"popovertarget": {
+						"Pota": "string"
+					},
+					"popovertargetaction": {
+						"Pota": "'hide' | 'show' | 'toggle'",
+						"Chrome": "string"
+					},
+					"align": {
+						"Pota": "string",
+						"Chrome": "string"
+					},
+					"usemap": {
+						"Pota": "string",
 						"Chrome": "string"
 					},
 					"inputmode": {
 						"VSCode": "'verbatim' | 'latin' | 'latin-name' | 'latin-prose' | 'full-width-latin' | 'kana' | 'kana-name' | 'katakana' | 'numeric' | 'tel' | 'email' | 'url'"
 					},
-					"align": {
-						"Chrome": "string"
-					},
-					"usemap": {
-						"Chrome": "string"
-					},
 					"webkitdirectory": {
 						"Chrome": "boolean"
-					},
-					"popovertargetaction": {
-						"Chrome": "string"
 					}
 				},
 				"url": "https://developer.mozilla.org/docs/Web/HTML/Element/input",
@@ -2543,6 +2743,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -2553,6 +2754,7 @@
 					},
 					"datetime": {
 						"Vue": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					}
@@ -2575,6 +2777,7 @@
 						"Solid": "string",
 						"Voby": "string",
 						"Vue": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -2583,6 +2786,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string"
 					},
 					"htmlFor": {
@@ -2598,6 +2802,7 @@
 				"deprecated": false,
 				"attributes": {
 					"align": {
+						"Pota": "string",
 						"Chrome": "string"
 					}
 				},
@@ -2613,10 +2818,12 @@
 						"Voby": "string | readonly string[] | number",
 						"Vue": "string | readonly string[] | number",
 						"React": "string | readonly string[] | number",
+						"Pota": "number | string",
 						"VSCode": "string",
 						"Chrome": "number | string"
 					},
 					"type": {
+						"Pota": "'1' | 'a' | 'A' | 'i' | 'I'",
 						"VSCode": "string",
 						"Chrome": "string"
 					}
@@ -2633,21 +2840,25 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "'audio' | 'document' | 'embed' | 'fetch' | 'font' | 'image' | 'object' | 'script' | 'style' | 'track' | 'video' | 'worker'",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"crossorigin": {
 						"Solid": "'anonymous' | 'use-credentials' | ''",
 						"Vue": "string",
+						"Pota": "'anonymous' | 'use-credentials' | ''",
 						"VSCode": "'anonymous' | 'use-credentials'",
 						"Chrome": "string"
 					},
 					"disabled": {
 						"Solid": "boolean",
+						"Pota": "boolean",
 						"Chrome": "boolean"
 					},
 					"fetchpriority": {
 						"Solid": "'high' | 'low' | 'auto'",
+						"Pota": "'high' | 'low' | 'auto'",
 						"Chrome": "string"
 					},
 					"href": {
@@ -2655,21 +2866,25 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"hreflang": {
 						"Solid": "string",
 						"Vue": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"imagesizes": {
 						"Solid": "string",
+						"Pota": "string",
 						"Chrome": "string"
 					},
 					"imagesrcset": {
 						"Solid": "string",
+						"Pota": "string",
 						"Chrome": "string"
 					},
 					"integrity": {
@@ -2677,6 +2892,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -2685,12 +2901,14 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"referrerpolicy": {
 						"Solid": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 						"Vue": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
+						"Pota": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -2698,6 +2916,7 @@
 						"Solid": "string",
 						"Voby": "string",
 						"Vue": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -2706,6 +2925,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -2714,6 +2934,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -2741,6 +2962,7 @@
 					},
 					"charset": {
 						"Vue": "string",
+						"Pota": "string",
 						"Chrome": "string"
 					},
 					"fetchPriority": {
@@ -2749,20 +2971,23 @@
 					"imageSizes": {
 						"React": "string"
 					},
+					"blocking": {
+						"Pota": "'render'",
+						"Chrome": "string"
+					},
+					"rev": {
+						"Pota": "string",
+						"Chrome": "string"
+					},
+					"target": {
+						"Pota": "string",
+						"Chrome": "string"
+					},
 					"importance": {
 						"VSCode": "string"
 					},
 					"title": {
 						"VSCode": "string"
-					},
-					"rev": {
-						"Chrome": "string"
-					},
-					"target": {
-						"Chrome": "string"
-					},
-					"blocking": {
-						"Chrome": "string"
 					}
 				},
 				"url": "https://developer.mozilla.org/docs/Web/HTML/Element/link",
@@ -2784,6 +3009,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					}
@@ -2803,15 +3029,18 @@
 				"deprecated": false,
 				"attributes": {
 					"label": {
-						"Solid": "string"
+						"Solid": "string",
+						"Pota": "string"
 					},
 					"type": {
 						"Solid": "'context' | 'toolbar'",
 						"Voby": "string",
 						"Vue": "string",
-						"React": "string"
+						"React": "string",
+						"Pota": "'context' | 'toolbar'"
 					},
 					"compact": {
+						"Pota": "boolean",
 						"Chrome": "boolean"
 					}
 				},
@@ -2825,6 +3054,7 @@
 					"charset": {
 						"Solid": "string",
 						"Vue": "string",
+						"Pota": "string",
 						"VSCode": "string"
 					},
 					"content": {
@@ -2832,11 +3062,13 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"http-equiv": {
 						"Solid": "string",
+						"Pota": "'content-security-policy' | 'content-type' | 'default-style' | 'x-ua-compatible' | 'refresh'",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -2845,6 +3077,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -2852,6 +3085,7 @@
 						"Solid": "string",
 						"Voby": "string",
 						"React": "string",
+						"Pota": "string",
 						"Chrome": "string"
 					},
 					"charSet": {
@@ -2866,6 +3100,7 @@
 						"Vue": "string"
 					},
 					"scheme": {
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					}
@@ -2882,6 +3117,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string"
 					},
 					"high": {
@@ -2889,6 +3125,7 @@
 						"Voby": "number",
 						"Vue": "number | string",
 						"React": "number",
+						"Pota": "number | string",
 						"VSCode": "string",
 						"Chrome": "number | string"
 					},
@@ -2897,6 +3134,7 @@
 						"Voby": "number",
 						"Vue": "number | string",
 						"React": "number",
+						"Pota": "number | string",
 						"VSCode": "string",
 						"Chrome": "number | string"
 					},
@@ -2905,6 +3143,7 @@
 						"Voby": "number | string",
 						"Vue": "number | string",
 						"React": "number | string",
+						"Pota": "number | string",
 						"VSCode": "string",
 						"Chrome": "number | string"
 					},
@@ -2913,6 +3152,7 @@
 						"Voby": "number | string",
 						"Vue": "number | string",
 						"React": "number | string",
+						"Pota": "number | string",
 						"VSCode": "string",
 						"Chrome": "number | string"
 					},
@@ -2921,6 +3161,7 @@
 						"Voby": "number",
 						"Vue": "number | string",
 						"React": "number",
+						"Pota": "number | string",
 						"VSCode": "string",
 						"Chrome": "number | string"
 					},
@@ -2929,6 +3170,7 @@
 						"Voby": "string | readonly string[] | number",
 						"Vue": "string | readonly string[] | number",
 						"React": "string | readonly string[] | number",
+						"Pota": "string | number",
 						"VSCode": "string",
 						"Chrome": "number | string"
 					}
@@ -2959,6 +3201,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -2967,6 +3210,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string"
 					},
 					"height": {
@@ -2974,6 +3218,7 @@
 						"Voby": "number | string",
 						"Vue": "number | string",
 						"React": "number | string",
+						"Pota": "number | string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -2982,6 +3227,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -2990,12 +3236,14 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"usemap": {
 						"Solid": "string",
 						"Vue": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -3004,6 +3252,7 @@
 						"Voby": "number | string",
 						"Vue": "number | string",
 						"React": "number | string",
+						"Pota": "number | string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -3023,49 +3272,61 @@
 					},
 					"classid": {
 						"Vue": "string",
+						"Pota": "string",
 						"VSCode": "string"
 					},
-					"typemustmatch": {
-						"VSCode": "boolean"
+					"align": {
+						"Pota": "string",
+						"Chrome": "string"
 					},
 					"archive": {
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"border": {
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
+					"code": {
+						"Pota": "string",
+						"Chrome": "string"
+					},
 					"codebase": {
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"codetype": {
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"declare": {
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "boolean"
 					},
+					"hspace": {
+						"Pota": "string",
+						"Chrome": "number | string"
+					},
 					"standby": {
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
+					"vspace": {
+						"Pota": "string",
+						"Chrome": "number | string"
+					},
+					"typemustmatch": {
+						"Pota": "boolean",
+						"VSCode": "boolean"
+					},
 					"tabindex": {
 						"VSCode": "string"
-					},
-					"align": {
-						"Chrome": "string"
-					},
-					"code": {
-						"Chrome": "string"
-					},
-					"hspace": {
-						"Chrome": "number | string"
-					},
-					"vspace": {
-						"Chrome": "number | string"
 					}
 				},
 				"url": "https://developer.mozilla.org/docs/Web/HTML/Element/object",
@@ -3080,6 +3341,7 @@
 						"Voby": "boolean",
 						"Vue": "boolean | 'true' | 'false'",
 						"React": "boolean",
+						"Pota": "boolean",
 						"VSCode": "boolean",
 						"Chrome": "boolean"
 					},
@@ -3088,6 +3350,7 @@
 						"Voby": "number",
 						"Vue": "number | string",
 						"React": "number",
+						"Pota": "number | string",
 						"VSCode": "string",
 						"Chrome": "number | string"
 					},
@@ -3096,10 +3359,12 @@
 						"Voby": "'1' | 'a' | 'A' | 'i' | 'I'",
 						"Vue": "'1' | 'a' | 'A' | 'i' | 'I'",
 						"React": "'1' | 'a' | 'A' | 'i' | 'I'",
+						"Pota": "'1' | 'a' | 'A' | 'i' | 'I'",
 						"VSCode": "'1' | 'a' | 'A' | 'i' | 'I'",
 						"Chrome": "string"
 					},
 					"compact": {
+						"Pota": "boolean",
 						"VSCode": "string",
 						"Chrome": "boolean"
 					}
@@ -3116,6 +3381,7 @@
 						"Voby": "boolean",
 						"Vue": "boolean | 'true' | 'false'",
 						"React": "boolean",
+						"Pota": "boolean",
 						"VSCode": "boolean",
 						"Chrome": "boolean"
 					},
@@ -3124,6 +3390,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					}
@@ -3140,6 +3407,7 @@
 						"Voby": "boolean",
 						"Vue": "boolean | 'true' | 'false'",
 						"React": "boolean",
+						"Pota": "boolean",
 						"VSCode": "boolean",
 						"Chrome": "boolean"
 					},
@@ -3148,6 +3416,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -3156,6 +3425,7 @@
 						"Voby": "boolean",
 						"Vue": "boolean | 'true' | 'false'",
 						"React": "boolean",
+						"Pota": "boolean",
 						"VSCode": "boolean",
 						"Chrome": "boolean"
 					},
@@ -3164,6 +3434,7 @@
 						"Voby": "string | readonly string[] | number",
 						"Vue": "any",
 						"React": "string | readonly string[] | number",
+						"Pota": "string | number",
 						"VSCode": "string",
 						"Chrome": "string"
 					}
@@ -3180,12 +3451,14 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string"
 					},
 					"for": {
 						"Solid": "string",
 						"Voby": "string",
 						"Vue": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -3194,6 +3467,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -3210,6 +3484,7 @@
 				"deprecated": false,
 				"attributes": {
 					"align": {
+						"Pota": "'left' | 'right' | 'justify' | 'center'",
 						"Chrome": "string"
 					}
 				},
@@ -3227,14 +3502,16 @@
 			"pre": {
 				"deprecated": false,
 				"attributes": {
-					"cols": {
-						"VSCode": "string"
-					},
 					"width": {
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "number | string"
 					},
 					"wrap": {
+						"Pota": "string",
+						"VSCode": "string"
+					},
+					"cols": {
 						"VSCode": "string"
 					}
 				},
@@ -3250,6 +3527,7 @@
 						"Voby": "number | string",
 						"Vue": "number | string",
 						"React": "number | string",
+						"Pota": "number | string",
 						"VSCode": "string",
 						"Chrome": "number | string"
 					},
@@ -3258,6 +3536,7 @@
 						"Voby": "string | readonly string[] | number",
 						"Vue": "string | readonly string[] | number",
 						"React": "string | readonly string[] | number",
+						"Pota": "string | number",
 						"VSCode": "string",
 						"Chrome": "number | string"
 					}
@@ -3274,6 +3553,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					}
@@ -3325,18 +3605,21 @@
 						"Voby": "boolean",
 						"Vue": "boolean | 'true' | 'false'",
 						"React": "boolean",
+						"Pota": "boolean",
 						"VSCode": "boolean",
 						"Chrome": "boolean"
 					},
 					"charset": {
 						"Solid": "string",
 						"Vue": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"crossorigin": {
 						"Solid": "'anonymous' | 'use-credentials' | ''",
 						"Vue": "string",
+						"Pota": "'anonymous' | 'use-credentials' | ''",
 						"VSCode": "'anonymous' | 'use-credentials'",
 						"Chrome": "string"
 					},
@@ -3345,6 +3628,7 @@
 						"Voby": "boolean",
 						"Vue": "boolean | 'true' | 'false'",
 						"React": "boolean",
+						"Pota": "boolean",
 						"VSCode": "boolean",
 						"Chrome": "boolean"
 					},
@@ -3353,12 +3637,14 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"nomodule": {
 						"Solid": "boolean",
 						"Vue": "boolean | 'true' | 'false'",
+						"Pota": "boolean",
 						"VSCode": "string",
 						"Chrome": "boolean"
 					},
@@ -3366,11 +3652,13 @@
 						"Solid": "string",
 						"Voby": "string",
 						"Vue": "string",
+						"Pota": "string",
 						"VSCode": "string"
 					},
 					"referrerpolicy": {
 						"Solid": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 						"Vue": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
+						"Pota": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -3379,6 +3667,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -3387,6 +3676,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "'importmap' | 'module' | 'speculationrules' | (string & {})",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -3409,22 +3699,29 @@
 						"Voby": "string",
 						"React": "string"
 					},
-					"text": {
-						"VSCode": "string"
-					},
 					"fetchpriority": {
-						"Chrome": "string"
-					},
-					"event": {
-						"Chrome": "string"
-					},
-					"for": {
-						"Chrome": "string"
-					},
-					"blocking": {
+						"Pota": "'high' | 'low' | 'auto'",
 						"Chrome": "string"
 					},
 					"attributionsrc": {
+						"Pota": "string",
+						"Chrome": "string"
+					},
+					"blocking": {
+						"Pota": "boolean",
+						"Chrome": "string"
+					},
+					"event": {
+						"Pota": "string",
+						"Chrome": "string"
+					},
+					"language": {
+						"Pota": "string"
+					},
+					"text": {
+						"VSCode": "string"
+					},
+					"for": {
 						"Chrome": "string"
 					}
 				},
@@ -3452,12 +3749,14 @@
 					"autocomplete": {
 						"Solid": "string",
 						"Vue": "string",
+						"Pota": "'additional-name' | 'address-level1' | 'address-level2' | 'address-level3' | 'address-level4' | 'address-line1' | 'address-line2' | 'address-line3' | 'bday' | 'bday-day' | 'bday-month' | 'bday-year' | 'billing' | 'cc-additional-name' | 'cc-csc' | 'cc-exp' | 'cc-exp-month' | 'cc-exp-year' | 'cc-family-name' | 'cc-given-name' | 'cc-name' | 'cc-number' | 'cc-type' | 'country' | 'country-name' | 'current-password' | 'email' | 'family-name' | 'fax' | 'given-name' | 'home' | 'honorific-prefix' | 'honorific-suffix' | 'impp' | 'language' | 'mobile' | 'name' | 'new-password' | 'nickname' | 'off' | 'on' | 'organization' | 'organization-title' | 'pager' | 'photo' | 'postal-code' | 'sex' | 'shipping' | 'street-address' | 'tel' | 'tel-area-code' | 'tel-country-code' | 'tel-extension' | 'tel-local' | 'tel-local-prefix' | 'tel-local-suffix' | 'tel-national' | 'transaction-amount' | 'transaction-currency' | 'url' | 'username' | 'work' | (string & {})",
 						"VSCode": "'additional-name' | 'address-level1' | 'address-level2' | 'address-level3' | 'address-level4' | 'address-line1' | 'address-line2' | 'address-line3' | 'bday' | 'bday-year' | 'bday-day' | 'bday-month' | 'billing' | 'cc-additional-name' | 'cc-csc' | 'cc-exp' | 'cc-exp-month' | 'cc-exp-year' | 'cc-family-name' | 'cc-given-name' | 'cc-name' | 'cc-number' | 'cc-type' | 'country' | 'country-name' | 'current-password' | 'email' | 'family-name' | 'fax' | 'given-name' | 'home' | 'honorific-prefix' | 'honorific-suffix' | 'impp' | 'language' | 'mobile' | 'name' | 'new-password' | 'nickname' | 'off' | 'on' | 'organization' | 'organization-title' | 'pager' | 'photo' | 'postal-code' | 'sex' | 'shipping' | 'street-address' | 'tel-area-code' | 'tel' | 'tel-country-code' | 'tel-extension' | 'tel-local' | 'tel-local-prefix' | 'tel-local-suffix' | 'tel-national' | 'transaction-amount' | 'transaction-currency' | 'url' | 'username' | 'work'",
 						"Chrome": "string"
 					},
 					"autofocus": {
 						"Solid": "boolean",
 						"Vue": "boolean | 'true' | 'false'",
+						"Pota": "boolean",
 						"VSCode": "boolean"
 					},
 					"disabled": {
@@ -3465,6 +3764,7 @@
 						"Voby": "boolean",
 						"Vue": "boolean | 'true' | 'false'",
 						"React": "boolean",
+						"Pota": "boolean",
 						"VSCode": "boolean",
 						"Chrome": "boolean"
 					},
@@ -3473,6 +3773,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string"
 					},
 					"multiple": {
@@ -3480,6 +3781,7 @@
 						"Voby": "boolean",
 						"Vue": "boolean | 'true' | 'false'",
 						"React": "boolean",
+						"Pota": "boolean",
 						"VSCode": "boolean",
 						"Chrome": "boolean"
 					},
@@ -3488,6 +3790,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -3496,6 +3799,7 @@
 						"Voby": "boolean",
 						"Vue": "boolean | 'true' | 'false'",
 						"React": "boolean",
+						"Pota": "boolean",
 						"VSCode": "boolean",
 						"Chrome": "boolean"
 					},
@@ -3504,6 +3808,7 @@
 						"Voby": "number",
 						"Vue": "number | string",
 						"React": "number",
+						"Pota": "number | string",
 						"VSCode": "string",
 						"Chrome": "number | string"
 					},
@@ -3511,7 +3816,8 @@
 						"Solid": "string | string[] | number",
 						"Voby": "string",
 						"Vue": "any",
-						"React": "string | readonly string[] | number"
+						"React": "string | readonly string[] | number",
+						"Pota": "string | number"
 					},
 					"autoComplete": {
 						"Voby": "string",
@@ -3536,6 +3842,7 @@
 						"Solid": "string",
 						"Voby": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					}
@@ -3559,6 +3866,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -3567,6 +3875,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -3575,12 +3884,14 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"srcset": {
 						"Solid": "string",
 						"Vue": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -3589,6 +3900,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -3596,12 +3908,14 @@
 						"Solid": "number | string",
 						"Voby": "number | string",
 						"React": "number | string",
+						"Pota": "number | string",
 						"Chrome": "number | string"
 					},
 					"height": {
 						"Solid": "number | string",
 						"Voby": "number | string",
 						"React": "number | string",
+						"Pota": "number | string",
 						"Chrome": "number | string"
 					},
 					"srcSet": {
@@ -3635,6 +3949,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -3642,6 +3957,7 @@
 						"Solid": "string",
 						"Voby": "string",
 						"Vue": "string",
+						"Pota": "string",
 						"VSCode": "string"
 					},
 					"scoped": {
@@ -3649,6 +3965,7 @@
 						"Voby": "boolean",
 						"Vue": "boolean | 'true' | 'false'",
 						"React": "boolean",
+						"Pota": "boolean",
 						"VSCode": "boolean"
 					},
 					"type": {
@@ -3656,14 +3973,16 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
-						"VSCode": "string",
-						"Chrome": "string"
-					},
-					"title": {
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"blocking": {
+						"Pota": "boolean",
+						"Chrome": "string"
+					},
+					"title": {
+						"VSCode": "string",
 						"Chrome": "string"
 					}
 				},
@@ -3707,42 +4026,51 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"Chrome": "string"
 					},
 					"width": {
 						"Voby": "number | string",
 						"Vue": "number | string",
 						"React": "number | string",
+						"Pota": "number | string",
 						"Chrome": "string"
 					},
 					"cellpadding": {
 						"Vue": "number | string",
+						"Pota": "number | string",
 						"Chrome": "string"
 					},
 					"cellspacing": {
 						"Vue": "number | string",
+						"Pota": "number | string",
 						"Chrome": "string"
 					},
 					"align": {
 						"React": "'left' | 'center' | 'right'",
+						"Pota": "'left' | 'center' | 'right'",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"bgcolor": {
 						"React": "string",
+						"Pota": "string",
 						"Chrome": "string"
 					},
 					"border": {
 						"React": "number",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"frame": {
 						"React": "boolean",
+						"Pota": "'void' | 'above' | 'below' | 'hsides' | 'vsides' | 'lhs' | 'rhs' | 'box' | 'border'",
 						"Chrome": "string"
 					},
 					"rules": {
 						"React": "'none' | 'groups' | 'rows' | 'columns' | 'all'",
+						"Pota": "'none' | 'groups' | 'rows' | 'cols' | 'all'",
 						"Chrome": "string"
 					}
 				},
@@ -3754,16 +4082,23 @@
 				"deprecated": false,
 				"attributes": {
 					"align": {
+						"Pota": "'left' | 'center' | 'right' | 'justify' | 'char'",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
+					"bgcolor": {
+						"Pota": "string"
+					},
 					"char": {
+						"Pota": "string",
 						"Chrome": "string"
 					},
 					"charoff": {
+						"Pota": "string",
 						"Chrome": "string"
 					},
 					"valign": {
+						"Pota": "'baseline' | 'bottom' | 'middle' | 'top'",
 						"Chrome": "string"
 					}
 				},
@@ -3777,6 +4112,7 @@
 					"colspan": {
 						"Solid": "number | string",
 						"Vue": "number | string",
+						"Pota": "number | string",
 						"VSCode": "string",
 						"Chrome": "number | string"
 					},
@@ -3785,12 +4121,14 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"rowspan": {
 						"Solid": "number | string",
 						"Vue": "number | string",
+						"Pota": "number | string",
 						"VSCode": "string",
 						"Chrome": "number | string"
 					},
@@ -3808,6 +4146,7 @@
 						"Voby": "'left' | 'center' | 'right' | 'justify' | 'char'",
 						"Vue": "'left' | 'center' | 'right' | 'justify' | 'char'",
 						"React": "'left' | 'center' | 'right' | 'justify' | 'char'",
+						"Pota": "'left' | 'center' | 'right' | 'justify' | 'char'",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -3815,12 +4154,14 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "'col' | 'row' | 'rowgroup' | 'colgroup'",
 						"Chrome": "string"
 					},
 					"abbr": {
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -3828,35 +4169,43 @@
 						"Voby": "number | string",
 						"Vue": "number | string",
 						"React": "number | string",
+						"Pota": "string",
 						"Chrome": "string"
 					},
 					"width": {
 						"Voby": "number | string",
 						"Vue": "number | string",
 						"React": "number | string",
+						"Pota": "number | string",
 						"Chrome": "string"
 					},
 					"valign": {
 						"Voby": "'top' | 'middle' | 'bottom' | 'baseline'",
 						"Vue": "'top' | 'middle' | 'bottom' | 'baseline'",
 						"React": "'top' | 'middle' | 'bottom' | 'baseline'",
+						"Pota": "'baseline' | 'bottom' | 'middle' | 'top'",
 						"Chrome": "string"
 					},
 					"axis": {
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"bgcolor": {
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"char": {
+						"Pota": "string",
 						"Chrome": "string"
 					},
 					"charoff": {
+						"Pota": "string",
 						"Chrome": "string"
 					},
 					"nowrap": {
+						"Pota": "boolean",
 						"Chrome": "boolean"
 					}
 				},
@@ -3870,16 +4219,20 @@
 					"content": {
 						"Solid": "DocumentFragment"
 					},
-					"shadowrootmode": {
-						"Chrome": "string"
+					"shadowrootclonable": {
+						"Pota": "boolean",
+						"Chrome": "boolean"
 					},
 					"shadowrootdelegatesfocus": {
+						"Pota": "boolean",
 						"Chrome": "boolean"
 					},
-					"shadowrootclonable": {
-						"Chrome": "boolean"
+					"shadowrootmode": {
+						"Pota": "'open' | 'closed'",
+						"Chrome": "string"
 					},
 					"shadowrootserializable": {
+						"Pota": "boolean",
 						"Chrome": "boolean"
 					}
 				},
@@ -3893,12 +4246,14 @@
 					"autocomplete": {
 						"Solid": "string",
 						"Vue": "string",
+						"Pota": "'additional-name' | 'address-level1' | 'address-level2' | 'address-level3' | 'address-level4' | 'address-line1' | 'address-line2' | 'address-line3' | 'bday' | 'bday-day' | 'bday-month' | 'bday-year' | 'billing' | 'cc-additional-name' | 'cc-csc' | 'cc-exp' | 'cc-exp-month' | 'cc-exp-year' | 'cc-family-name' | 'cc-given-name' | 'cc-name' | 'cc-number' | 'cc-type' | 'country' | 'country-name' | 'current-password' | 'email' | 'family-name' | 'fax' | 'given-name' | 'home' | 'honorific-prefix' | 'honorific-suffix' | 'impp' | 'language' | 'mobile' | 'name' | 'new-password' | 'nickname' | 'off' | 'on' | 'organization' | 'organization-title' | 'pager' | 'photo' | 'postal-code' | 'sex' | 'shipping' | 'street-address' | 'tel' | 'tel-area-code' | 'tel-country-code' | 'tel-extension' | 'tel-local' | 'tel-local-prefix' | 'tel-local-suffix' | 'tel-national' | 'transaction-amount' | 'transaction-currency' | 'url' | 'username' | 'work' | (string & {})",
 						"VSCode": "'additional-name' | 'address-level1' | 'address-level2' | 'address-level3' | 'address-level4' | 'address-line1' | 'address-line2' | 'address-line3' | 'bday' | 'bday-year' | 'bday-day' | 'bday-month' | 'billing' | 'cc-additional-name' | 'cc-csc' | 'cc-exp' | 'cc-exp-month' | 'cc-exp-year' | 'cc-family-name' | 'cc-given-name' | 'cc-name' | 'cc-number' | 'cc-type' | 'country' | 'country-name' | 'current-password' | 'email' | 'family-name' | 'fax' | 'given-name' | 'home' | 'honorific-prefix' | 'honorific-suffix' | 'impp' | 'language' | 'mobile' | 'name' | 'new-password' | 'nickname' | 'off' | 'on' | 'organization' | 'organization-title' | 'pager' | 'photo' | 'postal-code' | 'sex' | 'shipping' | 'street-address' | 'tel-area-code' | 'tel' | 'tel-country-code' | 'tel-extension' | 'tel-local' | 'tel-local-prefix' | 'tel-local-suffix' | 'tel-national' | 'transaction-amount' | 'transaction-currency' | 'url' | 'username' | 'work'",
 						"Chrome": "string"
 					},
 					"autofocus": {
 						"Solid": "boolean",
 						"Vue": "boolean | 'true' | 'false'",
+						"Pota": "boolean",
 						"VSCode": "boolean"
 					},
 					"cols": {
@@ -3906,12 +4261,14 @@
 						"Voby": "number",
 						"Vue": "number | string",
 						"React": "number",
+						"Pota": "number | string",
 						"VSCode": "string",
 						"Chrome": "number | string"
 					},
 					"dirname": {
 						"Solid": "string",
 						"Vue": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -3920,28 +4277,33 @@
 						"Voby": "boolean",
 						"Vue": "boolean | 'true' | 'false'",
 						"React": "boolean",
+						"Pota": "boolean",
 						"VSCode": "boolean",
 						"Chrome": "boolean"
 					},
 					"enterkeyhint": {
-						"Solid": "'enter' | 'done' | 'go' | 'next' | 'previous' | 'search' | 'send'"
+						"Solid": "'enter' | 'done' | 'go' | 'next' | 'previous' | 'search' | 'send'",
+						"Pota": "'enter' | 'done' | 'go' | 'next' | 'previous' | 'search' | 'send'"
 					},
 					"form": {
 						"Solid": "string",
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string"
 					},
 					"maxlength": {
 						"Solid": "number | string",
 						"Vue": "number | string",
+						"Pota": "number | string",
 						"VSCode": "string",
 						"Chrome": "number | string"
 					},
 					"minlength": {
 						"Solid": "number | string",
 						"Vue": "number | string",
+						"Pota": "number | string",
 						"VSCode": "string",
 						"Chrome": "number | string"
 					},
@@ -3950,6 +4312,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -3958,12 +4321,14 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"readonly": {
 						"Solid": "boolean",
 						"Vue": "boolean | 'true' | 'false'",
+						"Pota": "boolean",
 						"VSCode": "boolean",
 						"Chrome": "boolean"
 					},
@@ -3972,6 +4337,7 @@
 						"Voby": "boolean",
 						"Vue": "boolean | 'true' | 'false'",
 						"React": "boolean",
+						"Pota": "boolean",
 						"VSCode": "boolean",
 						"Chrome": "boolean"
 					},
@@ -3980,6 +4346,7 @@
 						"Voby": "number",
 						"Vue": "number | string",
 						"React": "number",
+						"Pota": "number | string",
 						"VSCode": "string",
 						"Chrome": "number | string"
 					},
@@ -3987,13 +4354,15 @@
 						"Solid": "string | string[] | number",
 						"Voby": "string | readonly string[] | number",
 						"Vue": "string | readonly string[] | number | null",
-						"React": "string | readonly string[] | number"
+						"React": "string | readonly string[] | number",
+						"Pota": "string | number"
 					},
 					"wrap": {
 						"Solid": "'hard' | 'soft' | 'off'",
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "'hard' | 'soft' | 'off'",
 						"VSCode": "'soft' | 'hard'",
 						"Chrome": "string"
 					},
@@ -4027,6 +4396,9 @@
 						"Voby": "ObservableMaybe<Nullable<KeyboardEventHandler<T>>>",
 						"React": "ChangeEventHandler<T>"
 					},
+					"autocorrect": {
+						"Pota": "'on' | 'off'"
+					},
 					"inputmode": {
 						"VSCode": "'verbatim' | 'latin' | 'latin-name' | 'latin-prose' | 'full-width-latin' | 'kana' | 'kana-name' | 'katakana' | 'numeric' | 'tel' | 'email' | 'url'"
 					},
@@ -4045,16 +4417,23 @@
 				"deprecated": false,
 				"attributes": {
 					"align": {
+						"Pota": "'left' | 'center' | 'right' | 'justify' | 'char'",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
+					"bgcolor": {
+						"Pota": "string"
+					},
 					"char": {
+						"Pota": "string",
 						"Chrome": "string"
 					},
 					"charoff": {
+						"Pota": "string",
 						"Chrome": "string"
 					},
 					"valign": {
+						"Pota": "'baseline' | 'bottom' | 'middle' | 'top'",
 						"Chrome": "string"
 					}
 				},
@@ -4068,6 +4447,7 @@
 					"colspan": {
 						"Solid": "number | string",
 						"Vue": "number | string",
+						"Pota": "number | string",
 						"VSCode": "string",
 						"Chrome": "number | string"
 					},
@@ -4076,12 +4456,14 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"rowspan": {
 						"Solid": "number | string",
 						"Vue": "number | string",
+						"Pota": "number | string",
 						"VSCode": "string",
 						"Chrome": "number | string"
 					},
@@ -4100,6 +4482,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "'col' | 'row' | 'rowgroup' | 'colgroup'",
 						"VSCode": "'row' | 'col' | 'rowgroup' | 'colgroup'",
 						"Chrome": "string"
 					},
@@ -4107,6 +4490,7 @@
 						"Voby": "'left' | 'center' | 'right' | 'justify' | 'char'",
 						"Vue": "'left' | 'center' | 'right' | 'justify' | 'char'",
 						"React": "'left' | 'center' | 'right' | 'justify' | 'char'",
+						"Pota": "'left' | 'center' | 'right' | 'justify' | 'char'",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -4114,37 +4498,46 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
-					"sorted": {
-						"VSCode": "string"
-					},
 					"axis": {
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"bgcolor": {
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
-					"height": {
-						"Chrome": "string"
-					},
-					"width": {
-						"Chrome": "string"
-					},
 					"char": {
+						"Pota": "string",
 						"Chrome": "string"
 					},
 					"charoff": {
+						"Pota": "string",
+						"Chrome": "string"
+					},
+					"height": {
+						"Pota": "string",
 						"Chrome": "string"
 					},
 					"nowrap": {
+						"Pota": "boolean",
 						"Chrome": "boolean"
 					},
 					"valign": {
+						"Pota": "'baseline' | 'bottom' | 'middle' | 'top'",
 						"Chrome": "string"
+					},
+					"width": {
+						"Pota": "number | string",
+						"Chrome": "string"
+					},
+					"sorted": {
+						"VSCode": "string"
 					}
 				},
 				"url": "https://developer.mozilla.org/docs/Web/HTML/Element/th",
@@ -4155,16 +4548,23 @@
 				"deprecated": false,
 				"attributes": {
 					"align": {
+						"Pota": "'left' | 'center' | 'right' | 'justify' | 'char'",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
+					"bgcolor": {
+						"Pota": "string"
+					},
 					"char": {
+						"Pota": "string",
 						"Chrome": "string"
 					},
 					"charoff": {
+						"Pota": "string",
 						"Chrome": "string"
 					},
 					"valign": {
+						"Pota": "'baseline' | 'bottom' | 'middle' | 'top'",
 						"Chrome": "string"
 					}
 				},
@@ -4178,6 +4578,7 @@
 					"datetime": {
 						"Solid": "string",
 						"Vue": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -4202,19 +4603,24 @@
 				"deprecated": false,
 				"attributes": {
 					"align": {
+						"Pota": "'left' | 'center' | 'right' | 'justify' | 'char'",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
+					"bgcolor": {
+						"Pota": "string",
+						"Chrome": "string"
+					},
 					"char": {
+						"Pota": "string",
 						"Chrome": "string"
 					},
 					"charoff": {
+						"Pota": "string",
 						"Chrome": "string"
 					},
 					"valign": {
-						"Chrome": "string"
-					},
-					"bgcolor": {
+						"Pota": "'baseline' | 'bottom' | 'middle' | 'top'",
 						"Chrome": "string"
 					}
 				},
@@ -4230,6 +4636,7 @@
 						"Voby": "boolean",
 						"Vue": "boolean | 'true' | 'false'",
 						"React": "boolean",
+						"Pota": "boolean",
 						"VSCode": "boolean",
 						"Chrome": "boolean"
 					},
@@ -4238,6 +4645,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "| 'alternative'\n\t\t| 'descriptions'\n\t\t| 'main'\n\t\t| 'main-desc'\n\t\t| 'translation'\n\t\t| 'commentary'\n\t\t// ??\n\t\t| 'subtitles'\n\t\t| 'captions'\n\t\t| 'chapters'\n\t\t| 'metadata'",
 						"VSCode": "'subtitles' | 'captions' | 'descriptions' | 'chapters' | 'metadata'",
 						"Chrome": "string"
 					},
@@ -4246,6 +4654,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -4254,12 +4663,14 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"srclang": {
 						"Solid": "string",
 						"Vue": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -4283,10 +4694,12 @@
 				"deprecated": false,
 				"attributes": {
 					"compact": {
+						"Pota": "boolean",
 						"VSCode": "string",
 						"Chrome": "boolean"
 					},
 					"type": {
+						"Pota": "'circle' | 'disc' | 'square'",
 						"Chrome": "string"
 					}
 				},
@@ -4309,12 +4722,14 @@
 						"Voby": "number | string",
 						"Vue": "number | string",
 						"React": "number | string",
+						"Pota": "number | string",
 						"VSCode": "string",
 						"Chrome": "number | string"
 					},
 					"playsinline": {
 						"Solid": "boolean",
 						"Vue": "boolean | 'true' | 'false'",
+						"Pota": "boolean",
 						"Chrome": "boolean"
 					},
 					"poster": {
@@ -4322,6 +4737,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -4330,11 +4746,13 @@
 						"Voby": "number | string",
 						"Vue": "number | string",
 						"React": "number | string",
+						"Pota": "number | string",
 						"VSCode": "string",
 						"Chrome": "number | string"
 					},
 					"disablepictureinpicture": {
 						"Solid": "boolean",
+						"Pota": "boolean",
 						"Chrome": "boolean"
 					},
 					"playsInline": {
@@ -4350,6 +4768,9 @@
 						"Voby": "boolean",
 						"Vue": "boolean | 'true' | 'false'",
 						"React": "boolean"
+					},
+					"disableremoteplayback": {
+						"Pota": "boolean"
 					},
 					"src": {
 						"VSCode": "string"
@@ -4446,6 +4867,7 @@
 				"deprecated": true,
 				"attributes": {
 					"compact": {
+						"Pota": "boolean",
 						"Chrome": "boolean"
 					}
 				},
@@ -4457,12 +4879,15 @@
 				"deprecated": true,
 				"attributes": {
 					"color": {
+						"Pota": "string",
 						"Chrome": "string"
 					},
 					"face": {
+						"Pota": "string",
 						"Chrome": "string"
 					},
 					"size": {
+						"Pota": "string",
 						"Chrome": "string"
 					}
 				},
@@ -4473,28 +4898,36 @@
 			"frame": {
 				"deprecated": true,
 				"attributes": {
-					"name": {
-						"Chrome": "string"
-					},
-					"scrolling": {
-						"Chrome": "string"
-					},
-					"src": {
-						"Chrome": "string"
-					},
 					"frameborder": {
+						"Pota": "string",
 						"Chrome": "string"
 					},
 					"longdesc": {
+						"Pota": "string",
 						"Chrome": "string"
 					},
-					"noresize": {
-						"Chrome": "boolean"
-					},
 					"marginheight": {
+						"Pota": "string",
 						"Chrome": "string"
 					},
 					"marginwidth": {
+						"Pota": "string",
+						"Chrome": "string"
+					},
+					"name": {
+						"Pota": "string",
+						"Chrome": "string"
+					},
+					"noresize": {
+						"Pota": "boolean",
+						"Chrome": "boolean"
+					},
+					"scrolling": {
+						"Pota": "'yes' | 'no'",
+						"Chrome": "string"
+					},
+					"src": {
+						"Pota": "string",
 						"Chrome": "string"
 					}
 				},
@@ -4506,9 +4939,11 @@
 				"deprecated": true,
 				"attributes": {
 					"cols": {
+						"Pota": "string",
 						"Chrome": "string"
 					},
 					"rows": {
+						"Pota": "string",
 						"Chrome": "string"
 					},
 					"onblur": {
@@ -4594,39 +5029,46 @@
 				"attributes": {
 					"autofocus": {
 						"Solid": "boolean",
-						"Vue": "boolean | 'true' | 'false'"
+						"Vue": "boolean | 'true' | 'false'",
+						"Pota": "boolean"
 					},
 					"challenge": {
 						"Solid": "string",
 						"Voby": "string",
 						"Vue": "string",
-						"React": "string"
+						"React": "string",
+						"Pota": "string"
 					},
 					"disabled": {
 						"Solid": "boolean",
 						"Voby": "boolean",
 						"Vue": "boolean | 'true' | 'false'",
-						"React": "boolean"
+						"React": "boolean",
+						"Pota": "boolean"
 					},
 					"form": {
 						"Solid": "string",
 						"Voby": "string",
 						"Vue": "string",
-						"React": "string"
+						"React": "string",
+						"Pota": "string"
 					},
 					"keytype": {
 						"Solid": "string",
-						"Vue": "string"
+						"Vue": "string",
+						"Pota": "string"
 					},
 					"keyparams": {
 						"Solid": "string",
-						"Vue": "string"
+						"Vue": "string",
+						"Pota": "string"
 					},
 					"name": {
 						"Solid": "string",
 						"Voby": "string",
 						"Vue": "string",
-						"React": "string"
+						"React": "string",
+						"Pota": "string"
 					},
 					"autoFocus": {
 						"Voby": "boolean"
@@ -4648,6 +5090,7 @@
 				"deprecated": true,
 				"attributes": {
 					"width": {
+						"Pota": "string",
 						"Chrome": "number | string"
 					}
 				},
@@ -4660,6 +5103,7 @@
 				"attributes": {
 					"behavior": {
 						"Preact": "'scroll' | 'slide' | 'alternate'",
+						"Pota": "'scroll' | 'slide' | 'alternate'",
 						"Chrome": "string"
 					},
 					"bgColor": {
@@ -4667,18 +5111,22 @@
 					},
 					"direction": {
 						"Preact": "'left' | 'right' | 'up' | 'down'",
+						"Pota": "'left' | 'right' | 'up' | 'down'",
 						"Chrome": "string"
 					},
 					"height": {
 						"Preact": "number | string",
+						"Pota": "number | string",
 						"Chrome": "string"
 					},
 					"hspace": {
 						"Preact": "number | string",
+						"Pota": "number | string",
 						"Chrome": "number | string"
 					},
 					"loop": {
 						"Preact": "number | string",
+						"Pota": "number | string",
 						"Chrome": "number | string"
 					},
 					"scrollAmount": {
@@ -4692,22 +5140,28 @@
 					},
 					"vspace": {
 						"Preact": "number | string",
+						"Pota": "number | string",
 						"Chrome": "number | string"
 					},
 					"width": {
 						"Preact": "number | string",
+						"Pota": "number | string",
 						"Chrome": "string"
 					},
 					"bgcolor": {
+						"Pota": "string",
 						"Chrome": "string"
 					},
 					"scrollamount": {
+						"Pota": "number | string",
 						"Chrome": "number | string"
 					},
 					"scrolldelay": {
+						"Pota": "number | string",
 						"Chrome": "number | string"
 					},
 					"truespeed": {
+						"Pota": "boolean",
 						"Chrome": "boolean"
 					}
 				},
@@ -4765,6 +5219,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -4773,14 +5228,17 @@
 						"Voby": "string | readonly string[] | number",
 						"Vue": "string | readonly string[] | number",
 						"React": "string | readonly string[] | number",
+						"Pota": "string | number",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"type": {
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"valuetype": {
+						"Pota": "'data' | 'ref' | 'object'",
 						"VSCode": "string",
 						"Chrome": "string"
 					}
@@ -4835,6 +5293,7 @@
 				"deprecated": true,
 				"attributes": {
 					"width": {
+						"Pota": "string",
 						"Chrome": "number | string"
 					}
 				},
@@ -4857,7 +5316,8 @@
 					"allowpopups": {
 						"Voby": "boolean",
 						"Vue": "boolean | 'true' | 'false'",
-						"React": "boolean"
+						"React": "boolean",
+						"Pota": "boolean"
 					},
 					"autoFocus": {
 						"Voby": "boolean",
@@ -4866,75 +5326,93 @@
 					"autosize": {
 						"Voby": "boolean",
 						"Vue": "boolean | 'true' | 'false'",
-						"React": "boolean"
+						"React": "boolean",
+						"Pota": "boolean"
 					},
 					"blinkfeatures": {
 						"Voby": "string",
 						"Vue": "string",
-						"React": "string"
+						"React": "string",
+						"Pota": "string"
 					},
 					"disableblinkfeatures": {
 						"Voby": "string",
 						"Vue": "string",
-						"React": "string"
+						"React": "string",
+						"Pota": "string"
 					},
 					"disableguestresize": {
 						"Voby": "boolean",
 						"Vue": "boolean | 'true' | 'false'",
-						"React": "boolean"
+						"React": "boolean",
+						"Pota": "boolean"
 					},
 					"disablewebsecurity": {
 						"Voby": "boolean",
 						"Vue": "boolean | 'true' | 'false'",
-						"React": "boolean"
+						"React": "boolean",
+						"Pota": "boolean"
 					},
 					"guestinstance": {
 						"Voby": "string",
 						"Vue": "string",
-						"React": "string"
+						"React": "string",
+						"Pota": "string"
 					},
 					"httpreferrer": {
 						"Voby": "string",
 						"Vue": "string",
-						"React": "string"
+						"React": "string",
+						"Pota": "string"
 					},
 					"nodeintegration": {
 						"Voby": "boolean",
 						"Vue": "boolean | 'true' | 'false'",
-						"React": "boolean"
+						"React": "boolean",
+						"Pota": "boolean"
 					},
 					"partition": {
 						"Voby": "string",
 						"Vue": "string",
-						"React": "string"
+						"React": "string",
+						"Pota": "string"
 					},
 					"plugins": {
 						"Voby": "boolean",
 						"Vue": "boolean | 'true' | 'false'",
-						"React": "boolean"
+						"React": "boolean",
+						"Pota": "boolean"
 					},
 					"preload": {
 						"Voby": "string",
 						"Vue": "string",
-						"React": "string"
+						"React": "string",
+						"Pota": "string"
 					},
 					"src": {
 						"Voby": "string",
 						"Vue": "string",
-						"React": "string"
+						"React": "string",
+						"Pota": "string"
 					},
 					"useragent": {
 						"Voby": "string",
 						"Vue": "string",
-						"React": "string"
+						"React": "string",
+						"Pota": "string"
 					},
 					"webpreferences": {
 						"Voby": "string",
 						"Vue": "string",
-						"React": "string"
+						"React": "string",
+						"Pota": "string"
 					},
 					"allowfullscreen": {
-						"Vue": "boolean | 'true' | 'false'"
+						"Vue": "boolean | 'true' | 'false'",
+						"Pota": "boolean"
+					},
+					"autofocus": {
+						"Pota": "boolean"
 					}
 				},
 				"url": "https://developer.mozilla.org/docs/Web/HTML/Element/webview",
@@ -4951,6 +5429,7 @@
 						"Voby": "boolean",
 						"Vue": "any",
 						"React": "any",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -4959,12 +5438,14 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"hreflang": {
 						"Solid": "string",
 						"Vue": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -4979,12 +5460,14 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"referrerpolicy": {
 						"Solid": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 						"Vue": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
+						"Pota": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -4992,6 +5475,7 @@
 						"Solid": "string",
 						"Voby": "string",
 						"Vue": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -5000,6 +5484,7 @@
 						"Voby": "'_self' | '_blank' | '_parent' | '_top'",
 						"Vue": "string",
 						"React": "'_self' | '_blank' | '_parent' | '_top' | (string & {})",
+						"Pota": "'_self' | '_blank' | '_parent' | '_top' | (string & {})",
 						"VSCode": "'_self' | '_blank' | '_parent' | '_top'",
 						"Chrome": "string"
 					},
@@ -5008,6 +5493,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -5020,22 +5506,28 @@
 						"Voby": "string",
 						"React": "string"
 					},
-					"coords": {
+					"attributionsrc": {
+						"Pota": "string",
 						"Chrome": "string"
 					},
 					"charset": {
+						"Pota": "string",
+						"Chrome": "string"
+					},
+					"coords": {
+						"Pota": "string",
 						"Chrome": "string"
 					},
 					"name": {
+						"Pota": "string",
 						"Chrome": "string"
 					},
 					"rev": {
+						"Pota": "string",
 						"Chrome": "string"
 					},
 					"shape": {
-						"Chrome": "string"
-					},
-					"attributionsrc": {
+						"Pota": "'rect' | 'circle' | 'poly' | 'default'",
 						"Chrome": "string"
 					}
 				},
@@ -5906,18 +6398,21 @@
 						"Voby": "boolean",
 						"Vue": "boolean | 'true' | 'false'",
 						"React": "boolean",
+						"Pota": "boolean",
 						"VSCode": "boolean",
 						"Chrome": "boolean"
 					},
 					"charset": {
 						"Solid": "string",
 						"Vue": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"crossorigin": {
 						"Solid": "'anonymous' | 'use-credentials' | ''",
 						"Vue": "string",
+						"Pota": "'anonymous' | 'use-credentials' | ''",
 						"VSCode": "'anonymous' | 'use-credentials'",
 						"Chrome": "string"
 					},
@@ -5926,6 +6421,7 @@
 						"Voby": "boolean",
 						"Vue": "boolean | 'true' | 'false'",
 						"React": "boolean",
+						"Pota": "boolean",
 						"VSCode": "boolean",
 						"Chrome": "boolean"
 					},
@@ -5934,12 +6430,14 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"nomodule": {
 						"Solid": "boolean",
 						"Vue": "boolean | 'true' | 'false'",
+						"Pota": "boolean",
 						"VSCode": "string",
 						"Chrome": "boolean"
 					},
@@ -5947,11 +6445,13 @@
 						"Solid": "string",
 						"Voby": "string",
 						"Vue": "string",
+						"Pota": "string",
 						"VSCode": "string"
 					},
 					"referrerpolicy": {
 						"Solid": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 						"Vue": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
+						"Pota": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -5960,6 +6460,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -5968,6 +6469,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "'importmap' | 'module' | 'speculationrules' | (string & {})",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -5990,22 +6492,29 @@
 						"Voby": "string",
 						"React": "string"
 					},
-					"text": {
-						"VSCode": "string"
-					},
 					"fetchpriority": {
-						"Chrome": "string"
-					},
-					"event": {
-						"Chrome": "string"
-					},
-					"for": {
-						"Chrome": "string"
-					},
-					"blocking": {
+						"Pota": "'high' | 'low' | 'auto'",
 						"Chrome": "string"
 					},
 					"attributionsrc": {
+						"Pota": "string",
+						"Chrome": "string"
+					},
+					"blocking": {
+						"Pota": "boolean",
+						"Chrome": "string"
+					},
+					"event": {
+						"Pota": "string",
+						"Chrome": "string"
+					},
+					"language": {
+						"Pota": "string"
+					},
+					"text": {
+						"VSCode": "string"
+					},
+					"for": {
 						"Chrome": "string"
 					}
 				},
@@ -6039,6 +6548,7 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
@@ -6046,6 +6556,7 @@
 						"Solid": "string",
 						"Voby": "string",
 						"Vue": "string",
+						"Pota": "string",
 						"VSCode": "string"
 					},
 					"scoped": {
@@ -6053,6 +6564,7 @@
 						"Voby": "boolean",
 						"Vue": "boolean | 'true' | 'false'",
 						"React": "boolean",
+						"Pota": "boolean",
 						"VSCode": "boolean"
 					},
 					"type": {
@@ -6060,14 +6572,16 @@
 						"Voby": "string",
 						"Vue": "string",
 						"React": "string",
-						"VSCode": "string",
-						"Chrome": "string"
-					},
-					"title": {
+						"Pota": "string",
 						"VSCode": "string",
 						"Chrome": "string"
 					},
 					"blocking": {
+						"Pota": "boolean",
+						"Chrome": "string"
+					},
+					"title": {
+						"VSCode": "string",
 						"Chrome": "string"
 					}
 				},
@@ -6277,10 +6791,12 @@
 				"deprecated": false,
 				"attributes": {
 					"encoding": {
-						"Preact": "string"
+						"Preact": "string",
+						"Pota": "string"
 					},
 					"src": {
-						"Preact": "string"
+						"Preact": "string",
+						"Pota": "string"
 					}
 				},
 				"url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/annotation",
@@ -6291,10 +6807,12 @@
 				"deprecated": false,
 				"attributes": {
 					"encoding": {
-						"Preact": "string"
+						"Preact": "string",
+						"Pota": "string"
 					},
 					"src": {
-						"Preact": "string"
+						"Preact": "string",
+						"Pota": "string"
 					}
 				},
 				"url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/annotation-xml",
@@ -6305,10 +6823,12 @@
 				"deprecated": false,
 				"attributes": {
 					"actiontype": {
-						"Preact": "'statusline' | 'toggle'"
+						"Preact": "'statusline' | 'toggle'",
+						"Pota": "'statusline' | 'toggle'"
 					},
 					"selection": {
-						"Preact": "string"
+						"Preact": "string",
+						"Pota": "string"
 					}
 				},
 				"url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/maction",
@@ -6319,7 +6839,8 @@
 				"deprecated": false,
 				"attributes": {
 					"display": {
-						"Preact": "'block' | 'inline'"
+						"Preact": "'block' | 'inline'",
+						"Pota": "'block' | 'inline'"
 					}
 				},
 				"url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/math",
@@ -6337,13 +6858,16 @@
 				"deprecated": false,
 				"attributes": {
 					"denomalign": {
-						"Preact": "'center' | 'left' | 'right'"
+						"Preact": "'center' | 'left' | 'right'",
+						"Pota": "'center' | 'left' | 'right'"
 					},
 					"linethickness": {
-						"Preact": "string"
+						"Preact": "string",
+						"Pota": "string"
 					},
 					"numalign": {
-						"Preact": "'center' | 'left' | 'right'"
+						"Preact": "'center' | 'left' | 'right'",
+						"Pota": "'center' | 'left' | 'right'"
 					}
 				},
 				"url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mfrac",
@@ -6354,7 +6878,8 @@
 				"deprecated": false,
 				"attributes": {
 					"mathvariant": {
-						"Preact": "'normal' | 'bold' | 'italic' | 'bold-italic' | 'double-struck' | 'bold-fraktur' | 'script' | 'bold-script' | 'fraktur' | 'sans-serif' | 'bold-sans-serif' | 'sans-serif-italic' | 'sans-serif-bold-italic' | 'monospace' | 'initial' | 'tailed' | 'looped' | 'stretched'"
+						"Preact": "'normal' | 'bold' | 'italic' | 'bold-italic' | 'double-struck' | 'bold-fraktur' | 'script' | 'bold-script' | 'fraktur' | 'sans-serif' | 'bold-sans-serif' | 'sans-serif-italic' | 'sans-serif-bold-italic' | 'monospace' | 'initial' | 'tailed' | 'looped' | 'stretched'",
+						"Pota": "'normal'"
 					}
 				},
 				"url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mi",
@@ -6365,10 +6890,12 @@
 				"deprecated": false,
 				"attributes": {
 					"subscriptshift": {
-						"Preact": "string"
+						"Preact": "string",
+						"Pota": "string"
 					},
 					"superscriptshift": {
-						"Preact": "string"
+						"Preact": "string",
+						"Pota": "string"
 					}
 				},
 				"url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mmultiscripts",
@@ -6386,37 +6913,51 @@
 				"deprecated": false,
 				"attributes": {
 					"accent": {
-						"Preact": "boolean"
+						"Preact": "boolean",
+						"Pota": "boolean"
 					},
 					"fence": {
-						"Preact": "boolean"
+						"Preact": "boolean",
+						"Pota": "boolean"
 					},
 					"largeop": {
-						"Preact": "boolean"
+						"Preact": "boolean",
+						"Pota": "boolean"
 					},
 					"lspace": {
-						"Preact": "string"
+						"Preact": "string",
+						"Pota": "string"
 					},
 					"maxsize": {
-						"Preact": "string"
+						"Preact": "string",
+						"Pota": "string"
 					},
 					"minsize": {
-						"Preact": "string"
+						"Preact": "string",
+						"Pota": "string"
 					},
 					"movablelimits": {
-						"Preact": "boolean"
+						"Preact": "boolean",
+						"Pota": "boolean"
 					},
 					"rspace": {
-						"Preact": "string"
+						"Preact": "string",
+						"Pota": "string"
 					},
 					"separator": {
-						"Preact": "boolean"
+						"Preact": "boolean",
+						"Pota": "boolean"
 					},
 					"stretchy": {
-						"Preact": "boolean"
+						"Preact": "boolean",
+						"Pota": "boolean"
 					},
 					"symmetric": {
-						"Preact": "boolean"
+						"Preact": "boolean",
+						"Pota": "boolean"
+					},
+					"form": {
+						"Pota": "'prefix' | 'infix' | 'postfix'"
 					}
 				},
 				"url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mo",
@@ -6427,7 +6968,8 @@
 				"deprecated": false,
 				"attributes": {
 					"accent": {
-						"Preact": "boolean"
+						"Preact": "boolean",
+						"Pota": "boolean"
 					}
 				},
 				"url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mover",
@@ -6438,19 +6980,24 @@
 				"deprecated": false,
 				"attributes": {
 					"depth": {
-						"Preact": "string"
+						"Preact": "string",
+						"Pota": "string"
 					},
 					"height": {
-						"Preact": "string"
+						"Preact": "string",
+						"Pota": "string"
 					},
 					"lspace": {
-						"Preact": "string"
+						"Preact": "string",
+						"Pota": "string"
 					},
 					"voffset": {
-						"Preact": "string"
+						"Preact": "string",
+						"Pota": "string"
 					},
 					"width": {
-						"Preact": "string"
+						"Preact": "string",
+						"Pota": "string"
 					}
 				},
 				"url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mpadded",
@@ -6489,10 +7036,12 @@
 				"deprecated": false,
 				"attributes": {
 					"lquote": {
-						"Preact": "string"
+						"Preact": "string",
+						"Pota": "string"
 					},
 					"rquote": {
-						"Preact": "string"
+						"Preact": "string",
+						"Pota": "string"
 					}
 				},
 				"url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/ms",
@@ -6503,13 +7052,16 @@
 				"deprecated": false,
 				"attributes": {
 					"depth": {
-						"Preact": "string"
+						"Preact": "string",
+						"Pota": "string"
 					},
 					"height": {
-						"Preact": "string"
+						"Preact": "string",
+						"Pota": "string"
 					},
 					"width": {
-						"Preact": "string"
+						"Preact": "string",
+						"Pota": "string"
 					}
 				},
 				"url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mspace",
@@ -6527,25 +7079,32 @@
 				"deprecated": false,
 				"attributes": {
 					"background": {
-						"Preact": "string"
+						"Preact": "string",
+						"Pota": "string"
 					},
 					"color": {
-						"Preact": "string"
+						"Preact": "string",
+						"Pota": "string"
 					},
 					"fontsize": {
-						"Preact": "string"
+						"Preact": "string",
+						"Pota": "string"
 					},
 					"fontstyle": {
-						"Preact": "string"
+						"Preact": "string",
+						"Pota": "string"
 					},
 					"fontweight": {
-						"Preact": "string"
+						"Preact": "string",
+						"Pota": "string"
 					},
 					"scriptminsize": {
-						"Preact": "string"
+						"Preact": "string",
+						"Pota": "string"
 					},
 					"scriptsizemultiplier": {
-						"Preact": "string"
+						"Preact": "string",
+						"Pota": "string"
 					}
 				},
 				"url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mstyle",
@@ -6556,7 +7115,8 @@
 				"deprecated": false,
 				"attributes": {
 					"subscriptshift": {
-						"Preact": "string"
+						"Preact": "string",
+						"Pota": "string"
 					}
 				},
 				"url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/msub",
@@ -6567,10 +7127,12 @@
 				"deprecated": false,
 				"attributes": {
 					"subscriptshift": {
-						"Preact": "string"
+						"Preact": "string",
+						"Pota": "string"
 					},
 					"superscriptshift": {
-						"Preact": "string"
+						"Preact": "string",
+						"Pota": "string"
 					}
 				},
 				"url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/msubsup",
@@ -6581,7 +7143,8 @@
 				"deprecated": false,
 				"attributes": {
 					"superscriptshift": {
-						"Preact": "string"
+						"Preact": "string",
+						"Pota": "string"
 					}
 				},
 				"url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/msup",
@@ -6592,34 +7155,44 @@
 				"deprecated": false,
 				"attributes": {
 					"align": {
-						"Preact": "'axis' | 'baseline' | 'bottom' | 'center' | 'top'"
+						"Preact": "'axis' | 'baseline' | 'bottom' | 'center' | 'top'",
+						"Pota": "'axis' | 'baseline' | 'bottom' | 'center' | 'top'"
 					},
 					"columnalign": {
-						"Preact": "'center' | 'left' | 'right'"
+						"Preact": "'center' | 'left' | 'right'",
+						"Pota": "'center' | 'left' | 'right'"
 					},
 					"columnlines": {
-						"Preact": "'dashed' | 'none' | 'solid'"
+						"Preact": "'dashed' | 'none' | 'solid'",
+						"Pota": "'dashed' | 'none' | 'solid'"
 					},
 					"columnspacing": {
-						"Preact": "string"
+						"Preact": "string",
+						"Pota": "string"
 					},
 					"frame": {
-						"Preact": "'dashed' | 'none' | 'solid'"
+						"Preact": "'dashed' | 'none' | 'solid'",
+						"Pota": "'dashed' | 'none' | 'solid'"
 					},
 					"framespacing": {
-						"Preact": "string"
+						"Preact": "string",
+						"Pota": "string"
 					},
 					"rowalign": {
-						"Preact": "'axis' | 'baseline' | 'bottom' | 'center' | 'top'"
+						"Preact": "'axis' | 'baseline' | 'bottom' | 'center' | 'top'",
+						"Pota": "'axis' | 'baseline' | 'bottom' | 'center' | 'top'"
 					},
 					"rowlines": {
-						"Preact": "'dashed' | 'none' | 'solid'"
+						"Preact": "'dashed' | 'none' | 'solid'",
+						"Pota": "'dashed' | 'none' | 'solid'"
 					},
 					"rowspacing": {
-						"Preact": "string"
+						"Preact": "string",
+						"Pota": "string"
 					},
 					"width": {
-						"Preact": "string"
+						"Preact": "string",
+						"Pota": "string"
 					}
 				},
 				"url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mtable",
@@ -6630,16 +7203,20 @@
 				"deprecated": false,
 				"attributes": {
 					"columnspan": {
-						"Preact": "number"
+						"Preact": "number",
+						"Pota": "number"
 					},
 					"rowspan": {
-						"Preact": "number"
+						"Preact": "number",
+						"Pota": "number"
 					},
 					"columnalign": {
-						"Preact": "'center' | 'left' | 'right'"
+						"Preact": "'center' | 'left' | 'right'",
+						"Pota": "'center' | 'left' | 'right'"
 					},
 					"rowalign": {
-						"Preact": "'axis' | 'baseline' | 'bottom' | 'center' | 'top'"
+						"Preact": "'axis' | 'baseline' | 'bottom' | 'center' | 'top'",
+						"Pota": "'axis' | 'baseline' | 'bottom' | 'center' | 'top'"
 					}
 				},
 				"url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mtd",
@@ -6657,10 +7234,12 @@
 				"deprecated": false,
 				"attributes": {
 					"columnalign": {
-						"Preact": "'center' | 'left' | 'right'"
+						"Preact": "'center' | 'left' | 'right'",
+						"Pota": "'center' | 'left' | 'right'"
 					},
 					"rowalign": {
-						"Preact": "'axis' | 'baseline' | 'bottom' | 'center' | 'top'"
+						"Preact": "'axis' | 'baseline' | 'bottom' | 'center' | 'top'",
+						"Pota": "'axis' | 'baseline' | 'bottom' | 'center' | 'top'"
 					}
 				},
 				"url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mtr",
@@ -6671,7 +7250,8 @@
 				"deprecated": false,
 				"attributes": {
 					"accentunder": {
-						"Preact": "boolean"
+						"Preact": "boolean",
+						"Pota": "boolean"
 					}
 				},
 				"url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/munder",
@@ -6682,10 +7262,12 @@
 				"deprecated": false,
 				"attributes": {
 					"accent": {
-						"Preact": "boolean"
+						"Preact": "boolean",
+						"Pota": "boolean"
 					},
 					"accentunder": {
-						"Preact": "boolean"
+						"Preact": "boolean",
+						"Pota": "boolean"
 					}
 				},
 				"url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/munderover",
@@ -6703,7 +7285,8 @@
 				"deprecated": true,
 				"attributes": {
 					"notation": {
-						"Preact": "string"
+						"Preact": "string",
+						"Pota": "string"
 					}
 				},
 				"url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/menclose",
@@ -6714,13 +7297,16 @@
 				"deprecated": true,
 				"attributes": {
 					"close": {
-						"Preact": "string"
+						"Preact": "string",
+						"Pota": "string"
 					},
 					"open": {
-						"Preact": "string"
+						"Preact": "string",
+						"Pota": "string"
 					},
 					"separators": {
-						"Preact": "string"
+						"Preact": "string",
+						"Pota": "string"
 					}
 				},
 				"url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mfenced",

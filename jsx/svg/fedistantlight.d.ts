@@ -3,3 +3,6 @@ interface FeDistantLightSVGAttributes<T> extends LightSourceElementSVGAttributes
 	azimuth?: number | string
 	elevation?: number | string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface SVGFEDistantLightElementAttributes {}

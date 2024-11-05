@@ -36,3 +36,13 @@ interface VideoHTMLAttributes<T> extends MediaHTMLAttributes<T> {
 	disablePictureInPicture?: boolean
 	disableRemotePlayback?: boolean
 }
+
+// Pota - https://github.com/potahtml/pota
+interface HTMLVideoElementAttributes extends HTMLMediaHTMLAttributes {
+	disablepictureinpicture?: boolean
+	disableremoteplayback?: boolean
+	height?: number | string
+	playsinline?: boolean
+	poster?: string
+	width?: number | string
+}

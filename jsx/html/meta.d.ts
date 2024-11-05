@@ -32,3 +32,15 @@ interface MetaHTMLAttributes<T> extends HTMLAttributes<T> {
 	media?: string
 	name?: string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface HTMLMetaElementAttributes {
+	charset?: string
+	content?: string
+	'http-equiv'?: 'content-security-policy' | 'content-type' | 'default-style' | 'x-ua-compatible' | 'refresh'
+	media?: string
+	name?: string
+
+	/** @deprecated */
+	scheme?: string
+}

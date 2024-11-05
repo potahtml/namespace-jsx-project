@@ -84,3 +84,43 @@ interface IframeHTMLAttributes<T> extends HTMLAttributes<T> {
 	srcDoc?: string
 	width?: number | string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface HTMLIFrameElementAttributes {
+	allow?: string
+	allowfullscreen?: boolean
+	height?: number | string
+	loading?: 'eager' | 'lazy'
+	name?: string
+	referrerpolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
+	sandbox?: 'allow-downloads-without-user-activation' | 'allow-downloads' | 'allow-forms' | 'allow-modals' | 'allow-orientation-lock' | 'allow-pointer-lock' | 'allow-popups' | 'allow-popups-to-escape-sandbox' | 'allow-presentation' | 'allow-same-origin' | 'allow-scripts' | 'allow-storage-access-by-user-activation' | 'allow-top-navigation' | 'allow-top-navigation-by-user-activation' | 'allow-top-navigation-to-custom-protocols' | string
+	src?: string
+	srcdoc?: string
+	width?: number | string
+
+	/** @experimental */
+	browsingtopics?: boolean
+	/** @experimental */
+	credentialless?: boolean
+	/** @experimental */
+	csp?: string
+
+	/** @deprecated */
+	allowpaymentrequest?: boolean
+	/** @deprecated */
+	allowtransparency?: boolean
+	/** @deprecated */
+	align?: string
+	/** @deprecated */
+	frameborder?: string
+	/** @deprecated */
+	longdesc?: string
+	/** @deprecated */
+	marginheight?: string
+	/** @deprecated */
+	marginwidth?: string
+	/** @deprecated */
+	scrolling?: 'yes' | 'no' | 'auto'
+	/** @deprecated */
+	seamless?: boolean
+}

@@ -29,3 +29,16 @@ interface EmbedHTMLAttributes<T> extends HTMLAttributes<T> {
 	type?: string
 	width?: number | string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface HTMLEmbedElementAttributes {
+	height?: number | string
+	src?: string
+	type?: string
+	width?: number | string
+
+	/** @deprecated */
+	align?: 'left' | 'right' | 'justify' | 'center'
+	/** @deprecated */
+	name?: string
+}

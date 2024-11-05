@@ -47,3 +47,20 @@ interface FormHTMLAttributes<T> extends HTMLAttributes<T> {
 	noValidate?: boolean
 	target?: string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface HTMLFormElementAttributes {
+	'accept-charset'?: string
+	action?: string
+	autocomplete?: 'on' | 'off'
+	encoding?: 'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'
+	enctype?: 'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'
+	method?: 'post' | 'get' | 'dialog'
+	name?: string
+	novalidate?: boolean
+	rel?: string
+	target?: '_self' | '_blank' | '_parent' | '_top' | (string & {})
+
+	/** @deprecated */
+	accept?: string
+}

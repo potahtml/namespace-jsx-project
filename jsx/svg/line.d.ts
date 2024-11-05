@@ -5,3 +5,6 @@ interface LineSVGAttributes<T> extends GraphicsElementSVGAttributes<T>, ShapeEle
 	x2?: number | string
 	y2?: number | string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface SVGLineElementAttributes {}

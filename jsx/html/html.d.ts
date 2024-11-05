@@ -12,3 +12,11 @@ interface HtmlHTMLAttributes extends HTMLAttributes {
 interface HtmlHTMLAttributes<T> extends HTMLAttributes<T> {
 	manifest?: string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface HTMLHtmlElementAttributes {
+	manifest?: string
+
+	/** @deprecated */
+	version?: string
+}

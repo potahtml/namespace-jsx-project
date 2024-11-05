@@ -4,3 +4,6 @@ interface CircleSVGAttributes<T> extends GraphicsElementSVGAttributes<T>, ShapeE
 	cy?: number | string
 	r?: number | string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface SVGCircleElementAttributes {}

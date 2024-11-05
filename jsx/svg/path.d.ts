@@ -3,3 +3,6 @@ interface PathSVGAttributes<T> extends GraphicsElementSVGAttributes<T>, ShapeEle
 	d?: string
 	pathLength?: number | string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface SVGPathElementAttributes {}

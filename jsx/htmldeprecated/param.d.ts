@@ -21,3 +21,15 @@ interface ParamHTMLAttributes<T> extends HTMLAttributes<T> {
 	name?: string
 	value?: string | readonly string[] | number
 }
+
+// Pota - https://github.com/potahtml/pota
+interface HTMLParamElementAttributes {
+	/** @deprecated */
+	name?: string
+	/** @deprecated */
+	value?: string | number
+	/** @deprecated */
+	type?: string
+	/** @deprecated */
+	valuetype?: 'data' | 'ref' | 'object'
+}

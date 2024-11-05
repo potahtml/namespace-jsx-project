@@ -5,3 +5,11 @@ interface HTMLMActionElement extends MathMLElement {
 	/** @deprecated See https://developer.mozilla.org/en-US/docs/Web/MathML/Element/maction#selection */
 	selection?: string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface MathMLMactionElementAttributes {
+	/** @deprecated */
+	actiontype?: 'statusline' | 'toggle'
+	/** @deprecated */
+	selection?: string
+}

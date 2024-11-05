@@ -6,3 +6,6 @@ interface FeCompositeSVGAttributes<T> extends FilterPrimitiveElementSVGAttribute
 	k3?: number | string
 	k4?: number | string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface SVGFECompositeElementAttributes {}

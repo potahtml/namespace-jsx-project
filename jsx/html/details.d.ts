@@ -24,3 +24,9 @@ interface DetailsHTMLAttributes<T> extends HTMLAttributes<T> {
 	onToggle?: ReactEventHandler<T>
 	name?: string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface HTMLDetailsElementAttributes {
+	name?: string
+	open?: boolean
+}

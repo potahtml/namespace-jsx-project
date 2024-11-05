@@ -5,3 +5,6 @@ interface LinearGradientSVGAttributes<T> extends GradientElementSVGAttributes<T>
 	y1?: number | string
 	y2?: number | string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface SVGLinearGradientElementAttributes {}

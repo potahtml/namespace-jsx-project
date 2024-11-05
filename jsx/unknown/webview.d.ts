@@ -59,3 +59,24 @@ interface WebViewHTMLAttributes<T> extends HTMLAttributes<T> {
 	useragent?: string
 	webpreferences?: string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface HTMLWebViewElementAttributes {
+	allowfullscreen?: boolean
+	allowpopups?: boolean
+	autofocus?: boolean
+	autosize?: boolean
+	blinkfeatures?: string
+	disableblinkfeatures?: string
+	disableguestresize?: boolean
+	disablewebsecurity?: boolean
+	guestinstance?: string
+	httpreferrer?: string
+	nodeintegration?: boolean
+	partition?: string
+	plugins?: boolean
+	preload?: string
+	src?: string
+	useragent?: string
+	webpreferences?: string
+}

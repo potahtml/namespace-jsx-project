@@ -8,3 +8,6 @@ interface TextSVGAttributes<T> extends TextContentElementSVGAttributes<T>, Graph
 	textLength?: number | string
 	lengthAdjust?: 'spacing' | 'spacingAndGlyphs'
 }
+
+// Pota - https://github.com/potahtml/pota
+interface SVGTextElementAttributes {}
