@@ -99,6 +99,14 @@ idea!
 - Brute force chrome in reverse, set the attribute and then read the
   getter, if the value changed then the attribute is valid.
 
+## Related
+
+- https://github.com/microsoft/TypeScript-DOM-lib-generator
+- https://github.com/microsoft/vscode-custom-data
+- https://github.com/mdn/data
+- https://github.com/w3c/browser-specs
+- https://github.com/w3c/webref
+
 ## Sponsor
 
 Check out the Sponsor link! With enough support, I'll be able to
