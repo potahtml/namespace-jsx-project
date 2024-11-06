@@ -457,15 +457,18 @@ write(`./jsx/data.json`, JSON.stringify(DATA, null, 2))
 let attributesPropertiesTable = `
 # namespace JSX Elements Table
 
-This file is generated using \`./data.json\`.
+This file is generated using \`./data.json\`. The table is automated and generated on demand, but some of its information is actually hard-coded (for example obsolete attributes/properties).
 
 The possible \`tagNames\` come from a mashup between frameworks and TypeScript \`TagNamesMaps\` data.
 
-The \`interface\` names comes from \`document.createElementNS(ns, tagName).constructor.name\`.
+The \`interface\` names comes from \`document.createElementNS(ns, tagName).constructor.name\` which is more accurate than typescript.
 
-Chrome attribute comes from brute-forcing the element setters till an attribute is added.
+Chrome attributes come from brute-forcing the element setters till an attribute is added.
+When something is marked as \`prop\` it means Chrome has a setter for it, and when marked \`attr\` is because setting the prop creates such an attribute.
 
-🗑️ means the tag or attribute is deprecated
+🗑️ means the tag or attribute is deprecated.
+
+This is an attempt to unify the effort required to update this information.
 
 Data Links:
 
@@ -494,7 +497,7 @@ for (const ns in DATA.elements) {
 		attributesPropertiesTable += `\n\n## ${value.deprecated ? '🗑️' : ''} [\`<${tag}>\`](${value.url}) - [${value.interface}](https://developer.mozilla.org/en-US/docs/Web/API/${value.interface})`
 
 		// headings
-		attributesPropertiesTable += `\n\n| key `
+		attributesPropertiesTable += `\n\n| key | type `
 		for (const lib of columns) {
 			attributesPropertiesTable += ` | ${lib}`
 		}
@@ -510,6 +513,8 @@ for (const ns in DATA.elements) {
 		const props = []
 		for (const [attr, val] of Object.entries(value.attributes)) {
 			let prop = `| ${deprecatedAttributes[tag + '.' + value.interface + '.' + attr.toLowerCase()] ? '🗑️' : ''} [${attr}](https://developer.mozilla.org/en-US/docs/Web/API/${value.interface}/${attr})`
+
+			prop += ` | ${[browser[ns].elements[tag].setters.includes(attr) ? 'prop' : '', browser[ns].elements[tag].attributes[attr] ? 'attr' : ''].filter(x => x).join('/')}`
 			for (const lib of columns) {
 				prop += ` | ${(val[lib] !== undefined ? val[lib] : '❌').replace(/\|/g, '\\|')}`
 			}
