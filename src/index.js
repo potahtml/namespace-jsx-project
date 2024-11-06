@@ -494,7 +494,7 @@ for (const ns in DATA.elements) {
 		attributesPropertiesTable += `\n\n## ${value.deprecated ? '🗑️' : ''} [\`<${tag}>\`](${value.url}) - [${value.interface}](https://developer.mozilla.org/en-US/docs/Web/API/${value.interface})`
 
 		// headings
-		attributesPropertiesTable += `\n\n| attribute `
+		attributesPropertiesTable += `\n\n| key `
 		for (const lib of columns) {
 			attributesPropertiesTable += ` | ${lib}`
 		}
