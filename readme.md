@@ -95,9 +95,9 @@ idea!
 ## TODO
 
 - add aria attributes
-- GLobal attributes needs to be generated in some way
-- Brute force chrome in reverse, set the attribute and then read the
-  getter, if the value changed then the attribute is valid.
+- add global attributes
+- find out where are the enumerated attributes in chromium source, any
+  ideas?
 
 ## Related
 

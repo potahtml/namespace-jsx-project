@@ -1,3 +1,5 @@
+import puppeteer from 'puppeteer'
+
 import { parseFromURL } from './parse.js'
 import { read, unique } from './utils.js'
 
@@ -48,7 +50,6 @@ export const libs = [
 			voidhtmlattributes: 'htmlattributes',
 		},
 	},
-
 	{
 		// VUE
 		file: 'https://raw.githubusercontent.com/vuejs/core/refs/heads/main/packages/runtime-dom/src/jsx.ts',
@@ -79,7 +80,6 @@ export const libs = [
 			intrinsicattributes: 'attributes',
 		},
 	},
-
 	{
 		// REACT
 		file: 'https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/react/index.d.ts',
@@ -125,8 +125,10 @@ export const libs = [
 
 			htmlwebviewelements: 'elements',
 
-			domhtmlattributes: 'attributes',
-			domhtmlproperties: 'attributes',
+			domhtmlattributes: 'htmlattributes',
+			domhtmlproperties: 'htmlattributes',
+
+			dommathmlattributes: 'mathmlattributes',
 		},
 	},
 ]
@@ -173,20 +175,21 @@ const vsCode = {}
 
 for (const tag of vsCodeData.tags) {
 	vsCode[tag.name] = {
-		url: tag.references[0].url,
 		description: tag.description?.value || tag.description || '',
-		attributes: {},
+		keys: {},
 	}
 	for (const attr of tag.attributes) {
-		vsCode[tag.name].attributes[attr.name] = attr.valueSet
+		vsCode[tag.name].keys[attr.name] = attr.valueSet
 			? vsCodeData.valueSets
 					.find(item => item.name === attr.valueSet)
 					?.values?.map(value => "'" + value.name + "'")
 					.join(' | ')
 			: 'string'
 
-		vsCode[tag.name].attributes[attr.name] =
-			vsCode[tag.name].attributes[attr.name] || 'boolean'
+		// attr.valueSet.v is missing in vsCode data, its boolean
+
+		vsCode[tag.name].keys[attr.name] =
+			vsCode[tag.name].keys[attr.name] || 'boolean'
 	}
 }
 
@@ -274,88 +277,45 @@ export function getEventNameMaps(string) {
 	)
 }
 
-/**
- * Typescript doesnt provide interfaces for each MathML element, or
- * maybe typescript is right and each MathML element shares the same
- * interface. https://w3c.github.io/mathml-core/#dom-and-javascript
- * Weird, this maps each tagName of MathML to an own made-up
- * interface.
- */
-
-const attributesInterfacesMap = {
-	MathMLDeprecatedElements: {
-		menclose: 'MathMLMencloseElement',
-		mfenced: 'MathMLMfencedElement',
-	},
-	MathMLElements: {
-		annotation: 'MathMLAnnotationElement',
-		'annotation-xml': 'MathMLAnnotationXmlElement',
-		maction: 'MathMLMactionElement',
-		math: 'MathMLMathElement',
-		merror: 'MathMLMerrorElement',
-		mfrac: 'MathMLMfracElement',
-		mi: 'MathMLMiElement',
-		mmultiscripts: 'MathMLMmultiscriptsElement',
-		mn: 'MathMLMnElement',
-		mo: 'MathMLMoElement',
-		mover: 'MathMLMoverElement',
-		mpadded: 'MathMLMpaddedElement',
-		mphantom: 'MathMLMphantomElement',
-		mprescripts: 'MathMLMprescriptsElement',
-		mroot: 'MathMLMrootElement',
-		mrow: 'MathMLMrowElement',
-		ms: 'MathMLMsElement',
-		mspace: 'MathMLMspaceElement',
-		msqrt: 'MathMLMsqrtElement',
-		mstyle: 'MathMLMstyleElement',
-		msub: 'MathMLMsubElement',
-		msubsup: 'MathMLMsubsupElement',
-		msup: 'MathMLMsupElement',
-		mtable: 'MathMLMtableElement',
-		mtd: 'MathMLMtdElement',
-		mtext: 'MathMLMtextElement',
-		mtr: 'MathMLMtrElement',
-		munder: 'MathMLMunderElement',
-		munderover: 'MathMLMunderoverElement',
-		semantics: 'MathMLSemanticsElement',
-	},
-}
-
-/** Mapper */
-
-function attributesInterfaceName(interfaceName, tagName, inter) {
-	if (attributesInterfacesMap[interfaceName])
-		return attributesInterfacesMap[interfaceName][tagName] || inter
-	return inter
-}
-
-/** This is used to auto-generate empty interfaces for elements */
-
-export function generateElementsInterfaces(
-	elements,
-	interfaceName = 'HTMLDeprecatedElements',
-	attributes = 'HTMLAttributes',
-) {
-	const interfaces = []
-	const content = []
-
-	for (const element of elements) {
-		interfaces.push(
-			`interface ${attributesInterfaceName(interfaceName, element.id, element.interface)}Attributes {}`,
-		)
-
-		content.push(
-			`	"${element.id}": ${attributes}<${element.interface}, ${attributesInterfaceName(interfaceName, element.id, element.interface)}Attributes, ${element.events}<${element.interface}>>`,
-		)
-	}
-
-	return `
-${unique(interfaces).join('\n')}
-
-interface ${interfaceName} {
-${content.join('\n')}
-}
-`
+export const deprecatedTags = {
+	'http://www.w3.org/1999/xhtml': [
+		'acronym',
+		'applet',
+		'basefont',
+		'bgsound',
+		'big',
+		'blink',
+		'center',
+		'dir',
+		'font',
+		'frame',
+		'frameset',
+		'isindex',
+		'keygen',
+		'listing',
+		'marquee',
+		'menuitem',
+		'multicol',
+		'nextid',
+		'nobr',
+		'noembed',
+		'noframes',
+		'param',
+		'plaintext',
+		'rb',
+		'rtc',
+		'spacer',
+		'strike',
+		'tt',
+		'u',
+		'xmp',
+	],
+	'http://www.w3.org/1998/Math/MathML': [
+		'maction',
+		'menclose',
+		'mfenced',
+	],
+	'http://www.w3.org/2000/svg': [],
 }
 
 export const deprecatedAttributes = {
@@ -606,4 +566,95 @@ export const deprecatedAttributes = {
 	'msubsup.MathMLElement.superscriptshift': true,
 
 	'msup.MathMLElement.superscriptshift': true,
+}
+
+export function ElementURL(ns, tagName) {
+	switch (ns) {
+		case 'http://www.w3.org/1999/xhtml': {
+			if (tagName === 'webview') {
+				return 'https://www.electronjs.org/docs/latest/api/webview-tag'
+			}
+			return (
+				'https://developer.mozilla.org/docs/Web/HTML/Element/' +
+				tagName
+			)
+		}
+		case 'http://www.w3.org/1998/Math/MathML': {
+			return (
+				'https://developer.mozilla.org/en-US/docs/Web/MathML/Element/' +
+				tagName
+			)
+		}
+		case 'http://www.w3.org/2000/svg': {
+			return (
+				'https://developer.mozilla.org/en-US/docs/Web/SVG/Element/' +
+				tagName
+			)
+		}
+		default: {
+			return 'https://developer.mozilla.org/en-US/search?q=' + tagName
+		}
+	}
+}
+
+export function InterfaceURL(ns, tagName, inter) {
+	if (tagName === 'webview') {
+		return 'https://www.electronjs.org/docs/latest/api/webview-tag'
+	}
+	return 'https://developer.mozilla.org/en-US/docs/Web/API/' + inter
+}
+export function KeyURL(ns, tagName, inter, attr) {
+	if (tagName === 'webview') {
+		return (
+			'https://www.electronjs.org/docs/latest/api/webview-tag#' + attr
+		)
+	}
+	return (
+		'https://developer.mozilla.org/en-US/docs/Web/API/' +
+		inter +
+		'/' +
+		attr
+	)
+}
+
+export const browserData = async browserData => {
+	const chrome = await puppeteer.launch({
+		headless: true,
+		args: [
+			'--ash-no-nudges',
+			'--deny-permission-prompts',
+			'--disable-background-timer-throttling',
+			'--disable-backgrounding-occluded-windows',
+			'--disable-client-side-phishing-detection',
+			'--disable-default-apps',
+			'--disable-extensions',
+			'--disable-features=TranslateUI,Translate,InfiniteSessionRestore',
+			'--disable-infobars',
+			'--disable-ipc-flooding-protection',
+			'--disable-notifications',
+			'--disable-renderer-backgrounding',
+			'--disable-session-crashed-bubble',
+			'--ignore-certificate-errors',
+			'--mute-audio',
+			'--no-default-browser-check',
+			'--no-first-run',
+			'--start-maximized',
+		],
+		protocolTimeout: 300_000,
+		defaultViewport: null,
+	})
+
+	const page = await chrome.newPage()
+
+	await page.exposeFunction('getData', () => browserData)
+	await page.goto(process.cwd() + '/src/browser.html', {
+		waitUntil: 'networkidle0',
+	})
+	await page.evaluate(() => window.runFromPuppeteer())
+	await new Promise(resolve => setTimeout(resolve, 2000))
+	const browser = await page.evaluate(() => document.body.textContent)
+
+	chrome.close()
+
+	return JSON.parse(browser)
 }

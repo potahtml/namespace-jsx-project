@@ -44,3 +44,15 @@ export const prettier = file =>
 	)
 
 export const unique = a => [...new Set(a.flat(Infinity))].sort()
+export const uniqueTypes = a =>
+	[
+		...new Set(
+			a
+				.replace(/\n/g, ' ')
+				.split('|')
+				.map(x => x.trim())
+				.filter(x => x),
+		),
+	].join(' | ')
+
+export const entries = Object.entries

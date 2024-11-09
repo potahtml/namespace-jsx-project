@@ -1,6 +1,13 @@
 <html>
 	<body>
 		<script type="module">
+			async function runFromPuppeteer() {
+				return await window.getData().then(data => {
+					run(data)
+				})
+			}
+			window.runFromPuppeteer = runFromPuppeteer
+
 			/** this is test data, the data is not hardcoded. It is passed when run in puppeteer */
 			const testData = {
 				'http://www.w3.org/1999/xhtml': [
@@ -248,13 +255,8 @@
 					'mfenced',
 				],
 			}
-			async function runFromPuppeteer() {
-				return await window.getData().then(data => {
-					run(data)
-				})
-			}
 
-			window.runFromPuppeteer = runFromPuppeteer
+			// run(testData) // Test
 
 			function run(data) {
 				const getOwnPropertyDescriptors =
@@ -262,14 +264,23 @@
 				const getPrototypeOf = Object.getPrototypeOf
 
 				function getSetterNamesFromPrototype(object, set = []) {
-					const descriptors = getOwnPropertyDescriptors(object)
+					object = getPrototypeOf(object)
 
-					for (const key in descriptors) {
-						if (descriptors[key].set) {
-							set.push(key)
+					while (
+						object.constructor.name !== 'HTMLElement' &&
+						object.constructor.name !== 'SVGElement' &&
+						object.constructor.name !== 'Element'
+					) {
+						const descriptors = getOwnPropertyDescriptors(object)
+
+						for (const key in descriptors) {
+							if (descriptors[key].set) {
+								set.push(key)
+							}
 						}
-					}
 
+						object = getPrototypeOf(object)
+					}
 					return set
 				}
 
@@ -283,27 +294,27 @@
 							attributes: {},
 							setters: [],
 						}
-						const proto = getPrototypeOf(node)
 
-						const setters =
-							node.constructor.name === 'HTMLElement'
-								? []
-								: getSetterNamesFromPrototype(proto)
+						const setters = getSetterNamesFromPrototype(node)
 
 						result[ns].elements[tag].setters = setters
 
 						const attributes = result[ns].elements[tag].attributes
 
+						const toRemove = []
 						for (const name of setters) {
-							const value = node[name]
 							if (
 								ns === 'http://www.w3.org/1998/Math/MathML' &&
 								(name.startsWith('on') ||
 									name === 'autofocus' ||
 									name === 'tabIndex' ||
 									name === 'style')
-							)
+							) {
+								toRemove.push(name)
 								continue
+							}
+
+							const value = node[name]
 
 							let type = ''
 
@@ -331,7 +342,9 @@
 									try {
 										type = 'string'
 										node[name] = 'test'
-									} catch (e) {}
+									} catch (e) {
+										console.log(e)
+									}
 								}
 							}
 
@@ -343,13 +356,16 @@
 								}
 							}
 						}
+						for (const remove of toRemove) {
+							setters.splice(setters.indexOf(remove), 1)
+						}
 					}
 				}
 
 				document.body.textContent = JSON.stringify(result)
-			}
 
-			// run(testData) // Test
+				console.log(result)
+			}
 		</script>
 	</body>
 </html>

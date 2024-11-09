@@ -13,3 +13,18 @@ interface MathMLAttributes<Target extends EventTarget = MathMLElement> extends H
 	nonce?: string
 	scriptlevel?: string
 }
+
+// Pota - https://github.com/potahtml/pota
+interface DOMMathMLAttributes extends DOMHTMLAttributes {
+	displaystyle?: boolean
+	/** @deprecated */
+	href?: string
+	/** @deprecated */
+	mathbackground?: string
+	/** @deprecated */
+	mathcolor?: string
+	/** @deprecated */
+	mathsize?: string
+	nonce?: string
+	scriptlevel?: string
+}

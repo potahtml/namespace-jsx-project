@@ -55,6 +55,7 @@ export function parseFromString(string, map = {}) {
 	// for unwrapping simple types
 	const types = []
 	for (const line of lines) {
+		// oxc has a bug on which the `.end` will be incorrect if we parse the whole file. For this reason parse it line by line instead
 		const ast = JSON.parse(
 			oxc.parseSync(line, { sourceFilename: 'file.d.ts' }).program,
 		).body
@@ -175,6 +176,9 @@ function unwrapTypes(source, types) {
 		// preact
 		.replace(/\| SignalLike<([^>]+)>/gi, ' ')
 		.replace(/ SignalLike<([^>]+)>\n/gi, '\n')
+		.replace(/Signalish<([^>]+)>/gi, '$1')
+
+		// react
 		.replace(
 			/\| DO_NOT_USE_OR_YOU_WILL_BE_FIRED_EXPERIMENTAL_FORM_ACTIONS\[keyof DO_NOT_USE_OR_YOU_WILL_BE_FIRED_EXPERIMENTAL_FORM_ACTIONS\]/gi,
 			'',
