@@ -457,7 +457,7 @@ This is an attempt to unify the effort required to update this information.
 
 ## Open Collective
 
-Please sponsor the project! https://opencollective.com/tito-bouzout . Thanks!
+Sponsor the project! https://opencollective.com/tito-bouzout . Thanks!
 
 `
 
