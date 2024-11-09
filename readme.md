@@ -64,7 +64,7 @@ It's an ambitious, complex, and tedious task(—likely the reason why
 such a comprehensive data file doesn't exist yet).
 
 You can see the current table at
-https://github.com/potahtml/namespace-jsx-project/blob/master/jsx/readme.md
+https://potahtml.github.io/namespace-jsx-project/index.html
 
 Theres a `data.json` at
 https://github.com/potahtml/namespace-jsx-project/blob/master/jsx/data.json

@@ -1,0 +1,57 @@
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+<script type="module">
+  document.title = 'JSX Elements Table'
+  document.body.innerHTML = marked.parse(
+    await fetch(
+      'https://raw.githubusercontent.com/potahtml/namespace-jsx-project/refs/heads/master/jsx/readme.md',
+    ).then(x => x.text()),
+  )
+
+  document.onclick = e => {
+    const tr = e.target.closest('tr')
+    if (tr) {
+      tr.style.background = tr.style.background ? null : 'black'
+    }
+  }
+</script>
+
+<style>
+  :root {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+      'Noto Sans', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+      'Segoe UI Emoji';
+    line-height: 1.4;
+    word-wrap: break-word;
+    background: #0d1117;
+    color: snow;
+  }
+  table {
+    border-spacing: 0;
+    border-collapse: collapse;
+  }
+  table th,
+  table td {
+    padding: 6px 13px;
+    border: 1px solid #3d444d;
+  }
+  tbody tr:nth-child(odd) {
+    background: #151b23;
+  }
+  thead {
+    background: #05070a;
+    position: sticky;
+    top: -1px;
+  }
+  a {
+    color: #4493f8;
+    text-underline-offset: 0.2rem;
+  }
+  code {
+    background-color: rgba(101, 108, 118, 0.2);
+    border-radius: 6px;
+    color: rgb(68, 147, 248);
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+</style>
