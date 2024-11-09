@@ -444,7 +444,7 @@ Chrome attributes come from brute-forcing the element \`setters\` till an \`attr
 
 This is an attempt to unify the effort required to update this information.
 
-Data Links:
+## Data Links:
 
 - https://solidjs.com/
 - https://github.com/potahtml/pota
@@ -454,12 +454,17 @@ Data Links:
 - https://react.dev/
 - https://github.com/microsoft/vscode-html-languageservice
 
+
+## Open Collective
+
+Please sponsor the project! https://opencollective.com/tito-bouzout . Thanks!
+
 `
 
 const columns = [
 	'Chrome',
-	'Solid',
 	'Pota',
+	'Solid',
 	'Voby',
 	'Vue',
 	'Preact',
