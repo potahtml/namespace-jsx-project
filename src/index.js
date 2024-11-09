@@ -438,7 +438,7 @@ The possible \`tagNames\` come from a mashup between frameworks and TypeScript \
 
 The \`interface\` names comes from \`document.createElementNS(ns, tagName).constructor.name\` which is more accurate than typescript.
 
-Chrome attributes come from brute-forcing the element \`setters\` till an \`attribute\` is added. The name of the \`attribute\` is taken as \`key\`. When something is marked as \`prop\` it means Chrome has a setter for it.
+Chrome attributes come from brute-forcing the element \`setters\` till an \`attribute\` is added. The name of the \`attribute\` is taken as \`key\`. When something is marked as \`prop\` it means Chrome has a setter for it. Note: a \`prop\` avoids \`DOMTokenList\` and other fancy objects.
 
 🗑️ means the \`tag\` or \`attribute\` is deprecated.
 
