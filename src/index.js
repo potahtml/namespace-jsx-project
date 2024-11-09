@@ -89,7 +89,27 @@ for (const lib of libs) {
 			lib.tagInterface[tagName] = lib.tagInterface[tagName] || ''
 
 			for (const inter of interfaces) {
-				// TODO on here it could be reading extends of such interface
+				if (lib.interfaces[inter]) {
+					const extended = lib.interfaces[inter].source
+						.split('\n')[0]
+						.replace(/</g, ' ')
+						.replace(/>/g, ' ')
+						.replace(/,/g, ' ')
+						.trim()
+						.toLowerCase()
+						.split(' ')
+						.map(i => i.trim())
+						.filter(i => i)
+						.filter(i => !isBlacklisted[i])
+
+					for (const ext of extended) {
+						if (!interfaces.includes(ext)) {
+							interfaces.push(ext)
+						}
+					}
+				}
+			}
+			for (const inter of interfaces) {
 				if (lib.interfaces[inter]) {
 					lib.tagInterface[tagName] +=
 						lib.interfaces[inter].source + '\n'
@@ -412,16 +432,15 @@ write(`./jsx/data.json`, JSON.stringify(DATA, null, 2))
 let keysTable = `
 # namespace JSX Elements Table
 
-This file is generated using \`./data.json\`. The table is automated and generated on demand, but some of its information is actually hard-coded (for example obsolete attributes/properties).
+This file is generated using \`./data.json\`. The table is automated and generated on demand, with live data taken from the frameworks repos, but some of its information is actually hard-coded (for example obsolete attributes/properties/tags).
 
 The possible \`tagNames\` come from a mashup between frameworks and TypeScript \`TagNamesMaps\` data.
 
 The \`interface\` names comes from \`document.createElementNS(ns, tagName).constructor.name\` which is more accurate than typescript.
 
-Chrome attributes come from brute-forcing the element setters till an attribute is added.
-When something is marked as \`prop\` it means Chrome has a setter for it, and when marked \`attr\` is because setting the prop creates such an attribute.
+Chrome attributes come from brute-forcing the element \`setters\` till an \`attribute\` is added. The name of the \`attribute\` is taken as \`key\`. When something is marked as \`prop\` it means Chrome has a setter for it.
 
-🗑️ means the tag or attribute is deprecated.
+🗑️ means the \`tag\` or \`attribute\` is deprecated.
 
 This is an attempt to unify the effort required to update this information.
 

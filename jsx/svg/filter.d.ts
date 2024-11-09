@@ -9,5 +9,21 @@ interface FilterSVGAttributes<T> extends CoreSVGAttributes<T>, ExternalResourceS
 	filterRes?: number | string
 }
 
+interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
+	id?: string
+	lang?: string
+	tabIndex?: number | string
+	tabindex?: number | string
+}
+
+interface ExternalResourceSVGAttributes {
+	externalResourcesRequired?: 'true' | 'false'
+}
+
+interface StylableSVGAttributes {
+	class?: string
+	style?: CSSProperties | string
+}
+
 // Pota - https://github.com/potahtml/pota
 interface SVGFilterElementAttributes {}

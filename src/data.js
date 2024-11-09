@@ -201,6 +201,20 @@ export { vsCode }
  */
 
 export const isBlacklisted = {
+	// when extending
+	element: true,
+	t: true,
+	eventtarget: true,
+	extends: true,
+	interface: true,
+	ariaattributes: true,
+	domattributes: true,
+
+	windoweventhandlersevents: true,
+	voidhtmlattributes: true,
+	mathmlelement: true,
+
+	// regular
 	htmlelement: true,
 
 	htmlattributes: true,
