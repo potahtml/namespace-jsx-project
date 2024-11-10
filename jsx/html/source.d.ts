@@ -29,6 +29,17 @@ interface SourceHTMLAttributes extends HTMLAttributes {
 	type?: string
 }
 
+// Preact - https://preactjs.com/
+interface SourceHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+	height?: number | string
+	media?: string
+	sizes?: string
+	src?: string
+	srcSet?: string
+	type?: string
+	width?: number | string
+}
+
 // React - https://react.dev/
 interface SourceHTMLAttributes<T> extends HTMLAttributes<T> {
 	height?: number | string

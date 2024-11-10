@@ -16,6 +16,12 @@ interface ProgressHTMLAttributes extends HTMLAttributes {
 	value?: string | readonly string[] | number
 }
 
+// Preact - https://preactjs.com/
+interface ProgressHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+	max?: string
+	value?: string | number
+}
+
 // React - https://react.dev/
 interface ProgressHTMLAttributes<T> extends HTMLAttributes<T> {
 	max?: number | string

@@ -1,5 +1,5 @@
 // Preact - https://preactjs.com/
-interface HTMLMFencedElement extends MathMLElement {
+interface MFencedMathMLAttributes<T extends EventTarget> extends MathMLAttributes<T> {
 	close?: string
 	open?: string
 	separators?: string

@@ -13,6 +13,11 @@ interface BlockquoteHTMLAttributes extends HTMLAttributes {
 	cite?: string
 }
 
+// Preact - https://preactjs.com/
+interface BlockquoteHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+	cite?: string
+}
+
 // React - https://react.dev/
 interface BlockquoteHTMLAttributes<T> extends HTMLAttributes<T> {
 	cite?: string

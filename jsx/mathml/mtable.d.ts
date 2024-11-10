@@ -1,5 +1,5 @@
 // Preact - https://preactjs.com/
-interface HTMLMTableElement extends MathMLElement {
+interface MTableMathMLAttributes<T extends EventTarget> extends MathMLAttributes<T> {
 	/** Non-standard attribute See https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mtable#align */
 	align?: 'axis' | 'baseline' | 'bottom' | 'center' | 'top'
 	/** Non-standard attribute See https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mtable#columnalign */

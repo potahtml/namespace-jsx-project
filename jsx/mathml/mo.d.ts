@@ -1,5 +1,5 @@
 // Preact - https://preactjs.com/
-interface HTMLMOElement extends MathMLElement {
+interface MOMathMLAttributes<T extends EventTarget> extends MathMLAttributes<T> {
 	/** Non-standard attribute See https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mo#accent */
 	accent?: boolean
 	fence?: boolean

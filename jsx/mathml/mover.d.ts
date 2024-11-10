@@ -1,5 +1,5 @@
 // Preact - https://preactjs.com/
-interface HTMLMOverElement extends MathMLElement {
+interface MOverMathMLAttributes<T extends EventTarget> extends MathMLAttributes<T> {
 	accent?: boolean
 }
 

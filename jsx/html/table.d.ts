@@ -14,6 +14,14 @@ interface TableHTMLAttributes extends HTMLAttributes {
 	width?: number | string
 }
 
+// Preact - https://preactjs.com/
+interface TableHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+	cellPadding?: string
+	cellSpacing?: string
+	summary?: string
+	width?: number | string
+}
+
 // React - https://react.dev/
 interface TableHTMLAttributes<T> extends HTMLAttributes<T> {
 	align?: 'left' | 'center' | 'right'

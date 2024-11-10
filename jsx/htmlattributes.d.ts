@@ -296,198 +296,46 @@ interface HTMLAttributes extends AriaAttributes, EventHandlers<Events> {
 // Preact - https://preactjs.com/
 interface HTMLAttributes<RefType extends EventTarget = EventTarget> extends ClassAttributes<RefType>, DOMAttributes<RefType>, AriaAttributes {
 	// Standard HTML Attributes
-	accept?: string
-	acceptCharset?: string
-	'accept-charset'?: HTMLAttributes['acceptCharset']
+	accesskey?: string
 	accessKey?: string
-	accesskey?: HTMLAttributes['accessKey']
-	action?: string
-	allow?: string
-	allowFullScreen?: boolean
-	allowTransparency?: boolean
-	alt?: string
-	as?: string
-	async?: boolean
-	autocomplete?: string
-	autoComplete?: string
+	autocapitalize?: 'off' | 'none' | 'on' | 'sentences' | 'words' | 'characters'
+	autoCapitalize?: 'off' | 'none' | 'on' | 'sentences' | 'words' | 'characters'
 	autocorrect?: string
 	autoCorrect?: string
 	autofocus?: boolean
 	autoFocus?: boolean
-	autoPlay?: boolean
-	autoplay?: boolean
-	capture?: boolean | string
-	cellPadding?: number | string
-	cellSpacing?: number | string
-	charSet?: string
-	charset?: string
-	challenge?: string
-	checked?: boolean
-	cite?: string
 	class?: string
 	className?: string
-	cols?: number
-	colSpan?: number
-	colspan?: number
-	content?: string
+	contenteditable?: boolean | 'true' | 'false' | '' | 'plaintext-only' | 'inherit'
 	contentEditable?: boolean | 'true' | 'false' | '' | 'plaintext-only' | 'inherit'
-	contenteditable?: HTMLAttributes['contentEditable']
-	/** @deprecated See https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/contextmenu */
-	contextMenu?: string
-	/** @deprecated See https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/contextmenu */
-	contextmenu?: string
-	controls?: boolean
-	controlsList?: string
-	coords?: string
-	crossOrigin?: string
-	crossorigin?: string
-	data?: string
-	dateTime?: string
-	datetime?: string
-	default?: boolean
-	defaultChecked?: boolean
-	defaultValue?: string
-	defer?: boolean
 	dir?: 'auto' | 'rtl' | 'ltr'
-	disabled?: boolean
-	disableRemotePlayback?: boolean
-	download?: any
-	decoding?: 'sync' | 'async' | 'auto'
 	draggable?: boolean
-	encType?: string
-	enctype?: string
 	enterkeyhint?: 'enter' | 'done' | 'go' | 'next' | 'previous' | 'search' | 'send'
-	elementTiming?: string
-	elementtiming?: HTMLAttributes['elementTiming']
 	exportparts?: string
-	for?: string
-	form?: string
-	formAction?: string
-	formaction?: string
-	formEncType?: string
-	formenctype?: string
-	formMethod?: string
-	formmethod?: string
-	formNoValidate?: boolean
-	formnovalidate?: boolean
-	formTarget?: string
-	formtarget?: string
-	frameBorder?: number | string
-	frameborder?: number | string
-	headers?: string
-	height?: number | string
 	hidden?: boolean | 'hidden' | 'until-found'
-	high?: number
-	href?: string
-	hrefLang?: string
-	hreflang?: string
-	htmlFor?: string
-	httpEquiv?: string
-	'http-equiv'?: string
-	icon?: string
 	id?: string
-	indeterminate?: boolean
 	inert?: boolean
-	inputMode?: string
 	inputmode?: string
-	integrity?: string
+	inputMode?: string
 	is?: string
-	keyParams?: string
-	keyType?: string
-	kind?: string
-	label?: string
 	lang?: string
-	list?: string
-	loading?: 'eager' | 'lazy'
-	loop?: boolean
-	low?: number
-	manifest?: string
-	marginHeight?: number
-	marginWidth?: number
-	max?: number | string
-	maxLength?: number
-	maxlength?: number
-	media?: string
-	mediaGroup?: string
-	method?: string
-	min?: number | string
-	minLength?: number
-	minlength?: number
-	multiple?: boolean
-	muted?: boolean
-	name?: string
-	nomodule?: boolean
 	nonce?: string
-	noValidate?: boolean
-	novalidate?: boolean
-	open?: boolean
-	optimum?: number
 	part?: string
-	pattern?: string
-	ping?: string
-	placeholder?: string
-	playsInline?: boolean
-	playsinline?: boolean
 	popover?: 'auto' | 'hint' | 'manual' | boolean
-	popovertarget?: string
-	popoverTarget?: string
-	popovertargetaction?: 'hide' | 'show' | 'toggle'
-	popoverTargetAction?: 'hide' | 'show' | 'toggle'
-	poster?: string
-	preload?: string
-	radioGroup?: string
-	readonly?: boolean
-	readOnly?: boolean
-	referrerpolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
-	rel?: string
-	required?: boolean
-	reversed?: boolean
-	role?: AriaRole
-	rows?: number
-	rowSpan?: number
-	rowspan?: number
-	sandbox?: string
-	scope?: string
-	scoped?: boolean
-	scrolling?: string
-	seamless?: boolean
-	selected?: boolean
-	shape?: string
-	size?: number
-	sizes?: string
 	slot?: string
-	span?: number
 	spellcheck?: boolean
-	src?: string
-	srcSet?: string
-	srcset?: string
-	srcDoc?: string
-	srcdoc?: string
-	srcLang?: string
-	srclang?: string
-	start?: number
-	step?: number | string
 	style?: string | CSSProperties
-	summary?: string
-	tabIndex?: number
 	tabindex?: number
-	target?: string
+	tabIndex?: number
 	title?: string
-	type?: string
-	useMap?: string
-	usemap?: string
-	value?: string | string[] | number
-	volume?: string | number
-	width?: number | string
-	wmode?: string
-	wrap?: string
+	translate?: boolean
+
+	// WAI-ARIA Attributes
+	role?: AriaRole
 
 	// Non-standard Attributes
-	autocapitalize?: 'off' | 'none' | 'on' | 'sentences' | 'words' | 'characters'
-	autoCapitalize?: 'off' | 'none' | 'on' | 'sentences' | 'words' | 'characters'
 	disablePictureInPicture?: boolean
 	results?: number
-	translate?: boolean
 
 	// RDFa Attributes
 	about?: string
@@ -500,16 +348,16 @@ interface HTMLAttributes<RefType extends EventTarget = EventTarget> extends Clas
 	vocab?: string
 
 	// Microdata Attributes
-	itemProp?: string
-	itemprop?: string
-	itemScope?: boolean
-	itemscope?: boolean
-	itemType?: string
-	itemtype?: string
-	itemID?: string
 	itemid?: string
-	itemRef?: string
+	itemID?: string
+	itemprop?: string
+	itemProp?: string
 	itemref?: string
+	itemRef?: string
+	itemscope?: boolean
+	itemScope?: boolean
+	itemtype?: string
+	itemType?: string
 }
 
 // React - https://react.dev/

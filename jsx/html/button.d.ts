@@ -52,6 +52,24 @@ interface ButtonHTMLAttributes extends HTMLAttributes {
 	value?: string | readonly string[] | number
 }
 
+// Preact - https://preactjs.com/
+interface ButtonHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+	disabled?: boolean
+	form?: string
+	formAction?: string
+	formEncType?: string
+	formMethod?: string
+	formNoValidate?: boolean
+	formTarget?: string
+	name?: string
+	popovertarget?: string
+	popoverTarget?: string
+	popovertargetaction?: 'hide' | 'show' | 'toggle'
+	popoverTargetAction?: 'hide' | 'show' | 'toggle'
+	type?: 'submit' | 'reset' | 'button'
+	value?: string | number
+}
+
 // React - https://react.dev/
 interface ButtonHTMLAttributes<T> extends HTMLAttributes<T> {
 	disabled?: boolean

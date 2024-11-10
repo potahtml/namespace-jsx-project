@@ -16,6 +16,13 @@ interface DialogHTMLAttributes extends HTMLAttributes {
 	onClose?: (payload: Event) => void
 }
 
+// Preact - https://preactjs.com/
+interface DialogHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+	onCancel?: GenericEventHandler<T>
+	onClose?: GenericEventHandler<T>
+	open?: boolean
+}
+
 // React - https://react.dev/
 interface DialogHTMLAttributes<T> extends HTMLAttributes<T> {
 	onCancel?: ReactEventHandler<T>

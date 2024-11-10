@@ -124,6 +124,42 @@ interface InputHTMLAttributes extends HTMLAttributes {
 	width?: number | string
 }
 
+// Preact - https://preactjs.com/
+interface InputHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+	accept?: string
+	alt?: string
+	autoComplete?: string
+	capture?: 'user' | 'environment' // https://www.w3.org/TR/html-media-capture/#the-capture-attribute
+	checked?: boolean
+	disabled?: boolean
+	enterKeyHint?: 'enter' | 'done' | 'go' | 'next' | 'previous' | 'search' | 'send'
+	form?: string
+	formAction?: string
+	formEncType?: string
+	formMethod?: string
+	formNoValidate?: boolean
+	formTarget?: string
+	height?: number | string
+	list?: string
+	max?: string
+	maxLength?: number
+	min?: string
+	minLength?: number
+	multiple?: boolean
+	name?: string
+	pattern?: string
+	placeholder?: string
+	readOnly?: boolean
+	required?: boolean
+	size?: number
+	src?: string
+	step?: number | string
+	type?: 'button' | 'checkbox' | 'color' | 'date' | 'datetime-local' | 'email' | 'file' | 'hidden' | 'image' | 'month' | 'number' | 'password' | 'radio' | 'range' | 'reset' | 'search' | 'submit' | 'tel' | 'text' | 'time' | 'url' | 'week' | (string & {})
+	value?: string | number
+	width?: number | string
+	onChange?: GenericEventHandler<T>
+}
+
 // React - https://react.dev/
 interface InputHTMLAttributes<T> extends HTMLAttributes<T> {
 	accept?: string

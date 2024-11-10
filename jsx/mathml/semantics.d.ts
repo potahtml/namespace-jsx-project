@@ -1,5 +1,5 @@
 // Preact - https://preactjs.com/
-interface HTMLSemanticsElement extends MathMLElement {}
+interface SemanticsMathMLAttributes<T extends EventTarget> extends MathMLAttributes<T> {}
 
 // Pota - https://github.com/potahtml/pota
 interface MathMLSemanticsElementAttributes {}

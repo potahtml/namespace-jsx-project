@@ -45,6 +45,20 @@ interface ScriptHTMLAttributes extends HTMLAttributes {
 	type?: string
 }
 
+// Preact - https://preactjs.com/
+interface ScriptHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+	async?: boolean
+	/** @deprecated */
+	charSet?: string
+	crossOrigin?: 'anonymous' | 'use-credentials'
+	defer?: boolean
+	integrity?: string
+	noModule?: boolean
+	referrerPolicy?: '' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
+	src?: string
+	type?: string
+}
+
 // React - https://react.dev/
 interface ScriptHTMLAttributes<T> extends HTMLAttributes<T> {
 	async?: boolean

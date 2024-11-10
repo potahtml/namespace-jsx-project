@@ -1,5 +1,5 @@
 // Preact - https://preactjs.com/
-interface HTMLMStyleElement extends MathMLElement {
+interface MStyleMathMLAttributes<T extends EventTarget> extends MathMLAttributes<T> {
 	/** @deprecated See https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mstyle#background */
 	background?: string
 	/** @deprecated See https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mstyle#color */

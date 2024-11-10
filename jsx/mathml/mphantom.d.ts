@@ -1,5 +1,5 @@
 // Preact - https://preactjs.com/
-interface HTMLMPhantomElement extends MathMLElement {}
+interface MPhantomMathMLAttributes<T extends EventTarget> extends MathMLAttributes<T> {}
 
 // Pota - https://github.com/potahtml/pota
 interface MathMLMphantomElementAttributes {}

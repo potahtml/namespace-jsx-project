@@ -1,5 +1,5 @@
 // Preact - https://preactjs.com/
-interface HTMLMEncloseElement extends MathMLElement {
+interface MEncloseMathMLAttributes<T extends EventTarget> extends MathMLAttributes<T> {
 	notation?: string
 }
 

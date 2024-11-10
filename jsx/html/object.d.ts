@@ -36,6 +36,19 @@ interface ObjectHTMLAttributes extends HTMLAttributes {
 	wmode?: string
 }
 
+// Preact - https://preactjs.com/
+interface ObjectHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+	classID?: string
+	data?: string
+	form?: string
+	height?: number | string
+	name?: string
+	type?: string
+	useMap?: string
+	width?: number | string
+	wmode?: string
+}
+
 // React - https://react.dev/
 interface ObjectHTMLAttributes<T> extends HTMLAttributes<T> {
 	classID?: string

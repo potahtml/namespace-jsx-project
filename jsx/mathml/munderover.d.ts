@@ -1,6 +1,5 @@
 // Preact - https://preactjs.com/
-interface HTMLMUnderoverElement extends MathMLElement {
-	accent?: boolean
+interface MUnderMathMLAttributes<T extends EventTarget> extends MathMLAttributes<T> {
 	accentunder?: boolean
 }
 

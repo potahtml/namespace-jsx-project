@@ -1,5 +1,5 @@
 // Preact - https://preactjs.com/
-interface HTMLMTdElement extends MathMLElement {
+interface MTdMathMLAttributes<T extends EventTarget> extends MathMLAttributes<T> {
 	columnspan?: number
 	rowspan?: number
 	/** Non-standard attribute See https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mtd#columnalign */

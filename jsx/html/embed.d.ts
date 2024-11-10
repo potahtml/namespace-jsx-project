@@ -22,6 +22,14 @@ interface EmbedHTMLAttributes extends HTMLAttributes {
 	width?: number | string
 }
 
+// Preact - https://preactjs.com/
+interface EmbedHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+	height?: number | string
+	src?: string
+	type?: string
+	width?: number | string
+}
+
 // React - https://react.dev/
 interface EmbedHTMLAttributes<T> extends HTMLAttributes<T> {
 	height?: number | string

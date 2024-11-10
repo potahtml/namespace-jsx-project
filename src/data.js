@@ -75,6 +75,7 @@ export const libs = [
 			// elements
 			intrinsicelements: 'elements',
 			intrinsicsvgelements: 'elements',
+			intrinsicmathmlelements: 'elements',
 
 			// attributes
 			intrinsicattributes: 'attributes',

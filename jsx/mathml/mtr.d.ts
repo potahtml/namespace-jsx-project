@@ -1,5 +1,5 @@
 // Preact - https://preactjs.com/
-interface HTMLMTrElement extends MathMLElement {
+interface MTrMathMLAttributes<T extends EventTarget> extends MathMLAttributes<T> {
 	/** Non-standard attribute See https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mtr#columnalign */
 	columnalign?: 'center' | 'left' | 'right'
 	/** Non-standard attribute See https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mtr#rowalign */

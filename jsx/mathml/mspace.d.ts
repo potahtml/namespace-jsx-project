@@ -1,5 +1,5 @@
 // Preact - https://preactjs.com/
-interface HTMLMSpaceElement extends MathMLElement {
+interface MSpaceMathMLAttributes<T extends EventTarget> extends MathMLAttributes<T> {
 	depth?: string
 	height?: string
 	width?: string

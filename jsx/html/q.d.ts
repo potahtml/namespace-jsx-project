@@ -13,6 +13,11 @@ interface QuoteHTMLAttributes extends HTMLAttributes {
 	cite?: string
 }
 
+// Preact - https://preactjs.com/
+interface QuoteHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+	cite?: string
+}
+
 // React - https://react.dev/
 interface QuoteHTMLAttributes<T> extends HTMLAttributes<T> {
 	cite?: string

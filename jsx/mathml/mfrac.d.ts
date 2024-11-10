@@ -1,5 +1,5 @@
 // Preact - https://preactjs.com/
-interface HTMLMFracElement extends MathMLElement {
+interface MFracMathMLAttributes<T extends EventTarget> extends MathMLAttributes<T> {
 	/** @deprecated See https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mfrac#denomalign */
 	denomalign?: 'center' | 'left' | 'right'
 	linethickness?: string

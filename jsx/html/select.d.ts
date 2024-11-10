@@ -38,6 +38,19 @@ interface SelectHTMLAttributes extends HTMLAttributes {
 	value?: any // we support :value to be bound to anything w/ v-model
 }
 
+// Preact - https://preactjs.com/
+interface SelectHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+	autoComplete?: string
+	disabled?: boolean
+	form?: string
+	multiple?: boolean
+	name?: string
+	required?: boolean
+	size?: number
+	value?: string | number
+	onChange?: GenericEventHandler<T>
+}
+
 // React - https://react.dev/
 interface SelectHTMLAttributes<T> extends HTMLAttributes<T> {
 	autoComplete?: string

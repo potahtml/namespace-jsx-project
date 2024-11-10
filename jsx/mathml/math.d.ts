@@ -1,5 +1,5 @@
 // Preact - https://preactjs.com/
-interface HTMLMathElement extends MathMLElement {
+interface MathMathMLAttributes<T extends EventTarget> extends MathMLAttributes<T> {
 	display?: 'block' | 'inline'
 }
 

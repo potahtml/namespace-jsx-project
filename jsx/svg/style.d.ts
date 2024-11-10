@@ -22,6 +22,13 @@ interface StyleHTMLAttributes extends HTMLAttributes {
 	type?: string
 }
 
+// Preact - https://preactjs.com/
+interface StyleHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+	media?: string
+	scoped?: boolean
+	type?: string
+}
+
 // React - https://react.dev/
 interface StyleHTMLAttributes<T> extends HTMLAttributes<T> {
 	media?: string

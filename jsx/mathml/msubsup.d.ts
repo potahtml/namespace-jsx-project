@@ -1,5 +1,5 @@
 // Preact - https://preactjs.com/
-interface HTMLMSubsupElement extends MathMLElement {
+interface MSubsupMathMLAttributes<T extends EventTarget> extends MathMLAttributes<T> {
 	/** @deprecated See https://developer.mozilla.org/en-US/docs/Web/MathML/Element/msubsup#subscriptshift */
 	subscriptshift?: string
 	/** @deprecated See https://developer.mozilla.org/en-US/docs/Web/MathML/Element/msubsup#superscriptshift */

@@ -1,5 +1,5 @@
 // Preact - https://preactjs.com/
-interface HTMLMPaddedElement extends MathMLElement {
+interface MPaddedMathMLAttributes<T extends EventTarget> extends MathMLAttributes<T> {
 	depth?: string
 	height?: string
 	lspace?: string

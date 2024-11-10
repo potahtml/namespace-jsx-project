@@ -1,5 +1,5 @@
 // Preact - https://preactjs.com/
-interface HTMLMActionElement extends MathMLElement {
+interface MActionMathMLAttributes<T extends EventTarget> extends MathMLAttributes<T> {
 	/** @deprecated See https://developer.mozilla.org/en-US/docs/Web/MathML/Element/maction#actiontype */
 	actiontype?: 'statusline' | 'toggle'
 	/** @deprecated See https://developer.mozilla.org/en-US/docs/Web/MathML/Element/maction#selection */

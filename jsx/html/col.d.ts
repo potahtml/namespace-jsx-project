@@ -16,6 +16,12 @@ interface ColHTMLAttributes extends HTMLAttributes {
 	width?: number | string
 }
 
+// Preact - https://preactjs.com/
+interface ColHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+	span?: number
+	width?: number | string
+}
+
 // React - https://react.dev/
 interface ColHTMLAttributes<T> extends HTMLAttributes<T> {
 	span?: number

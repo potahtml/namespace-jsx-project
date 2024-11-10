@@ -60,6 +60,25 @@ interface TextareaHTMLAttributes extends HTMLAttributes {
 	wrap?: string
 }
 
+// Preact - https://preactjs.com/
+interface TextareaHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+	autoComplete?: string
+	cols?: number
+	dirName?: string
+	disabled?: boolean
+	form?: string
+	maxLength?: number
+	minLength?: number
+	name?: string
+	placeholder?: string
+	readOnly?: boolean
+	required?: boolean
+	rows?: number
+	value?: string | number
+	wrap?: string
+	onChange?: GenericEventHandler<T>
+}
+
 // React - https://react.dev/
 interface TextareaHTMLAttributes<T> extends HTMLAttributes<T> {
 	autoComplete?: string

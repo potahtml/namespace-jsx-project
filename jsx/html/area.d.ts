@@ -41,6 +41,19 @@ interface AreaHTMLAttributes extends HTMLAttributes {
 	target?: string
 }
 
+// Preact - https://preactjs.com/
+interface AreaHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+	alt?: string
+	coords?: string
+	download?: any
+	href?: string
+	hrefLang?: string
+	media?: string
+	referrerPolicy?: '' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
+	shape?: string
+	target?: string
+}
+
 // React - https://react.dev/
 interface AreaHTMLAttributes<T> extends HTMLAttributes<T> {
 	alt?: string

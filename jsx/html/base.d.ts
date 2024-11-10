@@ -16,6 +16,12 @@ interface BaseHTMLAttributes extends HTMLAttributes {
 	target?: string
 }
 
+// Preact - https://preactjs.com/
+interface BaseHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+	href?: string
+	target?: string
+}
+
 // React - https://react.dev/
 interface BaseHTMLAttributes<T> extends HTMLAttributes<T> {
 	href?: string

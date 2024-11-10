@@ -18,6 +18,12 @@ interface DetailsHTMLAttributes extends HTMLAttributes {
 	onToggle?: (payload: ToggleEvent) => void
 }
 
+// Preact - https://preactjs.com/
+interface DetailsHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+	open?: boolean
+	onToggle?: GenericEventHandler<T>
+}
+
 // React - https://react.dev/
 interface DetailsHTMLAttributes<T> extends HTMLAttributes<T> {
 	open?: boolean

@@ -31,6 +31,16 @@ interface KeygenHTMLAttributes extends HTMLAttributes {
 	name?: string
 }
 
+// Preact - https://preactjs.com/
+interface KeygenHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+	challenge?: string
+	disabled?: boolean
+	form?: string
+	keyType?: string
+	keyParams?: string
+	name?: string
+}
+
 // React - https://react.dev/
 interface KeygenHTMLAttributes<T> extends HTMLAttributes<T> {
 	challenge?: string
