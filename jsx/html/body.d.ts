@@ -7,17 +7,17 @@ interface HTMLBodyElementAttributes {
 	/** @deprecated */
 	bgcolor?: string
 	/** @deprecated */
-	bottommargin?: string
+	bottommargin?: number | string
 	/** @deprecated */
-	leftmargin?: string
+	leftmargin?: number | string
 	/** @deprecated */
 	link?: string
 	/** @deprecated */
-	rightmargin?: string
+	rightmargin?: number | string
 	/** @deprecated */
 	text?: string
 	/** @deprecated */
-	topmargin?: string
+	topmargin?: number | string
 	/** @deprecated */
 	vlink?: string
 }

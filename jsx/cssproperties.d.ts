@@ -36,5 +36,5 @@ interface CSSProperties extends CSS.Properties<string | number> {
 
 // Pota - https://github.com/potahtml/pota
 interface CSSProperties extends csstype.PropertiesHyphen {
-	[key: `-${string}`]: string | number
+	[key: `-${string}`]: number | string
 }

@@ -34,7 +34,7 @@ interface HTMLTableElementAttributes {
 	/** @deprecated */
 	bgcolor?: string
 	/** @deprecated */
-	border?: string
+	border?: number | string
 	/** @deprecated */
 	cellpadding?: number | string
 	/** @deprecated */

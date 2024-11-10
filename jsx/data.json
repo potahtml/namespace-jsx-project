@@ -996,7 +996,8 @@
 					},
 					"nohref": {
 						"values": {
-							"Chrome": "boolean"
+							"Chrome": "boolean",
+							"Pota": "'true' | boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAreaElement/nohref",
 						"prop": false,
@@ -1144,7 +1145,7 @@
 							"Chrome": "boolean",
 							"Solid": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
-							"Pota": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement/autoplay",
@@ -1158,7 +1159,7 @@
 							"Voby": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
 							"React": "boolean",
-							"Pota": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement/loop",
@@ -1172,7 +1173,7 @@
 							"Voby": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
 							"React": "boolean",
-							"Pota": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement/controls",
@@ -1196,7 +1197,7 @@
 							"Voby": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
 							"React": "boolean",
-							"Pota": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement/muted",
@@ -1363,6 +1364,7 @@
 				"keys": {
 					"dir": {
 						"values": {
+							"Pota": "'rtl' | 'ltr'",
 							"VSCode": "string"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dir",
@@ -1665,7 +1667,7 @@
 					},
 					"bottommargin": {
 						"values": {
-							"Pota": "string",
+							"Pota": "number | string",
 							"VSCode": "string"
 						},
 						"deprecated": true,
@@ -1675,7 +1677,7 @@
 					},
 					"leftmargin": {
 						"values": {
-							"Pota": "string",
+							"Pota": "number | string",
 							"VSCode": "string"
 						},
 						"deprecated": true,
@@ -1685,7 +1687,7 @@
 					},
 					"rightmargin": {
 						"values": {
-							"Pota": "string",
+							"Pota": "number | string",
 							"VSCode": "string"
 						},
 						"deprecated": true,
@@ -1695,7 +1697,7 @@
 					},
 					"topmargin": {
 						"values": {
-							"Pota": "string",
+							"Pota": "number | string",
 							"VSCode": "string"
 						},
 						"deprecated": true,
@@ -1757,7 +1759,7 @@
 							"Voby": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
 							"React": "boolean",
-							"Pota": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLButtonElement/disabled",
@@ -1805,7 +1807,7 @@
 							"Chrome": "boolean",
 							"Solid": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
-							"Pota": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLButtonElement/formnovalidate",
@@ -1859,7 +1861,7 @@
 							"Voby": "string | readonly string[] | number",
 							"Vue": "string | readonly string[] | number",
 							"React": "string | readonly string[] | number",
-							"Pota": "string",
+							"Pota": "number | string",
 							"VSCode": "string"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLButtonElement/value",
@@ -2282,7 +2284,7 @@
 							"Voby": "string | readonly string[] | number",
 							"Vue": "string | readonly string[] | number",
 							"React": "string | readonly string[] | number",
-							"Pota": "string | number",
+							"Pota": "number | string",
 							"VSCode": "string"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDataElement/value",
@@ -2376,7 +2378,7 @@
 							"Voby": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
 							"React": "boolean",
-							"Pota": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDetailsElement/open",
@@ -2439,7 +2441,7 @@
 							"Voby": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
 							"React": "boolean",
-							"Pota": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "string"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/open",
@@ -2506,7 +2508,7 @@
 					"compact": {
 						"values": {
 							"Chrome": "boolean",
-							"Pota": "boolean"
+							"Pota": "'true' | boolean"
 						},
 						"deprecated": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDListElement/compact",
@@ -2634,7 +2636,7 @@
 							"Voby": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
 							"React": "boolean",
-							"Pota": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFieldSetElement/disabled",
@@ -2787,7 +2789,7 @@
 							"Chrome": "boolean",
 							"Solid": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
-							"Pota": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/novalidate",
@@ -2901,8 +2903,10 @@
 				"keys": {
 					"align": {
 						"values": {
-							"Chrome": "string"
+							"Chrome": "string",
+							"Pota": "'left' | 'right' | 'justify' | 'center'"
 						},
+						"deprecated": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLHeadingElement/align",
 						"prop": true,
 						"attr": true
@@ -2919,8 +2923,10 @@
 				"keys": {
 					"align": {
 						"values": {
-							"Chrome": "string"
+							"Chrome": "string",
+							"Pota": "'left' | 'right' | 'justify' | 'center'"
 						},
+						"deprecated": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLHeadingElement/align",
 						"prop": true,
 						"attr": true
@@ -2937,8 +2943,10 @@
 				"keys": {
 					"align": {
 						"values": {
-							"Chrome": "string"
+							"Chrome": "string",
+							"Pota": "'left' | 'right' | 'justify' | 'center'"
 						},
+						"deprecated": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLHeadingElement/align",
 						"prop": true,
 						"attr": true
@@ -2955,8 +2963,10 @@
 				"keys": {
 					"align": {
 						"values": {
-							"Chrome": "string"
+							"Chrome": "string",
+							"Pota": "'left' | 'right' | 'justify' | 'center'"
 						},
+						"deprecated": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLHeadingElement/align",
 						"prop": true,
 						"attr": true
@@ -2973,8 +2983,10 @@
 				"keys": {
 					"align": {
 						"values": {
-							"Chrome": "string"
+							"Chrome": "string",
+							"Pota": "'left' | 'right' | 'justify' | 'center'"
 						},
+						"deprecated": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLHeadingElement/align",
 						"prop": true,
 						"attr": true
@@ -2991,8 +3003,10 @@
 				"keys": {
 					"align": {
 						"values": {
-							"Chrome": "string"
+							"Chrome": "string",
+							"Pota": "'left' | 'right' | 'justify' | 'center'"
 						},
+						"deprecated": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLHeadingElement/align",
 						"prop": true,
 						"attr": true
@@ -3009,8 +3023,10 @@
 				"keys": {
 					"profile": {
 						"values": {
+							"Pota": "string",
 							"VSCode": "string"
 						},
+						"deprecated": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLHeadElement/profile",
 						"prop": false,
 						"attr": false
@@ -3068,7 +3084,7 @@
 					"noshade": {
 						"values": {
 							"Chrome": "boolean",
-							"Pota": "string",
+							"Pota": "'true' | boolean",
 							"VSCode": "string"
 						},
 						"deprecated": true,
@@ -3217,7 +3233,7 @@
 							"Chrome": "boolean",
 							"Solid": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
-							"Pota": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLIFrameElement/allowfullscreen",
@@ -3328,7 +3344,7 @@
 						"values": {
 							"Chrome": "string",
 							"Vue": "number | string",
-							"Pota": "string"
+							"Pota": "number | string"
 						},
 						"deprecated": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLIFrameElement/frameborder",
@@ -3349,7 +3365,7 @@
 						"values": {
 							"Chrome": "string",
 							"Vue": "number | string",
-							"Pota": "string"
+							"Pota": "number | string"
 						},
 						"deprecated": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLIFrameElement/marginheight",
@@ -3360,7 +3376,7 @@
 						"values": {
 							"Chrome": "string",
 							"Vue": "number | string",
-							"Pota": "string"
+							"Pota": "number | string"
 						},
 						"deprecated": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLIFrameElement/marginwidth",
@@ -3370,7 +3386,7 @@
 					"credentialless": {
 						"values": {
 							"Chrome": "boolean",
-							"Pota": "boolean"
+							"Pota": "'true' | boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLIFrameElement/credentialless",
 						"prop": true,
@@ -3379,7 +3395,7 @@
 					"allowpaymentrequest": {
 						"values": {
 							"Chrome": "boolean",
-							"Pota": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "string"
 						},
 						"deprecated": true,
@@ -3398,7 +3414,7 @@
 					"browsingtopics": {
 						"values": {
 							"Chrome": "boolean",
-							"Pota": "boolean"
+							"Pota": "'true' | boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLIFrameElement/browsingtopics",
 						"prop": false,
@@ -3414,7 +3430,8 @@
 					},
 					"sharedstoragewritable": {
 						"values": {
-							"Chrome": "boolean"
+							"Chrome": "boolean",
+							"Pota": "'true' | boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLIFrameElement/sharedstoragewritable",
 						"prop": false,
@@ -3484,7 +3501,7 @@
 							"Voby": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
 							"React": "boolean",
-							"Pota": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
 						"deprecated": true,
@@ -3504,7 +3521,7 @@
 					"allowtransparency": {
 						"values": {
 							"Vue": "boolean | 'true' | 'false'",
-							"Pota": "boolean"
+							"Pota": "'true' | boolean"
 						},
 						"deprecated": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLIFrameElement/allowtransparency",
@@ -3611,7 +3628,7 @@
 						"values": {
 							"Chrome": "boolean",
 							"Solid": "boolean",
-							"Pota": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/ismap",
@@ -3708,7 +3725,8 @@
 					},
 					"lowsrc": {
 						"values": {
-							"Chrome": "string"
+							"Chrome": "string",
+							"Pota": "string"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/lowsrc",
 						"prop": true,
@@ -3727,7 +3745,7 @@
 					"hspace": {
 						"values": {
 							"Chrome": "number | string",
-							"Pota": "number"
+							"Pota": "number | string"
 						},
 						"deprecated": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/hspace",
@@ -3737,7 +3755,7 @@
 					"vspace": {
 						"values": {
 							"Chrome": "number | string",
-							"Pota": "number"
+							"Pota": "number | string"
 						},
 						"deprecated": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/vspace",
@@ -3846,19 +3864,21 @@
 						"prop": true,
 						"attr": false
 					},
+					"intrinsicsize": {
+						"values": {
+							"Pota": "string",
+							"VSCode": "string"
+						},
+						"deprecated": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/intrinsicsize",
+						"prop": false,
+						"attr": false
+					},
 					"importance": {
 						"values": {
 							"VSCode": "string"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/importance",
-						"prop": false,
-						"attr": false
-					},
-					"intrinsicsize": {
-						"values": {
-							"VSCode": "string"
-						},
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/intrinsicsize",
 						"prop": false,
 						"attr": false
 					}
@@ -3919,7 +3939,7 @@
 							"Voby": "boolean",
 							"Vue": "boolean | 'true' | 'false' | any[] | Set<any>",
 							"React": "boolean",
-							"Pota": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/checked",
@@ -3943,7 +3963,7 @@
 							"Voby": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
 							"React": "boolean",
-							"Pota": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/disabled",
@@ -3991,7 +4011,7 @@
 							"Chrome": "boolean",
 							"Solid": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
-							"Pota": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/formnovalidate",
@@ -4083,7 +4103,7 @@
 							"Voby": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
 							"React": "boolean",
-							"Pota": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/multiple",
@@ -4137,7 +4157,7 @@
 							"Chrome": "boolean",
 							"Solid": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
-							"Pota": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/readonly",
@@ -4151,7 +4171,7 @@
 							"Voby": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
 							"React": "boolean",
-							"Pota": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/required",
@@ -4221,7 +4241,7 @@
 							"Voby": "string | readonly string[] | number",
 							"Vue": "any",
 							"React": "string | readonly string[] | number",
-							"Pota": "string | number",
+							"Pota": "number | string",
 							"VSCode": "string"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/value",
@@ -4274,7 +4294,7 @@
 						"values": {
 							"Chrome": "boolean",
 							"Solid": "boolean",
-							"Pota": "boolean"
+							"Pota": "'true' | boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/incremental",
 						"prop": true,
@@ -4368,7 +4388,8 @@
 					},
 					"results": {
 						"values": {
-							"Solid": "number"
+							"Solid": "number",
+							"Pota": "number | string"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/results",
 						"prop": false,
@@ -4698,7 +4719,7 @@
 						"values": {
 							"Chrome": "boolean",
 							"Solid": "boolean",
-							"Pota": "boolean"
+							"Pota": "'true' | boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLLinkElement/disabled",
 						"prop": true,
@@ -5042,7 +5063,7 @@
 					"compact": {
 						"values": {
 							"Chrome": "boolean",
-							"Pota": "boolean"
+							"Pota": "'true' | boolean"
 						},
 						"deprecated": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMenuElement/compact",
@@ -5198,7 +5219,7 @@
 							"Voby": "string | readonly string[] | number",
 							"Vue": "string | readonly string[] | number",
 							"React": "string | readonly string[] | number",
-							"Pota": "string | number",
+							"Pota": "number | string",
 							"VSCode": "string"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMeterElement/value",
@@ -5433,7 +5454,7 @@
 					"declare": {
 						"values": {
 							"Chrome": "boolean",
-							"Pota": "string",
+							"Pota": "'true' | boolean",
 							"VSCode": "string"
 						},
 						"deprecated": true,
@@ -5444,7 +5465,7 @@
 					"hspace": {
 						"values": {
 							"Chrome": "number | string",
-							"Pota": "string"
+							"Pota": "number | string"
 						},
 						"deprecated": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLObjectElement/hspace",
@@ -5465,7 +5486,7 @@
 					"vspace": {
 						"values": {
 							"Chrome": "number | string",
-							"Pota": "string"
+							"Pota": "number | string"
 						},
 						"deprecated": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLObjectElement/vspace",
@@ -5595,7 +5616,7 @@
 							"Voby": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
 							"React": "boolean",
-							"Pota": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLOListElement/reversed",
@@ -5633,7 +5654,7 @@
 					"compact": {
 						"values": {
 							"Chrome": "boolean",
-							"Pota": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "string"
 						},
 						"deprecated": true,
@@ -5658,7 +5679,7 @@
 							"Voby": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
 							"React": "boolean",
-							"Pota": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLOptGroupElement/disabled",
@@ -5696,7 +5717,7 @@
 							"Voby": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
 							"React": "boolean",
-							"Pota": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLOptionElement/disabled",
@@ -5724,7 +5745,7 @@
 							"Voby": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
 							"React": "boolean",
-							"Pota": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLOptionElement/selected",
@@ -5738,7 +5759,7 @@
 							"Voby": "string | readonly string[] | number",
 							"Vue": "any",
 							"React": "string | readonly string[] | number",
-							"Pota": "string | number",
+							"Pota": "number | string",
 							"VSCode": "string"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLOptionElement/value",
@@ -5846,7 +5867,7 @@
 					"width": {
 						"values": {
 							"Chrome": "number | string",
-							"Pota": "string",
+							"Pota": "number | string",
 							"VSCode": "string"
 						},
 						"deprecated": true,
@@ -5889,7 +5910,7 @@
 							"Voby": "string | readonly string[] | number",
 							"Vue": "string | readonly string[] | number",
 							"React": "string | readonly string[] | number",
-							"Pota": "string | number",
+							"Pota": "number | string",
 							"VSCode": "string"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLProgressElement/value",
@@ -6022,7 +6043,7 @@
 							"Chrome": "boolean",
 							"Solid": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
-							"Pota": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "string"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLScriptElement/nomodule",
@@ -6049,7 +6070,7 @@
 							"Voby": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
 							"React": "boolean",
-							"Pota": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLScriptElement/async",
@@ -6063,7 +6084,7 @@
 							"Voby": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
 							"React": "boolean",
-							"Pota": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLScriptElement/defer",
@@ -6138,7 +6159,7 @@
 					"blocking": {
 						"values": {
 							"Chrome": "string",
-							"Pota": "boolean"
+							"Pota": "string"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLScriptElement/blocking",
 						"prop": true,
@@ -6269,7 +6290,7 @@
 							"Voby": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
 							"React": "boolean",
-							"Pota": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLSelectElement/disabled",
@@ -6283,7 +6304,7 @@
 							"Voby": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
 							"React": "boolean",
-							"Pota": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLSelectElement/multiple",
@@ -6311,7 +6332,7 @@
 							"Voby": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
 							"React": "boolean",
-							"Pota": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLSelectElement/required",
@@ -6362,7 +6383,7 @@
 							"Voby": "string",
 							"Vue": "any",
 							"React": "string | readonly string[] | number",
-							"Pota": "string | number"
+							"Pota": "number | string"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLSelectElement/value",
 						"prop": true,
@@ -6597,7 +6618,7 @@
 					"blocking": {
 						"values": {
 							"Chrome": "string",
-							"Pota": "boolean"
+							"Pota": "string"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLStyleElement/blocking",
 						"prop": true,
@@ -6621,7 +6642,7 @@
 							"Voby": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
 							"React": "boolean",
-							"Pota": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
 						"deprecated": true,
@@ -6631,6 +6652,7 @@
 					},
 					"title": {
 						"values": {
+							"Pota": "string",
 							"VSCode": "string"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLStyleElement/title",
@@ -6690,7 +6712,7 @@
 						"values": {
 							"Chrome": "string",
 							"React": "number",
-							"Pota": "string",
+							"Pota": "number | string",
 							"VSCode": "string"
 						},
 						"deprecated": true,
@@ -6938,7 +6960,7 @@
 							"Voby": "number | string",
 							"Vue": "number | string",
 							"React": "number | string",
-							"Pota": "string"
+							"Pota": "number | string"
 						},
 						"deprecated": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableCellElement/height",
@@ -6981,7 +7003,7 @@
 					"nowrap": {
 						"values": {
 							"Chrome": "boolean",
-							"Pota": "boolean"
+							"Pota": "'true' | boolean"
 						},
 						"deprecated": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableCellElement/nowrap",
@@ -7081,7 +7103,7 @@
 					"shadowrootdelegatesfocus": {
 						"values": {
 							"Chrome": "boolean",
-							"Pota": "boolean"
+							"Pota": "'true' | boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTemplateElement/shadowrootdelegatesfocus",
 						"prop": false,
@@ -7090,7 +7112,7 @@
 					"shadowrootclonable": {
 						"values": {
 							"Chrome": "boolean",
-							"Pota": "boolean"
+							"Pota": "'true' | boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTemplateElement/shadowrootclonable",
 						"prop": false,
@@ -7099,7 +7121,7 @@
 					"shadowrootserializable": {
 						"values": {
 							"Chrome": "boolean",
-							"Pota": "boolean"
+							"Pota": "'true' | boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTemplateElement/shadowrootserializable",
 						"prop": false,
@@ -7168,7 +7190,7 @@
 							"Voby": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
 							"React": "boolean",
-							"Pota": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTextAreaElement/disabled",
@@ -7232,7 +7254,7 @@
 							"Chrome": "boolean",
 							"Solid": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
-							"Pota": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTextAreaElement/readonly",
@@ -7246,7 +7268,7 @@
 							"Voby": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
 							"React": "boolean",
-							"Pota": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTextAreaElement/required",
@@ -7320,7 +7342,7 @@
 							"Voby": "string | readonly string[] | number",
 							"Vue": "string | readonly string[] | number | null",
 							"React": "string | readonly string[] | number",
-							"Pota": "string | number"
+							"Pota": "number | string"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTextAreaElement/value",
 						"prop": true,
@@ -7599,7 +7621,7 @@
 					"nowrap": {
 						"values": {
 							"Chrome": "boolean",
-							"Pota": "boolean"
+							"Pota": "'true' | boolean"
 						},
 						"deprecated": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableCellElement/nowrap",
@@ -7915,7 +7937,7 @@
 							"Voby": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
 							"React": "boolean",
-							"Pota": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTrackElement/default",
@@ -7953,7 +7975,7 @@
 					"compact": {
 						"values": {
 							"Chrome": "boolean",
-							"Pota": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "string"
 						},
 						"deprecated": true,
@@ -8037,7 +8059,7 @@
 							"Chrome": "boolean",
 							"Solid": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
-							"Pota": "boolean"
+							"Pota": "'true' | boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement/playsinline",
 						"prop": false,
@@ -8063,7 +8085,7 @@
 						"values": {
 							"Chrome": "boolean",
 							"Solid": "boolean",
-							"Pota": "boolean"
+							"Pota": "'true' | boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement/disablepictureinpicture",
 						"prop": false,
@@ -8114,7 +8136,7 @@
 							"Chrome": "boolean",
 							"Solid": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
-							"Pota": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement/autoplay",
@@ -8128,7 +8150,7 @@
 							"Voby": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
 							"React": "boolean",
-							"Pota": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement/loop",
@@ -8142,7 +8164,7 @@
 							"Voby": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
 							"React": "boolean",
-							"Pota": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement/controls",
@@ -8166,7 +8188,7 @@
 							"Voby": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
 							"React": "boolean",
-							"Pota": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement/muted",
@@ -8192,7 +8214,7 @@
 					"disableremoteplayback": {
 						"values": {
 							"Chrome": "boolean",
-							"Pota": "boolean"
+							"Pota": "'true' | boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement/disableremoteplayback",
 						"prop": false,
@@ -8363,7 +8385,7 @@
 					"compact": {
 						"values": {
 							"Chrome": "boolean",
-							"Pota": "boolean"
+							"Pota": "'true' | boolean"
 						},
 						"deprecated": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDirectoryElement/compact",
@@ -8473,7 +8495,7 @@
 					"noresize": {
 						"values": {
 							"Chrome": "boolean",
-							"Pota": "boolean"
+							"Pota": "'true' | boolean"
 						},
 						"deprecated": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFrameElement/noresize",
@@ -8513,7 +8535,7 @@
 					"cols": {
 						"values": {
 							"Chrome": "string",
-							"Pota": "string"
+							"Pota": "number | string"
 						},
 						"deprecated": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFrameSetElement/cols",
@@ -8523,7 +8545,7 @@
 					"rows": {
 						"values": {
 							"Chrome": "string",
-							"Pota": "string"
+							"Pota": "number | string"
 						},
 						"deprecated": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFrameSetElement/rows",
@@ -8755,7 +8777,7 @@
 							"Voby": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
 							"React": "boolean",
-							"Pota": "boolean"
+							"Pota": "'true' | boolean"
 						},
 						"deprecated": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLUnknownElement/disabled",
@@ -8852,7 +8874,7 @@
 					"width": {
 						"values": {
 							"Chrome": "number | string",
-							"Pota": "string"
+							"Pota": "number | string"
 						},
 						"deprecated": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLPreElement/width",
@@ -8957,7 +8979,7 @@
 					"truespeed": {
 						"values": {
 							"Chrome": "boolean",
-							"Pota": "boolean"
+							"Pota": "'true' | boolean"
 						},
 						"deprecated": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMarqueeElement/truespeed",
@@ -9108,7 +9130,7 @@
 							"Voby": "string | readonly string[] | number",
 							"Vue": "string | readonly string[] | number",
 							"React": "string | readonly string[] | number",
-							"Pota": "string | number",
+							"Pota": "number | string",
 							"VSCode": "string"
 						},
 						"deprecated": true,
@@ -9205,7 +9227,7 @@
 					"width": {
 						"values": {
 							"Chrome": "number | string",
-							"Pota": "string"
+							"Pota": "number | string"
 						},
 						"deprecated": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLPreElement/width",
@@ -9243,7 +9265,7 @@
 							"Voby": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
 							"React": "boolean",
-							"Pota": "boolean"
+							"Pota": "'true' | boolean"
 						},
 						"url": "https://www.electronjs.org/docs/latest/api/webview-tag#allowpopups",
 						"prop": false,
@@ -9276,6 +9298,7 @@
 							"React": "string",
 							"Pota": "string"
 						},
+						"deprecated": true,
 						"url": "https://www.electronjs.org/docs/latest/api/webview-tag#blinkfeatures",
 						"prop": false,
 						"attr": false
@@ -9296,8 +9319,9 @@
 							"Voby": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
 							"React": "boolean",
-							"Pota": "boolean"
+							"Pota": "'true' | boolean"
 						},
+						"deprecated": true,
 						"url": "https://www.electronjs.org/docs/latest/api/webview-tag#disableguestresize",
 						"prop": false,
 						"attr": false
@@ -9307,7 +9331,7 @@
 							"Voby": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
 							"React": "boolean",
-							"Pota": "boolean"
+							"Pota": "'true' | boolean"
 						},
 						"url": "https://www.electronjs.org/docs/latest/api/webview-tag#disablewebsecurity",
 						"prop": false,
@@ -9320,6 +9344,7 @@
 							"React": "string",
 							"Pota": "string"
 						},
+						"deprecated": true,
 						"url": "https://www.electronjs.org/docs/latest/api/webview-tag#guestinstance",
 						"prop": false,
 						"attr": false
@@ -9340,7 +9365,7 @@
 							"Voby": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
 							"React": "boolean",
-							"Pota": "boolean"
+							"Pota": "'true' | boolean"
 						},
 						"url": "https://www.electronjs.org/docs/latest/api/webview-tag#nodeintegration",
 						"prop": false,
@@ -9362,7 +9387,7 @@
 							"Voby": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
 							"React": "boolean",
-							"Pota": "boolean"
+							"Pota": "'true' | boolean"
 						},
 						"url": "https://www.electronjs.org/docs/latest/api/webview-tag#plugins",
 						"prop": false,
@@ -9418,6 +9443,22 @@
 							"Pota": "boolean"
 						},
 						"url": "https://www.electronjs.org/docs/latest/api/webview-tag#allowfullscreen",
+						"prop": false,
+						"attr": false
+					},
+					"enableblinkfeatures": {
+						"values": {
+							"Pota": "string"
+						},
+						"url": "https://www.electronjs.org/docs/latest/api/webview-tag#enableblinkfeatures",
+						"prop": false,
+						"attr": false
+					},
+					"nodeintegrationinsubframes": {
+						"values": {
+							"Pota": "'true' | boolean"
+						},
+						"url": "https://www.electronjs.org/docs/latest/api/webview-tag#nodeintegrationinsubframes",
 						"prop": false,
 						"attr": false
 					},
@@ -31498,7 +31539,7 @@
 							"Voby": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
 							"React": "boolean",
-							"Pota": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGScriptElement/async",
@@ -31533,7 +31574,7 @@
 							"Voby": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
 							"React": "boolean",
-							"Pota": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGScriptElement/defer",
@@ -31557,7 +31598,7 @@
 						"values": {
 							"Solid": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
-							"Pota": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "string"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGScriptElement/nomodule",
@@ -31657,7 +31698,7 @@
 					},
 					"blocking": {
 						"values": {
-							"Pota": "boolean"
+							"Pota": "string"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGScriptElement/blocking",
 						"prop": false,
@@ -32407,6 +32448,7 @@
 							"Pota": "string",
 							"VSCode": "string"
 						},
+						"deprecated": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGStyleElement/type",
 						"prop": true,
 						"attr": true
@@ -32428,6 +32470,7 @@
 					"title": {
 						"values": {
 							"Chrome": "string",
+							"Pota": "string",
 							"VSCode": "string"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGStyleElement/title",
@@ -32452,16 +32495,17 @@
 							"Voby": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
 							"React": "boolean",
-							"Pota": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
+						"deprecated": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGStyleElement/scoped",
 						"prop": false,
 						"attr": false
 					},
 					"blocking": {
 						"values": {
-							"Pota": "boolean"
+							"Pota": "string"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGStyleElement/blocking",
 						"prop": false,
@@ -37128,7 +37172,7 @@
 					"accent": {
 						"values": {
 							"Preact": "boolean",
-							"Pota": "boolean"
+							"Pota": "'true' | boolean"
 						},
 						"deprecated": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement/accent",
@@ -37138,7 +37182,7 @@
 					"fence": {
 						"values": {
 							"Preact": "boolean",
-							"Pota": "boolean"
+							"Pota": "'true' | boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement/fence",
 						"prop": false,
@@ -37147,7 +37191,7 @@
 					"largeop": {
 						"values": {
 							"Preact": "boolean",
-							"Pota": "boolean"
+							"Pota": "'true' | boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement/largeop",
 						"prop": false,
@@ -37183,7 +37227,7 @@
 					"movablelimits": {
 						"values": {
 							"Preact": "boolean",
-							"Pota": "boolean"
+							"Pota": "'true' | boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement/movablelimits",
 						"prop": false,
@@ -37201,7 +37245,7 @@
 					"separator": {
 						"values": {
 							"Preact": "boolean",
-							"Pota": "boolean"
+							"Pota": "'true' | boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement/separator",
 						"prop": false,
@@ -37210,7 +37254,7 @@
 					"stretchy": {
 						"values": {
 							"Preact": "boolean",
-							"Pota": "boolean"
+							"Pota": "'true' | boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement/stretchy",
 						"prop": false,
@@ -37219,7 +37263,7 @@
 					"symmetric": {
 						"values": {
 							"Preact": "boolean",
-							"Pota": "boolean"
+							"Pota": "'true' | boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement/symmetric",
 						"prop": false,
@@ -37246,7 +37290,7 @@
 					"accent": {
 						"values": {
 							"Preact": "boolean",
-							"Pota": "boolean"
+							"Pota": "'true' | boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement/accent",
 						"prop": false,
@@ -37682,7 +37726,7 @@
 					"columnspan": {
 						"values": {
 							"Preact": "number",
-							"Pota": "number"
+							"Pota": "number | string"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement/columnspan",
 						"prop": false,
@@ -37691,7 +37735,7 @@
 					"rowspan": {
 						"values": {
 							"Preact": "number",
-							"Pota": "number"
+							"Pota": "number | string"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement/rowspan",
 						"prop": false,
@@ -37765,7 +37809,7 @@
 					"accentunder": {
 						"values": {
 							"Preact": "boolean",
-							"Pota": "boolean"
+							"Pota": "'true' | boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement/accentunder",
 						"prop": false,
@@ -37784,7 +37828,7 @@
 					"accent": {
 						"values": {
 							"Preact": "boolean",
-							"Pota": "boolean"
+							"Pota": "'true' | boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement/accent",
 						"prop": false,
@@ -37793,7 +37837,7 @@
 					"accentunder": {
 						"values": {
 							"Preact": "boolean",
-							"Pota": "boolean"
+							"Pota": "'true' | boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement/accentunder",
 						"prop": false,

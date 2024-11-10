@@ -73,15 +73,15 @@ interface HTMLObjectElementAttributes {
 	/** @deprecated */
 	codetype?: string
 	/** @deprecated */
-	declare?: string
+	declare?: 'true' | boolean
 	/** @deprecated */
-	hspace?: string
+	hspace?: number | string
 	/** @deprecated */
 	standby?: string
 	/** @deprecated */
 	usemap?: string
 	/** @deprecated */
-	vspace?: string
+	vspace?: number | string
 	/** @deprecated */
 	typemustmatch?: boolean
 }

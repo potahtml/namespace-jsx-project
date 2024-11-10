@@ -26,5 +26,5 @@ interface HTMLMenuElementAttributes {
 	/** @deprecated */
 	type?: 'context' | 'toolbar'
 	/** @deprecated */
-	compact?: boolean
+	compact?: 'true' | boolean
 }

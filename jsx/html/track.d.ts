@@ -36,7 +36,7 @@ interface TrackHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Pota - https://github.com/potahtml/pota
 interface HTMLTrackElementAttributes {
-	default?: boolean
+	default?: 'true' | boolean
 	kind?:
 		| 'alternative'
 		| 'descriptions'

@@ -61,12 +61,12 @@ interface MediaHTMLAttributes<T> extends HTMLAttributes<T> {
 // Pota - https://github.com/potahtml/pota
 interface HTMLAudioElementAttributes extends HTMLMediaHTMLAttributes {}
 interface HTMLMediaHTMLAttributes {
-	autoplay?: boolean
-	controls?: boolean
+	autoplay?: 'true' | boolean
+	controls?: 'true' | boolean
 	controlslist?: string
 	crossorigin?: 'anonymous' | 'use-credentials' | ''
-	loop?: boolean
-	muted?: boolean
+	loop?: 'true' | boolean
+	muted?: 'true' | boolean
 	preload?: 'none' | 'metadata' | 'auto' | ''
 	src?: string
 

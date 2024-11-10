@@ -71,7 +71,7 @@ interface HTMLLinkElementAttributes {
 	as?: 'audio' | 'document' | 'embed' | 'fetch' | 'font' | 'image' | 'object' | 'script' | 'style' | 'track' | 'video' | 'worker'
 
 	crossorigin?: 'anonymous' | 'use-credentials' | ''
-	disabled?: boolean
+	disabled?: 'true' | boolean
 	fetchpriority?: 'high' | 'low' | 'auto'
 	href?: string
 	hreflang?: string

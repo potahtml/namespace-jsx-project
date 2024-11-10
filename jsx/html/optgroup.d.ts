@@ -24,6 +24,6 @@ interface OptgroupHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Pota - https://github.com/potahtml/pota
 interface HTMLOptGroupElementAttributes {
-	disabled?: boolean
+	disabled?: 'true' | boolean
 	label?: string
 }

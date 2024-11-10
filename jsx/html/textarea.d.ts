@@ -87,16 +87,16 @@ interface HTMLTextAreaElementAttributes {
 	autofocus?: boolean
 	cols?: number | string
 	dirname?: string
-	disabled?: boolean
+	disabled?: 'true' | boolean
 	enterkeyhint?: 'enter' | 'done' | 'go' | 'next' | 'previous' | 'search' | 'send'
 	form?: string
 	maxlength?: number | string
 	minlength?: number | string
 	name?: string
 	placeholder?: string
-	readonly?: boolean
-	required?: boolean
+	readonly?: 'true' | boolean
+	required?: 'true' | boolean
 	rows?: number | string
-	value?: string | number
+	value?: number | string
 	wrap?: 'hard' | 'soft' | 'off'
 }

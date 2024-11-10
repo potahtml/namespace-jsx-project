@@ -168,37 +168,38 @@ interface HTMLInputElementAttributes {
 	autocorrect?: 'on' | 'off'
 	autofocus?: boolean
 	capture?: 'user' | 'environment'
-	checked?: boolean
+	checked?: 'true' | boolean
 	crossorigin?: 'anonymous' | 'use-credentials' | ''
 	dirname?: string
-	disabled?: boolean
+	disabled?: 'true' | boolean
 	enterkeyhint?: 'enter' | 'done' | 'go' | 'next' | 'previous' | 'search' | 'send'
 	form?: string
 	formaction?: string
 	formenctype?: 'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'
 	formmethod?: 'post' | 'get' | 'dialog'
-	formnovalidate?: boolean
+	formnovalidate?: 'true' | boolean
 	formtarget?: string
 	height?: number | string
-	incremental?: boolean
+	incremental?: 'true' | boolean
 	list?: string
 	max?: number | string
 	maxlength?: number | string
 	min?: number | string
 	minlength?: number | string
-	multiple?: boolean
+	multiple?: 'true' | boolean
 	name?: string
 	pattern?: string
 	placeholder?: string
 	popovertarget?: string
 	popovertargetaction?: 'hide' | 'show' | 'toggle'
-	readonly?: boolean
-	required?: boolean
+	readonly?: 'true' | boolean
+	required?: 'true' | boolean
+	results?: number | string
 	size?: number | string
 	src?: string
 	step?: number | string
 	type?: 'button' | 'checkbox' | 'color' | 'date' | 'datetime-local' | 'email' | 'file' | 'hidden' | 'image' | 'month' | 'number' | 'password' | 'radio' | 'range' | 'reset' | 'search' | 'submit' | 'tel' | 'text' | 'time' | 'url' | 'week'
-	value?: string | number
+	value?: number | string
 	width?: number | string
 
 	/** @deprecated */

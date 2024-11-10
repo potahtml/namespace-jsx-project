@@ -88,7 +88,7 @@ interface IframeHTMLAttributes<T> extends HTMLAttributes<T> {
 // Pota - https://github.com/potahtml/pota
 interface HTMLIFrameElementAttributes {
 	allow?: string
-	allowfullscreen?: boolean
+	allowfullscreen?: 'true' | boolean
 	height?: number | string
 	loading?: 'eager' | 'lazy'
 	name?: string
@@ -98,29 +98,31 @@ interface HTMLIFrameElementAttributes {
 	srcdoc?: string
 	width?: number | string
 
+	/** @non-standard */
+	browsingtopics?: 'true' | boolean
 	/** @experimental */
-	browsingtopics?: boolean
-	/** @experimental */
-	credentialless?: boolean
+	credentialless?: 'true' | boolean
 	/** @experimental */
 	csp?: string
+	/** @experimental */
+	sharedstoragewritable?: 'true' | boolean
 
 	/** @deprecated */
-	allowpaymentrequest?: boolean
+	allowpaymentrequest?: 'true' | boolean
 	/** @deprecated */
-	allowtransparency?: boolean
+	allowtransparency?: 'true' | boolean
 	/** @deprecated */
 	align?: string
 	/** @deprecated */
-	frameborder?: string
+	frameborder?: number | string
 	/** @deprecated */
 	longdesc?: string
 	/** @deprecated */
-	marginheight?: string
+	marginheight?: number | string
 	/** @deprecated */
-	marginwidth?: string
+	marginwidth?: number | string
 	/** @deprecated */
 	scrolling?: 'yes' | 'no' | 'auto'
 	/** @deprecated */
-	seamless?: boolean
+	seamless?: 'true' | boolean
 }

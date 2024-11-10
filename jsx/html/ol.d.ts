@@ -28,10 +28,10 @@ interface OlHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Pota - https://github.com/potahtml/pota
 interface HTMLOListElementAttributes {
-	reversed?: boolean
+	reversed?: 'true' | boolean
 	start?: number | string
 	type?: '1' | 'a' | 'A' | 'i' | 'I'
 
 	/** @deprecated */
-	compact?: boolean
+	compact?: 'true' | boolean
 }

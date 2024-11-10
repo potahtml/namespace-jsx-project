@@ -27,7 +27,7 @@ interface HTMLParamElementAttributes {
 	/** @deprecated */
 	name?: string
 	/** @deprecated */
-	value?: string | number
+	value?: number | string
 	/** @deprecated */
 	type?: string
 	/** @deprecated */

@@ -1,9 +1,9 @@
 // Pota - https://github.com/potahtml/pota
 interface HTMLFrameSetElementAttributes {
 	/** @deprecated */
-	cols?: string
+	cols?: number | string
 	/** @deprecated */
-	rows?: string
+	rows?: number | string
 }
 
 interface HTMLFrameSetElementEvents<Element> extends HTMLElementEvents<Element>, WindowEventHandlersEvents<Element> {}

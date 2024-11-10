@@ -8,7 +8,7 @@ interface HTMLHRElementAttributes {
 	/** @deprecated */
 	color?: string
 	/** @deprecated */
-	noshade?: string
+	noshade?: 'true' | boolean
 	/** @deprecated */
 	size?: string
 	/** @deprecated */

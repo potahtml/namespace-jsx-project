@@ -16,18 +16,18 @@ interface HTMLMOElement extends MathMLElement {
 
 // Pota - https://github.com/potahtml/pota
 interface MathMLMoElementAttributes {
-	fence?: boolean
+	fence?: 'true' | boolean
 	form?: 'prefix' | 'infix' | 'postfix'
-	largeop?: boolean
+	largeop?: 'true' | boolean
 	lspace?: string
 	maxsize?: string
 	minsize?: string
-	movablelimits?: boolean
+	movablelimits?: 'true' | boolean
 	rspace?: string
-	separator?: boolean
-	stretchy?: boolean
-	symmetric?: boolean
+	separator?: 'true' | boolean
+	stretchy?: 'true' | boolean
+	symmetric?: 'true' | boolean
 
 	/** @non-standard */
-	accent?: boolean
+	accent?: 'true' | boolean
 }

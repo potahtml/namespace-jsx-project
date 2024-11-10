@@ -588,9 +588,9 @@ interface HTMLAttributes<T> extends AriaAttributes, DOMAttributes<T> {
 
 // Pota - https://github.com/potahtml/pota
 interface DOMHTMLProperties {
-	innerHTML?: string | number
-	innerText?: string | number
-	textContent?: string | number
+	innerHTML?: number | string
+	innerText?: number | string
+	textContent?: number | string
 }
 interface DOMHTMLAttributes extends DOMHTMLProperties {
 	about?: string
@@ -598,22 +598,22 @@ interface DOMHTMLAttributes extends DOMHTMLProperties {
 	autocapitalize?: 'off' | 'none' | 'on' | 'sentences' | 'words' | 'characters'
 
 	color?: string
-	contenteditable?: boolean | 'plaintext-only' | 'inherit'
+	contenteditable?: 'true' | 'false' | 'plaintext-only' | 'inherit' | boolean
 	contextmenu?: string
 	datatype?: string
 	dir?: 'ltr' | 'rtl' | 'auto'
-	draggable?: boolean | 'false' | 'true'
+	draggable?: 'true' | 'false' | boolean
 	exportparts?: string
 	hidden?: boolean | 'hidden' | 'until-found'
 	id?: string
-	inert?: boolean
+	inert?: 'true' | boolean
 	inlist?: any
 	inputmode?: 'decimal' | 'email' | 'none' | 'numeric' | 'search' | 'tel' | 'text' | 'url'
 	is?: string
 	itemid?: string
 	itemprop?: string
 	itemref?: string
-	itemscope?: boolean
+	itemscope?: 'true' | boolean
 	itemtype?: string
 	lang?: string
 	part?: string
@@ -622,7 +622,7 @@ interface DOMHTMLAttributes extends DOMHTMLProperties {
 	property?: string
 	resource?: string
 	slot?: string
-	spellcheck?: boolean
+	spellcheck?: 'true' | boolean
 	tabindex?: number | string
 	title?: string
 	translate?: 'yes' | 'no'

@@ -5,8 +5,8 @@ interface TemplateHTMLAttributes<T extends HTMLTemplateElement> extends HTMLAttr
 
 // Pota - https://github.com/potahtml/pota
 interface HTMLTemplateElementAttributes {
-	shadowrootclonable?: boolean
-	shadowrootdelegatesfocus?: boolean
+	shadowrootclonable?: 'true' | boolean
+	shadowrootdelegatesfocus?: 'true' | boolean
 	shadowrootmode?: 'open' | 'closed'
-	shadowrootserializable?: boolean
+	shadowrootserializable?: 'true' | boolean
 }

@@ -6,6 +6,6 @@ interface HTMLMUnderoverElement extends MathMLElement {
 
 // Pota - https://github.com/potahtml/pota
 interface MathMLMunderoverElementAttributes {
-	accent?: boolean
-	accentunder?: boolean
+	accent?: 'true' | boolean
+	accentunder?: 'true' | boolean
 }

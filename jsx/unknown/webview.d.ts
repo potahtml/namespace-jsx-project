@@ -62,21 +62,29 @@ interface WebViewHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Pota - https://github.com/potahtml/pota
 interface HTMLWebViewElementAttributes {
-	allowfullscreen?: boolean
-	allowpopups?: boolean
-	autofocus?: boolean
-	autosize?: boolean
-	blinkfeatures?: string
+	allowpopups?: 'true' | boolean
 	disableblinkfeatures?: string
-	disableguestresize?: boolean
-	disablewebsecurity?: boolean
-	guestinstance?: string
+	disablewebsecurity?: 'true' | boolean
+	enableblinkfeatures?: string
 	httpreferrer?: string
-	nodeintegration?: boolean
+	nodeintegration?: 'true' | boolean
+	nodeintegrationinsubframes?: 'true' | boolean
 	partition?: string
-	plugins?: boolean
+	plugins?: 'true' | boolean
 	preload?: string
 	src?: string
 	useragent?: string
 	webpreferences?: string
+
+	// does this exists?
+	allowfullscreen?: boolean
+	autofocus?: boolean
+	autosize?: boolean
+
+	/** @deprecated */
+	disableguestresize?: 'true' | boolean
+	/** @deprecated */
+	guestinstance?: string
+	/** @deprecated */
+	blinkfeatures?: string
 }

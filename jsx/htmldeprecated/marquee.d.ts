@@ -32,7 +32,7 @@ interface HTMLMarqueeElementAttributes {
 	/** @deprecated */
 	scrolldelay?: number | string
 	/** @deprecated */
-	truespeed?: boolean
+	truespeed?: 'true' | boolean
 	/** @deprecated */
 	vspace?: number | string
 	/** @deprecated */

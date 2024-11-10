@@ -28,5 +28,5 @@ interface DetailsHTMLAttributes<T> extends HTMLAttributes<T> {
 // Pota - https://github.com/potahtml/pota
 interface HTMLDetailsElementAttributes {
 	name?: string
-	open?: boolean
+	open?: 'true' | boolean
 }

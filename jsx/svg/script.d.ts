@@ -61,12 +61,12 @@ interface ScriptHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Pota - https://github.com/potahtml/pota
 interface HTMLScriptElementAttributes {
-	async?: boolean
+	async?: 'true' | boolean
 	crossorigin?: 'anonymous' | 'use-credentials' | ''
-	defer?: boolean
+	defer?: 'true' | boolean
 	fetchpriority?: 'high' | 'low' | 'auto'
 	integrity?: string
-	nomodule?: boolean
+	nomodule?: 'true' | boolean
 	nonce?: string
 	referrerpolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
 	src?: string
@@ -75,7 +75,7 @@ interface HTMLScriptElementAttributes {
 	/** @experimental */
 	attributionsrc?: string
 	/** @experimental */
-	blocking?: boolean
+	blocking?: string
 
 	/** @deprecated */
 	charset?: string

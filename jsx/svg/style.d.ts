@@ -33,12 +33,13 @@ interface StyleHTMLAttributes<T> extends HTMLAttributes<T> {
 interface HTMLStyleElementAttributes {
 	media?: string
 	nonce?: string
+	title?: string
 
 	/** @experimental */
-	blocking?: boolean
+	blocking?: string
 
 	/** @deprecated */
-	scoped?: boolean
+	scoped?: 'true' | boolean
 	/** @deprecated */
 	type?: string
 }

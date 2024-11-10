@@ -48,7 +48,7 @@ interface HTMLKeygenElementAttributes {
 	/** @deprecated */
 	challenge?: string
 	/** @deprecated */
-	disabled?: boolean
+	disabled?: 'true' | boolean
 	/** @deprecated */
 	form?: string
 	/** @deprecated */

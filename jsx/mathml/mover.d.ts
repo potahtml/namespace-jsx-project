@@ -5,5 +5,5 @@ interface HTMLMOverElement extends MathMLElement {
 
 // Pota - https://github.com/potahtml/pota
 interface MathMLMoverElementAttributes {
-	accent?: boolean
+	accent?: 'true' | boolean
 }

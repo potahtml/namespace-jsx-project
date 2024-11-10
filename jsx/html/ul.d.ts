@@ -1,7 +1,7 @@
 // Pota - https://github.com/potahtml/pota
 interface HTMLUListElementAttributes {
 	/** @deprecated */
-	compact?: boolean
+	compact?: 'true' | boolean
 	/** @deprecated */
 	type?: 'circle' | 'disc' | 'square'
 }

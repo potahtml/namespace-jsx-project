@@ -71,16 +71,16 @@ interface HTMLButtonElementAttributes {
 	autofocus?: boolean
 	command?: 'show-modal' | 'close' | 'show-popover' | 'hide-popover' | 'toggle-popover' | (string & {})
 	commandfor?: string
-	disabled?: boolean
+	disabled?: 'true' | boolean
 	form?: string
 	formaction?: string
 	formenctype?: 'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'
 	formmethod?: 'post' | 'get' | 'dialog'
-	formnovalidate?: boolean
+	formnovalidate?: 'true' | boolean
 	formtarget?: '_self' | '_blank' | '_parent' | '_top' | (string & {})
 	name?: string
 	popovertarget?: string
 	popovertargetaction?: 'hide' | 'show' | 'toggle'
 	type?: 'submit' | 'reset' | 'button' | 'menu'
-	value?: string
+	value?: number | string
 }

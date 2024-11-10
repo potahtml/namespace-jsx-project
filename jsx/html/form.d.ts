@@ -57,7 +57,7 @@ interface HTMLFormElementAttributes {
 	enctype?: 'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'
 	method?: 'post' | 'get' | 'dialog'
 	name?: string
-	novalidate?: boolean
+	novalidate?: 'true' | boolean
 	rel?: string
 	target?: '_self' | '_blank' | '_parent' | '_top' | (string & {})
 

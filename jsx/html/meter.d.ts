@@ -50,5 +50,5 @@ interface HTMLMeterElementAttributes {
 	max?: number | string
 	min?: number | string
 	optimum?: number | string
-	value?: string | number
+	value?: number | string
 }

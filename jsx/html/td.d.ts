@@ -65,9 +65,9 @@ interface HTMLTableCellTdElementAttributes {
 	/** @deprecated */
 	charoff?: string
 	/** @deprecated */
-	height?: string
+	height?: number | string
 	/** @deprecated */
-	nowrap?: boolean
+	nowrap?: 'true' | boolean
 	/** @deprecated */
 	scope?: 'col' | 'row' | 'rowgroup' | 'colgroup'
 	/** @deprecated */

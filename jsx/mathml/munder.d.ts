@@ -5,5 +5,5 @@ interface HTMLMUnderElement extends MathMLElement {
 
 // Pota - https://github.com/potahtml/pota
 interface MathMLMunderElementAttributes {
-	accentunder?: boolean
+	accentunder?: 'true' | boolean
 }

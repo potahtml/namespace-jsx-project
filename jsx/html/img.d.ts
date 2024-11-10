@@ -76,7 +76,7 @@ interface HTMLImageElementAttributes {
 	elementtiming?: string
 	fetchpriority?: 'high' | 'low' | 'auto'
 	height?: number | string
-	ismap?: boolean
+	ismap?: 'true' | boolean
 	loading?: 'eager' | 'lazy'
 	referrerpolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
 	sizes?: string
@@ -90,11 +90,15 @@ interface HTMLImageElementAttributes {
 	/** @deprecated */
 	border?: string
 	/** @deprecated */
-	hspace?: number
+	hspace?: number | string
+	/** @deprecated */
+	intrinsicsize?: string
 	/** @deprecated */
 	longdesc?: string
 	/** @deprecated */
+	lowsrc?: string
+	/** @deprecated */
 	name?: string
 	/** @deprecated */
-	vspace?: number
+	vspace?: number | string
 }

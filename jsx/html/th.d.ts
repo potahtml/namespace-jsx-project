@@ -59,7 +59,7 @@ interface HTMLTableCellThElementAttributes {
 	/** @deprecated */
 	height?: string
 	/** @deprecated */
-	nowrap?: boolean
+	nowrap?: 'true' | boolean
 	/** @deprecated */
 	valign?: 'baseline' | 'bottom' | 'middle' | 'top'
 	/** @deprecated */

@@ -25,6 +25,6 @@ interface DialogHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Pota - https://github.com/potahtml/pota
 interface HTMLDialogElementAttributes {
-	open?: boolean
+	open?: 'true' | boolean
 	tabindex?: never
 }

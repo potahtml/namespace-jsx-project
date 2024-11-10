@@ -11,7 +11,7 @@ interface HTMLFrameElementAttributes {
 	/** @deprecated */
 	name?: string
 	/** @deprecated */
-	noresize?: boolean
+	noresize?: 'true' | boolean
 	/** @deprecated */
 	scrolling?: 'yes' | 'no'
 	/** @deprecated */

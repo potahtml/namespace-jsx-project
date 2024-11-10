@@ -32,8 +32,8 @@ interface OptionHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Pota - https://github.com/potahtml/pota
 interface HTMLOptionElementAttributes {
-	disabled?: boolean
+	disabled?: 'true' | boolean
 	label?: string
-	selected?: boolean
-	value?: string | number
+	selected?: 'true' | boolean
+	value?: number | string
 }

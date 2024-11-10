@@ -10,8 +10,8 @@ interface HTMLMTdElement extends MathMLElement {
 
 // Pota - https://github.com/potahtml/pota
 interface MathMLMtdElementAttributes {
-	columnspan?: number
-	rowspan?: number
+	columnspan?: number | string
+	rowspan?: number | string
 	/** @non-standard */
 	columnalign?: 'center' | 'left' | 'right'
 	/** @non-standard */

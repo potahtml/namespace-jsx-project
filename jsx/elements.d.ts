@@ -1354,7 +1354,7 @@ interface HTMLElements {
 	 * @url https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement
 	 */
 
-	bdo: HTMLAttributes<HTMLElement, HTMLElementAttributes, HTMLElementEvents<HTMLElement>>
+	bdo: HTMLAttributes<HTMLElement, HTMLBdoElementAttributes, HTMLElementEvents<HTMLElement>>
 	/**
 	 * @url https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote
 	 * @url https://developer.mozilla.org/en-US/docs/Web/API/HTMLQuoteElement
