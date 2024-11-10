@@ -437,6 +437,9 @@ export const deprecatedAttributes = {
 	'style.HTMLStyleElement.scoped': true,
 	'style.HTMLStyleElement.type': true,
 
+	'style.SVGStyleElement.scoped': true,
+	'style.SVGStyleElement.type': true,
+
 	'caption.HTMLTableCaptionElement.align': true,
 
 	'td.HTMLTableCellElement.abbr': true,
@@ -580,6 +583,21 @@ export const deprecatedAttributes = {
 	'msubsup.MathMLElement.superscriptshift': true,
 
 	'msup.MathMLElement.superscriptshift': true,
+
+	'webview.HTMLElement.disableguestresize': true,
+	'webview.HTMLElement.guestinstance': true,
+	'webview.HTMLElement.blinkfeatures': true,
+
+	'h1.HTMLHeadingElement.align': true,
+	'h2.HTMLHeadingElement.align': true,
+	'h3.HTMLHeadingElement.align': true,
+	'h4.HTMLHeadingElement.align': true,
+	'h5.HTMLHeadingElement.align': true,
+	'h6.HTMLHeadingElement.align': true,
+
+	'head.HTMLHeadElement.profile': true,
+
+	'img.HTMLImageElement.intrinsicsize': true,
 }
 
 export function ElementURL(ns, tagName) {
