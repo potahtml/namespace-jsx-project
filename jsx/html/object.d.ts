@@ -93,9 +93,9 @@ interface HTMLObjectElementAttributes {
 	/** @deprecated */
 	standby?: string
 	/** @deprecated */
+	typemustmatch?: boolean
+	/** @deprecated */
 	usemap?: string
 	/** @deprecated */
 	vspace?: number | string
-	/** @deprecated */
-	typemustmatch?: boolean
 }

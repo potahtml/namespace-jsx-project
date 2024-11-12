@@ -2003,7 +2003,8 @@
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement/disableremoteplayback",
 						"values": {
-							"Chrome": "boolean"
+							"Chrome": "boolean",
+							"Pota": "'true' | boolean"
 						}
 					},
 					"loop": {
@@ -3318,6 +3319,7 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/moz-opaque",
 						"values": {
 							"Firefox": "boolean",
+							"Pota": "'true' | boolean",
 							"VSCode": "string"
 						}
 					},

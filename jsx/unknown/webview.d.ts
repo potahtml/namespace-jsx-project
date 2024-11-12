@@ -82,9 +82,9 @@ interface HTMLWebViewElementAttributes {
 	autosize?: boolean
 
 	/** @deprecated */
+	blinkfeatures?: string
+	/** @deprecated */
 	disableguestresize?: 'true' | boolean
 	/** @deprecated */
 	guestinstance?: string
-	/** @deprecated */
-	blinkfeatures?: string
 }

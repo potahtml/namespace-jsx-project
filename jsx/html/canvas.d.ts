@@ -32,4 +32,7 @@ interface CanvasHTMLAttributes<T> extends HTMLAttributes<T> {
 interface HTMLCanvasElementAttributes {
 	height?: number | string
 	width?: number | string
+
+	/** @deprecated */
+	'moz-opaque'?: 'true' | boolean
 }

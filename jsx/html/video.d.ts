@@ -118,7 +118,6 @@ interface MediaHTMLAttributes<T> extends HTMLAttributes<T> {
 // Pota - https://github.com/potahtml/pota
 interface HTMLVideoElementAttributes extends HTMLMediaHTMLAttributes {
 	disablepictureinpicture?: 'true' | boolean
-	disableremoteplayback?: 'true' | boolean
 	height?: number | string
 	playsinline?: 'true' | boolean
 	poster?: string
@@ -130,6 +129,7 @@ interface HTMLMediaHTMLAttributes {
 	controls?: 'true' | boolean
 	controlslist?: string
 	crossorigin?: 'anonymous' | 'use-credentials' | ''
+	disableremoteplayback?: 'true' | boolean
 	loop?: 'true' | boolean
 	muted?: 'true' | boolean
 	preload?: 'none' | 'metadata' | 'auto' | ''

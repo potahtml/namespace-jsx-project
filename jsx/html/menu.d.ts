@@ -27,9 +27,9 @@ interface MenuHTMLAttributes<T> extends HTMLAttributes<T> {
 // Pota - https://github.com/potahtml/pota
 interface HTMLMenuElementAttributes {
 	/** @deprecated */
+	compact?: 'true' | boolean
+	/** @deprecated */
 	label?: string
 	/** @deprecated */
 	type?: 'context' | 'toolbar'
-	/** @deprecated */
-	compact?: 'true' | boolean
 }

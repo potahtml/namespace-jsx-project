@@ -84,6 +84,7 @@ interface HTMLMediaHTMLAttributes {
 	controls?: 'true' | boolean
 	controlslist?: string
 	crossorigin?: 'anonymous' | 'use-credentials' | ''
+	disableremoteplayback?: 'true' | boolean
 	loop?: 'true' | boolean
 	muted?: 'true' | boolean
 	preload?: 'none' | 'metadata' | 'auto' | ''
