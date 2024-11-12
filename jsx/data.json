@@ -870,7 +870,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["attributionSrc", "charset", "coords", "download", "hash", "host", "hostname", "href", "hreflang", "name", "password", "pathname", "ping", "port", "protocol", "referrerPolicy", "rel", "relList", "rev", "search", "shape", "target", "text", "type", "username"]
+				"setters": ["HTMLAnchorElement.attributionSrc", "HTMLAnchorElement.charset", "HTMLAnchorElement.coords", "HTMLAnchorElement.download", "HTMLAnchorElement.hash", "HTMLAnchorElement.host", "HTMLAnchorElement.hostname", "HTMLAnchorElement.href", "HTMLAnchorElement.hreflang", "HTMLAnchorElement.name", "HTMLAnchorElement.password", "HTMLAnchorElement.pathname", "HTMLAnchorElement.ping", "HTMLAnchorElement.port", "HTMLAnchorElement.protocol", "HTMLAnchorElement.referrerPolicy", "HTMLAnchorElement.rel", "HTMLAnchorElement.relList", "HTMLAnchorElement.rev", "HTMLAnchorElement.search", "HTMLAnchorElement.shape", "HTMLAnchorElement.target", "HTMLAnchorElement.text", "HTMLAnchorElement.type", "HTMLAnchorElement.username"]
 			},
 			"abbr": {
 				"deprecated": false,
@@ -1012,6 +1012,7 @@
 							"Chrome": "boolean",
 							"Pota": "'true' | boolean"
 						},
+						"deprecated": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAreaElement/nohref",
 						"prop": false,
 						"attr": true
@@ -1090,7 +1091,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["alt", "coords", "download", "hash", "host", "hostname", "href", "noHref", "password", "pathname", "ping", "port", "protocol", "referrerPolicy", "rel", "relList", "search", "shape", "target", "username"]
+				"setters": ["HTMLAreaElement.alt", "HTMLAreaElement.coords", "HTMLAreaElement.download", "HTMLAreaElement.hash", "HTMLAreaElement.host", "HTMLAreaElement.hostname", "HTMLAreaElement.href", "HTMLAreaElement.noHref", "HTMLAreaElement.password", "HTMLAreaElement.pathname", "HTMLAreaElement.ping", "HTMLAreaElement.port", "HTMLAreaElement.protocol", "HTMLAreaElement.referrerPolicy", "HTMLAreaElement.rel", "HTMLAreaElement.relList", "HTMLAreaElement.search", "HTMLAreaElement.shape", "HTMLAreaElement.target", "HTMLAreaElement.username"]
 			},
 			"article": {
 				"deprecated": false,
@@ -1128,7 +1129,7 @@
 							"Pota": "string",
 							"VSCode": "string"
 						},
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement/src",
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/src",
 						"prop": true,
 						"attr": true
 					},
@@ -1155,7 +1156,7 @@
 							"Pota": "'none' | 'metadata' | 'auto' | ''",
 							"VSCode": "'none' | 'metadata' | 'auto'"
 						},
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement/preload",
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/preload",
 						"prop": true,
 						"attr": true
 					},
@@ -1167,7 +1168,7 @@
 							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement/autoplay",
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/autoplay",
 						"prop": true,
 						"attr": true
 					},
@@ -1182,7 +1183,7 @@
 							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement/loop",
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/loop",
 						"prop": true,
 						"attr": true
 					},
@@ -1197,7 +1198,7 @@
 							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement/controls",
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/controls",
 						"prop": true,
 						"attr": true
 					},
@@ -1222,7 +1223,7 @@
 							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement/muted",
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/muted",
 						"prop": true,
 						"attr": true
 					},
@@ -1230,7 +1231,7 @@
 						"values": {
 							"Chrome": "event"
 						},
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement/onencrypted",
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/onencrypted",
 						"prop": true,
 						"attr": true
 					},
@@ -1238,7 +1239,7 @@
 						"values": {
 							"Chrome": "event"
 						},
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement/onwaitingforkey",
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/onwaitingforkey",
 						"prop": true,
 						"attr": true
 					},
@@ -1269,7 +1270,7 @@
 							"Preact": "'anonymous' | 'use-credentials'",
 							"React": "'anonymous' | 'use-credentials' | ''"
 						},
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement/crossOrigin",
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/crossOrigin",
 						"prop": true,
 						"attr": false
 					},
@@ -1301,7 +1302,7 @@
 							"Preact": "string",
 							"React": "string"
 						},
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement/controlsList",
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/controlsList",
 						"prop": true,
 						"attr": false
 					},
@@ -1324,7 +1325,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["autoplay", "controls", "controlsList", "crossOrigin", "currentTime", "defaultMuted", "defaultPlaybackRate", "disableRemotePlayback", "loop", "muted", "onencrypted", "onwaitingforkey", "playbackRate", "preload", "preservesPitch", "src", "srcObject", "volume"]
+				"setters": ["HTMLMediaElement.autoplay", "HTMLMediaElement.controls", "HTMLMediaElement.controlsList", "HTMLMediaElement.crossOrigin", "HTMLMediaElement.currentTime", "HTMLMediaElement.defaultMuted", "HTMLMediaElement.defaultPlaybackRate", "HTMLMediaElement.disableRemotePlayback", "HTMLMediaElement.loop", "HTMLMediaElement.muted", "HTMLMediaElement.onencrypted", "HTMLMediaElement.onwaitingforkey", "HTMLMediaElement.playbackRate", "HTMLMediaElement.preload", "HTMLMediaElement.preservesPitch", "HTMLMediaElement.src", "HTMLMediaElement.srcObject", "HTMLMediaElement.volume"]
 			},
 			"b": {
 				"deprecated": false,
@@ -1373,7 +1374,7 @@
 						"attr": true
 					}
 				},
-				"setters": ["href", "target"]
+				"setters": ["HTMLBaseElement.href", "HTMLBaseElement.target"]
 			},
 			"bdi": {
 				"deprecated": false,
@@ -1426,7 +1427,7 @@
 						"attr": true
 					}
 				},
-				"setters": ["cite"]
+				"setters": ["HTMLQuoteElement.cite"]
 			},
 			"body": {
 				"deprecated": false,
@@ -1752,7 +1753,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["aLink", "background", "bgColor", "link", "onafterprint", "onbeforeprint", "onbeforeunload", "onblur", "onerror", "onfocus", "onhashchange", "onlanguagechange", "onload", "onmessage", "onmessageerror", "onoffline", "ononline", "onpagehide", "onpageshow", "onpopstate", "onrejectionhandled", "onresize", "onscroll", "onstorage", "onunhandledrejection", "onunload", "text", "vLink"]
+				"setters": ["HTMLBodyElement.aLink", "HTMLBodyElement.background", "HTMLBodyElement.bgColor", "HTMLBodyElement.link", "HTMLBodyElement.onafterprint", "HTMLBodyElement.onbeforeprint", "HTMLBodyElement.onbeforeunload", "HTMLBodyElement.onblur", "HTMLBodyElement.onerror", "HTMLBodyElement.onfocus", "HTMLBodyElement.onhashchange", "HTMLBodyElement.onlanguagechange", "HTMLBodyElement.onload", "HTMLBodyElement.onmessage", "HTMLBodyElement.onmessageerror", "HTMLBodyElement.onoffline", "HTMLBodyElement.ononline", "HTMLBodyElement.onpagehide", "HTMLBodyElement.onpageshow", "HTMLBodyElement.onpopstate", "HTMLBodyElement.onrejectionhandled", "HTMLBodyElement.onresize", "HTMLBodyElement.onscroll", "HTMLBodyElement.onstorage", "HTMLBodyElement.onunhandledrejection", "HTMLBodyElement.onunload", "HTMLBodyElement.text", "HTMLBodyElement.vLink"]
 			},
 			"br": {
 				"deprecated": false,
@@ -1773,7 +1774,7 @@
 						"attr": true
 					}
 				},
-				"setters": ["clear"]
+				"setters": ["HTMLBRElement.clear"]
 			},
 			"button": {
 				"deprecated": false,
@@ -2061,7 +2062,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["disabled", "formAction", "formEnctype", "formMethod", "formNoValidate", "formTarget", "name", "popoverTargetAction", "popoverTargetElement", "type", "value"]
+				"setters": ["HTMLButtonElement.disabled", "HTMLButtonElement.formAction", "HTMLButtonElement.formEnctype", "HTMLButtonElement.formMethod", "HTMLButtonElement.formNoValidate", "HTMLButtonElement.formTarget", "HTMLButtonElement.name", "HTMLButtonElement.popoverTargetAction", "HTMLButtonElement.popoverTargetElement", "HTMLButtonElement.type", "HTMLButtonElement.value"]
 			},
 			"canvas": {
 				"deprecated": false,
@@ -2104,12 +2105,13 @@
 						"values": {
 							"VSCode": "string"
 						},
+						"deprecated": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/moz-opaque",
 						"prop": false,
 						"attr": false
 					}
 				},
-				"setters": ["height", "width"]
+				"setters": ["HTMLCanvasElement.height", "HTMLCanvasElement.width"]
 			},
 			"caption": {
 				"deprecated": false,
@@ -2130,7 +2132,7 @@
 						"attr": true
 					}
 				},
-				"setters": ["align"]
+				"setters": ["HTMLTableCaptionElement.align"]
 			},
 			"cite": {
 				"deprecated": false,
@@ -2238,7 +2240,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["align", "ch", "chOff", "span", "vAlign", "width"]
+				"setters": ["HTMLTableColElement.align", "HTMLTableColElement.ch", "HTMLTableColElement.chOff", "HTMLTableColElement.span", "HTMLTableColElement.vAlign", "HTMLTableColElement.width"]
 			},
 			"colgroup": {
 				"deprecated": false,
@@ -2268,6 +2270,7 @@
 							"Pota": "'left' | 'center' | 'right' | 'justify' | 'char'",
 							"VSCode": "string"
 						},
+						"deprecated": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableColElement/align",
 						"prop": true,
 						"attr": true
@@ -2277,6 +2280,7 @@
 							"Chrome": "string",
 							"Pota": "string"
 						},
+						"deprecated": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableColElement/char",
 						"prop": false,
 						"attr": true
@@ -2286,6 +2290,7 @@
 							"Chrome": "string",
 							"Pota": "string"
 						},
+						"deprecated": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableColElement/charoff",
 						"prop": false,
 						"attr": true
@@ -2295,6 +2300,7 @@
 							"Chrome": "string",
 							"Pota": "'baseline' | 'bottom' | 'middle' | 'top'"
 						},
+						"deprecated": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableColElement/valign",
 						"prop": false,
 						"attr": true
@@ -2304,6 +2310,7 @@
 							"Chrome": "string",
 							"Pota": "number | string"
 						},
+						"deprecated": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableColElement/width",
 						"prop": true,
 						"attr": true
@@ -2312,12 +2319,13 @@
 						"values": {
 							"Pota": "string"
 						},
+						"deprecated": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableColElement/bgcolor",
 						"prop": false,
 						"attr": false
 					}
 				},
-				"setters": ["align", "ch", "chOff", "span", "vAlign", "width"]
+				"setters": ["HTMLTableColElement.align", "HTMLTableColElement.ch", "HTMLTableColElement.chOff", "HTMLTableColElement.span", "HTMLTableColElement.vAlign", "HTMLTableColElement.width"]
 			},
 			"data": {
 				"deprecated": false,
@@ -2342,7 +2350,7 @@
 						"attr": true
 					}
 				},
-				"setters": ["value"]
+				"setters": ["HTMLDataElement.value"]
 			},
 			"datalist": {
 				"deprecated": false,
@@ -2414,7 +2422,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["cite", "dateTime"]
+				"setters": ["HTMLModElement.cite", "HTMLModElement.dateTime"]
 			},
 			"details": {
 				"deprecated": false,
@@ -2470,7 +2478,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["name", "open"]
+				"setters": ["HTMLDetailsElement.name", "HTMLDetailsElement.open"]
 			},
 			"dfn": {
 				"deprecated": false,
@@ -2533,7 +2541,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["open", "returnValue"]
+				"setters": ["HTMLDialogElement.open", "HTMLDialogElement.returnValue"]
 			},
 			"div": {
 				"deprecated": false,
@@ -2553,7 +2561,7 @@
 						"attr": true
 					}
 				},
-				"setters": ["align"]
+				"setters": ["HTMLDivElement.align"]
 			},
 			"dl": {
 				"deprecated": false,
@@ -2573,7 +2581,7 @@
 						"attr": true
 					}
 				},
-				"setters": ["compact"]
+				"setters": ["HTMLDListElement.compact"]
 			},
 			"dt": {
 				"deprecated": false,
@@ -2681,7 +2689,7 @@
 						"attr": true
 					}
 				},
-				"setters": ["align", "height", "name", "src", "type", "width"]
+				"setters": ["HTMLEmbedElement.align", "HTMLEmbedElement.height", "HTMLEmbedElement.name", "HTMLEmbedElement.src", "HTMLEmbedElement.type", "HTMLEmbedElement.width"]
 			},
 			"fieldset": {
 				"deprecated": false,
@@ -2735,7 +2743,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["disabled", "name"]
+				"setters": ["HTMLFieldSetElement.disabled", "HTMLFieldSetElement.name"]
 			},
 			"figcaption": {
 				"deprecated": false,
@@ -2964,7 +2972,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["acceptCharset", "action", "autocomplete", "encoding", "enctype", "method", "name", "noValidate", "rel", "relList", "target"]
+				"setters": ["HTMLFormElement.acceptCharset", "HTMLFormElement.action", "HTMLFormElement.autocomplete", "HTMLFormElement.encoding", "HTMLFormElement.enctype", "HTMLFormElement.method", "HTMLFormElement.name", "HTMLFormElement.noValidate", "HTMLFormElement.rel", "HTMLFormElement.relList", "HTMLFormElement.target"]
 			},
 			"h1": {
 				"deprecated": false,
@@ -2984,7 +2992,7 @@
 						"attr": true
 					}
 				},
-				"setters": ["align"]
+				"setters": ["HTMLHeadingElement.align"]
 			},
 			"h2": {
 				"deprecated": false,
@@ -3004,7 +3012,7 @@
 						"attr": true
 					}
 				},
-				"setters": ["align"]
+				"setters": ["HTMLHeadingElement.align"]
 			},
 			"h3": {
 				"deprecated": false,
@@ -3024,7 +3032,7 @@
 						"attr": true
 					}
 				},
-				"setters": ["align"]
+				"setters": ["HTMLHeadingElement.align"]
 			},
 			"h4": {
 				"deprecated": false,
@@ -3044,7 +3052,7 @@
 						"attr": true
 					}
 				},
-				"setters": ["align"]
+				"setters": ["HTMLHeadingElement.align"]
 			},
 			"h5": {
 				"deprecated": false,
@@ -3064,7 +3072,7 @@
 						"attr": true
 					}
 				},
-				"setters": ["align"]
+				"setters": ["HTMLHeadingElement.align"]
 			},
 			"h6": {
 				"deprecated": false,
@@ -3084,7 +3092,7 @@
 						"attr": true
 					}
 				},
-				"setters": ["align"]
+				"setters": ["HTMLHeadingElement.align"]
 			},
 			"head": {
 				"deprecated": false,
@@ -3187,7 +3195,7 @@
 						"attr": true
 					}
 				},
-				"setters": ["align", "color", "noShade", "size", "width"]
+				"setters": ["HTMLHRElement.align", "HTMLHRElement.color", "HTMLHRElement.noShade", "HTMLHRElement.size", "HTMLHRElement.width"]
 			},
 			"html": {
 				"deprecated": false,
@@ -3228,7 +3236,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["version"]
+				"setters": ["HTMLHtmlElement.version"]
 			},
 			"i": {
 				"deprecated": false,
@@ -3625,7 +3633,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["adAuctionHeaders", "align", "allow", "allowFullscreen", "allowPaymentRequest", "browsingTopics", "credentialless", "csp", "frameBorder", "height", "loading", "longDesc", "marginHeight", "marginWidth", "name", "privateToken", "referrerPolicy", "sandbox", "scrolling", "sharedStorageWritable", "src", "srcdoc", "width"]
+				"setters": ["HTMLIFrameElement.adAuctionHeaders", "HTMLIFrameElement.align", "HTMLIFrameElement.allow", "HTMLIFrameElement.allowFullscreen", "HTMLIFrameElement.allowPaymentRequest", "HTMLIFrameElement.browsingTopics", "HTMLIFrameElement.credentialless", "HTMLIFrameElement.csp", "HTMLIFrameElement.frameBorder", "HTMLIFrameElement.height", "HTMLIFrameElement.loading", "HTMLIFrameElement.longDesc", "HTMLIFrameElement.marginHeight", "HTMLIFrameElement.marginWidth", "HTMLIFrameElement.name", "HTMLIFrameElement.privateToken", "HTMLIFrameElement.referrerPolicy", "HTMLIFrameElement.sandbox", "HTMLIFrameElement.scrolling", "HTMLIFrameElement.sharedStorageWritable", "HTMLIFrameElement.src", "HTMLIFrameElement.srcdoc", "HTMLIFrameElement.width"]
 			},
 			"img": {
 				"deprecated": false,
@@ -3982,7 +3990,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["align", "alt", "attributionSrc", "border", "crossOrigin", "decoding", "fetchPriority", "height", "hspace", "isMap", "loading", "longDesc", "lowsrc", "name", "referrerPolicy", "sharedStorageWritable", "sizes", "src", "srcset", "useMap", "vspace", "width"]
+				"setters": ["HTMLImageElement.align", "HTMLImageElement.alt", "HTMLImageElement.attributionSrc", "HTMLImageElement.border", "HTMLImageElement.crossOrigin", "HTMLImageElement.decoding", "HTMLImageElement.fetchPriority", "HTMLImageElement.height", "HTMLImageElement.hspace", "HTMLImageElement.isMap", "HTMLImageElement.loading", "HTMLImageElement.longDesc", "HTMLImageElement.lowsrc", "HTMLImageElement.name", "HTMLImageElement.referrerPolicy", "HTMLImageElement.sharedStorageWritable", "HTMLImageElement.sizes", "HTMLImageElement.src", "HTMLImageElement.srcset", "HTMLImageElement.useMap", "HTMLImageElement.vspace", "HTMLImageElement.width"]
 			},
 			"input": {
 				"deprecated": false,
@@ -4683,7 +4691,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["accept", "align", "alt", "autocomplete", "checked", "defaultChecked", "defaultValue", "dirName", "disabled", "files", "formAction", "formEnctype", "formMethod", "formNoValidate", "formTarget", "height", "incremental", "indeterminate", "max", "maxLength", "min", "minLength", "multiple", "name", "pattern", "placeholder", "popoverTargetAction", "popoverTargetElement", "readOnly", "required", "selectionDirection", "selectionEnd", "selectionStart", "size", "src", "step", "type", "useMap", "value", "valueAsDate", "valueAsNumber", "webkitdirectory", "width"]
+				"setters": ["HTMLInputElement.accept", "HTMLInputElement.align", "HTMLInputElement.alt", "HTMLInputElement.autocomplete", "HTMLInputElement.checked", "HTMLInputElement.defaultChecked", "HTMLInputElement.defaultValue", "HTMLInputElement.dirName", "HTMLInputElement.disabled", "HTMLInputElement.files", "HTMLInputElement.formAction", "HTMLInputElement.formEnctype", "HTMLInputElement.formMethod", "HTMLInputElement.formNoValidate", "HTMLInputElement.formTarget", "HTMLInputElement.height", "HTMLInputElement.incremental", "HTMLInputElement.indeterminate", "HTMLInputElement.max", "HTMLInputElement.maxLength", "HTMLInputElement.min", "HTMLInputElement.minLength", "HTMLInputElement.multiple", "HTMLInputElement.name", "HTMLInputElement.pattern", "HTMLInputElement.placeholder", "HTMLInputElement.popoverTargetAction", "HTMLInputElement.popoverTargetElement", "HTMLInputElement.readOnly", "HTMLInputElement.required", "HTMLInputElement.selectionDirection", "HTMLInputElement.selectionEnd", "HTMLInputElement.selectionStart", "HTMLInputElement.size", "HTMLInputElement.src", "HTMLInputElement.step", "HTMLInputElement.type", "HTMLInputElement.useMap", "HTMLInputElement.value", "HTMLInputElement.valueAsDate", "HTMLInputElement.valueAsNumber", "HTMLInputElement.webkitdirectory", "HTMLInputElement.width"]
 			},
 			"ins": {
 				"deprecated": false,
@@ -4730,7 +4738,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["cite", "dateTime"]
+				"setters": ["HTMLModElement.cite", "HTMLModElement.dateTime"]
 			},
 			"kbd": {
 				"deprecated": false,
@@ -4786,7 +4794,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["htmlFor"]
+				"setters": ["HTMLLabelElement.htmlFor"]
 			},
 			"legend": {
 				"deprecated": false,
@@ -4806,7 +4814,7 @@
 						"attr": true
 					}
 				},
-				"setters": ["align"]
+				"setters": ["HTMLLegendElement.align"]
 			},
 			"li": {
 				"deprecated": false,
@@ -4842,7 +4850,7 @@
 						"attr": true
 					}
 				},
-				"setters": ["type", "value"]
+				"setters": ["HTMLLIElement.type", "HTMLLIElement.value"]
 			},
 			"link": {
 				"deprecated": false,
@@ -5157,7 +5165,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["as", "blocking", "charset", "crossOrigin", "disabled", "fetchPriority", "href", "hreflang", "imageSizes", "imageSrcset", "integrity", "media", "referrerPolicy", "rel", "relList", "rev", "sizes", "target", "type"]
+				"setters": ["HTMLLinkElement.as", "HTMLLinkElement.blocking", "HTMLLinkElement.charset", "HTMLLinkElement.crossOrigin", "HTMLLinkElement.disabled", "HTMLLinkElement.fetchPriority", "HTMLLinkElement.href", "HTMLLinkElement.hreflang", "HTMLLinkElement.imageSizes", "HTMLLinkElement.imageSrcset", "HTMLLinkElement.integrity", "HTMLLinkElement.media", "HTMLLinkElement.referrerPolicy", "HTMLLinkElement.rel", "HTMLLinkElement.relList", "HTMLLinkElement.rev", "HTMLLinkElement.sizes", "HTMLLinkElement.target", "HTMLLinkElement.type"]
 			},
 			"main": {
 				"deprecated": false,
@@ -5191,7 +5199,7 @@
 						"attr": true
 					}
 				},
-				"setters": ["name"]
+				"setters": ["HTMLMapElement.name"]
 			},
 			"mark": {
 				"deprecated": false,
@@ -5244,7 +5252,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["compact"]
+				"setters": ["HTMLMenuElement.compact"]
 			},
 			"meta": {
 				"deprecated": false,
@@ -5357,7 +5365,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["content", "httpEquiv", "media", "name", "scheme"]
+				"setters": ["HTMLMetaElement.content", "HTMLMetaElement.httpEquiv", "HTMLMetaElement.media", "HTMLMetaElement.name", "HTMLMetaElement.scheme"]
 			},
 			"meter": {
 				"deprecated": false,
@@ -5471,7 +5479,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["high", "low", "max", "min", "optimum", "value"]
+				"setters": ["HTMLMeterElement.high", "HTMLMeterElement.low", "HTMLMeterElement.max", "HTMLMeterElement.min", "HTMLMeterElement.optimum", "HTMLMeterElement.value"]
 			},
 			"nav": {
 				"deprecated": false,
@@ -5770,7 +5778,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["align", "archive", "border", "code", "codeBase", "codeType", "data", "declare", "height", "hspace", "name", "standby", "type", "useMap", "vspace", "width"]
+				"setters": ["HTMLObjectElement.align", "HTMLObjectElement.archive", "HTMLObjectElement.border", "HTMLObjectElement.code", "HTMLObjectElement.codeBase", "HTMLObjectElement.codeType", "HTMLObjectElement.data", "HTMLObjectElement.declare", "HTMLObjectElement.height", "HTMLObjectElement.hspace", "HTMLObjectElement.name", "HTMLObjectElement.standby", "HTMLObjectElement.type", "HTMLObjectElement.useMap", "HTMLObjectElement.vspace", "HTMLObjectElement.width"]
 			},
 			"ol": {
 				"deprecated": false,
@@ -5836,7 +5844,7 @@
 						"attr": true
 					}
 				},
-				"setters": ["compact", "reversed", "start", "type"]
+				"setters": ["HTMLOListElement.compact", "HTMLOListElement.reversed", "HTMLOListElement.start", "HTMLOListElement.type"]
 			},
 			"optgroup": {
 				"deprecated": false,
@@ -5876,7 +5884,7 @@
 						"attr": true
 					}
 				},
-				"setters": ["disabled", "label"]
+				"setters": ["HTMLOptGroupElement.disabled", "HTMLOptGroupElement.label"]
 			},
 			"option": {
 				"deprecated": false,
@@ -5946,7 +5954,7 @@
 						"attr": true
 					}
 				},
-				"setters": ["defaultSelected", "disabled", "label", "selected", "text", "value"]
+				"setters": ["HTMLOptionElement.defaultSelected", "HTMLOptionElement.disabled", "HTMLOptionElement.label", "HTMLOptionElement.selected", "HTMLOptionElement.text", "HTMLOptionElement.value"]
 			},
 			"output": {
 				"deprecated": false,
@@ -6008,7 +6016,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["defaultValue", "htmlFor", "name", "value"]
+				"setters": ["HTMLOutputElement.defaultValue", "HTMLOutputElement.htmlFor", "HTMLOutputElement.name", "HTMLOutputElement.value"]
 			},
 			"p": {
 				"deprecated": false,
@@ -6028,7 +6036,7 @@
 						"attr": true
 					}
 				},
-				"setters": ["align"]
+				"setters": ["HTMLParagraphElement.align"]
 			},
 			"picture": {
 				"deprecated": false,
@@ -6076,7 +6084,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["width"]
+				"setters": ["HTMLPreElement.width"]
 			},
 			"progress": {
 				"deprecated": false,
@@ -6116,7 +6124,7 @@
 						"attr": true
 					}
 				},
-				"setters": ["max", "value"]
+				"setters": ["HTMLProgressElement.max", "HTMLProgressElement.value"]
 			},
 			"q": {
 				"deprecated": false,
@@ -6141,7 +6149,7 @@
 						"attr": true
 					}
 				},
-				"setters": ["cite"]
+				"setters": ["HTMLQuoteElement.cite"]
 			},
 			"rp": {
 				"deprecated": false,
@@ -6438,7 +6446,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["async", "attributionSrc", "blocking", "charset", "crossOrigin", "defer", "event", "fetchPriority", "htmlFor", "integrity", "noModule", "referrerPolicy", "src", "text", "type"]
+				"setters": ["HTMLScriptElement.async", "HTMLScriptElement.attributionSrc", "HTMLScriptElement.blocking", "HTMLScriptElement.charset", "HTMLScriptElement.crossOrigin", "HTMLScriptElement.defer", "HTMLScriptElement.event", "HTMLScriptElement.fetchPriority", "HTMLScriptElement.htmlFor", "HTMLScriptElement.integrity", "HTMLScriptElement.noModule", "HTMLScriptElement.referrerPolicy", "HTMLScriptElement.src", "HTMLScriptElement.text", "HTMLScriptElement.type"]
 			},
 			"search": {
 				"deprecated": false,
@@ -6619,7 +6627,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["autocomplete", "disabled", "length", "multiple", "name", "required", "selectedIndex", "size", "value"]
+				"setters": ["HTMLSelectElement.autocomplete", "HTMLSelectElement.disabled", "HTMLSelectElement.length", "HTMLSelectElement.multiple", "HTMLSelectElement.name", "HTMLSelectElement.required", "HTMLSelectElement.selectedIndex", "HTMLSelectElement.size", "HTMLSelectElement.value"]
 			},
 			"slot": {
 				"deprecated": false,
@@ -6643,7 +6651,7 @@
 						"attr": true
 					}
 				},
-				"setters": ["name"]
+				"setters": ["HTMLSlotElement.name"]
 			},
 			"small": {
 				"deprecated": false,
@@ -6770,7 +6778,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["height", "media", "sizes", "src", "srcset", "type", "width"]
+				"setters": ["HTMLSourceElement.height", "HTMLSourceElement.media", "HTMLSourceElement.sizes", "HTMLSourceElement.src", "HTMLSourceElement.srcset", "HTMLSourceElement.type", "HTMLSourceElement.width"]
 			},
 			"span": {
 				"deprecated": false,
@@ -6874,7 +6882,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["blocking", "disabled", "media", "type"]
+				"setters": ["HTMLStyleElement.blocking", "HTMLStyleElement.disabled", "HTMLStyleElement.media", "HTMLStyleElement.type"]
 			},
 			"sub": {
 				"deprecated": false,
@@ -7040,7 +7048,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["align", "bgColor", "border", "caption", "cellPadding", "cellSpacing", "frame", "rules", "summary", "tFoot", "tHead", "width"]
+				"setters": ["HTMLTableElement.align", "HTMLTableElement.bgColor", "HTMLTableElement.border", "HTMLTableElement.caption", "HTMLTableElement.cellPadding", "HTMLTableElement.cellSpacing", "HTMLTableElement.frame", "HTMLTableElement.rules", "HTMLTableElement.summary", "HTMLTableElement.tFoot", "HTMLTableElement.tHead", "HTMLTableElement.width"]
 			},
 			"tbody": {
 				"deprecated": false,
@@ -7100,7 +7108,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["align", "ch", "chOff", "vAlign"]
+				"setters": ["HTMLTableSectionElement.align", "HTMLTableSectionElement.ch", "HTMLTableSectionElement.chOff", "HTMLTableSectionElement.vAlign"]
 			},
 			"td": {
 				"deprecated": false,
@@ -7309,7 +7317,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["abbr", "align", "axis", "bgColor", "ch", "chOff", "colSpan", "headers", "height", "noWrap", "rowSpan", "scope", "vAlign", "width"]
+				"setters": ["HTMLTableCellElement.abbr", "HTMLTableCellElement.align", "HTMLTableCellElement.axis", "HTMLTableCellElement.bgColor", "HTMLTableCellElement.ch", "HTMLTableCellElement.chOff", "HTMLTableCellElement.colSpan", "HTMLTableCellElement.headers", "HTMLTableCellElement.height", "HTMLTableCellElement.noWrap", "HTMLTableCellElement.rowSpan", "HTMLTableCellElement.scope", "HTMLTableCellElement.vAlign", "HTMLTableCellElement.width"]
 			},
 			"template": {
 				"deprecated": false,
@@ -7363,7 +7371,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["shadowRootClonable", "shadowRootDelegatesFocus", "shadowRootMode", "shadowRootSerializable"]
+				"setters": ["HTMLTemplateElement.shadowRootClonable", "HTMLTemplateElement.shadowRootDelegatesFocus", "HTMLTemplateElement.shadowRootMode", "HTMLTemplateElement.shadowRootSerializable"]
 			},
 			"textarea": {
 				"deprecated": false,
@@ -7688,7 +7696,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["autocomplete", "cols", "defaultValue", "dirName", "disabled", "maxLength", "minLength", "name", "placeholder", "readOnly", "required", "rows", "selectionDirection", "selectionEnd", "selectionStart", "value", "wrap"]
+				"setters": ["HTMLTextAreaElement.autocomplete", "HTMLTextAreaElement.cols", "HTMLTextAreaElement.defaultValue", "HTMLTextAreaElement.dirName", "HTMLTextAreaElement.disabled", "HTMLTextAreaElement.maxLength", "HTMLTextAreaElement.minLength", "HTMLTextAreaElement.name", "HTMLTextAreaElement.placeholder", "HTMLTextAreaElement.readOnly", "HTMLTextAreaElement.required", "HTMLTextAreaElement.rows", "HTMLTextAreaElement.selectionDirection", "HTMLTextAreaElement.selectionEnd", "HTMLTextAreaElement.selectionStart", "HTMLTextAreaElement.value", "HTMLTextAreaElement.wrap"]
 			},
 			"tfoot": {
 				"deprecated": false,
@@ -7748,7 +7756,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["align", "ch", "chOff", "vAlign"]
+				"setters": ["HTMLTableSectionElement.align", "HTMLTableSectionElement.ch", "HTMLTableSectionElement.chOff", "HTMLTableSectionElement.vAlign"]
 			},
 			"th": {
 				"deprecated": false,
@@ -7953,7 +7961,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["abbr", "align", "axis", "bgColor", "ch", "chOff", "colSpan", "headers", "height", "noWrap", "rowSpan", "scope", "vAlign", "width"]
+				"setters": ["HTMLTableCellElement.abbr", "HTMLTableCellElement.align", "HTMLTableCellElement.axis", "HTMLTableCellElement.bgColor", "HTMLTableCellElement.ch", "HTMLTableCellElement.chOff", "HTMLTableCellElement.colSpan", "HTMLTableCellElement.headers", "HTMLTableCellElement.height", "HTMLTableCellElement.noWrap", "HTMLTableCellElement.rowSpan", "HTMLTableCellElement.scope", "HTMLTableCellElement.vAlign", "HTMLTableCellElement.width"]
 			},
 			"thead": {
 				"deprecated": false,
@@ -8013,7 +8021,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["align", "ch", "chOff", "vAlign"]
+				"setters": ["HTMLTableSectionElement.align", "HTMLTableSectionElement.ch", "HTMLTableSectionElement.chOff", "HTMLTableSectionElement.vAlign"]
 			},
 			"time": {
 				"deprecated": false,
@@ -8046,7 +8054,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["dateTime"]
+				"setters": ["HTMLTimeElement.dateTime"]
 			},
 			"title": {
 				"deprecated": false,
@@ -8055,7 +8063,7 @@
 				"interface": "HTMLTitleElement",
 				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTitleElement",
 				"keys": {},
-				"setters": ["text"]
+				"setters": ["HTMLTitleElement.text"]
 			},
 			"tr": {
 				"deprecated": false,
@@ -8116,7 +8124,7 @@
 						"attr": true
 					}
 				},
-				"setters": ["align", "bgColor", "ch", "chOff", "vAlign"]
+				"setters": ["HTMLTableRowElement.align", "HTMLTableRowElement.bgColor", "HTMLTableRowElement.ch", "HTMLTableRowElement.chOff", "HTMLTableRowElement.vAlign"]
 			},
 			"track": {
 				"deprecated": false,
@@ -8208,7 +8216,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["default", "kind", "label", "src", "srclang"]
+				"setters": ["HTMLTrackElement.default", "HTMLTrackElement.kind", "HTMLTrackElement.label", "HTMLTrackElement.src", "HTMLTrackElement.srclang"]
 			},
 			"u": {
 				"deprecated": true,
@@ -8248,7 +8256,7 @@
 						"attr": true
 					}
 				},
-				"setters": ["compact", "type"]
+				"setters": ["HTMLUListElement.compact", "HTMLUListElement.type"]
 			},
 			"var": {
 				"deprecated": false,
@@ -8359,7 +8367,7 @@
 							"Pota": "string",
 							"VSCode": "string"
 						},
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement/src",
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/src",
 						"prop": true,
 						"attr": true
 					},
@@ -8386,7 +8394,7 @@
 							"Pota": "'none' | 'metadata' | 'auto' | ''",
 							"VSCode": "'none' | 'metadata' | 'auto'"
 						},
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement/preload",
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/preload",
 						"prop": true,
 						"attr": true
 					},
@@ -8398,7 +8406,7 @@
 							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement/autoplay",
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/autoplay",
 						"prop": true,
 						"attr": true
 					},
@@ -8413,7 +8421,7 @@
 							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement/loop",
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/loop",
 						"prop": true,
 						"attr": true
 					},
@@ -8428,7 +8436,7 @@
 							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement/controls",
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/controls",
 						"prop": true,
 						"attr": true
 					},
@@ -8453,7 +8461,7 @@
 							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement/muted",
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/muted",
 						"prop": true,
 						"attr": true
 					},
@@ -8461,7 +8469,7 @@
 						"values": {
 							"Chrome": "event"
 						},
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement/onencrypted",
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/onencrypted",
 						"prop": true,
 						"attr": true
 					},
@@ -8469,7 +8477,7 @@
 						"values": {
 							"Chrome": "event"
 						},
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement/onwaitingforkey",
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/onwaitingforkey",
 						"prop": true,
 						"attr": true
 					},
@@ -8501,7 +8509,7 @@
 							"Preact": "'anonymous' | 'use-credentials'",
 							"React": "'anonymous' | 'use-credentials' | ''"
 						},
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement/crossOrigin",
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/crossOrigin",
 						"prop": true,
 						"attr": false
 					},
@@ -8545,7 +8553,7 @@
 							"Preact": "boolean",
 							"React": "boolean"
 						},
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement/disableRemotePlayback",
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/disableRemotePlayback",
 						"prop": true,
 						"attr": false
 					},
@@ -8565,12 +8573,12 @@
 							"Preact": "string",
 							"React": "string"
 						},
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement/controlsList",
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/controlsList",
 						"prop": true,
 						"attr": false
 					}
 				},
-				"setters": ["autoplay", "controls", "controlsList", "crossOrigin", "currentTime", "defaultMuted", "defaultPlaybackRate", "disablePictureInPicture", "disableRemotePlayback", "height", "loop", "muted", "onencrypted", "onenterpictureinpicture", "onleavepictureinpicture", "onwaitingforkey", "playbackRate", "playsInline", "poster", "preload", "preservesPitch", "src", "srcObject", "volume", "width"]
+				"setters": ["HTMLMediaElement.autoplay", "HTMLMediaElement.controls", "HTMLMediaElement.controlsList", "HTMLMediaElement.crossOrigin", "HTMLMediaElement.currentTime", "HTMLMediaElement.defaultMuted", "HTMLMediaElement.defaultPlaybackRate", "HTMLMediaElement.disableRemotePlayback", "HTMLMediaElement.loop", "HTMLMediaElement.muted", "HTMLMediaElement.onencrypted", "HTMLMediaElement.onwaitingforkey", "HTMLMediaElement.playbackRate", "HTMLMediaElement.preload", "HTMLMediaElement.preservesPitch", "HTMLMediaElement.src", "HTMLMediaElement.srcObject", "HTMLMediaElement.volume", "HTMLVideoElement.disablePictureInPicture", "HTMLVideoElement.height", "HTMLVideoElement.onenterpictureinpicture", "HTMLVideoElement.onleavepictureinpicture", "HTMLVideoElement.playsInline", "HTMLVideoElement.poster", "HTMLVideoElement.width"]
 			},
 			"wbr": {
 				"deprecated": false,
@@ -8662,7 +8670,7 @@
 						"attr": true
 					}
 				},
-				"setters": ["compact"]
+				"setters": ["HTMLDirectoryElement.compact"]
 			},
 			"font": {
 				"deprecated": true,
@@ -8702,7 +8710,7 @@
 						"attr": true
 					}
 				},
-				"setters": ["color", "face", "size"]
+				"setters": ["HTMLFontElement.color", "HTMLFontElement.face", "HTMLFontElement.size"]
 			},
 			"frame": {
 				"deprecated": true,
@@ -8792,7 +8800,7 @@
 						"attr": true
 					}
 				},
-				"setters": ["frameBorder", "longDesc", "marginHeight", "marginWidth", "name", "noResize", "scrolling", "src"]
+				"setters": ["HTMLFrameElement.frameBorder", "HTMLFrameElement.longDesc", "HTMLFrameElement.marginHeight", "HTMLFrameElement.marginWidth", "HTMLFrameElement.name", "HTMLFrameElement.noResize", "HTMLFrameElement.scrolling", "HTMLFrameElement.src"]
 			},
 			"frameset": {
 				"deprecated": true,
@@ -8998,7 +9006,7 @@
 						"attr": true
 					}
 				},
-				"setters": ["cols", "onafterprint", "onbeforeprint", "onbeforeunload", "onblur", "onerror", "onfocus", "onhashchange", "onlanguagechange", "onload", "onmessage", "onmessageerror", "onoffline", "ononline", "onpagehide", "onpageshow", "onpopstate", "onrejectionhandled", "onresize", "onscroll", "onstorage", "onunhandledrejection", "onunload", "rows"]
+				"setters": ["HTMLFrameSetElement.cols", "HTMLFrameSetElement.onafterprint", "HTMLFrameSetElement.onbeforeprint", "HTMLFrameSetElement.onbeforeunload", "HTMLFrameSetElement.onblur", "HTMLFrameSetElement.onerror", "HTMLFrameSetElement.onfocus", "HTMLFrameSetElement.onhashchange", "HTMLFrameSetElement.onlanguagechange", "HTMLFrameSetElement.onload", "HTMLFrameSetElement.onmessage", "HTMLFrameSetElement.onmessageerror", "HTMLFrameSetElement.onoffline", "HTMLFrameSetElement.ononline", "HTMLFrameSetElement.onpagehide", "HTMLFrameSetElement.onpageshow", "HTMLFrameSetElement.onpopstate", "HTMLFrameSetElement.onrejectionhandled", "HTMLFrameSetElement.onresize", "HTMLFrameSetElement.onscroll", "HTMLFrameSetElement.onstorage", "HTMLFrameSetElement.onunhandledrejection", "HTMLFrameSetElement.onunload", "HTMLFrameSetElement.rows"]
 			},
 			"isindex": {
 				"deprecated": true,
@@ -9157,7 +9165,7 @@
 						"attr": true
 					}
 				},
-				"setters": ["width"]
+				"setters": ["HTMLPreElement.width"]
 			},
 			"marquee": {
 				"deprecated": true,
@@ -9320,7 +9328,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["behavior", "bgColor", "direction", "height", "hspace", "loop", "scrollAmount", "scrollDelay", "trueSpeed", "vspace", "width"]
+				"setters": ["HTMLMarqueeElement.behavior", "HTMLMarqueeElement.bgColor", "HTMLMarqueeElement.direction", "HTMLMarqueeElement.height", "HTMLMarqueeElement.hspace", "HTMLMarqueeElement.loop", "HTMLMarqueeElement.scrollAmount", "HTMLMarqueeElement.scrollDelay", "HTMLMarqueeElement.trueSpeed", "HTMLMarqueeElement.vspace", "HTMLMarqueeElement.width"]
 			},
 			"menuitem": {
 				"deprecated": true,
@@ -9438,7 +9446,7 @@
 						"attr": true
 					}
 				},
-				"setters": ["name", "type", "value", "valueType"]
+				"setters": ["HTMLParamElement.name", "HTMLParamElement.type", "HTMLParamElement.value", "HTMLParamElement.valueType"]
 			},
 			"plaintext": {
 				"deprecated": true,
@@ -9512,7 +9520,7 @@
 						"attr": true
 					}
 				},
-				"setters": ["width"]
+				"setters": ["HTMLPreElement.width"]
 			},
 			"noindex": {
 				"elementURL": "https://developer.mozilla.org/docs/Web/HTML/Element/noindex",
@@ -9958,7 +9966,7 @@
 						"values": {
 							"Chrome": "event"
 						},
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGAnimateElement/onbegin",
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGAnimationElement/onbegin",
 						"prop": true,
 						"attr": true
 					},
@@ -9966,7 +9974,7 @@
 						"values": {
 							"Chrome": "event"
 						},
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGAnimateElement/onend",
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGAnimationElement/onend",
 						"prop": true,
 						"attr": true
 					},
@@ -9974,7 +9982,7 @@
 						"values": {
 							"Chrome": "event"
 						},
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGAnimateElement/onrepeat",
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGAnimationElement/onrepeat",
 						"prop": true,
 						"attr": true
 					},
@@ -10675,7 +10683,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["onbegin", "onend", "onrepeat"]
+				"setters": ["SVGAnimationElement.onbegin", "SVGAnimationElement.onend", "SVGAnimationElement.onrepeat"]
 			},
 			"animateMotion": {
 				"deprecated": false,
@@ -10688,7 +10696,7 @@
 						"values": {
 							"Chrome": "event"
 						},
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGAnimateMotionElement/onbegin",
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGAnimationElement/onbegin",
 						"prop": true,
 						"attr": true
 					},
@@ -10696,7 +10704,7 @@
 						"values": {
 							"Chrome": "event"
 						},
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGAnimateMotionElement/onend",
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGAnimationElement/onend",
 						"prop": true,
 						"attr": true
 					},
@@ -10704,7 +10712,7 @@
 						"values": {
 							"Chrome": "event"
 						},
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGAnimateMotionElement/onrepeat",
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGAnimationElement/onrepeat",
 						"prop": true,
 						"attr": true
 					},
@@ -10957,7 +10965,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["onbegin", "onend", "onrepeat"]
+				"setters": ["SVGAnimationElement.onbegin", "SVGAnimationElement.onend", "SVGAnimationElement.onrepeat"]
 			},
 			"animateTransform": {
 				"deprecated": false,
@@ -10970,7 +10978,7 @@
 						"values": {
 							"Chrome": "event"
 						},
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGAnimateTransformElement/onbegin",
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGAnimationElement/onbegin",
 						"prop": true,
 						"attr": true
 					},
@@ -10978,7 +10986,7 @@
 						"values": {
 							"Chrome": "event"
 						},
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGAnimateTransformElement/onend",
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGAnimationElement/onend",
 						"prop": true,
 						"attr": true
 					},
@@ -10986,7 +10994,7 @@
 						"values": {
 							"Chrome": "event"
 						},
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGAnimateTransformElement/onrepeat",
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGAnimationElement/onrepeat",
 						"prop": true,
 						"attr": true
 					},
@@ -11223,7 +11231,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["onbegin", "onend", "onrepeat"]
+				"setters": ["SVGAnimationElement.onbegin", "SVGAnimationElement.onend", "SVGAnimationElement.onrepeat"]
 			},
 			"circle": {
 				"deprecated": false,
@@ -26571,7 +26579,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["crossOrigin", "decoding"]
+				"setters": ["SVGImageElement.crossOrigin", "SVGImageElement.decoding"]
 			},
 			"line": {
 				"deprecated": false,
@@ -32023,7 +32031,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["type"]
+				"setters": ["SVGScriptElement.type"]
 			},
 			"set": {
 				"deprecated": false,
@@ -32036,7 +32044,7 @@
 						"values": {
 							"Chrome": "event"
 						},
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSetElement/onbegin",
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGAnimationElement/onbegin",
 						"prop": true,
 						"attr": true
 					},
@@ -32044,7 +32052,7 @@
 						"values": {
 							"Chrome": "event"
 						},
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSetElement/onend",
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGAnimationElement/onend",
 						"prop": true,
 						"attr": true
 					},
@@ -32052,7 +32060,7 @@
 						"values": {
 							"Chrome": "event"
 						},
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSetElement/onrepeat",
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGAnimationElement/onrepeat",
 						"prop": true,
 						"attr": true
 					},
@@ -32177,7 +32185,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["onbegin", "onend", "onrepeat"]
+				"setters": ["SVGAnimationElement.onbegin", "SVGAnimationElement.onend", "SVGAnimationElement.onrepeat"]
 			},
 			"stop": {
 				"deprecated": false,
@@ -32809,7 +32817,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["disabled", "media", "title", "type"]
+				"setters": ["SVGStyleElement.disabled", "SVGStyleElement.media", "SVGStyleElement.title", "SVGStyleElement.type"]
 			},
 			"svg": {
 				"deprecated": false,
@@ -33483,7 +33491,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["currentScale", "zoomAndPan"]
+				"setters": ["SVGSVGElement.currentScale", "SVGSVGElement.zoomAndPan"]
 			},
 			"switch": {
 				"deprecated": false,
@@ -37242,7 +37250,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["zoomAndPan"]
+				"setters": ["SVGViewElement.zoomAndPan"]
 			}
 		},
 		"http://www.w3.org/1998/Math/MathML": {
@@ -37273,7 +37281,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["nonce"]
+				"setters": ["MathMLElement.nonce"]
 			},
 			"annotation-xml": {
 				"deprecated": false,
@@ -37302,7 +37310,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["nonce"]
+				"setters": ["MathMLElement.nonce"]
 			},
 			"maction": {
 				"deprecated": true,
@@ -37332,7 +37340,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["nonce"]
+				"setters": ["MathMLElement.nonce"]
 			},
 			"math": {
 				"deprecated": false,
@@ -37351,7 +37359,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["nonce"]
+				"setters": ["MathMLElement.nonce"]
 			},
 			"merror": {
 				"deprecated": false,
@@ -37360,7 +37368,7 @@
 				"interface": "MathMLElement",
 				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement",
 				"keys": {},
-				"setters": ["nonce"]
+				"setters": ["MathMLElement.nonce"]
 			},
 			"mfrac": {
 				"deprecated": false,
@@ -37399,7 +37407,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["nonce"]
+				"setters": ["MathMLElement.nonce"]
 			},
 			"mi": {
 				"deprecated": false,
@@ -37418,7 +37426,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["nonce"]
+				"setters": ["MathMLElement.nonce"]
 			},
 			"mmultiscripts": {
 				"deprecated": false,
@@ -37448,7 +37456,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["nonce"]
+				"setters": ["MathMLElement.nonce"]
 			},
 			"mn": {
 				"deprecated": false,
@@ -37457,7 +37465,7 @@
 				"interface": "MathMLElement",
 				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement",
 				"keys": {},
-				"setters": ["nonce"]
+				"setters": ["MathMLElement.nonce"]
 			},
 			"mo": {
 				"deprecated": false,
@@ -37575,7 +37583,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["nonce"]
+				"setters": ["MathMLElement.nonce"]
 			},
 			"mover": {
 				"deprecated": false,
@@ -37594,7 +37602,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["nonce"]
+				"setters": ["MathMLElement.nonce"]
 			},
 			"mpadded": {
 				"deprecated": false,
@@ -37649,7 +37657,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["nonce"]
+				"setters": ["MathMLElement.nonce"]
 			},
 			"mphantom": {
 				"deprecated": false,
@@ -37658,7 +37666,7 @@
 				"interface": "MathMLElement",
 				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement",
 				"keys": {},
-				"setters": ["nonce"]
+				"setters": ["MathMLElement.nonce"]
 			},
 			"mprescripts": {
 				"deprecated": false,
@@ -37667,7 +37675,7 @@
 				"interface": "MathMLElement",
 				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement",
 				"keys": {},
-				"setters": ["nonce"]
+				"setters": ["MathMLElement.nonce"]
 			},
 			"mroot": {
 				"deprecated": false,
@@ -37676,7 +37684,7 @@
 				"interface": "MathMLElement",
 				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement",
 				"keys": {},
-				"setters": ["nonce"]
+				"setters": ["MathMLElement.nonce"]
 			},
 			"mrow": {
 				"deprecated": false,
@@ -37685,7 +37693,7 @@
 				"interface": "MathMLElement",
 				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement",
 				"keys": {},
-				"setters": ["nonce"]
+				"setters": ["MathMLElement.nonce"]
 			},
 			"ms": {
 				"deprecated": false,
@@ -37715,7 +37723,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["nonce"]
+				"setters": ["MathMLElement.nonce"]
 			},
 			"mspace": {
 				"deprecated": false,
@@ -37752,7 +37760,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["nonce"]
+				"setters": ["MathMLElement.nonce"]
 			},
 			"msqrt": {
 				"deprecated": false,
@@ -37761,7 +37769,7 @@
 				"interface": "MathMLElement",
 				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement",
 				"keys": {},
-				"setters": ["nonce"]
+				"setters": ["MathMLElement.nonce"]
 			},
 			"mstyle": {
 				"deprecated": false,
@@ -37841,7 +37849,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["nonce"]
+				"setters": ["MathMLElement.nonce"]
 			},
 			"msub": {
 				"deprecated": false,
@@ -37861,7 +37869,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["nonce"]
+				"setters": ["MathMLElement.nonce"]
 			},
 			"msubsup": {
 				"deprecated": false,
@@ -37891,7 +37899,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["nonce"]
+				"setters": ["MathMLElement.nonce"]
 			},
 			"msup": {
 				"deprecated": false,
@@ -37911,7 +37919,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["nonce"]
+				"setters": ["MathMLElement.nonce"]
 			},
 			"mtable": {
 				"deprecated": false,
@@ -38011,7 +38019,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["nonce"]
+				"setters": ["MathMLElement.nonce"]
 			},
 			"mtd": {
 				"deprecated": false,
@@ -38057,7 +38065,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["nonce"]
+				"setters": ["MathMLElement.nonce"]
 			},
 			"mtext": {
 				"deprecated": false,
@@ -38066,7 +38074,7 @@
 				"interface": "MathMLElement",
 				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement",
 				"keys": {},
-				"setters": ["nonce"]
+				"setters": ["MathMLElement.nonce"]
 			},
 			"mtr": {
 				"deprecated": false,
@@ -38094,7 +38102,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["nonce"]
+				"setters": ["MathMLElement.nonce"]
 			},
 			"munder": {
 				"deprecated": false,
@@ -38113,7 +38121,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["nonce"]
+				"setters": ["MathMLElement.nonce"]
 			},
 			"munderover": {
 				"deprecated": false,
@@ -38140,7 +38148,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["nonce"]
+				"setters": ["MathMLElement.nonce"]
 			},
 			"semantics": {
 				"deprecated": false,
@@ -38149,7 +38157,7 @@
 				"interface": "MathMLElement",
 				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement",
 				"keys": {},
-				"setters": ["nonce"]
+				"setters": ["MathMLElement.nonce"]
 			},
 			"menclose": {
 				"deprecated": true,
@@ -38168,7 +38176,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["nonce"]
+				"setters": ["MathMLElement.nonce"]
 			},
 			"mfenced": {
 				"deprecated": true,
@@ -38205,7 +38213,7 @@
 						"attr": false
 					}
 				},
-				"setters": ["nonce"]
+				"setters": ["MathMLElement.nonce"]
 			}
 		}
 	}
