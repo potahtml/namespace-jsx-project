@@ -452,7 +452,8 @@ The \`interface\` names comes from \`document.createElementNS(ns, tagName).const
 
 Chrome attributes come from brute-forcing the element \`setters\` till an \`attribute\` is added. The name of the \`attribute\` is taken as \`key\`. When something is marked as \`prop\` it means Chrome has a setter for it. Note: a \`prop\` avoids \`DOMTokenList\` and other fancy objects.
 
-🗑️ means the \`tag\` or \`attribute\` is deprecated.
+- 🗑️ indicates that the \`tag\` or \`attribute\` is deprecated.
+- 🛑 indicates that the \`key\` resembles a \`prop\` but such a prop does not exist. Setting \`node.propName = value\` will not produce the expected outcome; instead, \`setAttribute\` should be used. It's strongly discouraged for frameworks to make up non-existent properties(keys with case [besides events such onClick]), as this leads to confusion. Example: \`autoFocus\` doesnt exists, it should be \`autofocus\`.
 
 This is an attempt to unify the effort required to update this information.
 
