@@ -98,11 +98,13 @@
   }
 
   document.querySelector('input').oninput = e => {
-    const search = e.target.value.trim()
+    const search = e.target.value.trim().toLowerCase()
     const elements = document.querySelectorAll('tbody tr')
     for (const tr of [...elements]) {
       tr.style.display =
-        !search || tr.textContent.includes(search) ? null : 'none'
+        !search || tr.textContent.toLowerCase().includes(search)
+          ? null
+          : 'none'
     }
   }
 </script>
