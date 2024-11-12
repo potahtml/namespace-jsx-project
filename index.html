@@ -13,7 +13,19 @@
     background: #0d1117;
     color: snow;
   }
+  #content-root {
+    margin: 0 1rem;
+  }
+  @media (min-width: 1280px) {
+    #content-root {
+      max-width: 1280px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
   table {
+    table-layout: fixed;
+    width: 100%;
     border-spacing: 0;
     border-collapse: collapse;
   }
@@ -78,7 +90,8 @@
 </div>
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script type="module">
-  const template = document.createElement('template')
+  const template = document.createElement('div')
+  template.id = 'content-root'
   template.innerHTML = marked.parse(
     await fetch(
       window.location.hostname === 'localhost'
@@ -87,7 +100,7 @@
     ).then(x => x.text()),
   )
 
-  document.body.append(template.content)
+  document.body.appendChild(template)
 
   // look mom! vanilla
   document.onclick = e => {
