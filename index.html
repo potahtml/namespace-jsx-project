@@ -81,7 +81,9 @@
   const template = document.createElement('template')
   template.innerHTML = marked.parse(
     await fetch(
-      'https://raw.githubusercontent.com/potahtml/namespace-jsx-project/refs/heads/master/jsx/readme.md',
+      window.location.hostname === 'localhost'
+        ? '/jsx/readme.md'
+        : 'https://raw.githubusercontent.com/potahtml/namespace-jsx-project/refs/heads/master/jsx/readme.md',
     ).then(x => x.text()),
   )
 

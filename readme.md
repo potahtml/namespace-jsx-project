@@ -96,12 +96,15 @@ idea!
    `namespace JSX`. The data from frameworks come from their repos,
    live.
 
+4. It may be possible that you run into a random error with puppeteer,
+   on which case you just run the whole thing again.
+
 ## TODO
 
 - add aria attributes
 - add global attributes
-- find out where are the enumerated attributes in chromium source, any
-  ideas?
+- find out where are the enumerated attributes in chromium/firefox
+  source, any ideas?
 
 ## Related
 

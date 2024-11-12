@@ -307,7 +307,7 @@
 
 							if (
 								ns === 'http://www.w3.org/1998/Math/MathML' &&
-								(name.startsWith('on') ||
+								((name.startsWith('on') && node[name] === null) ||
 									name === 'autofocus' ||
 									name === 'tabIndex' ||
 									name === 'style')
@@ -337,7 +337,7 @@
 									node[name] = 69
 								} catch (e) {}
 							} else {
-								if (name.startsWith('on')) {
+								if (name.startsWith('on') && node[name] === null) {
 									attributes[name] = 'event'
 									continue
 								} else {

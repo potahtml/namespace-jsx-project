@@ -353,7 +353,8 @@ for (let eventName in DATA.events) {
 }
 
 // get browser data
-const browser = await browserData({
+
+const browserElements = {
 	'http://www.w3.org/1999/xhtml': Object.keys(
 		DATA.elements['http://www.w3.org/1999/xhtml'],
 	),
@@ -363,7 +364,10 @@ const browser = await browserData({
 	'http://www.w3.org/1998/Math/MathML': Object.keys(
 		DATA.elements['http://www.w3.org/1998/Math/MathML'],
 	),
-})
+}
+
+const chrome = await browserData(browserElements, 'chrome')
+const firefox = await browserData(browserElements, 'firefox')
 
 // copy library tags to data.elements
 
@@ -372,19 +376,26 @@ for (const ns in DATA.elements) {
 		const tag = DATA.elements[ns][tagName]
 		tag.elementURL = ElementURL(ns, tagName)
 		tag.description = ''
-		tag.interface = browser[ns].elements[tagName].interface
+		tag.interface = chrome[ns].elements[tagName].interface
 		tag.interfaceURL = InterfaceURL(
 			ns,
 			tag,
-			browser[ns].elements[tagName].interface,
+			chrome[ns].elements[tagName].interface,
 		)
 		tag.keys = {}
 
 		// chrome
-		for (const k in browser[ns].elements[tagName].attributes) {
+		for (const k in chrome[ns].elements[tagName].attributes) {
 			tag.keys[k] = tag.keys[k] || { values: {} }
 			tag.keys[k].values.Chrome = uniqueTypes(
-				browser[ns].elements[tagName].attributes[k],
+				chrome[ns].elements[tagName].attributes[k],
+			)
+		}
+		// firefox
+		for (const k in firefox[ns].elements[tagName].attributes) {
+			tag.keys[k] = tag.keys[k] || { values: {} }
+			tag.keys[k].values.Firefox = uniqueTypes(
+				firefox[ns].elements[tagName].attributes[k],
 			)
 		}
 
@@ -403,37 +414,58 @@ for (const ns in DATA.elements) {
 			tag.description = vsCode[tagName].description
 			for (const k in vsCode[tagName].keys) {
 				tag.keys[k] = tag.keys[k] || { values: {} }
-				tag.keys[k].values['VSCode'] = uniqueTypes(
+				tag.keys[k].values.VSCode = uniqueTypes(
 					vsCode[tagName].keys[k],
 				)
 			}
 		}
 
-		tag.setters = browser[ns].elements[tagName]?.setters || []
+		tag.setters = unique([
+			chrome[ns].elements[tagName].setters || [],
+			firefox[ns].elements[tagName].setters || [],
+		])
 		tag.setters.sort()
 
-		// deprecation
 		for (const k in tag.keys) {
+			// deprecation
 			tag.keys[k].deprecated =
 				deprecatedAttributes[
 					tagName + '.' + tag.interface + '.' + k.toLowerCase()
 				]
 
-			const setter = browser[ns].elements[tagName].setters.find(
+			// setters
+
+			const setterChrome = chrome[ns].elements[tagName].setters.find(
 				item => item.split('.')[1] === k,
 			)
 
-			tag.keys[k].url = setter
+			const setterFirefox = firefox[ns].elements[
+				tagName
+			].setters.find(item => item.split('.')[1] === k)
+
+			// url
+			tag.keys[k].url = setterChrome
 				? KeyURL(
 						ns,
 						tagName,
-						setter.split('.')[0],
-						setter.split('.')[1],
+						setterChrome.split('.')[0],
+						setterChrome.split('.')[1],
 					)
 				: KeyURL(ns, tagName, tag.interface, k)
 
-			tag.keys[k].prop = !!setter
-			tag.keys[k].attr = !!browser[ns].elements[tagName].attributes[k]
+			// prop/attr
+			tag.keys[k].propChrome = !!setterChrome
+			tag.keys[k].attrChrome =
+				!!chrome[ns].elements[tagName].attributes[k]
+
+			tag.keys[k].propFirefox = !!setterFirefox
+			tag.keys[k].attrFirefox =
+				!!firefox[ns].elements[tagName].attributes[k]
+
+			tag.keys[k].prop =
+				tag.keys[k].propChrome || tag.keys[k].propFirefox
+			tag.keys[k].attr =
+				tag.keys[k].attrChrome || tag.keys[k].attrFirefox
 		}
 	}
 }
@@ -451,10 +483,11 @@ The possible \`tagNames\` come from a mashup between frameworks and TypeScript \
 
 The \`interface\` names comes from \`document.createElementNS(ns, tagName).constructor.name\` which is more accurate than typescript.
 
-Chrome attributes come from brute-forcing the element \`setters\` till an \`attribute\` is added. The name of the \`attribute\` is taken as \`key\`. When something is marked as \`prop\` it means Chrome has a setter for it. Note: a \`prop\` avoids \`DOMTokenList\` and other fancy objects.
+Chrome/Firefox attributes come from brute-forcing the element \`setters\` till an \`attribute\` is added. The name of the \`attribute\` is taken as \`key\`. When something is marked as \`prop\` it means Chrome/Firefox has a setter for it.
 
 - 🗑️ indicates that the \`tag\` or \`attribute\` is deprecated.
 - 🛑 indicates that the \`key\` resembles a \`prop\` but such a prop does not exist. Setting \`node.propName = value\` will not produce the expected outcome; instead, \`setAttribute\` should be used. It's strongly discouraged for frameworks to make up non-existent properties(keys with case [besides events such onClick]), as this leads to confusion. Example: \`autoFocus\` doesnt exists, it should be \`autofocus\`.
+- 🔗 indicates the \`prop\` it's inherited
 
 This is an attempt to unify the effort required to update this information.
 
@@ -477,6 +510,7 @@ Sponsor the project! https://opencollective.com/tito-bouzout . Thanks!
 
 const columns = [
 	'Chrome',
+	'Firefox',
 	'Pota',
 	'Solid',
 	'Voby',

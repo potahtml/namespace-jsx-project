@@ -588,10 +588,13 @@ export function KeyURL(ns, tagName, inter, attr) {
 	)
 }
 
-export const browserData = async browserData => {
-	const chrome = await puppeteer.launch({
+export const browserData = async (
+	browserData,
+	browser = 'chrome',
+) => {
+	const navigatorInstance = await puppeteer.launch({
 		headless: true,
-		// browser: 'firefox',
+		browser: browser,
 		args: [
 			'--ash-no-nudges',
 			'--deny-permission-prompts',
@@ -616,17 +619,23 @@ export const browserData = async browserData => {
 		defaultViewport: null,
 	})
 
-	const page = await chrome.newPage()
+	const page = await navigatorInstance.newPage()
 
 	await page.exposeFunction('getData', () => browserData)
-	await page.goto(process.cwd() + '/src/browser.html', {
+
+	const url =
+		'file:///' +
+		process.cwd().replace(/\\/g, '/') +
+		'/src/browser.html'
+
+	await page.goto(url, {
 		waitUntil: 'networkidle0',
 	})
 	await page.evaluate(() => window.runFromPuppeteer())
 	await new Promise(resolve => setTimeout(resolve, 2000))
-	const browser = await page.evaluate(() => document.body.textContent)
+	const result = await page.evaluate(() => document.body.textContent)
 
-	chrome.close()
+	navigatorInstance.close()
 
-	return JSON.parse(browser)
+	return JSON.parse(result)
 }
