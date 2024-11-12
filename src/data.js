@@ -242,29 +242,21 @@ export const tsTagNamesMap = {
 	html: {
 		properties: ts.htmlelementtagnamemap.properties,
 		source: ts.htmlelementtagnamemap.source,
-		interface: 'HTMLElements',
-		attributes: 'HTMLAttributes',
 		namespace: 'http://www.w3.org/1999/xhtml',
 	},
 	htmldeprecated: {
 		properties: ts.htmlelementdeprecatedtagnamemap.properties,
 		source: ts.htmlelementdeprecatedtagnamemap.source,
-		interface: 'HTMLDeprecatedElements',
-		attributes: 'HTMLAttributes',
 		namespace: 'http://www.w3.org/1999/xhtml',
 	},
 	svg: {
 		properties: ts.svgelementtagnamemap.properties,
 		source: ts.svgelementtagnamemap.source,
-		interface: 'SVGElements',
-		attributes: 'SVGAttributes',
 		namespace: 'http://www.w3.org/2000/svg',
 	},
 	mathml: {
 		properties: ts.mathmlelementtagnamemap.properties,
 		source: ts.mathmlelementtagnamemap.source,
-		interface: 'MathMLElements',
-		attributes: 'MathMLAttributes',
 		namespace: 'http://www.w3.org/1998/Math/MathML',
 	},
 	mathmldeprecated: {
@@ -276,8 +268,6 @@ export const tsTagNamesMap = {
 	menclose: MathMLElement
 	mfenced: MathMLElement
 }`,
-		interface: 'MathMLDeprecatedElements',
-		attributes: 'MathMLAttributes',
 		namespace: 'http://www.w3.org/1998/Math/MathML',
 	},
 }
@@ -582,9 +572,6 @@ export function ElementURL(ns, tagName) {
 }
 
 export function InterfaceURL(ns, tagName, inter) {
-	if (tagName === 'webview') {
-		return 'https://www.electronjs.org/docs/latest/api/webview-tag'
-	}
 	return 'https://developer.mozilla.org/en-US/docs/Web/API/' + inter
 }
 export function KeyURL(ns, tagName, inter, attr) {
