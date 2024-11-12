@@ -57,3 +57,19 @@ export const uniqueTypes = a =>
 	].join(' | ')
 
 export const entries = Object.entries
+
+export const fetchCached = async url => {
+	const name = await hash(url)
+	const file = './node_modules/.cache/' + name + '.txt'
+	if (!fs.existsSync(file)) {
+		write(file, await fetch(url).then(x => x.text()))
+	}
+	return read(file)
+}
+
+async function hash(value, algo = 'SHA-256') {
+	const msgUint8 = new TextEncoder().encode(value)
+	const hashBuffer = await crypto.subtle.digest(algo, msgUint8)
+	const hashArray = Array.from(new Uint8Array(hashBuffer))
+	return hashArray.map(b => b.toString(16).padStart(2, '0')).join('')
+}

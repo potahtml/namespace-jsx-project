@@ -2,6 +2,7 @@ import {
 	append,
 	copy,
 	entries,
+	fetchCached,
 	prettier,
 	read,
 	remove,
@@ -417,9 +418,20 @@ for (const ns in DATA.elements) {
 					tagName + '.' + tag.interface + '.' + k.toLowerCase()
 				]
 
-			tag.keys[k].url = KeyURL(ns, tagName, tag.interface, k)
-			tag.keys[k].prop =
-				browser[ns].elements[tagName].setters.includes(k)
+			const setter = browser[ns].elements[tagName].setters.find(
+				item => item.split('.')[1] === k,
+			)
+
+			tag.keys[k].url = setter
+				? KeyURL(
+						ns,
+						tagName,
+						setter.split('.')[0],
+						setter.split('.')[1],
+					)
+				: KeyURL(ns, tagName, tag.interface, k)
+
+			tag.keys[k].prop = !!setter
 			tag.keys[k].attr = !!browser[ns].elements[tagName].attributes[k]
 		}
 	}
@@ -483,21 +495,52 @@ for (const ns in DATA.elements) {
 		}
 		keysTable += `|`
 		// separator
-		keysTable += `\n| --- |  ` // ---
-		/*for (const lib of columns) {
+		keysTable += `\n| --- | --- `
+		for (const lib of columns) {
 			keysTable += ` |  --- `
 		}
 		keysTable += `|`
-*/
 
 		// attribute/properties
 		const props = []
 		for (const [k, val] of Object.entries(value.keys)) {
-			let prop = `| ${deprecatedAttributes[tag + '.' + value.interface + '.' + k.toLowerCase()] ? '🗑️' : ''} [${k}](${val.url})`
+			const kind = [val.prop ? 'prop' : '', val.attr ? 'attr' : '']
+				.filter(x => x)
+				.join('/')
 
-			prop += ` | ${[val.prop ? 'prop' : '', val.attr ? 'attr' : ''].filter(x => x).join('/')}`
+			const warn =
+				/[A-Z]/.test(k) &&
+				// svg is XML so it has attributes with uppercase letters
+				ns !== 'http://www.w3.org/2000/svg' &&
+				tag !== 'webview' &&
+				!kind.includes('prop')
+					? '🛑'
+					: ''
+
+			const deprecated = deprecatedAttributes[
+				tag + '.' + value.interface + '.' + k.toLowerCase()
+			]
+				? '🗑️'
+				: ''
+
+			const inherited =
+				kind.includes('prop') &&
+				!value.setters.includes(value.interface + '.' + k)
+					? '🔗'
+					: ''
+			/*
+			const mdn = (await fetchCached(val.url)).includes(
+				'Page not found',
+			)
+				? false
+				: true
+			*/
+
+			let prop = `| ${deprecated} [${k}](${val.url}) ${inherited} ${warn}`
+
+			prop += ` | ${kind}`
 			for (const lib of columns) {
-				prop += ` | ${(val.values[lib] !== undefined ? val.values[lib] : '❌').replace(/\|/g, '\\|')}`
+				prop += ` | ${(val.values[lib] !== undefined ? val.values[lib] : '❌').replace(/\|/g, '\\|').replace(/</g, '< ').replace(/>/g, '> ')}`
 			}
 			prop += `|`
 
@@ -513,14 +556,17 @@ for (const ns in DATA.elements) {
 
 		const keys = Object.keys(value.keys).map(x => x.toLowerCase())
 		const notIncluded = value.setters.filter(
-			x => !keys.includes(x.toLowerCase()),
+			x => !keys.includes(x.split('.')[1].toLowerCase()),
 		)
 
 		if (notIncluded.length) {
 			keysTable +=
 				'\n\nSetters Not Included: ' +
 				notIncluded
-					.map(x => `[${x}](${KeyURL(ns, tag, value.interface, x)})`)
+					.map(
+						x =>
+							`[${x.split('.')[1]}](${KeyURL(ns, tag, x.split('.')[0], x.split('.')[1])})`,
+					)
 					.join(', ') +
 				'\n\n'
 		}
