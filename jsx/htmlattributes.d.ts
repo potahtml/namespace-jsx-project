@@ -335,6 +335,8 @@ interface HTMLAttributes<RefType extends EventTarget = EventTarget> extends Clas
 
 	// Non-standard Attributes
 	disablePictureInPicture?: boolean
+	elementtiming?: string
+	elementTiming?: string
 	results?: number
 
 	// RDFa Attributes

@@ -128,27 +128,39 @@ interface InputHTMLAttributes extends HTMLAttributes {
 interface InputHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
 	accept?: string
 	alt?: string
+	autocomplete?: string
 	autoComplete?: string
 	capture?: 'user' | 'environment' // https://www.w3.org/TR/html-media-capture/#the-capture-attribute
 	checked?: boolean
+	defaultChecked?: boolean
+	defaultValue?: string
 	disabled?: boolean
 	enterKeyHint?: 'enter' | 'done' | 'go' | 'next' | 'previous' | 'search' | 'send'
 	form?: string
+	formaction?: string
 	formAction?: string
+	formenctype?: string
 	formEncType?: string
+	formmethod?: string
 	formMethod?: string
+	formnovalidate?: boolean
 	formNoValidate?: boolean
+	formtarget?: string
 	formTarget?: string
 	height?: number | string
+	indeterminate?: boolean
 	list?: string
 	max?: string
+	maxlength?: number
 	maxLength?: number
 	min?: string
+	minlength?: number
 	minLength?: number
 	multiple?: boolean
 	name?: string
 	pattern?: string
 	placeholder?: string
+	readonly?: boolean
 	readOnly?: boolean
 	required?: boolean
 	size?: number

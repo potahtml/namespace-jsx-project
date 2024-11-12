@@ -591,6 +591,7 @@ export function KeyURL(ns, tagName, inter, attr) {
 export const browserData = async browserData => {
 	const chrome = await puppeteer.launch({
 		headless: true,
+		// browser: 'firefox',
 		args: [
 			'--ash-no-nudges',
 			'--deny-permission-prompts',

@@ -49,7 +49,9 @@ interface AreaHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
 	href?: string
 	hrefLang?: string
 	media?: string
+	referrerpolicy?: '' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
 	referrerPolicy?: '' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
+	rel?: string
 	shape?: string
 	target?: string
 }

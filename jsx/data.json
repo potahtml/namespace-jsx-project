@@ -716,6 +716,7 @@
 							"Solid": "string",
 							"Voby": "string",
 							"Vue": "string",
+							"Preact": "string",
 							"Pota": "string",
 							"VSCode": "string"
 						},
@@ -755,6 +756,7 @@
 							"Chrome": "string",
 							"Solid": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 							"Vue": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
+							"Preact": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 							"Pota": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 							"VSCode": "string"
 						},
@@ -989,6 +991,7 @@
 							"Solid": "string",
 							"Voby": "string",
 							"Vue": "string",
+							"Preact": "string",
 							"Pota": "string",
 							"VSCode": "string"
 						},
@@ -1001,6 +1004,7 @@
 							"Chrome": "string",
 							"Solid": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 							"Vue": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
+							"Preact": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 							"Pota": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAreaElement/referrerpolicy",
@@ -1138,6 +1142,7 @@
 							"Chrome": "string",
 							"Solid": "'anonymous' | 'use-credentials' | ''",
 							"Vue": "string",
+							"Preact": "'anonymous' | 'use-credentials'",
 							"Pota": "'anonymous' | 'use-credentials' | ''",
 							"VSCode": "'anonymous' | 'use-credentials'"
 						},
@@ -1165,6 +1170,7 @@
 							"Chrome": "boolean",
 							"Solid": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
+							"Preact": "boolean",
 							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
@@ -1318,10 +1324,19 @@
 					},
 					"playsinline": {
 						"values": {
-							"Vue": "boolean | 'true' | 'false'"
+							"Vue": "boolean | 'true' | 'false'",
+							"Preact": "boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement/playsinline",
 						"prop": false,
+						"attr": false
+					},
+					"volume": {
+						"values": {
+							"Preact": "string | number"
+						},
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/volume",
+						"prop": true,
 						"attr": false
 					}
 				},
@@ -1803,6 +1818,7 @@
 							"Chrome": "string",
 							"Solid": "string",
 							"Vue": "string",
+							"Preact": "string",
 							"Pota": "string",
 							"VSCode": "string"
 						},
@@ -1815,6 +1831,7 @@
 							"Chrome": "string",
 							"Solid": "'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'",
 							"Vue": "string",
+							"Preact": "string",
 							"Pota": "'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'",
 							"VSCode": "'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'"
 						},
@@ -1827,6 +1844,7 @@
 							"Chrome": "string",
 							"Solid": "'post' | 'get' | 'dialog'",
 							"Vue": "string",
+							"Preact": "string",
 							"Pota": "'post' | 'get' | 'dialog'",
 							"VSCode": "'get' | 'post'"
 						},
@@ -1839,6 +1857,7 @@
 							"Chrome": "boolean",
 							"Solid": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
+							"Preact": "boolean",
 							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
@@ -1851,6 +1870,7 @@
 							"Chrome": "string",
 							"Solid": "string",
 							"Vue": "string",
+							"Preact": "string",
 							"Pota": "'_self' | '_blank' | '_parent' | '_top' | (string & {})",
 							"VSCode": "string"
 						},
@@ -2404,6 +2424,7 @@
 						"values": {
 							"Chrome": "string",
 							"Vue": "string",
+							"Preact": "string",
 							"Pota": "string",
 							"VSCode": "string"
 						},
@@ -2783,6 +2804,7 @@
 						"values": {
 							"Chrome": "string",
 							"Solid": "string",
+							"Preact": "string",
 							"Pota": "string",
 							"VSCode": "string"
 						},
@@ -2810,6 +2832,7 @@
 							"Chrome": "string",
 							"Solid": "string",
 							"Vue": "string",
+							"Preact": "string",
 							"Pota": "'on' | 'off'",
 							"VSCode": "'on' | 'off'"
 						},
@@ -2822,6 +2845,7 @@
 							"Chrome": "string",
 							"Solid": "'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'",
 							"Vue": "string",
+							"Preact": "string",
 							"Pota": "'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'",
 							"VSCode": "'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'"
 						},
@@ -2864,6 +2888,7 @@
 							"Chrome": "boolean",
 							"Solid": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
+							"Preact": "boolean",
 							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
@@ -2889,6 +2914,7 @@
 					"rel": {
 						"values": {
 							"Chrome": "string",
+							"Preact": "string",
 							"Pota": "string"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/rel",
@@ -3274,6 +3300,7 @@
 							"Chrome": "string",
 							"Solid": "string",
 							"Vue": "string",
+							"Preact": "string",
 							"Pota": "string",
 							"VSCode": "string"
 						},
@@ -3358,6 +3385,7 @@
 							"Chrome": "string",
 							"Solid": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 							"Vue": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
+							"Preact": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 							"Pota": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 							"VSCode": "string"
 						},
@@ -3432,6 +3460,7 @@
 						"values": {
 							"Chrome": "string",
 							"Vue": "number | string",
+							"Preact": "number | string",
 							"Pota": "number | string"
 						},
 						"deprecated": true,
@@ -3677,6 +3706,7 @@
 							"Chrome": "string",
 							"Solid": "string",
 							"Vue": "string",
+							"Preact": "string",
 							"Pota": "string",
 							"VSCode": "string"
 						},
@@ -3704,6 +3734,7 @@
 							"Chrome": "string",
 							"Solid": "'anonymous' | 'use-credentials' | ''",
 							"Vue": "'anonymous' | 'use-credentials' | ''",
+							"Preact": "'anonymous' | 'use-credentials'",
 							"Pota": "'anonymous' | 'use-credentials' | ''",
 							"VSCode": "'anonymous' | 'use-credentials'"
 						},
@@ -3716,6 +3747,7 @@
 							"Chrome": "string",
 							"Solid": "string",
 							"Vue": "string",
+							"Preact": "string",
 							"Pota": "string",
 							"VSCode": "string"
 						},
@@ -3769,6 +3801,7 @@
 							"Chrome": "string",
 							"Solid": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 							"Vue": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
+							"Preact": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 							"Pota": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 							"VSCode": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'"
 						},
@@ -4034,6 +4067,7 @@
 							"Chrome": "string",
 							"Solid": "string",
 							"Vue": "string",
+							"Preact": "string",
 							"Pota": "'additional-name' | 'address-level1' | 'address-level2' | 'address-level3' | 'address-level4' | 'address-line1' | 'address-line2' | 'address-line3' | 'bday' | 'bday-day' | 'bday-month' | 'bday-year' | 'billing' | 'cc-additional-name' | 'cc-csc' | 'cc-exp' | 'cc-exp-month' | 'cc-exp-year' | 'cc-family-name' | 'cc-given-name' | 'cc-name' | 'cc-number' | 'cc-type' | 'country' | 'country-name' | 'current-password' | 'email' | 'family-name' | 'fax' | 'given-name' | 'home' | 'honorific-prefix' | 'honorific-suffix' | 'impp' | 'language' | 'mobile' | 'name' | 'new-password' | 'nickname' | 'off' | 'on' | 'organization' | 'organization-title' | 'pager' | 'photo' | 'postal-code' | 'sex' | 'shipping' | 'street-address' | 'tel' | 'tel-area-code' | 'tel-country-code' | 'tel-extension' | 'tel-local' | 'tel-local-prefix' | 'tel-local-suffix' | 'tel-national' | 'transaction-amount' | 'transaction-currency' | 'url' | 'username' | 'work' | (string & {})",
 							"VSCode": "'additional-name' | 'address-level1' | 'address-level2' | 'address-level3' | 'address-level4' | 'address-line1' | 'address-line2' | 'address-line3' | 'bday' | 'bday-year' | 'bday-day' | 'bday-month' | 'billing' | 'cc-additional-name' | 'cc-csc' | 'cc-exp' | 'cc-exp-month' | 'cc-exp-year' | 'cc-family-name' | 'cc-given-name' | 'cc-name' | 'cc-number' | 'cc-type' | 'country' | 'country-name' | 'current-password' | 'email' | 'family-name' | 'fax' | 'given-name' | 'home' | 'honorific-prefix' | 'honorific-suffix' | 'impp' | 'language' | 'mobile' | 'name' | 'new-password' | 'nickname' | 'off' | 'on' | 'organization' | 'organization-title' | 'pager' | 'photo' | 'postal-code' | 'sex' | 'shipping' | 'street-address' | 'tel-area-code' | 'tel' | 'tel-country-code' | 'tel-extension' | 'tel-local' | 'tel-local-prefix' | 'tel-local-suffix' | 'tel-national' | 'transaction-amount' | 'transaction-currency' | 'url' | 'username' | 'work'"
 						},
@@ -4086,6 +4120,7 @@
 							"Chrome": "string",
 							"Solid": "string",
 							"Vue": "string",
+							"Preact": "string",
 							"Pota": "string",
 							"VSCode": "string"
 						},
@@ -4098,6 +4133,7 @@
 							"Chrome": "string",
 							"Solid": "'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'",
 							"Vue": "string",
+							"Preact": "string",
 							"Pota": "'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'",
 							"VSCode": "'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'"
 						},
@@ -4110,6 +4146,7 @@
 							"Chrome": "string",
 							"Solid": "'post' | 'get' | 'dialog'",
 							"Vue": "string",
+							"Preact": "string",
 							"Pota": "'post' | 'get' | 'dialog'",
 							"VSCode": "'get' | 'post'"
 						},
@@ -4122,6 +4159,7 @@
 							"Chrome": "boolean",
 							"Solid": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
+							"Preact": "boolean",
 							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
@@ -4134,6 +4172,7 @@
 							"Chrome": "string",
 							"Solid": "string",
 							"Vue": "string",
+							"Preact": "string",
 							"Pota": "string",
 							"VSCode": "string"
 						},
@@ -4176,6 +4215,7 @@
 							"Chrome": "number | string",
 							"Solid": "number | string",
 							"Vue": "number | string",
+							"Preact": "number",
 							"Pota": "number | string",
 							"VSCode": "string"
 						},
@@ -4203,6 +4243,7 @@
 							"Chrome": "number | string",
 							"Solid": "number | string",
 							"Vue": "number | string",
+							"Preact": "number",
 							"Pota": "number | string",
 							"VSCode": "string"
 						},
@@ -4275,6 +4316,7 @@
 							"Chrome": "boolean",
 							"Solid": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
+							"Preact": "boolean",
 							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
@@ -4658,7 +4700,8 @@
 					"indeterminate": {
 						"values": {
 							"Voby": "boolean",
-							"Vue": "boolean"
+							"Vue": "boolean",
+							"Preact": "boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/indeterminate",
 						"prop": true,
@@ -4672,6 +4715,22 @@
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/onChange",
 						"prop": false,
+						"attr": false
+					},
+					"defaultChecked": {
+						"values": {
+							"Preact": "boolean"
+						},
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/defaultChecked",
+						"prop": true,
+						"attr": false
+					},
+					"defaultValue": {
+						"values": {
+							"Preact": "string"
+						},
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/defaultValue",
+						"prop": true,
 						"attr": false
 					},
 					"popovertarget": {
@@ -4719,6 +4778,7 @@
 						"values": {
 							"Chrome": "string",
 							"Vue": "string",
+							"Preact": "string",
 							"Pota": "string",
 							"VSCode": "string"
 						},
@@ -4762,6 +4822,7 @@
 							"Solid": "string",
 							"Voby": "string",
 							"Vue": "string",
+							"Preact": "string",
 							"Pota": "string",
 							"VSCode": "string"
 						},
@@ -4889,6 +4950,7 @@
 							"Chrome": "string",
 							"Solid": "'anonymous' | 'use-credentials' | ''",
 							"Vue": "string",
+							"Preact": "'anonymous' | 'use-credentials'",
 							"Pota": "'anonymous' | 'use-credentials' | ''",
 							"VSCode": "'anonymous' | 'use-credentials'"
 						},
@@ -4902,6 +4964,7 @@
 							"Solid": "string",
 							"Voby": "string",
 							"Vue": "string",
+							"Preact": "string",
 							"Pota": "string",
 							"VSCode": "string"
 						},
@@ -4929,6 +4992,7 @@
 							"Chrome": "string",
 							"Solid": "string",
 							"Vue": "string",
+							"Preact": "string",
 							"Pota": "string",
 							"VSCode": "string"
 						},
@@ -4971,6 +5035,7 @@
 							"Chrome": "string",
 							"Solid": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 							"Vue": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
+							"Preact": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 							"Pota": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 							"VSCode": "string"
 						},
@@ -5027,6 +5092,7 @@
 						"values": {
 							"Chrome": "string",
 							"Vue": "string",
+							"Preact": "string",
 							"Pota": "string"
 						},
 						"deprecated": true,
@@ -5280,6 +5346,7 @@
 						"values": {
 							"Chrome": "string",
 							"Solid": "string",
+							"Preact": "string",
 							"Pota": "'content-security-policy' | 'content-type' | 'default-style' | 'x-ua-compatible' | 'refresh'",
 							"VSCode": "string"
 						},
@@ -5293,6 +5360,7 @@
 							"Solid": "string",
 							"Voby": "string",
 							"Vue": "string",
+							"Preact": "string",
 							"React": "string",
 							"Pota": "string",
 							"VSCode": "string"
@@ -5329,6 +5397,7 @@
 						"values": {
 							"Solid": "string",
 							"Vue": "string",
+							"Preact": "string",
 							"Pota": "string",
 							"VSCode": "string"
 						},
@@ -5556,6 +5625,7 @@
 							"Chrome": "string",
 							"Solid": "string",
 							"Vue": "string",
+							"Preact": "string",
 							"Pota": "string",
 							"VSCode": "string"
 						},
@@ -5969,6 +6039,7 @@
 							"Solid": "string",
 							"Voby": "string",
 							"Vue": "string",
+							"Preact": "string",
 							"Pota": "string",
 							"VSCode": "string"
 						},
@@ -6238,6 +6309,7 @@
 							"Chrome": "boolean",
 							"Solid": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
+							"Preact": "boolean",
 							"Pota": "'true' | boolean",
 							"VSCode": "string"
 						},
@@ -6250,6 +6322,7 @@
 							"Chrome": "string",
 							"Solid": "string",
 							"Vue": "string",
+							"Preact": "string",
 							"Pota": "string",
 							"VSCode": "string"
 						},
@@ -6293,6 +6366,7 @@
 							"Chrome": "string",
 							"Solid": "'anonymous' | 'use-credentials' | ''",
 							"Vue": "string",
+							"Preact": "'anonymous' | 'use-credentials'",
 							"Pota": "'anonymous' | 'use-credentials' | ''",
 							"VSCode": "'anonymous' | 'use-credentials'"
 						},
@@ -6305,6 +6379,7 @@
 							"Chrome": "string",
 							"Solid": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 							"Vue": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
+							"Preact": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 							"Pota": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 							"VSCode": "string"
 						},
@@ -6478,6 +6553,7 @@
 							"Chrome": "string",
 							"Solid": "string",
 							"Vue": "string",
+							"Preact": "string",
 							"Pota": "'additional-name' | 'address-level1' | 'address-level2' | 'address-level3' | 'address-level4' | 'address-line1' | 'address-line2' | 'address-line3' | 'bday' | 'bday-day' | 'bday-month' | 'bday-year' | 'billing' | 'cc-additional-name' | 'cc-csc' | 'cc-exp' | 'cc-exp-month' | 'cc-exp-year' | 'cc-family-name' | 'cc-given-name' | 'cc-name' | 'cc-number' | 'cc-type' | 'country' | 'country-name' | 'current-password' | 'email' | 'family-name' | 'fax' | 'given-name' | 'home' | 'honorific-prefix' | 'honorific-suffix' | 'impp' | 'language' | 'mobile' | 'name' | 'new-password' | 'nickname' | 'off' | 'on' | 'organization' | 'organization-title' | 'pager' | 'photo' | 'postal-code' | 'sex' | 'shipping' | 'street-address' | 'tel' | 'tel-area-code' | 'tel-country-code' | 'tel-extension' | 'tel-local' | 'tel-local-prefix' | 'tel-local-suffix' | 'tel-national' | 'transaction-amount' | 'transaction-currency' | 'url' | 'username' | 'work' | (string & {})",
 							"VSCode": "'additional-name' | 'address-level1' | 'address-level2' | 'address-level3' | 'address-level4' | 'address-line1' | 'address-line2' | 'address-line3' | 'bday' | 'bday-year' | 'bday-day' | 'bday-month' | 'billing' | 'cc-additional-name' | 'cc-csc' | 'cc-exp' | 'cc-exp-month' | 'cc-exp-year' | 'cc-family-name' | 'cc-given-name' | 'cc-name' | 'cc-number' | 'cc-type' | 'country' | 'country-name' | 'current-password' | 'email' | 'family-name' | 'fax' | 'given-name' | 'home' | 'honorific-prefix' | 'honorific-suffix' | 'impp' | 'language' | 'mobile' | 'name' | 'new-password' | 'nickname' | 'off' | 'on' | 'organization' | 'organization-title' | 'pager' | 'photo' | 'postal-code' | 'sex' | 'shipping' | 'street-address' | 'tel-area-code' | 'tel' | 'tel-country-code' | 'tel-extension' | 'tel-local' | 'tel-local-prefix' | 'tel-local-suffix' | 'tel-national' | 'transaction-amount' | 'transaction-currency' | 'url' | 'username' | 'work'"
 						},
@@ -6704,6 +6780,7 @@
 							"Chrome": "string",
 							"Solid": "string",
 							"Vue": "string",
+							"Preact": "string",
 							"Pota": "string",
 							"VSCode": "string"
 						},
@@ -7122,6 +7199,7 @@
 							"Chrome": "number | string",
 							"Solid": "number | string",
 							"Vue": "number | string",
+							"Preact": "number",
 							"Pota": "number | string",
 							"VSCode": "string"
 						},
@@ -7134,6 +7212,7 @@
 							"Chrome": "number | string",
 							"Solid": "number | string",
 							"Vue": "number | string",
+							"Preact": "number",
 							"Pota": "number | string",
 							"VSCode": "string"
 						},
@@ -7385,6 +7464,7 @@
 							"Chrome": "string",
 							"Solid": "string",
 							"Vue": "string",
+							"Preact": "string",
 							"Pota": "'additional-name' | 'address-level1' | 'address-level2' | 'address-level3' | 'address-level4' | 'address-line1' | 'address-line2' | 'address-line3' | 'bday' | 'bday-day' | 'bday-month' | 'bday-year' | 'billing' | 'cc-additional-name' | 'cc-csc' | 'cc-exp' | 'cc-exp-month' | 'cc-exp-year' | 'cc-family-name' | 'cc-given-name' | 'cc-name' | 'cc-number' | 'cc-type' | 'country' | 'country-name' | 'current-password' | 'email' | 'family-name' | 'fax' | 'given-name' | 'home' | 'honorific-prefix' | 'honorific-suffix' | 'impp' | 'language' | 'mobile' | 'name' | 'new-password' | 'nickname' | 'off' | 'on' | 'organization' | 'organization-title' | 'pager' | 'photo' | 'postal-code' | 'sex' | 'shipping' | 'street-address' | 'tel' | 'tel-area-code' | 'tel-country-code' | 'tel-extension' | 'tel-local' | 'tel-local-prefix' | 'tel-local-suffix' | 'tel-national' | 'transaction-amount' | 'transaction-currency' | 'url' | 'username' | 'work' | (string & {})",
 							"VSCode": "'additional-name' | 'address-level1' | 'address-level2' | 'address-level3' | 'address-level4' | 'address-line1' | 'address-line2' | 'address-line3' | 'bday' | 'bday-year' | 'bday-day' | 'bday-month' | 'billing' | 'cc-additional-name' | 'cc-csc' | 'cc-exp' | 'cc-exp-month' | 'cc-exp-year' | 'cc-family-name' | 'cc-given-name' | 'cc-name' | 'cc-number' | 'cc-type' | 'country' | 'country-name' | 'current-password' | 'email' | 'family-name' | 'fax' | 'given-name' | 'home' | 'honorific-prefix' | 'honorific-suffix' | 'impp' | 'language' | 'mobile' | 'name' | 'new-password' | 'nickname' | 'off' | 'on' | 'organization' | 'organization-title' | 'pager' | 'photo' | 'postal-code' | 'sex' | 'shipping' | 'street-address' | 'tel-area-code' | 'tel' | 'tel-country-code' | 'tel-extension' | 'tel-local' | 'tel-local-prefix' | 'tel-local-suffix' | 'tel-national' | 'transaction-amount' | 'transaction-currency' | 'url' | 'username' | 'work'"
 						},
@@ -7439,6 +7519,7 @@
 							"Chrome": "number | string",
 							"Solid": "number | string",
 							"Vue": "number | string",
+							"Preact": "number",
 							"Pota": "number | string",
 							"VSCode": "string"
 						},
@@ -7451,6 +7532,7 @@
 							"Chrome": "number | string",
 							"Solid": "number | string",
 							"Vue": "number | string",
+							"Preact": "number",
 							"Pota": "number | string",
 							"VSCode": "string"
 						},
@@ -7770,6 +7852,7 @@
 							"Chrome": "number | string",
 							"Solid": "number | string",
 							"Vue": "number | string",
+							"Preact": "number",
 							"Pota": "number | string",
 							"VSCode": "string"
 						},
@@ -7782,6 +7865,7 @@
 							"Chrome": "number | string",
 							"Solid": "number | string",
 							"Vue": "number | string",
+							"Preact": "number",
 							"Pota": "number | string",
 							"VSCode": "string"
 						},
@@ -8035,6 +8119,7 @@
 							"Chrome": "string",
 							"Solid": "string",
 							"Vue": "string",
+							"Preact": "string",
 							"Pota": "string",
 							"VSCode": "string"
 						},
@@ -8168,6 +8253,7 @@
 							"Chrome": "string",
 							"Solid": "string",
 							"Vue": "string",
+							"Preact": "string",
 							"Pota": "string",
 							"VSCode": "string"
 						},
@@ -8212,6 +8298,110 @@
 							"React": "string"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTrackElement/srcLang",
+						"prop": false,
+						"attr": false
+					},
+					"autoplay": {
+						"values": {
+							"Preact": "boolean"
+						},
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTrackElement/autoplay",
+						"prop": false,
+						"attr": false
+					},
+					"autoPlay": {
+						"values": {
+							"Preact": "boolean"
+						},
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTrackElement/autoPlay",
+						"prop": false,
+						"attr": false
+					},
+					"controls": {
+						"values": {
+							"Preact": "boolean"
+						},
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTrackElement/controls",
+						"prop": false,
+						"attr": false
+					},
+					"controlsList": {
+						"values": {
+							"Preact": "string"
+						},
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTrackElement/controlsList",
+						"prop": false,
+						"attr": false
+					},
+					"crossorigin": {
+						"values": {
+							"Preact": "'anonymous' | 'use-credentials'"
+						},
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTrackElement/crossorigin",
+						"prop": false,
+						"attr": false
+					},
+					"crossOrigin": {
+						"values": {
+							"Preact": "'anonymous' | 'use-credentials'"
+						},
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTrackElement/crossOrigin",
+						"prop": false,
+						"attr": false
+					},
+					"loop": {
+						"values": {
+							"Preact": "boolean"
+						},
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTrackElement/loop",
+						"prop": false,
+						"attr": false
+					},
+					"mediaGroup": {
+						"values": {
+							"Preact": "string"
+						},
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTrackElement/mediaGroup",
+						"prop": false,
+						"attr": false
+					},
+					"muted": {
+						"values": {
+							"Preact": "boolean"
+						},
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTrackElement/muted",
+						"prop": false,
+						"attr": false
+					},
+					"playsinline": {
+						"values": {
+							"Preact": "boolean"
+						},
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTrackElement/playsinline",
+						"prop": false,
+						"attr": false
+					},
+					"playsInline": {
+						"values": {
+							"Preact": "boolean"
+						},
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTrackElement/playsInline",
+						"prop": false,
+						"attr": false
+					},
+					"preload": {
+						"values": {
+							"Preact": "string"
+						},
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTrackElement/preload",
+						"prop": false,
+						"attr": false
+					},
+					"volume": {
+						"values": {
+							"Preact": "string | number"
+						},
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTrackElement/volume",
 						"prop": false,
 						"attr": false
 					}
@@ -8324,6 +8514,7 @@
 							"Chrome": "boolean",
 							"Solid": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
+							"Preact": "boolean",
 							"Pota": "'true' | boolean"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement/playsinline",
@@ -8376,6 +8567,7 @@
 							"Chrome": "string",
 							"Solid": "'anonymous' | 'use-credentials' | ''",
 							"Vue": "string",
+							"Preact": "'anonymous' | 'use-credentials'",
 							"Pota": "'anonymous' | 'use-credentials' | ''",
 							"VSCode": "'anonymous' | 'use-credentials'"
 						},
@@ -8403,6 +8595,7 @@
 							"Chrome": "boolean",
 							"Solid": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
+							"Preact": "boolean",
 							"Pota": "'true' | boolean",
 							"VSCode": "boolean"
 						},
@@ -8574,6 +8767,14 @@
 							"React": "string"
 						},
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/controlsList",
+						"prop": true,
+						"attr": false
+					},
+					"volume": {
+						"values": {
+							"Preact": "string | number"
+						},
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/volume",
 						"prop": true,
 						"attr": false
 					}
@@ -9836,6 +10037,7 @@
 						"values": {
 							"Solid": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 							"Vue": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
+							"Preact": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 							"Pota": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 							"VSCode": "string"
 						},
@@ -9848,6 +10050,7 @@
 							"Solid": "string",
 							"Voby": "string",
 							"Vue": "string",
+							"Preact": "string",
 							"Pota": "string",
 							"VSCode": "string"
 						},
@@ -31845,6 +32048,7 @@
 						"values": {
 							"Solid": "string",
 							"Vue": "string",
+							"Preact": "string",
 							"Pota": "string",
 							"VSCode": "string"
 						},
@@ -31856,6 +32060,7 @@
 						"values": {
 							"Solid": "'anonymous' | 'use-credentials' | ''",
 							"Vue": "string",
+							"Preact": "'anonymous' | 'use-credentials'",
 							"Pota": "'anonymous' | 'use-credentials' | ''",
 							"VSCode": "'anonymous' | 'use-credentials'"
 						},
@@ -31895,6 +32100,7 @@
 						"values": {
 							"Solid": "boolean",
 							"Vue": "boolean | 'true' | 'false'",
+							"Preact": "boolean",
 							"Pota": "'true' | boolean",
 							"VSCode": "string"
 						},
@@ -31918,6 +32124,7 @@
 						"values": {
 							"Solid": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 							"Vue": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
+							"Preact": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 							"Pota": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 							"VSCode": "string"
 						},

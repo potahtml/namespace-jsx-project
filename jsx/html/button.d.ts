@@ -56,10 +56,15 @@ interface ButtonHTMLAttributes extends HTMLAttributes {
 interface ButtonHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
 	disabled?: boolean
 	form?: string
+	formaction?: string
 	formAction?: string
+	formenctype?: string
 	formEncType?: string
+	formmethod?: string
 	formMethod?: string
+	formnovalidate?: boolean
 	formNoValidate?: boolean
+	formtarget?: string
 	formTarget?: string
 	name?: string
 	popovertarget?: string

@@ -16,6 +16,7 @@ interface TimeHTMLAttributes extends HTMLAttributes {
 
 // Preact - https://preactjs.com/
 interface TimeHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+	datetime?: string
 	dateTime?: string
 }
 

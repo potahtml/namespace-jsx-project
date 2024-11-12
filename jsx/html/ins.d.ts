@@ -19,6 +19,7 @@ interface InsHTMLAttributes extends HTMLAttributes {
 // Preact - https://preactjs.com/
 interface InsHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
 	cite?: string
+	datetime?: string
 	dateTime?: string
 }
 

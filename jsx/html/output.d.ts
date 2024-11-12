@@ -22,6 +22,7 @@ interface OutputHTMLAttributes extends HTMLAttributes {
 
 // Preact - https://preactjs.com/
 interface OutputHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+	for?: string
 	form?: string
 	htmlFor?: string
 	name?: string

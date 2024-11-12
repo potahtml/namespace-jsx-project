@@ -67,6 +67,8 @@ interface IframeHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> 
 	allowFullScreen?: boolean
 	allowTransparency?: boolean
 	/** @deprecated */
+	frameborder?: number | string
+	/** @deprecated */
 	frameBorder?: number | string
 	height?: number | string
 	loading?: 'eager' | 'lazy'
@@ -75,12 +77,14 @@ interface IframeHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> 
 	/** @deprecated */
 	marginWidth?: number
 	name?: string
+	referrerpolicy?: '' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
 	referrerPolicy?: '' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
 	sandbox?: string
 	/** @deprecated */
 	scrolling?: string
 	seamless?: boolean
 	src?: string
+	srcdoc?: string
 	srcDoc?: string
 	width?: number | string
 }

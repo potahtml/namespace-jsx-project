@@ -54,14 +54,18 @@ interface ImgHTMLAttributes extends HTMLAttributes {
 // Preact - https://preactjs.com/
 interface ImgHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
 	alt?: string
+	crossorigin?: 'anonymous' | 'use-credentials'
 	crossOrigin?: 'anonymous' | 'use-credentials'
 	decoding?: 'async' | 'auto' | 'sync'
 	height?: number | string
 	loading?: 'eager' | 'lazy'
+	referrerpolicy?: '' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
 	referrerPolicy?: '' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
 	sizes?: string
 	src?: string
+	srcset?: string
 	srcSet?: string
+	usemap?: string
 	useMap?: string
 	width?: number | string
 }

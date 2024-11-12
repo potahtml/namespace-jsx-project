@@ -44,6 +44,7 @@ interface ObjectHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> 
 	height?: number | string
 	name?: string
 	type?: string
+	usemap?: string
 	useMap?: string
 	width?: number | string
 	wmode?: string

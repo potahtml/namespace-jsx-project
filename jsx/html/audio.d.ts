@@ -46,16 +46,20 @@ interface MediaHTMLAttributes extends HTMLAttributes {
 // Preact - https://preactjs.com/
 interface AudioHTMLAttributes<T extends EventTarget> extends MediaHTMLAttributes<T> {}
 interface MediaHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+	autoplay?: boolean
 	autoPlay?: boolean
 	controls?: boolean
 	controlsList?: string
+	crossorigin?: 'anonymous' | 'use-credentials'
 	crossOrigin?: 'anonymous' | 'use-credentials'
 	loop?: boolean
 	mediaGroup?: string
 	muted?: boolean
+	playsinline?: boolean
 	playsInline?: boolean
 	preload?: string
 	src?: string
+	volume?: string | number
 }
 
 // React - https://react.dev/

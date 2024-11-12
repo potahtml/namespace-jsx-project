@@ -35,6 +35,7 @@ interface SourceHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> 
 	media?: string
 	sizes?: string
 	src?: string
+	srcset?: string
 	srcSet?: string
 	type?: string
 	width?: number | string
