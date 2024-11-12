@@ -6,6 +6,7 @@ import {
 	prettier,
 	read,
 	remove,
+	stringifySorted,
 	unique,
 	uniqueTypes,
 	write,
@@ -437,7 +438,7 @@ for (const ns in DATA.elements) {
 	}
 }
 
-write(`./jsx/data.json`, JSON.stringify(DATA, null, 2))
+write(`./jsx/data.json`, stringifySorted(DATA))
 
 // create table.md
 

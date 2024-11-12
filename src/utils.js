@@ -73,3 +73,24 @@ async function hash(value, algo = 'SHA-256') {
 	const hashArray = Array.from(new Uint8Array(hashBuffer))
 	return hashArray.map(b => b.toString(16).padStart(2, '0')).join('')
 }
+
+const stringify = JSON.stringify
+const stringifyReadable = o => stringify(o, null, 2)
+
+export const stringifySorted = o => {
+	function sort(o) {
+		if (o === null || typeof o !== 'object') {
+			return o
+		}
+		const tmp = Array.isArray(o) ? [] : {}
+		Object.keys(o)
+			.sort()
+			.map(k => (tmp[k] = sort(o[k])))
+
+		if (Array.isArray(tmp)) {
+			tmp.sort((a, b) => stringify(a).localeCompare(stringify(b)))
+		}
+		return tmp
+	}
+	return stringifyReadable(sort(o))
+}
