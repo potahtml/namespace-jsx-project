@@ -1,33 +1,8 @@
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-<script type="module">
-  document.title = 'JSX Elements Table'
-  const template = document.createElement('template')
-  template.innerHTML = marked.parse(
-    await fetch(
-      'https://raw.githubusercontent.com/potahtml/namespace-jsx-project/refs/heads/master/jsx/readme.md',
-    ).then(x => x.text()),
-  )
-
-  document.body.append(template.content)
-
-  // look mom! vanilla
-  document.onclick = e => {
-    const tr = e.target.closest('tr')
-    if (tr) {
-      tr.style.background = tr.style.background ? null : 'black'
-    }
-  }
-
-  document.querySelector('input').oninput = e => {
-    const search = e.target.value
-    const elements = document.querySelectorAll('tbody tr')
-    for (const tr of [...elements]) {
-      tr.style.display =
-        !search || tr.textContent.includes(search) ? null : 'none'
-    }
-  }
-</script>
-
+<title>JSX Elements Table</title>
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1"
+/>
 <style>
   :root {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
@@ -83,21 +58,46 @@
     background: #0d1117;
     padding: 5px;
   }
+  .github {
+    margin-bottom: -4px;
+  }
 </style>
 <input placeholder="Filter.." />
 <div class="sponsor">
   Sponsored by <a href="https://www.solidjs.com/">SolidJS</a>. Become
-  a
-  <a
-    href="https://opencollective.com/tito-bouzout"
-    target="_blank"
-    >Sponsor</a
-  >.
+  a <a href="https://opencollective.com/tito-bouzout">Sponsor</a>.
   <a href="https://github.com/potahtml/namespace-jsx-project"
     ><img
       class="github"
       src="./github-mark-white.png"
       width="18"
-      style="margin-bottom: -4px"
   /></a>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script type="module">
+  const template = document.createElement('template')
+  template.innerHTML = marked.parse(
+    await fetch(
+      'https://raw.githubusercontent.com/potahtml/namespace-jsx-project/refs/heads/master/jsx/readme.md',
+    ).then(x => x.text()),
+  )
+
+  document.body.append(template.content)
+
+  // look mom! vanilla
+  document.onclick = e => {
+    const tr = e.target.closest('tr')
+    if (tr) {
+      tr.style.background = tr.style.background ? null : 'black'
+    }
+  }
+
+  document.querySelector('input').oninput = e => {
+    const search = e.target.value.trim()
+    const elements = document.querySelectorAll('tbody tr')
+    for (const tr of [...elements]) {
+      tr.style.display =
+        !search || tr.textContent.includes(search) ? null : 'none'
+    }
+  }
+</script>
