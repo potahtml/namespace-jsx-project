@@ -9,7 +9,6 @@
       'Noto Sans', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
       'Segoe UI Emoji';
     line-height: 1.4;
-    word-wrap: break-word;
     background: #0d1117;
     color: snow;
   }
@@ -23,22 +22,28 @@
       margin-right: auto;
     }
   }
+  #content-root.localhost {
+    max-width: none !important;
+  }
   table {
     table-layout: fixed;
     width: 100%;
     border-spacing: 0;
     border-collapse: collapse;
   }
-  table th,
-  table td {
+  th,
+  td {
     padding: 6px 13px;
     border: 1px solid #3d444d;
   }
-  table th {
+  th {
     text-transform: capitalize;
   }
   tbody tr:nth-child(odd) {
     background: #151b23;
+  }
+  tbody tr:hover {
+    background: hsl(214, 25%, 15%);
   }
   thead {
     background: #05070a;
@@ -92,6 +97,8 @@
 <script type="module">
   const template = document.createElement('div')
   template.id = 'content-root'
+  template.className =
+    window.location.hostname === 'localhost' ? 'localhost' : ''
   template.innerHTML = marked.parse(
     await fetch(
       window.location.hostname === 'localhost'
