@@ -16,7 +16,6 @@ import {
 	KeyURL,
 	browserData,
 	deprecatedAttributes,
-	deprecatedTags,
 	ElementURL,
 	getEventNameMaps,
 	InterfaceURL,
@@ -26,6 +25,10 @@ import {
 	ts,
 	tsTagNamesMap,
 	vsCode,
+	InterfaceJSONURL,
+	ElementJSONURL,
+	weirdAttributes,
+	deprecatedTags,
 } from './data.js'
 
 import {
@@ -191,10 +194,6 @@ for (const [kind, value] of Object.entries(tsTagNamesMap)) {
 	for (let element of elements) {
 		DATA.elements[value.namespace][element.tagName] =
 			DATA.elements[value.namespace][element.tagName] || {}
-
-		DATA.elements[value.namespace][element.tagName].deprecated =
-			kind.toLowerCase().includes('deprecated') ||
-			deprecatedTags[value.namespace].includes(element.tagName)
 
 		seenTags[element.tagName] = true
 		seenEventsMaps.push(element.eventsMap)
@@ -384,6 +383,77 @@ for (const ns in DATA.elements) {
 		)
 		tag.keys = {}
 
+		// mdn stuff
+
+		const interfaceMDN = JSON.parse(
+			(
+				await fetchCached(InterfaceJSONURL(tag.interface))
+			).toLowerCase(),
+		)
+
+		let elementMDN
+		try {
+			elementMDN = JSON.parse(
+				(
+					await fetchCached(ElementJSONURL(ns, tagName))
+				).toLowerCase(),
+			)
+		} catch (e) {
+			elementMDN = true
+		}
+
+		function checkMDNMainValue(valueName) {
+			// take deprecated from interface name
+			return (
+				interfaceMDN.api[tag.interface.toLowerCase()].__compat.status[
+					valueName
+				] ||
+				// take deprecated from element
+				elementMDN[Object.keys(elementMDN)[0]]?.elements[
+					tagName.toLowerCase()
+				]?.__compat.status[valueName] ||
+				undefined
+			)
+		}
+		function checkMDNPropValue(propName, valueName) {
+			propName = propName.toLowerCase()
+
+			// do not merge this checks
+			const c1 =
+				elementMDN[Object.keys(elementMDN)[0]]?.elements[
+					tagName.toLowerCase()
+				]?.__compat[propName]?.status[valueName]
+
+			if (c1 !== undefined) return c1
+
+			const c2 =
+				elementMDN[Object.keys(elementMDN)[0]]?.elements[
+					tagName.toLowerCase()
+				][propName]?.__compat?.status[valueName]
+
+			if (c2 !== undefined) return c2
+
+			return interfaceMDN.api[tag.interface.toLowerCase()][propName]
+				?.__compat.status[valueName]
+		}
+
+		if (tagName !== 'webview') {
+			tag.deprecated =
+				deprecatedTags[ns].includes(tagName) ||
+				checkMDNMainValue('deprecated') ||
+				false
+
+			tag.nonstandard = tag.deprecated
+				? undefined
+				: checkMDNMainValue('standard_track') === false
+					? true
+					: undefined
+
+			tag.experimental = tag.deprecated
+				? undefined
+				: checkMDNMainValue('experimental')
+		}
+
 		// chrome
 		for (const k in chrome[ns].elements[tagName].attributes) {
 			tag.keys[k] = tag.keys[k] || { values: {} }
@@ -433,6 +503,12 @@ for (const ns in DATA.elements) {
 					tagName + '.' + tag.interface + '.' + k.toLowerCase()
 				]
 
+			// weird
+			tag.keys[k].weird =
+				weirdAttributes[
+					tagName + '.' + tag.interface + '.' + k.toLowerCase()
+				]
+
 			// setters
 
 			const setterChrome = chrome[ns].elements[tagName].setters.find(
@@ -466,6 +542,27 @@ for (const ns in DATA.elements) {
 				tag.keys[k].propChrome || tag.keys[k].propFirefox
 			tag.keys[k].attr =
 				tag.keys[k].attrChrome || tag.keys[k].attrFirefox
+
+			if (
+				tag.keys[k].prop &&
+				!tag.setters.includes(tag.interface + '.' + k)
+			) {
+				tag.keys[k].inherited = true
+			}
+
+			tag.keys[k].deprecated =
+				tag.keys[k].deprecated ||
+				checkMDNPropValue(k, 'deprecated') ||
+				undefined
+
+			tag.keys[k].nonstandard = checkMDNPropValue(k, 'standard_track')
+				? undefined
+				: checkMDNPropValue(k, 'standard_track') === false
+					? true
+					: undefined
+
+			tag.keys[k].experimental =
+				checkMDNPropValue(k, 'experimental') || undefined
 		}
 	}
 }
@@ -477,17 +574,20 @@ write(`./jsx/data.json`, stringifySorted(DATA))
 let keysTable = `
 # namespace JSX Elements Table
 
-This file is generated using \`./data.json\`. The table is automated and generated on demand, with live data taken from the frameworks repos, but some of its information is actually hard-coded (for example obsolete attributes/properties/tags).
+This file is generated using \`./data.json\`. The table is automated and generated on demand, with live data taken from the frameworks repos, mdn, and browsers via puppeteer.  Very few of the data is hardcoded (for example some of the obsolete attributes/properties/tags) that no longer exists in MDN.
 
 The possible \`tagNames\` come from a mashup between frameworks and TypeScript \`TagNamesMaps\` data.
 
 The \`interface\` names comes from \`document.createElementNS(ns, tagName).constructor.name\` which is more accurate than typescript.
 
-Chrome/Firefox attributes come from brute-forcing the element \`setters\` till an \`attribute\` is added. The name of the \`attribute\` is taken as \`key\`. When something is marked as \`prop\` it means Chrome/Firefox has a setter for it.
+Chrome/Firefox \`attributes\` come from brute-forcing the element \`setters\` till an \`attribute\` is added. The name of the \`attribute\` is taken as \`key\`. When something is marked as \`prop\` it means Chrome or Firefox has a setter for it.
 
-- 🗑️ indicates that the \`tag\` or \`attribute\` is deprecated.
+- 🗑️ indicates that the \`tag\` or \`attribute\` is deprecated (live from mdn + hardcoded)
 - 🛑 indicates that the \`key\` resembles a \`prop\` but such a prop does not exist. Setting \`node.propName = value\` will not produce the expected outcome; instead, \`setAttribute\` should be used. It's strongly discouraged for frameworks to make up non-existent properties(keys with case [besides events such onClick]), as this leads to confusion. Example: \`autoFocus\` doesnt exists, it should be \`autofocus\`.
-- 🔗 indicates the \`prop\` it's inherited
+- 🔗 indicates the \`prop\` it's inherited (from browser prototype chain)
+- 🧪 indicates the \`key\` it's experimental (live from mdn)
+- 🔥 indicates the \`key\` it's non-standard (live from mdn)
+- 🤷‍♀️ indicates something weird is going on with \`key\` (to be investigated)
 
 This is an attempt to unify the effort required to update this information.
 
@@ -500,11 +600,13 @@ This is an attempt to unify the effort required to update this information.
 - https://preactjs.com/
 - https://react.dev/
 - https://github.com/microsoft/vscode-html-languageservice
-
+- https://developer.mozilla.org/
+- https://www.google.com/chrome/
+- https://www.mozilla.org/
 
 ## Open Collective
 
-Sponsor the project! https://opencollective.com/tito-bouzout . Thanks!
+Value my time and please sponsor the project! https://opencollective.com/tito-bouzout Thanks!
 
 `
 
@@ -553,26 +655,14 @@ for (const ns in DATA.elements) {
 					? '🛑'
 					: ''
 
-			const deprecated = deprecatedAttributes[
-				tag + '.' + value.interface + '.' + k.toLowerCase()
-			]
-				? '🗑️'
-				: ''
+			const deprecated = val.deprecated ? '🗑️' : ''
+			const weird = val.weird ? '🤷‍♀️' : ''
 
-			const inherited =
-				kind.includes('prop') &&
-				!value.setters.includes(value.interface + '.' + k)
-					? '🔗'
-					: ''
-			/*
-			const mdn = (await fetchCached(val.url)).includes(
-				'Page not found',
-			)
-				? false
-				: true
-			*/
+			const inherited = val.inherited ? '🔗' : ''
+			const experimental = val.experimental ? '🧪' : ''
+			const nonstandard = val.nonstandard ? '🔥' : ''
 
-			let prop = `| ${deprecated} [${k}](${val.url}) ${inherited} ${warn}`
+			let prop = `| ${deprecated} ${nonstandard} [${k}](${val.url}) ${inherited} ${experimental} ${weird} ${warn} `
 
 			prop += ` | ${kind}`
 			for (const lib of columns) {
@@ -591,14 +681,15 @@ for (const ns in DATA.elements) {
 				.join('\n')
 
 		const keys = Object.keys(value.keys).map(x => x.toLowerCase())
-		const notIncluded = value.setters.filter(
+
+		const notIncludedSetters = value.setters.filter(
 			x => !keys.includes(x.split('.')[1].toLowerCase()),
 		)
 
-		if (notIncluded.length) {
+		if (notIncludedSetters.length) {
 			keysTable +=
 				'\n\nSetters Not Included: ' +
-				notIncluded
+				notIncludedSetters
 					.map(
 						x =>
 							`[${x.split('.')[1]}](${KeyURL(ns, tag, x.split('.')[0], x.split('.')[1])})`,
@@ -606,6 +697,63 @@ for (const ns in DATA.elements) {
 					.join(', ') +
 				'\n\n'
 		}
+
+		// mdn
+
+		try {
+			const elementMDN = JSON.parse(
+				await fetchCached(ElementJSONURL(ns, tag)),
+			)
+
+			const mdnkeys = unique([
+				Object.keys(
+					elementMDN[Object.keys(elementMDN)[0]]?.elements[tag]
+						?.__compat,
+				),
+				Object.keys(
+					elementMDN[Object.keys(elementMDN)[0]]?.elements[tag],
+				),
+			])
+
+			/*
+				bad idea, this includes inherited
+				try {
+					const interfaceMDN = JSON.parse(
+						await fetchCached(InterfaceJSONURL(value.interface)),
+					)
+
+					mdnkeys = unique([
+						mdnkeys,
+						Object.keys(interfaceMDN.api[value.interface]),
+					])
+				} catch (e) {}
+			*/
+
+			const not = [
+				'__compat',
+				'mdn_url',
+				'spec_url',
+				'status',
+				'support',
+				'tags',
+			]
+
+			const notIncludedMDN = mdnkeys
+				.filter(x => !keys.includes(x.toLowerCase()))
+				.filter(x => !not.includes(x))
+
+			if (notIncludedMDN.length) {
+				keysTable +=
+					'\n\nMDN Not Included: ' +
+					notIncludedMDN
+						.map(
+							x =>
+								`[${x}](https://developer.mozilla.org/en-US/search?q=${x})`,
+						)
+						.join(', ') +
+					'\n\n'
+			}
+		} catch (e) {}
 	}
 }
 

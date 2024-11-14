@@ -25,7 +25,6 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
-						"deprecated": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -33,7 +32,8 @@
 						"values": {
 							"Pota": "string",
 							"Preact": "string"
-						}
+						},
+						"weird": true
 					}
 				},
 				"setters": ["MathMLElement.nonce"]
@@ -62,7 +62,6 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
-						"deprecated": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -70,7 +69,8 @@
 						"values": {
 							"Pota": "string",
 							"Preact": "string"
-						}
+						},
+						"weird": true
 					}
 				},
 				"setters": ["MathMLElement.nonce"]
@@ -87,6 +87,7 @@
 						"attrChrome": false,
 						"attrFirefox": false,
 						"deprecated": true,
+						"nonstandard": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -101,6 +102,7 @@
 						"attrChrome": false,
 						"attrFirefox": false,
 						"deprecated": true,
+						"nonstandard": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -137,7 +139,7 @@
 				"setters": ["MathMLElement.nonce"]
 			},
 			"menclose": {
-				"deprecated": true,
+				"deprecated": false,
 				"description": "",
 				"elementURL": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/menclose",
 				"interface": "MathMLElement",
@@ -147,6 +149,7 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
+						"nonstandard": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -229,6 +232,7 @@
 						"attrChrome": false,
 						"attrFirefox": false,
 						"deprecated": true,
+						"nonstandard": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -256,6 +260,7 @@
 						"attrChrome": false,
 						"attrFirefox": false,
 						"deprecated": true,
+						"nonstandard": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -303,6 +308,7 @@
 						"attrChrome": false,
 						"attrFirefox": false,
 						"deprecated": true,
+						"nonstandard": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -317,6 +323,7 @@
 						"attrChrome": false,
 						"attrFirefox": false,
 						"deprecated": true,
+						"nonstandard": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -349,7 +356,7 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
-						"deprecated": true,
+						"nonstandard": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -357,7 +364,8 @@
 						"values": {
 							"Pota": "'true' | boolean",
 							"Preact": "boolean"
-						}
+						},
+						"weird": true
 					},
 					"fence": {
 						"attr": false,
@@ -649,7 +657,6 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
-						"deprecated": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -657,13 +664,13 @@
 						"values": {
 							"Pota": "string",
 							"Preact": "string"
-						}
+						},
+						"weird": true
 					},
 					"rquote": {
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
-						"deprecated": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -671,7 +678,8 @@
 						"values": {
 							"Pota": "string",
 							"Preact": "string"
-						}
+						},
+						"weird": true
 					}
 				},
 				"setters": ["MathMLElement.nonce"]
@@ -746,6 +754,7 @@
 						"attrChrome": false,
 						"attrFirefox": false,
 						"deprecated": true,
+						"nonstandard": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -760,6 +769,7 @@
 						"attrChrome": false,
 						"attrFirefox": false,
 						"deprecated": true,
+						"nonstandard": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -774,6 +784,7 @@
 						"attrChrome": false,
 						"attrFirefox": false,
 						"deprecated": true,
+						"nonstandard": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -788,6 +799,7 @@
 						"attrChrome": false,
 						"attrFirefox": false,
 						"deprecated": true,
+						"nonstandard": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -802,6 +814,7 @@
 						"attrChrome": false,
 						"attrFirefox": false,
 						"deprecated": true,
+						"nonstandard": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -815,7 +828,6 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
-						"deprecated": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -823,13 +835,13 @@
 						"values": {
 							"Pota": "string",
 							"Preact": "string"
-						}
+						},
+						"weird": true
 					},
 					"scriptsizemultiplier": {
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
-						"deprecated": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -837,7 +849,8 @@
 						"values": {
 							"Pota": "string",
 							"Preact": "string"
-						}
+						},
+						"weird": true
 					}
 				},
 				"setters": ["MathMLElement.nonce"]
@@ -854,6 +867,7 @@
 						"attrChrome": false,
 						"attrFirefox": false,
 						"deprecated": true,
+						"nonstandard": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -878,6 +892,7 @@
 						"attrChrome": false,
 						"attrFirefox": false,
 						"deprecated": true,
+						"nonstandard": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -892,6 +907,7 @@
 						"attrChrome": false,
 						"attrFirefox": false,
 						"deprecated": true,
+						"nonstandard": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -916,6 +932,7 @@
 						"attrChrome": false,
 						"attrFirefox": false,
 						"deprecated": true,
+						"nonstandard": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -939,6 +956,7 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
+						"nonstandard": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -952,6 +970,7 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
+						"nonstandard": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -965,6 +984,7 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
+						"nonstandard": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -978,6 +998,7 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
+						"nonstandard": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -991,6 +1012,7 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
+						"nonstandard": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -1004,6 +1026,7 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
+						"nonstandard": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -1017,6 +1040,7 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
+						"nonstandard": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -1030,6 +1054,7 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
+						"nonstandard": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -1043,6 +1068,7 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
+						"nonstandard": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -1056,6 +1082,7 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
+						"nonstandard": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -1079,6 +1106,7 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
+						"nonstandard": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -1105,6 +1133,7 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
+						"nonstandard": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -1150,6 +1179,7 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
+						"nonstandard": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -1163,6 +1193,7 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
+						"nonstandard": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -1255,6 +1286,7 @@
 						"attr": true,
 						"attrChrome": true,
 						"attrFirefox": false,
+						"experimental": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -1899,6 +1931,7 @@
 						"attr": true,
 						"attrChrome": true,
 						"attrFirefox": true,
+						"inherited": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
@@ -1917,6 +1950,7 @@
 						"attr": true,
 						"attrChrome": true,
 						"attrFirefox": true,
+						"inherited": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
@@ -1937,6 +1971,7 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
+						"inherited": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": false,
@@ -1965,6 +2000,7 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
+						"inherited": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
@@ -2011,6 +2047,7 @@
 						"attr": true,
 						"attrChrome": true,
 						"attrFirefox": true,
+						"inherited": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
@@ -2031,7 +2068,6 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
-						"deprecated": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -2041,13 +2077,13 @@
 							"React": "string",
 							"Solid": "string",
 							"Voby": "string"
-						}
+						},
+						"weird": true
 					},
 					"mediagroup": {
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
-						"deprecated": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -2057,12 +2093,14 @@
 							"Solid": "string",
 							"VSCode": "string",
 							"Vue": "string"
-						}
+						},
+						"weird": true
 					},
 					"muted": {
 						"attr": true,
 						"attrChrome": true,
 						"attrFirefox": true,
+						"inherited": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
@@ -2083,6 +2121,7 @@
 						"attr": true,
 						"attrChrome": true,
 						"attrFirefox": true,
+						"inherited": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
@@ -2096,6 +2135,7 @@
 						"attr": true,
 						"attrChrome": true,
 						"attrFirefox": true,
+						"inherited": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
@@ -2136,6 +2176,7 @@
 						"attr": true,
 						"attrChrome": true,
 						"attrFirefox": true,
+						"inherited": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
@@ -2156,6 +2197,7 @@
 						"attr": true,
 						"attrChrome": true,
 						"attrFirefox": true,
+						"inherited": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
@@ -2176,6 +2218,7 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
+						"inherited": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
@@ -2928,6 +2971,7 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
+						"experimental": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -2940,6 +2984,7 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
+						"experimental": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -3313,6 +3358,7 @@
 						"attrChrome": false,
 						"attrFirefox": true,
 						"deprecated": true,
+						"nonstandard": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -3426,14 +3472,14 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
-						"deprecated": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableColElement/bgcolor",
 						"values": {
 							"Pota": "string"
-						}
+						},
+						"weird": true
 					},
 					"char": {
 						"attr": true,
@@ -3550,14 +3596,14 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
-						"deprecated": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableColElement/bgcolor",
 						"values": {
 							"Pota": "string"
-						}
+						},
+						"weird": true
 					},
 					"char": {
 						"attr": true,
@@ -3954,6 +4000,7 @@
 						"attrChrome": true,
 						"attrFirefox": true,
 						"deprecated": true,
+						"nonstandard": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
@@ -4291,7 +4338,6 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
-						"deprecated": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -4299,7 +4345,8 @@
 						"values": {
 							"Pota": "string",
 							"VSCode": "string"
-						}
+						},
+						"weird": true
 					},
 					"accept-charset": {
 						"attr": true,
@@ -5242,6 +5289,7 @@
 						"attrChrome": true,
 						"attrFirefox": true,
 						"deprecated": true,
+						"nonstandard": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
@@ -5258,6 +5306,7 @@
 						"attrChrome": true,
 						"attrFirefox": true,
 						"deprecated": true,
+						"nonstandard": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
@@ -5274,6 +5323,7 @@
 						"attrChrome": true,
 						"attrFirefox": true,
 						"deprecated": true,
+						"nonstandard": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -5290,6 +5340,7 @@
 						"attrChrome": true,
 						"attrFirefox": true,
 						"deprecated": true,
+						"nonstandard": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
@@ -5306,6 +5357,7 @@
 						"attrChrome": true,
 						"attrFirefox": true,
 						"deprecated": true,
+						"nonstandard": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
@@ -5394,6 +5446,7 @@
 						"attr": true,
 						"attrChrome": true,
 						"attrFirefox": false,
+						"experimental": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -5464,7 +5517,8 @@
 							"Preact": "boolean",
 							"React": "boolean",
 							"Voby": "boolean"
-						}
+						},
+						"weird": true
 					},
 					"allowfullscreen": {
 						"attr": true,
@@ -5488,6 +5542,7 @@
 						"attrChrome": true,
 						"attrFirefox": false,
 						"deprecated": true,
+						"nonstandard": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -5510,12 +5565,15 @@
 						"values": {
 							"Pota": "'true' | boolean",
 							"Vue": "boolean | 'true' | 'false'"
-						}
+						},
+						"weird": true
 					},
 					"browsingtopics": {
 						"attr": true,
 						"attrChrome": true,
 						"attrFirefox": false,
+						"experimental": true,
+						"nonstandard": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -5529,6 +5587,7 @@
 						"attr": true,
 						"attrChrome": true,
 						"attrFirefox": false,
+						"experimental": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": false,
@@ -5542,6 +5601,7 @@
 						"attr": true,
 						"attrChrome": true,
 						"attrFirefox": false,
+						"experimental": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": false,
@@ -5736,6 +5796,7 @@
 						"attr": true,
 						"attrChrome": true,
 						"attrFirefox": false,
+						"experimental": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -5820,7 +5881,6 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
-						"deprecated": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -5832,12 +5892,14 @@
 							"VSCode": "boolean",
 							"Voby": "boolean",
 							"Vue": "boolean | 'true' | 'false'"
-						}
+						},
+						"weird": true
 					},
 					"sharedstoragewritable": {
 						"attr": true,
 						"attrChrome": true,
 						"attrFirefox": false,
+						"experimental": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -5968,6 +6030,7 @@
 						"attr": true,
 						"attrChrome": true,
 						"attrFirefox": false,
+						"experimental": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -6136,7 +6199,6 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
-						"deprecated": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -6144,7 +6206,8 @@
 						"values": {
 							"Pota": "string",
 							"VSCode": "string"
-						}
+						},
+						"weird": true
 					},
 					"isMap": {
 						"attr": false,
@@ -6213,6 +6276,7 @@
 						"attr": true,
 						"attrChrome": true,
 						"attrFirefox": true,
+						"deprecated": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
@@ -6275,6 +6339,7 @@
 						"attr": true,
 						"attrChrome": true,
 						"attrFirefox": false,
+						"experimental": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -6929,6 +6994,7 @@
 						"attr": true,
 						"attrChrome": true,
 						"attrFirefox": false,
+						"nonstandard": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": false,
@@ -7524,7 +7590,8 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLUnknownElement/autoFocus",
 						"values": {
 							"Voby": "boolean"
-						}
+						},
+						"weird": true
 					},
 					"autofocus": {
 						"attr": false,
@@ -7539,7 +7606,8 @@
 							"Pota": "boolean",
 							"Solid": "boolean",
 							"Vue": "boolean | 'true' | 'false'"
-						}
+						},
+						"weird": true
 					},
 					"challenge": {
 						"attr": false,
@@ -7557,7 +7625,8 @@
 							"Solid": "string",
 							"Voby": "string",
 							"Vue": "string"
-						}
+						},
+						"weird": true
 					},
 					"disabled": {
 						"attr": false,
@@ -7575,7 +7644,8 @@
 							"Solid": "boolean",
 							"Voby": "boolean",
 							"Vue": "boolean | 'true' | 'false'"
-						}
+						},
+						"weird": true
 					},
 					"form": {
 						"attr": false,
@@ -7593,7 +7663,8 @@
 							"Solid": "string",
 							"Voby": "string",
 							"Vue": "string"
-						}
+						},
+						"weird": true
 					},
 					"keyParams": {
 						"attr": false,
@@ -7608,7 +7679,8 @@
 							"Preact": "string",
 							"React": "string",
 							"Voby": "string"
-						}
+						},
+						"weird": true
 					},
 					"keyType": {
 						"attr": false,
@@ -7623,7 +7695,8 @@
 							"Preact": "string",
 							"React": "string",
 							"Voby": "string"
-						}
+						},
+						"weird": true
 					},
 					"keyparams": {
 						"attr": false,
@@ -7638,7 +7711,8 @@
 							"Pota": "string",
 							"Solid": "string",
 							"Vue": "string"
-						}
+						},
+						"weird": true
 					},
 					"keytype": {
 						"attr": false,
@@ -7653,7 +7727,8 @@
 							"Pota": "string",
 							"Solid": "string",
 							"Vue": "string"
-						}
+						},
+						"weird": true
 					},
 					"name": {
 						"attr": false,
@@ -7671,7 +7746,8 @@
 							"Solid": "string",
 							"Voby": "string",
 							"Vue": "string"
-						}
+						},
+						"weird": true
 					}
 				},
 				"setters": []
@@ -8586,7 +8662,6 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
-						"deprecated": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -8594,13 +8669,13 @@
 						"values": {
 							"Pota": "string",
 							"Solid": "string"
-						}
+						},
+						"weird": true
 					},
 					"type": {
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
-						"deprecated": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -8612,7 +8687,8 @@
 							"Solid": "'context' | 'toolbar'",
 							"Voby": "string",
 							"Vue": "string"
-						}
+						},
+						"weird": true
 					}
 				},
 				"setters": ["HTMLMenuElement.compact"]
@@ -8986,6 +9062,7 @@
 				"setters": []
 			},
 			"noindex": {
+				"deprecated": true,
 				"description": "",
 				"elementURL": "https://developer.mozilla.org/docs/Web/HTML/Element/noindex",
 				"interface": "HTMLUnknownElement",
@@ -9294,7 +9371,6 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
-						"deprecated": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -9302,7 +9378,8 @@
 						"values": {
 							"Pota": "boolean",
 							"VSCode": "boolean"
-						}
+						},
+						"weird": true
 					},
 					"useMap": {
 						"attr": false,
@@ -9404,6 +9481,7 @@
 						"attrChrome": true,
 						"attrFirefox": true,
 						"deprecated": true,
+						"nonstandard": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
@@ -9850,6 +9928,7 @@
 						"attrChrome": true,
 						"attrFirefox": true,
 						"deprecated": true,
+						"nonstandard": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
@@ -9866,6 +9945,7 @@
 						"attrChrome": false,
 						"attrFirefox": false,
 						"deprecated": true,
+						"nonstandard": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -10052,6 +10132,7 @@
 						"attr": true,
 						"attrChrome": true,
 						"attrFirefox": false,
+						"experimental": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -10227,14 +10308,14 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
-						"deprecated": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLScriptElement/language",
 						"values": {
 							"Pota": "string"
-						}
+						},
+						"weird": true
 					},
 					"noModule": {
 						"attr": false,
@@ -10901,7 +10982,6 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
-						"deprecated": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -10914,7 +10994,8 @@
 							"VSCode": "boolean",
 							"Voby": "boolean",
 							"Vue": "boolean | 'true' | 'false'"
-						}
+						},
+						"weird": true
 					},
 					"title": {
 						"attr": false,
@@ -11610,6 +11691,7 @@
 						"attr": true,
 						"attrChrome": true,
 						"attrFirefox": true,
+						"experimental": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -12954,7 +13036,7 @@
 				"setters": []
 			},
 			"u": {
-				"deprecated": true,
+				"deprecated": false,
 				"description": "The u element represents a span of text with an unarticulated, though explicitly rendered, non-textual annotation, such as labeling the text as being a proper name in Chinese text (a Chinese proper name mark), or labeling the text as being misspelt.",
 				"elementURL": "https://developer.mozilla.org/docs/Web/HTML/Element/u",
 				"interface": "HTMLElement",
@@ -13037,6 +13119,7 @@
 						"attr": true,
 						"attrChrome": true,
 						"attrFirefox": true,
+						"inherited": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
@@ -13055,6 +13138,7 @@
 						"attr": true,
 						"attrChrome": true,
 						"attrFirefox": true,
+						"inherited": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
@@ -13075,6 +13159,7 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
+						"inherited": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": false,
@@ -13103,6 +13188,7 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
+						"inherited": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
@@ -13151,6 +13237,7 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
+						"inherited": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": false,
@@ -13214,6 +13301,7 @@
 						"attr": true,
 						"attrChrome": true,
 						"attrFirefox": true,
+						"inherited": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
@@ -13234,7 +13322,6 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
-						"deprecated": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -13244,13 +13331,13 @@
 							"React": "string",
 							"Solid": "string",
 							"Voby": "string"
-						}
+						},
+						"weird": true
 					},
 					"mediagroup": {
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
-						"deprecated": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -13260,12 +13347,14 @@
 							"Solid": "string",
 							"VSCode": "string",
 							"Vue": "string"
-						}
+						},
+						"weird": true
 					},
 					"muted": {
 						"attr": true,
 						"attrChrome": true,
 						"attrFirefox": true,
+						"inherited": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
@@ -13286,6 +13375,7 @@
 						"attr": true,
 						"attrChrome": true,
 						"attrFirefox": true,
+						"inherited": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
@@ -13323,6 +13413,7 @@
 						"attr": true,
 						"attrChrome": true,
 						"attrFirefox": true,
+						"inherited": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
@@ -13386,6 +13477,7 @@
 						"attr": true,
 						"attrChrome": true,
 						"attrFirefox": true,
+						"inherited": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
@@ -13406,6 +13498,7 @@
 						"attr": true,
 						"attrChrome": true,
 						"attrFirefox": true,
+						"inherited": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
@@ -13426,6 +13519,7 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
+						"inherited": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
@@ -13947,6 +14041,7 @@
 						"attr": true,
 						"attrChrome": false,
 						"attrFirefox": true,
+						"experimental": true,
 						"prop": true,
 						"propChrome": false,
 						"propFirefox": true,
@@ -14747,6 +14842,7 @@
 						"attr": true,
 						"attrChrome": true,
 						"attrFirefox": true,
+						"inherited": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
@@ -14760,6 +14856,7 @@
 						"attr": true,
 						"attrChrome": true,
 						"attrFirefox": true,
+						"inherited": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
@@ -14773,6 +14870,7 @@
 						"attr": true,
 						"attrChrome": true,
 						"attrFirefox": true,
+						"inherited": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
@@ -15396,6 +15494,7 @@
 						"attr": true,
 						"attrChrome": true,
 						"attrFirefox": true,
+						"inherited": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
@@ -15409,6 +15508,7 @@
 						"attr": true,
 						"attrChrome": true,
 						"attrFirefox": true,
+						"inherited": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
@@ -15422,6 +15522,7 @@
 						"attr": true,
 						"attrChrome": true,
 						"attrFirefox": true,
+						"inherited": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
@@ -15817,6 +15918,7 @@
 						"attr": true,
 						"attrChrome": true,
 						"attrFirefox": true,
+						"inherited": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
@@ -15830,6 +15932,7 @@
 						"attr": true,
 						"attrChrome": true,
 						"attrFirefox": true,
+						"inherited": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
@@ -15843,6 +15946,7 @@
 						"attr": true,
 						"attrChrome": true,
 						"attrFirefox": true,
+						"inherited": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
@@ -46640,6 +46744,7 @@
 						"attr": true,
 						"attrChrome": false,
 						"attrFirefox": true,
+						"experimental": true,
 						"prop": true,
 						"propChrome": false,
 						"propFirefox": true,
@@ -46745,6 +46850,7 @@
 						"attr": true,
 						"attrChrome": false,
 						"attrFirefox": true,
+						"experimental": true,
 						"prop": true,
 						"propChrome": false,
 						"propFirefox": true,
@@ -47064,6 +47170,7 @@
 						"attr": true,
 						"attrChrome": true,
 						"attrFirefox": true,
+						"inherited": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
@@ -47077,6 +47184,7 @@
 						"attr": true,
 						"attrChrome": true,
 						"attrFirefox": true,
+						"inherited": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
@@ -47090,6 +47198,7 @@
 						"attr": true,
 						"attrChrome": true,
 						"attrFirefox": true,
+						"inherited": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
@@ -48047,7 +48156,6 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
-						"deprecated": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -48060,7 +48168,8 @@
 							"VSCode": "boolean",
 							"Voby": "boolean",
 							"Vue": "boolean | 'true' | 'false'"
-						}
+						},
+						"weird": true
 					},
 					"title": {
 						"attr": true,
@@ -48081,7 +48190,6 @@
 						"attr": true,
 						"attrChrome": true,
 						"attrFirefox": true,
-						"deprecated": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
@@ -48096,7 +48204,8 @@
 							"VSCode": "string",
 							"Voby": "string",
 							"Vue": "string"
-						}
+						},
+						"weird": true
 					}
 				},
 				"setters": ["SVGStyleElement.disabled", "SVGStyleElement.media", "SVGStyleElement.title", "SVGStyleElement.type"]
@@ -48124,6 +48233,7 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
+						"deprecated": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -48976,6 +49086,7 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
+						"deprecated": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -49096,6 +49207,7 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
+						"deprecated": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
@@ -54695,6 +54807,8 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
+						"deprecated": true,
+						"nonstandard": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
@@ -55099,10 +55213,20 @@
 			"interface": "PageTransitionEvent",
 			"name": "pagehide"
 		},
+		"pagereveal": {
+			"capitalized": "pagereveal",
+			"interface": "Event",
+			"name": "pagereveal"
+		},
 		"pageshow": {
 			"capitalized": "onPageShow",
 			"interface": "PageTransitionEvent",
 			"name": "pageshow"
+		},
+		"pageswap": {
+			"capitalized": "pageswap",
+			"interface": "Event",
+			"name": "pageswap"
 		},
 		"paste": {
 			"capitalized": "onPaste",

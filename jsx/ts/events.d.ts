@@ -134,7 +134,9 @@ interface WindowEventHandlersEventMap {
 	offline: Event
 	online: Event
 	pagehide: PageTransitionEvent
+	pagereveal: Event
 	pageshow: PageTransitionEvent
+	pageswap: Event
 	popstate: PopStateEvent
 	rejectionhandled: PromiseRejectionEvent
 	storage: StorageEvent

@@ -629,6 +629,7 @@ interface SVGAttributes<Target extends EventTarget = SVGElement> extends HTMLAtt
 	gradientTransform?: string
 	gradientUnits?: string
 	hanging?: number | string
+	height?: number | string
 	horizAdvX?: number | string
 	'horiz-adv-x'?: number | string
 	horizOriginX?: number | string
@@ -807,7 +808,7 @@ interface SVGAttributes<Target extends EventTarget = SVGElement> extends HTMLAtt
 	visibility?: number | string
 	vMathematical?: number | string
 	'v-mathematical'?: number | string
-	widths?: number | string
+	width?: number | string
 	wordSpacing?: number | string
 	'word-spacing'?: number | string
 	writingMode?: number | string
