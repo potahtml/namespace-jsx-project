@@ -119,12 +119,39 @@
 
   document.querySelector('input').oninput = e => {
     const search = e.target.value.trim().toLowerCase()
-    const elements = document.querySelectorAll('tbody tr')
-    for (const tr of [...elements]) {
+
+    // filter rows
+    const trs = document.querySelectorAll('tbody tr')
+    for (const tr of [...trs]) {
       tr.style.display =
         !search || tr.textContent.toLowerCase().includes(search)
           ? null
           : 'none'
+    }
+    // filter p
+    const ps = document.querySelectorAll('#content-root p')
+    for (const p of [...ps]) {
+      p.style.display =
+        !search || p.textContent.toLowerCase().includes(search)
+          ? null
+          : 'none'
+    }
+
+    // filter whole table and heading if nothing matched
+    const tables = document.querySelectorAll('table')
+    for (const table of [...tables]) {
+      if (
+        [...table.querySelectorAll('tbody tr')].some(
+          tr => tr.style.display !== 'none',
+        )
+      ) {
+        table.style.display = null
+        table.previousSibling.previousSibling.style.display = null
+
+        continue
+      }
+      table.style.display = 'none'
+      table.previousSibling.previousSibling.style.display = 'none'
     }
   }
 </script>
