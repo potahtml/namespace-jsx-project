@@ -302,11 +302,60 @@ export const deprecatedTags = {
 	'http://www.w3.org/2000/svg': [],
 }
 
-// confirmed deprecated
+// confirmed deprecated - needs MDN update
 
 export const deprecatedAttributes = {
+	// HTML
+
+	// deprecated https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes
+	'img.HTMLImageElement.intrinsicsize': true,
+
+	// deprecated https://developer.mozilla.org/en-US/docs/Web/HTML/Element/col#bgcolor
+	'col.HTMLTableColElement.bgcolor': true,
+
+	// deprecated https://developer.mozilla.org/en-US/docs/Web/HTML/Element/colgroup#bgcolor
+	'colgroup.HTMLTableColElement.bgcolor': true,
+
+	// non-standard deprecated https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/mediaGroup
+	'audio.HTMLAudioElement.mediagroup': true,
+	'video.HTMLVideoElement.mediagroup': true,
+	'track.HTMLTrackElement.mediagroup': true,
+
+	// deprecated https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#language
+	'script.HTMLScriptElement.language': true,
+
+	// deprecated https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form#accept
+	'form.HTMLFormElement.accept': true,
+
+	// SVG
+
+	// deprecated https://developer.mozilla.org/en-US/docs/Web/API/SVGStyleElement
+	'style.SVGStyleElement.type': true,
+
+	// MATHML
+
+	// deprecated https://developer.mozilla.org/en-US/docs/Web/MathML/Element/annotation-xml
+	'annotation-xml.MathMLElement.src': true,
+
+	// deprecated https://developer.mozilla.org/en-US/docs/Web/MathML/Element/annotation
+	'annotation.MathMLElement.src': true,
+
+	// deprecated https://developer.mozilla.org/en-US/docs/Web/MathML/Element/ms
+	'ms.MathMLElement.lquote': true,
+	'ms.MathMLElement.rquote': true,
+
+	// legacy deprecated https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mstyle
+	'mstyle.MathMLElement.scriptminsize': true,
+	'mstyle.MathMLElement.scriptsizemultiplier': true,
+
+	// deprecated https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes
+	'style.HTMLStyleElement.scoped': true,
+	'style.SVGStyleElement.scoped': true,
+
+	// not found in mdn
 	'iframe.HTMLIFrameElement.allowtransparency': true,
 
+	// not found in mdn
 	'keygen.HTMLUnknownElement.autofocus': true,
 	'keygen.HTMLUnknownElement.challenge': true,
 	'keygen.HTMLUnknownElement.disabled': true,
@@ -315,7 +364,8 @@ export const deprecatedAttributes = {
 	'keygen.HTMLUnknownElement.keytype': true,
 	'keygen.HTMLUnknownElement.name': true,
 
-	// external
+	// EXTERNAL
+
 	'webview.HTMLElement.blinkfeatures': true,
 	'webview.HTMLElement.disableguestresize': true,
 	'webview.HTMLElement.guestinstance': true,
@@ -324,44 +374,90 @@ export const deprecatedAttributes = {
 // needs MDN update
 
 export const weirdAttributes = {
-	// very old
-	'iframe.HTMLIFrameElement.allowtransparency': true,
-	'keygen.HTMLUnknownElement.autofocus': true,
-	'keygen.HTMLUnknownElement.challenge': true,
-	'keygen.HTMLUnknownElement.disabled': true,
-	'keygen.HTMLUnknownElement.form': true,
-	'keygen.HTMLUnknownElement.keyparams': true,
-	'keygen.HTMLUnknownElement.keytype': true,
-	'keygen.HTMLUnknownElement.name': true,
-
-	// html
-	'audio.HTMLAudioElement.mediagroup': true,
-	'col.HTMLTableColElement.bgcolor': true,
-	'colgroup.HTMLTableColElement.bgcolor': true,
-	'form.HTMLFormElement.accept': true,
 	'iframe.HTMLIFrameElement.seamless': true,
-	'img.HTMLImageElement.intrinsicsize': true,
+
+	'object.HTMLObjectElement.typemustmatch': true,
+
 	'menu.HTMLMenuElement.label': true,
 	'menu.HTMLMenuElement.type': true,
-	'object.HTMLObjectElement.typemustmatch': true,
-	'script.HTMLScriptElement.language': true,
-	'style.HTMLStyleElement.scoped': true,
-	'video.HTMLVideoElement.mediagroup': true,
-
-	// svg
-	'style.SVGStyleElement.scoped': true,
-	'style.SVGStyleElement.type': true,
-
-	// mathml
-	'annotation-xml.MathMLElement.src': true,
-	'annotation.MathMLElement.src': true,
-	'mo.MathMLElement.accent': true,
-	'ms.MathMLElement.lquote': true,
-	'ms.MathMLElement.rquote': true,
-	'mstyle.MathMLElement.scriptminsize': true,
-	'mstyle.MathMLElement.scriptsizemultiplier': true,
 }
 
+export const mdnSkip = [
+	// elementMDN tags
+	'__compat',
+	'mdn_url',
+	'spec_url',
+	'status',
+	'support',
+	'tags',
+	// elementMDN ??
+	'advanced_visible_child_selection',
+	'aspect_ratio_computed_from_attributes',
+	'hr_in_select',
+	'implicit_noopener',
+	'lquote_rquote_attributes',
+	'text_fragments',
+	'xlink_actuate',
+	'xlink_href',
+	'xlink_show',
+	'xlink_title',
+
+	// HTMLElement
+	'accessKey',
+	'accessKeyLabel',
+	'anchorElement',
+	'attachInternals',
+	'attributeStyleMap',
+	'autocapitalize',
+	'autocorrect',
+	'autofocus',
+	'beforetoggle_event',
+	'blur',
+	'change_event',
+	'click',
+	'command_event',
+	'contentEditable',
+	'dataset',
+	'dir',
+	'drag_event',
+	'dragend_event',
+	'dragenter_event',
+	'dragexit_event',
+	'draggable',
+	'dragleave_event',
+	'dragover_event',
+	'dragstart_event',
+	'drop_event',
+	'editContext',
+	'enterKeyHint',
+	'error_event',
+	'focus',
+	'hidden',
+	'hidePopover',
+	'inert',
+	'innerText',
+	'inputMode',
+	'isContentEditable',
+	'lang',
+	'nonce',
+	'offsetHeight',
+	'offsetLeft',
+	'offsetParent',
+	'offsetTop',
+	'offsetWidth',
+	'outerText',
+	'popover',
+	'showPopover',
+	'spellcheck',
+	'style',
+	'tabIndex',
+	'title',
+	'togglePopover',
+	'toggle_event',
+	'translate',
+	'virtualKeyboardPolicy',
+	'writingSuggestions',
+]
 export function ElementURL(ns, tagName) {
 	switch (ns) {
 		case 'http://www.w3.org/1999/xhtml': {
@@ -403,8 +499,10 @@ export function KeyURL(ns, tagName, inter, attr) {
 	return (
 		'https://developer.mozilla.org/en-US/docs/Web/API/' +
 		inter +
-		'/' +
-		attr
+		'#' +
+		inter.toLowerCase() +
+		'.' +
+		attr.toLowerCase()
 	)
 }
 

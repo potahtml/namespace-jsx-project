@@ -29,6 +29,7 @@ import {
 	ElementJSONURL,
 	weirdAttributes,
 	deprecatedTags,
+	mdnSkip,
 } from './data.js'
 
 import {
@@ -564,6 +565,18 @@ for (const ns in DATA.elements) {
 			tag.keys[k].experimental =
 				checkMDNPropValue(k, 'experimental') || undefined
 		}
+
+		// mark inherited when also lower case
+
+		const inherited = Object.keys(tag.keys)
+			.filter(x => tag.keys[x].inherited)
+			.map(x => x.toLowerCase())
+
+		for (const k in tag.keys) {
+			if (inherited.includes(k.toLowerCase())) {
+				tag.keys[k].inherited = true
+			}
+		}
 	}
 }
 
@@ -662,7 +675,7 @@ for (const ns in DATA.elements) {
 			const experimental = val.experimental ? '🧪' : ''
 			const nonstandard = val.nonstandard ? '🔥' : ''
 
-			let prop = `| ${deprecated} ${nonstandard} [${k}](${val.url}) ${inherited} ${experimental} ${weird} ${warn} `
+			let prop = `| ${deprecated} ${warn} [${k}](${val.url}) ${inherited} ${weird} ${experimental} ${nonstandard}  `
 
 			prop += ` | ${kind}`
 			for (const lib of columns) {
@@ -699,48 +712,42 @@ for (const ns in DATA.elements) {
 		}
 
 		// mdn
-
 		try {
-			const elementMDN = JSON.parse(
-				await fetchCached(ElementJSONURL(ns, tag)),
-			)
+			const settersNames = value.setters.map(x => x.split('.')[1])
 
-			const mdnkeys = unique([
-				Object.keys(
-					elementMDN[Object.keys(elementMDN)[0]]?.elements[tag]
-						?.__compat,
-				),
-				Object.keys(
-					elementMDN[Object.keys(elementMDN)[0]]?.elements[tag],
-				),
-			])
+			let mdnkeys = []
 
-			/*
-				bad idea, this includes inherited
-				try {
-					const interfaceMDN = JSON.parse(
-						await fetchCached(InterfaceJSONURL(value.interface)),
-					)
+			try {
+				const elementMDN = JSON.parse(
+					await fetchCached(ElementJSONURL(ns, tag)),
+				)
 
-					mdnkeys = unique([
-						mdnkeys,
-						Object.keys(interfaceMDN.api[value.interface]),
-					])
-				} catch (e) {}
-			*/
+				mdnkeys = unique([
+					Object.keys(
+						elementMDN[Object.keys(elementMDN)[0]]?.elements[tag]
+							?.__compat,
+					),
+					Object.keys(
+						elementMDN[Object.keys(elementMDN)[0]]?.elements[tag],
+					),
+				])
+			} catch (e) {}
 
-			const not = [
-				'__compat',
-				'mdn_url',
-				'spec_url',
-				'status',
-				'support',
-				'tags',
-			]
+			try {
+				const interfaceMDN = JSON.parse(
+					await fetchCached(InterfaceJSONURL(value.interface)),
+				)
+
+				mdnkeys = unique([
+					mdnkeys,
+					Object.keys(interfaceMDN.api[value.interface]),
+				])
+			} catch (e) {}
 
 			const notIncludedMDN = mdnkeys
 				.filter(x => !keys.includes(x.toLowerCase()))
-				.filter(x => !not.includes(x))
+				.filter(x => !mdnSkip.includes(x))
+				.filter(x => !settersNames.includes(x))
 
 			if (notIncludedMDN.length) {
 				keysTable +=
@@ -748,7 +755,7 @@ for (const ns in DATA.elements) {
 					notIncludedMDN
 						.map(
 							x =>
-								`[${x}](https://developer.mozilla.org/en-US/search?q=${x})`,
+								`[${x}](${KeyURL(ns, tag, value.interface, x.toLowerCase())})  `,
 						)
 						.join(', ') +
 					'\n\n'
