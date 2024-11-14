@@ -120,21 +120,28 @@
   document.querySelector('input').oninput = e => {
     const search = e.target.value.trim().toLowerCase()
 
+    if (!search) {
+      const elements = document.querySelectorAll('tr, table, p, h2')
+      for (const el of [...elements]) {
+        el.style.display = null
+      }
+      return
+    }
+
     // filter rows
     const trs = document.querySelectorAll('tbody tr')
     for (const tr of [...trs]) {
-      tr.style.display =
-        !search || tr.textContent.toLowerCase().includes(search)
-          ? null
-          : 'none'
+      tr.style.display = tr.textContent.toLowerCase().includes(search)
+        ? null
+        : 'none'
     }
+
     // filter p
     const ps = document.querySelectorAll('#content-root p')
     for (const p of [...ps]) {
-      p.style.display =
-        !search || p.textContent.toLowerCase().includes(search)
-          ? null
-          : 'none'
+      p.style.display = p.textContent.toLowerCase().includes(search)
+        ? null
+        : 'none'
     }
 
     // filter whole table and heading if nothing matched
