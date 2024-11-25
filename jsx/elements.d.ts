@@ -2199,6 +2199,12 @@ interface MathMLElements {
 	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
 	 */
 	semantics: MathMLAttributes<MathMLElement, MathMLSemanticsElementAttributes, MathMLElementEvents<MathMLElement>>
+	/**
+	 * @non-standard
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/menclose
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	menclose: MathMLAttributes<MathMLElement, MathMLMencloseElementAttributes, MathMLElementEvents<MathMLElement>>
 }
 interface MathMLDeprecatedElements {
 	/**
@@ -2209,12 +2215,7 @@ interface MathMLDeprecatedElements {
 	maction: MathMLAttributes<MathMLElement, MathMLMactionElementAttributes, MathMLElementEvents<MathMLElement>>
 	/**
 	 * @deprecated
-	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/menclose
-	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
-	 */
-	menclose: MathMLAttributes<MathMLElement, MathMLMencloseElementAttributes, MathMLElementEvents<MathMLElement>>
-	/**
-	 * @deprecated
+	 * @non-standard
 	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mfenced
 	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
 	 */

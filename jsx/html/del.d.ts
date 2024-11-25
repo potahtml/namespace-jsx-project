@@ -13,7 +13,7 @@ interface DelHTMLAttributes extends HTMLAttributes {
 // Preact - https://preactjs.com/
 interface DelHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
 	cite?: string
-	datetime: string
+	datetime?: string
 	dateTime?: string
 }
 

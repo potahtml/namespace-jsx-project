@@ -150,10 +150,10 @@ interface InputHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
 	height?: number | string
 	indeterminate?: boolean
 	list?: string
-	max?: string
+	max?: number | string
 	maxlength?: number
 	maxLength?: number
-	min?: string
+	min?: number | string
 	minlength?: number
 	minLength?: number
 	multiple?: boolean
