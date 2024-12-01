@@ -69,6 +69,7 @@ function xElement(props) {
           </a>
         </h3>
       </caption>
+
       <thead>
         <Show when="${Object.keys(attrprops).length}">
           <tr>
@@ -103,43 +104,43 @@ function xElement(props) {
             />`}
         </For>
       </tbody>
-      <Show
-        when="${element.notIncludedSetters.length +
-        element.notIncludedMDN.length}"
-      >
-        <caption class="footer">
-          <Show when="${element.notIncludedSetters.length}">
-            Setters Not Included:
-            <For each="${element.notIncludedSetters}"
-              >${value => {
-                const data = value.split('.')
-                return html`<a
-                  target="_blank"
-                  href="${KeyURL(element.name, data[0], data[1])}"
-                  >${data[1]}</a
-                >`
-              }}
-            </For>
-            <br />
-          </Show>
-          <Show when="${element.notIncludedMDN.length}">
-            MDN Not Included:
-            <For each="${element.notIncludedMDN}"
-              >${value =>
-                html`<a
-                  target="_blank"
-                  href="${KeyURL(
-                    element.name,
-                    element.interface,
-                    value,
-                  )}"
-                  >${value}</a
-                >`}
-            </For>
-          </Show>
-        </caption>
-      </Show>
     </table>
+    <Show
+      when="${element.notIncludedSetters.length +
+      element.notIncludedMDN.length}"
+    >
+      <caption class="footer">
+        <Show when="${element.notIncludedSetters.length}">
+          Setters Not Included:
+          <For each="${element.notIncludedSetters}"
+            >${value => {
+              const data = value.split('.')
+              return html`<a
+                target="_blank"
+                href="${KeyURL(element.name, data[0], data[1])}"
+                >${data[1]}</a
+              >`
+            }}
+          </For>
+          <br />
+        </Show>
+        <Show when="${element.notIncludedMDN.length}">
+          MDN Not Included:
+          <For each="${element.notIncludedMDN}"
+            >${value =>
+              html`<a
+                target="_blank"
+                href="${KeyURL(
+                  element.name,
+                  element.interface,
+                  value,
+                )}"
+                >${value}</a
+              >`}
+          </For>
+        </Show>
+      </caption>
+    </Show>
   </section>`
 }
 

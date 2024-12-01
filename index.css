@@ -43,6 +43,7 @@ caption.header {
 caption.footer {
 	caption-side: bottom;
 	padding: 10px;
+	display: inline-block;
 }
 
 thead {
