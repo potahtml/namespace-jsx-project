@@ -258,7 +258,7 @@
 					const search = target.value.trim().toLowerCase()
 
 					if (!search) {
-						const elements = document.querySelectorAll('tr, table')
+						const elements = document.querySelectorAll('tr, .table')
 						for (const el of [...elements]) {
 							el.style.display = null
 						}
@@ -283,10 +283,10 @@
 								tr => tr.style.display !== 'none',
 							)
 						) {
-							table.style.display = null
+							table.parentNode.style.display = null
 							continue
 						}
-						table.style.display = 'none'
+						table.parentNode.style.display = 'none'
 					}
 				}
 				// settings

@@ -116,7 +116,7 @@
 					const search = target.value.trim().toLowerCase()
 
 					if (!search) {
-						const elements = document.querySelectorAll('tr, table')
+						const elements = document.querySelectorAll('tr, .table')
 						for (const el of [...elements]) {
 							el.style.display = null
 						}
@@ -133,10 +133,10 @@
 					const tables = document.querySelectorAll('table')
 					for (const table of [...tables]) {
 						if ([...table.querySelectorAll('tbody tr')].some(tr => tr.style.display !== 'none')) {
-							table.style.display = null
+							table.parentNode.style.display = null
 							continue
 						}
-						table.style.display = 'none'
+						table.parentNode.style.display = 'none'
 					}
 				}
 				// settings
@@ -254,7 +254,7 @@
 					<a href="#HTMLPreElement.xmp">xmp </a>
 				</nav>
 
-				<section id="HTMLAnchorElement.a">
+				<section id="HTMLAnchorElement.a" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -548,7 +548,7 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLAnchorElement#htmlanchorelement.hash">hash</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLAnchorElement#htmlanchorelement.host">host</a>
@@ -571,9 +571,9 @@
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLAnchorElement#htmlanchorelement.hreftranslate">hreftranslate</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLAnchorElement#htmlanchorelement.origin">origin</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLAnchorElement#htmlanchorelement.tostring">toString</a>
-					</caption>
+					</footer>
 				</section>
-				<section id="HTMLElement.abbr">
+				<section id="HTMLElement.abbr" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -588,7 +588,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLElement.address">
+				<section id="HTMLElement.address" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -603,7 +603,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLAreaElement.area">
+				<section id="HTMLAreaElement.area" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -877,7 +877,7 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLAreaElement#htmlareaelement.hash">hash</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLAreaElement#htmlareaelement.host">host</a>
@@ -895,9 +895,9 @@
 						MDN Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLAreaElement#htmlareaelement.origin">origin</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLAreaElement#htmlareaelement.tostring">toString</a>
-					</caption>
+					</footer>
 				</section>
-				<section id="HTMLElement.article">
+				<section id="HTMLElement.article" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -912,7 +912,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLElement.aside">
+				<section id="HTMLElement.aside" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -927,7 +927,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLAudioElement.audio">
+				<section id="HTMLAudioElement.audio" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -1261,7 +1261,7 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement#htmlmediaelement.currenttime">currentTime</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement#htmlmediaelement.defaultmuted">defaultMuted</a>
@@ -1274,9 +1274,9 @@
 
 						MDN Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement#htmlaudioelement.audio">Audio</a>
-					</caption>
+					</footer>
 				</section>
-				<section id="HTMLElement.b">
+				<section id="HTMLElement.b" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -1291,7 +1291,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLBaseElement.base">
+				<section id="HTMLBaseElement.base" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -1351,7 +1351,7 @@
 						</tbody>
 					</table>
 				</section>
-				<section id="HTMLElement.bdi">
+				<section id="HTMLElement.bdi" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -1366,7 +1366,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLElement.bdo">
+				<section id="HTMLElement.bdo" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -1411,7 +1411,7 @@
 						</tbody>
 					</table>
 				</section>
-				<section id="HTMLQuoteElement.blockquote">
+				<section id="HTMLQuoteElement.blockquote" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -1456,7 +1456,7 @@
 						</tbody>
 					</table>
 				</section>
-				<section id="HTMLBodyElement.body">
+				<section id="HTMLBodyElement.body" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -2037,7 +2037,7 @@
 						</tbody>
 					</table>
 				</section>
-				<section id="HTMLBRElement.br">
+				<section id="HTMLBRElement.br" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -2083,7 +2083,7 @@
 						</tbody>
 					</table>
 				</section>
-				<section id="HTMLButtonElement.button">
+				<section id="HTMLButtonElement.button" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -2494,7 +2494,7 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLButtonElement#htmlbuttonelement.popovertargetelement">popoverTargetElement</a>
 
@@ -2509,9 +2509,9 @@
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLButtonElement#htmlbuttonelement.validationmessage">validationMessage</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLButtonElement#htmlbuttonelement.validity">validity</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLButtonElement#htmlbuttonelement.willvalidate">willValidate</a>
-					</caption>
+					</footer>
 				</section>
-				<section id="HTMLCanvasElement.canvas">
+				<section id="HTMLCanvasElement.canvas" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -2588,7 +2588,7 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement#htmlcanvaselement.mozopaque">mozOpaque</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement#htmlcanvaselement.mozprintcallback">mozPrintCallback</a>
@@ -2606,9 +2606,9 @@
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement#htmlcanvaselement.webglcontextcreationerror_event">webglcontextcreationerror_event</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement#htmlcanvaselement.webglcontextlost_event">webglcontextlost_event</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement#htmlcanvaselement.webglcontextrestored_event">webglcontextrestored_event</a>
-					</caption>
+					</footer>
 				</section>
-				<section id="HTMLTableCaptionElement.caption">
+				<section id="HTMLTableCaptionElement.caption" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -2654,7 +2654,7 @@
 						</tbody>
 					</table>
 				</section>
-				<section id="HTMLElement.cite">
+				<section id="HTMLElement.cite" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -2669,7 +2669,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLElement.code">
+				<section id="HTMLElement.code" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -2684,7 +2684,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLTableColElement.col">
+				<section id="HTMLTableColElement.col" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -2826,15 +2826,15 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableColElement#htmltablecolelement.ch">ch</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableColElement#htmltablecolelement.choff">chOff</a>
 
 						<br />
-					</caption>
+					</footer>
 				</section>
-				<section id="HTMLTableColElement.colgroup">
+				<section id="HTMLTableColElement.colgroup" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -2976,15 +2976,15 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableColElement#htmltablecolelement.ch">ch</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableColElement#htmltablecolelement.choff">chOff</a>
 
 						<br />
-					</caption>
+					</footer>
 				</section>
-				<section id="HTMLDataElement.data">
+				<section id="HTMLDataElement.data" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -3029,7 +3029,7 @@
 						</tbody>
 					</table>
 				</section>
-				<section id="HTMLDataListElement.datalist">
+				<section id="HTMLDataListElement.datalist" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -3044,12 +3044,12 @@
 						<tbody></tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						MDN Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLDataListElement#htmldatalistelement.options">options</a>
-					</caption>
+					</footer>
 				</section>
-				<section id="HTMLElement.dd">
+				<section id="HTMLElement.dd" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -3094,7 +3094,7 @@
 						</tbody>
 					</table>
 				</section>
-				<section id="HTMLModElement.del">
+				<section id="HTMLModElement.del" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -3169,7 +3169,7 @@
 						</tbody>
 					</table>
 				</section>
-				<section id="HTMLDetailsElement.details">
+				<section id="HTMLDetailsElement.details" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -3261,7 +3261,7 @@
 						</tbody>
 					</table>
 				</section>
-				<section id="HTMLElement.dfn">
+				<section id="HTMLElement.dfn" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -3276,7 +3276,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLDialogElement.dialog">
+				<section id="HTMLDialogElement.dialog" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -3369,7 +3369,7 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement#htmldialogelement.returnvalue">returnValue</a>
 
@@ -3381,9 +3381,9 @@
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement#htmldialogelement.close">close</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement#htmldialogelement.show">show</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement#htmldialogelement.showmodal">showModal</a>
-					</caption>
+					</footer>
 				</section>
-				<section id="HTMLDivElement.div">
+				<section id="HTMLDivElement.div" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -3429,7 +3429,7 @@
 						</tbody>
 					</table>
 				</section>
-				<section id="HTMLDListElement.dl">
+				<section id="HTMLDListElement.dl" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -3475,7 +3475,7 @@
 						</tbody>
 					</table>
 				</section>
-				<section id="HTMLElement.dt">
+				<section id="HTMLElement.dt" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -3490,7 +3490,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLElement.em">
+				<section id="HTMLElement.em" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -3505,7 +3505,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLEmbedElement.embed">
+				<section id="HTMLEmbedElement.embed" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -3628,12 +3628,12 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						MDN Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLEmbedElement#htmlembedelement.getsvgdocument">getSVGDocument</a>
-					</caption>
+					</footer>
 				</section>
-				<section id="HTMLFieldSetElement.fieldset">
+				<section id="HTMLFieldSetElement.fieldset" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -3708,7 +3708,7 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						MDN Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLFieldSetElement#htmlfieldsetelement.checkvalidity">checkValidity</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLFieldSetElement#htmlfieldsetelement.elements">elements</a>
@@ -3718,9 +3718,9 @@
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLFieldSetElement#htmlfieldsetelement.validationmessage">validationMessage</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLFieldSetElement#htmlfieldsetelement.validity">validity</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLFieldSetElement#htmlfieldsetelement.willvalidate">willValidate</a>
-					</caption>
+					</footer>
 				</section>
-				<section id="HTMLElement.figcaption">
+				<section id="HTMLElement.figcaption" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -3735,7 +3735,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLElement.figure">
+				<section id="HTMLElement.figure" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -3750,7 +3750,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLElement.footer">
+				<section id="HTMLElement.footer" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -3765,7 +3765,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLFormElement.form">
+				<section id="HTMLFormElement.form" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -4055,7 +4055,7 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement#htmlformelement.rellist">relList</a>
 
@@ -4072,9 +4072,9 @@
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement#htmlformelement.reset">reset</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement#htmlformelement.submit_event">submit_event</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement#htmlformelement.submit">submit</a>
-					</caption>
+					</footer>
 				</section>
-				<section id="HTMLHeadingElement.h1">
+				<section id="HTMLHeadingElement.h1" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -4120,7 +4120,7 @@
 						</tbody>
 					</table>
 				</section>
-				<section id="HTMLHeadingElement.h2">
+				<section id="HTMLHeadingElement.h2" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -4166,7 +4166,7 @@
 						</tbody>
 					</table>
 				</section>
-				<section id="HTMLHeadingElement.h3">
+				<section id="HTMLHeadingElement.h3" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -4212,7 +4212,7 @@
 						</tbody>
 					</table>
 				</section>
-				<section id="HTMLHeadingElement.h4">
+				<section id="HTMLHeadingElement.h4" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -4258,7 +4258,7 @@
 						</tbody>
 					</table>
 				</section>
-				<section id="HTMLHeadingElement.h5">
+				<section id="HTMLHeadingElement.h5" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -4304,7 +4304,7 @@
 						</tbody>
 					</table>
 				</section>
-				<section id="HTMLHeadingElement.h6">
+				<section id="HTMLHeadingElement.h6" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -4350,7 +4350,7 @@
 						</tbody>
 					</table>
 				</section>
-				<section id="HTMLHeadElement.head">
+				<section id="HTMLHeadElement.head" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -4396,7 +4396,7 @@
 						</tbody>
 					</table>
 				</section>
-				<section id="HTMLElement.header">
+				<section id="HTMLElement.header" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -4411,7 +4411,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLElement.hgroup">
+				<section id="HTMLElement.hgroup" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -4426,7 +4426,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLHRElement.hr">
+				<section id="HTMLHRElement.hr" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -4536,7 +4536,7 @@
 						</tbody>
 					</table>
 				</section>
-				<section id="HTMLHtmlElement.html">
+				<section id="HTMLHtmlElement.html" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -4613,7 +4613,7 @@
 						</tbody>
 					</table>
 				</section>
-				<section id="HTMLElement.i">
+				<section id="HTMLElement.i" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -4628,7 +4628,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLIFrameElement.iframe">
+				<section id="HTMLIFrameElement.iframe" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -5176,15 +5176,15 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						MDN Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLIFrameElement#htmliframeelement.contentdocument">contentDocument</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLIFrameElement#htmliframeelement.contentwindow">contentWindow</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLIFrameElement#htmliframeelement.featurepolicy">featurePolicy</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLIFrameElement#htmliframeelement.getsvgdocument">getSVGDocument</a>
-					</caption>
+					</footer>
 				</section>
-				<section id="HTMLImageElement.img">
+				<section id="HTMLImageElement.img" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -5692,7 +5692,7 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						MDN Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement#htmlimageelement.complete">complete</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement#htmlimageelement.currentsrc">currentSrc</a>
@@ -5702,9 +5702,9 @@
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement#htmlimageelement.naturalwidth">naturalWidth</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement#htmlimageelement.x">x</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement#htmlimageelement.y">y</a>
-					</caption>
+					</footer>
 				</section>
-				<section id="HTMLInputElement.input">
+				<section id="HTMLInputElement.input" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -6646,7 +6646,7 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement#htmlinputelement.files">files</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement#htmlinputelement.popovertargetelement">popoverTargetElement</a>
@@ -6679,9 +6679,9 @@
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement#htmlinputelement.validity">validity</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement#htmlinputelement.webkitentries">webkitEntries</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement#htmlinputelement.willvalidate">willValidate</a>
-					</caption>
+					</footer>
 				</section>
-				<section id="HTMLModElement.ins">
+				<section id="HTMLModElement.ins" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -6756,7 +6756,7 @@
 						</tbody>
 					</table>
 				</section>
-				<section id="HTMLElement.kbd">
+				<section id="HTMLElement.kbd" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -6771,7 +6771,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLLabelElement.label">
+				<section id="HTMLLabelElement.label" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -6846,12 +6846,12 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						MDN Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLLabelElement#htmllabelelement.control">control</a>
-					</caption>
+					</footer>
 				</section>
-				<section id="HTMLLegendElement.legend">
+				<section id="HTMLLegendElement.legend" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -6897,12 +6897,12 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						MDN Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLLegendElement#htmllegendelement.form">form</a>
-					</caption>
+					</footer>
 				</section>
-				<section id="HTMLLIElement.li">
+				<section id="HTMLLIElement.li" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -6964,7 +6964,7 @@
 						</tbody>
 					</table>
 				</section>
-				<section id="HTMLLinkElement.link">
+				<section id="HTMLLinkElement.link" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -7407,7 +7407,7 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLLinkElement#htmllinkelement.rellist">relList</a>
 
@@ -7415,9 +7415,9 @@
 
 						MDN Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLLinkElement#htmllinkelement.sheet">sheet</a>
-					</caption>
+					</footer>
 				</section>
-				<section id="HTMLElement.main">
+				<section id="HTMLElement.main" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -7432,7 +7432,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLMapElement.map">
+				<section id="HTMLMapElement.map" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -7477,12 +7477,12 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						MDN Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLMapElement#htmlmapelement.areas">areas</a>
-					</caption>
+					</footer>
 				</section>
-				<section id="HTMLElement.mark">
+				<section id="HTMLElement.mark" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -7497,7 +7497,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLMenuElement.menu">
+				<section id="HTMLMenuElement.menu" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -7576,7 +7576,7 @@
 						</tbody>
 					</table>
 				</section>
-				<section id="HTMLMetaElement.meta">
+				<section id="HTMLMetaElement.meta" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -7745,7 +7745,7 @@
 						</tbody>
 					</table>
 				</section>
-				<section id="HTMLMeterElement.meter">
+				<section id="HTMLMeterElement.meter" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -7880,12 +7880,12 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						MDN Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLMeterElement#htmlmeterelement.labels">labels</a>
-					</caption>
+					</footer>
 				</section>
-				<section id="HTMLElement.nav">
+				<section id="HTMLElement.nav" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -7900,7 +7900,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLElement.noscript">
+				<section id="HTMLElement.noscript" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -7915,7 +7915,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLObjectElement.object">
+				<section id="HTMLObjectElement.object" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -8306,7 +8306,7 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						MDN Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLObjectElement#htmlobjectelement.checkvalidity">checkValidity</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLObjectElement#htmlobjectelement.contentdocument">contentDocument</a>
@@ -8317,9 +8317,9 @@
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLObjectElement#htmlobjectelement.validationmessage">validationMessage</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLObjectElement#htmlobjectelement.validity">validity</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLObjectElement#htmlobjectelement.willvalidate">willValidate</a>
-					</caption>
+					</footer>
 				</section>
-				<section id="HTMLOListElement.ol">
+				<section id="HTMLOListElement.ol" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -8411,7 +8411,7 @@
 						</tbody>
 					</table>
 				</section>
-				<section id="HTMLOptGroupElement.optgroup">
+				<section id="HTMLOptGroupElement.optgroup" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -8471,7 +8471,7 @@
 						</tbody>
 					</table>
 				</section>
-				<section id="HTMLOptionElement.option">
+				<section id="HTMLOptionElement.option" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -8561,7 +8561,7 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLOptionElement#htmloptionelement.defaultselected">defaultSelected</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLOptionElement#htmloptionelement.text">text</a>
@@ -8572,9 +8572,9 @@
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLOptionElement#htmloptionelement.form">form</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLOptionElement#htmloptionelement.index">index</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLOptionElement#htmloptionelement.option">Option</a>
-					</caption>
+					</footer>
 				</section>
-				<section id="HTMLOutputElement.output">
+				<section id="HTMLOutputElement.output" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -8664,7 +8664,7 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLOutputElement#htmloutputelement.defaultvalue">defaultValue</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLOutputElement#htmloutputelement.value">value</a>
@@ -8681,9 +8681,9 @@
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLOutputElement#htmloutputelement.validationmessage">validationMessage</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLOutputElement#htmloutputelement.validity">validity</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLOutputElement#htmloutputelement.willvalidate">willValidate</a>
-					</caption>
+					</footer>
 				</section>
-				<section id="HTMLParagraphElement.p">
+				<section id="HTMLParagraphElement.p" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -8729,7 +8729,7 @@
 						</tbody>
 					</table>
 				</section>
-				<section id="HTMLPictureElement.picture">
+				<section id="HTMLPictureElement.picture" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -8744,7 +8744,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLPreElement.pre">
+				<section id="HTMLPreElement.pre" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -8822,7 +8822,7 @@
 						</tbody>
 					</table>
 				</section>
-				<section id="HTMLProgressElement.progress">
+				<section id="HTMLProgressElement.progress" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -8882,13 +8882,13 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						MDN Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLProgressElement#htmlprogresselement.labels">labels</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLProgressElement#htmlprogresselement.position">position</a>
-					</caption>
+					</footer>
 				</section>
-				<section id="HTMLQuoteElement.q">
+				<section id="HTMLQuoteElement.q" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -8933,7 +8933,7 @@
 						</tbody>
 					</table>
 				</section>
-				<section id="HTMLElement.rp">
+				<section id="HTMLElement.rp" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -8948,7 +8948,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLElement.rt">
+				<section id="HTMLElement.rt" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -8963,7 +8963,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLElement.ruby">
+				<section id="HTMLElement.ruby" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -8978,7 +8978,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLElement.s">
+				<section id="HTMLElement.s" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -8993,7 +8993,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLElement.samp">
+				<section id="HTMLElement.samp" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -9008,7 +9008,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLScriptElement.script">
+				<section id="HTMLScriptElement.script" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -9359,7 +9359,7 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLScriptElement#htmlscriptelement.htmlfor">htmlFor</a>
 
@@ -9367,9 +9367,9 @@
 
 						MDN Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLScriptElement#htmlscriptelement.supports_static">supports_static</a>
-					</caption>
+					</footer>
 				</section>
-				<section id="HTMLElement.search">
+				<section id="HTMLElement.search" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -9384,7 +9384,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLElement.section">
+				<section id="HTMLElement.section" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -9399,7 +9399,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLSelectElement.select">
+				<section id="HTMLSelectElement.select" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -9629,7 +9629,7 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLSelectElement#htmlselectelement.length">length</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLSelectElement#htmlselectelement.selectedindex">selectedIndex</a>
@@ -9652,9 +9652,9 @@
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLSelectElement#htmlselectelement.validationmessage">validationMessage</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLSelectElement#htmlselectelement.validity">validity</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLSelectElement#htmlselectelement.willvalidate">willValidate</a>
-					</caption>
+					</footer>
 				</section>
-				<section id="HTMLSlotElement.slot">
+				<section id="HTMLSlotElement.slot" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -9699,15 +9699,15 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						MDN Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLSlotElement#htmlslotelement.assign">assign</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLSlotElement#htmlslotelement.assignedelements">assignedElements</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLSlotElement#htmlslotelement.assignednodes">assignedNodes</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLSlotElement#htmlslotelement.slotchange_event">slotchange_event</a>
-					</caption>
+					</footer>
 				</section>
-				<section id="HTMLElement.small">
+				<section id="HTMLElement.small" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -9722,7 +9722,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLSourceElement.source">
+				<section id="HTMLSourceElement.source" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -9874,7 +9874,7 @@
 						</tbody>
 					</table>
 				</section>
-				<section id="HTMLSpanElement.span">
+				<section id="HTMLSpanElement.span" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -9889,7 +9889,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLElement.strong">
+				<section id="HTMLElement.strong" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -9904,7 +9904,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLStyleElement.style">
+				<section id="HTMLStyleElement.style" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -10027,7 +10027,7 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLStyleElement#htmlstyleelement.disabled">disabled</a>
 
@@ -10035,9 +10035,9 @@
 
 						MDN Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLStyleElement#htmlstyleelement.sheet">sheet</a>
-					</caption>
+					</footer>
 				</section>
-				<section id="HTMLElement.sub">
+				<section id="HTMLElement.sub" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -10052,7 +10052,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLElement.summary">
+				<section id="HTMLElement.summary" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -10067,12 +10067,12 @@
 						<tbody></tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						MDN Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement#htmlelement.display_list_item">display_list_item</a>
-					</caption>
+					</footer>
 				</section>
-				<section id="HTMLElement.sup">
+				<section id="HTMLElement.sup" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -10087,7 +10087,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLTableElement.table">
+				<section id="HTMLTableElement.table" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -10293,7 +10293,7 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableElement#htmltableelement.caption">caption</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableElement#htmltableelement.tfoot">tFoot</a>
@@ -10313,9 +10313,9 @@
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableElement#htmltableelement.insertrow">insertRow</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableElement#htmltableelement.rows">rows</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableElement#htmltableelement.tbodies">tBodies</a>
-					</caption>
+					</footer>
 				</section>
-				<section id="HTMLTableSectionElement.tbody">
+				<section id="HTMLTableSectionElement.tbody" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -10425,7 +10425,7 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableSectionElement#htmltablesectionelement.ch">ch</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableSectionElement#htmltablesectionelement.choff">chOff</a>
@@ -10436,9 +10436,9 @@
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableSectionElement#htmltablesectionelement.deleterow">deleteRow</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableSectionElement#htmltablesectionelement.insertrow">insertRow</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableSectionElement#htmltablesectionelement.rows">rows</a>
-					</caption>
+					</footer>
 				</section>
-				<section id="HTMLTableCellElement.td">
+				<section id="HTMLTableCellElement.td" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -10720,7 +10720,7 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableCellElement#htmltablecellelement.ch">ch</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableCellElement#htmltablecellelement.choff">chOff</a>
@@ -10729,9 +10729,9 @@
 
 						MDN Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableCellElement#htmltablecellelement.cellindex">cellIndex</a>
-					</caption>
+					</footer>
 				</section>
-				<section id="HTMLTemplateElement.template">
+				<section id="HTMLTemplateElement.template" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -10837,7 +10837,7 @@
 						</tbody>
 					</table>
 				</section>
-				<section id="HTMLTextAreaElement.textarea">
+				<section id="HTMLTextAreaElement.textarea" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -11291,7 +11291,7 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTextAreaElement#htmltextareaelement.selectiondirection">selectionDirection</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTextAreaElement#htmltextareaelement.selectionend">selectionEnd</a>
@@ -11314,9 +11314,9 @@
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTextAreaElement#htmltextareaelement.validationmessage">validationMessage</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTextAreaElement#htmltextareaelement.validity">validity</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTextAreaElement#htmltextareaelement.willvalidate">willValidate</a>
-					</caption>
+					</footer>
 				</section>
-				<section id="HTMLTableSectionElement.tfoot">
+				<section id="HTMLTableSectionElement.tfoot" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -11426,7 +11426,7 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableSectionElement#htmltablesectionelement.ch">ch</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableSectionElement#htmltablesectionelement.choff">chOff</a>
@@ -11437,9 +11437,9 @@
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableSectionElement#htmltablesectionelement.deleterow">deleteRow</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableSectionElement#htmltablesectionelement.insertrow">insertRow</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableSectionElement#htmltablesectionelement.rows">rows</a>
-					</caption>
+					</footer>
 				</section>
-				<section id="HTMLTableCellElement.th">
+				<section id="HTMLTableCellElement.th" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -11734,7 +11734,7 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableCellElement#htmltablecellelement.ch">ch</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableCellElement#htmltablecellelement.choff">chOff</a>
@@ -11743,9 +11743,9 @@
 
 						MDN Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableCellElement#htmltablecellelement.cellindex">cellIndex</a>
-					</caption>
+					</footer>
 				</section>
-				<section id="HTMLTableSectionElement.thead">
+				<section id="HTMLTableSectionElement.thead" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -11855,7 +11855,7 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableSectionElement#htmltablesectionelement.ch">ch</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableSectionElement#htmltablesectionelement.choff">chOff</a>
@@ -11866,9 +11866,9 @@
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableSectionElement#htmltablesectionelement.deleterow">deleteRow</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableSectionElement#htmltablesectionelement.insertrow">insertRow</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableSectionElement#htmltablesectionelement.rows">rows</a>
-					</caption>
+					</footer>
 				</section>
-				<section id="HTMLTimeElement.time">
+				<section id="HTMLTimeElement.time" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -11928,7 +11928,7 @@
 						</tbody>
 					</table>
 				</section>
-				<section id="HTMLTitleElement.title">
+				<section id="HTMLTitleElement.title" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -11943,14 +11943,14 @@
 						<tbody></tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTitleElement#htmltitleelement.text">text</a>
 
 						<br />
-					</caption>
+					</footer>
 				</section>
-				<section id="HTMLTableRowElement.tr">
+				<section id="HTMLTableRowElement.tr" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -12060,7 +12060,7 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableRowElement#htmltablerowelement.ch">ch</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableRowElement#htmltablerowelement.choff">chOff</a>
@@ -12073,9 +12073,9 @@
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableRowElement#htmltablerowelement.insertcell">insertCell</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableRowElement#htmltablerowelement.rowindex">rowIndex</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableRowElement#htmltablerowelement.sectionrowindex">sectionRowIndex</a>
-					</caption>
+					</footer>
 				</section>
-				<section id="HTMLTrackElement.track">
+				<section id="HTMLTrackElement.track" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -12398,14 +12398,14 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						MDN Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTrackElement#htmltrackelement.cuechange_event">cuechange_event</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTrackElement#htmltrackelement.readystate">readyState</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLTrackElement#htmltrackelement.track">track</a>
-					</caption>
+					</footer>
 				</section>
-				<section id="HTMLElement.u">
+				<section id="HTMLElement.u" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -12420,7 +12420,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLUListElement.ul">
+				<section id="HTMLUListElement.ul" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -12482,7 +12482,7 @@
 						</tbody>
 					</table>
 				</section>
-				<section id="HTMLElement.var">
+				<section id="HTMLElement.var" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -12497,7 +12497,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLVideoElement.video">
+				<section id="HTMLVideoElement.video" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -12952,7 +12952,7 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement#htmlmediaelement.currenttime">currentTime</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement#htmlmediaelement.defaultmuted">defaultMuted</a>
@@ -12979,9 +12979,9 @@
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#htmlvideoelement.resize_event">resize_event</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#htmlvideoelement.videoheight">videoHeight</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#htmlvideoelement.videowidth">videoWidth</a>
-					</caption>
+					</footer>
 				</section>
-				<section id="HTMLElement.wbr">
+				<section id="HTMLElement.wbr" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -12996,7 +12996,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLElement.webview">
+				<section id="HTMLElement.webview" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -13349,7 +13349,7 @@
 					</table>
 				</section>
 
-				<section id="HTMLElement.acronym">
+				<section id="HTMLElement.acronym" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -13365,7 +13365,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLUnknownElement.applet">
+				<section id="HTMLUnknownElement.applet" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -13381,7 +13381,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLElement.basefont">
+				<section id="HTMLElement.basefont" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -13397,7 +13397,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLUnknownElement.bgsound">
+				<section id="HTMLUnknownElement.bgsound" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -13413,7 +13413,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLElement.big">
+				<section id="HTMLElement.big" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -13429,7 +13429,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLUnknownElement.blink">
+				<section id="HTMLUnknownElement.blink" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -13445,7 +13445,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLElement.center">
+				<section id="HTMLElement.center" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -13461,7 +13461,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLDirectoryElement.dir">
+				<section id="HTMLDirectoryElement.dir" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -13508,7 +13508,7 @@
 						</tbody>
 					</table>
 				</section>
-				<section id="HTMLFontElement.font">
+				<section id="HTMLFontElement.font" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -13587,7 +13587,7 @@
 						</tbody>
 					</table>
 				</section>
-				<section id="HTMLFrameElement.frame">
+				<section id="HTMLFrameElement.frame" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -13746,13 +13746,13 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						MDN Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLFrameElement#htmlframeelement.contentdocument">contentDocument</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLFrameElement#htmlframeelement.contentwindow">contentWindow</a>
-					</caption>
+					</footer>
 				</section>
-				<section id="HTMLFrameSetElement.frameset">
+				<section id="HTMLFrameSetElement.frameset" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -14176,7 +14176,7 @@
 						</tbody>
 					</table>
 				</section>
-				<section id="HTMLUnknownElement.isindex">
+				<section id="HTMLUnknownElement.isindex" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -14192,7 +14192,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLUnknownElement.keygen">
+				<section id="HTMLUnknownElement.keygen" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -14383,7 +14383,7 @@
 						</tbody>
 					</table>
 				</section>
-				<section id="HTMLPreElement.listing">
+				<section id="HTMLPreElement.listing" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -14430,7 +14430,7 @@
 						</tbody>
 					</table>
 				</section>
-				<section id="HTMLMarqueeElement.marquee">
+				<section id="HTMLMarqueeElement.marquee" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -14701,16 +14701,16 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						MDN Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLMarqueeElement#htmlmarqueeelement.bounce_event">bounce_event</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLMarqueeElement#htmlmarqueeelement.finish_event">finish_event</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLMarqueeElement#htmlmarqueeelement.start_event">start_event</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLMarqueeElement#htmlmarqueeelement.start">start</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLMarqueeElement#htmlmarqueeelement.stop">stop</a>
-					</caption>
+					</footer>
 				</section>
-				<section id="HTMLUnknownElement.menuitem">
+				<section id="HTMLUnknownElement.menuitem" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -14726,7 +14726,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLUnknownElement.multicol">
+				<section id="HTMLUnknownElement.multicol" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -14742,7 +14742,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLUnknownElement.nextid">
+				<section id="HTMLUnknownElement.nextid" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -14758,7 +14758,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLElement.nobr">
+				<section id="HTMLElement.nobr" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -14774,7 +14774,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLElement.noembed">
+				<section id="HTMLElement.noembed" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -14790,7 +14790,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLElement.noframes">
+				<section id="HTMLElement.noframes" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -14806,7 +14806,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLUnknownElement.noindex">
+				<section id="HTMLUnknownElement.noindex" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -14822,7 +14822,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLParamElement.param">
+				<section id="HTMLParamElement.param" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -14917,7 +14917,7 @@
 						</tbody>
 					</table>
 				</section>
-				<section id="HTMLElement.plaintext">
+				<section id="HTMLElement.plaintext" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -14933,7 +14933,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLElement.rb">
+				<section id="HTMLElement.rb" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -14949,7 +14949,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLElement.rtc">
+				<section id="HTMLElement.rtc" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -14965,7 +14965,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLUnknownElement.spacer">
+				<section id="HTMLUnknownElement.spacer" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -14981,7 +14981,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLElement.strike">
+				<section id="HTMLElement.strike" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -14997,7 +14997,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLElement.tt">
+				<section id="HTMLElement.tt" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -15013,7 +15013,7 @@
 						<tbody></tbody>
 					</table>
 				</section>
-				<section id="HTMLPreElement.xmp">
+				<section id="HTMLPreElement.xmp" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -15071,7 +15071,7 @@
 					<a href="#MathMLElement.mfenced">mfenced </a>
 				</nav>
 
-				<section id="MathMLElement.annotation">
+				<section id="MathMLElement.annotation" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -15133,14 +15133,14 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce">nonce</a>
 
 						<br />
-					</caption>
+					</footer>
 				</section>
-				<section id="MathMLElement.annotation-xml">
+				<section id="MathMLElement.annotation-xml" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -15202,14 +15202,14 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce">nonce</a>
 
 						<br />
-					</caption>
+					</footer>
 				</section>
-				<section id="MathMLElement.math">
+				<section id="MathMLElement.math" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -15254,14 +15254,14 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce">nonce</a>
 
 						<br />
-					</caption>
+					</footer>
 				</section>
-				<section id="MathMLElement.menclose">
+				<section id="MathMLElement.menclose" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -15308,14 +15308,14 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce">nonce</a>
 
 						<br />
-					</caption>
+					</footer>
 				</section>
-				<section id="MathMLElement.merror">
+				<section id="MathMLElement.merror" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -15330,14 +15330,14 @@
 						<tbody></tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce">nonce</a>
 
 						<br />
-					</caption>
+					</footer>
 				</section>
-				<section id="MathMLElement.mfrac">
+				<section id="MathMLElement.mfrac" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -15415,14 +15415,14 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce">nonce</a>
 
 						<br />
-					</caption>
+					</footer>
 				</section>
-				<section id="MathMLElement.mi">
+				<section id="MathMLElement.mi" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -15467,14 +15467,14 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce">nonce</a>
 
 						<br />
-					</caption>
+					</footer>
 				</section>
-				<section id="MathMLElement.mmultiscripts">
+				<section id="MathMLElement.mmultiscripts" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -15536,14 +15536,14 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce">nonce</a>
 
 						<br />
-					</caption>
+					</footer>
 				</section>
-				<section id="MathMLElement.mn">
+				<section id="MathMLElement.mn" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -15558,14 +15558,14 @@
 						<tbody></tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce">nonce</a>
 
 						<br />
-					</caption>
+					</footer>
 				</section>
-				<section id="MathMLElement.mo">
+				<section id="MathMLElement.mo" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -15777,7 +15777,7 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce">nonce</a>
 
@@ -15786,9 +15786,9 @@
 						MDN Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.named_spaces">named_spaces</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonzero_unitless_values">nonzero_unitless_values</a>
-					</caption>
+					</footer>
 				</section>
-				<section id="MathMLElement.mover">
+				<section id="MathMLElement.mover" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -15833,14 +15833,14 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce">nonce</a>
 
 						<br />
-					</caption>
+					</footer>
 				</section>
-				<section id="MathMLElement.mpadded">
+				<section id="MathMLElement.mpadded" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -15945,7 +15945,7 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce">nonce</a>
 
@@ -15957,9 +15957,9 @@
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.pseudo_units">pseudo_units</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.relative_values">relative_values</a>
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.scale_factor">scale_factor</a>
-					</caption>
+					</footer>
 				</section>
-				<section id="MathMLElement.mphantom">
+				<section id="MathMLElement.mphantom" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -15974,14 +15974,14 @@
 						<tbody></tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce">nonce</a>
 
 						<br />
-					</caption>
+					</footer>
 				</section>
-				<section id="MathMLElement.mprescripts">
+				<section id="MathMLElement.mprescripts" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -15996,14 +15996,14 @@
 						<tbody></tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce">nonce</a>
 
 						<br />
-					</caption>
+					</footer>
 				</section>
-				<section id="MathMLElement.mroot">
+				<section id="MathMLElement.mroot" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -16018,14 +16018,14 @@
 						<tbody></tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce">nonce</a>
 
 						<br />
-					</caption>
+					</footer>
 				</section>
-				<section id="MathMLElement.mrow">
+				<section id="MathMLElement.mrow" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -16040,14 +16040,14 @@
 						<tbody></tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce">nonce</a>
 
 						<br />
-					</caption>
+					</footer>
 				</section>
-				<section id="MathMLElement.ms">
+				<section id="MathMLElement.ms" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -16109,14 +16109,14 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce">nonce</a>
 
 						<br />
-					</caption>
+					</footer>
 				</section>
-				<section id="MathMLElement.mspace">
+				<section id="MathMLElement.mspace" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -16191,7 +16191,7 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce">nonce</a>
 
@@ -16199,9 +16199,9 @@
 
 						MDN Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.named_spaces">named_spaces</a>
-					</caption>
+					</footer>
 				</section>
-				<section id="MathMLElement.msqrt">
+				<section id="MathMLElement.msqrt" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -16216,14 +16216,14 @@
 						<tbody></tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce">nonce</a>
 
 						<br />
-					</caption>
+					</footer>
 				</section>
-				<section id="MathMLElement.mstyle">
+				<section id="MathMLElement.mstyle" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -16365,14 +16365,14 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce">nonce</a>
 
 						<br />
-					</caption>
+					</footer>
 				</section>
-				<section id="MathMLElement.msub">
+				<section id="MathMLElement.msub" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -16418,14 +16418,14 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce">nonce</a>
 
 						<br />
-					</caption>
+					</footer>
 				</section>
-				<section id="MathMLElement.msubsup">
+				<section id="MathMLElement.msubsup" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -16487,14 +16487,14 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce">nonce</a>
 
 						<br />
-					</caption>
+					</footer>
 				</section>
-				<section id="MathMLElement.msup">
+				<section id="MathMLElement.msup" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -16540,14 +16540,14 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce">nonce</a>
 
 						<br />
-					</caption>
+					</footer>
 				</section>
-				<section id="MathMLElement.mtable">
+				<section id="MathMLElement.mtable" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -16747,14 +16747,14 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce">nonce</a>
 
 						<br />
-					</caption>
+					</footer>
 				</section>
-				<section id="MathMLElement.mtd">
+				<section id="MathMLElement.mtd" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -16848,14 +16848,14 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce">nonce</a>
 
 						<br />
-					</caption>
+					</footer>
 				</section>
-				<section id="MathMLElement.mtext">
+				<section id="MathMLElement.mtext" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -16870,14 +16870,14 @@
 						<tbody></tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce">nonce</a>
 
 						<br />
-					</caption>
+					</footer>
 				</section>
-				<section id="MathMLElement.mtr">
+				<section id="MathMLElement.mtr" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -16941,14 +16941,14 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce">nonce</a>
 
 						<br />
-					</caption>
+					</footer>
 				</section>
-				<section id="MathMLElement.munder">
+				<section id="MathMLElement.munder" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -16993,14 +16993,14 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce">nonce</a>
 
 						<br />
-					</caption>
+					</footer>
 				</section>
-				<section id="MathMLElement.munderover">
+				<section id="MathMLElement.munderover" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -17060,14 +17060,14 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce">nonce</a>
 
 						<br />
-					</caption>
+					</footer>
 				</section>
-				<section id="MathMLElement.semantics">
+				<section id="MathMLElement.semantics" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -17082,15 +17082,15 @@
 						<tbody></tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce">nonce</a>
 
 						<br />
-					</caption>
+					</footer>
 				</section>
 
-				<section id="MathMLElement.maction">
+				<section id="MathMLElement.maction" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -17153,14 +17153,14 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce">nonce</a>
 
 						<br />
-					</caption>
+					</footer>
 				</section>
-				<section id="MathMLElement.mfenced">
+				<section id="MathMLElement.mfenced" class="table">
 					<table>
 						<caption>
 							<h3>
@@ -17236,12 +17236,12 @@
 						</tbody>
 					</table>
 
-					<caption class="footer">
+					<footer>
 						Setters Not Included:
 						<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce">nonce</a>
 
 						<br />
-					</caption>
+					</footer>
 				</section>
 			</details>
 		</section>

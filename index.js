@@ -50,6 +50,7 @@ function xElement(props) {
 
   return html` <section
     id="${element.interface + '.' + element.name}"
+    class="table"
   >
     <table>
       <caption>
@@ -109,7 +110,7 @@ function xElement(props) {
       when="${element.notIncludedSetters.length +
       element.notIncludedMDN.length}"
     >
-      <caption class="footer">
+      <footer>
         <Show when="${element.notIncludedSetters.length}">
           Setters Not Included:
           <For each="${element.notIncludedSetters}"
@@ -139,7 +140,7 @@ function xElement(props) {
               >`}
           </For>
         </Show>
-      </caption>
+      </footer>
     </Show>
   </section>`
 }

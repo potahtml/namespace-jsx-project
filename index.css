@@ -36,12 +36,10 @@ caption {
 	padding-bottom: 10px;
 	position: sticky;
 	top: 0px;
-}
-caption.header {
 	caption-side: top;
 }
-caption.footer {
-	caption-side: bottom;
+
+footer {
 	padding: 10px;
 	display: inline-block;
 }
