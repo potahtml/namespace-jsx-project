@@ -109,6 +109,9 @@ h3 {
 body[data-table-fixed='yes'] table {
 	table-layout: fixed;
 }
+body[data-table-fixed='yes'] table td[nowrap] {
+	white-space: normal;
+}
 
 body[data-solid='false'] [data-col='Solid'],
 body[data-pota='false'] [data-col='Pota'],
