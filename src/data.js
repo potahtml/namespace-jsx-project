@@ -527,10 +527,7 @@ export function ElementJSONURL(ns, tagName) {
 	}
 }
 
-export const browserData = async (
-	browserData,
-	browser = 'chrome',
-) => {
+export const startBrowser = async (browser = 'chrome') => {
 	const navigatorInstance = await puppeteer.launch({
 		headless: true,
 		browser: browser,
@@ -542,7 +539,7 @@ export const browserData = async (
 			'--disable-client-side-phishing-detection',
 			'--disable-default-apps',
 			'--disable-extensions',
-			'--disable-features=TranslateUI,Translate,InfiniteSessionRestore',
+			'--disable-features=TranslateUI,Translate,InfiniteSessionRestore,IsolateOrigins',
 			'--disable-infobars',
 			'--disable-ipc-flooding-protection',
 			'--disable-notifications',
@@ -553,12 +550,38 @@ export const browserData = async (
 			'--no-default-browser-check',
 			'--no-first-run',
 			'--start-maximized',
+			'--disable-web-security',
+			'--no-sandbox',
 		],
 		protocolTimeout: 300_000,
 		defaultViewport: null,
 	})
 
 	const page = await navigatorInstance.newPage()
+	return [navigatorInstance, page]
+}
+export const fetchTable = async file => {
+	const [navigatorInstance, page] = await startBrowser()
+
+	const url = 'file:///' + process.cwd().replace(/\\/g, '/') + file
+
+	await page.goto(url, {
+		waitUntil: 'networkidle0',
+	})
+	await new Promise(resolve => setTimeout(resolve, 10000))
+	const result = await page.evaluate(() => {
+		return '<!DOCTYPE html>' + document.documentElement.outerHTML
+	})
+
+	navigatorInstance.close()
+
+	return result
+}
+export const browserData = async (
+	browserData,
+	browser = 'chrome',
+) => {
+	const [navigatorInstance, page] = await startBrowser(browser)
 
 	await page.exposeFunction('getData', () => browserData)
 
