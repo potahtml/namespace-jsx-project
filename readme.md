@@ -1,7 +1,5 @@
 # The `namespace JSX` Project
 
-The ultimate goal of this project is to become obsolete.
-
 ## Context
 
 `namespace JSX` provides typings for `attributes` and `properties` in
@@ -30,7 +28,7 @@ The most _reliable_, _complete_ and _condensed_ source of data comes
 from the `namespace JSX` files of various modern JavaScript
 frameworks.
 
-Unfortunately, a `namespace JSX` files tend to be "write once and
+Unfortunately, a `namespace JSX` files tend to be a "write once and
 forget" files, rarely updated unless the project becomes widely
 adopted. This is because there's no efficient way to generate or track
 updates for these files automatically.
@@ -47,15 +45,16 @@ consumable format.
 This project helps track some of the most popular frameworks
 `namespace JSX` by parsing, mapping (when necessary), and merging
 their interfaces into a unified structure. It also uses VSCode
-LSP-HTML and brute forces chrome element setters to see if a property
-is reflected as an attribute.
+LSP-HTML and brute forces Chrome/Firefox element setters to see if a
+property is reflected as an attribute.
 
 This makes it easier to quickly track and visualize whether any
 attribute or property for an HTML, SVG, or MathML element has been
-added or updated. So far, that's better than nothing. An attempt to
-unify the efforts dedicated to updating this data.
+added or updated. So far, that's better than nothing.
 
-Since the project maps interfaces for tag names, attributes, and
+An attempt to unify the efforts dedicated to updating this data.
+
+Since this project maps interfaces for tag names, attributes, and
 possible values, there's potential to enhance this data by adding
 descriptions for what each attribute or property does, deprecation
 notices, links to MDN, and more.
@@ -76,9 +75,9 @@ List of frameworks so far: Solid, Voby, Vue, Preact, React.
 
 ## Usage
 
-To use this project, simply use `jsx/data.json` or check the commit
+To use this project, simply use `./jsx/data.json` or check the commit
 list for this file
-https://github.com/potahtml/namespace-jsx-project/blob/master/jsx/readme.md
+https://github.com/potahtml/namespace-jsx-project/commits/master/jsx/data.json
 . Over time, I will be committing "updates" that show the diffs
 whenever a framework's `namespace JSX` changes. At least, that's the
 idea!
@@ -103,8 +102,6 @@ idea!
 
 - add aria attributes
 - add global attributes
-- find out where are the enumerated attributes in chromium/firefox
-  source, any ideas?
 
 ## Related
 
@@ -116,9 +113,9 @@ idea!
 
 ## Sponsors
 
-<a href="https://www.solidjs.com/" target="_blank"><img src="https://www.solidjs.com/img/logo/without-wordmark/logo.png" width="100"></a>
-
-Please Sponsor! https://opencollective.com/tito-bouzout
-
 With enough support, I'll be able to dedicate more time to this
 project.
+
+<a href="https://www.solidjs.com/" target="_blank"><img src="https://www.solidjs.com/img/logo/without-wordmark/logo.png" width="100"></a>
+
+Sponsors welcome at https://opencollective.com/tito-bouzout thanks!
