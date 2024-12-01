@@ -47,6 +47,7 @@ interface AreaHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
 	coords?: string
 	download?: any
 	href?: string
+	hreflang?: string
 	hrefLang?: string
 	media?: string
 	referrerpolicy?: '' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'

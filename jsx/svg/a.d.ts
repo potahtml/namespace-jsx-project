@@ -42,6 +42,7 @@ interface AnchorHTMLAttributes extends HTMLAttributes {
 interface AnchorHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
 	download?: any
 	href?: string
+	hreflang?: string
 	hrefLang?: string
 	media?: string
 	ping?: string

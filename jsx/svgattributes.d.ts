@@ -634,6 +634,9 @@ interface SVGAttributes<Target extends EventTarget = SVGElement> extends HTMLAtt
 	'horiz-adv-x'?: number | string
 	horizOriginX?: number | string
 	'horiz-origin-x'?: number | string
+	href?: string
+	hreflang?: string
+	hrefLang?: string
 	ideographic?: number | string
 	imageRendering?: number | string
 	'image-rendering'?: number | string
@@ -774,6 +777,7 @@ interface SVGAttributes<Target extends EventTarget = SVGElement> extends HTMLAtt
 	transform?: string
 	transformOrigin?: string
 	'transform-origin'?: string
+	type?: string
 	u1?: number | string
 	u2?: number | string
 	underlinePosition?: number | string

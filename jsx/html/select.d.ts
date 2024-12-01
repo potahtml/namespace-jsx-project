@@ -42,6 +42,7 @@ interface SelectHTMLAttributes extends HTMLAttributes {
 interface SelectHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
 	autocomplete?: string
 	autoComplete?: string
+	defaultValue?: string | number
 	disabled?: boolean
 	form?: string
 	multiple?: boolean

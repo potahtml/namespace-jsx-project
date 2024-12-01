@@ -133,7 +133,7 @@ interface InputHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
 	capture?: 'user' | 'environment' // https://www.w3.org/TR/html-media-capture/#the-capture-attribute
 	checked?: boolean
 	defaultChecked?: boolean
-	defaultValue?: string
+	defaultValue?: string | number
 	disabled?: boolean
 	enterKeyHint?: 'enter' | 'done' | 'go' | 'next' | 'previous' | 'search' | 'send'
 	form?: string
