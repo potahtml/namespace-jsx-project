@@ -30,6 +30,7 @@ import {
 	weirdAttributes,
 	deprecatedTags,
 	mdnSkip,
+	fetchTable,
 } from './data.js'
 
 import {
@@ -374,6 +375,8 @@ const firefox = await browserData(browserElements, 'firefox')
 for (const ns in DATA.elements) {
 	for (const tagName in DATA.elements[ns]) {
 		const tag = DATA.elements[ns][tagName]
+		tag.name = tagName
+		tag.namespace = ns
 		tag.elementURL = ElementURL(ns, tagName)
 		tag.description = ''
 		tag.interface = chrome[ns].elements[tagName].interface
@@ -498,6 +501,8 @@ for (const ns in DATA.elements) {
 		tag.setters.sort()
 
 		for (const k in tag.keys) {
+			tag.keys[k].name = k
+
 			// deprecation
 			tag.keys[k].deprecated =
 				deprecatedAttributes[
@@ -564,6 +569,15 @@ for (const ns in DATA.elements) {
 
 			tag.keys[k].experimental =
 				checkMDNPropValue(k, 'experimental') || undefined
+
+			tag.keys[k].warn =
+				/[A-Z]/.test(k) &&
+				// svg is XML so it has attributes with uppercase letters
+				ns !== 'http://www.w3.org/2000/svg' &&
+				tag !== 'webview' &&
+				!tag.keys[k].prop
+					? true
+					: undefined
 		}
 
 		// mark inherited when also lower case
@@ -577,51 +591,57 @@ for (const ns in DATA.elements) {
 				tag.keys[k].inherited = true
 			}
 		}
+
+		// setters not included
+		const keys = Object.keys(tag.keys).map(x => x.toLowerCase())
+
+		tag.notIncludedSetters = tag.setters.filter(
+			x => !keys.includes(x.split('.')[1].toLowerCase()),
+		)
+		tag.notIncludedMDN = []
+
+		// mdn
+		try {
+			const settersNames = tag.setters.map(x => x.split('.')[1])
+
+			let mdnkeys = []
+
+			try {
+				const elementMDN = JSON.parse(
+					await fetchCached(ElementJSONURL(ns, tag.name)),
+				)
+
+				mdnkeys = unique([
+					Object.keys(
+						elementMDN[Object.keys(elementMDN)[0]]?.elements[tag.name]
+							?.__compat,
+					),
+					Object.keys(
+						elementMDN[Object.keys(elementMDN)[0]]?.elements[
+							tag.name
+						],
+					),
+				])
+			} catch (e) {}
+
+			try {
+				const interfaceMDN = JSON.parse(
+					await fetchCached(InterfaceJSONURL(tag.interface)),
+				)
+
+				mdnkeys = unique([
+					mdnkeys,
+					Object.keys(interfaceMDN.api[tag.interface]),
+				])
+			} catch (e) {}
+
+			tag.notIncludedMDN = mdnkeys
+				.filter(x => !keys.includes(x.toLowerCase()))
+				.filter(x => !mdnSkip.includes(x))
+				.filter(x => !settersNames.includes(x))
+		} catch (e) {}
 	}
 }
-
-write(`./jsx/data.json`, stringifySorted(DATA))
-
-// create table.md
-
-let keysTable = `
-# namespace JSX Elements Table
-
-This file is generated using \`./data.json\`. The table is automated and generated on demand, with live data taken from the frameworks repos, mdn, and browsers via puppeteer.  Very few of the data is hardcoded (for example some of the obsolete attributes/properties/tags) that no longer exists in MDN.
-
-The possible \`tagNames\` come from a mashup between frameworks and TypeScript \`TagNamesMaps\` data.
-
-The \`interface\` names comes from \`document.createElementNS(ns, tagName).constructor.name\` which is more accurate than typescript.
-
-Chrome/Firefox \`attributes\` come from brute-forcing the element \`setters\` till an \`attribute\` is added. The name of the \`attribute\` is taken as \`key\`. When something is marked as \`prop\` it means Chrome or Firefox has a setter for it.
-
-- 🗑️ indicates that the \`tag\` or \`attribute\` is deprecated (live from mdn + hardcoded)
-- 🛑 indicates that the \`key\` resembles a \`prop\` but such a prop does not exist. Setting \`node.propName = value\` will not produce the expected outcome; instead, \`setAttribute\` should be used. It's strongly discouraged for frameworks to make up non-existent properties(keys with case [besides events such onClick]), as this leads to confusion. Example: \`autoFocus\` doesnt exists, it should be \`autofocus\`.
-- 🔗 indicates the \`prop\` it's inherited (from browser prototype chain)
-- 🧪 indicates the \`key\` it's experimental (live from mdn)
-- 🔥 indicates the \`key\` it's non-standard (live from mdn)
-- 🤷‍♀️ indicates something weird is going on with \`key\` (to be investigated)
-
-This is an attempt to unify the effort required to update this information.
-
-## Data Links:
-
-- https://solidjs.com/
-- https://github.com/potahtml/pota
-- https://github.com/vobyjs/voby
-- https://vuejs.org/
-- https://preactjs.com/
-- https://react.dev/
-- https://github.com/microsoft/vscode-html-languageservice
-- https://developer.mozilla.org/
-- https://www.google.com/chrome/
-- https://www.mozilla.org/
-
-## Open Collective
-
-Value my time and please sponsor the project! https://opencollective.com/tito-bouzout Thanks!
-
-`
 
 const columns = [
 	'Chrome',
@@ -635,135 +655,13 @@ const columns = [
 	'VSCode',
 ]
 
-for (const ns in DATA.elements) {
-	for (const [tag, value] of Object.entries(DATA.elements[ns])) {
-		keysTable += `\n\n## ${value.deprecated ? '🗑️' : ''} [\`<${tag}>\`](${value.elementURL}) - [${value.interface}](${value.interfaceURL})`
+const o = JSON.parse(stringifySorted(DATA))
 
-		// headings
-		keysTable += `\n\n| key | type `
-		for (const lib of columns) {
-			keysTable += ` | ${lib}`
-		}
-		keysTable += `|`
-		// separator
-		keysTable += `\n| --- | --- `
-		for (const lib of columns) {
-			keysTable += ` |  --- `
-		}
-		keysTable += `|`
+o.columns = columns
 
-		// attribute/properties
-		const props = []
-		for (const [k, val] of Object.entries(value.keys)) {
-			const kind = [val.prop ? 'prop' : '', val.attr ? 'attr' : '']
-				.filter(x => x)
-				.join('/')
+write(`./jsx/data.json`, JSON.stringify(o, null, 2))
 
-			const warn =
-				/[A-Z]/.test(k) &&
-				// svg is XML so it has attributes with uppercase letters
-				ns !== 'http://www.w3.org/2000/svg' &&
-				tag !== 'webview' &&
-				!kind.includes('prop')
-					? '🛑'
-					: ''
-
-			const deprecated = val.deprecated ? '🗑️' : ''
-			const weird = val.weird ? '🤷‍♀️' : ''
-
-			const inherited = val.inherited ? '🔗' : ''
-			const experimental = val.experimental ? '🧪' : ''
-			const nonstandard = val.nonstandard ? '🔥' : ''
-
-			let prop = `| ${deprecated} ${warn} [${k}](${val.url}) ${inherited} ${weird} ${experimental} ${nonstandard}  `
-
-			prop += ` | ${kind}`
-			for (const lib of columns) {
-				prop += ` | ${(val.values[lib] !== undefined ? val.values[lib] : '❌').replace(/\|/g, '\\|').replace(/</g, '< ').replace(/>/g, '> ')}`
-			}
-			prop += `|`
-
-			props.push(prop)
-		}
-		keysTable +=
-			'\n' +
-			props
-				.sort((a, b) =>
-					a.localeCompare(b, undefined, { sensitivity: 'case' }),
-				)
-				.join('\n')
-
-		const keys = Object.keys(value.keys).map(x => x.toLowerCase())
-
-		const notIncludedSetters = value.setters.filter(
-			x => !keys.includes(x.split('.')[1].toLowerCase()),
-		)
-
-		if (notIncludedSetters.length) {
-			keysTable +=
-				'\n\nSetters Not Included: ' +
-				notIncludedSetters
-					.map(
-						x =>
-							`[${x.split('.')[1]}](${KeyURL(ns, tag, x.split('.')[0], x.split('.')[1])})`,
-					)
-					.join(', ') +
-				'\n\n'
-		}
-
-		// mdn
-		try {
-			const settersNames = value.setters.map(x => x.split('.')[1])
-
-			let mdnkeys = []
-
-			try {
-				const elementMDN = JSON.parse(
-					await fetchCached(ElementJSONURL(ns, tag)),
-				)
-
-				mdnkeys = unique([
-					Object.keys(
-						elementMDN[Object.keys(elementMDN)[0]]?.elements[tag]
-							?.__compat,
-					),
-					Object.keys(
-						elementMDN[Object.keys(elementMDN)[0]]?.elements[tag],
-					),
-				])
-			} catch (e) {}
-
-			try {
-				const interfaceMDN = JSON.parse(
-					await fetchCached(InterfaceJSONURL(value.interface)),
-				)
-
-				mdnkeys = unique([
-					mdnkeys,
-					Object.keys(interfaceMDN.api[value.interface]),
-				])
-			} catch (e) {}
-
-			const notIncludedMDN = mdnkeys
-				.filter(x => !keys.includes(x.toLowerCase()))
-				.filter(x => !mdnSkip.includes(x))
-				.filter(x => !settersNames.includes(x))
-
-			if (notIncludedMDN.length) {
-				keysTable +=
-					'\n\nMDN Not Included: ' +
-					notIncludedMDN
-						.map(
-							x =>
-								`[${x}](${KeyURL(ns, tag, value.interface, x.toLowerCase())})  `,
-						)
-						.join(', ') +
-					'\n\n'
-			}
-		} catch (e) {}
-	}
-}
-
-write(`./jsx/readme.md`, keysTable)
+write(`./index.html`, await fetchTable('/index.template.html'))
 
 prettier('./jsx/**')
+prettier('./index.html')
