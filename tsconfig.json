@@ -1,0 +1,21 @@
+{
+	"compilerOptions": {
+		"baseUrl": ".",
+		"outDir": "./dist",
+
+		"allowJs": true,
+		"checkJs": true,
+		"strict": true,
+
+		"module": "NodeNext",
+		"target": "ESNext",
+		"lib": ["ESNext", "DOM", "DOM.Iterable"],
+		"moduleResolution": "NodeNext",
+		"allowSyntheticDefaultImports": true,
+
+		"jsx": "preserve",
+		"jsxImportSource": "pota",
+
+		"sourceMap": true
+	}
+}
