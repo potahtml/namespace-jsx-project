@@ -82,9 +82,10 @@ for (const lib of libs) {
 
 			// interfaces for tagName
 			const interfaces = prop.source
-				.replace(/</g, ' ')
-				.replace(/>/g, ' ')
-				.replace(/,/g, ' ')
+				.replaceAll('<', ' ')
+				.replaceAll('>', ' ')
+				.replaceAll(',', ' ')
+				.replaceAll('.', ' ')
 				.trim()
 				.toLowerCase()
 				.split(' ')
@@ -99,9 +100,10 @@ for (const lib of libs) {
 				if (lib.interfaces[inter]) {
 					const extended = lib.interfaces[inter].source
 						.split('\n')[0]
-						.replace(/</g, ' ')
-						.replace(/>/g, ' ')
-						.replace(/,/g, ' ')
+						.replaceAll('<', ' ')
+						.replaceAll('>', ' ')
+						.replaceAll(',', ' ')
+						.replaceAll('.', ' ')
 						.trim()
 						.toLowerCase()
 						.split(' ')
