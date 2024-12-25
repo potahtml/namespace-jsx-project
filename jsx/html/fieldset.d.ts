@@ -20,7 +20,7 @@ interface FieldsetHTMLAttributes extends HTMLAttributes {
 }
 
 // Preact - https://preactjs.com/
-interface FieldsetHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+interface FieldsetHTMLAttributes<T extends EventTarget = HTMLFieldSetElement> extends HTMLAttributes<T> {
 	disabled?: boolean
 	form?: string
 	name?: string

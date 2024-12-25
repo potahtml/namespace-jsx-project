@@ -544,7 +544,7 @@ interface DOMAttributes<Target extends EventTarget> extends PreactDOMAttributes 
 	onCompositionUpdateCapture?: CompositionEventHandler<Target>
 
 	// Details Events
-	onToggle?: GenericEventHandler<Target>
+	onToggle?: ToggleEventHandler<Target>
 
 	// Dialog Events
 	onClose?: GenericEventHandler<Target>
@@ -939,9 +939,19 @@ interface DOMAttributes<T> {
 	onAnimationIteration?: AnimationEventHandler<T>
 	onAnimationIterationCapture?: AnimationEventHandler<T>
 
+	// Toggle Events
+	onToggle?: ToggleEventHandler<T>
+	onBeforeToggle?: ToggleEventHandler<T>
+
 	// Transition Events
+	onTransitionCancel?: TransitionEventHandler<T>
+	onTransitionCancelCapture?: TransitionEventHandler<T>
 	onTransitionEnd?: TransitionEventHandler<T>
 	onTransitionEndCapture?: TransitionEventHandler<T>
+	onTransitionRun?: TransitionEventHandler<T>
+	onTransitionRunCapture?: TransitionEventHandler<T>
+	onTransitionStart?: TransitionEventHandler<T>
+	onTransitionStartCapture?: TransitionEventHandler<T>
 }
 
 // Pota - https://github.com/potahtml/pota

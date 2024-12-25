@@ -23,7 +23,7 @@ interface EmbedHTMLAttributes extends HTMLAttributes {
 }
 
 // Preact - https://preactjs.com/
-interface EmbedHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+interface EmbedHTMLAttributes<T extends EventTarget = HTMLEmbedElement> extends HTMLAttributes<T> {
 	height?: number | string
 	src?: string
 	type?: string

@@ -15,7 +15,7 @@ interface MenuHTMLAttributes extends HTMLAttributes {
 }
 
 // Preact - https://preactjs.com/
-interface MenuHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+interface MenuHTMLAttributes<T extends EventTarget = HTMLMenuElement> extends HTMLAttributes<T> {
 	type?: string
 }
 

@@ -61,7 +61,7 @@ interface TextareaHTMLAttributes extends HTMLAttributes {
 }
 
 // Preact - https://preactjs.com/
-interface TextareaHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+interface TextareaHTMLAttributes<T extends EventTarget = HTMLTextAreaElement> extends HTMLAttributes<T> {
 	autocomplete?: string
 	autoComplete?: string
 	cols?: number

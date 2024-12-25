@@ -50,7 +50,7 @@ interface LinkHTMLAttributes extends HTMLAttributes {
 }
 
 // Preact - https://preactjs.com/
-interface LinkHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+interface LinkHTMLAttributes<T extends EventTarget = HTMLLinkElement> extends HTMLAttributes<T> {
 	as?: string
 	crossorigin?: 'anonymous' | 'use-credentials'
 	crossOrigin?: 'anonymous' | 'use-credentials'
@@ -85,6 +85,9 @@ interface LinkHTMLAttributes<T> extends HTMLAttributes<T> {
 	sizes?: string
 	type?: string
 	charSet?: string
+
+	// React props
+	precedence?: string
 }
 
 // Pota - https://github.com/potahtml/pota

@@ -62,7 +62,7 @@ interface IframeHTMLAttributes extends HTMLAttributes {
 }
 
 // Preact - https://preactjs.com/
-interface IframeHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+interface IframeHTMLAttributes<T extends EventTarget = HTMLIFrameElement> extends HTMLAttributes<T> {
 	allow?: string
 	allowFullScreen?: boolean
 	allowTransparency?: boolean

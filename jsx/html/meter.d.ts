@@ -32,12 +32,12 @@ interface MeterHTMLAttributes extends HTMLAttributes {
 }
 
 // Preact - https://preactjs.com/
-interface MeterHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+interface MeterHTMLAttributes<T extends EventTarget = HTMLMeterElement> extends HTMLAttributes<T> {
 	form?: string
 	high?: number
 	low?: number
-	max?: string
-	min?: string
+	max?: number | string
+	min?: number | string
 	optimum?: number
 	value?: string | number
 }

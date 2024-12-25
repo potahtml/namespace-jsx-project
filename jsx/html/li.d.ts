@@ -14,7 +14,7 @@ interface LiHTMLAttributes extends HTMLAttributes {
 }
 
 // Preact - https://preactjs.com/
-interface LiHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+interface LiHTMLAttributes<T extends EventTarget = HTMLLIElement> extends HTMLAttributes<T> {
 	value?: string | number
 }
 

@@ -17,7 +17,7 @@ interface ParamHTMLAttributes extends HTMLAttributes {
 }
 
 // Preact - https://preactjs.com/
-interface ParamHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+interface ParamHTMLAttributes<T extends EventTarget = HTMLParamElement> extends HTMLAttributes<T> {
 	name?: string
 	value?: string | number
 }

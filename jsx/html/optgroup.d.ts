@@ -17,7 +17,7 @@ interface OptgroupHTMLAttributes extends HTMLAttributes {
 }
 
 // Preact - https://preactjs.com/
-interface OptgroupHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+interface OptgroupHTMLAttributes<T extends EventTarget = HTMLOptGroupElement> extends HTMLAttributes<T> {
 	disabled?: boolean
 	label?: string
 }

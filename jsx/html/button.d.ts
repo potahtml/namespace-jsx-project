@@ -53,7 +53,7 @@ interface ButtonHTMLAttributes extends HTMLAttributes {
 }
 
 // Preact - https://preactjs.com/
-interface ButtonHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+interface ButtonHTMLAttributes<T extends EventTarget = HTMLButtonElement> extends HTMLAttributes<T> {
 	disabled?: boolean
 	form?: string
 	formaction?: string
@@ -79,7 +79,7 @@ interface ButtonHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> 
 interface ButtonHTMLAttributes<T> extends HTMLAttributes<T> {
 	disabled?: boolean
 	form?: string
-	formAction?: string
+	formAction?: string | ((formData: FormData) => void | Promise<void>)
 	formEncType?: string
 	formMethod?: string
 	formNoValidate?: boolean

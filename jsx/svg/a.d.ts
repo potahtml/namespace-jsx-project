@@ -39,7 +39,7 @@ interface AnchorHTMLAttributes extends HTMLAttributes {
 }
 
 // Preact - https://preactjs.com/
-interface AnchorHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+interface AnchorHTMLAttributes<T extends EventTarget = HTMLAnchorElement> extends HTMLAttributes<T> {
 	download?: any
 	href?: string
 	hreflang?: string

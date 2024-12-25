@@ -39,7 +39,7 @@ interface SelectHTMLAttributes extends HTMLAttributes {
 }
 
 // Preact - https://preactjs.com/
-interface SelectHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+interface SelectHTMLAttributes<T extends EventTarget = HTMLSelectElement> extends HTMLAttributes<T> {
 	autocomplete?: string
 	autoComplete?: string
 	defaultValue?: string | number

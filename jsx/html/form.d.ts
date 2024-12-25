@@ -37,7 +37,7 @@ interface FormHTMLAttributes extends HTMLAttributes {
 }
 
 // Preact - https://preactjs.com/
-interface FormHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+interface FormHTMLAttributes<T extends EventTarget = HTMLFormElement> extends HTMLAttributes<T> {
 	'accept-charset'?: string
 	acceptCharset?: string
 	action?: string
@@ -56,7 +56,7 @@ interface FormHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
 // React - https://react.dev/
 interface FormHTMLAttributes<T> extends HTMLAttributes<T> {
 	acceptCharset?: string
-	action?: string
+	action?: string | ((formData: FormData) => void | Promise<void>)
 	autoComplete?: string
 	encType?: string
 	method?: string

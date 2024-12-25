@@ -37,7 +37,7 @@ interface ObjectHTMLAttributes extends HTMLAttributes {
 }
 
 // Preact - https://preactjs.com/
-interface ObjectHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+interface ObjectHTMLAttributes<T extends EventTarget = HTMLObjectElement> extends HTMLAttributes<T> {
 	classID?: string
 	data?: string
 	form?: string

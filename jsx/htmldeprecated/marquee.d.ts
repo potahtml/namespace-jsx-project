@@ -1,5 +1,5 @@
 // Preact - https://preactjs.com/
-interface MarqueeHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+interface MarqueeHTMLAttributes<T extends EventTarget = HTMLMarqueeElement> extends HTMLAttributes<T> {
 	behavior?: 'scroll' | 'slide' | 'alternate'
 	bgColor?: string
 	direction?: 'left' | 'right' | 'up' | 'down'

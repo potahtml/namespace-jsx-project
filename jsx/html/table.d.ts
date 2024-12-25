@@ -15,7 +15,7 @@ interface TableHTMLAttributes extends HTMLAttributes {
 }
 
 // Preact - https://preactjs.com/
-interface TableHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+interface TableHTMLAttributes<T extends EventTarget = HTMLTableElement> extends HTMLAttributes<T> {
 	cellPadding?: string
 	cellSpacing?: string
 	summary?: string

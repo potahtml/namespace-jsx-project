@@ -26,7 +26,7 @@ interface TrackHTMLAttributes extends HTMLAttributes {
 }
 
 // Preact - https://preactjs.com/
-interface TrackHTMLAttributes<T extends EventTarget> extends MediaHTMLAttributes<T> {
+interface TrackHTMLAttributes<T extends EventTarget = HTMLTrackElement> extends MediaHTMLAttributes<T> {
 	default?: boolean
 	kind?: string
 	label?: string
@@ -34,7 +34,7 @@ interface TrackHTMLAttributes<T extends EventTarget> extends MediaHTMLAttributes
 	srcLang?: string
 }
 
-interface MediaHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+interface MediaHTMLAttributes<T extends EventTarget = HTMLMediaElement> extends HTMLAttributes<T> {
 	autoplay?: boolean
 	autoPlay?: boolean
 	controls?: boolean

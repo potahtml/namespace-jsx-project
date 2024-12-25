@@ -17,7 +17,7 @@ interface CanvasHTMLAttributes extends HTMLAttributes {
 }
 
 // Preact - https://preactjs.com/
-interface CanvasHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+interface CanvasHTMLAttributes<T extends EventTarget = HTMLCanvasElement> extends HTMLAttributes<T> {
 	height?: number | string
 	width?: number | string
 }

@@ -67,7 +67,7 @@ interface MediaHTMLAttributes extends HTMLAttributes {
 }
 
 // Preact - https://preactjs.com/
-interface VideoHTMLAttributes<T extends EventTarget> extends MediaHTMLAttributes<T> {
+interface VideoHTMLAttributes<T extends EventTarget = HTMLVideoElement> extends MediaHTMLAttributes<T> {
 	height?: number | string
 	poster?: string
 	width?: number | string
@@ -75,7 +75,7 @@ interface VideoHTMLAttributes<T extends EventTarget> extends MediaHTMLAttributes
 	disableRemotePlayback?: boolean
 }
 
-interface MediaHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+interface MediaHTMLAttributes<T extends EventTarget = HTMLMediaElement> extends HTMLAttributes<T> {
 	autoplay?: boolean
 	autoPlay?: boolean
 	controls?: boolean

@@ -42,7 +42,7 @@ interface AreaHTMLAttributes extends HTMLAttributes {
 }
 
 // Preact - https://preactjs.com/
-interface AreaHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+interface AreaHTMLAttributes<T extends EventTarget = HTMLAreaElement> extends HTMLAttributes<T> {
 	alt?: string
 	coords?: string
 	download?: any

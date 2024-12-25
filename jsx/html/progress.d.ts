@@ -17,8 +17,8 @@ interface ProgressHTMLAttributes extends HTMLAttributes {
 }
 
 // Preact - https://preactjs.com/
-interface ProgressHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
-	max?: string
+interface ProgressHTMLAttributes<T extends EventTarget = HTMLProgressElement> extends HTMLAttributes<T> {
+	max?: number | string
 	value?: string | number
 }
 

@@ -17,7 +17,7 @@ interface BaseHTMLAttributes extends HTMLAttributes {
 }
 
 // Preact - https://preactjs.com/
-interface BaseHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+interface BaseHTMLAttributes<T extends EventTarget = HTMLBaseElement> extends HTMLAttributes<T> {
 	href?: string
 	target?: string
 }

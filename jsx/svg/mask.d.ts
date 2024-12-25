@@ -95,5 +95,9 @@ interface PresentationSVGAttributes {
 	'writing-mode'?: 'lr-tb' | 'rl-tb' | 'tb-rl' | 'lr' | 'rl' | 'tb' | 'inherit'
 }
 
+// React - https://react.dev/
+interface SVGProps<T> extends SVGAttributes<T>, ClassAttributes<T> {}
+interface ClassAttributes<T> extends RefAttributes<T> {}
+
 // Pota - https://github.com/potahtml/pota
 interface SVGMaskElementAttributes {}

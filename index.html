@@ -96,9 +96,7 @@
 				</fieldset>
 			</form>
 			<style type="text/css" id="settings-styles">
-				.content {
-					max-width: 100%;
-				}
+				.content{ max-width: 100%}
 			</style>
 			<script type="text/javascript">
 				document.onclick = e => {
@@ -126,13 +124,21 @@
 					// filter rows
 					const trs = document.querySelectorAll('tbody tr')
 					for (const tr of [...trs]) {
-						tr.style.display = tr.textContent.toLowerCase().includes(search) ? null : 'none'
+						tr.style.display = tr.textContent
+							.toLowerCase()
+							.includes(search)
+							? null
+							: 'none'
 					}
 
 					// filter whole table and heading if nothing matched
 					const tables = document.querySelectorAll('table')
 					for (const table of [...tables]) {
-						if ([...table.querySelectorAll('tbody tr')].some(tr => tr.style.display !== 'none')) {
+						if (
+							[...table.querySelectorAll('tbody tr')].some(
+								tr => tr.style.display !== 'none',
+							)
+						) {
 							table.parentNode.style.display = null
 							continue
 						}
@@ -154,14 +160,25 @@
 
 					store['table-fixed'] = store['table-fixed'] || 'no'
 					body.dataset['tableFixed'] = store['table-fixed']
-					$(`[name="table-fixed"][value="${store['table-fixed']}"]`).click()
+					$(
+						`[name="table-fixed"][value="${store['table-fixed']}"]`,
+					).click()
 
 					store['table-size'] = store['table-size'] || '100'
 					body.dataset['tableSize'] = store['table-size']
 					$(`[name="table-size"]`).value = +store['table-size']
-					$('#settings-styles').textContent = `.content{ max-width: ${store['table-size']}%}`
+					$('#settings-styles').textContent =
+						`.content{ max-width: ${store['table-size']}%}`
 
-					for (const name of ['Solid', 'pota', 'Voby', 'Vue', 'Preact', 'React', 'VSCode']) {
+					for (const name of [
+						'Solid',
+						'pota',
+						'Voby',
+						'Vue',
+						'Preact',
+						'React',
+						'VSCode',
+					]) {
 						store[name] = store[name] || 'true'
 						body.dataset[name.toLowerCase()] = store[name]
 						$(`[value="${name}"]`).checked = store[name] === 'true'
@@ -2229,7 +2246,7 @@
 								<td data-col="Voby">string</td>
 								<td data-col="Vue">❌</td>
 								<td data-col="Preact">string</td>
-								<td data-col="React">string</td>
+								<td data-col="React">string | ((formData: FormData) =&gt; void | Promise&lt;void&gt;)</td>
 								<td data-col="VSCode">❌</td>
 							</tr>
 							<tr>
@@ -3255,7 +3272,7 @@
 								<td data-col="Voby">ObservableMaybe&lt;Nullable&lt;GenericEventHandler&lt;T&gt;&gt;&gt;</td>
 								<td data-col="Vue">(payload: ToggleEvent) =&gt; void</td>
 								<td data-col="Preact">GenericEventHandler&lt;T&gt;</td>
-								<td data-col="React">ReactEventHandler&lt;T&gt;</td>
+								<td data-col="React">❌</td>
 								<td data-col="VSCode">❌</td>
 							</tr>
 						</tbody>
@@ -3849,7 +3866,7 @@
 								<td data-col="Voby">string</td>
 								<td data-col="Vue">string</td>
 								<td data-col="Preact">string</td>
-								<td data-col="React">string</td>
+								<td data-col="React">string | ((formData: FormData) =&gt; void | Promise&lt;void&gt;)</td>
 								<td data-col="VSCode">string</td>
 							</tr>
 							<tr>
@@ -5968,7 +5985,7 @@
 								<td data-col="Voby">string</td>
 								<td data-col="Vue">❌</td>
 								<td data-col="Preact">string</td>
-								<td data-col="React">string</td>
+								<td data-col="React">string | ((formData: FormData) =&gt; void | Promise&lt;void&gt;)</td>
 								<td data-col="VSCode">❌</td>
 							</tr>
 							<tr>
@@ -7828,7 +7845,7 @@
 								<td data-col="Solid">number | string</td>
 								<td data-col="Voby">number | string</td>
 								<td data-col="Vue">number | string</td>
-								<td data-col="Preact">string</td>
+								<td data-col="Preact">number | string</td>
 								<td data-col="React">number | string</td>
 								<td data-col="VSCode">string</td>
 							</tr>
@@ -7843,7 +7860,7 @@
 								<td data-col="Solid">number | string</td>
 								<td data-col="Voby">number | string</td>
 								<td data-col="Vue">number | string</td>
-								<td data-col="Preact">string</td>
+								<td data-col="Preact">number | string</td>
 								<td data-col="React">number | string</td>
 								<td data-col="VSCode">string</td>
 							</tr>
@@ -8860,7 +8877,7 @@
 								<td data-col="Solid">number | string</td>
 								<td data-col="Voby">number | string</td>
 								<td data-col="Vue">number | string</td>
-								<td data-col="Preact">string</td>
+								<td data-col="Preact">number | string</td>
 								<td data-col="React">number | string</td>
 								<td data-col="VSCode">string</td>
 							</tr>

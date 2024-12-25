@@ -34,7 +34,7 @@ interface TdHTMLAttributes extends HTMLAttributes {
 }
 
 // Preact - https://preactjs.com/
-interface TdHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+interface TdHTMLAttributes<T extends EventTarget = HTMLTableCellElement> extends HTMLAttributes<T> {
 	align?: 'left' | 'center' | 'right' | 'justify' | 'char'
 	colspan?: number
 	colSpan?: number

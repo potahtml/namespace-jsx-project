@@ -125,7 +125,7 @@ interface InputHTMLAttributes extends HTMLAttributes {
 }
 
 // Preact - https://preactjs.com/
-interface InputHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+interface InputHTMLAttributes<T extends EventTarget = HTMLInputElement> extends HTMLAttributes<T> {
 	accept?: string
 	alt?: string
 	autocomplete?: string
@@ -181,7 +181,7 @@ interface InputHTMLAttributes<T> extends HTMLAttributes<T> {
 	checked?: boolean
 	disabled?: boolean
 	form?: string
-	formAction?: string
+	formAction?: string | ((formData: FormData) => void | Promise<void>)
 	formEncType?: string
 	formMethod?: string
 	formNoValidate?: boolean

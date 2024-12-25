@@ -52,7 +52,7 @@ interface ImgHTMLAttributes extends HTMLAttributes {
 }
 
 // Preact - https://preactjs.com/
-interface ImgHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+interface ImgHTMLAttributes<T extends EventTarget = HTMLImageElement> extends HTMLAttributes<T> {
 	alt?: string
 	crossorigin?: 'anonymous' | 'use-credentials'
 	crossOrigin?: 'anonymous' | 'use-credentials'

@@ -46,7 +46,7 @@ interface ScriptHTMLAttributes extends HTMLAttributes {
 }
 
 // Preact - https://preactjs.com/
-interface ScriptHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+interface ScriptHTMLAttributes<T extends EventTarget = HTMLScriptElement> extends HTMLAttributes<T> {
 	async?: boolean
 	/** @deprecated */
 	charset?: string

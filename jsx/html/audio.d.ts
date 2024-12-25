@@ -44,8 +44,8 @@ interface MediaHTMLAttributes extends HTMLAttributes {
 }
 
 // Preact - https://preactjs.com/
-interface AudioHTMLAttributes<T extends EventTarget> extends MediaHTMLAttributes<T> {}
-interface MediaHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+interface AudioHTMLAttributes<T extends EventTarget = HTMLAudioElement> extends MediaHTMLAttributes<T> {}
+interface MediaHTMLAttributes<T extends EventTarget = HTMLMediaElement> extends HTMLAttributes<T> {
 	autoplay?: boolean
 	autoPlay?: boolean
 	controls?: boolean

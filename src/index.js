@@ -31,6 +31,7 @@ import {
 	deprecatedTags,
 	mdnSkip,
 	fetchTable,
+	frameworkSpecific,
 } from './data.js'
 
 import {
@@ -642,6 +643,15 @@ for (const ns in DATA.elements) {
 				.filter(x => !mdnSkip.includes(x))
 				.filter(x => !settersNames.includes(x))
 		} catch (e) {}
+	}
+}
+
+// delete framework-specific
+for (const [ns, data] of entries(frameworkSpecific)) {
+	for (const [tag, keys] of entries(data)) {
+		for (const key of keys) {
+			delete DATA.elements[ns][tag].keys[key]
+		}
 	}
 }
 

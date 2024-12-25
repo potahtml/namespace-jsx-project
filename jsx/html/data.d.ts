@@ -14,7 +14,7 @@ interface DataHTMLAttributes extends HTMLAttributes {
 }
 
 // Preact - https://preactjs.com/
-interface DataHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+interface DataHTMLAttributes<T extends EventTarget = HTMLDataElement> extends HTMLAttributes<T> {
 	value?: string | number
 }
 

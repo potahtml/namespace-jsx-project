@@ -14,7 +14,7 @@ interface BlockquoteHTMLAttributes extends HTMLAttributes {
 }
 
 // Preact - https://preactjs.com/
-interface BlockquoteHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+interface BlockquoteHTMLAttributes<T extends EventTarget = HTMLQuoteElement> extends HTMLAttributes<T> {
 	cite?: string
 }
 

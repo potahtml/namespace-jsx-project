@@ -3449,7 +3449,7 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLButtonElement#htmlbuttonelement.formaction",
 						"values": {
 							"Preact": "string",
-							"React": "string",
+							"React": "string | ((formData: FormData) => void | Promise<void>)",
 							"Solid": "string",
 							"Voby": "string"
 						}
@@ -4323,7 +4323,6 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDetailsElement#htmldetailselement.ontoggle",
 						"values": {
 							"Preact": "GenericEventHandler<T>",
-							"React": "ReactEventHandler<T>",
 							"Solid": "EventHandlerUnion<T, Event>",
 							"Voby": "ObservableMaybe<Nullable<GenericEventHandler<T>>>",
 							"Vue": "(payload: ToggleEvent) => void"
@@ -4970,7 +4969,7 @@
 							"Firefox": "string",
 							"Pota": "string",
 							"Preact": "string",
-							"React": "string",
+							"React": "string | ((formData: FormData) => void | Promise<void>)",
 							"Solid": "string",
 							"Voby": "string",
 							"VSCode": "string",
@@ -7610,7 +7609,7 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement#htmlinputelement.formaction",
 						"values": {
 							"Preact": "string",
-							"React": "string",
+							"React": "string | ((formData: FormData) => void | Promise<void>)",
 							"Solid": "string",
 							"Voby": "string"
 						}
@@ -9909,7 +9908,7 @@
 							"Chrome": "number | string",
 							"Firefox": "number | string",
 							"Pota": "number | string",
-							"Preact": "string",
+							"Preact": "number | string",
 							"React": "number | string",
 							"Solid": "number | string",
 							"Voby": "number | string",
@@ -9930,7 +9929,7 @@
 							"Chrome": "number | string",
 							"Firefox": "number | string",
 							"Pota": "number | string",
-							"Preact": "string",
+							"Preact": "number | string",
 							"React": "number | string",
 							"Solid": "number | string",
 							"Voby": "number | string",
@@ -11076,7 +11075,7 @@
 							"Chrome": "number | string",
 							"Firefox": "number | string",
 							"Pota": "number | string",
-							"Preact": "string",
+							"Preact": "number | string",
 							"React": "number | string",
 							"Solid": "number | string",
 							"Voby": "number | string",

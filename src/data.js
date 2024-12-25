@@ -210,6 +210,9 @@ export const isBlacklisted = {
 	interface: true,
 	ariaattributes: true,
 	domattributes: true,
+	allhtmlattributes: true,
+	refattributes: true,
+	attributes: true,
 
 	windoweventhandlersevents: true,
 	voidhtmlattributes: true,
@@ -369,6 +372,20 @@ export const deprecatedAttributes = {
 	'webview.HTMLElement.blinkfeatures': true,
 	'webview.HTMLElement.disableguestresize': true,
 	'webview.HTMLElement.guestinstance': true,
+}
+
+/** These attributes/properties dont exists in x/html. */
+export const frameworkSpecific = {
+	'http://www.w3.org/1999/xhtml': {
+		// React
+		link: ['precedence'],
+		style: ['precedence', 'href'],
+	},
+
+	'http://www.w3.org/2000/svg': {
+		// React
+		style: ['precedence', 'href'],
+	},
 }
 
 // needs MDN update

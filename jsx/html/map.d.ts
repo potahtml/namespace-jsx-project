@@ -14,7 +14,7 @@ interface MapHTMLAttributes extends HTMLAttributes {
 }
 
 // Preact - https://preactjs.com/
-interface MapHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+interface MapHTMLAttributes<T extends EventTarget = HTMLMapElement> extends HTMLAttributes<T> {
 	name?: string
 }
 

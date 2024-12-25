@@ -23,7 +23,7 @@ interface StyleHTMLAttributes extends HTMLAttributes {
 }
 
 // Preact - https://preactjs.com/
-interface StyleHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+interface StyleHTMLAttributes<T extends EventTarget = HTMLStyleElement> extends HTMLAttributes<T> {
 	media?: string
 	scoped?: boolean
 	type?: string
@@ -34,6 +34,10 @@ interface StyleHTMLAttributes<T> extends HTMLAttributes<T> {
 	media?: string
 	scoped?: boolean
 	type?: string
+
+	// React props
+	href?: string
+	precedence?: string
 }
 
 // Pota - https://github.com/potahtml/pota

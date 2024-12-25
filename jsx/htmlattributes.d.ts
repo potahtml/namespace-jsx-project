@@ -423,7 +423,16 @@ interface HTMLAttributes<T> extends AriaAttributes, DOMAttributes<T> {
 	security?: string
 	unselectable?: 'on' | 'off'
 
+	// Popover API
+	popover?: '' | 'auto' | 'manual'
+	popoverTargetAction?: 'toggle' | 'show' | 'hide'
+	popoverTarget?: string
+
 	// Living Standard
+	/**
+	 * @see https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/inert
+	 */
+	inert?: boolean
 	/**
 	 * Hints at the type of data that might be entered by the user while editing the element or its contents
 	 * @see {@link https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute}

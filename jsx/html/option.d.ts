@@ -23,7 +23,7 @@ interface OptionHTMLAttributes extends HTMLAttributes {
 }
 
 // Preact - https://preactjs.com/
-interface OptionHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+interface OptionHTMLAttributes<T extends EventTarget = HTMLOptionElement> extends HTMLAttributes<T> {
 	disabled?: boolean
 	label?: string
 	selected?: boolean

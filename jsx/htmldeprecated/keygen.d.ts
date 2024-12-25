@@ -32,7 +32,7 @@ interface KeygenHTMLAttributes extends HTMLAttributes {
 }
 
 // Preact - https://preactjs.com/
-interface KeygenHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
+interface KeygenHTMLAttributes<T extends EventTarget = HTMLUnknownElement> extends HTMLAttributes<T> {
 	challenge?: string
 	disabled?: boolean
 	form?: string
