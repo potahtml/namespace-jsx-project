@@ -446,12 +446,7 @@ interface HTMLAttributes<T> extends AriaAttributes, DOMAttributes<T> {
 }
 
 // Pota - https://github.com/potahtml/pota
-interface DOMHTMLProperties {
-	innerHTML?: number | string
-	innerText?: number | string
-	textContent?: number | string
-}
-interface DOMHTMLAttributes extends DOMHTMLProperties {
+interface DOMHTMLAttributes {
 	about?: string
 	accesskey?: string
 	autocapitalize?: 'off' | 'none' | 'on' | 'sentences' | 'words' | 'characters'

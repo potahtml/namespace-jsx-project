@@ -21,5 +21,3 @@ interface HTMLBodyElementAttributes {
 	/** @deprecated */
 	vlink?: string
 }
-
-interface HTMLBodyElementEvents<Element> extends HTMLElementEvents<Element>, WindowEventHandlersEvents<Element> {}

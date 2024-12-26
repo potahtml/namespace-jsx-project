@@ -15,7 +15,7 @@ interface MathMLAttributes<Target extends EventTarget = MathMLElement> extends H
 }
 
 // Pota - https://github.com/potahtml/pota
-interface DOMMathMLAttributes extends DOMHTMLAttributes {
+interface DOMMathMLAttributes {
 	displaystyle?: 'true' | boolean
 	/** @deprecated */
 	href?: string

@@ -6,4 +6,4 @@ interface HTMLFrameSetElementAttributes {
 	rows?: number | string
 }
 
-interface HTMLFrameSetElementEvents<Element> extends HTMLElementEvents<Element>, WindowEventHandlersEvents<Element> {}
+interface HTMLFrameSetElementEvents<Element> extends HTMLEvents<Element>, WindowEvents<Element> {}

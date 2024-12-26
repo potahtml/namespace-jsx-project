@@ -113,6 +113,12 @@ export const libs = [
 			htmlmediaelementevents: 'events',
 			htmlvideoelementevents: 'events',
 			windoweventhandlersevents: 'events',
+			globalevents: 'events',
+			htmlevents: 'events',
+			svgevents: 'events',
+			mathmlevents: 'events',
+			htmlbodyelementevents: 'events',
+			windowevents: 'events',
 
 			// elements
 
@@ -213,6 +219,13 @@ export const isBlacklisted = {
 	allhtmlattributes: true,
 	refattributes: true,
 	attributes: true,
+	globalevents: true,
+	htmlevents: true,
+	svgevents: true,
+	mathmlevents: true,
+	htmlbodyelementevents: true,
+	windowevents: true,
+	htmlmediaelementevents: true,
 
 	windoweventhandlersevents: true,
 	voidhtmlattributes: true,

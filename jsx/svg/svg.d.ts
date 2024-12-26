@@ -119,4 +119,4 @@ interface ClassAttributes<T> extends RefAttributes<T> {}
 
 // Pota - https://github.com/potahtml/pota
 interface SVGSVGElementAttributes {}
-interface SVGSVGElementEvents<Element> extends SVGElementEvents<Element>, WindowEventHandlersEvents<Element> {}
+interface SVGSVGElementEvents<Element> extends SVGEvents<Element>, WindowEvents<Element> {}

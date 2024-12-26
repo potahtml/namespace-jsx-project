@@ -60511,7 +60511,7 @@
 			"name": "stalled"
 		},
 		"storage": {
-			"capitalized": "onStorage",
+			"capitalized": "storage",
 			"interface": "StorageEvent",
 			"name": "storage"
 		},
