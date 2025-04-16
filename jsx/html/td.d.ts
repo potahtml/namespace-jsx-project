@@ -1,10 +1,80 @@
-// Solid - https://www.solidjs.com/
+// Solid Main - https://www.solidjs.com/
 interface TdHTMLAttributes<T> extends HTMLAttributes<T> {
 	colspan?: number | string
 	headers?: string
 	rowspan?: number | string
 	colSpan?: number | string
 	rowSpan?: number | string
+}
+
+// Solid Minor - https://www.solidjs.com/
+interface TdHTMLAttributes<T> extends HTMLAttributes<T> {
+	colspan?: number | string
+	headers?: string
+	rowspan?: number | string
+
+	/** @deprecated Use lowercase attributes */
+	colSpan?: number | string
+	/** @deprecated Use lowercase attributes */
+	rowSpan?: number | string
+
+	/** @deprecated */
+	abbr?: string
+	/** @deprecated */
+	align?: 'left' | 'center' | 'right' | 'justify' | 'char'
+	/** @deprecated */
+	axis?: string
+	/** @deprecated */
+	bgcolor?: string
+	/** @deprecated */
+	char?: string
+	/** @deprecated */
+	charoff?: string
+	/** @deprecated */
+	height?: number | string
+	/** @deprecated */
+	nowrap?: '' | boolean
+	/** @deprecated */
+	scope?: 'col' | 'row' | 'rowgroup' | 'colgroup'
+	/** @deprecated */
+	valign?: 'baseline' | 'bottom' | 'middle' | 'top'
+	/** @deprecated */
+	width?: number | string
+}
+
+// Solid Next - https://www.solidjs.com/
+interface TdHTMLAttributes<T> extends HTMLAttributes<T> {
+	colspan?: number | string | undefined | false
+	headers?: string | undefined | false
+	rowspan?: number | string | undefined | false
+
+	/** @deprecated Use lowercase attributes */
+	colSpan?: number | string | undefined | false
+	/** @deprecated Use lowercase attributes */
+	rowSpan?: number | string | undefined | false
+
+	/** @deprecated */
+	abbr?: string | undefined | false
+	/** @deprecated */
+	align?: 'left' | 'center' | 'right' | 'justify' | 'char' | undefined | false
+	/** @deprecated */
+	axis?: string | undefined | false
+	/** @deprecated */
+	bgcolor?: string | undefined | false
+	/** @deprecated */
+	char?: string | undefined | false
+	/** @deprecated */
+	charoff?: string | undefined | false
+	/** @deprecated */
+	height?: number | string | undefined | false
+	/** @deprecated */
+	nowrap?: true | false | '' | undefined | false
+	/** @deprecated */
+	scope?: 'col' | 'row' | 'rowgroup' | 'colgroup' | undefined | false
+	/** @deprecated */
+	valign?: 'baseline' | 'bottom' | 'middle' | 'top' | undefined | false
+	/** @deprecated */
+	width?: number | string | undefined | false
 }
 
 // Voby - https://github.com/vobyjs/voby

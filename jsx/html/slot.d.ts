@@ -1,6 +1,16 @@
-// Solid - https://www.solidjs.com/
+// Solid Main - https://www.solidjs.com/
 interface HTMLSlotElementAttributes<T = HTMLSlotElement> extends HTMLAttributes<T> {
 	name?: string
+}
+
+// Solid Minor - https://www.solidjs.com/
+interface HTMLSlotElementAttributes<T> extends HTMLAttributes<T> {
+	name?: string
+}
+
+// Solid Next - https://www.solidjs.com/
+interface HTMLSlotElementAttributes<T> extends HTMLAttributes<T> {
+	name?: string | undefined | false
 }
 
 // Voby - https://github.com/vobyjs/voby

@@ -1,7 +1,23 @@
-// Solid - https://www.solidjs.com/
+// Solid Main - https://www.solidjs.com/
 interface TimeHTMLAttributes<T> extends HTMLAttributes<T> {
 	datetime?: string
 	dateTime?: string
+}
+
+// Solid Minor - https://www.solidjs.com/
+interface TimeHTMLAttributes<T> extends HTMLAttributes<T> {
+	datetime?: string
+
+	/** @deprecated Use lowercase attributes */
+	dateTime?: string
+}
+
+// Solid Next - https://www.solidjs.com/
+interface TimeHTMLAttributes<T> extends HTMLAttributes<T> {
+	datetime?: string | undefined | false
+
+	/** @deprecated Use lowercase attributes */
+	dateTime?: string | undefined | false
 }
 
 // Voby - https://github.com/vobyjs/voby

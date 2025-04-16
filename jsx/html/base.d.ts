@@ -1,7 +1,19 @@
-// Solid - https://www.solidjs.com/
+// Solid Main - https://www.solidjs.com/
 interface BaseHTMLAttributes<T> extends HTMLAttributes<T> {
 	href?: string
 	target?: string
+}
+
+// Solid Minor - https://www.solidjs.com/
+interface BaseHTMLAttributes<T> extends HTMLAttributes<T> {
+	href?: string
+	target?: '_self' | '_blank' | '_parent' | '_top' | (string & {})
+}
+
+// Solid Next - https://www.solidjs.com/
+interface BaseHTMLAttributes<T> extends HTMLAttributes<T> {
+	href?: string | undefined | false
+	target?: '_self' | '_blank' | '_parent' | '_top' | (string & {}) | undefined | false
 }
 
 // Voby - https://github.com/vobyjs/voby

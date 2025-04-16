@@ -1,7 +1,19 @@
-// Solid - https://www.solidjs.com/
+// Solid Main - https://www.solidjs.com/
 interface LabelHTMLAttributes<T> extends HTMLAttributes<T> {
 	for?: string
 	form?: string
+}
+
+// Solid Minor - https://www.solidjs.com/
+interface LabelHTMLAttributes<T> extends HTMLAttributes<T> {
+	for?: string
+	form?: string
+}
+
+// Solid Next - https://www.solidjs.com/
+interface LabelHTMLAttributes<T> extends HTMLAttributes<T> {
+	for?: string | undefined | false
+	form?: string | undefined | false
 }
 
 // Voby - https://github.com/vobyjs/voby

@@ -1,3 +1,21 @@
+// Solid Minor - https://www.solidjs.com/
+interface ModHTMLAttributes<T> extends HTMLAttributes<T> {
+	cite?: string
+	datetime?: string
+
+	/** @deprecated Use lowercase attributes */
+	dateTime?: string
+}
+
+// Solid Next - https://www.solidjs.com/
+interface ModHTMLAttributes<T> extends HTMLAttributes<T> {
+	cite?: string | undefined | false
+	datetime?: string | undefined | false
+
+	/** @deprecated Use lowercase attributes */
+	dateTime?: string | undefined | false
+}
+
 // Voby - https://github.com/vobyjs/voby
 interface DelHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
 	cite?: string

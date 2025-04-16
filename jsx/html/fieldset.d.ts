@@ -1,8 +1,22 @@
-// Solid - https://www.solidjs.com/
+// Solid Main - https://www.solidjs.com/
 interface FieldsetHTMLAttributes<T> extends HTMLAttributes<T> {
 	disabled?: boolean
 	form?: string
 	name?: string
+}
+
+// Solid Minor - https://www.solidjs.com/
+interface FieldsetHTMLAttributes<T> extends HTMLAttributes<T> {
+	disabled?: '' | boolean
+	form?: string
+	name?: string
+}
+
+// Solid Next - https://www.solidjs.com/
+interface FieldsetHTMLAttributes<T> extends HTMLAttributes<T> {
+	disabled?: true | false | '' | undefined | false
+	form?: string | undefined | false
+	name?: string | undefined | false
 }
 
 // Voby - https://github.com/vobyjs/voby

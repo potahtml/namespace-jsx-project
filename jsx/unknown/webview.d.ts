@@ -1,3 +1,61 @@
+// Solid Minor - https://www.solidjs.com/
+interface WebViewHTMLAttributes<T> extends HTMLAttributes<T> {
+	allowpopups?: '' | boolean
+	disableblinkfeatures?: string
+	disablewebsecurity?: '' | boolean
+	enableblinkfeatures?: string
+	httpreferrer?: string
+	nodeintegration?: '' | boolean
+	nodeintegrationinsubframes?: '' | boolean
+	partition?: string
+	plugins?: '' | boolean
+	preload?: string
+	src?: string
+	useragent?: string
+	webpreferences?: string
+
+	// does this exists?
+	allowfullscreen?: '' | boolean
+	autofocus?: '' | boolean
+	autosize?: '' | boolean
+
+	/** @deprecated */
+	blinkfeatures?: string
+	/** @deprecated */
+	disableguestresize?: '' | boolean
+	/** @deprecated */
+	guestinstance?: string
+}
+
+// Solid Next - https://www.solidjs.com/
+interface WebViewHTMLAttributes<T> extends HTMLAttributes<T> {
+	allowpopups?: true | false | '' | undefined | false
+	disableblinkfeatures?: string | undefined | false
+	disablewebsecurity?: true | false | '' | undefined | false
+	enableblinkfeatures?: string | undefined | false
+	httpreferrer?: string | undefined | false
+	nodeintegration?: true | false | '' | undefined | false
+	nodeintegrationinsubframes?: true | false | '' | undefined | false
+	partition?: string | undefined | false
+	plugins?: true | false | '' | undefined | false
+	preload?: string | undefined | false
+	src?: string | undefined | false
+	useragent?: string | undefined | false
+	webpreferences?: string | undefined | false
+
+	// does this exists?
+	allowfullscreen?: true | false | '' | undefined | false
+	autofocus?: true | false | '' | undefined | false
+	autosize?: true | false | '' | undefined | false
+
+	/** @deprecated */
+	blinkfeatures?: string | undefined | false
+	/** @deprecated */
+	disableguestresize?: true | false | '' | undefined | false
+	/** @deprecated */
+	guestinstance?: string | undefined | false
+}
+
 // Voby - https://github.com/vobyjs/voby
 interface WebViewHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
 	allowFullScreen?: boolean

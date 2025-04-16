@@ -1,10 +1,34 @@
-// Solid - https://www.solidjs.com/
+// Solid Main - https://www.solidjs.com/
 interface MetaHTMLAttributes<T> extends HTMLAttributes<T> {
 	charset?: string
 	content?: string
 	'http-equiv'?: string
 	name?: string
 	media?: string
+}
+
+// Solid Minor - https://www.solidjs.com/
+interface MetaHTMLAttributes<T> extends HTMLAttributes<T> {
+	charset?: string
+	content?: string
+	'http-equiv'?: 'content-security-policy' | 'content-type' | 'default-style' | 'x-ua-compatible' | 'refresh'
+	name?: string
+	media?: string
+
+	/** @deprecated */
+	scheme?: string
+}
+
+// Solid Next - https://www.solidjs.com/
+interface MetaHTMLAttributes<T> extends HTMLAttributes<T> {
+	charset?: string | undefined | false
+	content?: string | undefined | false
+	'http-equiv'?: 'content-security-policy' | 'content-type' | 'default-style' | 'x-ua-compatible' | 'refresh' | undefined | false
+	name?: string | undefined | false
+	media?: string | undefined | false
+
+	/** @deprecated */
+	scheme?: string | undefined | false
 }
 
 // Voby - https://github.com/vobyjs/voby

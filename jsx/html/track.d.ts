@@ -1,10 +1,63 @@
-// Solid - https://www.solidjs.com/
+// Solid Main - https://www.solidjs.com/
 interface TrackHTMLAttributes<T> extends HTMLAttributes<T> {
 	default?: boolean
 	kind?: 'subtitles' | 'captions' | 'descriptions' | 'chapters' | 'metadata'
 	label?: string
 	src?: string
 	srclang?: string
+}
+
+// Solid Minor - https://www.solidjs.com/
+interface TrackHTMLAttributes<T> extends HTMLAttributes<T> {
+	default?: '' | boolean
+	kind?: // MDN
+	| 'alternative'
+		| 'descriptions'
+		| 'main'
+		| 'main-desc'
+		| 'translation'
+		| 'commentary'
+		// ??
+		| 'subtitles'
+		| 'captions'
+		| 'chapters'
+		| 'metadata'
+
+	label?: string
+	src?: string
+	srclang?: string
+
+	/** @deprecated Use lowercase attributes */
+	mediaGroup?: string
+	/** @deprecated */
+	mediagroup?: string
+}
+
+// Solid Next - https://www.solidjs.com/
+interface TrackHTMLAttributes<T> extends HTMLAttributes<T> {
+	default?: true | false | '' | undefined | false
+	kind?: // MDN
+	| 'alternative'
+		| 'descriptions'
+		| 'main'
+		| 'main-desc'
+		| 'translation'
+		| 'commentary'
+		// ??
+		| 'subtitles'
+		| 'captions'
+		| 'chapters'
+		| 'metadata'
+		| undefined
+		| false
+	label?: string | undefined | false
+	src?: string | undefined | false
+	srclang?: string | undefined | false
+
+	/** @deprecated Use lowercase attributes */
+	mediaGroup?: string | undefined | false
+	/** @deprecated */
+	mediagroup?: string | undefined | false
 }
 
 // Voby - https://github.com/vobyjs/voby

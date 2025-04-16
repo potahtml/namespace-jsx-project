@@ -1,4 +1,4 @@
-// Solid - https://www.solidjs.com/
+// Solid Main - https://www.solidjs.com/
 interface AreaHTMLAttributes<T> extends HTMLAttributes<T> {
 	alt?: string
 	coords?: string
@@ -11,6 +11,44 @@ interface AreaHTMLAttributes<T> extends HTMLAttributes<T> {
 	shape?: 'rect' | 'circle' | 'poly' | 'default'
 	target?: string
 	referrerPolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
+}
+
+// Solid Minor - https://www.solidjs.com/
+interface AreaHTMLAttributes<T> extends HTMLAttributes<T> {
+	alt?: string
+	coords?: string
+	download?: string
+	href?: string
+	ping?: string
+	referrerpolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
+	rel?: string
+	shape?: 'rect' | 'circle' | 'poly' | 'default'
+	target?: '_self' | '_blank' | '_parent' | '_top' | (string & {})
+
+	/** @deprecated Use lowercase attributes */
+	referrerPolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
+
+	/** @deprecated */
+	nohref?: '' | boolean
+}
+
+// Solid Next - https://www.solidjs.com/
+interface AreaHTMLAttributes<T> extends HTMLAttributes<T> {
+	alt?: string | undefined | false
+	coords?: string | undefined | false
+	download?: string | undefined | false
+	href?: string | undefined | false
+	ping?: string | undefined | false
+	referrerpolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url' | undefined | false
+	rel?: string | undefined | false
+	shape?: 'rect' | 'circle' | 'poly' | 'default' | undefined | false
+	target?: '_self' | '_blank' | '_parent' | '_top' | (string & {}) | undefined | false
+
+	/** @deprecated Use lowercase attributes */
+	referrerPolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url' | undefined | false
+
+	/** @deprecated */
+	nohref?: true | false | '' | undefined | false
 }
 
 // Voby - https://github.com/vobyjs/voby

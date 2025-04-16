@@ -1,6 +1,16 @@
-// Solid - https://www.solidjs.com/
+// Solid Main - https://www.solidjs.com/
 interface DataHTMLAttributes<T> extends HTMLAttributes<T> {
 	value?: string | string[] | number
+}
+
+// Solid Minor - https://www.solidjs.com/
+interface DataHTMLAttributes<T> extends HTMLAttributes<T> {
+	value?: string | string[] | number
+}
+
+// Solid Next - https://www.solidjs.com/
+interface DataHTMLAttributes<T> extends HTMLAttributes<T> {
+	value?: string | string[] | number | undefined | false
 }
 
 // Voby - https://github.com/vobyjs/voby

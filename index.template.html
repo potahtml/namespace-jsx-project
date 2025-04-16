@@ -177,11 +177,29 @@
 					<label
 						><input
 							type="checkbox"
-							name="Solid"
-							value="Solid"
+							name="Solid Main"
+							value="Solid Main"
 							checked
 						/>
-						SolidJS</label
+						Solid Main</label
+					>
+					<label
+						><input
+							type="checkbox"
+							name="Solid Minor"
+							value="Solid Minor"
+							checked
+						/>
+						Solid Minor</label
+					>
+					<label
+						><input
+							type="checkbox"
+							name="Solid Next"
+							value="Solid Next"
+							checked
+						/>
+						Solid Next</label
 					>
 					<label
 						><input
@@ -315,7 +333,9 @@
 						`.content{ max-width: ${store['table-size']}%}`
 
 					for (const name of [
-						'Solid',
+						'Solid Main',
+						'Solid Minor',
+						'Solid Next',
 						'pota',
 						'Voby',
 						'Vue',
@@ -324,7 +344,7 @@
 						'VSCode',
 					]) {
 						store[name] = store[name] || 'true'
-						body.dataset[name.toLowerCase()] = store[name]
+						body.dataset[name.toLowerCase().replace(/ /g, '')] = store[name]
 						$(`[value="${name}"]`).checked = store[name] === 'true'
 					}
 				}

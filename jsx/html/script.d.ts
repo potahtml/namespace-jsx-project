@@ -1,4 +1,4 @@
-// Solid - https://www.solidjs.com/
+// Solid Main - https://www.solidjs.com/
 interface ScriptHTMLAttributes<T> extends HTMLAttributes<T> {
 	async?: boolean
 	charset?: string
@@ -13,6 +13,70 @@ interface ScriptHTMLAttributes<T> extends HTMLAttributes<T> {
 	crossOrigin?: 'anonymous' | 'use-credentials' | ''
 	noModule?: boolean
 	referrerPolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
+}
+
+// Solid Minor - https://www.solidjs.com/
+interface ScriptHTMLAttributes<T> extends HTMLAttributes<T> {
+	async?: '' | boolean
+	blocking?: 'render'
+	crossorigin?: 'anonymous' | 'use-credentials' | ''
+	defer?: '' | boolean
+	fetchpriority?: 'high' | 'low' | 'auto'
+	integrity?: string
+	nomodule?: '' | boolean
+	nonce?: string
+	referrerpolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
+	src?: string
+	type?: 'importmap' | 'module' | 'speculationrules' | (string & {})
+
+	/** @experimental */
+	attributionsrc?: string
+
+	/** @deprecated Use lowercase attributes */
+	crossOrigin?: 'anonymous' | 'use-credentials' | ''
+	/** @deprecated Use lowercase attributes */
+	noModule?: boolean
+	/** @deprecated Use lowercase attributes */
+	referrerPolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
+
+	/** @deprecated */
+	charset?: string
+	/** @deprecated */
+	event?: string
+	/** @deprecated */
+	language?: string
+}
+
+// Solid Next - https://www.solidjs.com/
+interface ScriptHTMLAttributes<T> extends HTMLAttributes<T> {
+	async?: true | false | '' | undefined | false
+	blocking?: 'render' | undefined | false
+	crossorigin?: 'anonymous' | 'use-credentials' | '' | true | undefined | false
+	defer?: true | false | '' | undefined | false
+	fetchpriority?: 'high' | 'low' | 'auto' | undefined | false
+	integrity?: string | undefined | false
+	nomodule?: true | false | '' | undefined | false
+	nonce?: string | undefined | false
+	referrerpolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url' | undefined | false
+	src?: string | undefined | false
+	type?: 'importmap' | 'module' | 'speculationrules' | (string & {}) | undefined | false
+
+	/** @experimental */
+	attributionsrc?: string | undefined | false
+
+	/** @deprecated Use lowercase attributes */
+	crossOrigin?: 'anonymous' | 'use-credentials' | '' | true | undefined | false
+	/** @deprecated Use lowercase attributes */
+	noModule?: boolean | undefined | false
+	/** @deprecated Use lowercase attributes */
+	referrerPolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url' | undefined | false
+
+	/** @deprecated */
+	charset?: string | undefined | false
+	/** @deprecated */
+	event?: string | undefined | false
+	/** @deprecated */
+	language?: string | undefined | false
 }
 
 // Voby - https://github.com/vobyjs/voby

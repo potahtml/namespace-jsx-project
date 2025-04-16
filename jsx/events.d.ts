@@ -1,4 +1,4 @@
-// Solid - https://www.solidjs.com/
+// Solid Main - https://www.solidjs.com/
 interface DOMAttributes<T> extends CustomAttributes<T>, DirectiveAttributes, DirectiveFunctionAttributes<T>, PropAttributes, AttrAttributes, BoolAttributes, OnAttributes<T>, OnCaptureAttributes<T>, CustomEventHandlersCamelCase<T>, CustomEventHandlersLowerCase<T>, CustomEventHandlersNamespaced<T> {
 	children?: Node | ArrayElement | (string & {}) | number | boolean | null
 	innerHTML?: string
@@ -198,6 +198,590 @@ interface CustomEventHandlersLowerCase<T> {
 	ontransitioncancel?: EventHandlerUnion<T, TransitionEvent>
 	onvolumechange?: EventHandlerUnion<T, Event>
 	onwaiting?: EventHandlerUnion<T, Event>
+	onwheel?: EventHandlerUnion<T, WheelEvent>
+}
+
+// Solid Minor - https://www.solidjs.com/
+interface DOMAttributes<T> extends CustomAttributes<T>, DirectiveAttributes, DirectiveFunctionAttributes<T>, PropAttributes, AttrAttributes, BoolAttributes, OnAttributes<T>, OnCaptureAttributes<T>, CustomEventHandlersCamelCase<T>, CustomEventHandlersLowerCase<T>, CustomEventHandlersNamespaced<T> {
+	children?: Node | ArrayElement | (string & {}) | number | boolean | null
+	innerHTML?: string
+	innerText?: string | number
+	textContent?: string | number
+	// camel case events
+	onCopy?: EventHandlerUnion<T, ClipboardEvent>
+	onCut?: EventHandlerUnion<T, ClipboardEvent>
+	onPaste?: EventHandlerUnion<T, ClipboardEvent>
+	onCompositionEnd?: EventHandlerUnion<T, CompositionEvent>
+	onCompositionStart?: EventHandlerUnion<T, CompositionEvent>
+	onCompositionUpdate?: EventHandlerUnion<T, CompositionEvent>
+	onFocusOut?: FocusEventHandlerUnion<T, FocusEvent>
+	onFocusIn?: FocusEventHandlerUnion<T, FocusEvent>
+	onEncrypted?: EventHandlerUnion<T, MediaEncryptedEvent>
+	onDragExit?: EventHandlerUnion<T, DragEvent>
+	// lower case events
+	/** @deprecated Use camelCase event handlers */
+	oncopy?: EventHandlerUnion<T, ClipboardEvent>
+	/** @deprecated Use camelCase event handlers */
+	oncut?: EventHandlerUnion<T, ClipboardEvent>
+	/** @deprecated Use camelCase event handlers */
+	onpaste?: EventHandlerUnion<T, ClipboardEvent>
+	/** @deprecated Use camelCase event handlers */
+	oncompositionend?: EventHandlerUnion<T, CompositionEvent>
+	/** @deprecated Use camelCase event handlers */
+	oncompositionstart?: EventHandlerUnion<T, CompositionEvent>
+	/** @deprecated Use camelCase event handlers */
+	oncompositionupdate?: EventHandlerUnion<T, CompositionEvent>
+	/** @deprecated Use camelCase event handlers */
+	onfocusout?: FocusEventHandlerUnion<T, FocusEvent>
+	/** @deprecated Use camelCase event handlers */
+	onfocusin?: FocusEventHandlerUnion<T, FocusEvent>
+	/** @deprecated Use camelCase event handlers */
+	onencrypted?: EventHandlerUnion<T, MediaEncryptedEvent>
+	/** @deprecated Use camelCase event handlers */
+	ondragexit?: EventHandlerUnion<T, DragEvent>
+	// namespaced events
+	'on:copy'?: EventHandlerWithOptionsUnion<T, ClipboardEvent>
+	'on:cut'?: EventHandlerWithOptionsUnion<T, ClipboardEvent>
+	'on:paste'?: EventHandlerWithOptionsUnion<T, ClipboardEvent>
+	'on:compositionend'?: EventHandlerWithOptionsUnion<T, CompositionEvent>
+	'on:compositionstart'?: EventHandlerWithOptionsUnion<T, CompositionEvent>
+	'on:compositionupdate'?: EventHandlerWithOptionsUnion<T, CompositionEvent>
+	'on:focusout'?: EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>
+	'on:focusin'?: EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>
+	'on:encrypted'?: EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>
+	'on:dragexit'?: EventHandlerWithOptionsUnion<T, DragEvent>
+}
+interface CustomEventHandlersCamelCase<T> {
+	onAbort?: EventHandlerUnion<T, UIEvent>
+	onAnimationEnd?: EventHandlerUnion<T, AnimationEvent>
+	onAnimationIteration?: EventHandlerUnion<T, AnimationEvent>
+	onAnimationStart?: EventHandlerUnion<T, AnimationEvent>
+	onAuxClick?: EventHandlerUnion<T, MouseEvent>
+	onBeforeInput?: InputEventHandlerUnion<T, InputEvent>
+	onBeforeToggle?: EventHandlerUnion<T, ToggleEvent>
+	onBlur?: FocusEventHandlerUnion<T, FocusEvent>
+	onCanPlay?: EventHandlerUnion<T, Event>
+	onCanPlayThrough?: EventHandlerUnion<T, Event>
+	onChange?: ChangeEventHandlerUnion<T, Event>
+	onClick?: EventHandlerUnion<T, MouseEvent>
+	onContextMenu?: EventHandlerUnion<T, MouseEvent>
+	onDblClick?: EventHandlerUnion<T, MouseEvent>
+	onDrag?: EventHandlerUnion<T, DragEvent>
+	onDragEnd?: EventHandlerUnion<T, DragEvent>
+	onDragEnter?: EventHandlerUnion<T, DragEvent>
+	onDragLeave?: EventHandlerUnion<T, DragEvent>
+	onDragOver?: EventHandlerUnion<T, DragEvent>
+	onDragStart?: EventHandlerUnion<T, DragEvent>
+	onDrop?: EventHandlerUnion<T, DragEvent>
+	onDurationChange?: EventHandlerUnion<T, Event>
+	onEmptied?: EventHandlerUnion<T, Event>
+	onEnded?: EventHandlerUnion<T, Event>
+	onError?: EventHandlerUnion<T, ErrorEvent>
+	onFocus?: FocusEventHandlerUnion<T, FocusEvent>
+	onGotPointerCapture?: EventHandlerUnion<T, PointerEvent>
+	onInput?: InputEventHandlerUnion<T, InputEvent>
+	onInvalid?: EventHandlerUnion<T, Event>
+	onKeyDown?: EventHandlerUnion<T, KeyboardEvent>
+	onKeyPress?: EventHandlerUnion<T, KeyboardEvent>
+	onKeyUp?: EventHandlerUnion<T, KeyboardEvent>
+	onLoad?: EventHandlerUnion<T, Event>
+	onLoadedData?: EventHandlerUnion<T, Event>
+	onLoadedMetadata?: EventHandlerUnion<T, Event>
+	onLoadStart?: EventHandlerUnion<T, Event>
+	onLostPointerCapture?: EventHandlerUnion<T, PointerEvent>
+	onMouseDown?: EventHandlerUnion<T, MouseEvent>
+	onMouseEnter?: EventHandlerUnion<T, MouseEvent>
+	onMouseLeave?: EventHandlerUnion<T, MouseEvent>
+	onMouseMove?: EventHandlerUnion<T, MouseEvent>
+	onMouseOut?: EventHandlerUnion<T, MouseEvent>
+	onMouseOver?: EventHandlerUnion<T, MouseEvent>
+	onMouseUp?: EventHandlerUnion<T, MouseEvent>
+	onPause?: EventHandlerUnion<T, Event>
+	onPlay?: EventHandlerUnion<T, Event>
+	onPlaying?: EventHandlerUnion<T, Event>
+	onPointerCancel?: EventHandlerUnion<T, PointerEvent>
+	onPointerDown?: EventHandlerUnion<T, PointerEvent>
+	onPointerEnter?: EventHandlerUnion<T, PointerEvent>
+	onPointerLeave?: EventHandlerUnion<T, PointerEvent>
+	onPointerMove?: EventHandlerUnion<T, PointerEvent>
+	onPointerOut?: EventHandlerUnion<T, PointerEvent>
+	onPointerOver?: EventHandlerUnion<T, PointerEvent>
+	onPointerUp?: EventHandlerUnion<T, PointerEvent>
+	onProgress?: EventHandlerUnion<T, ProgressEvent>
+	onRateChange?: EventHandlerUnion<T, Event>
+	onReset?: EventHandlerUnion<T, Event>
+	onScroll?: EventHandlerUnion<T, Event>
+	onScrollEnd?: EventHandlerUnion<T, Event>
+	onSeeked?: EventHandlerUnion<T, Event>
+	onSeeking?: EventHandlerUnion<T, Event>
+	onSelect?: EventHandlerUnion<T, Event>
+	onStalled?: EventHandlerUnion<T, Event>
+	onSubmit?: EventHandlerUnion<T, SubmitEvent>
+	onSuspend?: EventHandlerUnion<T, Event>
+	onTimeUpdate?: EventHandlerUnion<T, Event>
+	onToggle?: EventHandlerUnion<T, ToggleEvent>
+	onTouchCancel?: EventHandlerUnion<T, TouchEvent>
+	onTouchEnd?: EventHandlerUnion<T, TouchEvent>
+	onTouchMove?: EventHandlerUnion<T, TouchEvent>
+	onTouchStart?: EventHandlerUnion<T, TouchEvent>
+	onTransitionStart?: EventHandlerUnion<T, TransitionEvent>
+	onTransitionEnd?: EventHandlerUnion<T, TransitionEvent>
+	onTransitionRun?: EventHandlerUnion<T, TransitionEvent>
+	onTransitionCancel?: EventHandlerUnion<T, TransitionEvent>
+	onVolumeChange?: EventHandlerUnion<T, Event>
+	onWaiting?: EventHandlerUnion<T, Event>
+	onWheel?: EventHandlerUnion<T, WheelEvent>
+}
+interface CustomEventHandlersLowerCase<T> {
+	/** @deprecated Use camelCase event handlers */
+	onabort?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onanimationend?: EventHandlerUnion<T, AnimationEvent>
+	/** @deprecated Use camelCase event handlers */
+	onanimationiteration?: EventHandlerUnion<T, AnimationEvent>
+	/** @deprecated Use camelCase event handlers */
+	onanimationstart?: EventHandlerUnion<T, AnimationEvent>
+	/** @deprecated Use camelCase event handlers */
+	onauxclick?: EventHandlerUnion<T, MouseEvent>
+	/** @deprecated Use camelCase event handlers */
+	onbeforeinput?: InputEventHandlerUnion<T, InputEvent>
+	/** @deprecated Use camelCase event handlers */
+	onbeforetoggle?: EventHandlerUnion<T, ToggleEvent>
+	/** @deprecated Use camelCase event handlers */
+	onblur?: FocusEventHandlerUnion<T, FocusEvent>
+	/** @deprecated Use camelCase event handlers */
+	oncanplay?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	oncanplaythrough?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onchange?: ChangeEventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onclick?: EventHandlerUnion<T, MouseEvent>
+	/** @deprecated Use camelCase event handlers */
+	oncontextmenu?: EventHandlerUnion<T, MouseEvent>
+	/** @deprecated Use camelCase event handlers */
+	ondblclick?: EventHandlerUnion<T, MouseEvent>
+	/** @deprecated Use camelCase event handlers */
+	ondrag?: EventHandlerUnion<T, DragEvent>
+	/** @deprecated Use camelCase event handlers */
+	ondragend?: EventHandlerUnion<T, DragEvent>
+	/** @deprecated Use camelCase event handlers */
+	ondragenter?: EventHandlerUnion<T, DragEvent>
+	/** @deprecated Use camelCase event handlers */
+	ondragleave?: EventHandlerUnion<T, DragEvent>
+	/** @deprecated Use camelCase event handlers */
+	ondragover?: EventHandlerUnion<T, DragEvent>
+	/** @deprecated Use camelCase event handlers */
+	ondragstart?: EventHandlerUnion<T, DragEvent>
+	/** @deprecated Use camelCase event handlers */
+	ondrop?: EventHandlerUnion<T, DragEvent>
+	/** @deprecated Use camelCase event handlers */
+	ondurationchange?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onemptied?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onended?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onerror?: EventHandlerUnion<T, ErrorEvent>
+	/** @deprecated Use camelCase event handlers */
+	onfocus?: FocusEventHandlerUnion<T, FocusEvent>
+	/** @deprecated Use camelCase event handlers */
+	ongotpointercapture?: EventHandlerUnion<T, PointerEvent>
+	/** @deprecated Use camelCase event handlers */
+	oninput?: InputEventHandlerUnion<T, InputEvent>
+	/** @deprecated Use camelCase event handlers */
+	oninvalid?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onkeydown?: EventHandlerUnion<T, KeyboardEvent>
+	/** @deprecated Use camelCase event handlers */
+	onkeypress?: EventHandlerUnion<T, KeyboardEvent>
+	/** @deprecated Use camelCase event handlers */
+	onkeyup?: EventHandlerUnion<T, KeyboardEvent>
+	/** @deprecated Use camelCase event handlers */
+	onload?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onloadeddata?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onloadedmetadata?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onloadstart?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onlostpointercapture?: EventHandlerUnion<T, PointerEvent>
+	/** @deprecated Use camelCase event handlers */
+	onmousedown?: EventHandlerUnion<T, MouseEvent>
+	/** @deprecated Use camelCase event handlers */
+	onmouseenter?: EventHandlerUnion<T, MouseEvent>
+	/** @deprecated Use camelCase event handlers */
+	onmouseleave?: EventHandlerUnion<T, MouseEvent>
+	/** @deprecated Use camelCase event handlers */
+	onmousemove?: EventHandlerUnion<T, MouseEvent>
+	/** @deprecated Use camelCase event handlers */
+	onmouseout?: EventHandlerUnion<T, MouseEvent>
+	/** @deprecated Use camelCase event handlers */
+	onmouseover?: EventHandlerUnion<T, MouseEvent>
+	/** @deprecated Use camelCase event handlers */
+	onmouseup?: EventHandlerUnion<T, MouseEvent>
+	/** @deprecated Use camelCase event handlers */
+	onpause?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onplay?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onplaying?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onpointercancel?: EventHandlerUnion<T, PointerEvent>
+	/** @deprecated Use camelCase event handlers */
+	onpointerdown?: EventHandlerUnion<T, PointerEvent>
+	/** @deprecated Use camelCase event handlers */
+	onpointerenter?: EventHandlerUnion<T, PointerEvent>
+	/** @deprecated Use camelCase event handlers */
+	onpointerleave?: EventHandlerUnion<T, PointerEvent>
+	/** @deprecated Use camelCase event handlers */
+	onpointermove?: EventHandlerUnion<T, PointerEvent>
+	/** @deprecated Use camelCase event handlers */
+	onpointerout?: EventHandlerUnion<T, PointerEvent>
+	/** @deprecated Use camelCase event handlers */
+	onpointerover?: EventHandlerUnion<T, PointerEvent>
+	/** @deprecated Use camelCase event handlers */
+	onpointerup?: EventHandlerUnion<T, PointerEvent>
+	/** @deprecated Use camelCase event handlers */
+	onprogress?: EventHandlerUnion<T, ProgressEvent>
+	/** @deprecated Use camelCase event handlers */
+	onratechange?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onreset?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onscroll?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onscrollend?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onseeked?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onseeking?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onselect?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onstalled?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onsubmit?: EventHandlerUnion<T, SubmitEvent>
+	/** @deprecated Use camelCase event handlers */
+	onsuspend?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	ontimeupdate?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	ontoggle?: EventHandlerUnion<T, ToggleEvent>
+	/** @deprecated Use camelCase event handlers */
+	ontouchcancel?: EventHandlerUnion<T, TouchEvent>
+	/** @deprecated Use camelCase event handlers */
+	ontouchend?: EventHandlerUnion<T, TouchEvent>
+	/** @deprecated Use camelCase event handlers */
+	ontouchmove?: EventHandlerUnion<T, TouchEvent>
+	/** @deprecated Use camelCase event handlers */
+	ontouchstart?: EventHandlerUnion<T, TouchEvent>
+	/** @deprecated Use camelCase event handlers */
+	ontransitionstart?: EventHandlerUnion<T, TransitionEvent>
+	/** @deprecated Use camelCase event handlers */
+	ontransitionend?: EventHandlerUnion<T, TransitionEvent>
+	/** @deprecated Use camelCase event handlers */
+	ontransitionrun?: EventHandlerUnion<T, TransitionEvent>
+	/** @deprecated Use camelCase event handlers */
+	ontransitioncancel?: EventHandlerUnion<T, TransitionEvent>
+	/** @deprecated Use camelCase event handlers */
+	onvolumechange?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onwaiting?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onwheel?: EventHandlerUnion<T, WheelEvent>
+}
+
+// Solid Next - https://www.solidjs.com/
+interface DOMAttributes<T> extends CustomAttributes<T>, DirectiveAttributes, DirectiveFunctionAttributes<T>, PropAttributes, AttrAttributes, BoolAttributes, OnAttributes<T>, CustomEventHandlersCamelCase<T>, CustomEventHandlersLowerCase<T>, CustomEventHandlersNamespaced<T> {
+	children?: Node | ArrayElement | (string & {}) | number | boolean | null
+	innerHTML?: string
+	innerText?: string | number
+	textContent?: string | number
+	// camel case events
+	onCopy?: EventHandlerUnion<T, ClipboardEvent>
+	onCut?: EventHandlerUnion<T, ClipboardEvent>
+	onPaste?: EventHandlerUnion<T, ClipboardEvent>
+	onCompositionEnd?: EventHandlerUnion<T, CompositionEvent>
+	onCompositionStart?: EventHandlerUnion<T, CompositionEvent>
+	onCompositionUpdate?: EventHandlerUnion<T, CompositionEvent>
+	onFocusOut?: FocusEventHandlerUnion<T, FocusEvent>
+	onFocusIn?: FocusEventHandlerUnion<T, FocusEvent>
+	onEncrypted?: EventHandlerUnion<T, MediaEncryptedEvent>
+	onDragExit?: EventHandlerUnion<T, DragEvent>
+	// lower case events
+	/** @deprecated Use camelCase event handlers */
+	oncopy?: EventHandlerUnion<T, ClipboardEvent>
+	/** @deprecated Use camelCase event handlers */
+	oncut?: EventHandlerUnion<T, ClipboardEvent>
+	/** @deprecated Use camelCase event handlers */
+	onpaste?: EventHandlerUnion<T, ClipboardEvent>
+	/** @deprecated Use camelCase event handlers */
+	oncompositionend?: EventHandlerUnion<T, CompositionEvent>
+	/** @deprecated Use camelCase event handlers */
+	oncompositionstart?: EventHandlerUnion<T, CompositionEvent>
+	/** @deprecated Use camelCase event handlers */
+	oncompositionupdate?: EventHandlerUnion<T, CompositionEvent>
+	/** @deprecated Use camelCase event handlers */
+	onfocusout?: FocusEventHandlerUnion<T, FocusEvent>
+	/** @deprecated Use camelCase event handlers */
+	onfocusin?: FocusEventHandlerUnion<T, FocusEvent>
+	/** @deprecated Use camelCase event handlers */
+	onencrypted?: EventHandlerUnion<T, MediaEncryptedEvent>
+	/** @deprecated Use camelCase event handlers */
+	ondragexit?: EventHandlerUnion<T, DragEvent>
+	// namespaced events
+	'on:copy'?: EventHandlerWithOptionsUnion<T, ClipboardEvent>
+	'on:cut'?: EventHandlerWithOptionsUnion<T, ClipboardEvent>
+	'on:paste'?: EventHandlerWithOptionsUnion<T, ClipboardEvent>
+	'on:compositionend'?: EventHandlerWithOptionsUnion<T, CompositionEvent>
+	'on:compositionstart'?: EventHandlerWithOptionsUnion<T, CompositionEvent>
+	'on:compositionupdate'?: EventHandlerWithOptionsUnion<T, CompositionEvent>
+	'on:focusout'?: EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>
+	'on:focusin'?: EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>
+	'on:encrypted'?: EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>
+	'on:dragexit'?: EventHandlerWithOptionsUnion<T, DragEvent>
+}
+interface CustomEventHandlersCamelCase<T> {
+	onAbort?: EventHandlerUnion<T, UIEvent>
+	onAnimationEnd?: EventHandlerUnion<T, AnimationEvent>
+	onAnimationIteration?: EventHandlerUnion<T, AnimationEvent>
+	onAnimationStart?: EventHandlerUnion<T, AnimationEvent>
+	onAuxClick?: EventHandlerUnion<T, MouseEvent>
+	onBeforeInput?: InputEventHandlerUnion<T, InputEvent>
+	onBeforeToggle?: EventHandlerUnion<T, ToggleEvent>
+	onBlur?: FocusEventHandlerUnion<T, FocusEvent>
+	onCanPlay?: EventHandlerUnion<T, Event>
+	onCanPlayThrough?: EventHandlerUnion<T, Event>
+	onChange?: ChangeEventHandlerUnion<T, Event>
+	onClick?: EventHandlerUnion<T, MouseEvent>
+	onContextMenu?: EventHandlerUnion<T, MouseEvent>
+	onDblClick?: EventHandlerUnion<T, MouseEvent>
+	onDrag?: EventHandlerUnion<T, DragEvent>
+	onDragEnd?: EventHandlerUnion<T, DragEvent>
+	onDragEnter?: EventHandlerUnion<T, DragEvent>
+	onDragLeave?: EventHandlerUnion<T, DragEvent>
+	onDragOver?: EventHandlerUnion<T, DragEvent>
+	onDragStart?: EventHandlerUnion<T, DragEvent>
+	onDrop?: EventHandlerUnion<T, DragEvent>
+	onDurationChange?: EventHandlerUnion<T, Event>
+	onEmptied?: EventHandlerUnion<T, Event>
+	onEnded?: EventHandlerUnion<T, Event>
+	onError?: EventHandlerUnion<T, ErrorEvent>
+	onFocus?: FocusEventHandlerUnion<T, FocusEvent>
+	onGotPointerCapture?: EventHandlerUnion<T, PointerEvent>
+	onInput?: InputEventHandlerUnion<T, InputEvent>
+	onInvalid?: EventHandlerUnion<T, Event>
+	onKeyDown?: EventHandlerUnion<T, KeyboardEvent>
+	onKeyPress?: EventHandlerUnion<T, KeyboardEvent>
+	onKeyUp?: EventHandlerUnion<T, KeyboardEvent>
+	onLoad?: EventHandlerUnion<T, Event>
+	onLoadedData?: EventHandlerUnion<T, Event>
+	onLoadedMetadata?: EventHandlerUnion<T, Event>
+	onLoadStart?: EventHandlerUnion<T, Event>
+	onLostPointerCapture?: EventHandlerUnion<T, PointerEvent>
+	onMouseDown?: EventHandlerUnion<T, MouseEvent>
+	onMouseEnter?: EventHandlerUnion<T, MouseEvent>
+	onMouseLeave?: EventHandlerUnion<T, MouseEvent>
+	onMouseMove?: EventHandlerUnion<T, MouseEvent>
+	onMouseOut?: EventHandlerUnion<T, MouseEvent>
+	onMouseOver?: EventHandlerUnion<T, MouseEvent>
+	onMouseUp?: EventHandlerUnion<T, MouseEvent>
+	onPause?: EventHandlerUnion<T, Event>
+	onPlay?: EventHandlerUnion<T, Event>
+	onPlaying?: EventHandlerUnion<T, Event>
+	onPointerCancel?: EventHandlerUnion<T, PointerEvent>
+	onPointerDown?: EventHandlerUnion<T, PointerEvent>
+	onPointerEnter?: EventHandlerUnion<T, PointerEvent>
+	onPointerLeave?: EventHandlerUnion<T, PointerEvent>
+	onPointerMove?: EventHandlerUnion<T, PointerEvent>
+	onPointerOut?: EventHandlerUnion<T, PointerEvent>
+	onPointerOver?: EventHandlerUnion<T, PointerEvent>
+	onPointerUp?: EventHandlerUnion<T, PointerEvent>
+	onProgress?: EventHandlerUnion<T, ProgressEvent>
+	onRateChange?: EventHandlerUnion<T, Event>
+	onReset?: EventHandlerUnion<T, Event>
+	onScroll?: EventHandlerUnion<T, Event>
+	onScrollEnd?: EventHandlerUnion<T, Event>
+	onSeeked?: EventHandlerUnion<T, Event>
+	onSeeking?: EventHandlerUnion<T, Event>
+	onSelect?: EventHandlerUnion<T, Event>
+	onStalled?: EventHandlerUnion<T, Event>
+	onSubmit?: EventHandlerUnion<T, SubmitEvent>
+	onSuspend?: EventHandlerUnion<T, Event>
+	onTimeUpdate?: EventHandlerUnion<T, Event>
+	onToggle?: EventHandlerUnion<T, ToggleEvent>
+	onTouchCancel?: EventHandlerUnion<T, TouchEvent>
+	onTouchEnd?: EventHandlerUnion<T, TouchEvent>
+	onTouchMove?: EventHandlerUnion<T, TouchEvent>
+	onTouchStart?: EventHandlerUnion<T, TouchEvent>
+	onTransitionStart?: EventHandlerUnion<T, TransitionEvent>
+	onTransitionEnd?: EventHandlerUnion<T, TransitionEvent>
+	onTransitionRun?: EventHandlerUnion<T, TransitionEvent>
+	onTransitionCancel?: EventHandlerUnion<T, TransitionEvent>
+	onVolumeChange?: EventHandlerUnion<T, Event>
+	onWaiting?: EventHandlerUnion<T, Event>
+	onWheel?: EventHandlerUnion<T, WheelEvent>
+}
+interface CustomEventHandlersLowerCase<T> {
+	/** @deprecated Use camelCase event handlers */
+	onabort?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onanimationend?: EventHandlerUnion<T, AnimationEvent>
+	/** @deprecated Use camelCase event handlers */
+	onanimationiteration?: EventHandlerUnion<T, AnimationEvent>
+	/** @deprecated Use camelCase event handlers */
+	onanimationstart?: EventHandlerUnion<T, AnimationEvent>
+	/** @deprecated Use camelCase event handlers */
+	onauxclick?: EventHandlerUnion<T, MouseEvent>
+	/** @deprecated Use camelCase event handlers */
+	onbeforeinput?: InputEventHandlerUnion<T, InputEvent>
+	/** @deprecated Use camelCase event handlers */
+	onbeforetoggle?: EventHandlerUnion<T, ToggleEvent>
+	/** @deprecated Use camelCase event handlers */
+	onblur?: FocusEventHandlerUnion<T, FocusEvent>
+	/** @deprecated Use camelCase event handlers */
+	oncanplay?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	oncanplaythrough?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onchange?: ChangeEventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onclick?: EventHandlerUnion<T, MouseEvent>
+	/** @deprecated Use camelCase event handlers */
+	oncontextmenu?: EventHandlerUnion<T, MouseEvent>
+	/** @deprecated Use camelCase event handlers */
+	ondblclick?: EventHandlerUnion<T, MouseEvent>
+	/** @deprecated Use camelCase event handlers */
+	ondrag?: EventHandlerUnion<T, DragEvent>
+	/** @deprecated Use camelCase event handlers */
+	ondragend?: EventHandlerUnion<T, DragEvent>
+	/** @deprecated Use camelCase event handlers */
+	ondragenter?: EventHandlerUnion<T, DragEvent>
+	/** @deprecated Use camelCase event handlers */
+	ondragleave?: EventHandlerUnion<T, DragEvent>
+	/** @deprecated Use camelCase event handlers */
+	ondragover?: EventHandlerUnion<T, DragEvent>
+	/** @deprecated Use camelCase event handlers */
+	ondragstart?: EventHandlerUnion<T, DragEvent>
+	/** @deprecated Use camelCase event handlers */
+	ondrop?: EventHandlerUnion<T, DragEvent>
+	/** @deprecated Use camelCase event handlers */
+	ondurationchange?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onemptied?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onended?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onerror?: EventHandlerUnion<T, ErrorEvent>
+	/** @deprecated Use camelCase event handlers */
+	onfocus?: FocusEventHandlerUnion<T, FocusEvent>
+	/** @deprecated Use camelCase event handlers */
+	ongotpointercapture?: EventHandlerUnion<T, PointerEvent>
+	/** @deprecated Use camelCase event handlers */
+	oninput?: InputEventHandlerUnion<T, InputEvent>
+	/** @deprecated Use camelCase event handlers */
+	oninvalid?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onkeydown?: EventHandlerUnion<T, KeyboardEvent>
+	/** @deprecated Use camelCase event handlers */
+	onkeypress?: EventHandlerUnion<T, KeyboardEvent>
+	/** @deprecated Use camelCase event handlers */
+	onkeyup?: EventHandlerUnion<T, KeyboardEvent>
+	/** @deprecated Use camelCase event handlers */
+	onload?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onloadeddata?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onloadedmetadata?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onloadstart?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onlostpointercapture?: EventHandlerUnion<T, PointerEvent>
+	/** @deprecated Use camelCase event handlers */
+	onmousedown?: EventHandlerUnion<T, MouseEvent>
+	/** @deprecated Use camelCase event handlers */
+	onmouseenter?: EventHandlerUnion<T, MouseEvent>
+	/** @deprecated Use camelCase event handlers */
+	onmouseleave?: EventHandlerUnion<T, MouseEvent>
+	/** @deprecated Use camelCase event handlers */
+	onmousemove?: EventHandlerUnion<T, MouseEvent>
+	/** @deprecated Use camelCase event handlers */
+	onmouseout?: EventHandlerUnion<T, MouseEvent>
+	/** @deprecated Use camelCase event handlers */
+	onmouseover?: EventHandlerUnion<T, MouseEvent>
+	/** @deprecated Use camelCase event handlers */
+	onmouseup?: EventHandlerUnion<T, MouseEvent>
+	/** @deprecated Use camelCase event handlers */
+	onpause?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onplay?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onplaying?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onpointercancel?: EventHandlerUnion<T, PointerEvent>
+	/** @deprecated Use camelCase event handlers */
+	onpointerdown?: EventHandlerUnion<T, PointerEvent>
+	/** @deprecated Use camelCase event handlers */
+	onpointerenter?: EventHandlerUnion<T, PointerEvent>
+	/** @deprecated Use camelCase event handlers */
+	onpointerleave?: EventHandlerUnion<T, PointerEvent>
+	/** @deprecated Use camelCase event handlers */
+	onpointermove?: EventHandlerUnion<T, PointerEvent>
+	/** @deprecated Use camelCase event handlers */
+	onpointerout?: EventHandlerUnion<T, PointerEvent>
+	/** @deprecated Use camelCase event handlers */
+	onpointerover?: EventHandlerUnion<T, PointerEvent>
+	/** @deprecated Use camelCase event handlers */
+	onpointerup?: EventHandlerUnion<T, PointerEvent>
+	/** @deprecated Use camelCase event handlers */
+	onprogress?: EventHandlerUnion<T, ProgressEvent>
+	/** @deprecated Use camelCase event handlers */
+	onratechange?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onreset?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onscroll?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onscrollend?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onseeked?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onseeking?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onselect?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onstalled?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onsubmit?: EventHandlerUnion<T, SubmitEvent>
+	/** @deprecated Use camelCase event handlers */
+	onsuspend?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	ontimeupdate?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	ontoggle?: EventHandlerUnion<T, ToggleEvent>
+	/** @deprecated Use camelCase event handlers */
+	ontouchcancel?: EventHandlerUnion<T, TouchEvent>
+	/** @deprecated Use camelCase event handlers */
+	ontouchend?: EventHandlerUnion<T, TouchEvent>
+	/** @deprecated Use camelCase event handlers */
+	ontouchmove?: EventHandlerUnion<T, TouchEvent>
+	/** @deprecated Use camelCase event handlers */
+	ontouchstart?: EventHandlerUnion<T, TouchEvent>
+	/** @deprecated Use camelCase event handlers */
+	ontransitionstart?: EventHandlerUnion<T, TransitionEvent>
+	/** @deprecated Use camelCase event handlers */
+	ontransitionend?: EventHandlerUnion<T, TransitionEvent>
+	/** @deprecated Use camelCase event handlers */
+	ontransitionrun?: EventHandlerUnion<T, TransitionEvent>
+	/** @deprecated Use camelCase event handlers */
+	ontransitioncancel?: EventHandlerUnion<T, TransitionEvent>
+	/** @deprecated Use camelCase event handlers */
+	onvolumechange?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onwaiting?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
 	onwheel?: EventHandlerUnion<T, WheelEvent>
 }
 

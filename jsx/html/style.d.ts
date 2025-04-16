@@ -1,9 +1,33 @@
-// Solid - https://www.solidjs.com/
+// Solid Main - https://www.solidjs.com/
 interface StyleHTMLAttributes<T> extends HTMLAttributes<T> {
 	media?: string
 	nonce?: string
 	scoped?: boolean
 	type?: string
+}
+
+// Solid Minor - https://www.solidjs.com/
+interface StyleHTMLAttributes<T> extends HTMLAttributes<T> {
+	blocking?: 'render'
+	media?: string
+	nonce?: string
+
+	/** @deprecated */
+	scoped?: '' | boolean
+	/** @deprecated */
+	type?: string
+}
+
+// Solid Next - https://www.solidjs.com/
+interface StyleHTMLAttributes<T> extends HTMLAttributes<T> {
+	blocking?: 'render' | undefined | false
+	media?: string | undefined | false
+	nonce?: string | undefined | false
+
+	/** @deprecated */
+	scoped?: true | false | '' | undefined | false
+	/** @deprecated */
+	type?: string | undefined | false
 }
 
 // Voby - https://github.com/vobyjs/voby

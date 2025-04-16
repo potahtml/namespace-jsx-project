@@ -1,8 +1,22 @@
-// Solid - https://www.solidjs.com/
+// Solid Main - https://www.solidjs.com/
 interface OutputHTMLAttributes<T> extends HTMLAttributes<T> {
 	form?: string
 	for?: string
 	name?: string
+}
+
+// Solid Minor - https://www.solidjs.com/
+interface OutputHTMLAttributes<T> extends HTMLAttributes<T> {
+	form?: string
+	for?: string
+	name?: string
+}
+
+// Solid Next - https://www.solidjs.com/
+interface OutputHTMLAttributes<T> extends HTMLAttributes<T> {
+	form?: string | undefined | false
+	for?: string | undefined | false
+	name?: string | undefined | false
 }
 
 // Voby - https://github.com/vobyjs/voby

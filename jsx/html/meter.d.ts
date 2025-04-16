@@ -1,4 +1,4 @@
-// Solid - https://www.solidjs.com/
+// Solid Main - https://www.solidjs.com/
 interface MeterHTMLAttributes<T> extends HTMLAttributes<T> {
 	form?: string
 	high?: number | string
@@ -7,6 +7,28 @@ interface MeterHTMLAttributes<T> extends HTMLAttributes<T> {
 	min?: number | string
 	optimum?: number | string
 	value?: string | string[] | number
+}
+
+// Solid Minor - https://www.solidjs.com/
+interface MeterHTMLAttributes<T> extends HTMLAttributes<T> {
+	form?: string
+	high?: number | string
+	low?: number | string
+	max?: number | string
+	min?: number | string
+	optimum?: number | string
+	value?: string | string[] | number
+}
+
+// Solid Next - https://www.solidjs.com/
+interface MeterHTMLAttributes<T> extends HTMLAttributes<T> {
+	form?: string | undefined | false
+	high?: number | string | undefined | false
+	low?: number | string | undefined | false
+	max?: number | string | undefined | false
+	min?: number | string | undefined | false
+	optimum?: number | string | undefined | false
+	value?: string | string[] | number | undefined | false
 }
 
 // Voby - https://github.com/vobyjs/voby

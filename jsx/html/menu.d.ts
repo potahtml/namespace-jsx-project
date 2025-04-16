@@ -1,7 +1,27 @@
-// Solid - https://www.solidjs.com/
+// Solid Main - https://www.solidjs.com/
 interface MenuHTMLAttributes<T> extends HTMLAttributes<T> {
 	label?: string
 	type?: 'context' | 'toolbar'
+}
+
+// Solid Minor - https://www.solidjs.com/
+interface MenuHTMLAttributes<T> extends HTMLAttributes<T> {
+	/** @deprecated */
+	compact?: '' | boolean
+	/** @deprecated */
+	label?: string
+	/** @deprecated */
+	type?: 'context' | 'toolbar'
+}
+
+// Solid Next - https://www.solidjs.com/
+interface MenuHTMLAttributes<T> extends HTMLAttributes<T> {
+	/** @deprecated */
+	compact?: true | false | '' | undefined | false
+	/** @deprecated */
+	label?: string | undefined | false
+	/** @deprecated */
+	type?: 'context' | 'toolbar' | undefined | false
 }
 
 // Voby - https://github.com/vobyjs/voby

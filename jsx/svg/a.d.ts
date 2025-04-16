@@ -1,4 +1,4 @@
-// Solid - https://www.solidjs.com/
+// Solid Main - https://www.solidjs.com/
 interface AnchorHTMLAttributes<T> extends HTMLAttributes<T> {
 	download?: any
 	href?: string
@@ -10,6 +10,64 @@ interface AnchorHTMLAttributes<T> extends HTMLAttributes<T> {
 	target?: '_self' | '_blank' | '_parent' | '_top' | (string & {})
 	type?: string
 	referrerPolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
+}
+
+// Solid Minor - https://www.solidjs.com/
+interface AnchorHTMLAttributes<T> extends HTMLAttributes<T> {
+	download?: string
+	href?: string
+	hreflang?: string
+	ping?: string
+	referrerpolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
+	rel?: string
+	target?: '_self' | '_blank' | '_parent' | '_top' | (string & {})
+	type?: string
+
+	/** @experimental */
+	attributionsrc?: string
+
+	/** @deprecated Use lowercase attributes */
+	referrerPolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
+
+	/** @deprecated */
+	charset?: string
+	/** @deprecated */
+	coords?: string
+	/** @deprecated */
+	name?: string
+	/** @deprecated */
+	rev?: string
+	/** @deprecated */
+	shape?: 'rect' | 'circle' | 'poly' | 'default'
+}
+
+// Solid Next - https://www.solidjs.com/
+interface AnchorHTMLAttributes<T> extends HTMLAttributes<T> {
+	download?: string | undefined | false
+	href?: string | undefined | false
+	hreflang?: string | undefined | false
+	ping?: string | undefined | false
+	referrerpolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url' | undefined | false
+	rel?: string | undefined | false
+	target?: '_self' | '_blank' | '_parent' | '_top' | (string & {}) | undefined | false
+	type?: string | undefined | false
+
+	/** @experimental */
+	attributionsrc?: string | undefined | false
+
+	/** @deprecated Use lowercase attributes */
+	referrerPolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url' | undefined | false
+
+	/** @deprecated */
+	charset?: string | undefined | false
+	/** @deprecated */
+	coords?: string | undefined | false
+	/** @deprecated */
+	name?: string | undefined | false
+	/** @deprecated */
+	rev?: string | undefined | false
+	/** @deprecated */
+	shape?: 'rect' | 'circle' | 'poly' | 'default' | undefined | false
 }
 
 // Voby - https://github.com/vobyjs/voby

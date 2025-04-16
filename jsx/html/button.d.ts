@@ -1,4 +1,4 @@
-// Solid - https://www.solidjs.com/
+// Solid Main - https://www.solidjs.com/
 interface ButtonHTMLAttributes<T> extends HTMLAttributes<T> {
 	autofocus?: boolean
 	disabled?: boolean
@@ -20,6 +20,80 @@ interface ButtonHTMLAttributes<T> extends HTMLAttributes<T> {
 	formTarget?: string
 	popoverTarget?: string
 	popoverTargetAction?: 'hide' | 'show' | 'toggle'
+}
+
+// Solid Minor - https://www.solidjs.com/
+interface ButtonHTMLAttributes<T> extends HTMLAttributes<T> {
+	autofocus?: '' | boolean
+	disabled?: '' | boolean
+	form?: string
+	formaction?: string
+	formenctype?: 'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'
+	formmethod?: 'post' | 'get' | 'dialog'
+	formnovalidate?: '' | boolean
+	formtarget?: '_self' | '_blank' | '_parent' | '_top' | (string & {})
+	popovertarget?: string
+	popovertargetaction?: 'hide' | 'show' | 'toggle'
+	name?: string
+	type?: 'submit' | 'reset' | 'button' | 'menu'
+	value?: string
+
+	/** @experimental */
+	command?: 'show-modal' | 'close' | 'show-popover' | 'hide-popover' | 'toggle-popover' | (string & {})
+	/** @experimental */
+	commandfor?: string
+
+	/** @deprecated Use lowercase attributes */
+	formAction?: string
+	/** @deprecated Use lowercase attributes */
+	formEnctype?: 'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'
+	/** @deprecated Use lowercase attributes */
+	formMethod?: 'post' | 'get' | 'dialog'
+	/** @deprecated Use lowercase attributes */
+	formNoValidate?: boolean
+	/** @deprecated Use lowercase attributes */
+	formTarget?: string
+	/** @deprecated Use lowercase attributes */
+	popoverTarget?: string
+	/** @deprecated Use lowercase attributes */
+	popoverTargetAction?: 'hide' | 'show' | 'toggle'
+}
+
+// Solid Next - https://www.solidjs.com/
+interface ButtonHTMLAttributes<T> extends HTMLAttributes<T> {
+	autofocus?: true | false | '' | undefined | false
+	disabled?: true | false | '' | undefined | false
+	form?: string | undefined | false
+	formaction?: string | undefined | false
+	formenctype?: 'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain' | undefined | false
+	formmethod?: 'post' | 'get' | 'dialog' | undefined | false
+	formnovalidate?: true | false | '' | undefined | false
+	formtarget?: '_self' | '_blank' | '_parent' | '_top' | (string & {}) | undefined | false
+	popovertarget?: string | undefined | false
+	popovertargetaction?: 'hide' | 'show' | 'toggle' | undefined | false
+	name?: string | undefined | false
+	type?: 'submit' | 'reset' | 'button' | 'menu' | undefined | false
+	value?: string | undefined | false
+
+	/** @experimental */
+	command?: 'show-modal' | 'close' | 'show-popover' | 'hide-popover' | 'toggle-popover' | (string & {}) | undefined | false
+	/** @experimental */
+	commandfor?: string | undefined | false
+
+	/** @deprecated Use lowercase attributes */
+	formAction?: string | undefined | false
+	/** @deprecated Use lowercase attributes */
+	formEnctype?: 'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain' | undefined | false
+	/** @deprecated Use lowercase attributes */
+	formMethod?: 'post' | 'get' | 'dialog' | undefined | false
+	/** @deprecated Use lowercase attributes */
+	formNoValidate?: boolean | undefined | false
+	/** @deprecated Use lowercase attributes */
+	formTarget?: string | undefined | false
+	/** @deprecated Use lowercase attributes */
+	popoverTarget?: string | undefined | false
+	/** @deprecated Use lowercase attributes */
+	popoverTargetAction?: 'hide' | 'show' | 'toggle' | undefined | false
 }
 
 // Voby - https://github.com/vobyjs/voby

@@ -1,4 +1,4 @@
-// Solid - https://www.solidjs.com/
+// Solid Main - https://www.solidjs.com/
 interface SelectHTMLAttributes<T> extends HTMLAttributes<T> {
 	autocomplete?: string
 	autofocus?: boolean
@@ -9,6 +9,32 @@ interface SelectHTMLAttributes<T> extends HTMLAttributes<T> {
 	required?: boolean
 	size?: number | string
 	value?: string | string[] | number
+}
+
+// Solid Minor - https://www.solidjs.com/
+interface SelectHTMLAttributes<T> extends HTMLAttributes<T> {
+	autocomplete?: string
+	autofocus?: '' | boolean
+	disabled?: '' | boolean
+	form?: string
+	multiple?: '' | boolean
+	name?: string
+	required?: '' | boolean
+	size?: number | string
+	value?: string | string[] | number
+}
+
+// Solid Next - https://www.solidjs.com/
+interface SelectHTMLAttributes<T> extends HTMLAttributes<T> {
+	autocomplete?: string | undefined | false
+	autofocus?: true | false | '' | undefined | false
+	disabled?: true | false | '' | undefined | false
+	form?: string | undefined | false
+	multiple?: true | false | '' | undefined | false
+	name?: string | undefined | false
+	required?: true | false | '' | undefined | false
+	size?: number | string | undefined | false
+	value?: string | string[] | number | undefined | false
 }
 
 // Voby - https://github.com/vobyjs/voby

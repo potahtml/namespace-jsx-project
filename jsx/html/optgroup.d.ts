@@ -1,7 +1,19 @@
-// Solid - https://www.solidjs.com/
+// Solid Main - https://www.solidjs.com/
 interface OptgroupHTMLAttributes<T> extends HTMLAttributes<T> {
 	disabled?: boolean
 	label?: string
+}
+
+// Solid Minor - https://www.solidjs.com/
+interface OptgroupHTMLAttributes<T> extends HTMLAttributes<T> {
+	disabled?: '' | boolean
+	label?: string
+}
+
+// Solid Next - https://www.solidjs.com/
+interface OptgroupHTMLAttributes<T> extends HTMLAttributes<T> {
+	disabled?: true | false | '' | undefined | false
+	label?: string | undefined | false
 }
 
 // Voby - https://github.com/vobyjs/voby

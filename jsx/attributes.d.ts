@@ -1,4 +1,14 @@
-// Solid - https://www.solidjs.com/
+// Solid Main - https://www.solidjs.com/
+interface IntrinsicAttributes {
+	ref?: unknown | ((e: unknown) => void)
+}
+
+// Solid Minor - https://www.solidjs.com/
+interface IntrinsicAttributes {
+	ref?: unknown | ((e: unknown) => void)
+}
+
+// Solid Next - https://www.solidjs.com/
 interface IntrinsicAttributes {
 	ref?: unknown | ((e: unknown) => void)
 }

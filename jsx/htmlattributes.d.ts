@@ -1,4 +1,4 @@
-// Solid - https://www.solidjs.com/
+// Solid Main - https://www.solidjs.com/
 interface HTMLAttributes<T> extends AriaAttributes, DOMAttributes<T> {
 	// [key: ClassKeys]: boolean;
 	accessKey?: string
@@ -48,6 +48,138 @@ interface HTMLAttributes<T> extends AriaAttributes, DOMAttributes<T> {
 	itemRef?: string
 	exportParts?: string
 	inputMode?: 'none' | 'text' | 'tel' | 'url' | 'email' | 'numeric' | 'decimal' | 'search'
+}
+
+// Solid Minor - https://www.solidjs.com/
+interface HTMLAttributes<T> extends AriaAttributes, DOMAttributes<T> {
+	// [key: ClassKeys]: boolean;
+	about?: string
+	accesskey?: string
+	autocapitalize?: 'off' | 'none' | 'on' | 'sentences' | 'words' | 'characters'
+	class?: string
+	color?: string
+	contenteditable?: 'true' | 'false' | boolean | 'plaintext-only' | 'inherit'
+	contextmenu?: string
+	datatype?: string
+	dir?: 'ltr' | 'rtl' | 'auto'
+	draggable?: boolean | 'false' | 'true'
+	exportparts?: string
+	hidden?: boolean | 'hidden' | 'until-found'
+	id?: string
+	inert?: '' | boolean
+	inlist?: any
+	inputmode?: 'decimal' | 'email' | 'none' | 'numeric' | 'search' | 'tel' | 'text' | 'url'
+	is?: string
+	itemid?: string
+	itemprop?: string
+	itemref?: string
+	itemscope?: '' | boolean
+	itemtype?: string
+	lang?: string
+	part?: string
+	popover?: boolean | 'manual' | 'auto'
+	prefix?: string
+	property?: string
+	resource?: string
+	slot?: string
+	spellcheck?: 'true' | 'false' | boolean
+	style?: CSSProperties | string
+	tabindex?: number | string
+	title?: string
+	translate?: 'yes' | 'no'
+	typeof?: string
+	vocab?: string
+
+	/** @deprecated Use lowercase attributes */
+	accessKey?: string
+	/** @deprecated Use lowercase attributes */
+	autoCapitalize?: 'off' | 'none' | 'on' | 'sentences' | 'words' | 'characters'
+	/** @deprecated Use lowercase attributes */
+	contentEditable?: boolean | 'plaintext-only' | 'inherit'
+	/** @deprecated Use lowercase attributes */
+	contextMenu?: string
+	/** @deprecated Use lowercase attributes */
+	exportParts?: string
+	/** @deprecated Use lowercase attributes */
+	inputMode?: 'none' | 'text' | 'tel' | 'url' | 'email' | 'numeric' | 'decimal' | 'search'
+	/** @deprecated Use lowercase attributes */
+	itemId?: string
+	/** @deprecated Use lowercase attributes */
+	itemProp?: string
+	/** @deprecated Use lowercase attributes */
+	itemRef?: string
+	/** @deprecated Use lowercase attributes */
+	itemScope?: boolean
+	/** @deprecated Use lowercase attributes */
+	itemType?: string
+	/** @deprecated Use lowercase attributes */
+	tabIndex?: number | string
+}
+
+// Solid Next - https://www.solidjs.com/
+interface HTMLAttributes<T> extends AriaAttributes, DOMAttributes<T> {
+	// [key: ClassKeys]: boolean;
+	about?: string | undefined | false
+	accesskey?: string | undefined | false
+	autocapitalize?: 'off' | 'none' | 'on' | 'sentences' | 'words' | 'characters' | undefined | false
+	class?: string | ClassList | undefined | false
+	color?: string | undefined | false
+	contenteditable?: 'false' | 'true' | '' | true | 'plaintext-only' | 'inherit' | undefined | false
+	contextmenu?: string | undefined | false
+	datatype?: string | undefined | false
+	dir?: 'ltr' | 'rtl' | 'auto' | undefined | false
+	draggable?: 'false' | 'true' | undefined | false
+	exportparts?: string | undefined | false
+	hidden?: '' | true | 'hidden' | 'until-found' | undefined | false
+	id?: string | undefined | false
+	inert?: true | false | '' | undefined | false
+	inlist?: any | undefined | false
+	inputmode?: 'decimal' | 'email' | 'none' | 'numeric' | 'search' | 'tel' | 'text' | 'url' | undefined | false
+	is?: string | undefined | false
+	itemid?: string | undefined | false
+	itemprop?: string | undefined | false
+	itemref?: string | undefined | false
+	itemscope?: true | false | '' | undefined | false
+	itemtype?: string | undefined | false
+	lang?: string | undefined | false
+	part?: string | undefined | false
+	popover?: '' | true | 'manual' | 'auto' | undefined | false
+	prefix?: string | undefined | false
+	property?: string | undefined | false
+	resource?: string | undefined | false
+	slot?: string | undefined | false
+	spellcheck?: 'false' | 'true' | '' | true | undefined | false
+	style?: CSSProperties | string | undefined | false
+	tabindex?: number | string | undefined | false
+	title?: string | undefined | false
+	translate?: 'yes' | 'no' | undefined | false
+	typeof?: string | undefined | false
+	vocab?: string | undefined | false
+
+	/** @deprecated Use lowercase attributes */
+	accessKey?: string | undefined | false
+	/** @deprecated Use lowercase attributes */
+	autoCapitalize?: 'off' | 'none' | 'on' | 'sentences' | 'words' | 'characters' | undefined | false
+	/** @deprecated Use lowercase attributes */
+	contentEditable?: 'false' | 'true' | 'plaintext-only' | 'inherit' | undefined | false
+	/** @deprecated Use lowercase attributes */
+	contextMenu?: string | undefined | false
+	/** @deprecated Use lowercase attributes */
+	exportParts?: string | undefined | false
+	/** @deprecated Use lowercase attributes */
+	inputMode?: 'none' | 'text' | 'tel' | 'url' | 'email' | 'numeric' | 'decimal' | 'search' | undefined | false
+	/** @deprecated Use lowercase attributes */
+	itemId?: string | undefined | false
+	/** @deprecated Use lowercase attributes */
+	itemProp?: string | undefined | false
+	/** @deprecated Use lowercase attributes */
+	itemRef?: string | undefined | false
+	/** @deprecated Use lowercase attributes */
+	itemScope?: true | false | '' | undefined | false
+	/** @deprecated Use lowercase attributes */
+	itemType?: string | undefined | false
+	/** @deprecated Use lowercase attributes */
+	tabIndex?: number | string | undefined | false
 }
 
 // Voby - https://github.com/vobyjs/voby

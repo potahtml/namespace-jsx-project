@@ -1,7 +1,19 @@
-// Solid - https://www.solidjs.com/
+// Solid Main - https://www.solidjs.com/
 interface ProgressHTMLAttributes<T> extends HTMLAttributes<T> {
 	max?: number | string
 	value?: string | string[] | number
+}
+
+// Solid Minor - https://www.solidjs.com/
+interface ProgressHTMLAttributes<T> extends HTMLAttributes<T> {
+	max?: number | string
+	value?: string | string[] | number
+}
+
+// Solid Next - https://www.solidjs.com/
+interface ProgressHTMLAttributes<T> extends HTMLAttributes<T> {
+	max?: number | string | undefined | false
+	value?: string | string[] | number | undefined | false
 }
 
 // Voby - https://github.com/vobyjs/voby

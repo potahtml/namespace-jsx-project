@@ -1,4 +1,4 @@
-// Solid - https://www.solidjs.com/
+// Solid Main - https://www.solidjs.com/
 interface VideoHTMLAttributes<T> extends MediaHTMLAttributes<T> {
 	height?: number | string
 	playsinline?: boolean
@@ -20,6 +20,64 @@ interface MediaHTMLAttributes<T> extends HTMLAttributes<T> {
 	src?: string
 	crossOrigin?: 'anonymous' | 'use-credentials' | ''
 	mediaGroup?: string
+}
+
+// Solid Minor - https://www.solidjs.com/
+interface VideoHTMLAttributes<T> extends MediaHTMLAttributes<T> {
+	height?: number | string
+	playsinline?: '' | boolean
+	poster?: string
+	width?: number | string
+	disablepictureinpicture?: '' | boolean
+}
+
+interface MediaHTMLAttributes<T> extends HTMLAttributes<T> {
+	autoplay?: '' | boolean
+	controls?: '' | boolean
+	controlslist?: 'nodownload' | 'nofullscreen' | 'noplaybackrate' | 'noremoteplayback' | (string & {})
+	crossorigin?: 'anonymous' | 'use-credentials' | ''
+	disableremoteplayback?: '' | boolean
+	loop?: '' | boolean
+	muted?: '' | boolean
+	preload?: 'none' | 'metadata' | 'auto' | ''
+	src?: string
+
+	/** @deprecated Use lowercase attributes */
+	crossOrigin?: 'anonymous' | 'use-credentials' | ''
+
+	/** @deprecated Use lowercase attributes */
+	mediaGroup?: string
+	/** @deprecated */
+	mediagroup?: string
+}
+
+// Solid Next - https://www.solidjs.com/
+interface VideoHTMLAttributes<T> extends MediaHTMLAttributes<T> {
+	height?: number | string | undefined | false
+	playsinline?: true | false | '' | undefined | false
+	poster?: string | undefined | false
+	width?: number | string | undefined | false
+	disablepictureinpicture?: true | false | '' | undefined | false
+}
+
+interface MediaHTMLAttributes<T> extends HTMLAttributes<T> {
+	autoplay?: true | false | '' | undefined | false
+	controls?: true | false | '' | undefined | false
+	controlslist?: 'nodownload' | 'nofullscreen' | 'noplaybackrate' | 'noremoteplayback' | (string & {}) | undefined | false
+	crossorigin?: 'anonymous' | 'use-credentials' | '' | true | undefined | false
+	disableremoteplayback?: true | false | '' | undefined | false
+	loop?: true | false | '' | undefined | false
+	muted?: true | false | '' | undefined | false
+	preload?: 'none' | 'metadata' | 'auto' | '' | true | undefined | false
+	src?: string | undefined | false
+
+	/** @deprecated Use lowercase attributes */
+	crossOrigin?: 'anonymous' | 'use-credentials' | '' | true | undefined | false
+
+	/** @deprecated Use lowercase attributes */
+	mediaGroup?: string | undefined | false
+	/** @deprecated */
+	mediagroup?: string | undefined | false
 }
 
 // Voby - https://github.com/vobyjs/voby

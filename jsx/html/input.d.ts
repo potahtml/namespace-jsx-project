@@ -1,4 +1,4 @@
-// Solid - https://www.solidjs.com/
+// Solid Main - https://www.solidjs.com/
 interface InputHTMLAttributes<T> extends HTMLAttributes<T> {
 	accept?: string
 	alt?: string
@@ -45,6 +45,146 @@ interface InputHTMLAttributes<T> extends HTMLAttributes<T> {
 	maxLength?: number | string
 	minLength?: number | string
 	readOnly?: boolean
+}
+
+// Solid Minor - https://www.solidjs.com/
+interface InputHTMLAttributes<T> extends HTMLAttributes<T> {
+	accept?: string
+	alt?: string
+	autocomplete?: 'additional-name' | 'address-level1' | 'address-level2' | 'address-level3' | 'address-level4' | 'address-line1' | 'address-line2' | 'address-line3' | 'bday' | 'bday-day' | 'bday-month' | 'bday-year' | 'billing' | 'cc-additional-name' | 'cc-csc' | 'cc-exp' | 'cc-exp-month' | 'cc-exp-year' | 'cc-family-name' | 'cc-given-name' | 'cc-name' | 'cc-number' | 'cc-type' | 'country' | 'country-name' | 'current-password' | 'email' | 'family-name' | 'fax' | 'given-name' | 'home' | 'honorific-prefix' | 'honorific-suffix' | 'impp' | 'language' | 'mobile' | 'name' | 'new-password' | 'nickname' | 'off' | 'on' | 'organization' | 'organization-title' | 'pager' | 'photo' | 'postal-code' | 'sex' | 'shipping' | 'street-address' | 'tel' | 'tel-area-code' | 'tel-country-code' | 'tel-extension' | 'tel-local' | 'tel-local-prefix' | 'tel-local-suffix' | 'tel-national' | 'transaction-amount' | 'transaction-currency' | 'url' | 'username' | 'work' | (string & {})
+	autocorrect?: 'on' | 'off'
+	autofocus?: '' | boolean
+	capture?: 'user' | 'environment'
+	checked?: '' | boolean
+	crossorigin?: 'anonymous' | 'use-credentials' | ''
+	dirname?: string
+	disabled?: '' | boolean
+	enterkeyhint?: 'enter' | 'done' | 'go' | 'next' | 'previous' | 'search' | 'send'
+	form?: string
+	formaction?: string
+	formenctype?: 'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'
+	formmethod?: 'post' | 'get' | 'dialog'
+	formnovalidate?: '' | boolean
+	formtarget?: string
+	height?: number | string
+	list?: string
+	max?: number | string
+	maxlength?: number | string
+	min?: number | string
+	minlength?: number | string
+	multiple?: '' | boolean
+	name?: string
+	pattern?: string
+	placeholder?: string
+	popovertarget?: string
+	popovertargetaction?: 'hide' | 'show' | 'toggle'
+	readonly?: '' | boolean
+	required?: '' | boolean
+	// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/search#results
+	results?: number
+	size?: number | string
+	src?: string
+	step?: number | string
+	type?: 'button' | 'checkbox' | 'color' | 'date' | 'datetime-local' | 'email' | 'file' | 'hidden' | 'image' | 'month' | 'number' | 'password' | 'radio' | 'range' | 'reset' | 'search' | 'submit' | 'tel' | 'text' | 'time' | 'url' | 'week' | (string & {})
+	value?: string | string[] | number
+	width?: number | string
+
+	/** @non-standard */
+	incremental?: '' | boolean
+
+	/** @deprecated Use lowercase attributes */
+	crossOrigin?: 'anonymous' | 'use-credentials' | ''
+	/** @deprecated Use lowercase attributes */
+	formAction?: string
+	/** @deprecated Use lowercase attributes */
+	formEnctype?: 'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'
+	/** @deprecated Use lowercase attributes */
+	formMethod?: 'post' | 'get' | 'dialog'
+	/** @deprecated Use lowercase attributes */
+	formNoValidate?: boolean
+	/** @deprecated Use lowercase attributes */
+	formTarget?: string
+	/** @deprecated Use lowercase attributes */
+	maxLength?: number | string
+	/** @deprecated Use lowercase attributes */
+	minLength?: number | string
+	/** @deprecated Use lowercase attributes */
+	readOnly?: boolean
+
+	/** @deprecated */
+	align?: string
+	/** @deprecated */
+	usemap?: string
+}
+
+// Solid Next - https://www.solidjs.com/
+interface InputHTMLAttributes<T> extends HTMLAttributes<T> {
+	accept?: string | undefined | false
+	alt?: string | undefined | false
+	autocomplete?: 'additional-name' | 'address-level1' | 'address-level2' | 'address-level3' | 'address-level4' | 'address-line1' | 'address-line2' | 'address-line3' | 'bday' | 'bday-day' | 'bday-month' | 'bday-year' | 'billing' | 'cc-additional-name' | 'cc-csc' | 'cc-exp' | 'cc-exp-month' | 'cc-exp-year' | 'cc-family-name' | 'cc-given-name' | 'cc-name' | 'cc-number' | 'cc-type' | 'country' | 'country-name' | 'current-password' | 'email' | 'family-name' | 'fax' | 'given-name' | 'home' | 'honorific-prefix' | 'honorific-suffix' | 'impp' | 'language' | 'mobile' | 'name' | 'new-password' | 'nickname' | 'off' | 'on' | 'organization' | 'organization-title' | 'pager' | 'photo' | 'postal-code' | 'sex' | 'shipping' | 'street-address' | 'tel' | 'tel-area-code' | 'tel-country-code' | 'tel-extension' | 'tel-local' | 'tel-local-prefix' | 'tel-local-suffix' | 'tel-national' | 'transaction-amount' | 'transaction-currency' | 'url' | 'username' | 'work' | (string & {}) | undefined | false
+	autocorrect?: 'on' | 'off' | undefined | false
+	autofocus?: true | false | '' | undefined | false
+	capture?: 'user' | 'environment' | undefined | false
+	checked?: true | false | '' | undefined | false
+	crossorigin?: 'anonymous' | 'use-credentials' | '' | true | undefined | false
+	dirname?: string | undefined | false
+	disabled?: true | false | '' | undefined | false
+	enterkeyhint?: 'enter' | 'done' | 'go' | 'next' | 'previous' | 'search' | 'send' | undefined | false
+	form?: string | undefined | false
+	formaction?: string | undefined | false
+	formenctype?: 'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain' | undefined | false
+	formmethod?: 'post' | 'get' | 'dialog' | undefined | false
+	formnovalidate?: true | false | '' | undefined | false
+	formtarget?: string | undefined | false
+	height?: number | string | undefined | false
+	list?: string | undefined | false
+	max?: number | string | undefined | false
+	maxlength?: number | string | undefined | false
+	min?: number | string | undefined | false
+	minlength?: number | string | undefined | false
+	multiple?: true | false | '' | undefined | false
+	name?: string | undefined | false
+	pattern?: string | undefined | false
+	placeholder?: string | undefined | false
+	popovertarget?: string | undefined | false
+	popovertargetaction?: 'hide' | 'show' | 'toggle' | undefined | false
+	readonly?: true | false | '' | undefined | false
+	required?: true | false | '' | undefined | false
+	// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/search#results
+	results?: number | undefined | false
+	size?: number | string | undefined | false
+	src?: string | undefined | false
+	step?: number | string | undefined | false
+	type?: 'button' | 'checkbox' | 'color' | 'date' | 'datetime-local' | 'email' | 'file' | 'hidden' | 'image' | 'month' | 'number' | 'password' | 'radio' | 'range' | 'reset' | 'search' | 'submit' | 'tel' | 'text' | 'time' | 'url' | 'week' | (string & {}) | undefined | false
+	value?: string | string[] | number | undefined | false
+	width?: number | string | undefined | false
+
+	/** @non-standard */
+	incremental?: true | false | '' | undefined | false
+
+	/** @deprecated Use lowercase attributes */
+	crossOrigin?: 'anonymous' | 'use-credentials' | '' | true | undefined | false
+	/** @deprecated Use lowercase attributes */
+	formAction?: string | undefined | false
+	/** @deprecated Use lowercase attributes */
+	formEnctype?: 'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain' | undefined | false
+	/** @deprecated Use lowercase attributes */
+	formMethod?: 'post' | 'get' | 'dialog' | undefined | false
+	/** @deprecated Use lowercase attributes */
+	formNoValidate?: boolean | undefined | false
+	/** @deprecated Use lowercase attributes */
+	formTarget?: string | undefined | false
+	/** @deprecated Use lowercase attributes */
+	maxLength?: number | string | undefined | false
+	/** @deprecated Use lowercase attributes */
+	minLength?: number | string | undefined | false
+	/** @deprecated Use lowercase attributes */
+	readOnly?: boolean | undefined | false
+
+	/** @deprecated */
+	align?: string | undefined | false
+	/** @deprecated */
+	usemap?: string | undefined | false
 }
 
 // Voby - https://github.com/vobyjs/voby

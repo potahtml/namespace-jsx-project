@@ -1,4 +1,4 @@
-// Solid - https://www.solidjs.com/
+// Solid Main - https://www.solidjs.com/
 interface FeDistantLightSVGAttributes<T> extends LightSourceElementSVGAttributes<T> {
 	azimuth?: number | string
 	elevation?: number | string
@@ -10,6 +10,38 @@ interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
 	lang?: string
 	tabIndex?: number | string
 	tabindex?: number | string
+}
+
+// Solid Minor - https://www.solidjs.com/
+interface FeDistantLightSVGAttributes<T> extends LightSourceElementSVGAttributes<T> {
+	azimuth?: number | string
+	elevation?: number | string
+}
+
+interface LightSourceElementSVGAttributes<T> extends CoreSVGAttributes<T> {}
+interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
+	id?: string
+	lang?: string
+	tabindex?: number | string
+
+	/** @deprecated Use lowercase attributes */
+	tabIndex?: number | string
+}
+
+// Solid Next - https://www.solidjs.com/
+interface FeDistantLightSVGAttributes<T> extends LightSourceElementSVGAttributes<T> {
+	azimuth?: number | string | undefined | false
+	elevation?: number | string | undefined | false
+}
+
+interface LightSourceElementSVGAttributes<T> extends CoreSVGAttributes<T> {}
+interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
+	id?: string | undefined | false
+	lang?: string | undefined | false
+	tabindex?: number | string | undefined | false
+
+	/** @deprecated Use lowercase attributes */
+	tabIndex?: number | string | undefined | false
 }
 
 // React - https://react.dev/

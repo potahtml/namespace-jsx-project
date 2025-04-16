@@ -1,9 +1,25 @@
-// Solid - https://www.solidjs.com/
+// Solid Main - https://www.solidjs.com/
 interface OptionHTMLAttributes<T> extends HTMLAttributes<T> {
 	disabled?: boolean
 	label?: string
 	selected?: boolean
 	value?: string | string[] | number
+}
+
+// Solid Minor - https://www.solidjs.com/
+interface OptionHTMLAttributes<T> extends HTMLAttributes<T> {
+	disabled?: '' | boolean
+	label?: string
+	selected?: '' | boolean
+	value?: string | string[] | number
+}
+
+// Solid Next - https://www.solidjs.com/
+interface OptionHTMLAttributes<T> extends HTMLAttributes<T> {
+	disabled?: true | false | '' | undefined | false
+	label?: string | undefined | false
+	selected?: true | false | '' | undefined | false
+	value?: string | string[] | number | undefined | false
 }
 
 // Voby - https://github.com/vobyjs/voby

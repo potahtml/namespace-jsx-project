@@ -11,8 +11,50 @@ import { read, unique } from './utils.js'
 export const libs = [
 	{
 		// SOLID
-		file: 'https://raw.githubusercontent.com/ryansolid/dom-expressions/refs/heads/main/packages/dom-expressions/src/jsx.d.ts',
-		name: 'Solid',
+		file: 'https://raw.githubusercontent.com/titoBouzout/dom-expressions/refs/heads/main/packages/dom-expressions/src/jsx.d.ts',
+		name: 'Solid Main',
+		url: 'https://www.solidjs.com/',
+		map: {
+			// events
+			customeventhandlerscamelcase: 'events',
+			customeventhandlerslowercase: 'events',
+			domattributes: 'events',
+
+			// elements
+			htmlelementdeprecatedtags: 'elements',
+			htmlelementtags: 'elements',
+			svgelementtags: 'elements',
+			intrinsicelements: 'elements',
+
+			// attributes
+			intrinsicattributes: 'attributes',
+		},
+	},
+	{
+		// SOLID
+		file: 'https://raw.githubusercontent.com/titoBouzout/dom-expressions/refs/heads/minor/packages/dom-expressions/src/jsx.d.ts',
+		name: 'Solid Minor',
+		url: 'https://www.solidjs.com/',
+		map: {
+			// events
+			customeventhandlerscamelcase: 'events',
+			customeventhandlerslowercase: 'events',
+			domattributes: 'events',
+
+			// elements
+			htmlelementdeprecatedtags: 'elements',
+			htmlelementtags: 'elements',
+			svgelementtags: 'elements',
+			intrinsicelements: 'elements',
+
+			// attributes
+			intrinsicattributes: 'attributes',
+		},
+	},
+	{
+		// SOLID
+		file: 'https://raw.githubusercontent.com/titoBouzout/dom-expressions/refs/heads/next/packages/dom-expressions/src/jsx.d.ts',
+		name: 'Solid Next',
 		url: 'https://www.solidjs.com/',
 		map: {
 			// events

@@ -1,7 +1,31 @@
-// Solid - https://www.solidjs.com/
+// Solid Main - https://www.solidjs.com/
 interface ParamHTMLAttributes<T> extends HTMLAttributes<T> {
 	name?: string
 	value?: string | string[] | number
+}
+
+// Solid Minor - https://www.solidjs.com/
+interface ParamHTMLAttributes<T> extends HTMLAttributes<T> {
+	/** @deprecated */
+	name?: string
+	/** @deprecated */
+	type?: string
+	/** @deprecated */
+	value?: string | number
+	/** @deprecated */
+	valuetype?: 'data' | 'ref' | 'object'
+}
+
+// Solid Next - https://www.solidjs.com/
+interface ParamHTMLAttributes<T> extends HTMLAttributes<T> {
+	/** @deprecated */
+	name?: string | undefined | false
+	/** @deprecated */
+	type?: string | undefined | false
+	/** @deprecated */
+	value?: string | number | undefined | false
+	/** @deprecated */
+	valuetype?: 'data' | 'ref' | 'object' | undefined | false
 }
 
 // Voby - https://github.com/vobyjs/voby

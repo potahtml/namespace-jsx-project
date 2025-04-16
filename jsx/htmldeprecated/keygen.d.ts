@@ -1,4 +1,4 @@
-// Solid - https://www.solidjs.com/
+// Solid Main - https://www.solidjs.com/
 interface KeygenHTMLAttributes<T> extends HTMLAttributes<T> {
 	autofocus?: boolean
 	challenge?: string
@@ -7,6 +7,42 @@ interface KeygenHTMLAttributes<T> extends HTMLAttributes<T> {
 	keytype?: string
 	keyparams?: string
 	name?: string
+}
+
+// Solid Minor - https://www.solidjs.com/
+interface KeygenHTMLAttributes<T> extends HTMLAttributes<T> {
+	/** @deprecated */
+	autofocus?: '' | boolean
+	/** @deprecated */
+	challenge?: string
+	/** @deprecated */
+	disabled?: '' | boolean
+	/** @deprecated */
+	form?: string
+	/** @deprecated */
+	keyparams?: string
+	/** @deprecated */
+	keytype?: string
+	/** @deprecated */
+	name?: string
+}
+
+// Solid Next - https://www.solidjs.com/
+interface KeygenHTMLAttributes<T> extends HTMLAttributes<T> {
+	/** @deprecated */
+	autofocus?: true | false | '' | undefined | false
+	/** @deprecated */
+	challenge?: string | undefined | false
+	/** @deprecated */
+	disabled?: true | false | '' | undefined | false
+	/** @deprecated */
+	form?: string | undefined | false
+	/** @deprecated */
+	keyparams?: string | undefined | false
+	/** @deprecated */
+	keytype?: string | undefined | false
+	/** @deprecated */
+	name?: string | undefined | false
 }
 
 // Voby - https://github.com/vobyjs/voby

@@ -1,9 +1,35 @@
-// Solid - https://www.solidjs.com/
+// Solid Main - https://www.solidjs.com/
 interface EmbedHTMLAttributes<T> extends HTMLAttributes<T> {
 	height?: number | string
 	src?: string
 	type?: string
 	width?: number | string
+}
+
+// Solid Minor - https://www.solidjs.com/
+interface EmbedHTMLAttributes<T> extends HTMLAttributes<T> {
+	height?: number | string
+	src?: string
+	type?: string
+	width?: number | string
+
+	/** @deprecated */
+	align?: 'left' | 'right' | 'justify' | 'center'
+	/** @deprecated */
+	name?: string
+}
+
+// Solid Next - https://www.solidjs.com/
+interface EmbedHTMLAttributes<T> extends HTMLAttributes<T> {
+	height?: number | string | undefined | false
+	src?: string | undefined | false
+	type?: string | undefined | false
+	width?: number | string | undefined | false
+
+	/** @deprecated */
+	align?: 'left' | 'right' | 'justify' | 'center' | undefined | false
+	/** @deprecated */
+	name?: string | undefined | false
 }
 
 // Voby - https://github.com/vobyjs/voby

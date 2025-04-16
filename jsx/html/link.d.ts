@@ -1,4 +1,4 @@
-// Solid - https://www.solidjs.com/
+// Solid Main - https://www.solidjs.com/
 interface LinkHTMLAttributes<T> extends HTMLAttributes<T> {
 	as?: 'audio' | 'document' | 'embed' | 'fetch' | 'font' | 'image' | 'object' | 'script' | 'style' | 'track' | 'video' | 'worker'
 	crossorigin?: 'anonymous' | 'use-credentials' | ''
@@ -16,6 +16,68 @@ interface LinkHTMLAttributes<T> extends HTMLAttributes<T> {
 	type?: string
 	crossOrigin?: 'anonymous' | 'use-credentials' | ''
 	referrerPolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
+}
+
+// Solid Minor - https://www.solidjs.com/
+interface LinkHTMLAttributes<T> extends HTMLAttributes<T> {
+	as?: 'audio' | 'document' | 'embed' | 'fetch' | 'font' | 'image' | 'object' | 'script' | 'style' | 'track' | 'video' | 'worker'
+	blocking?: 'render'
+	crossorigin?: 'anonymous' | 'use-credentials' | ''
+	disabled?: '' | boolean
+	fetchpriority?: 'high' | 'low' | 'auto'
+	href?: string
+	hreflang?: string
+	imagesizes?: string
+	imagesrcset?: string
+	integrity?: string
+	media?: string
+	referrerpolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
+	rel?: string
+	sizes?: string
+	type?: string
+
+	/** @deprecated Use lowercase attributes */
+	crossOrigin?: 'anonymous' | 'use-credentials' | ''
+	/** @deprecated Use lowercase attributes */
+	referrerPolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
+
+	/** @deprecated */
+	charset?: string
+	/** @deprecated */
+	rev?: string
+	/** @deprecated */
+	target?: string
+}
+
+// Solid Next - https://www.solidjs.com/
+interface LinkHTMLAttributes<T> extends HTMLAttributes<T> {
+	as?: 'audio' | 'document' | 'embed' | 'fetch' | 'font' | 'image' | 'object' | 'script' | 'style' | 'track' | 'video' | 'worker' | undefined | false
+	blocking?: 'render' | undefined | false
+	crossorigin?: 'anonymous' | 'use-credentials' | '' | true | undefined | false
+	disabled?: true | false | '' | undefined | false
+	fetchpriority?: 'high' | 'low' | 'auto' | undefined | false
+	href?: string | undefined | false
+	hreflang?: string | undefined | false
+	imagesizes?: string | undefined | false
+	imagesrcset?: string | undefined | false
+	integrity?: string | undefined | false
+	media?: string | undefined | false
+	referrerpolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url' | undefined | false
+	rel?: string | undefined | false
+	sizes?: string | undefined | false
+	type?: string | undefined | false
+
+	/** @deprecated Use lowercase attributes */
+	crossOrigin?: 'anonymous' | 'use-credentials' | '' | true | undefined | false
+	/** @deprecated Use lowercase attributes */
+	referrerPolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url' | undefined | false
+
+	/** @deprecated */
+	charset?: string | undefined | false
+	/** @deprecated */
+	rev?: string | undefined | false
+	/** @deprecated */
+	target?: string | undefined | false
 }
 
 // Voby - https://github.com/vobyjs/voby

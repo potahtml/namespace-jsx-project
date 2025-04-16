@@ -1,4 +1,16 @@
-// Solid - https://www.solidjs.com/
+// Solid Main - https://www.solidjs.com/
+interface CSSProperties extends csstype.PropertiesHyphen {
+	// Override
+	[key: `-${string}`]: string | number
+}
+
+// Solid Minor - https://www.solidjs.com/
+interface CSSProperties extends csstype.PropertiesHyphen {
+	// Override
+	[key: `-${string}`]: string | number
+}
+
+// Solid Next - https://www.solidjs.com/
 interface CSSProperties extends csstype.PropertiesHyphen {
 	// Override
 	[key: `-${string}`]: string | number

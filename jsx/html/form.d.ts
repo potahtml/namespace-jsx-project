@@ -1,4 +1,4 @@
-// Solid - https://www.solidjs.com/
+// Solid Main - https://www.solidjs.com/
 interface FormHTMLAttributes<T> extends HTMLAttributes<T> {
 	'accept-charset'?: string
 	action?: string
@@ -10,6 +10,46 @@ interface FormHTMLAttributes<T> extends HTMLAttributes<T> {
 	novalidate?: boolean
 	target?: string
 	noValidate?: boolean
+}
+
+// Solid Minor - https://www.solidjs.com/
+interface FormHTMLAttributes<T> extends HTMLAttributes<T> {
+	'accept-charset'?: string
+	action?: string
+	autocomplete?: 'on' | 'off'
+	encoding?: 'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'
+	enctype?: 'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'
+	method?: 'post' | 'get' | 'dialog'
+	name?: string
+	novalidate?: '' | boolean
+	rel?: string
+	target?: '_self' | '_blank' | '_parent' | '_top' | (string & {})
+
+	/** @deprecated Use lowercase attributes */
+	noValidate?: boolean
+
+	/** @deprecated */
+	accept?: string
+}
+
+// Solid Next - https://www.solidjs.com/
+interface FormHTMLAttributes<T> extends HTMLAttributes<T> {
+	'accept-charset'?: string | undefined | false
+	action?: string | undefined | false
+	autocomplete?: 'on' | 'off' | undefined | false
+	encoding?: 'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain' | undefined | false
+	enctype?: 'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain' | undefined | false
+	method?: 'post' | 'get' | 'dialog' | undefined | false
+	name?: string | undefined | false
+	novalidate?: true | false | '' | undefined | false
+	rel?: string | undefined | false
+	target?: '_self' | '_blank' | '_parent' | '_top' | (string & {}) | undefined | false
+
+	/** @deprecated Use lowercase attributes */
+	noValidate?: boolean | undefined | false
+
+	/** @deprecated */
+	accept?: string | undefined | false
 }
 
 // Voby - https://github.com/vobyjs/voby

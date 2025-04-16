@@ -184,10 +184,12 @@ function unwrapTypes(source, types) {
 			'',
 		)
 
-	for (const type of types) {
-		source = source
-			.replaceAll(' ' + type.name + ' ', ' ' + type.source + ' ')
-			.replaceAll(' ' + type.name + '\n', ' ' + type.source + '\n')
+	for (let i = 0; i < 2; i++) {
+		for (const type of types) {
+			source = source
+				.replaceAll(' ' + type.name + ' ', ' ' + type.source + ' ')
+				.replaceAll(' ' + type.name + '\n', ' ' + type.source + '\n')
+		}
 	}
 	return source
 }

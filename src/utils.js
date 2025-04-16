@@ -40,7 +40,7 @@ export const mkdir = dir => {
 
 export const prettier = file =>
 	$(
-		`prettier  --config ./.prettierrc.json ${file} --write --no-editorconfig --ignore-path="false"`,
+		`prettier --config ./.prettierrc.json "${file}" --write --no-editorconfig --ignore-path="false"`,
 	)
 
 export const unique = a => [...new Set(a.flat(Infinity))].sort()

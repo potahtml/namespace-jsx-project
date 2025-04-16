@@ -1,7 +1,31 @@
-// Solid - https://www.solidjs.com/
+// Solid Main - https://www.solidjs.com/
 interface CanvasHTMLAttributes<T> extends HTMLAttributes<T> {
 	width?: number | string
 	height?: number | string
+}
+
+// Solid Minor - https://www.solidjs.com/
+interface CanvasHTMLAttributes<T> extends HTMLAttributes<T> {
+	width?: number | string
+	height?: number | string
+
+	/**
+	 * @deprecated
+	 * @non-standard
+	 */
+	'moz-opaque'?: '' | boolean
+}
+
+// Solid Next - https://www.solidjs.com/
+interface CanvasHTMLAttributes<T> extends HTMLAttributes<T> {
+	width?: number | string | undefined | false
+	height?: number | string | undefined | false
+
+	/**
+	 * @deprecated
+	 * @non-standard
+	 */
+	'moz-opaque'?: true | false | '' | undefined | false
 }
 
 // Voby - https://github.com/vobyjs/voby
