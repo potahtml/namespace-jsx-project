@@ -443,6 +443,14 @@ interface HTMLAttributes<T> extends AriaAttributes, DOMAttributes<T> {
 	 * @see {@link https://html.spec.whatwg.org/multipage/custom-elements.html#attr-is}
 	 */
 	is?: string
+	/**
+	 * @see {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/exportparts}
+	 */
+	exportparts?: string
+	/**
+	 * @see {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/part}
+	 */
+	part?: string
 }
 
 // Pota - https://github.com/potahtml/pota

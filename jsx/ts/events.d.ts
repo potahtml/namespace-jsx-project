@@ -8,7 +8,7 @@ interface GlobalEventHandlersEventMap {
 	animationend: AnimationEvent
 	animationiteration: AnimationEvent
 	animationstart: AnimationEvent
-	auxclick: MouseEvent
+	auxclick: PointerEvent
 	beforeinput: InputEvent
 	beforetoggle: Event
 	blur: FocusEvent
@@ -22,7 +22,7 @@ interface GlobalEventHandlersEventMap {
 	compositionstart: CompositionEvent
 	compositionupdate: CompositionEvent
 	contextlost: Event
-	contextmenu: MouseEvent
+	contextmenu: PointerEvent
 	contextrestored: Event
 	copy: ClipboardEvent
 	cuechange: Event
@@ -134,9 +134,9 @@ interface WindowEventHandlersEventMap {
 	offline: Event
 	online: Event
 	pagehide: PageTransitionEvent
-	pagereveal: Event
+	pagereveal: PageRevealEvent
 	pageshow: PageTransitionEvent
-	pageswap: Event
+	pageswap: PageSwapEvent
 	popstate: PopStateEvent
 	rejectionhandled: PromiseRejectionEvent
 	storage: StorageEvent

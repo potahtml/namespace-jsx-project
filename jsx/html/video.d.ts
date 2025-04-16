@@ -5,11 +5,13 @@ interface VideoHTMLAttributes<T> extends MediaHTMLAttributes<T> {
 	poster?: string
 	width?: number | string
 	disablepictureinpicture?: boolean
+	disableremoteplayback?: boolean
 }
 
 interface MediaHTMLAttributes<T> extends HTMLAttributes<T> {
 	autoplay?: boolean
 	controls?: boolean
+	controlslist?: 'nodownload' | 'nofullscreen' | 'noplaybackrate' | 'noremoteplayback' | (string & {})
 	crossorigin?: 'anonymous' | 'use-credentials' | ''
 	loop?: boolean
 	mediagroup?: string
@@ -68,27 +70,35 @@ interface MediaHTMLAttributes extends HTMLAttributes {
 
 // Preact - https://preactjs.com/
 interface VideoHTMLAttributes<T extends EventTarget = HTMLVideoElement> extends MediaHTMLAttributes<T> {
+	disablePictureInPicture?: boolean
 	height?: number | string
+	playsinline?: boolean
+	playsInline?: boolean
 	poster?: string
 	width?: number | string
-	disablePictureInPicture?: boolean
-	disableRemotePlayback?: boolean
 }
 
 interface MediaHTMLAttributes<T extends EventTarget = HTMLMediaElement> extends HTMLAttributes<T> {
 	autoplay?: boolean
 	autoPlay?: boolean
 	controls?: boolean
+	controlslist?: string
 	controlsList?: string
 	crossorigin?: 'anonymous' | 'use-credentials'
 	crossOrigin?: 'anonymous' | 'use-credentials'
+	currentTime?: number
+	defaultMuted?: boolean
+	defaultPlaybackRate?: number
+	disableremoteplayback?: boolean
+	disableRemotePlayback?: boolean
 	loop?: boolean
 	mediaGroup?: string
 	muted?: boolean
-	playsinline?: boolean
-	playsInline?: boolean
-	preload?: string
+	playbackRate?: number
+	preload?: 'auto' | 'metadata' | 'none'
+	preservesPitch?: boolean
 	src?: string
+	srcObject?: MediaStream | MediaSource | Blob | File | null
 	volume?: string | number
 }
 
@@ -112,7 +122,7 @@ interface MediaHTMLAttributes<T> extends HTMLAttributes<T> {
 	muted?: boolean
 	playsInline?: boolean
 	preload?: string
-	src?: string
+	src?: string | DO_NOT_USE_OR_YOU_WILL_BE_FIRED_EXPERIMENTAL_MEDIA_SRC_TYPES[keyof DO_NOT_USE_OR_YOU_WILL_BE_FIRED_EXPERIMENTAL_MEDIA_SRC_TYPES]
 }
 
 // Pota - https://github.com/potahtml/pota

@@ -107,8 +107,10 @@ function xElement(props) {
       </tbody>
     </table>
     <Show
-      when="${element.notIncludedSetters.length +
-      element.notIncludedMDN.length}"
+      when="${
+        element.notIncludedSetters.length +
+        element.notIncludedMDN.length
+      }"
     >
       <footer>
         <Show when="${element.notIncludedSetters.length}">
@@ -175,9 +177,9 @@ function Key(props) {
     <For each="${columns}"
       >${col =>
         html`<td data-col="${col}">
-          ${value.values[col] !== undefined
-            ? value.values[col]
-            : '❌'}
+          ${
+            value.values[col] !== undefined ? value.values[col] : '❌'
+          }
         </td>`}
     </For>
   </tr>`

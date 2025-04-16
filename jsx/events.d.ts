@@ -543,7 +543,8 @@ interface DOMAttributes<Target extends EventTarget> extends PreactDOMAttributes 
 	onCompositionUpdate?: CompositionEventHandler<Target>
 	onCompositionUpdateCapture?: CompositionEventHandler<Target>
 
-	// Details Events
+	// Popover Events
+	onBeforeToggle?: ToggleEventHandler<Target>
 	onToggle?: ToggleEventHandler<Target>
 
 	// Dialog Events
@@ -669,6 +670,11 @@ interface DOMAttributes<Target extends EventTarget> extends PreactDOMAttributes 
 	onMouseOverCapture?: MouseEventHandler<Target>
 	onMouseUp?: MouseEventHandler<Target>
 	onMouseUpCapture?: MouseEventHandler<Target>
+	// TODO: Spec for `auxclick` events was changed to make it a PointerEvent but only
+	// Chrome has support for it yet. When more browsers align we should change this.
+	// https://developer.mozilla.org/en-US/docs/Web/API/Element/auxclick_event#browser_compatibility
+	onAuxClick?: MouseEventHandler<Target>
+	onAuxClickCapture?: MouseEventHandler<Target>
 
 	// Selection Events
 	onSelect?: GenericEventHandler<Target>
@@ -740,6 +746,8 @@ interface DOMAttributes<Target extends EventTarget> extends PreactDOMAttributes 
 	onLeavePictureInPictureCapture?: PictureInPictureEventHandler<Target>
 	onResize?: PictureInPictureEventHandler<Target>
 	onResizeCapture?: PictureInPictureEventHandler<Target>
+
+	onCommand?: CommandEventHandler<Target>
 }
 
 // React - https://react.dev/
@@ -926,6 +934,8 @@ interface DOMAttributes<T> {
 	// UI Events
 	onScroll?: UIEventHandler<T>
 	onScrollCapture?: UIEventHandler<T>
+	onScrollEnd?: UIEventHandler<T>
+	onScrollEndCapture?: UIEventHandler<T>
 
 	// Wheel Events
 	onWheel?: WheelEventHandler<T>

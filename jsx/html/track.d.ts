@@ -38,16 +38,23 @@ interface MediaHTMLAttributes<T extends EventTarget = HTMLMediaElement> extends 
 	autoplay?: boolean
 	autoPlay?: boolean
 	controls?: boolean
+	controlslist?: string
 	controlsList?: string
 	crossorigin?: 'anonymous' | 'use-credentials'
 	crossOrigin?: 'anonymous' | 'use-credentials'
+	currentTime?: number
+	defaultMuted?: boolean
+	defaultPlaybackRate?: number
+	disableremoteplayback?: boolean
+	disableRemotePlayback?: boolean
 	loop?: boolean
 	mediaGroup?: string
 	muted?: boolean
-	playsinline?: boolean
-	playsInline?: boolean
-	preload?: string
+	playbackRate?: number
+	preload?: 'auto' | 'metadata' | 'none'
+	preservesPitch?: boolean
 	src?: string
+	srcObject?: MediaStream | MediaSource | Blob | File | null
 	volume?: string | number
 }
 

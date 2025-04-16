@@ -54,7 +54,7 @@ interface AreaHTMLAttributes<T extends EventTarget = HTMLAreaElement> extends HT
 	referrerPolicy?: '' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
 	rel?: string
 	shape?: string
-	target?: string
+	target?: '_self' | '_blank' | '_parent' | '_top' | (string & {})
 }
 
 // React - https://react.dev/

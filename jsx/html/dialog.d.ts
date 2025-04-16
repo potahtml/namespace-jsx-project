@@ -21,6 +21,8 @@ interface DialogHTMLAttributes<T extends EventTarget = HTMLDialogElement> extend
 	onCancel?: GenericEventHandler<T>
 	onClose?: GenericEventHandler<T>
 	open?: boolean
+	closedby?: 'none' | 'closerequest' | 'any'
+	closedBy?: 'none' | 'closerequest' | 'any'
 }
 
 // React - https://react.dev/

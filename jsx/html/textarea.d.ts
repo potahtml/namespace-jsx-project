@@ -65,7 +65,7 @@ interface TextareaHTMLAttributes<T extends EventTarget = HTMLTextAreaElement> ex
 	autocomplete?: string
 	autoComplete?: string
 	cols?: number
-	defaultValue?: string
+	defaultValue?: string | number
 	dirName?: string
 	disabled?: boolean
 	form?: string

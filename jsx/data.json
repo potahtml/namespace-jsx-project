@@ -1759,7 +1759,7 @@
 							"Pota": "'_self' | '_blank' | '_parent' | '_top' | (string & {})",
 							"Preact": "'_self' | '_blank' | '_parent' | '_top' | (string & {})",
 							"React": "'_self' | '_blank' | '_parent' | '_top' | (string & {})",
-							"Solid": "string",
+							"Solid": "'_self' | '_blank' | '_parent' | '_top' | (string & {})",
 							"Voby": "'_self' | '_blank' | '_parent' | '_top'",
 							"VSCode": "'_self' | '_blank' | '_parent' | '_top'",
 							"Vue": "string"
@@ -1884,6 +1884,19 @@
 							"Voby": "string",
 							"VSCode": "string",
 							"Vue": "string"
+						}
+					},
+					"attributionsrc": {
+						"attr": true,
+						"attrChrome": true,
+						"attrFirefox": false,
+						"name": "attributionsrc",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAreaElement#htmlareaelement.attributionsrc",
+						"values": {
+							"Chrome": "string"
 						}
 					},
 					"coords": {
@@ -2118,7 +2131,7 @@
 							"Chrome": "string",
 							"Firefox": "string",
 							"Pota": "'_self' | '_blank' | '_parent' | '_top' | (string & {})",
-							"Preact": "string",
+							"Preact": "'_self' | '_blank' | '_parent' | '_top' | (string & {})",
 							"React": "string",
 							"Solid": "string",
 							"Voby": "string",
@@ -2144,7 +2157,7 @@
 				"namespace": "http://www.w3.org/1999/xhtml",
 				"notIncludedMDN": ["origin", "toString"],
 				"notIncludedSetters": ["HTMLAreaElement.hash", "HTMLAreaElement.host", "HTMLAreaElement.hostname", "HTMLAreaElement.password", "HTMLAreaElement.pathname", "HTMLAreaElement.port", "HTMLAreaElement.protocol", "HTMLAreaElement.relList", "HTMLAreaElement.search", "HTMLAreaElement.username"],
-				"setters": ["HTMLAreaElement.alt", "HTMLAreaElement.coords", "HTMLAreaElement.download", "HTMLAreaElement.hash", "HTMLAreaElement.host", "HTMLAreaElement.hostname", "HTMLAreaElement.href", "HTMLAreaElement.noHref", "HTMLAreaElement.password", "HTMLAreaElement.pathname", "HTMLAreaElement.ping", "HTMLAreaElement.port", "HTMLAreaElement.protocol", "HTMLAreaElement.referrerPolicy", "HTMLAreaElement.rel", "HTMLAreaElement.relList", "HTMLAreaElement.search", "HTMLAreaElement.shape", "HTMLAreaElement.target", "HTMLAreaElement.username"]
+				"setters": ["HTMLAreaElement.alt", "HTMLAreaElement.attributionSrc", "HTMLAreaElement.coords", "HTMLAreaElement.download", "HTMLAreaElement.hash", "HTMLAreaElement.host", "HTMLAreaElement.hostname", "HTMLAreaElement.href", "HTMLAreaElement.noHref", "HTMLAreaElement.password", "HTMLAreaElement.pathname", "HTMLAreaElement.ping", "HTMLAreaElement.port", "HTMLAreaElement.protocol", "HTMLAreaElement.referrerPolicy", "HTMLAreaElement.rel", "HTMLAreaElement.relList", "HTMLAreaElement.search", "HTMLAreaElement.shape", "HTMLAreaElement.target", "HTMLAreaElement.username"]
 			},
 			"article": {
 				"deprecated": false,
@@ -2251,6 +2264,8 @@
 						"values": {
 							"Chrome": "string",
 							"Pota": "string",
+							"Preact": "string",
+							"Solid": "'nodownload' | 'nofullscreen' | 'noplaybackrate' | 'noremoteplayback' | (string & {})",
 							"Vue": "string"
 						}
 					},
@@ -2307,10 +2322,53 @@
 							"Voby": "string"
 						}
 					},
+					"currentTime": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"inherited": true,
+						"name": "currentTime",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement#htmlmediaelement.currenttime",
+						"values": {
+							"Preact": "number"
+						}
+					},
+					"defaultMuted": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"inherited": true,
+						"name": "defaultMuted",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement#htmlmediaelement.defaultmuted",
+						"values": {
+							"Preact": "boolean"
+						}
+					},
+					"defaultPlaybackRate": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"inherited": true,
+						"name": "defaultPlaybackRate",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement#htmlmediaelement.defaultplaybackrate",
+						"values": {
+							"Preact": "number"
+						}
+					},
 					"disableremoteplayback": {
 						"attr": true,
 						"attrChrome": true,
 						"attrFirefox": false,
+						"inherited": true,
 						"name": "disableremoteplayback",
 						"prop": false,
 						"propChrome": false,
@@ -2318,7 +2376,22 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement#htmlaudioelement.disableremoteplayback",
 						"values": {
 							"Chrome": "boolean",
-							"Pota": "'true' | boolean"
+							"Pota": "'true' | boolean",
+							"Preact": "boolean"
+						}
+					},
+					"disableRemotePlayback": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"inherited": true,
+						"name": "disableRemotePlayback",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement#htmlmediaelement.disableremoteplayback",
+						"values": {
+							"Preact": "boolean"
 						}
 					},
 					"loop": {
@@ -2430,6 +2503,20 @@
 							"Firefox": "event"
 						}
 					},
+					"playbackRate": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"inherited": true,
+						"name": "playbackRate",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement#htmlmediaelement.playbackrate",
+						"values": {
+							"Preact": "number"
+						}
+					},
 					"playsInline": {
 						"attr": false,
 						"attrChrome": false,
@@ -2440,7 +2527,6 @@
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement#htmlaudioelement.playsinline",
 						"values": {
-							"Preact": "boolean",
 							"React": "boolean",
 							"Voby": "boolean"
 						},
@@ -2456,7 +2542,6 @@
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement#htmlaudioelement.playsinline",
 						"values": {
-							"Preact": "boolean",
 							"Vue": "boolean | 'true' | 'false'"
 						}
 					},
@@ -2474,12 +2559,26 @@
 							"Chrome": "string",
 							"Firefox": "string",
 							"Pota": "'none' | 'metadata' | 'auto' | ''",
-							"Preact": "string",
+							"Preact": "'auto' | 'metadata' | 'none'",
 							"React": "string",
 							"Solid": "'none' | 'metadata' | 'auto' | ''",
 							"Voby": "string",
 							"VSCode": "'none' | 'metadata' | 'auto'",
 							"Vue": "string"
+						}
+					},
+					"preservesPitch": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"inherited": true,
+						"name": "preservesPitch",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement#htmlmediaelement.preservespitch",
+						"values": {
+							"Preact": "boolean"
 						}
 					},
 					"src": {
@@ -2497,11 +2596,25 @@
 							"Firefox": "string",
 							"Pota": "string",
 							"Preact": "string",
-							"React": "string",
+							"React": "string | DO_NOT_USE_OR_YOU_WILL_BE_FIRED_EXPERIMENTAL_MEDIA_SRC_TYPES[keyof DO_NOT_USE_OR_YOU_WILL_BE_FIRED_EXPERIMENTAL_MEDIA_SRC_TYPES]",
 							"Solid": "string",
 							"Voby": "string",
 							"VSCode": "string",
 							"Vue": "string"
+						}
+					},
+					"srcObject": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"inherited": true,
+						"name": "srcObject",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement#htmlmediaelement.srcobject",
+						"values": {
+							"Preact": "MediaStream | MediaSource | Blob | File | null"
 						}
 					},
 					"volume": {
@@ -2522,7 +2635,7 @@
 				"name": "audio",
 				"namespace": "http://www.w3.org/1999/xhtml",
 				"notIncludedMDN": ["Audio"],
-				"notIncludedSetters": ["HTMLMediaElement.currentTime", "HTMLMediaElement.defaultMuted", "HTMLMediaElement.defaultPlaybackRate", "HTMLMediaElement.playbackRate", "HTMLMediaElement.preservesPitch", "HTMLMediaElement.srcObject"],
+				"notIncludedSetters": [],
 				"setters": ["HTMLMediaElement.autoplay", "HTMLMediaElement.controls", "HTMLMediaElement.controlsList", "HTMLMediaElement.crossOrigin", "HTMLMediaElement.currentTime", "HTMLMediaElement.defaultMuted", "HTMLMediaElement.defaultPlaybackRate", "HTMLMediaElement.disableRemotePlayback", "HTMLMediaElement.loop", "HTMLMediaElement.muted", "HTMLMediaElement.onencrypted", "HTMLMediaElement.onwaitingforkey", "HTMLMediaElement.playbackRate", "HTMLMediaElement.preload", "HTMLMediaElement.preservesPitch", "HTMLMediaElement.src", "HTMLMediaElement.srcObject", "HTMLMediaElement.volume"]
 			},
 			"b": {
@@ -2579,7 +2692,7 @@
 							"Chrome": "string",
 							"Firefox": "string",
 							"Pota": "'_self' | '_blank' | '_parent' | '_top' | (string & {})",
-							"Preact": "string",
+							"Preact": "'_self' | '_blank' | '_parent' | '_top' | (string & {})",
 							"React": "string",
 							"Solid": "string",
 							"Voby": "string",
@@ -3352,17 +3465,19 @@
 						"warn": true
 					},
 					"command": {
-						"attr": false,
-						"attrChrome": false,
+						"attr": true,
+						"attrChrome": true,
 						"attrFirefox": false,
 						"experimental": true,
 						"name": "command",
-						"prop": false,
-						"propChrome": false,
+						"prop": true,
+						"propChrome": true,
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLButtonElement#htmlbuttonelement.command",
 						"values": {
-							"Pota": "'show-modal' | 'close' | 'show-popover' | 'hide-popover' | 'toggle-popover' | (string & {})"
+							"Chrome": "string",
+							"Pota": "'show-modal' | 'close' | 'show-popover' | 'hide-popover' | 'toggle-popover' | (string & {})",
+							"Preact": "string"
 						}
 					},
 					"commandfor": {
@@ -3376,8 +3491,24 @@
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLButtonElement#htmlbuttonelement.commandfor",
 						"values": {
-							"Pota": "string"
+							"Pota": "string",
+							"Preact": "string"
 						}
+					},
+					"commandFor": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"experimental": true,
+						"name": "commandFor",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLButtonElement#htmlbuttonelement.commandfor",
+						"values": {
+							"Preact": "string"
+						},
+						"warn": true
 					},
 					"disabled": {
 						"attr": true,
@@ -3734,9 +3865,9 @@
 				},
 				"name": "button",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": ["checkValidity", "commandForElement", "labels", "reportValidity", "setCustomValidity", "validationMessage", "validity", "willValidate"],
-				"notIncludedSetters": ["HTMLButtonElement.popoverTargetElement"],
-				"setters": ["HTMLButtonElement.disabled", "HTMLButtonElement.formAction", "HTMLButtonElement.formEnctype", "HTMLButtonElement.formMethod", "HTMLButtonElement.formNoValidate", "HTMLButtonElement.formTarget", "HTMLButtonElement.name", "HTMLButtonElement.popoverTargetAction", "HTMLButtonElement.popoverTargetElement", "HTMLButtonElement.type", "HTMLButtonElement.value"]
+				"notIncludedMDN": ["checkValidity", "labels", "reportValidity", "setCustomValidity", "validationMessage", "validity", "willValidate"],
+				"notIncludedSetters": ["HTMLButtonElement.commandForElement", "HTMLButtonElement.popoverTargetElement"],
+				"setters": ["HTMLButtonElement.command", "HTMLButtonElement.commandForElement", "HTMLButtonElement.disabled", "HTMLButtonElement.formAction", "HTMLButtonElement.formEnctype", "HTMLButtonElement.formMethod", "HTMLButtonElement.formNoValidate", "HTMLButtonElement.formTarget", "HTMLButtonElement.name", "HTMLButtonElement.popoverTargetAction", "HTMLButtonElement.popoverTargetElement", "HTMLButtonElement.type", "HTMLButtonElement.value"]
 			},
 			"canvas": {
 				"deprecated": false,
@@ -4322,7 +4453,6 @@
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDetailsElement#htmldetailselement.ontoggle",
 						"values": {
-							"Preact": "GenericEventHandler<T>",
 							"Solid": "EventHandlerUnion<T, Event>",
 							"Voby": "ObservableMaybe<Nullable<GenericEventHandler<T>>>",
 							"Vue": "(payload: ToggleEvent) => void"
@@ -4390,6 +4520,33 @@
 				"interface": "HTMLDialogElement",
 				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement",
 				"keys": {
+					"closedby": {
+						"attr": true,
+						"attrChrome": true,
+						"attrFirefox": false,
+						"name": "closedby",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement#htmldialogelement.closedby",
+						"values": {
+							"Chrome": "string",
+							"Preact": "'none' | 'closerequest' | 'any'"
+						}
+					},
+					"closedBy": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"name": "closedBy",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement#htmldialogelement.closedby",
+						"values": {
+							"Preact": "'none' | 'closerequest' | 'any'"
+						}
+					},
 					"onCancel": {
 						"attr": false,
 						"attrChrome": false,
@@ -4462,7 +4619,7 @@
 				"namespace": "http://www.w3.org/1999/xhtml",
 				"notIncludedMDN": ["cancel_event", "close_event", "close", "show", "showModal"],
 				"notIncludedSetters": ["HTMLDialogElement.returnValue"],
-				"setters": ["HTMLDialogElement.open", "HTMLDialogElement.returnValue"]
+				"setters": ["HTMLDialogElement.closedBy", "HTMLDialogElement.open", "HTMLDialogElement.returnValue"]
 			},
 			"dir": {
 				"deprecated": true,
@@ -6785,6 +6942,19 @@
 							"Pota": "string"
 						}
 					},
+					"browsingtopics": {
+						"attr": true,
+						"attrChrome": true,
+						"attrFirefox": false,
+						"name": "browsingtopics",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement#htmlimageelement.browsingtopics",
+						"values": {
+							"Chrome": "boolean"
+						}
+					},
 					"crossorigin": {
 						"attr": true,
 						"attrChrome": true,
@@ -6868,6 +7038,7 @@
 							"Chrome": "string",
 							"Firefox": "string",
 							"Pota": "'high' | 'low' | 'auto'",
+							"Preact": "'high' | 'auto' | 'low'",
 							"Solid": "'high' | 'low' | 'auto'"
 						}
 					},
@@ -6881,6 +7052,7 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement#htmlimageelement.fetchpriority",
 						"values": {
+							"Preact": "'high' | 'auto' | 'low'",
 							"React": "'high' | 'low' | 'auto'"
 						}
 					},
@@ -7132,7 +7304,7 @@
 							"Firefox": "string",
 							"Pota": "string",
 							"Preact": "string",
-							"React": "string",
+							"React": "string | DO_NOT_USE_OR_YOU_WILL_BE_FIRED_EXPERIMENTAL_IMG_SRC_TYPES[keyof DO_NOT_USE_OR_YOU_WILL_BE_FIRED_EXPERIMENTAL_IMG_SRC_TYPES]",
 							"Solid": "string",
 							"Voby": "string",
 							"VSCode": "string",
@@ -7252,7 +7424,7 @@
 				"namespace": "http://www.w3.org/1999/xhtml",
 				"notIncludedMDN": ["complete", "currentSrc", "decode", "Image", "naturalHeight", "naturalWidth", "x", "y"],
 				"notIncludedSetters": [],
-				"setters": ["HTMLImageElement.align", "HTMLImageElement.alt", "HTMLImageElement.attributionSrc", "HTMLImageElement.border", "HTMLImageElement.crossOrigin", "HTMLImageElement.decoding", "HTMLImageElement.fetchPriority", "HTMLImageElement.height", "HTMLImageElement.hspace", "HTMLImageElement.isMap", "HTMLImageElement.loading", "HTMLImageElement.longDesc", "HTMLImageElement.lowsrc", "HTMLImageElement.name", "HTMLImageElement.referrerPolicy", "HTMLImageElement.sharedStorageWritable", "HTMLImageElement.sizes", "HTMLImageElement.src", "HTMLImageElement.srcset", "HTMLImageElement.useMap", "HTMLImageElement.vspace", "HTMLImageElement.width"]
+				"setters": ["HTMLImageElement.align", "HTMLImageElement.alt", "HTMLImageElement.attributionSrc", "HTMLImageElement.border", "HTMLImageElement.browsingTopics", "HTMLImageElement.crossOrigin", "HTMLImageElement.decoding", "HTMLImageElement.fetchPriority", "HTMLImageElement.height", "HTMLImageElement.hspace", "HTMLImageElement.isMap", "HTMLImageElement.loading", "HTMLImageElement.longDesc", "HTMLImageElement.lowsrc", "HTMLImageElement.name", "HTMLImageElement.referrerPolicy", "HTMLImageElement.sharedStorageWritable", "HTMLImageElement.sizes", "HTMLImageElement.src", "HTMLImageElement.srcset", "HTMLImageElement.useMap", "HTMLImageElement.vspace", "HTMLImageElement.width"]
 			},
 			"input": {
 				"deprecated": false,
@@ -8239,7 +8411,7 @@
 							"Pota": "'button' | 'checkbox' | 'color' | 'date' | 'datetime-local' | 'email' | 'file' | 'hidden' | 'image' | 'month' | 'number' | 'password' | 'radio' | 'range' | 'reset' | 'search' | 'submit' | 'tel' | 'text' | 'time' | 'url' | 'week'",
 							"Preact": "'button' | 'checkbox' | 'color' | 'date' | 'datetime-local' | 'email' | 'file' | 'hidden' | 'image' | 'month' | 'number' | 'password' | 'radio' | 'range' | 'reset' | 'search' | 'submit' | 'tel' | 'text' | 'time' | 'url' | 'week' | (string & {})",
 							"React": "'button' | 'checkbox' | 'color' | 'date' | 'datetime-local' | 'email' | 'file' | 'hidden' | 'image' | 'month' | 'number' | 'password' | 'radio' | 'range' | 'reset' | 'search' | 'submit' | 'tel' | 'text' | 'time' | 'url' | 'week' | (string & {})",
-							"Solid": "string",
+							"Solid": "'button' | 'checkbox' | 'color' | 'date' | 'datetime-local' | 'email' | 'file' | 'hidden' | 'image' | 'month' | 'number' | 'password' | 'radio' | 'range' | 'reset' | 'search' | 'submit' | 'tel' | 'text' | 'time' | 'url' | 'week' | (string & {})",
 							"Voby": "'button' | 'checkbox' | 'color' | 'date' | 'datetime-local' | 'email' | 'file' | 'hidden' | 'image' | 'month' | 'number' | 'password' | 'radio' | 'range' | 'reset' | 'search' | 'submit' | 'tel' | 'text' | 'time' | 'url' | 'week'",
 							"VSCode": "'hidden' | 'text' | 'search' | 'tel' | 'url' | 'email' | 'password' | 'datetime' | 'date' | 'month' | 'week' | 'time' | 'datetime-local' | 'number' | 'range' | 'color' | 'checkbox' | 'radio' | 'file' | 'submit' | 'image' | 'reset' | 'button'",
 							"Vue": "InputTypeHTMLAttribute"
@@ -8897,6 +9069,7 @@
 							"Chrome": "string",
 							"Firefox": "string",
 							"Pota": "'high' | 'low' | 'auto'",
+							"Preact": "'high' | 'low' | 'auto'",
 							"Solid": "'high' | 'low' | 'auto'"
 						}
 					},
@@ -11613,8 +11786,8 @@
 				"name": "script",
 				"namespace": "http://www.w3.org/1999/xhtml",
 				"notIncludedMDN": ["supports_static"],
-				"notIncludedSetters": ["HTMLScriptElement.htmlFor"],
-				"setters": ["HTMLScriptElement.async", "HTMLScriptElement.attributionSrc", "HTMLScriptElement.blocking", "HTMLScriptElement.charset", "HTMLScriptElement.crossOrigin", "HTMLScriptElement.defer", "HTMLScriptElement.event", "HTMLScriptElement.fetchPriority", "HTMLScriptElement.htmlFor", "HTMLScriptElement.integrity", "HTMLScriptElement.noModule", "HTMLScriptElement.referrerPolicy", "HTMLScriptElement.src", "HTMLScriptElement.text", "HTMLScriptElement.type"]
+				"notIncludedSetters": ["HTMLScriptElement.htmlFor", "HTMLScriptElement.innerText", "HTMLScriptElement.textContent"],
+				"setters": ["HTMLScriptElement.async", "HTMLScriptElement.attributionSrc", "HTMLScriptElement.blocking", "HTMLScriptElement.charset", "HTMLScriptElement.crossOrigin", "HTMLScriptElement.defer", "HTMLScriptElement.event", "HTMLScriptElement.fetchPriority", "HTMLScriptElement.htmlFor", "HTMLScriptElement.innerText", "HTMLScriptElement.integrity", "HTMLScriptElement.noModule", "HTMLScriptElement.referrerPolicy", "HTMLScriptElement.src", "HTMLScriptElement.text", "HTMLScriptElement.textContent", "HTMLScriptElement.type"]
 			},
 			"search": {
 				"deprecated": false,
@@ -13150,7 +13323,7 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTextAreaElement#htmltextareaelement.defaultvalue",
 						"values": {
-							"Preact": "string"
+							"Preact": "string | number"
 						}
 					},
 					"dirname": {
@@ -14216,6 +14389,19 @@
 							"Preact": "boolean"
 						}
 					},
+					"controlslist": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"name": "controlslist",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTrackElement#htmltrackelement.controlslist",
+						"values": {
+							"Preact": "string"
+						}
+					},
 					"controlsList": {
 						"attr": false,
 						"attrChrome": false,
@@ -14257,6 +14443,20 @@
 						},
 						"warn": true
 					},
+					"currentTime": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"name": "currentTime",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTrackElement#htmltrackelement.currenttime",
+						"values": {
+							"Preact": "number"
+						},
+						"warn": true
+					},
 					"default": {
 						"attr": true,
 						"attrChrome": true,
@@ -14277,6 +14477,61 @@
 							"VSCode": "boolean",
 							"Vue": "boolean | 'true' | 'false'"
 						}
+					},
+					"defaultMuted": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"name": "defaultMuted",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTrackElement#htmltrackelement.defaultmuted",
+						"values": {
+							"Preact": "boolean"
+						},
+						"warn": true
+					},
+					"defaultPlaybackRate": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"name": "defaultPlaybackRate",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTrackElement#htmltrackelement.defaultplaybackrate",
+						"values": {
+							"Preact": "number"
+						},
+						"warn": true
+					},
+					"disableremoteplayback": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"name": "disableremoteplayback",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTrackElement#htmltrackelement.disableremoteplayback",
+						"values": {
+							"Preact": "boolean"
+						}
+					},
+					"disableRemotePlayback": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"name": "disableRemotePlayback",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTrackElement#htmltrackelement.disableremoteplayback",
+						"values": {
+							"Preact": "boolean"
+						},
+						"warn": true
 					},
 					"kind": {
 						"attr": true,
@@ -14361,30 +14616,17 @@
 							"Preact": "boolean"
 						}
 					},
-					"playsinline": {
+					"playbackRate": {
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
-						"name": "playsinline",
+						"name": "playbackRate",
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTrackElement#htmltrackelement.playsinline",
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTrackElement#htmltrackelement.playbackrate",
 						"values": {
-							"Preact": "boolean"
-						}
-					},
-					"playsInline": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"name": "playsInline",
-						"prop": false,
-						"propChrome": false,
-						"propFirefox": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTrackElement#htmltrackelement.playsinline",
-						"values": {
-							"Preact": "boolean"
+							"Preact": "number"
 						},
 						"warn": true
 					},
@@ -14398,8 +14640,22 @@
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTrackElement#htmltrackelement.preload",
 						"values": {
-							"Preact": "string"
+							"Preact": "'auto' | 'metadata' | 'none'"
 						}
+					},
+					"preservesPitch": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"name": "preservesPitch",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTrackElement#htmltrackelement.preservespitch",
+						"values": {
+							"Preact": "boolean"
+						},
+						"warn": true
 					},
 					"src": {
 						"attr": true,
@@ -14454,6 +14710,20 @@
 							"Preact": "string",
 							"React": "string",
 							"Voby": "string"
+						},
+						"warn": true
+					},
+					"srcObject": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"name": "srcObject",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTrackElement#htmltrackelement.srcobject",
+						"values": {
+							"Preact": "MediaStream | MediaSource | Blob | File | null"
 						},
 						"warn": true
 					},
@@ -14642,6 +14912,8 @@
 						"values": {
 							"Chrome": "string",
 							"Pota": "string",
+							"Preact": "string",
+							"Solid": "'nodownload' | 'nofullscreen' | 'noplaybackrate' | 'noremoteplayback' | (string & {})",
 							"Vue": "string"
 						}
 					},
@@ -14698,6 +14970,48 @@
 							"Voby": "string"
 						}
 					},
+					"currentTime": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"inherited": true,
+						"name": "currentTime",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement#htmlmediaelement.currenttime",
+						"values": {
+							"Preact": "number"
+						}
+					},
+					"defaultMuted": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"inherited": true,
+						"name": "defaultMuted",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement#htmlmediaelement.defaultmuted",
+						"values": {
+							"Preact": "boolean"
+						}
+					},
+					"defaultPlaybackRate": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"inherited": true,
+						"name": "defaultPlaybackRate",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement#htmlmediaelement.defaultplaybackrate",
+						"values": {
+							"Preact": "number"
+						}
+					},
 					"disablepictureinpicture": {
 						"attr": true,
 						"attrChrome": true,
@@ -14742,7 +15056,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#htmlvideoelement.disableremoteplayback",
 						"values": {
 							"Chrome": "boolean",
-							"Pota": "'true' | boolean"
+							"Pota": "'true' | boolean",
+							"Preact": "boolean",
+							"Solid": "boolean"
 						}
 					},
 					"disableRemotePlayback": {
@@ -14918,6 +15234,20 @@
 							"Firefox": "event"
 						}
 					},
+					"playbackRate": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"inherited": true,
+						"name": "playbackRate",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement#htmlmediaelement.playbackrate",
+						"values": {
+							"Preact": "number"
+						}
+					},
 					"playsinline": {
 						"attr": true,
 						"attrChrome": true,
@@ -14985,12 +15315,26 @@
 							"Chrome": "string",
 							"Firefox": "string",
 							"Pota": "'none' | 'metadata' | 'auto' | ''",
-							"Preact": "string",
+							"Preact": "'auto' | 'metadata' | 'none'",
 							"React": "string",
 							"Solid": "'none' | 'metadata' | 'auto' | ''",
 							"Voby": "string",
 							"VSCode": "'none' | 'metadata' | 'auto'",
 							"Vue": "string"
+						}
+					},
+					"preservesPitch": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"inherited": true,
+						"name": "preservesPitch",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement#htmlmediaelement.preservespitch",
+						"values": {
+							"Preact": "boolean"
 						}
 					},
 					"src": {
@@ -15008,11 +15352,25 @@
 							"Firefox": "string",
 							"Pota": "string",
 							"Preact": "string",
-							"React": "string",
+							"React": "string | DO_NOT_USE_OR_YOU_WILL_BE_FIRED_EXPERIMENTAL_MEDIA_SRC_TYPES[keyof DO_NOT_USE_OR_YOU_WILL_BE_FIRED_EXPERIMENTAL_MEDIA_SRC_TYPES]",
 							"Solid": "string",
 							"Voby": "string",
 							"VSCode": "string",
 							"Vue": "string"
+						}
+					},
+					"srcObject": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"inherited": true,
+						"name": "srcObject",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement#htmlmediaelement.srcobject",
+						"values": {
+							"Preact": "MediaStream | MediaSource | Blob | File | null"
 						}
 					},
 					"volume": {
@@ -15054,7 +15412,7 @@
 				"name": "video",
 				"namespace": "http://www.w3.org/1999/xhtml",
 				"notIncludedMDN": ["cancelVideoFrameCallback", "enterpictureinpicture_event", "getVideoPlaybackQuality", "leavepictureinpicture_event", "mozDecodedFrames", "mozFrameDelay", "mozHasAudio", "mozPaintedFrames", "mozParsedFrames", "mozPresentedFrames", "requestPictureInPicture", "requestVideoFrameCallback", "resize_event", "videoHeight", "videoWidth"],
-				"notIncludedSetters": ["HTMLMediaElement.currentTime", "HTMLMediaElement.defaultMuted", "HTMLMediaElement.defaultPlaybackRate", "HTMLMediaElement.playbackRate", "HTMLMediaElement.preservesPitch", "HTMLMediaElement.srcObject"],
+				"notIncludedSetters": [],
 				"setters": ["HTMLMediaElement.autoplay", "HTMLMediaElement.controls", "HTMLMediaElement.controlsList", "HTMLMediaElement.crossOrigin", "HTMLMediaElement.currentTime", "HTMLMediaElement.defaultMuted", "HTMLMediaElement.defaultPlaybackRate", "HTMLMediaElement.disableRemotePlayback", "HTMLMediaElement.loop", "HTMLMediaElement.muted", "HTMLMediaElement.onencrypted", "HTMLMediaElement.onwaitingforkey", "HTMLMediaElement.playbackRate", "HTMLMediaElement.preload", "HTMLMediaElement.preservesPitch", "HTMLMediaElement.src", "HTMLMediaElement.srcObject", "HTMLMediaElement.volume", "HTMLVideoElement.disablePictureInPicture", "HTMLVideoElement.height", "HTMLVideoElement.onenterpictureinpicture", "HTMLVideoElement.onleavepictureinpicture", "HTMLVideoElement.playsInline", "HTMLVideoElement.poster", "HTMLVideoElement.width"]
 			},
 			"wbr": {
@@ -15702,7 +16060,7 @@
 							"Pota": "'_self' | '_blank' | '_parent' | '_top' | (string & {})",
 							"Preact": "'_self' | '_blank' | '_parent' | '_top' | (string & {})",
 							"React": "'_self' | '_blank' | '_parent' | '_top' | (string & {})",
-							"Solid": "string",
+							"Solid": "'_self' | '_blank' | '_parent' | '_top' | (string & {})",
 							"Voby": "'_self' | '_blank' | '_parent' | '_top'",
 							"VSCode": "'_self' | '_blank' | '_parent' | '_top'",
 							"Vue": "string"
@@ -59992,7 +60350,7 @@
 		},
 		"auxclick": {
 			"capitalized": "onAuxClick",
-			"interface": "MouseEvent",
+			"interface": "PointerEvent",
 			"name": "auxclick"
 		},
 		"beforeinput": {
@@ -60050,6 +60408,11 @@
 			"interface": "Event",
 			"name": "close"
 		},
+		"command": {
+			"capitalized": "onCommand",
+			"interface": "Event",
+			"name": "command"
+		},
 		"compositionend": {
 			"capitalized": "onCompositionEnd",
 			"interface": "CompositionEvent",
@@ -60072,7 +60435,7 @@
 		},
 		"contextmenu": {
 			"capitalized": "onContextMenu",
-			"interface": "MouseEvent",
+			"interface": "PointerEvent",
 			"name": "contextmenu"
 		},
 		"contextrestored": {
@@ -60352,7 +60715,7 @@
 		},
 		"pagereveal": {
 			"capitalized": "pagereveal",
-			"interface": "Event",
+			"interface": "PageRevealEvent",
 			"name": "pagereveal"
 		},
 		"pageshow": {
@@ -60362,7 +60725,7 @@
 		},
 		"pageswap": {
 			"capitalized": "pageswap",
-			"interface": "Event",
+			"interface": "PageSwapEvent",
 			"name": "pageswap"
 		},
 		"paste": {

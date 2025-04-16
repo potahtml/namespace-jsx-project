@@ -6,9 +6,9 @@
 	},
 	"dependencies": {
 		"oxc-parser": "^0.30.5",
-		"prettier": "^3.3.3",
-		"puppeteer": "^23.9.0",
-		"vscode-html-languageservice": "^5.3.1"
+		"prettier": "^3.5.3",
+		"puppeteer": "^24.6.1",
+		"vscode-html-languageservice": "^5.3.3"
 	},
 	"prettier": {
 		"printWidth": 70,

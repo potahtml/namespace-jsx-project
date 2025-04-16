@@ -54,6 +54,9 @@ interface ButtonHTMLAttributes extends HTMLAttributes {
 
 // Preact - https://preactjs.com/
 interface ButtonHTMLAttributes<T extends EventTarget = HTMLButtonElement> extends HTMLAttributes<T> {
+	command?: string
+	commandfor?: string
+	commandFor?: string
 	disabled?: boolean
 	form?: string
 	formaction?: string

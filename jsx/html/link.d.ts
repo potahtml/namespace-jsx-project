@@ -54,6 +54,7 @@ interface LinkHTMLAttributes<T extends EventTarget = HTMLLinkElement> extends HT
 	as?: string
 	crossorigin?: 'anonymous' | 'use-credentials'
 	crossOrigin?: 'anonymous' | 'use-credentials'
+	fetchpriority?: 'high' | 'low' | 'auto'
 	fetchPriority?: 'high' | 'low' | 'auto'
 	href?: string
 	hreflang?: string
