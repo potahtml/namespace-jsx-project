@@ -172,6 +172,8 @@ function unwrapTypes(source, types) {
 		.replace(/\| SerializableAttributeValue/gi, '')
 		// voby
 		.replace(/FunctionMaybe<Nullable<([^\n]+)>>\n/gi, '$1\n')
+		.replace(/ObservableMaybe<([^\n]+)>\n/gi, '$1\n')
+		.replace(/Nullable<([^\n]+)>\n/gi, '$1\n')
 		.replace(/\| ReadonlyArray<([^> ]+)> /gi, '| readonly $1[] ')
 		// preact
 		.replace(/\| SignalLike<([^>]+)>/gi, ' ')
@@ -191,5 +193,8 @@ function unwrapTypes(source, types) {
 				.replaceAll(' ' + type.name + '\n', ' ' + type.source + '\n')
 		}
 	}
+
+	source = source.replace(/\| undefined/gi, '')
+
 	return source
 }

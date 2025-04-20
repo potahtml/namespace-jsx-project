@@ -32,6 +32,7 @@ import {
 	mdnSkip,
 	fetchTable,
 	frameworkSpecific,
+	fixedTsEventsInterfaces,
 } from './data.js'
 
 import {
@@ -50,6 +51,7 @@ copy(`./.prettierrc.json`, `./jsx/.prettierrc.json`)
 
 const DATA = {
 	events: {},
+	eventsLib: {},
 	aria: {},
 	elements: {},
 }
@@ -355,6 +357,45 @@ for (let eventName in DATA.events) {
 			interface: 'Event',
 		}
 	}
+}
+
+// patch the interfaces
+
+for (let eventName in fixedTsEventsInterfaces) {
+	DATA.events[eventName].interface =
+		fixedTsEventsInterfaces[eventName]
+}
+
+// lib events
+
+DATA.eventsLib = {}
+
+for (const lib of libs) {
+	lib.interfaces.events.properties
+		.filter(
+			x =>
+				x.name.startsWith('on') &&
+				(!x.name.toLowerCase().endsWith('capture') ||
+					x.name.toLowerCase().replace(':', '').replace(/^on/, '') ===
+						'lostpointercapture') &&
+				!x.name.toLowerCase().endsWith('passive'),
+		)
+		.forEach(property => {
+			DATA.eventsLib[property.name] = DATA.eventsLib[
+				property.name
+			] || {
+				name: property.name,
+				values: {},
+			}
+			if (DATA.eventsLib[property.name].values[lib.name]) {
+				// event is duplicated
+				DATA.eventsLib[property.name].values[lib.name] +=
+					' ' + property.source
+			} else {
+				DATA.eventsLib[property.name].values[lib.name] =
+					property.source
+			}
+		})
 }
 
 // aria

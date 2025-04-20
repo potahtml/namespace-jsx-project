@@ -291,6 +291,14 @@ export const isBlacklisted = {
 	htmlunknownelementattributes: true,
 }
 
+export const fixedTsEventsInterfaces = {
+	beforetoggle: 'ToggleEvent',
+	command: 'CommandEvent',
+	input: 'InputEvent',
+	toggle: 'ToggleEvent',
+	dragexit: 'DragEvent',
+}
+
 /**
  * The source of truth, the list of tagNames is taken from typescript
  * itself.
