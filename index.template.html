@@ -273,7 +273,10 @@
 						setSettings(target)
 						return
 					}
-					const search = target.value.trim().toLowerCase()
+					const text = target.value.trim()
+					const search = text.replace(/^"/, '').replace(/"$/, '')
+					const searchInsensitive = search.toLowerCase()
+					const isExact = text.startsWith('"') && text.endsWith('"')
 
 					if (!search) {
 						const elements = document.querySelectorAll('tr, .table')
@@ -284,13 +287,15 @@
 					}
 
 					// filter rows
-					const trs = document.querySelectorAll('tbody tr')
+					const trs = document.querySelectorAll("tbody tr");
 					for (const tr of [...trs]) {
-						tr.style.display = tr.textContent
-							.toLowerCase()
-							.includes(search)
-							? null
-							: 'none'
+						tr.style.display = isExact
+							? tr.innerHTML.includes(">" + search + "<")
+								? null
+								: "none"
+							: tr.textContent.toLowerCase().includes(searchInsensitive)
+								? null
+								: "none";
 					}
 
 					// filter whole table and heading if nothing matched
