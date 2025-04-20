@@ -49,34 +49,34 @@ interface ScriptHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface ScriptHTMLAttributes<T> extends HTMLAttributes<T> {
-	async?: true | false | '' | undefined | false
-	blocking?: 'render' | undefined | false
-	crossorigin?: 'anonymous' | 'use-credentials' | '' | true | undefined | false
-	defer?: true | false | '' | undefined | false
-	fetchpriority?: 'high' | 'low' | 'auto' | undefined | false
-	integrity?: string | undefined | false
-	nomodule?: true | false | '' | undefined | false
-	nonce?: string | undefined | false
-	referrerpolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url' | undefined | false
-	src?: string | undefined | false
-	type?: 'importmap' | 'module' | 'speculationrules' | (string & {}) | undefined | false
+	async?: true | false | '' | false
+	blocking?: 'render' | false
+	crossorigin?: 'anonymous' | 'use-credentials' | '' | true | false
+	defer?: true | false | '' | false
+	fetchpriority?: 'high' | 'low' | 'auto' | false
+	integrity?: string | false
+	nomodule?: true | false | '' | false
+	nonce?: string | false
+	referrerpolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url' | false
+	src?: string | false
+	type?: 'importmap' | 'module' | 'speculationrules' | (string & {}) | false
 
 	/** @experimental */
-	attributionsrc?: string | undefined | false
+	attributionsrc?: string | false
 
 	/** @deprecated Use lowercase attributes */
-	crossOrigin?: 'anonymous' | 'use-credentials' | '' | true | undefined | false
+	crossOrigin?: 'anonymous' | 'use-credentials' | '' | true | false
 	/** @deprecated Use lowercase attributes */
-	noModule?: boolean | undefined | false
+	noModule?: boolean | false
 	/** @deprecated Use lowercase attributes */
-	referrerPolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url' | undefined | false
+	referrerPolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url' | false
 
 	/** @deprecated */
-	charset?: string | undefined | false
+	charset?: string | false
 	/** @deprecated */
-	event?: string | undefined | false
+	event?: string | false
 	/** @deprecated */
-	language?: string | undefined | false
+	language?: string | false
 }
 
 // Voby - https://github.com/vobyjs/voby
@@ -133,7 +133,7 @@ interface ScriptHTMLAttributes<T> extends HTMLAttributes<T> {
 	async?: boolean
 	/** @deprecated */
 	charSet?: string
-	crossOrigin?: 'anonymous' | 'use-credentials' | '' | undefined
+	crossOrigin?: 'anonymous' | 'use-credentials' | ''
 	defer?: boolean
 	integrity?: string
 	noModule?: boolean

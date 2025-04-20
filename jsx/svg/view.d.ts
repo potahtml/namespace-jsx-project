@@ -56,25 +56,25 @@ interface ZoomAndPanSVGAttributes {
 
 // Solid Next - https://www.solidjs.com/
 interface ViewSVGAttributes<T> extends CoreSVGAttributes<T>, ExternalResourceSVGAttributes, FitToViewBoxSVGAttributes, ZoomAndPanSVGAttributes {
-	viewTarget?: string | undefined | false
+	viewTarget?: string | false
 }
 
 interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
-	id?: string | undefined | false
-	lang?: string | undefined | false
-	tabindex?: number | string | undefined | false
+	id?: string | false
+	lang?: string | false
+	tabindex?: number | string | false
 
 	/** @deprecated Use lowercase attributes */
-	tabIndex?: number | string | undefined | false
+	tabIndex?: number | string | false
 }
 
 interface ExternalResourceSVGAttributes {
-	externalResourcesRequired?: 'false' | 'true' | undefined | false
+	externalResourcesRequired?: 'false' | 'true' | false
 }
 
 interface FitToViewBoxSVGAttributes {
-	viewBox?: string | undefined | false
-	preserveAspectRatio?: 'none' | 'xMinYMin' | 'xMidYMin' | 'xMaxYMin' | 'xMinYMid' | 'xMidYMid' | 'xMaxYMid' | 'xMinYMax' | 'xMidYMax' | 'xMaxYMax' | 'xMinYMin meet' | 'xMidYMin meet' | 'xMaxYMin meet' | 'xMinYMid meet' | 'xMidYMid meet' | 'xMaxYMid meet' | 'xMinYMax meet' | 'xMidYMax meet' | 'xMaxYMax meet' | 'xMinYMin slice' | 'xMidYMin slice' | 'xMaxYMin slice' | 'xMinYMid slice' | 'xMidYMid slice' | 'xMaxYMid slice' | 'xMinYMax slice' | 'xMidYMax slice' | 'xMaxYMax slice' | undefined | false
+	viewBox?: string | false
+	preserveAspectRatio?: 'none' | 'xMinYMin' | 'xMidYMin' | 'xMaxYMin' | 'xMinYMid' | 'xMidYMid' | 'xMaxYMid' | 'xMinYMax' | 'xMidYMax' | 'xMaxYMax' | 'xMinYMin meet' | 'xMidYMin meet' | 'xMaxYMin meet' | 'xMinYMid meet' | 'xMidYMid meet' | 'xMaxYMid meet' | 'xMinYMax meet' | 'xMidYMax meet' | 'xMaxYMax meet' | 'xMinYMin slice' | 'xMidYMin slice' | 'xMaxYMin slice' | 'xMinYMid slice' | 'xMidYMid slice' | 'xMaxYMid slice' | 'xMinYMax slice' | 'xMidYMax slice' | 'xMaxYMax slice' | false
 }
 
 interface ZoomAndPanSVGAttributes {
@@ -82,7 +82,7 @@ interface ZoomAndPanSVGAttributes {
 	 * @deprecated
 	 * @non-standard
 	 */
-	zoomAndPan?: 'disable' | 'magnify' | undefined | false
+	zoomAndPan?: 'disable' | 'magnify' | false
 }
 
 // React - https://react.dev/

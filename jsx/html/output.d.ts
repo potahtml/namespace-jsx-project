@@ -14,9 +14,9 @@ interface OutputHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface OutputHTMLAttributes<T> extends HTMLAttributes<T> {
-	form?: string | undefined | false
-	for?: string | undefined | false
-	name?: string | undefined | false
+	form?: string | false
+	for?: string | false
+	name?: string | false
 }
 
 // Voby - https://github.com/vobyjs/voby

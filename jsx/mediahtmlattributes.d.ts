@@ -36,23 +36,23 @@ interface MediaHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface MediaHTMLAttributes<T> extends HTMLAttributes<T> {
-	autoplay?: true | false | '' | undefined | false
-	controls?: true | false | '' | undefined | false
-	controlslist?: 'nodownload' | 'nofullscreen' | 'noplaybackrate' | 'noremoteplayback' | (string & {}) | undefined | false
-	crossorigin?: 'anonymous' | 'use-credentials' | '' | true | undefined | false
-	disableremoteplayback?: true | false | '' | undefined | false
-	loop?: true | false | '' | undefined | false
-	muted?: true | false | '' | undefined | false
-	preload?: 'none' | 'metadata' | 'auto' | '' | true | undefined | false
-	src?: string | undefined | false
+	autoplay?: true | false | '' | false
+	controls?: true | false | '' | false
+	controlslist?: 'nodownload' | 'nofullscreen' | 'noplaybackrate' | 'noremoteplayback' | (string & {}) | false
+	crossorigin?: 'anonymous' | 'use-credentials' | '' | true | false
+	disableremoteplayback?: true | false | '' | false
+	loop?: true | false | '' | false
+	muted?: true | false | '' | false
+	preload?: 'none' | 'metadata' | 'auto' | '' | true | false
+	src?: string | false
 
 	/** @deprecated Use lowercase attributes */
-	crossOrigin?: 'anonymous' | 'use-credentials' | '' | true | undefined | false
+	crossOrigin?: 'anonymous' | 'use-credentials' | '' | true | false
 
 	/** @deprecated Use lowercase attributes */
-	mediaGroup?: string | undefined | false
+	mediaGroup?: string | false
 	/** @deprecated */
-	mediagroup?: string | undefined | false
+	mediagroup?: string | false
 }
 
 // Voby - https://github.com/vobyjs/voby
@@ -113,7 +113,7 @@ interface MediaHTMLAttributes<T> extends HTMLAttributes<T> {
 	autoPlay?: boolean
 	controls?: boolean
 	controlsList?: string
-	crossOrigin?: 'anonymous' | 'use-credentials' | '' | undefined
+	crossOrigin?: 'anonymous' | 'use-credentials' | ''
 	loop?: boolean
 	mediaGroup?: string
 	muted?: boolean

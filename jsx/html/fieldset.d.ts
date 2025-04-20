@@ -14,9 +14,9 @@ interface FieldsetHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface FieldsetHTMLAttributes<T> extends HTMLAttributes<T> {
-	disabled?: true | false | '' | undefined | false
-	form?: string | undefined | false
-	name?: string | undefined | false
+	disabled?: true | false | '' | false
+	form?: string | false
+	name?: string | false
 }
 
 // Voby - https://github.com/vobyjs/voby

@@ -42,24 +42,24 @@ interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface FeSpotLightSVGAttributes<T> extends LightSourceElementSVGAttributes<T> {
-	x?: number | string | undefined | false
-	y?: number | string | undefined | false
-	z?: number | string | undefined | false
-	pointsAtX?: number | string | undefined | false
-	pointsAtY?: number | string | undefined | false
-	pointsAtZ?: number | string | undefined | false
-	specularExponent?: number | string | undefined | false
-	limitingConeAngle?: number | string | undefined | false
+	x?: number | string | false
+	y?: number | string | false
+	z?: number | string | false
+	pointsAtX?: number | string | false
+	pointsAtY?: number | string | false
+	pointsAtZ?: number | string | false
+	specularExponent?: number | string | false
+	limitingConeAngle?: number | string | false
 }
 
 interface LightSourceElementSVGAttributes<T> extends CoreSVGAttributes<T> {}
 interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
-	id?: string | undefined | false
-	lang?: string | undefined | false
-	tabindex?: number | string | undefined | false
+	id?: string | false
+	lang?: string | false
+	tabindex?: number | string | false
 
 	/** @deprecated Use lowercase attributes */
-	tabIndex?: number | string | undefined | false
+	tabIndex?: number | string | false
 }
 
 // React - https://react.dev/

@@ -16,10 +16,10 @@ interface OptionHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface OptionHTMLAttributes<T> extends HTMLAttributes<T> {
-	disabled?: true | false | '' | undefined | false
-	label?: string | undefined | false
-	selected?: true | false | '' | undefined | false
-	value?: string | string[] | number | undefined | false
+	disabled?: true | false | '' | false
+	label?: string | false
+	selected?: true | false | '' | false
+	value?: string | string[] | number | false
 }
 
 // Voby - https://github.com/vobyjs/voby

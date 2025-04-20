@@ -51,30 +51,30 @@ interface TextareaHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface TextareaHTMLAttributes<T> extends HTMLAttributes<T> {
-	autocomplete?: 'additional-name' | 'address-level1' | 'address-level2' | 'address-level3' | 'address-level4' | 'address-line1' | 'address-line2' | 'address-line3' | 'bday' | 'bday-day' | 'bday-month' | 'bday-year' | 'billing' | 'cc-additional-name' | 'cc-csc' | 'cc-exp' | 'cc-exp-month' | 'cc-exp-year' | 'cc-family-name' | 'cc-given-name' | 'cc-name' | 'cc-number' | 'cc-type' | 'country' | 'country-name' | 'current-password' | 'email' | 'family-name' | 'fax' | 'given-name' | 'home' | 'honorific-prefix' | 'honorific-suffix' | 'impp' | 'language' | 'mobile' | 'name' | 'new-password' | 'nickname' | 'off' | 'on' | 'organization' | 'organization-title' | 'pager' | 'photo' | 'postal-code' | 'sex' | 'shipping' | 'street-address' | 'tel' | 'tel-area-code' | 'tel-country-code' | 'tel-extension' | 'tel-local' | 'tel-local-prefix' | 'tel-local-suffix' | 'tel-national' | 'transaction-amount' | 'transaction-currency' | 'url' | 'username' | 'work' | (string & {}) | undefined | false
-	autocorrect?: 'on' | 'off' | undefined | false
-	autofocus?: true | false | '' | undefined | false
-	cols?: number | string | undefined | false
-	dirname?: string | undefined | false
-	disabled?: true | false | '' | undefined | false
-	enterkeyhint?: 'enter' | 'done' | 'go' | 'next' | 'previous' | 'search' | 'send' | undefined | false
-	form?: string | undefined | false
-	maxlength?: number | string | undefined | false
-	minlength?: number | string | undefined | false
-	name?: string | undefined | false
-	placeholder?: string | undefined | false
-	readonly?: true | false | '' | undefined | false
-	required?: true | false | '' | undefined | false
-	rows?: number | string | undefined | false
-	value?: string | string[] | number | undefined | false
-	wrap?: 'hard' | 'soft' | 'off' | undefined | false
+	autocomplete?: 'additional-name' | 'address-level1' | 'address-level2' | 'address-level3' | 'address-level4' | 'address-line1' | 'address-line2' | 'address-line3' | 'bday' | 'bday-day' | 'bday-month' | 'bday-year' | 'billing' | 'cc-additional-name' | 'cc-csc' | 'cc-exp' | 'cc-exp-month' | 'cc-exp-year' | 'cc-family-name' | 'cc-given-name' | 'cc-name' | 'cc-number' | 'cc-type' | 'country' | 'country-name' | 'current-password' | 'email' | 'family-name' | 'fax' | 'given-name' | 'home' | 'honorific-prefix' | 'honorific-suffix' | 'impp' | 'language' | 'mobile' | 'name' | 'new-password' | 'nickname' | 'off' | 'on' | 'organization' | 'organization-title' | 'pager' | 'photo' | 'postal-code' | 'sex' | 'shipping' | 'street-address' | 'tel' | 'tel-area-code' | 'tel-country-code' | 'tel-extension' | 'tel-local' | 'tel-local-prefix' | 'tel-local-suffix' | 'tel-national' | 'transaction-amount' | 'transaction-currency' | 'url' | 'username' | 'work' | (string & {}) | false
+	autocorrect?: 'on' | 'off' | false
+	autofocus?: true | false | '' | false
+	cols?: number | string | false
+	dirname?: string | false
+	disabled?: true | false | '' | false
+	enterkeyhint?: 'enter' | 'done' | 'go' | 'next' | 'previous' | 'search' | 'send' | false
+	form?: string | false
+	maxlength?: number | string | false
+	minlength?: number | string | false
+	name?: string | false
+	placeholder?: string | false
+	readonly?: true | false | '' | false
+	required?: true | false | '' | false
+	rows?: number | string | false
+	value?: string | string[] | number | false
+	wrap?: 'hard' | 'soft' | 'off' | false
 
 	/** @deprecated Use lowercase attributes */
-	maxLength?: number | string | undefined | false
+	maxLength?: number | string | false
 	/** @deprecated Use lowercase attributes */
-	minLength?: number | string | undefined | false
+	minLength?: number | string | false
 	/** @deprecated Use lowercase attributes */
-	readOnly?: boolean | undefined | false
+	readOnly?: boolean | false
 }
 
 // Voby - https://github.com/vobyjs/voby
@@ -94,7 +94,7 @@ interface TextareaHTMLAttributes<T extends EventTarget> extends VoidHTMLAttribut
 	rows?: number
 	value?: string | readonly string[] | number
 	wrap?: string
-	onChange?: ObservableMaybe<Nullable<KeyboardEventHandler<T>>>
+	onChange?: KeyboardEventHandler<T>
 }
 
 // Vue - https://vuejs.org/

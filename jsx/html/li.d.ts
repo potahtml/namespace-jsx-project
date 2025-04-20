@@ -13,10 +13,10 @@ interface LiHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface LiHTMLAttributes<T> extends HTMLAttributes<T> {
-	value?: number | string | undefined | false
+	value?: number | string | false
 
 	/** @deprecated */
-	type?: '1' | 'a' | 'A' | 'i' | 'I' | undefined | false
+	type?: '1' | 'a' | 'A' | 'i' | 'I' | false
 }
 
 // Voby - https://github.com/vobyjs/voby

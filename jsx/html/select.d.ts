@@ -26,15 +26,15 @@ interface SelectHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface SelectHTMLAttributes<T> extends HTMLAttributes<T> {
-	autocomplete?: string | undefined | false
-	autofocus?: true | false | '' | undefined | false
-	disabled?: true | false | '' | undefined | false
-	form?: string | undefined | false
-	multiple?: true | false | '' | undefined | false
-	name?: string | undefined | false
-	required?: true | false | '' | undefined | false
-	size?: number | string | undefined | false
-	value?: string | string[] | number | undefined | false
+	autocomplete?: string | false
+	autofocus?: true | false | '' | false
+	disabled?: true | false | '' | false
+	form?: string | false
+	multiple?: true | false | '' | false
+	name?: string | false
+	required?: true | false | '' | false
+	size?: number | string | false
+	value?: string | string[] | number | false
 }
 
 // Voby - https://github.com/vobyjs/voby
@@ -48,7 +48,7 @@ interface SelectHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> 
 	required?: boolean
 	size?: number
 	value?: string
-	onChange?: ObservableMaybe<Nullable<KeyboardEventHandler<T>>>
+	onChange?: KeyboardEventHandler<T>
 }
 
 // Vue - https://vuejs.org/

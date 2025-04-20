@@ -21,14 +21,14 @@ interface MetaHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface MetaHTMLAttributes<T> extends HTMLAttributes<T> {
-	charset?: string | undefined | false
-	content?: string | undefined | false
-	'http-equiv'?: 'content-security-policy' | 'content-type' | 'default-style' | 'x-ua-compatible' | 'refresh' | undefined | false
-	name?: string | undefined | false
-	media?: string | undefined | false
+	charset?: string | false
+	content?: string | false
+	'http-equiv'?: 'content-security-policy' | 'content-type' | 'default-style' | 'x-ua-compatible' | 'refresh' | false
+	name?: string | false
+	media?: string | false
 
 	/** @deprecated */
-	scheme?: string | undefined | false
+	scheme?: string | false
 }
 
 // Voby - https://github.com/vobyjs/voby

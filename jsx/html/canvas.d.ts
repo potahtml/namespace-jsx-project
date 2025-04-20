@@ -18,14 +18,14 @@ interface CanvasHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface CanvasHTMLAttributes<T> extends HTMLAttributes<T> {
-	width?: number | string | undefined | false
-	height?: number | string | undefined | false
+	width?: number | string | false
+	height?: number | string | false
 
 	/**
 	 * @deprecated
 	 * @non-standard
 	 */
-	'moz-opaque'?: true | false | '' | undefined | false
+	'moz-opaque'?: true | false | '' | false
 }
 
 // Voby - https://github.com/vobyjs/voby

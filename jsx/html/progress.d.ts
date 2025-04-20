@@ -12,8 +12,8 @@ interface ProgressHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface ProgressHTMLAttributes<T> extends HTMLAttributes<T> {
-	max?: number | string | undefined | false
-	value?: string | string[] | number | undefined | false
+	max?: number | string | false
+	value?: string | string[] | number | false
 }
 
 // Voby - https://github.com/vobyjs/voby

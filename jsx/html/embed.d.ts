@@ -21,15 +21,15 @@ interface EmbedHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface EmbedHTMLAttributes<T> extends HTMLAttributes<T> {
-	height?: number | string | undefined | false
-	src?: string | undefined | false
-	type?: string | undefined | false
-	width?: number | string | undefined | false
+	height?: number | string | false
+	src?: string | false
+	type?: string | false
+	width?: number | string | false
 
 	/** @deprecated */
-	align?: 'left' | 'right' | 'justify' | 'center' | undefined | false
+	align?: 'left' | 'right' | 'justify' | 'center' | false
 	/** @deprecated */
-	name?: string | undefined | false
+	name?: string | false
 }
 
 // Voby - https://github.com/vobyjs/voby

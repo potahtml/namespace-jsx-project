@@ -114,60 +114,60 @@ interface ConditionalProcessingSVGAttributes {
 
 // Solid Next - https://www.solidjs.com/
 interface AnimateTransformSVGAttributes<T> extends AnimationElementSVGAttributes<T>, AnimationAttributeTargetSVGAttributes, AnimationTimingSVGAttributes, AnimationValueSVGAttributes, AnimationAdditionSVGAttributes {
-	type?: 'translate' | 'scale' | 'rotate' | 'skewX' | 'skewY' | undefined | false
+	type?: 'translate' | 'scale' | 'rotate' | 'skewX' | 'skewY' | false
 }
 
 interface AnimationElementSVGAttributes<T> extends CoreSVGAttributes<T>, ExternalResourceSVGAttributes, ConditionalProcessingSVGAttributes {}
 interface AnimationAttributeTargetSVGAttributes {
-	attributeName?: string | undefined | false
-	attributeType?: 'CSS' | 'XML' | 'auto' | undefined | false
+	attributeName?: string | false
+	attributeType?: 'CSS' | 'XML' | 'auto' | false
 }
 
 interface AnimationTimingSVGAttributes {
-	begin?: string | undefined | false
-	dur?: string | undefined | false
-	end?: string | undefined | false
-	min?: string | undefined | false
-	max?: string | undefined | false
-	restart?: 'always' | 'whenNotActive' | 'never' | undefined | false
-	repeatCount?: number | 'indefinite' | undefined | false
-	repeatDur?: string | undefined | false
-	fill?: 'freeze' | 'remove' | undefined | false
+	begin?: string | false
+	dur?: string | false
+	end?: string | false
+	min?: string | false
+	max?: string | false
+	restart?: 'always' | 'whenNotActive' | 'never' | false
+	repeatCount?: number | 'indefinite' | false
+	repeatDur?: string | false
+	fill?: 'freeze' | 'remove' | false
 }
 
 interface AnimationValueSVGAttributes {
-	calcMode?: 'discrete' | 'linear' | 'paced' | 'spline' | undefined | false
-	values?: string | undefined | false
-	keyTimes?: string | undefined | false
-	keySplines?: string | undefined | false
-	from?: number | string | undefined | false
-	to?: number | string | undefined | false
-	by?: number | string | undefined | false
+	calcMode?: 'discrete' | 'linear' | 'paced' | 'spline' | false
+	values?: string | false
+	keyTimes?: string | false
+	keySplines?: string | false
+	from?: number | string | false
+	to?: number | string | false
+	by?: number | string | false
 }
 
 interface AnimationAdditionSVGAttributes {
-	attributeName?: string | undefined | false
-	additive?: 'replace' | 'sum' | undefined | false
-	accumulate?: 'none' | 'sum' | undefined | false
+	attributeName?: string | false
+	additive?: 'replace' | 'sum' | false
+	accumulate?: 'none' | 'sum' | false
 }
 
 interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
-	id?: string | undefined | false
-	lang?: string | undefined | false
-	tabindex?: number | string | undefined | false
+	id?: string | false
+	lang?: string | false
+	tabindex?: number | string | false
 
 	/** @deprecated Use lowercase attributes */
-	tabIndex?: number | string | undefined | false
+	tabIndex?: number | string | false
 }
 
 interface ExternalResourceSVGAttributes {
-	externalResourcesRequired?: 'false' | 'true' | undefined | false
+	externalResourcesRequired?: 'false' | 'true' | false
 }
 
 interface ConditionalProcessingSVGAttributes {
-	requiredExtensions?: string | undefined | false
-	requiredFeatures?: string | undefined | false
-	systemLanguage?: string | undefined | false
+	requiredExtensions?: string | false
+	requiredFeatures?: string | false
+	systemLanguage?: string | false
 }
 
 // React - https://react.dev/

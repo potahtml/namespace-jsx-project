@@ -1,4 +1,932 @@
 {
+	"aria": {
+		"aria-activedescendant": {
+			"name": "aria-activedescendant",
+			"values": {
+				"Pota": "string",
+				"Preact": "string",
+				"React": "string",
+				"Solid Main": "string",
+				"Solid Minor": "string",
+				"Solid Next": "string  | false",
+				"Vue": "string"
+			}
+		},
+		"aria-atomic": {
+			"name": "aria-atomic",
+			"values": {
+				"Pota": "boolean | 'false' | 'true'",
+				"Preact": "boolean | 'true' | 'false'",
+				"React": "boolean | 'true' | 'false'",
+				"Solid Main": "boolean | 'false' | 'true'",
+				"Solid Minor": "boolean | 'false' | 'true'",
+				"Solid Next": "'false' | 'true'  | false",
+				"Vue": "boolean | 'true' | 'false'"
+			}
+		},
+		"aria-autocomplete": {
+			"name": "aria-autocomplete",
+			"values": {
+				"Pota": "'none' | 'inline' | 'list' | 'both'",
+				"Preact": "'none' | 'inline' | 'list' | 'both'",
+				"React": "'none' | 'inline' | 'list' | 'both'",
+				"Solid Main": "'none' | 'inline' | 'list' | 'both'",
+				"Solid Minor": "'none' | 'inline' | 'list' | 'both'",
+				"Solid Next": "'none' | 'inline' | 'list' | 'both'  | false",
+				"Vue": "'none' | 'inline' | 'list' | 'both'"
+			}
+		},
+		"aria-braillelabel": {
+			"name": "aria-braillelabel",
+			"values": {
+				"Preact": "string",
+				"React": "string"
+			}
+		},
+		"aria-brailleroledescription": {
+			"name": "aria-brailleroledescription",
+			"values": {
+				"Preact": "string",
+				"React": "string"
+			}
+		},
+		"aria-busy": {
+			"name": "aria-busy",
+			"values": {
+				"Pota": "boolean | 'false' | 'true'",
+				"Preact": "boolean | 'true' | 'false'",
+				"React": "boolean | 'true' | 'false'",
+				"Solid Main": "boolean | 'false' | 'true'",
+				"Solid Minor": "boolean | 'false' | 'true'",
+				"Solid Next": "'false' | 'true'  | false",
+				"Vue": "boolean | 'true' | 'false'"
+			}
+		},
+		"aria-checked": {
+			"name": "aria-checked",
+			"values": {
+				"Pota": "boolean | 'false' | 'mixed' | 'true'",
+				"Preact": "boolean | 'true' | 'false' | 'mixed'",
+				"React": "boolean | 'false' | 'mixed' | 'true'",
+				"Solid Main": "boolean | 'false' | 'mixed' | 'true'",
+				"Solid Minor": "boolean | 'false' | 'mixed' | 'true'",
+				"Solid Next": "'false' | 'true' | 'mixed'  | false",
+				"Vue": "boolean | 'true' | 'false' | 'mixed'"
+			}
+		},
+		"aria-colcount": {
+			"name": "aria-colcount",
+			"values": {
+				"Pota": "number | string",
+				"Preact": "number",
+				"React": "number",
+				"Solid Main": "number | string",
+				"Solid Minor": "number | string",
+				"Solid Next": "number | string  | false",
+				"Vue": "number | string"
+			}
+		},
+		"aria-colindex": {
+			"name": "aria-colindex",
+			"values": {
+				"Pota": "number | string",
+				"Preact": "number",
+				"React": "number",
+				"Solid Main": "number | string",
+				"Solid Minor": "number | string",
+				"Solid Next": "number | string  | false",
+				"Vue": "number | string"
+			}
+		},
+		"aria-colindextext": {
+			"name": "aria-colindextext",
+			"values": {
+				"Preact": "string",
+				"React": "string"
+			}
+		},
+		"aria-colspan": {
+			"name": "aria-colspan",
+			"values": {
+				"Pota": "number | string",
+				"Preact": "number",
+				"React": "number",
+				"Solid Main": "number | string",
+				"Solid Minor": "number | string",
+				"Solid Next": "number | string  | false",
+				"Vue": "number | string"
+			}
+		},
+		"aria-controls": {
+			"name": "aria-controls",
+			"values": {
+				"Pota": "string",
+				"Preact": "string",
+				"React": "string",
+				"Solid Main": "string",
+				"Solid Minor": "string",
+				"Solid Next": "string  | false",
+				"Vue": "string"
+			}
+		},
+		"aria-current": {
+			"name": "aria-current",
+			"values": {
+				"Pota": "boolean | 'false' | 'true' | 'page' | 'step' | 'location' | 'date' | 'time'",
+				"Preact": "boolean | 'true' | 'false' | 'page' | 'step' | 'location' | 'date' | 'time'",
+				"React": "boolean | 'false' | 'true' | 'page' | 'step' | 'location' | 'date' | 'time'",
+				"Solid Main": "boolean | 'false' | 'true' | 'page' | 'step' | 'location' | 'date' | 'time'",
+				"Solid Minor": "boolean | 'false' | 'true' | 'page' | 'step' | 'location' | 'date' | 'time'",
+				"Solid Next": "'false' | 'true' | 'page' | 'step' | 'location' | 'date' | 'time'  | false",
+				"Vue": "boolean | 'true' | 'false' | 'page' | 'step' | 'location' | 'date' | 'time'"
+			}
+		},
+		"aria-describedby": {
+			"name": "aria-describedby",
+			"values": {
+				"Pota": "string",
+				"Preact": "string",
+				"React": "string",
+				"Solid Main": "string",
+				"Solid Minor": "string",
+				"Solid Next": "string  | false",
+				"Vue": "string"
+			}
+		},
+		"aria-description": {
+			"name": "aria-description",
+			"values": {
+				"Preact": "string",
+				"React": "string"
+			}
+		},
+		"aria-details": {
+			"name": "aria-details",
+			"values": {
+				"Pota": "string",
+				"Preact": "string",
+				"React": "string",
+				"Solid Main": "string",
+				"Solid Minor": "string",
+				"Solid Next": "string  | false",
+				"Vue": "string"
+			}
+		},
+		"aria-disabled": {
+			"name": "aria-disabled",
+			"values": {
+				"Pota": "boolean | 'false' | 'true'",
+				"Preact": "boolean | 'true' | 'false'",
+				"React": "boolean | 'true' | 'false'",
+				"Solid Main": "boolean | 'false' | 'true'",
+				"Solid Minor": "boolean | 'false' | 'true'",
+				"Solid Next": "'false' | 'true'  | false",
+				"Vue": "boolean | 'true' | 'false'"
+			}
+		},
+		"aria-dropeffect": {
+			"name": "aria-dropeffect",
+			"values": {
+				"Pota": "'none' | 'copy' | 'execute' | 'link' | 'move' | 'popup'",
+				"Preact": "'none' | 'copy' | 'execute' | 'link' | 'move' | 'popup'",
+				"React": "'none' | 'copy' | 'execute' | 'link' | 'move' | 'popup'",
+				"Solid Main": "'none' | 'copy' | 'execute' | 'link' | 'move' | 'popup'",
+				"Solid Minor": "'none' | 'copy' | 'execute' | 'link' | 'move' | 'popup'",
+				"Solid Next": "'none' | 'copy' | 'execute' | 'link' | 'move' | 'popup'  | false",
+				"Vue": "'none' | 'copy' | 'execute' | 'link' | 'move' | 'popup'"
+			}
+		},
+		"aria-errormessage": {
+			"name": "aria-errormessage",
+			"values": {
+				"Pota": "string",
+				"Preact": "string",
+				"React": "string",
+				"Solid Main": "string",
+				"Solid Minor": "string",
+				"Solid Next": "string  | false",
+				"Vue": "string"
+			}
+		},
+		"aria-expanded": {
+			"name": "aria-expanded",
+			"values": {
+				"Pota": "boolean | 'false' | 'true'",
+				"Preact": "boolean | 'true' | 'false'",
+				"React": "boolean | 'true' | 'false'",
+				"Solid Main": "boolean | 'false' | 'true'",
+				"Solid Minor": "boolean | 'false' | 'true'",
+				"Solid Next": "'false' | 'true'  | false",
+				"Vue": "boolean | 'true' | 'false'"
+			}
+		},
+		"aria-flowto": {
+			"name": "aria-flowto",
+			"values": {
+				"Pota": "string",
+				"Preact": "string",
+				"React": "string",
+				"Solid Main": "string",
+				"Solid Minor": "string",
+				"Solid Next": "string  | false",
+				"Vue": "string"
+			}
+		},
+		"aria-grabbed": {
+			"name": "aria-grabbed",
+			"values": {
+				"Pota": "boolean | 'false' | 'true'",
+				"Preact": "boolean | 'true' | 'false'",
+				"React": "boolean | 'true' | 'false'",
+				"Solid Main": "boolean | 'false' | 'true'",
+				"Solid Minor": "boolean | 'false' | 'true'",
+				"Solid Next": "'false' | 'true'  | false",
+				"Vue": "boolean | 'true' | 'false'"
+			}
+		},
+		"aria-haspopup": {
+			"name": "aria-haspopup",
+			"values": {
+				"Pota": "boolean | 'false' | 'true' | 'menu' | 'listbox' | 'tree' | 'grid' | 'dialog'",
+				"Preact": "boolean | 'true' | 'false' | 'menu' | 'listbox' | 'tree' | 'grid' | 'dialog'",
+				"React": "boolean | 'false' | 'true' | 'menu' | 'listbox' | 'tree' | 'grid' | 'dialog'",
+				"Solid Main": "boolean | 'false' | 'true' | 'menu' | 'listbox' | 'tree' | 'grid' | 'dialog'",
+				"Solid Minor": "boolean | 'false' | 'true' | 'menu' | 'listbox' | 'tree' | 'grid' | 'dialog'",
+				"Solid Next": "'false' | 'true' | 'menu' | 'listbox' | 'tree' | 'grid' | 'dialog'  | false",
+				"Vue": "boolean | 'true' | 'false' | 'menu' | 'listbox' | 'tree' | 'grid' | 'dialog'"
+			}
+		},
+		"aria-hidden": {
+			"name": "aria-hidden",
+			"values": {
+				"Pota": "boolean | 'false' | 'true'",
+				"Preact": "boolean | 'true' | 'false'",
+				"React": "boolean | 'true' | 'false'",
+				"Solid Main": "boolean | 'false' | 'true'",
+				"Solid Minor": "boolean | 'false' | 'true'",
+				"Solid Next": "'false' | 'true'  | false",
+				"Vue": "boolean | 'true' | 'false'"
+			}
+		},
+		"aria-invalid": {
+			"name": "aria-invalid",
+			"values": {
+				"Pota": "boolean | 'false' | 'true' | 'grammar' | 'spelling'",
+				"Preact": "boolean | 'true' | 'false' | 'grammar' | 'spelling'",
+				"React": "boolean | 'false' | 'true' | 'grammar' | 'spelling'",
+				"Solid Main": "boolean | 'false' | 'true' | 'grammar' | 'spelling'",
+				"Solid Minor": "boolean | 'false' | 'true' | 'grammar' | 'spelling'",
+				"Solid Next": "'false' | 'true' | 'grammar' | 'spelling'  | false",
+				"Vue": "boolean | 'true' | 'false' | 'grammar' | 'spelling'"
+			}
+		},
+		"aria-keyshortcuts": {
+			"name": "aria-keyshortcuts",
+			"values": {
+				"Pota": "string",
+				"Preact": "string",
+				"React": "string",
+				"Solid Main": "string",
+				"Solid Minor": "string",
+				"Solid Next": "string  | false",
+				"Vue": "string"
+			}
+		},
+		"aria-label": {
+			"name": "aria-label",
+			"values": {
+				"Pota": "string",
+				"Preact": "string",
+				"React": "string",
+				"Solid Main": "string",
+				"Solid Minor": "string",
+				"Solid Next": "string  | false",
+				"Vue": "string"
+			}
+		},
+		"aria-labelledby": {
+			"name": "aria-labelledby",
+			"values": {
+				"Pota": "string",
+				"Preact": "string",
+				"React": "string",
+				"Solid Main": "string",
+				"Solid Minor": "string",
+				"Solid Next": "string  | false",
+				"Vue": "string"
+			}
+		},
+		"aria-level": {
+			"name": "aria-level",
+			"values": {
+				"Pota": "number | string",
+				"Preact": "number",
+				"React": "number",
+				"Solid Main": "number | string",
+				"Solid Minor": "number | string",
+				"Solid Next": "number | string  | false",
+				"Vue": "number | string"
+			}
+		},
+		"aria-live": {
+			"name": "aria-live",
+			"values": {
+				"Pota": "'off' | 'assertive' | 'polite'",
+				"Preact": "'off' | 'assertive' | 'polite'",
+				"React": "'off' | 'assertive' | 'polite'",
+				"Solid Main": "'off' | 'assertive' | 'polite'",
+				"Solid Minor": "'off' | 'assertive' | 'polite'",
+				"Solid Next": "'off' | 'assertive' | 'polite'  | false",
+				"Vue": "'off' | 'assertive' | 'polite'"
+			}
+		},
+		"aria-modal": {
+			"name": "aria-modal",
+			"values": {
+				"Pota": "boolean | 'false' | 'true'",
+				"Preact": "boolean | 'true' | 'false'",
+				"React": "boolean | 'true' | 'false'",
+				"Solid Main": "boolean | 'false' | 'true'",
+				"Solid Minor": "boolean | 'false' | 'true'",
+				"Solid Next": "'false' | 'true'  | false",
+				"Vue": "boolean | 'true' | 'false'"
+			}
+		},
+		"aria-multiline": {
+			"name": "aria-multiline",
+			"values": {
+				"Pota": "boolean | 'false' | 'true'",
+				"Preact": "boolean | 'true' | 'false'",
+				"React": "boolean | 'true' | 'false'",
+				"Solid Main": "boolean | 'false' | 'true'",
+				"Solid Minor": "boolean | 'false' | 'true'",
+				"Solid Next": "'false' | 'true'  | false",
+				"Vue": "boolean | 'true' | 'false'"
+			}
+		},
+		"aria-multiselectable": {
+			"name": "aria-multiselectable",
+			"values": {
+				"Pota": "boolean | 'false' | 'true'",
+				"Preact": "boolean | 'true' | 'false'",
+				"React": "boolean | 'true' | 'false'",
+				"Solid Main": "boolean | 'false' | 'true'",
+				"Solid Minor": "boolean | 'false' | 'true'",
+				"Solid Next": "'false' | 'true'  | false",
+				"Vue": "boolean | 'true' | 'false'"
+			}
+		},
+		"aria-orientation": {
+			"name": "aria-orientation",
+			"values": {
+				"Pota": "'horizontal' | 'vertical'",
+				"Preact": "'horizontal' | 'vertical'",
+				"React": "'horizontal' | 'vertical'",
+				"Solid Main": "'horizontal' | 'vertical'",
+				"Solid Minor": "'horizontal' | 'vertical'",
+				"Solid Next": "'horizontal' | 'vertical'  | false",
+				"Vue": "'horizontal' | 'vertical'"
+			}
+		},
+		"aria-owns": {
+			"name": "aria-owns",
+			"values": {
+				"Pota": "string",
+				"Preact": "string",
+				"React": "string",
+				"Solid Main": "string",
+				"Solid Minor": "string",
+				"Solid Next": "string  | false",
+				"Vue": "string"
+			}
+		},
+		"aria-placeholder": {
+			"name": "aria-placeholder",
+			"values": {
+				"Pota": "string",
+				"Preact": "string",
+				"React": "string",
+				"Solid Main": "string",
+				"Solid Minor": "string",
+				"Solid Next": "string  | false",
+				"Vue": "string"
+			}
+		},
+		"aria-posinset": {
+			"name": "aria-posinset",
+			"values": {
+				"Pota": "number | string",
+				"Preact": "number",
+				"React": "number",
+				"Solid Main": "number | string",
+				"Solid Minor": "number | string",
+				"Solid Next": "number | string  | false",
+				"Vue": "number | string"
+			}
+		},
+		"aria-pressed": {
+			"name": "aria-pressed",
+			"values": {
+				"Pota": "boolean | 'false' | 'mixed' | 'true'",
+				"Preact": "boolean | 'true' | 'false' | 'mixed'",
+				"React": "boolean | 'false' | 'mixed' | 'true'",
+				"Solid Main": "boolean | 'false' | 'mixed' | 'true'",
+				"Solid Minor": "boolean | 'false' | 'mixed' | 'true'",
+				"Solid Next": "'false' | 'true' | 'mixed'  | false",
+				"Vue": "boolean | 'true' | 'false' | 'mixed'"
+			}
+		},
+		"aria-readonly": {
+			"name": "aria-readonly",
+			"values": {
+				"Pota": "boolean | 'false' | 'true'",
+				"Preact": "boolean | 'true' | 'false'",
+				"React": "boolean | 'true' | 'false'",
+				"Solid Main": "boolean | 'false' | 'true'",
+				"Solid Minor": "boolean | 'false' | 'true'",
+				"Solid Next": "'false' | 'true'  | false",
+				"Vue": "boolean | 'true' | 'false'"
+			}
+		},
+		"aria-relevant": {
+			"name": "aria-relevant",
+			"values": {
+				"Pota": "'additions' | 'additions removals' | 'additions text' | 'all' | 'removals' | 'removals additions' | 'removals text' | 'text' | 'text additions' | 'text removals'",
+				"Preact": "'additions' | 'additions removals' | 'additions text' | 'all' | 'removals' | 'removals additions' | 'removals text' | 'text' | 'text additions' | 'text removals'",
+				"React": "'additions' | 'additions removals' | 'additions text' | 'all' | 'removals' | 'removals additions' | 'removals text' | 'text' | 'text additions' | 'text removals'",
+				"Solid Main": "'additions' | 'additions removals' | 'additions text' | 'all' | 'removals' | 'removals additions' | 'removals text' | 'text' | 'text additions' | 'text removals'",
+				"Solid Minor": "'additions' | 'additions removals' | 'additions text' | 'all' | 'removals' | 'removals additions' | 'removals text' | 'text' | 'text additions' | 'text removals'",
+				"Solid Next": "'additions' | 'additions removals' | 'additions text' | 'all' | 'removals' | 'removals additions' | 'removals text' | 'text' | 'text additions' | 'text removals'  | false",
+				"Vue": "'additions' | 'additions removals' | 'additions text' | 'all' | 'removals' | 'removals additions' | 'removals text' | 'text' | 'text additions' | 'text removals'"
+			}
+		},
+		"aria-required": {
+			"name": "aria-required",
+			"values": {
+				"Pota": "boolean | 'false' | 'true'",
+				"Preact": "boolean | 'true' | 'false'",
+				"React": "boolean | 'true' | 'false'",
+				"Solid Main": "boolean | 'false' | 'true'",
+				"Solid Minor": "boolean | 'false' | 'true'",
+				"Solid Next": "'false' | 'true'  | false",
+				"Vue": "boolean | 'true' | 'false'"
+			}
+		},
+		"aria-roledescription": {
+			"name": "aria-roledescription",
+			"values": {
+				"Pota": "string",
+				"Preact": "string",
+				"React": "string",
+				"Solid Main": "string",
+				"Solid Minor": "string",
+				"Solid Next": "string  | false",
+				"Vue": "string"
+			}
+		},
+		"aria-rowcount": {
+			"name": "aria-rowcount",
+			"values": {
+				"Pota": "number | string",
+				"Preact": "number",
+				"React": "number",
+				"Solid Main": "number | string",
+				"Solid Minor": "number | string",
+				"Solid Next": "number | string  | false",
+				"Vue": "number | string"
+			}
+		},
+		"aria-rowindex": {
+			"name": "aria-rowindex",
+			"values": {
+				"Pota": "number | string",
+				"Preact": "number",
+				"React": "number",
+				"Solid Main": "number | string",
+				"Solid Minor": "number | string",
+				"Solid Next": "number | string  | false",
+				"Vue": "number | string"
+			}
+		},
+		"aria-rowindextext": {
+			"name": "aria-rowindextext",
+			"values": {
+				"Preact": "string",
+				"React": "string"
+			}
+		},
+		"aria-rowspan": {
+			"name": "aria-rowspan",
+			"values": {
+				"Pota": "number | string",
+				"Preact": "number",
+				"React": "number",
+				"Solid Main": "number | string",
+				"Solid Minor": "number | string",
+				"Solid Next": "number | string  | false",
+				"Vue": "number | string"
+			}
+		},
+		"aria-selected": {
+			"name": "aria-selected",
+			"values": {
+				"Pota": "boolean | 'false' | 'true'",
+				"Preact": "boolean | 'true' | 'false'",
+				"React": "boolean | 'true' | 'false'",
+				"Solid Main": "boolean | 'false' | 'true'",
+				"Solid Minor": "boolean | 'false' | 'true'",
+				"Solid Next": "'false' | 'true'  | false",
+				"Vue": "boolean | 'true' | 'false'"
+			}
+		},
+		"aria-setsize": {
+			"name": "aria-setsize",
+			"values": {
+				"Pota": "number | string",
+				"Preact": "number",
+				"React": "number",
+				"Solid Main": "number | string",
+				"Solid Minor": "number | string",
+				"Solid Next": "number | string  | false",
+				"Vue": "number | string"
+			}
+		},
+		"aria-sort": {
+			"name": "aria-sort",
+			"values": {
+				"Pota": "'none' | 'ascending' | 'descending' | 'other'",
+				"Preact": "'none' | 'ascending' | 'descending' | 'other'",
+				"React": "'none' | 'ascending' | 'descending' | 'other'",
+				"Solid Main": "'none' | 'ascending' | 'descending' | 'other'",
+				"Solid Minor": "'none' | 'ascending' | 'descending' | 'other'",
+				"Solid Next": "'none' | 'ascending' | 'descending' | 'other'  | false",
+				"Vue": "'none' | 'ascending' | 'descending' | 'other'"
+			}
+		},
+		"aria-valuemax": {
+			"name": "aria-valuemax",
+			"values": {
+				"Pota": "number | string",
+				"Preact": "number",
+				"React": "number",
+				"Solid Main": "number | string",
+				"Solid Minor": "number | string",
+				"Solid Next": "number | string  | false",
+				"Vue": "number | string"
+			}
+		},
+		"aria-valuemin": {
+			"name": "aria-valuemin",
+			"values": {
+				"Pota": "number | string",
+				"Preact": "number",
+				"React": "number",
+				"Solid Main": "number | string",
+				"Solid Minor": "number | string",
+				"Solid Next": "number | string  | false",
+				"Vue": "number | string"
+			}
+		},
+		"aria-valuenow": {
+			"name": "aria-valuenow",
+			"values": {
+				"Pota": "number | string",
+				"Preact": "number",
+				"React": "number",
+				"Solid Main": "number | string",
+				"Solid Minor": "number | string",
+				"Solid Next": "number | string  | false",
+				"Vue": "number | string"
+			}
+		},
+		"aria-valuetext": {
+			"name": "aria-valuetext",
+			"values": {
+				"Pota": "string",
+				"Preact": "string",
+				"React": "string",
+				"Solid Main": "string",
+				"Solid Minor": "string",
+				"Solid Next": "string  | false",
+				"Vue": "string"
+			}
+		},
+		"ariaActiveDescendant": {
+			"name": "ariaActiveDescendant",
+			"values": {
+				"Voby": "string"
+			}
+		},
+		"ariaAtomic": {
+			"name": "ariaAtomic",
+			"values": {
+				"Voby": "boolean | 'true' | 'false'"
+			}
+		},
+		"ariaAutoComplete": {
+			"name": "ariaAutoComplete",
+			"values": {
+				"Voby": "'none' | 'inline' | 'list' | 'both'"
+			}
+		},
+		"ariaBrailleLabel": {
+			"name": "ariaBrailleLabel",
+			"values": {
+				"Voby": "string"
+			}
+		},
+		"ariaBrailleLabelRoleDescription": {
+			"name": "ariaBrailleLabelRoleDescription",
+			"values": {
+				"Voby": "string"
+			}
+		},
+		"ariaBusy": {
+			"name": "ariaBusy",
+			"values": {
+				"Voby": "boolean | 'true' | 'false'"
+			}
+		},
+		"ariaChecked": {
+			"name": "ariaChecked",
+			"values": {
+				"Voby": "boolean | 'false' | 'mixed' | 'true'"
+			}
+		},
+		"ariaColCount": {
+			"name": "ariaColCount",
+			"values": {
+				"Voby": "number"
+			}
+		},
+		"ariaColIndex": {
+			"name": "ariaColIndex",
+			"values": {
+				"Voby": "number"
+			}
+		},
+		"ariaColSpan": {
+			"name": "ariaColSpan",
+			"values": {
+				"Voby": "number"
+			}
+		},
+		"ariaControls": {
+			"name": "ariaControls",
+			"values": {
+				"Voby": "string"
+			}
+		},
+		"ariaCurrent": {
+			"name": "ariaCurrent",
+			"values": {
+				"Voby": "boolean | 'false' | 'true' | 'page' | 'step' | 'location' | 'date' | 'time'"
+			}
+		},
+		"ariaDescribedBy": {
+			"name": "ariaDescribedBy",
+			"values": {
+				"Voby": "string"
+			}
+		},
+		"ariaDescription": {
+			"name": "ariaDescription",
+			"values": {
+				"Voby": "string"
+			}
+		},
+		"ariaDetails": {
+			"name": "ariaDetails",
+			"values": {
+				"Voby": "string"
+			}
+		},
+		"ariaDisabled": {
+			"name": "ariaDisabled",
+			"values": {
+				"Voby": "boolean | 'true' | 'false'"
+			}
+		},
+		"ariaDropEffect": {
+			"name": "ariaDropEffect",
+			"values": {
+				"Voby": "'none' | 'copy' | 'execute' | 'link' | 'move' | 'popup'"
+			}
+		},
+		"ariaErrorMessage": {
+			"name": "ariaErrorMessage",
+			"values": {
+				"Voby": "string"
+			}
+		},
+		"ariaExpanded": {
+			"name": "ariaExpanded",
+			"values": {
+				"Voby": "boolean | 'true' | 'false'"
+			}
+		},
+		"ariaFlowTo": {
+			"name": "ariaFlowTo",
+			"values": {
+				"Voby": "string"
+			}
+		},
+		"ariaGrabbed": {
+			"name": "ariaGrabbed",
+			"values": {
+				"Voby": "boolean | 'true' | 'false'"
+			}
+		},
+		"ariaHasPopup": {
+			"name": "ariaHasPopup",
+			"values": {
+				"Voby": "boolean | 'false' | 'true' | 'menu' | 'listbox' | 'tree' | 'grid' | 'dialog'"
+			}
+		},
+		"ariaHidden": {
+			"name": "ariaHidden",
+			"values": {
+				"Voby": "boolean | 'true' | 'false'"
+			}
+		},
+		"ariaInvalid": {
+			"name": "ariaInvalid",
+			"values": {
+				"Voby": "boolean | 'false' | 'true' | 'grammar' | 'spelling'"
+			}
+		},
+		"ariaKeyShortcuts": {
+			"name": "ariaKeyShortcuts",
+			"values": {
+				"Voby": "string"
+			}
+		},
+		"ariaLabel": {
+			"name": "ariaLabel",
+			"values": {
+				"Voby": "string"
+			}
+		},
+		"ariaLabelledBy": {
+			"name": "ariaLabelledBy",
+			"values": {
+				"Voby": "string"
+			}
+		},
+		"ariaLevel": {
+			"name": "ariaLevel",
+			"values": {
+				"Voby": "number"
+			}
+		},
+		"ariaLive": {
+			"name": "ariaLive",
+			"values": {
+				"Voby": "'off' | 'assertive' | 'polite'"
+			}
+		},
+		"ariaModal": {
+			"name": "ariaModal",
+			"values": {
+				"Voby": "boolean | 'true' | 'false'"
+			}
+		},
+		"ariaMultiLine": {
+			"name": "ariaMultiLine",
+			"values": {
+				"Voby": "boolean | 'true' | 'false'"
+			}
+		},
+		"ariaMultiSelectable": {
+			"name": "ariaMultiSelectable",
+			"values": {
+				"Voby": "boolean | 'true' | 'false'"
+			}
+		},
+		"ariaOrientation": {
+			"name": "ariaOrientation",
+			"values": {
+				"Voby": "'horizontal' | 'vertical'"
+			}
+		},
+		"ariaOwns": {
+			"name": "ariaOwns",
+			"values": {
+				"Voby": "string"
+			}
+		},
+		"ariaPlaceholder": {
+			"name": "ariaPlaceholder",
+			"values": {
+				"Voby": "string"
+			}
+		},
+		"ariaPosInSet": {
+			"name": "ariaPosInSet",
+			"values": {
+				"Voby": "number"
+			}
+		},
+		"ariaPressed": {
+			"name": "ariaPressed",
+			"values": {
+				"Voby": "boolean | 'false' | 'mixed' | 'true'"
+			}
+		},
+		"ariaReadOnly": {
+			"name": "ariaReadOnly",
+			"values": {
+				"Voby": "boolean | 'true' | 'false'"
+			}
+		},
+		"ariaRelevant": {
+			"name": "ariaRelevant",
+			"values": {
+				"Voby": "'additions' | 'additions removals' | 'additions text' | 'all' | 'removals' | 'removals additions' | 'removals text' | 'text' | 'text additions' | 'text removals'"
+			}
+		},
+		"ariaRequired": {
+			"name": "ariaRequired",
+			"values": {
+				"Voby": "boolean | 'true' | 'false'"
+			}
+		},
+		"ariaRoleDescription": {
+			"name": "ariaRoleDescription",
+			"values": {
+				"Voby": "string"
+			}
+		},
+		"ariaRowCount": {
+			"name": "ariaRowCount",
+			"values": {
+				"Voby": "number"
+			}
+		},
+		"ariaRowIndex": {
+			"name": "ariaRowIndex",
+			"values": {
+				"Voby": "number"
+			}
+		},
+		"ariaRowSpan": {
+			"name": "ariaRowSpan",
+			"values": {
+				"Voby": "number"
+			}
+		},
+		"ariaSelected": {
+			"name": "ariaSelected",
+			"values": {
+				"Voby": "boolean | 'true' | 'false'"
+			}
+		},
+		"ariaSetSize": {
+			"name": "ariaSetSize",
+			"values": {
+				"Voby": "number"
+			}
+		},
+		"ariaSort": {
+			"name": "ariaSort",
+			"values": {
+				"Voby": "'none' | 'ascending' | 'descending' | 'other'"
+			}
+		},
+		"ariaValueMax": {
+			"name": "ariaValueMax",
+			"values": {
+				"Voby": "number"
+			}
+		},
+		"ariaValueMin": {
+			"name": "ariaValueMin",
+			"values": {
+				"Voby": "number"
+			}
+		},
+		"ariaValueNow": {
+			"name": "ariaValueNow",
+			"values": {
+				"Voby": "number"
+			}
+		},
+		"ariaValueText": {
+			"name": "ariaValueText",
+			"values": {
+				"Voby": "string"
+			}
+		},
+		"role": {
+			"name": "role",
+			"values": {
+				"Pota": "'alert' | 'alertdialog' | 'application' | 'article' | 'banner' | 'button' | 'cell' | 'checkbox' | 'columnheader' | 'combobox' | 'complementary' | 'contentinfo' | 'definition' | 'dialog' | 'directory' | 'document' | 'feed' | 'figure' | 'form' | 'grid' | 'gridcell' | 'group' | 'heading' | 'img' | 'link' | 'list' | 'listbox' | 'listitem' | 'log' | 'main' | 'marquee' | 'math' | 'menu' | 'menubar' | 'menuitem' | 'menuitemcheckbox' | 'menuitemradio' | 'meter' | 'navigation' | 'none' | 'note' | 'option' | 'presentation' | 'progressbar' | 'radio' | 'radiogroup' | 'region' | 'row' | 'rowgroup' | 'rowheader' | 'scrollbar' | 'search' | 'searchbox' | 'separator' | 'slider' | 'spinbutton' | 'status' | 'switch' | 'tab' | 'table' | 'tablist' | 'tabpanel' | 'term' | 'textbox' | 'timer' | 'toolbar' | 'tooltip' | 'tree' | 'treegrid' | 'treeitem'",
+				"Solid Main": "'alert' | 'alertdialog' | 'application' | 'article' | 'banner' | 'button' | 'cell' | 'checkbox' | 'columnheader' | 'combobox' | 'complementary' | 'contentinfo' | 'definition' | 'dialog' | 'directory' | 'document' | 'feed' | 'figure' | 'form' | 'grid' | 'gridcell' | 'group' | 'heading' | 'img' | 'link' | 'list' | 'listbox' | 'listitem' | 'log' | 'main' | 'marquee' | 'math' | 'menu' | 'menubar' | 'menuitem' | 'menuitemcheckbox' | 'menuitemradio' | 'meter' | 'navigation' | 'none' | 'note' | 'option' | 'presentation' | 'progressbar' | 'radio' | 'radiogroup' | 'region' | 'row' | 'rowgroup' | 'rowheader' | 'scrollbar' | 'search' | 'searchbox' | 'separator' | 'slider' | 'spinbutton' | 'status' | 'switch' | 'tab' | 'table' | 'tablist' | 'tabpanel' | 'term' | 'textbox' | 'timer' | 'toolbar' | 'tooltip' | 'tree' | 'treegrid' | 'treeitem'",
+				"Solid Minor": "'alert' | 'alertdialog' | 'application' | 'article' | 'banner' | 'button' | 'cell' | 'checkbox' | 'columnheader' | 'combobox' | 'complementary' | 'contentinfo' | 'definition' | 'dialog' | 'directory' | 'document' | 'feed' | 'figure' | 'form' | 'grid' | 'gridcell' | 'group' | 'heading' | 'img' | 'link' | 'list' | 'listbox' | 'listitem' | 'log' | 'main' | 'marquee' | 'math' | 'menu' | 'menubar' | 'menuitem' | 'menuitemcheckbox' | 'menuitemradio' | 'meter' | 'navigation' | 'none' | 'note' | 'option' | 'presentation' | 'progressbar' | 'radio' | 'radiogroup' | 'region' | 'row' | 'rowgroup' | 'rowheader' | 'scrollbar' | 'search' | 'searchbox' | 'separator' | 'slider' | 'spinbutton' | 'status' | 'switch' | 'tab' | 'table' | 'tablist' | 'tabpanel' | 'term' | 'textbox' | 'timer' | 'toolbar' | 'tooltip' | 'tree' | 'treegrid' | 'treeitem'",
+				"Solid Next": "'alert' | 'alertdialog' | 'application' | 'article' | 'banner' | 'button' | 'cell' | 'checkbox' | 'columnheader' | 'combobox' | 'complementary' | 'contentinfo' | 'definition' | 'dialog' | 'directory' | 'document' | 'feed' | 'figure' | 'form' | 'grid' | 'gridcell' | 'group' | 'heading' | 'img' | 'link' | 'list' | 'listbox' | 'listitem' | 'log' | 'main' | 'marquee' | 'math' | 'menu' | 'menubar' | 'menuitem' | 'menuitemcheckbox' | 'menuitemradio' | 'meter' | 'navigation' | 'none' | 'note' | 'option' | 'presentation' | 'progressbar' | 'radio' | 'radiogroup' | 'region' | 'row' | 'rowgroup' | 'rowheader' | 'scrollbar' | 'search' | 'searchbox' | 'separator' | 'slider' | 'spinbutton' | 'status' | 'switch' | 'tab' | 'table' | 'tablist' | 'tabpanel' | 'term' | 'textbox' | 'timer' | 'toolbar' | 'tooltip' | 'tree' | 'treegrid' | 'treeitem'  | false"
+			}
+		}
+	},
 	"elements": {
 		"http://www.w3.org/1998/Math/MathML": {
 			"annotation": {
@@ -4626,7 +5554,7 @@
 							"Solid Main": "EventHandlerUnion<T, Event>",
 							"Solid Minor": "EventHandlerUnion<T, Event>",
 							"Solid Next": "EventHandlerUnion<T, Event>",
-							"Voby": "ObservableMaybe<Nullable<GenericEventHandler<T>>>",
+							"Voby": "GenericEventHandler<T>",
 							"Vue": "(payload: ToggleEvent) => void"
 						},
 						"warn": true
@@ -8623,7 +9551,7 @@
 						"values": {
 							"Preact": "GenericEventHandler<T>",
 							"React": "ChangeEventHandler<T>",
-							"Voby": "ObservableMaybe<Nullable<KeyboardEventHandler<T>>>"
+							"Voby": "KeyboardEventHandler<T>"
 						},
 						"warn": true
 					},
@@ -12689,7 +13617,7 @@
 						"values": {
 							"Preact": "GenericEventHandler<T>",
 							"React": "ChangeEventHandler<T>",
-							"Voby": "ObservableMaybe<Nullable<KeyboardEventHandler<T>>>"
+							"Voby": "KeyboardEventHandler<T>"
 						},
 						"warn": true
 					},
@@ -14323,7 +15251,7 @@
 						"values": {
 							"Preact": "GenericEventHandler<T>",
 							"React": "ChangeEventHandler<T>",
-							"Voby": "ObservableMaybe<Nullable<KeyboardEventHandler<T>>>"
+							"Voby": "KeyboardEventHandler<T>"
 						},
 						"warn": true
 					},
@@ -67952,7 +68880,7 @@
 		},
 		"beforetoggle": {
 			"capitalized": "onBeforeToggle",
-			"interface": "Event",
+			"interface": "ToggleEvent",
 			"name": "beforetoggle"
 		},
 		"beforeunload": {
@@ -67997,7 +68925,7 @@
 		},
 		"command": {
 			"capitalized": "onCommand",
-			"interface": "Event",
+			"interface": "CommandEvent",
 			"name": "command"
 		},
 		"compositionend": {
@@ -68072,7 +69000,7 @@
 		},
 		"dragexit": {
 			"capitalized": "onDragExit",
-			"interface": "Event",
+			"interface": "DragEvent",
 			"name": "dragexit"
 		},
 		"dragleave": {
@@ -68177,7 +69105,7 @@
 		},
 		"input": {
 			"capitalized": "onInput",
-			"interface": "Event",
+			"interface": "InputEvent",
 			"name": "input"
 		},
 		"invalid": {
@@ -68482,7 +69410,7 @@
 		},
 		"toggle": {
 			"capitalized": "onToggle",
-			"interface": "Event",
+			"interface": "ToggleEvent",
 			"name": "toggle"
 		},
 		"touchcancel": {
@@ -68574,6 +69502,3092 @@
 			"capitalized": "onWheel",
 			"interface": "WheelEvent",
 			"name": "wheel"
+		}
+	},
+	"eventsLib": {
+		"on:abort": {
+			"name": "on:abort",
+			"values": {
+				"Pota": "Events<UIEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, UIEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, UIEvent>"
+			}
+		},
+		"on:afterprint": {
+			"name": "on:afterprint",
+			"values": {
+				"Pota": "Events<Event, Element>"
+			}
+		},
+		"on:animationcancel": {
+			"name": "on:animationcancel",
+			"values": {
+				"Pota": "Events<AnimationEvent, Element>"
+			}
+		},
+		"on:animationend": {
+			"name": "on:animationend",
+			"values": {
+				"Pota": "Events<AnimationEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, AnimationEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, AnimationEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, AnimationEvent>"
+			}
+		},
+		"on:animationiteration": {
+			"name": "on:animationiteration",
+			"values": {
+				"Pota": "Events<AnimationEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, AnimationEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, AnimationEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, AnimationEvent>"
+			}
+		},
+		"on:animationstart": {
+			"name": "on:animationstart",
+			"values": {
+				"Pota": "Events<AnimationEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, AnimationEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, AnimationEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, AnimationEvent>"
+			}
+		},
+		"on:auxclick": {
+			"name": "on:auxclick",
+			"values": {
+				"Pota": "Events<MouseEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
+			}
+		},
+		"on:beforeinput": {
+			"name": "on:beforeinput",
+			"values": {
+				"Pota": "Events<InputEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>"
+			}
+		},
+		"on:beforeprint": {
+			"name": "on:beforeprint",
+			"values": {
+				"Pota": "Events<Event, Element>"
+			}
+		},
+		"on:beforetoggle": {
+			"name": "on:beforetoggle",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, ToggleEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, ToggleEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, ToggleEvent>"
+			}
+		},
+		"on:beforeunload": {
+			"name": "on:beforeunload",
+			"values": {
+				"Pota": "Events<BeforeUnloadEvent, Element>"
+			}
+		},
+		"on:blur": {
+			"name": "on:blur",
+			"values": {
+				"Pota": "Events<FocusEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>"
+			}
+		},
+		"on:cancel": {
+			"name": "on:cancel",
+			"values": {
+				"Pota": "Events<Event, Element>"
+			}
+		},
+		"on:canplay": {
+			"name": "on:canplay",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
+		"on:canplaythrough": {
+			"name": "on:canplaythrough",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
+		"on:change": {
+			"name": "on:change",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event, ChangeEventHandler<T, Event>>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event, ChangeEventHandler<T, Event>>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event, ChangeEventHandler<T, Event>>"
+			}
+		},
+		"on:click": {
+			"name": "on:click",
+			"values": {
+				"Pota": "Events<MouseEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
+			}
+		},
+		"on:close": {
+			"name": "on:close",
+			"values": {
+				"Pota": "Events<Event, Element>"
+			}
+		},
+		"on:compositionend": {
+			"name": "on:compositionend",
+			"values": {
+				"Pota": "Events<CompositionEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, CompositionEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, CompositionEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, CompositionEvent>"
+			}
+		},
+		"on:compositionstart": {
+			"name": "on:compositionstart",
+			"values": {
+				"Pota": "Events<CompositionEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, CompositionEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, CompositionEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, CompositionEvent>"
+			}
+		},
+		"on:compositionupdate": {
+			"name": "on:compositionupdate",
+			"values": {
+				"Pota": "Events<CompositionEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, CompositionEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, CompositionEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, CompositionEvent>"
+			}
+		},
+		"on:contextlost": {
+			"name": "on:contextlost",
+			"values": {
+				"Pota": "Events<Event, Element>"
+			}
+		},
+		"on:contextmenu": {
+			"name": "on:contextmenu",
+			"values": {
+				"Pota": "Events<MouseEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
+			}
+		},
+		"on:contextrestored": {
+			"name": "on:contextrestored",
+			"values": {
+				"Pota": "Events<Event, Element>"
+			}
+		},
+		"on:copy": {
+			"name": "on:copy",
+			"values": {
+				"Pota": "Events<ClipboardEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, ClipboardEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, ClipboardEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, ClipboardEvent>"
+			}
+		},
+		"on:cuechange": {
+			"name": "on:cuechange",
+			"values": {
+				"Pota": "Events<Event, Element>"
+			}
+		},
+		"on:cut": {
+			"name": "on:cut",
+			"values": {
+				"Pota": "Events<ClipboardEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, ClipboardEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, ClipboardEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, ClipboardEvent>"
+			}
+		},
+		"on:dblclick": {
+			"name": "on:dblclick",
+			"values": {
+				"Pota": "Events<MouseEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
+			}
+		},
+		"on:drag": {
+			"name": "on:drag",
+			"values": {
+				"Pota": "Events<DragEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, DragEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
+			}
+		},
+		"on:dragend": {
+			"name": "on:dragend",
+			"values": {
+				"Pota": "Events<DragEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, DragEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
+			}
+		},
+		"on:dragenter": {
+			"name": "on:dragenter",
+			"values": {
+				"Pota": "Events<DragEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, DragEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
+			}
+		},
+		"on:dragexit": {
+			"name": "on:dragexit",
+			"values": {
+				"Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, DragEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
+			}
+		},
+		"on:dragleave": {
+			"name": "on:dragleave",
+			"values": {
+				"Pota": "Events<DragEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, DragEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
+			}
+		},
+		"on:dragover": {
+			"name": "on:dragover",
+			"values": {
+				"Pota": "Events<DragEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, DragEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
+			}
+		},
+		"on:dragstart": {
+			"name": "on:dragstart",
+			"values": {
+				"Pota": "Events<DragEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, DragEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
+			}
+		},
+		"on:drop": {
+			"name": "on:drop",
+			"values": {
+				"Pota": "Events<DragEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, DragEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
+			}
+		},
+		"on:durationchange": {
+			"name": "on:durationchange",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
+		"on:emptied": {
+			"name": "on:emptied",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
+		"on:encrypted": {
+			"name": "on:encrypted",
+			"values": {
+				"Pota": "Events<MediaEncryptedEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>"
+			}
+		},
+		"on:ended": {
+			"name": "on:ended",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
+		"on:enterpictureinpicture": {
+			"name": "on:enterpictureinpicture",
+			"values": {
+				"Pota": "Events<PictureInPictureEvent, Element>"
+			}
+		},
+		"on:error": {
+			"name": "on:error",
+			"values": {
+				"Pota": "Events<ErrorEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, ErrorEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, ErrorEvent>"
+			}
+		},
+		"on:focus": {
+			"name": "on:focus",
+			"values": {
+				"Pota": "Events<FocusEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>"
+			}
+		},
+		"on:focusin": {
+			"name": "on:focusin",
+			"values": {
+				"Pota": "Events<FocusEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>"
+			}
+		},
+		"on:focusout": {
+			"name": "on:focusout",
+			"values": {
+				"Pota": "Events<FocusEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>"
+			}
+		},
+		"on:formdata": {
+			"name": "on:formdata",
+			"values": {
+				"Pota": "Events<FormDataEvent, Element>"
+			}
+		},
+		"on:fullscreenchange": {
+			"name": "on:fullscreenchange",
+			"values": {
+				"Pota": "Events<Event, Element>"
+			}
+		},
+		"on:fullscreenerror": {
+			"name": "on:fullscreenerror",
+			"values": {
+				"Pota": "Events<Event, Element>"
+			}
+		},
+		"on:gamepadconnected": {
+			"name": "on:gamepadconnected",
+			"values": {
+				"Pota": "Events<GamepadEvent, Element>"
+			}
+		},
+		"on:gamepaddisconnected": {
+			"name": "on:gamepaddisconnected",
+			"values": {
+				"Pota": "Events<GamepadEvent, Element>"
+			}
+		},
+		"on:hashchange": {
+			"name": "on:hashchange",
+			"values": {
+				"Pota": "Events<HashChangeEvent, Element>"
+			}
+		},
+		"on:input": {
+			"name": "on:input",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>"
+			}
+		},
+		"on:invalid": {
+			"name": "on:invalid",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
+		"on:keydown": {
+			"name": "on:keydown",
+			"values": {
+				"Pota": "Events<KeyboardEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, KeyboardEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, KeyboardEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, KeyboardEvent>"
+			}
+		},
+		"on:keypress": {
+			"name": "on:keypress",
+			"values": {
+				"Pota": "Events<KeyboardEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, KeyboardEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, KeyboardEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, KeyboardEvent>"
+			}
+		},
+		"on:keyup": {
+			"name": "on:keyup",
+			"values": {
+				"Pota": "Events<KeyboardEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, KeyboardEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, KeyboardEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, KeyboardEvent>"
+			}
+		},
+		"on:languagechange": {
+			"name": "on:languagechange",
+			"values": {
+				"Pota": "Events<Event, Element>"
+			}
+		},
+		"on:leavepictureinpicture": {
+			"name": "on:leavepictureinpicture",
+			"values": {
+				"Pota": "Events<PictureInPictureEvent, Element>"
+			}
+		},
+		"on:load": {
+			"name": "on:load",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
+		"on:loadeddata": {
+			"name": "on:loadeddata",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
+		"on:loadedmetadata": {
+			"name": "on:loadedmetadata",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
+		"on:loadstart": {
+			"name": "on:loadstart",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
+		"on:lostpointercapture": {
+			"name": "on:lostpointercapture",
+			"values": {
+				"Pota": "Events<PointerEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
+			}
+		},
+		"on:message": {
+			"name": "on:message",
+			"values": {
+				"Pota": "Events<MessageEvent, Element>"
+			}
+		},
+		"on:messageerror": {
+			"name": "on:messageerror",
+			"values": {
+				"Pota": "Events<MessageEvent, Element>"
+			}
+		},
+		"on:mousedown": {
+			"name": "on:mousedown",
+			"values": {
+				"Pota": "Events<MouseEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
+			}
+		},
+		"on:mouseenter": {
+			"name": "on:mouseenter",
+			"values": {
+				"Pota": "Events<MouseEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
+			}
+		},
+		"on:mouseleave": {
+			"name": "on:mouseleave",
+			"values": {
+				"Pota": "Events<MouseEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
+			}
+		},
+		"on:mousemove": {
+			"name": "on:mousemove",
+			"values": {
+				"Pota": "Events<MouseEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
+			}
+		},
+		"on:mouseout": {
+			"name": "on:mouseout",
+			"values": {
+				"Pota": "Events<MouseEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
+			}
+		},
+		"on:mouseover": {
+			"name": "on:mouseover",
+			"values": {
+				"Pota": "Events<MouseEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
+			}
+		},
+		"on:mouseup": {
+			"name": "on:mouseup",
+			"values": {
+				"Pota": "Events<MouseEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
+			}
+		},
+		"on:offline": {
+			"name": "on:offline",
+			"values": {
+				"Pota": "Events<Event, Element>"
+			}
+		},
+		"on:online": {
+			"name": "on:online",
+			"values": {
+				"Pota": "Events<Event, Element>"
+			}
+		},
+		"on:pagehide": {
+			"name": "on:pagehide",
+			"values": {
+				"Pota": "Events<PageTransitionEvent, Element>"
+			}
+		},
+		"on:pagereveal": {
+			"name": "on:pagereveal",
+			"values": {
+				"Pota": "Events<Event, Element>"
+			}
+		},
+		"on:pageshow": {
+			"name": "on:pageshow",
+			"values": {
+				"Pota": "Events<PageTransitionEvent, Element>"
+			}
+		},
+		"on:pageswap": {
+			"name": "on:pageswap",
+			"values": {
+				"Pota": "Events<Event, Element>"
+			}
+		},
+		"on:paste": {
+			"name": "on:paste",
+			"values": {
+				"Pota": "Events<ClipboardEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, ClipboardEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, ClipboardEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, ClipboardEvent>"
+			}
+		},
+		"on:pause": {
+			"name": "on:pause",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
+		"on:play": {
+			"name": "on:play",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
+		"on:playing": {
+			"name": "on:playing",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
+		"on:pointercancel": {
+			"name": "on:pointercancel",
+			"values": {
+				"Pota": "Events<PointerEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
+			}
+		},
+		"on:pointerdown": {
+			"name": "on:pointerdown",
+			"values": {
+				"Pota": "Events<PointerEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
+			}
+		},
+		"on:pointerenter": {
+			"name": "on:pointerenter",
+			"values": {
+				"Pota": "Events<PointerEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
+			}
+		},
+		"on:pointerleave": {
+			"name": "on:pointerleave",
+			"values": {
+				"Pota": "Events<PointerEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
+			}
+		},
+		"on:pointermove": {
+			"name": "on:pointermove",
+			"values": {
+				"Pota": "Events<PointerEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
+			}
+		},
+		"on:pointerout": {
+			"name": "on:pointerout",
+			"values": {
+				"Pota": "Events<PointerEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
+			}
+		},
+		"on:pointerover": {
+			"name": "on:pointerover",
+			"values": {
+				"Pota": "Events<PointerEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
+			}
+		},
+		"on:pointerup": {
+			"name": "on:pointerup",
+			"values": {
+				"Pota": "Events<PointerEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
+			}
+		},
+		"on:popstate": {
+			"name": "on:popstate",
+			"values": {
+				"Pota": "Events<PopStateEvent, Element>"
+			}
+		},
+		"on:progress": {
+			"name": "on:progress",
+			"values": {
+				"Pota": "Events<ProgressEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, ProgressEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, ProgressEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, ProgressEvent>"
+			}
+		},
+		"on:ratechange": {
+			"name": "on:ratechange",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
+		"on:rejectionhandled": {
+			"name": "on:rejectionhandled",
+			"values": {
+				"Pota": "Events<PromiseRejectionEvent, Element>"
+			}
+		},
+		"on:reset": {
+			"name": "on:reset",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
+		"on:resize": {
+			"name": "on:resize",
+			"values": {
+				"Pota": "Events<UIEvent, Element>"
+			}
+		},
+		"on:scroll": {
+			"name": "on:scroll",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
+		"on:scrollend": {
+			"name": "on:scrollend",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
+		"on:securitypolicyviolation": {
+			"name": "on:securitypolicyviolation",
+			"values": {
+				"Pota": "Events<SecurityPolicyViolationEvent, Element>"
+			}
+		},
+		"on:seeked": {
+			"name": "on:seeked",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
+		"on:seeking": {
+			"name": "on:seeking",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
+		"on:select": {
+			"name": "on:select",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
+		"on:selectionchange": {
+			"name": "on:selectionchange",
+			"values": {
+				"Pota": "Events<Event, Element>"
+			}
+		},
+		"on:selectstart": {
+			"name": "on:selectstart",
+			"values": {
+				"Pota": "Events<Event, Element>"
+			}
+		},
+		"on:slotchange": {
+			"name": "on:slotchange",
+			"values": {
+				"Pota": "Events<Event, Element>"
+			}
+		},
+		"on:stalled": {
+			"name": "on:stalled",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
+		"on:storage": {
+			"name": "on:storage",
+			"values": {
+				"Pota": "Events<StorageEvent, Element>"
+			}
+		},
+		"on:submit": {
+			"name": "on:submit",
+			"values": {
+				"Pota": "Events<SubmitEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, SubmitEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, SubmitEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, SubmitEvent>"
+			}
+		},
+		"on:suspend": {
+			"name": "on:suspend",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
+		"on:timeupdate": {
+			"name": "on:timeupdate",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
+		"on:toggle": {
+			"name": "on:toggle",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, ToggleEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, ToggleEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, ToggleEvent>"
+			}
+		},
+		"on:touchcancel": {
+			"name": "on:touchcancel",
+			"values": {
+				"Pota": "Events<TouchEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, TouchEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, TouchEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, TouchEvent>"
+			}
+		},
+		"on:touchend": {
+			"name": "on:touchend",
+			"values": {
+				"Pota": "Events<TouchEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, TouchEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, TouchEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, TouchEvent>"
+			}
+		},
+		"on:touchmove": {
+			"name": "on:touchmove",
+			"values": {
+				"Pota": "Events<TouchEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, TouchEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, TouchEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, TouchEvent>"
+			}
+		},
+		"on:touchstart": {
+			"name": "on:touchstart",
+			"values": {
+				"Pota": "Events<TouchEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, TouchEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, TouchEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, TouchEvent>"
+			}
+		},
+		"on:transitioncancel": {
+			"name": "on:transitioncancel",
+			"values": {
+				"Pota": "Events<TransitionEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, TransitionEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, TransitionEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, TransitionEvent>"
+			}
+		},
+		"on:transitionend": {
+			"name": "on:transitionend",
+			"values": {
+				"Pota": "Events<TransitionEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, TransitionEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, TransitionEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, TransitionEvent>"
+			}
+		},
+		"on:transitionrun": {
+			"name": "on:transitionrun",
+			"values": {
+				"Pota": "Events<TransitionEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, TransitionEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, TransitionEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, TransitionEvent>"
+			}
+		},
+		"on:transitionstart": {
+			"name": "on:transitionstart",
+			"values": {
+				"Pota": "Events<TransitionEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, TransitionEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, TransitionEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, TransitionEvent>"
+			}
+		},
+		"on:unhandledrejection": {
+			"name": "on:unhandledrejection",
+			"values": {
+				"Pota": "Events<PromiseRejectionEvent, Element>"
+			}
+		},
+		"on:unload": {
+			"name": "on:unload",
+			"values": {
+				"Pota": "Events<Event, Element>"
+			}
+		},
+		"on:volumechange": {
+			"name": "on:volumechange",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
+		"on:waiting": {
+			"name": "on:waiting",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
+		"on:waitingforkey": {
+			"name": "on:waitingforkey",
+			"values": {
+				"Pota": "Events<Event, Element>"
+			}
+		},
+		"on:wheel": {
+			"name": "on:wheel",
+			"values": {
+				"Pota": "Events<WheelEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, WheelEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, WheelEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, WheelEvent>"
+			}
+		},
+		"onAbort": {
+			"name": "onAbort",
+			"values": {
+				"Preact": "GenericEventHandler<Target>",
+				"React": "ReactEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, UIEvent>",
+				"Solid Next": "EventHandlerUnion<T, UIEvent>",
+				"Voby": "GenericEventHandler<T>",
+				"Vue": "Event"
+			}
+		},
+		"onabort": {
+			"name": "onabort",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"onAnimationEnd": {
+			"name": "onAnimationEnd",
+			"values": {
+				"Preact": "AnimationEventHandler<Target>",
+				"React": "AnimationEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, AnimationEvent>",
+				"Solid Minor": "EventHandlerUnion<T, AnimationEvent>",
+				"Solid Next": "EventHandlerUnion<T, AnimationEvent>",
+				"Voby": "AnimationEventHandler<T>"
+			}
+		},
+		"onanimationend": {
+			"name": "onanimationend",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, AnimationEvent>",
+				"Solid Minor": "EventHandlerUnion<T, AnimationEvent>",
+				"Solid Next": "EventHandlerUnion<T, AnimationEvent>"
+			}
+		},
+		"onAnimationend": {
+			"name": "onAnimationend",
+			"values": {
+				"Vue": "AnimationEvent"
+			}
+		},
+		"onAnimationIteration": {
+			"name": "onAnimationIteration",
+			"values": {
+				"Preact": "AnimationEventHandler<Target>",
+				"React": "AnimationEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, AnimationEvent>",
+				"Solid Minor": "EventHandlerUnion<T, AnimationEvent>",
+				"Solid Next": "EventHandlerUnion<T, AnimationEvent>",
+				"Voby": "AnimationEventHandler<T>"
+			}
+		},
+		"onanimationiteration": {
+			"name": "onanimationiteration",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, AnimationEvent>",
+				"Solid Minor": "EventHandlerUnion<T, AnimationEvent>",
+				"Solid Next": "EventHandlerUnion<T, AnimationEvent>"
+			}
+		},
+		"onAnimationiteration": {
+			"name": "onAnimationiteration",
+			"values": {
+				"Vue": "AnimationEvent"
+			}
+		},
+		"onAnimationStart": {
+			"name": "onAnimationStart",
+			"values": {
+				"Preact": "AnimationEventHandler<Target>",
+				"React": "AnimationEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, AnimationEvent>",
+				"Solid Minor": "EventHandlerUnion<T, AnimationEvent>",
+				"Solid Next": "EventHandlerUnion<T, AnimationEvent>",
+				"Voby": "AnimationEventHandler<T>"
+			}
+		},
+		"onanimationstart": {
+			"name": "onanimationstart",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, AnimationEvent>",
+				"Solid Minor": "EventHandlerUnion<T, AnimationEvent>",
+				"Solid Next": "EventHandlerUnion<T, AnimationEvent>"
+			}
+		},
+		"onAnimationstart": {
+			"name": "onAnimationstart",
+			"values": {
+				"Vue": "AnimationEvent"
+			}
+		},
+		"onAuxClick": {
+			"name": "onAuxClick",
+			"values": {
+				"Preact": "MouseEventHandler<Target>",
+				"React": "MouseEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Minor": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Next": "EventHandlerUnion<T, MouseEvent>",
+				"Voby": "MouseEventHandler<T>"
+			}
+		},
+		"onauxclick": {
+			"name": "onauxclick",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Minor": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Next": "EventHandlerUnion<T, MouseEvent>"
+			}
+		},
+		"onAuxclick": {
+			"name": "onAuxclick",
+			"values": {
+				"Vue": "MouseEvent"
+			}
+		},
+		"onBeforeInput": {
+			"name": "onBeforeInput",
+			"values": {
+				"Preact": "InputEventHandler<Target>",
+				"React": "FormEventHandler<T>",
+				"Solid Main": "InputEventHandlerUnion<T, InputEvent>",
+				"Solid Minor": "InputEventHandlerUnion<T, InputEvent>",
+				"Solid Next": "InputEventHandlerUnion<T, InputEvent>",
+				"Voby": "InputEventHandler<T>"
+			}
+		},
+		"onbeforeinput": {
+			"name": "onbeforeinput",
+			"values": {
+				"Solid Main": "InputEventHandlerUnion<T, InputEvent>",
+				"Solid Minor": "InputEventHandlerUnion<T, InputEvent>",
+				"Solid Next": "InputEventHandlerUnion<T, InputEvent>"
+			}
+		},
+		"onBeforeinput": {
+			"name": "onBeforeinput",
+			"values": {
+				"Vue": "Event"
+			}
+		},
+		"onBeforeToggle": {
+			"name": "onBeforeToggle",
+			"values": {
+				"Preact": "ToggleEventHandler<Target>",
+				"React": "ToggleEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, ToggleEvent>",
+				"Solid Minor": "EventHandlerUnion<T, ToggleEvent>",
+				"Solid Next": "EventHandlerUnion<T, ToggleEvent>"
+			}
+		},
+		"onbeforetoggle": {
+			"name": "onbeforetoggle",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, ToggleEvent>",
+				"Solid Minor": "EventHandlerUnion<T, ToggleEvent>",
+				"Solid Next": "EventHandlerUnion<T, ToggleEvent>"
+			}
+		},
+		"onBlur": {
+			"name": "onBlur",
+			"values": {
+				"Preact": "FocusEventHandler<Target>",
+				"React": "FocusEventHandler<T>",
+				"Solid Main": "FocusEventHandlerUnion<T, FocusEvent>",
+				"Solid Minor": "FocusEventHandlerUnion<T, FocusEvent>",
+				"Solid Next": "FocusEventHandlerUnion<T, FocusEvent>",
+				"Voby": "FocusEventHandler<T>",
+				"Vue": "FocusEvent"
+			}
+		},
+		"onblur": {
+			"name": "onblur",
+			"values": {
+				"Solid Main": "FocusEventHandlerUnion<T, FocusEvent>",
+				"Solid Minor": "FocusEventHandlerUnion<T, FocusEvent>",
+				"Solid Next": "FocusEventHandlerUnion<T, FocusEvent>"
+			}
+		},
+		"onCancel": {
+			"name": "onCancel",
+			"values": {
+				"Preact": "GenericEventHandler<Target>"
+			}
+		},
+		"onCanPlay": {
+			"name": "onCanPlay",
+			"values": {
+				"Preact": "GenericEventHandler<Target>",
+				"React": "ReactEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>",
+				"Voby": "GenericEventHandler<T>"
+			}
+		},
+		"oncanplay": {
+			"name": "oncanplay",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"onCanplay": {
+			"name": "onCanplay",
+			"values": {
+				"Vue": "Event"
+			}
+		},
+		"onCanPlayThrough": {
+			"name": "onCanPlayThrough",
+			"values": {
+				"Preact": "GenericEventHandler<Target>",
+				"React": "ReactEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>",
+				"Voby": "GenericEventHandler<T>"
+			}
+		},
+		"oncanplaythrough": {
+			"name": "oncanplaythrough",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"onCanplaythrough": {
+			"name": "onCanplaythrough",
+			"values": {
+				"Vue": "Event"
+			}
+		},
+		"onChange": {
+			"name": "onChange",
+			"values": {
+				"Preact": "GenericEventHandler<Target>",
+				"React": "FormEventHandler<T>",
+				"Solid Main": "ChangeEventHandlerUnion<T, Event>",
+				"Solid Minor": "ChangeEventHandlerUnion<T, Event>",
+				"Solid Next": "ChangeEventHandlerUnion<T, Event>",
+				"Voby": "KeyboardEventHandler<T>",
+				"Vue": "Event"
+			}
+		},
+		"onchange": {
+			"name": "onchange",
+			"values": {
+				"Solid Main": "ChangeEventHandlerUnion<T, Event>",
+				"Solid Minor": "ChangeEventHandlerUnion<T, Event>",
+				"Solid Next": "ChangeEventHandlerUnion<T, Event>"
+			}
+		},
+		"onClick": {
+			"name": "onClick",
+			"values": {
+				"Preact": "MouseEventHandler<Target>",
+				"React": "MouseEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Minor": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Next": "EventHandlerUnion<T, MouseEvent>",
+				"Voby": "MouseEventHandler<T>",
+				"Vue": "MouseEvent"
+			}
+		},
+		"onclick": {
+			"name": "onclick",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Minor": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Next": "EventHandlerUnion<T, MouseEvent>"
+			}
+		},
+		"onClose": {
+			"name": "onClose",
+			"values": {
+				"Preact": "GenericEventHandler<Target>"
+			}
+		},
+		"onCommand": {
+			"name": "onCommand",
+			"values": {
+				"Preact": "CommandEventHandler<Target>"
+			}
+		},
+		"onCompositionEnd": {
+			"name": "onCompositionEnd",
+			"values": {
+				"Preact": "CompositionEventHandler<Target>",
+				"React": "CompositionEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, CompositionEvent>",
+				"Solid Minor": "EventHandlerUnion<T, CompositionEvent>",
+				"Solid Next": "EventHandlerUnion<T, CompositionEvent>",
+				"Voby": "CompositionEventHandler<T>"
+			}
+		},
+		"oncompositionend": {
+			"name": "oncompositionend",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, CompositionEvent>",
+				"Solid Minor": "EventHandlerUnion<T, CompositionEvent>",
+				"Solid Next": "EventHandlerUnion<T, CompositionEvent>"
+			}
+		},
+		"onCompositionend": {
+			"name": "onCompositionend",
+			"values": {
+				"Vue": "CompositionEvent"
+			}
+		},
+		"onCompositionStart": {
+			"name": "onCompositionStart",
+			"values": {
+				"Preact": "CompositionEventHandler<Target>",
+				"React": "CompositionEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, CompositionEvent>",
+				"Solid Minor": "EventHandlerUnion<T, CompositionEvent>",
+				"Solid Next": "EventHandlerUnion<T, CompositionEvent>",
+				"Voby": "CompositionEventHandler<T>"
+			}
+		},
+		"oncompositionstart": {
+			"name": "oncompositionstart",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, CompositionEvent>",
+				"Solid Minor": "EventHandlerUnion<T, CompositionEvent>",
+				"Solid Next": "EventHandlerUnion<T, CompositionEvent>"
+			}
+		},
+		"onCompositionstart": {
+			"name": "onCompositionstart",
+			"values": {
+				"Vue": "CompositionEvent"
+			}
+		},
+		"onCompositionUpdate": {
+			"name": "onCompositionUpdate",
+			"values": {
+				"Preact": "CompositionEventHandler<Target>",
+				"React": "CompositionEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, CompositionEvent>",
+				"Solid Minor": "EventHandlerUnion<T, CompositionEvent>",
+				"Solid Next": "EventHandlerUnion<T, CompositionEvent>",
+				"Voby": "CompositionEventHandler<T>"
+			}
+		},
+		"oncompositionupdate": {
+			"name": "oncompositionupdate",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, CompositionEvent>",
+				"Solid Minor": "EventHandlerUnion<T, CompositionEvent>",
+				"Solid Next": "EventHandlerUnion<T, CompositionEvent>"
+			}
+		},
+		"onCompositionupdate": {
+			"name": "onCompositionupdate",
+			"values": {
+				"Vue": "CompositionEvent"
+			}
+		},
+		"onContextMenu": {
+			"name": "onContextMenu",
+			"values": {
+				"Preact": "MouseEventHandler<Target>",
+				"React": "MouseEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Minor": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Next": "EventHandlerUnion<T, MouseEvent>",
+				"Voby": "MouseEventHandler<T>"
+			}
+		},
+		"oncontextmenu": {
+			"name": "oncontextmenu",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Minor": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Next": "EventHandlerUnion<T, MouseEvent>"
+			}
+		},
+		"onContextmenu": {
+			"name": "onContextmenu",
+			"values": {
+				"Vue": "MouseEvent"
+			}
+		},
+		"onCopy": {
+			"name": "onCopy",
+			"values": {
+				"Preact": "ClipboardEventHandler<Target>",
+				"React": "ClipboardEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, ClipboardEvent>",
+				"Solid Minor": "EventHandlerUnion<T, ClipboardEvent>",
+				"Solid Next": "EventHandlerUnion<T, ClipboardEvent>",
+				"Voby": "ClipboardEventHandler<T>",
+				"Vue": "ClipboardEvent"
+			}
+		},
+		"oncopy": {
+			"name": "oncopy",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, ClipboardEvent>",
+				"Solid Minor": "EventHandlerUnion<T, ClipboardEvent>",
+				"Solid Next": "EventHandlerUnion<T, ClipboardEvent>"
+			}
+		},
+		"onCut": {
+			"name": "onCut",
+			"values": {
+				"Preact": "ClipboardEventHandler<Target>",
+				"React": "ClipboardEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, ClipboardEvent>",
+				"Solid Minor": "EventHandlerUnion<T, ClipboardEvent>",
+				"Solid Next": "EventHandlerUnion<T, ClipboardEvent>",
+				"Voby": "ClipboardEventHandler<T>",
+				"Vue": "ClipboardEvent"
+			}
+		},
+		"oncut": {
+			"name": "oncut",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, ClipboardEvent>",
+				"Solid Minor": "EventHandlerUnion<T, ClipboardEvent>",
+				"Solid Next": "EventHandlerUnion<T, ClipboardEvent>"
+			}
+		},
+		"onDblClick": {
+			"name": "onDblClick",
+			"values": {
+				"Preact": "MouseEventHandler<Target>",
+				"Solid Main": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Minor": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Next": "EventHandlerUnion<T, MouseEvent>",
+				"Voby": "MouseEventHandler<T>"
+			}
+		},
+		"ondblclick": {
+			"name": "ondblclick",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Minor": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Next": "EventHandlerUnion<T, MouseEvent>"
+			}
+		},
+		"onDblclick": {
+			"name": "onDblclick",
+			"values": {
+				"Vue": "MouseEvent"
+			}
+		},
+		"onDoubleClick": {
+			"name": "onDoubleClick",
+			"values": {
+				"React": "MouseEventHandler<T>"
+			}
+		},
+		"onDrag": {
+			"name": "onDrag",
+			"values": {
+				"Preact": "DragEventHandler<Target>",
+				"React": "DragEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, DragEvent>",
+				"Solid Minor": "EventHandlerUnion<T, DragEvent>",
+				"Solid Next": "EventHandlerUnion<T, DragEvent>",
+				"Voby": "DragEventHandler<T>",
+				"Vue": "DragEvent"
+			}
+		},
+		"ondrag": {
+			"name": "ondrag",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, DragEvent>",
+				"Solid Minor": "EventHandlerUnion<T, DragEvent>",
+				"Solid Next": "EventHandlerUnion<T, DragEvent>"
+			}
+		},
+		"onDragEnd": {
+			"name": "onDragEnd",
+			"values": {
+				"Preact": "DragEventHandler<Target>",
+				"React": "DragEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, DragEvent>",
+				"Solid Minor": "EventHandlerUnion<T, DragEvent>",
+				"Solid Next": "EventHandlerUnion<T, DragEvent>",
+				"Voby": "DragEventHandler<T>"
+			}
+		},
+		"ondragend": {
+			"name": "ondragend",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, DragEvent>",
+				"Solid Minor": "EventHandlerUnion<T, DragEvent>",
+				"Solid Next": "EventHandlerUnion<T, DragEvent>"
+			}
+		},
+		"onDragend": {
+			"name": "onDragend",
+			"values": {
+				"Vue": "DragEvent"
+			}
+		},
+		"onDragEnter": {
+			"name": "onDragEnter",
+			"values": {
+				"Preact": "DragEventHandler<Target>",
+				"React": "DragEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, DragEvent>",
+				"Solid Minor": "EventHandlerUnion<T, DragEvent>",
+				"Solid Next": "EventHandlerUnion<T, DragEvent>",
+				"Voby": "DragEventHandler<T>"
+			}
+		},
+		"ondragenter": {
+			"name": "ondragenter",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, DragEvent>",
+				"Solid Minor": "EventHandlerUnion<T, DragEvent>",
+				"Solid Next": "EventHandlerUnion<T, DragEvent>"
+			}
+		},
+		"onDragenter": {
+			"name": "onDragenter",
+			"values": {
+				"Vue": "DragEvent"
+			}
+		},
+		"onDragExit": {
+			"name": "onDragExit",
+			"values": {
+				"Preact": "DragEventHandler<Target>",
+				"React": "DragEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, DragEvent>",
+				"Solid Minor": "EventHandlerUnion<T, DragEvent>",
+				"Solid Next": "EventHandlerUnion<T, DragEvent>",
+				"Voby": "DragEventHandler<T>"
+			}
+		},
+		"ondragexit": {
+			"name": "ondragexit",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, DragEvent>",
+				"Solid Minor": "EventHandlerUnion<T, DragEvent>",
+				"Solid Next": "EventHandlerUnion<T, DragEvent>"
+			}
+		},
+		"onDragexit": {
+			"name": "onDragexit",
+			"values": {
+				"Vue": "DragEvent"
+			}
+		},
+		"onDragLeave": {
+			"name": "onDragLeave",
+			"values": {
+				"Preact": "DragEventHandler<Target>",
+				"React": "DragEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, DragEvent>",
+				"Solid Minor": "EventHandlerUnion<T, DragEvent>",
+				"Solid Next": "EventHandlerUnion<T, DragEvent>",
+				"Voby": "DragEventHandler<T>"
+			}
+		},
+		"ondragleave": {
+			"name": "ondragleave",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, DragEvent>",
+				"Solid Minor": "EventHandlerUnion<T, DragEvent>",
+				"Solid Next": "EventHandlerUnion<T, DragEvent>"
+			}
+		},
+		"onDragleave": {
+			"name": "onDragleave",
+			"values": {
+				"Vue": "DragEvent"
+			}
+		},
+		"onDragOver": {
+			"name": "onDragOver",
+			"values": {
+				"Preact": "DragEventHandler<Target>",
+				"React": "DragEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, DragEvent>",
+				"Solid Minor": "EventHandlerUnion<T, DragEvent>",
+				"Solid Next": "EventHandlerUnion<T, DragEvent>",
+				"Voby": "DragEventHandler<T>"
+			}
+		},
+		"ondragover": {
+			"name": "ondragover",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, DragEvent>",
+				"Solid Minor": "EventHandlerUnion<T, DragEvent>",
+				"Solid Next": "EventHandlerUnion<T, DragEvent>"
+			}
+		},
+		"onDragover": {
+			"name": "onDragover",
+			"values": {
+				"Vue": "DragEvent"
+			}
+		},
+		"onDragStart": {
+			"name": "onDragStart",
+			"values": {
+				"Preact": "DragEventHandler<Target>",
+				"React": "DragEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, DragEvent>",
+				"Solid Minor": "EventHandlerUnion<T, DragEvent>",
+				"Solid Next": "EventHandlerUnion<T, DragEvent>",
+				"Voby": "DragEventHandler<T>"
+			}
+		},
+		"ondragstart": {
+			"name": "ondragstart",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, DragEvent>",
+				"Solid Minor": "EventHandlerUnion<T, DragEvent>",
+				"Solid Next": "EventHandlerUnion<T, DragEvent>"
+			}
+		},
+		"onDragstart": {
+			"name": "onDragstart",
+			"values": {
+				"Vue": "DragEvent"
+			}
+		},
+		"onDrop": {
+			"name": "onDrop",
+			"values": {
+				"Preact": "DragEventHandler<Target>",
+				"React": "DragEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, DragEvent>",
+				"Solid Minor": "EventHandlerUnion<T, DragEvent>",
+				"Solid Next": "EventHandlerUnion<T, DragEvent>",
+				"Voby": "DragEventHandler<T>",
+				"Vue": "DragEvent"
+			}
+		},
+		"ondrop": {
+			"name": "ondrop",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, DragEvent>",
+				"Solid Minor": "EventHandlerUnion<T, DragEvent>",
+				"Solid Next": "EventHandlerUnion<T, DragEvent>"
+			}
+		},
+		"onDurationChange": {
+			"name": "onDurationChange",
+			"values": {
+				"Preact": "GenericEventHandler<Target>",
+				"React": "ReactEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>",
+				"Voby": "GenericEventHandler<T>"
+			}
+		},
+		"ondurationchange": {
+			"name": "ondurationchange",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"onDurationchange": {
+			"name": "onDurationchange",
+			"values": {
+				"Vue": "Event"
+			}
+		},
+		"onEmptied": {
+			"name": "onEmptied",
+			"values": {
+				"Preact": "GenericEventHandler<Target>",
+				"React": "ReactEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>",
+				"Voby": "GenericEventHandler<T>",
+				"Vue": "Event"
+			}
+		},
+		"onemptied": {
+			"name": "onemptied",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"onEncrypted": {
+			"name": "onEncrypted",
+			"values": {
+				"Preact": "GenericEventHandler<Target>",
+				"React": "ReactEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, MediaEncryptedEvent>",
+				"Solid Next": "EventHandlerUnion<T, MediaEncryptedEvent>",
+				"Voby": "GenericEventHandler<T>",
+				"Vue": "Event"
+			}
+		},
+		"onencrypted": {
+			"name": "onencrypted",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, MediaEncryptedEvent>",
+				"Solid Next": "EventHandlerUnion<T, MediaEncryptedEvent>"
+			}
+		},
+		"onEnded": {
+			"name": "onEnded",
+			"values": {
+				"Preact": "GenericEventHandler<Target>",
+				"React": "ReactEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>",
+				"Voby": "GenericEventHandler<T>",
+				"Vue": "Event"
+			}
+		},
+		"onended": {
+			"name": "onended",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"onEnterPictureInPicture": {
+			"name": "onEnterPictureInPicture",
+			"values": {
+				"Preact": "PictureInPictureEventHandler<Target>"
+			}
+		},
+		"onError": {
+			"name": "onError",
+			"values": {
+				"Preact": "GenericEventHandler<Target>",
+				"React": "ReactEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, ErrorEvent>",
+				"Solid Next": "EventHandlerUnion<T, ErrorEvent>",
+				"Voby": "GenericEventHandler<T>",
+				"Vue": "Event"
+			}
+		},
+		"onerror": {
+			"name": "onerror",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, ErrorEvent>",
+				"Solid Next": "EventHandlerUnion<T, ErrorEvent>"
+			}
+		},
+		"onFocus": {
+			"name": "onFocus",
+			"values": {
+				"Preact": "FocusEventHandler<Target>",
+				"React": "FocusEventHandler<T>",
+				"Solid Main": "FocusEventHandlerUnion<T, FocusEvent>",
+				"Solid Minor": "FocusEventHandlerUnion<T, FocusEvent>",
+				"Solid Next": "FocusEventHandlerUnion<T, FocusEvent>",
+				"Voby": "FocusEventHandler<T>",
+				"Vue": "FocusEvent"
+			}
+		},
+		"onfocus": {
+			"name": "onfocus",
+			"values": {
+				"Solid Main": "FocusEventHandlerUnion<T, FocusEvent>",
+				"Solid Minor": "FocusEventHandlerUnion<T, FocusEvent>",
+				"Solid Next": "FocusEventHandlerUnion<T, FocusEvent>"
+			}
+		},
+		"onFocusIn": {
+			"name": "onFocusIn",
+			"values": {
+				"Preact": "FocusEventHandler<Target>",
+				"Solid Main": "FocusEventHandlerUnion<T, FocusEvent>",
+				"Solid Minor": "FocusEventHandlerUnion<T, FocusEvent>",
+				"Solid Next": "FocusEventHandlerUnion<T, FocusEvent>",
+				"Voby": "FocusEventHandler<T>"
+			}
+		},
+		"onfocusin": {
+			"name": "onfocusin",
+			"values": {
+				"Solid Main": "FocusEventHandlerUnion<T, FocusEvent>",
+				"Solid Minor": "FocusEventHandlerUnion<T, FocusEvent>",
+				"Solid Next": "FocusEventHandlerUnion<T, FocusEvent>"
+			}
+		},
+		"onFocusin": {
+			"name": "onFocusin",
+			"values": {
+				"Vue": "FocusEvent"
+			}
+		},
+		"onFocusOut": {
+			"name": "onFocusOut",
+			"values": {
+				"Preact": "FocusEventHandler<Target>",
+				"Solid Main": "FocusEventHandlerUnion<T, FocusEvent>",
+				"Solid Minor": "FocusEventHandlerUnion<T, FocusEvent>",
+				"Solid Next": "FocusEventHandlerUnion<T, FocusEvent>",
+				"Voby": "FocusEventHandler<T>"
+			}
+		},
+		"onfocusout": {
+			"name": "onfocusout",
+			"values": {
+				"Solid Main": "FocusEventHandlerUnion<T, FocusEvent>",
+				"Solid Minor": "FocusEventHandlerUnion<T, FocusEvent>",
+				"Solid Next": "FocusEventHandlerUnion<T, FocusEvent>"
+			}
+		},
+		"onFocusout": {
+			"name": "onFocusout",
+			"values": {
+				"Vue": "FocusEvent"
+			}
+		},
+		"onFormData": {
+			"name": "onFormData",
+			"values": {
+				"Preact": "GenericEventHandler<Target>",
+				"Voby": "GenericEventHandler<T>"
+			}
+		},
+		"onInput": {
+			"name": "onInput",
+			"values": {
+				"Preact": "InputEventHandler<Target>",
+				"React": "FormEventHandler<T>",
+				"Solid Main": "InputEventHandlerUnion<T, InputEvent>",
+				"Solid Minor": "InputEventHandlerUnion<T, InputEvent>",
+				"Solid Next": "InputEventHandlerUnion<T, InputEvent>",
+				"Voby": "InputEventHandler<T>",
+				"Vue": "Event"
+			}
+		},
+		"oninput": {
+			"name": "oninput",
+			"values": {
+				"Solid Main": "InputEventHandlerUnion<T, InputEvent>",
+				"Solid Minor": "InputEventHandlerUnion<T, InputEvent>",
+				"Solid Next": "InputEventHandlerUnion<T, InputEvent>"
+			}
+		},
+		"onInvalid": {
+			"name": "onInvalid",
+			"values": {
+				"Preact": "GenericEventHandler<Target>",
+				"React": "FormEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>",
+				"Voby": "GenericEventHandler<T>",
+				"Vue": "Event"
+			}
+		},
+		"oninvalid": {
+			"name": "oninvalid",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"onKeyDown": {
+			"name": "onKeyDown",
+			"values": {
+				"Preact": "KeyboardEventHandler<Target>",
+				"React": "KeyboardEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, KeyboardEvent>",
+				"Solid Minor": "EventHandlerUnion<T, KeyboardEvent>",
+				"Solid Next": "EventHandlerUnion<T, KeyboardEvent>",
+				"Voby": "KeyboardEventHandler<T>"
+			}
+		},
+		"onkeydown": {
+			"name": "onkeydown",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, KeyboardEvent>",
+				"Solid Minor": "EventHandlerUnion<T, KeyboardEvent>",
+				"Solid Next": "EventHandlerUnion<T, KeyboardEvent>"
+			}
+		},
+		"onKeydown": {
+			"name": "onKeydown",
+			"values": {
+				"Vue": "KeyboardEvent"
+			}
+		},
+		"onKeyPress": {
+			"name": "onKeyPress",
+			"values": {
+				"Preact": "KeyboardEventHandler<Target>",
+				"React": "KeyboardEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, KeyboardEvent>",
+				"Solid Minor": "EventHandlerUnion<T, KeyboardEvent>",
+				"Solid Next": "EventHandlerUnion<T, KeyboardEvent>",
+				"Voby": "KeyboardEventHandler<T>"
+			}
+		},
+		"onkeypress": {
+			"name": "onkeypress",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, KeyboardEvent>",
+				"Solid Minor": "EventHandlerUnion<T, KeyboardEvent>",
+				"Solid Next": "EventHandlerUnion<T, KeyboardEvent>"
+			}
+		},
+		"onKeypress": {
+			"name": "onKeypress",
+			"values": {
+				"Vue": "KeyboardEvent"
+			}
+		},
+		"onKeyUp": {
+			"name": "onKeyUp",
+			"values": {
+				"Preact": "KeyboardEventHandler<Target>",
+				"React": "KeyboardEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, KeyboardEvent>",
+				"Solid Minor": "EventHandlerUnion<T, KeyboardEvent>",
+				"Solid Next": "EventHandlerUnion<T, KeyboardEvent>",
+				"Voby": "KeyboardEventHandler<T>"
+			}
+		},
+		"onkeyup": {
+			"name": "onkeyup",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, KeyboardEvent>",
+				"Solid Minor": "EventHandlerUnion<T, KeyboardEvent>",
+				"Solid Next": "EventHandlerUnion<T, KeyboardEvent>"
+			}
+		},
+		"onKeyup": {
+			"name": "onKeyup",
+			"values": {
+				"Vue": "KeyboardEvent"
+			}
+		},
+		"onLeavePictureInPicture": {
+			"name": "onLeavePictureInPicture",
+			"values": {
+				"Preact": "PictureInPictureEventHandler<Target>"
+			}
+		},
+		"onLoad": {
+			"name": "onLoad",
+			"values": {
+				"Preact": "GenericEventHandler<Target>",
+				"React": "ReactEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>",
+				"Voby": "GenericEventHandler<T>",
+				"Vue": "Event"
+			}
+		},
+		"onload": {
+			"name": "onload",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"onLoadedData": {
+			"name": "onLoadedData",
+			"values": {
+				"Preact": "GenericEventHandler<Target>",
+				"React": "ReactEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>",
+				"Voby": "GenericEventHandler<T>"
+			}
+		},
+		"onloadeddata": {
+			"name": "onloadeddata",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"onLoadeddata": {
+			"name": "onLoadeddata",
+			"values": {
+				"Vue": "Event"
+			}
+		},
+		"onLoadedMetadata": {
+			"name": "onLoadedMetadata",
+			"values": {
+				"Preact": "GenericEventHandler<Target>",
+				"React": "ReactEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>",
+				"Voby": "GenericEventHandler<T>"
+			}
+		},
+		"onloadedmetadata": {
+			"name": "onloadedmetadata",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"onLoadedmetadata": {
+			"name": "onLoadedmetadata",
+			"values": {
+				"Vue": "Event"
+			}
+		},
+		"onLoadStart": {
+			"name": "onLoadStart",
+			"values": {
+				"Preact": "GenericEventHandler<Target>",
+				"React": "ReactEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>",
+				"Voby": "GenericEventHandler<T>"
+			}
+		},
+		"onloadstart": {
+			"name": "onloadstart",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"onLoadstart": {
+			"name": "onLoadstart",
+			"values": {
+				"Vue": "Event"
+			}
+		},
+		"onLostPointerCapture": {
+			"name": "onLostPointerCapture",
+			"values": {
+				"Preact": "PointerEventHandler<Target>",
+				"React": "PointerEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, PointerEvent>",
+				"Solid Minor": "EventHandlerUnion<T, PointerEvent>",
+				"Solid Next": "EventHandlerUnion<T, PointerEvent>",
+				"Voby": "PointerEventHandler<T>"
+			}
+		},
+		"onlostpointercapture": {
+			"name": "onlostpointercapture",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, PointerEvent>",
+				"Solid Minor": "EventHandlerUnion<T, PointerEvent>",
+				"Solid Next": "EventHandlerUnion<T, PointerEvent>"
+			}
+		},
+		"onMiddleClick": {
+			"name": "onMiddleClick",
+			"values": {
+				"Voby": "MouseEventHandler<T>"
+			}
+		},
+		"onMouseDown": {
+			"name": "onMouseDown",
+			"values": {
+				"Preact": "MouseEventHandler<Target>",
+				"React": "MouseEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Minor": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Next": "EventHandlerUnion<T, MouseEvent>",
+				"Voby": "MouseEventHandler<T>"
+			}
+		},
+		"onmousedown": {
+			"name": "onmousedown",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Minor": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Next": "EventHandlerUnion<T, MouseEvent>"
+			}
+		},
+		"onMousedown": {
+			"name": "onMousedown",
+			"values": {
+				"Vue": "MouseEvent"
+			}
+		},
+		"onMouseEnter": {
+			"name": "onMouseEnter",
+			"values": {
+				"Preact": "MouseEventHandler<Target>",
+				"React": "MouseEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Minor": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Next": "EventHandlerUnion<T, MouseEvent>",
+				"Voby": "MouseEventHandler<T>"
+			}
+		},
+		"onmouseenter": {
+			"name": "onmouseenter",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Minor": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Next": "EventHandlerUnion<T, MouseEvent>"
+			}
+		},
+		"onMouseenter": {
+			"name": "onMouseenter",
+			"values": {
+				"Vue": "MouseEvent"
+			}
+		},
+		"onMouseLeave": {
+			"name": "onMouseLeave",
+			"values": {
+				"Preact": "MouseEventHandler<Target>",
+				"React": "MouseEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Minor": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Next": "EventHandlerUnion<T, MouseEvent>",
+				"Voby": "MouseEventHandler<T>"
+			}
+		},
+		"onmouseleave": {
+			"name": "onmouseleave",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Minor": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Next": "EventHandlerUnion<T, MouseEvent>"
+			}
+		},
+		"onMouseleave": {
+			"name": "onMouseleave",
+			"values": {
+				"Vue": "MouseEvent"
+			}
+		},
+		"onMouseMove": {
+			"name": "onMouseMove",
+			"values": {
+				"Preact": "MouseEventHandler<Target>",
+				"React": "MouseEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Minor": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Next": "EventHandlerUnion<T, MouseEvent>",
+				"Voby": "MouseEventHandler<T>"
+			}
+		},
+		"onmousemove": {
+			"name": "onmousemove",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Minor": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Next": "EventHandlerUnion<T, MouseEvent>"
+			}
+		},
+		"onMousemove": {
+			"name": "onMousemove",
+			"values": {
+				"Vue": "MouseEvent"
+			}
+		},
+		"onMouseOut": {
+			"name": "onMouseOut",
+			"values": {
+				"Preact": "MouseEventHandler<Target>",
+				"React": "MouseEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Minor": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Next": "EventHandlerUnion<T, MouseEvent>",
+				"Voby": "MouseEventHandler<T>"
+			}
+		},
+		"onmouseout": {
+			"name": "onmouseout",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Minor": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Next": "EventHandlerUnion<T, MouseEvent>"
+			}
+		},
+		"onMouseout": {
+			"name": "onMouseout",
+			"values": {
+				"Vue": "MouseEvent"
+			}
+		},
+		"onMouseOver": {
+			"name": "onMouseOver",
+			"values": {
+				"Preact": "MouseEventHandler<Target>",
+				"React": "MouseEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Minor": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Next": "EventHandlerUnion<T, MouseEvent>",
+				"Voby": "MouseEventHandler<T>"
+			}
+		},
+		"onmouseover": {
+			"name": "onmouseover",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Minor": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Next": "EventHandlerUnion<T, MouseEvent>"
+			}
+		},
+		"onMouseover": {
+			"name": "onMouseover",
+			"values": {
+				"Vue": "MouseEvent"
+			}
+		},
+		"onMouseUp": {
+			"name": "onMouseUp",
+			"values": {
+				"Preact": "MouseEventHandler<Target>",
+				"React": "MouseEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Minor": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Next": "EventHandlerUnion<T, MouseEvent>",
+				"Voby": "MouseEventHandler<T>"
+			}
+		},
+		"onmouseup": {
+			"name": "onmouseup",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Minor": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Next": "EventHandlerUnion<T, MouseEvent>"
+			}
+		},
+		"onMouseup": {
+			"name": "onMouseup",
+			"values": {
+				"Vue": "MouseEvent"
+			}
+		},
+		"onPaste": {
+			"name": "onPaste",
+			"values": {
+				"Preact": "ClipboardEventHandler<Target>",
+				"React": "ClipboardEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, ClipboardEvent>",
+				"Solid Minor": "EventHandlerUnion<T, ClipboardEvent>",
+				"Solid Next": "EventHandlerUnion<T, ClipboardEvent>",
+				"Voby": "ClipboardEventHandler<T>",
+				"Vue": "ClipboardEvent"
+			}
+		},
+		"onpaste": {
+			"name": "onpaste",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, ClipboardEvent>",
+				"Solid Minor": "EventHandlerUnion<T, ClipboardEvent>",
+				"Solid Next": "EventHandlerUnion<T, ClipboardEvent>"
+			}
+		},
+		"onPause": {
+			"name": "onPause",
+			"values": {
+				"Preact": "GenericEventHandler<Target>",
+				"React": "ReactEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>",
+				"Voby": "GenericEventHandler<T>",
+				"Vue": "Event"
+			}
+		},
+		"onpause": {
+			"name": "onpause",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"onPlay": {
+			"name": "onPlay",
+			"values": {
+				"Preact": "GenericEventHandler<Target>",
+				"React": "ReactEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>",
+				"Voby": "GenericEventHandler<T>",
+				"Vue": "Event"
+			}
+		},
+		"onplay": {
+			"name": "onplay",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"onPlaying": {
+			"name": "onPlaying",
+			"values": {
+				"Preact": "GenericEventHandler<Target>",
+				"React": "ReactEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>",
+				"Voby": "GenericEventHandler<T>",
+				"Vue": "Event"
+			}
+		},
+		"onplaying": {
+			"name": "onplaying",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"onPointerCancel": {
+			"name": "onPointerCancel",
+			"values": {
+				"Preact": "PointerEventHandler<Target>",
+				"React": "PointerEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, PointerEvent>",
+				"Solid Minor": "EventHandlerUnion<T, PointerEvent>",
+				"Solid Next": "EventHandlerUnion<T, PointerEvent>",
+				"Voby": "PointerEventHandler<T>"
+			}
+		},
+		"onpointercancel": {
+			"name": "onpointercancel",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, PointerEvent>",
+				"Solid Minor": "EventHandlerUnion<T, PointerEvent>",
+				"Solid Next": "EventHandlerUnion<T, PointerEvent>"
+			}
+		},
+		"onPointercancel": {
+			"name": "onPointercancel",
+			"values": {
+				"Vue": "PointerEvent"
+			}
+		},
+		"onPointerDown": {
+			"name": "onPointerDown",
+			"values": {
+				"Preact": "PointerEventHandler<Target>",
+				"React": "PointerEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, PointerEvent>",
+				"Solid Minor": "EventHandlerUnion<T, PointerEvent>",
+				"Solid Next": "EventHandlerUnion<T, PointerEvent>",
+				"Voby": "PointerEventHandler<T>"
+			}
+		},
+		"onpointerdown": {
+			"name": "onpointerdown",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, PointerEvent>",
+				"Solid Minor": "EventHandlerUnion<T, PointerEvent>",
+				"Solid Next": "EventHandlerUnion<T, PointerEvent>"
+			}
+		},
+		"onPointerdown": {
+			"name": "onPointerdown",
+			"values": {
+				"Vue": "PointerEvent"
+			}
+		},
+		"onPointerEnter": {
+			"name": "onPointerEnter",
+			"values": {
+				"Preact": "PointerEventHandler<Target>",
+				"React": "PointerEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, PointerEvent>",
+				"Solid Minor": "EventHandlerUnion<T, PointerEvent>",
+				"Solid Next": "EventHandlerUnion<T, PointerEvent>",
+				"Voby": "PointerEventHandler<T>"
+			}
+		},
+		"onpointerenter": {
+			"name": "onpointerenter",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, PointerEvent>",
+				"Solid Minor": "EventHandlerUnion<T, PointerEvent>",
+				"Solid Next": "EventHandlerUnion<T, PointerEvent>"
+			}
+		},
+		"onPointerenter": {
+			"name": "onPointerenter",
+			"values": {
+				"Vue": "PointerEvent"
+			}
+		},
+		"onPointerLeave": {
+			"name": "onPointerLeave",
+			"values": {
+				"Preact": "PointerEventHandler<Target>",
+				"React": "PointerEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, PointerEvent>",
+				"Solid Minor": "EventHandlerUnion<T, PointerEvent>",
+				"Solid Next": "EventHandlerUnion<T, PointerEvent>",
+				"Voby": "PointerEventHandler<T>"
+			}
+		},
+		"onpointerleave": {
+			"name": "onpointerleave",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, PointerEvent>",
+				"Solid Minor": "EventHandlerUnion<T, PointerEvent>",
+				"Solid Next": "EventHandlerUnion<T, PointerEvent>"
+			}
+		},
+		"onPointerleave": {
+			"name": "onPointerleave",
+			"values": {
+				"Vue": "PointerEvent"
+			}
+		},
+		"onPointerMove": {
+			"name": "onPointerMove",
+			"values": {
+				"Preact": "PointerEventHandler<Target>",
+				"React": "PointerEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, PointerEvent>",
+				"Solid Minor": "EventHandlerUnion<T, PointerEvent>",
+				"Solid Next": "EventHandlerUnion<T, PointerEvent>",
+				"Voby": "PointerEventHandler<T>"
+			}
+		},
+		"onpointermove": {
+			"name": "onpointermove",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, PointerEvent>",
+				"Solid Minor": "EventHandlerUnion<T, PointerEvent>",
+				"Solid Next": "EventHandlerUnion<T, PointerEvent>"
+			}
+		},
+		"onPointermove": {
+			"name": "onPointermove",
+			"values": {
+				"Vue": "PointerEvent"
+			}
+		},
+		"onPointerOut": {
+			"name": "onPointerOut",
+			"values": {
+				"Preact": "PointerEventHandler<Target>",
+				"React": "PointerEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, PointerEvent>",
+				"Solid Minor": "EventHandlerUnion<T, PointerEvent>",
+				"Solid Next": "EventHandlerUnion<T, PointerEvent>",
+				"Voby": "PointerEventHandler<T>"
+			}
+		},
+		"onpointerout": {
+			"name": "onpointerout",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, PointerEvent>",
+				"Solid Minor": "EventHandlerUnion<T, PointerEvent>",
+				"Solid Next": "EventHandlerUnion<T, PointerEvent>"
+			}
+		},
+		"onPointerout": {
+			"name": "onPointerout",
+			"values": {
+				"Vue": "PointerEvent"
+			}
+		},
+		"onPointerOver": {
+			"name": "onPointerOver",
+			"values": {
+				"Preact": "PointerEventHandler<Target>",
+				"React": "PointerEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, PointerEvent>",
+				"Solid Minor": "EventHandlerUnion<T, PointerEvent>",
+				"Solid Next": "EventHandlerUnion<T, PointerEvent>",
+				"Voby": "PointerEventHandler<T>"
+			}
+		},
+		"onpointerover": {
+			"name": "onpointerover",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, PointerEvent>",
+				"Solid Minor": "EventHandlerUnion<T, PointerEvent>",
+				"Solid Next": "EventHandlerUnion<T, PointerEvent>"
+			}
+		},
+		"onPointerover": {
+			"name": "onPointerover",
+			"values": {
+				"Vue": "PointerEvent"
+			}
+		},
+		"onPointerUp": {
+			"name": "onPointerUp",
+			"values": {
+				"Preact": "PointerEventHandler<Target>",
+				"React": "PointerEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, PointerEvent>",
+				"Solid Minor": "EventHandlerUnion<T, PointerEvent>",
+				"Solid Next": "EventHandlerUnion<T, PointerEvent>",
+				"Voby": "PointerEventHandler<T>"
+			}
+		},
+		"onpointerup": {
+			"name": "onpointerup",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, PointerEvent>",
+				"Solid Minor": "EventHandlerUnion<T, PointerEvent>",
+				"Solid Next": "EventHandlerUnion<T, PointerEvent>"
+			}
+		},
+		"onPointerup": {
+			"name": "onPointerup",
+			"values": {
+				"Vue": "PointerEvent"
+			}
+		},
+		"onProgress": {
+			"name": "onProgress",
+			"values": {
+				"Preact": "GenericEventHandler<Target>",
+				"React": "ReactEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, ProgressEvent>",
+				"Solid Minor": "EventHandlerUnion<T, ProgressEvent>",
+				"Solid Next": "EventHandlerUnion<T, ProgressEvent>",
+				"Voby": "GenericEventHandler<T>",
+				"Vue": "Event"
+			}
+		},
+		"onprogress": {
+			"name": "onprogress",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, ProgressEvent>",
+				"Solid Minor": "EventHandlerUnion<T, ProgressEvent>",
+				"Solid Next": "EventHandlerUnion<T, ProgressEvent>"
+			}
+		},
+		"onRateChange": {
+			"name": "onRateChange",
+			"values": {
+				"Preact": "GenericEventHandler<Target>",
+				"React": "ReactEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>",
+				"Voby": "GenericEventHandler<T>"
+			}
+		},
+		"onratechange": {
+			"name": "onratechange",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"onRatechange": {
+			"name": "onRatechange",
+			"values": {
+				"Vue": "Event"
+			}
+		},
+		"onReset": {
+			"name": "onReset",
+			"values": {
+				"Preact": "GenericEventHandler<Target>",
+				"React": "FormEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>",
+				"Voby": "GenericEventHandler<T>",
+				"Vue": "Event"
+			}
+		},
+		"onreset": {
+			"name": "onreset",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"onResize": {
+			"name": "onResize",
+			"values": {
+				"Preact": "PictureInPictureEventHandler<Target>",
+				"React": "ReactEventHandler<T>"
+			}
+		},
+		"onScroll": {
+			"name": "onScroll",
+			"values": {
+				"Preact": "UIEventHandler<Target>",
+				"React": "UIEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>",
+				"Voby": "UIEventHandler<T>",
+				"Vue": "Event"
+			}
+		},
+		"onscroll": {
+			"name": "onscroll",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"onScrollEnd": {
+			"name": "onScrollEnd",
+			"values": {
+				"Preact": "UIEventHandler<Target>",
+				"React": "UIEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>",
+				"Voby": "UIEventHandler<T>"
+			}
+		},
+		"onscrollend": {
+			"name": "onscrollend",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"onScrollend": {
+			"name": "onScrollend",
+			"values": {
+				"Vue": "Event"
+			}
+		},
+		"onSearch": {
+			"name": "onSearch",
+			"values": {
+				"Preact": "GenericEventHandler<Target>",
+				"Voby": "GenericEventHandler<T>"
+			}
+		},
+		"onSeeked": {
+			"name": "onSeeked",
+			"values": {
+				"Preact": "GenericEventHandler<Target>",
+				"React": "ReactEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>",
+				"Voby": "GenericEventHandler<T>",
+				"Vue": "Event"
+			}
+		},
+		"onseeked": {
+			"name": "onseeked",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"onSeeking": {
+			"name": "onSeeking",
+			"values": {
+				"Preact": "GenericEventHandler<Target>",
+				"React": "ReactEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>",
+				"Voby": "GenericEventHandler<T>",
+				"Vue": "Event"
+			}
+		},
+		"onseeking": {
+			"name": "onseeking",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"onSelect": {
+			"name": "onSelect",
+			"values": {
+				"Preact": "GenericEventHandler<Target>",
+				"React": "ReactEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>",
+				"Voby": "GenericEventHandler<T>",
+				"Vue": "Event"
+			}
+		},
+		"onselect": {
+			"name": "onselect",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"onStalled": {
+			"name": "onStalled",
+			"values": {
+				"Preact": "GenericEventHandler<Target>",
+				"React": "ReactEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>",
+				"Voby": "GenericEventHandler<T>",
+				"Vue": "Event"
+			}
+		},
+		"onstalled": {
+			"name": "onstalled",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"onSubmit": {
+			"name": "onSubmit",
+			"values": {
+				"Preact": "SubmitEventHandler<Target>",
+				"React": "FormEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, SubmitEvent>",
+				"Solid Minor": "EventHandlerUnion<T, SubmitEvent>",
+				"Solid Next": "EventHandlerUnion<T, SubmitEvent>",
+				"Voby": "SubmitEventHandler<T>",
+				"Vue": "Event"
+			}
+		},
+		"onsubmit": {
+			"name": "onsubmit",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, SubmitEvent>",
+				"Solid Minor": "EventHandlerUnion<T, SubmitEvent>",
+				"Solid Next": "EventHandlerUnion<T, SubmitEvent>"
+			}
+		},
+		"onSuspend": {
+			"name": "onSuspend",
+			"values": {
+				"Preact": "GenericEventHandler<Target>",
+				"React": "ReactEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>",
+				"Voby": "GenericEventHandler<T>",
+				"Vue": "Event"
+			}
+		},
+		"onsuspend": {
+			"name": "onsuspend",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"onTimeUpdate": {
+			"name": "onTimeUpdate",
+			"values": {
+				"Preact": "GenericEventHandler<Target>",
+				"React": "ReactEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>",
+				"Voby": "GenericEventHandler<T>"
+			}
+		},
+		"ontimeupdate": {
+			"name": "ontimeupdate",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"onTimeupdate": {
+			"name": "onTimeupdate",
+			"values": {
+				"Vue": "Event"
+			}
+		},
+		"onToggle": {
+			"name": "onToggle",
+			"values": {
+				"Preact": "ToggleEventHandler<Target>",
+				"React": "ToggleEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, ToggleEvent>",
+				"Solid Minor": "EventHandlerUnion<T, ToggleEvent>",
+				"Solid Next": "EventHandlerUnion<T, ToggleEvent>",
+				"Voby": "GenericEventHandler<T>"
+			}
+		},
+		"ontoggle": {
+			"name": "ontoggle",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, ToggleEvent>",
+				"Solid Minor": "EventHandlerUnion<T, ToggleEvent>",
+				"Solid Next": "EventHandlerUnion<T, ToggleEvent>"
+			}
+		},
+		"onTouchCancel": {
+			"name": "onTouchCancel",
+			"values": {
+				"Preact": "TouchEventHandler<Target>",
+				"React": "TouchEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, TouchEvent>",
+				"Solid Minor": "EventHandlerUnion<T, TouchEvent>",
+				"Solid Next": "EventHandlerUnion<T, TouchEvent>",
+				"Voby": "TouchEventHandler<T>"
+			}
+		},
+		"ontouchcancel": {
+			"name": "ontouchcancel",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, TouchEvent>",
+				"Solid Minor": "EventHandlerUnion<T, TouchEvent>",
+				"Solid Next": "EventHandlerUnion<T, TouchEvent>"
+			}
+		},
+		"onTouchcancel": {
+			"name": "onTouchcancel",
+			"values": {
+				"Vue": "TouchEvent"
+			}
+		},
+		"onTouchEnd": {
+			"name": "onTouchEnd",
+			"values": {
+				"Preact": "TouchEventHandler<Target>",
+				"React": "TouchEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, TouchEvent>",
+				"Solid Minor": "EventHandlerUnion<T, TouchEvent>",
+				"Solid Next": "EventHandlerUnion<T, TouchEvent>",
+				"Voby": "TouchEventHandler<T>"
+			}
+		},
+		"ontouchend": {
+			"name": "ontouchend",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, TouchEvent>",
+				"Solid Minor": "EventHandlerUnion<T, TouchEvent>",
+				"Solid Next": "EventHandlerUnion<T, TouchEvent>"
+			}
+		},
+		"onTouchend": {
+			"name": "onTouchend",
+			"values": {
+				"Vue": "TouchEvent"
+			}
+		},
+		"onTouchMove": {
+			"name": "onTouchMove",
+			"values": {
+				"Preact": "TouchEventHandler<Target>",
+				"React": "TouchEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, TouchEvent>",
+				"Solid Minor": "EventHandlerUnion<T, TouchEvent>",
+				"Solid Next": "EventHandlerUnion<T, TouchEvent>",
+				"Voby": "TouchEventHandler<T>"
+			}
+		},
+		"ontouchmove": {
+			"name": "ontouchmove",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, TouchEvent>",
+				"Solid Minor": "EventHandlerUnion<T, TouchEvent>",
+				"Solid Next": "EventHandlerUnion<T, TouchEvent>"
+			}
+		},
+		"onTouchmove": {
+			"name": "onTouchmove",
+			"values": {
+				"Vue": "TouchEvent"
+			}
+		},
+		"onTouchStart": {
+			"name": "onTouchStart",
+			"values": {
+				"Preact": "TouchEventHandler<Target>",
+				"React": "TouchEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, TouchEvent>",
+				"Solid Minor": "EventHandlerUnion<T, TouchEvent>",
+				"Solid Next": "EventHandlerUnion<T, TouchEvent>",
+				"Voby": "TouchEventHandler<T>"
+			}
+		},
+		"ontouchstart": {
+			"name": "ontouchstart",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, TouchEvent>",
+				"Solid Minor": "EventHandlerUnion<T, TouchEvent>",
+				"Solid Next": "EventHandlerUnion<T, TouchEvent>"
+			}
+		},
+		"onTouchstart": {
+			"name": "onTouchstart",
+			"values": {
+				"Vue": "TouchEvent"
+			}
+		},
+		"onTransitionCancel": {
+			"name": "onTransitionCancel",
+			"values": {
+				"Preact": "TransitionEventHandler<Target>",
+				"React": "TransitionEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, TransitionEvent>",
+				"Solid Minor": "EventHandlerUnion<T, TransitionEvent>",
+				"Solid Next": "EventHandlerUnion<T, TransitionEvent>"
+			}
+		},
+		"ontransitioncancel": {
+			"name": "ontransitioncancel",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, TransitionEvent>",
+				"Solid Minor": "EventHandlerUnion<T, TransitionEvent>",
+				"Solid Next": "EventHandlerUnion<T, TransitionEvent>"
+			}
+		},
+		"onTransitionEnd": {
+			"name": "onTransitionEnd",
+			"values": {
+				"Preact": "TransitionEventHandler<Target>",
+				"React": "TransitionEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, TransitionEvent>",
+				"Solid Minor": "EventHandlerUnion<T, TransitionEvent>",
+				"Solid Next": "EventHandlerUnion<T, TransitionEvent>",
+				"Voby": "TransitionEventHandler<T>"
+			}
+		},
+		"ontransitionend": {
+			"name": "ontransitionend",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, TransitionEvent>",
+				"Solid Minor": "EventHandlerUnion<T, TransitionEvent>",
+				"Solid Next": "EventHandlerUnion<T, TransitionEvent>"
+			}
+		},
+		"onTransitionend": {
+			"name": "onTransitionend",
+			"values": {
+				"Vue": "TransitionEvent"
+			}
+		},
+		"onTransitionRun": {
+			"name": "onTransitionRun",
+			"values": {
+				"Preact": "TransitionEventHandler<Target>",
+				"React": "TransitionEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, TransitionEvent>",
+				"Solid Minor": "EventHandlerUnion<T, TransitionEvent>",
+				"Solid Next": "EventHandlerUnion<T, TransitionEvent>"
+			}
+		},
+		"ontransitionrun": {
+			"name": "ontransitionrun",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, TransitionEvent>",
+				"Solid Minor": "EventHandlerUnion<T, TransitionEvent>",
+				"Solid Next": "EventHandlerUnion<T, TransitionEvent>"
+			}
+		},
+		"onTransitionStart": {
+			"name": "onTransitionStart",
+			"values": {
+				"Preact": "TransitionEventHandler<Target>",
+				"React": "TransitionEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, TransitionEvent>",
+				"Solid Minor": "EventHandlerUnion<T, TransitionEvent>",
+				"Solid Next": "EventHandlerUnion<T, TransitionEvent>"
+			}
+		},
+		"ontransitionstart": {
+			"name": "ontransitionstart",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, TransitionEvent>",
+				"Solid Minor": "EventHandlerUnion<T, TransitionEvent>",
+				"Solid Next": "EventHandlerUnion<T, TransitionEvent>"
+			}
+		},
+		"onTransitionstart": {
+			"name": "onTransitionstart",
+			"values": {
+				"Vue": "TransitionEvent"
+			}
+		},
+		"onVolumeChange": {
+			"name": "onVolumeChange",
+			"values": {
+				"Preact": "GenericEventHandler<Target>",
+				"React": "ReactEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>",
+				"Voby": "GenericEventHandler<T>"
+			}
+		},
+		"onvolumechange": {
+			"name": "onvolumechange",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"onVolumechange": {
+			"name": "onVolumechange",
+			"values": {
+				"Vue": "Event"
+			}
+		},
+		"onWaiting": {
+			"name": "onWaiting",
+			"values": {
+				"Preact": "GenericEventHandler<Target>",
+				"React": "ReactEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>",
+				"Voby": "GenericEventHandler<T>",
+				"Vue": "Event"
+			}
+		},
+		"onwaiting": {
+			"name": "onwaiting",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"onWheel": {
+			"name": "onWheel",
+			"values": {
+				"Preact": "WheelEventHandler<Target>",
+				"React": "WheelEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, WheelEvent>",
+				"Solid Minor": "EventHandlerUnion<T, WheelEvent>",
+				"Solid Next": "EventHandlerUnion<T, WheelEvent>",
+				"Voby": "WheelEventHandler<T>",
+				"Vue": "WheelEvent"
+			}
+		},
+		"onwheel": {
+			"name": "onwheel",
+			"values": {
+				"Solid Main": "EventHandlerUnion<T, WheelEvent>",
+				"Solid Minor": "EventHandlerUnion<T, WheelEvent>",
+				"Solid Next": "EventHandlerUnion<T, WheelEvent>"
+			}
 		}
 	},
 	"columns": ["Chrome", "Firefox", "Pota", "Solid Main", "Solid Minor", "Solid Next", "Voby", "Vue", "Preact", "React", "VSCode"]

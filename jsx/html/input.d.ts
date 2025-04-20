@@ -119,72 +119,72 @@ interface InputHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface InputHTMLAttributes<T> extends HTMLAttributes<T> {
-	accept?: string | undefined | false
-	alt?: string | undefined | false
-	autocomplete?: 'additional-name' | 'address-level1' | 'address-level2' | 'address-level3' | 'address-level4' | 'address-line1' | 'address-line2' | 'address-line3' | 'bday' | 'bday-day' | 'bday-month' | 'bday-year' | 'billing' | 'cc-additional-name' | 'cc-csc' | 'cc-exp' | 'cc-exp-month' | 'cc-exp-year' | 'cc-family-name' | 'cc-given-name' | 'cc-name' | 'cc-number' | 'cc-type' | 'country' | 'country-name' | 'current-password' | 'email' | 'family-name' | 'fax' | 'given-name' | 'home' | 'honorific-prefix' | 'honorific-suffix' | 'impp' | 'language' | 'mobile' | 'name' | 'new-password' | 'nickname' | 'off' | 'on' | 'organization' | 'organization-title' | 'pager' | 'photo' | 'postal-code' | 'sex' | 'shipping' | 'street-address' | 'tel' | 'tel-area-code' | 'tel-country-code' | 'tel-extension' | 'tel-local' | 'tel-local-prefix' | 'tel-local-suffix' | 'tel-national' | 'transaction-amount' | 'transaction-currency' | 'url' | 'username' | 'work' | (string & {}) | undefined | false
-	autocorrect?: 'on' | 'off' | undefined | false
-	autofocus?: true | false | '' | undefined | false
-	capture?: 'user' | 'environment' | undefined | false
-	checked?: true | false | '' | undefined | false
-	crossorigin?: 'anonymous' | 'use-credentials' | '' | true | undefined | false
-	dirname?: string | undefined | false
-	disabled?: true | false | '' | undefined | false
-	enterkeyhint?: 'enter' | 'done' | 'go' | 'next' | 'previous' | 'search' | 'send' | undefined | false
-	form?: string | undefined | false
-	formaction?: string | undefined | false
-	formenctype?: 'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain' | undefined | false
-	formmethod?: 'post' | 'get' | 'dialog' | undefined | false
-	formnovalidate?: true | false | '' | undefined | false
-	formtarget?: string | undefined | false
-	height?: number | string | undefined | false
-	list?: string | undefined | false
-	max?: number | string | undefined | false
-	maxlength?: number | string | undefined | false
-	min?: number | string | undefined | false
-	minlength?: number | string | undefined | false
-	multiple?: true | false | '' | undefined | false
-	name?: string | undefined | false
-	pattern?: string | undefined | false
-	placeholder?: string | undefined | false
-	popovertarget?: string | undefined | false
-	popovertargetaction?: 'hide' | 'show' | 'toggle' | undefined | false
-	readonly?: true | false | '' | undefined | false
-	required?: true | false | '' | undefined | false
+	accept?: string | false
+	alt?: string | false
+	autocomplete?: 'additional-name' | 'address-level1' | 'address-level2' | 'address-level3' | 'address-level4' | 'address-line1' | 'address-line2' | 'address-line3' | 'bday' | 'bday-day' | 'bday-month' | 'bday-year' | 'billing' | 'cc-additional-name' | 'cc-csc' | 'cc-exp' | 'cc-exp-month' | 'cc-exp-year' | 'cc-family-name' | 'cc-given-name' | 'cc-name' | 'cc-number' | 'cc-type' | 'country' | 'country-name' | 'current-password' | 'email' | 'family-name' | 'fax' | 'given-name' | 'home' | 'honorific-prefix' | 'honorific-suffix' | 'impp' | 'language' | 'mobile' | 'name' | 'new-password' | 'nickname' | 'off' | 'on' | 'organization' | 'organization-title' | 'pager' | 'photo' | 'postal-code' | 'sex' | 'shipping' | 'street-address' | 'tel' | 'tel-area-code' | 'tel-country-code' | 'tel-extension' | 'tel-local' | 'tel-local-prefix' | 'tel-local-suffix' | 'tel-national' | 'transaction-amount' | 'transaction-currency' | 'url' | 'username' | 'work' | (string & {}) | false
+	autocorrect?: 'on' | 'off' | false
+	autofocus?: true | false | '' | false
+	capture?: 'user' | 'environment' | false
+	checked?: true | false | '' | false
+	crossorigin?: 'anonymous' | 'use-credentials' | '' | true | false
+	dirname?: string | false
+	disabled?: true | false | '' | false
+	enterkeyhint?: 'enter' | 'done' | 'go' | 'next' | 'previous' | 'search' | 'send' | false
+	form?: string | false
+	formaction?: string | false
+	formenctype?: 'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain' | false
+	formmethod?: 'post' | 'get' | 'dialog' | false
+	formnovalidate?: true | false | '' | false
+	formtarget?: string | false
+	height?: number | string | false
+	list?: string | false
+	max?: number | string | false
+	maxlength?: number | string | false
+	min?: number | string | false
+	minlength?: number | string | false
+	multiple?: true | false | '' | false
+	name?: string | false
+	pattern?: string | false
+	placeholder?: string | false
+	popovertarget?: string | false
+	popovertargetaction?: 'hide' | 'show' | 'toggle' | false
+	readonly?: true | false | '' | false
+	required?: true | false | '' | false
 	// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/search#results
-	results?: number | undefined | false
-	size?: number | string | undefined | false
-	src?: string | undefined | false
-	step?: number | string | undefined | false
-	type?: 'button' | 'checkbox' | 'color' | 'date' | 'datetime-local' | 'email' | 'file' | 'hidden' | 'image' | 'month' | 'number' | 'password' | 'radio' | 'range' | 'reset' | 'search' | 'submit' | 'tel' | 'text' | 'time' | 'url' | 'week' | (string & {}) | undefined | false
-	value?: string | string[] | number | undefined | false
-	width?: number | string | undefined | false
+	results?: number | false
+	size?: number | string | false
+	src?: string | false
+	step?: number | string | false
+	type?: 'button' | 'checkbox' | 'color' | 'date' | 'datetime-local' | 'email' | 'file' | 'hidden' | 'image' | 'month' | 'number' | 'password' | 'radio' | 'range' | 'reset' | 'search' | 'submit' | 'tel' | 'text' | 'time' | 'url' | 'week' | (string & {}) | false
+	value?: string | string[] | number | false
+	width?: number | string | false
 
 	/** @non-standard */
-	incremental?: true | false | '' | undefined | false
+	incremental?: true | false | '' | false
 
 	/** @deprecated Use lowercase attributes */
-	crossOrigin?: 'anonymous' | 'use-credentials' | '' | true | undefined | false
+	crossOrigin?: 'anonymous' | 'use-credentials' | '' | true | false
 	/** @deprecated Use lowercase attributes */
-	formAction?: string | undefined | false
+	formAction?: string | false
 	/** @deprecated Use lowercase attributes */
-	formEnctype?: 'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain' | undefined | false
+	formEnctype?: 'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain' | false
 	/** @deprecated Use lowercase attributes */
-	formMethod?: 'post' | 'get' | 'dialog' | undefined | false
+	formMethod?: 'post' | 'get' | 'dialog' | false
 	/** @deprecated Use lowercase attributes */
-	formNoValidate?: boolean | undefined | false
+	formNoValidate?: boolean | false
 	/** @deprecated Use lowercase attributes */
-	formTarget?: string | undefined | false
+	formTarget?: string | false
 	/** @deprecated Use lowercase attributes */
-	maxLength?: number | string | undefined | false
+	maxLength?: number | string | false
 	/** @deprecated Use lowercase attributes */
-	minLength?: number | string | undefined | false
+	minLength?: number | string | false
 	/** @deprecated Use lowercase attributes */
-	readOnly?: boolean | undefined | false
+	readOnly?: boolean | false
 
 	/** @deprecated */
-	align?: string | undefined | false
+	align?: string | false
 	/** @deprecated */
-	usemap?: string | undefined | false
+	usemap?: string | false
 }
 
 // Voby - https://github.com/vobyjs/voby
@@ -223,7 +223,7 @@ interface InputHTMLAttributes<T extends EventTarget> extends VoidHTMLAttributes<
 	type?: 'button' | 'checkbox' | 'color' | 'date' | 'datetime-local' | 'email' | 'file' | 'hidden' | 'image' | 'month' | 'number' | 'password' | 'radio' | 'range' | 'reset' | 'search' | 'submit' | 'tel' | 'text' | 'time' | 'url' | 'week'
 	value?: string | readonly string[] | number
 	width?: number | string
-	onChange?: ObservableMaybe<Nullable<KeyboardEventHandler<T>>>
+	onChange?: KeyboardEventHandler<T>
 }
 
 // Vue - https://vuejs.org/

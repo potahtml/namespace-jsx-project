@@ -52,42 +52,42 @@ interface ObjectHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface ObjectHTMLAttributes<T> extends HTMLAttributes<T> {
-	data?: string | undefined | false
-	form?: string | undefined | false
-	height?: number | string | undefined | false
-	name?: string | undefined | false
-	type?: string | undefined | false
-	width?: number | string | undefined | false
+	data?: string | false
+	form?: string | false
+	height?: number | string | false
+	name?: string | false
+	type?: string | false
+	width?: number | string | false
 
 	/** @deprecated Use lowercase attributes */
-	useMap?: string | undefined | false
+	useMap?: string | false
 
 	/** @deprecated */
-	align?: string | undefined | false
+	align?: string | false
 	/** @deprecated */
-	archive?: string | undefined | false
+	archive?: string | false
 	/** @deprecated */
-	border?: string | undefined | false
+	border?: string | false
 	/** @deprecated */
-	classid?: string | undefined | false
+	classid?: string | false
 	/** @deprecated */
-	code?: string | undefined | false
+	code?: string | false
 	/** @deprecated */
-	codebase?: string | undefined | false
+	codebase?: string | false
 	/** @deprecated */
-	codetype?: string | undefined | false
+	codetype?: string | false
 	/** @deprecated */
-	declare?: true | false | '' | undefined | false
+	declare?: true | false | '' | false
 	/** @deprecated */
-	hspace?: number | string | undefined | false
+	hspace?: number | string | false
 	/** @deprecated */
-	standby?: string | undefined | false
+	standby?: string | false
 	/** @deprecated */
-	usemap?: string | undefined | false
+	usemap?: string | false
 	/** @deprecated */
-	vspace?: number | string | undefined | false
+	vspace?: number | string | false
 	/** @deprecated */
-	typemustmatch?: true | false | '' | undefined | false
+	typemustmatch?: true | false | '' | false
 }
 
 // Voby - https://github.com/vobyjs/voby

@@ -15,17 +15,17 @@ interface MathMLAttributes<T> extends HTMLAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface MathMLAttributes<T> extends HTMLAttributes<T> {
-	displaystyle?: true | false | '' | undefined | false
+	displaystyle?: true | false | '' | false
 	/** @deprecated */
-	href?: string | undefined | false
+	href?: string | false
 	/** @deprecated */
-	mathbackground?: string | undefined | false
+	mathbackground?: string | false
 	/** @deprecated */
-	mathcolor?: string | undefined | false
+	mathcolor?: string | false
 	/** @deprecated */
-	mathsize?: string | undefined | false
-	nonce?: string | undefined | false
-	scriptlevel?: string | undefined | false
+	mathsize?: string | false
+	nonce?: string | false
+	scriptlevel?: string | false
 }
 
 // Preact - https://preactjs.com/

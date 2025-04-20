@@ -74,53 +74,53 @@ interface ImgHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface ImgHTMLAttributes<T> extends HTMLAttributes<T> {
-	alt?: string | undefined | false
-	crossorigin?: 'anonymous' | 'use-credentials' | '' | true | undefined | false
-	decoding?: 'sync' | 'async' | 'auto' | undefined | false
-	height?: number | string | undefined | false
-	ismap?: true | false | '' | undefined | false
-	loading?: 'eager' | 'lazy' | undefined | false
-	referrerpolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url' | undefined | false
-	sizes?: string | undefined | false
-	src?: string | undefined | false
-	srcset?: string | undefined | false
-	usemap?: string | undefined | false
-	width?: number | string | undefined | false
-	elementtiming?: string | undefined | false
-	fetchpriority?: 'high' | 'low' | 'auto' | undefined | false
+	alt?: string | false
+	crossorigin?: 'anonymous' | 'use-credentials' | '' | true | false
+	decoding?: 'sync' | 'async' | 'auto' | false
+	height?: number | string | false
+	ismap?: true | false | '' | false
+	loading?: 'eager' | 'lazy' | false
+	referrerpolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url' | false
+	sizes?: string | false
+	src?: string | false
+	srcset?: string | false
+	usemap?: string | false
+	width?: number | string | false
+	elementtiming?: string | false
+	fetchpriority?: 'high' | 'low' | 'auto' | false
 
 	/** @experimental */
-	attributionsrc?: string | undefined | false
+	attributionsrc?: string | false
 	/** @experimental */
-	sharedstoragewritable?: true | false | '' | undefined | false
+	sharedstoragewritable?: true | false | '' | false
 
 	/** @deprecated Use lowercase attributes */
-	crossOrigin?: 'anonymous' | 'use-credentials' | '' | true | undefined | false
+	crossOrigin?: 'anonymous' | 'use-credentials' | '' | true | false
 	/** @deprecated Use lowercase attributes */
-	isMap?: boolean | undefined | false
+	isMap?: boolean | false
 	/** @deprecated Use lowercase attributes */
-	referrerPolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url' | undefined | false
+	referrerPolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url' | false
 	/** @deprecated Use lowercase attributes */
-	srcSet?: string | undefined | false
+	srcSet?: string | false
 	/** @deprecated Use lowercase attributes */
-	useMap?: string | undefined | false
+	useMap?: string | false
 
 	/** @deprecated */
-	align?: 'top' | 'middle' | 'bottom' | 'left' | 'right' | undefined | false
+	align?: 'top' | 'middle' | 'bottom' | 'left' | 'right' | false
 	/** @deprecated */
-	border?: string | undefined | false
+	border?: string | false
 	/** @deprecated */
-	hspace?: number | string | undefined | false
+	hspace?: number | string | false
 	/** @deprecated */
-	intrinsicsize?: string | undefined | false
+	intrinsicsize?: string | false
 	/** @deprecated */
-	longdesc?: string | undefined | false
+	longdesc?: string | false
 	/** @deprecated */
-	lowsrc?: string | undefined | false
+	lowsrc?: string | false
 	/** @deprecated */
-	name?: string | undefined | false
+	name?: string | false
 	/** @deprecated */
-	vspace?: number | string | undefined | false
+	vspace?: number | string | false
 }
 
 // Voby - https://github.com/vobyjs/voby
@@ -177,7 +177,7 @@ interface ImgHTMLAttributes<T extends EventTarget = HTMLImageElement> extends HT
 // React - https://react.dev/
 interface ImgHTMLAttributes<T> extends HTMLAttributes<T> {
 	alt?: string
-	crossOrigin?: 'anonymous' | 'use-credentials' | '' | undefined
+	crossOrigin?: 'anonymous' | 'use-credentials' | ''
 	decoding?: 'async' | 'auto' | 'sync'
 	fetchPriority?: 'high' | 'low' | 'auto'
 	height?: number | string

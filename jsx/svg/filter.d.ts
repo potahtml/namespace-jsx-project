@@ -56,31 +56,31 @@ interface StylableSVGAttributes {
 
 // Solid Next - https://www.solidjs.com/
 interface FilterSVGAttributes<T> extends CoreSVGAttributes<T>, ExternalResourceSVGAttributes, StylableSVGAttributes {
-	filterUnits?: 'userSpaceOnUse' | 'objectBoundingBox' | undefined | false
-	primitiveUnits?: 'userSpaceOnUse' | 'objectBoundingBox' | undefined | false
-	x?: number | string | undefined | false
-	y?: number | string | undefined | false
-	width?: number | string | undefined | false
-	height?: number | string | undefined | false
-	filterRes?: number | string | undefined | false
+	filterUnits?: 'userSpaceOnUse' | 'objectBoundingBox' | false
+	primitiveUnits?: 'userSpaceOnUse' | 'objectBoundingBox' | false
+	x?: number | string | false
+	y?: number | string | false
+	width?: number | string | false
+	height?: number | string | false
+	filterRes?: number | string | false
 }
 
 interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
-	id?: string | undefined | false
-	lang?: string | undefined | false
-	tabindex?: number | string | undefined | false
+	id?: string | false
+	lang?: string | false
+	tabindex?: number | string | false
 
 	/** @deprecated Use lowercase attributes */
-	tabIndex?: number | string | undefined | false
+	tabIndex?: number | string | false
 }
 
 interface ExternalResourceSVGAttributes {
-	externalResourcesRequired?: 'false' | 'true' | undefined | false
+	externalResourcesRequired?: 'false' | 'true' | false
 }
 
 interface StylableSVGAttributes {
-	class?: string | ClassList | undefined | false
-	style?: CSSProperties | string | undefined | false
+	class?: string | ClassList | false
+	style?: CSSProperties | string | false
 }
 
 // React - https://react.dev/

@@ -34,21 +34,21 @@ interface AreaHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface AreaHTMLAttributes<T> extends HTMLAttributes<T> {
-	alt?: string | undefined | false
-	coords?: string | undefined | false
-	download?: string | undefined | false
-	href?: string | undefined | false
-	ping?: string | undefined | false
-	referrerpolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url' | undefined | false
-	rel?: string | undefined | false
-	shape?: 'rect' | 'circle' | 'poly' | 'default' | undefined | false
-	target?: '_self' | '_blank' | '_parent' | '_top' | (string & {}) | undefined | false
+	alt?: string | false
+	coords?: string | false
+	download?: string | false
+	href?: string | false
+	ping?: string | false
+	referrerpolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url' | false
+	rel?: string | false
+	shape?: 'rect' | 'circle' | 'poly' | 'default' | false
+	target?: '_self' | '_blank' | '_parent' | '_top' | (string & {}) | false
 
 	/** @deprecated Use lowercase attributes */
-	referrerPolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url' | undefined | false
+	referrerPolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url' | false
 
 	/** @deprecated */
-	nohref?: true | false | '' | undefined | false
+	nohref?: true | false | '' | false
 }
 
 // Voby - https://github.com/vobyjs/voby

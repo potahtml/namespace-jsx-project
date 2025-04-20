@@ -12,8 +12,8 @@ interface BaseHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface BaseHTMLAttributes<T> extends HTMLAttributes<T> {
-	href?: string | undefined | false
-	target?: '_self' | '_blank' | '_parent' | '_top' | (string & {}) | undefined | false
+	href?: string | false
+	target?: '_self' | '_blank' | '_parent' | '_top' | (string & {}) | false
 }
 
 // Voby - https://github.com/vobyjs/voby

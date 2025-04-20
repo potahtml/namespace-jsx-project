@@ -66,36 +66,36 @@ interface StylableSVGAttributes {
 
 // Solid Next - https://www.solidjs.com/
 interface RadialGradientSVGAttributes<T> extends GradientElementSVGAttributes<T> {
-	cx?: number | string | undefined | false
-	cy?: number | string | undefined | false
-	r?: number | string | undefined | false
-	fx?: number | string | undefined | false
-	fy?: number | string | undefined | false
+	cx?: number | string | false
+	cy?: number | string | false
+	r?: number | string | false
+	fx?: number | string | false
+	fy?: number | string | false
 }
 
 interface GradientElementSVGAttributes<T> extends CoreSVGAttributes<T>, ExternalResourceSVGAttributes, StylableSVGAttributes {
-	gradientUnits?: 'userSpaceOnUse' | 'objectBoundingBox' | undefined | false
-	gradientTransform?: string | undefined | false
-	spreadMethod?: 'pad' | 'reflect' | 'repeat' | undefined | false
-	href?: string | undefined | false
+	gradientUnits?: 'userSpaceOnUse' | 'objectBoundingBox' | false
+	gradientTransform?: string | false
+	spreadMethod?: 'pad' | 'reflect' | 'repeat' | false
+	href?: string | false
 }
 
 interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
-	id?: string | undefined | false
-	lang?: string | undefined | false
-	tabindex?: number | string | undefined | false
+	id?: string | false
+	lang?: string | false
+	tabindex?: number | string | false
 
 	/** @deprecated Use lowercase attributes */
-	tabIndex?: number | string | undefined | false
+	tabIndex?: number | string | false
 }
 
 interface ExternalResourceSVGAttributes {
-	externalResourcesRequired?: 'false' | 'true' | undefined | false
+	externalResourcesRequired?: 'false' | 'true' | false
 }
 
 interface StylableSVGAttributes {
-	class?: string | ClassList | undefined | false
-	style?: CSSProperties | string | undefined | false
+	class?: string | ClassList | false
+	style?: CSSProperties | string | false
 }
 
 // React - https://react.dev/

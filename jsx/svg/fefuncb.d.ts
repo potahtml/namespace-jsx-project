@@ -38,22 +38,22 @@ interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface FeFuncSVGAttributes<T> extends CoreSVGAttributes<T> {
-	type?: 'identity' | 'table' | 'discrete' | 'linear' | 'gamma' | undefined | false
-	tableValues?: string | undefined | false
-	slope?: number | string | undefined | false
-	intercept?: number | string | undefined | false
-	amplitude?: number | string | undefined | false
-	exponent?: number | string | undefined | false
-	offset?: number | string | undefined | false
+	type?: 'identity' | 'table' | 'discrete' | 'linear' | 'gamma' | false
+	tableValues?: string | false
+	slope?: number | string | false
+	intercept?: number | string | false
+	amplitude?: number | string | false
+	exponent?: number | string | false
+	offset?: number | string | false
 }
 
 interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
-	id?: string | undefined | false
-	lang?: string | undefined | false
-	tabindex?: number | string | undefined | false
+	id?: string | false
+	lang?: string | false
+	tabindex?: number | string | false
 
 	/** @deprecated Use lowercase attributes */
-	tabIndex?: number | string | undefined | false
+	tabIndex?: number | string | false
 }
 
 // React - https://react.dev/

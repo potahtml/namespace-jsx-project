@@ -22,13 +22,13 @@ interface MeterHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface MeterHTMLAttributes<T> extends HTMLAttributes<T> {
-	form?: string | undefined | false
-	high?: number | string | undefined | false
-	low?: number | string | undefined | false
-	max?: number | string | undefined | false
-	min?: number | string | undefined | false
-	optimum?: number | string | undefined | false
-	value?: string | string[] | number | undefined | false
+	form?: string | false
+	high?: number | string | false
+	low?: number | string | false
+	max?: number | string | false
+	min?: number | string | false
+	optimum?: number | string | false
+	value?: string | string[] | number | false
 }
 
 // Voby - https://github.com/vobyjs/voby

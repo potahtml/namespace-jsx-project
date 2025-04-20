@@ -31,17 +31,17 @@ interface StylableSVGAttributes {
 // Solid Next - https://www.solidjs.com/
 interface DescSVGAttributes<T> extends CoreSVGAttributes<T>, StylableSVGAttributes {}
 interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
-	id?: string | undefined | false
-	lang?: string | undefined | false
-	tabindex?: number | string | undefined | false
+	id?: string | false
+	lang?: string | false
+	tabindex?: number | string | false
 
 	/** @deprecated Use lowercase attributes */
-	tabIndex?: number | string | undefined | false
+	tabIndex?: number | string | false
 }
 
 interface StylableSVGAttributes {
-	class?: string | ClassList | undefined | false
-	style?: CSSProperties | string | undefined | false
+	class?: string | ClassList | false
+	style?: CSSProperties | string | false
 }
 
 // React - https://react.dev/

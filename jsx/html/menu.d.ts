@@ -17,11 +17,11 @@ interface MenuHTMLAttributes<T> extends HTMLAttributes<T> {
 // Solid Next - https://www.solidjs.com/
 interface MenuHTMLAttributes<T> extends HTMLAttributes<T> {
 	/** @deprecated */
-	compact?: true | false | '' | undefined | false
+	compact?: true | false | '' | false
 	/** @deprecated */
-	label?: string | undefined | false
+	label?: string | false
 	/** @deprecated */
-	type?: 'context' | 'toolbar' | undefined | false
+	type?: 'context' | 'toolbar' | false
 }
 
 // Voby - https://github.com/vobyjs/voby

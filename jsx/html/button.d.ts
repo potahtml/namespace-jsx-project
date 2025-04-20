@@ -61,39 +61,39 @@ interface ButtonHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface ButtonHTMLAttributes<T> extends HTMLAttributes<T> {
-	autofocus?: true | false | '' | undefined | false
-	disabled?: true | false | '' | undefined | false
-	form?: string | undefined | false
-	formaction?: string | undefined | false
-	formenctype?: 'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain' | undefined | false
-	formmethod?: 'post' | 'get' | 'dialog' | undefined | false
-	formnovalidate?: true | false | '' | undefined | false
-	formtarget?: '_self' | '_blank' | '_parent' | '_top' | (string & {}) | undefined | false
-	popovertarget?: string | undefined | false
-	popovertargetaction?: 'hide' | 'show' | 'toggle' | undefined | false
-	name?: string | undefined | false
-	type?: 'submit' | 'reset' | 'button' | 'menu' | undefined | false
-	value?: string | undefined | false
+	autofocus?: true | false | '' | false
+	disabled?: true | false | '' | false
+	form?: string | false
+	formaction?: string | false
+	formenctype?: 'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain' | false
+	formmethod?: 'post' | 'get' | 'dialog' | false
+	formnovalidate?: true | false | '' | false
+	formtarget?: '_self' | '_blank' | '_parent' | '_top' | (string & {}) | false
+	popovertarget?: string | false
+	popovertargetaction?: 'hide' | 'show' | 'toggle' | false
+	name?: string | false
+	type?: 'submit' | 'reset' | 'button' | 'menu' | false
+	value?: string | false
 
 	/** @experimental */
-	command?: 'show-modal' | 'close' | 'show-popover' | 'hide-popover' | 'toggle-popover' | (string & {}) | undefined | false
+	command?: 'show-modal' | 'close' | 'show-popover' | 'hide-popover' | 'toggle-popover' | (string & {}) | false
 	/** @experimental */
-	commandfor?: string | undefined | false
+	commandfor?: string | false
 
 	/** @deprecated Use lowercase attributes */
-	formAction?: string | undefined | false
+	formAction?: string | false
 	/** @deprecated Use lowercase attributes */
-	formEnctype?: 'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain' | undefined | false
+	formEnctype?: 'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain' | false
 	/** @deprecated Use lowercase attributes */
-	formMethod?: 'post' | 'get' | 'dialog' | undefined | false
+	formMethod?: 'post' | 'get' | 'dialog' | false
 	/** @deprecated Use lowercase attributes */
-	formNoValidate?: boolean | undefined | false
+	formNoValidate?: boolean | false
 	/** @deprecated Use lowercase attributes */
-	formTarget?: string | undefined | false
+	formTarget?: string | false
 	/** @deprecated Use lowercase attributes */
-	popoverTarget?: string | undefined | false
+	popoverTarget?: string | false
 	/** @deprecated Use lowercase attributes */
-	popoverTargetAction?: 'hide' | 'show' | 'toggle' | undefined | false
+	popoverTargetAction?: 'hide' | 'show' | 'toggle' | false
 }
 
 // Voby - https://github.com/vobyjs/voby

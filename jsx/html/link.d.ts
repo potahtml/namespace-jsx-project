@@ -51,33 +51,33 @@ interface LinkHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface LinkHTMLAttributes<T> extends HTMLAttributes<T> {
-	as?: 'audio' | 'document' | 'embed' | 'fetch' | 'font' | 'image' | 'object' | 'script' | 'style' | 'track' | 'video' | 'worker' | undefined | false
-	blocking?: 'render' | undefined | false
-	crossorigin?: 'anonymous' | 'use-credentials' | '' | true | undefined | false
-	disabled?: true | false | '' | undefined | false
-	fetchpriority?: 'high' | 'low' | 'auto' | undefined | false
-	href?: string | undefined | false
-	hreflang?: string | undefined | false
-	imagesizes?: string | undefined | false
-	imagesrcset?: string | undefined | false
-	integrity?: string | undefined | false
-	media?: string | undefined | false
-	referrerpolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url' | undefined | false
-	rel?: string | undefined | false
-	sizes?: string | undefined | false
-	type?: string | undefined | false
+	as?: 'audio' | 'document' | 'embed' | 'fetch' | 'font' | 'image' | 'object' | 'script' | 'style' | 'track' | 'video' | 'worker' | false
+	blocking?: 'render' | false
+	crossorigin?: 'anonymous' | 'use-credentials' | '' | true | false
+	disabled?: true | false | '' | false
+	fetchpriority?: 'high' | 'low' | 'auto' | false
+	href?: string | false
+	hreflang?: string | false
+	imagesizes?: string | false
+	imagesrcset?: string | false
+	integrity?: string | false
+	media?: string | false
+	referrerpolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url' | false
+	rel?: string | false
+	sizes?: string | false
+	type?: string | false
 
 	/** @deprecated Use lowercase attributes */
-	crossOrigin?: 'anonymous' | 'use-credentials' | '' | true | undefined | false
+	crossOrigin?: 'anonymous' | 'use-credentials' | '' | true | false
 	/** @deprecated Use lowercase attributes */
-	referrerPolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url' | undefined | false
+	referrerPolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url' | false
 
 	/** @deprecated */
-	charset?: string | undefined | false
+	charset?: string | false
 	/** @deprecated */
-	rev?: string | undefined | false
+	rev?: string | false
 	/** @deprecated */
-	target?: string | undefined | false
+	target?: string | false
 }
 
 // Voby - https://github.com/vobyjs/voby
@@ -136,7 +136,7 @@ interface LinkHTMLAttributes<T extends EventTarget = HTMLLinkElement> extends HT
 // React - https://react.dev/
 interface LinkHTMLAttributes<T> extends HTMLAttributes<T> {
 	as?: string
-	crossOrigin?: 'anonymous' | 'use-credentials' | '' | undefined
+	crossOrigin?: 'anonymous' | 'use-credentials' | ''
 	fetchPriority?: 'high' | 'low' | 'auto'
 	href?: string
 	hrefLang?: string

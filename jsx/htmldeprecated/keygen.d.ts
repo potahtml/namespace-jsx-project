@@ -30,19 +30,19 @@ interface KeygenHTMLAttributes<T> extends HTMLAttributes<T> {
 // Solid Next - https://www.solidjs.com/
 interface KeygenHTMLAttributes<T> extends HTMLAttributes<T> {
 	/** @deprecated */
-	autofocus?: true | false | '' | undefined | false
+	autofocus?: true | false | '' | false
 	/** @deprecated */
-	challenge?: string | undefined | false
+	challenge?: string | false
 	/** @deprecated */
-	disabled?: true | false | '' | undefined | false
+	disabled?: true | false | '' | false
 	/** @deprecated */
-	form?: string | undefined | false
+	form?: string | false
 	/** @deprecated */
-	keyparams?: string | undefined | false
+	keyparams?: string | false
 	/** @deprecated */
-	keytype?: string | undefined | false
+	keytype?: string | false
 	/** @deprecated */
-	name?: string | undefined | false
+	name?: string | false
 }
 
 // Voby - https://github.com/vobyjs/voby

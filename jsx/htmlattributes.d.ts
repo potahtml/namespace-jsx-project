@@ -119,67 +119,67 @@ interface HTMLAttributes<T> extends AriaAttributes, DOMAttributes<T> {
 // Solid Next - https://www.solidjs.com/
 interface HTMLAttributes<T> extends AriaAttributes, DOMAttributes<T> {
 	// [key: ClassKeys]: boolean;
-	about?: string | undefined | false
-	accesskey?: string | undefined | false
-	autocapitalize?: 'off' | 'none' | 'on' | 'sentences' | 'words' | 'characters' | undefined | false
-	class?: string | ClassList | undefined | false
-	color?: string | undefined | false
-	contenteditable?: 'false' | 'true' | '' | true | 'plaintext-only' | 'inherit' | undefined | false
-	contextmenu?: string | undefined | false
-	datatype?: string | undefined | false
-	dir?: 'ltr' | 'rtl' | 'auto' | undefined | false
-	draggable?: 'false' | 'true' | undefined | false
-	exportparts?: string | undefined | false
-	hidden?: '' | true | 'hidden' | 'until-found' | undefined | false
-	id?: string | undefined | false
-	inert?: true | false | '' | undefined | false
-	inlist?: any | undefined | false
-	inputmode?: 'decimal' | 'email' | 'none' | 'numeric' | 'search' | 'tel' | 'text' | 'url' | undefined | false
-	is?: string | undefined | false
-	itemid?: string | undefined | false
-	itemprop?: string | undefined | false
-	itemref?: string | undefined | false
-	itemscope?: true | false | '' | undefined | false
-	itemtype?: string | undefined | false
-	lang?: string | undefined | false
-	part?: string | undefined | false
-	popover?: '' | true | 'manual' | 'auto' | undefined | false
-	prefix?: string | undefined | false
-	property?: string | undefined | false
-	resource?: string | undefined | false
-	slot?: string | undefined | false
-	spellcheck?: 'false' | 'true' | '' | true | undefined | false
-	style?: CSSProperties | string | undefined | false
-	tabindex?: number | string | undefined | false
-	title?: string | undefined | false
-	translate?: 'yes' | 'no' | undefined | false
-	typeof?: string | undefined | false
-	vocab?: string | undefined | false
+	about?: string | false
+	accesskey?: string | false
+	autocapitalize?: 'off' | 'none' | 'on' | 'sentences' | 'words' | 'characters' | false
+	class?: string | ClassList | false
+	color?: string | false
+	contenteditable?: 'false' | 'true' | '' | true | 'plaintext-only' | 'inherit' | false
+	contextmenu?: string | false
+	datatype?: string | false
+	dir?: 'ltr' | 'rtl' | 'auto' | false
+	draggable?: 'false' | 'true' | false
+	exportparts?: string | false
+	hidden?: '' | true | 'hidden' | 'until-found' | false
+	id?: string | false
+	inert?: true | false | '' | false
+	inlist?: any | false
+	inputmode?: 'decimal' | 'email' | 'none' | 'numeric' | 'search' | 'tel' | 'text' | 'url' | false
+	is?: string | false
+	itemid?: string | false
+	itemprop?: string | false
+	itemref?: string | false
+	itemscope?: true | false | '' | false
+	itemtype?: string | false
+	lang?: string | false
+	part?: string | false
+	popover?: '' | true | 'manual' | 'auto' | false
+	prefix?: string | false
+	property?: string | false
+	resource?: string | false
+	slot?: string | false
+	spellcheck?: 'false' | 'true' | '' | true | false
+	style?: CSSProperties | string | false
+	tabindex?: number | string | false
+	title?: string | false
+	translate?: 'yes' | 'no' | false
+	typeof?: string | false
+	vocab?: string | false
 
 	/** @deprecated Use lowercase attributes */
-	accessKey?: string | undefined | false
+	accessKey?: string | false
 	/** @deprecated Use lowercase attributes */
-	autoCapitalize?: 'off' | 'none' | 'on' | 'sentences' | 'words' | 'characters' | undefined | false
+	autoCapitalize?: 'off' | 'none' | 'on' | 'sentences' | 'words' | 'characters' | false
 	/** @deprecated Use lowercase attributes */
-	contentEditable?: 'false' | 'true' | 'plaintext-only' | 'inherit' | undefined | false
+	contentEditable?: 'false' | 'true' | 'plaintext-only' | 'inherit' | false
 	/** @deprecated Use lowercase attributes */
-	contextMenu?: string | undefined | false
+	contextMenu?: string | false
 	/** @deprecated Use lowercase attributes */
-	exportParts?: string | undefined | false
+	exportParts?: string | false
 	/** @deprecated Use lowercase attributes */
-	inputMode?: 'none' | 'text' | 'tel' | 'url' | 'email' | 'numeric' | 'decimal' | 'search' | undefined | false
+	inputMode?: 'none' | 'text' | 'tel' | 'url' | 'email' | 'numeric' | 'decimal' | 'search' | false
 	/** @deprecated Use lowercase attributes */
-	itemId?: string | undefined | false
+	itemId?: string | false
 	/** @deprecated Use lowercase attributes */
-	itemProp?: string | undefined | false
+	itemProp?: string | false
 	/** @deprecated Use lowercase attributes */
-	itemRef?: string | undefined | false
+	itemRef?: string | false
 	/** @deprecated Use lowercase attributes */
-	itemScope?: true | false | '' | undefined | false
+	itemScope?: true | false | '' | false
 	/** @deprecated Use lowercase attributes */
-	itemType?: string | undefined | false
+	itemType?: string | false
 	/** @deprecated Use lowercase attributes */
-	tabIndex?: number | string | undefined | false
+	tabIndex?: number | string | false
 }
 
 // Voby - https://github.com/vobyjs/voby

@@ -43,31 +43,31 @@ interface AnchorHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface AnchorHTMLAttributes<T> extends HTMLAttributes<T> {
-	download?: string | undefined | false
-	href?: string | undefined | false
-	hreflang?: string | undefined | false
-	ping?: string | undefined | false
-	referrerpolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url' | undefined | false
-	rel?: string | undefined | false
-	target?: '_self' | '_blank' | '_parent' | '_top' | (string & {}) | undefined | false
-	type?: string | undefined | false
+	download?: string | false
+	href?: string | false
+	hreflang?: string | false
+	ping?: string | false
+	referrerpolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url' | false
+	rel?: string | false
+	target?: '_self' | '_blank' | '_parent' | '_top' | (string & {}) | false
+	type?: string | false
 
 	/** @experimental */
-	attributionsrc?: string | undefined | false
+	attributionsrc?: string | false
 
 	/** @deprecated Use lowercase attributes */
-	referrerPolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url' | undefined | false
+	referrerPolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url' | false
 
 	/** @deprecated */
-	charset?: string | undefined | false
+	charset?: string | false
 	/** @deprecated */
-	coords?: string | undefined | false
+	coords?: string | false
 	/** @deprecated */
-	name?: string | undefined | false
+	name?: string | false
 	/** @deprecated */
-	rev?: string | undefined | false
+	rev?: string | false
 	/** @deprecated */
-	shape?: 'rect' | 'circle' | 'poly' | 'default' | undefined | false
+	shape?: 'rect' | 'circle' | 'poly' | 'default' | false
 }
 
 // Voby - https://github.com/vobyjs/voby

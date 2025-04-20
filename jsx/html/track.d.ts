@@ -35,7 +35,7 @@ interface TrackHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface TrackHTMLAttributes<T> extends HTMLAttributes<T> {
-	default?: true | false | '' | undefined | false
+	default?: true | false | '' | false
 	kind?: // MDN
 	| 'alternative'
 		| 'descriptions'
@@ -48,16 +48,15 @@ interface TrackHTMLAttributes<T> extends HTMLAttributes<T> {
 		| 'captions'
 		| 'chapters'
 		| 'metadata'
-		| undefined
 		| false
-	label?: string | undefined | false
-	src?: string | undefined | false
-	srclang?: string | undefined | false
+	label?: string | false
+	src?: string | false
+	srclang?: string | false
 
 	/** @deprecated Use lowercase attributes */
-	mediaGroup?: string | undefined | false
+	mediaGroup?: string | false
 	/** @deprecated */
-	mediagroup?: string | undefined | false
+	mediagroup?: string | false
 }
 
 // Voby - https://github.com/vobyjs/voby

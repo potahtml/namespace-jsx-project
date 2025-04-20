@@ -12,8 +12,8 @@ interface OptgroupHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface OptgroupHTMLAttributes<T> extends HTMLAttributes<T> {
-	disabled?: true | false | '' | undefined | false
-	label?: string | undefined | false
+	disabled?: true | false | '' | false
+	label?: string | false
 }
 
 // Voby - https://github.com/vobyjs/voby

@@ -30,18 +30,18 @@ interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface FeDistantLightSVGAttributes<T> extends LightSourceElementSVGAttributes<T> {
-	azimuth?: number | string | undefined | false
-	elevation?: number | string | undefined | false
+	azimuth?: number | string | false
+	elevation?: number | string | false
 }
 
 interface LightSourceElementSVGAttributes<T> extends CoreSVGAttributes<T> {}
 interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
-	id?: string | undefined | false
-	lang?: string | undefined | false
-	tabindex?: number | string | undefined | false
+	id?: string | false
+	lang?: string | false
+	tabindex?: number | string | false
 
 	/** @deprecated Use lowercase attributes */
-	tabIndex?: number | string | undefined | false
+	tabIndex?: number | string | false
 }
 
 // React - https://react.dev/

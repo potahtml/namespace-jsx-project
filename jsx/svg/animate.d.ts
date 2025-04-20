@@ -236,118 +236,118 @@ interface ConditionalProcessingSVGAttributes {
 interface AnimateSVGAttributes<T> extends AnimationElementSVGAttributes<T>, AnimationAttributeTargetSVGAttributes, AnimationTimingSVGAttributes, AnimationValueSVGAttributes, AnimationAdditionSVGAttributes, Pick<PresentationSVGAttributes, 'color-interpolation' | 'color-rendering'> {}
 interface AnimationElementSVGAttributes<T> extends CoreSVGAttributes<T>, ExternalResourceSVGAttributes, ConditionalProcessingSVGAttributes {}
 interface AnimationAttributeTargetSVGAttributes {
-	attributeName?: string | undefined | false
-	attributeType?: 'CSS' | 'XML' | 'auto' | undefined | false
+	attributeName?: string | false
+	attributeType?: 'CSS' | 'XML' | 'auto' | false
 }
 
 interface AnimationTimingSVGAttributes {
-	begin?: string | undefined | false
-	dur?: string | undefined | false
-	end?: string | undefined | false
-	min?: string | undefined | false
-	max?: string | undefined | false
-	restart?: 'always' | 'whenNotActive' | 'never' | undefined | false
-	repeatCount?: number | 'indefinite' | undefined | false
-	repeatDur?: string | undefined | false
-	fill?: 'freeze' | 'remove' | undefined | false
+	begin?: string | false
+	dur?: string | false
+	end?: string | false
+	min?: string | false
+	max?: string | false
+	restart?: 'always' | 'whenNotActive' | 'never' | false
+	repeatCount?: number | 'indefinite' | false
+	repeatDur?: string | false
+	fill?: 'freeze' | 'remove' | false
 }
 
 interface AnimationValueSVGAttributes {
-	calcMode?: 'discrete' | 'linear' | 'paced' | 'spline' | undefined | false
-	values?: string | undefined | false
-	keyTimes?: string | undefined | false
-	keySplines?: string | undefined | false
-	from?: number | string | undefined | false
-	to?: number | string | undefined | false
-	by?: number | string | undefined | false
+	calcMode?: 'discrete' | 'linear' | 'paced' | 'spline' | false
+	values?: string | false
+	keyTimes?: string | false
+	keySplines?: string | false
+	from?: number | string | false
+	to?: number | string | false
+	by?: number | string | false
 }
 
 interface AnimationAdditionSVGAttributes {
-	attributeName?: string | undefined | false
-	additive?: 'replace' | 'sum' | undefined | false
-	accumulate?: 'none' | 'sum' | undefined | false
+	attributeName?: string | false
+	additive?: 'replace' | 'sum' | false
+	accumulate?: 'none' | 'sum' | false
 }
 
 interface PresentationSVGAttributes {
-	'alignment-baseline'?: 'auto' | 'baseline' | 'before-edge' | 'text-before-edge' | 'middle' | 'central' | 'after-edge' | 'text-after-edge' | 'ideographic' | 'alphabetic' | 'hanging' | 'mathematical' | 'inherit' | undefined | false
-	'baseline-shift'?: number | string | undefined | false
-	clip?: string | undefined | false
-	'clip-path'?: string | undefined | false
-	'clip-rule'?: 'nonzero' | 'evenodd' | 'inherit' | undefined | false
-	color?: string | undefined | false
-	'color-interpolation'?: 'auto' | 'sRGB' | 'linearRGB' | 'inherit' | undefined | false
-	'color-interpolation-filters'?: 'auto' | 'sRGB' | 'linearRGB' | 'inherit' | undefined | false
-	'color-profile'?: string | undefined | false
-	'color-rendering'?: 'auto' | 'optimizeSpeed' | 'optimizeQuality' | 'inherit' | undefined | false
-	cursor?: string | undefined | false
-	direction?: 'ltr' | 'rtl' | 'inherit' | undefined | false
-	display?: string | undefined | false
-	'dominant-baseline'?: 'auto' | 'text-bottom' | 'alphabetic' | 'ideographic' | 'middle' | 'central' | 'mathematical' | 'hanging' | 'text-top' | 'inherit' | undefined | false
-	'enable-background'?: string | undefined | false
-	fill?: string | undefined | false
-	'fill-opacity'?: number | string | 'inherit' | undefined | false
-	'fill-rule'?: 'nonzero' | 'evenodd' | 'inherit' | undefined | false
-	filter?: string | undefined | false
-	'flood-color'?: string | undefined | false
-	'flood-opacity'?: number | string | 'inherit' | undefined | false
-	'font-family'?: string | undefined | false
-	'font-size'?: string | undefined | false
-	'font-size-adjust'?: number | string | undefined | false
-	'font-stretch'?: string | undefined | false
-	'font-style'?: 'normal' | 'italic' | 'oblique' | 'inherit' | undefined | false
-	'font-variant'?: string | undefined | false
-	'font-weight'?: number | string | undefined | false
-	'glyph-orientation-horizontal'?: string | undefined | false
-	'glyph-orientation-vertical'?: string | undefined | false
-	'image-rendering'?: 'auto' | 'optimizeQuality' | 'optimizeSpeed' | 'inherit' | undefined | false
-	kerning?: string | undefined | false
-	'letter-spacing'?: number | string | undefined | false
-	'lighting-color'?: string | undefined | false
-	'marker-end'?: string | undefined | false
-	'marker-mid'?: string | undefined | false
-	'marker-start'?: string | undefined | false
-	mask?: string | undefined | false
-	opacity?: number | string | 'inherit' | undefined | false
-	overflow?: 'visible' | 'hidden' | 'scroll' | 'auto' | 'inherit' | undefined | false
-	pathLength?: string | number | undefined | false
-	'pointer-events'?: 'bounding-box' | 'visiblePainted' | 'visibleFill' | 'visibleStroke' | 'visible' | 'painted' | 'color' | 'fill' | 'stroke' | 'all' | 'none' | 'inherit' | undefined | false
-	'shape-rendering'?: 'auto' | 'optimizeSpeed' | 'crispEdges' | 'geometricPrecision' | 'inherit' | undefined | false
-	'stop-color'?: string | undefined | false
-	'stop-opacity'?: number | string | 'inherit' | undefined | false
-	stroke?: string | undefined | false
-	'stroke-dasharray'?: string | undefined | false
-	'stroke-dashoffset'?: number | string | undefined | false
-	'stroke-linecap'?: 'butt' | 'round' | 'square' | 'inherit' | undefined | false
-	'stroke-linejoin'?: 'arcs' | 'bevel' | 'miter' | 'miter-clip' | 'round' | 'inherit' | undefined | false
-	'stroke-miterlimit'?: number | string | 'inherit' | undefined | false
-	'stroke-opacity'?: number | string | 'inherit' | undefined | false
-	'stroke-width'?: number | string | undefined | false
-	'text-anchor'?: 'start' | 'middle' | 'end' | 'inherit' | undefined | false
-	'text-decoration'?: 'none' | 'underline' | 'overline' | 'line-through' | 'blink' | 'inherit' | undefined | false
-	'text-rendering'?: 'auto' | 'optimizeSpeed' | 'optimizeLegibility' | 'geometricPrecision' | 'inherit' | undefined | false
-	'unicode-bidi'?: string | undefined | false
-	visibility?: 'visible' | 'hidden' | 'collapse' | 'inherit' | undefined | false
-	'word-spacing'?: number | string | undefined | false
-	'writing-mode'?: 'lr-tb' | 'rl-tb' | 'tb-rl' | 'lr' | 'rl' | 'tb' | 'inherit' | undefined | false
+	'alignment-baseline'?: 'auto' | 'baseline' | 'before-edge' | 'text-before-edge' | 'middle' | 'central' | 'after-edge' | 'text-after-edge' | 'ideographic' | 'alphabetic' | 'hanging' | 'mathematical' | 'inherit' | false
+	'baseline-shift'?: number | string | false
+	clip?: string | false
+	'clip-path'?: string | false
+	'clip-rule'?: 'nonzero' | 'evenodd' | 'inherit' | false
+	color?: string | false
+	'color-interpolation'?: 'auto' | 'sRGB' | 'linearRGB' | 'inherit' | false
+	'color-interpolation-filters'?: 'auto' | 'sRGB' | 'linearRGB' | 'inherit' | false
+	'color-profile'?: string | false
+	'color-rendering'?: 'auto' | 'optimizeSpeed' | 'optimizeQuality' | 'inherit' | false
+	cursor?: string | false
+	direction?: 'ltr' | 'rtl' | 'inherit' | false
+	display?: string | false
+	'dominant-baseline'?: 'auto' | 'text-bottom' | 'alphabetic' | 'ideographic' | 'middle' | 'central' | 'mathematical' | 'hanging' | 'text-top' | 'inherit' | false
+	'enable-background'?: string | false
+	fill?: string | false
+	'fill-opacity'?: number | string | 'inherit' | false
+	'fill-rule'?: 'nonzero' | 'evenodd' | 'inherit' | false
+	filter?: string | false
+	'flood-color'?: string | false
+	'flood-opacity'?: number | string | 'inherit' | false
+	'font-family'?: string | false
+	'font-size'?: string | false
+	'font-size-adjust'?: number | string | false
+	'font-stretch'?: string | false
+	'font-style'?: 'normal' | 'italic' | 'oblique' | 'inherit' | false
+	'font-variant'?: string | false
+	'font-weight'?: number | string | false
+	'glyph-orientation-horizontal'?: string | false
+	'glyph-orientation-vertical'?: string | false
+	'image-rendering'?: 'auto' | 'optimizeQuality' | 'optimizeSpeed' | 'inherit' | false
+	kerning?: string | false
+	'letter-spacing'?: number | string | false
+	'lighting-color'?: string | false
+	'marker-end'?: string | false
+	'marker-mid'?: string | false
+	'marker-start'?: string | false
+	mask?: string | false
+	opacity?: number | string | 'inherit' | false
+	overflow?: 'visible' | 'hidden' | 'scroll' | 'auto' | 'inherit' | false
+	pathLength?: string | number | false
+	'pointer-events'?: 'bounding-box' | 'visiblePainted' | 'visibleFill' | 'visibleStroke' | 'visible' | 'painted' | 'color' | 'fill' | 'stroke' | 'all' | 'none' | 'inherit' | false
+	'shape-rendering'?: 'auto' | 'optimizeSpeed' | 'crispEdges' | 'geometricPrecision' | 'inherit' | false
+	'stop-color'?: string | false
+	'stop-opacity'?: number | string | 'inherit' | false
+	stroke?: string | false
+	'stroke-dasharray'?: string | false
+	'stroke-dashoffset'?: number | string | false
+	'stroke-linecap'?: 'butt' | 'round' | 'square' | 'inherit' | false
+	'stroke-linejoin'?: 'arcs' | 'bevel' | 'miter' | 'miter-clip' | 'round' | 'inherit' | false
+	'stroke-miterlimit'?: number | string | 'inherit' | false
+	'stroke-opacity'?: number | string | 'inherit' | false
+	'stroke-width'?: number | string | false
+	'text-anchor'?: 'start' | 'middle' | 'end' | 'inherit' | false
+	'text-decoration'?: 'none' | 'underline' | 'overline' | 'line-through' | 'blink' | 'inherit' | false
+	'text-rendering'?: 'auto' | 'optimizeSpeed' | 'optimizeLegibility' | 'geometricPrecision' | 'inherit' | false
+	'unicode-bidi'?: string | false
+	visibility?: 'visible' | 'hidden' | 'collapse' | 'inherit' | false
+	'word-spacing'?: number | string | false
+	'writing-mode'?: 'lr-tb' | 'rl-tb' | 'tb-rl' | 'lr' | 'rl' | 'tb' | 'inherit' | false
 }
 
 interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
-	id?: string | undefined | false
-	lang?: string | undefined | false
-	tabindex?: number | string | undefined | false
+	id?: string | false
+	lang?: string | false
+	tabindex?: number | string | false
 
 	/** @deprecated Use lowercase attributes */
-	tabIndex?: number | string | undefined | false
+	tabIndex?: number | string | false
 }
 
 interface ExternalResourceSVGAttributes {
-	externalResourcesRequired?: 'false' | 'true' | undefined | false
+	externalResourcesRequired?: 'false' | 'true' | false
 }
 
 interface ConditionalProcessingSVGAttributes {
-	requiredExtensions?: string | undefined | false
-	requiredFeatures?: string | undefined | false
-	systemLanguage?: string | undefined | false
+	requiredExtensions?: string | false
+	requiredFeatures?: string | false
+	systemLanguage?: string | false
 }
 
 // React - https://react.dev/

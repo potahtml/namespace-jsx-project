@@ -10,7 +10,7 @@ interface DataHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface DataHTMLAttributes<T> extends HTMLAttributes<T> {
-	value?: string | string[] | number | undefined | false
+	value?: string | string[] | number | false
 }
 
 // Voby - https://github.com/vobyjs/voby

@@ -43,35 +43,35 @@ interface ThHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface ThHTMLAttributes<T> extends HTMLAttributes<T> {
-	abbr?: string | undefined | false
-	colspan?: number | string | undefined | false
-	headers?: string | undefined | false
-	rowspan?: number | string | undefined | false
-	scope?: 'col' | 'row' | 'rowgroup' | 'colgroup' | undefined | false
+	abbr?: string | false
+	colspan?: number | string | false
+	headers?: string | false
+	rowspan?: number | string | false
+	scope?: 'col' | 'row' | 'rowgroup' | 'colgroup' | false
 
 	/** @deprecated Use lowercase attributes */
-	colSpan?: number | string | undefined | false
+	colSpan?: number | string | false
 	/** @deprecated Use lowercase attributes */
-	rowSpan?: number | string | undefined | false
+	rowSpan?: number | string | false
 
 	/** @deprecated */
-	align?: 'left' | 'center' | 'right' | 'justify' | 'char' | undefined | false
+	align?: 'left' | 'center' | 'right' | 'justify' | 'char' | false
 	/** @deprecated */
-	axis?: string | undefined | false
+	axis?: string | false
 	/** @deprecated */
-	bgcolor?: string | undefined | false
+	bgcolor?: string | false
 	/** @deprecated */
-	char?: string | undefined | false
+	char?: string | false
 	/** @deprecated */
-	charoff?: string | undefined | false
+	charoff?: string | false
 	/** @deprecated */
-	height?: string | undefined | false
+	height?: string | false
 	/** @deprecated */
-	nowrap?: true | false | '' | undefined | false
+	nowrap?: true | false | '' | false
 	/** @deprecated */
-	valign?: 'baseline' | 'bottom' | 'middle' | 'top' | undefined | false
+	valign?: 'baseline' | 'bottom' | 'middle' | 'top' | false
 	/** @deprecated */
-	width?: number | string | undefined | false
+	width?: number | string | false
 }
 
 // Voby - https://github.com/vobyjs/voby

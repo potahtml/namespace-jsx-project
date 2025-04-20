@@ -70,57 +70,57 @@ interface IframeHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface IframeHTMLAttributes<T> extends HTMLAttributes<T> {
-	allow?: string | undefined | false
-	allowfullscreen?: true | false | '' | undefined | false
-	height?: number | string | undefined | false
-	loading?: 'eager' | 'lazy' | undefined | false
-	name?: string | undefined | false
-	referrerpolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url' | undefined | false
-	sandbox?: 'allow-downloads-without-user-activation' | 'allow-downloads' | 'allow-forms' | 'allow-modals' | 'allow-orientation-lock' | 'allow-pointer-lock' | 'allow-popups' | 'allow-popups-to-escape-sandbox' | 'allow-presentation' | 'allow-same-origin' | 'allow-scripts' | 'allow-storage-access-by-user-activation' | 'allow-top-navigation' | 'allow-top-navigation-by-user-activation' | 'allow-top-navigation-to-custom-protocols' | string | undefined | false
-	src?: string | undefined | false
-	srcdoc?: string | undefined | false
-	width?: number | string | undefined | false
+	allow?: string | false
+	allowfullscreen?: true | false | '' | false
+	height?: number | string | false
+	loading?: 'eager' | 'lazy' | false
+	name?: string | false
+	referrerpolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url' | false
+	sandbox?: 'allow-downloads-without-user-activation' | 'allow-downloads' | 'allow-forms' | 'allow-modals' | 'allow-orientation-lock' | 'allow-pointer-lock' | 'allow-popups' | 'allow-popups-to-escape-sandbox' | 'allow-presentation' | 'allow-same-origin' | 'allow-scripts' | 'allow-storage-access-by-user-activation' | 'allow-top-navigation' | 'allow-top-navigation-by-user-activation' | 'allow-top-navigation-to-custom-protocols' | string | false
+	src?: string | false
+	srcdoc?: string | false
+	width?: number | string | false
 
 	/** @deprecated Use lowercase attributes */
-	referrerPolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url' | undefined | false
+	referrerPolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url' | false
 
 	/** @experimental */
-	adauctionheaders?: true | false | '' | undefined | false
+	adauctionheaders?: true | false | '' | false
 	/**
 	 * @non-standard
 	 * @experimental
 	 */
-	browsingtopics?: true | false | '' | undefined | false
+	browsingtopics?: true | false | '' | false
 	/** @experimental */
-	credentialless?: true | false | '' | undefined | false
+	credentialless?: true | false | '' | false
 	/** @experimental */
-	csp?: string | undefined | false
+	csp?: string | false
 	/** @experimental */
-	privatetoken?: string | undefined | false
+	privatetoken?: string | false
 	/** @experimental */
-	sharedstoragewritable?: true | false | '' | undefined | false
+	sharedstoragewritable?: true | false | '' | false
 
 	/** @deprecated */
-	align?: string | undefined | false
+	align?: string | false
 	/**
 	 * @deprecated
 	 * @non-standard
 	 */
-	allowpaymentrequest?: true | false | '' | undefined | false
+	allowpaymentrequest?: true | false | '' | false
 	/** @deprecated */
-	allowtransparency?: true | false | '' | undefined | false
+	allowtransparency?: true | false | '' | false
 	/** @deprecated */
-	frameborder?: number | string | undefined | false
+	frameborder?: number | string | false
 	/** @deprecated */
-	longdesc?: string | undefined | false
+	longdesc?: string | false
 	/** @deprecated */
-	marginheight?: number | string | undefined | false
+	marginheight?: number | string | false
 	/** @deprecated */
-	marginwidth?: number | string | undefined | false
+	marginwidth?: number | string | false
 	/** @deprecated */
-	scrolling?: 'yes' | 'no' | 'auto' | undefined | false
+	scrolling?: 'yes' | 'no' | 'auto' | false
 	/** @deprecated */
-	seamless?: true | false | '' | undefined | false
+	seamless?: true | false | '' | false
 }
 
 // Voby - https://github.com/vobyjs/voby

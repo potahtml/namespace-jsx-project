@@ -29,16 +29,16 @@ interface SingleInputFilterSVGAttributes {
 // Solid Next - https://www.solidjs.com/
 interface FeMergeNodeSVGAttributes<T> extends CoreSVGAttributes<T>, SingleInputFilterSVGAttributes {}
 interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
-	id?: string | undefined | false
-	lang?: string | undefined | false
-	tabindex?: number | string | undefined | false
+	id?: string | false
+	lang?: string | false
+	tabindex?: number | string | false
 
 	/** @deprecated Use lowercase attributes */
-	tabIndex?: number | string | undefined | false
+	tabIndex?: number | string | false
 }
 
 interface SingleInputFilterSVGAttributes {
-	in?: string | undefined | false
+	in?: string | false
 }
 
 // React - https://react.dev/

@@ -55,29 +55,29 @@ interface AnimationTimingSVGAttributes {
 // Solid Next - https://www.solidjs.com/
 interface SetSVGAttributes<T> extends CoreSVGAttributes<T>, StylableSVGAttributes, AnimationTimingSVGAttributes {}
 interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
-	id?: string | undefined | false
-	lang?: string | undefined | false
-	tabindex?: number | string | undefined | false
+	id?: string | false
+	lang?: string | false
+	tabindex?: number | string | false
 
 	/** @deprecated Use lowercase attributes */
-	tabIndex?: number | string | undefined | false
+	tabIndex?: number | string | false
 }
 
 interface StylableSVGAttributes {
-	class?: string | ClassList | undefined | false
-	style?: CSSProperties | string | undefined | false
+	class?: string | ClassList | false
+	style?: CSSProperties | string | false
 }
 
 interface AnimationTimingSVGAttributes {
-	begin?: string | undefined | false
-	dur?: string | undefined | false
-	end?: string | undefined | false
-	min?: string | undefined | false
-	max?: string | undefined | false
-	restart?: 'always' | 'whenNotActive' | 'never' | undefined | false
-	repeatCount?: number | 'indefinite' | undefined | false
-	repeatDur?: string | undefined | false
-	fill?: 'freeze' | 'remove' | undefined | false
+	begin?: string | false
+	dur?: string | false
+	end?: string | false
+	min?: string | false
+	max?: string | false
+	restart?: 'always' | 'whenNotActive' | 'never' | false
+	repeatCount?: number | 'indefinite' | false
+	repeatDur?: string | false
+	fill?: 'freeze' | 'remove' | false
 }
 
 // React - https://react.dev/

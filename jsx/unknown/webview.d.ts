@@ -29,31 +29,31 @@ interface WebViewHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface WebViewHTMLAttributes<T> extends HTMLAttributes<T> {
-	allowpopups?: true | false | '' | undefined | false
-	disableblinkfeatures?: string | undefined | false
-	disablewebsecurity?: true | false | '' | undefined | false
-	enableblinkfeatures?: string | undefined | false
-	httpreferrer?: string | undefined | false
-	nodeintegration?: true | false | '' | undefined | false
-	nodeintegrationinsubframes?: true | false | '' | undefined | false
-	partition?: string | undefined | false
-	plugins?: true | false | '' | undefined | false
-	preload?: string | undefined | false
-	src?: string | undefined | false
-	useragent?: string | undefined | false
-	webpreferences?: string | undefined | false
+	allowpopups?: true | false | '' | false
+	disableblinkfeatures?: string | false
+	disablewebsecurity?: true | false | '' | false
+	enableblinkfeatures?: string | false
+	httpreferrer?: string | false
+	nodeintegration?: true | false | '' | false
+	nodeintegrationinsubframes?: true | false | '' | false
+	partition?: string | false
+	plugins?: true | false | '' | false
+	preload?: string | false
+	src?: string | false
+	useragent?: string | false
+	webpreferences?: string | false
 
 	// does this exists?
-	allowfullscreen?: true | false | '' | undefined | false
-	autofocus?: true | false | '' | undefined | false
-	autosize?: true | false | '' | undefined | false
+	allowfullscreen?: true | false | '' | false
+	autofocus?: true | false | '' | false
+	autosize?: true | false | '' | false
 
 	/** @deprecated */
-	blinkfeatures?: string | undefined | false
+	blinkfeatures?: string | false
 	/** @deprecated */
-	disableguestresize?: true | false | '' | undefined | false
+	disableguestresize?: true | false | '' | false
 	/** @deprecated */
-	guestinstance?: string | undefined | false
+	guestinstance?: string | false
 }
 
 // Voby - https://github.com/vobyjs/voby

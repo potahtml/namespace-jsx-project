@@ -22,13 +22,13 @@ interface SourceHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface SourceHTMLAttributes<T> extends HTMLAttributes<T> {
-	media?: string | undefined | false
-	sizes?: string | undefined | false
-	src?: string | undefined | false
-	srcset?: string | undefined | false
-	type?: string | undefined | false
-	width?: number | string | undefined | false
-	height?: number | string | undefined | false
+	media?: string | false
+	sizes?: string | false
+	src?: string | false
+	srcset?: string | false
+	type?: string | false
+	width?: number | string | false
+	height?: number | string | false
 }
 
 // Voby - https://github.com/vobyjs/voby

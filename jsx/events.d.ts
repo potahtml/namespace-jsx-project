@@ -200,6 +200,87 @@ interface CustomEventHandlersLowerCase<T> {
 	onwaiting?: EventHandlerUnion<T, Event>
 	onwheel?: EventHandlerUnion<T, WheelEvent>
 }
+interface CustomEventHandlersNamespaced<T> {
+	'on:abort'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:animationend'?: EventHandlerWithOptionsUnion<T, AnimationEvent>
+	'on:animationiteration'?: EventHandlerWithOptionsUnion<T, AnimationEvent>
+	'on:animationstart'?: EventHandlerWithOptionsUnion<T, AnimationEvent>
+	'on:auxclick'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:beforeinput'?: EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>
+	'on:beforetoggle'?: EventHandlerWithOptionsUnion<T, ToggleEvent>
+	'on:blur'?: EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>
+	'on:canplay'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:canplaythrough'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:change'?: EventHandlerWithOptionsUnion<T, Event, ChangeEventHandler<T, Event>>
+	'on:click'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:contextmenu'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:dblclick'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:drag'?: EventHandlerWithOptionsUnion<T, DragEvent>
+	'on:dragend'?: EventHandlerWithOptionsUnion<T, DragEvent>
+	'on:dragenter'?: EventHandlerWithOptionsUnion<T, DragEvent>
+	'on:dragleave'?: EventHandlerWithOptionsUnion<T, DragEvent>
+	'on:dragover'?: EventHandlerWithOptionsUnion<T, DragEvent>
+	'on:dragstart'?: EventHandlerWithOptionsUnion<T, DragEvent>
+	'on:drop'?: EventHandlerWithOptionsUnion<T, DragEvent>
+	'on:durationchange'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:emptied'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:ended'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:error'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:focus'?: EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>
+	'on:gotpointercapture'?: EventHandlerWithOptionsUnion<T, PointerEvent>
+	'on:input'?: EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>
+	'on:invalid'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:keydown'?: EventHandlerWithOptionsUnion<T, KeyboardEvent>
+	'on:keypress'?: EventHandlerWithOptionsUnion<T, KeyboardEvent>
+	'on:keyup'?: EventHandlerWithOptionsUnion<T, KeyboardEvent>
+	'on:load'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:loadeddata'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:loadedmetadata'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:loadstart'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:lostpointercapture'?: EventHandlerWithOptionsUnion<T, PointerEvent>
+	'on:mousedown'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:mouseenter'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:mouseleave'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:mousemove'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:mouseout'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:mouseover'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:mouseup'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:pause'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:play'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:playing'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:pointercancel'?: EventHandlerWithOptionsUnion<T, PointerEvent>
+	'on:pointerdown'?: EventHandlerWithOptionsUnion<T, PointerEvent>
+	'on:pointerenter'?: EventHandlerWithOptionsUnion<T, PointerEvent>
+	'on:pointerleave'?: EventHandlerWithOptionsUnion<T, PointerEvent>
+	'on:pointermove'?: EventHandlerWithOptionsUnion<T, PointerEvent>
+	'on:pointerout'?: EventHandlerWithOptionsUnion<T, PointerEvent>
+	'on:pointerover'?: EventHandlerWithOptionsUnion<T, PointerEvent>
+	'on:pointerup'?: EventHandlerWithOptionsUnion<T, PointerEvent>
+	'on:progress'?: EventHandlerWithOptionsUnion<T, ProgressEvent>
+	'on:ratechange'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:reset'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:scroll'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:scrollend'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:seeked'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:seeking'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:select'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:stalled'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:submit'?: EventHandlerWithOptionsUnion<T, SubmitEvent>
+	'on:suspend'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:timeupdate'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:toggle'?: EventHandlerWithOptionsUnion<T, ToggleEvent>
+	'on:touchcancel'?: EventHandlerWithOptionsUnion<T, TouchEvent>
+	'on:touchend'?: EventHandlerWithOptionsUnion<T, TouchEvent>
+	'on:touchmove'?: EventHandlerWithOptionsUnion<T, TouchEvent>
+	'on:touchstart'?: EventHandlerWithOptionsUnion<T, TouchEvent>
+	'on:transitionstart'?: EventHandlerWithOptionsUnion<T, TransitionEvent>
+	'on:transitionend'?: EventHandlerWithOptionsUnion<T, TransitionEvent>
+	'on:transitionrun'?: EventHandlerWithOptionsUnion<T, TransitionEvent>
+	'on:transitioncancel'?: EventHandlerWithOptionsUnion<T, TransitionEvent>
+	'on:volumechange'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:waiting'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:wheel'?: EventHandlerWithOptionsUnion<T, WheelEvent>
+}
 
 // Solid Minor - https://www.solidjs.com/
 interface DOMAttributes<T> extends CustomAttributes<T>, DirectiveAttributes, DirectiveFunctionAttributes<T>, PropAttributes, AttrAttributes, BoolAttributes, OnAttributes<T>, OnCaptureAttributes<T>, CustomEventHandlersCamelCase<T>, CustomEventHandlersLowerCase<T>, CustomEventHandlersNamespaced<T> {
@@ -491,6 +572,87 @@ interface CustomEventHandlersLowerCase<T> {
 	onwaiting?: EventHandlerUnion<T, Event>
 	/** @deprecated Use camelCase event handlers */
 	onwheel?: EventHandlerUnion<T, WheelEvent>
+}
+interface CustomEventHandlersNamespaced<T> {
+	'on:abort'?: EventHandlerWithOptionsUnion<T, UIEvent>
+	'on:animationend'?: EventHandlerWithOptionsUnion<T, AnimationEvent>
+	'on:animationiteration'?: EventHandlerWithOptionsUnion<T, AnimationEvent>
+	'on:animationstart'?: EventHandlerWithOptionsUnion<T, AnimationEvent>
+	'on:auxclick'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:beforeinput'?: EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>
+	'on:beforetoggle'?: EventHandlerWithOptionsUnion<T, ToggleEvent>
+	'on:blur'?: EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>
+	'on:canplay'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:canplaythrough'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:change'?: EventHandlerWithOptionsUnion<T, Event, ChangeEventHandler<T, Event>>
+	'on:click'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:contextmenu'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:dblclick'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:drag'?: EventHandlerWithOptionsUnion<T, DragEvent>
+	'on:dragend'?: EventHandlerWithOptionsUnion<T, DragEvent>
+	'on:dragenter'?: EventHandlerWithOptionsUnion<T, DragEvent>
+	'on:dragleave'?: EventHandlerWithOptionsUnion<T, DragEvent>
+	'on:dragover'?: EventHandlerWithOptionsUnion<T, DragEvent>
+	'on:dragstart'?: EventHandlerWithOptionsUnion<T, DragEvent>
+	'on:drop'?: EventHandlerWithOptionsUnion<T, DragEvent>
+	'on:durationchange'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:emptied'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:ended'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:error'?: EventHandlerWithOptionsUnion<T, ErrorEvent>
+	'on:focus'?: EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>
+	'on:gotpointercapture'?: EventHandlerWithOptionsUnion<T, PointerEvent>
+	'on:input'?: EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>
+	'on:invalid'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:keydown'?: EventHandlerWithOptionsUnion<T, KeyboardEvent>
+	'on:keypress'?: EventHandlerWithOptionsUnion<T, KeyboardEvent>
+	'on:keyup'?: EventHandlerWithOptionsUnion<T, KeyboardEvent>
+	'on:load'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:loadeddata'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:loadedmetadata'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:loadstart'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:lostpointercapture'?: EventHandlerWithOptionsUnion<T, PointerEvent>
+	'on:mousedown'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:mouseenter'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:mouseleave'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:mousemove'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:mouseout'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:mouseover'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:mouseup'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:pause'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:play'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:playing'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:pointercancel'?: EventHandlerWithOptionsUnion<T, PointerEvent>
+	'on:pointerdown'?: EventHandlerWithOptionsUnion<T, PointerEvent>
+	'on:pointerenter'?: EventHandlerWithOptionsUnion<T, PointerEvent>
+	'on:pointerleave'?: EventHandlerWithOptionsUnion<T, PointerEvent>
+	'on:pointermove'?: EventHandlerWithOptionsUnion<T, PointerEvent>
+	'on:pointerout'?: EventHandlerWithOptionsUnion<T, PointerEvent>
+	'on:pointerover'?: EventHandlerWithOptionsUnion<T, PointerEvent>
+	'on:pointerup'?: EventHandlerWithOptionsUnion<T, PointerEvent>
+	'on:progress'?: EventHandlerWithOptionsUnion<T, ProgressEvent>
+	'on:ratechange'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:reset'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:scroll'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:scrollend'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:seeked'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:seeking'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:select'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:stalled'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:submit'?: EventHandlerWithOptionsUnion<T, SubmitEvent>
+	'on:suspend'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:timeupdate'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:toggle'?: EventHandlerWithOptionsUnion<T, ToggleEvent>
+	'on:touchcancel'?: EventHandlerWithOptionsUnion<T, TouchEvent>
+	'on:touchend'?: EventHandlerWithOptionsUnion<T, TouchEvent>
+	'on:touchmove'?: EventHandlerWithOptionsUnion<T, TouchEvent>
+	'on:touchstart'?: EventHandlerWithOptionsUnion<T, TouchEvent>
+	'on:transitionstart'?: EventHandlerWithOptionsUnion<T, TransitionEvent>
+	'on:transitionend'?: EventHandlerWithOptionsUnion<T, TransitionEvent>
+	'on:transitionrun'?: EventHandlerWithOptionsUnion<T, TransitionEvent>
+	'on:transitioncancel'?: EventHandlerWithOptionsUnion<T, TransitionEvent>
+	'on:volumechange'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:waiting'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:wheel'?: EventHandlerWithOptionsUnion<T, WheelEvent>
 }
 
 // Solid Next - https://www.solidjs.com/
@@ -784,204 +946,285 @@ interface CustomEventHandlersLowerCase<T> {
 	/** @deprecated Use camelCase event handlers */
 	onwheel?: EventHandlerUnion<T, WheelEvent>
 }
+interface CustomEventHandlersNamespaced<T> {
+	'on:abort'?: EventHandlerWithOptionsUnion<T, UIEvent>
+	'on:animationend'?: EventHandlerWithOptionsUnion<T, AnimationEvent>
+	'on:animationiteration'?: EventHandlerWithOptionsUnion<T, AnimationEvent>
+	'on:animationstart'?: EventHandlerWithOptionsUnion<T, AnimationEvent>
+	'on:auxclick'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:beforeinput'?: EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>
+	'on:beforetoggle'?: EventHandlerWithOptionsUnion<T, ToggleEvent>
+	'on:blur'?: EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>
+	'on:canplay'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:canplaythrough'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:change'?: EventHandlerWithOptionsUnion<T, Event, ChangeEventHandler<T, Event>>
+	'on:click'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:contextmenu'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:dblclick'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:drag'?: EventHandlerWithOptionsUnion<T, DragEvent>
+	'on:dragend'?: EventHandlerWithOptionsUnion<T, DragEvent>
+	'on:dragenter'?: EventHandlerWithOptionsUnion<T, DragEvent>
+	'on:dragleave'?: EventHandlerWithOptionsUnion<T, DragEvent>
+	'on:dragover'?: EventHandlerWithOptionsUnion<T, DragEvent>
+	'on:dragstart'?: EventHandlerWithOptionsUnion<T, DragEvent>
+	'on:drop'?: EventHandlerWithOptionsUnion<T, DragEvent>
+	'on:durationchange'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:emptied'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:ended'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:error'?: EventHandlerWithOptionsUnion<T, ErrorEvent>
+	'on:focus'?: EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>
+	'on:gotpointercapture'?: EventHandlerWithOptionsUnion<T, PointerEvent>
+	'on:input'?: EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>
+	'on:invalid'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:keydown'?: EventHandlerWithOptionsUnion<T, KeyboardEvent>
+	'on:keypress'?: EventHandlerWithOptionsUnion<T, KeyboardEvent>
+	'on:keyup'?: EventHandlerWithOptionsUnion<T, KeyboardEvent>
+	'on:load'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:loadeddata'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:loadedmetadata'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:loadstart'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:lostpointercapture'?: EventHandlerWithOptionsUnion<T, PointerEvent>
+	'on:mousedown'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:mouseenter'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:mouseleave'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:mousemove'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:mouseout'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:mouseover'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:mouseup'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:pause'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:play'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:playing'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:pointercancel'?: EventHandlerWithOptionsUnion<T, PointerEvent>
+	'on:pointerdown'?: EventHandlerWithOptionsUnion<T, PointerEvent>
+	'on:pointerenter'?: EventHandlerWithOptionsUnion<T, PointerEvent>
+	'on:pointerleave'?: EventHandlerWithOptionsUnion<T, PointerEvent>
+	'on:pointermove'?: EventHandlerWithOptionsUnion<T, PointerEvent>
+	'on:pointerout'?: EventHandlerWithOptionsUnion<T, PointerEvent>
+	'on:pointerover'?: EventHandlerWithOptionsUnion<T, PointerEvent>
+	'on:pointerup'?: EventHandlerWithOptionsUnion<T, PointerEvent>
+	'on:progress'?: EventHandlerWithOptionsUnion<T, ProgressEvent>
+	'on:ratechange'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:reset'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:scroll'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:scrollend'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:seeked'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:seeking'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:select'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:stalled'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:submit'?: EventHandlerWithOptionsUnion<T, SubmitEvent>
+	'on:suspend'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:timeupdate'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:toggle'?: EventHandlerWithOptionsUnion<T, ToggleEvent>
+	'on:touchcancel'?: EventHandlerWithOptionsUnion<T, TouchEvent>
+	'on:touchend'?: EventHandlerWithOptionsUnion<T, TouchEvent>
+	'on:touchmove'?: EventHandlerWithOptionsUnion<T, TouchEvent>
+	'on:touchstart'?: EventHandlerWithOptionsUnion<T, TouchEvent>
+	'on:transitionstart'?: EventHandlerWithOptionsUnion<T, TransitionEvent>
+	'on:transitionend'?: EventHandlerWithOptionsUnion<T, TransitionEvent>
+	'on:transitionrun'?: EventHandlerWithOptionsUnion<T, TransitionEvent>
+	'on:transitioncancel'?: EventHandlerWithOptionsUnion<T, TransitionEvent>
+	'on:volumechange'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:waiting'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:wheel'?: EventHandlerWithOptionsUnion<T, WheelEvent>
+}
 
 // Voby - https://github.com/vobyjs/voby
 interface EventAttributes<T extends EventTarget> {
 	/* IMAGE EVENTS */
-	onLoad?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onLoadCapture?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onError?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onErrorCapture?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
+	onLoad?: GenericEventHandler<T>
+	onLoadCapture?: GenericEventHandler<T>
+	onError?: GenericEventHandler<T>
+	onErrorCapture?: GenericEventHandler<T>
 	/* CLIPBOARD EVENTS */
-	onCopy?: ObservableMaybe<Nullable<ClipboardEventHandler<T>>>
-	onCopyCapture?: ObservableMaybe<Nullable<ClipboardEventHandler<T>>>
-	onCut?: ObservableMaybe<Nullable<ClipboardEventHandler<T>>>
-	onCutCapture?: ObservableMaybe<Nullable<ClipboardEventHandler<T>>>
-	onPaste?: ObservableMaybe<Nullable<ClipboardEventHandler<T>>>
-	onPasteCapture?: ObservableMaybe<Nullable<ClipboardEventHandler<T>>>
+	onCopy?: ClipboardEventHandler<T>
+	onCopyCapture?: ClipboardEventHandler<T>
+	onCut?: ClipboardEventHandler<T>
+	onCutCapture?: ClipboardEventHandler<T>
+	onPaste?: ClipboardEventHandler<T>
+	onPasteCapture?: ClipboardEventHandler<T>
 	/* COMPOSITION EVENTS */
-	onCompositionEnd?: ObservableMaybe<Nullable<CompositionEventHandler<T>>>
-	onCompositionEndCapture?: ObservableMaybe<Nullable<CompositionEventHandler<T>>>
-	onCompositionStart?: ObservableMaybe<Nullable<CompositionEventHandler<T>>>
-	onCompositionStartCapture?: ObservableMaybe<Nullable<CompositionEventHandler<T>>>
-	onCompositionUpdate?: ObservableMaybe<Nullable<CompositionEventHandler<T>>>
-	onCompositionUpdateCapture?: ObservableMaybe<Nullable<CompositionEventHandler<T>>>
+	onCompositionEnd?: CompositionEventHandler<T>
+	onCompositionEndCapture?: CompositionEventHandler<T>
+	onCompositionStart?: CompositionEventHandler<T>
+	onCompositionStartCapture?: CompositionEventHandler<T>
+	onCompositionUpdate?: CompositionEventHandler<T>
+	onCompositionUpdateCapture?: CompositionEventHandler<T>
 	/* DETAILS EVENTS */
-	onToggle?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
+	onToggle?: GenericEventHandler<T>
 	/* FOCUS EVENTS */
-	onFocus?: ObservableMaybe<Nullable<FocusEventHandler<T>>>
-	onFocusCapture?: ObservableMaybe<Nullable<FocusEventHandler<T>>>
-	onFocusIn?: ObservableMaybe<Nullable<FocusEventHandler<T>>>
-	onFocusInCapture?: ObservableMaybe<Nullable<FocusEventHandler<T>>>
-	onFocusOut?: ObservableMaybe<Nullable<FocusEventHandler<T>>>
-	onFocusOutCapture?: ObservableMaybe<Nullable<FocusEventHandler<T>>>
-	onBlur?: ObservableMaybe<Nullable<FocusEventHandler<T>>>
-	onBlurCapture?: ObservableMaybe<Nullable<FocusEventHandler<T>>>
+	onFocus?: FocusEventHandler<T>
+	onFocusCapture?: FocusEventHandler<T>
+	onFocusIn?: FocusEventHandler<T>
+	onFocusInCapture?: FocusEventHandler<T>
+	onFocusOut?: FocusEventHandler<T>
+	onFocusOutCapture?: FocusEventHandler<T>
+	onBlur?: FocusEventHandler<T>
+	onBlurCapture?: FocusEventHandler<T>
 	/* FORM EVENTS */
-	onChange?: ObservableMaybe<Nullable<KeyboardEventHandler<T>>>
-	onChangeCapture?: ObservableMaybe<Nullable<KeyboardEventHandler<T>>>
-	onInput?: ObservableMaybe<Nullable<InputEventHandler<T>>>
-	onInputCapture?: ObservableMaybe<Nullable<InputEventHandler<T>>>
-	onBeforeInput?: ObservableMaybe<Nullable<InputEventHandler<T>>>
-	onBeforeInputCapture?: ObservableMaybe<Nullable<InputEventHandler<T>>>
-	onSearch?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onSearchCapture?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onSubmit?: ObservableMaybe<Nullable<SubmitEventHandler<T>>>
-	onSubmitCapture?: ObservableMaybe<Nullable<SubmitEventHandler<T>>>
-	onInvalid?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onInvalidCapture?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onReset?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onResetCapture?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onFormData?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onFormDataCapture?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
+	onChange?: KeyboardEventHandler<T>
+	onChangeCapture?: KeyboardEventHandler<T>
+	onInput?: InputEventHandler<T>
+	onInputCapture?: InputEventHandler<T>
+	onBeforeInput?: InputEventHandler<T>
+	onBeforeInputCapture?: InputEventHandler<T>
+	onSearch?: GenericEventHandler<T>
+	onSearchCapture?: GenericEventHandler<T>
+	onSubmit?: SubmitEventHandler<T>
+	onSubmitCapture?: SubmitEventHandler<T>
+	onInvalid?: GenericEventHandler<T>
+	onInvalidCapture?: GenericEventHandler<T>
+	onReset?: GenericEventHandler<T>
+	onResetCapture?: GenericEventHandler<T>
+	onFormData?: GenericEventHandler<T>
+	onFormDataCapture?: GenericEventHandler<T>
 	/* KEYBOARD EVENTS */
-	onKeyDown?: ObservableMaybe<Nullable<KeyboardEventHandler<T>>>
-	onKeyDownCapture?: ObservableMaybe<Nullable<KeyboardEventHandler<T>>>
-	onKeyPress?: ObservableMaybe<Nullable<KeyboardEventHandler<T>>>
-	onKeyPressCapture?: ObservableMaybe<Nullable<KeyboardEventHandler<T>>>
-	onKeyUp?: ObservableMaybe<Nullable<KeyboardEventHandler<T>>>
-	onKeyUpCapture?: ObservableMaybe<Nullable<KeyboardEventHandler<T>>>
+	onKeyDown?: KeyboardEventHandler<T>
+	onKeyDownCapture?: KeyboardEventHandler<T>
+	onKeyPress?: KeyboardEventHandler<T>
+	onKeyPressCapture?: KeyboardEventHandler<T>
+	onKeyUp?: KeyboardEventHandler<T>
+	onKeyUpCapture?: KeyboardEventHandler<T>
 	/* MEDIA EVENTS */
-	onAbort?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onAbortCapture?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onCanPlay?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onCanPlayCapture?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onCanPlayThrough?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onCanPlayThroughCapture?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onDurationChange?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onDurationChangeCapture?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onEmptied?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onEmptiedCapture?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onEncrypted?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onEncryptedCapture?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onEnded?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onEndedCapture?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onLoadedData?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onLoadedDataCapture?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onLoadedMetadata?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onLoadedMetadataCapture?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onLoadStart?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onLoadStartCapture?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onPause?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onPauseCapture?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onPlay?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onPlayCapture?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onPlaying?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onPlayingCapture?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onProgress?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onProgressCapture?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onRateChange?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onRateChangeCapture?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onSeeked?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onSeekedCapture?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onSeeking?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onSeekingCapture?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onStalled?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onStalledCapture?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onSuspend?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onSuspendCapture?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onTimeUpdate?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onTimeUpdateCapture?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onVolumeChange?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onVolumeChangeCapture?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onWaiting?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onWaitingCapture?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
+	onAbort?: GenericEventHandler<T>
+	onAbortCapture?: GenericEventHandler<T>
+	onCanPlay?: GenericEventHandler<T>
+	onCanPlayCapture?: GenericEventHandler<T>
+	onCanPlayThrough?: GenericEventHandler<T>
+	onCanPlayThroughCapture?: GenericEventHandler<T>
+	onDurationChange?: GenericEventHandler<T>
+	onDurationChangeCapture?: GenericEventHandler<T>
+	onEmptied?: GenericEventHandler<T>
+	onEmptiedCapture?: GenericEventHandler<T>
+	onEncrypted?: GenericEventHandler<T>
+	onEncryptedCapture?: GenericEventHandler<T>
+	onEnded?: GenericEventHandler<T>
+	onEndedCapture?: GenericEventHandler<T>
+	onLoadedData?: GenericEventHandler<T>
+	onLoadedDataCapture?: GenericEventHandler<T>
+	onLoadedMetadata?: GenericEventHandler<T>
+	onLoadedMetadataCapture?: GenericEventHandler<T>
+	onLoadStart?: GenericEventHandler<T>
+	onLoadStartCapture?: GenericEventHandler<T>
+	onPause?: GenericEventHandler<T>
+	onPauseCapture?: GenericEventHandler<T>
+	onPlay?: GenericEventHandler<T>
+	onPlayCapture?: GenericEventHandler<T>
+	onPlaying?: GenericEventHandler<T>
+	onPlayingCapture?: GenericEventHandler<T>
+	onProgress?: GenericEventHandler<T>
+	onProgressCapture?: GenericEventHandler<T>
+	onRateChange?: GenericEventHandler<T>
+	onRateChangeCapture?: GenericEventHandler<T>
+	onSeeked?: GenericEventHandler<T>
+	onSeekedCapture?: GenericEventHandler<T>
+	onSeeking?: GenericEventHandler<T>
+	onSeekingCapture?: GenericEventHandler<T>
+	onStalled?: GenericEventHandler<T>
+	onStalledCapture?: GenericEventHandler<T>
+	onSuspend?: GenericEventHandler<T>
+	onSuspendCapture?: GenericEventHandler<T>
+	onTimeUpdate?: GenericEventHandler<T>
+	onTimeUpdateCapture?: GenericEventHandler<T>
+	onVolumeChange?: GenericEventHandler<T>
+	onVolumeChangeCapture?: GenericEventHandler<T>
+	onWaiting?: GenericEventHandler<T>
+	onWaitingCapture?: GenericEventHandler<T>
 	/* MOUSE EVENTS */
-	onAuxClick?: ObservableMaybe<Nullable<MouseEventHandler<T>>>
-	onAuxClickCapture?: ObservableMaybe<Nullable<MouseEventHandler<T>>>
-	onClick?: ObservableMaybe<Nullable<MouseEventHandler<T>>>
-	onClickCapture?: ObservableMaybe<Nullable<MouseEventHandler<T>>>
-	onContextMenu?: ObservableMaybe<Nullable<MouseEventHandler<T>>>
-	onContextMenuCapture?: ObservableMaybe<Nullable<MouseEventHandler<T>>>
-	onDblClick?: ObservableMaybe<Nullable<MouseEventHandler<T>>>
-	onDblClickCapture?: ObservableMaybe<Nullable<MouseEventHandler<T>>>
-	onDrag?: ObservableMaybe<Nullable<DragEventHandler<T>>>
-	onDragCapture?: ObservableMaybe<Nullable<DragEventHandler<T>>>
-	onDragEnd?: ObservableMaybe<Nullable<DragEventHandler<T>>>
-	onDragEndCapture?: ObservableMaybe<Nullable<DragEventHandler<T>>>
-	onDragEnter?: ObservableMaybe<Nullable<DragEventHandler<T>>>
-	onDragEnterCapture?: ObservableMaybe<Nullable<DragEventHandler<T>>>
-	onDragExit?: ObservableMaybe<Nullable<DragEventHandler<T>>>
-	onDragExitCapture?: ObservableMaybe<Nullable<DragEventHandler<T>>>
-	onDragLeave?: ObservableMaybe<Nullable<DragEventHandler<T>>>
-	onDragLeaveCapture?: ObservableMaybe<Nullable<DragEventHandler<T>>>
-	onDragOver?: ObservableMaybe<Nullable<DragEventHandler<T>>>
-	onDragOverCapture?: ObservableMaybe<Nullable<DragEventHandler<T>>>
-	onDragStart?: ObservableMaybe<Nullable<DragEventHandler<T>>>
-	onDragStartCapture?: ObservableMaybe<Nullable<DragEventHandler<T>>>
-	onDrop?: ObservableMaybe<Nullable<DragEventHandler<T>>>
-	onDropCapture?: ObservableMaybe<Nullable<DragEventHandler<T>>>
-	onMiddleClick?: ObservableMaybe<Nullable<MouseEventHandler<T>>>
-	onMiddleClickCapture?: ObservableMaybe<Nullable<MouseEventHandler<T>>>
-	onMouseDown?: ObservableMaybe<Nullable<MouseEventHandler<T>>>
-	onMouseDownCapture?: ObservableMaybe<Nullable<MouseEventHandler<T>>>
-	onMouseEnter?: ObservableMaybe<Nullable<MouseEventHandler<T>>>
-	onMouseEnterCapture?: ObservableMaybe<Nullable<MouseEventHandler<T>>>
-	onMouseLeave?: ObservableMaybe<Nullable<MouseEventHandler<T>>>
-	onMouseLeaveCapture?: ObservableMaybe<Nullable<MouseEventHandler<T>>>
-	onMouseMove?: ObservableMaybe<Nullable<MouseEventHandler<T>>>
-	onMouseMoveCapture?: ObservableMaybe<Nullable<MouseEventHandler<T>>>
-	onMouseOut?: ObservableMaybe<Nullable<MouseEventHandler<T>>>
-	onMouseOutCapture?: ObservableMaybe<Nullable<MouseEventHandler<T>>>
-	onMouseOver?: ObservableMaybe<Nullable<MouseEventHandler<T>>>
-	onMouseOverCapture?: ObservableMaybe<Nullable<MouseEventHandler<T>>>
-	onMouseUp?: ObservableMaybe<Nullable<MouseEventHandler<T>>>
-	onMouseUpCapture?: ObservableMaybe<Nullable<MouseEventHandler<T>>>
+	onAuxClick?: MouseEventHandler<T>
+	onAuxClickCapture?: MouseEventHandler<T>
+	onClick?: MouseEventHandler<T>
+	onClickCapture?: MouseEventHandler<T>
+	onContextMenu?: MouseEventHandler<T>
+	onContextMenuCapture?: MouseEventHandler<T>
+	onDblClick?: MouseEventHandler<T>
+	onDblClickCapture?: MouseEventHandler<T>
+	onDrag?: DragEventHandler<T>
+	onDragCapture?: DragEventHandler<T>
+	onDragEnd?: DragEventHandler<T>
+	onDragEndCapture?: DragEventHandler<T>
+	onDragEnter?: DragEventHandler<T>
+	onDragEnterCapture?: DragEventHandler<T>
+	onDragExit?: DragEventHandler<T>
+	onDragExitCapture?: DragEventHandler<T>
+	onDragLeave?: DragEventHandler<T>
+	onDragLeaveCapture?: DragEventHandler<T>
+	onDragOver?: DragEventHandler<T>
+	onDragOverCapture?: DragEventHandler<T>
+	onDragStart?: DragEventHandler<T>
+	onDragStartCapture?: DragEventHandler<T>
+	onDrop?: DragEventHandler<T>
+	onDropCapture?: DragEventHandler<T>
+	onMiddleClick?: MouseEventHandler<T>
+	onMiddleClickCapture?: MouseEventHandler<T>
+	onMouseDown?: MouseEventHandler<T>
+	onMouseDownCapture?: MouseEventHandler<T>
+	onMouseEnter?: MouseEventHandler<T>
+	onMouseEnterCapture?: MouseEventHandler<T>
+	onMouseLeave?: MouseEventHandler<T>
+	onMouseLeaveCapture?: MouseEventHandler<T>
+	onMouseMove?: MouseEventHandler<T>
+	onMouseMoveCapture?: MouseEventHandler<T>
+	onMouseOut?: MouseEventHandler<T>
+	onMouseOutCapture?: MouseEventHandler<T>
+	onMouseOver?: MouseEventHandler<T>
+	onMouseOverCapture?: MouseEventHandler<T>
+	onMouseUp?: MouseEventHandler<T>
+	onMouseUpCapture?: MouseEventHandler<T>
 	/* SELECTION EVENTS */
-	onSelect?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
-	onSelectCapture?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
+	onSelect?: GenericEventHandler<T>
+	onSelectCapture?: GenericEventHandler<T>
 	/* TOUCH EVENTS */
-	onTouchCancel?: ObservableMaybe<Nullable<TouchEventHandler<T>>>
-	onTouchCancelCapture?: ObservableMaybe<Nullable<TouchEventHandler<T>>>
-	onTouchEnd?: ObservableMaybe<Nullable<TouchEventHandler<T>>>
-	onTouchEndCapture?: ObservableMaybe<Nullable<TouchEventHandler<T>>>
-	onTouchMove?: ObservableMaybe<Nullable<TouchEventHandler<T>>>
-	onTouchMoveCapture?: ObservableMaybe<Nullable<TouchEventHandler<T>>>
-	onTouchStart?: ObservableMaybe<Nullable<TouchEventHandler<T>>>
-	onTouchStartCapture?: ObservableMaybe<Nullable<TouchEventHandler<T>>>
+	onTouchCancel?: TouchEventHandler<T>
+	onTouchCancelCapture?: TouchEventHandler<T>
+	onTouchEnd?: TouchEventHandler<T>
+	onTouchEndCapture?: TouchEventHandler<T>
+	onTouchMove?: TouchEventHandler<T>
+	onTouchMoveCapture?: TouchEventHandler<T>
+	onTouchStart?: TouchEventHandler<T>
+	onTouchStartCapture?: TouchEventHandler<T>
 	/* POINTER EVENTS */
-	onPointerOver?: ObservableMaybe<Nullable<PointerEventHandler<T>>>
-	onPointerOverCapture?: ObservableMaybe<Nullable<PointerEventHandler<T>>>
-	onPointerEnter?: ObservableMaybe<Nullable<PointerEventHandler<T>>>
-	onPointerEnterCapture?: ObservableMaybe<Nullable<PointerEventHandler<T>>>
-	onPointerDown?: ObservableMaybe<Nullable<PointerEventHandler<T>>>
-	onPointerDownCapture?: ObservableMaybe<Nullable<PointerEventHandler<T>>>
-	onPointerMove?: ObservableMaybe<Nullable<PointerEventHandler<T>>>
-	onPointerMoveCapture?: ObservableMaybe<Nullable<PointerEventHandler<T>>>
-	onPointerUp?: ObservableMaybe<Nullable<PointerEventHandler<T>>>
-	onPointerUpCapture?: ObservableMaybe<Nullable<PointerEventHandler<T>>>
-	onPointerCancel?: ObservableMaybe<Nullable<PointerEventHandler<T>>>
-	onPointerCancelCapture?: ObservableMaybe<Nullable<PointerEventHandler<T>>>
-	onPointerOut?: ObservableMaybe<Nullable<PointerEventHandler<T>>>
-	onPointerOutCapture?: ObservableMaybe<Nullable<PointerEventHandler<T>>>
-	onPointerLeave?: ObservableMaybe<Nullable<PointerEventHandler<T>>>
-	onPointerLeaveCapture?: ObservableMaybe<Nullable<PointerEventHandler<T>>>
-	onGotPointerCapture?: ObservableMaybe<Nullable<PointerEventHandler<T>>>
-	onGotPointerCaptureCapture?: ObservableMaybe<Nullable<PointerEventHandler<T>>>
-	onLostPointerCapture?: ObservableMaybe<Nullable<PointerEventHandler<T>>>
-	onLostPointerCaptureCapture?: ObservableMaybe<Nullable<PointerEventHandler<T>>>
+	onPointerOver?: PointerEventHandler<T>
+	onPointerOverCapture?: PointerEventHandler<T>
+	onPointerEnter?: PointerEventHandler<T>
+	onPointerEnterCapture?: PointerEventHandler<T>
+	onPointerDown?: PointerEventHandler<T>
+	onPointerDownCapture?: PointerEventHandler<T>
+	onPointerMove?: PointerEventHandler<T>
+	onPointerMoveCapture?: PointerEventHandler<T>
+	onPointerUp?: PointerEventHandler<T>
+	onPointerUpCapture?: PointerEventHandler<T>
+	onPointerCancel?: PointerEventHandler<T>
+	onPointerCancelCapture?: PointerEventHandler<T>
+	onPointerOut?: PointerEventHandler<T>
+	onPointerOutCapture?: PointerEventHandler<T>
+	onPointerLeave?: PointerEventHandler<T>
+	onPointerLeaveCapture?: PointerEventHandler<T>
+	onGotPointerCapture?: PointerEventHandler<T>
+	onGotPointerCaptureCapture?: PointerEventHandler<T>
+	onLostPointerCapture?: PointerEventHandler<T>
+	onLostPointerCaptureCapture?: PointerEventHandler<T>
 	/* UI EVENTS */
-	onScroll?: ObservableMaybe<Nullable<UIEventHandler<T>>>
-	onScrollPassive?: ObservableMaybe<Nullable<UIEventHandler<T>>>
-	onScrollCapture?: ObservableMaybe<Nullable<UIEventHandler<T>>>
-	onScrollCapturePassive?: ObservableMaybe<Nullable<UIEventHandler<T>>>
-	onScrollEnd?: ObservableMaybe<Nullable<UIEventHandler<T>>>
-	onScrollEndPassive?: ObservableMaybe<Nullable<UIEventHandler<T>>>
+	onScroll?: UIEventHandler<T>
+	onScrollPassive?: UIEventHandler<T>
+	onScrollCapture?: UIEventHandler<T>
+	onScrollCapturePassive?: UIEventHandler<T>
+	onScrollEnd?: UIEventHandler<T>
+	onScrollEndPassive?: UIEventHandler<T>
 	/* WHEEL EVENTS */
-	onWheel?: ObservableMaybe<Nullable<WheelEventHandler<T>>>
-	onWheelPassive?: ObservableMaybe<Nullable<WheelEventHandler<T>>>
-	onWheelCapture?: ObservableMaybe<Nullable<WheelEventHandler<T>>>
-	onWheelCapturePassive?: ObservableMaybe<Nullable<WheelEventHandler<T>>>
+	onWheel?: WheelEventHandler<T>
+	onWheelPassive?: WheelEventHandler<T>
+	onWheelCapture?: WheelEventHandler<T>
+	onWheelCapturePassive?: WheelEventHandler<T>
 	/* ANIMATION EVENTS */
-	onAnimationStart?: ObservableMaybe<Nullable<AnimationEventHandler<T>>>
-	onAnimationStartCapture?: ObservableMaybe<Nullable<AnimationEventHandler<T>>>
-	onAnimationEnd?: ObservableMaybe<Nullable<AnimationEventHandler<T>>>
-	onAnimationEndCapture?: ObservableMaybe<Nullable<AnimationEventHandler<T>>>
-	onAnimationIteration?: ObservableMaybe<Nullable<AnimationEventHandler<T>>>
-	onAnimationIterationCapture?: ObservableMaybe<Nullable<AnimationEventHandler<T>>>
+	onAnimationStart?: AnimationEventHandler<T>
+	onAnimationStartCapture?: AnimationEventHandler<T>
+	onAnimationEnd?: AnimationEventHandler<T>
+	onAnimationEndCapture?: AnimationEventHandler<T>
+	onAnimationIteration?: AnimationEventHandler<T>
+	onAnimationIterationCapture?: AnimationEventHandler<T>
 	/* TRANSITION EVENTS */
-	onTransitionEnd?: ObservableMaybe<Nullable<TransitionEventHandler<T>>>
-	onTransitionEndCapture?: ObservableMaybe<Nullable<TransitionEventHandler<T>>>
+	onTransitionEnd?: TransitionEventHandler<T>
+	onTransitionEndCapture?: TransitionEventHandler<T>
 }
 interface DOMAttributes<T extends EventTarget> extends EventAttributes<T> {}
 

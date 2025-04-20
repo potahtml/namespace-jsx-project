@@ -19,13 +19,13 @@ interface ParamHTMLAttributes<T> extends HTMLAttributes<T> {
 // Solid Next - https://www.solidjs.com/
 interface ParamHTMLAttributes<T> extends HTMLAttributes<T> {
 	/** @deprecated */
-	name?: string | undefined | false
+	name?: string | false
 	/** @deprecated */
-	type?: string | undefined | false
+	type?: string | false
 	/** @deprecated */
-	value?: string | number | undefined | false
+	value?: string | number | false
 	/** @deprecated */
-	valuetype?: 'data' | 'ref' | 'object' | undefined | false
+	valuetype?: 'data' | 'ref' | 'object' | false
 }
 
 // Voby - https://github.com/vobyjs/voby

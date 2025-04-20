@@ -514,162 +514,162 @@ interface AriaAttributes {
 	 * Identifies the currently active element when DOM focus is on a composite widget, textbox,
 	 * group, or application.
 	 */
-	'aria-activedescendant'?: string | undefined | false
+	'aria-activedescendant'?: string | false
 	/**
 	 * Indicates whether assistive technologies will present all, or only parts of, the changed
 	 * region based on the change notifications defined by the aria-relevant attribute.
 	 */
-	'aria-atomic'?: 'false' | 'true' | undefined | false
+	'aria-atomic'?: 'false' | 'true' | false
 	/**
 	 * Indicates whether inputting text could trigger display of one or more predictions of the
 	 * user's intended value for an input and specifies how predictions would be presented if they
 	 * are made.
 	 */
-	'aria-autocomplete'?: 'none' | 'inline' | 'list' | 'both' | undefined | false
+	'aria-autocomplete'?: 'none' | 'inline' | 'list' | 'both' | false
 	/**
 	 * Indicates an element is being modified and that assistive technologies MAY want to wait until
 	 * the modifications are complete before exposing them to the user.
 	 */
-	'aria-busy'?: 'false' | 'true' | undefined | false
+	'aria-busy'?: 'false' | 'true' | false
 	/**
 	 * Indicates the current "checked" state of checkboxes, radio buttons, and other widgets.
 	 *
 	 * @see aria-pressed @see aria-selected.
 	 */
-	'aria-checked'?: 'false' | 'true' | 'mixed' | undefined | false
+	'aria-checked'?: 'false' | 'true' | 'mixed' | false
 	/**
 	 * Defines the total number of columns in a table, grid, or treegrid.
 	 *
 	 * @see aria-colindex.
 	 */
-	'aria-colcount'?: number | string | undefined | false
+	'aria-colcount'?: number | string | false
 	/**
 	 * Defines an element's column index or position with respect to the total number of columns
 	 * within a table, grid, or treegrid.
 	 *
 	 * @see aria-colcount @see aria-colspan.
 	 */
-	'aria-colindex'?: number | string | undefined | false
+	'aria-colindex'?: number | string | false
 	/**
 	 * Defines the number of columns spanned by a cell or gridcell within a table, grid, or
 	 * treegrid.
 	 *
 	 * @see aria-colindex @see aria-rowspan.
 	 */
-	'aria-colspan'?: number | string | undefined | false
+	'aria-colspan'?: number | string | false
 	/**
 	 * Identifies the element (or elements) whose contents or presence are controlled by the current
 	 * element.
 	 *
 	 * @see aria-owns.
 	 */
-	'aria-controls'?: string | undefined | false
+	'aria-controls'?: string | false
 	/**
 	 * Indicates the element that represents the current item within a container or set of related
 	 * elements.
 	 */
-	'aria-current'?: 'false' | 'true' | 'page' | 'step' | 'location' | 'date' | 'time' | undefined | false
+	'aria-current'?: 'false' | 'true' | 'page' | 'step' | 'location' | 'date' | 'time' | false
 	/**
 	 * Identifies the element (or elements) that describes the object.
 	 *
 	 * @see aria-labelledby
 	 */
-	'aria-describedby'?: string | undefined | false
+	'aria-describedby'?: string | false
 	/**
 	 * Identifies the element that provides a detailed, extended description for the object.
 	 *
 	 * @see aria-describedby.
 	 */
-	'aria-details'?: string | undefined | false
+	'aria-details'?: string | false
 	/**
 	 * Indicates that the element is perceivable but disabled, so it is not editable or otherwise
 	 * operable.
 	 *
 	 * @see aria-hidden @see aria-readonly.
 	 */
-	'aria-disabled'?: 'false' | 'true' | undefined | false
+	'aria-disabled'?: 'false' | 'true' | false
 	/**
 	 * Indicates what functions can be performed when a dragged object is released on the drop
 	 * target.
 	 *
 	 * @deprecated In ARIA 1.1
 	 */
-	'aria-dropeffect'?: 'none' | 'copy' | 'execute' | 'link' | 'move' | 'popup' | undefined | false
+	'aria-dropeffect'?: 'none' | 'copy' | 'execute' | 'link' | 'move' | 'popup' | false
 	/**
 	 * Identifies the element that provides an error message for the object.
 	 *
 	 * @see aria-invalid @see aria-describedby.
 	 */
-	'aria-errormessage'?: string | undefined | false
+	'aria-errormessage'?: string | false
 	/**
 	 * Indicates whether the element, or another grouping element it controls, is currently expanded
 	 * or collapsed.
 	 */
-	'aria-expanded'?: 'false' | 'true' | undefined | false
+	'aria-expanded'?: 'false' | 'true' | false
 	/**
 	 * Identifies the next element (or elements) in an alternate reading order of content which, at
 	 * the user's discretion, allows assistive technology to override the general default of reading
 	 * in document source order.
 	 */
-	'aria-flowto'?: string | undefined | false
+	'aria-flowto'?: string | false
 	/**
 	 * Indicates an element's "grabbed" state in a drag-and-drop operation.
 	 *
 	 * @deprecated In ARIA 1.1
 	 */
-	'aria-grabbed'?: 'false' | 'true' | undefined | false
+	'aria-grabbed'?: 'false' | 'true' | false
 	/**
 	 * Indicates the availability and type of interactive popup element, such as menu or dialog,
 	 * that can be triggered by an element.
 	 */
-	'aria-haspopup'?: 'false' | 'true' | 'menu' | 'listbox' | 'tree' | 'grid' | 'dialog' | undefined | false
+	'aria-haspopup'?: 'false' | 'true' | 'menu' | 'listbox' | 'tree' | 'grid' | 'dialog' | false
 	/**
 	 * Indicates whether the element is exposed to an accessibility API.
 	 *
 	 * @see aria-disabled.
 	 */
-	'aria-hidden'?: 'false' | 'true' | undefined | false
+	'aria-hidden'?: 'false' | 'true' | false
 	/**
 	 * Indicates the entered value does not conform to the format expected by the application.
 	 *
 	 * @see aria-errormessage.
 	 */
-	'aria-invalid'?: 'false' | 'true' | 'grammar' | 'spelling' | undefined | false
+	'aria-invalid'?: 'false' | 'true' | 'grammar' | 'spelling' | false
 	/**
 	 * Indicates keyboard shortcuts that an author has implemented to activate or give focus to an
 	 * element.
 	 */
-	'aria-keyshortcuts'?: string | undefined | false
+	'aria-keyshortcuts'?: string | false
 	/**
 	 * Defines a string value that labels the current element.
 	 *
 	 * @see aria-labelledby.
 	 */
-	'aria-label'?: string | undefined | false
+	'aria-label'?: string | false
 	/**
 	 * Identifies the element (or elements) that labels the current element.
 	 *
 	 * @see aria-describedby.
 	 */
-	'aria-labelledby'?: string | undefined | false
+	'aria-labelledby'?: string | false
 	/** Defines the hierarchical level of an element within a structure. */
-	'aria-level'?: number | string | undefined | false
+	'aria-level'?: number | string | false
 	/**
 	 * Indicates that an element will be updated, and describes the types of updates the user
 	 * agents, assistive technologies, and user can expect from the live region.
 	 */
-	'aria-live'?: 'off' | 'assertive' | 'polite' | undefined | false
+	'aria-live'?: 'off' | 'assertive' | 'polite' | false
 	/** Indicates whether an element is modal when displayed. */
-	'aria-modal'?: 'false' | 'true' | undefined | false
+	'aria-modal'?: 'false' | 'true' | false
 	/** Indicates whether a text box accepts multiple lines of input or only a single line. */
-	'aria-multiline'?: 'false' | 'true' | undefined | false
+	'aria-multiline'?: 'false' | 'true' | false
 	/**
 	 * Indicates that the user may select more than one item from the current selectable
 	 * descendants.
 	 */
-	'aria-multiselectable'?: 'false' | 'true' | undefined | false
+	'aria-multiselectable'?: 'false' | 'true' | false
 	/** Indicates whether the element's orientation is horizontal, vertical, or unknown/ambiguous. */
-	'aria-orientation'?: 'horizontal' | 'vertical' | undefined | false
+	'aria-orientation'?: 'horizontal' | 'vertical' | false
 	/**
 	 * Identifies an element (or elements) in order to define a visual, functional, or contextual
 	 * parent/child relationship between DOM elements where the DOM hierarchy cannot be used to
@@ -677,90 +677,90 @@ interface AriaAttributes {
 	 *
 	 * @see aria-controls.
 	 */
-	'aria-owns'?: string | undefined | false
+	'aria-owns'?: string | false
 	/**
 	 * Defines a short hint (a word or short phrase) intended to aid the user with data entry when
 	 * the control has no value. A hint could be a sample value or a brief description of the
 	 * expected format.
 	 */
-	'aria-placeholder'?: string | undefined | false
+	'aria-placeholder'?: string | false
 	/**
 	 * Defines an element's number or position in the current set of listitems or treeitems. Not
 	 * required if all elements in the set are present in the DOM.
 	 *
 	 * @see aria-setsize.
 	 */
-	'aria-posinset'?: number | string | undefined | false
+	'aria-posinset'?: number | string | false
 	/**
 	 * Indicates the current "pressed" state of toggle buttons.
 	 *
 	 * @see aria-checked @see aria-selected.
 	 */
-	'aria-pressed'?: 'false' | 'true' | 'mixed' | undefined | false
+	'aria-pressed'?: 'false' | 'true' | 'mixed' | false
 	/**
 	 * Indicates that the element is not editable, but is otherwise operable.
 	 *
 	 * @see aria-disabled.
 	 */
-	'aria-readonly'?: 'false' | 'true' | undefined | false
+	'aria-readonly'?: 'false' | 'true' | false
 	/**
 	 * Indicates what notifications the user agent will trigger when the accessibility tree within a
 	 * live region is modified.
 	 *
 	 * @see aria-atomic.
 	 */
-	'aria-relevant'?: 'additions' | 'additions removals' | 'additions text' | 'all' | 'removals' | 'removals additions' | 'removals text' | 'text' | 'text additions' | 'text removals' | undefined | false
+	'aria-relevant'?: 'additions' | 'additions removals' | 'additions text' | 'all' | 'removals' | 'removals additions' | 'removals text' | 'text' | 'text additions' | 'text removals' | false
 	/** Indicates that user input is required on the element before a form may be submitted. */
-	'aria-required'?: 'false' | 'true' | undefined | false
+	'aria-required'?: 'false' | 'true' | false
 	/** Defines a human-readable, author-localized description for the role of an element. */
-	'aria-roledescription'?: string | undefined | false
+	'aria-roledescription'?: string | false
 	/**
 	 * Defines the total number of rows in a table, grid, or treegrid.
 	 *
 	 * @see aria-rowindex.
 	 */
-	'aria-rowcount'?: number | string | undefined | false
+	'aria-rowcount'?: number | string | false
 	/**
 	 * Defines an element's row index or position with respect to the total number of rows within a
 	 * table, grid, or treegrid.
 	 *
 	 * @see aria-rowcount @see aria-rowspan.
 	 */
-	'aria-rowindex'?: number | string | undefined | false
+	'aria-rowindex'?: number | string | false
 	/**
 	 * Defines the number of rows spanned by a cell or gridcell within a table, grid, or treegrid.
 	 *
 	 * @see aria-rowindex @see aria-colspan.
 	 */
-	'aria-rowspan'?: number | string | undefined | false
+	'aria-rowspan'?: number | string | false
 	/**
 	 * Indicates the current "selected" state of various widgets.
 	 *
 	 * @see aria-checked @see aria-pressed.
 	 */
-	'aria-selected'?: 'false' | 'true' | undefined | false
+	'aria-selected'?: 'false' | 'true' | false
 	/**
 	 * Defines the number of items in the current set of listitems or treeitems. Not required if all
 	 * elements in the set are present in the DOM.
 	 *
 	 * @see aria-posinset.
 	 */
-	'aria-setsize'?: number | string | undefined | false
+	'aria-setsize'?: number | string | false
 	/** Indicates if items in a table or grid are sorted in ascending or descending order. */
-	'aria-sort'?: 'none' | 'ascending' | 'descending' | 'other' | undefined | false
+	'aria-sort'?: 'none' | 'ascending' | 'descending' | 'other' | false
 	/** Defines the maximum allowed value for a range widget. */
-	'aria-valuemax'?: number | string | undefined | false
+	'aria-valuemax'?: number | string | false
 	/** Defines the minimum allowed value for a range widget. */
-	'aria-valuemin'?: number | string | undefined | false
+	'aria-valuemin'?: number | string | false
 	/**
 	 * Defines the current value for a range widget.
 	 *
 	 * @see aria-valuetext.
 	 */
-	'aria-valuenow'?: number | string | undefined | false
+	'aria-valuenow'?: number | string | false
 	/** Defines the human readable text alternative of aria-valuenow for a range widget. */
-	'aria-valuetext'?: string | undefined | false
-	role?: 'alert' | 'alertdialog' | 'application' | 'article' | 'banner' | 'button' | 'cell' | 'checkbox' | 'columnheader' | 'combobox' | 'complementary' | 'contentinfo' | 'definition' | 'dialog' | 'directory' | 'document' | 'feed' | 'figure' | 'form' | 'grid' | 'gridcell' | 'group' | 'heading' | 'img' | 'link' | 'list' | 'listbox' | 'listitem' | 'log' | 'main' | 'marquee' | 'math' | 'menu' | 'menubar' | 'menuitem' | 'menuitemcheckbox' | 'menuitemradio' | 'meter' | 'navigation' | 'none' | 'note' | 'option' | 'presentation' | 'progressbar' | 'radio' | 'radiogroup' | 'region' | 'row' | 'rowgroup' | 'rowheader' | 'scrollbar' | 'search' | 'searchbox' | 'separator' | 'slider' | 'spinbutton' | 'status' | 'switch' | 'tab' | 'table' | 'tablist' | 'tabpanel' | 'term' | 'textbox' | 'timer' | 'toolbar' | 'tooltip' | 'tree' | 'treegrid' | 'treeitem' | undefined | false
+	'aria-valuetext'?: string | false
+	role?: 'alert' | 'alertdialog' | 'application' | 'article' | 'banner' | 'button' | 'cell' | 'checkbox' | 'columnheader' | 'combobox' | 'complementary' | 'contentinfo' | 'definition' | 'dialog' | 'directory' | 'document' | 'feed' | 'figure' | 'form' | 'grid' | 'gridcell' | 'group' | 'heading' | 'img' | 'link' | 'list' | 'listbox' | 'listitem' | 'log' | 'main' | 'marquee' | 'math' | 'menu' | 'menubar' | 'menuitem' | 'menuitemcheckbox' | 'menuitemradio' | 'meter' | 'navigation' | 'none' | 'note' | 'option' | 'presentation' | 'progressbar' | 'radio' | 'radiogroup' | 'region' | 'row' | 'rowgroup' | 'rowheader' | 'scrollbar' | 'search' | 'searchbox' | 'separator' | 'slider' | 'spinbutton' | 'status' | 'switch' | 'tab' | 'table' | 'tablist' | 'tabpanel' | 'term' | 'textbox' | 'timer' | 'toolbar' | 'tooltip' | 'tree' | 'treegrid' | 'treeitem' | false
 }
 
 // Voby - https://github.com/vobyjs/voby

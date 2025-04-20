@@ -34,22 +34,22 @@ interface FormHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface FormHTMLAttributes<T> extends HTMLAttributes<T> {
-	'accept-charset'?: string | undefined | false
-	action?: string | undefined | false
-	autocomplete?: 'on' | 'off' | undefined | false
-	encoding?: 'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain' | undefined | false
-	enctype?: 'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain' | undefined | false
-	method?: 'post' | 'get' | 'dialog' | undefined | false
-	name?: string | undefined | false
-	novalidate?: true | false | '' | undefined | false
-	rel?: string | undefined | false
-	target?: '_self' | '_blank' | '_parent' | '_top' | (string & {}) | undefined | false
+	'accept-charset'?: string | false
+	action?: string | false
+	autocomplete?: 'on' | 'off' | false
+	encoding?: 'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain' | false
+	enctype?: 'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain' | false
+	method?: 'post' | 'get' | 'dialog' | false
+	name?: string | false
+	novalidate?: true | false | '' | false
+	rel?: string | false
+	target?: '_self' | '_blank' | '_parent' | '_top' | (string & {}) | false
 
 	/** @deprecated Use lowercase attributes */
-	noValidate?: boolean | undefined | false
+	noValidate?: boolean | false
 
 	/** @deprecated */
-	accept?: string | undefined | false
+	accept?: string | false
 }
 
 // Voby - https://github.com/vobyjs/voby

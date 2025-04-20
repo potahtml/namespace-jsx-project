@@ -10,7 +10,7 @@ interface MapHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface MapHTMLAttributes<T> extends HTMLAttributes<T> {
-	name?: string | undefined | false
+	name?: string | false
 }
 
 // Voby - https://github.com/vobyjs/voby

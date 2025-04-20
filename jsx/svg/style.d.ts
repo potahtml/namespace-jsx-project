@@ -20,14 +20,14 @@ interface StyleHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface StyleHTMLAttributes<T> extends HTMLAttributes<T> {
-	blocking?: 'render' | undefined | false
-	media?: string | undefined | false
-	nonce?: string | undefined | false
+	blocking?: 'render' | false
+	media?: string | false
+	nonce?: string | false
 
 	/** @deprecated */
-	scoped?: true | false | '' | undefined | false
+	scoped?: true | false | '' | false
 	/** @deprecated */
-	type?: string | undefined | false
+	type?: string | false
 }
 
 // Voby - https://github.com/vobyjs/voby

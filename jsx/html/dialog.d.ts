@@ -18,7 +18,7 @@ interface DialogHtmlAttributes<T> extends HTMLAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface DialogHtmlAttributes<T> extends HTMLAttributes<T> {
-	open?: true | false | '' | undefined | false
+	open?: true | false | '' | false
 	tabindex?: never
 
 	onclose?: EventHandlerUnion<T, Event>

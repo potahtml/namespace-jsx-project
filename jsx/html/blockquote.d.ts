@@ -10,7 +10,7 @@ interface BlockquoteHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface BlockquoteHTMLAttributes<T> extends HTMLAttributes<T> {
-	cite?: string | undefined | false
+	cite?: string | false
 }
 
 // Voby - https://github.com/vobyjs/voby

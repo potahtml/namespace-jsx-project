@@ -15,11 +15,11 @@ interface ModHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface ModHTMLAttributes<T> extends HTMLAttributes<T> {
-	cite?: string | undefined | false
-	datetime?: string | undefined | false
+	cite?: string | false
+	datetime?: string | false
 
 	/** @deprecated Use lowercase attributes */
-	dateTime?: string | undefined | false
+	dateTime?: string | false
 }
 
 // Voby - https://github.com/vobyjs/voby

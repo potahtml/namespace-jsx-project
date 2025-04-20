@@ -12,8 +12,8 @@ interface LabelHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface LabelHTMLAttributes<T> extends HTMLAttributes<T> {
-	for?: string | undefined | false
-	form?: string | undefined | false
+	for?: string | false
+	form?: string | false
 }
 
 // Voby - https://github.com/vobyjs/voby

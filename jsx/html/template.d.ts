@@ -18,15 +18,15 @@ interface TemplateHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface TemplateHTMLAttributes<T> extends HTMLAttributes<T> {
-	shadowrootmode?: 'open' | 'closed' | undefined | false
-	shadowrootclonable?: true | false | '' | undefined | false
-	shadowrootdelegatesfocus?: true | false | '' | undefined | false
+	shadowrootmode?: 'open' | 'closed' | false
+	shadowrootclonable?: true | false | '' | false
+	shadowrootdelegatesfocus?: true | false | '' | false
 
 	/** @experimental */
-	shadowrootserializable?: true | false | '' | undefined | false
+	shadowrootserializable?: true | false | '' | false
 
 	/** @deprecated */
-	content?: DocumentFragment | undefined | false
+	content?: DocumentFragment | false
 }
 
 // Pota - https://github.com/potahtml/pota

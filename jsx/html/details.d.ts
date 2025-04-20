@@ -17,9 +17,9 @@ interface DetailsHtmlAttributes<T> extends HTMLAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface DetailsHtmlAttributes<T> extends HTMLAttributes<T> {
-	name?: string | undefined | false
+	name?: string | false
 	onToggle?: EventHandlerUnion<T, Event>
-	open?: true | false | '' | undefined | false
+	open?: true | false | '' | false
 
 	/** @deprecated Use camelCase event handlers */
 	ontoggle?: EventHandlerUnion<T, Event>
@@ -28,7 +28,7 @@ interface DetailsHtmlAttributes<T> extends HTMLAttributes<T> {
 // Voby - https://github.com/vobyjs/voby
 interface DetailsHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
 	open?: boolean
-	onToggle?: ObservableMaybe<Nullable<GenericEventHandler<T>>>
+	onToggle?: GenericEventHandler<T>
 }
 
 // Vue - https://vuejs.org/
