@@ -10,7 +10,7 @@ import { read, unique } from './utils.js'
  */
 export const libs = [
 	{
-		// SOLID
+		// SOLID MAIN
 		file: 'https://raw.githubusercontent.com/titoBouzout/dom-expressions/refs/heads/main/packages/dom-expressions/src/jsx.d.ts',
 		name: 'Solid Main',
 		url: 'https://www.solidjs.com/',
@@ -18,6 +18,9 @@ export const libs = [
 			// events
 			customeventhandlerscamelcase: 'events',
 			customeventhandlerslowercase: 'events',
+			customeventhandlersnamespaced: 'events',
+			elementeventmap: 'events',
+			windoweventmap: 'events',
 			domattributes: 'events',
 
 			// elements
@@ -31,7 +34,7 @@ export const libs = [
 		},
 	},
 	{
-		// SOLID
+		// SOLID MINOR
 		file: 'https://raw.githubusercontent.com/titoBouzout/dom-expressions/refs/heads/minor/packages/dom-expressions/src/jsx.d.ts',
 		name: 'Solid Minor',
 		url: 'https://www.solidjs.com/',
@@ -39,6 +42,9 @@ export const libs = [
 			// events
 			customeventhandlerscamelcase: 'events',
 			customeventhandlerslowercase: 'events',
+			customeventhandlersnamespaced: 'events',
+			elementeventmap: 'events',
+			windoweventmap: 'events',
 			domattributes: 'events',
 
 			// elements
@@ -52,7 +58,7 @@ export const libs = [
 		},
 	},
 	{
-		// SOLID
+		// SOLID NEXT
 		file: 'https://raw.githubusercontent.com/titoBouzout/dom-expressions/refs/heads/next/packages/dom-expressions/src/jsx.d.ts',
 		name: 'Solid Next',
 		url: 'https://www.solidjs.com/',
@@ -60,6 +66,9 @@ export const libs = [
 			// events
 			customeventhandlerscamelcase: 'events',
 			customeventhandlerslowercase: 'events',
+			customeventhandlersnamespaced: 'events',
+			elementeventmap: 'events',
+			windoweventmap: 'events',
 			domattributes: 'events',
 
 			// elements

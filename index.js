@@ -85,21 +85,21 @@ function xElement(props) {
       <tbody>
         <For each="${attrprops.filter(x => !x.deprecated && !x.warn)}"
           >${value =>
-            html`<Key
+            html`<xElementKey
               value="${value}"
               columns="${columns}"
             />`}
         </For>
         <For each="${attrprops.filter(x => x.deprecated)}"
           >${value =>
-            html`<Key
+            html`<xElementKey
               value="${value}"
               columns="${columns}"
             />`}
         </For>
         <For each="${attrprops.filter(x => x.warn && !x.deprecated)}"
           >${value =>
-            html`<Key
+            html`<xElementKey
               value="${value}"
               columns="${columns}"
             />`}
@@ -147,7 +147,7 @@ function xElement(props) {
   </section>`
 }
 
-function Key(props) {
+function xElementKey(props) {
   const value = props.value
   const columns = props.columns
 
@@ -185,6 +185,121 @@ function Key(props) {
   </tr>`
 }
 
+function Events({ events, eventsLib, columns }) {
+  return html` <section
+    id="events"
+    class="table"
+  >
+   <details open="">
+        <summary><h2>Events</h2></summary>
+        <table>
+          <thead>
+              <tr>
+                <th>key</th>
+                <th>interface</th>
+                <For each="${columns}"
+                  >${value => html`<th data-col="${value}">${value}</th>`}
+                </For>
+              </tr>
+          </thead>
+          <tbody>
+            <For each="${Object.keys(eventsLib).sort((a, b) =>
+              a
+                .toLowerCase()
+                .replace(':', '')
+                .localeCompare(b.toLowerCase().replace(':', '')),
+            )}"
+              >${value =>
+                html`<EventsKey
+                  inter="${
+                    events[value.toLowerCase().replace('on:', '')] ||
+                    events[
+                      value
+                        .toLowerCase()
+                        .replace('on:', '')
+                        .replace(/^on/, '')
+                    ] || { interface: 'UNKNOWN' }
+                  }"
+                  value="${eventsLib[value]}"
+                  columns="${columns}"
+                />`}
+            </For>
+          </tbody>
+        </table>
+    </details>
+  </section>`
+}
+
+function EventsKey({ value, columns, inter }) {
+  return html`<tr>
+    <td nowrap="">
+        <a target="_blank" href="${'https://developer.mozilla.org/en-US/search?q=' + encodeURIComponent(value.name.replace('on:', '') + ' event')}">${value.name}</a>
+    </td>
+    <td nowrap="">
+        <a target="_blank" href="${'https://developer.mozilla.org/en-US/docs/Web/API/' + inter.interface}">${inter.interface}</a>
+    </td>
+    <For each="${columns}"
+      >${col =>
+        html`<td data-col="${col}">
+          ${
+            value.values[col] !== undefined ? value.values[col] : '❌'
+          }
+        </td>`}
+    </For>
+  </tr>`
+}
+
+function Aria({ aria, columns }) {
+  return html` <section
+    id="aria"
+    class="table"
+  >
+   <details open="">
+        <summary><h2>Aria</h2></summary>
+        <table>
+          <thead>
+              <tr>
+                <th>key</th>
+                <For each="${columns}"
+                  >${value => html`<th data-col="${value}">${value}</th>`}
+                </For>
+              </tr>
+          </thead>
+          <tbody>
+            <For each="${Object.keys(aria).sort((a, b) =>
+              a
+                .toLowerCase()
+                .replace('-', '')
+                .localeCompare(b.toLowerCase().replace('-', '')),
+            )}"
+              >${value =>
+                html`<AriaKey
+                  value="${aria[value]}"
+                  columns="${columns}"
+                />`}
+            </For>
+          </tbody>
+        </table>
+    </details>
+  </section>`
+}
+
+function AriaKey({ value, columns }) {
+  return html`<tr>
+    <td nowrap="">
+        <a target="_blank" href="${'https://developer.mozilla.org/en-US/search?q=' + encodeURIComponent(value.name)}">${value.name}</a>
+    </td>
+    <For each="${columns}"
+      >${col =>
+        html`<td data-col="${col}">
+          ${
+            value.values[col] !== undefined ? value.values[col] : '❌'
+          }
+        </td>`}
+    </For>
+  </tr>`
+}
+
 function App() {
   const [read, write] = signal()
 
@@ -198,33 +313,52 @@ function App() {
           .scrollIntoView()
     })
 
-  return html`<Show when="${read}">
-    <form>
-      <input
-        class="filter"
-        name="search"
-        type="search"
-        placeholder="Filter…"
-      />
-    </form>
-
-    <For
-      each="${[
-        'http://www.w3.org/1999/xhtml',
-        'http://www.w3.org/1998/Math/MathML',
-      ]}"
-      >${namespace => html`
+  return html`<Show when="${read}">${data => {
+    return html`
+        <form>
+          <input
+            class="filter"
+            name="search"
+            type="search"
+            placeholder="Filter…"
+          />
+        </form>
+        <For
+          each="${[
+            'http://www.w3.org/1999/xhtml',
+            'http://www.w3.org/1998/Math/MathML',
+          ]}"
+        >
+          ${namespace => html`
         <Namespace
           namespace="${namespace}"
-          elements="${Object.values(read().elements[namespace])}"
-          columns="${read().columns}"
+          elements="${Object.values(data().elements[namespace])}"
+          columns="${data().columns}"
         />
       `}
-    </For>
-  </Show>`
+        </For>
+        <Events
+          eventsLib="${data().eventsLib}"
+          events="${data().events}"
+          columns="${data().columns.filter(x => x !== 'Chrome' && x !== 'Firefox' && x !== 'VSCode')}"
+        />
+        <Aria
+          aria="${data().aria}"
+          columns="${data().columns.filter(x => x !== 'Chrome' && x !== 'Firefox' && x !== 'VSCode')}"
+        />
+      `
+  }}</Show>`
 }
 
-html.define({ Namespace, xElement, Key })
+html.define({
+  Namespace,
+  xElement,
+  xElementKey,
+  Events,
+  EventsKey,
+  Aria,
+  AriaKey,
+})
 
 render(App, document.querySelector('.content'), { clear: true })
 
