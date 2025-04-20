@@ -50,6 +50,7 @@ copy(`./.prettierrc.json`, `./jsx/.prettierrc.json`)
 
 const DATA = {
 	events: {},
+	aria: {},
 	elements: {},
 }
 
@@ -354,6 +355,25 @@ for (let eventName in DATA.events) {
 			interface: 'Event',
 		}
 	}
+}
+
+// aria
+
+DATA.aria = {}
+
+for (const lib of libs) {
+	lib.interfaces.ariaattributes.properties.forEach(property => {
+		DATA.aria[property.name] = DATA.aria[property.name] || {
+			name: property.name,
+			values: {},
+		}
+		if (DATA.aria[property.name].values[lib.name]) {
+			DATA.aria[property.name].values[lib.name] +=
+				' ' + property.source
+		} else {
+			DATA.aria[property.name].values[lib.name] = property.source
+		}
+	})
 }
 
 // get browser data
