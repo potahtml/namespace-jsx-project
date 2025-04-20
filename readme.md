@@ -97,12 +97,11 @@ idea!
 
 4. It may be possible that you run into a random error with puppeteer,
    on which case you just run the whole thing again. Theres also the
-   need to install firefox via puppeteer command thats given to you by
-   a console error.
+   need to install firefox via puppeteer. Then command is given to you
+   by a console error from puppeteer.
 
 ## TODO
 
-- add aria attributes
 - add global attributes
 
 ## Related
