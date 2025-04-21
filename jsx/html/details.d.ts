@@ -18,11 +18,7 @@ interface DetailsHtmlAttributes<T> extends HTMLAttributes<T> {
 // Solid Next - https://www.solidjs.com/
 interface DetailsHtmlAttributes<T> extends HTMLAttributes<T> {
 	name?: string | false
-	onToggle?: EventHandlerUnion<T, Event>
 	open?: true | false | '' | false
-
-	/** @deprecated Use camelCase event handlers */
-	ontoggle?: EventHandlerUnion<T, Event>
 }
 
 // Voby - https://github.com/vobyjs/voby

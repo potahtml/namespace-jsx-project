@@ -1,3 +1,6 @@
+// Solid Next - https://www.solidjs.com/
+interface BodyHTMLAttributes<T> extends HTMLAttributes<T>, WindowEventMap<T>, ElementEventMap<T> {}
+
 // Pota - https://github.com/potahtml/pota
 interface HTMLBodyElementAttributes {
 	/** @deprecated */

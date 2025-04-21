@@ -3473,6 +3473,32 @@
 							"Vue": "boolean | 'true' | 'false'"
 						}
 					},
+					"on:encrypted": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"name": "on:encrypted",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement#htmlaudioelement.on:encrypted",
+						"values": {
+							"Solid Next": "EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>"
+						}
+					},
+					"on:waitingforkey": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"name": "on:waitingforkey",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement#htmlaudioelement.on:waitingforkey",
+						"values": {
+							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+						}
+					},
 					"onencrypted": {
 						"attr": true,
 						"attrChrome": true,
@@ -3488,6 +3514,21 @@
 							"Firefox": "event"
 						}
 					},
+					"onEncrypted": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"inherited": true,
+						"name": "onEncrypted",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement#htmlaudioelement.onencrypted",
+						"values": {
+							"Solid Next": "EventHandlerUnion<T, MediaEncryptedEvent>"
+						},
+						"warn": true
+					},
 					"onwaitingforkey": {
 						"attr": true,
 						"attrChrome": true,
@@ -3502,6 +3543,21 @@
 							"Chrome": "event",
 							"Firefox": "event"
 						}
+					},
+					"onWaitingForKey": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"inherited": true,
+						"name": "onWaitingForKey",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement#htmlaudioelement.onwaitingforkey",
+						"values": {
+							"Solid Next": "EventHandlerUnion<T, Event>"
+						},
+						"warn": true
 					},
 					"playbackRate": {
 						"attr": false,
@@ -4972,6 +5028,60 @@
 							"VSCode": "string"
 						}
 					},
+					"on:contextlost": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"name": "on:contextlost",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement#htmlcanvaselement.on:contextlost",
+						"values": {
+							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+						}
+					},
+					"on:contextrestored": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"name": "on:contextrestored",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement#htmlcanvaselement.on:contextrestored",
+						"values": {
+							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+						}
+					},
+					"onContextLost": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"name": "onContextLost",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement#htmlcanvaselement.oncontextlost",
+						"values": {
+							"Solid Next": "EventHandlerUnion<T, Event>"
+						},
+						"warn": true
+					},
+					"onContextRestored": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"name": "onContextRestored",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement#htmlcanvaselement.oncontextrestored",
+						"values": {
+							"Solid Next": "EventHandlerUnion<T, Event>"
+						},
+						"warn": true
+					},
 					"width": {
 						"attr": true,
 						"attrChrome": true,
@@ -5553,7 +5663,6 @@
 						"values": {
 							"Solid Main": "EventHandlerUnion<T, Event>",
 							"Solid Minor": "EventHandlerUnion<T, Event>",
-							"Solid Next": "EventHandlerUnion<T, Event>",
 							"Voby": "GenericEventHandler<T>",
 							"Vue": "(payload: ToggleEvent) => void"
 						},
@@ -5570,8 +5679,7 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDetailsElement#htmldetailselement.ontoggle",
 						"values": {
 							"Solid Main": "EventHandlerUnion<T, Event>",
-							"Solid Minor": "EventHandlerUnion<T, Event>",
-							"Solid Next": "EventHandlerUnion<T, Event>"
+							"Solid Minor": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"open": {
@@ -5651,6 +5759,32 @@
 							"Preact": "'none' | 'closerequest' | 'any'"
 						}
 					},
+					"on:cancel": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"name": "on:cancel",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement#htmldialogelement.on:cancel",
+						"values": {
+							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+						}
+					},
+					"on:close": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"name": "on:close",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement#htmldialogelement.on:close",
+						"values": {
+							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+						}
+					},
 					"onCancel": {
 						"attr": false,
 						"attrChrome": false,
@@ -5679,8 +5813,7 @@
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement#htmldialogelement.oncancel",
 						"values": {
-							"Solid Minor": "EventHandlerUnion<T, Event>",
-							"Solid Next": "EventHandlerUnion<T, Event>"
+							"Solid Minor": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"onClose": {
@@ -5712,8 +5845,7 @@
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement#htmldialogelement.onclose",
 						"values": {
-							"Solid Minor": "EventHandlerUnion<T, Event>",
-							"Solid Next": "EventHandlerUnion<T, Event>"
+							"Solid Minor": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"open": {
@@ -17001,6 +17133,58 @@
 							"Vue": "boolean | 'true' | 'false'"
 						}
 					},
+					"on:encrypted": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"name": "on:encrypted",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#htmlvideoelement.on:encrypted",
+						"values": {
+							"Solid Next": "EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>"
+						}
+					},
+					"on:enterpictureinpicture": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"name": "on:enterpictureinpicture",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#htmlvideoelement.on:enterpictureinpicture",
+						"values": {
+							"Solid Next": "EventHandlerWithOptionsUnion<T, PictureInPictureEvent>"
+						}
+					},
+					"on:leavepictureinpicture": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"name": "on:leavepictureinpicture",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#htmlvideoelement.on:leavepictureinpicture",
+						"values": {
+							"Solid Next": "EventHandlerWithOptionsUnion<T, PictureInPictureEvent>"
+						}
+					},
+					"on:waitingforkey": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"name": "on:waitingforkey",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#htmlvideoelement.on:waitingforkey",
+						"values": {
+							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+						}
+					},
 					"onencrypted": {
 						"attr": true,
 						"attrChrome": true,
@@ -17016,6 +17200,21 @@
 							"Firefox": "event"
 						}
 					},
+					"onEncrypted": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"inherited": true,
+						"name": "onEncrypted",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#htmlvideoelement.onencrypted",
+						"values": {
+							"Solid Next": "EventHandlerUnion<T, MediaEncryptedEvent>"
+						},
+						"warn": true
+					},
 					"onenterpictureinpicture": {
 						"attr": true,
 						"attrChrome": true,
@@ -17029,6 +17228,20 @@
 							"Chrome": "event"
 						}
 					},
+					"onEnterPictureInPicture": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"name": "onEnterPictureInPicture",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#htmlvideoelement.onenterpictureinpicture",
+						"values": {
+							"Solid Next": "EventHandlerUnion<T, PictureInPictureEvent>"
+						},
+						"warn": true
+					},
 					"onleavepictureinpicture": {
 						"attr": true,
 						"attrChrome": true,
@@ -17041,6 +17254,20 @@
 						"values": {
 							"Chrome": "event"
 						}
+					},
+					"onLeavePictureInPicture": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"name": "onLeavePictureInPicture",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#htmlvideoelement.onleavepictureinpicture",
+						"values": {
+							"Solid Next": "EventHandlerUnion<T, PictureInPictureEvent>"
+						},
+						"warn": true
 					},
 					"onwaitingforkey": {
 						"attr": true,
@@ -17056,6 +17283,21 @@
 							"Chrome": "event",
 							"Firefox": "event"
 						}
+					},
+					"onWaitingForKey": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"inherited": true,
+						"name": "onWaitingForKey",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#htmlvideoelement.onwaitingforkey",
+						"values": {
+							"Solid Next": "EventHandlerUnion<T, Event>"
+						},
+						"warn": true
 					},
 					"playbackRate": {
 						"attr": false,
@@ -69229,7 +69471,7 @@
 			"name": "pagehide"
 		},
 		"pagereveal": {
-			"capitalized": "pagereveal",
+			"capitalized": "onPageReveal",
 			"interface": "PageRevealEvent",
 			"name": "pagereveal"
 		},
@@ -69239,7 +69481,7 @@
 			"name": "pageshow"
 		},
 		"pageswap": {
-			"capitalized": "pageswap",
+			"capitalized": "onPageSwap",
 			"interface": "PageSwapEvent",
 			"name": "pageswap"
 		},
@@ -69389,7 +69631,7 @@
 			"name": "stalled"
 		},
 		"storage": {
-			"capitalized": "storage",
+			"capitalized": "onStorage",
 			"interface": "StorageEvent",
 			"name": "storage"
 		},
@@ -69517,13 +69759,15 @@
 		"on:afterprint": {
 			"name": "on:afterprint",
 			"values": {
-				"Pota": "Events<Event, Element>"
+				"Pota": "Events<Event, Element>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 			}
 		},
 		"on:animationcancel": {
 			"name": "on:animationcancel",
 			"values": {
-				"Pota": "Events<AnimationEvent, Element>"
+				"Pota": "Events<AnimationEvent, Element>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, AnimationEvent>"
 			}
 		},
 		"on:animationend": {
@@ -69559,7 +69803,7 @@
 				"Pota": "Events<MouseEvent, Element>",
 				"Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
 				"Solid Minor": "EventHandlerWithOptionsUnion<T, MouseEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
+				"Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
 			}
 		},
 		"on:beforeinput": {
@@ -69574,7 +69818,8 @@
 		"on:beforeprint": {
 			"name": "on:beforeprint",
 			"values": {
-				"Pota": "Events<Event, Element>"
+				"Pota": "Events<Event, Element>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 			}
 		},
 		"on:beforetoggle": {
@@ -69589,7 +69834,8 @@
 		"on:beforeunload": {
 			"name": "on:beforeunload",
 			"values": {
-				"Pota": "Events<BeforeUnloadEvent, Element>"
+				"Pota": "Events<BeforeUnloadEvent, Element>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, BeforeUnloadEvent>"
 			}
 		},
 		"on:blur": {
@@ -69888,7 +70134,14 @@
 		"on:fullscreenchange": {
 			"name": "on:fullscreenchange",
 			"values": {
-				"Pota": "Events<Event, Element>"
+				"Pota": "Events<Event, Element>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
+		"on:FullscreenError": {
+			"name": "on:FullscreenError",
+			"values": {
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 			}
 		},
 		"on:fullscreenerror": {
@@ -69900,19 +70153,22 @@
 		"on:gamepadconnected": {
 			"name": "on:gamepadconnected",
 			"values": {
-				"Pota": "Events<GamepadEvent, Element>"
+				"Pota": "Events<GamepadEvent, Element>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, GamepadEvent>"
 			}
 		},
 		"on:gamepaddisconnected": {
 			"name": "on:gamepaddisconnected",
 			"values": {
-				"Pota": "Events<GamepadEvent, Element>"
+				"Pota": "Events<GamepadEvent, Element>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, GamepadEvent>"
 			}
 		},
 		"on:hashchange": {
 			"name": "on:hashchange",
 			"values": {
-				"Pota": "Events<HashChangeEvent, Element>"
+				"Pota": "Events<HashChangeEvent, Element>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, HashChangeEvent>"
 			}
 		},
 		"on:input": {
@@ -69963,7 +70219,8 @@
 		"on:languagechange": {
 			"name": "on:languagechange",
 			"values": {
-				"Pota": "Events<Event, Element>"
+				"Pota": "Events<Event, Element>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 			}
 		},
 		"on:leavepictureinpicture": {
@@ -70020,13 +70277,15 @@
 		"on:message": {
 			"name": "on:message",
 			"values": {
-				"Pota": "Events<MessageEvent, Element>"
+				"Pota": "Events<MessageEvent, Element>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, MessageEvent>"
 			}
 		},
 		"on:messageerror": {
 			"name": "on:messageerror",
 			"values": {
-				"Pota": "Events<MessageEvent, Element>"
+				"Pota": "Events<MessageEvent, Element>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, MessageEvent>"
 			}
 		},
 		"on:mousedown": {
@@ -70095,37 +70354,43 @@
 		"on:offline": {
 			"name": "on:offline",
 			"values": {
-				"Pota": "Events<Event, Element>"
+				"Pota": "Events<Event, Element>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 			}
 		},
 		"on:online": {
 			"name": "on:online",
 			"values": {
-				"Pota": "Events<Event, Element>"
+				"Pota": "Events<Event, Element>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 			}
 		},
 		"on:pagehide": {
 			"name": "on:pagehide",
 			"values": {
-				"Pota": "Events<PageTransitionEvent, Element>"
+				"Pota": "Events<PageTransitionEvent, Element>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>"
 			}
 		},
 		"on:pagereveal": {
 			"name": "on:pagereveal",
 			"values": {
-				"Pota": "Events<Event, Element>"
+				"Pota": "Events<Event, Element>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, PageRevealEvent>"
 			}
 		},
 		"on:pageshow": {
 			"name": "on:pageshow",
 			"values": {
-				"Pota": "Events<PageTransitionEvent, Element>"
+				"Pota": "Events<PageTransitionEvent, Element>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>"
 			}
 		},
 		"on:pageswap": {
 			"name": "on:pageswap",
 			"values": {
-				"Pota": "Events<Event, Element>"
+				"Pota": "Events<Event, Element>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, PageSwapEvent>"
 			}
 		},
 		"on:paste": {
@@ -70239,7 +70504,8 @@
 		"on:popstate": {
 			"name": "on:popstate",
 			"values": {
-				"Pota": "Events<PopStateEvent, Element>"
+				"Pota": "Events<PopStateEvent, Element>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, PopStateEvent>"
 			}
 		},
 		"on:progress": {
@@ -70263,7 +70529,8 @@
 		"on:rejectionhandled": {
 			"name": "on:rejectionhandled",
 			"values": {
-				"Pota": "Events<PromiseRejectionEvent, Element>"
+				"Pota": "Events<PromiseRejectionEvent, Element>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>"
 			}
 		},
 		"on:reset": {
@@ -70362,7 +70629,8 @@
 		"on:storage": {
 			"name": "on:storage",
 			"values": {
-				"Pota": "Events<StorageEvent, Element>"
+				"Pota": "Events<StorageEvent, Element>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, StorageEvent>"
 			}
 		},
 		"on:submit": {
@@ -70476,13 +70744,15 @@
 		"on:unhandledrejection": {
 			"name": "on:unhandledrejection",
 			"values": {
-				"Pota": "Events<PromiseRejectionEvent, Element>"
+				"Pota": "Events<PromiseRejectionEvent, Element>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>"
 			}
 		},
 		"on:unload": {
 			"name": "on:unload",
 			"values": {
-				"Pota": "Events<Event, Element>"
+				"Pota": "Events<Event, Element>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 			}
 		},
 		"on:volumechange": {
@@ -70536,6 +70806,18 @@
 				"Solid Main": "EventHandlerUnion<T, Event>",
 				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"onAfterPrint": {
+			"name": "onAfterPrint",
+			"values": {
+				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"onAnimationCancel": {
+			"name": "onAnimationCancel",
+			"values": {
+				"Solid Next": "EventHandlerUnion<T, AnimationEvent>"
 			}
 		},
 		"onAnimationEnd": {
@@ -70620,7 +70902,7 @@
 				"React": "MouseEventHandler<T>",
 				"Solid Main": "EventHandlerUnion<T, MouseEvent>",
 				"Solid Minor": "EventHandlerUnion<T, MouseEvent>",
-				"Solid Next": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Next": "EventHandlerUnion<T, PointerEvent>",
 				"Voby": "MouseEventHandler<T>"
 			}
 		},
@@ -70663,6 +70945,12 @@
 				"Vue": "Event"
 			}
 		},
+		"onBeforePrint": {
+			"name": "onBeforePrint",
+			"values": {
+				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
 		"onBeforeToggle": {
 			"name": "onBeforeToggle",
 			"values": {
@@ -70679,6 +70967,12 @@
 				"Solid Main": "EventHandlerUnion<T, ToggleEvent>",
 				"Solid Minor": "EventHandlerUnion<T, ToggleEvent>",
 				"Solid Next": "EventHandlerUnion<T, ToggleEvent>"
+			}
+		},
+		"onBeforeUnload": {
+			"name": "onBeforeUnload",
+			"values": {
+				"Solid Next": "EventHandlerUnion<T, BeforeUnloadEvent>"
 			}
 		},
 		"onBlur": {
@@ -70891,7 +71185,7 @@
 				"React": "MouseEventHandler<T>",
 				"Solid Main": "EventHandlerUnion<T, MouseEvent>",
 				"Solid Minor": "EventHandlerUnion<T, MouseEvent>",
-				"Solid Next": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Next": "EventHandlerUnion<T, PointerEvent>",
 				"Voby": "MouseEventHandler<T>"
 			}
 		},
@@ -70927,6 +71221,12 @@
 				"Solid Main": "EventHandlerUnion<T, ClipboardEvent>",
 				"Solid Minor": "EventHandlerUnion<T, ClipboardEvent>",
 				"Solid Next": "EventHandlerUnion<T, ClipboardEvent>"
+			}
+		},
+		"onCueChange": {
+			"name": "onCueChange",
+			"values": {
+				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
 		"onCut": {
@@ -71221,7 +71521,6 @@
 				"React": "ReactEventHandler<T>",
 				"Solid Main": "EventHandlerUnion<T, Event>",
 				"Solid Minor": "EventHandlerUnion<T, MediaEncryptedEvent>",
-				"Solid Next": "EventHandlerUnion<T, MediaEncryptedEvent>",
 				"Voby": "GenericEventHandler<T>",
 				"Vue": "Event"
 			}
@@ -71355,6 +71654,36 @@
 				"Voby": "GenericEventHandler<T>"
 			}
 		},
+		"onFullscreenChange": {
+			"name": "onFullscreenChange",
+			"values": {
+				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"onFullscreenError": {
+			"name": "onFullscreenError",
+			"values": {
+				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"onGamepadConnected": {
+			"name": "onGamepadConnected",
+			"values": {
+				"Solid Next": "EventHandlerUnion<T, GamepadEvent>"
+			}
+		},
+		"onGamepadDisconnected": {
+			"name": "onGamepadDisconnected",
+			"values": {
+				"Solid Next": "EventHandlerUnion<T, GamepadEvent>"
+			}
+		},
+		"onHashchange": {
+			"name": "onHashchange",
+			"values": {
+				"Solid Next": "EventHandlerUnion<T, HashChangeEvent>"
+			}
+		},
 		"onInput": {
 			"name": "onInput",
 			"values": {
@@ -71468,6 +71797,12 @@
 			"name": "onKeyup",
 			"values": {
 				"Vue": "KeyboardEvent"
+			}
+		},
+		"onLanguageChange": {
+			"name": "onLanguageChange",
+			"values": {
+				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
 		"onLeavePictureInPicture": {
@@ -71588,6 +71923,18 @@
 				"Solid Main": "EventHandlerUnion<T, PointerEvent>",
 				"Solid Minor": "EventHandlerUnion<T, PointerEvent>",
 				"Solid Next": "EventHandlerUnion<T, PointerEvent>"
+			}
+		},
+		"onMessage": {
+			"name": "onMessage",
+			"values": {
+				"Solid Next": "EventHandlerUnion<T, MessageEvent>"
+			}
+		},
+		"onMessageError": {
+			"name": "onMessageError",
+			"values": {
+				"Solid Next": "EventHandlerUnion<T, MessageEvent>"
 			}
 		},
 		"onMiddleClick": {
@@ -71769,6 +72116,42 @@
 			"name": "onMouseup",
 			"values": {
 				"Vue": "MouseEvent"
+			}
+		},
+		"onOffline": {
+			"name": "onOffline",
+			"values": {
+				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"onOnline": {
+			"name": "onOnline",
+			"values": {
+				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"onPageHide": {
+			"name": "onPageHide",
+			"values": {
+				"Solid Next": "EventHandlerUnion<T, PageTransitionEvent>"
+			}
+		},
+		"onPageReveal": {
+			"name": "onPageReveal",
+			"values": {
+				"Solid Next": "EventHandlerUnion<T, PageRevealEvent>"
+			}
+		},
+		"onPageShow": {
+			"name": "onPageShow",
+			"values": {
+				"Solid Next": "EventHandlerUnion<T, PageTransitionEvent>"
+			}
+		},
+		"onPageSwap": {
+			"name": "onPageSwap",
+			"values": {
+				"Solid Next": "EventHandlerUnion<T, PageSwapEvent>"
 			}
 		},
 		"onPaste": {
@@ -72051,6 +72434,12 @@
 				"Vue": "PointerEvent"
 			}
 		},
+		"onPopstate": {
+			"name": "onPopstate",
+			"values": {
+				"Solid Next": "EventHandlerUnion<T, PopStateEvent>"
+			}
+		},
 		"onProgress": {
 			"name": "onProgress",
 			"values": {
@@ -72096,6 +72485,12 @@
 				"Vue": "Event"
 			}
 		},
+		"onRejectionHandled": {
+			"name": "onRejectionHandled",
+			"values": {
+				"Solid Next": "EventHandlerUnion<T, PromiseRejectionEvent>"
+			}
+		},
 		"onReset": {
 			"name": "onReset",
 			"values": {
@@ -72120,7 +72515,8 @@
 			"name": "onResize",
 			"values": {
 				"Preact": "PictureInPictureEventHandler<Target>",
-				"React": "ReactEventHandler<T>"
+				"React": "ReactEventHandler<T>",
+				"Solid Next": "EventHandlerUnion<T, UIEvent>"
 			}
 		},
 		"onScroll": {
@@ -72173,6 +72569,12 @@
 			"values": {
 				"Preact": "GenericEventHandler<Target>",
 				"Voby": "GenericEventHandler<T>"
+			}
+		},
+		"onSecurityPolicyViolation": {
+			"name": "onSecurityPolicyViolation",
+			"values": {
+				"Solid Next": "EventHandlerUnion<T, SecurityPolicyViolationEvent>"
 			}
 		},
 		"onSeeked": {
@@ -72235,6 +72637,24 @@
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
+		"onSelectionChange": {
+			"name": "onSelectionChange",
+			"values": {
+				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"onSelectStart": {
+			"name": "onSelectStart",
+			"values": {
+				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"onSlotChange": {
+			"name": "onSlotChange",
+			"values": {
+				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
 		"onStalled": {
 			"name": "onStalled",
 			"values": {
@@ -72253,6 +72673,12 @@
 				"Solid Main": "EventHandlerUnion<T, Event>",
 				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"onStorage": {
+			"name": "onStorage",
+			"values": {
+				"Solid Next": "EventHandlerUnion<T, StorageEvent>"
 			}
 		},
 		"onSubmit": {
@@ -72522,6 +72948,18 @@
 			"name": "onTransitionstart",
 			"values": {
 				"Vue": "TransitionEvent"
+			}
+		},
+		"onUnhandledRejection": {
+			"name": "onUnhandledRejection",
+			"values": {
+				"Solid Next": "EventHandlerUnion<T, PromiseRejectionEvent>"
+			}
+		},
+		"onUnload": {
+			"name": "onUnload",
+			"values": {
+				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
 		"onVolumeChange": {

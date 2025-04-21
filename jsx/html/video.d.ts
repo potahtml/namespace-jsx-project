@@ -58,9 +58,16 @@ interface VideoHTMLAttributes<T> extends MediaHTMLAttributes<T> {
 	poster?: string | false
 	width?: number | string | false
 	disablepictureinpicture?: true | false | '' | false
+	disableremoteplayback?: true | false | '' | false
+
+	onEnterPictureInPicture?: EventHandlerUnion<T, PictureInPictureEvent>
+	'on:enterpictureinpicture'?: EventHandlerWithOptionsUnion<T, PictureInPictureEvent>
+
+	onLeavePictureInPicture?: EventHandlerUnion<T, PictureInPictureEvent>
+	'on:leavepictureinpicture'?: EventHandlerWithOptionsUnion<T, PictureInPictureEvent>
 }
 
-interface MediaHTMLAttributes<T> extends HTMLAttributes<T> {
+interface MediaHTMLAttributes<T> extends HTMLAttributes<T>, ElementEventMap<T> {
 	autoplay?: true | false | '' | false
 	controls?: true | false | '' | false
 	controlslist?: 'nodownload' | 'nofullscreen' | 'noplaybackrate' | 'noremoteplayback' | (string & {}) | false
@@ -70,6 +77,12 @@ interface MediaHTMLAttributes<T> extends HTMLAttributes<T> {
 	muted?: true | false | '' | false
 	preload?: 'none' | 'metadata' | 'auto' | '' | true | false
 	src?: string | false
+
+	onEncrypted?: EventHandlerUnion<T, MediaEncryptedEvent>
+	'on:encrypted'?: EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>
+
+	onWaitingForKey?: EventHandlerUnion<T, Event>
+	'on:waitingforkey'?: EventHandlerWithOptionsUnion<T, Event>
 
 	/** @deprecated Use lowercase attributes */
 	crossOrigin?: 'anonymous' | 'use-credentials' | '' | true | false

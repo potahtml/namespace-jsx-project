@@ -661,56 +661,64 @@ interface DOMAttributes<T> extends CustomAttributes<T>, DirectiveAttributes, Dir
 	innerHTML?: string
 	innerText?: string | number
 	textContent?: string | number
-	// camel case events
-	onCopy?: EventHandlerUnion<T, ClipboardEvent>
-	onCut?: EventHandlerUnion<T, ClipboardEvent>
-	onPaste?: EventHandlerUnion<T, ClipboardEvent>
-	onCompositionEnd?: EventHandlerUnion<T, CompositionEvent>
-	onCompositionStart?: EventHandlerUnion<T, CompositionEvent>
-	onCompositionUpdate?: EventHandlerUnion<T, CompositionEvent>
-	onFocusOut?: FocusEventHandlerUnion<T, FocusEvent>
-	onFocusIn?: FocusEventHandlerUnion<T, FocusEvent>
-	onEncrypted?: EventHandlerUnion<T, MediaEncryptedEvent>
-	onDragExit?: EventHandlerUnion<T, DragEvent>
-	// lower case events
-	/** @deprecated Use camelCase event handlers */
-	oncopy?: EventHandlerUnion<T, ClipboardEvent>
-	/** @deprecated Use camelCase event handlers */
-	oncut?: EventHandlerUnion<T, ClipboardEvent>
-	/** @deprecated Use camelCase event handlers */
-	onpaste?: EventHandlerUnion<T, ClipboardEvent>
-	/** @deprecated Use camelCase event handlers */
-	oncompositionend?: EventHandlerUnion<T, CompositionEvent>
-	/** @deprecated Use camelCase event handlers */
-	oncompositionstart?: EventHandlerUnion<T, CompositionEvent>
-	/** @deprecated Use camelCase event handlers */
-	oncompositionupdate?: EventHandlerUnion<T, CompositionEvent>
-	/** @deprecated Use camelCase event handlers */
-	onfocusout?: FocusEventHandlerUnion<T, FocusEvent>
-	/** @deprecated Use camelCase event handlers */
-	onfocusin?: FocusEventHandlerUnion<T, FocusEvent>
-	/** @deprecated Use camelCase event handlers */
-	onencrypted?: EventHandlerUnion<T, MediaEncryptedEvent>
-	/** @deprecated Use camelCase event handlers */
-	ondragexit?: EventHandlerUnion<T, DragEvent>
-	// namespaced events
-	'on:copy'?: EventHandlerWithOptionsUnion<T, ClipboardEvent>
-	'on:cut'?: EventHandlerWithOptionsUnion<T, ClipboardEvent>
-	'on:paste'?: EventHandlerWithOptionsUnion<T, ClipboardEvent>
-	'on:compositionend'?: EventHandlerWithOptionsUnion<T, CompositionEvent>
-	'on:compositionstart'?: EventHandlerWithOptionsUnion<T, CompositionEvent>
-	'on:compositionupdate'?: EventHandlerWithOptionsUnion<T, CompositionEvent>
-	'on:focusout'?: EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>
-	'on:focusin'?: EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>
-	'on:encrypted'?: EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>
-	'on:dragexit'?: EventHandlerWithOptionsUnion<T, DragEvent>
+}
+interface ElementEventMap<T> {
+	onFullscreenChange?: EventHandlerUnion<T, Event>
+	'on:fullscreenchange'?: EventHandlerWithOptionsUnion<T, Event>
+
+	onFullscreenError?: EventHandlerUnion<T, Event>
+	'on:FullscreenError'?: EventHandlerWithOptionsUnion<T, Event>
+}
+interface WindowEventMap<T> {
+	onAfterPrint?: EventHandlerUnion<T, Event>
+	onBeforePrint?: EventHandlerUnion<T, Event>
+	onBeforeUnload?: EventHandlerUnion<T, BeforeUnloadEvent>
+	onGamepadConnected?: EventHandlerUnion<T, GamepadEvent>
+	onGamepadDisconnected?: EventHandlerUnion<T, GamepadEvent>
+	onHashchange?: EventHandlerUnion<T, HashChangeEvent>
+	onLanguageChange?: EventHandlerUnion<T, Event>
+	onMessage?: EventHandlerUnion<T, MessageEvent>
+	onMessageError?: EventHandlerUnion<T, MessageEvent>
+	onOffline?: EventHandlerUnion<T, Event>
+	onOnline?: EventHandlerUnion<T, Event>
+	onPageHide?: EventHandlerUnion<T, PageTransitionEvent>
+	onPageReveal?: EventHandlerUnion<T, PageRevealEvent>
+	onPageShow?: EventHandlerUnion<T, PageTransitionEvent>
+	onPageSwap?: EventHandlerUnion<T, PageSwapEvent>
+	onPopstate?: EventHandlerUnion<T, PopStateEvent>
+	onRejectionHandled?: EventHandlerUnion<T, PromiseRejectionEvent>
+	onStorage?: EventHandlerUnion<T, StorageEvent>
+	onUnhandledRejection?: EventHandlerUnion<T, PromiseRejectionEvent>
+	onUnload?: EventHandlerUnion<T, Event>
+
+	'on:afterprint'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:beforeprint'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:beforeunload'?: EventHandlerWithOptionsUnion<T, BeforeUnloadEvent>
+	'on:gamepadconnected'?: EventHandlerWithOptionsUnion<T, GamepadEvent>
+	'on:gamepaddisconnected'?: EventHandlerWithOptionsUnion<T, GamepadEvent>
+	'on:hashchange'?: EventHandlerWithOptionsUnion<T, HashChangeEvent>
+	'on:languagechange'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:message'?: EventHandlerWithOptionsUnion<T, MessageEvent>
+	'on:messageerror'?: EventHandlerWithOptionsUnion<T, MessageEvent>
+	'on:offline'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:online'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:pagehide'?: EventHandlerWithOptionsUnion<T, PageTransitionEvent>
+	'on:pagereveal'?: EventHandlerWithOptionsUnion<T, PageRevealEvent>
+	'on:pageshow'?: EventHandlerWithOptionsUnion<T, PageTransitionEvent>
+	'on:pageswap'?: EventHandlerWithOptionsUnion<T, PageSwapEvent>
+	'on:popstate'?: EventHandlerWithOptionsUnion<T, PopStateEvent>
+	'on:rejectionhandled'?: EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>
+	'on:storage'?: EventHandlerWithOptionsUnion<T, StorageEvent>
+	'on:unhandledrejection'?: EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>
+	'on:unload'?: EventHandlerWithOptionsUnion<T, Event>
 }
 interface CustomEventHandlersCamelCase<T> {
 	onAbort?: EventHandlerUnion<T, UIEvent>
+	onAnimationCancel?: EventHandlerUnion<T, AnimationEvent>
 	onAnimationEnd?: EventHandlerUnion<T, AnimationEvent>
 	onAnimationIteration?: EventHandlerUnion<T, AnimationEvent>
 	onAnimationStart?: EventHandlerUnion<T, AnimationEvent>
-	onAuxClick?: EventHandlerUnion<T, MouseEvent>
+	onAuxClick?: EventHandlerUnion<T, PointerEvent>
 	onBeforeInput?: InputEventHandlerUnion<T, InputEvent>
 	onBeforeToggle?: EventHandlerUnion<T, ToggleEvent>
 	onBlur?: FocusEventHandlerUnion<T, FocusEvent>
@@ -718,11 +726,18 @@ interface CustomEventHandlersCamelCase<T> {
 	onCanPlayThrough?: EventHandlerUnion<T, Event>
 	onChange?: ChangeEventHandlerUnion<T, Event>
 	onClick?: EventHandlerUnion<T, MouseEvent>
-	onContextMenu?: EventHandlerUnion<T, MouseEvent>
+	onCompositionEnd?: EventHandlerUnion<T, CompositionEvent>
+	onCompositionStart?: EventHandlerUnion<T, CompositionEvent>
+	onCompositionUpdate?: EventHandlerUnion<T, CompositionEvent>
+	onContextMenu?: EventHandlerUnion<T, PointerEvent>
+	onCopy?: EventHandlerUnion<T, ClipboardEvent>
+	onCueChange?: EventHandlerUnion<T, Event>
+	onCut?: EventHandlerUnion<T, ClipboardEvent>
 	onDblClick?: EventHandlerUnion<T, MouseEvent>
 	onDrag?: EventHandlerUnion<T, DragEvent>
 	onDragEnd?: EventHandlerUnion<T, DragEvent>
 	onDragEnter?: EventHandlerUnion<T, DragEvent>
+	onDragExit?: EventHandlerUnion<T, DragEvent>
 	onDragLeave?: EventHandlerUnion<T, DragEvent>
 	onDragOver?: EventHandlerUnion<T, DragEvent>
 	onDragStart?: EventHandlerUnion<T, DragEvent>
@@ -732,6 +747,8 @@ interface CustomEventHandlersCamelCase<T> {
 	onEnded?: EventHandlerUnion<T, Event>
 	onError?: EventHandlerUnion<T, ErrorEvent>
 	onFocus?: FocusEventHandlerUnion<T, FocusEvent>
+	onFocusIn?: FocusEventHandlerUnion<T, FocusEvent>
+	onFocusOut?: FocusEventHandlerUnion<T, FocusEvent>
 	onGotPointerCapture?: EventHandlerUnion<T, PointerEvent>
 	onInput?: InputEventHandlerUnion<T, InputEvent>
 	onInvalid?: EventHandlerUnion<T, Event>
@@ -750,6 +767,7 @@ interface CustomEventHandlersCamelCase<T> {
 	onMouseOut?: EventHandlerUnion<T, MouseEvent>
 	onMouseOver?: EventHandlerUnion<T, MouseEvent>
 	onMouseUp?: EventHandlerUnion<T, MouseEvent>
+	onPaste?: EventHandlerUnion<T, ClipboardEvent>
 	onPause?: EventHandlerUnion<T, Event>
 	onPlay?: EventHandlerUnion<T, Event>
 	onPlaying?: EventHandlerUnion<T, Event>
@@ -764,11 +782,16 @@ interface CustomEventHandlersCamelCase<T> {
 	onProgress?: EventHandlerUnion<T, ProgressEvent>
 	onRateChange?: EventHandlerUnion<T, Event>
 	onReset?: EventHandlerUnion<T, Event>
+	onResize?: EventHandlerUnion<T, UIEvent>
 	onScroll?: EventHandlerUnion<T, Event>
 	onScrollEnd?: EventHandlerUnion<T, Event>
+	onSecurityPolicyViolation?: EventHandlerUnion<T, SecurityPolicyViolationEvent>
 	onSeeked?: EventHandlerUnion<T, Event>
 	onSeeking?: EventHandlerUnion<T, Event>
 	onSelect?: EventHandlerUnion<T, Event>
+	onSelectionChange?: EventHandlerUnion<T, Event>
+	onSelectStart?: EventHandlerUnion<T, Event>
+	onSlotChange?: EventHandlerUnion<T, Event>
 	onStalled?: EventHandlerUnion<T, Event>
 	onSubmit?: EventHandlerUnion<T, SubmitEvent>
 	onSuspend?: EventHandlerUnion<T, Event>
@@ -778,10 +801,10 @@ interface CustomEventHandlersCamelCase<T> {
 	onTouchEnd?: EventHandlerUnion<T, TouchEvent>
 	onTouchMove?: EventHandlerUnion<T, TouchEvent>
 	onTouchStart?: EventHandlerUnion<T, TouchEvent>
-	onTransitionStart?: EventHandlerUnion<T, TransitionEvent>
+	onTransitionCancel?: EventHandlerUnion<T, TransitionEvent>
 	onTransitionEnd?: EventHandlerUnion<T, TransitionEvent>
 	onTransitionRun?: EventHandlerUnion<T, TransitionEvent>
-	onTransitionCancel?: EventHandlerUnion<T, TransitionEvent>
+	onTransitionStart?: EventHandlerUnion<T, TransitionEvent>
 	onVolumeChange?: EventHandlerUnion<T, Event>
 	onWaiting?: EventHandlerUnion<T, Event>
 	onWheel?: EventHandlerUnion<T, WheelEvent>
@@ -812,7 +835,17 @@ interface CustomEventHandlersLowerCase<T> {
 	/** @deprecated Use camelCase event handlers */
 	onclick?: EventHandlerUnion<T, MouseEvent>
 	/** @deprecated Use camelCase event handlers */
+	oncompositionend?: EventHandlerUnion<T, CompositionEvent>
+	/** @deprecated Use camelCase event handlers */
+	oncompositionstart?: EventHandlerUnion<T, CompositionEvent>
+	/** @deprecated Use camelCase event handlers */
+	oncompositionupdate?: EventHandlerUnion<T, CompositionEvent>
+	/** @deprecated Use camelCase event handlers */
 	oncontextmenu?: EventHandlerUnion<T, MouseEvent>
+	/** @deprecated Use camelCase event handlers */
+	oncopy?: EventHandlerUnion<T, ClipboardEvent>
+	/** @deprecated Use camelCase event handlers */
+	oncut?: EventHandlerUnion<T, ClipboardEvent>
 	/** @deprecated Use camelCase event handlers */
 	ondblclick?: EventHandlerUnion<T, MouseEvent>
 	/** @deprecated Use camelCase event handlers */
@@ -821,6 +854,8 @@ interface CustomEventHandlersLowerCase<T> {
 	ondragend?: EventHandlerUnion<T, DragEvent>
 	/** @deprecated Use camelCase event handlers */
 	ondragenter?: EventHandlerUnion<T, DragEvent>
+	/** @deprecated Use camelCase event handlers */
+	ondragexit?: EventHandlerUnion<T, DragEvent>
 	/** @deprecated Use camelCase event handlers */
 	ondragleave?: EventHandlerUnion<T, DragEvent>
 	/** @deprecated Use camelCase event handlers */
@@ -834,11 +869,17 @@ interface CustomEventHandlersLowerCase<T> {
 	/** @deprecated Use camelCase event handlers */
 	onemptied?: EventHandlerUnion<T, Event>
 	/** @deprecated Use camelCase event handlers */
+	onencrypted?: EventHandlerUnion<T, MediaEncryptedEvent>
+	/** @deprecated Use camelCase event handlers */
 	onended?: EventHandlerUnion<T, Event>
 	/** @deprecated Use camelCase event handlers */
 	onerror?: EventHandlerUnion<T, ErrorEvent>
 	/** @deprecated Use camelCase event handlers */
 	onfocus?: FocusEventHandlerUnion<T, FocusEvent>
+	/** @deprecated Use camelCase event handlers */
+	onfocusin?: FocusEventHandlerUnion<T, FocusEvent>
+	/** @deprecated Use camelCase event handlers */
+	onfocusout?: FocusEventHandlerUnion<T, FocusEvent>
 	/** @deprecated Use camelCase event handlers */
 	ongotpointercapture?: EventHandlerUnion<T, PointerEvent>
 	/** @deprecated Use camelCase event handlers */
@@ -875,6 +916,8 @@ interface CustomEventHandlersLowerCase<T> {
 	onmouseover?: EventHandlerUnion<T, MouseEvent>
 	/** @deprecated Use camelCase event handlers */
 	onmouseup?: EventHandlerUnion<T, MouseEvent>
+	/** @deprecated Use camelCase event handlers */
+	onpaste?: EventHandlerUnion<T, ClipboardEvent>
 	/** @deprecated Use camelCase event handlers */
 	onpause?: EventHandlerUnion<T, Event>
 	/** @deprecated Use camelCase event handlers */
@@ -932,13 +975,13 @@ interface CustomEventHandlersLowerCase<T> {
 	/** @deprecated Use camelCase event handlers */
 	ontouchstart?: EventHandlerUnion<T, TouchEvent>
 	/** @deprecated Use camelCase event handlers */
-	ontransitionstart?: EventHandlerUnion<T, TransitionEvent>
+	ontransitioncancel?: EventHandlerUnion<T, TransitionEvent>
 	/** @deprecated Use camelCase event handlers */
 	ontransitionend?: EventHandlerUnion<T, TransitionEvent>
 	/** @deprecated Use camelCase event handlers */
 	ontransitionrun?: EventHandlerUnion<T, TransitionEvent>
 	/** @deprecated Use camelCase event handlers */
-	ontransitioncancel?: EventHandlerUnion<T, TransitionEvent>
+	ontransitionstart?: EventHandlerUnion<T, TransitionEvent>
 	/** @deprecated Use camelCase event handlers */
 	onvolumechange?: EventHandlerUnion<T, Event>
 	/** @deprecated Use camelCase event handlers */
@@ -948,10 +991,11 @@ interface CustomEventHandlersLowerCase<T> {
 }
 interface CustomEventHandlersNamespaced<T> {
 	'on:abort'?: EventHandlerWithOptionsUnion<T, UIEvent>
+	'on:animationcancel'?: EventHandlerWithOptionsUnion<T, AnimationEvent>
 	'on:animationend'?: EventHandlerWithOptionsUnion<T, AnimationEvent>
 	'on:animationiteration'?: EventHandlerWithOptionsUnion<T, AnimationEvent>
 	'on:animationstart'?: EventHandlerWithOptionsUnion<T, AnimationEvent>
-	'on:auxclick'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:auxclick'?: EventHandlerWithOptionsUnion<T, PointerEvent>
 	'on:beforeinput'?: EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>
 	'on:beforetoggle'?: EventHandlerWithOptionsUnion<T, ToggleEvent>
 	'on:blur'?: EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>
@@ -959,20 +1003,29 @@ interface CustomEventHandlersNamespaced<T> {
 	'on:canplaythrough'?: EventHandlerWithOptionsUnion<T, Event>
 	'on:change'?: EventHandlerWithOptionsUnion<T, Event, ChangeEventHandler<T, Event>>
 	'on:click'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:compositionend'?: EventHandlerWithOptionsUnion<T, CompositionEvent>
+	'on:compositionstart'?: EventHandlerWithOptionsUnion<T, CompositionEvent>
+	'on:compositionupdate'?: EventHandlerWithOptionsUnion<T, CompositionEvent>
 	'on:contextmenu'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:copy'?: EventHandlerWithOptionsUnion<T, ClipboardEvent>
+	'on:cut'?: EventHandlerWithOptionsUnion<T, ClipboardEvent>
 	'on:dblclick'?: EventHandlerWithOptionsUnion<T, MouseEvent>
 	'on:drag'?: EventHandlerWithOptionsUnion<T, DragEvent>
 	'on:dragend'?: EventHandlerWithOptionsUnion<T, DragEvent>
 	'on:dragenter'?: EventHandlerWithOptionsUnion<T, DragEvent>
+	'on:dragexit'?: EventHandlerWithOptionsUnion<T, DragEvent>
 	'on:dragleave'?: EventHandlerWithOptionsUnion<T, DragEvent>
 	'on:dragover'?: EventHandlerWithOptionsUnion<T, DragEvent>
 	'on:dragstart'?: EventHandlerWithOptionsUnion<T, DragEvent>
 	'on:drop'?: EventHandlerWithOptionsUnion<T, DragEvent>
 	'on:durationchange'?: EventHandlerWithOptionsUnion<T, Event>
 	'on:emptied'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:encrypted'?: EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>
 	'on:ended'?: EventHandlerWithOptionsUnion<T, Event>
 	'on:error'?: EventHandlerWithOptionsUnion<T, ErrorEvent>
 	'on:focus'?: EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>
+	'on:focusin'?: EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>
+	'on:focusout'?: EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>
 	'on:gotpointercapture'?: EventHandlerWithOptionsUnion<T, PointerEvent>
 	'on:input'?: EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>
 	'on:invalid'?: EventHandlerWithOptionsUnion<T, Event>
@@ -991,6 +1044,7 @@ interface CustomEventHandlersNamespaced<T> {
 	'on:mouseout'?: EventHandlerWithOptionsUnion<T, MouseEvent>
 	'on:mouseover'?: EventHandlerWithOptionsUnion<T, MouseEvent>
 	'on:mouseup'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:paste'?: EventHandlerWithOptionsUnion<T, ClipboardEvent>
 	'on:pause'?: EventHandlerWithOptionsUnion<T, Event>
 	'on:play'?: EventHandlerWithOptionsUnion<T, Event>
 	'on:playing'?: EventHandlerWithOptionsUnion<T, Event>
@@ -1019,10 +1073,10 @@ interface CustomEventHandlersNamespaced<T> {
 	'on:touchend'?: EventHandlerWithOptionsUnion<T, TouchEvent>
 	'on:touchmove'?: EventHandlerWithOptionsUnion<T, TouchEvent>
 	'on:touchstart'?: EventHandlerWithOptionsUnion<T, TouchEvent>
-	'on:transitionstart'?: EventHandlerWithOptionsUnion<T, TransitionEvent>
+	'on:transitioncancel'?: EventHandlerWithOptionsUnion<T, TransitionEvent>
 	'on:transitionend'?: EventHandlerWithOptionsUnion<T, TransitionEvent>
 	'on:transitionrun'?: EventHandlerWithOptionsUnion<T, TransitionEvent>
-	'on:transitioncancel'?: EventHandlerWithOptionsUnion<T, TransitionEvent>
+	'on:transitionstart'?: EventHandlerWithOptionsUnion<T, TransitionEvent>
 	'on:volumechange'?: EventHandlerWithOptionsUnion<T, Event>
 	'on:waiting'?: EventHandlerWithOptionsUnion<T, Event>
 	'on:wheel'?: EventHandlerWithOptionsUnion<T, WheelEvent>

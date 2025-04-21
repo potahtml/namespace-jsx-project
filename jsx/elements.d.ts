@@ -1145,7 +1145,7 @@ interface HTMLElementTags {
 	 * @url https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body
 	 * @url https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement
 	 */
-	body: HTMLAttributes<HTMLBodyElement>
+	body: BodyHTMLAttributes<HTMLBodyElement>
 	/**
 	 * @url https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br
 	 * @url https://developer.mozilla.org/en-US/docs/Web/API/HTMLBRElement

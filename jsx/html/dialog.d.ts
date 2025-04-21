@@ -21,10 +21,11 @@ interface DialogHtmlAttributes<T> extends HTMLAttributes<T> {
 	open?: true | false | '' | false
 	tabindex?: never
 
-	onclose?: EventHandlerUnion<T, Event>
 	onClose?: EventHandlerUnion<T, Event>
-	oncancel?: EventHandlerUnion<T, Event>
+	'on:close'?: EventHandlerWithOptionsUnion<T, Event>
+
 	onCancel?: EventHandlerUnion<T, Event>
+	'on:cancel'?: EventHandlerWithOptionsUnion<T, Event>
 }
 
 // Voby - https://github.com/vobyjs/voby

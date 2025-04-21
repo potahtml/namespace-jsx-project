@@ -38,7 +38,7 @@ interface MediaHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface AudioHTMLAttributes<T> extends MediaHTMLAttributes<T> {}
-interface MediaHTMLAttributes<T> extends HTMLAttributes<T> {
+interface MediaHTMLAttributes<T> extends HTMLAttributes<T>, ElementEventMap<T> {
 	autoplay?: true | false | '' | false
 	controls?: true | false | '' | false
 	controlslist?: 'nodownload' | 'nofullscreen' | 'noplaybackrate' | 'noremoteplayback' | (string & {}) | false
@@ -48,6 +48,12 @@ interface MediaHTMLAttributes<T> extends HTMLAttributes<T> {
 	muted?: true | false | '' | false
 	preload?: 'none' | 'metadata' | 'auto' | '' | true | false
 	src?: string | false
+
+	onEncrypted?: EventHandlerUnion<T, MediaEncryptedEvent>
+	'on:encrypted'?: EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>
+
+	onWaitingForKey?: EventHandlerUnion<T, Event>
+	'on:waitingforkey'?: EventHandlerWithOptionsUnion<T, Event>
 
 	/** @deprecated Use lowercase attributes */
 	crossOrigin?: 'anonymous' | 'use-credentials' | '' | true | false

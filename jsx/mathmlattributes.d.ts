@@ -15,6 +15,8 @@ interface MathMLAttributes<T> extends HTMLAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface MathMLAttributes<T> extends HTMLAttributes<T> {
+	xmlns?: string | false
+
 	displaystyle?: true | false | '' | false
 	/** @deprecated */
 	href?: string | false

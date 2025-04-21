@@ -21,6 +21,12 @@ interface CanvasHTMLAttributes<T> extends HTMLAttributes<T> {
 	width?: number | string | false
 	height?: number | string | false
 
+	onContextLost?: EventHandlerUnion<T, Event>
+	'on:contextlost'?: EventHandlerWithOptionsUnion<T, Event>
+
+	onContextRestored?: EventHandlerUnion<T, Event>
+	'on:contextrestored'?: EventHandlerWithOptionsUnion<T, Event>
+
 	/**
 	 * @deprecated
 	 * @non-standard
