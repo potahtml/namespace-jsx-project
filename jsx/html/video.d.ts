@@ -62,9 +62,13 @@ interface VideoHTMLAttributes<T> extends MediaHTMLAttributes<T> {
 
 	onEnterPictureInPicture?: EventHandlerUnion<T, PictureInPictureEvent>
 	'on:enterpictureinpicture'?: EventHandlerWithOptionsUnion<T, PictureInPictureEvent>
+	/** @deprecated Use camelCase event handlers */
+	onenterpictureinpicture?: EventHandlerUnion<T, PictureInPictureEvent>
 
 	onLeavePictureInPicture?: EventHandlerUnion<T, PictureInPictureEvent>
 	'on:leavepictureinpicture'?: EventHandlerWithOptionsUnion<T, PictureInPictureEvent>
+	/** @deprecated Use camelCase event handlers */
+	onleavepictureinpicture?: EventHandlerUnion<T, PictureInPictureEvent>
 }
 
 interface MediaHTMLAttributes<T> extends HTMLAttributes<T>, ElementEventMap<T> {
@@ -80,9 +84,13 @@ interface MediaHTMLAttributes<T> extends HTMLAttributes<T>, ElementEventMap<T> {
 
 	onEncrypted?: EventHandlerUnion<T, MediaEncryptedEvent>
 	'on:encrypted'?: EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>
+	/** @deprecated Use camelCase event handlers */
+	onencrypted?: EventHandlerUnion<T, MediaEncryptedEvent>
 
 	onWaitingForKey?: EventHandlerUnion<T, Event>
 	'on:waitingforkey'?: EventHandlerWithOptionsUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onwaitingforkey?: EventHandlerUnion<T, Event>
 
 	/** @deprecated Use lowercase attributes */
 	crossOrigin?: 'anonymous' | 'use-credentials' | '' | true | false

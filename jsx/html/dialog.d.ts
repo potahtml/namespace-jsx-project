@@ -23,9 +23,13 @@ interface DialogHtmlAttributes<T> extends HTMLAttributes<T> {
 
 	onClose?: EventHandlerUnion<T, Event>
 	'on:close'?: EventHandlerWithOptionsUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onclose?: EventHandlerUnion<T, Event>
 
 	onCancel?: EventHandlerUnion<T, Event>
 	'on:cancel'?: EventHandlerWithOptionsUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	oncancel?: EventHandlerUnion<T, Event>
 }
 
 // Voby - https://github.com/vobyjs/voby

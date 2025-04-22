@@ -195,7 +195,7 @@ interface PresentationSVGAttributes {
 }
 
 // Solid Next - https://www.solidjs.com/
-interface MaskSVGAttributes<T> extends Omit<ContainerElementSVGAttributes<T>, 'opacity' | 'filter'>, ConditionalProcessingSVGAttributes, ExternalResourceSVGAttributes, StylableSVGAttributes {
+interface MaskSVGAttributes<T> extends Omit<ContainerElementSVGAttributes<T>, 'opacity' | 'filter'>, ConditionalProcessingSVGAttributes, ExternalResourceSVGAttributes, StylableSVGAttributes, Pick<PresentationSVGAttributes, 'clip-path'> {
 	maskUnits?: 'userSpaceOnUse' | 'objectBoundingBox' | false
 	maskContentUnits?: 'userSpaceOnUse' | 'objectBoundingBox' | false
 	x?: number | string | false
@@ -220,16 +220,6 @@ interface StylableSVGAttributes {
 	style?: CSSProperties | string | false
 }
 
-interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
-	id?: string | false
-	lang?: string | false
-	tabindex?: number | string | false
-
-	/** @deprecated Use lowercase attributes */
-	tabIndex?: number | string | false
-}
-
-interface ShapeElementSVGAttributes<T> extends CoreSVGAttributes<T>, Pick<PresentationSVGAttributes, 'color' | 'fill' | 'fill-rule' | 'fill-opacity' | 'stroke' | 'stroke-width' | 'stroke-linecap' | 'stroke-linejoin' | 'stroke-miterlimit' | 'stroke-dasharray' | 'stroke-dashoffset' | 'stroke-opacity' | 'shape-rendering' | 'pathLength'> {}
 interface PresentationSVGAttributes {
 	'alignment-baseline'?: 'auto' | 'baseline' | 'before-edge' | 'text-before-edge' | 'middle' | 'central' | 'after-edge' | 'text-after-edge' | 'ideographic' | 'alphabetic' | 'hanging' | 'mathematical' | 'inherit' | false
 	'baseline-shift'?: number | string | false
@@ -292,6 +282,17 @@ interface PresentationSVGAttributes {
 	'word-spacing'?: number | string | false
 	'writing-mode'?: 'lr-tb' | 'rl-tb' | 'tb-rl' | 'lr' | 'rl' | 'tb' | 'inherit' | false
 }
+
+interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
+	id?: string | false
+	lang?: string | false
+	tabindex?: number | string | false
+
+	/** @deprecated Use lowercase attributes */
+	tabIndex?: number | string | false
+}
+
+interface ShapeElementSVGAttributes<T> extends CoreSVGAttributes<T>, Pick<PresentationSVGAttributes, 'color' | 'fill' | 'fill-rule' | 'fill-opacity' | 'stroke' | 'stroke-width' | 'stroke-linecap' | 'stroke-linejoin' | 'stroke-miterlimit' | 'stroke-dasharray' | 'stroke-dashoffset' | 'stroke-opacity' | 'shape-rendering' | 'pathLength'> {}
 
 // React - https://react.dev/
 interface SVGProps<T> extends SVGAttributes<T>, ClassAttributes<T> {}

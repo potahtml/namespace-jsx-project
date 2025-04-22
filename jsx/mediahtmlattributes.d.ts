@@ -48,9 +48,13 @@ interface MediaHTMLAttributes<T> extends HTMLAttributes<T>, ElementEventMap<T> {
 
 	onEncrypted?: EventHandlerUnion<T, MediaEncryptedEvent>
 	'on:encrypted'?: EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>
+	/** @deprecated Use camelCase event handlers */
+	onencrypted?: EventHandlerUnion<T, MediaEncryptedEvent>
 
 	onWaitingForKey?: EventHandlerUnion<T, Event>
 	'on:waitingforkey'?: EventHandlerWithOptionsUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onwaitingforkey?: EventHandlerUnion<T, Event>
 
 	/** @deprecated Use lowercase attributes */
 	crossOrigin?: 'anonymous' | 'use-credentials' | '' | true | false

@@ -203,7 +203,7 @@ interface PresentationSVGAttributes {
 }
 
 // Solid Next - https://www.solidjs.com/
-interface RectSVGAttributes<T> extends GraphicsElementSVGAttributes<T>, ShapeElementSVGAttributes<T>, ConditionalProcessingSVGAttributes, ExternalResourceSVGAttributes, StylableSVGAttributes, TransformableSVGAttributes {
+interface RectSVGAttributes<T> extends GraphicsElementSVGAttributes<T>, ShapeElementSVGAttributes<T>, ConditionalProcessingSVGAttributes, ExternalResourceSVGAttributes, StylableSVGAttributes, TransformableSVGAttributes, Pick<PresentationSVGAttributes, 'clip-path'> {
 	x?: number | string | false
 	y?: number | string | false
 	width?: number | string | false
@@ -231,15 +231,6 @@ interface StylableSVGAttributes {
 
 interface TransformableSVGAttributes {
 	transform?: string | false
-}
-
-interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
-	id?: string | false
-	lang?: string | false
-	tabindex?: number | string | false
-
-	/** @deprecated Use lowercase attributes */
-	tabIndex?: number | string | false
 }
 
 interface PresentationSVGAttributes {
@@ -303,6 +294,15 @@ interface PresentationSVGAttributes {
 	visibility?: 'visible' | 'hidden' | 'collapse' | 'inherit' | false
 	'word-spacing'?: number | string | false
 	'writing-mode'?: 'lr-tb' | 'rl-tb' | 'tb-rl' | 'lr' | 'rl' | 'tb' | 'inherit' | false
+}
+
+interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
+	id?: string | false
+	lang?: string | false
+	tabindex?: number | string | false
+
+	/** @deprecated Use lowercase attributes */
+	tabIndex?: number | string | false
 }
 
 // React - https://react.dev/

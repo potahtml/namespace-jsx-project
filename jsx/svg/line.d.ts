@@ -199,7 +199,7 @@ interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
 }
 
 // Solid Next - https://www.solidjs.com/
-interface LineSVGAttributes<T> extends GraphicsElementSVGAttributes<T>, ShapeElementSVGAttributes<T>, ConditionalProcessingSVGAttributes, ExternalResourceSVGAttributes, StylableSVGAttributes, TransformableSVGAttributes, Pick<PresentationSVGAttributes, 'marker-start' | 'marker-mid' | 'marker-end'> {
+interface LineSVGAttributes<T> extends GraphicsElementSVGAttributes<T>, ShapeElementSVGAttributes<T>, ConditionalProcessingSVGAttributes, ExternalResourceSVGAttributes, StylableSVGAttributes, TransformableSVGAttributes, Pick<PresentationSVGAttributes, 'clip-path' | 'marker-start' | 'marker-mid' | 'marker-end'> {
 	x1?: number | string | false
 	y1?: number | string | false
 	x2?: number | string | false

@@ -23,9 +23,13 @@ interface CanvasHTMLAttributes<T> extends HTMLAttributes<T> {
 
 	onContextLost?: EventHandlerUnion<T, Event>
 	'on:contextlost'?: EventHandlerWithOptionsUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	oncontextlost?: EventHandlerUnion<T, Event>
 
 	onContextRestored?: EventHandlerUnion<T, Event>
 	'on:contextrestored'?: EventHandlerWithOptionsUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	oncontextrestored?: EventHandlerUnion<T, Event>
 
 	/**
 	 * @deprecated

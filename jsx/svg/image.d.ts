@@ -201,7 +201,7 @@ interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
 }
 
 // Solid Next - https://www.solidjs.com/
-interface ImageSVGAttributes<T> extends NewViewportSVGAttributes<T>, GraphicsElementSVGAttributes<T>, ConditionalProcessingSVGAttributes, StylableSVGAttributes, TransformableSVGAttributes, Pick<PresentationSVGAttributes, 'color-profile' | 'image-rendering'> {
+interface ImageSVGAttributes<T> extends NewViewportSVGAttributes<T>, GraphicsElementSVGAttributes<T>, ConditionalProcessingSVGAttributes, StylableSVGAttributes, TransformableSVGAttributes, Pick<PresentationSVGAttributes, 'clip-path' | 'color-profile' | 'image-rendering'> {
 	x?: number | string | false
 	y?: number | string | false
 	width?: number | string | false
