@@ -10,7 +10,7 @@ interface GlobalEventHandlersEventMap {
 	animationstart: AnimationEvent
 	auxclick: PointerEvent
 	beforeinput: InputEvent
-	beforetoggle: Event
+	beforetoggle: ToggleEvent
 	blur: FocusEvent
 	cancel: Event
 	canplay: Event
@@ -90,7 +90,7 @@ interface GlobalEventHandlersEventMap {
 	submit: SubmitEvent
 	suspend: Event
 	timeupdate: Event
-	toggle: Event
+	toggle: ToggleEvent
 	touchcancel: TouchEvent
 	touchend: TouchEvent
 	touchmove: TouchEvent

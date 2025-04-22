@@ -301,10 +301,9 @@ export const isBlacklisted = {
 }
 
 export const fixedTsEventsInterfaces = {
-	beforetoggle: 'ToggleEvent',
 	command: 'CommandEvent',
 	input: 'InputEvent',
-	toggle: 'ToggleEvent',
+	/* non standard/deprecated **/
 	dragexit: 'DragEvent',
 }
 
