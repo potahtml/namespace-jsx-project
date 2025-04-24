@@ -1,3 +1,31 @@
+// Solid Minor - https://www.solidjs.com/
+interface MathMLMactionElementAttributes<T> extends MathMLAttributes<T> {
+	/**
+	 * @deprecated
+	 * @non-standard
+	 */
+	actiontype?: 'statusline' | 'toggle'
+	/**
+	 * @deprecated
+	 * @non-standard
+	 */
+	selection?: string
+}
+
+// Solid Next - https://www.solidjs.com/
+interface MathMLMactionElementAttributes<T> extends MathMLAttributes<T> {
+	/**
+	 * @deprecated
+	 * @non-standard
+	 */
+	actiontype?: 'statusline' | 'toggle' | false
+	/**
+	 * @deprecated
+	 * @non-standard
+	 */
+	selection?: string | false
+}
+
 // Preact - https://preactjs.com/
 interface MActionMathMLAttributes<T extends EventTarget> extends MathMLAttributes<T> {
 	/** @deprecated See https://developer.mozilla.org/en-US/docs/Web/MathML/Element/maction#actiontype */

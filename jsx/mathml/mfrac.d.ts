@@ -1,3 +1,35 @@
+// Solid Minor - https://www.solidjs.com/
+interface MathMLMfracElementAttributes<T> extends MathMLAttributes<T> {
+	linethickness?: string
+
+	/**
+	 * @deprecated
+	 * @non-standard
+	 */
+	denomalign?: 'center' | 'left' | 'right'
+	/**
+	 * @deprecated
+	 * @non-standard
+	 */
+	numalign?: 'center' | 'left' | 'right'
+}
+
+// Solid Next - https://www.solidjs.com/
+interface MathMLMfracElementAttributes<T> extends MathMLAttributes<T> {
+	linethickness?: string | false
+
+	/**
+	 * @deprecated
+	 * @non-standard
+	 */
+	denomalign?: 'center' | 'left' | 'right' | false
+	/**
+	 * @deprecated
+	 * @non-standard
+	 */
+	numalign?: 'center' | 'left' | 'right' | false
+}
+
 // Preact - https://preactjs.com/
 interface MFracMathMLAttributes<T extends EventTarget> extends MathMLAttributes<T> {
 	/** @deprecated See https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mfrac#denomalign */

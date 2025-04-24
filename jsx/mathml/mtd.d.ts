@@ -1,3 +1,23 @@
+// Solid Minor - https://www.solidjs.com/
+interface MathMLMtdElementAttributes<T> extends MathMLAttributes<T> {
+	columnspan?: number | string
+	rowspan?: number | string
+	/** @non-standard */
+	columnalign?: 'center' | 'left' | 'right'
+	/** @non-standard */
+	rowalign?: 'axis' | 'baseline' | 'bottom' | 'center' | 'top'
+}
+
+// Solid Next - https://www.solidjs.com/
+interface MathMLMtdElementAttributes<T> extends MathMLAttributes<T> {
+	columnspan?: number | string | false
+	rowspan?: number | string | false
+	/** @non-standard */
+	columnalign?: 'center' | 'left' | 'right' | false
+	/** @non-standard */
+	rowalign?: 'axis' | 'baseline' | 'bottom' | 'center' | 'top' | false
+}
+
 // Preact - https://preactjs.com/
 interface MTdMathMLAttributes<T extends EventTarget> extends MathMLAttributes<T> {
 	columnspan?: number

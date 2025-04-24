@@ -1,3 +1,19 @@
+// Solid Minor - https://www.solidjs.com/
+interface MathMLAnnotationElementAttributes<T> extends MathMLAttributes<T> {
+	encoding?: string
+
+	/** @deprecated */
+	src?: string
+}
+
+// Solid Next - https://www.solidjs.com/
+interface MathMLAnnotationElementAttributes<T> extends MathMLAttributes<T> {
+	encoding?: string | false
+
+	/** @deprecated */
+	src?: string | false
+}
+
 // Preact - https://preactjs.com/
 interface AnnotationMathMLAttributes<T extends EventTarget> extends MathMLAttributes<T> {
 	encoding?: string

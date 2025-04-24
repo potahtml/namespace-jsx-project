@@ -1077,6 +1077,172 @@ interface SVGElementTags {
 	 */
 	view: ViewSVGAttributes<SVGViewElement>
 }
+interface MathMLElementTags {
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/annotation
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	annotation: MathMLAnnotationElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/annotation-xml
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	'annotation-xml': MathMLAnnotationXmlElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/math
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	math: MathMLMathElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/merror
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	merror: MathMLMerrorElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mfrac
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	mfrac: MathMLMfracElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mi
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	mi: MathMLMiElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mmultiscripts
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	mmultiscripts: MathMLMmultiscriptsElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mn
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	mn: MathMLMnElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mo
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	mo: MathMLMoElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mover
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	mover: MathMLMoverElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mpadded
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	mpadded: MathMLMpaddedElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mphantom
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	mphantom: MathMLMphantomElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mprescripts
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	mprescripts: MathMLMprescriptsElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mroot
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	mroot: MathMLMrootElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mrow
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	mrow: MathMLMrowElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/ms
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	ms: MathMLMsElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mspace
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	mspace: MathMLMspaceElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/msqrt
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	msqrt: MathMLMsqrtElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mstyle
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	mstyle: MathMLMstyleElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/msub
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	msub: MathMLMsubElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/msubsup
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	msubsup: MathMLMsubsupElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/msup
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	msup: MathMLMsupElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mtable
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	mtable: MathMLMtableElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mtd
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	mtd: MathMLMtdElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mtext
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	mtext: MathMLMtextElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mtr
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	mtr: MathMLMtrElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/munder
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	munder: MathMLMunderElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/munderover
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	munderover: MathMLMunderoverElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/semantics
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	semantics: MathMLSemanticsElementAttributes<MathMLElement>
+	/**
+	 * @non-standard
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/menclose
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	menclose: MathMLMencloseElementAttributes<MathMLElement>
+	/**
+	 * @deprecated
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/maction
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	maction: MathMLMactionElementAttributes<MathMLElement>
+	/**
+	 * @deprecated
+	 * @non-standard
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mfenced
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	mfenced: MathMLMfencedElementAttributes<MathMLElement>
+}
 interface IntrinsicElements extends HTMLElementTags, HTMLElementDeprecatedTags, SVGElementTags, MathMLElementTags {}
 
 // Solid Next - https://www.solidjs.com/
@@ -1971,6 +2137,172 @@ interface SVGElementTags {
 	 * @url https://developer.mozilla.org/en-US/docs/Web/API/SVGViewElement
 	 */
 	view: ViewSVGAttributes<SVGViewElement>
+}
+interface MathMLElementTags {
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/annotation
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	annotation: MathMLAnnotationElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/annotation-xml
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	'annotation-xml': MathMLAnnotationXmlElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/math
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	math: MathMLMathElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/merror
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	merror: MathMLMerrorElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mfrac
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	mfrac: MathMLMfracElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mi
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	mi: MathMLMiElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mmultiscripts
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	mmultiscripts: MathMLMmultiscriptsElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mn
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	mn: MathMLMnElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mo
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	mo: MathMLMoElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mover
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	mover: MathMLMoverElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mpadded
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	mpadded: MathMLMpaddedElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mphantom
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	mphantom: MathMLMphantomElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mprescripts
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	mprescripts: MathMLMprescriptsElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mroot
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	mroot: MathMLMrootElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mrow
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	mrow: MathMLMrowElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/ms
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	ms: MathMLMsElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mspace
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	mspace: MathMLMspaceElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/msqrt
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	msqrt: MathMLMsqrtElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mstyle
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	mstyle: MathMLMstyleElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/msub
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	msub: MathMLMsubElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/msubsup
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	msubsup: MathMLMsubsupElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/msup
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	msup: MathMLMsupElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mtable
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	mtable: MathMLMtableElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mtd
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	mtd: MathMLMtdElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mtext
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	mtext: MathMLMtextElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mtr
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	mtr: MathMLMtrElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/munder
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	munder: MathMLMunderElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/munderover
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	munderover: MathMLMunderoverElementAttributes<MathMLElement>
+	/**
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/semantics
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	semantics: MathMLSemanticsElementAttributes<MathMLElement>
+	/**
+	 * @non-standard
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/menclose
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	menclose: MathMLMencloseElementAttributes<MathMLElement>
+	/**
+	 * @deprecated
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/maction
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	maction: MathMLMactionElementAttributes<MathMLElement>
+	/**
+	 * @deprecated
+	 * @non-standard
+	 * @url https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mfenced
+	 * @url https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement
+	 */
+	mfenced: MathMLMfencedElementAttributes<MathMLElement>
 }
 interface IntrinsicElements extends HTMLElementTags, HTMLElementDeprecatedTags, SVGElementTags, MathMLElementTags {}
 

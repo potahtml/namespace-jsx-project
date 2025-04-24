@@ -952,7 +952,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.encoding",
 						"values": {
 							"Pota": "string",
-							"Preact": "string"
+							"Preact": "string",
+							"Solid Minor": "string",
+							"Solid Next": "string | false"
 						}
 					},
 					"src": {
@@ -967,7 +969,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.src",
 						"values": {
 							"Pota": "string",
-							"Preact": "string"
+							"Preact": "string",
+							"Solid Minor": "string",
+							"Solid Next": "string | false"
 						}
 					}
 				},
@@ -995,7 +999,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.encoding",
 						"values": {
 							"Pota": "string",
-							"Preact": "string"
+							"Preact": "string",
+							"Solid Minor": "string",
+							"Solid Next": "string | false"
 						}
 					},
 					"src": {
@@ -1010,7 +1016,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.src",
 						"values": {
 							"Pota": "string",
-							"Preact": "string"
+							"Preact": "string",
+							"Solid Minor": "string",
+							"Solid Next": "string | false"
 						}
 					}
 				},
@@ -1040,7 +1048,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.actiontype",
 						"values": {
 							"Pota": "'statusline' | 'toggle'",
-							"Preact": "'statusline' | 'toggle'"
+							"Preact": "'statusline' | 'toggle'",
+							"Solid Minor": "'statusline' | 'toggle'",
+							"Solid Next": "'statusline' | 'toggle' | false"
 						}
 					},
 					"selection": {
@@ -1056,7 +1066,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.selection",
 						"values": {
 							"Pota": "string",
-							"Preact": "string"
+							"Preact": "string",
+							"Solid Minor": "string",
+							"Solid Next": "string | false"
 						}
 					}
 				},
@@ -1084,7 +1096,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.display",
 						"values": {
 							"Pota": "'block' | 'inline'",
-							"Preact": "'block' | 'inline'"
+							"Preact": "'block' | 'inline'",
+							"Solid Minor": "'block' | 'inline'",
+							"Solid Next": "'block' | 'inline' | false"
 						}
 					}
 				},
@@ -1113,7 +1127,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.notation",
 						"values": {
 							"Pota": "string",
-							"Preact": "string"
+							"Preact": "string",
+							"Solid Minor": "string",
+							"Solid Next": "string | false"
 						}
 					}
 				},
@@ -1154,7 +1170,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.close",
 						"values": {
 							"Pota": "string",
-							"Preact": "string"
+							"Preact": "string",
+							"Solid Minor": "string",
+							"Solid Next": "string | false"
 						}
 					},
 					"open": {
@@ -1168,7 +1186,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.open",
 						"values": {
 							"Pota": "string",
-							"Preact": "string"
+							"Preact": "string",
+							"Solid Minor": "string",
+							"Solid Next": "string | false"
 						}
 					},
 					"separators": {
@@ -1182,7 +1202,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.separators",
 						"values": {
 							"Pota": "string",
-							"Preact": "string"
+							"Preact": "string",
+							"Solid Minor": "string",
+							"Solid Next": "string | false"
 						}
 					}
 				},
@@ -1212,7 +1234,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.denomalign",
 						"values": {
 							"Pota": "'center' | 'left' | 'right'",
-							"Preact": "'center' | 'left' | 'right'"
+							"Preact": "'center' | 'left' | 'right'",
+							"Solid Minor": "'center' | 'left' | 'right'",
+							"Solid Next": "'center' | 'left' | 'right' | false"
 						}
 					},
 					"linethickness": {
@@ -1226,7 +1250,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.linethickness",
 						"values": {
 							"Pota": "string",
-							"Preact": "string"
+							"Preact": "string",
+							"Solid Minor": "string",
+							"Solid Next": "string | false"
 						}
 					},
 					"numalign": {
@@ -1242,7 +1268,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.numalign",
 						"values": {
 							"Pota": "'center' | 'left' | 'right'",
-							"Preact": "'center' | 'left' | 'right'"
+							"Preact": "'center' | 'left' | 'right'",
+							"Solid Minor": "'center' | 'left' | 'right'",
+							"Solid Next": "'center' | 'left' | 'right' | false"
 						}
 					}
 				},
@@ -1270,7 +1298,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.mathvariant",
 						"values": {
 							"Pota": "'normal'",
-							"Preact": "'normal' | 'bold' | 'italic' | 'bold-italic' | 'double-struck' | 'bold-fraktur' | 'script' | 'bold-script' | 'fraktur' | 'sans-serif' | 'bold-sans-serif' | 'sans-serif-italic' | 'sans-serif-bold-italic' | 'monospace' | 'initial' | 'tailed' | 'looped' | 'stretched'"
+							"Preact": "'normal' | 'bold' | 'italic' | 'bold-italic' | 'double-struck' | 'bold-fraktur' | 'script' | 'bold-script' | 'fraktur' | 'sans-serif' | 'bold-sans-serif' | 'sans-serif-italic' | 'sans-serif-bold-italic' | 'monospace' | 'initial' | 'tailed' | 'looped' | 'stretched'",
+							"Solid Minor": "'normal'",
+							"Solid Next": "'normal' | false"
 						}
 					}
 				},
@@ -1300,7 +1330,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.subscriptshift",
 						"values": {
 							"Pota": "string",
-							"Preact": "string"
+							"Preact": "string",
+							"Solid Minor": "string",
+							"Solid Next": "string | false"
 						}
 					},
 					"superscriptshift": {
@@ -1316,7 +1348,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.superscriptshift",
 						"values": {
 							"Pota": "string",
-							"Preact": "string"
+							"Preact": "string",
+							"Solid Minor": "string",
+							"Solid Next": "string | false"
 						}
 					}
 				},
@@ -1358,7 +1392,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.accent",
 						"values": {
 							"Pota": "'true' | boolean",
-							"Preact": "boolean"
+							"Preact": "boolean",
+							"Solid Minor": "'' | boolean",
+							"Solid Next": "true | false | ''"
 						}
 					},
 					"fence": {
@@ -1372,7 +1408,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.fence",
 						"values": {
 							"Pota": "'true' | boolean",
-							"Preact": "boolean"
+							"Preact": "boolean",
+							"Solid Minor": "'' | boolean",
+							"Solid Next": "true | false | ''"
 						}
 					},
 					"form": {
@@ -1385,7 +1423,9 @@
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.form",
 						"values": {
-							"Pota": "'prefix' | 'infix' | 'postfix'"
+							"Pota": "'prefix' | 'infix' | 'postfix'",
+							"Solid Minor": "'prefix' | 'infix' | 'postfix'",
+							"Solid Next": "'prefix' | 'infix' | 'postfix' | false"
 						}
 					},
 					"largeop": {
@@ -1399,7 +1439,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.largeop",
 						"values": {
 							"Pota": "'true' | boolean",
-							"Preact": "boolean"
+							"Preact": "boolean",
+							"Solid Minor": "'' | boolean",
+							"Solid Next": "true | false | ''"
 						}
 					},
 					"lspace": {
@@ -1413,7 +1455,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.lspace",
 						"values": {
 							"Pota": "string",
-							"Preact": "string"
+							"Preact": "string",
+							"Solid Minor": "string",
+							"Solid Next": "string | false"
 						}
 					},
 					"maxsize": {
@@ -1427,7 +1471,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.maxsize",
 						"values": {
 							"Pota": "string",
-							"Preact": "string"
+							"Preact": "string",
+							"Solid Minor": "string",
+							"Solid Next": "string | false"
 						}
 					},
 					"minsize": {
@@ -1441,7 +1487,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.minsize",
 						"values": {
 							"Pota": "string",
-							"Preact": "string"
+							"Preact": "string",
+							"Solid Minor": "string",
+							"Solid Next": "string | false"
 						}
 					},
 					"movablelimits": {
@@ -1455,7 +1503,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.movablelimits",
 						"values": {
 							"Pota": "'true' | boolean",
-							"Preact": "boolean"
+							"Preact": "boolean",
+							"Solid Minor": "'' | boolean",
+							"Solid Next": "true | false | ''"
 						}
 					},
 					"rspace": {
@@ -1469,7 +1519,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.rspace",
 						"values": {
 							"Pota": "string",
-							"Preact": "string"
+							"Preact": "string",
+							"Solid Minor": "string",
+							"Solid Next": "string | false"
 						}
 					},
 					"separator": {
@@ -1483,7 +1535,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.separator",
 						"values": {
 							"Pota": "'true' | boolean",
-							"Preact": "boolean"
+							"Preact": "boolean",
+							"Solid Minor": "'' | boolean",
+							"Solid Next": "true | false | ''"
 						}
 					},
 					"stretchy": {
@@ -1497,7 +1551,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.stretchy",
 						"values": {
 							"Pota": "'true' | boolean",
-							"Preact": "boolean"
+							"Preact": "boolean",
+							"Solid Minor": "'' | boolean",
+							"Solid Next": "true | false | ''"
 						}
 					},
 					"symmetric": {
@@ -1511,7 +1567,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.symmetric",
 						"values": {
 							"Pota": "'true' | boolean",
-							"Preact": "boolean"
+							"Preact": "boolean",
+							"Solid Minor": "'' | boolean",
+							"Solid Next": "true | false | ''"
 						}
 					}
 				},
@@ -1539,7 +1597,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.accent",
 						"values": {
 							"Pota": "'true' | boolean",
-							"Preact": "boolean"
+							"Preact": "boolean",
+							"Solid Minor": "'' | boolean",
+							"Solid Next": "true | false | ''"
 						}
 					}
 				},
@@ -1567,7 +1627,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.depth",
 						"values": {
 							"Pota": "string",
-							"Preact": "string"
+							"Preact": "string",
+							"Solid Minor": "string",
+							"Solid Next": "string | false"
 						}
 					},
 					"height": {
@@ -1581,7 +1643,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.height",
 						"values": {
 							"Pota": "string",
-							"Preact": "string"
+							"Preact": "string",
+							"Solid Minor": "string",
+							"Solid Next": "string | false"
 						}
 					},
 					"lspace": {
@@ -1595,7 +1659,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.lspace",
 						"values": {
 							"Pota": "string",
-							"Preact": "string"
+							"Preact": "string",
+							"Solid Minor": "string",
+							"Solid Next": "string | false"
 						}
 					},
 					"voffset": {
@@ -1609,7 +1675,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.voffset",
 						"values": {
 							"Pota": "string",
-							"Preact": "string"
+							"Preact": "string",
+							"Solid Minor": "string",
+							"Solid Next": "string | false"
 						}
 					},
 					"width": {
@@ -1623,7 +1691,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.width",
 						"values": {
 							"Pota": "string",
-							"Preact": "string"
+							"Preact": "string",
+							"Solid Minor": "string",
+							"Solid Next": "string | false"
 						}
 					}
 				},
@@ -1704,7 +1774,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.lquote",
 						"values": {
 							"Pota": "string",
-							"Preact": "string"
+							"Preact": "string",
+							"Solid Minor": "string",
+							"Solid Next": "string | false"
 						}
 					},
 					"rquote": {
@@ -1719,7 +1791,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.rquote",
 						"values": {
 							"Pota": "string",
-							"Preact": "string"
+							"Preact": "string",
+							"Solid Minor": "string",
+							"Solid Next": "string | false"
 						}
 					}
 				},
@@ -1747,7 +1821,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.depth",
 						"values": {
 							"Pota": "string",
-							"Preact": "string"
+							"Preact": "string",
+							"Solid Minor": "string",
+							"Solid Next": "string | false"
 						}
 					},
 					"height": {
@@ -1761,7 +1837,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.height",
 						"values": {
 							"Pota": "string",
-							"Preact": "string"
+							"Preact": "string",
+							"Solid Minor": "string",
+							"Solid Next": "string | false"
 						}
 					},
 					"width": {
@@ -1775,7 +1853,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.width",
 						"values": {
 							"Pota": "string",
-							"Preact": "string"
+							"Preact": "string",
+							"Solid Minor": "string",
+							"Solid Next": "string | false"
 						}
 					}
 				},
@@ -1818,7 +1898,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.background",
 						"values": {
 							"Pota": "string",
-							"Preact": "string"
+							"Preact": "string",
+							"Solid Minor": "string",
+							"Solid Next": "string | false"
 						}
 					},
 					"color": {
@@ -1834,7 +1916,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.color",
 						"values": {
 							"Pota": "string",
-							"Preact": "string"
+							"Preact": "string",
+							"Solid Minor": "string",
+							"Solid Next": "string | false"
 						}
 					},
 					"fontsize": {
@@ -1850,7 +1934,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.fontsize",
 						"values": {
 							"Pota": "string",
-							"Preact": "string"
+							"Preact": "string",
+							"Solid Minor": "string",
+							"Solid Next": "string | false"
 						}
 					},
 					"fontstyle": {
@@ -1866,7 +1952,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.fontstyle",
 						"values": {
 							"Pota": "string",
-							"Preact": "string"
+							"Preact": "string",
+							"Solid Minor": "string",
+							"Solid Next": "string | false"
 						}
 					},
 					"fontweight": {
@@ -1882,7 +1970,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.fontweight",
 						"values": {
 							"Pota": "string",
-							"Preact": "string"
+							"Preact": "string",
+							"Solid Minor": "string",
+							"Solid Next": "string | false"
 						}
 					},
 					"scriptminsize": {
@@ -1897,7 +1987,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.scriptminsize",
 						"values": {
 							"Pota": "string",
-							"Preact": "string"
+							"Preact": "string",
+							"Solid Minor": "string",
+							"Solid Next": "string | false"
 						}
 					},
 					"scriptsizemultiplier": {
@@ -1912,7 +2004,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.scriptsizemultiplier",
 						"values": {
 							"Pota": "string",
-							"Preact": "string"
+							"Preact": "string",
+							"Solid Minor": "string",
+							"Solid Next": "string | false"
 						}
 					}
 				},
@@ -1942,7 +2036,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.subscriptshift",
 						"values": {
 							"Pota": "string",
-							"Preact": "string"
+							"Preact": "string",
+							"Solid Minor": "string",
+							"Solid Next": "string | false"
 						}
 					}
 				},
@@ -1972,7 +2068,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.subscriptshift",
 						"values": {
 							"Pota": "string",
-							"Preact": "string"
+							"Preact": "string",
+							"Solid Minor": "string",
+							"Solid Next": "string | false"
 						}
 					},
 					"superscriptshift": {
@@ -1988,7 +2086,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.superscriptshift",
 						"values": {
 							"Pota": "string",
-							"Preact": "string"
+							"Preact": "string",
+							"Solid Minor": "string",
+							"Solid Next": "string | false"
 						}
 					}
 				},
@@ -2018,7 +2118,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.superscriptshift",
 						"values": {
 							"Pota": "string",
-							"Preact": "string"
+							"Preact": "string",
+							"Solid Minor": "string",
+							"Solid Next": "string | false"
 						}
 					}
 				},
@@ -2047,7 +2149,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.align",
 						"values": {
 							"Pota": "'axis' | 'baseline' | 'bottom' | 'center' | 'top'",
-							"Preact": "'axis' | 'baseline' | 'bottom' | 'center' | 'top'"
+							"Preact": "'axis' | 'baseline' | 'bottom' | 'center' | 'top'",
+							"Solid Minor": "'axis' | 'baseline' | 'bottom' | 'center' | 'top'",
+							"Solid Next": "'axis' | 'baseline' | 'bottom' | 'center' | 'top' | false"
 						}
 					},
 					"columnalign": {
@@ -2062,7 +2166,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.columnalign",
 						"values": {
 							"Pota": "'center' | 'left' | 'right'",
-							"Preact": "'center' | 'left' | 'right'"
+							"Preact": "'center' | 'left' | 'right'",
+							"Solid Minor": "'center' | 'left' | 'right'",
+							"Solid Next": "'center' | 'left' | 'right' | false"
 						}
 					},
 					"columnlines": {
@@ -2077,7 +2183,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.columnlines",
 						"values": {
 							"Pota": "'dashed' | 'none' | 'solid'",
-							"Preact": "'dashed' | 'none' | 'solid'"
+							"Preact": "'dashed' | 'none' | 'solid'",
+							"Solid Minor": "'dashed' | 'none' | 'solid'",
+							"Solid Next": "'dashed' | 'none' | 'solid' | false"
 						}
 					},
 					"columnspacing": {
@@ -2092,7 +2200,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.columnspacing",
 						"values": {
 							"Pota": "string",
-							"Preact": "string"
+							"Preact": "string",
+							"Solid Minor": "string",
+							"Solid Next": "string | false"
 						}
 					},
 					"frame": {
@@ -2107,7 +2217,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.frame",
 						"values": {
 							"Pota": "'dashed' | 'none' | 'solid'",
-							"Preact": "'dashed' | 'none' | 'solid'"
+							"Preact": "'dashed' | 'none' | 'solid'",
+							"Solid Minor": "'dashed' | 'none' | 'solid'",
+							"Solid Next": "'dashed' | 'none' | 'solid' | false"
 						}
 					},
 					"framespacing": {
@@ -2122,7 +2234,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.framespacing",
 						"values": {
 							"Pota": "string",
-							"Preact": "string"
+							"Preact": "string",
+							"Solid Minor": "string",
+							"Solid Next": "string | false"
 						}
 					},
 					"rowalign": {
@@ -2137,7 +2251,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.rowalign",
 						"values": {
 							"Pota": "'axis' | 'baseline' | 'bottom' | 'center' | 'top'",
-							"Preact": "'axis' | 'baseline' | 'bottom' | 'center' | 'top'"
+							"Preact": "'axis' | 'baseline' | 'bottom' | 'center' | 'top'",
+							"Solid Minor": "'axis' | 'baseline' | 'bottom' | 'center' | 'top'",
+							"Solid Next": "'axis' | 'baseline' | 'bottom' | 'center' | 'top' | false"
 						}
 					},
 					"rowlines": {
@@ -2152,7 +2268,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.rowlines",
 						"values": {
 							"Pota": "'dashed' | 'none' | 'solid'",
-							"Preact": "'dashed' | 'none' | 'solid'"
+							"Preact": "'dashed' | 'none' | 'solid'",
+							"Solid Minor": "'dashed' | 'none' | 'solid'",
+							"Solid Next": "'dashed' | 'none' | 'solid' | false"
 						}
 					},
 					"rowspacing": {
@@ -2167,7 +2285,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.rowspacing",
 						"values": {
 							"Pota": "string",
-							"Preact": "string"
+							"Preact": "string",
+							"Solid Minor": "string",
+							"Solid Next": "string | false"
 						}
 					},
 					"width": {
@@ -2182,7 +2302,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.width",
 						"values": {
 							"Pota": "string",
-							"Preact": "string"
+							"Preact": "string",
+							"Solid Minor": "string",
+							"Solid Next": "string | false"
 						}
 					}
 				},
@@ -2211,7 +2333,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.columnalign",
 						"values": {
 							"Pota": "'center' | 'left' | 'right'",
-							"Preact": "'center' | 'left' | 'right'"
+							"Preact": "'center' | 'left' | 'right'",
+							"Solid Minor": "'center' | 'left' | 'right'",
+							"Solid Next": "'center' | 'left' | 'right' | false"
 						}
 					},
 					"columnspan": {
@@ -2225,7 +2349,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.columnspan",
 						"values": {
 							"Pota": "number | string",
-							"Preact": "number"
+							"Preact": "number",
+							"Solid Minor": "number | string",
+							"Solid Next": "number | string | false"
 						}
 					},
 					"rowalign": {
@@ -2240,7 +2366,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.rowalign",
 						"values": {
 							"Pota": "'axis' | 'baseline' | 'bottom' | 'center' | 'top'",
-							"Preact": "'axis' | 'baseline' | 'bottom' | 'center' | 'top'"
+							"Preact": "'axis' | 'baseline' | 'bottom' | 'center' | 'top'",
+							"Solid Minor": "'axis' | 'baseline' | 'bottom' | 'center' | 'top'",
+							"Solid Next": "'axis' | 'baseline' | 'bottom' | 'center' | 'top' | false"
 						}
 					},
 					"rowspan": {
@@ -2254,7 +2382,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.rowspan",
 						"values": {
 							"Pota": "number | string",
-							"Preact": "number"
+							"Preact": "number",
+							"Solid Minor": "number | string",
+							"Solid Next": "number | string | false"
 						}
 					}
 				},
@@ -2296,7 +2426,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.columnalign",
 						"values": {
 							"Pota": "'center' | 'left' | 'right'",
-							"Preact": "'center' | 'left' | 'right'"
+							"Preact": "'center' | 'left' | 'right'",
+							"Solid Minor": "'center' | 'left' | 'right'",
+							"Solid Next": "'center' | 'left' | 'right' | false"
 						}
 					},
 					"rowalign": {
@@ -2311,7 +2443,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.rowalign",
 						"values": {
 							"Pota": "'axis' | 'baseline' | 'bottom' | 'center' | 'top'",
-							"Preact": "'axis' | 'baseline' | 'bottom' | 'center' | 'top'"
+							"Preact": "'axis' | 'baseline' | 'bottom' | 'center' | 'top'",
+							"Solid Minor": "'axis' | 'baseline' | 'bottom' | 'center' | 'top'",
+							"Solid Next": "'axis' | 'baseline' | 'bottom' | 'center' | 'top' | false"
 						}
 					}
 				},
@@ -2339,7 +2473,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.accentunder",
 						"values": {
 							"Pota": "'true' | boolean",
-							"Preact": "boolean"
+							"Preact": "boolean",
+							"Solid Minor": "'' | boolean",
+							"Solid Next": "true | false | ''"
 						}
 					}
 				},
@@ -2366,7 +2502,9 @@
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.accent",
 						"values": {
-							"Pota": "'true' | boolean"
+							"Pota": "'true' | boolean",
+							"Solid Minor": "'' | boolean",
+							"Solid Next": "true | false | ''"
 						}
 					},
 					"accentunder": {
@@ -2380,7 +2518,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.accentunder",
 						"values": {
 							"Pota": "'true' | boolean",
-							"Preact": "boolean"
+							"Preact": "boolean",
+							"Solid Minor": "'' | boolean",
+							"Solid Next": "true | false | ''"
 						}
 					}
 				},

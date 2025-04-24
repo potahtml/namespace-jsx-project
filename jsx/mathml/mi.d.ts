@@ -1,3 +1,13 @@
+// Solid Minor - https://www.solidjs.com/
+interface MathMLMiElementAttributes<T> extends MathMLAttributes<T> {
+	mathvariant?: 'normal'
+}
+
+// Solid Next - https://www.solidjs.com/
+interface MathMLMiElementAttributes<T> extends MathMLAttributes<T> {
+	mathvariant?: 'normal' | false
+}
+
 // Preact - https://preactjs.com/
 interface MiMathMLAttributes<T extends EventTarget> extends MathMLAttributes<T> {
 	/** The only value allowed in the current specification is normal (case insensitive)

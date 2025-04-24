@@ -28,6 +28,7 @@ export const libs = [
 			htmlelementtags: 'elements',
 			svgelementtags: 'elements',
 			intrinsicelements: 'elements',
+			mathmlelementtags: 'elements',
 
 			// attributes
 			intrinsicattributes: 'attributes',
@@ -52,6 +53,7 @@ export const libs = [
 			htmlelementtags: 'elements',
 			svgelementtags: 'elements',
 			intrinsicelements: 'elements',
+			mathmlelementtags: 'elements',
 
 			// attributes
 			intrinsicattributes: 'attributes',
@@ -76,6 +78,7 @@ export const libs = [
 			htmlelementtags: 'elements',
 			svgelementtags: 'elements',
 			intrinsicelements: 'elements',
+			mathmlelementtags: 'elements',
 
 			// attributes
 			intrinsicattributes: 'attributes',
