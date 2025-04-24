@@ -36,19 +36,7 @@ interface TrackHTMLAttributes<T> extends HTMLAttributes<T> {
 // Solid Next - https://www.solidjs.com/
 interface TrackHTMLAttributes<T> extends HTMLAttributes<T> {
 	default?: true | false | '' | false
-	kind?: // MDN
-	| 'alternative'
-		| 'descriptions'
-		| 'main'
-		| 'main-desc'
-		| 'translation'
-		| 'commentary'
-		// ??
-		| 'subtitles'
-		| 'captions'
-		| 'chapters'
-		| 'metadata'
-		| false
+	kind?: 'alternative' | 'descriptions' | 'main' | 'main-desc' | 'translation' | 'commentary' | 'subtitles' | 'captions' | 'chapters' | 'metadata' | false
 	label?: string | false
 	src?: string | false
 	srclang?: string | false

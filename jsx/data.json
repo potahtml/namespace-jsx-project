@@ -16531,7 +16531,7 @@
 							"React": "string",
 							"Solid Main": "'subtitles' | 'captions' | 'descriptions' | 'chapters' | 'metadata'",
 							"Solid Minor": "// MDN | 'alternative' | 'descriptions' | 'main' | 'main-desc' | 'translation' | 'commentary' \t\t\t// ?? | 'subtitles' | 'captions' | 'chapters' | 'metadata'",
-							"Solid Next": "// MDN | 'alternative' | 'descriptions' | 'main' | 'main-desc' | 'translation' | 'commentary' \t\t\t// ?? | 'subtitles' | 'captions' | 'chapters' | 'metadata' | false",
+							"Solid Next": "'alternative' | 'descriptions' | 'main' | 'main-desc' | 'translation' | 'commentary' | 'subtitles' | 'captions' | 'chapters' | 'metadata' | false",
 							"Voby": "string",
 							"VSCode": "'subtitles' | 'captions' | 'descriptions' | 'chapters' | 'metadata'",
 							"Vue": "string"
@@ -69978,7 +69978,7 @@
 		"on:command": {
 			"name": "on:command",
 			"values": {
-				"Solid Next": "EventHandlerWithOptionsUnion<T, CommandEvent>"
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 			}
 		},
 		"on:compositionend": {
@@ -70457,7 +70457,7 @@
 			"name": "on:pagereveal",
 			"values": {
 				"Pota": "Events<Event, Element>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, PageRevealEvent>"
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 			}
 		},
 		"on:pageshow": {
@@ -70471,7 +70471,7 @@
 			"name": "on:pageswap",
 			"values": {
 				"Pota": "Events<Event, Element>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, PageSwapEvent>"
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 			}
 		},
 		"on:paste": {
@@ -71217,13 +71217,13 @@
 			"name": "onCommand",
 			"values": {
 				"Preact": "CommandEventHandler<Target>",
-				"Solid Next": "EventHandlerUnion<T, CommandEvent>"
+				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
 		"oncommand": {
 			"name": "oncommand",
 			"values": {
-				"Solid Next": "EventHandlerUnion<T, CommandEvent>"
+				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
 		"onCompositionEnd": {
@@ -72333,13 +72333,13 @@
 		"onPageReveal": {
 			"name": "onPageReveal",
 			"values": {
-				"Solid Next": "EventHandlerUnion<T, PageRevealEvent>"
+				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
 		"onpagereveal": {
 			"name": "onpagereveal",
 			"values": {
-				"Solid Next": "EventHandlerUnion<T, PageRevealEvent>"
+				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
 		"onPageShow": {
@@ -72357,13 +72357,13 @@
 		"onPageSwap": {
 			"name": "onPageSwap",
 			"values": {
-				"Solid Next": "EventHandlerUnion<T, PageSwapEvent>"
+				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
 		"onpageswap": {
 			"name": "onpageswap",
 			"values": {
-				"Solid Next": "EventHandlerUnion<T, PageSwapEvent>"
+				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
 		"onPaste": {
@@ -72894,7 +72894,7 @@
 		"onslotchange": {
 			"name": "onslotchange",
 			"values": {
-				"Solid Next": "EventHandlerUnion<T, Event> EventHandlerUnion<T, Event>"
+				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
 		"onStalled": {

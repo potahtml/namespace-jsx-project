@@ -1665,7 +1665,6 @@ interface HTMLElementDeprecatedTags {
 	menuitem: HTMLAttributes<HTMLUnknownElement>
 	/**
 	 * @deprecated
-	 * @url https://developer.mozilla.org/en-US/docs/Web/HTML/Element/xxxxx
 	 * @url https://developer.mozilla.org/en-US/docs/Web/API/HTMLUnknownElement
 	 */
 	noindex: HTMLAttributes<HTMLUnknownElement>

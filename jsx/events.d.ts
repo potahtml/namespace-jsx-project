@@ -656,20 +656,15 @@ interface CustomEventHandlersNamespaced<T> {
 }
 
 // Solid Next - https://www.solidjs.com/
-interface DOMAttributes<T> extends CustomAttributes<T>, DirectiveAttributes, DirectiveFunctionAttributes<T>, PropAttributes, AttrAttributes, BoolAttributes, OnAttributes<T>, CustomEventHandlersCamelCase<T>, CustomEventHandlersLowerCase<T>, CustomEventHandlersNamespaced<T> {
-	children?: Node | ArrayElement | (string & {}) | number | boolean | null
-	innerHTML?: string
-	innerText?: string | number
-	textContent?: string | number
-}
 interface ElementEventMap<T> {
 	onFullscreenChange?: EventHandlerUnion<T, Event>
+	onFullscreenError?: EventHandlerUnion<T, Event>
+
 	'on:fullscreenchange'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:fullscreenerror'?: EventHandlerWithOptionsUnion<T, Event>
+
 	/** @deprecated Use camelCase event handlers */
 	onfullscreenchange?: EventHandlerUnion<T, Event>
-
-	onFullscreenError?: EventHandlerUnion<T, Event>
-	'on:fullscreenerror'?: EventHandlerWithOptionsUnion<T, Event>
 	/** @deprecated Use camelCase event handlers */
 	onfullscreenerror?: EventHandlerUnion<T, Event>
 }
@@ -686,9 +681,11 @@ interface WindowEventMap<T> {
 	onOffline?: EventHandlerUnion<T, Event>
 	onOnline?: EventHandlerUnion<T, Event>
 	onPageHide?: EventHandlerUnion<T, PageTransitionEvent>
-	onPageReveal?: EventHandlerUnion<T, PageRevealEvent>
+	// TODO `PageRevealEvent` is currently undefined on TS
+	onPageReveal?: EventHandlerUnion<T, Event>
 	onPageShow?: EventHandlerUnion<T, PageTransitionEvent>
-	onPageSwap?: EventHandlerUnion<T, PageSwapEvent>
+	// TODO `PageSwapEvent` is currently undefined on TS
+	onPageSwap?: EventHandlerUnion<T, Event>
 	onPopstate?: EventHandlerUnion<T, PopStateEvent>
 	onRejectionHandled?: EventHandlerUnion<T, PromiseRejectionEvent>
 	onStorage?: EventHandlerUnion<T, StorageEvent>
@@ -719,12 +716,14 @@ interface WindowEventMap<T> {
 	ononline?: EventHandlerUnion<T, Event>
 	/** @deprecated Use camelCase event handlers */
 	onpagehide?: EventHandlerUnion<T, PageTransitionEvent>
+	// TODO `PageRevealEvent` is currently undefined in TS
 	/** @deprecated Use camelCase event handlers */
-	onpagereveal?: EventHandlerUnion<T, PageRevealEvent>
+	onpagereveal?: EventHandlerUnion<T, Event>
 	/** @deprecated Use camelCase event handlers */
 	onpageshow?: EventHandlerUnion<T, PageTransitionEvent>
+	// TODO `PageSwapEvent` is currently undefined in TS
 	/** @deprecated Use camelCase event handlers */
-	onpageswap?: EventHandlerUnion<T, PageSwapEvent>
+	onpageswap?: EventHandlerUnion<T, Event>
 	/** @deprecated Use camelCase event handlers */
 	onpopstate?: EventHandlerUnion<T, PopStateEvent>
 	/** @deprecated Use camelCase event handlers */
@@ -748,9 +747,11 @@ interface WindowEventMap<T> {
 	'on:offline'?: EventHandlerWithOptionsUnion<T, Event>
 	'on:online'?: EventHandlerWithOptionsUnion<T, Event>
 	'on:pagehide'?: EventHandlerWithOptionsUnion<T, PageTransitionEvent>
-	'on:pagereveal'?: EventHandlerWithOptionsUnion<T, PageRevealEvent>
+	// TODO `PageRevealEvent` is currently undefined in TS
+	'on:pagereveal'?: EventHandlerWithOptionsUnion<T, Event>
 	'on:pageshow'?: EventHandlerWithOptionsUnion<T, PageTransitionEvent>
-	'on:pageswap'?: EventHandlerWithOptionsUnion<T, PageSwapEvent>
+	// TODO `PageSwapEvent` is currently undefined in TS
+	'on:pageswap'?: EventHandlerWithOptionsUnion<T, Event>
 	'on:popstate'?: EventHandlerWithOptionsUnion<T, PopStateEvent>
 	'on:rejectionhandled'?: EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>
 	'on:storage'?: EventHandlerWithOptionsUnion<T, StorageEvent>
@@ -772,7 +773,8 @@ interface CustomEventHandlersCamelCase<T> {
 	onCanPlayThrough?: EventHandlerUnion<T, Event>
 	onChange?: ChangeEventHandlerUnion<T, Event>
 	onClick?: EventHandlerUnion<T, MouseEvent>
-	onCommand?: EventHandlerUnion<T, CommandEvent>
+	// TODO `CommandEvent` is currently undefined in TS
+	onCommand?: EventHandlerUnion<T, Event>
 	onCompositionEnd?: EventHandlerUnion<T, CompositionEvent>
 	onCompositionStart?: EventHandlerUnion<T, CompositionEvent>
 	onCompositionUpdate?: EventHandlerUnion<T, CompositionEvent>
@@ -838,7 +840,6 @@ interface CustomEventHandlersCamelCase<T> {
 	onSelect?: EventHandlerUnion<T, Event>
 	onSelectionChange?: EventHandlerUnion<T, Event>
 	onSlotChange?: EventHandlerUnion<T, Event>
-	onslotchange?: EventHandlerUnion<T, Event>
 	onStalled?: EventHandlerUnion<T, Event>
 	onSubmit?: EventHandlerUnion<T, SubmitEvent>
 	onSuspend?: EventHandlerUnion<T, Event>
@@ -885,8 +886,9 @@ interface CustomEventHandlersLowerCase<T> {
 	onchange?: ChangeEventHandlerUnion<T, Event>
 	/** @deprecated Use camelCase event handlers */
 	onclick?: EventHandlerUnion<T, MouseEvent>
+	// TODO `CommandEvent` is currently undefined in TS
 	/** @deprecated Use camelCase event handlers */
-	oncommand?: EventHandlerUnion<T, CommandEvent>
+	oncommand?: EventHandlerUnion<T, Event>
 	/** @deprecated Use camelCase event handlers */
 	oncompositionend?: EventHandlerUnion<T, CompositionEvent>
 	/** @deprecated Use camelCase event handlers */
@@ -1065,7 +1067,8 @@ interface CustomEventHandlersNamespaced<T> {
 	'on:canplaythrough'?: EventHandlerWithOptionsUnion<T, Event>
 	'on:change'?: EventHandlerWithOptionsUnion<T, Event, ChangeEventHandler<T, Event>>
 	'on:click'?: EventHandlerWithOptionsUnion<T, MouseEvent>
-	'on:command'?: EventHandlerWithOptionsUnion<T, CommandEvent>
+	// TODO `CommandEvent` is currently undefined in TS
+	'on:command'?: EventHandlerWithOptionsUnion<T, Event>
 	'on:compositionend'?: EventHandlerWithOptionsUnion<T, CompositionEvent>
 	'on:compositionstart'?: EventHandlerWithOptionsUnion<T, CompositionEvent>
 	'on:compositionupdate'?: EventHandlerWithOptionsUnion<T, CompositionEvent>
@@ -1147,6 +1150,12 @@ interface CustomEventHandlersNamespaced<T> {
 	'on:volumechange'?: EventHandlerWithOptionsUnion<T, Event>
 	'on:waiting'?: EventHandlerWithOptionsUnion<T, Event>
 	'on:wheel'?: EventHandlerWithOptionsUnion<T, WheelEvent>
+}
+interface DOMAttributes<T> extends CustomAttributes<T>, DirectiveAttributes, DirectiveFunctionAttributes<T>, PropAttributes, AttrAttributes, BoolAttributes, OnAttributes<T>, CustomEventHandlersCamelCase<T>, CustomEventHandlersLowerCase<T>, CustomEventHandlersNamespaced<T> {
+	children?: Node | ArrayElement | (string & {}) | number | boolean | null
+	innerHTML?: string
+	innerText?: string | number
+	textContent?: string | number
 }
 
 // Voby - https://github.com/vobyjs/voby
