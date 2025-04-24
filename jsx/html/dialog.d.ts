@@ -1,8 +1,14 @@
 // Solid Main - https://www.solidjs.com/
 interface DialogHtmlAttributes<T> extends HTMLAttributes<T> {
 	open?: boolean
+
 	onClose?: EventHandlerUnion<T, Event>
+	onclose?: EventHandlerUnion<T, Event>
+	'on:close'?: EventHandlerWithOptionsUnion<T, Event>
+
 	onCancel?: EventHandlerUnion<T, Event>
+	oncancel?: EventHandlerUnion<T, Event>
+	'on:cancel'?: EventHandlerWithOptionsUnion<T, Event>
 }
 
 // Solid Minor - https://www.solidjs.com/
@@ -10,10 +16,15 @@ interface DialogHtmlAttributes<T> extends HTMLAttributes<T> {
 	open?: '' | boolean
 	tabindex?: never
 
-	onclose?: EventHandlerUnion<T, Event>
 	onClose?: EventHandlerUnion<T, Event>
-	oncancel?: EventHandlerUnion<T, Event>
+	'on:close'?: EventHandlerWithOptionsUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onclose?: EventHandlerUnion<T, Event>
+
 	onCancel?: EventHandlerUnion<T, Event>
+	'on:cancel'?: EventHandlerWithOptionsUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	oncancel?: EventHandlerUnion<T, Event>
 }
 
 // Solid Next - https://www.solidjs.com/

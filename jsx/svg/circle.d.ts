@@ -93,7 +93,7 @@ interface PresentationSVGAttributes {
 }
 
 // Solid Minor - https://www.solidjs.com/
-interface CircleSVGAttributes<T> extends GraphicsElementSVGAttributes<T>, ShapeElementSVGAttributes<T>, ConditionalProcessingSVGAttributes, StylableSVGAttributes, TransformableSVGAttributes {
+interface CircleSVGAttributes<T> extends GraphicsElementSVGAttributes<T>, ShapeElementSVGAttributes<T>, ConditionalProcessingSVGAttributes, StylableSVGAttributes, TransformableSVGAttributes, Pick<PresentationSVGAttributes, 'clip-path'> {
 	cx?: number | string
 	cy?: number | string
 	r?: number | string
@@ -114,15 +114,6 @@ interface StylableSVGAttributes {
 
 interface TransformableSVGAttributes {
 	transform?: string
-}
-
-interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
-	id?: string
-	lang?: string
-	tabindex?: number | string
-
-	/** @deprecated Use lowercase attributes */
-	tabIndex?: number | string
 }
 
 interface PresentationSVGAttributes {
@@ -186,6 +177,15 @@ interface PresentationSVGAttributes {
 	visibility?: 'visible' | 'hidden' | 'collapse' | 'inherit'
 	'word-spacing'?: number | string
 	'writing-mode'?: 'lr-tb' | 'rl-tb' | 'tb-rl' | 'lr' | 'rl' | 'tb' | 'inherit'
+}
+
+interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
+	id?: string
+	lang?: string
+	tabindex?: number | string
+
+	/** @deprecated Use lowercase attributes */
+	tabIndex?: number | string
 }
 
 // Solid Next - https://www.solidjs.com/

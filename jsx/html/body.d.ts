@@ -1,3 +1,9 @@
+// Solid Main - https://www.solidjs.com/
+interface BodyHTMLAttributes<T> extends HTMLAttributes<T>, WindowEventMap<T>, ElementEventMap<T> {}
+
+// Solid Minor - https://www.solidjs.com/
+interface BodyHTMLAttributes<T> extends HTMLAttributes<T>, WindowEventMap<T>, ElementEventMap<T> {}
+
 // Solid Next - https://www.solidjs.com/
 interface BodyHTMLAttributes<T> extends HTMLAttributes<T>, WindowEventMap<T>, ElementEventMap<T> {}
 

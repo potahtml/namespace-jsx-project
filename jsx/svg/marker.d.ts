@@ -1,5 +1,5 @@
 // Solid Main - https://www.solidjs.com/
-interface MarkerSVGAttributes<T> extends ContainerElementSVGAttributes<T>, ExternalResourceSVGAttributes, StylableSVGAttributes, FitToViewBoxSVGAttributes, Pick<PresentationSVGAttributes, 'overflow' | 'clip'> {
+interface MarkerSVGAttributes<T> extends ContainerElementSVGAttributes<T>, ExternalResourceSVGAttributes, StylableSVGAttributes, FitToViewBoxSVGAttributes, Pick<PresentationSVGAttributes, 'clip-path' | 'overflow' | 'clip'> {
 	markerUnits?: 'strokeWidth' | 'userSpaceOnUse'
 	refX?: number | string
 	refY?: number | string
@@ -96,7 +96,7 @@ interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
 interface ShapeElementSVGAttributes<T> extends CoreSVGAttributes<T>, Pick<PresentationSVGAttributes, 'color' | 'fill' | 'fill-rule' | 'fill-opacity' | 'stroke' | 'stroke-width' | 'stroke-linecap' | 'stroke-linejoin' | 'stroke-miterlimit' | 'stroke-dasharray' | 'stroke-dashoffset' | 'stroke-opacity' | 'shape-rendering' | 'pathLength'> {}
 
 // Solid Minor - https://www.solidjs.com/
-interface MarkerSVGAttributes<T> extends ContainerElementSVGAttributes<T>, ExternalResourceSVGAttributes, StylableSVGAttributes, FitToViewBoxSVGAttributes, Pick<PresentationSVGAttributes, 'overflow' | 'clip'> {
+interface MarkerSVGAttributes<T> extends ContainerElementSVGAttributes<T>, ExternalResourceSVGAttributes, StylableSVGAttributes, FitToViewBoxSVGAttributes, Pick<PresentationSVGAttributes, 'clip-path' | 'overflow' | 'clip'> {
 	markerUnits?: 'strokeWidth' | 'userSpaceOnUse'
 	refX?: number | string
 	refY?: number | string

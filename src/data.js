@@ -11,7 +11,7 @@ import { read, unique } from './utils.js'
 export const libs = [
 	{
 		// SOLID MAIN
-		file: 'https://raw.githubusercontent.com/titoBouzout/dom-expressions/refs/heads/main/packages/dom-expressions/src/jsx.d.ts',
+		file: 'https://raw.githubusercontent.com/titoBouzout/dom-expressions/refs/heads/jsxtypesmainupdate/packages/dom-expressions/src/jsx.d.ts',
 		name: 'Solid Main',
 		url: 'https://www.solidjs.com/',
 		map: {

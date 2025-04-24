@@ -10,19 +10,7 @@ interface TrackHTMLAttributes<T> extends HTMLAttributes<T> {
 // Solid Minor - https://www.solidjs.com/
 interface TrackHTMLAttributes<T> extends HTMLAttributes<T> {
 	default?: '' | boolean
-	kind?: // MDN
-	| 'alternative'
-		| 'descriptions'
-		| 'main'
-		| 'main-desc'
-		| 'translation'
-		| 'commentary'
-		// ??
-		| 'subtitles'
-		| 'captions'
-		| 'chapters'
-		| 'metadata'
-
+	kind?: 'alternative' | 'descriptions' | 'main' | 'main-desc' | 'translation' | 'commentary' | 'subtitles' | 'captions' | 'chapters' | 'metadata'
 	label?: string
 	src?: string
 	srclang?: string

@@ -6,9 +6,17 @@ interface VideoHTMLAttributes<T> extends MediaHTMLAttributes<T> {
 	width?: number | string
 	disablepictureinpicture?: boolean
 	disableremoteplayback?: boolean
+
+	onEnterPictureInPicture?: EventHandlerUnion<T, PictureInPictureEvent>
+	onenterpictureinpicture?: EventHandlerUnion<T, PictureInPictureEvent>
+	'on:enterpictureinpicture'?: EventHandlerWithOptionsUnion<T, PictureInPictureEvent>
+
+	onLeavePictureInPicture?: EventHandlerUnion<T, PictureInPictureEvent>
+	onleavepictureinpicture?: EventHandlerUnion<T, PictureInPictureEvent>
+	'on:leavepictureinpicture'?: EventHandlerWithOptionsUnion<T, PictureInPictureEvent>
 }
 
-interface MediaHTMLAttributes<T> extends HTMLAttributes<T> {
+interface MediaHTMLAttributes<T> extends HTMLAttributes<T>, ElementEventMap<T> {
 	autoplay?: boolean
 	controls?: boolean
 	controlslist?: 'nodownload' | 'nofullscreen' | 'noplaybackrate' | 'noremoteplayback' | (string & {})
@@ -20,6 +28,14 @@ interface MediaHTMLAttributes<T> extends HTMLAttributes<T> {
 	src?: string
 	crossOrigin?: 'anonymous' | 'use-credentials' | ''
 	mediaGroup?: string
+
+	onEncrypted?: EventHandlerUnion<T, MediaEncryptedEvent>
+	onencrypted?: EventHandlerUnion<T, MediaEncryptedEvent>
+	'on:encrypted'?: EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>
+
+	onWaitingForKey?: EventHandlerUnion<T, Event>
+	onwaitingforkey?: EventHandlerUnion<T, Event>
+	'on:waitingforkey'?: EventHandlerWithOptionsUnion<T, Event>
 }
 
 // Solid Minor - https://www.solidjs.com/
@@ -29,9 +45,20 @@ interface VideoHTMLAttributes<T> extends MediaHTMLAttributes<T> {
 	poster?: string
 	width?: number | string
 	disablepictureinpicture?: '' | boolean
+	disableremoteplayback?: '' | boolean
+
+	onEnterPictureInPicture?: EventHandlerUnion<T, PictureInPictureEvent>
+	'on:enterpictureinpicture'?: EventHandlerWithOptionsUnion<T, PictureInPictureEvent>
+	/** @deprecated Use camelCase event handlers */
+	onenterpictureinpicture?: EventHandlerUnion<T, PictureInPictureEvent>
+
+	onLeavePictureInPicture?: EventHandlerUnion<T, PictureInPictureEvent>
+	'on:leavepictureinpicture'?: EventHandlerWithOptionsUnion<T, PictureInPictureEvent>
+	/** @deprecated Use camelCase event handlers */
+	onleavepictureinpicture?: EventHandlerUnion<T, PictureInPictureEvent>
 }
 
-interface MediaHTMLAttributes<T> extends HTMLAttributes<T> {
+interface MediaHTMLAttributes<T> extends HTMLAttributes<T>, ElementEventMap<T> {
 	autoplay?: '' | boolean
 	controls?: '' | boolean
 	controlslist?: 'nodownload' | 'nofullscreen' | 'noplaybackrate' | 'noremoteplayback' | (string & {})
@@ -41,6 +68,16 @@ interface MediaHTMLAttributes<T> extends HTMLAttributes<T> {
 	muted?: '' | boolean
 	preload?: 'none' | 'metadata' | 'auto' | ''
 	src?: string
+
+	onEncrypted?: EventHandlerUnion<T, MediaEncryptedEvent>
+	'on:encrypted'?: EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>
+	/** @deprecated Use camelCase event handlers */
+	onencrypted?: EventHandlerUnion<T, MediaEncryptedEvent>
+
+	onWaitingForKey?: EventHandlerUnion<T, Event>
+	'on:waitingforkey'?: EventHandlerWithOptionsUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onwaitingforkey?: EventHandlerUnion<T, Event>
 
 	/** @deprecated Use lowercase attributes */
 	crossOrigin?: 'anonymous' | 'use-credentials' | ''

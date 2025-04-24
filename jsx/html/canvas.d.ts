@@ -2,12 +2,30 @@
 interface CanvasHTMLAttributes<T> extends HTMLAttributes<T> {
 	width?: number | string
 	height?: number | string
+
+	onContextLost?: EventHandlerUnion<T, Event>
+	oncontextlost?: EventHandlerUnion<T, Event>
+	'on:contextlost'?: EventHandlerWithOptionsUnion<T, Event>
+
+	onContextRestored?: EventHandlerUnion<T, Event>
+	oncontextrestored?: EventHandlerUnion<T, Event>
+	'on:contextrestored'?: EventHandlerWithOptionsUnion<T, Event>
 }
 
 // Solid Minor - https://www.solidjs.com/
 interface CanvasHTMLAttributes<T> extends HTMLAttributes<T> {
 	width?: number | string
 	height?: number | string
+
+	onContextLost?: EventHandlerUnion<T, Event>
+	'on:contextlost'?: EventHandlerWithOptionsUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	oncontextlost?: EventHandlerUnion<T, Event>
+
+	onContextRestored?: EventHandlerUnion<T, Event>
+	'on:contextrestored'?: EventHandlerWithOptionsUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	oncontextrestored?: EventHandlerUnion<T, Event>
 
 	/**
 	 * @deprecated

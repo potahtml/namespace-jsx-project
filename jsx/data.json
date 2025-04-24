@@ -3488,6 +3488,8 @@
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement#htmlaudioelement.on:encrypted",
 						"values": {
+							"Solid Main": "EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>",
 							"Solid Next": "EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>"
 						}
 					},
@@ -3501,6 +3503,8 @@
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement#htmlaudioelement.on:waitingforkey",
 						"values": {
+							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
 							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 						}
 					},
@@ -3517,6 +3521,8 @@
 						"values": {
 							"Chrome": "event",
 							"Firefox": "event",
+							"Solid Main": "EventHandlerUnion<T, MediaEncryptedEvent>",
+							"Solid Minor": "EventHandlerUnion<T, MediaEncryptedEvent>",
 							"Solid Next": "EventHandlerUnion<T, MediaEncryptedEvent>"
 						}
 					},
@@ -3531,6 +3537,8 @@
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement#htmlaudioelement.onencrypted",
 						"values": {
+							"Solid Main": "EventHandlerUnion<T, MediaEncryptedEvent>",
+							"Solid Minor": "EventHandlerUnion<T, MediaEncryptedEvent>",
 							"Solid Next": "EventHandlerUnion<T, MediaEncryptedEvent>"
 						},
 						"warn": true
@@ -3548,6 +3556,8 @@
 						"values": {
 							"Chrome": "event",
 							"Firefox": "event",
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
 							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
@@ -3562,6 +3572,8 @@
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement#htmlaudioelement.onwaitingforkey",
 						"values": {
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
 							"Solid Next": "EventHandlerUnion<T, Event>"
 						},
 						"warn": true
@@ -5045,6 +5057,8 @@
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement#htmlcanvaselement.on:contextlost",
 						"values": {
+							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
 							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 						}
 					},
@@ -5058,6 +5072,8 @@
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement#htmlcanvaselement.on:contextrestored",
 						"values": {
+							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
 							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 						}
 					},
@@ -5071,6 +5087,8 @@
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement#htmlcanvaselement.oncontextlost",
 						"values": {
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
 							"Solid Next": "EventHandlerUnion<T, Event>"
 						},
 						"warn": true
@@ -5085,6 +5103,8 @@
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement#htmlcanvaselement.oncontextlost",
 						"values": {
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
 							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
@@ -5098,6 +5118,8 @@
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement#htmlcanvaselement.oncontextrestored",
 						"values": {
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
 							"Solid Next": "EventHandlerUnion<T, Event>"
 						},
 						"warn": true
@@ -5112,6 +5134,8 @@
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement#htmlcanvaselement.oncontextrestored",
 						"values": {
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
 							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
@@ -5694,26 +5718,10 @@
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDetailsElement#htmldetailselement.ontoggle",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, Event>",
-							"Solid Minor": "EventHandlerUnion<T, Event>",
 							"Voby": "GenericEventHandler<T>",
 							"Vue": "(payload: ToggleEvent) => void"
 						},
 						"warn": true
-					},
-					"ontoggle": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"name": "ontoggle",
-						"prop": false,
-						"propChrome": false,
-						"propFirefox": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDetailsElement#htmldetailselement.ontoggle",
-						"values": {
-							"Solid Main": "EventHandlerUnion<T, Event>",
-							"Solid Minor": "EventHandlerUnion<T, Event>"
-						}
 					},
 					"open": {
 						"attr": true,
@@ -5731,7 +5739,7 @@
 							"Preact": "boolean",
 							"React": "boolean",
 							"Solid Main": "boolean",
-							"Solid Minor": "boolean",
+							"Solid Minor": "'' | boolean",
 							"Solid Next": "true | false | ''",
 							"Voby": "boolean",
 							"VSCode": "boolean",
@@ -5802,6 +5810,8 @@
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement#htmldialogelement.on:cancel",
 						"values": {
+							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
 							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 						}
 					},
@@ -5815,6 +5825,8 @@
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement#htmldialogelement.on:close",
 						"values": {
+							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
 							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 						}
 					},
@@ -5846,6 +5858,7 @@
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement#htmldialogelement.oncancel",
 						"values": {
+							"Solid Main": "EventHandlerUnion<T, Event>",
 							"Solid Minor": "EventHandlerUnion<T, Event>",
 							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
@@ -5879,6 +5892,7 @@
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement#htmldialogelement.onclose",
 						"values": {
+							"Solid Main": "EventHandlerUnion<T, Event>",
 							"Solid Minor": "EventHandlerUnion<T, Event>",
 							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
@@ -6662,6 +6676,7 @@
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement#htmlformelement.on:formdata",
 						"values": {
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, FormDataEvent>",
 							"Solid Next": "EventHandlerWithOptionsUnion<T, FormDataEvent>"
 						}
 					},
@@ -6675,6 +6690,7 @@
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement#htmlformelement.onformdata",
 						"values": {
+							"Solid Minor": "EventHandlerUnion<T, FormDataEvent>",
 							"Solid Next": "EventHandlerUnion<T, FormDataEvent>"
 						},
 						"warn": true
@@ -6689,6 +6705,7 @@
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement#htmlformelement.onformdata",
 						"values": {
+							"Solid Minor": "EventHandlerUnion<T, FormDataEvent>",
 							"Solid Next": "EventHandlerUnion<T, FormDataEvent>"
 						}
 					},
@@ -16530,7 +16547,7 @@
 							"Preact": "string",
 							"React": "string",
 							"Solid Main": "'subtitles' | 'captions' | 'descriptions' | 'chapters' | 'metadata'",
-							"Solid Minor": "// MDN | 'alternative' | 'descriptions' | 'main' | 'main-desc' | 'translation' | 'commentary' \t\t\t// ?? | 'subtitles' | 'captions' | 'chapters' | 'metadata'",
+							"Solid Minor": "'alternative' | 'descriptions' | 'main' | 'main-desc' | 'translation' | 'commentary' | 'subtitles' | 'captions' | 'chapters' | 'metadata'",
 							"Solid Next": "'alternative' | 'descriptions' | 'main' | 'main-desc' | 'translation' | 'commentary' | 'subtitles' | 'captions' | 'chapters' | 'metadata' | false",
 							"Voby": "string",
 							"VSCode": "'subtitles' | 'captions' | 'descriptions' | 'chapters' | 'metadata'",
@@ -17218,6 +17235,8 @@
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#htmlvideoelement.on:encrypted",
 						"values": {
+							"Solid Main": "EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>",
 							"Solid Next": "EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>"
 						}
 					},
@@ -17231,6 +17250,8 @@
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#htmlvideoelement.on:enterpictureinpicture",
 						"values": {
+							"Solid Main": "EventHandlerWithOptionsUnion<T, PictureInPictureEvent>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, PictureInPictureEvent>",
 							"Solid Next": "EventHandlerWithOptionsUnion<T, PictureInPictureEvent>"
 						}
 					},
@@ -17244,6 +17265,8 @@
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#htmlvideoelement.on:leavepictureinpicture",
 						"values": {
+							"Solid Main": "EventHandlerWithOptionsUnion<T, PictureInPictureEvent>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, PictureInPictureEvent>",
 							"Solid Next": "EventHandlerWithOptionsUnion<T, PictureInPictureEvent>"
 						}
 					},
@@ -17257,6 +17280,8 @@
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#htmlvideoelement.on:waitingforkey",
 						"values": {
+							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
 							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 						}
 					},
@@ -17273,6 +17298,8 @@
 						"values": {
 							"Chrome": "event",
 							"Firefox": "event",
+							"Solid Main": "EventHandlerUnion<T, MediaEncryptedEvent>",
+							"Solid Minor": "EventHandlerUnion<T, MediaEncryptedEvent>",
 							"Solid Next": "EventHandlerUnion<T, MediaEncryptedEvent>"
 						}
 					},
@@ -17287,6 +17314,8 @@
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#htmlvideoelement.onencrypted",
 						"values": {
+							"Solid Main": "EventHandlerUnion<T, MediaEncryptedEvent>",
+							"Solid Minor": "EventHandlerUnion<T, MediaEncryptedEvent>",
 							"Solid Next": "EventHandlerUnion<T, MediaEncryptedEvent>"
 						},
 						"warn": true
@@ -17302,6 +17331,8 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#htmlvideoelement.onenterpictureinpicture",
 						"values": {
 							"Chrome": "event",
+							"Solid Main": "EventHandlerUnion<T, PictureInPictureEvent>",
+							"Solid Minor": "EventHandlerUnion<T, PictureInPictureEvent>",
 							"Solid Next": "EventHandlerUnion<T, PictureInPictureEvent>"
 						}
 					},
@@ -17315,6 +17346,8 @@
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#htmlvideoelement.onenterpictureinpicture",
 						"values": {
+							"Solid Main": "EventHandlerUnion<T, PictureInPictureEvent>",
+							"Solid Minor": "EventHandlerUnion<T, PictureInPictureEvent>",
 							"Solid Next": "EventHandlerUnion<T, PictureInPictureEvent>"
 						},
 						"warn": true
@@ -17330,6 +17363,8 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#htmlvideoelement.onleavepictureinpicture",
 						"values": {
 							"Chrome": "event",
+							"Solid Main": "EventHandlerUnion<T, PictureInPictureEvent>",
+							"Solid Minor": "EventHandlerUnion<T, PictureInPictureEvent>",
 							"Solid Next": "EventHandlerUnion<T, PictureInPictureEvent>"
 						}
 					},
@@ -17343,6 +17378,8 @@
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#htmlvideoelement.onleavepictureinpicture",
 						"values": {
+							"Solid Main": "EventHandlerUnion<T, PictureInPictureEvent>",
+							"Solid Minor": "EventHandlerUnion<T, PictureInPictureEvent>",
 							"Solid Next": "EventHandlerUnion<T, PictureInPictureEvent>"
 						},
 						"warn": true
@@ -17360,6 +17397,8 @@
 						"values": {
 							"Chrome": "event",
 							"Firefox": "event",
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
 							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
@@ -17374,6 +17413,8 @@
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#htmlvideoelement.onwaitingforkey",
 						"values": {
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
 							"Solid Next": "EventHandlerUnion<T, Event>"
 						},
 						"warn": true
@@ -69830,7 +69871,7 @@
 			"name": "on:abort",
 			"values": {
 				"Pota": "Events<UIEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, UIEvent>",
 				"Solid Minor": "EventHandlerWithOptionsUnion<T, UIEvent>",
 				"Solid Next": "EventHandlerWithOptionsUnion<T, UIEvent>"
 			}
@@ -69839,6 +69880,8 @@
 			"name": "on:afterprint",
 			"values": {
 				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
 				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 			}
 		},
@@ -69846,6 +69889,8 @@
 			"name": "on:animationcancel",
 			"values": {
 				"Pota": "Events<AnimationEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, AnimationEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, AnimationEvent>",
 				"Solid Next": "EventHandlerWithOptionsUnion<T, AnimationEvent>"
 			}
 		},
@@ -69880,8 +69925,8 @@
 			"name": "on:auxclick",
 			"values": {
 				"Pota": "Events<MouseEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, PointerEvent>",
 				"Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
 			}
 		},
@@ -69898,6 +69943,8 @@
 			"name": "on:beforeprint",
 			"values": {
 				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
 				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 			}
 		},
@@ -69914,6 +69961,8 @@
 			"name": "on:beforeunload",
 			"values": {
 				"Pota": "Events<BeforeUnloadEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, BeforeUnloadEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, BeforeUnloadEvent>",
 				"Solid Next": "EventHandlerWithOptionsUnion<T, BeforeUnloadEvent>"
 			}
 		},
@@ -69930,6 +69979,8 @@
 			"name": "on:cancel",
 			"values": {
 				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
 				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 			}
 		},
@@ -69978,6 +70029,8 @@
 		"on:command": {
 			"name": "on:command",
 			"values": {
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
 				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 			}
 		},
@@ -70018,8 +70071,8 @@
 			"name": "on:contextmenu",
 			"values": {
 				"Pota": "Events<MouseEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, PointerEvent>",
 				"Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
 			}
 		},
@@ -70042,6 +70095,8 @@
 			"name": "on:cuechange",
 			"values": {
 				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
 				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 			}
 		},
@@ -70155,9 +70210,7 @@
 		"on:encrypted": {
 			"name": "on:encrypted",
 			"values": {
-				"Pota": "Events<MediaEncryptedEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>"
+				"Pota": "Events<MediaEncryptedEvent, Element>"
 			}
 		},
 		"on:ended": {
@@ -70179,7 +70232,7 @@
 			"name": "on:error",
 			"values": {
 				"Pota": "Events<ErrorEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, ErrorEvent>",
 				"Solid Minor": "EventHandlerWithOptionsUnion<T, ErrorEvent>",
 				"Solid Next": "EventHandlerWithOptionsUnion<T, ErrorEvent>"
 			}
@@ -70221,6 +70274,8 @@
 			"name": "on:fullscreenchange",
 			"values": {
 				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
 				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 			}
 		},
@@ -70228,6 +70283,8 @@
 			"name": "on:fullscreenerror",
 			"values": {
 				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
 				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 			}
 		},
@@ -70235,6 +70292,8 @@
 			"name": "on:gamepadconnected",
 			"values": {
 				"Pota": "Events<GamepadEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, GamepadEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, GamepadEvent>",
 				"Solid Next": "EventHandlerWithOptionsUnion<T, GamepadEvent>"
 			}
 		},
@@ -70242,6 +70301,8 @@
 			"name": "on:gamepaddisconnected",
 			"values": {
 				"Pota": "Events<GamepadEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, GamepadEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, GamepadEvent>",
 				"Solid Next": "EventHandlerWithOptionsUnion<T, GamepadEvent>"
 			}
 		},
@@ -70249,6 +70310,8 @@
 			"name": "on:hashchange",
 			"values": {
 				"Pota": "Events<HashChangeEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, HashChangeEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, HashChangeEvent>",
 				"Solid Next": "EventHandlerWithOptionsUnion<T, HashChangeEvent>"
 			}
 		},
@@ -70301,6 +70364,8 @@
 			"name": "on:languagechange",
 			"values": {
 				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
 				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 			}
 		},
@@ -70359,6 +70424,8 @@
 			"name": "on:message",
 			"values": {
 				"Pota": "Events<MessageEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, MessageEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, MessageEvent>",
 				"Solid Next": "EventHandlerWithOptionsUnion<T, MessageEvent>"
 			}
 		},
@@ -70366,6 +70433,8 @@
 			"name": "on:messageerror",
 			"values": {
 				"Pota": "Events<MessageEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, MessageEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, MessageEvent>",
 				"Solid Next": "EventHandlerWithOptionsUnion<T, MessageEvent>"
 			}
 		},
@@ -70436,6 +70505,8 @@
 			"name": "on:offline",
 			"values": {
 				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
 				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 			}
 		},
@@ -70443,6 +70514,8 @@
 			"name": "on:online",
 			"values": {
 				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
 				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 			}
 		},
@@ -70450,6 +70523,8 @@
 			"name": "on:pagehide",
 			"values": {
 				"Pota": "Events<PageTransitionEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>",
 				"Solid Next": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>"
 			}
 		},
@@ -70457,6 +70532,8 @@
 			"name": "on:pagereveal",
 			"values": {
 				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
 				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 			}
 		},
@@ -70464,6 +70541,8 @@
 			"name": "on:pageshow",
 			"values": {
 				"Pota": "Events<PageTransitionEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>",
 				"Solid Next": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>"
 			}
 		},
@@ -70471,6 +70550,8 @@
 			"name": "on:pageswap",
 			"values": {
 				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
 				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 			}
 		},
@@ -70586,6 +70667,8 @@
 			"name": "on:popstate",
 			"values": {
 				"Pota": "Events<PopStateEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, PopStateEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, PopStateEvent>",
 				"Solid Next": "EventHandlerWithOptionsUnion<T, PopStateEvent>"
 			}
 		},
@@ -70611,6 +70694,8 @@
 			"name": "on:rejectionhandled",
 			"values": {
 				"Pota": "Events<PromiseRejectionEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>",
 				"Solid Next": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>"
 			}
 		},
@@ -70627,6 +70712,8 @@
 			"name": "on:resize",
 			"values": {
 				"Pota": "Events<UIEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, UIEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, UIEvent>",
 				"Solid Next": "EventHandlerWithOptionsUnion<T, UIEvent>"
 			}
 		},
@@ -70652,6 +70739,8 @@
 			"name": "on:securitypolicyviolation",
 			"values": {
 				"Pota": "Events<SecurityPolicyViolationEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, SecurityPolicyViolationEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, SecurityPolicyViolationEvent>",
 				"Solid Next": "EventHandlerWithOptionsUnion<T, SecurityPolicyViolationEvent>"
 			}
 		},
@@ -70686,6 +70775,8 @@
 			"name": "on:selectionchange",
 			"values": {
 				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
 				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 			}
 		},
@@ -70699,6 +70790,8 @@
 			"name": "on:slotchange",
 			"values": {
 				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
 				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 			}
 		},
@@ -70715,6 +70808,8 @@
 			"name": "on:storage",
 			"values": {
 				"Pota": "Events<StorageEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, StorageEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, StorageEvent>",
 				"Solid Next": "EventHandlerWithOptionsUnion<T, StorageEvent>"
 			}
 		},
@@ -70830,6 +70925,8 @@
 			"name": "on:unhandledrejection",
 			"values": {
 				"Pota": "Events<PromiseRejectionEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>",
 				"Solid Next": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>"
 			}
 		},
@@ -70837,6 +70934,8 @@
 			"name": "on:unload",
 			"values": {
 				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
 				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 			}
 		},
@@ -70878,7 +70977,7 @@
 			"values": {
 				"Preact": "GenericEventHandler<Target>",
 				"React": "ReactEventHandler<T>",
-				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Main": "EventHandlerUnion<T, UIEvent>",
 				"Solid Minor": "EventHandlerUnion<T, UIEvent>",
 				"Solid Next": "EventHandlerUnion<T, UIEvent>",
 				"Voby": "GenericEventHandler<T>",
@@ -70888,32 +70987,40 @@
 		"onabort": {
 			"name": "onabort",
 			"values": {
-				"Solid Main": "EventHandlerUnion<T, Event>",
-				"Solid Minor": "EventHandlerUnion<T, Event>",
+				"Solid Main": "EventHandlerUnion<T, UIEvent>",
+				"Solid Minor": "EventHandlerUnion<T, UIEvent>",
 				"Solid Next": "EventHandlerUnion<T, UIEvent>"
 			}
 		},
 		"onAfterPrint": {
 			"name": "onAfterPrint",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
 		"onafterprint": {
 			"name": "onafterprint",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
 		"onAnimationCancel": {
 			"name": "onAnimationCancel",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, AnimationEvent>",
+				"Solid Minor": "EventHandlerUnion<T, AnimationEvent>",
 				"Solid Next": "EventHandlerUnion<T, AnimationEvent>"
 			}
 		},
 		"onanimationcancel": {
 			"name": "onanimationcancel",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, AnimationEvent>",
+				"Solid Minor": "EventHandlerUnion<T, AnimationEvent>",
 				"Solid Next": "EventHandlerUnion<T, AnimationEvent>"
 			}
 		},
@@ -70997,8 +71104,8 @@
 			"values": {
 				"Preact": "MouseEventHandler<Target>",
 				"React": "MouseEventHandler<T>",
-				"Solid Main": "EventHandlerUnion<T, MouseEvent>",
-				"Solid Minor": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Main": "EventHandlerUnion<T, PointerEvent>",
+				"Solid Minor": "EventHandlerUnion<T, PointerEvent>",
 				"Solid Next": "EventHandlerUnion<T, PointerEvent>",
 				"Voby": "MouseEventHandler<T>"
 			}
@@ -71006,8 +71113,8 @@
 		"onauxclick": {
 			"name": "onauxclick",
 			"values": {
-				"Solid Main": "EventHandlerUnion<T, MouseEvent>",
-				"Solid Minor": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Main": "EventHandlerUnion<T, PointerEvent>",
+				"Solid Minor": "EventHandlerUnion<T, PointerEvent>",
 				"Solid Next": "EventHandlerUnion<T, PointerEvent>"
 			}
 		},
@@ -71045,12 +71152,16 @@
 		"onBeforePrint": {
 			"name": "onBeforePrint",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
 		"onbeforeprint": {
 			"name": "onbeforeprint",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
@@ -71075,12 +71186,16 @@
 		"onBeforeUnload": {
 			"name": "onBeforeUnload",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, BeforeUnloadEvent>",
+				"Solid Minor": "EventHandlerUnion<T, BeforeUnloadEvent>",
 				"Solid Next": "EventHandlerUnion<T, BeforeUnloadEvent>"
 			}
 		},
 		"onbeforeunload": {
 			"name": "onbeforeunload",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, BeforeUnloadEvent>",
+				"Solid Minor": "EventHandlerUnion<T, BeforeUnloadEvent>",
 				"Solid Next": "EventHandlerUnion<T, BeforeUnloadEvent>"
 			}
 		},
@@ -71108,12 +71223,16 @@
 			"name": "onCancel",
 			"values": {
 				"Preact": "GenericEventHandler<Target>",
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
 		"oncancel": {
 			"name": "oncancel",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
@@ -71217,12 +71336,16 @@
 			"name": "onCommand",
 			"values": {
 				"Preact": "CommandEventHandler<Target>",
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
 		"oncommand": {
 			"name": "oncommand",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
@@ -71306,8 +71429,8 @@
 			"values": {
 				"Preact": "MouseEventHandler<Target>",
 				"React": "MouseEventHandler<T>",
-				"Solid Main": "EventHandlerUnion<T, MouseEvent>",
-				"Solid Minor": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Main": "EventHandlerUnion<T, PointerEvent>",
+				"Solid Minor": "EventHandlerUnion<T, PointerEvent>",
 				"Solid Next": "EventHandlerUnion<T, PointerEvent>",
 				"Voby": "MouseEventHandler<T>"
 			}
@@ -71315,8 +71438,8 @@
 		"oncontextmenu": {
 			"name": "oncontextmenu",
 			"values": {
-				"Solid Main": "EventHandlerUnion<T, MouseEvent>",
-				"Solid Minor": "EventHandlerUnion<T, MouseEvent>",
+				"Solid Main": "EventHandlerUnion<T, PointerEvent>",
+				"Solid Minor": "EventHandlerUnion<T, PointerEvent>",
 				"Solid Next": "EventHandlerUnion<T, PointerEvent>"
 			}
 		},
@@ -71349,12 +71472,16 @@
 		"onCueChange": {
 			"name": "onCueChange",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
 		"oncuechange": {
 			"name": "oncuechange",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
@@ -71648,17 +71775,8 @@
 			"values": {
 				"Preact": "GenericEventHandler<Target>",
 				"React": "ReactEventHandler<T>",
-				"Solid Main": "EventHandlerUnion<T, Event>",
-				"Solid Minor": "EventHandlerUnion<T, MediaEncryptedEvent>",
 				"Voby": "GenericEventHandler<T>",
 				"Vue": "Event"
-			}
-		},
-		"onencrypted": {
-			"name": "onencrypted",
-			"values": {
-				"Solid Main": "EventHandlerUnion<T, Event>",
-				"Solid Minor": "EventHandlerUnion<T, MediaEncryptedEvent>"
 			}
 		},
 		"onEnded": {
@@ -71692,7 +71810,7 @@
 			"values": {
 				"Preact": "GenericEventHandler<Target>",
 				"React": "ReactEventHandler<T>",
-				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Main": "EventHandlerUnion<T, ErrorEvent>",
 				"Solid Minor": "EventHandlerUnion<T, ErrorEvent>",
 				"Solid Next": "EventHandlerUnion<T, ErrorEvent>",
 				"Voby": "GenericEventHandler<T>",
@@ -71702,7 +71820,7 @@
 		"onerror": {
 			"name": "onerror",
 			"values": {
-				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Main": "EventHandlerUnion<T, ErrorEvent>",
 				"Solid Minor": "EventHandlerUnion<T, ErrorEvent>",
 				"Solid Next": "EventHandlerUnion<T, ErrorEvent>"
 			}
@@ -71785,60 +71903,80 @@
 		"onFullscreenChange": {
 			"name": "onFullscreenChange",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
 		"onfullscreenchange": {
 			"name": "onfullscreenchange",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
 		"onFullscreenError": {
 			"name": "onFullscreenError",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
 		"onfullscreenerror": {
 			"name": "onfullscreenerror",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
 		"onGamepadConnected": {
 			"name": "onGamepadConnected",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, GamepadEvent>",
+				"Solid Minor": "EventHandlerUnion<T, GamepadEvent>",
 				"Solid Next": "EventHandlerUnion<T, GamepadEvent>"
 			}
 		},
 		"ongamepadconnected": {
 			"name": "ongamepadconnected",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, GamepadEvent>",
+				"Solid Minor": "EventHandlerUnion<T, GamepadEvent>",
 				"Solid Next": "EventHandlerUnion<T, GamepadEvent>"
 			}
 		},
 		"onGamepadDisconnected": {
 			"name": "onGamepadDisconnected",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, GamepadEvent>",
+				"Solid Minor": "EventHandlerUnion<T, GamepadEvent>",
 				"Solid Next": "EventHandlerUnion<T, GamepadEvent>"
 			}
 		},
 		"ongamepaddisconnected": {
 			"name": "ongamepaddisconnected",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, GamepadEvent>",
+				"Solid Minor": "EventHandlerUnion<T, GamepadEvent>",
 				"Solid Next": "EventHandlerUnion<T, GamepadEvent>"
 			}
 		},
 		"onHashchange": {
 			"name": "onHashchange",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, HashChangeEvent>",
+				"Solid Minor": "EventHandlerUnion<T, HashChangeEvent>",
 				"Solid Next": "EventHandlerUnion<T, HashChangeEvent>"
 			}
 		},
 		"onhashchange": {
 			"name": "onhashchange",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, HashChangeEvent>",
+				"Solid Minor": "EventHandlerUnion<T, HashChangeEvent>",
 				"Solid Next": "EventHandlerUnion<T, HashChangeEvent>"
 			}
 		},
@@ -71960,12 +72098,16 @@
 		"onLanguageChange": {
 			"name": "onLanguageChange",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
 		"onlanguagechange": {
 			"name": "onlanguagechange",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
@@ -72092,24 +72234,32 @@
 		"onMessage": {
 			"name": "onMessage",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, MessageEvent>",
+				"Solid Minor": "EventHandlerUnion<T, MessageEvent>",
 				"Solid Next": "EventHandlerUnion<T, MessageEvent>"
 			}
 		},
 		"onmessage": {
 			"name": "onmessage",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, MessageEvent>",
+				"Solid Minor": "EventHandlerUnion<T, MessageEvent>",
 				"Solid Next": "EventHandlerUnion<T, MessageEvent>"
 			}
 		},
 		"onMessageError": {
 			"name": "onMessageError",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, MessageEvent>",
+				"Solid Minor": "EventHandlerUnion<T, MessageEvent>",
 				"Solid Next": "EventHandlerUnion<T, MessageEvent>"
 			}
 		},
 		"onmessageerror": {
 			"name": "onmessageerror",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, MessageEvent>",
+				"Solid Minor": "EventHandlerUnion<T, MessageEvent>",
 				"Solid Next": "EventHandlerUnion<T, MessageEvent>"
 			}
 		},
@@ -72297,72 +72447,96 @@
 		"onOffline": {
 			"name": "onOffline",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
 		"onoffline": {
 			"name": "onoffline",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
 		"onOnline": {
 			"name": "onOnline",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
 		"ononline": {
 			"name": "ononline",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
 		"onPageHide": {
 			"name": "onPageHide",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, PageTransitionEvent>",
+				"Solid Minor": "EventHandlerUnion<T, PageTransitionEvent>",
 				"Solid Next": "EventHandlerUnion<T, PageTransitionEvent>"
 			}
 		},
 		"onpagehide": {
 			"name": "onpagehide",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, PageTransitionEvent>",
+				"Solid Minor": "EventHandlerUnion<T, PageTransitionEvent>",
 				"Solid Next": "EventHandlerUnion<T, PageTransitionEvent>"
 			}
 		},
 		"onPageReveal": {
 			"name": "onPageReveal",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
 		"onpagereveal": {
 			"name": "onpagereveal",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
 		"onPageShow": {
 			"name": "onPageShow",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, PageTransitionEvent>",
+				"Solid Minor": "EventHandlerUnion<T, PageTransitionEvent>",
 				"Solid Next": "EventHandlerUnion<T, PageTransitionEvent>"
 			}
 		},
 		"onpageshow": {
 			"name": "onpageshow",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, PageTransitionEvent>",
+				"Solid Minor": "EventHandlerUnion<T, PageTransitionEvent>",
 				"Solid Next": "EventHandlerUnion<T, PageTransitionEvent>"
 			}
 		},
 		"onPageSwap": {
 			"name": "onPageSwap",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
 		"onpageswap": {
 			"name": "onpageswap",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
@@ -72649,12 +72823,16 @@
 		"onPopstate": {
 			"name": "onPopstate",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, PopStateEvent>",
+				"Solid Minor": "EventHandlerUnion<T, PopStateEvent>",
 				"Solid Next": "EventHandlerUnion<T, PopStateEvent>"
 			}
 		},
 		"onpopstate": {
 			"name": "onpopstate",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, PopStateEvent>",
+				"Solid Minor": "EventHandlerUnion<T, PopStateEvent>",
 				"Solid Next": "EventHandlerUnion<T, PopStateEvent>"
 			}
 		},
@@ -72706,12 +72884,16 @@
 		"onRejectionHandled": {
 			"name": "onRejectionHandled",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, PromiseRejectionEvent>",
+				"Solid Minor": "EventHandlerUnion<T, PromiseRejectionEvent>",
 				"Solid Next": "EventHandlerUnion<T, PromiseRejectionEvent>"
 			}
 		},
 		"onrejectionhandled": {
 			"name": "onrejectionhandled",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, PromiseRejectionEvent>",
+				"Solid Minor": "EventHandlerUnion<T, PromiseRejectionEvent>",
 				"Solid Next": "EventHandlerUnion<T, PromiseRejectionEvent>"
 			}
 		},
@@ -72740,12 +72922,16 @@
 			"values": {
 				"Preact": "PictureInPictureEventHandler<Target>",
 				"React": "ReactEventHandler<T>",
+				"Solid Main": "EventHandlerUnion<T, UIEvent>",
+				"Solid Minor": "EventHandlerUnion<T, UIEvent>",
 				"Solid Next": "EventHandlerUnion<T, UIEvent>"
 			}
 		},
 		"onresize": {
 			"name": "onresize",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, UIEvent>",
+				"Solid Minor": "EventHandlerUnion<T, UIEvent>",
 				"Solid Next": "EventHandlerUnion<T, UIEvent>"
 			}
 		},
@@ -72804,12 +72990,16 @@
 		"onSecurityPolicyViolation": {
 			"name": "onSecurityPolicyViolation",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, SecurityPolicyViolationEvent>",
+				"Solid Minor": "EventHandlerUnion<T, SecurityPolicyViolationEvent>",
 				"Solid Next": "EventHandlerUnion<T, SecurityPolicyViolationEvent>"
 			}
 		},
 		"onsecuritypolicyviolation": {
 			"name": "onsecuritypolicyviolation",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, SecurityPolicyViolationEvent>",
+				"Solid Minor": "EventHandlerUnion<T, SecurityPolicyViolationEvent>",
 				"Solid Next": "EventHandlerUnion<T, SecurityPolicyViolationEvent>"
 			}
 		},
@@ -72876,24 +73066,32 @@
 		"onSelectionChange": {
 			"name": "onSelectionChange",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
 		"onselectionchange": {
 			"name": "onselectionchange",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
 		"onSlotChange": {
 			"name": "onSlotChange",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
 		"onslotchange": {
 			"name": "onslotchange",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
@@ -72920,12 +73118,16 @@
 		"onStorage": {
 			"name": "onStorage",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, StorageEvent>",
+				"Solid Minor": "EventHandlerUnion<T, StorageEvent>",
 				"Solid Next": "EventHandlerUnion<T, StorageEvent>"
 			}
 		},
 		"onstorage": {
 			"name": "onstorage",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, StorageEvent>",
+				"Solid Minor": "EventHandlerUnion<T, StorageEvent>",
 				"Solid Next": "EventHandlerUnion<T, StorageEvent>"
 			}
 		},
@@ -73201,24 +73403,32 @@
 		"onUnhandledRejection": {
 			"name": "onUnhandledRejection",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, PromiseRejectionEvent>",
+				"Solid Minor": "EventHandlerUnion<T, PromiseRejectionEvent>",
 				"Solid Next": "EventHandlerUnion<T, PromiseRejectionEvent>"
 			}
 		},
 		"onunhandledrejection": {
 			"name": "onunhandledrejection",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, PromiseRejectionEvent>",
+				"Solid Minor": "EventHandlerUnion<T, PromiseRejectionEvent>",
 				"Solid Next": "EventHandlerUnion<T, PromiseRejectionEvent>"
 			}
 		},
 		"onUnload": {
 			"name": "onUnload",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
 		"onunload": {
 			"name": "onunload",
 			"values": {
+				"Solid Main": "EventHandlerUnion<T, Event>",
+				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},

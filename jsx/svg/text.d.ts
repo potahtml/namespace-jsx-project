@@ -1,5 +1,5 @@
 // Solid Main - https://www.solidjs.com/
-interface TextSVGAttributes<T> extends TextContentElementSVGAttributes<T>, GraphicsElementSVGAttributes<T>, ConditionalProcessingSVGAttributes, ExternalResourceSVGAttributes, StylableSVGAttributes, TransformableSVGAttributes, Pick<PresentationSVGAttributes, 'writing-mode' | 'text-rendering'> {
+interface TextSVGAttributes<T> extends TextContentElementSVGAttributes<T>, GraphicsElementSVGAttributes<T>, ConditionalProcessingSVGAttributes, ExternalResourceSVGAttributes, StylableSVGAttributes, TransformableSVGAttributes, Pick<PresentationSVGAttributes, 'clip-path' | 'writing-mode' | 'text-rendering'> {
 	x?: number | string
 	y?: number | string
 	dx?: number | string
@@ -101,7 +101,7 @@ interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
 }
 
 // Solid Minor - https://www.solidjs.com/
-interface TextSVGAttributes<T> extends TextContentElementSVGAttributes<T>, GraphicsElementSVGAttributes<T>, ConditionalProcessingSVGAttributes, ExternalResourceSVGAttributes, StylableSVGAttributes, TransformableSVGAttributes, Pick<PresentationSVGAttributes, 'writing-mode' | 'text-rendering'> {
+interface TextSVGAttributes<T> extends TextContentElementSVGAttributes<T>, GraphicsElementSVGAttributes<T>, ConditionalProcessingSVGAttributes, ExternalResourceSVGAttributes, StylableSVGAttributes, TransformableSVGAttributes, Pick<PresentationSVGAttributes, 'clip-path' | 'writing-mode' | 'text-rendering'> {
 	x?: number | string
 	y?: number | string
 	dx?: number | string

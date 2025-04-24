@@ -12,7 +12,7 @@ interface HTMLElementTags {
 	bdi: HTMLAttributes<HTMLElement>
 	bdo: HTMLAttributes<HTMLElement>
 	blockquote: BlockquoteHTMLAttributes<HTMLElement>
-	body: HTMLAttributes<HTMLBodyElement>
+	body: BodyHTMLAttributes<HTMLBodyElement>
 	br: HTMLAttributes<HTMLBRElement>
 	button: ButtonHTMLAttributes<HTMLButtonElement>
 	canvas: CanvasHTMLAttributes<HTMLCanvasElement>
@@ -249,7 +249,7 @@ interface HTMLElementTags {
 	 * @url https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body
 	 * @url https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement
 	 */
-	body: HTMLAttributes<HTMLBodyElement>
+	body: BodyHTMLAttributes<HTMLBodyElement>
 	/**
 	 * @url https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br
 	 * @url https://developer.mozilla.org/en-US/docs/Web/API/HTMLBRElement

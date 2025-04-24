@@ -1,18 +1,12 @@
 // Solid Main - https://www.solidjs.com/
 interface DetailsHtmlAttributes<T> extends HTMLAttributes<T> {
 	open?: boolean
-	onToggle?: EventHandlerUnion<T, Event>
-	ontoggle?: EventHandlerUnion<T, Event>
 }
 
 // Solid Minor - https://www.solidjs.com/
 interface DetailsHtmlAttributes<T> extends HTMLAttributes<T> {
 	name?: string
-	onToggle?: EventHandlerUnion<T, Event>
-	open?: boolean
-
-	/** @deprecated Use camelCase event handlers */
-	ontoggle?: EventHandlerUnion<T, Event>
+	open?: '' | boolean
 }
 
 // Solid Next - https://www.solidjs.com/
