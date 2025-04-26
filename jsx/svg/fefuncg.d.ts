@@ -1,30 +1,31 @@
 // Solid Main - https://www.solidjs.com/
 interface FeFuncSVGAttributes<T> extends CoreSVGAttributes<T> {
-	type?: 'identity' | 'table' | 'discrete' | 'linear' | 'gamma'
-	tableValues?: string
-	slope?: number | string
-	intercept?: number | string
 	amplitude?: number | string
 	exponent?: number | string
+	intercept?: number | string
 	offset?: number | string
+	slope?: number | string
+	tableValues?: string
+	type?: 'identity' | 'table' | 'discrete' | 'linear' | 'gamma'
 }
 
 interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
 	id?: string
 	lang?: string
-	tabIndex?: number | string
 	tabindex?: number | string
+
+	tabIndex?: number | string
 }
 
 // Solid Minor - https://www.solidjs.com/
 interface FeFuncSVGAttributes<T> extends CoreSVGAttributes<T> {
-	type?: 'identity' | 'table' | 'discrete' | 'linear' | 'gamma'
-	tableValues?: string
-	slope?: number | string
-	intercept?: number | string
 	amplitude?: number | string
 	exponent?: number | string
+	intercept?: number | string
 	offset?: number | string
+	slope?: number | string
+	tableValues?: string
+	type?: 'identity' | 'table' | 'discrete' | 'linear' | 'gamma'
 }
 
 interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
@@ -38,13 +39,13 @@ interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface FeFuncSVGAttributes<T> extends CoreSVGAttributes<T> {
-	type?: 'identity' | 'table' | 'discrete' | 'linear' | 'gamma' | false
-	tableValues?: string | false
-	slope?: number | string | false
-	intercept?: number | string | false
 	amplitude?: number | string | false
 	exponent?: number | string | false
+	intercept?: number | string | false
 	offset?: number | string | false
+	slope?: number | string | false
+	tableValues?: string | false
+	type?: 'identity' | 'table' | 'discrete' | 'linear' | 'gamma' | false
 }
 
 interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {

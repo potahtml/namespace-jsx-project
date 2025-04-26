@@ -2,15 +2,21 @@
 interface AreaHTMLAttributes<T> extends HTMLAttributes<T> {
 	alt?: string
 	coords?: string
-	download?: any
+	download?: string
 	href?: string
-	hreflang?: string
 	ping?: string
 	referrerpolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
 	rel?: string
 	shape?: 'rect' | 'circle' | 'poly' | 'default'
-	target?: string
+	target?: '_self' | '_blank' | '_parent' | '_top' | (string & {})
+
+	/** @experimental */
+	attributionsrc?: string
+
 	referrerPolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
+
+	/** @deprecated */
+	nohref?: boolean
 }
 
 // Solid Minor - https://www.solidjs.com/
@@ -24,6 +30,9 @@ interface AreaHTMLAttributes<T> extends HTMLAttributes<T> {
 	rel?: string
 	shape?: 'rect' | 'circle' | 'poly' | 'default'
 	target?: '_self' | '_blank' | '_parent' | '_top' | (string & {})
+
+	/** @experimental */
+	attributionsrc?: string
 
 	/** @deprecated Use lowercase attributes */
 	referrerPolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
@@ -43,6 +52,9 @@ interface AreaHTMLAttributes<T> extends HTMLAttributes<T> {
 	rel?: string | false
 	shape?: 'rect' | 'circle' | 'poly' | 'default' | false
 	target?: '_self' | '_blank' | '_parent' | '_top' | (string & {}) | false
+
+	/** @experimental */
+	attributionsrc?: string | false
 
 	/** @deprecated Use lowercase attributes */
 	referrerPolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url' | false

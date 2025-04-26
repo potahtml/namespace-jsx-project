@@ -1,19 +1,18 @@
 // Solid Main - https://www.solidjs.com/
 interface VideoHTMLAttributes<T> extends MediaHTMLAttributes<T> {
+	disablepictureinpicture?: boolean
 	height?: number | string
 	playsinline?: boolean
 	poster?: string
 	width?: number | string
-	disablepictureinpicture?: boolean
-	disableremoteplayback?: boolean
 
 	onEnterPictureInPicture?: EventHandlerUnion<T, PictureInPictureEvent>
-	onenterpictureinpicture?: EventHandlerUnion<T, PictureInPictureEvent>
 	'on:enterpictureinpicture'?: EventHandlerWithOptionsUnion<T, PictureInPictureEvent>
+	onenterpictureinpicture?: EventHandlerUnion<T, PictureInPictureEvent>
 
 	onLeavePictureInPicture?: EventHandlerUnion<T, PictureInPictureEvent>
-	onleavepictureinpicture?: EventHandlerUnion<T, PictureInPictureEvent>
 	'on:leavepictureinpicture'?: EventHandlerWithOptionsUnion<T, PictureInPictureEvent>
+	onleavepictureinpicture?: EventHandlerUnion<T, PictureInPictureEvent>
 }
 
 interface MediaHTMLAttributes<T> extends HTMLAttributes<T>, ElementEventMap<T> {
@@ -21,31 +20,34 @@ interface MediaHTMLAttributes<T> extends HTMLAttributes<T>, ElementEventMap<T> {
 	controls?: boolean
 	controlslist?: 'nodownload' | 'nofullscreen' | 'noplaybackrate' | 'noremoteplayback' | (string & {})
 	crossorigin?: 'anonymous' | 'use-credentials' | ''
+	disableremoteplayback?: boolean
 	loop?: boolean
-	mediagroup?: string
 	muted?: boolean
 	preload?: 'none' | 'metadata' | 'auto' | ''
 	src?: string
-	crossOrigin?: 'anonymous' | 'use-credentials' | ''
-	mediaGroup?: string
 
 	onEncrypted?: EventHandlerUnion<T, MediaEncryptedEvent>
-	onencrypted?: EventHandlerUnion<T, MediaEncryptedEvent>
 	'on:encrypted'?: EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>
+	onencrypted?: EventHandlerUnion<T, MediaEncryptedEvent>
 
 	onWaitingForKey?: EventHandlerUnion<T, Event>
-	onwaitingforkey?: EventHandlerUnion<T, Event>
 	'on:waitingforkey'?: EventHandlerWithOptionsUnion<T, Event>
+	onwaitingforkey?: EventHandlerUnion<T, Event>
+
+	crossOrigin?: 'anonymous' | 'use-credentials' | ''
+
+	mediaGroup?: string
+	/** @deprecated */
+	mediagroup?: string
 }
 
 // Solid Minor - https://www.solidjs.com/
 interface VideoHTMLAttributes<T> extends MediaHTMLAttributes<T> {
+	disablepictureinpicture?: '' | boolean
 	height?: number | string
 	playsinline?: '' | boolean
 	poster?: string
 	width?: number | string
-	disablepictureinpicture?: '' | boolean
-	disableremoteplayback?: '' | boolean
 
 	onEnterPictureInPicture?: EventHandlerUnion<T, PictureInPictureEvent>
 	'on:enterpictureinpicture'?: EventHandlerWithOptionsUnion<T, PictureInPictureEvent>
@@ -90,12 +92,11 @@ interface MediaHTMLAttributes<T> extends HTMLAttributes<T>, ElementEventMap<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface VideoHTMLAttributes<T> extends MediaHTMLAttributes<T> {
+	disablepictureinpicture?: true | false | '' | false
 	height?: number | string | false
 	playsinline?: true | false | '' | false
 	poster?: string | false
 	width?: number | string | false
-	disablepictureinpicture?: true | false | '' | false
-	disableremoteplayback?: true | false | '' | false
 
 	onEnterPictureInPicture?: EventHandlerUnion<T, PictureInPictureEvent>
 	'on:enterpictureinpicture'?: EventHandlerWithOptionsUnion<T, PictureInPictureEvent>

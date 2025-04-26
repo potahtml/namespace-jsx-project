@@ -1,6 +1,10 @@
 // Solid Main - https://www.solidjs.com/
 interface MenuHTMLAttributes<T> extends HTMLAttributes<T> {
+	/** @deprecated */
+	compact?: boolean
+	/** @deprecated */
 	label?: string
+	/** @deprecated */
 	type?: 'context' | 'toolbar'
 }
 

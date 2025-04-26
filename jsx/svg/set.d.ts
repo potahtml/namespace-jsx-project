@@ -3,8 +3,9 @@ interface SetSVGAttributes<T> extends CoreSVGAttributes<T>, StylableSVGAttribute
 interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
 	id?: string
 	lang?: string
-	tabIndex?: number | string
 	tabindex?: number | string
+
+	tabIndex?: number | string
 }
 
 interface StylableSVGAttributes {
@@ -16,12 +17,12 @@ interface AnimationTimingSVGAttributes {
 	begin?: string
 	dur?: string
 	end?: string
-	min?: string
+	fill?: 'freeze' | 'remove'
 	max?: string
-	restart?: 'always' | 'whenNotActive' | 'never'
+	min?: string
 	repeatCount?: number | 'indefinite'
 	repeatDur?: string
-	fill?: 'freeze' | 'remove'
+	restart?: 'always' | 'whenNotActive' | 'never'
 }
 
 // Solid Minor - https://www.solidjs.com/
@@ -44,12 +45,12 @@ interface AnimationTimingSVGAttributes {
 	begin?: string
 	dur?: string
 	end?: string
-	min?: string
+	fill?: 'freeze' | 'remove'
 	max?: string
-	restart?: 'always' | 'whenNotActive' | 'never'
+	min?: string
 	repeatCount?: number | 'indefinite'
 	repeatDur?: string
-	fill?: 'freeze' | 'remove'
+	restart?: 'always' | 'whenNotActive' | 'never'
 }
 
 // Solid Next - https://www.solidjs.com/
@@ -72,12 +73,12 @@ interface AnimationTimingSVGAttributes {
 	begin?: string | false
 	dur?: string | false
 	end?: string | false
-	min?: string | false
+	fill?: 'freeze' | 'remove' | false
 	max?: string | false
-	restart?: 'always' | 'whenNotActive' | 'never' | false
+	min?: string | false
 	repeatCount?: number | 'indefinite' | false
 	repeatDur?: string | false
-	fill?: 'freeze' | 'remove' | false
+	restart?: 'always' | 'whenNotActive' | 'never' | false
 }
 
 // React - https://react.dev/

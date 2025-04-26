@@ -1,3 +1,13 @@
+// Solid Main - https://www.solidjs.com/
+interface MathMLMtdElementAttributes<T> extends MathMLAttributes<T> {
+	columnspan?: number | string
+	rowspan?: number | string
+	/** @non-standard */
+	columnalign?: 'center' | 'left' | 'right'
+	/** @non-standard */
+	rowalign?: 'axis' | 'baseline' | 'bottom' | 'center' | 'top'
+}
+
 // Solid Minor - https://www.solidjs.com/
 interface MathMLMtdElementAttributes<T> extends MathMLAttributes<T> {
 	columnspan?: number | string

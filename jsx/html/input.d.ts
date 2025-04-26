@@ -2,12 +2,13 @@
 interface InputHTMLAttributes<T> extends HTMLAttributes<T> {
 	accept?: string
 	alt?: string
-	autocomplete?: string
+	autocomplete?: 'additional-name' | 'address-level1' | 'address-level2' | 'address-level3' | 'address-level4' | 'address-line1' | 'address-line2' | 'address-line3' | 'bday' | 'bday-day' | 'bday-month' | 'bday-year' | 'billing' | 'cc-additional-name' | 'cc-csc' | 'cc-exp' | 'cc-exp-month' | 'cc-exp-year' | 'cc-family-name' | 'cc-given-name' | 'cc-name' | 'cc-number' | 'cc-type' | 'country' | 'country-name' | 'current-password' | 'email' | 'family-name' | 'fax' | 'given-name' | 'home' | 'honorific-prefix' | 'honorific-suffix' | 'impp' | 'language' | 'mobile' | 'name' | 'new-password' | 'nickname' | 'off' | 'on' | 'organization' | 'organization-title' | 'pager' | 'photo' | 'postal-code' | 'sex' | 'shipping' | 'street-address' | 'tel' | 'tel-area-code' | 'tel-country-code' | 'tel-extension' | 'tel-local' | 'tel-local-prefix' | 'tel-local-suffix' | 'tel-national' | 'transaction-amount' | 'transaction-currency' | 'url' | 'username' | 'work' | (string & {})
 	autocorrect?: 'on' | 'off'
 	autofocus?: boolean
-	capture?: boolean | string
+	capture?: 'user' | 'environment'
 	checked?: boolean
 	crossorigin?: 'anonymous' | 'use-credentials' | ''
+	dirname?: string
 	disabled?: boolean
 	enterkeyhint?: 'enter' | 'done' | 'go' | 'next' | 'previous' | 'search' | 'send'
 	form?: string
@@ -17,7 +18,6 @@ interface InputHTMLAttributes<T> extends HTMLAttributes<T> {
 	formnovalidate?: boolean
 	formtarget?: string
 	height?: number | string
-	incremental?: boolean
 	list?: string
 	max?: number | string
 	maxlength?: number | string
@@ -27,15 +27,22 @@ interface InputHTMLAttributes<T> extends HTMLAttributes<T> {
 	name?: string
 	pattern?: string
 	placeholder?: string
+	popovertarget?: string
+	popovertargetaction?: 'hide' | 'show' | 'toggle'
 	readonly?: boolean
-	results?: number
 	required?: boolean
+	// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/search#results
+	results?: number
 	size?: number | string
 	src?: string
 	step?: number | string
 	type?: 'button' | 'checkbox' | 'color' | 'date' | 'datetime-local' | 'email' | 'file' | 'hidden' | 'image' | 'month' | 'number' | 'password' | 'radio' | 'range' | 'reset' | 'search' | 'submit' | 'tel' | 'text' | 'time' | 'url' | 'week' | (string & {})
 	value?: string | string[] | number
 	width?: number | string
+
+	/** @non-standard */
+	incremental?: boolean
+
 	crossOrigin?: 'anonymous' | 'use-credentials' | ''
 	formAction?: string
 	formEnctype?: 'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'
@@ -45,6 +52,11 @@ interface InputHTMLAttributes<T> extends HTMLAttributes<T> {
 	maxLength?: number | string
 	minLength?: number | string
 	readOnly?: boolean
+
+	/** @deprecated */
+	align?: string
+	/** @deprecated */
+	usemap?: string
 }
 
 // Solid Minor - https://www.solidjs.com/

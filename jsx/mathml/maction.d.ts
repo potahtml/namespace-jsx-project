@@ -1,3 +1,17 @@
+// Solid Main - https://www.solidjs.com/
+interface MathMLMactionElementAttributes<T> extends MathMLAttributes<T> {
+	/**
+	 * @deprecated
+	 * @non-standard
+	 */
+	actiontype?: 'statusline' | 'toggle'
+	/**
+	 * @deprecated
+	 * @non-standard
+	 */
+	selection?: string
+}
+
 // Solid Minor - https://www.solidjs.com/
 interface MathMLMactionElementAttributes<T> extends MathMLAttributes<T> {
 	/**

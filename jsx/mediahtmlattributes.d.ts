@@ -4,21 +4,25 @@ interface MediaHTMLAttributes<T> extends HTMLAttributes<T>, ElementEventMap<T> {
 	controls?: boolean
 	controlslist?: 'nodownload' | 'nofullscreen' | 'noplaybackrate' | 'noremoteplayback' | (string & {})
 	crossorigin?: 'anonymous' | 'use-credentials' | ''
+	disableremoteplayback?: boolean
 	loop?: boolean
-	mediagroup?: string
 	muted?: boolean
 	preload?: 'none' | 'metadata' | 'auto' | ''
 	src?: string
-	crossOrigin?: 'anonymous' | 'use-credentials' | ''
-	mediaGroup?: string
 
 	onEncrypted?: EventHandlerUnion<T, MediaEncryptedEvent>
-	onencrypted?: EventHandlerUnion<T, MediaEncryptedEvent>
 	'on:encrypted'?: EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>
+	onencrypted?: EventHandlerUnion<T, MediaEncryptedEvent>
 
 	onWaitingForKey?: EventHandlerUnion<T, Event>
-	onwaitingforkey?: EventHandlerUnion<T, Event>
 	'on:waitingforkey'?: EventHandlerWithOptionsUnion<T, Event>
+	onwaitingforkey?: EventHandlerUnion<T, Event>
+
+	crossOrigin?: 'anonymous' | 'use-credentials' | ''
+
+	mediaGroup?: string
+	/** @deprecated */
+	mediagroup?: string
 }
 
 // Solid Minor - https://www.solidjs.com/

@@ -1,3 +1,12 @@
+// Solid Main - https://www.solidjs.com/
+interface MathMLMpaddedElementAttributes<T> extends MathMLAttributes<T> {
+	depth?: string
+	height?: string
+	lspace?: string
+	voffset?: string
+	width?: string
+}
+
 // Solid Minor - https://www.solidjs.com/
 interface MathMLMpaddedElementAttributes<T> extends MathMLAttributes<T> {
 	depth?: string

@@ -1,6 +1,7 @@
 // Solid Main - https://www.solidjs.com/
 interface TimeHTMLAttributes<T> extends HTMLAttributes<T> {
 	datetime?: string
+
 	dateTime?: string
 }
 

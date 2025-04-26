@@ -5,9 +5,36 @@ interface ObjectHTMLAttributes<T> extends HTMLAttributes<T> {
 	height?: number | string
 	name?: string
 	type?: string
-	usemap?: string
 	width?: number | string
+
 	useMap?: string
+
+	/** @deprecated */
+	align?: string
+	/** @deprecated */
+	archive?: string
+	/** @deprecated */
+	border?: string
+	/** @deprecated */
+	classid?: string
+	/** @deprecated */
+	code?: string
+	/** @deprecated */
+	codebase?: string
+	/** @deprecated */
+	codetype?: string
+	/** @deprecated */
+	declare?: boolean
+	/** @deprecated */
+	hspace?: number | string
+	/** @deprecated */
+	standby?: string
+	/** @deprecated */
+	usemap?: string
+	/** @deprecated */
+	vspace?: number | string
+	/** @deprecated */
+	typemustmatch?: boolean
 }
 
 // Solid Minor - https://www.solidjs.com/

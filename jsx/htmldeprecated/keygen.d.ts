@@ -1,11 +1,18 @@
 // Solid Main - https://www.solidjs.com/
 interface KeygenHTMLAttributes<T> extends HTMLAttributes<T> {
+	/** @deprecated */
 	autofocus?: boolean
+	/** @deprecated */
 	challenge?: string
+	/** @deprecated */
 	disabled?: boolean
+	/** @deprecated */
 	form?: string
-	keytype?: string
+	/** @deprecated */
 	keyparams?: string
+	/** @deprecated */
+	keytype?: string
+	/** @deprecated */
 	name?: string
 }
 

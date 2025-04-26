@@ -7,17 +7,18 @@ interface LinearGradientSVGAttributes<T> extends GradientElementSVGAttributes<T>
 }
 
 interface GradientElementSVGAttributes<T> extends CoreSVGAttributes<T>, ExternalResourceSVGAttributes, StylableSVGAttributes {
-	gradientUnits?: 'userSpaceOnUse' | 'objectBoundingBox'
 	gradientTransform?: string
-	spreadMethod?: 'pad' | 'reflect' | 'repeat'
+	gradientUnits?: 'userSpaceOnUse' | 'objectBoundingBox'
 	href?: string
+	spreadMethod?: 'pad' | 'reflect' | 'repeat'
 }
 
 interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
 	id?: string
 	lang?: string
-	tabIndex?: number | string
 	tabindex?: number | string
+
+	tabIndex?: number | string
 }
 
 interface ExternalResourceSVGAttributes {
@@ -38,10 +39,10 @@ interface LinearGradientSVGAttributes<T> extends GradientElementSVGAttributes<T>
 }
 
 interface GradientElementSVGAttributes<T> extends CoreSVGAttributes<T>, ExternalResourceSVGAttributes, StylableSVGAttributes {
-	gradientUnits?: 'userSpaceOnUse' | 'objectBoundingBox'
 	gradientTransform?: string
-	spreadMethod?: 'pad' | 'reflect' | 'repeat'
+	gradientUnits?: 'userSpaceOnUse' | 'objectBoundingBox'
 	href?: string
+	spreadMethod?: 'pad' | 'reflect' | 'repeat'
 }
 
 interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
@@ -71,10 +72,10 @@ interface LinearGradientSVGAttributes<T> extends GradientElementSVGAttributes<T>
 }
 
 interface GradientElementSVGAttributes<T> extends CoreSVGAttributes<T>, ExternalResourceSVGAttributes, StylableSVGAttributes {
-	gradientUnits?: 'userSpaceOnUse' | 'objectBoundingBox' | false
 	gradientTransform?: string | false
-	spreadMethod?: 'pad' | 'reflect' | 'repeat' | false
+	gradientUnits?: 'userSpaceOnUse' | 'objectBoundingBox' | false
 	href?: string | false
+	spreadMethod?: 'pad' | 'reflect' | 'repeat' | false
 }
 
 interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {

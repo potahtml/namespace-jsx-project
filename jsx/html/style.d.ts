@@ -1,8 +1,12 @@
 // Solid Main - https://www.solidjs.com/
 interface StyleHTMLAttributes<T> extends HTMLAttributes<T> {
+	blocking?: 'render'
 	media?: string
 	nonce?: string
+
+	/** @deprecated */
 	scoped?: boolean
+	/** @deprecated */
 	type?: string
 }
 

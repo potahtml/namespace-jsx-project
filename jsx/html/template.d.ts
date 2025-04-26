@@ -1,13 +1,21 @@
 // Solid Main - https://www.solidjs.com/
-interface TemplateHTMLAttributes<T extends HTMLTemplateElement> extends HTMLAttributes<T> {
+interface TemplateHTMLAttributes<T> extends HTMLAttributes<T> {
+	shadowrootclonable?: boolean
+	shadowrootdelegatesfocus?: boolean
+	shadowrootmode?: 'open' | 'closed'
+
+	/** @experimental */
+	shadowrootserializable?: boolean
+
+	/** @deprecated */
 	content?: DocumentFragment
 }
 
 // Solid Minor - https://www.solidjs.com/
 interface TemplateHTMLAttributes<T> extends HTMLAttributes<T> {
-	shadowrootmode?: 'open' | 'closed'
 	shadowrootclonable?: '' | boolean
 	shadowrootdelegatesfocus?: '' | boolean
+	shadowrootmode?: 'open' | 'closed'
 
 	/** @experimental */
 	shadowrootserializable?: '' | boolean
@@ -18,9 +26,9 @@ interface TemplateHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface TemplateHTMLAttributes<T> extends HTMLAttributes<T> {
-	shadowrootmode?: 'open' | 'closed' | false
 	shadowrootclonable?: true | false | '' | false
 	shadowrootdelegatesfocus?: true | false | '' | false
+	shadowrootmode?: 'open' | 'closed' | false
 
 	/** @experimental */
 	shadowrootserializable?: true | false | '' | false

@@ -2,23 +2,24 @@
 interface RadialGradientSVGAttributes<T> extends GradientElementSVGAttributes<T> {
 	cx?: number | string
 	cy?: number | string
-	r?: number | string
 	fx?: number | string
 	fy?: number | string
+	r?: number | string
 }
 
 interface GradientElementSVGAttributes<T> extends CoreSVGAttributes<T>, ExternalResourceSVGAttributes, StylableSVGAttributes {
-	gradientUnits?: 'userSpaceOnUse' | 'objectBoundingBox'
 	gradientTransform?: string
-	spreadMethod?: 'pad' | 'reflect' | 'repeat'
+	gradientUnits?: 'userSpaceOnUse' | 'objectBoundingBox'
 	href?: string
+	spreadMethod?: 'pad' | 'reflect' | 'repeat'
 }
 
 interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
 	id?: string
 	lang?: string
-	tabIndex?: number | string
 	tabindex?: number | string
+
+	tabIndex?: number | string
 }
 
 interface ExternalResourceSVGAttributes {
@@ -34,16 +35,16 @@ interface StylableSVGAttributes {
 interface RadialGradientSVGAttributes<T> extends GradientElementSVGAttributes<T> {
 	cx?: number | string
 	cy?: number | string
-	r?: number | string
 	fx?: number | string
 	fy?: number | string
+	r?: number | string
 }
 
 interface GradientElementSVGAttributes<T> extends CoreSVGAttributes<T>, ExternalResourceSVGAttributes, StylableSVGAttributes {
-	gradientUnits?: 'userSpaceOnUse' | 'objectBoundingBox'
 	gradientTransform?: string
-	spreadMethod?: 'pad' | 'reflect' | 'repeat'
+	gradientUnits?: 'userSpaceOnUse' | 'objectBoundingBox'
 	href?: string
+	spreadMethod?: 'pad' | 'reflect' | 'repeat'
 }
 
 interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
@@ -68,16 +69,16 @@ interface StylableSVGAttributes {
 interface RadialGradientSVGAttributes<T> extends GradientElementSVGAttributes<T> {
 	cx?: number | string | false
 	cy?: number | string | false
-	r?: number | string | false
 	fx?: number | string | false
 	fy?: number | string | false
+	r?: number | string | false
 }
 
 interface GradientElementSVGAttributes<T> extends CoreSVGAttributes<T>, ExternalResourceSVGAttributes, StylableSVGAttributes {
-	gradientUnits?: 'userSpaceOnUse' | 'objectBoundingBox' | false
 	gradientTransform?: string | false
-	spreadMethod?: 'pad' | 'reflect' | 'repeat' | false
+	gradientUnits?: 'userSpaceOnUse' | 'objectBoundingBox' | false
 	href?: string | false
+	spreadMethod?: 'pad' | 'reflect' | 'repeat' | false
 }
 
 interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {

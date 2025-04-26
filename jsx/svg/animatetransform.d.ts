@@ -13,35 +13,36 @@ interface AnimationTimingSVGAttributes {
 	begin?: string
 	dur?: string
 	end?: string
-	min?: string
+	fill?: 'freeze' | 'remove'
 	max?: string
-	restart?: 'always' | 'whenNotActive' | 'never'
+	min?: string
 	repeatCount?: number | 'indefinite'
 	repeatDur?: string
-	fill?: 'freeze' | 'remove'
+	restart?: 'always' | 'whenNotActive' | 'never'
 }
 
 interface AnimationValueSVGAttributes {
-	calcMode?: 'discrete' | 'linear' | 'paced' | 'spline'
-	values?: string
-	keyTimes?: string
-	keySplines?: string
-	from?: number | string
-	to?: number | string
 	by?: number | string
+	calcMode?: 'discrete' | 'linear' | 'paced' | 'spline'
+	from?: number | string
+	keySplines?: string
+	keyTimes?: string
+	to?: number | string
+	values?: string
 }
 
 interface AnimationAdditionSVGAttributes {
-	attributeName?: string
-	additive?: 'replace' | 'sum'
 	accumulate?: 'none' | 'sum'
+	additive?: 'replace' | 'sum'
+	attributeName?: string
 }
 
 interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
 	id?: string
 	lang?: string
-	tabIndex?: number | string
 	tabindex?: number | string
+
+	tabIndex?: number | string
 }
 
 interface ExternalResourceSVGAttributes {
@@ -69,28 +70,28 @@ interface AnimationTimingSVGAttributes {
 	begin?: string
 	dur?: string
 	end?: string
-	min?: string
+	fill?: 'freeze' | 'remove'
 	max?: string
-	restart?: 'always' | 'whenNotActive' | 'never'
+	min?: string
 	repeatCount?: number | 'indefinite'
 	repeatDur?: string
-	fill?: 'freeze' | 'remove'
+	restart?: 'always' | 'whenNotActive' | 'never'
 }
 
 interface AnimationValueSVGAttributes {
-	calcMode?: 'discrete' | 'linear' | 'paced' | 'spline'
-	values?: string
-	keyTimes?: string
-	keySplines?: string
-	from?: number | string
-	to?: number | string
 	by?: number | string
+	calcMode?: 'discrete' | 'linear' | 'paced' | 'spline'
+	from?: number | string
+	keySplines?: string
+	keyTimes?: string
+	to?: number | string
+	values?: string
 }
 
 interface AnimationAdditionSVGAttributes {
-	attributeName?: string
-	additive?: 'replace' | 'sum'
 	accumulate?: 'none' | 'sum'
+	additive?: 'replace' | 'sum'
+	attributeName?: string
 }
 
 interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
@@ -127,28 +128,28 @@ interface AnimationTimingSVGAttributes {
 	begin?: string | false
 	dur?: string | false
 	end?: string | false
-	min?: string | false
+	fill?: 'freeze' | 'remove' | false
 	max?: string | false
-	restart?: 'always' | 'whenNotActive' | 'never' | false
+	min?: string | false
 	repeatCount?: number | 'indefinite' | false
 	repeatDur?: string | false
-	fill?: 'freeze' | 'remove' | false
+	restart?: 'always' | 'whenNotActive' | 'never' | false
 }
 
 interface AnimationValueSVGAttributes {
-	calcMode?: 'discrete' | 'linear' | 'paced' | 'spline' | false
-	values?: string | false
-	keyTimes?: string | false
-	keySplines?: string | false
-	from?: number | string | false
-	to?: number | string | false
 	by?: number | string | false
+	calcMode?: 'discrete' | 'linear' | 'paced' | 'spline' | false
+	from?: number | string | false
+	keySplines?: string | false
+	keyTimes?: string | false
+	to?: number | string | false
+	values?: string | false
 }
 
 interface AnimationAdditionSVGAttributes {
-	attributeName?: string | false
-	additive?: 'replace' | 'sum' | false
 	accumulate?: 'none' | 'sum' | false
+	additive?: 'replace' | 'sum' | false
+	attributeName?: string | false
 }
 
 interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {

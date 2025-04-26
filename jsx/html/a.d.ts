@@ -1,15 +1,29 @@
 // Solid Main - https://www.solidjs.com/
 interface AnchorHTMLAttributes<T> extends HTMLAttributes<T> {
-	download?: any
+	download?: string
 	href?: string
 	hreflang?: string
-	media?: string
 	ping?: string
 	referrerpolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
 	rel?: string
 	target?: '_self' | '_blank' | '_parent' | '_top' | (string & {})
 	type?: string
+
+	/** @experimental */
+	attributionsrc?: string
+
 	referrerPolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
+
+	/** @deprecated */
+	charset?: string
+	/** @deprecated */
+	coords?: string
+	/** @deprecated */
+	name?: string
+	/** @deprecated */
+	rev?: string
+	/** @deprecated */
+	shape?: 'rect' | 'circle' | 'poly' | 'default'
 }
 
 // Solid Minor - https://www.solidjs.com/

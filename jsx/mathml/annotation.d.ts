@@ -1,3 +1,11 @@
+// Solid Main - https://www.solidjs.com/
+interface MathMLAnnotationElementAttributes<T> extends MathMLAttributes<T> {
+	encoding?: string
+
+	/** @deprecated */
+	src?: string
+}
+
 // Solid Minor - https://www.solidjs.com/
 interface MathMLAnnotationElementAttributes<T> extends MathMLAttributes<T> {
 	encoding?: string

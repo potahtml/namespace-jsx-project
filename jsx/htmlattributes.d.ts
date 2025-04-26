@@ -1,53 +1,55 @@
 // Solid Main - https://www.solidjs.com/
 interface HTMLAttributes<T> extends AriaAttributes, DOMAttributes<T> {
 	// [key: ClassKeys]: boolean;
-	accessKey?: string
+	about?: string
+	accesskey?: string
+	autocapitalize?: 'off' | 'none' | 'on' | 'sentences' | 'words' | 'characters'
 	class?: string
-	contenteditable?: boolean | 'plaintext-only' | 'inherit'
+	color?: string
+	contenteditable?: 'true' | 'false' | boolean | 'plaintext-only' | 'inherit'
 	contextmenu?: string
+	datatype?: string
 	dir?: 'ltr' | 'rtl' | 'auto'
 	draggable?: boolean | 'false' | 'true'
+	exportparts?: string
 	hidden?: boolean | 'hidden' | 'until-found'
 	id?: string
-	is?: string
 	inert?: boolean
-	lang?: string
-	spellcheck?: boolean
-	style?: CSSProperties | string
-	tabindex?: number | string
-	title?: string
-	translate?: 'yes' | 'no'
-	about?: string
-	datatype?: string
 	inlist?: any
+	inputmode?: 'decimal' | 'email' | 'none' | 'numeric' | 'search' | 'tel' | 'text' | 'url'
+	is?: string
+	itemid?: string
+	itemprop?: string
+	itemref?: string
+	itemscope?: boolean
+	itemtype?: string
+	lang?: string
+	part?: string
 	popover?: boolean | 'manual' | 'auto'
 	prefix?: string
 	property?: string
 	resource?: string
+	slot?: string
+	spellcheck?: 'true' | 'false' | boolean
+	style?: CSSProperties | string
+	tabindex?: number | string
+	title?: string
+	translate?: 'yes' | 'no'
 	typeof?: string
 	vocab?: string
-	autocapitalize?: 'off' | 'none' | 'on' | 'sentences' | 'words' | 'characters'
-	slot?: string
-	color?: string
-	itemprop?: string
-	itemscope?: boolean
-	itemtype?: string
-	itemid?: string
-	itemref?: string
-	part?: string
-	exportparts?: string
-	inputmode?: 'none' | 'text' | 'tel' | 'url' | 'email' | 'numeric' | 'decimal' | 'search'
+
+	accessKey?: string
+	autoCapitalize?: 'off' | 'none' | 'on' | 'sentences' | 'words' | 'characters'
 	contentEditable?: boolean | 'plaintext-only' | 'inherit'
 	contextMenu?: string
-	tabIndex?: number | string
-	autoCapitalize?: 'off' | 'none' | 'on' | 'sentences' | 'words' | 'characters'
-	itemProp?: string
-	itemScope?: boolean
-	itemType?: string
-	itemId?: string
-	itemRef?: string
 	exportParts?: string
 	inputMode?: 'none' | 'text' | 'tel' | 'url' | 'email' | 'numeric' | 'decimal' | 'search'
+	itemId?: string
+	itemProp?: string
+	itemRef?: string
+	itemScope?: boolean
+	itemType?: string
+	tabIndex?: number | string
 }
 
 // Solid Minor - https://www.solidjs.com/

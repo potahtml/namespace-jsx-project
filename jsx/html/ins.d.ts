@@ -1,6 +1,8 @@
 // Solid Main - https://www.solidjs.com/
-interface InsHTMLAttributes<T> extends HTMLAttributes<T> {
+interface ModHTMLAttributes<T> extends HTMLAttributes<T> {
 	cite?: string
+	datetime?: string
+
 	dateTime?: string
 }
 

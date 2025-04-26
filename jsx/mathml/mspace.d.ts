@@ -1,3 +1,10 @@
+// Solid Main - https://www.solidjs.com/
+interface MathMLMspaceElementAttributes<T> extends MathMLAttributes<T> {
+	depth?: string
+	height?: string
+	width?: string
+}
+
 // Solid Minor - https://www.solidjs.com/
 interface MathMLMspaceElementAttributes<T> extends MathMLAttributes<T> {
 	depth?: string

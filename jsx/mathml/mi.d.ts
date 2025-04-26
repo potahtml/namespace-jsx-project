@@ -1,3 +1,8 @@
+// Solid Main - https://www.solidjs.com/
+interface MathMLMiElementAttributes<T> extends MathMLAttributes<T> {
+	mathvariant?: 'normal'
+}
+
 // Solid Minor - https://www.solidjs.com/
 interface MathMLMiElementAttributes<T> extends MathMLAttributes<T> {
 	mathvariant?: 'normal'

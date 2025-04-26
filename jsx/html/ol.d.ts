@@ -3,6 +3,12 @@ interface OlHTMLAttributes<T> extends HTMLAttributes<T> {
 	reversed?: boolean
 	start?: number | string
 	type?: '1' | 'a' | 'A' | 'i' | 'I'
+
+	/**
+	 * @deprecated
+	 * @non-standard
+	 */
+	compact?: boolean
 }
 
 // Solid Minor - https://www.solidjs.com/

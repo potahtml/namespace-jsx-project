@@ -1,19 +1,20 @@
 // Solid Main - https://www.solidjs.com/
 interface FilterSVGAttributes<T> extends CoreSVGAttributes<T>, ExternalResourceSVGAttributes, StylableSVGAttributes {
+	filterRes?: number | string
 	filterUnits?: 'userSpaceOnUse' | 'objectBoundingBox'
+	height?: number | string
 	primitiveUnits?: 'userSpaceOnUse' | 'objectBoundingBox'
+	width?: number | string
 	x?: number | string
 	y?: number | string
-	width?: number | string
-	height?: number | string
-	filterRes?: number | string
 }
 
 interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
 	id?: string
 	lang?: string
-	tabIndex?: number | string
 	tabindex?: number | string
+
+	tabIndex?: number | string
 }
 
 interface ExternalResourceSVGAttributes {
@@ -27,13 +28,13 @@ interface StylableSVGAttributes {
 
 // Solid Minor - https://www.solidjs.com/
 interface FilterSVGAttributes<T> extends CoreSVGAttributes<T>, ExternalResourceSVGAttributes, StylableSVGAttributes {
+	filterRes?: number | string
 	filterUnits?: 'userSpaceOnUse' | 'objectBoundingBox'
+	height?: number | string
 	primitiveUnits?: 'userSpaceOnUse' | 'objectBoundingBox'
+	width?: number | string
 	x?: number | string
 	y?: number | string
-	width?: number | string
-	height?: number | string
-	filterRes?: number | string
 }
 
 interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
@@ -56,13 +57,13 @@ interface StylableSVGAttributes {
 
 // Solid Next - https://www.solidjs.com/
 interface FilterSVGAttributes<T> extends CoreSVGAttributes<T>, ExternalResourceSVGAttributes, StylableSVGAttributes {
+	filterRes?: number | string | false
 	filterUnits?: 'userSpaceOnUse' | 'objectBoundingBox' | false
+	height?: number | string | false
 	primitiveUnits?: 'userSpaceOnUse' | 'objectBoundingBox' | false
+	width?: number | string | false
 	x?: number | string | false
 	y?: number | string | false
-	width?: number | string | false
-	height?: number | string | false
-	filterRes?: number | string | false
 }
 
 interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {

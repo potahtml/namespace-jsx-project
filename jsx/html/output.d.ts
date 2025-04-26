@@ -1,21 +1,21 @@
 // Solid Main - https://www.solidjs.com/
 interface OutputHTMLAttributes<T> extends HTMLAttributes<T> {
-	form?: string
 	for?: string
+	form?: string
 	name?: string
 }
 
 // Solid Minor - https://www.solidjs.com/
 interface OutputHTMLAttributes<T> extends HTMLAttributes<T> {
-	form?: string
 	for?: string
+	form?: string
 	name?: string
 }
 
 // Solid Next - https://www.solidjs.com/
 interface OutputHTMLAttributes<T> extends HTMLAttributes<T> {
-	form?: string | false
 	for?: string | false
+	form?: string | false
 	name?: string | false
 }
 

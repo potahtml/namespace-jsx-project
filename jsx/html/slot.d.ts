@@ -1,5 +1,5 @@
 // Solid Main - https://www.solidjs.com/
-interface HTMLSlotElementAttributes<T = HTMLSlotElement> extends HTMLAttributes<T> {
+interface HTMLSlotElementAttributes<T> extends HTMLAttributes<T> {
 	name?: string
 }
 

@@ -3,22 +3,45 @@ interface ImgHTMLAttributes<T> extends HTMLAttributes<T> {
 	alt?: string
 	crossorigin?: 'anonymous' | 'use-credentials' | ''
 	decoding?: 'sync' | 'async' | 'auto'
+	elementtiming?: string
+	fetchpriority?: 'high' | 'low' | 'auto'
 	height?: number | string
 	ismap?: boolean
-	isMap?: boolean
 	loading?: 'eager' | 'lazy'
 	referrerpolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
-	referrerPolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
 	sizes?: string
 	src?: string
 	srcset?: string
-	srcSet?: string
 	usemap?: string
-	useMap?: string
 	width?: number | string
+
+	/** @experimental */
+	attributionsrc?: string
+	/** @experimental */
+	sharedstoragewritable?: boolean
+
 	crossOrigin?: 'anonymous' | 'use-credentials' | ''
-	elementtiming?: string
-	fetchpriority?: 'high' | 'low' | 'auto'
+	isMap?: boolean
+	referrerPolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
+	srcSet?: string
+	useMap?: string
+
+	/** @deprecated */
+	align?: 'top' | 'middle' | 'bottom' | 'left' | 'right'
+	/** @deprecated */
+	border?: string
+	/** @deprecated */
+	hspace?: number | string
+	/** @deprecated */
+	intrinsicsize?: string
+	/** @deprecated */
+	longdesc?: string
+	/** @deprecated */
+	lowsrc?: string
+	/** @deprecated */
+	name?: string
+	/** @deprecated */
+	vspace?: number | string
 }
 
 // Solid Minor - https://www.solidjs.com/
@@ -26,6 +49,8 @@ interface ImgHTMLAttributes<T> extends HTMLAttributes<T> {
 	alt?: string
 	crossorigin?: 'anonymous' | 'use-credentials' | ''
 	decoding?: 'sync' | 'async' | 'auto'
+	elementtiming?: string
+	fetchpriority?: 'high' | 'low' | 'auto'
 	height?: number | string
 	ismap?: '' | boolean
 	loading?: 'eager' | 'lazy'
@@ -35,8 +60,6 @@ interface ImgHTMLAttributes<T> extends HTMLAttributes<T> {
 	srcset?: string
 	usemap?: string
 	width?: number | string
-	elementtiming?: string
-	fetchpriority?: 'high' | 'low' | 'auto'
 
 	/** @experimental */
 	attributionsrc?: string
@@ -77,6 +100,8 @@ interface ImgHTMLAttributes<T> extends HTMLAttributes<T> {
 	alt?: string | false
 	crossorigin?: 'anonymous' | 'use-credentials' | '' | true | false
 	decoding?: 'sync' | 'async' | 'auto' | false
+	elementtiming?: string | false
+	fetchpriority?: 'high' | 'low' | 'auto' | false
 	height?: number | string | false
 	ismap?: true | false | '' | false
 	loading?: 'eager' | 'lazy' | false
@@ -86,8 +111,6 @@ interface ImgHTMLAttributes<T> extends HTMLAttributes<T> {
 	srcset?: string | false
 	usemap?: string | false
 	width?: number | string | false
-	elementtiming?: string | false
-	fetchpriority?: 'high' | 'low' | 'auto' | false
 
 	/** @experimental */
 	attributionsrc?: string | false

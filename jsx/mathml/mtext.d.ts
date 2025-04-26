@@ -1,3 +1,6 @@
+// Solid Main - https://www.solidjs.com/
+interface MathMLMtextElementAttributes<T> extends MathMLAttributes<T> {}
+
 // Solid Minor - https://www.solidjs.com/
 interface MathMLMtextElementAttributes<T> extends MathMLAttributes<T> {}
 

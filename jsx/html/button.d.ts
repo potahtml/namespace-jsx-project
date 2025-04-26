@@ -7,12 +7,18 @@ interface ButtonHTMLAttributes<T> extends HTMLAttributes<T> {
 	formenctype?: 'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'
 	formmethod?: 'post' | 'get' | 'dialog'
 	formnovalidate?: boolean
-	formtarget?: string
+	formtarget?: '_self' | '_blank' | '_parent' | '_top' | (string & {})
+	name?: string
 	popovertarget?: string
 	popovertargetaction?: 'hide' | 'show' | 'toggle'
-	name?: string
-	type?: 'submit' | 'reset' | 'button'
+	type?: 'submit' | 'reset' | 'button' | 'menu'
 	value?: string
+
+	/** @experimental */
+	command?: 'show-modal' | 'close' | 'show-popover' | 'hide-popover' | 'toggle-popover' | (string & {})
+	/** @experimental */
+	commandfor?: string
+
 	formAction?: string
 	formEnctype?: 'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'
 	formMethod?: 'post' | 'get' | 'dialog'
@@ -32,9 +38,9 @@ interface ButtonHTMLAttributes<T> extends HTMLAttributes<T> {
 	formmethod?: 'post' | 'get' | 'dialog'
 	formnovalidate?: '' | boolean
 	formtarget?: '_self' | '_blank' | '_parent' | '_top' | (string & {})
+	name?: string
 	popovertarget?: string
 	popovertargetaction?: 'hide' | 'show' | 'toggle'
-	name?: string
 	type?: 'submit' | 'reset' | 'button' | 'menu'
 	value?: string
 
@@ -69,9 +75,9 @@ interface ButtonHTMLAttributes<T> extends HTMLAttributes<T> {
 	formmethod?: 'post' | 'get' | 'dialog' | false
 	formnovalidate?: true | false | '' | false
 	formtarget?: '_self' | '_blank' | '_parent' | '_top' | (string & {}) | false
+	name?: string | false
 	popovertarget?: string | false
 	popovertargetaction?: 'hide' | 'show' | 'toggle' | false
-	name?: string | false
 	type?: 'submit' | 'reset' | 'button' | 'menu' | false
 	value?: string | false
 

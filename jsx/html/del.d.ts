@@ -1,3 +1,11 @@
+// Solid Main - https://www.solidjs.com/
+interface ModHTMLAttributes<T> extends HTMLAttributes<T> {
+	cite?: string
+	datetime?: string
+
+	dateTime?: string
+}
+
 // Solid Minor - https://www.solidjs.com/
 interface ModHTMLAttributes<T> extends HTMLAttributes<T> {
 	cite?: string

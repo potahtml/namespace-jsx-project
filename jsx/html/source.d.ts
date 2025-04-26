@@ -1,34 +1,34 @@
 // Solid Main - https://www.solidjs.com/
 interface SourceHTMLAttributes<T> extends HTMLAttributes<T> {
+	height?: number | string
 	media?: string
 	sizes?: string
 	src?: string
 	srcset?: string
 	type?: string
 	width?: number | string
-	height?: number | string
 }
 
 // Solid Minor - https://www.solidjs.com/
 interface SourceHTMLAttributes<T> extends HTMLAttributes<T> {
+	height?: number | string
 	media?: string
 	sizes?: string
 	src?: string
 	srcset?: string
 	type?: string
 	width?: number | string
-	height?: number | string
 }
 
 // Solid Next - https://www.solidjs.com/
 interface SourceHTMLAttributes<T> extends HTMLAttributes<T> {
+	height?: number | string | false
 	media?: string | false
 	sizes?: string | false
 	src?: string | false
 	srcset?: string | false
 	type?: string | false
 	width?: number | string | false
-	height?: number | string | false
 }
 
 // Voby - https://github.com/vobyjs/voby

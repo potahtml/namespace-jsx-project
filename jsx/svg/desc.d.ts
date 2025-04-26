@@ -3,8 +3,9 @@ interface DescSVGAttributes<T> extends CoreSVGAttributes<T>, StylableSVGAttribut
 interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
 	id?: string
 	lang?: string
-	tabIndex?: number | string
 	tabindex?: number | string
+
+	tabIndex?: number | string
 }
 
 interface StylableSVGAttributes {

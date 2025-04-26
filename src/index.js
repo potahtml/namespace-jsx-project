@@ -550,12 +550,12 @@ for (const ns in DATA.elements) {
 		// vs code
 		if (vsCode[tagName]) {
 			tag.description = vsCode[tagName].description
-			for (const k in vsCode[tagName].keys) {
+			/*for (const k in vsCode[tagName].keys) {
 				tag.keys[k] = tag.keys[k] || { values: {} }
 				tag.keys[k].values.VSCode = uniqueTypes(
 					vsCode[tagName].keys[k],
 				)
-			}
+			}*/
 		}
 
 		tag.setters = unique([
@@ -727,7 +727,6 @@ const columns = [
 	'Vue',
 	'Preact',
 	'React',
-	'VSCode',
 ]
 
 const o = JSON.parse(stringifySorted(DATA))

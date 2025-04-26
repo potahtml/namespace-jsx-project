@@ -1,19 +1,22 @@
 // Solid Main - https://www.solidjs.com/
 interface MetaHTMLAttributes<T> extends HTMLAttributes<T> {
+	'http-equiv'?: 'content-security-policy' | 'content-type' | 'default-style' | 'x-ua-compatible' | 'refresh'
 	charset?: string
 	content?: string
-	'http-equiv'?: string
-	name?: string
 	media?: string
+	name?: string
+
+	/** @deprecated */
+	scheme?: string
 }
 
 // Solid Minor - https://www.solidjs.com/
 interface MetaHTMLAttributes<T> extends HTMLAttributes<T> {
+	'http-equiv'?: 'content-security-policy' | 'content-type' | 'default-style' | 'x-ua-compatible' | 'refresh'
 	charset?: string
 	content?: string
-	'http-equiv'?: 'content-security-policy' | 'content-type' | 'default-style' | 'x-ua-compatible' | 'refresh'
-	name?: string
 	media?: string
+	name?: string
 
 	/** @deprecated */
 	scheme?: string
@@ -21,11 +24,11 @@ interface MetaHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface MetaHTMLAttributes<T> extends HTMLAttributes<T> {
+	'http-equiv'?: 'content-security-policy' | 'content-type' | 'default-style' | 'x-ua-compatible' | 'refresh' | false
 	charset?: string | false
 	content?: string | false
-	'http-equiv'?: 'content-security-policy' | 'content-type' | 'default-style' | 'x-ua-compatible' | 'refresh' | false
-	name?: string | false
 	media?: string | false
+	name?: string | false
 
 	/** @deprecated */
 	scheme?: string | false

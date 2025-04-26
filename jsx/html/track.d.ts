@@ -1,10 +1,14 @@
 // Solid Main - https://www.solidjs.com/
 interface TrackHTMLAttributes<T> extends HTMLAttributes<T> {
 	default?: boolean
-	kind?: 'subtitles' | 'captions' | 'descriptions' | 'chapters' | 'metadata'
+	kind?: 'alternative' | 'descriptions' | 'main' | 'main-desc' | 'translation' | 'commentary' | 'subtitles' | 'captions' | 'chapters' | 'metadata'
 	label?: string
 	src?: string
 	srclang?: string
+
+	mediaGroup?: string
+	/** @deprecated */
+	mediagroup?: string
 }
 
 // Solid Minor - https://www.solidjs.com/

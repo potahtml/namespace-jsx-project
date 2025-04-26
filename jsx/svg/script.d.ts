@@ -1,18 +1,30 @@
 // Solid Main - https://www.solidjs.com/
 interface ScriptHTMLAttributes<T> extends HTMLAttributes<T> {
 	async?: boolean
-	charset?: string
+	blocking?: 'render'
 	crossorigin?: 'anonymous' | 'use-credentials' | ''
 	defer?: boolean
+	fetchpriority?: 'high' | 'low' | 'auto'
 	integrity?: string
 	nomodule?: boolean
 	nonce?: string
 	referrerpolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
 	src?: string
-	type?: string
+	type?: 'importmap' | 'module' | 'speculationrules' | (string & {})
+
+	/** @experimental */
+	attributionsrc?: string
+
 	crossOrigin?: 'anonymous' | 'use-credentials' | ''
 	noModule?: boolean
 	referrerPolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
+
+	/** @deprecated */
+	charset?: string
+	/** @deprecated */
+	event?: string
+	/** @deprecated */
+	language?: string
 }
 
 // Solid Minor - https://www.solidjs.com/

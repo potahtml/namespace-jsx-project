@@ -1,3 +1,8 @@
+// Solid Main - https://www.solidjs.com/
+interface MathMLMunderElementAttributes<T> extends MathMLAttributes<T> {
+	accentunder?: '' | boolean
+}
+
 // Solid Minor - https://www.solidjs.com/
 interface MathMLMunderElementAttributes<T> extends MathMLAttributes<T> {
 	accentunder?: '' | boolean

@@ -1,3 +1,11 @@
+// Solid Main - https://www.solidjs.com/
+interface MathMLMtrElementAttributes<T> extends MathMLAttributes<T> {
+	/** @non-standard */
+	columnalign?: 'center' | 'left' | 'right'
+	/** @non-standard */
+	rowalign?: 'axis' | 'baseline' | 'bottom' | 'center' | 'top'
+}
+
 // Solid Minor - https://www.solidjs.com/
 interface MathMLMtrElementAttributes<T> extends MathMLAttributes<T> {
 	/** @non-standard */

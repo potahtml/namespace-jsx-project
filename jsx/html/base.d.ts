@@ -1,7 +1,7 @@
 // Solid Main - https://www.solidjs.com/
 interface BaseHTMLAttributes<T> extends HTMLAttributes<T> {
 	href?: string
-	target?: string
+	target?: '_self' | '_blank' | '_parent' | '_top' | (string & {})
 }
 
 // Solid Minor - https://www.solidjs.com/

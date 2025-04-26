@@ -1,3 +1,12 @@
+// Solid Main - https://www.solidjs.com/
+interface MathMLMsupElementAttributes<T> extends MathMLAttributes<T> {
+	/**
+	 * @deprecated
+	 * @non-standard
+	 */
+	superscriptshift?: string
+}
+
 // Solid Minor - https://www.solidjs.com/
 interface MathMLMsupElementAttributes<T> extends MathMLAttributes<T> {
 	/**

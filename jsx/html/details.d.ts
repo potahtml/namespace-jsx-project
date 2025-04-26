@@ -1,5 +1,6 @@
 // Solid Main - https://www.solidjs.com/
 interface DetailsHtmlAttributes<T> extends HTMLAttributes<T> {
+	name?: string
 	open?: boolean
 }
 

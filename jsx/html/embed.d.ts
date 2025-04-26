@@ -4,6 +4,11 @@ interface EmbedHTMLAttributes<T> extends HTMLAttributes<T> {
 	src?: string
 	type?: string
 	width?: number | string
+
+	/** @deprecated */
+	align?: 'left' | 'right' | 'justify' | 'center'
+	/** @deprecated */
+	name?: string
 }
 
 // Solid Minor - https://www.solidjs.com/

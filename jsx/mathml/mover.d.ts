@@ -1,3 +1,8 @@
+// Solid Main - https://www.solidjs.com/
+interface MathMLMoverElementAttributes<T> extends MathMLAttributes<T> {
+	accent?: boolean
+}
+
 // Solid Minor - https://www.solidjs.com/
 interface MathMLMoverElementAttributes<T> extends MathMLAttributes<T> {
 	accent?: '' | boolean

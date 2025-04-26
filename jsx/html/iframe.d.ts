@@ -10,7 +10,46 @@ interface IframeHTMLAttributes<T> extends HTMLAttributes<T> {
 	src?: string
 	srcdoc?: string
 	width?: number | string
+
 	referrerPolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
+
+	/** @experimental */
+	adauctionheaders?: boolean
+	/**
+	 * @non-standard
+	 * @experimental
+	 */
+	browsingtopics?: boolean
+	/** @experimental */
+	credentialless?: boolean
+	/** @experimental */
+	csp?: string
+	/** @experimental */
+	privatetoken?: string
+	/** @experimental */
+	sharedstoragewritable?: boolean
+
+	/** @deprecated */
+	align?: string
+	/**
+	 * @deprecated
+	 * @non-standard
+	 */
+	allowpaymentrequest?: boolean
+	/** @deprecated */
+	allowtransparency?: boolean
+	/** @deprecated */
+	frameborder?: number | string
+	/** @deprecated */
+	longdesc?: string
+	/** @deprecated */
+	marginheight?: number | string
+	/** @deprecated */
+	marginwidth?: number | string
+	/** @deprecated */
+	scrolling?: 'yes' | 'no' | 'auto'
+	/** @deprecated */
+	seamless?: boolean
 }
 
 // Solid Minor - https://www.solidjs.com/

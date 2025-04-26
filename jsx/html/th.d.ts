@@ -1,11 +1,32 @@
 // Solid Main - https://www.solidjs.com/
 interface ThHTMLAttributes<T> extends HTMLAttributes<T> {
+	abbr?: string
 	colspan?: number | string
 	headers?: string
 	rowspan?: number | string
+	scope?: 'col' | 'row' | 'rowgroup' | 'colgroup'
+
 	colSpan?: number | string
 	rowSpan?: number | string
-	scope?: 'col' | 'row' | 'rowgroup' | 'colgroup'
+
+	/** @deprecated */
+	align?: 'left' | 'center' | 'right' | 'justify' | 'char'
+	/** @deprecated */
+	axis?: string
+	/** @deprecated */
+	bgcolor?: string
+	/** @deprecated */
+	char?: string
+	/** @deprecated */
+	charoff?: string
+	/** @deprecated */
+	height?: string
+	/** @deprecated */
+	nowrap?: boolean
+	/** @deprecated */
+	valign?: 'baseline' | 'bottom' | 'middle' | 'top'
+	/** @deprecated */
+	width?: number | string
 }
 
 // Solid Minor - https://www.solidjs.com/
