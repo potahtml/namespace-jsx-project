@@ -41,6 +41,8 @@
 			"values": {
 				"Preact": "string",
 				"React": "string",
+				"Solid Main": "string",
+				"Solid Minor": "string",
 				"Solid Next": "string  | false"
 			}
 		},
@@ -49,6 +51,8 @@
 			"values": {
 				"Preact": "string",
 				"React": "string",
+				"Solid Main": "string",
+				"Solid Minor": "string",
 				"Solid Next": "string  | false"
 			}
 		},
@@ -105,6 +109,8 @@
 			"values": {
 				"Preact": "string",
 				"React": "string",
+				"Solid Main": "number | string",
+				"Solid Minor": "number | string",
 				"Solid Next": "number | string  | false"
 			}
 		},
@@ -161,6 +167,8 @@
 			"values": {
 				"Preact": "string",
 				"React": "string",
+				"Solid Main": "string",
+				"Solid Minor": "string",
 				"Solid Next": "string  | false"
 			}
 		},
@@ -517,6 +525,8 @@
 			"values": {
 				"Preact": "string",
 				"React": "string",
+				"Solid Main": "number | string",
+				"Solid Minor": "number | string",
 				"Solid Next": "number | string  | false"
 			}
 		},

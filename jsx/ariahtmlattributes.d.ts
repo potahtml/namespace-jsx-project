@@ -11,6 +11,27 @@ interface AriaAttributes {
 	 */
 	'aria-atomic'?: boolean | 'false' | 'true'
 	/**
+	 * Similar to the global aria-label. Defines a string value that labels the current element,
+	 * which is intended to be converted into Braille.
+	 *
+	 * @see aria-label.
+	 */
+	'aria-braillelabel'?: string
+	/**
+	 * Defines a human-readable, author-localized abbreviated description for the role of an element
+	 * intended to be converted into Braille. Braille is not a one-to-one transliteration of letters
+	 * and numbers, but rather it includes various abbreviations, contractions, and characters that
+	 * represent words (known as logograms).
+	 *
+	 * Instead of converting long role descriptions to Braille, the aria-brailleroledescription
+	 * attribute allows for providing an abbreviated version of the aria-roledescription value,
+	 * which is a human-readable, author-localized description for the role of an element, for
+	 * improved user experience with braille interfaces.
+	 *
+	 * @see aria-roledescription.
+	 */
+	'aria-brailleroledescription'?: string
+	/**
 	 * Indicates whether inputting text could trigger display of one or more predictions of the
 	 * user's intended value for an input and specifies how predictions would be presented if they
 	 * are made.
@@ -40,6 +61,8 @@ interface AriaAttributes {
 	 * @see aria-colcount @see aria-colspan.
 	 */
 	'aria-colindex'?: number | string
+	/** Defines a human-readable text alternative of the numeric aria-colindex. */
+	'aria-colindextext'?: number | string
 	/**
 	 * Defines the number of columns spanned by a cell or gridcell within a table, grid, or
 	 * treegrid.
@@ -65,6 +88,12 @@ interface AriaAttributes {
 	 * @see aria-labelledby
 	 */
 	'aria-describedby'?: string
+	/**
+	 * Defines a string value that describes or annotates the current element.
+	 *
+	 * @see aria-describedby
+	 */
+	'aria-description'?: string
 	/**
 	 * Identifies the element that provides a detailed, extended description for the object.
 	 *
@@ -217,6 +246,8 @@ interface AriaAttributes {
 	 * @see aria-rowcount @see aria-rowspan.
 	 */
 	'aria-rowindex'?: number | string
+	/** Defines a human-readable text alternative of aria-rowindex. */
+	'aria-rowindextext'?: number | string
 	/**
 	 * Defines the number of rows spanned by a cell or gridcell within a table, grid, or treegrid.
 	 *
@@ -266,6 +297,27 @@ interface AriaAttributes {
 	 */
 	'aria-atomic'?: boolean | 'false' | 'true'
 	/**
+	 * Similar to the global aria-label. Defines a string value that labels the current element,
+	 * which is intended to be converted into Braille.
+	 *
+	 * @see aria-label.
+	 */
+	'aria-braillelabel'?: string
+	/**
+	 * Defines a human-readable, author-localized abbreviated description for the role of an element
+	 * intended to be converted into Braille. Braille is not a one-to-one transliteration of letters
+	 * and numbers, but rather it includes various abbreviations, contractions, and characters that
+	 * represent words (known as logograms).
+	 *
+	 * Instead of converting long role descriptions to Braille, the aria-brailleroledescription
+	 * attribute allows for providing an abbreviated version of the aria-roledescription value,
+	 * which is a human-readable, author-localized description for the role of an element, for
+	 * improved user experience with braille interfaces.
+	 *
+	 * @see aria-roledescription.
+	 */
+	'aria-brailleroledescription'?: string
+	/**
 	 * Indicates whether inputting text could trigger display of one or more predictions of the
 	 * user's intended value for an input and specifies how predictions would be presented if they
 	 * are made.
@@ -295,6 +347,8 @@ interface AriaAttributes {
 	 * @see aria-colcount @see aria-colspan.
 	 */
 	'aria-colindex'?: number | string
+	/** Defines a human-readable text alternative of the numeric aria-colindex. */
+	'aria-colindextext'?: number | string
 	/**
 	 * Defines the number of columns spanned by a cell or gridcell within a table, grid, or
 	 * treegrid.
@@ -320,6 +374,13 @@ interface AriaAttributes {
 	 * @see aria-labelledby
 	 */
 	'aria-describedby'?: string
+
+	/**
+	 * Defines a string value that describes or annotates the current element.
+	 *
+	 * @see aria-describedby
+	 */
+	'aria-description'?: string
 	/**
 	 * Identifies the element that provides a detailed, extended description for the object.
 	 *
@@ -472,6 +533,8 @@ interface AriaAttributes {
 	 * @see aria-rowcount @see aria-rowspan.
 	 */
 	'aria-rowindex'?: number | string
+	/** Defines a human-readable text alternative of aria-rowindex. */
+	'aria-rowindextext'?: number | string
 	/**
 	 * Defines the number of rows spanned by a cell or gridcell within a table, grid, or treegrid.
 	 *
