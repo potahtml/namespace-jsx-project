@@ -2650,6 +2650,20 @@
 							"Solid Next": "string | false"
 						}
 					},
+					"attributionSrc": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"experimental": true,
+						"name": "attributionSrc",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAnchorElement#htmlanchorelement.attributionsrc",
+						"values": {
+							"Chrome": "string"
+						}
+					},
 					"charset": {
 						"attr": true,
 						"attrChrome": true,
@@ -2855,6 +2869,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAnchorElement#htmlanchorelement.referrerpolicy",
 						"values": {
+							"Chrome": "string",
+							"Firefox": "string",
 							"Preact": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 							"React": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 							"Solid Main": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
@@ -3070,6 +3086,19 @@
 							"Solid Next": "string | false"
 						}
 					},
+					"attributionSrc": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"name": "attributionSrc",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAreaElement#htmlareaelement.attributionsrc",
+						"values": {
+							"Chrome": "string"
+						}
+					},
 					"coords": {
 						"attr": true,
 						"attrChrome": true,
@@ -3201,6 +3230,21 @@
 							"Solid Next": "true | false | ''"
 						}
 					},
+					"noHref": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"deprecated": true,
+						"name": "noHref",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAreaElement#htmlareaelement.nohref",
+						"values": {
+							"Chrome": "boolean",
+							"Firefox": "boolean"
+						}
+					},
 					"ping": {
 						"attr": true,
 						"attrChrome": true,
@@ -3249,6 +3293,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAreaElement#htmlareaelement.referrerpolicy",
 						"values": {
+							"Chrome": "string",
+							"Firefox": "string",
 							"Preact": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 							"React": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 							"Solid Main": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
@@ -3454,6 +3500,7 @@
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement#htmlmediaelement.controlslist",
 						"values": {
+							"Chrome": "string",
 							"Preact": "string",
 							"React": "string",
 							"Voby": "string"
@@ -3491,6 +3538,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement#htmlmediaelement.crossorigin",
 						"values": {
+							"Chrome": "string",
+							"Firefox": "string",
 							"Preact": "'anonymous' | 'use-credentials'",
 							"React": "'anonymous' | 'use-credentials' | ''",
 							"Solid Main": "'anonymous' | 'use-credentials' | ''",
@@ -3571,6 +3620,7 @@
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement#htmlmediaelement.disableremoteplayback",
 						"values": {
+							"Chrome": "boolean",
 							"Preact": "boolean"
 						}
 					},
@@ -3688,6 +3738,23 @@
 							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 						}
 					},
+					"onEncrypted": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"inherited": true,
+						"name": "onEncrypted",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement#htmlaudioelement.onencrypted",
+						"values": {
+							"Solid Main": "EventHandlerUnion<T, MediaEncryptedEvent>",
+							"Solid Minor": "EventHandlerUnion<T, MediaEncryptedEvent>",
+							"Solid Next": "EventHandlerUnion<T, MediaEncryptedEvent>"
+						},
+						"warn": true
+					},
 					"onencrypted": {
 						"attr": true,
 						"attrChrome": true,
@@ -3706,20 +3773,20 @@
 							"Solid Next": "EventHandlerUnion<T, MediaEncryptedEvent>"
 						}
 					},
-					"onEncrypted": {
+					"onWaitingForKey": {
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
 						"inherited": true,
-						"name": "onEncrypted",
+						"name": "onWaitingForKey",
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement#htmlaudioelement.onencrypted",
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement#htmlaudioelement.onwaitingforkey",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, MediaEncryptedEvent>",
-							"Solid Minor": "EventHandlerUnion<T, MediaEncryptedEvent>",
-							"Solid Next": "EventHandlerUnion<T, MediaEncryptedEvent>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						},
 						"warn": true
 					},
@@ -3740,23 +3807,6 @@
 							"Solid Minor": "EventHandlerUnion<T, Event>",
 							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
-					},
-					"onWaitingForKey": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"inherited": true,
-						"name": "onWaitingForKey",
-						"prop": false,
-						"propChrome": false,
-						"propFirefox": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement#htmlaudioelement.onwaitingforkey",
-						"values": {
-							"Solid Main": "EventHandlerUnion<T, Event>",
-							"Solid Minor": "EventHandlerUnion<T, Event>",
-							"Solid Next": "EventHandlerUnion<T, Event>"
-						},
-						"warn": true
 					},
 					"playbackRate": {
 						"attr": false,
@@ -4117,6 +4167,21 @@
 							"Pota": "string"
 						}
 					},
+					"aLink": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"deprecated": true,
+						"name": "aLink",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.alink",
+						"values": {
+							"Chrome": "string",
+							"Firefox": "string"
+						}
+					},
 					"background": {
 						"attr": true,
 						"attrChrome": true,
@@ -4147,6 +4212,21 @@
 							"Chrome": "string",
 							"Firefox": "string",
 							"Pota": "string"
+						}
+					},
+					"bgColor": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"deprecated": true,
+						"name": "bgColor",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.bgcolor",
+						"values": {
+							"Chrome": "string",
+							"Firefox": "string"
 						}
 					},
 					"bottommargin": {
@@ -4580,6 +4660,21 @@
 							"Firefox": "string",
 							"Pota": "string"
 						}
+					},
+					"vLink": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"deprecated": true,
+						"name": "vLink",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.vlink",
+						"values": {
+							"Chrome": "string",
+							"Firefox": "string"
+						}
 					}
 				},
 				"name": "body",
@@ -4780,6 +4875,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLButtonElement#htmlbuttonelement.formaction",
 						"values": {
+							"Chrome": "string",
+							"Firefox": "string",
 							"Preact": "string",
 							"React": "string | ((formData: FormData) => void | Promise<void>)",
 							"Solid Main": "string",
@@ -4818,6 +4915,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLButtonElement#htmlbuttonelement.formenctype",
 						"values": {
+							"Chrome": "string",
+							"Firefox": "string",
 							"Solid Main": "'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'",
 							"Solid Minor": "'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'",
 							"Solid Next": "'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain' | false"
@@ -4869,6 +4968,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLButtonElement#htmlbuttonelement.formmethod",
 						"values": {
+							"Chrome": "string",
+							"Firefox": "string",
 							"Preact": "string",
 							"React": "string",
 							"Solid Main": "'post' | 'get' | 'dialog'",
@@ -4907,6 +5008,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLButtonElement#htmlbuttonelement.formnovalidate",
 						"values": {
+							"Chrome": "boolean",
+							"Firefox": "boolean",
 							"Preact": "boolean",
 							"React": "boolean",
 							"Solid Main": "boolean",
@@ -4945,6 +5048,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLButtonElement#htmlbuttonelement.formtarget",
 						"values": {
+							"Chrome": "string",
+							"Firefox": "string",
 							"Preact": "string",
 							"React": "string",
 							"Solid Main": "string",
@@ -5038,6 +5143,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLButtonElement#htmlbuttonelement.popovertargetaction",
 						"values": {
+							"Chrome": "string",
+							"Firefox": "string",
 							"Preact": "'hide' | 'show' | 'toggle'",
 							"Solid Main": "'hide' | 'show' | 'toggle'",
 							"Solid Minor": "'hide' | 'show' | 'toggle'",
@@ -5458,6 +5565,21 @@
 							"Solid Next": "'baseline' | 'bottom' | 'middle' | 'top' | false"
 						}
 					},
+					"vAlign": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"deprecated": true,
+						"name": "vAlign",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableColElement#htmltablecolelement.valign",
+						"values": {
+							"Chrome": "string",
+							"Firefox": "string"
+						}
+					},
 					"width": {
 						"attr": true,
 						"attrChrome": true,
@@ -5610,6 +5732,21 @@
 							"Solid Next": "'baseline' | 'bottom' | 'middle' | 'top' | false"
 						}
 					},
+					"vAlign": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"deprecated": true,
+						"name": "vAlign",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableColElement#htmltablecolelement.valign",
+						"values": {
+							"Chrome": "string",
+							"Firefox": "string"
+						}
+					},
 					"width": {
 						"attr": true,
 						"attrChrome": true,
@@ -5757,6 +5894,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLModElement#htmlmodelement.datetime",
 						"values": {
+							"Chrome": "string",
+							"Firefox": "string",
 							"Preact": "string",
 							"React": "string",
 							"Solid Main": "string",
@@ -5887,6 +6026,7 @@
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement#htmldialogelement.closedby",
 						"values": {
+							"Chrome": "string",
 							"Preact": "'none' | 'closerequest' | 'any'"
 						}
 					},
@@ -6723,6 +6863,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement#htmlformelement.novalidate",
 						"values": {
+							"Chrome": "boolean",
+							"Firefox": "boolean",
 							"Preact": "boolean",
 							"React": "boolean",
 							"Solid Main": "boolean",
@@ -6848,6 +6990,21 @@
 							"Pota": "string"
 						}
 					},
+					"frameBorder": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"deprecated": true,
+						"name": "frameBorder",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFrameElement#htmlframeelement.frameborder",
+						"values": {
+							"Chrome": "string",
+							"Firefox": "string"
+						}
+					},
 					"longdesc": {
 						"attr": true,
 						"attrChrome": true,
@@ -6862,6 +7019,21 @@
 							"Chrome": "string",
 							"Firefox": "string",
 							"Pota": "string"
+						}
+					},
+					"longDesc": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"deprecated": true,
+						"name": "longDesc",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFrameElement#htmlframeelement.longdesc",
+						"values": {
+							"Chrome": "string",
+							"Firefox": "string"
 						}
 					},
 					"marginheight": {
@@ -6880,6 +7052,21 @@
 							"Pota": "string"
 						}
 					},
+					"marginHeight": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"deprecated": true,
+						"name": "marginHeight",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFrameElement#htmlframeelement.marginheight",
+						"values": {
+							"Chrome": "string",
+							"Firefox": "string"
+						}
+					},
 					"marginwidth": {
 						"attr": true,
 						"attrChrome": true,
@@ -6894,6 +7081,21 @@
 							"Chrome": "string",
 							"Firefox": "string",
 							"Pota": "string"
+						}
+					},
+					"marginWidth": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"deprecated": true,
+						"name": "marginWidth",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFrameElement#htmlframeelement.marginwidth",
+						"values": {
+							"Chrome": "string",
+							"Firefox": "string"
 						}
 					},
 					"name": {
@@ -6926,6 +7128,21 @@
 							"Chrome": "boolean",
 							"Firefox": "boolean",
 							"Pota": "'true' | boolean"
+						}
+					},
+					"noResize": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"deprecated": true,
+						"name": "noResize",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFrameElement#htmlframeelement.noresize",
+						"values": {
+							"Chrome": "boolean",
+							"Firefox": "boolean"
 						}
 					},
 					"scrolling": {
@@ -7633,6 +7850,22 @@
 							"Pota": "'true' | boolean"
 						}
 					},
+					"noShade": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"deprecated": true,
+						"name": "noShade",
+						"nonstandard": true,
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLHRElement#htmlhrelement.noshade",
+						"values": {
+							"Chrome": "boolean",
+							"Firefox": "boolean"
+						}
+					},
 					"size": {
 						"attr": true,
 						"attrChrome": true,
@@ -7757,6 +7990,20 @@
 							"Solid Next": "true | false | ''"
 						}
 					},
+					"adAuctionHeaders": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"experimental": true,
+						"name": "adAuctionHeaders",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLIFrameElement#htmliframeelement.adauctionheaders",
+						"values": {
+							"Chrome": "boolean"
+						}
+					},
 					"align": {
 						"attr": true,
 						"attrChrome": true,
@@ -7833,6 +8080,20 @@
 						},
 						"warn": true
 					},
+					"allowFullscreen": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"name": "allowFullscreen",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLIFrameElement#htmliframeelement.allowfullscreen",
+						"values": {
+							"Chrome": "boolean",
+							"Firefox": "boolean"
+						}
+					},
 					"allowpaymentrequest": {
 						"attr": true,
 						"attrChrome": true,
@@ -7850,6 +8111,21 @@
 							"Solid Main": "boolean",
 							"Solid Minor": "'' | boolean",
 							"Solid Next": "true | false | ''"
+						}
+					},
+					"allowPaymentRequest": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"deprecated": true,
+						"name": "allowPaymentRequest",
+						"nonstandard": true,
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLIFrameElement#htmliframeelement.allowpaymentrequest",
+						"values": {
+							"Chrome": "boolean"
 						}
 					},
 					"allowtransparency": {
@@ -7904,6 +8180,21 @@
 							"Solid Main": "boolean",
 							"Solid Minor": "'' | boolean",
 							"Solid Next": "true | false | ''"
+						}
+					},
+					"browsingTopics": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"experimental": true,
+						"name": "browsingTopics",
+						"nonstandard": true,
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLIFrameElement#htmliframeelement.browsingtopics",
+						"values": {
+							"Chrome": "boolean"
 						}
 					},
 					"credentialless": {
@@ -7974,6 +8265,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLIFrameElement#htmliframeelement.frameborder",
 						"values": {
+							"Chrome": "string",
+							"Firefox": "string",
 							"Preact": "number | string",
 							"React": "number | string",
 							"Voby": "number | string"
@@ -8042,6 +8335,21 @@
 							"Solid Next": "string | false"
 						}
 					},
+					"longDesc": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"deprecated": true,
+						"name": "longDesc",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLIFrameElement#htmliframeelement.longdesc",
+						"values": {
+							"Chrome": "string",
+							"Firefox": "string"
+						}
+					},
 					"marginheight": {
 						"attr": true,
 						"attrChrome": true,
@@ -8073,6 +8381,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLIFrameElement#htmliframeelement.marginheight",
 						"values": {
+							"Chrome": "string",
+							"Firefox": "string",
 							"Preact": "number",
 							"React": "number",
 							"Voby": "number"
@@ -8109,6 +8419,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLIFrameElement#htmliframeelement.marginwidth",
 						"values": {
+							"Chrome": "string",
+							"Firefox": "string",
 							"Preact": "number",
 							"React": "number",
 							"Voby": "number"
@@ -8153,6 +8465,20 @@
 							"Solid Next": "string | false"
 						}
 					},
+					"privateToken": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"experimental": true,
+						"name": "privateToken",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLIFrameElement#htmliframeelement.privatetoken",
+						"values": {
+							"Chrome": "string"
+						}
+					},
 					"referrerpolicy": {
 						"attr": true,
 						"attrChrome": true,
@@ -8183,6 +8509,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLIFrameElement#htmliframeelement.referrerpolicy",
 						"values": {
+							"Chrome": "string",
+							"Firefox": "string",
 							"Preact": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 							"React": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 							"Solid Main": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
@@ -8273,6 +8601,20 @@
 							"Solid Main": "boolean",
 							"Solid Minor": "'' | boolean",
 							"Solid Next": "true | false | ''"
+						}
+					},
+					"sharedStorageWritable": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"experimental": true,
+						"name": "sharedStorageWritable",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLIFrameElement#htmliframeelement.sharedstoragewritable",
+						"values": {
+							"Chrome": "boolean"
 						}
 					},
 					"src": {
@@ -8428,6 +8770,20 @@
 							"Solid Next": "string | false"
 						}
 					},
+					"attributionSrc": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"experimental": true,
+						"name": "attributionSrc",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement#htmlimageelement.attributionsrc",
+						"values": {
+							"Chrome": "string"
+						}
+					},
 					"border": {
 						"attr": true,
 						"attrChrome": true,
@@ -8454,6 +8810,19 @@
 						"name": "browsingtopics",
 						"prop": false,
 						"propChrome": false,
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement#htmlimageelement.browsingtopics",
+						"values": {
+							"Chrome": "boolean"
+						}
+					},
+					"browsingTopics": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"name": "browsingTopics",
+						"prop": true,
+						"propChrome": true,
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement#htmlimageelement.browsingtopics",
 						"values": {
@@ -8490,6 +8859,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement#htmlimageelement.crossorigin",
 						"values": {
+							"Chrome": "string",
+							"Firefox": "string",
 							"Preact": "'anonymous' | 'use-credentials'",
 							"React": "'anonymous' | 'use-credentials' | ''",
 							"Solid Main": "'anonymous' | 'use-credentials' | ''",
@@ -8565,6 +8936,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement#htmlimageelement.fetchpriority",
 						"values": {
+							"Chrome": "string",
+							"Firefox": "string",
 							"Preact": "'high' | 'auto' | 'low'",
 							"React": "'high' | 'low' | 'auto'"
 						}
@@ -8655,6 +9028,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement#htmlimageelement.ismap",
 						"values": {
+							"Chrome": "boolean",
+							"Firefox": "boolean",
 							"Solid Main": "boolean",
 							"Solid Minor": "boolean",
 							"Solid Next": "boolean | false"
@@ -8699,6 +9074,21 @@
 							"Solid Main": "string",
 							"Solid Minor": "string",
 							"Solid Next": "string | false"
+						}
+					},
+					"longDesc": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"deprecated": true,
+						"name": "longDesc",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement#htmlimageelement.longdesc",
+						"values": {
+							"Chrome": "string",
+							"Firefox": "string"
 						}
 					},
 					"lowsrc": {
@@ -8769,6 +9159,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement#htmlimageelement.referrerpolicy",
 						"values": {
+							"Chrome": "string",
+							"Firefox": "string",
 							"Preact": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 							"React": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 							"Solid Main": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
@@ -8792,6 +9184,20 @@
 							"Solid Main": "boolean",
 							"Solid Minor": "'' | boolean",
 							"Solid Next": "true | false | ''"
+						}
+					},
+					"sharedStorageWritable": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"experimental": true,
+						"name": "sharedStorageWritable",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement#htmlimageelement.sharedstoragewritable",
+						"values": {
+							"Chrome": "boolean"
 						}
 					},
 					"sizes": {
@@ -8907,6 +9313,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement#htmlimageelement.usemap",
 						"values": {
+							"Chrome": "string",
+							"Firefox": "string",
 							"Preact": "string",
 							"React": "string",
 							"Solid Main": "string",
@@ -9236,6 +9644,20 @@
 							"Solid Next": "string | false"
 						}
 					},
+					"dirName": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"name": "dirName",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement#htmlinputelement.dirname",
+						"values": {
+							"Chrome": "string",
+							"Firefox": "string"
+						}
+					},
 					"disabled": {
 						"attr": true,
 						"attrChrome": true,
@@ -9340,6 +9762,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement#htmlinputelement.formaction",
 						"values": {
+							"Chrome": "string",
+							"Firefox": "string",
 							"Preact": "string",
 							"React": "string | ((formData: FormData) => void | Promise<void>)",
 							"Solid Main": "string",
@@ -9378,6 +9802,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement#htmlinputelement.formenctype",
 						"values": {
+							"Chrome": "string",
+							"Firefox": "string",
 							"Solid Main": "'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'",
 							"Solid Minor": "'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'",
 							"Solid Next": "'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain' | false"
@@ -9429,6 +9855,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement#htmlinputelement.formmethod",
 						"values": {
+							"Chrome": "string",
+							"Firefox": "string",
 							"Preact": "string",
 							"React": "string",
 							"Solid Main": "'post' | 'get' | 'dialog'",
@@ -9467,6 +9895,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement#htmlinputelement.formnovalidate",
 						"values": {
+							"Chrome": "boolean",
+							"Firefox": "boolean",
 							"Preact": "boolean",
 							"React": "boolean",
 							"Solid Main": "boolean",
@@ -9505,6 +9935,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement#htmlinputelement.formtarget",
 						"values": {
+							"Chrome": "string",
+							"Firefox": "string",
 							"Preact": "string",
 							"React": "string",
 							"Solid Main": "string",
@@ -9640,6 +10072,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement#htmlinputelement.maxlength",
 						"values": {
+							"Chrome": "number | string",
+							"Firefox": "number | string",
 							"Preact": "number",
 							"React": "number",
 							"Solid Main": "number | string",
@@ -9700,6 +10134,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement#htmlinputelement.minlength",
 						"values": {
+							"Chrome": "number | string",
+							"Firefox": "number | string",
 							"Preact": "number",
 							"React": "number",
 							"Solid Main": "number | string",
@@ -9846,6 +10282,20 @@
 							"Solid Next": "'hide' | 'show' | 'toggle' | false"
 						}
 					},
+					"popoverTargetAction": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"name": "popoverTargetAction",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement#htmlinputelement.popovertargetaction",
+						"values": {
+							"Chrome": "string",
+							"Firefox": "string"
+						}
+					},
 					"readonly": {
 						"attr": true,
 						"attrChrome": true,
@@ -9876,6 +10326,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement#htmlinputelement.readonly",
 						"values": {
+							"Chrome": "boolean",
+							"Firefox": "boolean",
 							"Preact": "boolean",
 							"React": "boolean",
 							"Solid Main": "boolean",
@@ -10029,6 +10481,21 @@
 							"Solid Next": "string | false"
 						}
 					},
+					"useMap": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"deprecated": true,
+						"name": "useMap",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement#htmlinputelement.usemap",
+						"values": {
+							"Chrome": "string",
+							"Firefox": "string"
+						}
+					},
 					"value": {
 						"attr": true,
 						"attrChrome": true,
@@ -10153,6 +10620,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLModElement#htmlmodelement.datetime",
 						"values": {
+							"Chrome": "string",
+							"Firefox": "string",
 							"Preact": "string",
 							"React": "string",
 							"Solid Main": "string",
@@ -10664,6 +11133,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLLinkElement#htmllinkelement.crossorigin",
 						"values": {
+							"Chrome": "string",
+							"Firefox": "string",
 							"Preact": "'anonymous' | 'use-credentials'",
 							"React": "'anonymous' | 'use-credentials' | ''",
 							"Solid Main": "'anonymous' | 'use-credentials' | ''",
@@ -10719,6 +11190,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLLinkElement#htmllinkelement.fetchpriority",
 						"values": {
+							"Chrome": "string",
+							"Firefox": "string",
 							"Preact": "'high' | 'low' | 'auto'",
 							"React": "'high' | 'low' | 'auto'"
 						}
@@ -10809,6 +11282,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLLinkElement#htmllinkelement.imagesizes",
 						"values": {
+							"Chrome": "string",
+							"Firefox": "string",
 							"React": "string"
 						}
 					},
@@ -10845,6 +11320,20 @@
 							"Voby": "string"
 						},
 						"warn": true
+					},
+					"imageSrcset": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"name": "imageSrcset",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLLinkElement#htmllinkelement.imagesrcset",
+						"values": {
+							"Chrome": "string",
+							"Firefox": "string"
+						}
 					},
 					"integrity": {
 						"attr": true,
@@ -10920,6 +11409,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLLinkElement#htmllinkelement.referrerpolicy",
 						"values": {
+							"Chrome": "string",
+							"Firefox": "string",
 							"Preact": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 							"React": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 							"Solid Main": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
@@ -11154,6 +11645,22 @@
 							"Preact": "'scroll' | 'slide' | 'alternate'"
 						}
 					},
+					"bgColor": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"deprecated": true,
+						"name": "bgColor",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMarqueeElement#htmlmarqueeelement.bgcolor",
+						"values": {
+							"Chrome": "string",
+							"Firefox": "string",
+							"Preact": "string"
+						}
+					},
 					"bgcolor": {
 						"attr": true,
 						"attrChrome": true,
@@ -11168,20 +11675,6 @@
 							"Chrome": "string",
 							"Firefox": "string",
 							"Pota": "string"
-						}
-					},
-					"bgColor": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"deprecated": true,
-						"name": "bgColor",
-						"prop": true,
-						"propChrome": true,
-						"propFirefox": true,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMarqueeElement#htmlmarqueeelement.bgcolor",
-						"values": {
-							"Preact": "string"
 						}
 					},
 					"direction": {
@@ -11252,6 +11745,22 @@
 							"Preact": "number | string"
 						}
 					},
+					"scrollAmount": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"deprecated": true,
+						"name": "scrollAmount",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMarqueeElement#htmlmarqueeelement.scrollamount",
+						"values": {
+							"Chrome": "number | string",
+							"Firefox": "number | string",
+							"Preact": "number | string"
+						}
+					},
 					"scrollamount": {
 						"attr": true,
 						"attrChrome": true,
@@ -11268,17 +11777,19 @@
 							"Pota": "number | string"
 						}
 					},
-					"scrollAmount": {
+					"scrollDelay": {
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
 						"deprecated": true,
-						"name": "scrollAmount",
+						"name": "scrollDelay",
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMarqueeElement#htmlmarqueeelement.scrollamount",
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMarqueeElement#htmlmarqueeelement.scrolldelay",
 						"values": {
+							"Chrome": "number | string",
+							"Firefox": "number | string",
 							"Preact": "number | string"
 						}
 					},
@@ -11298,18 +11809,20 @@
 							"Pota": "number | string"
 						}
 					},
-					"scrollDelay": {
+					"trueSpeed": {
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
 						"deprecated": true,
-						"name": "scrollDelay",
+						"name": "trueSpeed",
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMarqueeElement#htmlmarqueeelement.scrolldelay",
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMarqueeElement#htmlmarqueeelement.truespeed",
 						"values": {
-							"Preact": "number | string"
+							"Chrome": "boolean",
+							"Firefox": "boolean",
+							"Preact": "boolean"
 						}
 					},
 					"truespeed": {
@@ -11326,20 +11839,6 @@
 							"Chrome": "boolean",
 							"Firefox": "boolean",
 							"Pota": "'true' | boolean"
-						}
-					},
-					"trueSpeed": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"deprecated": true,
-						"name": "trueSpeed",
-						"prop": true,
-						"propChrome": true,
-						"propFirefox": true,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMarqueeElement#htmlmarqueeelement.truespeed",
-						"values": {
-							"Preact": "boolean"
 						}
 					},
 					"vspace": {
@@ -12053,6 +12552,21 @@
 							"Solid Next": "string | false"
 						}
 					},
+					"codeBase": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"deprecated": true,
+						"name": "codeBase",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLObjectElement#htmlobjectelement.codebase",
+						"values": {
+							"Chrome": "string",
+							"Firefox": "string"
+						}
+					},
 					"codetype": {
 						"attr": true,
 						"attrChrome": true,
@@ -12070,6 +12584,21 @@
 							"Solid Main": "string",
 							"Solid Minor": "string",
 							"Solid Next": "string | false"
+						}
+					},
+					"codeType": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"deprecated": true,
+						"name": "codeType",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLObjectElement#htmlobjectelement.codetype",
+						"values": {
+							"Chrome": "string",
+							"Firefox": "string"
 						}
 					},
 					"data": {
@@ -12254,6 +12783,27 @@
 						},
 						"weird": true
 					},
+					"useMap": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"deprecated": true,
+						"name": "useMap",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLObjectElement#htmlobjectelement.usemap",
+						"values": {
+							"Chrome": "string",
+							"Firefox": "string",
+							"Preact": "string",
+							"React": "string",
+							"Solid Main": "string",
+							"Solid Minor": "string",
+							"Solid Next": "string | false",
+							"Voby": "string"
+						}
+					},
 					"usemap": {
 						"attr": true,
 						"attrChrome": true,
@@ -12273,25 +12823,6 @@
 							"Solid Minor": "string",
 							"Solid Next": "string | false",
 							"Vue": "string"
-						}
-					},
-					"useMap": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"deprecated": true,
-						"name": "useMap",
-						"prop": true,
-						"propChrome": true,
-						"propFirefox": true,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLObjectElement#htmlobjectelement.usemap",
-						"values": {
-							"Preact": "string",
-							"React": "string",
-							"Solid Main": "string",
-							"Solid Minor": "string",
-							"Solid Next": "string | false",
-							"Voby": "string"
 						}
 					},
 					"vspace": {
@@ -12830,6 +13361,21 @@
 							"Solid Minor": "'data' | 'ref' | 'object'",
 							"Solid Next": "'data' | 'ref' | 'object' | false"
 						}
+					},
+					"valueType": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"deprecated": true,
+						"name": "valueType",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLParamElement#htmlparamelement.valuetype",
+						"values": {
+							"Chrome": "string",
+							"Firefox": "string"
+						}
 					}
 				},
 				"name": "param",
@@ -13142,6 +13688,20 @@
 							"Solid Next": "string | false"
 						}
 					},
+					"attributionSrc": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"experimental": true,
+						"name": "attributionSrc",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLScriptElement#htmlscriptelement.attributionsrc",
+						"values": {
+							"Chrome": "string"
+						}
+					},
 					"blocking": {
 						"attr": true,
 						"attrChrome": true,
@@ -13227,6 +13787,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLScriptElement#htmlscriptelement.crossorigin",
 						"values": {
+							"Chrome": "string",
+							"Firefox": "string",
 							"Preact": "'anonymous' | 'use-credentials'",
 							"React": "'anonymous' | 'use-credentials' | ''",
 							"Solid Main": "'anonymous' | 'use-credentials' | ''",
@@ -13292,6 +13854,20 @@
 							"Solid Main": "'high' | 'low' | 'auto'",
 							"Solid Minor": "'high' | 'low' | 'auto'",
 							"Solid Next": "'high' | 'low' | 'auto' | false"
+						}
+					},
+					"fetchPriority": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"name": "fetchPriority",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLScriptElement#htmlscriptelement.fetchpriority",
+						"values": {
+							"Chrome": "string",
+							"Firefox": "string"
 						}
 					},
 					"for": {
@@ -13377,6 +13953,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLScriptElement#htmlscriptelement.nomodule",
 						"values": {
+							"Chrome": "boolean",
+							"Firefox": "boolean",
 							"Preact": "boolean",
 							"React": "boolean",
 							"Solid Main": "boolean",
@@ -13433,6 +14011,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLScriptElement#htmlscriptelement.referrerpolicy",
 						"values": {
+							"Chrome": "string",
+							"Firefox": "string",
 							"Preact": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 							"React": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 							"Solid Main": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
@@ -14267,6 +14847,21 @@
 							"React": "string"
 						}
 					},
+					"bgColor": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"deprecated": true,
+						"name": "bgColor",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableElement#htmltableelement.bgcolor",
+						"values": {
+							"Chrome": "string",
+							"Firefox": "string"
+						}
+					},
 					"border": {
 						"attr": true,
 						"attrChrome": true,
@@ -14282,6 +14877,24 @@
 							"Firefox": "string",
 							"Pota": "number | string",
 							"React": "number"
+						}
+					},
+					"cellPadding": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"deprecated": true,
+						"name": "cellPadding",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableElement#htmltableelement.cellpadding",
+						"values": {
+							"Chrome": "string",
+							"Firefox": "string",
+							"Preact": "string",
+							"React": "number | string",
+							"Voby": "number | string"
 						}
 					},
 					"cellpadding": {
@@ -14301,17 +14914,19 @@
 							"Vue": "number | string"
 						}
 					},
-					"cellPadding": {
+					"cellSpacing": {
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
 						"deprecated": true,
-						"name": "cellPadding",
+						"name": "cellSpacing",
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableElement#htmltableelement.cellpadding",
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableElement#htmltableelement.cellspacing",
 						"values": {
+							"Chrome": "string",
+							"Firefox": "string",
 							"Preact": "string",
 							"React": "number | string",
 							"Voby": "number | string"
@@ -14332,22 +14947,6 @@
 							"Firefox": "string",
 							"Pota": "number | string",
 							"Vue": "number | string"
-						}
-					},
-					"cellSpacing": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"deprecated": true,
-						"name": "cellSpacing",
-						"prop": true,
-						"propChrome": true,
-						"propFirefox": true,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableElement#htmltableelement.cellspacing",
-						"values": {
-							"Preact": "string",
-							"React": "number | string",
-							"Voby": "number | string"
 						}
 					},
 					"frame": {
@@ -14515,6 +15114,21 @@
 							"Firefox": "string",
 							"Pota": "'baseline' | 'bottom' | 'middle' | 'top'"
 						}
+					},
+					"vAlign": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"deprecated": true,
+						"name": "vAlign",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableSectionElement#htmltablesectionelement.valign",
+						"values": {
+							"Chrome": "string",
+							"Firefox": "string"
+						}
 					}
 				},
 				"name": "tbody",
@@ -14614,6 +15228,21 @@
 							"Solid Next": "string | false"
 						}
 					},
+					"bgColor": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"deprecated": true,
+						"name": "bgColor",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableCellElement#htmltablecellelement.bgcolor",
+						"values": {
+							"Chrome": "string",
+							"Firefox": "string"
+						}
+					},
 					"char": {
 						"attr": true,
 						"attrChrome": true,
@@ -14682,6 +15311,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableCellElement#htmltablecellelement.colspan",
 						"values": {
+							"Chrome": "number | string",
+							"Firefox": "number | string",
 							"Preact": "number",
 							"React": "number",
 							"Solid Main": "number | string",
@@ -14754,6 +15385,21 @@
 							"Solid Next": "true | false | ''"
 						}
 					},
+					"noWrap": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"deprecated": true,
+						"name": "noWrap",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableCellElement#htmltablecellelement.nowrap",
+						"values": {
+							"Chrome": "boolean",
+							"Firefox": "boolean"
+						}
+					},
 					"rowspan": {
 						"attr": true,
 						"attrChrome": true,
@@ -14784,6 +15430,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableCellElement#htmltablecellelement.rowspan",
 						"values": {
+							"Chrome": "number | string",
+							"Firefox": "number | string",
 							"Preact": "number",
 							"React": "number",
 							"Solid Main": "number | string",
@@ -14836,6 +15484,21 @@
 							"Solid Next": "'baseline' | 'bottom' | 'middle' | 'top' | false",
 							"Voby": "'top' | 'middle' | 'bottom' | 'baseline'",
 							"Vue": "'top' | 'middle' | 'bottom' | 'baseline'"
+						}
+					},
+					"vAlign": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"deprecated": true,
+						"name": "vAlign",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableCellElement#htmltablecellelement.valign",
+						"values": {
+							"Chrome": "string",
+							"Firefox": "string"
 						}
 					},
 					"width": {
@@ -14908,6 +15571,20 @@
 							"Solid Next": "true | false | ''"
 						}
 					},
+					"shadowRootClonable": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"name": "shadowRootClonable",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTemplateElement#htmltemplateelement.shadowrootclonable",
+						"values": {
+							"Chrome": "boolean",
+							"Firefox": "boolean"
+						}
+					},
 					"shadowrootdelegatesfocus": {
 						"attr": true,
 						"attrChrome": true,
@@ -14924,6 +15601,20 @@
 							"Solid Main": "boolean",
 							"Solid Minor": "'' | boolean",
 							"Solid Next": "true | false | ''"
+						}
+					},
+					"shadowRootDelegatesFocus": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"name": "shadowRootDelegatesFocus",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTemplateElement#htmltemplateelement.shadowrootdelegatesfocus",
+						"values": {
+							"Chrome": "boolean",
+							"Firefox": "boolean"
 						}
 					},
 					"shadowrootmode": {
@@ -14944,6 +15635,20 @@
 							"Solid Next": "'open' | 'closed' | false"
 						}
 					},
+					"shadowRootMode": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"name": "shadowRootMode",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTemplateElement#htmltemplateelement.shadowrootmode",
+						"values": {
+							"Chrome": "string",
+							"Firefox": "string"
+						}
+					},
 					"shadowrootserializable": {
 						"attr": true,
 						"attrChrome": true,
@@ -14961,6 +15666,21 @@
 							"Solid Main": "boolean",
 							"Solid Minor": "'' | boolean",
 							"Solid Next": "true | false | ''"
+						}
+					},
+					"shadowRootSerializable": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"experimental": true,
+						"name": "shadowRootSerializable",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTemplateElement#htmltemplateelement.shadowrootserializable",
+						"values": {
+							"Chrome": "boolean",
+							"Firefox": "boolean"
 						}
 					}
 				},
@@ -15124,6 +15844,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTextAreaElement#htmltextareaelement.dirname",
 						"values": {
+							"Chrome": "string",
+							"Firefox": "string",
 							"Preact": "string",
 							"React": "string",
 							"Voby": "string"
@@ -15217,6 +15939,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTextAreaElement#htmltextareaelement.maxlength",
 						"values": {
+							"Chrome": "number | string",
+							"Firefox": "number | string",
 							"Preact": "number",
 							"React": "number",
 							"Solid Main": "number | string",
@@ -15255,6 +15979,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTextAreaElement#htmltextareaelement.minlength",
 						"values": {
+							"Chrome": "number | string",
+							"Firefox": "number | string",
 							"Preact": "number",
 							"React": "number",
 							"Solid Main": "number | string",
@@ -15352,6 +16078,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTextAreaElement#htmltextareaelement.readonly",
 						"values": {
+							"Chrome": "boolean",
+							"Firefox": "boolean",
 							"Preact": "boolean",
 							"React": "boolean",
 							"Solid Main": "boolean",
@@ -15537,6 +16265,21 @@
 							"Firefox": "string",
 							"Pota": "'baseline' | 'bottom' | 'middle' | 'top'"
 						}
+					},
+					"vAlign": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"deprecated": true,
+						"name": "vAlign",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableSectionElement#htmltablesectionelement.valign",
+						"values": {
+							"Chrome": "string",
+							"Firefox": "string"
+						}
 					}
 				},
 				"name": "tfoot",
@@ -15635,6 +16378,21 @@
 							"Solid Next": "string | false"
 						}
 					},
+					"bgColor": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"deprecated": true,
+						"name": "bgColor",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableCellElement#htmltablecellelement.bgcolor",
+						"values": {
+							"Chrome": "string",
+							"Firefox": "string"
+						}
+					},
 					"char": {
 						"attr": true,
 						"attrChrome": true,
@@ -15703,6 +16461,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableCellElement#htmltablecellelement.colspan",
 						"values": {
+							"Chrome": "number | string",
+							"Firefox": "number | string",
 							"Preact": "number",
 							"React": "number",
 							"Solid Main": "number | string",
@@ -15771,6 +16531,21 @@
 							"Solid Next": "true | false | ''"
 						}
 					},
+					"noWrap": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"deprecated": true,
+						"name": "noWrap",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableCellElement#htmltablecellelement.nowrap",
+						"values": {
+							"Chrome": "boolean",
+							"Firefox": "boolean"
+						}
+					},
 					"rowspan": {
 						"attr": true,
 						"attrChrome": true,
@@ -15801,6 +16576,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableCellElement#htmltablecellelement.rowspan",
 						"values": {
+							"Chrome": "number | string",
+							"Firefox": "number | string",
 							"Preact": "number",
 							"React": "number",
 							"Solid Main": "number | string",
@@ -15848,6 +16625,21 @@
 							"Solid Main": "'baseline' | 'bottom' | 'middle' | 'top'",
 							"Solid Minor": "'baseline' | 'bottom' | 'middle' | 'top'",
 							"Solid Next": "'baseline' | 'bottom' | 'middle' | 'top' | false"
+						}
+					},
+					"vAlign": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"deprecated": true,
+						"name": "vAlign",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableCellElement#htmltablecellelement.valign",
+						"values": {
+							"Chrome": "string",
+							"Firefox": "string"
 						}
 					},
 					"width": {
@@ -15960,6 +16752,21 @@
 							"Firefox": "string",
 							"Pota": "'baseline' | 'bottom' | 'middle' | 'top'"
 						}
+					},
+					"vAlign": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"deprecated": true,
+						"name": "vAlign",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableSectionElement#htmltablesectionelement.valign",
+						"values": {
+							"Chrome": "string",
+							"Firefox": "string"
+						}
 					}
 				},
 				"name": "thead",
@@ -16005,6 +16812,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTimeElement#htmltimeelement.datetime",
 						"values": {
+							"Chrome": "string",
+							"Firefox": "string",
 							"Preact": "string",
 							"React": "string",
 							"Solid Main": "string",
@@ -16072,6 +16881,21 @@
 							"Pota": "string"
 						}
 					},
+					"bgColor": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"deprecated": true,
+						"name": "bgColor",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableRowElement#htmltablerowelement.bgcolor",
+						"values": {
+							"Chrome": "string",
+							"Firefox": "string"
+						}
+					},
 					"char": {
 						"attr": true,
 						"attrChrome": true,
@@ -16118,6 +16942,21 @@
 							"Chrome": "string",
 							"Firefox": "string",
 							"Pota": "'baseline' | 'bottom' | 'middle' | 'top'"
+						}
+					},
+					"vAlign": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"deprecated": true,
+						"name": "vAlign",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableRowElement#htmltablerowelement.valign",
+						"values": {
+							"Chrome": "string",
+							"Firefox": "string"
 						}
 					}
 				},
@@ -16740,6 +17579,7 @@
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement#htmlmediaelement.controlslist",
 						"values": {
+							"Chrome": "string",
 							"Preact": "string",
 							"React": "string",
 							"Voby": "string"
@@ -16777,6 +17617,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement#htmlmediaelement.crossorigin",
 						"values": {
+							"Chrome": "string",
+							"Firefox": "string",
 							"Preact": "'anonymous' | 'use-credentials'",
 							"React": "'anonymous' | 'use-credentials' | ''",
 							"Solid Main": "'anonymous' | 'use-credentials' | ''",
@@ -16855,6 +17697,8 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#htmlvideoelement.disablepictureinpicture",
 						"values": {
+							"Chrome": "boolean",
+							"Firefox": "boolean",
 							"Preact": "boolean",
 							"React": "boolean",
 							"Voby": "boolean",
@@ -16891,6 +17735,7 @@
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement#htmlmediaelement.disableremoteplayback",
 						"values": {
+							"Chrome": "boolean",
 							"Preact": "boolean",
 							"React": "boolean",
 							"Voby": "boolean",
@@ -17063,6 +17908,23 @@
 							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 						}
 					},
+					"onEncrypted": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"inherited": true,
+						"name": "onEncrypted",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#htmlvideoelement.onencrypted",
+						"values": {
+							"Solid Main": "EventHandlerUnion<T, MediaEncryptedEvent>",
+							"Solid Minor": "EventHandlerUnion<T, MediaEncryptedEvent>",
+							"Solid Next": "EventHandlerUnion<T, MediaEncryptedEvent>"
+						},
+						"warn": true
+					},
 					"onencrypted": {
 						"attr": true,
 						"attrChrome": true,
@@ -17081,39 +17943,6 @@
 							"Solid Next": "EventHandlerUnion<T, MediaEncryptedEvent>"
 						}
 					},
-					"onEncrypted": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"inherited": true,
-						"name": "onEncrypted",
-						"prop": false,
-						"propChrome": false,
-						"propFirefox": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#htmlvideoelement.onencrypted",
-						"values": {
-							"Solid Main": "EventHandlerUnion<T, MediaEncryptedEvent>",
-							"Solid Minor": "EventHandlerUnion<T, MediaEncryptedEvent>",
-							"Solid Next": "EventHandlerUnion<T, MediaEncryptedEvent>"
-						},
-						"warn": true
-					},
-					"onenterpictureinpicture": {
-						"attr": true,
-						"attrChrome": true,
-						"attrFirefox": false,
-						"name": "onenterpictureinpicture",
-						"prop": true,
-						"propChrome": true,
-						"propFirefox": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#htmlvideoelement.onenterpictureinpicture",
-						"values": {
-							"Chrome": "event",
-							"Solid Main": "EventHandlerUnion<T, PictureInPictureEvent>",
-							"Solid Minor": "EventHandlerUnion<T, PictureInPictureEvent>",
-							"Solid Next": "EventHandlerUnion<T, PictureInPictureEvent>"
-						}
-					},
 					"onEnterPictureInPicture": {
 						"attr": false,
 						"attrChrome": false,
@@ -17130,15 +17959,15 @@
 						},
 						"warn": true
 					},
-					"onleavepictureinpicture": {
+					"onenterpictureinpicture": {
 						"attr": true,
 						"attrChrome": true,
 						"attrFirefox": false,
-						"name": "onleavepictureinpicture",
+						"name": "onenterpictureinpicture",
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#htmlvideoelement.onleavepictureinpicture",
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#htmlvideoelement.onenterpictureinpicture",
 						"values": {
 							"Chrome": "event",
 							"Solid Main": "EventHandlerUnion<T, PictureInPictureEvent>",
@@ -17162,22 +17991,20 @@
 						},
 						"warn": true
 					},
-					"onwaitingforkey": {
+					"onleavepictureinpicture": {
 						"attr": true,
 						"attrChrome": true,
-						"attrFirefox": true,
-						"inherited": true,
-						"name": "onwaitingforkey",
+						"attrFirefox": false,
+						"name": "onleavepictureinpicture",
 						"prop": true,
 						"propChrome": true,
-						"propFirefox": true,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement#htmlmediaelement.onwaitingforkey",
+						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#htmlvideoelement.onleavepictureinpicture",
 						"values": {
 							"Chrome": "event",
-							"Firefox": "event",
-							"Solid Main": "EventHandlerUnion<T, Event>",
-							"Solid Minor": "EventHandlerUnion<T, Event>",
-							"Solid Next": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, PictureInPictureEvent>",
+							"Solid Minor": "EventHandlerUnion<T, PictureInPictureEvent>",
+							"Solid Next": "EventHandlerUnion<T, PictureInPictureEvent>"
 						}
 					},
 					"onWaitingForKey": {
@@ -17196,6 +18023,24 @@
 							"Solid Next": "EventHandlerUnion<T, Event>"
 						},
 						"warn": true
+					},
+					"onwaitingforkey": {
+						"attr": true,
+						"attrChrome": true,
+						"attrFirefox": true,
+						"inherited": true,
+						"name": "onwaitingforkey",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement#htmlmediaelement.onwaitingforkey",
+						"values": {
+							"Chrome": "event",
+							"Firefox": "event",
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
+						}
 					},
 					"playbackRate": {
 						"attr": false,
@@ -17240,6 +18085,7 @@
 						"propFirefox": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#htmlvideoelement.playsinline",
 						"values": {
+							"Chrome": "boolean",
 							"Preact": "boolean",
 							"React": "boolean",
 							"Voby": "boolean"
@@ -18038,6 +18884,7 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGAElement#svgaelement.referrerpolicy",
 						"values": {
+							"Firefox": "string",
 							"Preact": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 							"React": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
 							"Solid Main": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
@@ -37418,6 +38265,19 @@
 							"Firefox": "string"
 						}
 					},
+					"crossOrigin": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"name": "crossOrigin",
+						"prop": true,
+						"propChrome": false,
+						"propFirefox": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEImageElement#svgfeimageelement.crossorigin",
+						"values": {
+							"Firefox": "string"
+						}
+					},
 					"cursor": {
 						"attr": false,
 						"attrChrome": false,
@@ -48138,6 +48998,20 @@
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGImageElement#svgimageelement.crossorigin",
+						"values": {
+							"Chrome": "string",
+							"Firefox": "string"
+						}
+					},
+					"crossOrigin": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"name": "crossOrigin",
+						"prop": true,
+						"propChrome": true,
+						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGImageElement#svgimageelement.crossorigin",
 						"values": {
 							"Chrome": "string",
@@ -59016,6 +59890,7 @@
 						"propFirefox": true,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGScriptElement#svgscriptelement.crossorigin",
 						"values": {
+							"Firefox": "string",
 							"Preact": "'anonymous' | 'use-credentials'",
 							"React": "'anonymous' | 'use-credentials' | ''",
 							"Solid Main": "'anonymous' | 'use-credentials' | ''",

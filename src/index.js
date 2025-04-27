@@ -522,12 +522,32 @@ for (const ns in DATA.elements) {
 				: checkMDNMainValue('experimental')
 		}
 
+		// libs
+		for (const lib of libs) {
+			if (lib.tagValues[tagName]) {
+				for (const [k, value] of entries(lib.tagValues[tagName])) {
+					tag.keys[k] = tag.keys[k] || { values: {} }
+					tag.keys[k].values[lib.name] = value
+				}
+			}
+		}
+
 		// chrome
 		for (const k in chrome[ns].elements[tagName].attributes) {
 			tag.keys[k] = tag.keys[k] || { values: {} }
 			tag.keys[k].values.Chrome = uniqueTypes(
 				chrome[ns].elements[tagName].attributes[k],
 			)
+		}
+		for (let k of chrome[ns].elements[tagName].setters) {
+			k = k.split('.')[1]
+			if (tag.keys[k] || tag.keys[k.toLowerCase()]) {
+				tag.keys[k] = tag.keys[k] || { values: {} }
+				tag.keys[k].values.Chrome =
+					tag.keys[k].values.Chrome || tag.keys[k.toLowerCase()]
+						? tag.keys[k.toLowerCase()].values.Chrome
+						: undefined
+			}
 		}
 		// firefox
 		for (const k in firefox[ns].elements[tagName].attributes) {
@@ -536,14 +556,14 @@ for (const ns in DATA.elements) {
 				firefox[ns].elements[tagName].attributes[k],
 			)
 		}
-
-		// libs
-		for (const lib of libs) {
-			if (lib.tagValues[tagName]) {
-				for (const [k, value] of entries(lib.tagValues[tagName])) {
-					tag.keys[k] = tag.keys[k] || { values: {} }
-					tag.keys[k].values[lib.name] = value
-				}
+		for (let k of firefox[ns].elements[tagName].setters) {
+			k = k.split('.')[1]
+			if (tag.keys[k] || tag.keys[k.toLowerCase()]) {
+				tag.keys[k] = tag.keys[k] || { values: {} }
+				tag.keys[k].values.Firefox =
+					tag.keys[k].values.Firefox || tag.keys[k.toLowerCase()]
+						? tag.keys[k.toLowerCase()].values.Firefox
+						: undefined
 			}
 		}
 
