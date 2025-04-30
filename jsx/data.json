@@ -4144,7 +4144,7 @@
 				"keys": {},
 				"name": "abbr",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"acronym": {
@@ -4156,7 +4156,7 @@
 				"keys": {},
 				"name": "acronym",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"address": {
@@ -4168,7 +4168,7 @@
 				"keys": {},
 				"name": "address",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"applet": {
@@ -4225,6 +4225,7 @@
 						"attrFirefox": false,
 						"attrName": "attributionsrc",
 						"danger": false,
+						"experimental": true,
 						"globalAttribute": false,
 						"inherited": false,
 						"interface": "HTMLAreaElement",
@@ -4248,6 +4249,7 @@
 						"attrFirefox": false,
 						"attrName": "attributionsrc",
 						"danger": false,
+						"experimental": true,
 						"globalAttribute": false,
 						"inherited": false,
 						"interface": "HTMLAreaElement",
@@ -4842,7 +4844,7 @@
 				"keys": {},
 				"name": "article",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"aside": {
@@ -4854,7 +4856,7 @@
 				"keys": {},
 				"name": "aside",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"audio": {
@@ -5570,7 +5572,7 @@
 				"keys": {},
 				"name": "b",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"base": {
@@ -5653,7 +5655,7 @@
 				"keys": {},
 				"name": "basefont",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"bdi": {
@@ -5665,7 +5667,7 @@
 				"keys": {},
 				"name": "bdi",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"bdo": {
@@ -5695,7 +5697,7 @@
 				},
 				"name": "bdo",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"bgsound": {
@@ -5719,7 +5721,7 @@
 				"keys": {},
 				"name": "big",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"blink": {
@@ -6610,7 +6612,6 @@
 						"attrFirefox": false,
 						"attrName": "command",
 						"danger": false,
-						"experimental": true,
 						"globalAttribute": false,
 						"inherited": false,
 						"interface": "HTMLButtonElement",
@@ -6635,7 +6636,6 @@
 						"attrChrome": true,
 						"attrFirefox": true,
 						"danger": false,
-						"experimental": true,
 						"globalAttribute": false,
 						"inherited": false,
 						"name": "commandfor",
@@ -6656,7 +6656,6 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
-						"experimental": true,
 						"globalAttribute": false,
 						"inherited": false,
 						"name": "commandFor",
@@ -6676,7 +6675,6 @@
 						"attrFirefox": false,
 						"attrName": "",
 						"danger": false,
-						"experimental": true,
 						"globalAttribute": false,
 						"inherited": false,
 						"interface": "HTMLButtonElement",
@@ -7529,7 +7527,7 @@
 				"keys": {},
 				"name": "center",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"cite": {
@@ -7541,7 +7539,7 @@
 				"keys": {},
 				"name": "cite",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"code": {
@@ -7553,7 +7551,7 @@
 				"keys": {},
 				"name": "code",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"col": {
@@ -8123,7 +8121,7 @@
 				"keys": {},
 				"name": "dd",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"del": {
@@ -8317,7 +8315,7 @@
 				"keys": {},
 				"name": "dfn",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"dialog": {
@@ -8333,6 +8331,7 @@
 						"attrFirefox": false,
 						"attrName": "closedby",
 						"danger": false,
+						"experimental": true,
 						"globalAttribute": false,
 						"inherited": false,
 						"interface": "HTMLDialogElement",
@@ -8354,6 +8353,7 @@
 						"attrFirefox": false,
 						"attrName": "closedby",
 						"danger": false,
+						"experimental": true,
 						"globalAttribute": false,
 						"inherited": false,
 						"interface": "HTMLDialogElement",
@@ -8555,7 +8555,7 @@
 				},
 				"name": "dialog",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": ["cancel_event", "close_event", "close", "show", "showModal"],
+				"notIncludedMDN": ["cancel_event", "close_event", "close", "requestClose", "show", "showModal"],
 				"readonly": []
 			},
 			"dir": {
@@ -8673,7 +8673,7 @@
 				"keys": {},
 				"name": "dt",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"em": {
@@ -8685,7 +8685,7 @@
 				"keys": {},
 				"name": "em",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"embed": {
@@ -8971,7 +8971,7 @@
 				"keys": {},
 				"name": "figcaption",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"figure": {
@@ -8983,7 +8983,7 @@
 				"keys": {},
 				"name": "figure",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"font": {
@@ -9074,7 +9074,7 @@
 				"keys": {},
 				"name": "footer",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"form": {
@@ -10609,7 +10609,7 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
-						"deprecated": true,
+						"danger": true,
 						"globalAttribute": false,
 						"inherited": false,
 						"name": "profile",
@@ -10637,7 +10637,7 @@
 				"keys": {},
 				"name": "header",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"hgroup": {
@@ -10649,7 +10649,7 @@
 				"keys": {},
 				"name": "hgroup",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"hr": {
@@ -10866,7 +10866,7 @@
 				"keys": {},
 				"name": "i",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"iframe": {
@@ -14415,6 +14415,7 @@
 						"inherited": false,
 						"interface": "HTMLInputElement",
 						"name": "webkitdirectory",
+						"nonstandard": true,
 						"prop": true,
 						"propChrome": true,
 						"propFirefox": true,
@@ -14458,7 +14459,7 @@
 				},
 				"name": "input",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": ["cancel_event", "checkValidity", "invalid_event", "mozactionhint", "reportValidity", "search_event", "select_event", "select", "selectionchange_event", "setCustomValidity", "setRangeText", "setSelectionRange", "showPicker", "stepDown", "stepUp"],
+				"notIncludedMDN": ["alpha", "cancel_event", "checkValidity", "colorSpace", "colorspace", "invalid_event", "mozactionhint", "reportValidity", "search_event", "select_event", "select", "selectionchange_event", "setCustomValidity", "setRangeText", "setSelectionRange", "showPicker", "stepDown", "stepUp"],
 				"readonly": ["HTMLInputElement.form", "HTMLInputElement.labels", "HTMLInputElement.list", "HTMLInputElement.textLength", "HTMLInputElement.validationMessage", "HTMLInputElement.validity", "HTMLInputElement.webkitEntries", "HTMLInputElement.willValidate"]
 			},
 			"ins": {
@@ -14578,7 +14579,7 @@
 				"keys": {},
 				"name": "kbd",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"keygen": {
@@ -15743,7 +15744,7 @@
 				"keys": {},
 				"name": "main",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"map": {
@@ -15797,7 +15798,7 @@
 				"keys": {},
 				"name": "mark",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"marquee": {
@@ -16710,7 +16711,7 @@
 				"keys": {},
 				"name": "nav",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"nextid": {
@@ -16734,7 +16735,7 @@
 				"keys": {},
 				"name": "nobr",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"noembed": {
@@ -16746,7 +16747,7 @@
 				"keys": {},
 				"name": "noembed",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"noframes": {
@@ -16758,7 +16759,7 @@
 				"keys": {},
 				"name": "noframes",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"noindex": {
@@ -16782,7 +16783,7 @@
 				"keys": {},
 				"name": "noscript",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"object": {
@@ -18121,7 +18122,7 @@
 				"keys": {},
 				"name": "plaintext",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"pre": {
@@ -18158,11 +18159,10 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
-						"deprecated": true,
+						"danger": true,
 						"globalAttribute": false,
 						"inherited": false,
 						"name": "wrap",
-						"nonstandard": true,
 						"prop": false,
 						"propChrome": false,
 						"propFirefox": false,
@@ -18300,7 +18300,7 @@
 				"keys": {},
 				"name": "rb",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"rp": {
@@ -18312,7 +18312,7 @@
 				"keys": {},
 				"name": "rp",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"rt": {
@@ -18324,7 +18324,7 @@
 				"keys": {},
 				"name": "rt",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"rtc": {
@@ -18336,7 +18336,7 @@
 				"keys": {},
 				"name": "rtc",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"ruby": {
@@ -18348,7 +18348,7 @@
 				"keys": {},
 				"name": "ruby",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"s": {
@@ -18360,7 +18360,7 @@
 				"keys": {},
 				"name": "s",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"samp": {
@@ -18372,7 +18372,7 @@
 				"keys": {},
 				"name": "samp",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"script": {
@@ -19037,7 +19037,7 @@
 				"keys": {},
 				"name": "search",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"section": {
@@ -19049,7 +19049,7 @@
 				"keys": {},
 				"name": "section",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"select": {
@@ -19474,7 +19474,7 @@
 				"keys": {},
 				"name": "small",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"source": {
@@ -19741,7 +19741,7 @@
 				"keys": {},
 				"name": "strike",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"strong": {
@@ -19753,7 +19753,7 @@
 				"keys": {},
 				"name": "strong",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"style": {
@@ -19944,7 +19944,7 @@
 				"keys": {},
 				"name": "sub",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"summary": {
@@ -19956,7 +19956,7 @@
 				"keys": {},
 				"name": "summary",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": ["display_list_item"],
+				"notIncludedMDN": ["display_list_item", "load_event"],
 				"readonly": []
 			},
 			"sup": {
@@ -19968,7 +19968,7 @@
 				"keys": {},
 				"name": "sup",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"table": {
@@ -23748,7 +23748,7 @@
 				"keys": {},
 				"name": "tt",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"u": {
@@ -23760,7 +23760,7 @@
 				"keys": {},
 				"name": "u",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"ul": {
@@ -23829,7 +23829,7 @@
 				"keys": {},
 				"name": "var",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"video": {
@@ -24815,7 +24815,7 @@
 				"keys": {},
 				"name": "wbr",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"webview": {
@@ -25273,7 +25273,7 @@
 				},
 				"name": "webview",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": [],
+				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
 			"xmp": {
@@ -68728,7 +68728,7 @@
 				},
 				"name": "path",
 				"namespace": "http://www.w3.org/2000/svg",
-				"notIncludedMDN": ["createSVGPathSegArcAbs", "createSVGPathSegArcRel", "createSVGPathSegClosePath", "createSVGPathSegCurvetoCubicAbs", "createSVGPathSegCurvetoCubicRel", "createSVGPathSegCurvetoCubicSmoothAbs", "createSVGPathSegCurvetoCubicSmoothRel", "createSVGPathSegCurvetoQuadraticAbs", "createSVGPathSegCurvetoQuadraticRel", "createSVGPathSegCurvetoQuadraticSmoothAbs", "createSVGPathSegCurvetoQuadraticSmoothRel", "createSVGPathSegLinetoAbs", "createSVGPathSegLinetoHorizontalAbs", "createSVGPathSegLinetoHorizontalRel", "createSVGPathSegLinetoRel", "createSVGPathSegLinetoVerticalAbs", "createSVGPathSegLinetoVerticalRel", "createSVGPathSegMovetoAbs", "createSVGPathSegMovetoRel", "getPathSegAtLength"],
+				"notIncludedMDN": ["createSVGPathSegArcAbs", "createSVGPathSegArcRel", "createSVGPathSegClosePath", "createSVGPathSegCurvetoCubicAbs", "createSVGPathSegCurvetoCubicRel", "createSVGPathSegCurvetoCubicSmoothAbs", "createSVGPathSegCurvetoCubicSmoothRel", "createSVGPathSegCurvetoQuadraticAbs", "createSVGPathSegCurvetoQuadraticRel", "createSVGPathSegCurvetoQuadraticSmoothAbs", "createSVGPathSegCurvetoQuadraticSmoothRel", "createSVGPathSegLinetoAbs", "createSVGPathSegLinetoHorizontalAbs", "createSVGPathSegLinetoHorizontalRel", "createSVGPathSegLinetoRel", "createSVGPathSegLinetoVerticalAbs", "createSVGPathSegLinetoVerticalRel", "createSVGPathSegMovetoAbs", "createSVGPathSegMovetoRel", "getPathData", "getPathSegAtLength", "getPathSegmentAtLength", "getPointAtLength", "getTotalLength", "setPathData"],
 				"readonly": ["SVGGeometryElement.pathLength", "SVGGraphicsElement.farthestViewportElement", "SVGGraphicsElement.nearestViewportElement", "SVGGraphicsElement.requiredExtensions", "SVGGraphicsElement.systemLanguage", "SVGGraphicsElement.transform"]
 			},
 			"pattern": {
