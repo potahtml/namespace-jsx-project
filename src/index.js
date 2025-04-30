@@ -33,6 +33,8 @@ import {
 	fetchTable,
 	frameworkSpecific,
 	fixedTsEventsInterfaces,
+	confirmedAttributes,
+	globalAttributes,
 } from './data.js'
 
 import {
@@ -54,6 +56,13 @@ const DATA = {
 	eventsLib: {},
 	aria: {},
 	elements: {},
+	attributesAndProperties: {
+		attributes: [],
+		properties: [],
+		propertiesWithCase: [],
+		boolean: [],
+		booleanWithCase: [],
+	},
 }
 
 // Write to disk lib interfaces, index interfaces and tagNames
@@ -443,12 +452,10 @@ for (const ns in DATA.elements) {
 		tag.namespace = ns
 		tag.elementURL = ElementURL(ns, tagName)
 		tag.description = ''
-		tag.interface = chrome[ns].elements[tagName].interface
-		tag.interfaceURL = InterfaceURL(
-			ns,
-			tag,
-			chrome[ns].elements[tagName].interface,
-		)
+		tag.interface =
+			chrome[ns].elements[tagName].interface ||
+			firefox[ns].elements[tagName].interface
+		tag.interfaceURL = InterfaceURL(ns, tag, tag.interface)
 		tag.keys = {}
 
 		// mdn stuff
@@ -533,38 +540,37 @@ for (const ns in DATA.elements) {
 		}
 
 		// chrome
-		for (const k in chrome[ns].elements[tagName].attributes) {
+		for (const k in chrome[ns].elements[tagName].keys) {
+			const key = chrome[ns].elements[tagName].keys[k]
+
 			tag.keys[k] = tag.keys[k] || { values: {} }
-			tag.keys[k].values.Chrome = uniqueTypes(
-				chrome[ns].elements[tagName].attributes[k],
-			)
+			tag.keys[k].values.Chrome = uniqueTypes(key.value)
+
+			tag.keys[k].propChrome = key.prop
+			tag.keys[k].attrChrome = key.attr
+
+			tag.keys[k].interface = key.interface
+			tag.keys[k].readonly = key.readonly
+
+			tag.keys[k].propName = key.propName
+			tag.keys[k].attrName = key.attrName
 		}
-		for (let k of chrome[ns].elements[tagName].setters) {
-			k = k.split('.')[1]
-			if (tag.keys[k] || tag.keys[k.toLowerCase()]) {
-				tag.keys[k] = tag.keys[k] || { values: {} }
-				tag.keys[k].values.Chrome =
-					tag.keys[k].values.Chrome || tag.keys[k.toLowerCase()]
-						? tag.keys[k.toLowerCase()].values.Chrome
-						: undefined
-			}
-		}
+
 		// firefox
-		for (const k in firefox[ns].elements[tagName].attributes) {
+		for (const k in firefox[ns].elements[tagName].keys) {
+			const key = firefox[ns].elements[tagName].keys[k]
+
 			tag.keys[k] = tag.keys[k] || { values: {} }
-			tag.keys[k].values.Firefox = uniqueTypes(
-				firefox[ns].elements[tagName].attributes[k],
-			)
-		}
-		for (let k of firefox[ns].elements[tagName].setters) {
-			k = k.split('.')[1]
-			if (tag.keys[k] || tag.keys[k.toLowerCase()]) {
-				tag.keys[k] = tag.keys[k] || { values: {} }
-				tag.keys[k].values.Firefox =
-					tag.keys[k].values.Firefox || tag.keys[k.toLowerCase()]
-						? tag.keys[k.toLowerCase()].values.Firefox
-						: undefined
-			}
+			tag.keys[k].values.Firefox = uniqueTypes(key.value)
+
+			tag.keys[k].propFirefox = key.prop
+			tag.keys[k].attrFirefox = key.attr
+
+			tag.keys[k].interface = tag.keys[k].interface || key.interface
+			tag.keys[k].readonly = tag.keys[k].readonly || key.readonly
+
+			tag.keys[k].propName = tag.keys[k].propName || key.propName
+			tag.keys[k].attrName = tag.keys[k].attrName || key.attrName
 		}
 
 		// vs code
@@ -578,11 +584,10 @@ for (const ns in DATA.elements) {
 			}*/
 		}
 
-		tag.setters = unique([
-			chrome[ns].elements[tagName].setters || [],
-			firefox[ns].elements[tagName].setters || [],
+		tag.readonly = unique([
+			chrome[ns].elements[tagName].readonly,
+			firefox[ns].elements[tagName].readonly,
 		])
-		tag.setters.sort()
 
 		for (const k in tag.keys) {
 			tag.keys[k].name = k
@@ -599,46 +604,37 @@ for (const ns in DATA.elements) {
 					tagName + '.' + tag.interface + '.' + k.toLowerCase()
 				]
 
-			// setters
-
-			const setterChrome = chrome[ns].elements[tagName].setters.find(
-				item => item.split('.')[1] === k,
-			)
-
-			const setterFirefox = firefox[ns].elements[
-				tagName
-			].setters.find(item => item.split('.')[1] === k)
-
 			// url
-			tag.keys[k].url = setterChrome
-				? KeyURL(
-						ns,
-						tagName,
-						setterChrome.split('.')[0],
-						setterChrome.split('.')[1],
-					)
+			tag.keys[k].url = tag.keys[k].interface
+				? KeyURL(ns, tagName, tag.keys[k].interface, k)
 				: KeyURL(ns, tagName, tag.interface, k)
 
 			// prop/attr
-			tag.keys[k].propChrome = !!setterChrome
-			tag.keys[k].attrChrome =
-				!!chrome[ns].elements[tagName].attributes[k]
 
-			tag.keys[k].propFirefox = !!setterFirefox
+			const isConfirmedAttribute =
+				confirmedAttributes[
+					tag.name + '.' + tag.interface + '.' + tag.keys[k].name
+				]
+
+			tag.keys[k].propChrome = tag.keys[k].propChrome || false
+			tag.keys[k].propFirefox = tag.keys[k].propFirefox || false
+
+			tag.keys[k].attrChrome =
+				tag.keys[k].attrChrome || isConfirmedAttribute || false
 			tag.keys[k].attrFirefox =
-				!!firefox[ns].elements[tagName].attributes[k]
+				tag.keys[k].attrFirefox || isConfirmedAttribute || false
 
 			tag.keys[k].prop =
 				tag.keys[k].propChrome || tag.keys[k].propFirefox
+
 			tag.keys[k].attr =
 				tag.keys[k].attrChrome || tag.keys[k].attrFirefox
 
-			if (
-				tag.keys[k].prop &&
-				!tag.setters.includes(tag.interface + '.' + k)
-			) {
-				tag.keys[k].inherited = true
-			}
+			tag.keys[k].globalAttribute = globalAttributes.includes(k)
+
+			tag.keys[k].readonly =
+				tag.keys[k].readonly ||
+				tag.readonly.some(x => x.split('.')[1] === k)
 
 			tag.keys[k].deprecated =
 				tag.keys[k].deprecated ||
@@ -656,12 +652,32 @@ for (const ns in DATA.elements) {
 
 			tag.keys[k].warn =
 				/[A-Z]/.test(k) &&
+				!/^on:?[A-Z]/.test(k) &&
 				// svg is XML so it has attributes with uppercase letters
 				ns !== 'http://www.w3.org/2000/svg' &&
 				tag !== 'webview' &&
 				!tag.keys[k].prop
 					? true
 					: undefined
+
+			if (
+				ns === 'http://www.w3.org/1999/xhtml' &&
+				tag.name !== 'webview'
+			) {
+				tag.keys[k].danger =
+					tag.keys[k].warn || tag.keys[k].deprecated || /^on/.test(k)
+						? undefined
+						: !tag.keys[k].attr &&
+							!tag.keys[k].prop &&
+							!tag.keys[k].globalAttribute
+			}
+
+			// when interface is empty/null is because this key is made up and doesnt exists
+			tag.keys[k].inherited =
+				!!(
+					tag.keys[k].interface &&
+					tag.interface !== tag.keys[k].interface
+				) && !tag.keys[k].warn
 		}
 
 		// mark inherited when also lower case
@@ -679,16 +695,13 @@ for (const ns in DATA.elements) {
 		// setters not included
 		const keys = Object.keys(tag.keys).map(x => x.toLowerCase())
 
-		tag.notIncludedSetters = tag.setters.filter(
-			x => !keys.includes(x.split('.')[1].toLowerCase()),
-		)
 		tag.notIncludedMDN = []
 
 		// mdn
 		try {
-			const settersNames = tag.setters.map(x => x.split('.')[1])
-
 			let mdnkeys = []
+
+			const readonlyKeys = tag.readonly.map(x => x.split('.')[1])
 
 			try {
 				const elementMDN = JSON.parse(
@@ -722,7 +735,7 @@ for (const ns in DATA.elements) {
 			tag.notIncludedMDN = mdnkeys
 				.filter(x => !keys.includes(x.toLowerCase()))
 				.filter(x => !mdnSkip.includes(x))
-				.filter(x => !settersNames.includes(x))
+				.filter(x => !readonlyKeys.includes(x))
 		} catch (e) {}
 	}
 }
@@ -735,6 +748,63 @@ for (const [ns, data] of entries(frameworkSpecific)) {
 		}
 	}
 }
+
+// attributes/properties
+
+DATA.attributesAndProperties = {
+	attributes: [],
+	properties: [],
+	propertiesWithCase: [],
+	boolean: [],
+	booleanWithCase: [],
+}
+
+for (const [ns, data] of entries(
+	DATA.elements['http://www.w3.org/1999/xhtml'],
+)) {
+	for (const [_, key] of entries(data.keys)) {
+		if (key.event) {
+			continue
+		}
+		if (key.attr) {
+			DATA.attributesAndProperties.attributes.push(key.name)
+		}
+		if (key.prop) {
+			DATA.attributesAndProperties.properties.push(key.name)
+
+			if (
+				key.values.Chrome === 'boolean' ||
+				key.values.Firefox === 'boolean'
+			) {
+				DATA.attributesAndProperties.boolean.push(key.name)
+
+				if (/[A-Z]/.test(key.name)) {
+					DATA.attributesAndProperties.booleanWithCase.push(key.name)
+				}
+			}
+
+			if (/[A-Z]/.test(key.name)) {
+				DATA.attributesAndProperties.propertiesWithCase.push(key.name)
+			}
+		}
+	}
+}
+
+DATA.attributesAndProperties.attributes = unique(
+	DATA.attributesAndProperties.attributes,
+)
+DATA.attributesAndProperties.properties = unique(
+	DATA.attributesAndProperties.properties,
+)
+DATA.attributesAndProperties.boolean = unique(
+	DATA.attributesAndProperties.boolean,
+)
+DATA.attributesAndProperties.propertiesWithCase = unique(
+	DATA.attributesAndProperties.propertiesWithCase,
+)
+DATA.attributesAndProperties.booleanWithCase = unique(
+	DATA.attributesAndProperties.booleanWithCase,
+)
 
 const columns = [
 	'Chrome',

@@ -1,7 +1,7 @@
 import puppeteer from 'puppeteer'
 
 import { parseFromURL } from './parse.js'
-import { read, unique } from './utils.js'
+import { fetchCached, read, unique, uniqueTypes } from './utils.js'
 
 /**
  * List of frameworks that provide a JSX namespace. Their interface
@@ -379,6 +379,83 @@ export const deprecatedTags = {
 	'http://www.w3.org/2000/svg': [],
 }
 
+export const globalAttributes = unique([
+	Object.keys(
+		JSON.parse(
+			await fetchCached(
+				'https://raw.githubusercontent.com/mdn/browser-compat-data/refs/heads/main/html/global_attributes.json',
+			),
+		).html.global_attributes,
+	).filter(x => x !== 'data_attributes'),
+
+	// a global attribute thats never mentioned as a global attribute
+	['elementtiming'],
+	// obsolete but still global
+	['xml:lang', 'xml:base'],
+	// mdn lacks rdfa attributes
+	[
+		'accesskey',
+		'anchor',
+		'autocapitalize',
+		'autocorrect',
+		'autofocus',
+		'class',
+		'contenteditable',
+		'dir',
+		'draggable',
+		'enterkeyhint',
+		'exportparts',
+		'hidden',
+		'id',
+		'inert',
+		'inputmode',
+		'is',
+		'itemid',
+		'itemprop',
+		'itemref',
+		'itemscope',
+		'itemtype',
+		'lang',
+		'nonce',
+		'part',
+		'popover',
+		'role',
+		'slot',
+		'spellcheck',
+		'style',
+		'tabindex',
+		'title',
+		'translate',
+		'virtualkeyboardpolicy',
+		'writingsuggestions',
+	],
+])
+
+// confirmed attributes
+
+export const confirmedAttributes = {
+	'button.HTMLButtonElement.form': true,
+	'fieldset.HTMLFieldSetElement.form': true,
+	'input.HTMLInputElement.form': true,
+	// 'label.HTMLLabelElement.form': true,
+	'meter.HTMLMeterElement.form': true,
+	'object.HTMLObjectElement.form': true,
+	'output.HTMLOutputElement.form': true,
+	'select.HTMLSelectElement.form': true,
+	'textarea.HTMLTextAreaElement.form': true,
+	'keygen.HTMLUnknownElement.form': true,
+	'mo.MathMLElement.form': true,
+	//
+	'object.HTMLObjectElement.wmode': true,
+	'meta.HTMLMetaElement.charset': true,
+	'input.HTMLInputElement.capture': true,
+	'input.HTMLInputElement.list': true,
+	'button.HTMLButtonElement.commandfor': true,
+	'button.HTMLButtonElement.popovertarget': true,
+	'input.HTMLInputElement.popovertarget': true,
+	'input.HTMLInputElement.results': true,
+}
+
 // confirmed deprecated - needs MDN update
 
 export const deprecatedAttributes = {
@@ -621,7 +698,7 @@ export function ElementJSONURL(ns, tagName) {
 export const startBrowser = async (browser = 'chrome') => {
 	const navigatorInstance = await puppeteer.launch({
 		headless: true,
-		browser: browser,
+		browser,
 		args: [
 			'--ash-no-nudges',
 			'--deny-permission-prompts',
@@ -648,8 +725,12 @@ export const startBrowser = async (browser = 'chrome') => {
 		defaultViewport: null,
 	})
 
-	const page = await navigatorInstance.newPage()
-	return [navigatorInstance, page]
+	const page = await navigatorInstance
+		.newPage()
+		// this fails frequently, just try again
+		.catch(async () => await navigatorInstance.newPage())
+
+	return [navigatorInstance, await page]
 }
 export const fetchTable = async file => {
 	const [navigatorInstance, page] = await startBrowser()

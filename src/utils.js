@@ -62,6 +62,7 @@ export const fetchCached = async url => {
 	const name = await hash(url)
 	const file = './node_modules/.cache/' + name + '.txt'
 	if (!fs.existsSync(file)) {
+		console.log('fetching and caching', url)
 		write(file, await fetch(url).then(x => x.text()))
 	}
 	return read(file)

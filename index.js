@@ -108,20 +108,19 @@ function xElement(props) {
     </table>
     <Show
       when="${
-        element.notIncludedSetters.length +
-        element.notIncludedMDN.length
+        element.readonly.length + element.notIncludedMDN.length
       }"
     >
       <footer>
-        <Show when="${element.notIncludedSetters.length}">
-          Setters Not Included:
-          <For each="${element.notIncludedSetters}"
+        <Show when="${element.readonly.length}">
+          Read only properties:
+          <For each="${element.readonly}"
             >${value => {
               const data = value.split('.')
               return html`<a
                 target="_blank"
                 href="${KeyURL(element.name, data[0], data[1])}"
-                >${data[1]}</a
+                >${value}</a
               >`
             }}
           </For>
@@ -151,10 +150,17 @@ function xElementKey(props) {
   const value = props.value
   const columns = props.columns
 
-  const kind = [value.prop && 'prop', value.attr && 'attr']
+  const kind = [
+    value.prop && 'prop',
+    value.readonly && 'prop readonly',
+    value.globalAttribute && 'attr global',
+    value.attr && 'attr',
+    ,
+  ]
     .filter(x => x)
     .join('/')
 
+  const danger = value.danger ? '❗❗❗' : ''
   const warn = value.warn ? '🛑' : ''
   const deprecated = value.deprecated ? '🗑️' : ''
   const weird = value.weird ? '⁉' : ''
@@ -171,7 +177,7 @@ function xElementKey(props) {
         >${props.warn ? html`<s>${value.name}</s>` : value.name}</a
       >
       ${deprecated} ${warn} ${inherited} ${weird} ${experimental}
-      ${nonstandard}
+      ${nonstandard} ${danger}
     </td>
     <td nowrap="">${kind}</td>
     <For each="${columns}"
