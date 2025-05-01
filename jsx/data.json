@@ -12,6 +12,12 @@
 				"Vue": "string"
 			}
 		},
+		"ariaActiveDescendant": {
+			"name": "ariaActiveDescendant",
+			"values": {
+				"Voby": "string"
+			}
+		},
 		"aria-atomic": {
 			"name": "aria-atomic",
 			"values": {
@@ -22,6 +28,12 @@
 				"Solid Minor": "boolean | 'false' | 'true'",
 				"Solid Next": "'false' | 'true'  | false",
 				"Vue": "boolean | 'true' | 'false'"
+			}
+		},
+		"ariaAtomic": {
+			"name": "ariaAtomic",
+			"values": {
+				"Voby": "boolean | 'true' | 'false'"
 			}
 		},
 		"aria-autocomplete": {
@@ -36,6 +48,12 @@
 				"Vue": "'none' | 'inline' | 'list' | 'both'"
 			}
 		},
+		"ariaAutoComplete": {
+			"name": "ariaAutoComplete",
+			"values": {
+				"Voby": "'none' | 'inline' | 'list' | 'both'"
+			}
+		},
 		"aria-braillelabel": {
 			"name": "aria-braillelabel",
 			"values": {
@@ -44,6 +62,18 @@
 				"Solid Main": "string",
 				"Solid Minor": "string",
 				"Solid Next": "string  | false"
+			}
+		},
+		"ariaBrailleLabel": {
+			"name": "ariaBrailleLabel",
+			"values": {
+				"Voby": "string"
+			}
+		},
+		"ariaBrailleLabelRoleDescription": {
+			"name": "ariaBrailleLabelRoleDescription",
+			"values": {
+				"Voby": "string"
 			}
 		},
 		"aria-brailleroledescription": {
@@ -68,6 +98,12 @@
 				"Vue": "boolean | 'true' | 'false'"
 			}
 		},
+		"ariaBusy": {
+			"name": "ariaBusy",
+			"values": {
+				"Voby": "boolean | 'true' | 'false'"
+			}
+		},
 		"aria-checked": {
 			"name": "aria-checked",
 			"values": {
@@ -78,6 +114,12 @@
 				"Solid Minor": "boolean | 'false' | 'mixed' | 'true'",
 				"Solid Next": "'false' | 'true' | 'mixed'  | false",
 				"Vue": "boolean | 'true' | 'false' | 'mixed'"
+			}
+		},
+		"ariaChecked": {
+			"name": "ariaChecked",
+			"values": {
+				"Voby": "boolean | 'false' | 'mixed' | 'true'"
 			}
 		},
 		"aria-colcount": {
@@ -92,6 +134,12 @@
 				"Vue": "number | string"
 			}
 		},
+		"ariaColCount": {
+			"name": "ariaColCount",
+			"values": {
+				"Voby": "number"
+			}
+		},
 		"aria-colindex": {
 			"name": "aria-colindex",
 			"values": {
@@ -102,6 +150,12 @@
 				"Solid Minor": "number | string",
 				"Solid Next": "number | string  | false",
 				"Vue": "number | string"
+			}
+		},
+		"ariaColIndex": {
+			"name": "ariaColIndex",
+			"values": {
+				"Voby": "number"
 			}
 		},
 		"aria-colindextext": {
@@ -126,6 +180,12 @@
 				"Vue": "number | string"
 			}
 		},
+		"ariaColSpan": {
+			"name": "ariaColSpan",
+			"values": {
+				"Voby": "number"
+			}
+		},
 		"aria-controls": {
 			"name": "aria-controls",
 			"values": {
@@ -136,6 +196,12 @@
 				"Solid Minor": "string",
 				"Solid Next": "string  | false",
 				"Vue": "string"
+			}
+		},
+		"ariaControls": {
+			"name": "ariaControls",
+			"values": {
+				"Voby": "string"
 			}
 		},
 		"aria-current": {
@@ -150,6 +216,12 @@
 				"Vue": "boolean | 'true' | 'false' | 'page' | 'step' | 'location' | 'date' | 'time'"
 			}
 		},
+		"ariaCurrent": {
+			"name": "ariaCurrent",
+			"values": {
+				"Voby": "boolean | 'false' | 'true' | 'page' | 'step' | 'location' | 'date' | 'time'"
+			}
+		},
 		"aria-describedby": {
 			"name": "aria-describedby",
 			"values": {
@@ -162,6 +234,12 @@
 				"Vue": "string"
 			}
 		},
+		"ariaDescribedBy": {
+			"name": "ariaDescribedBy",
+			"values": {
+				"Voby": "string"
+			}
+		},
 		"aria-description": {
 			"name": "aria-description",
 			"values": {
@@ -170,6 +248,12 @@
 				"Solid Main": "string",
 				"Solid Minor": "string",
 				"Solid Next": "string  | false"
+			}
+		},
+		"ariaDescription": {
+			"name": "ariaDescription",
+			"values": {
+				"Voby": "string"
 			}
 		},
 		"aria-details": {
@@ -184,6 +268,12 @@
 				"Vue": "string"
 			}
 		},
+		"ariaDetails": {
+			"name": "ariaDetails",
+			"values": {
+				"Voby": "string"
+			}
+		},
 		"aria-disabled": {
 			"name": "aria-disabled",
 			"values": {
@@ -194,6 +284,12 @@
 				"Solid Minor": "boolean | 'false' | 'true'",
 				"Solid Next": "'false' | 'true'  | false",
 				"Vue": "boolean | 'true' | 'false'"
+			}
+		},
+		"ariaDisabled": {
+			"name": "ariaDisabled",
+			"values": {
+				"Voby": "boolean | 'true' | 'false'"
 			}
 		},
 		"aria-dropeffect": {
@@ -208,6 +304,12 @@
 				"Vue": "'none' | 'copy' | 'execute' | 'link' | 'move' | 'popup'"
 			}
 		},
+		"ariaDropEffect": {
+			"name": "ariaDropEffect",
+			"values": {
+				"Voby": "'none' | 'copy' | 'execute' | 'link' | 'move' | 'popup'"
+			}
+		},
 		"aria-errormessage": {
 			"name": "aria-errormessage",
 			"values": {
@@ -218,6 +320,12 @@
 				"Solid Minor": "string",
 				"Solid Next": "string  | false",
 				"Vue": "string"
+			}
+		},
+		"ariaErrorMessage": {
+			"name": "ariaErrorMessage",
+			"values": {
+				"Voby": "string"
 			}
 		},
 		"aria-expanded": {
@@ -232,6 +340,12 @@
 				"Vue": "boolean | 'true' | 'false'"
 			}
 		},
+		"ariaExpanded": {
+			"name": "ariaExpanded",
+			"values": {
+				"Voby": "boolean | 'true' | 'false'"
+			}
+		},
 		"aria-flowto": {
 			"name": "aria-flowto",
 			"values": {
@@ -242,6 +356,12 @@
 				"Solid Minor": "string",
 				"Solid Next": "string  | false",
 				"Vue": "string"
+			}
+		},
+		"ariaFlowTo": {
+			"name": "ariaFlowTo",
+			"values": {
+				"Voby": "string"
 			}
 		},
 		"aria-grabbed": {
@@ -256,6 +376,12 @@
 				"Vue": "boolean | 'true' | 'false'"
 			}
 		},
+		"ariaGrabbed": {
+			"name": "ariaGrabbed",
+			"values": {
+				"Voby": "boolean | 'true' | 'false'"
+			}
+		},
 		"aria-haspopup": {
 			"name": "aria-haspopup",
 			"values": {
@@ -266,6 +392,12 @@
 				"Solid Minor": "boolean | 'false' | 'true' | 'menu' | 'listbox' | 'tree' | 'grid' | 'dialog'",
 				"Solid Next": "'false' | 'true' | 'menu' | 'listbox' | 'tree' | 'grid' | 'dialog'  | false",
 				"Vue": "boolean | 'true' | 'false' | 'menu' | 'listbox' | 'tree' | 'grid' | 'dialog'"
+			}
+		},
+		"ariaHasPopup": {
+			"name": "ariaHasPopup",
+			"values": {
+				"Voby": "boolean | 'false' | 'true' | 'menu' | 'listbox' | 'tree' | 'grid' | 'dialog'"
 			}
 		},
 		"aria-hidden": {
@@ -280,6 +412,12 @@
 				"Vue": "boolean | 'true' | 'false'"
 			}
 		},
+		"ariaHidden": {
+			"name": "ariaHidden",
+			"values": {
+				"Voby": "boolean | 'true' | 'false'"
+			}
+		},
 		"aria-invalid": {
 			"name": "aria-invalid",
 			"values": {
@@ -290,6 +428,12 @@
 				"Solid Minor": "boolean | 'false' | 'true' | 'grammar' | 'spelling'",
 				"Solid Next": "'false' | 'true' | 'grammar' | 'spelling'  | false",
 				"Vue": "boolean | 'true' | 'false' | 'grammar' | 'spelling'"
+			}
+		},
+		"ariaInvalid": {
+			"name": "ariaInvalid",
+			"values": {
+				"Voby": "boolean | 'false' | 'true' | 'grammar' | 'spelling'"
 			}
 		},
 		"aria-keyshortcuts": {
@@ -304,6 +448,12 @@
 				"Vue": "string"
 			}
 		},
+		"ariaKeyShortcuts": {
+			"name": "ariaKeyShortcuts",
+			"values": {
+				"Voby": "string"
+			}
+		},
 		"aria-label": {
 			"name": "aria-label",
 			"values": {
@@ -314,6 +464,12 @@
 				"Solid Minor": "string",
 				"Solid Next": "string  | false",
 				"Vue": "string"
+			}
+		},
+		"ariaLabel": {
+			"name": "ariaLabel",
+			"values": {
+				"Voby": "string"
 			}
 		},
 		"aria-labelledby": {
@@ -328,6 +484,12 @@
 				"Vue": "string"
 			}
 		},
+		"ariaLabelledBy": {
+			"name": "ariaLabelledBy",
+			"values": {
+				"Voby": "string"
+			}
+		},
 		"aria-level": {
 			"name": "aria-level",
 			"values": {
@@ -338,6 +500,12 @@
 				"Solid Minor": "number | string",
 				"Solid Next": "number | string  | false",
 				"Vue": "number | string"
+			}
+		},
+		"ariaLevel": {
+			"name": "ariaLevel",
+			"values": {
+				"Voby": "number"
 			}
 		},
 		"aria-live": {
@@ -352,6 +520,12 @@
 				"Vue": "'off' | 'assertive' | 'polite'"
 			}
 		},
+		"ariaLive": {
+			"name": "ariaLive",
+			"values": {
+				"Voby": "'off' | 'assertive' | 'polite'"
+			}
+		},
 		"aria-modal": {
 			"name": "aria-modal",
 			"values": {
@@ -362,6 +536,12 @@
 				"Solid Minor": "boolean | 'false' | 'true'",
 				"Solid Next": "'false' | 'true'  | false",
 				"Vue": "boolean | 'true' | 'false'"
+			}
+		},
+		"ariaModal": {
+			"name": "ariaModal",
+			"values": {
+				"Voby": "boolean | 'true' | 'false'"
 			}
 		},
 		"aria-multiline": {
@@ -376,6 +556,12 @@
 				"Vue": "boolean | 'true' | 'false'"
 			}
 		},
+		"ariaMultiLine": {
+			"name": "ariaMultiLine",
+			"values": {
+				"Voby": "boolean | 'true' | 'false'"
+			}
+		},
 		"aria-multiselectable": {
 			"name": "aria-multiselectable",
 			"values": {
@@ -386,6 +572,12 @@
 				"Solid Minor": "boolean | 'false' | 'true'",
 				"Solid Next": "'false' | 'true'  | false",
 				"Vue": "boolean | 'true' | 'false'"
+			}
+		},
+		"ariaMultiSelectable": {
+			"name": "ariaMultiSelectable",
+			"values": {
+				"Voby": "boolean | 'true' | 'false'"
 			}
 		},
 		"aria-orientation": {
@@ -400,6 +592,12 @@
 				"Vue": "'horizontal' | 'vertical'"
 			}
 		},
+		"ariaOrientation": {
+			"name": "ariaOrientation",
+			"values": {
+				"Voby": "'horizontal' | 'vertical'"
+			}
+		},
 		"aria-owns": {
 			"name": "aria-owns",
 			"values": {
@@ -410,6 +608,12 @@
 				"Solid Minor": "string",
 				"Solid Next": "string  | false",
 				"Vue": "string"
+			}
+		},
+		"ariaOwns": {
+			"name": "ariaOwns",
+			"values": {
+				"Voby": "string"
 			}
 		},
 		"aria-placeholder": {
@@ -424,6 +628,12 @@
 				"Vue": "string"
 			}
 		},
+		"ariaPlaceholder": {
+			"name": "ariaPlaceholder",
+			"values": {
+				"Voby": "string"
+			}
+		},
 		"aria-posinset": {
 			"name": "aria-posinset",
 			"values": {
@@ -434,6 +644,12 @@
 				"Solid Minor": "number | string",
 				"Solid Next": "number | string  | false",
 				"Vue": "number | string"
+			}
+		},
+		"ariaPosInSet": {
+			"name": "ariaPosInSet",
+			"values": {
+				"Voby": "number"
 			}
 		},
 		"aria-pressed": {
@@ -448,6 +664,12 @@
 				"Vue": "boolean | 'true' | 'false' | 'mixed'"
 			}
 		},
+		"ariaPressed": {
+			"name": "ariaPressed",
+			"values": {
+				"Voby": "boolean | 'false' | 'mixed' | 'true'"
+			}
+		},
 		"aria-readonly": {
 			"name": "aria-readonly",
 			"values": {
@@ -458,6 +680,12 @@
 				"Solid Minor": "boolean | 'false' | 'true'",
 				"Solid Next": "'false' | 'true'  | false",
 				"Vue": "boolean | 'true' | 'false'"
+			}
+		},
+		"ariaReadOnly": {
+			"name": "ariaReadOnly",
+			"values": {
+				"Voby": "boolean | 'true' | 'false'"
 			}
 		},
 		"aria-relevant": {
@@ -472,6 +700,12 @@
 				"Vue": "'additions' | 'additions removals' | 'additions text' | 'all' | 'removals' | 'removals additions' | 'removals text' | 'text' | 'text additions' | 'text removals'"
 			}
 		},
+		"ariaRelevant": {
+			"name": "ariaRelevant",
+			"values": {
+				"Voby": "'additions' | 'additions removals' | 'additions text' | 'all' | 'removals' | 'removals additions' | 'removals text' | 'text' | 'text additions' | 'text removals'"
+			}
+		},
 		"aria-required": {
 			"name": "aria-required",
 			"values": {
@@ -482,6 +716,12 @@
 				"Solid Minor": "boolean | 'false' | 'true'",
 				"Solid Next": "'false' | 'true'  | false",
 				"Vue": "boolean | 'true' | 'false'"
+			}
+		},
+		"ariaRequired": {
+			"name": "ariaRequired",
+			"values": {
+				"Voby": "boolean | 'true' | 'false'"
 			}
 		},
 		"aria-roledescription": {
@@ -496,6 +736,12 @@
 				"Vue": "string"
 			}
 		},
+		"ariaRoleDescription": {
+			"name": "ariaRoleDescription",
+			"values": {
+				"Voby": "string"
+			}
+		},
 		"aria-rowcount": {
 			"name": "aria-rowcount",
 			"values": {
@@ -508,6 +754,12 @@
 				"Vue": "number | string"
 			}
 		},
+		"ariaRowCount": {
+			"name": "ariaRowCount",
+			"values": {
+				"Voby": "number"
+			}
+		},
 		"aria-rowindex": {
 			"name": "aria-rowindex",
 			"values": {
@@ -518,6 +770,12 @@
 				"Solid Minor": "number | string",
 				"Solid Next": "number | string  | false",
 				"Vue": "number | string"
+			}
+		},
+		"ariaRowIndex": {
+			"name": "ariaRowIndex",
+			"values": {
+				"Voby": "number"
 			}
 		},
 		"aria-rowindextext": {
@@ -542,6 +800,12 @@
 				"Vue": "number | string"
 			}
 		},
+		"ariaRowSpan": {
+			"name": "ariaRowSpan",
+			"values": {
+				"Voby": "number"
+			}
+		},
 		"aria-selected": {
 			"name": "aria-selected",
 			"values": {
@@ -552,6 +816,12 @@
 				"Solid Minor": "boolean | 'false' | 'true'",
 				"Solid Next": "'false' | 'true'  | false",
 				"Vue": "boolean | 'true' | 'false'"
+			}
+		},
+		"ariaSelected": {
+			"name": "ariaSelected",
+			"values": {
+				"Voby": "boolean | 'true' | 'false'"
 			}
 		},
 		"aria-setsize": {
@@ -566,6 +836,12 @@
 				"Vue": "number | string"
 			}
 		},
+		"ariaSetSize": {
+			"name": "ariaSetSize",
+			"values": {
+				"Voby": "number"
+			}
+		},
 		"aria-sort": {
 			"name": "aria-sort",
 			"values": {
@@ -576,6 +852,12 @@
 				"Solid Minor": "'none' | 'ascending' | 'descending' | 'other'",
 				"Solid Next": "'none' | 'ascending' | 'descending' | 'other'  | false",
 				"Vue": "'none' | 'ascending' | 'descending' | 'other'"
+			}
+		},
+		"ariaSort": {
+			"name": "ariaSort",
+			"values": {
+				"Voby": "'none' | 'ascending' | 'descending' | 'other'"
 			}
 		},
 		"aria-valuemax": {
@@ -590,6 +872,12 @@
 				"Vue": "number | string"
 			}
 		},
+		"ariaValueMax": {
+			"name": "ariaValueMax",
+			"values": {
+				"Voby": "number"
+			}
+		},
 		"aria-valuemin": {
 			"name": "aria-valuemin",
 			"values": {
@@ -600,6 +888,12 @@
 				"Solid Minor": "number | string",
 				"Solid Next": "number | string  | false",
 				"Vue": "number | string"
+			}
+		},
+		"ariaValueMin": {
+			"name": "ariaValueMin",
+			"values": {
+				"Voby": "number"
 			}
 		},
 		"aria-valuenow": {
@@ -614,6 +908,12 @@
 				"Vue": "number | string"
 			}
 		},
+		"ariaValueNow": {
+			"name": "ariaValueNow",
+			"values": {
+				"Voby": "number"
+			}
+		},
 		"aria-valuetext": {
 			"name": "aria-valuetext",
 			"values": {
@@ -624,306 +924,6 @@
 				"Solid Minor": "string",
 				"Solid Next": "string  | false",
 				"Vue": "string"
-			}
-		},
-		"ariaActiveDescendant": {
-			"name": "ariaActiveDescendant",
-			"values": {
-				"Voby": "string"
-			}
-		},
-		"ariaAtomic": {
-			"name": "ariaAtomic",
-			"values": {
-				"Voby": "boolean | 'true' | 'false'"
-			}
-		},
-		"ariaAutoComplete": {
-			"name": "ariaAutoComplete",
-			"values": {
-				"Voby": "'none' | 'inline' | 'list' | 'both'"
-			}
-		},
-		"ariaBrailleLabel": {
-			"name": "ariaBrailleLabel",
-			"values": {
-				"Voby": "string"
-			}
-		},
-		"ariaBrailleLabelRoleDescription": {
-			"name": "ariaBrailleLabelRoleDescription",
-			"values": {
-				"Voby": "string"
-			}
-		},
-		"ariaBusy": {
-			"name": "ariaBusy",
-			"values": {
-				"Voby": "boolean | 'true' | 'false'"
-			}
-		},
-		"ariaChecked": {
-			"name": "ariaChecked",
-			"values": {
-				"Voby": "boolean | 'false' | 'mixed' | 'true'"
-			}
-		},
-		"ariaColCount": {
-			"name": "ariaColCount",
-			"values": {
-				"Voby": "number"
-			}
-		},
-		"ariaColIndex": {
-			"name": "ariaColIndex",
-			"values": {
-				"Voby": "number"
-			}
-		},
-		"ariaColSpan": {
-			"name": "ariaColSpan",
-			"values": {
-				"Voby": "number"
-			}
-		},
-		"ariaControls": {
-			"name": "ariaControls",
-			"values": {
-				"Voby": "string"
-			}
-		},
-		"ariaCurrent": {
-			"name": "ariaCurrent",
-			"values": {
-				"Voby": "boolean | 'false' | 'true' | 'page' | 'step' | 'location' | 'date' | 'time'"
-			}
-		},
-		"ariaDescribedBy": {
-			"name": "ariaDescribedBy",
-			"values": {
-				"Voby": "string"
-			}
-		},
-		"ariaDescription": {
-			"name": "ariaDescription",
-			"values": {
-				"Voby": "string"
-			}
-		},
-		"ariaDetails": {
-			"name": "ariaDetails",
-			"values": {
-				"Voby": "string"
-			}
-		},
-		"ariaDisabled": {
-			"name": "ariaDisabled",
-			"values": {
-				"Voby": "boolean | 'true' | 'false'"
-			}
-		},
-		"ariaDropEffect": {
-			"name": "ariaDropEffect",
-			"values": {
-				"Voby": "'none' | 'copy' | 'execute' | 'link' | 'move' | 'popup'"
-			}
-		},
-		"ariaErrorMessage": {
-			"name": "ariaErrorMessage",
-			"values": {
-				"Voby": "string"
-			}
-		},
-		"ariaExpanded": {
-			"name": "ariaExpanded",
-			"values": {
-				"Voby": "boolean | 'true' | 'false'"
-			}
-		},
-		"ariaFlowTo": {
-			"name": "ariaFlowTo",
-			"values": {
-				"Voby": "string"
-			}
-		},
-		"ariaGrabbed": {
-			"name": "ariaGrabbed",
-			"values": {
-				"Voby": "boolean | 'true' | 'false'"
-			}
-		},
-		"ariaHasPopup": {
-			"name": "ariaHasPopup",
-			"values": {
-				"Voby": "boolean | 'false' | 'true' | 'menu' | 'listbox' | 'tree' | 'grid' | 'dialog'"
-			}
-		},
-		"ariaHidden": {
-			"name": "ariaHidden",
-			"values": {
-				"Voby": "boolean | 'true' | 'false'"
-			}
-		},
-		"ariaInvalid": {
-			"name": "ariaInvalid",
-			"values": {
-				"Voby": "boolean | 'false' | 'true' | 'grammar' | 'spelling'"
-			}
-		},
-		"ariaKeyShortcuts": {
-			"name": "ariaKeyShortcuts",
-			"values": {
-				"Voby": "string"
-			}
-		},
-		"ariaLabel": {
-			"name": "ariaLabel",
-			"values": {
-				"Voby": "string"
-			}
-		},
-		"ariaLabelledBy": {
-			"name": "ariaLabelledBy",
-			"values": {
-				"Voby": "string"
-			}
-		},
-		"ariaLevel": {
-			"name": "ariaLevel",
-			"values": {
-				"Voby": "number"
-			}
-		},
-		"ariaLive": {
-			"name": "ariaLive",
-			"values": {
-				"Voby": "'off' | 'assertive' | 'polite'"
-			}
-		},
-		"ariaModal": {
-			"name": "ariaModal",
-			"values": {
-				"Voby": "boolean | 'true' | 'false'"
-			}
-		},
-		"ariaMultiLine": {
-			"name": "ariaMultiLine",
-			"values": {
-				"Voby": "boolean | 'true' | 'false'"
-			}
-		},
-		"ariaMultiSelectable": {
-			"name": "ariaMultiSelectable",
-			"values": {
-				"Voby": "boolean | 'true' | 'false'"
-			}
-		},
-		"ariaOrientation": {
-			"name": "ariaOrientation",
-			"values": {
-				"Voby": "'horizontal' | 'vertical'"
-			}
-		},
-		"ariaOwns": {
-			"name": "ariaOwns",
-			"values": {
-				"Voby": "string"
-			}
-		},
-		"ariaPlaceholder": {
-			"name": "ariaPlaceholder",
-			"values": {
-				"Voby": "string"
-			}
-		},
-		"ariaPosInSet": {
-			"name": "ariaPosInSet",
-			"values": {
-				"Voby": "number"
-			}
-		},
-		"ariaPressed": {
-			"name": "ariaPressed",
-			"values": {
-				"Voby": "boolean | 'false' | 'mixed' | 'true'"
-			}
-		},
-		"ariaReadOnly": {
-			"name": "ariaReadOnly",
-			"values": {
-				"Voby": "boolean | 'true' | 'false'"
-			}
-		},
-		"ariaRelevant": {
-			"name": "ariaRelevant",
-			"values": {
-				"Voby": "'additions' | 'additions removals' | 'additions text' | 'all' | 'removals' | 'removals additions' | 'removals text' | 'text' | 'text additions' | 'text removals'"
-			}
-		},
-		"ariaRequired": {
-			"name": "ariaRequired",
-			"values": {
-				"Voby": "boolean | 'true' | 'false'"
-			}
-		},
-		"ariaRoleDescription": {
-			"name": "ariaRoleDescription",
-			"values": {
-				"Voby": "string"
-			}
-		},
-		"ariaRowCount": {
-			"name": "ariaRowCount",
-			"values": {
-				"Voby": "number"
-			}
-		},
-		"ariaRowIndex": {
-			"name": "ariaRowIndex",
-			"values": {
-				"Voby": "number"
-			}
-		},
-		"ariaRowSpan": {
-			"name": "ariaRowSpan",
-			"values": {
-				"Voby": "number"
-			}
-		},
-		"ariaSelected": {
-			"name": "ariaSelected",
-			"values": {
-				"Voby": "boolean | 'true' | 'false'"
-			}
-		},
-		"ariaSetSize": {
-			"name": "ariaSetSize",
-			"values": {
-				"Voby": "number"
-			}
-		},
-		"ariaSort": {
-			"name": "ariaSort",
-			"values": {
-				"Voby": "'none' | 'ascending' | 'descending' | 'other'"
-			}
-		},
-		"ariaValueMax": {
-			"name": "ariaValueMax",
-			"values": {
-				"Voby": "number"
-			}
-		},
-		"ariaValueMin": {
-			"name": "ariaValueMin",
-			"values": {
-				"Voby": "number"
-			}
-		},
-		"ariaValueNow": {
-			"name": "ariaValueNow",
-			"values": {
-				"Voby": "number"
 			}
 		},
 		"ariaValueText": {
@@ -978,25 +978,6 @@
 							"Solid Next": "string | false"
 						}
 					},
-					"nonce": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"attrName": "",
-						"globalAttribute": true,
-						"inherited": false,
-						"interface": "MathMLElement",
-						"name": "nonce",
-						"prop": true,
-						"propChrome": true,
-						"propFirefox": false,
-						"propName": "nonce",
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce",
-						"values": {
-							"Chrome": "string"
-						}
-					},
 					"src": {
 						"attr": false,
 						"attrChrome": false,
@@ -1049,25 +1030,6 @@
 							"Solid Main": "string",
 							"Solid Minor": "string",
 							"Solid Next": "string | false"
-						}
-					},
-					"nonce": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"attrName": "",
-						"globalAttribute": true,
-						"inherited": false,
-						"interface": "MathMLElement",
-						"name": "nonce",
-						"prop": true,
-						"propChrome": true,
-						"propFirefox": false,
-						"propName": "nonce",
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce",
-						"values": {
-							"Chrome": "string"
 						}
 					},
 					"src": {
@@ -1126,25 +1088,6 @@
 							"Solid Next": "'statusline' | 'toggle' | false"
 						}
 					},
-					"nonce": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"attrName": "",
-						"globalAttribute": true,
-						"inherited": false,
-						"interface": "MathMLElement",
-						"name": "nonce",
-						"prop": true,
-						"propChrome": true,
-						"propFirefox": false,
-						"propName": "nonce",
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce",
-						"values": {
-							"Chrome": "string"
-						}
-					},
 					"selection": {
 						"attr": false,
 						"attrChrome": false,
@@ -1199,25 +1142,6 @@
 							"Solid Minor": "'block' | 'inline'",
 							"Solid Next": "'block' | 'inline' | false"
 						}
-					},
-					"nonce": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"attrName": "",
-						"globalAttribute": true,
-						"inherited": false,
-						"interface": "MathMLElement",
-						"name": "nonce",
-						"prop": true,
-						"propChrome": true,
-						"propFirefox": false,
-						"propName": "nonce",
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce",
-						"values": {
-							"Chrome": "string"
-						}
 					}
 				},
 				"name": "math",
@@ -1232,25 +1156,6 @@
 				"interface": "MathMLElement",
 				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement",
 				"keys": {
-					"nonce": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"attrName": "",
-						"globalAttribute": true,
-						"inherited": false,
-						"interface": "MathMLElement",
-						"name": "nonce",
-						"prop": true,
-						"propChrome": true,
-						"propFirefox": false,
-						"propName": "nonce",
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce",
-						"values": {
-							"Chrome": "string"
-						}
-					},
 					"notation": {
 						"attr": false,
 						"attrChrome": false,
@@ -1284,27 +1189,7 @@
 				"elementURL": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/merror",
 				"interface": "MathMLElement",
 				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement",
-				"keys": {
-					"nonce": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"attrName": "",
-						"globalAttribute": true,
-						"inherited": false,
-						"interface": "MathMLElement",
-						"name": "nonce",
-						"prop": true,
-						"propChrome": true,
-						"propFirefox": false,
-						"propName": "nonce",
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce",
-						"values": {
-							"Chrome": "string"
-						}
-					}
-				},
+				"keys": {},
 				"name": "merror",
 				"namespace": "http://www.w3.org/1998/Math/MathML",
 				"notIncludedMDN": [],
@@ -1335,25 +1220,6 @@
 							"Solid Main": "string",
 							"Solid Minor": "string",
 							"Solid Next": "string | false"
-						}
-					},
-					"nonce": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"attrName": "",
-						"globalAttribute": true,
-						"inherited": false,
-						"interface": "MathMLElement",
-						"name": "nonce",
-						"prop": true,
-						"propChrome": true,
-						"propFirefox": false,
-						"propName": "nonce",
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce",
-						"values": {
-							"Chrome": "string"
 						}
 					},
 					"open": {
@@ -1451,25 +1317,6 @@
 							"Solid Next": "string | false"
 						}
 					},
-					"nonce": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"attrName": "",
-						"globalAttribute": true,
-						"inherited": false,
-						"interface": "MathMLElement",
-						"name": "nonce",
-						"prop": true,
-						"propChrome": true,
-						"propFirefox": false,
-						"propName": "nonce",
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce",
-						"values": {
-							"Chrome": "string"
-						}
-					},
 					"numalign": {
 						"attr": false,
 						"attrChrome": false,
@@ -1524,25 +1371,6 @@
 							"Solid Minor": "'normal'",
 							"Solid Next": "'normal' | false"
 						}
-					},
-					"nonce": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"attrName": "",
-						"globalAttribute": true,
-						"inherited": false,
-						"interface": "MathMLElement",
-						"name": "nonce",
-						"prop": true,
-						"propChrome": true,
-						"propFirefox": false,
-						"propName": "nonce",
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce",
-						"values": {
-							"Chrome": "string"
-						}
 					}
 				},
 				"name": "mi",
@@ -1557,25 +1385,6 @@
 				"interface": "MathMLElement",
 				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement",
 				"keys": {
-					"nonce": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"attrName": "",
-						"globalAttribute": true,
-						"inherited": false,
-						"interface": "MathMLElement",
-						"name": "nonce",
-						"prop": true,
-						"propChrome": true,
-						"propFirefox": false,
-						"propName": "nonce",
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce",
-						"values": {
-							"Chrome": "string"
-						}
-					},
 					"subscriptshift": {
 						"attr": false,
 						"attrChrome": false,
@@ -1632,27 +1441,7 @@
 				"elementURL": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mn",
 				"interface": "MathMLElement",
 				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement",
-				"keys": {
-					"nonce": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"attrName": "",
-						"globalAttribute": true,
-						"inherited": false,
-						"interface": "MathMLElement",
-						"name": "nonce",
-						"prop": true,
-						"propChrome": true,
-						"propFirefox": false,
-						"propName": "nonce",
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce",
-						"values": {
-							"Chrome": "string"
-						}
-					}
-				},
+				"keys": {},
 				"name": "mn",
 				"namespace": "http://www.w3.org/1998/Math/MathML",
 				"notIncludedMDN": [],
@@ -1825,25 +1614,6 @@
 							"Solid Next": "true | false | ''"
 						}
 					},
-					"nonce": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"attrName": "",
-						"globalAttribute": true,
-						"inherited": false,
-						"interface": "MathMLElement",
-						"name": "nonce",
-						"prop": true,
-						"propChrome": true,
-						"propFirefox": false,
-						"propName": "nonce",
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce",
-						"values": {
-							"Chrome": "string"
-						}
-					},
 					"rspace": {
 						"attr": false,
 						"attrChrome": false,
@@ -1956,25 +1726,6 @@
 							"Solid Minor": "'' | boolean",
 							"Solid Next": "true | false | ''"
 						}
-					},
-					"nonce": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"attrName": "",
-						"globalAttribute": true,
-						"inherited": false,
-						"interface": "MathMLElement",
-						"name": "nonce",
-						"prop": true,
-						"propChrome": true,
-						"propFirefox": false,
-						"propName": "nonce",
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce",
-						"values": {
-							"Chrome": "string"
-						}
 					}
 				},
 				"name": "mover",
@@ -2049,25 +1800,6 @@
 							"Solid Next": "string | false"
 						}
 					},
-					"nonce": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"attrName": "",
-						"globalAttribute": true,
-						"inherited": false,
-						"interface": "MathMLElement",
-						"name": "nonce",
-						"prop": true,
-						"propChrome": true,
-						"propFirefox": false,
-						"propName": "nonce",
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce",
-						"values": {
-							"Chrome": "string"
-						}
-					},
 					"voffset": {
 						"attr": false,
 						"attrChrome": false,
@@ -2120,27 +1852,7 @@
 				"elementURL": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mphantom",
 				"interface": "MathMLElement",
 				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement",
-				"keys": {
-					"nonce": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"attrName": "",
-						"globalAttribute": true,
-						"inherited": false,
-						"interface": "MathMLElement",
-						"name": "nonce",
-						"prop": true,
-						"propChrome": true,
-						"propFirefox": false,
-						"propName": "nonce",
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce",
-						"values": {
-							"Chrome": "string"
-						}
-					}
-				},
+				"keys": {},
 				"name": "mphantom",
 				"namespace": "http://www.w3.org/1998/Math/MathML",
 				"notIncludedMDN": [],
@@ -2152,27 +1864,7 @@
 				"elementURL": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mprescripts",
 				"interface": "MathMLElement",
 				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement",
-				"keys": {
-					"nonce": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"attrName": "",
-						"globalAttribute": true,
-						"inherited": false,
-						"interface": "MathMLElement",
-						"name": "nonce",
-						"prop": true,
-						"propChrome": true,
-						"propFirefox": false,
-						"propName": "nonce",
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce",
-						"values": {
-							"Chrome": "string"
-						}
-					}
-				},
+				"keys": {},
 				"name": "mprescripts",
 				"namespace": "http://www.w3.org/1998/Math/MathML",
 				"notIncludedMDN": [],
@@ -2184,27 +1876,7 @@
 				"elementURL": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mroot",
 				"interface": "MathMLElement",
 				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement",
-				"keys": {
-					"nonce": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"attrName": "",
-						"globalAttribute": true,
-						"inherited": false,
-						"interface": "MathMLElement",
-						"name": "nonce",
-						"prop": true,
-						"propChrome": true,
-						"propFirefox": false,
-						"propName": "nonce",
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce",
-						"values": {
-							"Chrome": "string"
-						}
-					}
-				},
+				"keys": {},
 				"name": "mroot",
 				"namespace": "http://www.w3.org/1998/Math/MathML",
 				"notIncludedMDN": [],
@@ -2216,27 +1888,7 @@
 				"elementURL": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mrow",
 				"interface": "MathMLElement",
 				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement",
-				"keys": {
-					"nonce": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"attrName": "",
-						"globalAttribute": true,
-						"inherited": false,
-						"interface": "MathMLElement",
-						"name": "nonce",
-						"prop": true,
-						"propChrome": true,
-						"propFirefox": false,
-						"propName": "nonce",
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce",
-						"values": {
-							"Chrome": "string"
-						}
-					}
-				},
+				"keys": {},
 				"name": "mrow",
 				"namespace": "http://www.w3.org/1998/Math/MathML",
 				"notIncludedMDN": [],
@@ -2268,25 +1920,6 @@
 							"Solid Main": "string",
 							"Solid Minor": "string",
 							"Solid Next": "string | false"
-						}
-					},
-					"nonce": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"attrName": "",
-						"globalAttribute": true,
-						"inherited": false,
-						"interface": "MathMLElement",
-						"name": "nonce",
-						"prop": true,
-						"propChrome": true,
-						"propFirefox": false,
-						"propName": "nonce",
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce",
-						"values": {
-							"Chrome": "string"
 						}
 					},
 					"rquote": {
@@ -2363,25 +1996,6 @@
 							"Solid Next": "string | false"
 						}
 					},
-					"nonce": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"attrName": "",
-						"globalAttribute": true,
-						"inherited": false,
-						"interface": "MathMLElement",
-						"name": "nonce",
-						"prop": true,
-						"propChrome": true,
-						"propFirefox": false,
-						"propName": "nonce",
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce",
-						"values": {
-							"Chrome": "string"
-						}
-					},
 					"width": {
 						"attr": false,
 						"attrChrome": false,
@@ -2414,27 +2028,7 @@
 				"elementURL": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/msqrt",
 				"interface": "MathMLElement",
 				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement",
-				"keys": {
-					"nonce": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"attrName": "",
-						"globalAttribute": true,
-						"inherited": false,
-						"interface": "MathMLElement",
-						"name": "nonce",
-						"prop": true,
-						"propChrome": true,
-						"propFirefox": false,
-						"propName": "nonce",
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce",
-						"values": {
-							"Chrome": "string"
-						}
-					}
-				},
+				"keys": {},
 				"name": "msqrt",
 				"namespace": "http://www.w3.org/1998/Math/MathML",
 				"notIncludedMDN": [],
@@ -2557,25 +2151,6 @@
 							"Solid Next": "string | false"
 						}
 					},
-					"nonce": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"attrName": "",
-						"globalAttribute": true,
-						"inherited": false,
-						"interface": "MathMLElement",
-						"name": "nonce",
-						"prop": true,
-						"propChrome": true,
-						"propFirefox": false,
-						"propName": "nonce",
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce",
-						"values": {
-							"Chrome": "string"
-						}
-					},
 					"scriptminsize": {
 						"attr": false,
 						"attrChrome": false,
@@ -2631,25 +2206,6 @@
 				"interface": "MathMLElement",
 				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement",
 				"keys": {
-					"nonce": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"attrName": "",
-						"globalAttribute": true,
-						"inherited": false,
-						"interface": "MathMLElement",
-						"name": "nonce",
-						"prop": true,
-						"propChrome": true,
-						"propFirefox": false,
-						"propName": "nonce",
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce",
-						"values": {
-							"Chrome": "string"
-						}
-					},
 					"subscriptshift": {
 						"attr": false,
 						"attrChrome": false,
@@ -2685,25 +2241,6 @@
 				"interface": "MathMLElement",
 				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement",
 				"keys": {
-					"nonce": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"attrName": "",
-						"globalAttribute": true,
-						"inherited": false,
-						"interface": "MathMLElement",
-						"name": "nonce",
-						"prop": true,
-						"propChrome": true,
-						"propFirefox": false,
-						"propName": "nonce",
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce",
-						"values": {
-							"Chrome": "string"
-						}
-					},
 					"subscriptshift": {
 						"attr": false,
 						"attrChrome": false,
@@ -2761,25 +2298,6 @@
 				"interface": "MathMLElement",
 				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement",
 				"keys": {
-					"nonce": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"attrName": "",
-						"globalAttribute": true,
-						"inherited": false,
-						"interface": "MathMLElement",
-						"name": "nonce",
-						"prop": true,
-						"propChrome": true,
-						"propFirefox": false,
-						"propName": "nonce",
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce",
-						"values": {
-							"Chrome": "string"
-						}
-					},
 					"superscriptshift": {
 						"attr": false,
 						"attrChrome": false,
@@ -2941,25 +2459,6 @@
 							"Solid Next": "string | false"
 						}
 					},
-					"nonce": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"attrName": "",
-						"globalAttribute": true,
-						"inherited": false,
-						"interface": "MathMLElement",
-						"name": "nonce",
-						"prop": true,
-						"propChrome": true,
-						"propFirefox": false,
-						"propName": "nonce",
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce",
-						"values": {
-							"Chrome": "string"
-						}
-					},
 					"rowalign": {
 						"attr": false,
 						"attrChrome": false,
@@ -3098,25 +2597,6 @@
 							"Solid Next": "number | string | false"
 						}
 					},
-					"nonce": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"attrName": "",
-						"globalAttribute": true,
-						"inherited": false,
-						"interface": "MathMLElement",
-						"name": "nonce",
-						"prop": true,
-						"propChrome": true,
-						"propFirefox": false,
-						"propName": "nonce",
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce",
-						"values": {
-							"Chrome": "string"
-						}
-					},
 					"rowalign": {
 						"attr": false,
 						"attrChrome": false,
@@ -3170,27 +2650,7 @@
 				"elementURL": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mtext",
 				"interface": "MathMLElement",
 				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement",
-				"keys": {
-					"nonce": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"attrName": "",
-						"globalAttribute": true,
-						"inherited": false,
-						"interface": "MathMLElement",
-						"name": "nonce",
-						"prop": true,
-						"propChrome": true,
-						"propFirefox": false,
-						"propName": "nonce",
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce",
-						"values": {
-							"Chrome": "string"
-						}
-					}
-				},
+				"keys": {},
 				"name": "mtext",
 				"namespace": "http://www.w3.org/1998/Math/MathML",
 				"notIncludedMDN": [],
@@ -3222,25 +2682,6 @@
 							"Solid Main": "'center' | 'left' | 'right'",
 							"Solid Minor": "'center' | 'left' | 'right'",
 							"Solid Next": "'center' | 'left' | 'right' | false"
-						}
-					},
-					"nonce": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"attrName": "",
-						"globalAttribute": true,
-						"inherited": false,
-						"interface": "MathMLElement",
-						"name": "nonce",
-						"prop": true,
-						"propChrome": true,
-						"propFirefox": false,
-						"propName": "nonce",
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce",
-						"values": {
-							"Chrome": "string"
 						}
 					},
 					"rowalign": {
@@ -3296,25 +2737,6 @@
 							"Solid Minor": "'' | boolean",
 							"Solid Next": "true | false | ''"
 						}
-					},
-					"nonce": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"attrName": "",
-						"globalAttribute": true,
-						"inherited": false,
-						"interface": "MathMLElement",
-						"name": "nonce",
-						"prop": true,
-						"propChrome": true,
-						"propFirefox": false,
-						"propName": "nonce",
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce",
-						"values": {
-							"Chrome": "string"
-						}
 					}
 				},
 				"name": "munder",
@@ -3367,25 +2789,6 @@
 							"Solid Minor": "'' | boolean",
 							"Solid Next": "true | false | ''"
 						}
-					},
-					"nonce": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"attrName": "",
-						"globalAttribute": true,
-						"inherited": false,
-						"interface": "MathMLElement",
-						"name": "nonce",
-						"prop": true,
-						"propChrome": true,
-						"propFirefox": false,
-						"propName": "nonce",
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce",
-						"values": {
-							"Chrome": "string"
-						}
 					}
 				},
 				"name": "munderover",
@@ -3399,27 +2802,7 @@
 				"elementURL": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/semantics",
 				"interface": "MathMLElement",
 				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement",
-				"keys": {
-					"nonce": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"attrName": "",
-						"globalAttribute": true,
-						"inherited": false,
-						"interface": "MathMLElement",
-						"name": "nonce",
-						"prop": true,
-						"propChrome": true,
-						"propFirefox": false,
-						"propName": "nonce",
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.nonce",
-						"values": {
-							"Chrome": "string"
-						}
-					}
-				},
+				"keys": {},
 				"name": "semantics",
 				"namespace": "http://www.w3.org/1998/Math/MathML",
 				"notIncludedMDN": [],
@@ -5258,42 +4641,6 @@
 							"Vue": "boolean | 'true' | 'false'"
 						}
 					},
-					"on:encrypted": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"globalAttribute": false,
-						"inherited": false,
-						"name": "on:encrypted",
-						"prop": false,
-						"propChrome": false,
-						"propFirefox": false,
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement#htmlaudioelement.on:encrypted",
-						"values": {
-							"Solid Main": "EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>",
-							"Solid Minor": "EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>",
-							"Solid Next": "EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>"
-						}
-					},
-					"on:waitingforkey": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"globalAttribute": false,
-						"inherited": false,
-						"name": "on:waitingforkey",
-						"prop": false,
-						"propChrome": false,
-						"propFirefox": false,
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement#htmlaudioelement.on:waitingforkey",
-						"values": {
-							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-							"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-						}
-					},
 					"onEncrypted": {
 						"attr": false,
 						"attrChrome": false,
@@ -5310,6 +4657,24 @@
 							"Solid Main": "EventHandlerUnion<T, MediaEncryptedEvent>",
 							"Solid Minor": "EventHandlerUnion<T, MediaEncryptedEvent>",
 							"Solid Next": "EventHandlerUnion<T, MediaEncryptedEvent>"
+						}
+					},
+					"on:encrypted": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"globalAttribute": false,
+						"inherited": false,
+						"name": "on:encrypted",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"readonly": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement#htmlaudioelement.on:encrypted",
+						"values": {
+							"Solid Main": "EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>"
 						}
 					},
 					"onencrypted": {
@@ -5351,6 +4716,24 @@
 							"Solid Main": "EventHandlerUnion<T, Event>",
 							"Solid Minor": "EventHandlerUnion<T, Event>",
 							"Solid Next": "EventHandlerUnion<T, Event>"
+						}
+					},
+					"on:waitingforkey": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"globalAttribute": false,
+						"inherited": false,
+						"name": "on:waitingforkey",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"readonly": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement#htmlaudioelement.on:waitingforkey",
+						"values": {
+							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 						}
 					},
 					"onwaitingforkey": {
@@ -7337,42 +6720,6 @@
 							"Firefox": "unknown"
 						}
 					},
-					"on:contextlost": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"globalAttribute": false,
-						"inherited": false,
-						"name": "on:contextlost",
-						"prop": false,
-						"propChrome": false,
-						"propFirefox": false,
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement#htmlcanvaselement.on:contextlost",
-						"values": {
-							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-							"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-						}
-					},
-					"on:contextrestored": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"globalAttribute": false,
-						"inherited": false,
-						"name": "on:contextrestored",
-						"prop": false,
-						"propChrome": false,
-						"propFirefox": false,
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement#htmlcanvaselement.on:contextrestored",
-						"values": {
-							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-							"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-						}
-					},
 					"onContextLost": {
 						"attr": false,
 						"attrChrome": false,
@@ -7389,6 +6736,24 @@
 							"Solid Main": "EventHandlerUnion<T, Event>",
 							"Solid Minor": "EventHandlerUnion<T, Event>",
 							"Solid Next": "EventHandlerUnion<T, Event>"
+						}
+					},
+					"on:contextlost": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"globalAttribute": false,
+						"inherited": false,
+						"name": "on:contextlost",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"readonly": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement#htmlcanvaselement.on:contextlost",
+						"values": {
+							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 						}
 					},
 					"oncontextlost": {
@@ -7425,6 +6790,24 @@
 							"Solid Main": "EventHandlerUnion<T, Event>",
 							"Solid Minor": "EventHandlerUnion<T, Event>",
 							"Solid Next": "EventHandlerUnion<T, Event>"
+						}
+					},
+					"on:contextrestored": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"globalAttribute": false,
+						"inherited": false,
+						"name": "on:contextrestored",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"readonly": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement#htmlcanvaselement.on:contextrestored",
+						"values": {
+							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 						}
 					},
 					"oncontextrestored": {
@@ -8369,42 +7752,6 @@
 							"Preact": "'none' | 'closerequest' | 'any'"
 						}
 					},
-					"on:cancel": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"globalAttribute": false,
-						"inherited": false,
-						"name": "on:cancel",
-						"prop": false,
-						"propChrome": false,
-						"propFirefox": false,
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement#htmldialogelement.on:cancel",
-						"values": {
-							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-							"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-						}
-					},
-					"on:close": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"globalAttribute": false,
-						"inherited": false,
-						"name": "on:close",
-						"prop": false,
-						"propChrome": false,
-						"propFirefox": false,
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement#htmldialogelement.on:close",
-						"values": {
-							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-							"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-						}
-					},
 					"onCancel": {
 						"attr": false,
 						"attrChrome": false,
@@ -8423,6 +7770,24 @@
 							"Solid Main": "EventHandlerUnion<T, Event>",
 							"Solid Minor": "EventHandlerUnion<T, Event>",
 							"Solid Next": "EventHandlerUnion<T, Event>"
+						}
+					},
+					"on:cancel": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"globalAttribute": false,
+						"inherited": false,
+						"name": "on:cancel",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"readonly": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement#htmldialogelement.on:cancel",
+						"values": {
+							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 						}
 					},
 					"oncancel": {
@@ -8462,6 +7827,24 @@
 							"Solid Minor": "EventHandlerUnion<T, Event>",
 							"Solid Next": "EventHandlerUnion<T, Event>",
 							"Vue": "(payload: Event) => void"
+						}
+					},
+					"on:close": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"globalAttribute": false,
+						"inherited": false,
+						"name": "on:close",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"readonly": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement#htmldialogelement.on:close",
+						"values": {
+							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 						}
 					},
 					"onclose": {
@@ -9429,24 +8812,6 @@
 							"Voby": "boolean"
 						}
 					},
-					"on:formdata": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"globalAttribute": false,
-						"inherited": false,
-						"name": "on:formdata",
-						"prop": false,
-						"propChrome": false,
-						"propFirefox": false,
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement#htmlformelement.on:formdata",
-						"values": {
-							"Solid Main": "EventHandlerWithOptionsUnion<T, FormDataEvent>",
-							"Solid Minor": "EventHandlerWithOptionsUnion<T, FormDataEvent>",
-							"Solid Next": "EventHandlerWithOptionsUnion<T, FormDataEvent>"
-						}
-					},
 					"onFormData": {
 						"attr": false,
 						"attrChrome": false,
@@ -9463,6 +8828,24 @@
 							"Solid Main": "EventHandlerUnion<T, FormDataEvent>",
 							"Solid Minor": "EventHandlerUnion<T, FormDataEvent>",
 							"Solid Next": "EventHandlerUnion<T, FormDataEvent>"
+						}
+					},
+					"on:formdata": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"globalAttribute": false,
+						"inherited": false,
+						"name": "on:formdata",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"readonly": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement#htmlformelement.on:formdata",
+						"values": {
+							"Solid Main": "EventHandlerWithOptionsUnion<T, FormDataEvent>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, FormDataEvent>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, FormDataEvent>"
 						}
 					},
 					"onformdata": {
@@ -10609,7 +9992,7 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
-						"danger": true,
+						"deprecated": true,
 						"globalAttribute": false,
 						"inherited": false,
 						"name": "profile",
@@ -18159,7 +17542,7 @@
 						"attr": false,
 						"attrChrome": false,
 						"attrFirefox": false,
-						"danger": true,
+						"deprecated": true,
 						"globalAttribute": false,
 						"inherited": false,
 						"name": "wrap",
@@ -24313,78 +23696,6 @@
 							"Vue": "boolean | 'true' | 'false'"
 						}
 					},
-					"on:encrypted": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"globalAttribute": false,
-						"inherited": false,
-						"name": "on:encrypted",
-						"prop": false,
-						"propChrome": false,
-						"propFirefox": false,
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#htmlvideoelement.on:encrypted",
-						"values": {
-							"Solid Main": "EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>",
-							"Solid Minor": "EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>",
-							"Solid Next": "EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>"
-						}
-					},
-					"on:enterpictureinpicture": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"globalAttribute": false,
-						"inherited": false,
-						"name": "on:enterpictureinpicture",
-						"prop": false,
-						"propChrome": false,
-						"propFirefox": false,
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#htmlvideoelement.on:enterpictureinpicture",
-						"values": {
-							"Solid Main": "EventHandlerWithOptionsUnion<T, PictureInPictureEvent>",
-							"Solid Minor": "EventHandlerWithOptionsUnion<T, PictureInPictureEvent>",
-							"Solid Next": "EventHandlerWithOptionsUnion<T, PictureInPictureEvent>"
-						}
-					},
-					"on:leavepictureinpicture": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"globalAttribute": false,
-						"inherited": false,
-						"name": "on:leavepictureinpicture",
-						"prop": false,
-						"propChrome": false,
-						"propFirefox": false,
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#htmlvideoelement.on:leavepictureinpicture",
-						"values": {
-							"Solid Main": "EventHandlerWithOptionsUnion<T, PictureInPictureEvent>",
-							"Solid Minor": "EventHandlerWithOptionsUnion<T, PictureInPictureEvent>",
-							"Solid Next": "EventHandlerWithOptionsUnion<T, PictureInPictureEvent>"
-						}
-					},
-					"on:waitingforkey": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"globalAttribute": false,
-						"inherited": false,
-						"name": "on:waitingforkey",
-						"prop": false,
-						"propChrome": false,
-						"propFirefox": false,
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#htmlvideoelement.on:waitingforkey",
-						"values": {
-							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-							"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-						}
-					},
 					"onEncrypted": {
 						"attr": false,
 						"attrChrome": false,
@@ -24401,6 +23712,24 @@
 							"Solid Main": "EventHandlerUnion<T, MediaEncryptedEvent>",
 							"Solid Minor": "EventHandlerUnion<T, MediaEncryptedEvent>",
 							"Solid Next": "EventHandlerUnion<T, MediaEncryptedEvent>"
+						}
+					},
+					"on:encrypted": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"globalAttribute": false,
+						"inherited": false,
+						"name": "on:encrypted",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"readonly": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#htmlvideoelement.on:encrypted",
+						"values": {
+							"Solid Main": "EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>"
 						}
 					},
 					"onencrypted": {
@@ -24444,6 +23773,24 @@
 							"Solid Next": "EventHandlerUnion<T, PictureInPictureEvent>"
 						}
 					},
+					"on:enterpictureinpicture": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"globalAttribute": false,
+						"inherited": false,
+						"name": "on:enterpictureinpicture",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"readonly": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#htmlvideoelement.on:enterpictureinpicture",
+						"values": {
+							"Solid Main": "EventHandlerWithOptionsUnion<T, PictureInPictureEvent>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, PictureInPictureEvent>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, PictureInPictureEvent>"
+						}
+					},
 					"onenterpictureinpicture": {
 						"attr": true,
 						"attrChrome": true,
@@ -24484,6 +23831,24 @@
 							"Solid Next": "EventHandlerUnion<T, PictureInPictureEvent>"
 						}
 					},
+					"on:leavepictureinpicture": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"globalAttribute": false,
+						"inherited": false,
+						"name": "on:leavepictureinpicture",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"readonly": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#htmlvideoelement.on:leavepictureinpicture",
+						"values": {
+							"Solid Main": "EventHandlerWithOptionsUnion<T, PictureInPictureEvent>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, PictureInPictureEvent>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, PictureInPictureEvent>"
+						}
+					},
 					"onleavepictureinpicture": {
 						"attr": true,
 						"attrChrome": true,
@@ -24522,6 +23887,24 @@
 							"Solid Main": "EventHandlerUnion<T, Event>",
 							"Solid Minor": "EventHandlerUnion<T, Event>",
 							"Solid Next": "EventHandlerUnion<T, Event>"
+						}
+					},
+					"on:waitingforkey": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"globalAttribute": false,
+						"inherited": false,
+						"name": "on:waitingforkey",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"readonly": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#htmlvideoelement.on:waitingforkey",
+						"values": {
+							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 						}
 					},
 					"onwaitingforkey": {
@@ -30014,24 +29397,6 @@
 							"Solid Next": "string | false"
 						}
 					},
-					"clip-rule": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"globalAttribute": false,
-						"inherited": false,
-						"name": "clip-rule",
-						"prop": false,
-						"propChrome": false,
-						"propFirefox": false,
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGClipPathElement#svgclippathelement.clip-rule",
-						"values": {
-							"Solid Main": "'nonzero' | 'evenodd' | 'inherit'",
-							"Solid Minor": "'nonzero' | 'evenodd' | 'inherit'",
-							"Solid Next": "'nonzero' | 'evenodd' | 'inherit' | false"
-						}
-					},
 					"clipPathUnits": {
 						"attr": false,
 						"attrChrome": false,
@@ -30048,6 +29413,24 @@
 							"Solid Main": "'userSpaceOnUse' | 'objectBoundingBox'",
 							"Solid Minor": "'userSpaceOnUse' | 'objectBoundingBox'",
 							"Solid Next": "'userSpaceOnUse' | 'objectBoundingBox' | false"
+						}
+					},
+					"clip-rule": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"globalAttribute": false,
+						"inherited": false,
+						"name": "clip-rule",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"readonly": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGClipPathElement#svgclippathelement.clip-rule",
+						"values": {
+							"Solid Main": "'nonzero' | 'evenodd' | 'inherit'",
+							"Solid Minor": "'nonzero' | 'evenodd' | 'inherit'",
+							"Solid Next": "'nonzero' | 'evenodd' | 'inherit' | false"
 						}
 					},
 					"color": {
@@ -65217,6 +64600,24 @@
 							"Solid Next": "string | false"
 						}
 					},
+					"markerHeight": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"globalAttribute": false,
+						"inherited": false,
+						"name": "markerHeight",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"readonly": true,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGMarkerElement#svgmarkerelement.markerheight",
+						"values": {
+							"Solid Main": "number | string",
+							"Solid Minor": "number | string",
+							"Solid Next": "number | string | false"
+						}
+					},
 					"marker-mid": {
 						"attr": false,
 						"attrChrome": false,
@@ -65251,24 +64652,6 @@
 							"Solid Main": "string",
 							"Solid Minor": "string",
 							"Solid Next": "string | false"
-						}
-					},
-					"markerHeight": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"globalAttribute": false,
-						"inherited": false,
-						"name": "markerHeight",
-						"prop": false,
-						"propChrome": false,
-						"propFirefox": false,
-						"readonly": true,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGMarkerElement#svgmarkerelement.markerheight",
-						"values": {
-							"Solid Main": "number | string",
-							"Solid Minor": "number | string",
-							"Solid Next": "number | string | false"
 						}
 					},
 					"markerUnits": {
@@ -82109,24 +81492,6 @@
 							"Solid Next": "'none' | 'underline' | 'overline' | 'line-through' | 'blink' | 'inherit' | false"
 						}
 					},
-					"text-rendering": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"globalAttribute": false,
-						"inherited": false,
-						"name": "text-rendering",
-						"prop": false,
-						"propChrome": false,
-						"propFirefox": false,
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGTextElement#svgtextelement.text-rendering",
-						"values": {
-							"Solid Main": "'auto' | 'optimizeSpeed' | 'optimizeLegibility' | 'geometricPrecision' | 'inherit'",
-							"Solid Minor": "'auto' | 'optimizeSpeed' | 'optimizeLegibility' | 'geometricPrecision' | 'inherit'",
-							"Solid Next": "'auto' | 'optimizeSpeed' | 'optimizeLegibility' | 'geometricPrecision' | 'inherit' | false"
-						}
-					},
 					"textLength": {
 						"attr": false,
 						"attrChrome": false,
@@ -82143,6 +81508,24 @@
 							"Solid Main": "number | string",
 							"Solid Minor": "number | string",
 							"Solid Next": "number | string | false"
+						}
+					},
+					"text-rendering": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"globalAttribute": false,
+						"inherited": false,
+						"name": "text-rendering",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"readonly": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGTextElement#svgtextelement.text-rendering",
+						"values": {
+							"Solid Main": "'auto' | 'optimizeSpeed' | 'optimizeLegibility' | 'geometricPrecision' | 'inherit'",
+							"Solid Minor": "'auto' | 'optimizeSpeed' | 'optimizeLegibility' | 'geometricPrecision' | 'inherit'",
+							"Solid Next": "'auto' | 'optimizeSpeed' | 'optimizeLegibility' | 'geometricPrecision' | 'inherit' | false"
 						}
 					},
 					"transform": {
@@ -84883,24 +84266,6 @@
 							"Solid Next": "'none' | 'underline' | 'overline' | 'line-through' | 'blink' | 'inherit' | false"
 						}
 					},
-					"text-rendering": {
-						"attr": false,
-						"attrChrome": false,
-						"attrFirefox": false,
-						"globalAttribute": false,
-						"inherited": false,
-						"name": "text-rendering",
-						"prop": false,
-						"propChrome": false,
-						"propFirefox": false,
-						"readonly": false,
-						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGTSpanElement#svgtspanelement.text-rendering",
-						"values": {
-							"Solid Main": "'auto' | 'optimizeSpeed' | 'optimizeLegibility' | 'geometricPrecision' | 'inherit'",
-							"Solid Minor": "'auto' | 'optimizeSpeed' | 'optimizeLegibility' | 'geometricPrecision' | 'inherit'",
-							"Solid Next": "'auto' | 'optimizeSpeed' | 'optimizeLegibility' | 'geometricPrecision' | 'inherit' | false"
-						}
-					},
 					"textLength": {
 						"attr": false,
 						"attrChrome": false,
@@ -84917,6 +84282,24 @@
 							"Solid Main": "number | string",
 							"Solid Minor": "number | string",
 							"Solid Next": "number | string | false"
+						}
+					},
+					"text-rendering": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"globalAttribute": false,
+						"inherited": false,
+						"name": "text-rendering",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"readonly": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGTSpanElement#svgtspanelement.text-rendering",
+						"values": {
+							"Solid Main": "'auto' | 'optimizeSpeed' | 'optimizeLegibility' | 'geometricPrecision' | 'inherit'",
+							"Solid Minor": "'auto' | 'optimizeSpeed' | 'optimizeLegibility' | 'geometricPrecision' | 'inherit'",
+							"Solid Next": "'auto' | 'optimizeSpeed' | 'optimizeLegibility' | 'geometricPrecision' | 'inherit' | false"
 						}
 					},
 					"unicode-bidi": {
@@ -87271,1111 +86654,6 @@
 		}
 	},
 	"eventsLib": {
-		"on:abort": {
-			"name": "on:abort",
-			"values": {
-				"Pota": "Events<UIEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, UIEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, UIEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, UIEvent>"
-			}
-		},
-		"on:afterprint": {
-			"name": "on:afterprint",
-			"values": {
-				"Pota": "Events<Event, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-			}
-		},
-		"on:animationcancel": {
-			"name": "on:animationcancel",
-			"values": {
-				"Pota": "Events<AnimationEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, AnimationEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, AnimationEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, AnimationEvent>"
-			}
-		},
-		"on:animationend": {
-			"name": "on:animationend",
-			"values": {
-				"Pota": "Events<AnimationEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, AnimationEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, AnimationEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, AnimationEvent>"
-			}
-		},
-		"on:animationiteration": {
-			"name": "on:animationiteration",
-			"values": {
-				"Pota": "Events<AnimationEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, AnimationEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, AnimationEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, AnimationEvent>"
-			}
-		},
-		"on:animationstart": {
-			"name": "on:animationstart",
-			"values": {
-				"Pota": "Events<AnimationEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, AnimationEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, AnimationEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, AnimationEvent>"
-			}
-		},
-		"on:auxclick": {
-			"name": "on:auxclick",
-			"values": {
-				"Pota": "Events<MouseEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, PointerEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
-			}
-		},
-		"on:beforeinput": {
-			"name": "on:beforeinput",
-			"values": {
-				"Pota": "Events<InputEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>"
-			}
-		},
-		"on:beforeprint": {
-			"name": "on:beforeprint",
-			"values": {
-				"Pota": "Events<Event, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-			}
-		},
-		"on:beforetoggle": {
-			"name": "on:beforetoggle",
-			"values": {
-				"Pota": "Events<Event, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, ToggleEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, ToggleEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, ToggleEvent>"
-			}
-		},
-		"on:beforeunload": {
-			"name": "on:beforeunload",
-			"values": {
-				"Pota": "Events<BeforeUnloadEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, BeforeUnloadEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, BeforeUnloadEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, BeforeUnloadEvent>"
-			}
-		},
-		"on:blur": {
-			"name": "on:blur",
-			"values": {
-				"Pota": "Events<FocusEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>"
-			}
-		},
-		"on:cancel": {
-			"name": "on:cancel",
-			"values": {
-				"Pota": "Events<Event, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-			}
-		},
-		"on:canplay": {
-			"name": "on:canplay",
-			"values": {
-				"Pota": "Events<Event, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-			}
-		},
-		"on:canplaythrough": {
-			"name": "on:canplaythrough",
-			"values": {
-				"Pota": "Events<Event, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-			}
-		},
-		"on:change": {
-			"name": "on:change",
-			"values": {
-				"Pota": "Events<Event, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, Event, ChangeEventHandler<T, Event>>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event, ChangeEventHandler<T, Event>>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, Event, ChangeEventHandler<T, Event>>"
-			}
-		},
-		"on:click": {
-			"name": "on:click",
-			"values": {
-				"Pota": "Events<MouseEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, MouseEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
-			}
-		},
-		"on:close": {
-			"name": "on:close",
-			"values": {
-				"Pota": "Events<Event, Element>"
-			}
-		},
-		"on:command": {
-			"name": "on:command",
-			"values": {
-				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-			}
-		},
-		"on:compositionend": {
-			"name": "on:compositionend",
-			"values": {
-				"Pota": "Events<CompositionEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, CompositionEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, CompositionEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, CompositionEvent>"
-			}
-		},
-		"on:compositionstart": {
-			"name": "on:compositionstart",
-			"values": {
-				"Pota": "Events<CompositionEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, CompositionEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, CompositionEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, CompositionEvent>"
-			}
-		},
-		"on:compositionupdate": {
-			"name": "on:compositionupdate",
-			"values": {
-				"Pota": "Events<CompositionEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, CompositionEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, CompositionEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, CompositionEvent>"
-			}
-		},
-		"on:contextlost": {
-			"name": "on:contextlost",
-			"values": {
-				"Pota": "Events<Event, Element>"
-			}
-		},
-		"on:contextmenu": {
-			"name": "on:contextmenu",
-			"values": {
-				"Pota": "Events<MouseEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, PointerEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
-			}
-		},
-		"on:contextrestored": {
-			"name": "on:contextrestored",
-			"values": {
-				"Pota": "Events<Event, Element>"
-			}
-		},
-		"on:copy": {
-			"name": "on:copy",
-			"values": {
-				"Pota": "Events<ClipboardEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, ClipboardEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, ClipboardEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, ClipboardEvent>"
-			}
-		},
-		"on:cuechange": {
-			"name": "on:cuechange",
-			"values": {
-				"Pota": "Events<Event, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-			}
-		},
-		"on:cut": {
-			"name": "on:cut",
-			"values": {
-				"Pota": "Events<ClipboardEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, ClipboardEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, ClipboardEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, ClipboardEvent>"
-			}
-		},
-		"on:dblclick": {
-			"name": "on:dblclick",
-			"values": {
-				"Pota": "Events<MouseEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, MouseEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
-			}
-		},
-		"on:drag": {
-			"name": "on:drag",
-			"values": {
-				"Pota": "Events<DragEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, DragEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
-			}
-		},
-		"on:dragend": {
-			"name": "on:dragend",
-			"values": {
-				"Pota": "Events<DragEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, DragEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
-			}
-		},
-		"on:dragenter": {
-			"name": "on:dragenter",
-			"values": {
-				"Pota": "Events<DragEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, DragEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
-			}
-		},
-		"on:dragexit": {
-			"name": "on:dragexit",
-			"values": {
-				"Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, DragEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
-			}
-		},
-		"on:dragleave": {
-			"name": "on:dragleave",
-			"values": {
-				"Pota": "Events<DragEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, DragEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
-			}
-		},
-		"on:dragover": {
-			"name": "on:dragover",
-			"values": {
-				"Pota": "Events<DragEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, DragEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
-			}
-		},
-		"on:dragstart": {
-			"name": "on:dragstart",
-			"values": {
-				"Pota": "Events<DragEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, DragEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
-			}
-		},
-		"on:drop": {
-			"name": "on:drop",
-			"values": {
-				"Pota": "Events<DragEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, DragEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
-			}
-		},
-		"on:durationchange": {
-			"name": "on:durationchange",
-			"values": {
-				"Pota": "Events<Event, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-			}
-		},
-		"on:emptied": {
-			"name": "on:emptied",
-			"values": {
-				"Pota": "Events<Event, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-			}
-		},
-		"on:encrypted": {
-			"name": "on:encrypted",
-			"values": {
-				"Pota": "Events<MediaEncryptedEvent, Element>"
-			}
-		},
-		"on:ended": {
-			"name": "on:ended",
-			"values": {
-				"Pota": "Events<Event, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-			}
-		},
-		"on:enterpictureinpicture": {
-			"name": "on:enterpictureinpicture",
-			"values": {
-				"Pota": "Events<PictureInPictureEvent, Element>"
-			}
-		},
-		"on:error": {
-			"name": "on:error",
-			"values": {
-				"Pota": "Events<ErrorEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, ErrorEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, ErrorEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, ErrorEvent>"
-			}
-		},
-		"on:focus": {
-			"name": "on:focus",
-			"values": {
-				"Pota": "Events<FocusEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>"
-			}
-		},
-		"on:focusin": {
-			"name": "on:focusin",
-			"values": {
-				"Pota": "Events<FocusEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>"
-			}
-		},
-		"on:focusout": {
-			"name": "on:focusout",
-			"values": {
-				"Pota": "Events<FocusEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>"
-			}
-		},
-		"on:formdata": {
-			"name": "on:formdata",
-			"values": {
-				"Pota": "Events<FormDataEvent, Element>"
-			}
-		},
-		"on:fullscreenchange": {
-			"name": "on:fullscreenchange",
-			"values": {
-				"Pota": "Events<Event, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-			}
-		},
-		"on:fullscreenerror": {
-			"name": "on:fullscreenerror",
-			"values": {
-				"Pota": "Events<Event, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-			}
-		},
-		"on:gamepadconnected": {
-			"name": "on:gamepadconnected",
-			"values": {
-				"Pota": "Events<GamepadEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, GamepadEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, GamepadEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, GamepadEvent>"
-			}
-		},
-		"on:gamepaddisconnected": {
-			"name": "on:gamepaddisconnected",
-			"values": {
-				"Pota": "Events<GamepadEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, GamepadEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, GamepadEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, GamepadEvent>"
-			}
-		},
-		"on:hashchange": {
-			"name": "on:hashchange",
-			"values": {
-				"Pota": "Events<HashChangeEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, HashChangeEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, HashChangeEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, HashChangeEvent>"
-			}
-		},
-		"on:input": {
-			"name": "on:input",
-			"values": {
-				"Pota": "Events<Event, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>"
-			}
-		},
-		"on:invalid": {
-			"name": "on:invalid",
-			"values": {
-				"Pota": "Events<Event, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-			}
-		},
-		"on:keydown": {
-			"name": "on:keydown",
-			"values": {
-				"Pota": "Events<KeyboardEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, KeyboardEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, KeyboardEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, KeyboardEvent>"
-			}
-		},
-		"on:keypress": {
-			"name": "on:keypress",
-			"values": {
-				"Pota": "Events<KeyboardEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, KeyboardEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, KeyboardEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, KeyboardEvent>"
-			}
-		},
-		"on:keyup": {
-			"name": "on:keyup",
-			"values": {
-				"Pota": "Events<KeyboardEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, KeyboardEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, KeyboardEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, KeyboardEvent>"
-			}
-		},
-		"on:languagechange": {
-			"name": "on:languagechange",
-			"values": {
-				"Pota": "Events<Event, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-			}
-		},
-		"on:leavepictureinpicture": {
-			"name": "on:leavepictureinpicture",
-			"values": {
-				"Pota": "Events<PictureInPictureEvent, Element>"
-			}
-		},
-		"on:load": {
-			"name": "on:load",
-			"values": {
-				"Pota": "Events<Event, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-			}
-		},
-		"on:loadeddata": {
-			"name": "on:loadeddata",
-			"values": {
-				"Pota": "Events<Event, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-			}
-		},
-		"on:loadedmetadata": {
-			"name": "on:loadedmetadata",
-			"values": {
-				"Pota": "Events<Event, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-			}
-		},
-		"on:loadstart": {
-			"name": "on:loadstart",
-			"values": {
-				"Pota": "Events<Event, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-			}
-		},
-		"on:lostpointercapture": {
-			"name": "on:lostpointercapture",
-			"values": {
-				"Pota": "Events<PointerEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, PointerEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
-			}
-		},
-		"on:message": {
-			"name": "on:message",
-			"values": {
-				"Pota": "Events<MessageEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, MessageEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, MessageEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, MessageEvent>"
-			}
-		},
-		"on:messageerror": {
-			"name": "on:messageerror",
-			"values": {
-				"Pota": "Events<MessageEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, MessageEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, MessageEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, MessageEvent>"
-			}
-		},
-		"on:mousedown": {
-			"name": "on:mousedown",
-			"values": {
-				"Pota": "Events<MouseEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, MouseEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
-			}
-		},
-		"on:mouseenter": {
-			"name": "on:mouseenter",
-			"values": {
-				"Pota": "Events<MouseEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, MouseEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
-			}
-		},
-		"on:mouseleave": {
-			"name": "on:mouseleave",
-			"values": {
-				"Pota": "Events<MouseEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, MouseEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
-			}
-		},
-		"on:mousemove": {
-			"name": "on:mousemove",
-			"values": {
-				"Pota": "Events<MouseEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, MouseEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
-			}
-		},
-		"on:mouseout": {
-			"name": "on:mouseout",
-			"values": {
-				"Pota": "Events<MouseEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, MouseEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
-			}
-		},
-		"on:mouseover": {
-			"name": "on:mouseover",
-			"values": {
-				"Pota": "Events<MouseEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, MouseEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
-			}
-		},
-		"on:mouseup": {
-			"name": "on:mouseup",
-			"values": {
-				"Pota": "Events<MouseEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, MouseEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
-			}
-		},
-		"on:offline": {
-			"name": "on:offline",
-			"values": {
-				"Pota": "Events<Event, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-			}
-		},
-		"on:online": {
-			"name": "on:online",
-			"values": {
-				"Pota": "Events<Event, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-			}
-		},
-		"on:pagehide": {
-			"name": "on:pagehide",
-			"values": {
-				"Pota": "Events<PageTransitionEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>"
-			}
-		},
-		"on:pagereveal": {
-			"name": "on:pagereveal",
-			"values": {
-				"Pota": "Events<Event, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-			}
-		},
-		"on:pageshow": {
-			"name": "on:pageshow",
-			"values": {
-				"Pota": "Events<PageTransitionEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>"
-			}
-		},
-		"on:pageswap": {
-			"name": "on:pageswap",
-			"values": {
-				"Pota": "Events<Event, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-			}
-		},
-		"on:paste": {
-			"name": "on:paste",
-			"values": {
-				"Pota": "Events<ClipboardEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, ClipboardEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, ClipboardEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, ClipboardEvent>"
-			}
-		},
-		"on:pause": {
-			"name": "on:pause",
-			"values": {
-				"Pota": "Events<Event, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-			}
-		},
-		"on:play": {
-			"name": "on:play",
-			"values": {
-				"Pota": "Events<Event, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-			}
-		},
-		"on:playing": {
-			"name": "on:playing",
-			"values": {
-				"Pota": "Events<Event, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-			}
-		},
-		"on:pointercancel": {
-			"name": "on:pointercancel",
-			"values": {
-				"Pota": "Events<PointerEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, PointerEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
-			}
-		},
-		"on:pointerdown": {
-			"name": "on:pointerdown",
-			"values": {
-				"Pota": "Events<PointerEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, PointerEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
-			}
-		},
-		"on:pointerenter": {
-			"name": "on:pointerenter",
-			"values": {
-				"Pota": "Events<PointerEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, PointerEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
-			}
-		},
-		"on:pointerleave": {
-			"name": "on:pointerleave",
-			"values": {
-				"Pota": "Events<PointerEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, PointerEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
-			}
-		},
-		"on:pointermove": {
-			"name": "on:pointermove",
-			"values": {
-				"Pota": "Events<PointerEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, PointerEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
-			}
-		},
-		"on:pointerout": {
-			"name": "on:pointerout",
-			"values": {
-				"Pota": "Events<PointerEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, PointerEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
-			}
-		},
-		"on:pointerover": {
-			"name": "on:pointerover",
-			"values": {
-				"Pota": "Events<PointerEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, PointerEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
-			}
-		},
-		"on:pointerup": {
-			"name": "on:pointerup",
-			"values": {
-				"Pota": "Events<PointerEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, PointerEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
-			}
-		},
-		"on:popstate": {
-			"name": "on:popstate",
-			"values": {
-				"Pota": "Events<PopStateEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, PopStateEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, PopStateEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, PopStateEvent>"
-			}
-		},
-		"on:progress": {
-			"name": "on:progress",
-			"values": {
-				"Pota": "Events<ProgressEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, ProgressEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, ProgressEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, ProgressEvent>"
-			}
-		},
-		"on:ratechange": {
-			"name": "on:ratechange",
-			"values": {
-				"Pota": "Events<Event, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-			}
-		},
-		"on:rejectionhandled": {
-			"name": "on:rejectionhandled",
-			"values": {
-				"Pota": "Events<PromiseRejectionEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>"
-			}
-		},
-		"on:reset": {
-			"name": "on:reset",
-			"values": {
-				"Pota": "Events<Event, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-			}
-		},
-		"on:resize": {
-			"name": "on:resize",
-			"values": {
-				"Pota": "Events<UIEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, UIEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, UIEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, UIEvent>"
-			}
-		},
-		"on:scroll": {
-			"name": "on:scroll",
-			"values": {
-				"Pota": "Events<Event, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-			}
-		},
-		"on:scrollend": {
-			"name": "on:scrollend",
-			"values": {
-				"Pota": "Events<Event, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-			}
-		},
-		"on:securitypolicyviolation": {
-			"name": "on:securitypolicyviolation",
-			"values": {
-				"Pota": "Events<SecurityPolicyViolationEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, SecurityPolicyViolationEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, SecurityPolicyViolationEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, SecurityPolicyViolationEvent>"
-			}
-		},
-		"on:seeked": {
-			"name": "on:seeked",
-			"values": {
-				"Pota": "Events<Event, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-			}
-		},
-		"on:seeking": {
-			"name": "on:seeking",
-			"values": {
-				"Pota": "Events<Event, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-			}
-		},
-		"on:select": {
-			"name": "on:select",
-			"values": {
-				"Pota": "Events<Event, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-			}
-		},
-		"on:selectionchange": {
-			"name": "on:selectionchange",
-			"values": {
-				"Pota": "Events<Event, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-			}
-		},
-		"on:selectstart": {
-			"name": "on:selectstart",
-			"values": {
-				"Pota": "Events<Event, Element>"
-			}
-		},
-		"on:slotchange": {
-			"name": "on:slotchange",
-			"values": {
-				"Pota": "Events<Event, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-			}
-		},
-		"on:stalled": {
-			"name": "on:stalled",
-			"values": {
-				"Pota": "Events<Event, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-			}
-		},
-		"on:storage": {
-			"name": "on:storage",
-			"values": {
-				"Pota": "Events<StorageEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, StorageEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, StorageEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, StorageEvent>"
-			}
-		},
-		"on:submit": {
-			"name": "on:submit",
-			"values": {
-				"Pota": "Events<SubmitEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, SubmitEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, SubmitEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, SubmitEvent>"
-			}
-		},
-		"on:suspend": {
-			"name": "on:suspend",
-			"values": {
-				"Pota": "Events<Event, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-			}
-		},
-		"on:timeupdate": {
-			"name": "on:timeupdate",
-			"values": {
-				"Pota": "Events<Event, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-			}
-		},
-		"on:toggle": {
-			"name": "on:toggle",
-			"values": {
-				"Pota": "Events<Event, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, ToggleEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, ToggleEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, ToggleEvent>"
-			}
-		},
-		"on:touchcancel": {
-			"name": "on:touchcancel",
-			"values": {
-				"Pota": "Events<TouchEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, TouchEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, TouchEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, TouchEvent>"
-			}
-		},
-		"on:touchend": {
-			"name": "on:touchend",
-			"values": {
-				"Pota": "Events<TouchEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, TouchEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, TouchEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, TouchEvent>"
-			}
-		},
-		"on:touchmove": {
-			"name": "on:touchmove",
-			"values": {
-				"Pota": "Events<TouchEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, TouchEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, TouchEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, TouchEvent>"
-			}
-		},
-		"on:touchstart": {
-			"name": "on:touchstart",
-			"values": {
-				"Pota": "Events<TouchEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, TouchEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, TouchEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, TouchEvent>"
-			}
-		},
-		"on:transitioncancel": {
-			"name": "on:transitioncancel",
-			"values": {
-				"Pota": "Events<TransitionEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, TransitionEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, TransitionEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, TransitionEvent>"
-			}
-		},
-		"on:transitionend": {
-			"name": "on:transitionend",
-			"values": {
-				"Pota": "Events<TransitionEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, TransitionEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, TransitionEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, TransitionEvent>"
-			}
-		},
-		"on:transitionrun": {
-			"name": "on:transitionrun",
-			"values": {
-				"Pota": "Events<TransitionEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, TransitionEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, TransitionEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, TransitionEvent>"
-			}
-		},
-		"on:transitionstart": {
-			"name": "on:transitionstart",
-			"values": {
-				"Pota": "Events<TransitionEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, TransitionEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, TransitionEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, TransitionEvent>"
-			}
-		},
-		"on:unhandledrejection": {
-			"name": "on:unhandledrejection",
-			"values": {
-				"Pota": "Events<PromiseRejectionEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>"
-			}
-		},
-		"on:unload": {
-			"name": "on:unload",
-			"values": {
-				"Pota": "Events<Event, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-			}
-		},
-		"on:volumechange": {
-			"name": "on:volumechange",
-			"values": {
-				"Pota": "Events<Event, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-			}
-		},
-		"on:waiting": {
-			"name": "on:waiting",
-			"values": {
-				"Pota": "Events<Event, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
-			}
-		},
-		"on:waitingforkey": {
-			"name": "on:waitingforkey",
-			"values": {
-				"Pota": "Events<Event, Element>"
-			}
-		},
-		"on:wheel": {
-			"name": "on:wheel",
-			"values": {
-				"Pota": "Events<WheelEvent, Element>",
-				"Solid Main": "EventHandlerWithOptionsUnion<T, WheelEvent>",
-				"Solid Minor": "EventHandlerWithOptionsUnion<T, WheelEvent>",
-				"Solid Next": "EventHandlerWithOptionsUnion<T, WheelEvent>"
-			}
-		},
 		"onAbort": {
 			"name": "onAbort",
 			"values": {
@@ -88396,6 +86674,15 @@
 				"Solid Next": "EventHandlerUnion<T, UIEvent>"
 			}
 		},
+		"on:abort": {
+			"name": "on:abort",
+			"values": {
+				"Pota": "Events<UIEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, UIEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, UIEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, UIEvent>"
+			}
+		},
 		"onAfterPrint": {
 			"name": "onAfterPrint",
 			"values": {
@@ -88412,6 +86699,15 @@
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
+		"on:afterprint": {
+			"name": "on:afterprint",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
 		"onAnimationCancel": {
 			"name": "onAnimationCancel",
 			"values": {
@@ -88426,6 +86722,15 @@
 				"Solid Main": "EventHandlerUnion<T, AnimationEvent>",
 				"Solid Minor": "EventHandlerUnion<T, AnimationEvent>",
 				"Solid Next": "EventHandlerUnion<T, AnimationEvent>"
+			}
+		},
+		"on:animationcancel": {
+			"name": "on:animationcancel",
+			"values": {
+				"Pota": "Events<AnimationEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, AnimationEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, AnimationEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, AnimationEvent>"
 			}
 		},
 		"onAnimationEnd": {
@@ -88445,6 +86750,15 @@
 				"Solid Main": "EventHandlerUnion<T, AnimationEvent>",
 				"Solid Minor": "EventHandlerUnion<T, AnimationEvent>",
 				"Solid Next": "EventHandlerUnion<T, AnimationEvent>"
+			}
+		},
+		"on:animationend": {
+			"name": "on:animationend",
+			"values": {
+				"Pota": "Events<AnimationEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, AnimationEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, AnimationEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, AnimationEvent>"
 			}
 		},
 		"onAnimationend": {
@@ -88472,6 +86786,15 @@
 				"Solid Next": "EventHandlerUnion<T, AnimationEvent>"
 			}
 		},
+		"on:animationiteration": {
+			"name": "on:animationiteration",
+			"values": {
+				"Pota": "Events<AnimationEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, AnimationEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, AnimationEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, AnimationEvent>"
+			}
+		},
 		"onAnimationiteration": {
 			"name": "onAnimationiteration",
 			"values": {
@@ -88495,6 +86818,15 @@
 				"Solid Main": "EventHandlerUnion<T, AnimationEvent>",
 				"Solid Minor": "EventHandlerUnion<T, AnimationEvent>",
 				"Solid Next": "EventHandlerUnion<T, AnimationEvent>"
+			}
+		},
+		"on:animationstart": {
+			"name": "on:animationstart",
+			"values": {
+				"Pota": "Events<AnimationEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, AnimationEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, AnimationEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, AnimationEvent>"
 			}
 		},
 		"onAnimationstart": {
@@ -88522,6 +86854,15 @@
 				"Solid Next": "EventHandlerUnion<T, PointerEvent>"
 			}
 		},
+		"on:auxclick": {
+			"name": "on:auxclick",
+			"values": {
+				"Pota": "Events<MouseEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
+			}
+		},
 		"onAuxclick": {
 			"name": "onAuxclick",
 			"values": {
@@ -88547,6 +86888,15 @@
 				"Solid Next": "InputEventHandlerUnion<T, InputEvent>"
 			}
 		},
+		"on:beforeinput": {
+			"name": "on:beforeinput",
+			"values": {
+				"Pota": "Events<InputEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>"
+			}
+		},
 		"onBeforeinput": {
 			"name": "onBeforeinput",
 			"values": {
@@ -88569,6 +86919,15 @@
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
+		"on:beforeprint": {
+			"name": "on:beforeprint",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
 		"onBeforeToggle": {
 			"name": "onBeforeToggle",
 			"values": {
@@ -88587,6 +86946,15 @@
 				"Solid Next": "EventHandlerUnion<T, ToggleEvent>"
 			}
 		},
+		"on:beforetoggle": {
+			"name": "on:beforetoggle",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, ToggleEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, ToggleEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, ToggleEvent>"
+			}
+		},
 		"onBeforeUnload": {
 			"name": "onBeforeUnload",
 			"values": {
@@ -88601,6 +86969,15 @@
 				"Solid Main": "EventHandlerUnion<T, BeforeUnloadEvent>",
 				"Solid Minor": "EventHandlerUnion<T, BeforeUnloadEvent>",
 				"Solid Next": "EventHandlerUnion<T, BeforeUnloadEvent>"
+			}
+		},
+		"on:beforeunload": {
+			"name": "on:beforeunload",
+			"values": {
+				"Pota": "Events<BeforeUnloadEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, BeforeUnloadEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, BeforeUnloadEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, BeforeUnloadEvent>"
 			}
 		},
 		"onBlur": {
@@ -88623,6 +87000,15 @@
 				"Solid Next": "FocusEventHandlerUnion<T, FocusEvent>"
 			}
 		},
+		"on:blur": {
+			"name": "on:blur",
+			"values": {
+				"Pota": "Events<FocusEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>"
+			}
+		},
 		"onCancel": {
 			"name": "onCancel",
 			"values": {
@@ -88638,6 +87024,15 @@
 				"Solid Main": "EventHandlerUnion<T, Event>",
 				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"on:cancel": {
+			"name": "on:cancel",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 			}
 		},
 		"onCanPlay": {
@@ -88657,6 +87052,15 @@
 				"Solid Main": "EventHandlerUnion<T, Event>",
 				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"on:canplay": {
+			"name": "on:canplay",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 			}
 		},
 		"onCanplay": {
@@ -88682,6 +87086,15 @@
 				"Solid Main": "EventHandlerUnion<T, Event>",
 				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"on:canplaythrough": {
+			"name": "on:canplaythrough",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 			}
 		},
 		"onCanplaythrough": {
@@ -88710,6 +87123,15 @@
 				"Solid Next": "ChangeEventHandlerUnion<T, Event>"
 			}
 		},
+		"on:change": {
+			"name": "on:change",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event, ChangeEventHandler<T, Event>>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event, ChangeEventHandler<T, Event>>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event, ChangeEventHandler<T, Event>>"
+			}
+		},
 		"onClick": {
 			"name": "onClick",
 			"values": {
@@ -88730,10 +87152,25 @@
 				"Solid Next": "EventHandlerUnion<T, MouseEvent>"
 			}
 		},
+		"on:click": {
+			"name": "on:click",
+			"values": {
+				"Pota": "Events<MouseEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
+			}
+		},
 		"onClose": {
 			"name": "onClose",
 			"values": {
 				"Preact": "GenericEventHandler<Target>"
+			}
+		},
+		"on:close": {
+			"name": "on:close",
+			"values": {
+				"Pota": "Events<Event, Element>"
 			}
 		},
 		"onCommand": {
@@ -88753,6 +87190,14 @@
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
+		"on:command": {
+			"name": "on:command",
+			"values": {
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
 		"onCompositionEnd": {
 			"name": "onCompositionEnd",
 			"values": {
@@ -88770,6 +87215,15 @@
 				"Solid Main": "EventHandlerUnion<T, CompositionEvent>",
 				"Solid Minor": "EventHandlerUnion<T, CompositionEvent>",
 				"Solid Next": "EventHandlerUnion<T, CompositionEvent>"
+			}
+		},
+		"on:compositionend": {
+			"name": "on:compositionend",
+			"values": {
+				"Pota": "Events<CompositionEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, CompositionEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, CompositionEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, CompositionEvent>"
 			}
 		},
 		"onCompositionend": {
@@ -88797,6 +87251,15 @@
 				"Solid Next": "EventHandlerUnion<T, CompositionEvent>"
 			}
 		},
+		"on:compositionstart": {
+			"name": "on:compositionstart",
+			"values": {
+				"Pota": "Events<CompositionEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, CompositionEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, CompositionEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, CompositionEvent>"
+			}
+		},
 		"onCompositionstart": {
 			"name": "onCompositionstart",
 			"values": {
@@ -88822,10 +87285,25 @@
 				"Solid Next": "EventHandlerUnion<T, CompositionEvent>"
 			}
 		},
+		"on:compositionupdate": {
+			"name": "on:compositionupdate",
+			"values": {
+				"Pota": "Events<CompositionEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, CompositionEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, CompositionEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, CompositionEvent>"
+			}
+		},
 		"onCompositionupdate": {
 			"name": "onCompositionupdate",
 			"values": {
 				"Vue": "CompositionEvent"
+			}
+		},
+		"on:contextlost": {
+			"name": "on:contextlost",
+			"values": {
+				"Pota": "Events<Event, Element>"
 			}
 		},
 		"onContextMenu": {
@@ -88847,10 +87325,25 @@
 				"Solid Next": "EventHandlerUnion<T, PointerEvent>"
 			}
 		},
+		"on:contextmenu": {
+			"name": "on:contextmenu",
+			"values": {
+				"Pota": "Events<MouseEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
+			}
+		},
 		"onContextmenu": {
 			"name": "onContextmenu",
 			"values": {
 				"Vue": "MouseEvent"
+			}
+		},
+		"on:contextrestored": {
+			"name": "on:contextrestored",
+			"values": {
+				"Pota": "Events<Event, Element>"
 			}
 		},
 		"onCopy": {
@@ -88873,6 +87366,15 @@
 				"Solid Next": "EventHandlerUnion<T, ClipboardEvent>"
 			}
 		},
+		"on:copy": {
+			"name": "on:copy",
+			"values": {
+				"Pota": "Events<ClipboardEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, ClipboardEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, ClipboardEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, ClipboardEvent>"
+			}
+		},
 		"onCueChange": {
 			"name": "onCueChange",
 			"values": {
@@ -88887,6 +87389,15 @@
 				"Solid Main": "EventHandlerUnion<T, Event>",
 				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"on:cuechange": {
+			"name": "on:cuechange",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 			}
 		},
 		"onCut": {
@@ -88909,6 +87420,15 @@
 				"Solid Next": "EventHandlerUnion<T, ClipboardEvent>"
 			}
 		},
+		"on:cut": {
+			"name": "on:cut",
+			"values": {
+				"Pota": "Events<ClipboardEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, ClipboardEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, ClipboardEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, ClipboardEvent>"
+			}
+		},
 		"onDblClick": {
 			"name": "onDblClick",
 			"values": {
@@ -88925,6 +87445,15 @@
 				"Solid Main": "EventHandlerUnion<T, MouseEvent>",
 				"Solid Minor": "EventHandlerUnion<T, MouseEvent>",
 				"Solid Next": "EventHandlerUnion<T, MouseEvent>"
+			}
+		},
+		"on:dblclick": {
+			"name": "on:dblclick",
+			"values": {
+				"Pota": "Events<MouseEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
 			}
 		},
 		"onDblclick": {
@@ -88959,6 +87488,15 @@
 				"Solid Next": "EventHandlerUnion<T, DragEvent>"
 			}
 		},
+		"on:drag": {
+			"name": "on:drag",
+			"values": {
+				"Pota": "Events<DragEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, DragEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
+			}
+		},
 		"onDragEnd": {
 			"name": "onDragEnd",
 			"values": {
@@ -88976,6 +87514,15 @@
 				"Solid Main": "EventHandlerUnion<T, DragEvent>",
 				"Solid Minor": "EventHandlerUnion<T, DragEvent>",
 				"Solid Next": "EventHandlerUnion<T, DragEvent>"
+			}
+		},
+		"on:dragend": {
+			"name": "on:dragend",
+			"values": {
+				"Pota": "Events<DragEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, DragEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
 			}
 		},
 		"onDragend": {
@@ -89003,6 +87550,15 @@
 				"Solid Next": "EventHandlerUnion<T, DragEvent>"
 			}
 		},
+		"on:dragenter": {
+			"name": "on:dragenter",
+			"values": {
+				"Pota": "Events<DragEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, DragEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
+			}
+		},
 		"onDragenter": {
 			"name": "onDragenter",
 			"values": {
@@ -89026,6 +87582,14 @@
 				"Solid Main": "EventHandlerUnion<T, DragEvent>",
 				"Solid Minor": "EventHandlerUnion<T, DragEvent>",
 				"Solid Next": "EventHandlerUnion<T, DragEvent>"
+			}
+		},
+		"on:dragexit": {
+			"name": "on:dragexit",
+			"values": {
+				"Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, DragEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
 			}
 		},
 		"onDragexit": {
@@ -89053,6 +87617,15 @@
 				"Solid Next": "EventHandlerUnion<T, DragEvent>"
 			}
 		},
+		"on:dragleave": {
+			"name": "on:dragleave",
+			"values": {
+				"Pota": "Events<DragEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, DragEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
+			}
+		},
 		"onDragleave": {
 			"name": "onDragleave",
 			"values": {
@@ -89078,6 +87651,15 @@
 				"Solid Next": "EventHandlerUnion<T, DragEvent>"
 			}
 		},
+		"on:dragover": {
+			"name": "on:dragover",
+			"values": {
+				"Pota": "Events<DragEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, DragEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
+			}
+		},
 		"onDragover": {
 			"name": "onDragover",
 			"values": {
@@ -89101,6 +87683,15 @@
 				"Solid Main": "EventHandlerUnion<T, DragEvent>",
 				"Solid Minor": "EventHandlerUnion<T, DragEvent>",
 				"Solid Next": "EventHandlerUnion<T, DragEvent>"
+			}
+		},
+		"on:dragstart": {
+			"name": "on:dragstart",
+			"values": {
+				"Pota": "Events<DragEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, DragEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
 			}
 		},
 		"onDragstart": {
@@ -89129,6 +87720,15 @@
 				"Solid Next": "EventHandlerUnion<T, DragEvent>"
 			}
 		},
+		"on:drop": {
+			"name": "on:drop",
+			"values": {
+				"Pota": "Events<DragEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, DragEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
+			}
+		},
 		"onDurationChange": {
 			"name": "onDurationChange",
 			"values": {
@@ -89146,6 +87746,15 @@
 				"Solid Main": "EventHandlerUnion<T, Event>",
 				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"on:durationchange": {
+			"name": "on:durationchange",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 			}
 		},
 		"onDurationchange": {
@@ -89174,6 +87783,15 @@
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
+		"on:emptied": {
+			"name": "on:emptied",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
 		"onEncrypted": {
 			"name": "onEncrypted",
 			"values": {
@@ -89181,6 +87799,12 @@
 				"React": "ReactEventHandler<T>",
 				"Voby": "GenericEventHandler<T>",
 				"Vue": "Event"
+			}
+		},
+		"on:encrypted": {
+			"name": "on:encrypted",
+			"values": {
+				"Pota": "Events<MediaEncryptedEvent, Element>"
 			}
 		},
 		"onEnded": {
@@ -89203,10 +87827,25 @@
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
+		"on:ended": {
+			"name": "on:ended",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
 		"onEnterPictureInPicture": {
 			"name": "onEnterPictureInPicture",
 			"values": {
 				"Preact": "PictureInPictureEventHandler<Target>"
+			}
+		},
+		"on:enterpictureinpicture": {
+			"name": "on:enterpictureinpicture",
+			"values": {
+				"Pota": "Events<PictureInPictureEvent, Element>"
 			}
 		},
 		"onError": {
@@ -89229,6 +87868,15 @@
 				"Solid Next": "EventHandlerUnion<T, ErrorEvent>"
 			}
 		},
+		"on:error": {
+			"name": "on:error",
+			"values": {
+				"Pota": "Events<ErrorEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, ErrorEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, ErrorEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, ErrorEvent>"
+			}
+		},
 		"onFocus": {
 			"name": "onFocus",
 			"values": {
@@ -89249,6 +87897,15 @@
 				"Solid Next": "FocusEventHandlerUnion<T, FocusEvent>"
 			}
 		},
+		"on:focus": {
+			"name": "on:focus",
+			"values": {
+				"Pota": "Events<FocusEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>"
+			}
+		},
 		"onFocusIn": {
 			"name": "onFocusIn",
 			"values": {
@@ -89265,6 +87922,15 @@
 				"Solid Main": "FocusEventHandlerUnion<T, FocusEvent>",
 				"Solid Minor": "FocusEventHandlerUnion<T, FocusEvent>",
 				"Solid Next": "FocusEventHandlerUnion<T, FocusEvent>"
+			}
+		},
+		"on:focusin": {
+			"name": "on:focusin",
+			"values": {
+				"Pota": "Events<FocusEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>"
 			}
 		},
 		"onFocusin": {
@@ -89291,6 +87957,15 @@
 				"Solid Next": "FocusEventHandlerUnion<T, FocusEvent>"
 			}
 		},
+		"on:focusout": {
+			"name": "on:focusout",
+			"values": {
+				"Pota": "Events<FocusEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>"
+			}
+		},
 		"onFocusout": {
 			"name": "onFocusout",
 			"values": {
@@ -89304,12 +87979,27 @@
 				"Voby": "GenericEventHandler<T>"
 			}
 		},
+		"on:formdata": {
+			"name": "on:formdata",
+			"values": {
+				"Pota": "Events<FormDataEvent, Element>"
+			}
+		},
 		"onFullscreenChange": {
 			"name": "onFullscreenChange",
 			"values": {
 				"Solid Main": "EventHandlerUnion<T, Event>",
 				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"on:fullscreenchange": {
+			"name": "on:fullscreenchange",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 			}
 		},
 		"onfullscreenchange": {
@@ -89326,6 +88016,15 @@
 				"Solid Main": "EventHandlerUnion<T, Event>",
 				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"on:fullscreenerror": {
+			"name": "on:fullscreenerror",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 			}
 		},
 		"onfullscreenerror": {
@@ -89352,6 +88051,15 @@
 				"Solid Next": "EventHandlerUnion<T, GamepadEvent>"
 			}
 		},
+		"on:gamepadconnected": {
+			"name": "on:gamepadconnected",
+			"values": {
+				"Pota": "Events<GamepadEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, GamepadEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, GamepadEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, GamepadEvent>"
+			}
+		},
 		"onGamepadDisconnected": {
 			"name": "onGamepadDisconnected",
 			"values": {
@@ -89368,6 +88076,15 @@
 				"Solid Next": "EventHandlerUnion<T, GamepadEvent>"
 			}
 		},
+		"on:gamepaddisconnected": {
+			"name": "on:gamepaddisconnected",
+			"values": {
+				"Pota": "Events<GamepadEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, GamepadEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, GamepadEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, GamepadEvent>"
+			}
+		},
 		"onHashchange": {
 			"name": "onHashchange",
 			"values": {
@@ -89382,6 +88099,15 @@
 				"Solid Main": "EventHandlerUnion<T, HashChangeEvent>",
 				"Solid Minor": "EventHandlerUnion<T, HashChangeEvent>",
 				"Solid Next": "EventHandlerUnion<T, HashChangeEvent>"
+			}
+		},
+		"on:hashchange": {
+			"name": "on:hashchange",
+			"values": {
+				"Pota": "Events<HashChangeEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, HashChangeEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, HashChangeEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, HashChangeEvent>"
 			}
 		},
 		"onInput": {
@@ -89404,6 +88130,15 @@
 				"Solid Next": "InputEventHandlerUnion<T, InputEvent>"
 			}
 		},
+		"on:input": {
+			"name": "on:input",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>"
+			}
+		},
 		"onInvalid": {
 			"name": "onInvalid",
 			"values": {
@@ -89424,6 +88159,15 @@
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
+		"on:invalid": {
+			"name": "on:invalid",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
 		"onKeyDown": {
 			"name": "onKeyDown",
 			"values": {
@@ -89441,6 +88185,15 @@
 				"Solid Main": "EventHandlerUnion<T, KeyboardEvent>",
 				"Solid Minor": "EventHandlerUnion<T, KeyboardEvent>",
 				"Solid Next": "EventHandlerUnion<T, KeyboardEvent>"
+			}
+		},
+		"on:keydown": {
+			"name": "on:keydown",
+			"values": {
+				"Pota": "Events<KeyboardEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, KeyboardEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, KeyboardEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, KeyboardEvent>"
 			}
 		},
 		"onKeydown": {
@@ -89468,6 +88221,15 @@
 				"Solid Next": "EventHandlerUnion<T, KeyboardEvent>"
 			}
 		},
+		"on:keypress": {
+			"name": "on:keypress",
+			"values": {
+				"Pota": "Events<KeyboardEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, KeyboardEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, KeyboardEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, KeyboardEvent>"
+			}
+		},
 		"onKeypress": {
 			"name": "onKeypress",
 			"values": {
@@ -89493,6 +88255,15 @@
 				"Solid Next": "EventHandlerUnion<T, KeyboardEvent>"
 			}
 		},
+		"on:keyup": {
+			"name": "on:keyup",
+			"values": {
+				"Pota": "Events<KeyboardEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, KeyboardEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, KeyboardEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, KeyboardEvent>"
+			}
+		},
 		"onKeyup": {
 			"name": "onKeyup",
 			"values": {
@@ -89515,10 +88286,25 @@
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
+		"on:languagechange": {
+			"name": "on:languagechange",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
 		"onLeavePictureInPicture": {
 			"name": "onLeavePictureInPicture",
 			"values": {
 				"Preact": "PictureInPictureEventHandler<Target>"
+			}
+		},
+		"on:leavepictureinpicture": {
+			"name": "on:leavepictureinpicture",
+			"values": {
+				"Pota": "Events<PictureInPictureEvent, Element>"
 			}
 		},
 		"onLoad": {
@@ -89541,6 +88327,15 @@
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
+		"on:load": {
+			"name": "on:load",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
 		"onLoadedData": {
 			"name": "onLoadedData",
 			"values": {
@@ -89558,6 +88353,15 @@
 				"Solid Main": "EventHandlerUnion<T, Event>",
 				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"on:loadeddata": {
+			"name": "on:loadeddata",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 			}
 		},
 		"onLoadeddata": {
@@ -89585,6 +88389,15 @@
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
+		"on:loadedmetadata": {
+			"name": "on:loadedmetadata",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
 		"onLoadedmetadata": {
 			"name": "onLoadedmetadata",
 			"values": {
@@ -89608,6 +88421,15 @@
 				"Solid Main": "EventHandlerUnion<T, Event>",
 				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"on:loadstart": {
+			"name": "on:loadstart",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 			}
 		},
 		"onLoadstart": {
@@ -89635,6 +88457,15 @@
 				"Solid Next": "EventHandlerUnion<T, PointerEvent>"
 			}
 		},
+		"on:lostpointercapture": {
+			"name": "on:lostpointercapture",
+			"values": {
+				"Pota": "Events<PointerEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
+			}
+		},
 		"onMessage": {
 			"name": "onMessage",
 			"values": {
@@ -89651,6 +88482,15 @@
 				"Solid Next": "EventHandlerUnion<T, MessageEvent>"
 			}
 		},
+		"on:message": {
+			"name": "on:message",
+			"values": {
+				"Pota": "Events<MessageEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, MessageEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, MessageEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, MessageEvent>"
+			}
+		},
 		"onMessageError": {
 			"name": "onMessageError",
 			"values": {
@@ -89665,6 +88505,15 @@
 				"Solid Main": "EventHandlerUnion<T, MessageEvent>",
 				"Solid Minor": "EventHandlerUnion<T, MessageEvent>",
 				"Solid Next": "EventHandlerUnion<T, MessageEvent>"
+			}
+		},
+		"on:messageerror": {
+			"name": "on:messageerror",
+			"values": {
+				"Pota": "Events<MessageEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, MessageEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, MessageEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, MessageEvent>"
 			}
 		},
 		"onMiddleClick": {
@@ -89692,6 +88541,15 @@
 				"Solid Next": "EventHandlerUnion<T, MouseEvent>"
 			}
 		},
+		"on:mousedown": {
+			"name": "on:mousedown",
+			"values": {
+				"Pota": "Events<MouseEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
+			}
+		},
 		"onMousedown": {
 			"name": "onMousedown",
 			"values": {
@@ -89715,6 +88573,15 @@
 				"Solid Main": "EventHandlerUnion<T, MouseEvent>",
 				"Solid Minor": "EventHandlerUnion<T, MouseEvent>",
 				"Solid Next": "EventHandlerUnion<T, MouseEvent>"
+			}
+		},
+		"on:mouseenter": {
+			"name": "on:mouseenter",
+			"values": {
+				"Pota": "Events<MouseEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
 			}
 		},
 		"onMouseenter": {
@@ -89742,6 +88609,15 @@
 				"Solid Next": "EventHandlerUnion<T, MouseEvent>"
 			}
 		},
+		"on:mouseleave": {
+			"name": "on:mouseleave",
+			"values": {
+				"Pota": "Events<MouseEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
+			}
+		},
 		"onMouseleave": {
 			"name": "onMouseleave",
 			"values": {
@@ -89765,6 +88641,15 @@
 				"Solid Main": "EventHandlerUnion<T, MouseEvent>",
 				"Solid Minor": "EventHandlerUnion<T, MouseEvent>",
 				"Solid Next": "EventHandlerUnion<T, MouseEvent>"
+			}
+		},
+		"on:mousemove": {
+			"name": "on:mousemove",
+			"values": {
+				"Pota": "Events<MouseEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
 			}
 		},
 		"onMousemove": {
@@ -89792,6 +88677,15 @@
 				"Solid Next": "EventHandlerUnion<T, MouseEvent>"
 			}
 		},
+		"on:mouseout": {
+			"name": "on:mouseout",
+			"values": {
+				"Pota": "Events<MouseEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
+			}
+		},
 		"onMouseout": {
 			"name": "onMouseout",
 			"values": {
@@ -89815,6 +88709,15 @@
 				"Solid Main": "EventHandlerUnion<T, MouseEvent>",
 				"Solid Minor": "EventHandlerUnion<T, MouseEvent>",
 				"Solid Next": "EventHandlerUnion<T, MouseEvent>"
+			}
+		},
+		"on:mouseover": {
+			"name": "on:mouseover",
+			"values": {
+				"Pota": "Events<MouseEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
 			}
 		},
 		"onMouseover": {
@@ -89842,6 +88745,15 @@
 				"Solid Next": "EventHandlerUnion<T, MouseEvent>"
 			}
 		},
+		"on:mouseup": {
+			"name": "on:mouseup",
+			"values": {
+				"Pota": "Events<MouseEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
+			}
+		},
 		"onMouseup": {
 			"name": "onMouseup",
 			"values": {
@@ -89864,6 +88776,15 @@
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
+		"on:offline": {
+			"name": "on:offline",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
 		"onOnline": {
 			"name": "onOnline",
 			"values": {
@@ -89878,6 +88799,15 @@
 				"Solid Main": "EventHandlerUnion<T, Event>",
 				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"on:online": {
+			"name": "on:online",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 			}
 		},
 		"onPageHide": {
@@ -89896,6 +88826,15 @@
 				"Solid Next": "EventHandlerUnion<T, PageTransitionEvent>"
 			}
 		},
+		"on:pagehide": {
+			"name": "on:pagehide",
+			"values": {
+				"Pota": "Events<PageTransitionEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>"
+			}
+		},
 		"onPageReveal": {
 			"name": "onPageReveal",
 			"values": {
@@ -89910,6 +88849,15 @@
 				"Solid Main": "EventHandlerUnion<T, Event>",
 				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"on:pagereveal": {
+			"name": "on:pagereveal",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 			}
 		},
 		"onPageShow": {
@@ -89928,6 +88876,15 @@
 				"Solid Next": "EventHandlerUnion<T, PageTransitionEvent>"
 			}
 		},
+		"on:pageshow": {
+			"name": "on:pageshow",
+			"values": {
+				"Pota": "Events<PageTransitionEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>"
+			}
+		},
 		"onPageSwap": {
 			"name": "onPageSwap",
 			"values": {
@@ -89942,6 +88899,15 @@
 				"Solid Main": "EventHandlerUnion<T, Event>",
 				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"on:pageswap": {
+			"name": "on:pageswap",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 			}
 		},
 		"onPaste": {
@@ -89964,6 +88930,15 @@
 				"Solid Next": "EventHandlerUnion<T, ClipboardEvent>"
 			}
 		},
+		"on:paste": {
+			"name": "on:paste",
+			"values": {
+				"Pota": "Events<ClipboardEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, ClipboardEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, ClipboardEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, ClipboardEvent>"
+			}
+		},
 		"onPause": {
 			"name": "onPause",
 			"values": {
@@ -89982,6 +88957,15 @@
 				"Solid Main": "EventHandlerUnion<T, Event>",
 				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"on:pause": {
+			"name": "on:pause",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 			}
 		},
 		"onPlay": {
@@ -90004,6 +88988,15 @@
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
+		"on:play": {
+			"name": "on:play",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
 		"onPlaying": {
 			"name": "onPlaying",
 			"values": {
@@ -90024,6 +89017,15 @@
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
+		"on:playing": {
+			"name": "on:playing",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
 		"onPointerCancel": {
 			"name": "onPointerCancel",
 			"values": {
@@ -90041,6 +89043,15 @@
 				"Solid Main": "EventHandlerUnion<T, PointerEvent>",
 				"Solid Minor": "EventHandlerUnion<T, PointerEvent>",
 				"Solid Next": "EventHandlerUnion<T, PointerEvent>"
+			}
+		},
+		"on:pointercancel": {
+			"name": "on:pointercancel",
+			"values": {
+				"Pota": "Events<PointerEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
 			}
 		},
 		"onPointercancel": {
@@ -90068,6 +89079,15 @@
 				"Solid Next": "EventHandlerUnion<T, PointerEvent>"
 			}
 		},
+		"on:pointerdown": {
+			"name": "on:pointerdown",
+			"values": {
+				"Pota": "Events<PointerEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
+			}
+		},
 		"onPointerdown": {
 			"name": "onPointerdown",
 			"values": {
@@ -90091,6 +89111,15 @@
 				"Solid Main": "EventHandlerUnion<T, PointerEvent>",
 				"Solid Minor": "EventHandlerUnion<T, PointerEvent>",
 				"Solid Next": "EventHandlerUnion<T, PointerEvent>"
+			}
+		},
+		"on:pointerenter": {
+			"name": "on:pointerenter",
+			"values": {
+				"Pota": "Events<PointerEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
 			}
 		},
 		"onPointerenter": {
@@ -90118,6 +89147,15 @@
 				"Solid Next": "EventHandlerUnion<T, PointerEvent>"
 			}
 		},
+		"on:pointerleave": {
+			"name": "on:pointerleave",
+			"values": {
+				"Pota": "Events<PointerEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
+			}
+		},
 		"onPointerleave": {
 			"name": "onPointerleave",
 			"values": {
@@ -90141,6 +89179,15 @@
 				"Solid Main": "EventHandlerUnion<T, PointerEvent>",
 				"Solid Minor": "EventHandlerUnion<T, PointerEvent>",
 				"Solid Next": "EventHandlerUnion<T, PointerEvent>"
+			}
+		},
+		"on:pointermove": {
+			"name": "on:pointermove",
+			"values": {
+				"Pota": "Events<PointerEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
 			}
 		},
 		"onPointermove": {
@@ -90168,6 +89215,15 @@
 				"Solid Next": "EventHandlerUnion<T, PointerEvent>"
 			}
 		},
+		"on:pointerout": {
+			"name": "on:pointerout",
+			"values": {
+				"Pota": "Events<PointerEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
+			}
+		},
 		"onPointerout": {
 			"name": "onPointerout",
 			"values": {
@@ -90191,6 +89247,15 @@
 				"Solid Main": "EventHandlerUnion<T, PointerEvent>",
 				"Solid Minor": "EventHandlerUnion<T, PointerEvent>",
 				"Solid Next": "EventHandlerUnion<T, PointerEvent>"
+			}
+		},
+		"on:pointerover": {
+			"name": "on:pointerover",
+			"values": {
+				"Pota": "Events<PointerEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
 			}
 		},
 		"onPointerover": {
@@ -90218,6 +89283,15 @@
 				"Solid Next": "EventHandlerUnion<T, PointerEvent>"
 			}
 		},
+		"on:pointerup": {
+			"name": "on:pointerup",
+			"values": {
+				"Pota": "Events<PointerEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
+			}
+		},
 		"onPointerup": {
 			"name": "onPointerup",
 			"values": {
@@ -90240,6 +89314,15 @@
 				"Solid Next": "EventHandlerUnion<T, PopStateEvent>"
 			}
 		},
+		"on:popstate": {
+			"name": "on:popstate",
+			"values": {
+				"Pota": "Events<PopStateEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, PopStateEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, PopStateEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, PopStateEvent>"
+			}
+		},
 		"onProgress": {
 			"name": "onProgress",
 			"values": {
@@ -90260,6 +89343,15 @@
 				"Solid Next": "EventHandlerUnion<T, ProgressEvent>"
 			}
 		},
+		"on:progress": {
+			"name": "on:progress",
+			"values": {
+				"Pota": "Events<ProgressEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, ProgressEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, ProgressEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, ProgressEvent>"
+			}
+		},
 		"onRateChange": {
 			"name": "onRateChange",
 			"values": {
@@ -90277,6 +89369,15 @@
 				"Solid Main": "EventHandlerUnion<T, Event>",
 				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"on:ratechange": {
+			"name": "on:ratechange",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 			}
 		},
 		"onRatechange": {
@@ -90301,6 +89402,15 @@
 				"Solid Next": "EventHandlerUnion<T, PromiseRejectionEvent>"
 			}
 		},
+		"on:rejectionhandled": {
+			"name": "on:rejectionhandled",
+			"values": {
+				"Pota": "Events<PromiseRejectionEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>"
+			}
+		},
 		"onReset": {
 			"name": "onReset",
 			"values": {
@@ -90321,6 +89431,15 @@
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
+		"on:reset": {
+			"name": "on:reset",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
 		"onResize": {
 			"name": "onResize",
 			"values": {
@@ -90337,6 +89456,15 @@
 				"Solid Main": "EventHandlerUnion<T, UIEvent>",
 				"Solid Minor": "EventHandlerUnion<T, UIEvent>",
 				"Solid Next": "EventHandlerUnion<T, UIEvent>"
+			}
+		},
+		"on:resize": {
+			"name": "on:resize",
+			"values": {
+				"Pota": "Events<UIEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, UIEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, UIEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, UIEvent>"
 			}
 		},
 		"onScroll": {
@@ -90359,6 +89487,15 @@
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
+		"on:scroll": {
+			"name": "on:scroll",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
 		"onScrollEnd": {
 			"name": "onScrollEnd",
 			"values": {
@@ -90376,6 +89513,15 @@
 				"Solid Main": "EventHandlerUnion<T, Event>",
 				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"on:scrollend": {
+			"name": "on:scrollend",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 			}
 		},
 		"onScrollend": {
@@ -90407,6 +89553,15 @@
 				"Solid Next": "EventHandlerUnion<T, SecurityPolicyViolationEvent>"
 			}
 		},
+		"on:securitypolicyviolation": {
+			"name": "on:securitypolicyviolation",
+			"values": {
+				"Pota": "Events<SecurityPolicyViolationEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, SecurityPolicyViolationEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, SecurityPolicyViolationEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, SecurityPolicyViolationEvent>"
+			}
+		},
 		"onSeeked": {
 			"name": "onSeeked",
 			"values": {
@@ -90425,6 +89580,15 @@
 				"Solid Main": "EventHandlerUnion<T, Event>",
 				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"on:seeked": {
+			"name": "on:seeked",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 			}
 		},
 		"onSeeking": {
@@ -90447,6 +89611,15 @@
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
+		"on:seeking": {
+			"name": "on:seeking",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
 		"onSelect": {
 			"name": "onSelect",
 			"values": {
@@ -90467,6 +89640,15 @@
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
+		"on:select": {
+			"name": "on:select",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
 		"onSelectionChange": {
 			"name": "onSelectionChange",
 			"values": {
@@ -90483,6 +89665,21 @@
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
+		"on:selectionchange": {
+			"name": "on:selectionchange",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
+		"on:selectstart": {
+			"name": "on:selectstart",
+			"values": {
+				"Pota": "Events<Event, Element>"
+			}
+		},
 		"onSlotChange": {
 			"name": "onSlotChange",
 			"values": {
@@ -90497,6 +89694,15 @@
 				"Solid Main": "EventHandlerUnion<T, Event>",
 				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"on:slotchange": {
+			"name": "on:slotchange",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 			}
 		},
 		"onStalled": {
@@ -90519,6 +89725,15 @@
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
+		"on:stalled": {
+			"name": "on:stalled",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
 		"onStorage": {
 			"name": "onStorage",
 			"values": {
@@ -90533,6 +89748,15 @@
 				"Solid Main": "EventHandlerUnion<T, StorageEvent>",
 				"Solid Minor": "EventHandlerUnion<T, StorageEvent>",
 				"Solid Next": "EventHandlerUnion<T, StorageEvent>"
+			}
+		},
+		"on:storage": {
+			"name": "on:storage",
+			"values": {
+				"Pota": "Events<StorageEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, StorageEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, StorageEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, StorageEvent>"
 			}
 		},
 		"onSubmit": {
@@ -90555,6 +89779,15 @@
 				"Solid Next": "EventHandlerUnion<T, SubmitEvent>"
 			}
 		},
+		"on:submit": {
+			"name": "on:submit",
+			"values": {
+				"Pota": "Events<SubmitEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, SubmitEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, SubmitEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, SubmitEvent>"
+			}
+		},
 		"onSuspend": {
 			"name": "onSuspend",
 			"values": {
@@ -90575,6 +89808,15 @@
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
+		"on:suspend": {
+			"name": "on:suspend",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
 		"onTimeUpdate": {
 			"name": "onTimeUpdate",
 			"values": {
@@ -90592,6 +89834,15 @@
 				"Solid Main": "EventHandlerUnion<T, Event>",
 				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"on:timeupdate": {
+			"name": "on:timeupdate",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 			}
 		},
 		"onTimeupdate": {
@@ -90619,6 +89870,15 @@
 				"Solid Next": "EventHandlerUnion<T, ToggleEvent>"
 			}
 		},
+		"on:toggle": {
+			"name": "on:toggle",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, ToggleEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, ToggleEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, ToggleEvent>"
+			}
+		},
 		"onTouchCancel": {
 			"name": "onTouchCancel",
 			"values": {
@@ -90636,6 +89896,15 @@
 				"Solid Main": "EventHandlerUnion<T, TouchEvent>",
 				"Solid Minor": "EventHandlerUnion<T, TouchEvent>",
 				"Solid Next": "EventHandlerUnion<T, TouchEvent>"
+			}
+		},
+		"on:touchcancel": {
+			"name": "on:touchcancel",
+			"values": {
+				"Pota": "Events<TouchEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, TouchEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, TouchEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, TouchEvent>"
 			}
 		},
 		"onTouchcancel": {
@@ -90663,6 +89932,15 @@
 				"Solid Next": "EventHandlerUnion<T, TouchEvent>"
 			}
 		},
+		"on:touchend": {
+			"name": "on:touchend",
+			"values": {
+				"Pota": "Events<TouchEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, TouchEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, TouchEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, TouchEvent>"
+			}
+		},
 		"onTouchend": {
 			"name": "onTouchend",
 			"values": {
@@ -90686,6 +89964,15 @@
 				"Solid Main": "EventHandlerUnion<T, TouchEvent>",
 				"Solid Minor": "EventHandlerUnion<T, TouchEvent>",
 				"Solid Next": "EventHandlerUnion<T, TouchEvent>"
+			}
+		},
+		"on:touchmove": {
+			"name": "on:touchmove",
+			"values": {
+				"Pota": "Events<TouchEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, TouchEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, TouchEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, TouchEvent>"
 			}
 		},
 		"onTouchmove": {
@@ -90713,6 +90000,15 @@
 				"Solid Next": "EventHandlerUnion<T, TouchEvent>"
 			}
 		},
+		"on:touchstart": {
+			"name": "on:touchstart",
+			"values": {
+				"Pota": "Events<TouchEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, TouchEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, TouchEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, TouchEvent>"
+			}
+		},
 		"onTouchstart": {
 			"name": "onTouchstart",
 			"values": {
@@ -90737,6 +90033,15 @@
 				"Solid Next": "EventHandlerUnion<T, TransitionEvent>"
 			}
 		},
+		"on:transitioncancel": {
+			"name": "on:transitioncancel",
+			"values": {
+				"Pota": "Events<TransitionEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, TransitionEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, TransitionEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, TransitionEvent>"
+			}
+		},
 		"onTransitionEnd": {
 			"name": "onTransitionEnd",
 			"values": {
@@ -90754,6 +90059,15 @@
 				"Solid Main": "EventHandlerUnion<T, TransitionEvent>",
 				"Solid Minor": "EventHandlerUnion<T, TransitionEvent>",
 				"Solid Next": "EventHandlerUnion<T, TransitionEvent>"
+			}
+		},
+		"on:transitionend": {
+			"name": "on:transitionend",
+			"values": {
+				"Pota": "Events<TransitionEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, TransitionEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, TransitionEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, TransitionEvent>"
 			}
 		},
 		"onTransitionend": {
@@ -90780,6 +90094,15 @@
 				"Solid Next": "EventHandlerUnion<T, TransitionEvent>"
 			}
 		},
+		"on:transitionrun": {
+			"name": "on:transitionrun",
+			"values": {
+				"Pota": "Events<TransitionEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, TransitionEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, TransitionEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, TransitionEvent>"
+			}
+		},
 		"onTransitionStart": {
 			"name": "onTransitionStart",
 			"values": {
@@ -90796,6 +90119,15 @@
 				"Solid Main": "EventHandlerUnion<T, TransitionEvent>",
 				"Solid Minor": "EventHandlerUnion<T, TransitionEvent>",
 				"Solid Next": "EventHandlerUnion<T, TransitionEvent>"
+			}
+		},
+		"on:transitionstart": {
+			"name": "on:transitionstart",
+			"values": {
+				"Pota": "Events<TransitionEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, TransitionEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, TransitionEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, TransitionEvent>"
 			}
 		},
 		"onTransitionstart": {
@@ -90820,6 +90152,15 @@
 				"Solid Next": "EventHandlerUnion<T, PromiseRejectionEvent>"
 			}
 		},
+		"on:unhandledrejection": {
+			"name": "on:unhandledrejection",
+			"values": {
+				"Pota": "Events<PromiseRejectionEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>"
+			}
+		},
 		"onUnload": {
 			"name": "onUnload",
 			"values": {
@@ -90834,6 +90175,15 @@
 				"Solid Main": "EventHandlerUnion<T, Event>",
 				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"on:unload": {
+			"name": "on:unload",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 			}
 		},
 		"onVolumeChange": {
@@ -90853,6 +90203,15 @@
 				"Solid Main": "EventHandlerUnion<T, Event>",
 				"Solid Minor": "EventHandlerUnion<T, Event>",
 				"Solid Next": "EventHandlerUnion<T, Event>"
+			}
+		},
+		"on:volumechange": {
+			"name": "on:volumechange",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 			}
 		},
 		"onVolumechange": {
@@ -90881,6 +90240,21 @@
 				"Solid Next": "EventHandlerUnion<T, Event>"
 			}
 		},
+		"on:waiting": {
+			"name": "on:waiting",
+			"values": {
+				"Pota": "Events<Event, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+			}
+		},
+		"on:waitingforkey": {
+			"name": "on:waitingforkey",
+			"values": {
+				"Pota": "Events<Event, Element>"
+			}
+		},
 		"onWheel": {
 			"name": "onWheel",
 			"values": {
@@ -90899,6 +90273,15 @@
 				"Solid Main": "EventHandlerUnion<T, WheelEvent>",
 				"Solid Minor": "EventHandlerUnion<T, WheelEvent>",
 				"Solid Next": "EventHandlerUnion<T, WheelEvent>"
+			}
+		},
+		"on:wheel": {
+			"name": "on:wheel",
+			"values": {
+				"Pota": "Events<WheelEvent, Element>",
+				"Solid Main": "EventHandlerWithOptionsUnion<T, WheelEvent>",
+				"Solid Minor": "EventHandlerWithOptionsUnion<T, WheelEvent>",
+				"Solid Next": "EventHandlerWithOptionsUnion<T, WheelEvent>"
 			}
 		}
 	},

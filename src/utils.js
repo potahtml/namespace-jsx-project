@@ -86,9 +86,16 @@ export const stringifySorted = o => {
 		const tmp = Array.isArray(o) ? [] : {}
 		Object.keys(o)
 			.sort((a, b) =>
-				a.localeCompare(b, undefined, {
-					sensitivity: 'base',
-				}),
+				a
+					.replace(':', '')
+					.replace(/-/g, '')
+					.localeCompare(
+						b.replace(':', '').replace(/-/g, ''),
+						undefined,
+						{
+							sensitivity: 'base',
+						},
+					),
 			)
 			.map(k => (tmp[k] = sort(o[k])))
 
