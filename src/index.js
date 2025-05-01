@@ -419,10 +419,13 @@ for (const lib of libs) {
 		}
 		if (DATA.aria[property.name].values[lib.name]) {
 			DATA.aria[property.name].values[lib.name] +=
-				' ' + property.source
+				' | ' + property.source
 		} else {
 			DATA.aria[property.name].values[lib.name] = property.source
 		}
+		DATA.aria[property.name].values[lib.name] = uniqueTypes(
+			DATA.aria[property.name].values[lib.name],
+		)
 	})
 }
 
