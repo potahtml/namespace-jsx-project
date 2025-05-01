@@ -481,6 +481,12 @@ export const deprecatedAttributes = {
 	// deprecated https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form#accept
 	'form.HTMLFormElement.accept': true,
 
+	// deprecated https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/pre
+	'pre.HTMLPreElement.wrap': true,
+
+	// deprecated https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/head
+	'head.HTMLHeadElement.profile': true,
+
 	// SVG
 
 	// deprecated https://developer.mozilla.org/en-US/docs/Web/API/SVGStyleElement
