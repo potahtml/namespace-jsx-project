@@ -256,7 +256,7 @@ const testData = {
 }
 
 // Test
-run(testData)
+// run(testData)
 
 function run(data) {
 	const getOwnPropertyDescriptors = Object.getOwnPropertyDescriptors
@@ -322,6 +322,7 @@ function run(data) {
 						name === 'tabIndex' ||
 						name === 'attributeStyleMap' ||
 						name === 'dataset' ||
+						name === 'nonce' ||
 						name === 'style')
 				) {
 					continue
