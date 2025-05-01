@@ -110,7 +110,8 @@ idea!
 - add global attributes
 - somehow try to track if each element has its own special event
   handlers added
--
+- add some sort of log of what changed, maybe comparing old data.json
+  with new data.json
 
 ## Related
 
