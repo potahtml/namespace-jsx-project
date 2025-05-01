@@ -655,7 +655,6 @@ for (const ns in DATA.elements) {
 				!/^on:?[A-Z]/.test(k) &&
 				// svg is XML so it has attributes with uppercase letters
 				ns !== 'http://www.w3.org/2000/svg' &&
-				tag !== 'webview' &&
 				!tag.keys[k].prop
 					? true
 					: undefined

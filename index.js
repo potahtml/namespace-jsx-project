@@ -46,6 +46,28 @@ function Namespace(props) {
 function xElement(props) {
   const element = props.element
   const attrprops = Object.values(element.keys)
+  const keys = []
+  for (const key of attrprops) {
+    if (!key.deprecated && !key.warn && !key.danger) {
+      keys.push(key)
+    }
+  }
+  for (const key of attrprops) {
+    if (key.deprecated) {
+      keys.push(key)
+    }
+  }
+  for (const key of attrprops) {
+    if (key.warn && !key.deprecated) {
+      keys.push(key)
+    }
+  }
+  for (const key of attrprops) {
+    if (key.danger && !key.deprecated && !key.warn) {
+      keys.push(key)
+    }
+  }
+
   const columns = props.columns
 
   return html` <section
@@ -72,7 +94,7 @@ function xElement(props) {
       </caption>
 
       <thead>
-        <Show when="${Object.keys(attrprops).length}">
+        <Show when="${Object.keys(keys).length}">
           <tr>
             <th>key</th>
             <th>kind</th>
@@ -83,21 +105,7 @@ function xElement(props) {
         </Show>
       </thead>
       <tbody>
-        <For each="${attrprops.filter(x => !x.deprecated && !x.warn)}"
-          >${value =>
-            html`<xElementKey
-              value="${value}"
-              columns="${columns}"
-            />`}
-        </For>
-        <For each="${attrprops.filter(x => x.deprecated)}"
-          >${value =>
-            html`<xElementKey
-              value="${value}"
-              columns="${columns}"
-            />`}
-        </For>
-        <For each="${attrprops.filter(x => x.warn && !x.deprecated)}"
+        <For each="${keys}"
           >${value =>
             html`<xElementKey
               value="${value}"
