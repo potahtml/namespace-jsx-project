@@ -326,9 +326,73 @@ export const tsTagNamesMap = {
 		source: ts.htmlelementdeprecatedtagnamemap.source,
 		namespace: 'http://www.w3.org/1999/xhtml',
 	},
+	htmldeprecated2: {
+		// content https://stackoverflow.com/questions/17170547/is-there-a-content-element-in-html5
+		// image https://dev.to/danbmky/the-real-image-tag-vs-2jpd
+		// portal https://web.dev/articles/hands-on-portals
+		properties: [
+			{ name: 'content', source: 'HTMLElement' },
+			// add it with double  `ee` so doesnt mess up the table with SVG data
+			{ name: 'imagee', source: 'HTMLElement' },
+			{ name: 'portal', source: 'HTMLElement' },
+			{ name: 'shadow', source: 'HTMLElement' },
+		],
+		source: `interface HTMLElementDeprecatedTagNameMap2 {
+			content: HTMLElement
+			// add it with double  "ee" so doesnt mess up the table with SVG data
+			imagee: HTMLElement
+			portal: HTMLElement
+			shadow: HTMLElement
+		}`,
+		namespace: 'http://www.w3.org/1999/xhtml',
+	},
 	svg: {
 		properties: ts.svgelementtagnamemap.properties,
 		source: ts.svgelementtagnamemap.source,
+		namespace: 'http://www.w3.org/2000/svg',
+	},
+	svgdeprecated: {
+		properties: [
+			{ name: 'altGlyph', source: 'SVGElement' },
+			{ name: 'altGlyphDef', source: 'SVGElement' },
+			{ name: 'altGlyphItem', source: 'SVGElement' },
+			{ name: 'animateColor', source: 'SVGElement' },
+			{ name: 'color-profile', source: 'SVGElement' },
+			{ name: 'cursor', source: 'SVGElement' },
+			{ name: 'font', source: 'SVGElement' },
+			{ name: 'font-face', source: 'SVGElement' },
+			{ name: 'font-face-format', source: 'SVGElement' },
+			{ name: 'font-face-name', source: 'SVGElement' },
+			{ name: 'font-face-src', source: 'SVGElement' },
+			{ name: 'font-face-uri', source: 'SVGElement' },
+			{ name: 'glyph', source: 'SVGElement' },
+			{ name: 'glyphRef', source: 'SVGElement' },
+			{ name: 'hkern', source: 'SVGElement' },
+			{ name: 'missing-glyph', source: 'SVGElement' },
+			{ name: 'tref', source: 'SVGElement' },
+			{ name: 'vkern', source: 'SVGElement' },
+		],
+		source: `interface SVGElementDeprecatedTagNameMap {
+			 "altGlyph": SVGElement
+			 "altGlyphDef": SVGElement
+			 "altGlyphItem": SVGElement
+			 "animateColor": SVGElement
+			 "color-profile": SVGElement
+			 "cursor": SVGElement
+			 "font": SVGElement
+			 "font-face": SVGElement
+			 "font-face-format": SVGElement
+			 "font-face-name": SVGElement
+			 "font-face-src": SVGElement
+			 "font-face-uri": SVGElement
+			 "glyph": SVGElement
+			 "glyphRef": SVGElement
+			 "hkern": SVGElement
+			 "missing-glyph": SVGElement
+			 "tref": SVGElement
+			 "vkern": SVGElement
+
+		}`,
 		namespace: 'http://www.w3.org/2000/svg',
 	},
 	mathml: {
@@ -342,9 +406,9 @@ export const tsTagNamesMap = {
 			{ name: 'mfenced', source: 'MathMLElement' },
 		],
 		source: `interface MathMLElementDeprecatedTagNameMap {
-	menclose: MathMLElement
-	mfenced: MathMLElement
-}`,
+			menclose: MathMLElement
+			mfenced: MathMLElement
+		}`,
 		namespace: 'http://www.w3.org/1998/Math/MathML',
 	},
 }
@@ -374,8 +438,14 @@ export const deprecatedTags = {
 		'nextid',
 		'noindex',
 		'spacer',
+		// taken from dom-expressions
+		'content',
+		'portal',
+		'image',
+		'imagee',
+		'shadow',
 	],
-	'http://www.w3.org/1998/Math/MathML': [],
+	'http://www.w3.org/1998/Math/MathML': ['menclose', 'mfenced'],
 	'http://www.w3.org/2000/svg': [],
 }
 

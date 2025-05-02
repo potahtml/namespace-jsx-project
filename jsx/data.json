@@ -944,7 +944,7 @@
 	},
 	"DOMExpressions": {
 		"booleans": ["adauctionheaders", "allowfullscreen", "async", "autoplay", "browsingtopics", "checked", "controls", "credentialless", "default", "defaultchecked", "defaultmuted", "defaultselected", "defer", "disabled", "disablepictureinpicture", "disableremoteplayback", "formnovalidate", "indeterminate", "ismap", "loop", "multiple", "muted", "nomodule", "novalidate", "open", "playsinline", "preservespitch", "readonly", "required", "reversed", "selected", "shadowrootclonable", "shadowrootdelegatesfocus", "shadowrootserializable", "sharedstoragewritable"],
-		"htmlTags": ["a", "abbr", "acronym", "address", "applet", "area", "article", "aside", "audio", "b", "base", "basefont", "bdi", "bdo", "bgsound", "big", "blink", "blockquote", "body", "br", "button", "canvas", "caption", "center", "cite", "code", "col", "colgroup", "data", "datalist", "dd", "del", "details", "dfn", "dialog", "dir", "div", "dl", "dt", "em", "embed", "fieldset", "figcaption", "figure", "font", "footer", "form", "frame", "frameset", "h1", "h2", "h3", "h4", "h5", "h6", "head", "header", "hgroup", "hr", "html", "i", "iframe", "img", "input", "ins", "isindex", "kbd", "keygen", "label", "legend", "li", "link", "listing", "main", "map", "mark", "marquee", "menu", "menuitem", "meta", "meter", "multicol", "nav", "nextid", "nobr", "noembed", "noframes", "noindex", "noscript", "object", "ol", "optgroup", "option", "output", "p", "param", "picture", "plaintext", "pre", "progress", "q", "rb", "rp", "rt", "rtc", "ruby", "s", "samp", "script", "search", "section", "select", "slot", "small", "source", "spacer", "span", "strike", "strong", "style", "sub", "summary", "sup", "table", "tbody", "td", "template", "textarea", "tfoot", "th", "thead", "time", "title", "tr", "track", "tt", "u", "ul", "var", "video", "wbr", "webview", "xmp"],
+		"htmlTags": ["a", "abbr", "acronym", "address", "applet", "area", "article", "aside", "audio", "b", "base", "basefont", "bdi", "bdo", "bgsound", "big", "blink", "blockquote", "body", "br", "button", "canvas", "caption", "center", "cite", "code", "col", "colgroup", "content", "data", "datalist", "dd", "del", "details", "dfn", "dialog", "dir", "div", "dl", "dt", "em", "embed", "fieldset", "figcaption", "figure", "font", "footer", "form", "frame", "frameset", "h1", "h2", "h3", "h4", "h5", "h6", "head", "header", "hgroup", "hr", "html", "i", "iframe", "imagee", "img", "input", "ins", "isindex", "kbd", "keygen", "label", "legend", "li", "link", "listing", "main", "map", "mark", "marquee", "menu", "menuitem", "meta", "meter", "multicol", "nav", "nextid", "nobr", "noembed", "noframes", "noindex", "noscript", "object", "ol", "optgroup", "option", "output", "p", "param", "picture", "plaintext", "portal", "pre", "progress", "q", "rb", "rp", "rt", "rtc", "ruby", "s", "samp", "script", "search", "section", "select", "shadow", "slot", "small", "source", "spacer", "span", "strike", "strong", "style", "sub", "summary", "sup", "table", "tbody", "td", "template", "textarea", "tfoot", "th", "thead", "time", "title", "tr", "track", "tt", "u", "ul", "var", "video", "wbr", "webview", "xmp"],
 		"mathmlTags": ["annotation-xml", "annotation", "maction", "math", "menclose", "merror", "mfenced", "mfrac", "mi", "mmultiscripts", "mn", "mo", "mover", "mpadded", "mphantom", "mprescripts", "mroot", "mrow", "ms", "mspace", "msqrt", "mstyle", "msub", "msubsup", "msup", "mtable", "mtd", "mtext", "mtr", "munder", "munderover", "semantics"],
 		"PropAliases": {
 			"adauctionheaders": {
@@ -1031,7 +1031,7 @@
 			}
 		},
 		"properties": ["adAuctionHeaders", "allowFullscreen", "browsingTopics", "defaultChecked", "defaultMuted", "defaultSelected", "disablePictureInPicture", "disableRemotePlayback", "formNoValidate", "isMap", "noModule", "noValidate", "playsInline", "preservesPitch", "readOnly", "shadowRootClonable", "shadowRootDelegatesFocus", "shadowRootSerializable", "sharedStorageWritable"],
-		"svgTags": ["a", "animate", "animateMotion", "animateTransform", "circle", "clipPath", "defs", "desc", "ellipse", "feBlend", "feColorMatrix", "feComponentTransfer", "feComposite", "feConvolveMatrix", "feDiffuseLighting", "feDisplacementMap", "feDistantLight", "feDropShadow", "feFlood", "feFuncA", "feFuncB", "feFuncG", "feFuncR", "feGaussianBlur", "feImage", "feMerge", "feMergeNode", "feMorphology", "feOffset", "fePointLight", "feSpecularLighting", "feSpotLight", "feTile", "feTurbulence", "filter", "foreignObject", "g", "image", "line", "linearGradient", "marker", "mask", "metadata", "mpath", "path", "pattern", "polygon", "polyline", "radialGradient", "rect", "script", "set", "stop", "style", "svg", "switch", "symbol", "text", "textPath", "title", "tspan", "use", "view"],
+		"svgTags": ["a", "altGlyph", "altGlyphDef", "altGlyphItem", "animate", "animateColor", "animateMotion", "animateTransform", "circle", "clipPath", "color-profile", "cursor", "defs", "desc", "ellipse", "feBlend", "feColorMatrix", "feComponentTransfer", "feComposite", "feConvolveMatrix", "feDiffuseLighting", "feDisplacementMap", "feDistantLight", "feDropShadow", "feFlood", "feFuncA", "feFuncB", "feFuncG", "feFuncR", "feGaussianBlur", "feImage", "feMerge", "feMergeNode", "feMorphology", "feOffset", "fePointLight", "feSpecularLighting", "feSpotLight", "feTile", "feTurbulence", "filter", "font-face-format", "font-face-name", "font-face-src", "font-face-uri", "font-face", "font", "foreignObject", "g", "glyph", "glyphRef", "hkern", "image", "line", "linearGradient", "marker", "mask", "metadata", "missing-glyph", "mpath", "path", "pattern", "polygon", "polyline", "radialGradient", "rect", "script", "set", "stop", "style", "svg", "switch", "symbol", "text", "textPath", "title", "tref", "tspan", "use", "view", "vkern"],
 		"url": "https://github.com/ryansolid/dom-expressions"
 	},
 	"elements": {
@@ -1235,7 +1235,7 @@
 				"readonly": ["MathMLElement.attributeStyleMap", "MathMLElement.dataset"]
 			},
 			"menclose": {
-				"deprecated": false,
+				"deprecated": true,
 				"description": "",
 				"elementURL": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/menclose",
 				"interface": "MathMLElement",
@@ -7526,6 +7526,18 @@
 				"notIncludedMDN": [],
 				"readonly": []
 			},
+			"content": {
+				"deprecated": true,
+				"description": "",
+				"elementURL": "https://developer.mozilla.org/docs/Web/HTML/Element/content",
+				"interface": "HTMLUnknownElement",
+				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLUnknownElement",
+				"keys": {},
+				"name": "content",
+				"namespace": "http://www.w3.org/1999/xhtml",
+				"notIncludedMDN": [],
+				"readonly": []
+			},
 			"data": {
 				"deprecated": false,
 				"description": "The data element links a given piece of content with a machine-readable translation.",
@@ -11315,6 +11327,18 @@
 				"namespace": "http://www.w3.org/1999/xhtml",
 				"notIncludedMDN": ["getSVGDocument"],
 				"readonly": ["HTMLIFrameElement.contentDocument", "HTMLIFrameElement.contentWindow", "HTMLIFrameElement.featurePolicy"]
+			},
+			"imagee": {
+				"deprecated": true,
+				"description": "",
+				"elementURL": "https://developer.mozilla.org/docs/Web/HTML/Element/imagee",
+				"interface": "HTMLUnknownElement",
+				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLUnknownElement",
+				"keys": {},
+				"name": "imagee",
+				"namespace": "http://www.w3.org/1999/xhtml",
+				"notIncludedMDN": [],
+				"readonly": []
 			},
 			"img": {
 				"deprecated": false,
@@ -17592,6 +17616,18 @@
 				"notIncludedMDN": ["load_event"],
 				"readonly": []
 			},
+			"portal": {
+				"deprecated": true,
+				"description": "",
+				"elementURL": "https://developer.mozilla.org/docs/Web/HTML/Element/portal",
+				"interface": "HTMLUnknownElement",
+				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLUnknownElement",
+				"keys": {},
+				"name": "portal",
+				"namespace": "http://www.w3.org/1999/xhtml",
+				"notIncludedMDN": [],
+				"readonly": []
+			},
 			"pre": {
 				"deprecated": false,
 				"description": "The pre element represents a block of preformatted text, in which structure is represented by typographic conventions rather than by elements.",
@@ -18890,6 +18926,18 @@
 				"namespace": "http://www.w3.org/1999/xhtml",
 				"notIncludedMDN": ["add", "checkValidity", "item", "namedItem", "remove", "reportValidity", "setCustomValidity", "showPicker"],
 				"readonly": ["HTMLSelectElement.form", "HTMLSelectElement.labels", "HTMLSelectElement.options", "HTMLSelectElement.selectedOptions", "HTMLSelectElement.type", "HTMLSelectElement.validationMessage", "HTMLSelectElement.validity", "HTMLSelectElement.willValidate"]
+			},
+			"shadow": {
+				"deprecated": true,
+				"description": "",
+				"elementURL": "https://developer.mozilla.org/docs/Web/HTML/Element/shadow",
+				"interface": "HTMLUnknownElement",
+				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLUnknownElement",
+				"keys": {},
+				"name": "shadow",
+				"namespace": "http://www.w3.org/1999/xhtml",
+				"notIncludedMDN": [],
+				"readonly": []
 			},
 			"slot": {
 				"deprecated": false,
@@ -25191,6 +25239,42 @@
 				"notIncludedMDN": ["text"],
 				"readonly": ["SVGAElement.href", "SVGAElement.target", "SVGGraphicsElement.farthestViewportElement", "SVGGraphicsElement.nearestViewportElement", "SVGGraphicsElement.requiredExtensions", "SVGGraphicsElement.systemLanguage", "SVGGraphicsElement.transform"]
 			},
+			"altGlyph": {
+				"deprecated": false,
+				"description": "",
+				"elementURL": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/altGlyph",
+				"interface": "SVGElement",
+				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/SVGElement",
+				"keys": {},
+				"name": "altGlyph",
+				"namespace": "http://www.w3.org/2000/svg",
+				"notIncludedMDN": ["className", "load_event", "ownerSVGElement", "viewportElement"],
+				"readonly": []
+			},
+			"altGlyphDef": {
+				"deprecated": false,
+				"description": "",
+				"elementURL": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/altGlyphDef",
+				"interface": "SVGElement",
+				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/SVGElement",
+				"keys": {},
+				"name": "altGlyphDef",
+				"namespace": "http://www.w3.org/2000/svg",
+				"notIncludedMDN": ["className", "load_event", "ownerSVGElement", "viewportElement"],
+				"readonly": []
+			},
+			"altGlyphItem": {
+				"deprecated": false,
+				"description": "",
+				"elementURL": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/altGlyphItem",
+				"interface": "SVGElement",
+				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/SVGElement",
+				"keys": {},
+				"name": "altGlyphItem",
+				"namespace": "http://www.w3.org/2000/svg",
+				"notIncludedMDN": ["className", "load_event", "ownerSVGElement", "viewportElement"],
+				"readonly": []
+			},
 			"animate": {
 				"deprecated": false,
 				"description": "",
@@ -26829,6 +26913,18 @@
 				"namespace": "http://www.w3.org/2000/svg",
 				"notIncludedMDN": ["href"],
 				"readonly": ["SVGAnimationElement.requiredExtensions", "SVGAnimationElement.systemLanguage", "SVGAnimationElement.targetElement"]
+			},
+			"animateColor": {
+				"deprecated": false,
+				"description": "",
+				"elementURL": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/animateColor",
+				"interface": "SVGElement",
+				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/SVGElement",
+				"keys": {},
+				"name": "animateColor",
+				"namespace": "http://www.w3.org/2000/svg",
+				"notIncludedMDN": ["className", "load_event", "ownerSVGElement", "viewportElement"],
+				"readonly": []
 			},
 			"animateMotion": {
 				"deprecated": false,
@@ -30691,6 +30787,30 @@
 				"namespace": "http://www.w3.org/2000/svg",
 				"notIncludedMDN": [],
 				"readonly": ["SVGClipPathElement.clipPathUnits", "SVGClipPathElement.transform"]
+			},
+			"color-profile": {
+				"deprecated": false,
+				"description": "",
+				"elementURL": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/color-profile",
+				"interface": "SVGElement",
+				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/SVGElement",
+				"keys": {},
+				"name": "color-profile",
+				"namespace": "http://www.w3.org/2000/svg",
+				"notIncludedMDN": ["className", "load_event", "ownerSVGElement", "viewportElement"],
+				"readonly": []
+			},
+			"cursor": {
+				"deprecated": false,
+				"description": "",
+				"elementURL": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/cursor",
+				"interface": "SVGElement",
+				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/SVGElement",
+				"keys": {},
+				"name": "cursor",
+				"namespace": "http://www.w3.org/2000/svg",
+				"notIncludedMDN": ["className", "load_event", "ownerSVGElement", "viewportElement"],
+				"readonly": []
 			},
 			"defs": {
 				"deprecated": false,
@@ -58197,6 +58317,127 @@
 				"notIncludedMDN": [],
 				"readonly": ["SVGFilterElement.filterUnits", "SVGFilterElement.height", "SVGFilterElement.href", "SVGFilterElement.primitiveUnits", "SVGFilterElement.width", "SVGFilterElement.x", "SVGFilterElement.y"]
 			},
+			"font": {
+				"deprecated": false,
+				"description": "",
+				"elementURL": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/font",
+				"interface": "SVGElement",
+				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/SVGElement",
+				"keys": {
+					"color": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"globalAttribute": false,
+						"inherited": false,
+						"name": "color",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"readonly": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGElement#svgelement.color",
+						"values": {
+							"Pota": "string"
+						}
+					},
+					"face": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"globalAttribute": false,
+						"inherited": false,
+						"name": "face",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"readonly": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGElement#svgelement.face",
+						"values": {
+							"Pota": "string"
+						}
+					},
+					"size": {
+						"attr": false,
+						"attrChrome": false,
+						"attrFirefox": false,
+						"globalAttribute": false,
+						"inherited": false,
+						"name": "size",
+						"prop": false,
+						"propChrome": false,
+						"propFirefox": false,
+						"readonly": false,
+						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGElement#svgelement.size",
+						"values": {
+							"Pota": "string"
+						}
+					}
+				},
+				"name": "font",
+				"namespace": "http://www.w3.org/2000/svg",
+				"notIncludedMDN": ["className", "load_event", "ownerSVGElement", "viewportElement"],
+				"readonly": []
+			},
+			"font-face": {
+				"deprecated": false,
+				"description": "",
+				"elementURL": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/font-face",
+				"interface": "SVGElement",
+				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/SVGElement",
+				"keys": {},
+				"name": "font-face",
+				"namespace": "http://www.w3.org/2000/svg",
+				"notIncludedMDN": ["className", "load_event", "ownerSVGElement", "viewportElement"],
+				"readonly": []
+			},
+			"font-face-format": {
+				"deprecated": false,
+				"description": "",
+				"elementURL": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/font-face-format",
+				"interface": "SVGElement",
+				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/SVGElement",
+				"keys": {},
+				"name": "font-face-format",
+				"namespace": "http://www.w3.org/2000/svg",
+				"notIncludedMDN": ["className", "load_event", "ownerSVGElement", "viewportElement"],
+				"readonly": []
+			},
+			"font-face-name": {
+				"deprecated": false,
+				"description": "",
+				"elementURL": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/font-face-name",
+				"interface": "SVGElement",
+				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/SVGElement",
+				"keys": {},
+				"name": "font-face-name",
+				"namespace": "http://www.w3.org/2000/svg",
+				"notIncludedMDN": ["className", "load_event", "ownerSVGElement", "viewportElement"],
+				"readonly": []
+			},
+			"font-face-src": {
+				"deprecated": false,
+				"description": "",
+				"elementURL": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/font-face-src",
+				"interface": "SVGElement",
+				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/SVGElement",
+				"keys": {},
+				"name": "font-face-src",
+				"namespace": "http://www.w3.org/2000/svg",
+				"notIncludedMDN": ["className", "load_event", "ownerSVGElement", "viewportElement"],
+				"readonly": []
+			},
+			"font-face-uri": {
+				"deprecated": false,
+				"description": "",
+				"elementURL": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/font-face-uri",
+				"interface": "SVGElement",
+				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/SVGElement",
+				"keys": {},
+				"name": "font-face-uri",
+				"namespace": "http://www.w3.org/2000/svg",
+				"notIncludedMDN": ["className", "load_event", "ownerSVGElement", "viewportElement"],
+				"readonly": []
+			},
 			"foreignObject": {
 				"deprecated": false,
 				"description": "",
@@ -60868,6 +61109,42 @@
 				"namespace": "http://www.w3.org/2000/svg",
 				"notIncludedMDN": [],
 				"readonly": ["SVGGraphicsElement.farthestViewportElement", "SVGGraphicsElement.nearestViewportElement", "SVGGraphicsElement.requiredExtensions", "SVGGraphicsElement.systemLanguage", "SVGGraphicsElement.transform"]
+			},
+			"glyph": {
+				"deprecated": false,
+				"description": "",
+				"elementURL": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/glyph",
+				"interface": "SVGElement",
+				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/SVGElement",
+				"keys": {},
+				"name": "glyph",
+				"namespace": "http://www.w3.org/2000/svg",
+				"notIncludedMDN": ["className", "load_event", "ownerSVGElement", "viewportElement"],
+				"readonly": []
+			},
+			"glyphRef": {
+				"deprecated": false,
+				"description": "",
+				"elementURL": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/glyphRef",
+				"interface": "SVGElement",
+				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/SVGElement",
+				"keys": {},
+				"name": "glyphRef",
+				"namespace": "http://www.w3.org/2000/svg",
+				"notIncludedMDN": ["className", "load_event", "ownerSVGElement", "viewportElement"],
+				"readonly": []
+			},
+			"hkern": {
+				"deprecated": false,
+				"description": "",
+				"elementURL": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/hkern",
+				"interface": "SVGElement",
+				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/SVGElement",
+				"keys": {},
+				"name": "hkern",
+				"namespace": "http://www.w3.org/2000/svg",
+				"notIncludedMDN": ["className", "load_event", "ownerSVGElement", "viewportElement"],
+				"readonly": []
 			},
 			"image": {
 				"deprecated": false,
@@ -66801,6 +67078,18 @@
 				"name": "metadata",
 				"namespace": "http://www.w3.org/2000/svg",
 				"notIncludedMDN": [],
+				"readonly": []
+			},
+			"missing-glyph": {
+				"deprecated": false,
+				"description": "",
+				"elementURL": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/missing-glyph",
+				"interface": "SVGElement",
+				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/SVGElement",
+				"keys": {},
+				"name": "missing-glyph",
+				"namespace": "http://www.w3.org/2000/svg",
+				"notIncludedMDN": ["className", "load_event", "ownerSVGElement", "viewportElement"],
 				"readonly": []
 			},
 			"mpath": {
@@ -83100,6 +83389,18 @@
 				"notIncludedMDN": ["tooltip_display"],
 				"readonly": []
 			},
+			"tref": {
+				"deprecated": false,
+				"description": "",
+				"elementURL": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/tref",
+				"interface": "SVGElement",
+				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/SVGElement",
+				"keys": {},
+				"name": "tref",
+				"namespace": "http://www.w3.org/2000/svg",
+				"notIncludedMDN": ["className", "load_event", "ownerSVGElement", "viewportElement"],
+				"readonly": []
+			},
 			"tspan": {
 				"deprecated": false,
 				"description": "",
@@ -86061,6 +86362,18 @@
 				"namespace": "http://www.w3.org/2000/svg",
 				"notIncludedMDN": [],
 				"readonly": ["SVGViewElement.preserveAspectRatio", "SVGViewElement.viewBox"]
+			},
+			"vkern": {
+				"deprecated": false,
+				"description": "",
+				"elementURL": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/vkern",
+				"interface": "SVGElement",
+				"interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/SVGElement",
+				"keys": {},
+				"name": "vkern",
+				"namespace": "http://www.w3.org/2000/svg",
+				"notIncludedMDN": ["className", "load_event", "ownerSVGElement", "viewportElement"],
+				"readonly": []
 			}
 		}
 	},
