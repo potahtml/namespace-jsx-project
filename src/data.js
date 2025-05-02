@@ -1,7 +1,7 @@
 import puppeteer from 'puppeteer'
 
 import { parseFromURL } from './parse.js'
-import { fetchCached, read, unique, uniqueTypes } from './utils.js'
+import { fetchCached, read, unique } from './utils.js'
 
 /**
  * List of frameworks that provide a JSX namespace. Their interface
@@ -11,7 +11,7 @@ import { fetchCached, read, unique, uniqueTypes } from './utils.js'
 export const libs = [
 	{
 		// SOLID MAIN
-		file: 'https://raw.githubusercontent.com/titoBouzout/dom-expressions/refs/heads/jsxtypesmainupdate/packages/dom-expressions/src/jsx.d.ts',
+		file: 'https://raw.githubusercontent.com/titoBouzout/dom-expressions/refs/heads/main-types-update-0105/packages/dom-expressions/src/jsx.d.ts',
 		name: 'Solid Main',
 		url: 'https://www.solidjs.com/',
 		map: {
@@ -36,7 +36,7 @@ export const libs = [
 	},
 	{
 		// SOLID MINOR
-		file: 'https://raw.githubusercontent.com/titoBouzout/dom-expressions/refs/heads/minor/packages/dom-expressions/src/jsx.d.ts',
+		file: 'https://raw.githubusercontent.com/titoBouzout/dom-expressions/refs/heads/minor-types-update-0105/packages/dom-expressions/src/jsx.d.ts',
 		name: 'Solid Minor',
 		url: 'https://www.solidjs.com/',
 		map: {
@@ -61,7 +61,7 @@ export const libs = [
 	},
 	{
 		// SOLID NEXT
-		file: 'https://raw.githubusercontent.com/titoBouzout/dom-expressions/refs/heads/next/packages/dom-expressions/src/jsx.d.ts',
+		file: 'https://raw.githubusercontent.com/titoBouzout/dom-expressions/refs/heads/next-types-update-0105/packages/dom-expressions/src/jsx.d.ts',
 		name: 'Solid Next',
 		url: 'https://www.solidjs.com/',
 		map: {
@@ -454,6 +454,15 @@ export const confirmedAttributes = {
 	'button.HTMLButtonElement.popovertarget': true,
 	'input.HTMLInputElement.popovertarget': true,
 	'input.HTMLInputElement.results': true,
+}
+
+// browsers do not mark as readonly but mdn does
+
+export const readonlyAttributes = {
+	'a.HTMLAnchorElement.relList': true,
+	'area.HTMLAreaElement.relList': true,
+	'form.HTMLFormElement.relList': true,
+	'link.HTMLLinkElement.relList': true,
 }
 
 // confirmed deprecated - needs MDN update

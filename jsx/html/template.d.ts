@@ -6,9 +6,6 @@ interface TemplateHTMLAttributes<T> extends HTMLAttributes<T> {
 
 	/** @experimental */
 	shadowrootserializable?: boolean
-
-	/** @deprecated */
-	content?: DocumentFragment
 }
 
 // Solid Minor - https://www.solidjs.com/

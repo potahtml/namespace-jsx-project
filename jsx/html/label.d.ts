@@ -1,7 +1,6 @@
 // Solid Main - https://www.solidjs.com/
 interface LabelHTMLAttributes<T> extends HTMLAttributes<T> {
 	for?: string
-	form?: string
 }
 
 // Solid Minor - https://www.solidjs.com/

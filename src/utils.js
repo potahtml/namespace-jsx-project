@@ -58,6 +58,11 @@ export const uniqueTypes = a =>
 
 export const entries = Object.entries
 
+export function removeFromArray(array, value) {
+	const index = array.indexOf(value)
+	if (index !== -1) array.splice(index, 1)
+}
+
 export const fetchCached = async url => {
 	const name = await hash(url)
 	const file = './node_modules/.cache/' + name + '.txt'

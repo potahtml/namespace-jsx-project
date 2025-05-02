@@ -35,6 +35,7 @@ import {
 	fixedTsEventsInterfaces,
 	confirmedAttributes,
 	globalAttributes,
+	readonlyAttributes,
 } from './data.js'
 
 import {
@@ -56,12 +57,14 @@ const DATA = {
 	eventsLib: {},
 	aria: {},
 	elements: {},
-	attributesAndProperties: {
-		attributes: [],
+	DOMExpressions: {
+		url: 'https://github.com/ryansolid/dom-expressions',
 		properties: [],
-		propertiesWithCase: [],
-		boolean: [],
-		booleanWithCase: [],
+		booleans: [],
+		PropAliases: {},
+		htmlTags: [],
+		svgTags: [],
+		mathmlTags: [],
 	},
 }
 
@@ -553,7 +556,9 @@ for (const ns in DATA.elements) {
 			tag.keys[k].attrChrome = key.attr
 
 			tag.keys[k].interface = key.interface
-			tag.keys[k].readonly = key.readonly
+			tag.keys[k].readonly =
+				key.readonly ||
+				readonlyAttributes[tagName + '.' + tag.interface + '.' + k]
 
 			tag.keys[k].propName = key.propName
 			tag.keys[k].attrName = key.attrName
@@ -751,62 +756,67 @@ for (const [ns, data] of entries(frameworkSpecific)) {
 	}
 }
 
-// attributes/properties
+// https://github.com/ryansolid/dom-expressions
 
-DATA.attributesAndProperties = {
-	attributes: [],
+DATA.DOMExpressions = {
+	url: 'https://github.com/ryansolid/dom-expressions',
 	properties: [],
-	propertiesWithCase: [],
-	boolean: [],
-	booleanWithCase: [],
+	booleans: [],
+	PropAliases: {},
+	htmlTags: [],
+	svgTags: [],
+	mathmlTags: [],
 }
 
-for (const [ns, data] of entries(
+for (const [ns, tag] of entries(
 	DATA.elements['http://www.w3.org/1999/xhtml'],
 )) {
-	for (const [_, key] of entries(data.keys)) {
-		if (key.event) {
-			continue
-		}
-		if (key.attr) {
-			DATA.attributesAndProperties.attributes.push(key.name)
-		}
+	for (const [_, key] of entries(tag.keys)) {
 		if (key.prop) {
-			DATA.attributesAndProperties.properties.push(key.name)
+			if (key.readonly || key.deprecated || key.nonstandard) {
+				continue
+			}
 
 			if (
 				key.values.Chrome === 'boolean' ||
 				key.values.Firefox === 'boolean'
 			) {
-				DATA.attributesAndProperties.boolean.push(key.name)
-
 				if (/[A-Z]/.test(key.name)) {
-					DATA.attributesAndProperties.booleanWithCase.push(key.name)
-				}
-			}
+					DATA.DOMExpressions.properties.push(key.name)
 
-			if (/[A-Z]/.test(key.name)) {
-				DATA.attributesAndProperties.propertiesWithCase.push(key.name)
+					const keyLower = key.name.toLowerCase()
+					if (!DATA.DOMExpressions.PropAliases[keyLower]) {
+						DATA.DOMExpressions.PropAliases[keyLower] = {
+							$: key.name,
+						}
+					}
+					DATA.DOMExpressions.PropAliases[keyLower][
+						tag.name.toUpperCase()
+					] = 1
+				}
+
+				DATA.DOMExpressions.booleans.push(key.name.toLowerCase())
 			}
 		}
 	}
 }
 
-DATA.attributesAndProperties.attributes = unique(
-	DATA.attributesAndProperties.attributes,
+DATA.DOMExpressions.properties = unique(
+	DATA.DOMExpressions.properties,
 )
-DATA.attributesAndProperties.properties = unique(
-	DATA.attributesAndProperties.properties,
+DATA.DOMExpressions.booleans = unique(DATA.DOMExpressions.booleans)
+
+DATA.DOMExpressions.htmlTags = unique(
+	Object.keys(DATA.elements['http://www.w3.org/1999/xhtml']),
 )
-DATA.attributesAndProperties.boolean = unique(
-	DATA.attributesAndProperties.boolean,
+DATA.DOMExpressions.svgTags = unique(
+	Object.keys(DATA.elements['http://www.w3.org/2000/svg']),
 )
-DATA.attributesAndProperties.propertiesWithCase = unique(
-	DATA.attributesAndProperties.propertiesWithCase,
+DATA.DOMExpressions.mathmlTags = unique(
+	Object.keys(DATA.elements['http://www.w3.org/1998/Math/MathML']),
 )
-DATA.attributesAndProperties.booleanWithCase = unique(
-	DATA.attributesAndProperties.booleanWithCase,
-)
+
+//
 
 const columns = [
 	'Chrome',

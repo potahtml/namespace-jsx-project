@@ -374,7 +374,6 @@ interface AriaAttributes {
 	 * @see aria-labelledby
 	 */
 	'aria-describedby'?: string
-
 	/**
 	 * Defines a string value that describes or annotates the current element.
 	 *
