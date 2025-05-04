@@ -449,6 +449,15 @@ export const deprecatedTags = {
 	'http://www.w3.org/2000/svg': [],
 }
 
+export const globalAttributesButNotReally = {
+	'bdo.HTMLElement.dir': true,
+	'abbr.HTMLElement.title': true,
+	'dfn.HTMLElement.title': true,
+	'input.HTMLInputElement.title': true,
+	'link.HTMLLinkElement.title': true,
+	'style.HTMLStyleElement.title': true,
+}
+
 export const globalAttributes = unique([
 	Object.keys(
 		JSON.parse(
@@ -595,7 +604,7 @@ export const deprecatedAttributes = {
 	'iframe.HTMLIFrameElement.allowtransparency': true,
 
 	// not found in mdn
-	'keygen.HTMLUnknownElement.autofocus': true,
+	// 'keygen.HTMLUnknownElement.autofocus': true,
 	'keygen.HTMLUnknownElement.challenge': true,
 	'keygen.HTMLUnknownElement.disabled': true,
 	'keygen.HTMLUnknownElement.form': true,
@@ -643,6 +652,7 @@ export const mdnSkip = [
 	'status',
 	'support',
 	'tags',
+
 	// elementMDN ??
 	'advanced_visible_child_selection',
 	'aspect_ratio_computed_from_attributes',
@@ -680,6 +690,7 @@ export const mdnSkip = [
 	'dragleave_event',
 	'dragover_event',
 	'dragstart_event',
+	'load_event',
 	'drop_event',
 	'editContext',
 	'enterKeyHint',

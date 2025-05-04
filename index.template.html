@@ -270,7 +270,7 @@
 						return
 					}
 					const text = target.value.trim()
-					const search = text.replace(/^"/, '').replace(/"$/, '')
+					const search = text.replace(/^"/, '').replace(/"$/, '').trim()
 					const searchInsensitive = search.toLowerCase()
 					const isExact = text.startsWith('"') && text.endsWith('"')
 

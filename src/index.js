@@ -36,6 +36,7 @@ import {
 	confirmedAttributes,
 	globalAttributes,
 	readonlyAttributes,
+	globalAttributesButNotReally,
 } from './data.js'
 
 import {
@@ -600,17 +601,16 @@ for (const ns in DATA.elements) {
 		for (const k in tag.keys) {
 			tag.keys[k].name = k
 
+			const keyInterface = tagName + '.' + tag.interface + '.' + k
+			const keyInterfaceLowerCase =
+				tagName + '.' + tag.interface + '.' + k.toLowerCase()
+
 			// deprecation
 			tag.keys[k].deprecated =
-				deprecatedAttributes[
-					tagName + '.' + tag.interface + '.' + k.toLowerCase()
-				]
+				deprecatedAttributes[keyInterfaceLowerCase]
 
 			// weird
-			tag.keys[k].weird =
-				weirdAttributes[
-					tagName + '.' + tag.interface + '.' + k.toLowerCase()
-				]
+			tag.keys[k].weird = weirdAttributes[keyInterface]
 
 			// url
 			tag.keys[k].url = tag.keys[k].interface
@@ -620,9 +620,8 @@ for (const ns in DATA.elements) {
 			// prop/attr
 
 			const isConfirmedAttribute =
-				confirmedAttributes[
-					tag.name + '.' + tag.interface + '.' + tag.keys[k].name
-				]
+				confirmedAttributes[keyInterface] ||
+				globalAttributesButNotReally[keyInterface]
 
 			tag.keys[k].propChrome = tag.keys[k].propChrome || false
 			tag.keys[k].propFirefox = tag.keys[k].propFirefox || false
@@ -638,7 +637,9 @@ for (const ns in DATA.elements) {
 			tag.keys[k].attr =
 				tag.keys[k].attrChrome || tag.keys[k].attrFirefox
 
-			tag.keys[k].globalAttribute = globalAttributes.includes(k)
+			tag.keys[k].globalAttribute =
+				globalAttributes.includes(k) &&
+				!globalAttributesButNotReally[keyInterface]
 
 			tag.keys[k].readonly =
 				tag.keys[k].readonly ||
