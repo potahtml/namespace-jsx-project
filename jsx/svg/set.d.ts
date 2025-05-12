@@ -1,13 +1,5 @@
 // Solid Main - https://www.solidjs.com/
 interface SetSVGAttributes<T> extends CoreSVGAttributes<T>, StylableSVGAttributes, AnimationTimingSVGAttributes {}
-interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
-	id?: string
-	lang?: string
-	tabindex?: number | string
-
-	tabIndex?: number | string
-}
-
 interface StylableSVGAttributes {
 	class?: string
 	style?: CSSProperties | string
@@ -27,15 +19,6 @@ interface AnimationTimingSVGAttributes {
 
 // Solid Minor - https://www.solidjs.com/
 interface SetSVGAttributes<T> extends CoreSVGAttributes<T>, StylableSVGAttributes, AnimationTimingSVGAttributes {}
-interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
-	id?: string
-	lang?: string
-	tabindex?: number | string
-
-	/** @deprecated Use lowercase attributes */
-	tabIndex?: number | string
-}
-
 interface StylableSVGAttributes {
 	class?: string
 	style?: CSSProperties | string
@@ -55,15 +38,6 @@ interface AnimationTimingSVGAttributes {
 
 // Solid Next - https://www.solidjs.com/
 interface SetSVGAttributes<T> extends CoreSVGAttributes<T>, StylableSVGAttributes, AnimationTimingSVGAttributes {}
-interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
-	id?: string | false
-	lang?: string | false
-	tabindex?: number | string | false
-
-	/** @deprecated Use lowercase attributes */
-	tabIndex?: number | string | false
-}
-
 interface StylableSVGAttributes {
 	class?: string | ClassList | false
 	style?: CSSProperties | string | false
@@ -80,6 +54,8 @@ interface AnimationTimingSVGAttributes {
 	repeatDur?: string | false
 	restart?: 'always' | 'whenNotActive' | 'never' | false
 }
+
+// Preact - https://preactjs.com/
 
 // React - https://react.dev/
 interface SVGProps<T> extends SVGAttributes<T>, ClassAttributes<T> {}

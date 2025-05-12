@@ -1,871 +1,215 @@
-import puppeteer from 'puppeteer'
+import { uniqueKeys } from './utils.js'
 
-import { parseFromURL } from './parse.js'
-import { fetchCached, read, unique } from './utils.js'
-
-/**
- * List of frameworks that provide a JSX namespace. Their interface
- * for events, elements and attributes it's mapped into a common
- * name.
- */
-export const libs = [
-	{
-		// SOLID MAIN
-		file: 'https://raw.githubusercontent.com/titoBouzout/dom-expressions/refs/heads/main-types-update-0105/packages/dom-expressions/src/jsx.d.ts',
-		name: 'Solid Main',
-		url: 'https://www.solidjs.com/',
-		map: {
-			// events
-			customeventhandlerscamelcase: 'events',
-			customeventhandlerslowercase: 'events',
-			customeventhandlersnamespaced: 'events',
-			elementeventmap: 'events',
-			windoweventmap: 'events',
-			domattributes: 'events',
-
-			// elements
-			htmlelementdeprecatedtags: 'elements',
-			htmlelementtags: 'elements',
-			svgelementtags: 'elements',
-			intrinsicelements: 'elements',
-			mathmlelementtags: 'elements',
-
-			// attributes
-			intrinsicattributes: 'attributes',
-		},
-	},
-	{
-		// SOLID MINOR
-		file: 'https://raw.githubusercontent.com/titoBouzout/dom-expressions/refs/heads/minor-types-update-0105/packages/dom-expressions/src/jsx.d.ts',
-		name: 'Solid Minor',
-		url: 'https://www.solidjs.com/',
-		map: {
-			// events
-			customeventhandlerscamelcase: 'events',
-			customeventhandlerslowercase: 'events',
-			customeventhandlersnamespaced: 'events',
-			elementeventmap: 'events',
-			windoweventmap: 'events',
-			domattributes: 'events',
-
-			// elements
-			htmlelementdeprecatedtags: 'elements',
-			htmlelementtags: 'elements',
-			svgelementtags: 'elements',
-			intrinsicelements: 'elements',
-			mathmlelementtags: 'elements',
-
-			// attributes
-			intrinsicattributes: 'attributes',
-		},
-	},
-	{
-		// SOLID NEXT
-		file: 'https://raw.githubusercontent.com/titoBouzout/dom-expressions/refs/heads/next-types-update-0105/packages/dom-expressions/src/jsx.d.ts',
-		name: 'Solid Next',
-		url: 'https://www.solidjs.com/',
-		map: {
-			// events
-			customeventhandlerscamelcase: 'events',
-			customeventhandlerslowercase: 'events',
-			customeventhandlersnamespaced: 'events',
-			elementeventmap: 'events',
-			windoweventmap: 'events',
-			domattributes: 'events',
-
-			// elements
-			htmlelementdeprecatedtags: 'elements',
-			htmlelementtags: 'elements',
-			svgelementtags: 'elements',
-			intrinsicelements: 'elements',
-			mathmlelementtags: 'elements',
-
-			// attributes
-			intrinsicattributes: 'attributes',
-		},
-	},
-	{
-		// VOBY
-		file: 'https://raw.githubusercontent.com/vobyjs/voby/refs/heads/master/src/jsx/types.ts',
-		name: 'Voby',
-		url: 'https://github.com/vobyjs/voby',
-		map: {
-			// events
-			eventattributes: 'events',
-			domattributes: 'events',
-
-			// elements
-			intrinsicelements: 'elements',
-			intrinsicelementsmap: 'elements',
-
-			intrinsicattributes: 'attributes',
-
-			// attributes
-			voidhtmlattributes: 'htmlattributes',
-		},
-	},
-	{
-		// VUE
-		file: 'https://raw.githubusercontent.com/vuejs/core/refs/heads/main/packages/runtime-dom/src/jsx.ts',
-		name: 'Vue',
-		url: 'https://vuejs.org/',
-		map: {
-			// elements
-			intrinsicelementattributes: 'elements',
-
-			// attributes
-			intrinsicattributes: 'attributes',
-		},
-	},
-	{
-		// PREACT
-		file: 'https://raw.githubusercontent.com/preactjs/preact/refs/heads/main/src/jsx.d.ts',
-		name: 'Preact',
-		url: 'https://preactjs.com/',
-		map: {
-			// events
-			domattributes: 'events',
-
-			// elements
-			intrinsicelements: 'elements',
-			intrinsicsvgelements: 'elements',
-			intrinsicmathmlelements: 'elements',
-
-			// attributes
-			intrinsicattributes: 'attributes',
-		},
-	},
-	{
-		// REACT
-		file: 'https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/react/index.d.ts',
-		name: 'React',
-		url: 'https://react.dev/',
-		map: {
-			// events
-			domattributes: 'events',
-
-			// elements
-			intrinsicelements: 'elements',
-			reacthtml: 'elements',
-			reactsvg: 'elements',
-
-			// attributes
-			allhtmlattributes: 'attributes',
-			intrinsicattributes: 'attributes',
-		},
-	},
-	{
-		// POTA
-		file: 'https://raw.githubusercontent.com/potahtml/pota/refs/heads/master/jsx.d.ts',
-		name: 'Pota',
-		url: 'https://github.com/potahtml/pota',
-		map: {
-			// events
-
-			elementevents: 'events',
-			globaleventhandlersevents: 'events',
-			htmlmediaelementevents: 'events',
-			htmlvideoelementevents: 'events',
-			windoweventhandlersevents: 'events',
-			globalevents: 'events',
-			htmlevents: 'events',
-			svgevents: 'events',
-			mathmlevents: 'events',
-			htmlbodyelementevents: 'events',
-			windowevents: 'events',
-
-			// elements
-
-			htmlelements: 'elements',
-			htmldeprecatedelements: 'elements',
-
-			mathmlelements: 'elements',
-			mathmldeprecatedelements: 'elements',
-
-			svgelements: 'elements',
-
-			htmlwebviewelements: 'elements',
-
-			domhtmlattributes: 'htmlattributes',
-			domhtmlproperties: 'htmlattributes',
-
-			dommathmlattributes: 'mathmlattributes',
-		},
-	},
-]
-
-/** Used to merge the common names from each framework to one file. */
-
-export const jsxcore = {
-	elements: 'elements',
-	attributes: 'attributes',
-
-	svgattributes: 'svgattributes',
-	htmlattributes: 'htmlattributes',
-	mathmlattributes: 'mathmlattributes',
-
-	events: 'events',
-
-	cssproperties: 'cssproperties',
-
-	// special attributes
-	ariaattributes: 'ariahtmlattributes',
-	mediahtmlattributes: 'mediahtmlattributes',
+export const NS = {
+	html: 'http://www.w3.org/1999/xhtml',
+	math: 'http://www.w3.org/1998/Math/MathML',
+	svg: 'http://www.w3.org/2000/svg',
 }
 
-/** Export lib.dom from Typescript */
-
-export const ts = await parseFromURL(
-	'https://raw.githubusercontent.com/microsoft/TypeScript-DOM-lib-generator/refs/heads/main/baselines/dom.generated.d.ts',
-	'typescript',
-)
-
-/** Export vsCode data */
-const vsCodeData = JSON.parse(
-	read(
-		'./node_modules/vscode-html-languageservice/lib/esm/languageFacts/data/webCustomData.js',
-	)
-		.trim()
-		.replace('export const htmlData =', '')
-		.replace(/^\/\*[^\/]+\*\//, '')
-		.replace(/\n\/\/[^\n]+\n/, '\n')
-		.replace(/;$/, ''),
-)
-
-const vsCode = {}
-
-for (const tag of vsCodeData.tags) {
-	vsCode[tag.name] = {
-		description: tag.description?.value || tag.description || '',
-		keys: {},
-	}
-	for (const attr of tag.attributes) {
-		vsCode[tag.name].keys[attr.name] = attr.valueSet
-			? vsCodeData.valueSets
-					.find(item => item.name === attr.valueSet)
-					?.values?.map(value => "'" + value.name + "'")
-					.join(' | ')
-			: 'string'
-
-		// attr.valueSet.v is missing in vsCode data, its boolean
-
-		vsCode[tag.name].keys[attr.name] =
-			vsCode[tag.name].keys[attr.name] || 'boolean'
-	}
-}
-
-export { vsCode }
-
-/**
- * It prevents the following interfaces from being merge with each
- * tagName interface.
- */
-
-export const isBlacklisted = {
-	// when extending
-	element: true,
-	t: true,
-	eventtarget: true,
-	extends: true,
-	interface: true,
-	ariaattributes: true,
-	domattributes: true,
-	allhtmlattributes: true,
-	refattributes: true,
-	attributes: true,
-	globalevents: true,
-	htmlevents: true,
-	svgevents: true,
-	mathmlevents: true,
-	htmlbodyelementevents: true,
-	windowevents: true,
-	htmlmediaelementevents: true,
-
-	windoweventhandlersevents: true,
-	voidhtmlattributes: true,
-	mathmlelement: true,
-
-	// regular
-	htmlelement: true,
-
-	htmlattributes: true,
-	svgattributes: true,
-	mathmlattributes: true,
-
-	detailedhtmlfactory: true,
-	svgfactory: true,
-
-	htmlelementevents: true,
-	mathmlelementevents: true,
-	svgelementevents: true,
-
-	htmlelementattributes: true,
-	htmlunknownelementattributes: true,
-}
-
-export const fixedTsEventsInterfaces = {
-	command: 'CommandEvent',
-	input: 'InputEvent',
-	/* non standard/deprecated **/
-	dragexit: 'DragEvent',
-}
-
-/**
- * The source of truth, the list of tagNames is taken from typescript
- * itself.
- */
-
-export const tsTagNamesMap = {
+export const data = {
 	html: {
-		properties: ts.htmlelementtagnamemap.properties,
-		source: ts.htmlelementtagnamemap.source,
-		namespace: 'http://www.w3.org/1999/xhtml',
+		ns: NS.html,
+		tags: {
+			list: uniqueKeys(``),
+
+			deprecated: uniqueKeys(`
+
+				// confirmed deprecated but not in mdn
+				'applet',
+				'basefont',
+				'bgsound',
+				'blink',
+				'listing',
+				'isindex',
+				'keygen',
+				'menuitem',
+				'multicol',
+				'nextid',
+				'noindex',
+				'spacer',
+
+				// taken from dom-expressions
+				'content',
+				'portal',
+				'image',
+				'shadow',
+			`),
+		},
+		keys: {
+			/** Global attributes */
+			global: uniqueKeys(
+				`
+					// obsolete but still global
+					xml:lang xml:base
+ 				`,
+			),
+		},
 	},
-	htmldeprecated: {
-		properties: ts.htmlelementdeprecatedtagnamemap.properties,
-		source: ts.htmlelementdeprecatedtagnamemap.source,
-		namespace: 'http://www.w3.org/1999/xhtml',
-	},
-	htmldeprecated2: {
-		// content https://stackoverflow.com/questions/17170547/is-there-a-content-element-in-html5
-		// image https://dev.to/danbmky/the-real-image-tag-vs-2jpd
-		// portal https://web.dev/articles/hands-on-portals
-		properties: [
-			{ name: 'content', source: 'HTMLElement' },
-			// add it with double  `ee` so doesnt mess up the table with SVG data
-			{ name: 'imagee', source: 'HTMLElement' },
-			{ name: 'portal', source: 'HTMLElement' },
-			{ name: 'shadow', source: 'HTMLElement' },
-		],
-		source: `interface HTMLElementDeprecatedTagNameMap2 {
-			content: HTMLElement
-			// add it with double  "ee" so doesnt mess up the table with SVG data
-			imagee: HTMLElement
-			portal: HTMLElement
-			shadow: HTMLElement
-		}`,
-		namespace: 'http://www.w3.org/1999/xhtml',
+	math: {
+		ns: NS.math,
+		tags: {
+			list: uniqueKeys(``),
+			deprecated: uniqueKeys(` menclose mfenced`),
+		},
+		keys: {
+			/** Global attributes */
+			global: uniqueKeys([]),
+		},
 	},
 	svg: {
-		properties: ts.svgelementtagnamemap.properties,
-		source: ts.svgelementtagnamemap.source,
-		namespace: 'http://www.w3.org/2000/svg',
-	},
-	svgdeprecated: {
-		properties: [
-			{ name: 'altGlyph', source: 'SVGElement' },
-			{ name: 'altGlyphDef', source: 'SVGElement' },
-			{ name: 'altGlyphItem', source: 'SVGElement' },
-			{ name: 'animateColor', source: 'SVGElement' },
-			{ name: 'color-profile', source: 'SVGElement' },
-			{ name: 'cursor', source: 'SVGElement' },
-			{ name: 'font', source: 'SVGElement' },
-			{ name: 'font-face', source: 'SVGElement' },
-			{ name: 'font-face-format', source: 'SVGElement' },
-			{ name: 'font-face-name', source: 'SVGElement' },
-			{ name: 'font-face-src', source: 'SVGElement' },
-			{ name: 'font-face-uri', source: 'SVGElement' },
-			{ name: 'glyph', source: 'SVGElement' },
-			{ name: 'glyphRef', source: 'SVGElement' },
-			{ name: 'hkern', source: 'SVGElement' },
-			{ name: 'missing-glyph', source: 'SVGElement' },
-			{ name: 'tref', source: 'SVGElement' },
-			{ name: 'vkern', source: 'SVGElement' },
-		],
-		source: `interface SVGElementDeprecatedTagNameMap {
-			 "altGlyph": SVGElement
-			 "altGlyphDef": SVGElement
-			 "altGlyphItem": SVGElement
-			 "animateColor": SVGElement
-			 "color-profile": SVGElement
-			 "cursor": SVGElement
-			 "font": SVGElement
-			 "font-face": SVGElement
-			 "font-face-format": SVGElement
-			 "font-face-name": SVGElement
-			 "font-face-src": SVGElement
-			 "font-face-uri": SVGElement
-			 "glyph": SVGElement
-			 "glyphRef": SVGElement
-			 "hkern": SVGElement
-			 "missing-glyph": SVGElement
-			 "tref": SVGElement
-			 "vkern": SVGElement
-
-		}`,
-		namespace: 'http://www.w3.org/2000/svg',
-	},
-	mathml: {
-		properties: ts.mathmlelementtagnamemap.properties,
-		source: ts.mathmlelementtagnamemap.source,
-		namespace: 'http://www.w3.org/1998/Math/MathML',
-	},
-	mathmldeprecated: {
-		properties: [
-			{ name: 'menclose', source: 'MathMLElement' },
-			{ name: 'mfenced', source: 'MathMLElement' },
-		],
-		source: `interface MathMLElementDeprecatedTagNameMap {
-			menclose: MathMLElement
-			mfenced: MathMLElement
-		}`,
-		namespace: 'http://www.w3.org/1998/Math/MathML',
-	},
-}
-
-/** It gets all event interfaces that contain "eventmap" in the name. */
-
-export function getEventNameMaps(string) {
-	return unique(
-		Array.from(string.matchAll(/[^a-z]([a-z]+eventmap)/gi)).map(
-			match => match[0].trim(),
-		),
-	)
-}
-
-export const deprecatedTags = {
-	'http://www.w3.org/1999/xhtml': [
-		// confirmed deprecated but not in mdn
-		'applet',
-		'basefont',
-		'bgsound',
-		'blink',
-		'listing',
-		'isindex',
-		'keygen',
-		'menuitem',
-		'multicol',
-		'nextid',
-		'noindex',
-		'spacer',
-		// taken from dom-expressions
-		'content',
-		'portal',
-		'image',
-		'imagee',
-		'shadow',
-	],
-	'http://www.w3.org/1998/Math/MathML': ['menclose', 'mfenced'],
-	'http://www.w3.org/2000/svg': [],
-}
-
-export const globalAttributesButNotReally = {
-	'bdo.HTMLElement.dir': true,
-	'abbr.HTMLElement.title': true,
-	'dfn.HTMLElement.title': true,
-	'input.HTMLInputElement.title': true,
-	'link.HTMLLinkElement.title': true,
-	'style.HTMLStyleElement.title': true,
-}
-
-export const globalAttributes = unique([
-	Object.keys(
-		JSON.parse(
-			await fetchCached(
-				'https://raw.githubusercontent.com/mdn/browser-compat-data/refs/heads/main/html/global_attributes.json',
+		ns: NS.svg,
+		tags: {
+			list: uniqueKeys(``),
+			deprecated: uniqueKeys(
+				` altGlyph altGlyphDef altGlyphItem animateColor color-profile cursor font font-face font-face-format font-face-name font-face-src font-face-uri glyph glyphRef hkern missing-glyph tref vkern`,
 			),
-		).html.global_attributes,
-	).filter(x => x !== 'data_attributes'),
-
-	// a global attribute thats never mentioned as a global attribute
-	['elementtiming'],
-	// obsolete but still global
-	['xml:lang', 'xml:base'],
-	// mdn lacks rdfa attributes
-	[
-		'accesskey',
-		'anchor',
-		'autocapitalize',
-		'autocorrect',
-		'autofocus',
-		'class',
-		'contenteditable',
-		'dir',
-		'draggable',
-		'enterkeyhint',
-		'exportparts',
-		'hidden',
-		'id',
-		'inert',
-		'inputmode',
-		'is',
-		'itemid',
-		'itemprop',
-		'itemref',
-		'itemscope',
-		'itemtype',
-		'lang',
-		'nonce',
-		'part',
-		'popover',
-		'role',
-		'slot',
-		'spellcheck',
-		'style',
-		'tabindex',
-		'title',
-		'translate',
-		'virtualkeyboardpolicy',
-		'writingsuggestions',
-	],
-])
-
-// confirmed attributes
-
-export const confirmedAttributes = {
-	'button.HTMLButtonElement.form': true,
-	'fieldset.HTMLFieldSetElement.form': true,
-	'input.HTMLInputElement.form': true,
-	// 'label.HTMLLabelElement.form': true,
-	'meter.HTMLMeterElement.form': true,
-	'object.HTMLObjectElement.form': true,
-	'output.HTMLOutputElement.form': true,
-	'select.HTMLSelectElement.form': true,
-	'textarea.HTMLTextAreaElement.form': true,
-	'keygen.HTMLUnknownElement.form': true,
-	'mo.MathMLElement.form': true,
-	//
-	'object.HTMLObjectElement.wmode': true,
-	'meta.HTMLMetaElement.charset': true,
-	'input.HTMLInputElement.capture': true,
-	'input.HTMLInputElement.list': true,
-	'button.HTMLButtonElement.commandfor': true,
-	'button.HTMLButtonElement.popovertarget': true,
-	'input.HTMLInputElement.popovertarget': true,
-	'input.HTMLInputElement.results': true,
-}
-
-// browsers do not mark as readonly but mdn does
-
-export const readonlyAttributes = {
-	'a.HTMLAnchorElement.relList': true,
-	'area.HTMLAreaElement.relList': true,
-	'form.HTMLFormElement.relList': true,
-	'link.HTMLLinkElement.relList': true,
-}
-
-// confirmed deprecated - needs MDN update
-
-export const deprecatedAttributes = {
-	// HTML
-
-	// deprecated https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes
-	'img.HTMLImageElement.intrinsicsize': true,
-
-	// deprecated https://developer.mozilla.org/en-US/docs/Web/HTML/Element/col#bgcolor
-	'col.HTMLTableColElement.bgcolor': true,
-
-	// deprecated https://developer.mozilla.org/en-US/docs/Web/HTML/Element/colgroup#bgcolor
-	'colgroup.HTMLTableColElement.bgcolor': true,
-
-	// non-standard deprecated https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/mediaGroup
-	'audio.HTMLAudioElement.mediagroup': true,
-	'video.HTMLVideoElement.mediagroup': true,
-	'track.HTMLTrackElement.mediagroup': true,
-
-	// deprecated https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#language
-	'script.HTMLScriptElement.language': true,
-
-	// deprecated https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form#accept
-	'form.HTMLFormElement.accept': true,
-
-	// deprecated https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/pre
-	'pre.HTMLPreElement.wrap': true,
-
-	// deprecated https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/head
-	'head.HTMLHeadElement.profile': true,
-
-	// SVG
-
-	// deprecated https://developer.mozilla.org/en-US/docs/Web/API/SVGStyleElement
-	'style.SVGStyleElement.type': true,
-
-	// MATHML
-
-	// deprecated https://developer.mozilla.org/en-US/docs/Web/MathML/Element/annotation-xml
-	'annotation-xml.MathMLElement.src': true,
-
-	// deprecated https://developer.mozilla.org/en-US/docs/Web/MathML/Element/annotation
-	'annotation.MathMLElement.src': true,
-
-	// deprecated https://developer.mozilla.org/en-US/docs/Web/MathML/Element/ms
-	'ms.MathMLElement.lquote': true,
-	'ms.MathMLElement.rquote': true,
-
-	// legacy deprecated https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mstyle
-	'mstyle.MathMLElement.scriptminsize': true,
-	'mstyle.MathMLElement.scriptsizemultiplier': true,
-
-	// deprecated https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes
-	'style.HTMLStyleElement.scoped': true,
-	'style.SVGStyleElement.scoped': true,
-
-	// not found in mdn
-	'iframe.HTMLIFrameElement.allowtransparency': true,
-
-	// not found in mdn
-	// 'keygen.HTMLUnknownElement.autofocus': true,
-	'keygen.HTMLUnknownElement.challenge': true,
-	'keygen.HTMLUnknownElement.disabled': true,
-	'keygen.HTMLUnknownElement.form': true,
-	'keygen.HTMLUnknownElement.keyparams': true,
-	'keygen.HTMLUnknownElement.keytype': true,
-	'keygen.HTMLUnknownElement.name': true,
-
-	// EXTERNAL
-
-	'webview.HTMLElement.blinkfeatures': true,
-	'webview.HTMLElement.disableguestresize': true,
-	'webview.HTMLElement.guestinstance': true,
-}
-
-/** These attributes/properties dont exists in x/html. */
-export const frameworkSpecific = {
-	'http://www.w3.org/1999/xhtml': {
-		// React
-		link: ['precedence'],
-		style: ['precedence', 'href'],
+		},
+		keys: {
+			/** Global attributes */
+			global: uniqueKeys([
+				`
+					// obsolete but still global
+					xml:lang xml:base
+ 				`,
+			]),
+		},
 	},
+	hardcoded: {
+		// browsers do not mark as readonly but mdn does
+		readonly: uniqueKeys(`
+				a.HTMLAnchorElement.relList
+				area.HTMLAreaElement.relList
+				form.HTMLFormElement.relList
+				link.HTMLLinkElement.relList
+			`),
+		/**
+		 * Browsers do not report the attribute, or the property is read
+		 * only but the attribute can be set
+		 */
+		confirmed: uniqueKeys(`
+				button.HTMLButtonElement.form
+				fieldset.HTMLFieldSetElement.form
+				input.HTMLInputElement.form
 
-	'http://www.w3.org/2000/svg': {
-		// React
-		style: ['precedence', 'href'],
+				// label.HTMLLabelElement.form
+				meter.HTMLMeterElement.form
+				object.HTMLObjectElement.form
+				output.HTMLOutputElement.form
+				select.HTMLSelectElement.form
+				textarea.HTMLTextAreaElement.form
+				keygen.HTMLUnknownElement.form
+				mo.MathMLElement.form
+
+				//
+				object.HTMLObjectElement.wmode
+				meta.HTMLMetaElement.charset
+				input.HTMLInputElement.capture
+				input.HTMLInputElement.list
+
+				button.HTMLButtonElement.commandfor
+
+				button.HTMLButtonElement.popovertarget
+				input.HTMLInputElement.popovertarget
+
+				input.HTMLInputElement.results
+			`),
+		/** Confirmed deprecated */
+		deprecated: uniqueKeys(`
+				// HTML
+
+				// deprecated https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes
+				img.HTMLImageElement.intrinsicsize
+
+				// deprecated https://developer.mozilla.org/en-US/docs/Web/HTML/Element/col#bgcolor
+				col.HTMLTableColElement.bgcolor
+
+				// deprecated https://developer.mozilla.org/en-US/docs/Web/HTML/Element/colgroup#bgcolor
+				colgroup.HTMLTableColElement.bgcolor
+
+				// non-standard deprecated https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/mediaGroup
+				audio.HTMLAudioElement.mediagroup
+				video.HTMLVideoElement.mediagroup
+				track.HTMLTrackElement.mediagroup
+
+				// deprecated https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#language
+				script.HTMLScriptElement.language
+
+				// deprecated https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form#accept
+				form.HTMLFormElement.accept
+
+				// deprecated https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/pre
+				pre.HTMLPreElement.wrap
+
+				// deprecated https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/head
+				head.HTMLHeadElement.profile
+
+				// SVG
+
+				// deprecated https://developer.mozilla.org/en-US/docs/Web/API/SVGStyleElement
+				style.SVGStyleElement.type
+
+				// MATHML
+
+				// deprecated https://developer.mozilla.org/en-US/docs/Web/MathML/Element/annotation-xml
+				annotation-xml.MathMLElement.src
+
+				// deprecated https://developer.mozilla.org/en-US/docs/Web/MathML/Element/annotation
+				annotation.MathMLElement.src
+
+				// deprecated https://developer.mozilla.org/en-US/docs/Web/MathML/Element/ms
+				ms.MathMLElement.lquote
+				ms.MathMLElement.rquote
+
+				// legacy deprecated https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mstyle
+				mstyle.MathMLElement.scriptminsize
+				mstyle.MathMLElement.scriptsizemultiplier
+
+				// deprecated https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes
+				style.HTMLStyleElement.scoped
+				style.SVGStyleElement.scoped
+
+				// not found in mdn
+				iframe.HTMLIFrameElement.allowtransparency
+
+				// not found in mdn
+				//  keygen.HTMLUnknownElement.autofocus
+				keygen.HTMLUnknownElement.challenge
+				keygen.HTMLUnknownElement.disabled
+				keygen.HTMLUnknownElement.form
+				keygen.HTMLUnknownElement.keyparams
+				keygen.HTMLUnknownElement.keytype
+				keygen.HTMLUnknownElement.name
+
+				// EXTERNAL
+
+				webview.HTMLElement.blinkfeatures
+				webview.HTMLElement.disableguestresize
+				webview.HTMLElement.guestinstance
+			`),
+		/**
+		 * These attributes/properties are framework specific and do not
+		 * exists in x/html.
+		 */
+		frameworkspecific: uniqueKeys(`
+				// react
+				link.precedence
+				style.href
+				style.precedence
+			`),
+		// Element or HTMLElement provides same key, but $Element has its own
+		notglobal: uniqueKeys(`
+				bdo.HTMLElement.dir
+				abbr.HTMLElement.title
+				dfn.HTMLElement.title
+				input.HTMLInputElement.title
+				link.HTMLLinkElement.title
+				style.HTMLStyleElement.title
+			`),
+		weird: uniqueKeys(`
+				iframe.HTMLIFrameElement.seamless
+				object.HTMLObjectElement.typemustmatch
+				menu.HTMLMenuElement.label
+				menu.HTMLMenuElement.type
+			`),
 	},
-}
-
-// needs MDN update
-
-export const weirdAttributes = {
-	'iframe.HTMLIFrameElement.seamless': true,
-
-	'object.HTMLObjectElement.typemustmatch': true,
-
-	'menu.HTMLMenuElement.label': true,
-	'menu.HTMLMenuElement.type': true,
-}
-
-export const mdnSkip = [
-	// elementMDN tags
-	'__compat',
-	'mdn_url',
-	'spec_url',
-	'status',
-	'support',
-	'tags',
-
-	// elementMDN ??
-	'advanced_visible_child_selection',
-	'aspect_ratio_computed_from_attributes',
-	'hr_in_select',
-	'implicit_noopener',
-	'lquote_rquote_attributes',
-	'text_fragments',
-	'xlink_actuate',
-	'xlink_href',
-	'xlink_show',
-	'xlink_title',
-
-	// HTMLElement
-	'accessKey',
-	'accessKeyLabel',
-	'anchorElement',
-	'attachInternals',
-	'attributeStyleMap',
-	'autocapitalize',
-	'autocorrect',
-	'autofocus',
-	'beforetoggle_event',
-	'blur',
-	'change_event',
-	'click',
-	'command_event',
-	'contentEditable',
-	'dataset',
-	'dir',
-	'drag_event',
-	'dragend_event',
-	'dragenter_event',
-	'dragexit_event',
-	'draggable',
-	'dragleave_event',
-	'dragover_event',
-	'dragstart_event',
-	'load_event',
-	'drop_event',
-	'editContext',
-	'enterKeyHint',
-	'error_event',
-	'focus',
-	'hidden',
-	'hidePopover',
-	'inert',
-	'innerText',
-	'inputMode',
-	'isContentEditable',
-	'lang',
-	'nonce',
-	'offsetHeight',
-	'offsetLeft',
-	'offsetParent',
-	'offsetTop',
-	'offsetWidth',
-	'outerText',
-	'popover',
-	'showPopover',
-	'spellcheck',
-	'style',
-	'tabIndex',
-	'title',
-	'togglePopover',
-	'toggle_event',
-	'translate',
-	'virtualKeyboardPolicy',
-	'writingSuggestions',
-]
-export function ElementURL(ns, tagName) {
-	switch (ns) {
-		case 'http://www.w3.org/1999/xhtml': {
-			if (tagName === 'webview') {
-				return 'https://www.electronjs.org/docs/latest/api/webview-tag'
-			}
-			return (
-				'https://developer.mozilla.org/docs/Web/HTML/Element/' +
-				tagName
-			)
-		}
-		case 'http://www.w3.org/1998/Math/MathML': {
-			return (
-				'https://developer.mozilla.org/en-US/docs/Web/MathML/Element/' +
-				tagName
-			)
-		}
-		case 'http://www.w3.org/2000/svg': {
-			return (
-				'https://developer.mozilla.org/en-US/docs/Web/SVG/Element/' +
-				tagName
-			)
-		}
-		default: {
-			return 'https://developer.mozilla.org/en-US/search?q=' + tagName
-		}
-	}
-}
-
-export function InterfaceURL(ns, tagName, inter) {
-	return 'https://developer.mozilla.org/en-US/docs/Web/API/' + inter
-}
-export function KeyURL(ns, tagName, inter, attr) {
-	if (tagName === 'webview') {
-		return (
-			'https://www.electronjs.org/docs/latest/api/webview-tag#' + attr
-		)
-	}
-	return (
-		'https://developer.mozilla.org/en-US/docs/Web/API/' +
-		inter +
-		'#' +
-		inter.toLowerCase() +
-		'.' +
-		attr.toLowerCase()
-	)
-}
-
-export function InterfaceJSONURL(inter) {
-	return `https://raw.githubusercontent.com/mdn/browser-compat-data/refs/heads/main/api/${inter}.json`
-}
-
-export function ElementJSONURL(ns, tagName) {
-	switch (ns) {
-		case 'http://www.w3.org/1999/xhtml': {
-			return `https://raw.githubusercontent.com/mdn/browser-compat-data/refs/heads/main/html/elements/${tagName}.json`
-		}
-		case 'http://www.w3.org/1998/Math/MathML': {
-			return `https://raw.githubusercontent.com/mdn/browser-compat-data/refs/heads/main/mathml/elements/${tagName}.json`
-		}
-		case 'http://www.w3.org/2000/svg': {
-			return `https://raw.githubusercontent.com/mdn/browser-compat-data/refs/heads/main/svg/elements/${tagName}.json`
-		}
-		default: {
-			throw new Error('WHAT')
-		}
-	}
-}
-
-export const startBrowser = async (browser = 'chrome') => {
-	const navigatorInstance = await puppeteer.launch({
-		headless: true,
-		browser,
-		args: [
-			'--ash-no-nudges',
-			'--deny-permission-prompts',
-			'--disable-background-timer-throttling',
-			'--disable-backgrounding-occluded-windows',
-			'--disable-client-side-phishing-detection',
-			'--disable-default-apps',
-			'--disable-extensions',
-			'--disable-features=TranslateUI,Translate,InfiniteSessionRestore,IsolateOrigins',
-			'--disable-infobars',
-			'--disable-ipc-flooding-protection',
-			'--disable-notifications',
-			'--disable-renderer-backgrounding',
-			'--disable-session-crashed-bubble',
-			'--ignore-certificate-errors',
-			'--mute-audio',
-			'--no-default-browser-check',
-			'--no-first-run',
-			'--start-maximized',
-			'--disable-web-security',
-			'--no-sandbox',
-		],
-		protocolTimeout: 300_000,
-		defaultViewport: null,
-	})
-
-	const page = await navigatorInstance
-		.newPage()
-		// this fails frequently, just try again
-		.catch(async () => await navigatorInstance.newPage())
-
-	return [navigatorInstance, await page]
-}
-export const fetchTable = async file => {
-	const [navigatorInstance, page] = await startBrowser()
-
-	const url = 'file:///' + process.cwd().replace(/\\/g, '/') + file
-
-	await page.goto(url, {
-		waitUntil: 'networkidle0',
-	})
-	await new Promise(resolve => setTimeout(resolve, 10000))
-	const result = await page.evaluate(() => {
-		return '<!DOCTYPE html>' + document.documentElement.outerHTML
-	})
-
-	navigatorInstance.close()
-
-	return result
-}
-export const browserData = async (
-	browserData,
-	browser = 'chrome',
-) => {
-	const [navigatorInstance, page] = await startBrowser(browser)
-
-	await page.exposeFunction('getData', () => browserData)
-
-	const url =
-		'file:///' +
-		process.cwd().replace(/\\/g, '/') +
-		'/src/browser.html'
-
-	await page.goto(url, {
-		waitUntil: 'networkidle0',
-	})
-	await page.evaluate(() => window.runFromPuppeteer())
-	await new Promise(resolve => setTimeout(resolve, 2000))
-	const result = await page.evaluate(() => document.body.textContent)
-
-	navigatorInstance.close()
-
-	return JSON.parse(result)
 }

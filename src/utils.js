@@ -43,7 +43,22 @@ export const prettier = file =>
 		`prettier --config ./.prettierrc.json "${file}" --write --no-editorconfig --ignore-path="false"`,
 	)
 
-export const unique = a => [...new Set(a.flat(Infinity))].sort()
+/** @returns String[] */
+export const unique = (...a) => [...new Set(a.flat(Infinity))].sort()
+
+export const uniqueKeys = (...a) =>
+	unique(
+		unique(a)
+			.join('\n')
+			.split('\n')
+			.map(x => x.trim())
+			.filter(x => !x.startsWith('//'))
+			.join('\n')
+			.replace(/\s/g, '\n')
+			.replace(/['",]/g, '\n')
+			.split('\n')
+			.filter(x => x),
+	)
 
 export const uniqueTypes = a =>
 	[
@@ -63,14 +78,29 @@ export function removeFromArray(array, value) {
 	if (index !== -1) array.splice(index, 1)
 }
 
+const fetchCachedCache = {}
 export const fetchCached = async url => {
+	if (fetchCachedCache[url]) {
+		return fetchCachedCache[url]
+	}
+
 	const name = await hash(url)
 	const file = './node_modules/.cache/' + name + '.txt'
 	if (!fs.existsSync(file)) {
 		console.log('fetching and caching', url)
-		write(file, await fetch(url).then(x => x.text()))
+		const content = await fetch(url).then(x => x.text())
+		if (content) {
+			write(file, content)
+		}
+		fetchCachedCache[url] = content
+	} else {
+		fetchCachedCache[url] = read(file)
 	}
-	return read(file)
+	if (fetchCachedCache[url] === '') {
+		console.log('received empty file from url', url)
+		process.exit()
+	}
+	return fetchCachedCache[url]
 }
 
 async function hash(value, algo = 'SHA-256') {

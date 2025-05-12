@@ -112,6 +112,15 @@ idea!
   handlers added
 - add some sort of log of what changed, maybe comparing old data.json
   with new data.json
+- uncomment forever caching of fraemwork data
+- make a features sectio in readme
+- copy events from onevent to on:event
+- fix the html
+- add rediect to fixed html
+- fix all the urls
+- reinclude events?
+- double check if follows the hierarchy
+- add section for Element,svgelement, htmlelement, mathelement
 
 ## Related
 
@@ -129,3 +138,7 @@ project.
 <a href="https://www.solidjs.com/" target="_blank"><img src="https://www.solidjs.com/img/logo/without-wordmark/logo.png" width="100"></a>
 
 Sponsors welcome at https://opencollective.com/tito-bouzout thanks!
+
+## AI Stuff
+
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/potahtml/namespace-jsx-project)

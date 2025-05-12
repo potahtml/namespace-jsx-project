@@ -1,0 +1,390 @@
+<!doctype html>
+<html>
+	<head>
+		<title>JSX Elements Table</title>
+		<meta charset="UTF-8" />
+		<meta
+			name="description"
+			content="Table listing TypeScript types for `namespace JSX` for many frameworks."
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1"
+		/>
+		<link
+			href="./index.css"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<section class="description">
+			<h1>namespace JSX Elements Table</h1>
+			<p>
+				This document shows a huge table of
+				<code>JSX HTML Elements</code>, it is generated using
+				<code>./jsx/data.json</code>. The table is automated and
+				generated on demand, with live data taken from the frameworks
+				repos, mdn, and browsers via puppeteer. Very few of the data
+				is hardcoded (such some of the obsolete
+				attributes/properties/tags that no longer exists in MDN).
+			</p>
+			<ul>
+				<li>
+					Tag Names: The <code>tagNames</code> come from a mashup
+					between frameworks and TypeScript
+					<code>TagNamesMaps</code> data.
+				</li>
+				<li>
+					Interfaces: The <code>interface names</code> comes from
+					<code
+						>document.createElementNS(ns,
+						tagName).constructor.name</code
+					>, which is more accurate than typescript.
+				</li>
+				<li>
+					Properties: Chrome/Firefox <code>attributes</code> come from
+					brute-forcing the element <code>setters</code> till an
+					<code>attribute</code> is added. The name of the
+					<code>attribute</code> is taken as <code>key</code>. When
+					something is marked as <code>prop</code> it means Chrome or
+					Firefox has a <code>setter</code> for it.
+				</li>
+				<li>
+					🗑️ indicates that the <code>tag</code> or
+					<code>attribute</code> is deprecated (live from mdn +
+					hardcoded)
+				</li>
+				<li>
+					🛑 indicates that the <code>key</code> resembles a
+					<code>prop</code> but such a prop does not exist. Setting
+					<code>node.propName = value</code> will not produce the
+					expected result.
+					<u
+						>Frameworks are <b>strongly discouraged</b> from inventing
+						non-existent <code>properties</code> (e.g., keys with
+						custom casing, except for event handlers like
+						<code>onClick</code>). This can cause confusion. For
+						example, <code>autoFocus</code> does not exist; the
+						correct name is <code>autofocus</code>.
+					</u>
+				</li>
+				<li>
+					🔗 indicates the <code>prop</code> it's inherited (from the
+					element prototype chain)
+				</li>
+				<li>
+					☢ indicates the <code>key</code> it's experimental (live
+					from mdn)
+				</li>
+				<li>
+					⚠ indicates the <code>key</code> it's non-standard (live
+					from mdn)
+				</li>
+				<li>
+					⁉ indicates something weird is going on with
+					<code>key</code> (to be investigated)
+				</li>
+				<li>
+					❗❗❗ indicates the attribute wasn't autodiscovered and
+					need corroboration, or that it just doesnt exists.
+				</li>
+				<li>
+					<code>SVG</code> is not shown because it needs some more
+					work
+				</li>
+			</ul>
+			<p>
+				This is an attempt to unify the effort required to update this
+				information.
+			</p>
+			<h2>Data Links:</h2>
+			<ul>
+				<li>
+					<a href="https://solidjs.com/">https://solidjs.com/</a>
+				</li>
+				<li>
+					<a href="https://github.com/potahtml/pota"
+						>https://github.com/potahtml/pota</a
+					>
+				</li>
+				<li>
+					<a href="https://github.com/vobyjs/voby"
+						>https://github.com/vobyjs/voby</a
+					>
+				</li>
+				<li><a href="https://vuejs.org/">https://vuejs.org/</a></li>
+				<li>
+					<a href="https://preactjs.com/">https://preactjs.com/</a>
+				</li>
+				<li><a href="https://react.dev/">https://react.dev/</a></li>
+				<li>
+					<a
+						href="https://github.com/microsoft/vscode-html-languageservice"
+						>https://github.com/microsoft/vscode-html-languageservice</a
+					>
+				</li>
+				<li>
+					<a href="https://developer.mozilla.org/"
+						>https://developer.mozilla.org/</a
+					>
+				</li>
+				<li>
+					<a href="https://www.google.com/chrome/"
+						>https://www.google.com/chrome/</a
+					>
+				</li>
+				<li>
+					<a href="https://www.mozilla.org/"
+						>https://www.mozilla.org/</a
+					>
+				</li>
+			</ul>
+
+			<h2>Open Collective</h2>
+			<p>
+				<b>Sponsor</b> the project, Thanks!
+				<a href="https://opencollective.com/tito-bouzout"
+					>https://opencollective.com/tito-bouzout</a
+				>
+			</p>
+
+			<h2>Table Settings</h2>
+
+			<form>
+				<fieldset>
+					<legend>Table Fixed:</legend>
+					<label>
+						<input
+							type="radio"
+							name="table-fixed"
+							value="yes"
+						/>
+						Yes</label
+					>
+					<label>
+						<input
+							type="radio"
+							name="table-fixed"
+							value="no"
+							checked
+						/>
+						No</label
+					>
+				</fieldset>
+				<fieldset>
+					<legend>Table Size:</legend>
+					<label>
+						<input
+							type="range"
+							min="20"
+							max="100"
+							name="table-size"
+							value="100"
+						/>
+					</label>
+				</fieldset>
+				<fieldset>
+					<legend>Data:</legend>
+
+					<label
+						><input
+							type="checkbox"
+							name="Solid Main"
+							value="Solid Main"
+							checked
+						/>
+						Solid Main</label
+					>
+					<label
+						><input
+							type="checkbox"
+							name="Solid Minor"
+							value="Solid Minor"
+							checked
+						/>
+						Solid Minor</label
+					>
+					<label
+						><input
+							type="checkbox"
+							name="Solid Next"
+							value="Solid Next"
+							checked
+						/>
+						Solid Next</label
+					>
+					<label
+						><input
+							type="checkbox"
+							name="pota"
+							value="pota"
+							checked
+						/>
+						Pota</label
+					>
+					<label
+						><input
+							type="checkbox"
+							name="Voby"
+							value="Voby"
+							checked
+						/>
+						Voby</label
+					>
+					<label
+						><input
+							type="checkbox"
+							name="Vue"
+							value="Vue"
+							checked
+						/>
+						Vue</label
+					>
+					<label
+						><input
+							type="checkbox"
+							name="Preact"
+							value="Preact"
+							checked
+						/>
+						Preact</label
+					>
+					<label
+						><input
+							type="checkbox"
+							name="React"
+							value="React"
+							checked
+						/>
+						React</label
+					>
+				</fieldset>
+			</form>
+			<style
+				type="text/css"
+				id="settings-styles"
+			></style>
+			<script type="text/javascript">
+				document.onclick = e => {
+					const tr = e.target.closest('tr')
+					if (tr) {
+						tr.style.background = tr.style.background ? null : 'black'
+					}
+				}
+
+				document.oninput = ({ target } = e) => {
+					if (target.type !== 'search') {
+						setSettings(target)
+						return
+					}
+					const text = target.value.trim()
+					const search = text.replace(/^"/, '').replace(/"$/, '').trim()
+					const searchInsensitive = search.toLowerCase()
+					const isExact = text.startsWith('"') && text.endsWith('"')
+
+					if (!search) {
+						const elements = document.querySelectorAll('tr, .table')
+						for (const el of [...elements]) {
+							el.style.display = null
+						}
+						return
+					}
+
+					// filter rows
+					const trs = document.querySelectorAll("tbody tr");
+					for (const tr of [...trs]) {
+						tr.style.display = isExact
+							? tr.innerHTML.includes(">" + search + "<")
+								? null
+								: "none"
+							: tr.textContent.toLowerCase().includes(searchInsensitive)
+								? null
+								: "none";
+					}
+
+					// filter whole table and heading if nothing matched
+					const tables = document.querySelectorAll('table')
+					for (const table of [...tables]) {
+						if (
+							[...table.querySelectorAll('tbody tr')].some(
+								tr => tr.style.display !== 'none',
+							)
+						) {
+							table.parentNode.style.display = null
+							continue
+						}
+						table.parentNode.style.display = 'none'
+					}
+				}
+				// settings
+				const store = localStorage
+
+				function setSettings(target) {
+					const { name, value, checked, type } = target
+					store[name] = type === 'checkbox' ? checked : value
+					loadSettings()
+				}
+
+				function loadSettings() {
+					const body = document.body
+					const $ = document.querySelector.bind(document)
+
+					store['table-fixed'] = store['table-fixed'] || 'no'
+					body.dataset['tableFixed'] = store['table-fixed']
+					$(
+						`[name="table-fixed"][value="${store['table-fixed']}"]`,
+					).click()
+
+					store['table-size'] = store['table-size'] || '100'
+					body.dataset['tableSize'] = store['table-size']
+					$(`[name="table-size"]`).value = +store['table-size']
+					$('#settings-styles').textContent =
+						`.content{ max-width: ${store['table-size']}%}`
+
+					for (const name of [
+						'Solid Main',
+						'Solid Minor',
+						'Solid Next',
+						'pota',
+						'Voby',
+						'Vue',
+						'Preact',
+						'React',
+
+					]) {
+						store[name] = store[name] || 'true'
+						body.dataset[name.toLowerCase().replace(/ /g, '')] = store[name]
+						$(`[value="${name}"]`).checked = store[name] === 'true'
+					}
+				}
+				loadSettings()
+			</script>
+		</section>
+		<section class="sponsor">
+			Sponsored by
+			<a href="https://www.solidjs.com/"
+				>SolidJS
+				<img
+					src="https://www.solidjs.com/img/logo/without-wordmark/logo.png"
+					width="19"
+			/></a>
+
+			Become a
+			<a href="https://opencollective.com/tito-bouzout">Sponsor</a>
+			<a href="https://github.com/potahtml/namespace-jsx-project"
+				><img
+					class="github"
+					src="./github-mark-white.png"
+					width="19"
+			/></a>
+		</section>
+
+		<section class="content">
+			<script src="https://pota.quack.uy/importmap/importmap.quack.js"></script>
+			<script
+				type="module"
+				src="index.js"
+			></script>
+		</section>
+	</body>
+</html>

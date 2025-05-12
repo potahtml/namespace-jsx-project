@@ -3,14 +3,6 @@ interface ViewSVGAttributes<T> extends CoreSVGAttributes<T>, ExternalResourceSVG
 	viewTarget?: string
 }
 
-interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
-	id?: string
-	lang?: string
-	tabindex?: number | string
-
-	tabIndex?: number | string
-}
-
 interface ExternalResourceSVGAttributes {
 	externalResourcesRequired?: 'true' | 'false'
 }
@@ -31,15 +23,6 @@ interface ZoomAndPanSVGAttributes {
 // Solid Minor - https://www.solidjs.com/
 interface ViewSVGAttributes<T> extends CoreSVGAttributes<T>, ExternalResourceSVGAttributes, FitToViewBoxSVGAttributes, ZoomAndPanSVGAttributes {
 	viewTarget?: string
-}
-
-interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
-	id?: string
-	lang?: string
-	tabindex?: number | string
-
-	/** @deprecated Use lowercase attributes */
-	tabIndex?: number | string
 }
 
 interface ExternalResourceSVGAttributes {
@@ -64,15 +47,6 @@ interface ViewSVGAttributes<T> extends CoreSVGAttributes<T>, ExternalResourceSVG
 	viewTarget?: string | false
 }
 
-interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
-	id?: string | false
-	lang?: string | false
-	tabindex?: number | string | false
-
-	/** @deprecated Use lowercase attributes */
-	tabIndex?: number | string | false
-}
-
 interface ExternalResourceSVGAttributes {
 	externalResourcesRequired?: 'false' | 'true' | false
 }
@@ -89,6 +63,10 @@ interface ZoomAndPanSVGAttributes {
 	 */
 	zoomAndPan?: 'disable' | 'magnify' | false
 }
+
+// Vue - https://vuejs.org/
+
+// Preact - https://preactjs.com/
 
 // React - https://react.dev/
 interface SVGProps<T> extends SVGAttributes<T>, ClassAttributes<T> {}

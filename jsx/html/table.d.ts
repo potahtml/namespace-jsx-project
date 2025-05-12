@@ -1,3 +1,9 @@
+// Solid Main - https://www.solidjs.com/
+
+// Solid Minor - https://www.solidjs.com/
+
+// Solid Next - https://www.solidjs.com/
+
 // Voby - https://github.com/vobyjs/voby
 interface TableHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
 	cellPadding?: number | string

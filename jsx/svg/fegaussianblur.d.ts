@@ -20,14 +20,6 @@ interface StylableSVGAttributes {
 	style?: CSSProperties | string
 }
 
-interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
-	id?: string
-	lang?: string
-	tabindex?: number | string
-
-	tabIndex?: number | string
-}
-
 interface PresentationSVGAttributes {
 	'alignment-baseline'?: 'auto' | 'baseline' | 'before-edge' | 'text-before-edge' | 'middle' | 'central' | 'after-edge' | 'text-after-edge' | 'ideographic' | 'alphabetic' | 'hanging' | 'mathematical' | 'inherit'
 	'baseline-shift'?: number | string
@@ -111,15 +103,6 @@ interface SingleInputFilterSVGAttributes {
 interface StylableSVGAttributes {
 	class?: string
 	style?: CSSProperties | string
-}
-
-interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
-	id?: string
-	lang?: string
-	tabindex?: number | string
-
-	/** @deprecated Use lowercase attributes */
-	tabIndex?: number | string
 }
 
 interface PresentationSVGAttributes {
@@ -207,15 +190,6 @@ interface StylableSVGAttributes {
 	style?: CSSProperties | string | false
 }
 
-interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
-	id?: string | false
-	lang?: string | false
-	tabindex?: number | string | false
-
-	/** @deprecated Use lowercase attributes */
-	tabIndex?: number | string | false
-}
-
 interface PresentationSVGAttributes {
 	'alignment-baseline'?: 'auto' | 'baseline' | 'before-edge' | 'text-before-edge' | 'middle' | 'central' | 'after-edge' | 'text-after-edge' | 'ideographic' | 'alphabetic' | 'hanging' | 'mathematical' | 'inherit' | false
 	'baseline-shift'?: number | string | false
@@ -278,6 +252,12 @@ interface PresentationSVGAttributes {
 	stroke?: string | false
 	visibility?: 'visible' | 'hidden' | 'collapse' | 'inherit' | false
 }
+
+// Voby - https://github.com/vobyjs/voby
+
+// Vue - https://vuejs.org/
+
+// Preact - https://preactjs.com/
 
 // React - https://react.dev/
 interface SVGProps<T> extends SVGAttributes<T>, ClassAttributes<T> {}

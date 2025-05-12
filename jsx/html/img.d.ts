@@ -207,7 +207,7 @@ interface ImgHTMLAttributes<T> extends HTMLAttributes<T> {
 	loading?: 'eager' | 'lazy'
 	referrerPolicy?: '' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
 	sizes?: string
-	src?: string | DO_NOT_USE_OR_YOU_WILL_BE_FIRED_EXPERIMENTAL_IMG_SRC_TYPES[keyof DO_NOT_USE_OR_YOU_WILL_BE_FIRED_EXPERIMENTAL_IMG_SRC_TYPES]
+	src?: string
 	srcSet?: string
 	useMap?: string
 	width?: number | string

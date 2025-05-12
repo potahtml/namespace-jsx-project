@@ -91,14 +91,6 @@ interface PresentationSVGAttributes {
 	visibility?: 'visible' | 'hidden' | 'collapse' | 'inherit'
 }
 
-interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
-	id?: string
-	lang?: string
-	tabindex?: number | string
-
-	tabIndex?: number | string
-}
-
 // Solid Minor - https://www.solidjs.com/
 interface ImageSVGAttributes<T> extends NewViewportSVGAttributes<T>, GraphicsElementSVGAttributes<T>, ConditionalProcessingSVGAttributes, StylableSVGAttributes, TransformableSVGAttributes, Pick<PresentationSVGAttributes, 'clip-path' | 'color-profile' | 'image-rendering'> {
 	height?: number | string
@@ -190,15 +182,6 @@ interface PresentationSVGAttributes {
 	pathLength?: string | number
 	stroke?: string
 	visibility?: 'visible' | 'hidden' | 'collapse' | 'inherit'
-}
-
-interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
-	id?: string
-	lang?: string
-	tabindex?: number | string
-
-	/** @deprecated Use lowercase attributes */
-	tabIndex?: number | string
 }
 
 // Solid Next - https://www.solidjs.com/
@@ -294,14 +277,11 @@ interface PresentationSVGAttributes {
 	visibility?: 'visible' | 'hidden' | 'collapse' | 'inherit' | false
 }
 
-interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
-	id?: string | false
-	lang?: string | false
-	tabindex?: number | string | false
+// Voby - https://github.com/vobyjs/voby
 
-	/** @deprecated Use lowercase attributes */
-	tabIndex?: number | string | false
-}
+// Vue - https://vuejs.org/
+
+// Preact - https://preactjs.com/
 
 // React - https://react.dev/
 interface SVGProps<T> extends SVGAttributes<T>, ClassAttributes<T> {}

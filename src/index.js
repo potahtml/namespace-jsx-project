@@ -1,49 +1,31 @@
 import {
-	append,
 	copy,
 	entries,
-	fetchCached,
 	prettier,
-	read,
 	remove,
 	stringifySorted,
 	unique,
 	uniqueTypes,
 	write,
 } from './utils.js'
-
-import {
-	KeyURL,
-	browserData,
-	deprecatedAttributes,
-	ElementURL,
-	getEventNameMaps,
-	InterfaceURL,
-	isBlacklisted,
-	jsxcore,
-	libs,
-	ts,
-	tsTagNamesMap,
-	vsCode,
-	InterfaceJSONURL,
-	ElementJSONURL,
-	weirdAttributes,
-	deprecatedTags,
-	mdnSkip,
-	fetchTable,
-	frameworkSpecific,
-	fixedTsEventsInterfaces,
-	confirmedAttributes,
-	globalAttributes,
-	readonlyAttributes,
-	globalAttributesButNotReally,
-} from './data.js'
-
 import {
 	parseFromFile,
 	parseFromString,
 	parseFromURL,
 } from './parse.js'
+import { getLibs } from './frameworks.js'
+import { tsTagNames } from './typescript.js'
+import { vsCode } from './vscode.js'
+import { data, NS } from './data.js'
+import { browserData, fetchTable } from './browser.js'
+import {
+	checkMDNMainValue,
+	checkMDNPropValue,
+	ElementURL,
+	InterfaceURL,
+	keysNotIncludedInMDN,
+	KeyURL,
+} from './mdn.js'
 
 // clean output
 
@@ -54,501 +36,173 @@ copy(`./.prettierrc.json`, `./jsx/.prettierrc.json`)
 // state
 
 const DATA = {
-	events: {},
-	eventsLib: {},
-	aria: {},
-	elements: {},
+	elements: {
+		html: {},
+		svg: {},
+		math: {},
+	},
 	DOMExpressions: {
 		url: 'https://github.com/ryansolid/dom-expressions',
-		properties: [],
 		booleans: [],
+		booleansWithCase: [],
 		PropAliases: {},
-		htmlTags: [],
-		svgTags: [],
-		mathmlTags: [],
+	},
+	keys: {
+		element: {}, // Element
+		htmlelement: {}, // HTMLElement
+		svgelement: {}, // SVGElement
+		mathelement: {}, // MathMLElement
 	},
 }
 
-// Write to disk lib interfaces, index interfaces and tagNames
+// program
 
-for (const lib of libs) {
-	lib.interfaces = await parseFromURL(lib.file, lib.name, lib.map)
+const libs = await getLibs()
 
-	// write to disk all of the interfaces
-	for (const [name, value] of entries(lib.interfaces)) {
-		write(`./jsx/source/${lib.name}/${name}.d.ts`, value.source)
-	}
+// merge tag names and get browser data
 
-	// get all of the tagNames used by reading mapped elements.d.ts
-	const [_, inter] = parseFromFile(
-		`./jsx/source/${lib.name}/elements.d.ts`,
+const tagNames = {
+	html: unique([
+		data.html.tags.list,
+		data.html.tags.deprecated,
+		tsTagNames.html,
+		tsTagNames.htmldeprecated,
+		libs.map(lib =>
+			lib.map.elements.html.include === false
+				? []
+				: Object.keys(lib.elements.html),
+		),
+
+		Object.keys(vsCode),
+	]),
+	svg: unique([
+		data.svg.tags.list,
+		data.svg.tags.deprecated,
+		tsTagNames.svg,
+		tsTagNames.svgdeprecated,
+		libs.map(lib =>
+			lib.map.elements.svg.include === false
+				? []
+				: Object.keys(lib.elements.svg),
+		),
+	]),
+	math: unique([
+		data.math.tags.list,
+		data.math.tags.deprecated,
+		tsTagNames.math,
+		tsTagNames.mathdeprecated,
+		libs.map(lib =>
+			lib.map.elements.math.include === false
+				? []
+				: Object.keys(lib.elements.math),
+		),
+	]),
+}
+
+// browser data
+
+const chrome = await browserData(tagNames, 'chrome')
+const firefox = await browserData(tagNames, 'firefox')
+
+if (!chrome.dynamic || !firefox.dynamic) {
+	throw new Error('data from browsers wasnt dynamicly created')
+}
+
+write(`./browser/browser.json`, stringifySorted({ chrome, firefox }))
+
+// merge tag attributes/properties from browser/frameworks
+
+for (const [ns, tags] of entries(tagNames)) {
+	// gloabl keys for namespace (these all tags inherit)
+	const nsGlobalKeys = unique(
+		Object.keys(chrome.keys[ns + 'element'].keys),
+		Object.keys(firefox.keys[ns + 'element'].keys),
+		Object.keys(chrome.keys['element'].keys),
+		Object.keys(firefox.keys['element'].keys),
+		data[ns].keys.global,
 	)
 
-	// make a list of the tagNames
-	lib.tagNames = []
+	for (const tagName of tags) {
+		// if the browser reports a key as "own" for a tag, then is not global
 
-	// save the interfaces of the tagNames
-	lib.tagInterface = {}
-	lib.tagValues = {}
-	for (const [name, value] of Object.entries(inter)) {
-		// forEach prop in interface
-		value.properties.forEach(prop => {
-			const tagName = prop.name
-
-			lib.tagNames.push(tagName)
-
-			// interfaces for tagName
-			const interfaces = prop.source
-				.replaceAll('<', ' ')
-				.replaceAll('>', ' ')
-				.replaceAll(',', ' ')
-				.replaceAll('.', ' ')
-				.trim()
-				.toLowerCase()
-				.split(' ')
-				.map(i => i.trim())
-				.filter(i => i)
-				.filter(i => !isBlacklisted[i])
-
-			// get the keys for the tagName
-			lib.tagInterface[tagName] = lib.tagInterface[tagName] || ''
-
-			for (const inter of interfaces) {
-				if (lib.interfaces[inter]) {
-					const extended = lib.interfaces[inter].source
-						.split('\n')[0]
-						.replaceAll('<', ' ')
-						.replaceAll('>', ' ')
-						.replaceAll(',', ' ')
-						.replaceAll('.', ' ')
-						.trim()
-						.toLowerCase()
-						.split(' ')
-						.map(i => i.trim())
-						.filter(i => i)
-						.filter(i => !isBlacklisted[i])
-
-					for (const ext of extended) {
-						if (!interfaces.includes(ext)) {
-							interfaces.push(ext)
-						}
-					}
-				}
-			}
-			for (const inter of interfaces) {
-				if (lib.interfaces[inter]) {
-					lib.tagInterface[tagName] +=
-						lib.interfaces[inter].source + '\n'
-				}
-			}
-
-			// get the keys and values for the tagName
-			lib.tagValues[tagName] = lib.tagValues[tagName] || {}
-
-			const parsed = parseFromString(lib.tagInterface[tagName])
-			for (const inter of parsed) {
-				for (const [name, value] of entries(inter)) {
-					if (value.properties) {
-						for (const prop of value.properties) {
-							if (lib.tagValues[tagName][prop.name]) {
-								lib.tagValues[tagName][prop.name] +=
-									' | ' + prop.source
-								lib.tagValues[tagName][prop.name] = uniqueTypes(
-									lib.tagValues[tagName][prop.name],
-								)
-							} else {
-								lib.tagValues[tagName][prop.name] = uniqueTypes(
-									prop.source,
-								)
-							}
-						}
-					}
-				}
-			}
-		})
-	}
-	lib.tagNames = unique(lib.tagNames)
-
-	/** Merge libs shared interfaces */
-
-	const banner = `\n\n// ${lib.name} - ${lib.url}  \n`
-
-	for (const [name, value] of entries(jsxcore)) {
-		if (lib.interfaces[name]) {
-			append(
-				`./jsx/${value}.d.ts`,
-				banner + lib.interfaces[name].source,
-			)
-		}
-	}
-}
-
-/** Typescript tag names maps */
-
-const seenTags = {}
-const seenEventsMaps = []
-
-for (const [kind, value] of Object.entries(tsTagNamesMap)) {
-	// get the events maps for the file
-	const elements = value.properties.map(prop => {
-		const eventsMap = getEventNameMaps(
-			ts[prop.source.toLowerCase()].source,
-		)[0]
-
-		return {
-			tagName: prop.name,
-			eventsMap,
-		}
-	})
-
-	// Write the tsTagNamesMap to disk
-
-	write(`./jsx/ts/${kind}.d.ts`, value.source)
-
-	// save in data.json
-
-	DATA.elements[value.namespace] =
-		DATA.elements[value.namespace] || {}
-
-	// For each tag name, merge the interfaces from the frameworks
-
-	for (let element of elements) {
-		DATA.elements[value.namespace][element.tagName] =
-			DATA.elements[value.namespace][element.tagName] || {}
-
-		seenTags[element.tagName] = true
-		seenEventsMaps.push(element.eventsMap)
-
-		const file = `./jsx/${kind}/${element.tagName}.d.ts`
-
-		for (const lib of libs) {
-			if (lib.tagInterface[element.tagName]) {
-				const banner = `\n\n// ${lib.name} - ${lib.url}  \n`
-				append(file, banner + lib.tagInterface[element.tagName])
-			}
-		}
-	}
-}
-
-// Write to disk Frameworks tags not included in TS data, ex `webview`
-
-const frameworkTags = unique([
-	libs.map(lib => lib.tagNames).flat(Infinity),
-	Object.keys(vsCode),
-])
-
-for (const tag of frameworkTags) {
-	if (!seenTags[tag]) {
-		DATA.elements['http://www.w3.org/1999/xhtml'][tag] =
-			DATA.elements['http://www.w3.org/1999/xhtml'][tag] || {}
-
-		const file = `./jsx/unknown/${tag}.d.ts`
-
-		for (const lib of libs) {
-			if (lib.tagInterface[tag]) {
-				const banner = `\n\n// ${lib.name} - ${lib.url}  \n`
-				append(file, banner + lib.tagInterface[tag])
-			}
-		}
-	}
-}
-
-/** Events mapping */
-
-/**
- * Get event names from frameworks for fancy capitalization. Give some
- * event capitalization not defined in any framework.
- */
-
-const eventsNames = unique([
-	[
-		'onAfterPrint',
-		'onAnimationCancel',
-		'onBeforePrint',
-		'onBeforeToggle',
-		'onBeforeUnload',
-		'onContextLost',
-		'onContextRestored',
-		'onCueChange',
-		'onDblClick',
-		'onEnterPictureInPicture',
-		'onFullscreenChange',
-		'onFullscreenError',
-		'onGamepadConnected',
-		'onGamepadDisconnected',
-		'onGotPointerCapture',
-		'onHashChange',
-		'onLanguageChange',
-		'onLeavePictureInPicture',
-		'onLostPointerCapture',
-		'onMessage',
-		'onMessageError',
-		'onOffline',
-		'onOnline',
-		'onPageHide',
-		'onPageShow',
-		'onPopState',
-		'onRejectionHandled',
-		'onScrollEnd',
-		'onSecurityPolicyViolation',
-		'onSelectionChange',
-		'onSelectStart',
-		'onSlotChange',
-		'onUnhandledRejection',
-		'onUnload',
-		'onWaitingForKey',
-		'onWebKitAnimationEnd',
-		'onWebKitAnimationIteration',
-		'onWebKitAnimationStart',
-		'onWebKitTransitionEnd',
-	],
-	read('./jsx/events.d.ts')
-		.replaceAll('?', '')
-		.split('\n')
-		.map(item => item.trim())
-		.filter(item => /^on[a-z]+:/i.test(item))
-		.filter(item => !/(capture|passive):/i.test(item))
-		.map(item => item.split(':')[0].trim()),
-])
-
-/**
- * Deduplicate events, sorting makes these with the more capital
- * letters win
- */
-const eventsNameSeen = {}
-const eventsCapitalized = {}
-for (const event of eventsNames) {
-	const lower = event.toLowerCase()
-	if (!eventsNameSeen[lower]) {
-		eventsNameSeen[lower] = true
-		eventsCapitalized[event.toLowerCase().slice(2)] = event
-	}
-}
-
-DATA.events = JSON.parse(JSON.stringify(eventsCapitalized))
-
-let eventsInterfaces = []
-for (const eventMap of unique(seenEventsMaps)) {
-	eventsInterfaces.push(eventMap)
-	eventsInterfaces.push(
-		getEventNameMaps(ts[eventMap.toLowerCase()].source),
-	)
-}
-eventsInterfaces = unique(eventsInterfaces)
-
-// Generate events file
-
-for (const eventMap of eventsInterfaces) {
-	const file = `./jsx/ts/events.d.ts`
-	append(file, ts[eventMap.toLowerCase()].source)
-}
-
-// Get the interfaces names for events
-
-const events = read(`./jsx/ts/events.d.ts`).split('\n')
-
-for (let i = 0; i < events.length; i++) {
-	const event = events[i]
-	if (event.includes(':')) {
-		let [eventName, inter] = event.split(':')
-		eventName = eventName.trim()
-		DATA.events[eventName] = {
-			name: eventName,
-			capitalized: DATA.events[eventName] || eventName,
-			interface: inter.trim(),
-		}
-	}
-}
-
-// normalize events
-
-for (let eventName in DATA.events) {
-	if (typeof DATA.events[eventName] === 'string') {
-		DATA.events[eventName] = {
-			name: eventName,
-			capitalized: DATA.events[eventName],
-			interface: 'Event',
-		}
-	}
-}
-
-// patch the interfaces
-
-for (let eventName in fixedTsEventsInterfaces) {
-	DATA.events[eventName].interface =
-		fixedTsEventsInterfaces[eventName]
-}
-
-// lib events
-
-DATA.eventsLib = {}
-
-for (const lib of libs) {
-	lib.interfaces.events.properties
-		.filter(
+		const globalKeys = nsGlobalKeys.filter(
 			x =>
-				x.name.startsWith('on') &&
-				(!x.name.toLowerCase().endsWith('capture') ||
-					x.name.toLowerCase().replace(':', '').replace(/^on/, '') ===
-						'lostpointercapture') &&
-				!x.name.toLowerCase().endsWith('passive'),
+				!(x in chrome[ns][tagName].keys) &&
+				!(x in firefox[ns][tagName].keys),
 		)
-		.forEach(property => {
-			DATA.eventsLib[property.name] = DATA.eventsLib[
-				property.name
-			] || {
-				name: property.name,
-				values: {},
-			}
-			if (DATA.eventsLib[property.name].values[lib.name]) {
-				// event is duplicated
-				DATA.eventsLib[property.name].values[lib.name] +=
-					' ' + property.source
-			} else {
-				DATA.eventsLib[property.name].values[lib.name] =
-					property.source
-			}
-		})
-}
 
-// aria
+		const tag = {}
 
-DATA.aria = {}
+		DATA.elements[ns][tagName] = tag
 
-for (const lib of libs) {
-	lib.interfaces.ariaattributes.properties.forEach(property => {
-		DATA.aria[property.name] = DATA.aria[property.name] || {
-			name: property.name,
-			values: {},
-		}
-		if (DATA.aria[property.name].values[lib.name]) {
-			DATA.aria[property.name].values[lib.name] +=
-				' | ' + property.source
-		} else {
-			DATA.aria[property.name].values[lib.name] = property.source
-		}
-		DATA.aria[property.name].values[lib.name] = uniqueTypes(
-			DATA.aria[property.name].values[lib.name],
-		)
-	})
-}
-
-// get browser data
-
-const browserElements = {
-	'http://www.w3.org/1999/xhtml': Object.keys(
-		DATA.elements['http://www.w3.org/1999/xhtml'],
-	),
-	'http://www.w3.org/2000/svg': Object.keys(
-		DATA.elements['http://www.w3.org/2000/svg'],
-	),
-	'http://www.w3.org/1998/Math/MathML': Object.keys(
-		DATA.elements['http://www.w3.org/1998/Math/MathML'],
-	),
-}
-
-const chrome = await browserData(browserElements, 'chrome')
-const firefox = await browserData(browserElements, 'firefox')
-
-// copy library tags to data.elements
-
-for (const ns in DATA.elements) {
-	for (const tagName in DATA.elements[ns]) {
-		const tag = DATA.elements[ns][tagName]
+		tag.namespace = NS[ns]
 		tag.name = tagName
-		tag.namespace = ns
-		tag.elementURL = ElementURL(ns, tagName)
 		tag.description = ''
-		tag.interface =
-			chrome[ns].elements[tagName].interface ||
-			firefox[ns].elements[tagName].interface
-		tag.interfaceURL = InterfaceURL(ns, tag, tag.interface)
+		tag.elementURL = ElementURL(ns, tagName)
+		tag.tagInterfaceName =
+			chrome[ns][tagName].tagInterfaceName ||
+			firefox[ns][tagName].tagInterfaceName
+		tag.interfaceURL = InterfaceURL(ns, tagName, tag.tagInterfaceName)
 		tag.keys = {}
+		tag.deprecated = undefined
+		tag.nonstandard = undefined
+		tag.experimental = undefined
 
 		// mdn stuff
 
-		const interfaceMDN = JSON.parse(
-			(
-				await fetchCached(InterfaceJSONURL(tag.interface))
-			).toLowerCase(),
-		)
-
-		let elementMDN
-		try {
-			elementMDN = JSON.parse(
-				(
-					await fetchCached(ElementJSONURL(ns, tagName))
-				).toLowerCase(),
-			)
-		} catch (e) {
-			elementMDN = true
-		}
-
-		function checkMDNMainValue(valueName) {
-			// take deprecated from interface name
-			return (
-				interfaceMDN.api[tag.interface.toLowerCase()].__compat.status[
-					valueName
-				] ||
-				// take deprecated from element
-				elementMDN[Object.keys(elementMDN)[0]]?.elements[
-					tagName.toLowerCase()
-				]?.__compat.status[valueName] ||
-				undefined
-			)
-		}
-		function checkMDNPropValue(propName, valueName) {
-			propName = propName.toLowerCase()
-
-			// do not merge this checks
-			const c1 =
-				elementMDN[Object.keys(elementMDN)[0]]?.elements[
-					tagName.toLowerCase()
-				]?.__compat[propName]?.status[valueName]
-
-			if (c1 !== undefined) return c1
-
-			const c2 =
-				elementMDN[Object.keys(elementMDN)[0]]?.elements[
-					tagName.toLowerCase()
-				][propName]?.__compat?.status[valueName]
-
-			if (c2 !== undefined) return c2
-
-			return interfaceMDN.api[tag.interface.toLowerCase()][propName]
-				?.__compat.status[valueName]
-		}
-
 		if (tagName !== 'webview') {
 			tag.deprecated =
-				deprecatedTags[ns].includes(tagName) ||
-				checkMDNMainValue('deprecated') ||
+				data[ns].tags.deprecated.includes(tagName) ||
+				(await checkMDNMainValue(
+					ns,
+					tagName,
+					tag.tagInterfaceName,
+					'deprecated',
+				)) ||
 				false
 
 			tag.nonstandard = tag.deprecated
 				? undefined
-				: checkMDNMainValue('standard_track') === false
+				: (await checkMDNMainValue(
+							ns,
+							tagName,
+							tag.tagInterfaceName,
+							'standard_track',
+					  )) === false
 					? true
 					: undefined
 
 			tag.experimental = tag.deprecated
 				? undefined
-				: checkMDNMainValue('experimental')
+				: await checkMDNMainValue(
+						ns,
+						tagName,
+						tag.tagInterfaceName,
+						'experimental',
+					)
 		}
 
 		// libs
 		for (const lib of libs) {
-			if (lib.tagValues[tagName]) {
-				for (const [k, value] of entries(lib.tagValues[tagName])) {
-					tag.keys[k] = tag.keys[k] || { values: {} }
-					tag.keys[k].values[lib.name] = value
+			if (lib.elements[ns][tagName]) {
+				for (const [k, value] of entries(
+					lib.elements[ns][tagName].properties,
+				)) {
+					if (
+						!data.hardcoded.frameworkspecific.includes(
+							tagName + '.' + k,
+						)
+					) {
+						tag.keys[k] = tag.keys[k] || { values: {} }
+						tag.keys[k].values[lib.name] = value
+					}
 				}
 			}
 		}
 
 		// chrome
-		for (const k in chrome[ns].elements[tagName].keys) {
-			const key = chrome[ns].elements[tagName].keys[k]
+		for (const k in chrome[ns][tagName].keys) {
+			const key = chrome[ns][tagName].keys[k]
 
 			tag.keys[k] = tag.keys[k] || { values: {} }
 			tag.keys[k].values.Chrome = uniqueTypes(key.value)
@@ -556,18 +210,30 @@ for (const ns in DATA.elements) {
 			tag.keys[k].propChrome = key.prop
 			tag.keys[k].attrChrome = key.attr
 
-			tag.keys[k].interface = key.interface
+			tag.keys[k].keyInterfaceName = key.keyInterfaceName
 			tag.keys[k].readonly =
 				key.readonly ||
-				readonlyAttributes[tagName + '.' + tag.interface + '.' + k]
+				data.hardcoded.readonly.includes(
+					tagName + '.' + tag.tagInterfaceName + '.' + k,
+				)
 
 			tag.keys[k].propName = key.propName
 			tag.keys[k].attrName = key.attrName
+
+			// copy onevent to on:event
+			if (k.startsWith('on')) {
+				const name = k.replace(/^on/, 'on:')
+				tag.keys[name] = tag.keys[name] || {
+					...tag.keys[k],
+					name: name,
+					values: { ...tag.keys[k].values },
+				}
+			}
 		}
 
 		// firefox
-		for (const k in firefox[ns].elements[tagName].keys) {
-			const key = firefox[ns].elements[tagName].keys[k]
+		for (const k in firefox[ns][tagName].keys) {
+			const key = firefox[ns][tagName].keys[k]
 
 			tag.keys[k] = tag.keys[k] || { values: {} }
 			tag.keys[k].values.Firefox = uniqueTypes(key.value)
@@ -575,117 +241,163 @@ for (const ns in DATA.elements) {
 			tag.keys[k].propFirefox = key.prop
 			tag.keys[k].attrFirefox = key.attr
 
-			tag.keys[k].interface = tag.keys[k].interface || key.interface
-			tag.keys[k].readonly = tag.keys[k].readonly || key.readonly
+			tag.keys[k].keyInterfaceName =
+				tag.keys[k].keyInterfaceName || key.keyInterfaceName
+			tag.keys[k].readonly =
+				tag.keys[k].readonly ||
+				key.readonly ||
+				data.hardcoded.readonly.includes(
+					tagName + '.' + tag.tagInterfaceName + '.' + k,
+				)
 
 			tag.keys[k].propName = tag.keys[k].propName || key.propName
 			tag.keys[k].attrName = tag.keys[k].attrName || key.attrName
+
+			// copy onevent to on:event
+			if (k.startsWith('on')) {
+				const name = k.replace(/^on/, 'on:')
+
+				tag.keys[name] = tag.keys[name] || {
+					...tag.keys[k],
+					name: name,
+					values: { ...tag.keys[k].values },
+				}
+			}
 		}
 
 		// vs code
 		if (vsCode[tagName]) {
 			tag.description = vsCode[tagName].description
-			/*for (const k in vsCode[tagName].keys) {
-				tag.keys[k] = tag.keys[k] || { values: {} }
-				tag.keys[k].values.VSCode = uniqueTypes(
-					vsCode[tagName].keys[k],
-				)
-			}*/
 		}
 
 		tag.readonly = unique([
-			chrome[ns].elements[tagName].readonly,
-			firefox[ns].elements[tagName].readonly,
+			chrome[ns][tagName].readonly,
+			firefox[ns][tagName].readonly,
 		])
 
 		for (const k in tag.keys) {
-			tag.keys[k].name = k
+			const key = tag.keys[k]
 
-			const keyInterface = tagName + '.' + tag.interface + '.' + k
+			key.name = k
+
+			const keyInterface =
+				tagName + '.' + tag.tagInterfaceName + '.' + k
 			const keyInterfaceLowerCase =
-				tagName + '.' + tag.interface + '.' + k.toLowerCase()
+				tagName + '.' + tag.tagInterfaceName + '.' + k.toLowerCase()
 
 			// deprecation
-			tag.keys[k].deprecated =
-				deprecatedAttributes[keyInterfaceLowerCase]
+			key.deprecated = data.hardcoded.deprecated.includes(
+				keyInterfaceLowerCase,
+			)
 
 			// weird
-			tag.keys[k].weird = weirdAttributes[keyInterface]
-
-			// url
-			tag.keys[k].url = tag.keys[k].interface
-				? KeyURL(ns, tagName, tag.keys[k].interface, k)
-				: KeyURL(ns, tagName, tag.interface, k)
-
-			// prop/attr
-
-			const isConfirmedAttribute =
-				confirmedAttributes[keyInterface] ||
-				globalAttributesButNotReally[keyInterface]
-
-			tag.keys[k].propChrome = tag.keys[k].propChrome || false
-			tag.keys[k].propFirefox = tag.keys[k].propFirefox || false
-
-			tag.keys[k].attrChrome =
-				tag.keys[k].attrChrome || isConfirmedAttribute || false
-			tag.keys[k].attrFirefox =
-				tag.keys[k].attrFirefox || isConfirmedAttribute || false
-
-			tag.keys[k].prop =
-				tag.keys[k].propChrome || tag.keys[k].propFirefox
-
-			tag.keys[k].attr =
-				tag.keys[k].attrChrome || tag.keys[k].attrFirefox
-
-			tag.keys[k].globalAttribute =
-				globalAttributes.includes(k) &&
-				!globalAttributesButNotReally[keyInterface]
-
-			tag.keys[k].readonly =
-				tag.keys[k].readonly ||
-				tag.readonly.some(x => x.split('.')[1] === k)
-
-			tag.keys[k].deprecated =
-				tag.keys[k].deprecated ||
-				checkMDNPropValue(k, 'deprecated') ||
+			key.weird =
+				data.hardcoded.weird.includes(keyInterfaceLowerCase) ||
 				undefined
 
-			tag.keys[k].nonstandard = checkMDNPropValue(k, 'standard_track')
+			// url
+			key.url = key.keyInterfaceName
+				? KeyURL(
+						ns,
+						tagName,
+						key.keyInterfaceName,
+						k.replace(/^on:/, 'on'),
+					)
+				: KeyURL(
+						ns,
+						tagName,
+						tag.tagInterfaceName,
+						k.replace(/^on:/, 'on'),
+					)
+
+			// prop
+
+			key.propChrome = key.propChrome || false
+			key.propFirefox = key.propFirefox || false
+
+			key.prop = key.propChrome || key.propFirefox
+
+			// attr
+
+			const isConfirmedAttribute =
+				data.hardcoded.confirmed.includes(keyInterface) ||
+				data.hardcoded.notglobal.includes(keyInterface)
+
+			key.attrChrome = key.attrChrome || isConfirmedAttribute || false
+			key.attrFirefox =
+				key.attrFirefox || isConfirmedAttribute || false
+
+			key.attr = key.attrChrome || key.attrFirefox || false
+
+			key.global =
+				!data.hardcoded.notglobal.includes(keyInterface) &&
+				globalKeys.includes(
+					key.name.toLowerCase().replace(/^on:/, 'on'),
+				)
+
+			key.readonly =
+				key.readonly || tag.readonly.some(x => x.split('.')[1] === k)
+
+			key.deprecated =
+				key.deprecated ||
+				(await checkMDNPropValue(
+					ns,
+					tagName,
+					tag.tagInterfaceName,
+					k,
+					'deprecated',
+				)) ||
+				undefined
+
+			key.nonstandard = (await checkMDNPropValue(
+				ns,
+				tagName,
+				tag.tagInterfaceName,
+				k,
+				'standard_track',
+			))
 				? undefined
-				: checkMDNPropValue(k, 'standard_track') === false
+				: (await checkMDNPropValue(
+							ns,
+							tagName,
+							tag.tagInterfaceName,
+							k,
+							'standard_track',
+					  )) === false
 					? true
 					: undefined
 
-			tag.keys[k].experimental =
-				checkMDNPropValue(k, 'experimental') || undefined
+			key.experimental =
+				(await checkMDNPropValue(
+					ns,
+					tagName,
+					tag.tagInterfaceName,
+					k,
+					'experimental',
+				)) || undefined
 
-			tag.keys[k].warn =
+			key.warn =
 				/[A-Z]/.test(k) &&
 				!/^on:?[A-Z]/.test(k) &&
 				// svg is XML so it has attributes with uppercase letters
-				ns !== 'http://www.w3.org/2000/svg' &&
-				!tag.keys[k].prop
+				ns !== 'svg' &&
+				!key.prop
 					? true
 					: undefined
 
-			if (
-				ns === 'http://www.w3.org/1999/xhtml' &&
-				tag.name !== 'webview'
-			) {
-				tag.keys[k].danger =
-					tag.keys[k].warn || tag.keys[k].deprecated || /^on/.test(k)
+			if (ns === 'html' && tag.name !== 'webview') {
+				key.danger =
+					key.warn || key.deprecated || /^on/.test(k)
 						? undefined
-						: !tag.keys[k].attr &&
-							!tag.keys[k].prop &&
-							!tag.keys[k].globalAttribute
+						: !key.attr && !key.prop && !key.global
 			}
 
 			// when interface is empty/null is because this key is made up and doesnt exists
-			tag.keys[k].inherited =
+			key.inherited =
 				!!(
-					tag.keys[k].interface &&
-					tag.interface !== tag.keys[k].interface
-				) && !tag.keys[k].warn
+					key.keyInterfaceName &&
+					tag.tagInterfaceName !== key.keyInterfaceName
+				) && !key.warn
 		}
 
 		// mark inherited when also lower case
@@ -700,60 +412,13 @@ for (const ns in DATA.elements) {
 			}
 		}
 
-		// setters not included
-		const keys = Object.keys(tag.keys).map(x => x.toLowerCase())
-
-		tag.notIncludedMDN = []
-
-		// mdn
-		try {
-			let mdnkeys = []
-
-			const readonlyKeys = tag.readonly.map(x => x.split('.')[1])
-
-			try {
-				const elementMDN = JSON.parse(
-					await fetchCached(ElementJSONURL(ns, tag.name)),
-				)
-
-				mdnkeys = unique([
-					Object.keys(
-						elementMDN[Object.keys(elementMDN)[0]]?.elements[tag.name]
-							?.__compat,
-					),
-					Object.keys(
-						elementMDN[Object.keys(elementMDN)[0]]?.elements[
-							tag.name
-						],
-					),
-				])
-			} catch (e) {}
-
-			try {
-				const interfaceMDN = JSON.parse(
-					await fetchCached(InterfaceJSONURL(tag.interface)),
-				)
-
-				mdnkeys = unique([
-					mdnkeys,
-					Object.keys(interfaceMDN.api[tag.interface]),
-				])
-			} catch (e) {}
-
-			tag.notIncludedMDN = mdnkeys
-				.filter(x => !keys.includes(x.toLowerCase()))
-				.filter(x => !mdnSkip.includes(x))
-				.filter(x => !readonlyKeys.includes(x))
-		} catch (e) {}
-	}
-}
-
-// delete framework-specific
-for (const [ns, data] of entries(frameworkSpecific)) {
-	for (const [tag, keys] of entries(data)) {
-		for (const key of keys) {
-			delete DATA.elements[ns][tag].keys[key]
-		}
+		tag.notIncludedMDN = await keysNotIncludedInMDN(
+			ns,
+			tagName,
+			tag.tagInterfaceName,
+			Object.keys(tag.keys).map(x => x.toLowerCase()),
+			tag.readonly.map(x => x.split('.')[1]),
+		)
 	}
 }
 
@@ -761,17 +426,12 @@ for (const [ns, data] of entries(frameworkSpecific)) {
 
 DATA.DOMExpressions = {
 	url: 'https://github.com/ryansolid/dom-expressions',
-	properties: [],
 	booleans: [],
+	booleansWithCase: [],
 	PropAliases: {},
-	htmlTags: [],
-	svgTags: [],
-	mathmlTags: [],
 }
 
-for (const [ns, tag] of entries(
-	DATA.elements['http://www.w3.org/1999/xhtml'],
-)) {
+for (const [ns, tag] of entries(DATA.elements.html)) {
 	for (const [_, key] of entries(tag.keys)) {
 		if (key.prop) {
 			if (key.readonly || key.deprecated || key.nonstandard) {
@@ -783,7 +443,8 @@ for (const [ns, tag] of entries(
 				key.values.Firefox === 'boolean'
 			) {
 				if (/[A-Z]/.test(key.name)) {
-					DATA.DOMExpressions.properties.push(key.name)
+					// @ts-ignore
+					DATA.DOMExpressions.booleansWithCase.push(key.name)
 
 					const keyLower = key.name.toLowerCase()
 					if (!DATA.DOMExpressions.PropAliases[keyLower]) {
@@ -795,31 +456,136 @@ for (const [ns, tag] of entries(
 						tag.name.toUpperCase()
 					] = 1
 				}
-
+				// @ts-ignore
 				DATA.DOMExpressions.booleans.push(key.name.toLowerCase())
 			}
 		}
 	}
 }
 
-DATA.DOMExpressions.properties = unique(
-	DATA.DOMExpressions.properties,
+// @ts-ignore
+DATA.DOMExpressions.booleansWithCase = unique(
+	DATA.DOMExpressions.booleansWithCase,
 )
+// @ts-ignore
 DATA.DOMExpressions.booleans = unique(DATA.DOMExpressions.booleans)
 
-DATA.DOMExpressions.htmlTags = unique(
-	Object.keys(DATA.elements['http://www.w3.org/1999/xhtml']),
-)
-DATA.DOMExpressions.svgTags = unique(
-	Object.keys(DATA.elements['http://www.w3.org/2000/svg']),
-)
-DATA.DOMExpressions.mathmlTags = unique(
-	Object.keys(DATA.elements['http://www.w3.org/1998/Math/MathML']),
-)
+// keys
 
-//
+for (const ns of [
+	'element',
+	'htmlelement',
+	'svgelement',
+	'mathelement',
+]) {
+	DATA.keys[ns] = {
+		interfaceName:
+			chrome.keys[ns].tagInterfaceName ||
+			firefox.keys[ns].tagInterfaceName,
+		readonly: unique(
+			chrome.keys[ns].readonly,
+			firefox.keys[ns].readonly,
+		),
+		keys: {},
+		events: unique(chrome.keys[ns].events, firefox.keys[ns].events),
+		booleans: unique(
+			chrome.keys[ns].booleans,
+			firefox.keys[ns].booleans,
+		),
+	}
 
-const columns = [
+	// browsers
+
+	for (const k in chrome.keys[ns].keys) {
+		DATA.keys[ns].keys[k] = DATA.keys[ns].keys[k] || {
+			name: k,
+			values: {},
+		}
+		const key = DATA.keys[ns].keys[k]
+
+		const d = chrome.keys[ns].keys[k]
+
+		key.values.Chrome = uniqueTypes(d.value)
+
+		key.propChrome = d.prop
+		key.attrChrome = d.attr
+
+		key.keyInterfaceName = d.keyInterfaceName
+		key.readonly = d.readonly
+
+		key.propName = d.propName
+		key.attrName = d.attrName
+
+		// copy onevent to on:event
+		if (k.startsWith('on')) {
+			const name = k.replace(/^on/, 'on:')
+			DATA.keys[ns].keys[name] = DATA.keys[ns].keys[name] || {
+				...DATA.keys[ns].keys[k],
+				name: name,
+				values: { ...DATA.keys[ns].keys[k].values },
+			}
+		}
+	}
+
+	for (const k in firefox.keys[ns].keys) {
+		DATA.keys[ns].keys[k] = DATA.keys[ns].keys[k] || {
+			name: k,
+			values: {},
+		}
+		const key = DATA.keys[ns].keys[k]
+
+		const d = firefox.keys[ns].keys[k]
+
+		key.values.Firefox = uniqueTypes(d.value)
+
+		key.propFirefox = d.prop
+		key.attrFirefox = d.attr
+
+		key.keyInterfaceName = key.keyInterfaceName || d.keyInterfaceName
+		key.readonly = key.readonly || d.readonly
+
+		key.propName = key.propName || d.propName
+		key.attrName = key.attrName || d.attrName
+
+		// copy onevent to on:event
+		if (k.startsWith('on')) {
+			const name = k.replace(/^on/, 'on:')
+
+			DATA.keys[ns].keys[name] = DATA.keys[ns].keys[name] || {
+				...DATA.keys[ns].keys[k],
+				name: name,
+				values: { ...DATA.keys[ns].keys[k].values },
+			}
+		}
+	}
+
+	for (const k in DATA.keys[ns].keys) {
+		const key = DATA.keys[ns].keys[k]
+
+		key.prop = key.propChrome || key.propFirefox
+		key.attr = key.attrChrome || key.attrFirefox
+	}
+
+	// libs
+
+	for (const lib of libs) {
+		if (lib.keys[ns]) {
+			for (const k in lib.keys[ns]) {
+				DATA.keys[ns].keys[k] = DATA.keys[ns].keys[k] || {
+					name: k,
+					values: {},
+				}
+				DATA.keys[ns].keys[k].values[lib.name] = lib.keys[ns][k]
+			}
+		}
+	}
+}
+
+// save to json
+
+const o = JSON.parse(stringifySorted(DATA))
+
+o.columns = [
 	'Chrome',
 	'Firefox',
 	'Pota',
@@ -832,13 +598,12 @@ const columns = [
 	'React',
 ]
 
-const o = JSON.parse(stringifySorted(DATA))
-
-o.columns = columns
-
 write(`./jsx/data.json`, JSON.stringify(o, null, 2))
 
-write(`./index.html`, await fetchTable('/index.template.html'))
+write(
+	`./table/index.html`,
+	await fetchTable('/table/index.template.html'),
+)
 
 prettier('./jsx/**')
-prettier('./index.html')
+prettier('./table/index.html')

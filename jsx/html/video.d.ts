@@ -41,6 +41,17 @@ interface MediaHTMLAttributes<T> extends HTMLAttributes<T>, ElementEventMap<T> {
 	mediagroup?: string
 }
 
+interface ElementEventMap<T> {
+	onFullscreenChange?: EventHandlerUnion<T, Event>
+	onFullscreenError?: EventHandlerUnion<T, Event>
+
+	'on:fullscreenchange'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:fullscreenerror'?: EventHandlerWithOptionsUnion<T, Event>
+
+	onfullscreenchange?: EventHandlerUnion<T, Event>
+	onfullscreenerror?: EventHandlerUnion<T, Event>
+}
+
 // Solid Minor - https://www.solidjs.com/
 interface VideoHTMLAttributes<T> extends MediaHTMLAttributes<T> {
 	disablepictureinpicture?: '' | boolean
@@ -227,6 +238,9 @@ interface VideoHTMLAttributes<T> extends MediaHTMLAttributes<T> {
 	width?: number | string
 	disablePictureInPicture?: boolean
 	disableRemotePlayback?: boolean
+
+	onResize?: ReactEventHandler<T>
+	onResizeCapture?: ReactEventHandler<T>
 }
 
 interface MediaHTMLAttributes<T> extends HTMLAttributes<T> {
@@ -239,7 +253,7 @@ interface MediaHTMLAttributes<T> extends HTMLAttributes<T> {
 	muted?: boolean
 	playsInline?: boolean
 	preload?: string
-	src?: string | DO_NOT_USE_OR_YOU_WILL_BE_FIRED_EXPERIMENTAL_MEDIA_SRC_TYPES[keyof DO_NOT_USE_OR_YOU_WILL_BE_FIRED_EXPERIMENTAL_MEDIA_SRC_TYPES]
+	src?: string
 }
 
 // Pota - https://github.com/potahtml/pota
@@ -249,6 +263,11 @@ interface HTMLVideoElementAttributes extends HTMLMediaHTMLAttributes {
 	playsinline?: 'true' | boolean
 	poster?: string
 	width?: number | string
+}
+
+interface HTMLVideoElementEvents<Element> extends HTMLMediaElementEvents<Element> {
+	'on:enterpictureinpicture'?: Events<PictureInPictureEvent, Element>
+	'on:leavepictureinpicture'?: Events<PictureInPictureEvent, Element>
 }
 
 interface HTMLMediaHTMLAttributes {
@@ -264,4 +283,9 @@ interface HTMLMediaHTMLAttributes {
 
 	/** @deprecated */
 	mediagroup?: string
+}
+
+interface HTMLMediaElementEvents<Element> extends HTMLEvents<Element> {
+	'on:encrypted'?: Events<MediaEncryptedEvent, Element>
+	'on:waitingforkey'?: Events<Event, Element>
 }

@@ -37,14 +37,6 @@ interface AnimationAdditionSVGAttributes {
 	attributeName?: string
 }
 
-interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
-	id?: string
-	lang?: string
-	tabindex?: number | string
-
-	tabIndex?: number | string
-}
-
 interface ExternalResourceSVGAttributes {
 	externalResourcesRequired?: 'true' | 'false'
 }
@@ -92,15 +84,6 @@ interface AnimationAdditionSVGAttributes {
 	accumulate?: 'none' | 'sum'
 	additive?: 'replace' | 'sum'
 	attributeName?: string
-}
-
-interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
-	id?: string
-	lang?: string
-	tabindex?: number | string
-
-	/** @deprecated Use lowercase attributes */
-	tabIndex?: number | string
 }
 
 interface ExternalResourceSVGAttributes {
@@ -152,15 +135,6 @@ interface AnimationAdditionSVGAttributes {
 	attributeName?: string | false
 }
 
-interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
-	id?: string | false
-	lang?: string | false
-	tabindex?: number | string | false
-
-	/** @deprecated Use lowercase attributes */
-	tabIndex?: number | string | false
-}
-
 interface ExternalResourceSVGAttributes {
 	externalResourcesRequired?: 'false' | 'true' | false
 }
@@ -170,6 +144,12 @@ interface ConditionalProcessingSVGAttributes {
 	requiredFeatures?: string | false
 	systemLanguage?: string | false
 }
+
+// Voby - https://github.com/vobyjs/voby
+
+// Vue - https://vuejs.org/
+
+// Preact - https://preactjs.com/
 
 // React - https://react.dev/
 interface SVGProps<T> extends SVGAttributes<T>, ClassAttributes<T> {}

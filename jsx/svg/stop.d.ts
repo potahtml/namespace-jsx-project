@@ -3,14 +3,6 @@ interface StopSVGAttributes<T> extends CoreSVGAttributes<T>, StylableSVGAttribut
 	offset?: number | string
 }
 
-interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
-	id?: string
-	lang?: string
-	tabindex?: number | string
-
-	tabIndex?: number | string
-}
-
 interface StylableSVGAttributes {
 	class?: string
 	style?: CSSProperties | string
@@ -82,15 +74,6 @@ interface PresentationSVGAttributes {
 // Solid Minor - https://www.solidjs.com/
 interface StopSVGAttributes<T> extends CoreSVGAttributes<T>, StylableSVGAttributes, Pick<PresentationSVGAttributes, 'color' | 'stop-color' | 'stop-opacity'> {
 	offset?: number | string
-}
-
-interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
-	id?: string
-	lang?: string
-	tabindex?: number | string
-
-	/** @deprecated Use lowercase attributes */
-	tabIndex?: number | string
 }
 
 interface StylableSVGAttributes {
@@ -166,15 +149,6 @@ interface StopSVGAttributes<T> extends CoreSVGAttributes<T>, StylableSVGAttribut
 	offset?: number | string | false
 }
 
-interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
-	id?: string | false
-	lang?: string | false
-	tabindex?: number | string | false
-
-	/** @deprecated Use lowercase attributes */
-	tabIndex?: number | string | false
-}
-
 interface StylableSVGAttributes {
 	class?: string | ClassList | false
 	style?: CSSProperties | string | false
@@ -242,6 +216,12 @@ interface PresentationSVGAttributes {
 	stroke?: string | false
 	visibility?: 'visible' | 'hidden' | 'collapse' | 'inherit' | false
 }
+
+// Voby - https://github.com/vobyjs/voby
+
+// Vue - https://vuejs.org/
+
+// Preact - https://preactjs.com/
 
 // React - https://react.dev/
 interface SVGProps<T> extends SVGAttributes<T>, ClassAttributes<T> {}

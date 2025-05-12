@@ -1,3 +1,9 @@
+// Solid Main - https://www.solidjs.com/
+
+// Solid Minor - https://www.solidjs.com/
+
+// Solid Next - https://www.solidjs.com/
+
 // Voby - https://github.com/vobyjs/voby
 interface HtmlHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
 	manifest?: string
@@ -7,6 +13,8 @@ interface HtmlHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
 interface HtmlHTMLAttributes extends HTMLAttributes {
 	manifest?: string
 }
+
+// Preact - https://preactjs.com/
 
 // React - https://react.dev/
 interface HtmlHTMLAttributes<T> extends HTMLAttributes<T> {

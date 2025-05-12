@@ -1,10 +1,21 @@
-import { copy, prettier, read, write } from './utils.js'
+import {
+	copy,
+	entries,
+	fetchCached,
+	prettier,
+	read,
+	uniqueTypes,
+	write,
+} from './utils.js'
 import oxc from 'oxc-parser'
 
 /** This is used to parse framework interfaces */
 
 export async function parseFromURL(file, name, map = {}) {
-	const text = await fetch(file).then(v => v.text())
+	// TODO
+	const text = await fetchCached(file)
+
+	// const text = await fetch(file).then(v => v.text())
 	file = './node_modules/.cache/' + name + '.d.ts'
 	write(file, text)
 	return parse(file, name, map)
@@ -168,23 +179,23 @@ function getInterfaceFromLine(line, map, interfaces) {
 function unwrapTypes(source, types) {
 	source = source
 		.replace(/\| undefined/gi, '')
+
 		// solid
 		.replace(/\| SerializableAttributeValue/gi, '')
+
 		// voby
 		.replace(/FunctionMaybe<Nullable<([^\n]+)>>\n/gi, '$1\n')
 		.replace(/ObservableMaybe<([^\n]+)>\n/gi, '$1\n')
 		.replace(/Nullable<([^\n]+)>\n/gi, '$1\n')
 		.replace(/\| ReadonlyArray<([^> ]+)> /gi, '| readonly $1[] ')
+
 		// preact
 		.replace(/\| SignalLike<([^>]+)>/gi, ' ')
 		.replace(/ SignalLike<([^>]+)>\n/gi, '\n')
 		.replace(/Signalish<([^>]+)>/gi, '$1')
 
 		// react
-		.replace(
-			/\| DO_NOT_USE_OR_YOU_WILL_BE_FIRED_EXPERIMENTAL_FORM_ACTIONS\[keyof DO_NOT_USE_OR_YOU_WILL_BE_FIRED_EXPERIMENTAL_FORM_ACTIONS\]/gi,
-			'',
-		)
+		.replace(/\| DO_NOT_USE[^\n]+\n/gi, '\n')
 
 	for (let i = 0; i < 2; i++) {
 		for (const type of types) {
@@ -197,4 +208,71 @@ function unwrapTypes(source, types) {
 	source = source.replace(/\| undefined/gi, '')
 
 	return source
+}
+
+function getExtendedInterfaceNames(string, skip = []) {
+	return string
+		.replaceAll('<', ' ')
+		.replaceAll('>', ' ')
+		.replaceAll(',', ' ')
+		.replaceAll('.', ' ')
+		.toLowerCase()
+		.split(' ')
+		.map(i => i.trim())
+		.filter(i => i)
+		.filter(i => !skip.includes(i))
+}
+
+export function getInterfaceMergedFromPropertySource(
+	string,
+	interfaces,
+	skip = [],
+) {
+	const names = getExtendedInterfaceNames(string, skip)
+
+	const result = { source: '', properties: {} }
+
+	// merge names
+	for (const name of names) {
+		if (interfaces[name]) {
+			const extended = getExtendedInterfaceNames(
+				interfaces[name].source.split('\n')[0],
+				skip,
+			)
+
+			// append kind of recursively
+			for (const name of extended) {
+				if (!names.includes(name)) {
+					names.push(name)
+				}
+			}
+		}
+	}
+
+	// merge source
+	for (const name of names) {
+		if (interfaces[name]) {
+			result.source += interfaces[name].source + '\n'
+		}
+	}
+
+	const parsed = parseFromString(result.source)
+	for (const inter of parsed) {
+		for (const [name, value] of entries(inter)) {
+			if (value.properties) {
+				for (const prop of value.properties) {
+					if (result.properties[prop.name]) {
+						result.properties[prop.name] += ' | ' + prop.source
+						result.properties[prop.name] = uniqueTypes(
+							result.properties[prop.name],
+						)
+					} else {
+						result.properties[prop.name] = uniqueTypes(prop.source)
+					}
+				}
+			}
+		}
+	}
+
+	return result
 }

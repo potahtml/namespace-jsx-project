@@ -1,0 +1,127 @@
+:root {
+	font-family:
+		-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans',
+		Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+		'Segoe UI Emoji';
+	line-height: 1.4;
+	background: #0d1117;
+	color: snow;
+}
+
+code {
+	background-color: rgba(101, 108, 118, 0.2);
+	border-radius: 6px;
+	color: rgb(68, 147, 248);
+	padding-left: 3px;
+	padding-right: 3px;
+	font-family:
+		-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans',
+		Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+		'Segoe UI Emoji';
+}
+a {
+	color: #4493f8;
+	text-underline-offset: 0.2rem;
+}
+
+table {
+	width: 100%;
+	border-spacing: 0;
+	border-collapse: separate;
+	word-break: break-word;
+	margin-top: 15px;
+	margin-bottom: 33px;
+}
+
+caption {
+	text-align: left;
+	padding-bottom: 10px;
+	position: sticky;
+	top: 0px;
+	caption-side: top;
+}
+
+footer {
+	padding: 10px;
+	display: inline-block;
+}
+
+thead {
+	background: #05070a;
+	position: sticky;
+	top: 0px;
+}
+
+th {
+	text-transform: capitalize;
+	white-space: nowrap;
+}
+
+th,
+td {
+	padding: 6px 13px;
+	border: 1px solid #3d444d;
+}
+
+tbody tr:nth-child(odd) {
+	background: #151b23;
+}
+tbody tr:hover {
+	background: hsl(214, 25%, 15%);
+}
+
+h2 {
+	display: inline-block;
+}
+h3 {
+	padding: 0;
+	margin: 0;
+}
+.content {
+	margin: 0 auto;
+}
+.filter {
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 1;
+}
+.description {
+	max-width: min(750px, 100%);
+	margin: 0 auto;
+}
+
+.sponsor {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+	background: #0d1117;
+	padding: 5px;
+}
+.sponsor img {
+	margin-bottom: -4px;
+	width: 19px;
+}
+.github {
+	margin-bottom: -4px;
+}
+
+body[data-table-fixed='yes'] table {
+	table-layout: fixed;
+}
+body[data-table-fixed='yes'] table td[nowrap] {
+	white-space: normal;
+}
+
+body[data-solidmain='false'] [data-col='Solid Main'],
+body[data-solidminor='false'] [data-col='Solid Minor'],
+body[data-solidnext='false'] [data-col='Solid Next'],
+body[data-pota='false'] [data-col='Pota'],
+body[data-voby='false'] [data-col='Voby'],
+body[data-vue='false'] [data-col='Vue'],
+body[data-preact='false'] [data-col='Preact'],
+body[data-react='false'] [data-col='React'],
+body[data-vscode='false'] [data-col='VSCode'] {
+	display: none;
+}

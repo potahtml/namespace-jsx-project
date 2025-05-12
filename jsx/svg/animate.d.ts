@@ -97,14 +97,6 @@ interface PresentationSVGAttributes {
 	visibility?: 'visible' | 'hidden' | 'collapse' | 'inherit'
 }
 
-interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
-	id?: string
-	lang?: string
-	tabindex?: number | string
-
-	tabIndex?: number | string
-}
-
 interface ExternalResourceSVGAttributes {
 	externalResourcesRequired?: 'true' | 'false'
 }
@@ -212,15 +204,6 @@ interface PresentationSVGAttributes {
 	pathLength?: string | number
 	stroke?: string
 	visibility?: 'visible' | 'hidden' | 'collapse' | 'inherit'
-}
-
-interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
-	id?: string
-	lang?: string
-	tabindex?: number | string
-
-	/** @deprecated Use lowercase attributes */
-	tabIndex?: number | string
 }
 
 interface ExternalResourceSVGAttributes {
@@ -332,15 +315,6 @@ interface PresentationSVGAttributes {
 	visibility?: 'visible' | 'hidden' | 'collapse' | 'inherit' | false
 }
 
-interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
-	id?: string | false
-	lang?: string | false
-	tabindex?: number | string | false
-
-	/** @deprecated Use lowercase attributes */
-	tabIndex?: number | string | false
-}
-
 interface ExternalResourceSVGAttributes {
 	externalResourcesRequired?: 'false' | 'true' | false
 }
@@ -350,6 +324,12 @@ interface ConditionalProcessingSVGAttributes {
 	requiredFeatures?: string | false
 	systemLanguage?: string | false
 }
+
+// Voby - https://github.com/vobyjs/voby
+
+// Vue - https://vuejs.org/
+
+// Preact - https://preactjs.com/
 
 // React - https://react.dev/
 interface SVGProps<T> extends SVGAttributes<T>, ClassAttributes<T> {}

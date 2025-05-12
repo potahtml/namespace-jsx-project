@@ -26,6 +26,17 @@ interface MediaHTMLAttributes<T> extends HTMLAttributes<T>, ElementEventMap<T> {
 	mediagroup?: string
 }
 
+interface ElementEventMap<T> {
+	onFullscreenChange?: EventHandlerUnion<T, Event>
+	onFullscreenError?: EventHandlerUnion<T, Event>
+
+	'on:fullscreenchange'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:fullscreenerror'?: EventHandlerWithOptionsUnion<T, Event>
+
+	onfullscreenchange?: EventHandlerUnion<T, Event>
+	onfullscreenerror?: EventHandlerUnion<T, Event>
+}
+
 // Solid Minor - https://www.solidjs.com/
 interface AudioHTMLAttributes<T> extends MediaHTMLAttributes<T> {}
 interface MediaHTMLAttributes<T> extends HTMLAttributes<T>, ElementEventMap<T> {
@@ -158,11 +169,16 @@ interface MediaHTMLAttributes<T> extends HTMLAttributes<T> {
 	muted?: boolean
 	playsInline?: boolean
 	preload?: string
-	src?: string | DO_NOT_USE_OR_YOU_WILL_BE_FIRED_EXPERIMENTAL_MEDIA_SRC_TYPES[keyof DO_NOT_USE_OR_YOU_WILL_BE_FIRED_EXPERIMENTAL_MEDIA_SRC_TYPES]
+	src?: string
 }
 
 // Pota - https://github.com/potahtml/pota
 interface HTMLAudioElementAttributes extends HTMLMediaHTMLAttributes {}
+interface HTMLMediaElementEvents<Element> extends HTMLEvents<Element> {
+	'on:encrypted'?: Events<MediaEncryptedEvent, Element>
+	'on:waitingforkey'?: Events<Event, Element>
+}
+
 interface HTMLMediaHTMLAttributes {
 	autoplay?: 'true' | boolean
 	controls?: 'true' | boolean

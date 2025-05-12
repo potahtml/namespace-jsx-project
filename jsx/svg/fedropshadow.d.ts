@@ -5,14 +5,6 @@ interface FeDropShadowSVGAttributes<T> extends CoreSVGAttributes<T>, FilterPrimi
 	stdDeviation?: number | string
 }
 
-interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
-	id?: string
-	lang?: string
-	tabindex?: number | string
-
-	tabIndex?: number | string
-}
-
 interface FilterPrimitiveElementSVGAttributes<T> extends CoreSVGAttributes<T>, Pick<PresentationSVGAttributes, 'color-interpolation-filters'> {
 	height?: number | string
 	result?: string
@@ -94,15 +86,6 @@ interface FeDropShadowSVGAttributes<T> extends CoreSVGAttributes<T>, FilterPrimi
 	dx?: number | string
 	dy?: number | string
 	stdDeviation?: number | string
-}
-
-interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
-	id?: string
-	lang?: string
-	tabindex?: number | string
-
-	/** @deprecated Use lowercase attributes */
-	tabIndex?: number | string
 }
 
 interface FilterPrimitiveElementSVGAttributes<T> extends CoreSVGAttributes<T>, Pick<PresentationSVGAttributes, 'color-interpolation-filters'> {
@@ -188,15 +171,6 @@ interface FeDropShadowSVGAttributes<T> extends CoreSVGAttributes<T>, FilterPrimi
 	stdDeviation?: number | string | false
 }
 
-interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
-	id?: string | false
-	lang?: string | false
-	tabindex?: number | string | false
-
-	/** @deprecated Use lowercase attributes */
-	tabIndex?: number | string | false
-}
-
 interface FilterPrimitiveElementSVGAttributes<T> extends CoreSVGAttributes<T>, Pick<PresentationSVGAttributes, 'color-interpolation-filters'> {
 	height?: number | string | false
 	result?: string | false
@@ -272,6 +246,12 @@ interface PresentationSVGAttributes {
 	stroke?: string | false
 	visibility?: 'visible' | 'hidden' | 'collapse' | 'inherit' | false
 }
+
+// Voby - https://github.com/vobyjs/voby
+
+// Vue - https://vuejs.org/
+
+// Preact - https://preactjs.com/
 
 // React - https://react.dev/
 interface SVGProps<T> extends SVGAttributes<T>, ClassAttributes<T> {}
