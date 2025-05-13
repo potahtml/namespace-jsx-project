@@ -471,7 +471,7 @@ export const libs = [
 					skip: ['htmlevents'],
 				},
 				svg: {
-					values: ['svgelements'],
+					values: ['svgelements', 'svgdeprecatedelements'],
 					skip: ['svgevents'],
 				},
 				math: {
