@@ -418,6 +418,7 @@ for (const [ns, tags] of entries(tagNames)) {
 			tag.tagInterfaceName,
 			Object.keys(tag.keys).map(x => x.toLowerCase()),
 			tag.readonly.map(x => x.split('.')[1]),
+			globalKeys,
 		)
 	}
 }

@@ -794,7 +794,7 @@
 				},
 				"name": "a",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": ["attributionSourceId", "attributionsourceid", "hrefTranslate", "hreftranslate", "toString"],
+				"notIncludedMDN": ["attributionSourceId", "attributionsourceid", "hrefTranslate", "hreftranslate"],
 				"readonly": ["HTMLAnchorElement.origin"],
 				"tagInterfaceName": "HTMLAnchorElement"
 			},
@@ -1494,7 +1494,7 @@
 				},
 				"name": "area",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": ["toString"],
+				"notIncludedMDN": [],
 				"readonly": ["HTMLAreaElement.origin"],
 				"tagInterfaceName": "HTMLAreaElement"
 			},
@@ -1993,7 +1993,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement#htmlaudioelement.onfullscreenchange",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"on:fullscreenchange": {
@@ -2009,7 +2011,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement#htmlaudioelement.onfullscreenchange",
 						"values": {
-							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 						}
 					},
 					"onfullscreenchange": {
@@ -2025,7 +2029,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement#htmlaudioelement.onfullscreenchange",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"onFullscreenError": {
@@ -2041,7 +2047,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement#htmlaudioelement.onfullscreenerror",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"on:fullscreenerror": {
@@ -2057,7 +2065,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement#htmlaudioelement.onfullscreenerror",
 						"values": {
-							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 						}
 					},
 					"onfullscreenerror": {
@@ -2073,7 +2083,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement#htmlaudioelement.onfullscreenerror",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"onWaitingForKey": {
@@ -2320,7 +2332,7 @@
 				},
 				"name": "audio",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": ["Audio"],
+				"notIncludedMDN": [],
 				"readonly": ["HTMLMediaElement.buffered", "HTMLMediaElement.currentSrc", "HTMLMediaElement.duration", "HTMLMediaElement.ended", "HTMLMediaElement.error", "HTMLMediaElement.mediaKeys", "HTMLMediaElement.mozAudioCaptured", "HTMLMediaElement.mozFragmentEnd", "HTMLMediaElement.networkState", "HTMLMediaElement.paused", "HTMLMediaElement.played", "HTMLMediaElement.readyState", "HTMLMediaElement.remote", "HTMLMediaElement.seekable", "HTMLMediaElement.seeking", "HTMLMediaElement.sinkId", "HTMLMediaElement.textTracks", "HTMLMediaElement.webkitAudioDecodedByteCount", "HTMLMediaElement.webkitVideoDecodedByteCount"],
 				"tagInterfaceName": "HTMLAudioElement"
 			},
@@ -2722,7 +2734,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.onafterprint",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"onafterprint": {
@@ -2743,7 +2757,9 @@
 						"values": {
 							"Chrome": "event",
 							"Firefox": "event",
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"on:afterprint": {
@@ -2760,7 +2776,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.onafterprint",
 						"values": {
 							"Pota": "Events<Event, Element>",
-							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 						}
 					},
 					"onBeforePrint": {
@@ -2776,7 +2794,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.onbeforeprint",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"onbeforeprint": {
@@ -2797,7 +2817,9 @@
 						"values": {
 							"Chrome": "event",
 							"Firefox": "event",
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"on:beforeprint": {
@@ -2814,7 +2836,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.onbeforeprint",
 						"values": {
 							"Pota": "Events<Event, Element>",
-							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 						}
 					},
 					"onBeforeUnload": {
@@ -2830,7 +2854,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.onbeforeunload",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, BeforeUnloadEvent>"
+							"Solid Main": "EventHandlerUnion<T, BeforeUnloadEvent>",
+							"Solid Minor": "EventHandlerUnion<T, BeforeUnloadEvent>",
+							"Solid Next": "EventHandlerUnion<T, BeforeUnloadEvent>"
 						}
 					},
 					"onbeforeunload": {
@@ -2851,7 +2877,9 @@
 						"values": {
 							"Chrome": "event",
 							"Firefox": "event",
-							"Solid Main": "EventHandlerUnion<T, BeforeUnloadEvent>"
+							"Solid Main": "EventHandlerUnion<T, BeforeUnloadEvent>",
+							"Solid Minor": "EventHandlerUnion<T, BeforeUnloadEvent>",
+							"Solid Next": "EventHandlerUnion<T, BeforeUnloadEvent>"
 						}
 					},
 					"on:beforeunload": {
@@ -2868,7 +2896,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.onbeforeunload",
 						"values": {
 							"Pota": "Events<BeforeUnloadEvent, Element>",
-							"Solid Main": "EventHandlerWithOptionsUnion<T, BeforeUnloadEvent>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, BeforeUnloadEvent>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, BeforeUnloadEvent>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, BeforeUnloadEvent>"
 						}
 					},
 					"onblur": {
@@ -2998,7 +3028,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.onfullscreenchange",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"on:fullscreenchange": {
@@ -3014,7 +3046,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.onfullscreenchange",
 						"values": {
-							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 						}
 					},
 					"onfullscreenchange": {
@@ -3030,7 +3064,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.onfullscreenchange",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"onFullscreenError": {
@@ -3046,7 +3082,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.onfullscreenerror",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"on:fullscreenerror": {
@@ -3062,7 +3100,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.onfullscreenerror",
 						"values": {
-							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 						}
 					},
 					"onfullscreenerror": {
@@ -3078,7 +3118,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.onfullscreenerror",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"onGamepadConnected": {
@@ -3094,7 +3136,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.ongamepadconnected",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, GamepadEvent>"
+							"Solid Main": "EventHandlerUnion<T, GamepadEvent>",
+							"Solid Minor": "EventHandlerUnion<T, GamepadEvent>",
+							"Solid Next": "EventHandlerUnion<T, GamepadEvent>"
 						}
 					},
 					"ongamepadconnected": {
@@ -3114,7 +3158,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.ongamepadconnected",
 						"values": {
 							"Firefox": "event",
-							"Solid Main": "EventHandlerUnion<T, GamepadEvent>"
+							"Solid Main": "EventHandlerUnion<T, GamepadEvent>",
+							"Solid Minor": "EventHandlerUnion<T, GamepadEvent>",
+							"Solid Next": "EventHandlerUnion<T, GamepadEvent>"
 						}
 					},
 					"on:gamepadconnected": {
@@ -3131,7 +3177,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.ongamepadconnected",
 						"values": {
 							"Pota": "Events<GamepadEvent, Element>",
-							"Solid Main": "EventHandlerWithOptionsUnion<T, GamepadEvent>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, GamepadEvent>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, GamepadEvent>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, GamepadEvent>"
 						}
 					},
 					"onGamepadDisconnected": {
@@ -3147,7 +3195,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.ongamepaddisconnected",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, GamepadEvent>"
+							"Solid Main": "EventHandlerUnion<T, GamepadEvent>",
+							"Solid Minor": "EventHandlerUnion<T, GamepadEvent>",
+							"Solid Next": "EventHandlerUnion<T, GamepadEvent>"
 						}
 					},
 					"ongamepaddisconnected": {
@@ -3167,7 +3217,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.ongamepaddisconnected",
 						"values": {
 							"Firefox": "event",
-							"Solid Main": "EventHandlerUnion<T, GamepadEvent>"
+							"Solid Main": "EventHandlerUnion<T, GamepadEvent>",
+							"Solid Minor": "EventHandlerUnion<T, GamepadEvent>",
+							"Solid Next": "EventHandlerUnion<T, GamepadEvent>"
 						}
 					},
 					"on:gamepaddisconnected": {
@@ -3184,7 +3236,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.ongamepaddisconnected",
 						"values": {
 							"Pota": "Events<GamepadEvent, Element>",
-							"Solid Main": "EventHandlerWithOptionsUnion<T, GamepadEvent>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, GamepadEvent>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, GamepadEvent>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, GamepadEvent>"
 						}
 					},
 					"onHashchange": {
@@ -3200,7 +3254,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.onhashchange",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, HashChangeEvent>"
+							"Solid Main": "EventHandlerUnion<T, HashChangeEvent>",
+							"Solid Minor": "EventHandlerUnion<T, HashChangeEvent>",
+							"Solid Next": "EventHandlerUnion<T, HashChangeEvent>"
 						}
 					},
 					"onhashchange": {
@@ -3221,7 +3277,9 @@
 						"values": {
 							"Chrome": "event",
 							"Firefox": "event",
-							"Solid Main": "EventHandlerUnion<T, HashChangeEvent>"
+							"Solid Main": "EventHandlerUnion<T, HashChangeEvent>",
+							"Solid Minor": "EventHandlerUnion<T, HashChangeEvent>",
+							"Solid Next": "EventHandlerUnion<T, HashChangeEvent>"
 						}
 					},
 					"on:hashchange": {
@@ -3238,7 +3296,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.onhashchange",
 						"values": {
 							"Pota": "Events<HashChangeEvent, Element>",
-							"Solid Main": "EventHandlerWithOptionsUnion<T, HashChangeEvent>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, HashChangeEvent>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, HashChangeEvent>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, HashChangeEvent>"
 						}
 					},
 					"onLanguageChange": {
@@ -3254,7 +3314,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.onlanguagechange",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"onlanguagechange": {
@@ -3275,7 +3337,9 @@
 						"values": {
 							"Chrome": "event",
 							"Firefox": "event",
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"on:languagechange": {
@@ -3292,7 +3356,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.onlanguagechange",
 						"values": {
 							"Pota": "Events<Event, Element>",
-							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 						}
 					},
 					"onload": {
@@ -3346,7 +3412,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.onmessage",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, MessageEvent>"
+							"Solid Main": "EventHandlerUnion<T, MessageEvent>",
+							"Solid Minor": "EventHandlerUnion<T, MessageEvent>",
+							"Solid Next": "EventHandlerUnion<T, MessageEvent>"
 						}
 					},
 					"onmessage": {
@@ -3367,7 +3435,9 @@
 						"values": {
 							"Chrome": "event",
 							"Firefox": "event",
-							"Solid Main": "EventHandlerUnion<T, MessageEvent>"
+							"Solid Main": "EventHandlerUnion<T, MessageEvent>",
+							"Solid Minor": "EventHandlerUnion<T, MessageEvent>",
+							"Solid Next": "EventHandlerUnion<T, MessageEvent>"
 						}
 					},
 					"on:message": {
@@ -3384,7 +3454,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.onmessage",
 						"values": {
 							"Pota": "Events<MessageEvent, Element>",
-							"Solid Main": "EventHandlerWithOptionsUnion<T, MessageEvent>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, MessageEvent>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, MessageEvent>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, MessageEvent>"
 						}
 					},
 					"onMessageError": {
@@ -3400,7 +3472,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.onmessageerror",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, MessageEvent>"
+							"Solid Main": "EventHandlerUnion<T, MessageEvent>",
+							"Solid Minor": "EventHandlerUnion<T, MessageEvent>",
+							"Solid Next": "EventHandlerUnion<T, MessageEvent>"
 						}
 					},
 					"onmessageerror": {
@@ -3421,7 +3495,9 @@
 						"values": {
 							"Chrome": "event",
 							"Firefox": "event",
-							"Solid Main": "EventHandlerUnion<T, MessageEvent>"
+							"Solid Main": "EventHandlerUnion<T, MessageEvent>",
+							"Solid Minor": "EventHandlerUnion<T, MessageEvent>",
+							"Solid Next": "EventHandlerUnion<T, MessageEvent>"
 						}
 					},
 					"on:messageerror": {
@@ -3438,7 +3514,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.onmessageerror",
 						"values": {
 							"Pota": "Events<MessageEvent, Element>",
-							"Solid Main": "EventHandlerWithOptionsUnion<T, MessageEvent>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, MessageEvent>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, MessageEvent>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, MessageEvent>"
 						}
 					},
 					"onOffline": {
@@ -3454,7 +3532,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.onoffline",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"onoffline": {
@@ -3475,7 +3555,9 @@
 						"values": {
 							"Chrome": "event",
 							"Firefox": "event",
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"on:offline": {
@@ -3492,7 +3574,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.onoffline",
 						"values": {
 							"Pota": "Events<Event, Element>",
-							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 						}
 					},
 					"onOnline": {
@@ -3508,7 +3592,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.ononline",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"ononline": {
@@ -3529,7 +3615,9 @@
 						"values": {
 							"Chrome": "event",
 							"Firefox": "event",
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"on:online": {
@@ -3546,7 +3634,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.ononline",
 						"values": {
 							"Pota": "Events<Event, Element>",
-							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 						}
 					},
 					"onPageHide": {
@@ -3562,7 +3652,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.onpagehide",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, PageTransitionEvent>"
+							"Solid Main": "EventHandlerUnion<T, PageTransitionEvent>",
+							"Solid Minor": "EventHandlerUnion<T, PageTransitionEvent>",
+							"Solid Next": "EventHandlerUnion<T, PageTransitionEvent>"
 						}
 					},
 					"onpagehide": {
@@ -3583,7 +3675,9 @@
 						"values": {
 							"Chrome": "event",
 							"Firefox": "event",
-							"Solid Main": "EventHandlerUnion<T, PageTransitionEvent>"
+							"Solid Main": "EventHandlerUnion<T, PageTransitionEvent>",
+							"Solid Minor": "EventHandlerUnion<T, PageTransitionEvent>",
+							"Solid Next": "EventHandlerUnion<T, PageTransitionEvent>"
 						}
 					},
 					"on:pagehide": {
@@ -3600,7 +3694,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.onpagehide",
 						"values": {
 							"Pota": "Events<PageTransitionEvent, Element>",
-							"Solid Main": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>"
 						}
 					},
 					"onPageReveal": {
@@ -3616,7 +3712,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.onpagereveal",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"onpagereveal": {
@@ -3632,7 +3730,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.onpagereveal",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"on:pagereveal": {
@@ -3649,7 +3749,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.onpagereveal",
 						"values": {
 							"Pota": "Events<Event, Element>",
-							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 						}
 					},
 					"onPageShow": {
@@ -3665,7 +3767,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.onpageshow",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, PageTransitionEvent>"
+							"Solid Main": "EventHandlerUnion<T, PageTransitionEvent>",
+							"Solid Minor": "EventHandlerUnion<T, PageTransitionEvent>",
+							"Solid Next": "EventHandlerUnion<T, PageTransitionEvent>"
 						}
 					},
 					"onpageshow": {
@@ -3686,7 +3790,9 @@
 						"values": {
 							"Chrome": "event",
 							"Firefox": "event",
-							"Solid Main": "EventHandlerUnion<T, PageTransitionEvent>"
+							"Solid Main": "EventHandlerUnion<T, PageTransitionEvent>",
+							"Solid Minor": "EventHandlerUnion<T, PageTransitionEvent>",
+							"Solid Next": "EventHandlerUnion<T, PageTransitionEvent>"
 						}
 					},
 					"on:pageshow": {
@@ -3703,7 +3809,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.onpageshow",
 						"values": {
 							"Pota": "Events<PageTransitionEvent, Element>",
-							"Solid Main": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>"
 						}
 					},
 					"onPageSwap": {
@@ -3719,7 +3827,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.onpageswap",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"onpageswap": {
@@ -3735,7 +3845,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.onpageswap",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"on:pageswap": {
@@ -3752,7 +3864,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.onpageswap",
 						"values": {
 							"Pota": "Events<Event, Element>",
-							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 						}
 					},
 					"onPopstate": {
@@ -3768,7 +3882,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.onpopstate",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, PopStateEvent>"
+							"Solid Main": "EventHandlerUnion<T, PopStateEvent>",
+							"Solid Minor": "EventHandlerUnion<T, PopStateEvent>",
+							"Solid Next": "EventHandlerUnion<T, PopStateEvent>"
 						}
 					},
 					"onpopstate": {
@@ -3789,7 +3905,9 @@
 						"values": {
 							"Chrome": "event",
 							"Firefox": "event",
-							"Solid Main": "EventHandlerUnion<T, PopStateEvent>"
+							"Solid Main": "EventHandlerUnion<T, PopStateEvent>",
+							"Solid Minor": "EventHandlerUnion<T, PopStateEvent>",
+							"Solid Next": "EventHandlerUnion<T, PopStateEvent>"
 						}
 					},
 					"on:popstate": {
@@ -3806,7 +3924,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.onpopstate",
 						"values": {
 							"Pota": "Events<PopStateEvent, Element>",
-							"Solid Main": "EventHandlerWithOptionsUnion<T, PopStateEvent>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, PopStateEvent>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, PopStateEvent>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, PopStateEvent>"
 						}
 					},
 					"onRejectionHandled": {
@@ -3822,7 +3942,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.onrejectionhandled",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, PromiseRejectionEvent>"
+							"Solid Main": "EventHandlerUnion<T, PromiseRejectionEvent>",
+							"Solid Minor": "EventHandlerUnion<T, PromiseRejectionEvent>",
+							"Solid Next": "EventHandlerUnion<T, PromiseRejectionEvent>"
 						}
 					},
 					"onrejectionhandled": {
@@ -3843,7 +3965,9 @@
 						"values": {
 							"Chrome": "event",
 							"Firefox": "event",
-							"Solid Main": "EventHandlerUnion<T, PromiseRejectionEvent>"
+							"Solid Main": "EventHandlerUnion<T, PromiseRejectionEvent>",
+							"Solid Minor": "EventHandlerUnion<T, PromiseRejectionEvent>",
+							"Solid Next": "EventHandlerUnion<T, PromiseRejectionEvent>"
 						}
 					},
 					"on:rejectionhandled": {
@@ -3860,7 +3984,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.onrejectionhandled",
 						"values": {
 							"Pota": "Events<PromiseRejectionEvent, Element>",
-							"Solid Main": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>"
 						}
 					},
 					"onresize": {
@@ -3952,7 +4078,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.onstorage",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, StorageEvent>"
+							"Solid Main": "EventHandlerUnion<T, StorageEvent>",
+							"Solid Minor": "EventHandlerUnion<T, StorageEvent>",
+							"Solid Next": "EventHandlerUnion<T, StorageEvent>"
 						}
 					},
 					"onstorage": {
@@ -3973,7 +4101,9 @@
 						"values": {
 							"Chrome": "event",
 							"Firefox": "event",
-							"Solid Main": "EventHandlerUnion<T, StorageEvent>"
+							"Solid Main": "EventHandlerUnion<T, StorageEvent>",
+							"Solid Minor": "EventHandlerUnion<T, StorageEvent>",
+							"Solid Next": "EventHandlerUnion<T, StorageEvent>"
 						}
 					},
 					"on:storage": {
@@ -3990,7 +4120,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.onstorage",
 						"values": {
 							"Pota": "Events<StorageEvent, Element>",
-							"Solid Main": "EventHandlerWithOptionsUnion<T, StorageEvent>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, StorageEvent>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, StorageEvent>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, StorageEvent>"
 						}
 					},
 					"onUnhandledRejection": {
@@ -4006,7 +4138,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.onunhandledrejection",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, PromiseRejectionEvent>"
+							"Solid Main": "EventHandlerUnion<T, PromiseRejectionEvent>",
+							"Solid Minor": "EventHandlerUnion<T, PromiseRejectionEvent>",
+							"Solid Next": "EventHandlerUnion<T, PromiseRejectionEvent>"
 						}
 					},
 					"onunhandledrejection": {
@@ -4027,7 +4161,9 @@
 						"values": {
 							"Chrome": "event",
 							"Firefox": "event",
-							"Solid Main": "EventHandlerUnion<T, PromiseRejectionEvent>"
+							"Solid Main": "EventHandlerUnion<T, PromiseRejectionEvent>",
+							"Solid Minor": "EventHandlerUnion<T, PromiseRejectionEvent>",
+							"Solid Next": "EventHandlerUnion<T, PromiseRejectionEvent>"
 						}
 					},
 					"on:unhandledrejection": {
@@ -4044,7 +4180,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.onunhandledrejection",
 						"values": {
 							"Pota": "Events<PromiseRejectionEvent, Element>",
-							"Solid Main": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>"
 						}
 					},
 					"onUnload": {
@@ -4060,7 +4198,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.onunload",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"onunload": {
@@ -4081,7 +4221,9 @@
 						"values": {
 							"Chrome": "event",
 							"Firefox": "event",
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"on:unload": {
@@ -4098,7 +4240,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#htmlbodyelement.onunload",
 						"values": {
 							"Pota": "Events<Event, Element>",
-							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 						}
 					},
 					"rightmargin": {
@@ -4911,7 +5055,7 @@
 				},
 				"name": "button",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": ["checkValidity", "reportValidity", "setCustomValidity"],
+				"notIncludedMDN": [],
 				"readonly": ["HTMLButtonElement.form", "HTMLButtonElement.labels", "HTMLButtonElement.validationMessage", "HTMLButtonElement.validity", "HTMLButtonElement.willValidate"],
 				"tagInterfaceName": "HTMLButtonElement"
 			},
@@ -5157,7 +5301,7 @@
 				},
 				"name": "canvas",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": ["captureStream", "contextlost_event", "contextrestored_event", "getContext", "toBlob", "toDataURL", "transferControlToOffscreen", "webglcontextcreationerror_event", "webglcontextlost_event", "webglcontextrestored_event"],
+				"notIncludedMDN": ["onwebglcontextcreationerror", "onwebglcontextlost", "onwebglcontextrestored"],
 				"readonly": [],
 				"tagInterfaceName": "HTMLCanvasElement"
 			},
@@ -6247,7 +6391,7 @@
 				},
 				"name": "dialog",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": ["cancel_event", "close_event", "close", "requestClose", "show", "showModal"],
+				"notIncludedMDN": ["close", "show"],
 				"readonly": [],
 				"tagInterfaceName": "HTMLDialogElement"
 			},
@@ -6556,7 +6700,7 @@
 				},
 				"name": "embed",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": ["getSVGDocument"],
+				"notIncludedMDN": [],
 				"readonly": [],
 				"tagInterfaceName": "HTMLEmbedElement"
 			},
@@ -6651,7 +6795,7 @@
 				},
 				"name": "fieldset",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": ["checkValidity", "reportValidity", "setCustomValidity"],
+				"notIncludedMDN": [],
 				"readonly": ["HTMLFieldSetElement.elements", "HTMLFieldSetElement.form", "HTMLFieldSetElement.type", "HTMLFieldSetElement.validationMessage", "HTMLFieldSetElement.validity", "HTMLFieldSetElement.willValidate"],
 				"tagInterfaceName": "HTMLFieldSetElement"
 			},
@@ -7254,7 +7398,7 @@
 				},
 				"name": "form",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": ["checkValidity", "formdata_event", "reportValidity", "requestSubmit", "reset_event", "reset", "submit_event", "submit"],
+				"notIncludedMDN": ["reset", "submit"],
 				"readonly": ["HTMLFormElement.elements", "HTMLFormElement.length"],
 				"tagInterfaceName": "HTMLFormElement"
 			},
@@ -9971,7 +10115,7 @@
 				},
 				"name": "iframe",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": ["getSVGDocument"],
+				"notIncludedMDN": [],
 				"readonly": ["HTMLIFrameElement.contentDocument", "HTMLIFrameElement.contentWindow", "HTMLIFrameElement.featurePolicy"],
 				"tagInterfaceName": "HTMLIFrameElement"
 			},
@@ -12597,7 +12741,7 @@
 				},
 				"name": "input",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": ["alpha", "cancel_event", "checkValidity", "colorSpace", "colorspace", "invalid_event", "mozactionhint", "reportValidity", "search_event", "select_event", "select", "selectionchange_event", "setCustomValidity", "setRangeText", "setSelectionRange", "showPicker", "stepDown", "stepUp"],
+				"notIncludedMDN": ["alpha", "colorspace", "select"],
 				"readonly": ["HTMLInputElement.form", "HTMLInputElement.labels", "HTMLInputElement.list", "HTMLInputElement.textLength", "HTMLInputElement.validationMessage", "HTMLInputElement.validity", "HTMLInputElement.webkitEntries", "HTMLInputElement.willValidate"],
 				"tagInterfaceName": "HTMLInputElement"
 			},
@@ -14284,7 +14428,7 @@
 				},
 				"name": "marquee",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": ["bounce_event", "finish_event", "start_event", "start", "stop"],
+				"notIncludedMDN": ["onbounce", "onfinish", "onstart", "start", "stop"],
 				"readonly": [],
 				"tagInterfaceName": "HTMLMarqueeElement"
 			},
@@ -15529,7 +15673,7 @@
 				},
 				"name": "object",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": ["checkValidity", "getSVGDocument", "reportValidity", "setCustomValidity"],
+				"notIncludedMDN": [],
 				"readonly": ["HTMLObjectElement.contentDocument", "HTMLObjectElement.contentWindow", "HTMLObjectElement.form", "HTMLObjectElement.validationMessage", "HTMLObjectElement.validity", "HTMLObjectElement.willValidate"],
 				"tagInterfaceName": "HTMLObjectElement"
 			},
@@ -15897,7 +16041,7 @@
 				},
 				"name": "option",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": ["Option"],
+				"notIncludedMDN": [],
 				"readonly": ["HTMLOptionElement.form", "HTMLOptionElement.index"],
 				"tagInterfaceName": "HTMLOptionElement"
 			},
@@ -16057,7 +16201,7 @@
 				},
 				"name": "output",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": ["checkValidity", "HTMLOutputElement", "reportValidity", "setCustomValidity"],
+				"notIncludedMDN": [],
 				"readonly": ["HTMLOutputElement.form", "HTMLOutputElement.labels", "HTMLOutputElement.type", "HTMLOutputElement.validationMessage", "HTMLOutputElement.validity", "HTMLOutputElement.willValidate"],
 				"tagInterfaceName": "HTMLOutputElement"
 			},
@@ -17173,7 +17317,7 @@
 				},
 				"name": "script",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": ["supports_static"],
+				"notIncludedMDN": [],
 				"readonly": [],
 				"tagInterfaceName": "HTMLScriptElement"
 			},
@@ -17569,7 +17713,7 @@
 				},
 				"name": "select",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": ["add", "checkValidity", "item", "namedItem", "remove", "reportValidity", "setCustomValidity", "showPicker"],
+				"notIncludedMDN": ["add", "item", "namedItem", "remove"],
 				"readonly": ["HTMLSelectElement.form", "HTMLSelectElement.labels", "HTMLSelectElement.options", "HTMLSelectElement.selectedOptions", "HTMLSelectElement.type", "HTMLSelectElement.validationMessage", "HTMLSelectElement.validity", "HTMLSelectElement.willValidate"],
 				"tagInterfaceName": "HTMLSelectElement"
 			},
@@ -17622,7 +17766,7 @@
 				},
 				"name": "slot",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": ["assign", "assignedElements", "assignedNodes", "slotchange_event"],
+				"notIncludedMDN": ["assign", "assignedElements", "assignedNodes"],
 				"readonly": [],
 				"tagInterfaceName": "HTMLSlotElement"
 			},
@@ -18116,7 +18260,7 @@
 				"keys": {},
 				"name": "summary",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": ["display_list_item"],
+				"notIncludedMDN": [],
 				"readonly": [],
 				"tagInterfaceName": "HTMLElement"
 			},
@@ -18486,7 +18630,7 @@
 				},
 				"name": "table",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": ["createCaption", "createTBody", "createTFoot", "createTHead", "deleteCaption", "deleteRow", "deleteTFoot", "deleteTHead", "insertRow"],
+				"notIncludedMDN": [],
 				"readonly": ["HTMLTableElement.rows", "HTMLTableElement.tBodies"],
 				"tagInterfaceName": "HTMLTableElement"
 			},
@@ -18667,7 +18811,7 @@
 				},
 				"name": "tbody",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": ["deleteRow", "insertRow"],
+				"notIncludedMDN": [],
 				"readonly": ["HTMLTableSectionElement.rows"],
 				"tagInterfaceName": "HTMLTableSectionElement"
 			},
@@ -20145,7 +20289,7 @@
 				},
 				"name": "textarea",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": ["checkValidity", "reportValidity", "select_event", "select", "selectionchange_event", "setCustomValidity", "setRangeText", "setSelectionRange"],
+				"notIncludedMDN": ["select"],
 				"readonly": ["HTMLTextAreaElement.form", "HTMLTextAreaElement.labels", "HTMLTextAreaElement.textLength", "HTMLTextAreaElement.type", "HTMLTextAreaElement.validationMessage", "HTMLTextAreaElement.validity", "HTMLTextAreaElement.willValidate"],
 				"tagInterfaceName": "HTMLTextAreaElement"
 			},
@@ -20326,7 +20470,7 @@
 				},
 				"name": "tfoot",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": ["deleteRow", "insertRow"],
+				"notIncludedMDN": [],
 				"readonly": ["HTMLTableSectionElement.rows"],
 				"tagInterfaceName": "HTMLTableSectionElement"
 			},
@@ -21049,7 +21193,7 @@
 				},
 				"name": "thead",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": ["deleteRow", "insertRow"],
+				"notIncludedMDN": [],
 				"readonly": ["HTMLTableSectionElement.rows"],
 				"tagInterfaceName": "HTMLTableSectionElement"
 			},
@@ -21357,7 +21501,7 @@
 				},
 				"name": "tr",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": ["deleteCell", "insertCell"],
+				"notIncludedMDN": [],
 				"readonly": ["HTMLTableRowElement.cells", "HTMLTableRowElement.rowIndex", "HTMLTableRowElement.sectionRowIndex"],
 				"tagInterfaceName": "HTMLTableRowElement"
 			},
@@ -21895,7 +22039,7 @@
 				},
 				"name": "track",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": ["cuechange_event"],
+				"notIncludedMDN": [],
 				"readonly": ["HTMLTrackElement.readyState", "HTMLTrackElement.track"],
 				"tagInterfaceName": "HTMLTrackElement"
 			},
@@ -22604,7 +22748,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#htmlvideoelement.onfullscreenchange",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"on:fullscreenchange": {
@@ -22620,7 +22766,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#htmlvideoelement.onfullscreenchange",
 						"values": {
-							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 						}
 					},
 					"onfullscreenchange": {
@@ -22636,7 +22784,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#htmlvideoelement.onfullscreenchange",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"onFullscreenError": {
@@ -22652,7 +22802,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#htmlvideoelement.onfullscreenerror",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"on:fullscreenerror": {
@@ -22668,7 +22820,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#htmlvideoelement.onfullscreenerror",
 						"values": {
-							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 						}
 					},
 					"onfullscreenerror": {
@@ -22684,7 +22838,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#htmlvideoelement.onfullscreenerror",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"onLeavePictureInPicture": {
@@ -23094,7 +23250,7 @@
 				},
 				"name": "video",
 				"namespace": "http://www.w3.org/1999/xhtml",
-				"notIncludedMDN": ["cancelVideoFrameCallback", "enterpictureinpicture_event", "getVideoPlaybackQuality", "leavepictureinpicture_event", "requestPictureInPicture", "requestVideoFrameCallback", "resize_event"],
+				"notIncludedMDN": [],
 				"readonly": ["HTMLMediaElement.buffered", "HTMLMediaElement.currentSrc", "HTMLMediaElement.duration", "HTMLMediaElement.ended", "HTMLMediaElement.error", "HTMLMediaElement.mediaKeys", "HTMLMediaElement.mozAudioCaptured", "HTMLMediaElement.mozFragmentEnd", "HTMLMediaElement.networkState", "HTMLMediaElement.paused", "HTMLMediaElement.played", "HTMLMediaElement.readyState", "HTMLMediaElement.remote", "HTMLMediaElement.seekable", "HTMLMediaElement.seeking", "HTMLMediaElement.sinkId", "HTMLMediaElement.textTracks", "HTMLMediaElement.webkitAudioDecodedByteCount", "HTMLMediaElement.webkitVideoDecodedByteCount", "HTMLVideoElement.mozDecodedFrames", "HTMLVideoElement.mozFrameDelay", "HTMLVideoElement.mozHasAudio", "HTMLVideoElement.mozPaintedFrames", "HTMLVideoElement.mozParsedFrames", "HTMLVideoElement.mozPresentedFrames", "HTMLVideoElement.videoHeight", "HTMLVideoElement.videoWidth", "HTMLVideoElement.webkitDecodedFrameCount", "HTMLVideoElement.webkitDroppedFrameCount"],
 				"tagInterfaceName": "HTMLVideoElement"
 			},
@@ -24350,7 +24506,7 @@
 				},
 				"name": "mo",
 				"namespace": "http://www.w3.org/1998/Math/MathML",
-				"notIncludedMDN": ["named_spaces", "nonzero_unitless_values"],
+				"notIncludedMDN": [],
 				"readonly": [],
 				"tagInterfaceName": "MathMLElement"
 			},
@@ -24496,7 +24652,7 @@
 				},
 				"name": "mpadded",
 				"namespace": "http://www.w3.org/1998/Math/MathML",
-				"notIncludedMDN": ["named_spaces", "nonzero_unitless_values", "pseudo_units", "relative_values", "scale_factor"],
+				"notIncludedMDN": [],
 				"readonly": [],
 				"tagInterfaceName": "MathMLElement"
 			},
@@ -24672,7 +24828,7 @@
 				},
 				"name": "mspace",
 				"namespace": "http://www.w3.org/1998/Math/MathML",
-				"notIncludedMDN": ["named_spaces"],
+				"notIncludedMDN": [],
 				"readonly": [],
 				"tagInterfaceName": "MathMLElement"
 			},
@@ -25724,7 +25880,7 @@
 				"keys": {},
 				"name": "altGlyph",
 				"namespace": "http://www.w3.org/2000/svg",
-				"notIncludedMDN": ["className", "ownerSVGElement", "viewportElement"],
+				"notIncludedMDN": ["ownerSVGElement", "viewportElement"],
 				"readonly": [],
 				"tagInterfaceName": "SVGElement"
 			},
@@ -25736,7 +25892,7 @@
 				"keys": {},
 				"name": "altGlyphDef",
 				"namespace": "http://www.w3.org/2000/svg",
-				"notIncludedMDN": ["className", "ownerSVGElement", "viewportElement"],
+				"notIncludedMDN": ["ownerSVGElement", "viewportElement"],
 				"readonly": [],
 				"tagInterfaceName": "SVGElement"
 			},
@@ -25748,7 +25904,7 @@
 				"keys": {},
 				"name": "altGlyphItem",
 				"namespace": "http://www.w3.org/2000/svg",
-				"notIncludedMDN": ["className", "ownerSVGElement", "viewportElement"],
+				"notIncludedMDN": ["ownerSVGElement", "viewportElement"],
 				"readonly": [],
 				"tagInterfaceName": "SVGElement"
 			},
@@ -27384,7 +27540,7 @@
 				"keys": {},
 				"name": "animateColor",
 				"namespace": "http://www.w3.org/2000/svg",
-				"notIncludedMDN": ["className", "ownerSVGElement", "viewportElement"],
+				"notIncludedMDN": ["ownerSVGElement", "viewportElement"],
 				"readonly": [],
 				"tagInterfaceName": "SVGElement"
 			},
@@ -31084,7 +31240,7 @@
 				"keys": {},
 				"name": "color-profile",
 				"namespace": "http://www.w3.org/2000/svg",
-				"notIncludedMDN": ["className", "ownerSVGElement", "viewportElement"],
+				"notIncludedMDN": ["ownerSVGElement", "viewportElement"],
 				"readonly": [],
 				"tagInterfaceName": "SVGElement"
 			},
@@ -31096,7 +31252,7 @@
 				"keys": {},
 				"name": "cursor",
 				"namespace": "http://www.w3.org/2000/svg",
-				"notIncludedMDN": ["className", "ownerSVGElement", "viewportElement"],
+				"notIncludedMDN": ["ownerSVGElement", "viewportElement"],
 				"readonly": [],
 				"tagInterfaceName": "SVGElement"
 			},
@@ -56525,7 +56681,7 @@
 				"keys": {},
 				"name": "font",
 				"namespace": "http://www.w3.org/2000/svg",
-				"notIncludedMDN": ["className", "ownerSVGElement", "viewportElement"],
+				"notIncludedMDN": ["ownerSVGElement", "viewportElement"],
 				"readonly": [],
 				"tagInterfaceName": "SVGElement"
 			},
@@ -56537,7 +56693,7 @@
 				"keys": {},
 				"name": "font-face",
 				"namespace": "http://www.w3.org/2000/svg",
-				"notIncludedMDN": ["className", "ownerSVGElement", "viewportElement"],
+				"notIncludedMDN": ["ownerSVGElement", "viewportElement"],
 				"readonly": [],
 				"tagInterfaceName": "SVGElement"
 			},
@@ -56549,7 +56705,7 @@
 				"keys": {},
 				"name": "font-face-format",
 				"namespace": "http://www.w3.org/2000/svg",
-				"notIncludedMDN": ["className", "ownerSVGElement", "viewportElement"],
+				"notIncludedMDN": ["ownerSVGElement", "viewportElement"],
 				"readonly": [],
 				"tagInterfaceName": "SVGElement"
 			},
@@ -56561,7 +56717,7 @@
 				"keys": {},
 				"name": "font-face-name",
 				"namespace": "http://www.w3.org/2000/svg",
-				"notIncludedMDN": ["className", "ownerSVGElement", "viewportElement"],
+				"notIncludedMDN": ["ownerSVGElement", "viewportElement"],
 				"readonly": [],
 				"tagInterfaceName": "SVGElement"
 			},
@@ -56573,7 +56729,7 @@
 				"keys": {},
 				"name": "font-face-src",
 				"namespace": "http://www.w3.org/2000/svg",
-				"notIncludedMDN": ["className", "ownerSVGElement", "viewportElement"],
+				"notIncludedMDN": ["ownerSVGElement", "viewportElement"],
 				"readonly": [],
 				"tagInterfaceName": "SVGElement"
 			},
@@ -56585,7 +56741,7 @@
 				"keys": {},
 				"name": "font-face-uri",
 				"namespace": "http://www.w3.org/2000/svg",
-				"notIncludedMDN": ["className", "ownerSVGElement", "viewportElement"],
+				"notIncludedMDN": ["ownerSVGElement", "viewportElement"],
 				"readonly": [],
 				"tagInterfaceName": "SVGElement"
 			},
@@ -59125,7 +59281,7 @@
 				"keys": {},
 				"name": "glyph",
 				"namespace": "http://www.w3.org/2000/svg",
-				"notIncludedMDN": ["className", "ownerSVGElement", "viewportElement"],
+				"notIncludedMDN": ["ownerSVGElement", "viewportElement"],
 				"readonly": [],
 				"tagInterfaceName": "SVGElement"
 			},
@@ -59137,7 +59293,7 @@
 				"keys": {},
 				"name": "glyphRef",
 				"namespace": "http://www.w3.org/2000/svg",
-				"notIncludedMDN": ["className", "ownerSVGElement", "viewportElement"],
+				"notIncludedMDN": ["ownerSVGElement", "viewportElement"],
 				"readonly": [],
 				"tagInterfaceName": "SVGElement"
 			},
@@ -59149,7 +59305,7 @@
 				"keys": {},
 				"name": "hkern",
 				"namespace": "http://www.w3.org/2000/svg",
-				"notIncludedMDN": ["className", "ownerSVGElement", "viewportElement"],
+				"notIncludedMDN": ["ownerSVGElement", "viewportElement"],
 				"readonly": [],
 				"tagInterfaceName": "SVGElement"
 			},
@@ -64662,7 +64818,7 @@
 				"keys": {},
 				"name": "missing-glyph",
 				"namespace": "http://www.w3.org/2000/svg",
-				"notIncludedMDN": ["className", "ownerSVGElement", "viewportElement"],
+				"notIncludedMDN": ["ownerSVGElement", "viewportElement"],
 				"readonly": [],
 				"tagInterfaceName": "SVGElement"
 			},
@@ -74044,7 +74200,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onafterprint",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"onafterprint": {
@@ -74060,7 +74218,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onafterprint",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"on:afterprint": {
@@ -74077,7 +74237,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onafterprint",
 						"values": {
 							"Pota": "Events<Event, Element>",
-							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 						}
 					},
 					"onBeforePrint": {
@@ -74093,7 +74255,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onbeforeprint",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"onbeforeprint": {
@@ -74109,7 +74273,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onbeforeprint",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"on:beforeprint": {
@@ -74126,7 +74292,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onbeforeprint",
 						"values": {
 							"Pota": "Events<Event, Element>",
-							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 						}
 					},
 					"onBeforeUnload": {
@@ -74142,7 +74310,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onbeforeunload",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, BeforeUnloadEvent>"
+							"Solid Main": "EventHandlerUnion<T, BeforeUnloadEvent>",
+							"Solid Minor": "EventHandlerUnion<T, BeforeUnloadEvent>",
+							"Solid Next": "EventHandlerUnion<T, BeforeUnloadEvent>"
 						}
 					},
 					"onbeforeunload": {
@@ -74158,7 +74328,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onbeforeunload",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, BeforeUnloadEvent>"
+							"Solid Main": "EventHandlerUnion<T, BeforeUnloadEvent>",
+							"Solid Minor": "EventHandlerUnion<T, BeforeUnloadEvent>",
+							"Solid Next": "EventHandlerUnion<T, BeforeUnloadEvent>"
 						}
 					},
 					"on:beforeunload": {
@@ -74175,7 +74347,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onbeforeunload",
 						"values": {
 							"Pota": "Events<BeforeUnloadEvent, Element>",
-							"Solid Main": "EventHandlerWithOptionsUnion<T, BeforeUnloadEvent>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, BeforeUnloadEvent>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, BeforeUnloadEvent>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, BeforeUnloadEvent>"
 						}
 					},
 					"onFullscreenChange": {
@@ -74191,7 +74365,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onfullscreenchange",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"on:fullscreenchange": {
@@ -74207,7 +74383,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onfullscreenchange",
 						"values": {
-							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 						}
 					},
 					"onfullscreenchange": {
@@ -74223,7 +74401,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onfullscreenchange",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"onFullscreenError": {
@@ -74239,7 +74419,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onfullscreenerror",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"on:fullscreenerror": {
@@ -74255,7 +74437,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onfullscreenerror",
 						"values": {
-							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 						}
 					},
 					"onfullscreenerror": {
@@ -74271,7 +74455,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onfullscreenerror",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"onGamepadConnected": {
@@ -74287,7 +74473,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.ongamepadconnected",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, GamepadEvent>"
+							"Solid Main": "EventHandlerUnion<T, GamepadEvent>",
+							"Solid Minor": "EventHandlerUnion<T, GamepadEvent>",
+							"Solid Next": "EventHandlerUnion<T, GamepadEvent>"
 						}
 					},
 					"ongamepadconnected": {
@@ -74303,7 +74491,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.ongamepadconnected",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, GamepadEvent>"
+							"Solid Main": "EventHandlerUnion<T, GamepadEvent>",
+							"Solid Minor": "EventHandlerUnion<T, GamepadEvent>",
+							"Solid Next": "EventHandlerUnion<T, GamepadEvent>"
 						}
 					},
 					"on:gamepadconnected": {
@@ -74320,7 +74510,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.ongamepadconnected",
 						"values": {
 							"Pota": "Events<GamepadEvent, Element>",
-							"Solid Main": "EventHandlerWithOptionsUnion<T, GamepadEvent>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, GamepadEvent>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, GamepadEvent>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, GamepadEvent>"
 						}
 					},
 					"onGamepadDisconnected": {
@@ -74336,7 +74528,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.ongamepaddisconnected",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, GamepadEvent>"
+							"Solid Main": "EventHandlerUnion<T, GamepadEvent>",
+							"Solid Minor": "EventHandlerUnion<T, GamepadEvent>",
+							"Solid Next": "EventHandlerUnion<T, GamepadEvent>"
 						}
 					},
 					"ongamepaddisconnected": {
@@ -74352,7 +74546,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.ongamepaddisconnected",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, GamepadEvent>"
+							"Solid Main": "EventHandlerUnion<T, GamepadEvent>",
+							"Solid Minor": "EventHandlerUnion<T, GamepadEvent>",
+							"Solid Next": "EventHandlerUnion<T, GamepadEvent>"
 						}
 					},
 					"on:gamepaddisconnected": {
@@ -74369,7 +74565,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.ongamepaddisconnected",
 						"values": {
 							"Pota": "Events<GamepadEvent, Element>",
-							"Solid Main": "EventHandlerWithOptionsUnion<T, GamepadEvent>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, GamepadEvent>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, GamepadEvent>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, GamepadEvent>"
 						}
 					},
 					"onHashchange": {
@@ -74385,7 +74583,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onhashchange",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, HashChangeEvent>"
+							"Solid Main": "EventHandlerUnion<T, HashChangeEvent>",
+							"Solid Minor": "EventHandlerUnion<T, HashChangeEvent>",
+							"Solid Next": "EventHandlerUnion<T, HashChangeEvent>"
 						}
 					},
 					"onhashchange": {
@@ -74401,7 +74601,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onhashchange",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, HashChangeEvent>"
+							"Solid Main": "EventHandlerUnion<T, HashChangeEvent>",
+							"Solid Minor": "EventHandlerUnion<T, HashChangeEvent>",
+							"Solid Next": "EventHandlerUnion<T, HashChangeEvent>"
 						}
 					},
 					"on:hashchange": {
@@ -74418,7 +74620,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onhashchange",
 						"values": {
 							"Pota": "Events<HashChangeEvent, Element>",
-							"Solid Main": "EventHandlerWithOptionsUnion<T, HashChangeEvent>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, HashChangeEvent>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, HashChangeEvent>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, HashChangeEvent>"
 						}
 					},
 					"onLanguageChange": {
@@ -74434,7 +74638,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onlanguagechange",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"onlanguagechange": {
@@ -74450,7 +74656,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onlanguagechange",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"on:languagechange": {
@@ -74467,7 +74675,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onlanguagechange",
 						"values": {
 							"Pota": "Events<Event, Element>",
-							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 						}
 					},
 					"onMessage": {
@@ -74483,7 +74693,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onmessage",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, MessageEvent>"
+							"Solid Main": "EventHandlerUnion<T, MessageEvent>",
+							"Solid Minor": "EventHandlerUnion<T, MessageEvent>",
+							"Solid Next": "EventHandlerUnion<T, MessageEvent>"
 						}
 					},
 					"onmessage": {
@@ -74499,7 +74711,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onmessage",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, MessageEvent>"
+							"Solid Main": "EventHandlerUnion<T, MessageEvent>",
+							"Solid Minor": "EventHandlerUnion<T, MessageEvent>",
+							"Solid Next": "EventHandlerUnion<T, MessageEvent>"
 						}
 					},
 					"on:message": {
@@ -74516,7 +74730,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onmessage",
 						"values": {
 							"Pota": "Events<MessageEvent, Element>",
-							"Solid Main": "EventHandlerWithOptionsUnion<T, MessageEvent>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, MessageEvent>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, MessageEvent>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, MessageEvent>"
 						}
 					},
 					"onMessageError": {
@@ -74532,7 +74748,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onmessageerror",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, MessageEvent>"
+							"Solid Main": "EventHandlerUnion<T, MessageEvent>",
+							"Solid Minor": "EventHandlerUnion<T, MessageEvent>",
+							"Solid Next": "EventHandlerUnion<T, MessageEvent>"
 						}
 					},
 					"onmessageerror": {
@@ -74548,7 +74766,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onmessageerror",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, MessageEvent>"
+							"Solid Main": "EventHandlerUnion<T, MessageEvent>",
+							"Solid Minor": "EventHandlerUnion<T, MessageEvent>",
+							"Solid Next": "EventHandlerUnion<T, MessageEvent>"
 						}
 					},
 					"on:messageerror": {
@@ -74565,7 +74785,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onmessageerror",
 						"values": {
 							"Pota": "Events<MessageEvent, Element>",
-							"Solid Main": "EventHandlerWithOptionsUnion<T, MessageEvent>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, MessageEvent>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, MessageEvent>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, MessageEvent>"
 						}
 					},
 					"onOffline": {
@@ -74581,7 +74803,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onoffline",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"onoffline": {
@@ -74597,7 +74821,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onoffline",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"on:offline": {
@@ -74614,7 +74840,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onoffline",
 						"values": {
 							"Pota": "Events<Event, Element>",
-							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 						}
 					},
 					"onOnline": {
@@ -74630,7 +74858,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.ononline",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"ononline": {
@@ -74646,7 +74876,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.ononline",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"on:online": {
@@ -74663,7 +74895,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.ononline",
 						"values": {
 							"Pota": "Events<Event, Element>",
-							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 						}
 					},
 					"onPageHide": {
@@ -74679,7 +74913,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onpagehide",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, PageTransitionEvent>"
+							"Solid Main": "EventHandlerUnion<T, PageTransitionEvent>",
+							"Solid Minor": "EventHandlerUnion<T, PageTransitionEvent>",
+							"Solid Next": "EventHandlerUnion<T, PageTransitionEvent>"
 						}
 					},
 					"onpagehide": {
@@ -74695,7 +74931,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onpagehide",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, PageTransitionEvent>"
+							"Solid Main": "EventHandlerUnion<T, PageTransitionEvent>",
+							"Solid Minor": "EventHandlerUnion<T, PageTransitionEvent>",
+							"Solid Next": "EventHandlerUnion<T, PageTransitionEvent>"
 						}
 					},
 					"on:pagehide": {
@@ -74712,7 +74950,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onpagehide",
 						"values": {
 							"Pota": "Events<PageTransitionEvent, Element>",
-							"Solid Main": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>"
 						}
 					},
 					"onPageReveal": {
@@ -74728,7 +74968,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onpagereveal",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"onpagereveal": {
@@ -74744,7 +74986,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onpagereveal",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"on:pagereveal": {
@@ -74761,7 +75005,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onpagereveal",
 						"values": {
 							"Pota": "Events<Event, Element>",
-							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 						}
 					},
 					"onPageShow": {
@@ -74777,7 +75023,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onpageshow",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, PageTransitionEvent>"
+							"Solid Main": "EventHandlerUnion<T, PageTransitionEvent>",
+							"Solid Minor": "EventHandlerUnion<T, PageTransitionEvent>",
+							"Solid Next": "EventHandlerUnion<T, PageTransitionEvent>"
 						}
 					},
 					"onpageshow": {
@@ -74793,7 +75041,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onpageshow",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, PageTransitionEvent>"
+							"Solid Main": "EventHandlerUnion<T, PageTransitionEvent>",
+							"Solid Minor": "EventHandlerUnion<T, PageTransitionEvent>",
+							"Solid Next": "EventHandlerUnion<T, PageTransitionEvent>"
 						}
 					},
 					"on:pageshow": {
@@ -74810,7 +75060,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onpageshow",
 						"values": {
 							"Pota": "Events<PageTransitionEvent, Element>",
-							"Solid Main": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>"
 						}
 					},
 					"onPageSwap": {
@@ -74826,7 +75078,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onpageswap",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"onpageswap": {
@@ -74842,7 +75096,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onpageswap",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"on:pageswap": {
@@ -74859,7 +75115,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onpageswap",
 						"values": {
 							"Pota": "Events<Event, Element>",
-							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 						}
 					},
 					"onPopstate": {
@@ -74875,7 +75133,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onpopstate",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, PopStateEvent>"
+							"Solid Main": "EventHandlerUnion<T, PopStateEvent>",
+							"Solid Minor": "EventHandlerUnion<T, PopStateEvent>",
+							"Solid Next": "EventHandlerUnion<T, PopStateEvent>"
 						}
 					},
 					"onpopstate": {
@@ -74891,7 +75151,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onpopstate",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, PopStateEvent>"
+							"Solid Main": "EventHandlerUnion<T, PopStateEvent>",
+							"Solid Minor": "EventHandlerUnion<T, PopStateEvent>",
+							"Solid Next": "EventHandlerUnion<T, PopStateEvent>"
 						}
 					},
 					"on:popstate": {
@@ -74908,7 +75170,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onpopstate",
 						"values": {
 							"Pota": "Events<PopStateEvent, Element>",
-							"Solid Main": "EventHandlerWithOptionsUnion<T, PopStateEvent>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, PopStateEvent>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, PopStateEvent>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, PopStateEvent>"
 						}
 					},
 					"onRejectionHandled": {
@@ -74924,7 +75188,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onrejectionhandled",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, PromiseRejectionEvent>"
+							"Solid Main": "EventHandlerUnion<T, PromiseRejectionEvent>",
+							"Solid Minor": "EventHandlerUnion<T, PromiseRejectionEvent>",
+							"Solid Next": "EventHandlerUnion<T, PromiseRejectionEvent>"
 						}
 					},
 					"onrejectionhandled": {
@@ -74940,7 +75206,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onrejectionhandled",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, PromiseRejectionEvent>"
+							"Solid Main": "EventHandlerUnion<T, PromiseRejectionEvent>",
+							"Solid Minor": "EventHandlerUnion<T, PromiseRejectionEvent>",
+							"Solid Next": "EventHandlerUnion<T, PromiseRejectionEvent>"
 						}
 					},
 					"on:rejectionhandled": {
@@ -74957,7 +75225,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onrejectionhandled",
 						"values": {
 							"Pota": "Events<PromiseRejectionEvent, Element>",
-							"Solid Main": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>"
 						}
 					},
 					"onStorage": {
@@ -74973,7 +75243,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onstorage",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, StorageEvent>"
+							"Solid Main": "EventHandlerUnion<T, StorageEvent>",
+							"Solid Minor": "EventHandlerUnion<T, StorageEvent>",
+							"Solid Next": "EventHandlerUnion<T, StorageEvent>"
 						}
 					},
 					"onstorage": {
@@ -74989,7 +75261,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onstorage",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, StorageEvent>"
+							"Solid Main": "EventHandlerUnion<T, StorageEvent>",
+							"Solid Minor": "EventHandlerUnion<T, StorageEvent>",
+							"Solid Next": "EventHandlerUnion<T, StorageEvent>"
 						}
 					},
 					"on:storage": {
@@ -75006,7 +75280,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onstorage",
 						"values": {
 							"Pota": "Events<StorageEvent, Element>",
-							"Solid Main": "EventHandlerWithOptionsUnion<T, StorageEvent>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, StorageEvent>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, StorageEvent>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, StorageEvent>"
 						}
 					},
 					"onUnhandledRejection": {
@@ -75022,7 +75298,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onunhandledrejection",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, PromiseRejectionEvent>"
+							"Solid Main": "EventHandlerUnion<T, PromiseRejectionEvent>",
+							"Solid Minor": "EventHandlerUnion<T, PromiseRejectionEvent>",
+							"Solid Next": "EventHandlerUnion<T, PromiseRejectionEvent>"
 						}
 					},
 					"onunhandledrejection": {
@@ -75038,7 +75316,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onunhandledrejection",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, PromiseRejectionEvent>"
+							"Solid Main": "EventHandlerUnion<T, PromiseRejectionEvent>",
+							"Solid Minor": "EventHandlerUnion<T, PromiseRejectionEvent>",
+							"Solid Next": "EventHandlerUnion<T, PromiseRejectionEvent>"
 						}
 					},
 					"on:unhandledrejection": {
@@ -75055,7 +75335,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onunhandledrejection",
 						"values": {
 							"Pota": "Events<PromiseRejectionEvent, Element>",
-							"Solid Main": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>"
 						}
 					},
 					"onUnload": {
@@ -75071,7 +75353,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onunload",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"onunload": {
@@ -75087,7 +75371,9 @@
 						"readonly": false,
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onunload",
 						"values": {
-							"Solid Main": "EventHandlerUnion<T, Event>"
+							"Solid Main": "EventHandlerUnion<T, Event>",
+							"Solid Minor": "EventHandlerUnion<T, Event>",
+							"Solid Next": "EventHandlerUnion<T, Event>"
 						}
 					},
 					"on:unload": {
@@ -75104,7 +75390,9 @@
 						"url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#svgsvgelement.onunload",
 						"values": {
 							"Pota": "Events<Event, Element>",
-							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+							"Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Minor": "EventHandlerWithOptionsUnion<T, Event>",
+							"Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
 						}
 					},
 					"opacity": {
@@ -80899,7 +81187,7 @@
 				"keys": {},
 				"name": "tref",
 				"namespace": "http://www.w3.org/2000/svg",
-				"notIncludedMDN": ["className", "ownerSVGElement", "viewportElement"],
+				"notIncludedMDN": ["ownerSVGElement", "viewportElement"],
 				"readonly": [],
 				"tagInterfaceName": "SVGElement"
 			},
@@ -83657,7 +83945,7 @@
 				"keys": {},
 				"name": "vkern",
 				"namespace": "http://www.w3.org/2000/svg",
-				"notIncludedMDN": ["className", "ownerSVGElement", "viewportElement"],
+				"notIncludedMDN": ["ownerSVGElement", "viewportElement"],
 				"readonly": [],
 				"tagInterfaceName": "SVGElement"
 			}

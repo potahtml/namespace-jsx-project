@@ -1,69 +1,83 @@
-import { fetchCached, unique } from './utils.js'
+import { fetchCached, unique, uniqueKeys } from './utils.js'
 
-const mdnSkip = [
+const mdnSkip = uniqueKeys(`
 	// elementMDN tags
-	'__compat',
-	'mdn_url',
-	'spec_url',
-	'status',
-	'support',
-	'tags',
 
-	// elementMDN ??
-	'advanced_visible_child_selection',
-	'aspect_ratio_computed_from_attributes',
-	'hr_in_select',
-	'implicit_noopener',
-	'lquote_rquote_attributes',
-	'text_fragments',
-	'xlink_actuate',
-	'xlink_href',
-	'xlink_show',
-	'xlink_title',
+	__compat
+	mdn_url
+	spec_url
+	status
+	support
+	tags
 
-	// HTMLElement
-	'accessKey',
-	'accessKeyLabel',
-	'anchorElement',
-	'attachInternals',
-	'attributeStyleMap',
-	'autocapitalize',
-	'autocorrect',
-	'autofocus',
-	'blur',
-	'click',
-	'contentEditable',
-	'dataset',
-	'dir',
-	'draggable',
-	'editContext',
-	'enterKeyHint',
-	'focus',
-	'hidden',
-	'hidePopover',
-	'inert',
-	'innerText',
-	'inputMode',
-	'isContentEditable',
-	'lang',
-	'nonce',
-	'offsetHeight',
-	'offsetLeft',
-	'offsetParent',
-	'offsetTop',
-	'offsetWidth',
-	'outerText',
-	'popover',
-	'showPopover',
-	'spellcheck',
-	'style',
-	'tabIndex',
-	'title',
-	'togglePopover',
-	'translate',
-	'virtualKeyboardPolicy',
-	'writingSuggestions',
-]
+	// mdn global
+
+	accessKeyLabel
+	anchorElement
+	attachInternals
+	attributeStyleMap
+	blur
+	click
+	dataset
+	focus
+	hidePopover
+	isContentEditable
+	offsetHeight
+	offsetLeft
+	offsetParent
+	offsetTop
+	offsetWidth
+	showPopover
+	togglePopover
+
+	// custom / random stuff / non-machine friendly
+
+
+	advanced_visible_child_selection
+	aspect_ratio_computed_from_attributes
+	hr_in_select
+	implicit_noopener
+	lquote_rquote_attributes
+	text_fragments
+	xlink_actuate
+	xlink_href
+	xlink_show
+	xlink_title
+	supports_static
+	display_list_item
+
+	toString toBlob toDataURL Audio getSVGDocument HTMLOutputElement Option
+
+	// units
+
+	named_spaces nonzero_unitless_values pseudo_units relative_values scale_factor
+
+	// form
+
+	checkValidity reportValidity requestSubmit setCustomValidity
+
+	// canvas
+
+	captureStream getContext transferControlToOffscreen
+
+	// dialog
+
+	requestClose showModal
+
+	// input
+
+	colorSpace mozactionhint setRangeText setSelectionRange showPicker stepDown stepUp
+
+	// video
+
+	cancelVideoFrameCallback getVideoPlaybackQuality requestPictureInPicture requestVideoFrameCallback
+
+	// table
+
+	createCaption createTBody createTFoot createTHead deleteCaption deleteRow deleteTFoot deleteTHead insertRow deleteCell insertCell deleteCell insertCell
+
+`)
+
 export function ElementURL(ns, tagName) {
 	switch (ns) {
 		case 'html': {
@@ -220,6 +234,7 @@ export async function keysNotIncludedInMDN(
 	tagInterfaceName,
 	keys,
 	readonlyKeys,
+	globalKeys,
 ) {
 	try {
 		let mdnkeys = []
@@ -255,6 +270,7 @@ export async function keysNotIncludedInMDN(
 			.map(x =>
 				x.endsWith('_event') ? 'on' + x.replace('_event', '') : x,
 			)
+			.filter(x => !globalKeys.includes(x))
 			.filter(x => !keys.includes(x.toLowerCase()))
 			.filter(x => !mdnSkip.includes(x))
 			.filter(x => !readonlyKeys.includes(x))

@@ -101,6 +101,19 @@ interface MediaHTMLAttributes<T> extends HTMLAttributes<T>, ElementEventMap<T> {
 	mediagroup?: string
 }
 
+interface ElementEventMap<T> {
+	onFullscreenChange?: EventHandlerUnion<T, Event>
+	onFullscreenError?: EventHandlerUnion<T, Event>
+
+	'on:fullscreenchange'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:fullscreenerror'?: EventHandlerWithOptionsUnion<T, Event>
+
+	/** @deprecated Use camelCase event handlers */
+	onfullscreenchange?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onfullscreenerror?: EventHandlerUnion<T, Event>
+}
+
 // Solid Next - https://www.solidjs.com/
 interface VideoHTMLAttributes<T> extends MediaHTMLAttributes<T> {
 	disablepictureinpicture?: true | false | '' | false
@@ -148,6 +161,19 @@ interface MediaHTMLAttributes<T> extends HTMLAttributes<T>, ElementEventMap<T> {
 	mediaGroup?: string | false
 	/** @deprecated */
 	mediagroup?: string | false
+}
+
+interface ElementEventMap<T> {
+	onFullscreenChange?: EventHandlerUnion<T, Event>
+	onFullscreenError?: EventHandlerUnion<T, Event>
+
+	'on:fullscreenchange'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:fullscreenerror'?: EventHandlerWithOptionsUnion<T, Event>
+
+	/** @deprecated Use camelCase event handlers */
+	onfullscreenchange?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onfullscreenerror?: EventHandlerUnion<T, Event>
 }
 
 // Voby - https://github.com/vobyjs/voby

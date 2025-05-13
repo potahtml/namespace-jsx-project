@@ -96,13 +96,7 @@ export const libs = [
 			elements: {
 				html: {
 					values: ['htmlelementtags', 'htmlelementdeprecatedtags'],
-					skip: [
-						'htmlattributes',
-						'ariaattributes',
-						'domattributes',
-						'windoweventmap',
-						'elementeventmap',
-					],
+					skip: ['htmlattributes', 'ariaattributes', 'domattributes'],
 				},
 				svg: {
 					values: ['svgelementtags'],
@@ -110,8 +104,6 @@ export const libs = [
 						'ariaattributes',
 						'domattributes',
 						'coresvgattributes',
-						'windoweventmap',
-						'elementeventmap',
 					],
 				},
 				math: {
@@ -120,8 +112,6 @@ export const libs = [
 						'ariaattributes',
 						'domattributes',
 						'mathmlattributes',
-						'windoweventmap',
-						'elementeventmap',
 					],
 				},
 			},
@@ -171,13 +161,7 @@ export const libs = [
 			elements: {
 				html: {
 					values: ['htmlelementtags', 'htmlelementdeprecatedtags'],
-					skip: [
-						'htmlattributes',
-						'ariaattributes',
-						'domattributes',
-						'windoweventmap',
-						'elementeventmap',
-					],
+					skip: ['htmlattributes', 'ariaattributes', 'domattributes'],
 				},
 				svg: {
 					values: ['svgelementtags'],
@@ -185,8 +169,6 @@ export const libs = [
 						'ariaattributes',
 						'domattributes',
 						'coresvgattributes',
-						'windoweventmap',
-						'elementeventmap',
 					],
 				},
 				math: {
@@ -195,8 +177,6 @@ export const libs = [
 						'ariaattributes',
 						'domattributes',
 						'mathmlattributes',
-						'windoweventmap',
-						'elementeventmap',
 					],
 				},
 			},

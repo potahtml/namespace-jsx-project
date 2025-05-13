@@ -308,6 +308,110 @@ interface PresentationSVGAttributes {
 	visibility?: 'visible' | 'hidden' | 'collapse' | 'inherit'
 }
 
+interface WindowEventMap<T> {
+	onAfterPrint?: EventHandlerUnion<T, Event>
+	onBeforePrint?: EventHandlerUnion<T, Event>
+	onBeforeUnload?: EventHandlerUnion<T, BeforeUnloadEvent>
+	onGamepadConnected?: EventHandlerUnion<T, GamepadEvent>
+	onGamepadDisconnected?: EventHandlerUnion<T, GamepadEvent>
+	onHashchange?: EventHandlerUnion<T, HashChangeEvent>
+	onLanguageChange?: EventHandlerUnion<T, Event>
+	onMessage?: EventHandlerUnion<T, MessageEvent>
+	onMessageError?: EventHandlerUnion<T, MessageEvent>
+	onOffline?: EventHandlerUnion<T, Event>
+	onOnline?: EventHandlerUnion<T, Event>
+	onPageHide?: EventHandlerUnion<T, PageTransitionEvent>
+	// TODO `PageRevealEvent` is currently undefined on TS
+	onPageReveal?: EventHandlerUnion<T, Event>
+	onPageShow?: EventHandlerUnion<T, PageTransitionEvent>
+	// TODO `PageSwapEvent` is currently undefined on TS
+	onPageSwap?: EventHandlerUnion<T, Event>
+	onPopstate?: EventHandlerUnion<T, PopStateEvent>
+	onRejectionHandled?: EventHandlerUnion<T, PromiseRejectionEvent>
+	onStorage?: EventHandlerUnion<T, StorageEvent>
+	onUnhandledRejection?: EventHandlerUnion<T, PromiseRejectionEvent>
+	onUnload?: EventHandlerUnion<T, Event>
+
+	/** @deprecated Use camelCase event handlers */
+	onafterprint?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onbeforeprint?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onbeforeunload?: EventHandlerUnion<T, BeforeUnloadEvent>
+	/** @deprecated Use camelCase event handlers */
+	ongamepadconnected?: EventHandlerUnion<T, GamepadEvent>
+	/** @deprecated Use camelCase event handlers */
+	ongamepaddisconnected?: EventHandlerUnion<T, GamepadEvent>
+	/** @deprecated Use camelCase event handlers */
+	onhashchange?: EventHandlerUnion<T, HashChangeEvent>
+	/** @deprecated Use camelCase event handlers */
+	onlanguagechange?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onmessage?: EventHandlerUnion<T, MessageEvent>
+	/** @deprecated Use camelCase event handlers */
+	onmessageerror?: EventHandlerUnion<T, MessageEvent>
+	/** @deprecated Use camelCase event handlers */
+	onoffline?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	ononline?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onpagehide?: EventHandlerUnion<T, PageTransitionEvent>
+	// TODO `PageRevealEvent` is currently undefined in TS
+	/** @deprecated Use camelCase event handlers */
+	onpagereveal?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onpageshow?: EventHandlerUnion<T, PageTransitionEvent>
+	// TODO `PageSwapEvent` is currently undefined in TS
+	/** @deprecated Use camelCase event handlers */
+	onpageswap?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onpopstate?: EventHandlerUnion<T, PopStateEvent>
+	/** @deprecated Use camelCase event handlers */
+	onrejectionhandled?: EventHandlerUnion<T, PromiseRejectionEvent>
+	/** @deprecated Use camelCase event handlers */
+	onstorage?: EventHandlerUnion<T, StorageEvent>
+	/** @deprecated Use camelCase event handlers */
+	onunhandledrejection?: EventHandlerUnion<T, PromiseRejectionEvent>
+	/** @deprecated Use camelCase event handlers */
+	onunload?: EventHandlerUnion<T, Event>
+
+	'on:afterprint'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:beforeprint'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:beforeunload'?: EventHandlerWithOptionsUnion<T, BeforeUnloadEvent>
+	'on:gamepadconnected'?: EventHandlerWithOptionsUnion<T, GamepadEvent>
+	'on:gamepaddisconnected'?: EventHandlerWithOptionsUnion<T, GamepadEvent>
+	'on:hashchange'?: EventHandlerWithOptionsUnion<T, HashChangeEvent>
+	'on:languagechange'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:message'?: EventHandlerWithOptionsUnion<T, MessageEvent>
+	'on:messageerror'?: EventHandlerWithOptionsUnion<T, MessageEvent>
+	'on:offline'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:online'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:pagehide'?: EventHandlerWithOptionsUnion<T, PageTransitionEvent>
+	// TODO `PageRevealEvent` is currently undefined in TS
+	'on:pagereveal'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:pageshow'?: EventHandlerWithOptionsUnion<T, PageTransitionEvent>
+	// TODO `PageSwapEvent` is currently undefined in TS
+	'on:pageswap'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:popstate'?: EventHandlerWithOptionsUnion<T, PopStateEvent>
+	'on:rejectionhandled'?: EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>
+	'on:storage'?: EventHandlerWithOptionsUnion<T, StorageEvent>
+	'on:unhandledrejection'?: EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>
+	'on:unload'?: EventHandlerWithOptionsUnion<T, Event>
+}
+
+interface ElementEventMap<T> {
+	onFullscreenChange?: EventHandlerUnion<T, Event>
+	onFullscreenError?: EventHandlerUnion<T, Event>
+
+	'on:fullscreenchange'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:fullscreenerror'?: EventHandlerWithOptionsUnion<T, Event>
+
+	/** @deprecated Use camelCase event handlers */
+	onfullscreenchange?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onfullscreenerror?: EventHandlerUnion<T, Event>
+}
+
 interface ShapeElementSVGAttributes<T> extends CoreSVGAttributes<T>, Pick<PresentationSVGAttributes, 'color' | 'fill' | 'fill-rule' | 'fill-opacity' | 'stroke' | 'stroke-width' | 'stroke-linecap' | 'stroke-linejoin' | 'stroke-miterlimit' | 'stroke-dasharray' | 'stroke-dashoffset' | 'stroke-opacity' | 'shape-rendering' | 'pathLength'> {}
 
 // Solid Next - https://www.solidjs.com/
@@ -421,6 +525,110 @@ interface PresentationSVGAttributes {
 	pathLength?: string | number | false
 	stroke?: string | false
 	visibility?: 'visible' | 'hidden' | 'collapse' | 'inherit' | false
+}
+
+interface WindowEventMap<T> {
+	onAfterPrint?: EventHandlerUnion<T, Event>
+	onBeforePrint?: EventHandlerUnion<T, Event>
+	onBeforeUnload?: EventHandlerUnion<T, BeforeUnloadEvent>
+	onGamepadConnected?: EventHandlerUnion<T, GamepadEvent>
+	onGamepadDisconnected?: EventHandlerUnion<T, GamepadEvent>
+	onHashchange?: EventHandlerUnion<T, HashChangeEvent>
+	onLanguageChange?: EventHandlerUnion<T, Event>
+	onMessage?: EventHandlerUnion<T, MessageEvent>
+	onMessageError?: EventHandlerUnion<T, MessageEvent>
+	onOffline?: EventHandlerUnion<T, Event>
+	onOnline?: EventHandlerUnion<T, Event>
+	onPageHide?: EventHandlerUnion<T, PageTransitionEvent>
+	// TODO `PageRevealEvent` is currently undefined on TS
+	onPageReveal?: EventHandlerUnion<T, Event>
+	onPageShow?: EventHandlerUnion<T, PageTransitionEvent>
+	// TODO `PageSwapEvent` is currently undefined on TS
+	onPageSwap?: EventHandlerUnion<T, Event>
+	onPopstate?: EventHandlerUnion<T, PopStateEvent>
+	onRejectionHandled?: EventHandlerUnion<T, PromiseRejectionEvent>
+	onStorage?: EventHandlerUnion<T, StorageEvent>
+	onUnhandledRejection?: EventHandlerUnion<T, PromiseRejectionEvent>
+	onUnload?: EventHandlerUnion<T, Event>
+
+	/** @deprecated Use camelCase event handlers */
+	onafterprint?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onbeforeprint?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onbeforeunload?: EventHandlerUnion<T, BeforeUnloadEvent>
+	/** @deprecated Use camelCase event handlers */
+	ongamepadconnected?: EventHandlerUnion<T, GamepadEvent>
+	/** @deprecated Use camelCase event handlers */
+	ongamepaddisconnected?: EventHandlerUnion<T, GamepadEvent>
+	/** @deprecated Use camelCase event handlers */
+	onhashchange?: EventHandlerUnion<T, HashChangeEvent>
+	/** @deprecated Use camelCase event handlers */
+	onlanguagechange?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onmessage?: EventHandlerUnion<T, MessageEvent>
+	/** @deprecated Use camelCase event handlers */
+	onmessageerror?: EventHandlerUnion<T, MessageEvent>
+	/** @deprecated Use camelCase event handlers */
+	onoffline?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	ononline?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onpagehide?: EventHandlerUnion<T, PageTransitionEvent>
+	// TODO `PageRevealEvent` is currently undefined in TS
+	/** @deprecated Use camelCase event handlers */
+	onpagereveal?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onpageshow?: EventHandlerUnion<T, PageTransitionEvent>
+	// TODO `PageSwapEvent` is currently undefined in TS
+	/** @deprecated Use camelCase event handlers */
+	onpageswap?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onpopstate?: EventHandlerUnion<T, PopStateEvent>
+	/** @deprecated Use camelCase event handlers */
+	onrejectionhandled?: EventHandlerUnion<T, PromiseRejectionEvent>
+	/** @deprecated Use camelCase event handlers */
+	onstorage?: EventHandlerUnion<T, StorageEvent>
+	/** @deprecated Use camelCase event handlers */
+	onunhandledrejection?: EventHandlerUnion<T, PromiseRejectionEvent>
+	/** @deprecated Use camelCase event handlers */
+	onunload?: EventHandlerUnion<T, Event>
+
+	'on:afterprint'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:beforeprint'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:beforeunload'?: EventHandlerWithOptionsUnion<T, BeforeUnloadEvent>
+	'on:gamepadconnected'?: EventHandlerWithOptionsUnion<T, GamepadEvent>
+	'on:gamepaddisconnected'?: EventHandlerWithOptionsUnion<T, GamepadEvent>
+	'on:hashchange'?: EventHandlerWithOptionsUnion<T, HashChangeEvent>
+	'on:languagechange'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:message'?: EventHandlerWithOptionsUnion<T, MessageEvent>
+	'on:messageerror'?: EventHandlerWithOptionsUnion<T, MessageEvent>
+	'on:offline'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:online'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:pagehide'?: EventHandlerWithOptionsUnion<T, PageTransitionEvent>
+	// TODO `PageRevealEvent` is currently undefined in TS
+	'on:pagereveal'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:pageshow'?: EventHandlerWithOptionsUnion<T, PageTransitionEvent>
+	// TODO `PageSwapEvent` is currently undefined in TS
+	'on:pageswap'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:popstate'?: EventHandlerWithOptionsUnion<T, PopStateEvent>
+	'on:rejectionhandled'?: EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>
+	'on:storage'?: EventHandlerWithOptionsUnion<T, StorageEvent>
+	'on:unhandledrejection'?: EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>
+	'on:unload'?: EventHandlerWithOptionsUnion<T, Event>
+}
+
+interface ElementEventMap<T> {
+	onFullscreenChange?: EventHandlerUnion<T, Event>
+	onFullscreenError?: EventHandlerUnion<T, Event>
+
+	'on:fullscreenchange'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:fullscreenerror'?: EventHandlerWithOptionsUnion<T, Event>
+
+	/** @deprecated Use camelCase event handlers */
+	onfullscreenchange?: EventHandlerUnion<T, Event>
+	/** @deprecated Use camelCase event handlers */
+	onfullscreenerror?: EventHandlerUnion<T, Event>
 }
 
 interface ShapeElementSVGAttributes<T> extends CoreSVGAttributes<T>, Pick<PresentationSVGAttributes, 'color' | 'fill' | 'fill-rule' | 'fill-opacity' | 'stroke' | 'stroke-width' | 'stroke-linecap' | 'stroke-linejoin' | 'stroke-miterlimit' | 'stroke-dasharray' | 'stroke-dashoffset' | 'stroke-opacity' | 'shape-rendering' | 'pathLength'> {}
