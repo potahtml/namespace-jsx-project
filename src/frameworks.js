@@ -311,6 +311,7 @@ export const libs = [
 				math: {
 					values: [],
 					skip: ['htmlattributes', 'svgattributes'],
+					include: false,
 				},
 			},
 			keys: {
