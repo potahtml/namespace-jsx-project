@@ -1,7 +1,7 @@
 import { render, signal } from 'pota'
 import { html } from 'pota/html'
 
-function Namespace(props) {
+function xElements(props) {
   const namespace = props.namespace
   const elements = props.elements
   const columns = props.columns
@@ -115,10 +115,10 @@ function xElement(props) {
       </tbody>
     </table>
     <Show
-      when="${element.readonly.length + element.notIncludedMDN.length}"
+      when="${element.readonly?.length + element.notIncludedMDN?.length}"
     >
       <footer>
-        <Show when="${element.readonly.length}">
+        <Show when="${element.readonly?.length}">
           Read only properties:
           <For each="${element.readonly}"
             >${value => {
@@ -132,7 +132,7 @@ function xElement(props) {
           </For>
           <br />
         </Show>
-        <Show when="${element.notIncludedMDN.length}">
+        <Show when="${element.notIncludedMDN?.length}">
           MDN Not Included:
           <For each="${element.notIncludedMDN}"
             >${value =>
@@ -218,21 +218,125 @@ function App() {
           each="${['html', 'math']}"
         >
           ${namespace => html`
-        <Namespace
-          namespace="${namespace}"
-          elements="${Object.values(data().elements[namespace])}"
-          columns="${data().columns}"
-        />
-      `}
+            <xElements
+              namespace="${namespace}"
+              elements="${Object.values(data().elements[namespace])}"
+              columns="${data().columns}"
+            />
+          `}
         </For>
-      `
+        <For
+          each="${['element', 'htmlelement', 'mathelement', 'svgelement']}"
+        >
+            ${namespace => html`
+                <xInterfaces
+                  namespace="${namespace}"
+                  items="${Object.values(data().keys[namespace].keys)}"
+                  columns="${data().columns}"
+                  showAria="${false}"
+                  showEvents="${false}"
+                />
+               <xInterfaces
+                  namespace="${namespace}"
+                  items="${Object.values(data().keys[namespace].keys)}"
+                  columns="${data().columns}"
+                  showAria="${true}"
+                  showEvents="${false}"
+                />
+               <xInterfaces
+                  namespace="${namespace}"
+                  items="${Object.values(data().keys[namespace].keys)}"
+                  columns="${data().columns}"
+                  showAria="${false}"
+                  showEvents="${true}"
+                />
+            `}
+        </For>
+
+
+    `
   }}</Show>`
 }
 
+function xInterfaces(props) {
+  const namespace = props.namespace
+
+  const columns = props.columns
+
+  const showAria = props.showAria
+  const showEvents = props.showEvents
+
+  const items = props.items.filter(function filter(x) {
+    if (showAria) {
+      return x.name.startsWith('aria')
+    }
+    if (showEvents) {
+      return x.name.startsWith('on')
+    }
+    return !x.name.startsWith('aria') && !x.name.startsWith('on')
+  })
+
+  if (!items.length) return null
+
+  const namespaceTitle = [
+    namespace === 'htmlelement'
+      ? 'HTMLElement'
+      : namespace === 'svgelement'
+        ? 'SVGElement'
+        : namespace === 'mathelement'
+          ? 'MathMLElement'
+          : 'Element',
+    'Interface',
+    showAria && 'Aria',
+    showEvents && 'Events',
+  ]
+    .filter(x => x)
+    .join(' ')
+
+  return html`
+        <details open="" id="${namespaceTitle.replace(/ /g, '-')}">
+            <summary><h2>${namespaceTitle}</h2></summary>
+            <section class="table">
+                <table>
+                    <caption>
+                        This only includes frameworks that respect the hierarchy of the inheritance
+                    </caption>
+                    <thead>
+                      <tr>
+                        <th>key</th>
+                        <th>kind</th>
+                        <For each="${columns}"
+                          >${value => html`<th data-col="${value}">${value}</th>`}
+                        </For>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <For each="${items.filter(x => !x.deprecated)}"
+                        >${value =>
+                          html` <xElementKey
+                            value="${value}"
+                            columns="${columns}"
+                          />`}
+                      </For>
+                      <For each="${items.filter(x => x.deprecated)}"
+                        >${value =>
+                          html` <xElementKey
+                            value="${value}"
+                            columns="${columns}"
+                          />`}
+                      </For>
+                    </tbody>
+                </table>
+            </section>
+        </details>
+`
+}
+
 html.define({
-  Namespace,
+  xElements,
   xElement,
   xElementKey,
+  xInterfaces,
 })
 
 render(App, document.querySelector('.content'), { clear: true })

@@ -30,12 +30,9 @@ export const startBrowser = async (browser = 'chrome') => {
 		defaultViewport: null,
 	})
 
-	const page = await navigatorInstance
-		.newPage()
-		// this fails frequently, just try again
-		.catch(async () => await navigatorInstance.newPage())
+	const page = await navigatorInstance.newPage()
 
-	return [navigatorInstance, await page]
+	return [navigatorInstance, page]
 }
 
 export const fetchTable = async file => {

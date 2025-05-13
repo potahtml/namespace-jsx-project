@@ -52,31 +52,55 @@ export const libs = [
 			},
 			keys: {
 				htmlelement: {
-					values: ['htmlattributes'],
+					/* HTMLElement interface */
+					values: [
+						'htmlattributes',
+						'customeventhandlerscamelcase',
+						'customeventhandlerslowercase',
+						'customeventhandlersnamespaced',
+					],
 					skip: ['ariaattributes', 'domattributes'],
 				},
 				svgelement: {
+					/* SVGElement interface */
 					values: ['coresvgattributes'],
 					skip: ['ariaattributes', 'domattributes'],
 				},
 				mathelement: {
+					/* MathMLElement interface */
 					values: ['mathmlattributes'],
-					skip: ['htmlattributes'],
+					skip: ['htmlattributes', 'domattributes'],
 				},
 				element: {
+					/* Element interface */
 					values: [
 						'ariaattributes',
+						'domattributes',
 						'elementeventmap',
+					],
+					skip: [
+						// htmlelement events
 						'customeventhandlerscamelcase',
 						'customeventhandlerslowercase',
 						'customeventhandlersnamespaced',
+
+						// custom
+						'customattributes',
+						'directiveattributes',
+						'directivefunctionattributes',
+
+						// namespaced
+						'propattributes',
+						'attrattributes',
+						'boolattributes',
+						'onattributes',
 					],
 				},
 			},
 		},
 	},
 	{
-		// SOLID MAIN
+		// SOLID MINOR
 		file: 'https://raw.githubusercontent.com/titoBouzout/dom-expressions/refs/heads/minor-types-update-0105/packages/dom-expressions/src/jsx.d.ts',
 		name: 'Solid Minor',
 		url: 'https://www.solidjs.com/',
@@ -117,24 +141,48 @@ export const libs = [
 			},
 			keys: {
 				htmlelement: {
-					values: ['htmlattributes'],
+					/* HTMLElement interface */
+					values: [
+						'htmlattributes',
+						'customeventhandlerscamelcase',
+						'customeventhandlerslowercase',
+						'customeventhandlersnamespaced',
+					],
 					skip: ['ariaattributes', 'domattributes'],
 				},
 				svgelement: {
+					/* SVGElement interface */
 					values: ['coresvgattributes'],
 					skip: ['ariaattributes', 'domattributes'],
 				},
 				mathelement: {
+					/* MathMLElement interface */
 					values: ['mathmlattributes'],
-					skip: ['htmlattributes'],
+					skip: ['htmlattributes', 'domattributes'],
 				},
 				element: {
+					/* Element interface */
 					values: [
 						'ariaattributes',
+						'domattributes',
 						'elementeventmap',
+					],
+					skip: [
+						// htmlelement events
 						'customeventhandlerscamelcase',
 						'customeventhandlerslowercase',
 						'customeventhandlersnamespaced',
+
+						// custom
+						'customattributes',
+						'directiveattributes',
+						'directivefunctionattributes',
+
+						// namespaced
+						'propattributes',
+						'attrattributes',
+						'boolattributes',
+						'onattributes',
 					],
 				},
 			},
@@ -182,24 +230,48 @@ export const libs = [
 			},
 			keys: {
 				htmlelement: {
-					values: ['htmlattributes'],
+					/* HTMLElement interface */
+					values: [
+						'htmlattributes',
+						'customeventhandlerscamelcase',
+						'customeventhandlerslowercase',
+						'customeventhandlersnamespaced',
+					],
 					skip: ['ariaattributes', 'domattributes'],
 				},
 				svgelement: {
+					/* SVGElement interface */
 					values: ['coresvgattributes'],
 					skip: ['ariaattributes', 'domattributes'],
 				},
 				mathelement: {
+					/* MathMLElement interface */
 					values: ['mathmlattributes'],
-					skip: ['htmlattributes'],
+					skip: ['htmlattributes', 'domattributes'],
 				},
 				element: {
+					/* Element interface */
 					values: [
 						'ariaattributes',
+						'domattributes',
 						'elementeventmap',
+					],
+					skip: [
+						// htmlelement events
 						'customeventhandlerscamelcase',
 						'customeventhandlerslowercase',
 						'customeventhandlersnamespaced',
+
+						// custom
+						'customattributes',
+						'directiveattributes',
+						'directivefunctionattributes',
+
+						// namespaced
+						'propattributes',
+						'attrattributes',
+						'boolattributes',
+						'onattributes',
 					],
 				},
 			},
@@ -262,11 +334,11 @@ export const libs = [
 			},
 			keys: {
 				htmlelement: {
-					values: ['voidhtmlattributes'],
+					values: [],
 					skip: [],
 				},
 				svgelement: {
-					values: ['svgattributes'],
+					values: [],
 					skip: [],
 				},
 				mathelement: {
@@ -274,7 +346,7 @@ export const libs = [
 					skip: [],
 				},
 				element: {
-					values: ['domattributes', 'ariaattributes'],
+					values: ['ariaattributes'],
 				},
 			},
 		},
@@ -376,15 +448,15 @@ export const libs = [
 				},
 				svgelement: {
 					values: ['svgattributes'],
-					skip: [],
+					skip: ['htmlattributes'],
 				},
 				mathelement: {
 					values: ['mathmlattributes'],
-					skip: [],
+					skip: ['htmlattributes'],
 				},
 				element: {
-					values: ['domattributes', 'ariaattributes'],
-					skip: ['preactdomattributes'],
+					values: ['ariaattributes'],
+					skip: [],
 				},
 			},
 		},
