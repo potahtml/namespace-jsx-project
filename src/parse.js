@@ -1,7 +1,6 @@
 import {
 	copy,
 	entries,
-	fetchCached,
 	prettier,
 	read,
 	uniqueTypes,
@@ -12,7 +11,15 @@ import oxc from 'oxc-parser'
 /** This is used to parse framework interfaces */
 
 export async function parseFromURL(file, name, map = {}) {
-	const text = await fetch(file).then(v => v.text())
+	let text = await fetch(file).then(v => v.text())
+	if (text === '') {
+		// try again
+		text = await fetch(file).then(v => v.text())
+		if (text === '') {
+			console.log('received empty file from url', file)
+			process.exit()
+		}
+	}
 	file = './node_modules/.cache/' + name + '.d.ts'
 	write(file, text)
 	return parse(file, name, map)
