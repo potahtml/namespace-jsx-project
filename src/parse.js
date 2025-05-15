@@ -12,10 +12,7 @@ import oxc from 'oxc-parser'
 /** This is used to parse framework interfaces */
 
 export async function parseFromURL(file, name, map = {}) {
-	// TODO
-	const text = await fetchCached(file)
-
-	// const text = await fetch(file).then(v => v.text())
+	const text = await fetch(file).then(v => v.text())
 	file = './node_modules/.cache/' + name + '.d.ts'
 	write(file, text)
 	return parse(file, name, map)

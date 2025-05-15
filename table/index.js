@@ -46,6 +46,7 @@ function xElements(props) {
 function xElement(props) {
   const element = props.element
   const attrprops = Object.values(element.keys)
+  // sort by priority
   const keys = []
   for (const key of attrprops) {
     if (!key.deprecated && !key.warn && !key.danger) {

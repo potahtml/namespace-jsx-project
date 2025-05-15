@@ -107,20 +107,11 @@ idea!
 
 ## TODO
 
-- add global attributes
-- somehow try to track if each element has its own special event
-  handlers added
 - add some sort of log of what changed, maybe comparing old data.json
   with new data.json
-- uncomment forever caching of fraemwork data
-- make a features sectio in readme
 - copy events from onevent to on:event
-- fix the html
-- add rediect to fixed html
 - fix all the urls
 - reinclude events?
-- double check if follows the hierarchy
-- add section for Element,svgelement, htmlelement, mathelement
 
 ## Related
 
