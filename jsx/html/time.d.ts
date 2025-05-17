@@ -5,14 +5,6 @@ interface TimeHTMLAttributes<T> extends HTMLAttributes<T> {
 	dateTime?: string
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface TimeHTMLAttributes<T> extends HTMLAttributes<T> {
-	datetime?: string
-
-	/** @deprecated Use lowercase attributes */
-	dateTime?: string
-}
-
 // Solid Next - https://www.solidjs.com/
 interface TimeHTMLAttributes<T> extends HTMLAttributes<T> {
 	datetime?: string | false

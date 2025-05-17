@@ -9,17 +9,6 @@ interface FeFuncSVGAttributes<T> extends CoreSVGAttributes<T> {
 	type?: 'identity' | 'table' | 'discrete' | 'linear' | 'gamma'
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface FeFuncSVGAttributes<T> extends CoreSVGAttributes<T> {
-	amplitude?: number | string
-	exponent?: number | string
-	intercept?: number | string
-	offset?: number | string
-	slope?: number | string
-	tableValues?: string
-	type?: 'identity' | 'table' | 'discrete' | 'linear' | 'gamma'
-}
-
 // Solid Next - https://www.solidjs.com/
 interface FeFuncSVGAttributes<T> extends CoreSVGAttributes<T> {
 	amplitude?: number | string | false

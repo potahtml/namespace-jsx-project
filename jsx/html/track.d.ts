@@ -11,20 +11,6 @@ interface TrackHTMLAttributes<T> extends HTMLAttributes<T> {
 	mediagroup?: string
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface TrackHTMLAttributes<T> extends HTMLAttributes<T> {
-	default?: '' | boolean
-	kind?: 'alternative' | 'descriptions' | 'main' | 'main-desc' | 'translation' | 'commentary' | 'subtitles' | 'captions' | 'chapters' | 'metadata'
-	label?: string
-	src?: string
-	srclang?: string
-
-	/** @deprecated Use lowercase attributes */
-	mediaGroup?: string
-	/** @deprecated */
-	mediagroup?: string
-}
-
 // Solid Next - https://www.solidjs.com/
 interface TrackHTMLAttributes<T> extends HTMLAttributes<T> {
 	default?: true | false | '' | false

@@ -16,24 +16,6 @@ interface ColHTMLAttributes<T> extends HTMLAttributes<T> {
 	width?: number | string
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface ColHTMLAttributes<T> extends HTMLAttributes<T> {
-	span?: number | string
-
-	/** @deprecated */
-	align?: 'left' | 'center' | 'right' | 'justify' | 'char'
-	/** @deprecated */
-	bgcolor?: string
-	/** @deprecated */
-	char?: string
-	/** @deprecated */
-	charoff?: string
-	/** @deprecated */
-	valign?: 'baseline' | 'bottom' | 'middle' | 'top'
-	/** @deprecated */
-	width?: number | string
-}
-
 // Solid Next - https://www.solidjs.com/
 interface ColHTMLAttributes<T> extends HTMLAttributes<T> {
 	span?: number | string | false

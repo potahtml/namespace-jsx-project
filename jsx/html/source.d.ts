@@ -9,17 +9,6 @@ interface SourceHTMLAttributes<T> extends HTMLAttributes<T> {
 	width?: number | string
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface SourceHTMLAttributes<T> extends HTMLAttributes<T> {
-	height?: number | string
-	media?: string
-	sizes?: string
-	src?: string
-	srcset?: string
-	type?: string
-	width?: number | string
-}
-
 // Solid Next - https://www.solidjs.com/
 interface SourceHTMLAttributes<T> extends HTMLAttributes<T> {
 	height?: number | string | false

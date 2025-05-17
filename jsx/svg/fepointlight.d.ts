@@ -7,15 +7,6 @@ interface FePointLightSVGAttributes<T> extends LightSourceElementSVGAttributes<T
 
 interface LightSourceElementSVGAttributes<T> extends CoreSVGAttributes<T> {}
 
-// Solid Minor - https://www.solidjs.com/
-interface FePointLightSVGAttributes<T> extends LightSourceElementSVGAttributes<T> {
-	x?: number | string
-	y?: number | string
-	z?: number | string
-}
-
-interface LightSourceElementSVGAttributes<T> extends CoreSVGAttributes<T> {}
-
 // Solid Next - https://www.solidjs.com/
 interface FePointLightSVGAttributes<T> extends LightSourceElementSVGAttributes<T> {
 	x?: number | string | false

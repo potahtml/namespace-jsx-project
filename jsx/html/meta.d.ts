@@ -10,18 +10,6 @@ interface MetaHTMLAttributes<T> extends HTMLAttributes<T> {
 	scheme?: string
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface MetaHTMLAttributes<T> extends HTMLAttributes<T> {
-	'http-equiv'?: 'content-security-policy' | 'content-type' | 'default-style' | 'x-ua-compatible' | 'refresh'
-	charset?: string
-	content?: string
-	media?: string
-	name?: string
-
-	/** @deprecated */
-	scheme?: string
-}
-
 // Solid Next - https://www.solidjs.com/
 interface MetaHTMLAttributes<T> extends HTMLAttributes<T> {
 	'http-equiv'?: 'content-security-policy' | 'content-type' | 'default-style' | 'x-ua-compatible' | 'refresh' | false

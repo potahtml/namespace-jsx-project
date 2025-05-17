@@ -8,19 +8,6 @@ interface TemplateHTMLAttributes<T> extends HTMLAttributes<T> {
 	shadowrootserializable?: boolean
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface TemplateHTMLAttributes<T> extends HTMLAttributes<T> {
-	shadowrootclonable?: '' | boolean
-	shadowrootdelegatesfocus?: '' | boolean
-	shadowrootmode?: 'open' | 'closed'
-
-	/** @experimental */
-	shadowrootserializable?: '' | boolean
-
-	/** @deprecated */
-	content?: DocumentFragment
-}
-
 // Solid Next - https://www.solidjs.com/
 interface TemplateHTMLAttributes<T> extends HTMLAttributes<T> {
 	shadowrootclonable?: true | false | '' | false

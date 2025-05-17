@@ -6,14 +6,6 @@ interface OptionHTMLAttributes<T> extends HTMLAttributes<T> {
 	value?: string | string[] | number
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface OptionHTMLAttributes<T> extends HTMLAttributes<T> {
-	disabled?: '' | boolean
-	label?: string
-	selected?: '' | boolean
-	value?: string | string[] | number
-}
-
 // Solid Next - https://www.solidjs.com/
 interface OptionHTMLAttributes<T> extends HTMLAttributes<T> {
 	disabled?: true | false | '' | false

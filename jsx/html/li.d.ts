@@ -6,14 +6,6 @@ interface LiHTMLAttributes<T> extends HTMLAttributes<T> {
 	type?: '1' | 'a' | 'A' | 'i' | 'I'
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface LiHTMLAttributes<T> extends HTMLAttributes<T> {
-	value?: number | string
-
-	/** @deprecated */
-	type?: '1' | 'a' | 'A' | 'i' | 'I'
-}
-
 // Solid Next - https://www.solidjs.com/
 interface LiHTMLAttributes<T> extends HTMLAttributes<T> {
 	value?: number | string | false

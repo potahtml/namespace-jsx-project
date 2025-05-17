@@ -21,31 +21,6 @@ interface FormHTMLAttributes<T> extends HTMLAttributes<T> {
 	accept?: string
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface FormHTMLAttributes<T> extends HTMLAttributes<T> {
-	'accept-charset'?: string
-	action?: string
-	autocomplete?: 'on' | 'off'
-	encoding?: 'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'
-	enctype?: 'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'
-	method?: 'post' | 'get' | 'dialog'
-	name?: string
-	novalidate?: '' | boolean
-	rel?: string
-	target?: '_self' | '_blank' | '_parent' | '_top' | (string & {})
-
-	onFormData?: EventHandlerUnion<T, FormDataEvent>
-	'on:formdata'?: EventHandlerWithOptionsUnion<T, FormDataEvent>
-	/** @deprecated Use camelCase event handlers */
-	onformdata?: EventHandlerUnion<T, FormDataEvent>
-
-	/** @deprecated Use lowercase attributes */
-	noValidate?: boolean
-
-	/** @deprecated */
-	accept?: string
-}
-
 // Solid Next - https://www.solidjs.com/
 interface FormHTMLAttributes<T> extends HTMLAttributes<T> {
 	'accept-charset'?: string | false

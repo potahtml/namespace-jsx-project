@@ -6,14 +6,6 @@ interface MathMLMsElementAttributes<T> extends MathMLAttributes<T> {
 	rquote?: string
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface MathMLMsElementAttributes<T> extends MathMLAttributes<T> {
-	/** @deprecated */
-	lquote?: string
-	/** @deprecated */
-	rquote?: string
-}
-
 // Solid Next - https://www.solidjs.com/
 interface MathMLMsElementAttributes<T> extends MathMLAttributes<T> {
 	/** @deprecated */

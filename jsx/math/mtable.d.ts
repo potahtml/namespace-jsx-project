@@ -22,30 +22,6 @@ interface MathMLMtableElementAttributes<T> extends MathMLAttributes<T> {
 	width?: string
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface MathMLMtableElementAttributes<T> extends MathMLAttributes<T> {
-	/** @non-standard */
-	align?: 'axis' | 'baseline' | 'bottom' | 'center' | 'top'
-	/** @non-standard */
-	columnalign?: 'center' | 'left' | 'right'
-	/** @non-standard */
-	columnlines?: 'dashed' | 'none' | 'solid'
-	/** @non-standard */
-	columnspacing?: string
-	/** @non-standard */
-	frame?: 'dashed' | 'none' | 'solid'
-	/** @non-standard */
-	framespacing?: string
-	/** @non-standard */
-	rowalign?: 'axis' | 'baseline' | 'bottom' | 'center' | 'top'
-	/** @non-standard */
-	rowlines?: 'dashed' | 'none' | 'solid'
-	/** @non-standard */
-	rowspacing?: string
-	/** @non-standard */
-	width?: string
-}
-
 // Solid Next - https://www.solidjs.com/
 interface MathMLMtableElementAttributes<T> extends MathMLAttributes<T> {
 	/** @non-standard */

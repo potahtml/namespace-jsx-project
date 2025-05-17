@@ -3,11 +3,6 @@ interface MathMLMathElementAttributes<T> extends MathMLAttributes<T> {
 	display?: 'block' | 'inline'
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface MathMLMathElementAttributes<T> extends MathMLAttributes<T> {
-	display?: 'block' | 'inline'
-}
-
 // Solid Next - https://www.solidjs.com/
 interface MathMLMathElementAttributes<T> extends MathMLAttributes<T> {
 	display?: 'block' | 'inline' | false

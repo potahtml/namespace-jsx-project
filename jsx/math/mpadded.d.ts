@@ -7,15 +7,6 @@ interface MathMLMpaddedElementAttributes<T> extends MathMLAttributes<T> {
 	width?: string
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface MathMLMpaddedElementAttributes<T> extends MathMLAttributes<T> {
-	depth?: string
-	height?: string
-	lspace?: string
-	voffset?: string
-	width?: string
-}
-
 // Solid Next - https://www.solidjs.com/
 interface MathMLMpaddedElementAttributes<T> extends MathMLAttributes<T> {
 	depth?: string | false

@@ -10,18 +10,6 @@ interface ParamHTMLAttributes<T> extends HTMLAttributes<T> {
 	valuetype?: 'data' | 'ref' | 'object'
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface ParamHTMLAttributes<T> extends HTMLAttributes<T> {
-	/** @deprecated */
-	name?: string
-	/** @deprecated */
-	type?: string
-	/** @deprecated */
-	value?: string | number
-	/** @deprecated */
-	valuetype?: 'data' | 'ref' | 'object'
-}
-
 // Solid Next - https://www.solidjs.com/
 interface ParamHTMLAttributes<T> extends HTMLAttributes<T> {
 	/** @deprecated */

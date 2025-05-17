@@ -37,51 +37,6 @@ interface ElementEventMap<T> {
 	onfullscreenerror?: EventHandlerUnion<T, Event>
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface AudioHTMLAttributes<T> extends MediaHTMLAttributes<T> {}
-interface MediaHTMLAttributes<T> extends HTMLAttributes<T>, ElementEventMap<T> {
-	autoplay?: '' | boolean
-	controls?: '' | boolean
-	controlslist?: 'nodownload' | 'nofullscreen' | 'noplaybackrate' | 'noremoteplayback' | (string & {})
-	crossorigin?: 'anonymous' | 'use-credentials' | ''
-	disableremoteplayback?: '' | boolean
-	loop?: '' | boolean
-	muted?: '' | boolean
-	preload?: 'none' | 'metadata' | 'auto' | ''
-	src?: string
-
-	onEncrypted?: EventHandlerUnion<T, MediaEncryptedEvent>
-	'on:encrypted'?: EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>
-	/** @deprecated Use camelCase event handlers */
-	onencrypted?: EventHandlerUnion<T, MediaEncryptedEvent>
-
-	onWaitingForKey?: EventHandlerUnion<T, Event>
-	'on:waitingforkey'?: EventHandlerWithOptionsUnion<T, Event>
-	/** @deprecated Use camelCase event handlers */
-	onwaitingforkey?: EventHandlerUnion<T, Event>
-
-	/** @deprecated Use lowercase attributes */
-	crossOrigin?: 'anonymous' | 'use-credentials' | ''
-
-	/** @deprecated Use lowercase attributes */
-	mediaGroup?: string
-	/** @deprecated */
-	mediagroup?: string
-}
-
-interface ElementEventMap<T> {
-	onFullscreenChange?: EventHandlerUnion<T, Event>
-	onFullscreenError?: EventHandlerUnion<T, Event>
-
-	'on:fullscreenchange'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:fullscreenerror'?: EventHandlerWithOptionsUnion<T, Event>
-
-	/** @deprecated Use camelCase event handlers */
-	onfullscreenchange?: EventHandlerUnion<T, Event>
-	/** @deprecated Use camelCase event handlers */
-	onfullscreenerror?: EventHandlerUnion<T, Event>
-}
-
 // Solid Next - https://www.solidjs.com/
 interface AudioHTMLAttributes<T> extends MediaHTMLAttributes<T> {}
 interface MediaHTMLAttributes<T> extends HTMLAttributes<T>, ElementEventMap<T> {

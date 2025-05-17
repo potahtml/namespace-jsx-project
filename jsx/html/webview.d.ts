@@ -27,35 +27,6 @@ interface WebViewHTMLAttributes<T> extends HTMLAttributes<T> {
 	guestinstance?: string
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface WebViewHTMLAttributes<T> extends HTMLAttributes<T> {
-	allowpopups?: '' | boolean
-	disableblinkfeatures?: string
-	disablewebsecurity?: '' | boolean
-	enableblinkfeatures?: string
-	httpreferrer?: string
-	nodeintegration?: '' | boolean
-	nodeintegrationinsubframes?: '' | boolean
-	partition?: string
-	plugins?: '' | boolean
-	preload?: string
-	src?: string
-	useragent?: string
-	webpreferences?: string
-
-	// does this exists?
-	allowfullscreen?: '' | boolean
-	autofocus?: '' | boolean
-	autosize?: '' | boolean
-
-	/** @deprecated */
-	blinkfeatures?: string
-	/** @deprecated */
-	disableguestresize?: '' | boolean
-	/** @deprecated */
-	guestinstance?: string
-}
-
 // Solid Next - https://www.solidjs.com/
 interface WebViewHTMLAttributes<T> extends HTMLAttributes<T> {
 	allowpopups?: true | false | '' | false

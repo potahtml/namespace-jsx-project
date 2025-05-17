@@ -4,12 +4,6 @@ interface CaptionHTMLAttributes<T> extends HTMLAttributes<T> {
 	align?: 'left' | 'center' | 'right'
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface CaptionHTMLAttributes<T> extends HTMLAttributes<T> {
-	/** @deprecated */
-	align?: 'left' | 'center' | 'right'
-}
-
 // Solid Next - https://www.solidjs.com/
 interface CaptionHTMLAttributes<T> extends HTMLAttributes<T> {
 	/** @deprecated */

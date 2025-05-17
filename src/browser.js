@@ -70,7 +70,7 @@ export const browserData = async (
 		waitUntil: 'networkidle0',
 	})
 	await page.evaluate(() => window.runFromPuppeteer())
-	await new Promise(resolve => setTimeout(resolve, 2000))
+	// await new Promise(resolve => setTimeout(resolve, 2000))
 	const result = await page.evaluate(() => document.body.textContent)
 
 	navigatorInstance.close()

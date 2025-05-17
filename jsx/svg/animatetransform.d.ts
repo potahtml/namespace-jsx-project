@@ -47,55 +47,6 @@ interface ConditionalProcessingSVGAttributes {
 	systemLanguage?: string
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface AnimateTransformSVGAttributes<T> extends AnimationElementSVGAttributes<T>, AnimationAttributeTargetSVGAttributes, AnimationTimingSVGAttributes, AnimationValueSVGAttributes, AnimationAdditionSVGAttributes {
-	type?: 'translate' | 'scale' | 'rotate' | 'skewX' | 'skewY'
-}
-
-interface AnimationElementSVGAttributes<T> extends CoreSVGAttributes<T>, ExternalResourceSVGAttributes, ConditionalProcessingSVGAttributes {}
-interface AnimationAttributeTargetSVGAttributes {
-	attributeName?: string
-	attributeType?: 'CSS' | 'XML' | 'auto'
-}
-
-interface AnimationTimingSVGAttributes {
-	begin?: string
-	dur?: string
-	end?: string
-	fill?: 'freeze' | 'remove'
-	max?: string
-	min?: string
-	repeatCount?: number | 'indefinite'
-	repeatDur?: string
-	restart?: 'always' | 'whenNotActive' | 'never'
-}
-
-interface AnimationValueSVGAttributes {
-	by?: number | string
-	calcMode?: 'discrete' | 'linear' | 'paced' | 'spline'
-	from?: number | string
-	keySplines?: string
-	keyTimes?: string
-	to?: number | string
-	values?: string
-}
-
-interface AnimationAdditionSVGAttributes {
-	accumulate?: 'none' | 'sum'
-	additive?: 'replace' | 'sum'
-	attributeName?: string
-}
-
-interface ExternalResourceSVGAttributes {
-	externalResourcesRequired?: 'true' | 'false'
-}
-
-interface ConditionalProcessingSVGAttributes {
-	requiredExtensions?: string
-	requiredFeatures?: string
-	systemLanguage?: string
-}
-
 // Solid Next - https://www.solidjs.com/
 interface AnimateTransformSVGAttributes<T> extends AnimationElementSVGAttributes<T>, AnimationAttributeTargetSVGAttributes, AnimationTimingSVGAttributes, AnimationValueSVGAttributes, AnimationAdditionSVGAttributes {
 	type?: 'translate' | 'scale' | 'rotate' | 'skewX' | 'skewY' | false

@@ -16,24 +16,6 @@ interface KeygenHTMLAttributes<T> extends HTMLAttributes<T> {
 	name?: string
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface KeygenHTMLAttributes<T> extends HTMLAttributes<T> {
-	/** @deprecated */
-	autofocus?: '' | boolean
-	/** @deprecated */
-	challenge?: string
-	/** @deprecated */
-	disabled?: '' | boolean
-	/** @deprecated */
-	form?: string
-	/** @deprecated */
-	keyparams?: string
-	/** @deprecated */
-	keytype?: string
-	/** @deprecated */
-	name?: string
-}
-
 // Solid Next - https://www.solidjs.com/
 interface KeygenHTMLAttributes<T> extends HTMLAttributes<T> {
 	/** @deprecated */

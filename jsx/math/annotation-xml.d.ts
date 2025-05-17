@@ -6,14 +6,6 @@ interface MathMLAnnotationXmlElementAttributes<T> extends MathMLAttributes<T> {
 	src?: string
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface MathMLAnnotationXmlElementAttributes<T> extends MathMLAttributes<T> {
-	encoding?: string
-
-	/** @deprecated */
-	src?: string
-}
-
 // Solid Next - https://www.solidjs.com/
 interface MathMLAnnotationXmlElementAttributes<T> extends MathMLAttributes<T> {
 	encoding?: string | false

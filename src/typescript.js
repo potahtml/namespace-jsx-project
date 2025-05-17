@@ -22,9 +22,52 @@ export const tsTagNames = {
 		: [],
 }
 
-export const fixedTsEventsInterfaces = {
-	command: 'CommandEvent',
-	input: 'InputEvent',
-	/* non standard/deprecated **/
-	dragexit: 'DragEvent',
+// typescript events interfaces map
+
+export const tsEventsInterfaces = {}
+
+for (const id of [
+	'windoweventmap',
+	'windoweventhandlerseventmap',
+	'globaleventhandlerseventmap',
+	'documenteventmap',
+]) {
+	for (const prop of ts[id].properties) {
+		tsEventsInterfaces['on' + prop.name.toLowerCase()] = prop.source
+	}
 }
+
+for (const id in ts) {
+	if (id.includes('elementeventmap')) {
+		for (const prop of ts[id].properties) {
+			tsEventsInterfaces['on' + prop.name.toLowerCase()] = prop.source
+		}
+	}
+}
+
+// fix wrong events
+
+tsEventsInterfaces.oncommand = 'CommandEvent'
+tsEventsInterfaces.oninput = 'InputEvent'
+tsEventsInterfaces.ondragexit = 'DragEvent'
+
+// add missing events
+
+tsEventsInterfaces.onbeforematch =
+	tsEventsInterfaces.onbeforematch || 'Event'
+
+tsEventsInterfaces.onbeforexrselect =
+	tsEventsInterfaces.onbeforexrselect || 'Event'
+
+tsEventsInterfaces.oncontentvisibilityautostatechange =
+	tsEventsInterfaces.oncontentvisibilityautostatechange ||
+	'ContentVisibilityAutoStateChangeEvent'
+
+tsEventsInterfaces.onpointerrawupdate =
+	tsEventsInterfaces.onpointerrawupdate || 'PointerEvent'
+
+tsEventsInterfaces.onscrollsnapchange =
+	tsEventsInterfaces.onscrollsnapchange || 'SnapEvent'
+
+tsEventsInterfaces.onscrollsnapchanging =
+	tsEventsInterfaces.onscrollsnapchanging || 'SnapEvent'

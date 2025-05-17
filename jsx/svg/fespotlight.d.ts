@@ -12,20 +12,6 @@ interface FeSpotLightSVGAttributes<T> extends LightSourceElementSVGAttributes<T>
 
 interface LightSourceElementSVGAttributes<T> extends CoreSVGAttributes<T> {}
 
-// Solid Minor - https://www.solidjs.com/
-interface FeSpotLightSVGAttributes<T> extends LightSourceElementSVGAttributes<T> {
-	limitingConeAngle?: number | string
-	pointsAtX?: number | string
-	pointsAtY?: number | string
-	pointsAtZ?: number | string
-	specularExponent?: number | string
-	x?: number | string
-	y?: number | string
-	z?: number | string
-}
-
-interface LightSourceElementSVGAttributes<T> extends CoreSVGAttributes<T> {}
-
 // Solid Next - https://www.solidjs.com/
 interface FeSpotLightSVGAttributes<T> extends LightSourceElementSVGAttributes<T> {
 	limitingConeAngle?: number | string | false

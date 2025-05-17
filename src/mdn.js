@@ -113,17 +113,33 @@ export function InterfaceURL(ns, tagName, tagInterfaceName) {
 		tagInterfaceName
 	)
 }
-export function KeyURL(ns, tagName, tagInterfaceName, key) {
+export function KeyURL(tagName, keyInterfaceName, key) {
+	if (!keyInterfaceName) {
+		return (
+			'https://developer.mozilla.org/en-US/search?q=' +
+			encodeURIComponent(key)
+		)
+	}
 	if (tagName === 'webview') {
 		return (
 			'https://www.electronjs.org/docs/latest/api/webview-tag#' + key
 		)
 	}
+	if (key.startsWith('on')) {
+		key = key.replace(/^on:/, '').replace(/^on/, '')
+
+		return (
+			'https://developer.mozilla.org/en-US/docs/Web/API/' +
+			keyInterfaceName +
+			'#' +
+			key.toLowerCase()
+		)
+	}
 	return (
 		'https://developer.mozilla.org/en-US/docs/Web/API/' +
-		tagInterfaceName +
+		keyInterfaceName +
 		'#' +
-		tagInterfaceName.toLowerCase() +
+		keyInterfaceName.toLowerCase() +
 		'.' +
 		key.toLowerCase()
 	)

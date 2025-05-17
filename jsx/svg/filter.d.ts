@@ -18,26 +18,6 @@ interface StylableSVGAttributes {
 	style?: CSSProperties | string
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface FilterSVGAttributes<T> extends CoreSVGAttributes<T>, ExternalResourceSVGAttributes, StylableSVGAttributes {
-	filterRes?: number | string
-	filterUnits?: 'userSpaceOnUse' | 'objectBoundingBox'
-	height?: number | string
-	primitiveUnits?: 'userSpaceOnUse' | 'objectBoundingBox'
-	width?: number | string
-	x?: number | string
-	y?: number | string
-}
-
-interface ExternalResourceSVGAttributes {
-	externalResourcesRequired?: 'true' | 'false'
-}
-
-interface StylableSVGAttributes {
-	class?: string
-	style?: CSSProperties | string
-}
-
 // Solid Next - https://www.solidjs.com/
 interface FilterSVGAttributes<T> extends CoreSVGAttributes<T>, ExternalResourceSVGAttributes, StylableSVGAttributes {
 	filterRes?: number | string | false

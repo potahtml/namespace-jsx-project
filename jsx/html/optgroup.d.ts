@@ -4,12 +4,6 @@ interface OptgroupHTMLAttributes<T> extends HTMLAttributes<T> {
 	label?: string
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface OptgroupHTMLAttributes<T> extends HTMLAttributes<T> {
-	disabled?: '' | boolean
-	label?: string
-}
-
 // Solid Next - https://www.solidjs.com/
 interface OptgroupHTMLAttributes<T> extends HTMLAttributes<T> {
 	disabled?: true | false | '' | false

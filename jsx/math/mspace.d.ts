@@ -5,13 +5,6 @@ interface MathMLMspaceElementAttributes<T> extends MathMLAttributes<T> {
 	width?: string
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface MathMLMspaceElementAttributes<T> extends MathMLAttributes<T> {
-	depth?: string
-	height?: string
-	width?: string
-}
-
 // Solid Next - https://www.solidjs.com/
 interface MathMLMspaceElementAttributes<T> extends MathMLAttributes<T> {
 	depth?: string | false

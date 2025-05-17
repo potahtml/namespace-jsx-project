@@ -28,43 +28,6 @@ interface ButtonHTMLAttributes<T> extends HTMLAttributes<T> {
 	popoverTargetAction?: 'hide' | 'show' | 'toggle'
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface ButtonHTMLAttributes<T> extends HTMLAttributes<T> {
-	autofocus?: '' | boolean
-	disabled?: '' | boolean
-	form?: string
-	formaction?: string
-	formenctype?: 'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'
-	formmethod?: 'post' | 'get' | 'dialog'
-	formnovalidate?: '' | boolean
-	formtarget?: '_self' | '_blank' | '_parent' | '_top' | (string & {})
-	name?: string
-	popovertarget?: string
-	popovertargetaction?: 'hide' | 'show' | 'toggle'
-	type?: 'submit' | 'reset' | 'button' | 'menu'
-	value?: string
-
-	/** @experimental */
-	command?: 'show-modal' | 'close' | 'show-popover' | 'hide-popover' | 'toggle-popover' | (string & {})
-	/** @experimental */
-	commandfor?: string
-
-	/** @deprecated Use lowercase attributes */
-	formAction?: string
-	/** @deprecated Use lowercase attributes */
-	formEnctype?: 'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'
-	/** @deprecated Use lowercase attributes */
-	formMethod?: 'post' | 'get' | 'dialog'
-	/** @deprecated Use lowercase attributes */
-	formNoValidate?: boolean
-	/** @deprecated Use lowercase attributes */
-	formTarget?: string
-	/** @deprecated Use lowercase attributes */
-	popoverTarget?: string
-	/** @deprecated Use lowercase attributes */
-	popoverTargetAction?: 'hide' | 'show' | 'toggle'
-}
-
 // Solid Next - https://www.solidjs.com/
 interface ButtonHTMLAttributes<T> extends HTMLAttributes<T> {
 	autofocus?: true | false | '' | false

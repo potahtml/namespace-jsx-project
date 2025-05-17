@@ -27,38 +27,6 @@ interface ScriptHTMLAttributes<T> extends HTMLAttributes<T> {
 	language?: string
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface ScriptHTMLAttributes<T> extends HTMLAttributes<T> {
-	async?: '' | boolean
-	blocking?: 'render'
-	crossorigin?: 'anonymous' | 'use-credentials' | ''
-	defer?: '' | boolean
-	fetchpriority?: 'high' | 'low' | 'auto'
-	integrity?: string
-	nomodule?: '' | boolean
-	nonce?: string
-	referrerpolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
-	src?: string
-	type?: 'importmap' | 'module' | 'speculationrules' | (string & {})
-
-	/** @experimental */
-	attributionsrc?: string
-
-	/** @deprecated Use lowercase attributes */
-	crossOrigin?: 'anonymous' | 'use-credentials' | ''
-	/** @deprecated Use lowercase attributes */
-	noModule?: boolean
-	/** @deprecated Use lowercase attributes */
-	referrerPolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
-
-	/** @deprecated */
-	charset?: string
-	/** @deprecated */
-	event?: string
-	/** @deprecated */
-	language?: string
-}
-
 // Solid Next - https://www.solidjs.com/
 interface ScriptHTMLAttributes<T> extends HTMLAttributes<T> {
 	async?: true | false | '' | false

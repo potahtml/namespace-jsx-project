@@ -3,12 +3,6 @@ interface LabelHTMLAttributes<T> extends HTMLAttributes<T> {
 	for?: string
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface LabelHTMLAttributes<T> extends HTMLAttributes<T> {
-	for?: string
-	form?: string
-}
-
 // Solid Next - https://www.solidjs.com/
 interface LabelHTMLAttributes<T> extends HTMLAttributes<T> {
 	for?: string | false

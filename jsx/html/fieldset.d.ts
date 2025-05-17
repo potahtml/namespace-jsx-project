@@ -5,13 +5,6 @@ interface FieldsetHTMLAttributes<T> extends HTMLAttributes<T> {
 	name?: string
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface FieldsetHTMLAttributes<T> extends HTMLAttributes<T> {
-	disabled?: '' | boolean
-	form?: string
-	name?: string
-}
-
 // Solid Next - https://www.solidjs.com/
 interface FieldsetHTMLAttributes<T> extends HTMLAttributes<T> {
 	disabled?: true | false | '' | false

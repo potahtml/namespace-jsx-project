@@ -1,10 +1,21 @@
 import { render, signal } from 'pota'
 import { html } from 'pota/html'
 
+const columns = [
+  'Chrome',
+  'Firefox',
+  'Pota',
+  'Solid Main',
+  'Solid Next',
+  'Voby',
+  'Vue',
+  'Preact',
+  'React',
+]
+
 function xElements(props) {
   const namespace = props.namespace
   const elements = props.elements
-  const columns = props.columns
 
   return html`
     <details open="">
@@ -26,18 +37,10 @@ function xElements(props) {
       </nav>
 
       <For each="${elements.filter(x => !x.deprecated)}"
-        >${element =>
-          html` <xElement
-            element="${element}"
-            columns="${columns}"
-          />`}
+        >${element => html` <xElement element="${element}" />`}
       </For>
       <For each="${elements.filter(x => x.deprecated)}"
-        >${element =>
-          html` <xElement
-            element="${element}"
-            columns="${columns}"
-          />`}
+        >${element => html` <xElement element="${element}" />`}
       </For>
     </details>
   `
@@ -69,8 +72,6 @@ function xElement(props) {
     }
   }
 
-  const columns = props.columns
-
   return html` <section
     id="${element.tagInterfaceName + '.' + element.name}"
     class="table"
@@ -99,6 +100,7 @@ function xElement(props) {
           <tr>
             <th>key</th>
             <th>kind</th>
+            <th>interface</th>
             <For each="${columns}"
               >${value => html`<th data-col="${value}">${value}</th>`}
             </For>
@@ -107,11 +109,7 @@ function xElement(props) {
       </thead>
       <tbody>
         <For each="${keys}"
-          >${value =>
-            html`<xElementKey
-              value="${value}"
-              columns="${columns}"
-            />`}
+          >${value => html`<xElementKey value="${value}"  />`}
         </For>
       </tbody>
     </table>
@@ -151,7 +149,6 @@ function xElement(props) {
 
 function xElementKey(props) {
   const value = props.value
-  const columns = props.columns
 
   const kind = [
     value.prop && 'prop',
@@ -183,6 +180,7 @@ function xElementKey(props) {
       ${nonstandard} ${danger}
     </td>
     <td nowrap="">${kind}</td>
+    <td nowrap="">${value.keyInterfaceName}${value.eventInterface && ' ' + value.eventInterface}</td>
     <For each="${columns}"
       >${col =>
         html`<td data-col="${col}">
@@ -222,32 +220,28 @@ function App() {
             <xElements
               namespace="${namespace}"
               elements="${Object.values(data().elements[namespace])}"
-              columns="${data().columns}"
             />
           `}
         </For>
         <For
-          each="${['element', 'htmlelement', 'mathelement', 'svgelement']}"
+          each="${['Element', 'HTMLElement', 'MathMLElement', 'SVGElement']}"
         >
             ${namespace => html`
                 <xInterfaces
                   namespace="${namespace}"
                   items="${Object.values(data().keys[namespace].keys)}"
-                  columns="${data().columns}"
                   showAria="${false}"
                   showEvents="${false}"
                 />
                <xInterfaces
                   namespace="${namespace}"
                   items="${Object.values(data().keys[namespace].keys)}"
-                  columns="${data().columns}"
                   showAria="${true}"
                   showEvents="${false}"
                 />
                <xInterfaces
                   namespace="${namespace}"
                   items="${Object.values(data().keys[namespace].keys)}"
-                  columns="${data().columns}"
                   showAria="${false}"
                   showEvents="${true}"
                 />
@@ -261,8 +255,6 @@ function App() {
 
 function xInterfaces(props) {
   const namespace = props.namespace
-
-  const columns = props.columns
 
   const showAria = props.showAria
   const showEvents = props.showEvents
@@ -280,13 +272,7 @@ function xInterfaces(props) {
   if (!items.length) return null
 
   const namespaceTitle = [
-    namespace === 'htmlelement'
-      ? 'HTMLElement'
-      : namespace === 'svgelement'
-        ? 'SVGElement'
-        : namespace === 'mathelement'
-          ? 'MathMLElement'
-          : 'Element',
+    namespace,
     'Interface',
     showAria && 'Aria',
     showEvents && 'Events',
@@ -296,7 +282,7 @@ function xInterfaces(props) {
 
   return html`
         <details open="" id="${namespaceTitle.replace(/ /g, '-')}">
-            <summary><h2>${namespaceTitle}</h2></summary>
+            <summary><h2><a href="#${namespaceTitle.replace(/ /g, '-')}">#</a> ${namespaceTitle}</h2></summary>
             <section class="table">
                 <table>
                     <caption>
@@ -306,6 +292,7 @@ function xInterfaces(props) {
                       <tr>
                         <th>key</th>
                         <th>kind</th>
+                        <th>interface</th>
                         <For each="${columns}"
                           >${value => html`<th data-col="${value}">${value}</th>`}
                         </For>
@@ -314,17 +301,11 @@ function xInterfaces(props) {
                     <tbody>
                       <For each="${items.filter(x => !x.deprecated)}"
                         >${value =>
-                          html` <xElementKey
-                            value="${value}"
-                            columns="${columns}"
-                          />`}
+                          html` <xElementKey value="${value}" />`}
                       </For>
                       <For each="${items.filter(x => x.deprecated)}"
                         >${value =>
-                          html` <xElementKey
-                            value="${value}"
-                            columns="${columns}"
-                          />`}
+                          html` <xElementKey value="${value}" />`}
                       </For>
                     </tbody>
                 </table>
@@ -342,19 +323,35 @@ html.define({
 
 render(App, document.querySelector('.content'), { clear: true })
 
-function KeyURL(tagName, inter, attr) {
+function KeyURL(tagName, keyInterfaceName, key) {
+  if (!keyInterfaceName) {
+    return (
+      'https://developer.mozilla.org/en-US/search?q=' +
+      encodeURIComponent(key)
+    )
+  }
   if (tagName === 'webview') {
     return (
-      'https://www.electronjs.org/docs/latest/api/webview-tag#' + attr
+      'https://www.electronjs.org/docs/latest/api/webview-tag#' + key
+    )
+  }
+  if (key.startsWith('on')) {
+    key = key.replace(/^on:/, '').replace(/^on/, '')
+
+    return (
+      'https://developer.mozilla.org/en-US/docs/Web/API/' +
+      keyInterfaceName +
+      '#' +
+      key.toLowerCase()
     )
   }
   return (
     'https://developer.mozilla.org/en-US/docs/Web/API/' +
-    inter +
+    keyInterfaceName +
     '#' +
-    inter.toLowerCase() +
+    keyInterfaceName.toLowerCase() +
     '.' +
-    attr.toLowerCase()
+    key.toLowerCase()
   )
 }
 

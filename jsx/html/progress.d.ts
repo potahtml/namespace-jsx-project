@@ -4,12 +4,6 @@ interface ProgressHTMLAttributes<T> extends HTMLAttributes<T> {
 	value?: string | string[] | number
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface ProgressHTMLAttributes<T> extends HTMLAttributes<T> {
-	max?: number | string
-	value?: string | string[] | number
-}
-
 // Solid Next - https://www.solidjs.com/
 interface ProgressHTMLAttributes<T> extends HTMLAttributes<T> {
 	max?: number | string | false

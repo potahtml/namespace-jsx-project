@@ -11,19 +11,6 @@ interface SelectHTMLAttributes<T> extends HTMLAttributes<T> {
 	value?: string | string[] | number
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface SelectHTMLAttributes<T> extends HTMLAttributes<T> {
-	autocomplete?: string
-	autofocus?: '' | boolean
-	disabled?: '' | boolean
-	form?: string
-	multiple?: '' | boolean
-	name?: string
-	required?: '' | boolean
-	size?: number | string
-	value?: string | string[] | number
-}
-
 // Solid Next - https://www.solidjs.com/
 interface SelectHTMLAttributes<T> extends HTMLAttributes<T> {
 	autocomplete?: string | false

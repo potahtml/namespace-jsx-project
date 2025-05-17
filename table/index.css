@@ -115,7 +115,6 @@ body[data-table-fixed='yes'] table td[nowrap] {
 }
 
 body[data-solidmain='false'] [data-col='Solid Main'],
-body[data-solidminor='false'] [data-col='Solid Minor'],
 body[data-solidnext='false'] [data-col='Solid Next'],
 body[data-pota='false'] [data-col='Pota'],
 body[data-voby='false'] [data-col='Voby'],

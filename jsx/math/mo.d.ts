@@ -16,24 +16,6 @@ interface MathMLMoElementAttributes<T> extends MathMLAttributes<T> {
 	accent?: boolean
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface MathMLMoElementAttributes<T> extends MathMLAttributes<T> {
-	fence?: '' | boolean
-	form?: 'prefix' | 'infix' | 'postfix'
-	largeop?: '' | boolean
-	lspace?: string
-	maxsize?: string
-	minsize?: string
-	movablelimits?: '' | boolean
-	rspace?: string
-	separator?: '' | boolean
-	stretchy?: '' | boolean
-	symmetric?: '' | boolean
-
-	/** @non-standard */
-	accent?: '' | boolean
-}
-
 // Solid Next - https://www.solidjs.com/
 interface MathMLMoElementAttributes<T> extends MathMLAttributes<T> {
 	fence?: true | false | '' | false

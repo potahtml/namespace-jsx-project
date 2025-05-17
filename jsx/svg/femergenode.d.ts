@@ -4,12 +4,6 @@ interface SingleInputFilterSVGAttributes {
 	in?: string
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface FeMergeNodeSVGAttributes<T> extends CoreSVGAttributes<T>, SingleInputFilterSVGAttributes {}
-interface SingleInputFilterSVGAttributes {
-	in?: string
-}
-
 // Solid Next - https://www.solidjs.com/
 interface FeMergeNodeSVGAttributes<T> extends CoreSVGAttributes<T>, SingleInputFilterSVGAttributes {}
 interface SingleInputFilterSVGAttributes {

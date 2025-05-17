@@ -4,12 +4,6 @@ interface MathMLMencloseElementAttributes<T> extends MathMLAttributes<T> {
 	notation?: string
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface MathMLMencloseElementAttributes<T> extends MathMLAttributes<T> {
-	/** @non-standard */
-	notation?: string
-}
-
 // Solid Next - https://www.solidjs.com/
 interface MathMLMencloseElementAttributes<T> extends MathMLAttributes<T> {
 	/** @non-standard */

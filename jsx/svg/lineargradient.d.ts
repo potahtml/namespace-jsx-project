@@ -22,30 +22,6 @@ interface StylableSVGAttributes {
 	style?: CSSProperties | string
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface LinearGradientSVGAttributes<T> extends GradientElementSVGAttributes<T> {
-	x1?: number | string
-	x2?: number | string
-	y1?: number | string
-	y2?: number | string
-}
-
-interface GradientElementSVGAttributes<T> extends CoreSVGAttributes<T>, ExternalResourceSVGAttributes, StylableSVGAttributes {
-	gradientTransform?: string
-	gradientUnits?: 'userSpaceOnUse' | 'objectBoundingBox'
-	href?: string
-	spreadMethod?: 'pad' | 'reflect' | 'repeat'
-}
-
-interface ExternalResourceSVGAttributes {
-	externalResourcesRequired?: 'true' | 'false'
-}
-
-interface StylableSVGAttributes {
-	class?: string
-	style?: CSSProperties | string
-}
-
 // Solid Next - https://www.solidjs.com/
 interface LinearGradientSVGAttributes<T> extends GradientElementSVGAttributes<T> {
 	x1?: number | string | false

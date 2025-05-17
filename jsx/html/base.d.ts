@@ -4,12 +4,6 @@ interface BaseHTMLAttributes<T> extends HTMLAttributes<T> {
 	target?: '_self' | '_blank' | '_parent' | '_top' | (string & {})
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface BaseHTMLAttributes<T> extends HTMLAttributes<T> {
-	href?: string
-	target?: '_self' | '_blank' | '_parent' | '_top' | (string & {})
-}
-
 // Solid Next - https://www.solidjs.com/
 interface BaseHTMLAttributes<T> extends HTMLAttributes<T> {
 	href?: string | false

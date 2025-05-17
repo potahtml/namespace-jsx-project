@@ -63,7 +63,7 @@ It's an ambitious, complex, and tedious task(—likely the reason why
 such a comprehensive data file doesn't exist yet).
 
 You can see the current table at
-https://potahtml.github.io/namespace-jsx-project/index.html
+https://potahtml.github.io/namespace-jsx-project/table/index.html
 
 Theres a `data.json` at
 https://github.com/potahtml/namespace-jsx-project/blob/master/jsx/data.json
@@ -109,15 +109,13 @@ idea!
 
 - add some sort of log of what changed, maybe comparing old data.json
   with new data.json
-- copy events from onevent to on:event
-- fix all the urls
-- reinclude events?
 
 ## Related
 
+- https://github.com/mdn/browser-compat-data
+- https://github.com/mdn/data
 - https://github.com/microsoft/TypeScript-DOM-lib-generator
 - https://github.com/microsoft/vscode-custom-data
-- https://github.com/mdn/data
 - https://github.com/w3c/browser-specs
 - https://github.com/w3c/webref
 

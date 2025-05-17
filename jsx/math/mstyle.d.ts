@@ -32,40 +32,6 @@ interface MathMLMstyleElementAttributes<T> extends MathMLAttributes<T> {
 	scriptsizemultiplier?: string
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface MathMLMstyleElementAttributes<T> extends MathMLAttributes<T> {
-	/**
-	 * @deprecated
-	 * @non-standard
-	 */
-	background?: string
-	/**
-	 * @deprecated
-	 * @non-standard
-	 */
-	color?: string
-	/**
-	 * @deprecated
-	 * @non-standard
-	 */
-	fontsize?: string
-	/**
-	 * @deprecated
-	 * @non-standard
-	 */
-	fontstyle?: string
-	/**
-	 * @deprecated
-	 * @non-standard
-	 */
-	fontweight?: string
-
-	/** @deprecated */
-	scriptminsize?: string
-	/** @deprecated */
-	scriptsizemultiplier?: string
-}
-
 // Solid Next - https://www.solidjs.com/
 interface MathMLMstyleElementAttributes<T> extends MathMLAttributes<T> {
 	/**

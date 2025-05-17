@@ -10,18 +10,6 @@ interface StyleHTMLAttributes<T> extends HTMLAttributes<T> {
 	type?: string
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface StyleHTMLAttributes<T> extends HTMLAttributes<T> {
-	blocking?: 'render'
-	media?: string
-	nonce?: string
-
-	/** @deprecated */
-	scoped?: '' | boolean
-	/** @deprecated */
-	type?: string
-}
-
 // Solid Next - https://www.solidjs.com/
 interface StyleHTMLAttributes<T> extends HTMLAttributes<T> {
 	blocking?: 'render' | false

@@ -9,17 +9,6 @@ interface MeterHTMLAttributes<T> extends HTMLAttributes<T> {
 	value?: string | string[] | number
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface MeterHTMLAttributes<T> extends HTMLAttributes<T> {
-	form?: string
-	high?: number | string
-	low?: number | string
-	max?: number | string
-	min?: number | string
-	optimum?: number | string
-	value?: string | string[] | number
-}
-
 // Solid Next - https://www.solidjs.com/
 interface MeterHTMLAttributes<T> extends HTMLAttributes<T> {
 	form?: string | false

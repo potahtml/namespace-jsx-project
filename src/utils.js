@@ -113,6 +113,10 @@ async function hash(value, algo = 'SHA-256') {
 const stringify = JSON.stringify
 const stringifyReadable = o => stringify(o, null, 2)
 
+function key(s) {
+	return s.replace(':', '').replace(/-/g, '') + ' ' + s
+}
+
 export const stringifySorted = o => {
 	function sort(o) {
 		if (o === null || typeof o !== 'object') {
@@ -121,23 +125,16 @@ export const stringifySorted = o => {
 		const tmp = Array.isArray(o) ? [] : {}
 		Object.keys(o)
 			.sort((a, b) =>
-				a
-					.replace(':', '')
-					.replace(/-/g, '')
-					.localeCompare(
-						b.replace(':', '').replace(/-/g, ''),
-						undefined,
-						{
-							sensitivity: 'base',
-						},
-					),
+				key(a).localeCompare(key(b), 'en', {
+					caseFirst: 'lower',
+				}),
 			)
 			.map(k => (tmp[k] = sort(o[k])))
 
 		if (Array.isArray(tmp)) {
 			tmp.sort((a, b) =>
-				stringify(a).localeCompare(stringify(b), undefined, {
-					sensitivity: 'base',
+				stringify(a).localeCompare(stringify(b), 'en', {
+					caseFirst: 'lower',
 				}),
 			)
 		}

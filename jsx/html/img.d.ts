@@ -44,57 +44,6 @@ interface ImgHTMLAttributes<T> extends HTMLAttributes<T> {
 	vspace?: number | string
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface ImgHTMLAttributes<T> extends HTMLAttributes<T> {
-	alt?: string
-	crossorigin?: 'anonymous' | 'use-credentials' | ''
-	decoding?: 'sync' | 'async' | 'auto'
-	elementtiming?: string
-	fetchpriority?: 'high' | 'low' | 'auto'
-	height?: number | string
-	ismap?: '' | boolean
-	loading?: 'eager' | 'lazy'
-	referrerpolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
-	sizes?: string
-	src?: string
-	srcset?: string
-	usemap?: string
-	width?: number | string
-
-	/** @experimental */
-	attributionsrc?: string
-	/** @experimental */
-	sharedstoragewritable?: '' | boolean
-
-	/** @deprecated Use lowercase attributes */
-	crossOrigin?: 'anonymous' | 'use-credentials' | ''
-	/** @deprecated Use lowercase attributes */
-	isMap?: boolean
-	/** @deprecated Use lowercase attributes */
-	referrerPolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
-	/** @deprecated Use lowercase attributes */
-	srcSet?: string
-	/** @deprecated Use lowercase attributes */
-	useMap?: string
-
-	/** @deprecated */
-	align?: 'top' | 'middle' | 'bottom' | 'left' | 'right'
-	/** @deprecated */
-	border?: string
-	/** @deprecated */
-	hspace?: number | string
-	/** @deprecated */
-	intrinsicsize?: string
-	/** @deprecated */
-	longdesc?: string
-	/** @deprecated */
-	lowsrc?: string
-	/** @deprecated */
-	name?: string
-	/** @deprecated */
-	vspace?: number | string
-}
-
 // Solid Next - https://www.solidjs.com/
 interface ImgHTMLAttributes<T> extends HTMLAttributes<T> {
 	alt?: string | false

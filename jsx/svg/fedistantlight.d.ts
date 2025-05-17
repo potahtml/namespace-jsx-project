@@ -6,14 +6,6 @@ interface FeDistantLightSVGAttributes<T> extends LightSourceElementSVGAttributes
 
 interface LightSourceElementSVGAttributes<T> extends CoreSVGAttributes<T> {}
 
-// Solid Minor - https://www.solidjs.com/
-interface FeDistantLightSVGAttributes<T> extends LightSourceElementSVGAttributes<T> {
-	azimuth?: number | string
-	elevation?: number | string
-}
-
-interface LightSourceElementSVGAttributes<T> extends CoreSVGAttributes<T> {}
-
 // Solid Next - https://www.solidjs.com/
 interface FeDistantLightSVGAttributes<T> extends LightSourceElementSVGAttributes<T> {
 	azimuth?: number | string | false

@@ -1,6 +1,7 @@
 import {
 	copy,
 	entries,
+	fetchCached,
 	prettier,
 	read,
 	uniqueTypes,
@@ -9,9 +10,15 @@ import {
 import oxc from 'oxc-parser'
 
 /** This is used to parse framework interfaces */
+const dev = true
 
 export async function parseFromURL(file, name, map = {}) {
-	let text = await fetch(file).then(v => v.text())
+	let text
+
+	text = dev
+		? await fetchCached(file)
+		: await fetch(file).then(v => v.text())
+
 	if (text === '') {
 		// try again
 		text = await fetch(file).then(v => v.text())

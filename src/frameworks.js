@@ -1,3 +1,4 @@
+import { NSElements, NSGlobalInterfaces } from './data.js'
 import {
 	getInterfaceMergedFromPropertySource,
 	parseFromURL,
@@ -22,10 +23,10 @@ export const libs = [
 			math: {},
 		},
 		keys: {
-			htmlelement: {},
-			svgelement: {},
-			mathelement: {},
-			element: {},
+			HTMLElement: {},
+			SVGElement: {},
+			MathMLElement: {},
+			Element: {},
 		},
 		map: {
 			elements: {
@@ -51,7 +52,7 @@ export const libs = [
 				},
 			},
 			keys: {
-				htmlelement: {
+				HTMLElement: {
 					/* HTMLElement interface */
 					values: [
 						'htmlattributes',
@@ -61,106 +62,17 @@ export const libs = [
 					],
 					skip: ['ariaattributes', 'domattributes'],
 				},
-				svgelement: {
+				SVGElement: {
 					/* SVGElement interface */
 					values: ['coresvgattributes'],
 					skip: ['ariaattributes', 'domattributes'],
 				},
-				mathelement: {
+				MathMLElement: {
 					/* MathMLElement interface */
 					values: ['mathmlattributes'],
 					skip: ['htmlattributes', 'domattributes'],
 				},
-				element: {
-					/* Element interface */
-					values: [
-						'ariaattributes',
-						'domattributes',
-						'elementeventmap',
-					],
-					skip: [
-						// htmlelement events
-						'customeventhandlerscamelcase',
-						'customeventhandlerslowercase',
-						'customeventhandlersnamespaced',
-
-						// custom
-						'customattributes',
-						'directiveattributes',
-						'directivefunctionattributes',
-
-						// namespaced
-						'propattributes',
-						'attrattributes',
-						'boolattributes',
-						'onattributes',
-					],
-				},
-			},
-		},
-	},
-	{
-		// SOLID MINOR
-		file: 'https://raw.githubusercontent.com/titoBouzout/dom-expressions/refs/heads/minor-types-update-0105/packages/dom-expressions/src/jsx.d.ts',
-		name: 'Solid Minor',
-		url: 'https://www.solidjs.com/',
-		interfaces: {},
-		elements: {
-			html: {},
-			svg: {},
-			math: {},
-		},
-		keys: {
-			htmlelement: {},
-			svgelement: {},
-			mathelement: {},
-			element: {},
-		},
-		map: {
-			elements: {
-				html: {
-					values: ['htmlelementtags', 'htmlelementdeprecatedtags'],
-					skip: ['htmlattributes', 'ariaattributes', 'domattributes'],
-				},
-				svg: {
-					values: ['svgelementtags'],
-					skip: [
-						'ariaattributes',
-						'domattributes',
-						'coresvgattributes',
-					],
-				},
-				math: {
-					values: ['mathmlelementtags'],
-					skip: [
-						'ariaattributes',
-						'domattributes',
-						'mathmlattributes',
-					],
-				},
-			},
-			keys: {
-				htmlelement: {
-					/* HTMLElement interface */
-					values: [
-						'htmlattributes',
-						'customeventhandlerscamelcase',
-						'customeventhandlerslowercase',
-						'customeventhandlersnamespaced',
-					],
-					skip: ['ariaattributes', 'domattributes'],
-				},
-				svgelement: {
-					/* SVGElement interface */
-					values: ['coresvgattributes'],
-					skip: ['ariaattributes', 'domattributes'],
-				},
-				mathelement: {
-					/* MathMLElement interface */
-					values: ['mathmlattributes'],
-					skip: ['htmlattributes', 'domattributes'],
-				},
-				element: {
+				Element: {
 					/* Element interface */
 					values: [
 						'ariaattributes',
@@ -200,10 +112,10 @@ export const libs = [
 			math: {},
 		},
 		keys: {
-			htmlelement: {},
-			svgelement: {},
-			mathelement: {},
-			element: {},
+			HTMLElement: {},
+			SVGElement: {},
+			MathMLElement: {},
+			Element: {},
 		},
 		map: {
 			elements: {
@@ -229,7 +141,7 @@ export const libs = [
 				},
 			},
 			keys: {
-				htmlelement: {
+				HTMLElement: {
 					/* HTMLElement interface */
 					values: [
 						'htmlattributes',
@@ -239,17 +151,17 @@ export const libs = [
 					],
 					skip: ['ariaattributes', 'domattributes'],
 				},
-				svgelement: {
+				SVGElement: {
 					/* SVGElement interface */
 					values: ['coresvgattributes'],
 					skip: ['ariaattributes', 'domattributes'],
 				},
-				mathelement: {
+				MathMLElement: {
 					/* MathMLElement interface */
 					values: ['mathmlattributes'],
 					skip: ['htmlattributes', 'domattributes'],
 				},
-				element: {
+				Element: {
 					/* Element interface */
 					values: [
 						'ariaattributes',
@@ -289,10 +201,10 @@ export const libs = [
 			math: {},
 		},
 		keys: {
-			htmlelement: {},
-			svgelement: {},
-			mathelement: {},
-			element: {},
+			HTMLElement: {},
+			SVGElement: {},
+			MathMLElement: {},
+			Element: {},
 		},
 		map: {
 			elements: {
@@ -333,19 +245,19 @@ export const libs = [
 				},
 			},
 			keys: {
-				htmlelement: {
+				HTMLElement: {
 					values: [],
 					skip: [],
 				},
-				svgelement: {
+				SVGElement: {
 					values: [],
 					skip: [],
 				},
-				mathelement: {
+				MathMLElement: {
 					values: [],
 					skip: [],
 				},
-				element: {
+				Element: {
 					values: ['ariaattributes'],
 				},
 			},
@@ -363,10 +275,10 @@ export const libs = [
 			math: {},
 		},
 		keys: {
-			htmlelement: {},
-			svgelement: {},
-			mathelement: {},
-			element: {},
+			HTMLElement: {},
+			SVGElement: {},
+			MathMLElement: {},
+			Element: {},
 		},
 		map: {
 			elements: {
@@ -387,19 +299,19 @@ export const libs = [
 				},
 			},
 			keys: {
-				htmlelement: {
+				HTMLElement: {
 					values: [],
 					skip: [],
 				},
-				svgelement: {
+				SVGElement: {
 					values: [],
 					skip: [],
 				},
-				mathelement: {
+				MathMLElement: {
 					values: [],
 					skip: [],
 				},
-				element: {
+				Element: {
 					values: ['ariaattributes'],
 				},
 			},
@@ -417,10 +329,10 @@ export const libs = [
 			math: {},
 		},
 		keys: {
-			htmlelement: {},
-			svgelement: {},
-			mathelement: {},
-			element: {},
+			HTMLElement: {},
+			SVGElement: {},
+			MathMLElement: {},
+			Element: {},
 		},
 		map: {
 			elements: {
@@ -442,19 +354,19 @@ export const libs = [
 				},
 			},
 			keys: {
-				htmlelement: {
+				HTMLElement: {
 					values: ['htmlattributes'],
 					skip: ['domattributes', 'ariaattributes'],
 				},
-				svgelement: {
-					values: ['svgattributes'],
+				SVGElement: {
+					values: [],
 					skip: ['htmlattributes'],
 				},
-				mathelement: {
+				MathMLElement: {
 					values: ['mathmlattributes'],
 					skip: ['htmlattributes'],
 				},
-				element: {
+				Element: {
 					values: ['ariaattributes'],
 					skip: [],
 				},
@@ -473,10 +385,10 @@ export const libs = [
 			math: {},
 		},
 		keys: {
-			htmlelement: {},
-			svgelement: {},
-			mathelement: {},
-			element: {},
+			HTMLElement: {},
+			SVGElement: {},
+			MathMLElement: {},
+			Element: {},
 		},
 		map: {
 			elements: {
@@ -497,19 +409,19 @@ export const libs = [
 				},
 			},
 			keys: {
-				htmlelement: {
+				HTMLElement: {
 					values: [],
 					skip: [],
 				},
-				svgelement: {
+				SVGElement: {
 					values: [],
 					skip: [],
 				},
-				mathelement: {
+				MathMLElement: {
 					values: [],
 					skip: [],
 				},
-				element: {
+				Element: {
 					values: ['ariaattributes'],
 				},
 			},
@@ -527,10 +439,10 @@ export const libs = [
 			math: {},
 		},
 		keys: {
-			htmlelement: {},
-			svgelement: {},
-			mathelement: {},
-			element: {},
+			HTMLElement: {},
+			SVGElement: {},
+			MathMLElement: {},
+			Element: {},
 		},
 		map: {
 			elements: {
@@ -552,19 +464,19 @@ export const libs = [
 				},
 			},
 			keys: {
-				htmlelement: {
+				HTMLElement: {
 					values: ['htmlattributes'],
 					skip: [],
 				},
-				svgelement: {
-					values: ['svgattributes'],
+				SVGElement: {
+					values: [],
 					skip: [],
 				},
-				mathelement: {
+				MathMLElement: {
 					values: ['mathmlattributes'],
 					skip: [],
 				},
-				element: {
+				Element: {
 					values: ['ariaattributes', 'htmlevents'],
 				},
 			},
@@ -588,7 +500,7 @@ export async function getLibs() {
 
 		// tags
 
-		for (const ns of ['html', 'svg', 'math']) {
+		for (const ns of NSElements) {
 			const elements = lib.elements[ns]
 			for (const tagInterfaces of lib.map.elements[ns].values) {
 				if (lib.interfaces[tagInterfaces]) {
@@ -613,12 +525,7 @@ export async function getLibs() {
 
 		// htmlelement, svgelement, mathelement, element interfaces
 
-		for (const ns of [
-			'htmlelement',
-			'svgelement',
-			'mathelement',
-			'element',
-		]) {
+		for (const ns of NSGlobalInterfaces) {
 			const keys = lib.keys[ns]
 			let source = ''
 			for (const tagInterfaces of lib.map.keys[ns].values) {

@@ -4,12 +4,6 @@ interface DetailsHtmlAttributes<T> extends HTMLAttributes<T> {
 	open?: boolean
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface DetailsHtmlAttributes<T> extends HTMLAttributes<T> {
-	name?: string
-	open?: '' | boolean
-}
-
 // Solid Next - https://www.solidjs.com/
 interface DetailsHtmlAttributes<T> extends HTMLAttributes<T> {
 	name?: string | false

@@ -6,15 +6,6 @@ interface ModHTMLAttributes<T> extends HTMLAttributes<T> {
 	dateTime?: string
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface ModHTMLAttributes<T> extends HTMLAttributes<T> {
-	cite?: string
-	datetime?: string
-
-	/** @deprecated Use lowercase attributes */
-	dateTime?: string
-}
-
 // Solid Next - https://www.solidjs.com/
 interface ModHTMLAttributes<T> extends HTMLAttributes<T> {
 	cite?: string | false

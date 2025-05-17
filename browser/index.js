@@ -411,13 +411,13 @@ function run(data, dynamic) {
 
 	result.keys = {
 		// @ts-ignore
-		element: result.html.element,
+		Element: result.html.element,
 		// @ts-ignore
-		htmlelement: result.html.htmlelement,
+		HTMLElement: result.html.htmlelement,
 		// @ts-ignore
-		svgelement: result.svg.svgelement,
+		SVGElement: result.svg.svgelement,
 		// @ts-ignore
-		mathelement: result.math.mathelement,
+		MathMLElement: result.math.mathelement,
 	}
 
 	// @ts-ignore

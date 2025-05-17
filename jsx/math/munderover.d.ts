@@ -4,12 +4,6 @@ interface MathMLMunderoverElementAttributes<T> extends MathMLAttributes<T> {
 	accentunder?: '' | boolean
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface MathMLMunderoverElementAttributes<T> extends MathMLAttributes<T> {
-	accent?: '' | boolean
-	accentunder?: '' | boolean
-}
-
 // Solid Next - https://www.solidjs.com/
 interface MathMLMunderoverElementAttributes<T> extends MathMLAttributes<T> {
 	accent?: true | false | '' | false

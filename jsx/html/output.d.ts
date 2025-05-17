@@ -5,13 +5,6 @@ interface OutputHTMLAttributes<T> extends HTMLAttributes<T> {
 	name?: string
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface OutputHTMLAttributes<T> extends HTMLAttributes<T> {
-	for?: string
-	form?: string
-	name?: string
-}
-
 // Solid Next - https://www.solidjs.com/
 interface OutputHTMLAttributes<T> extends HTMLAttributes<T> {
 	for?: string | false

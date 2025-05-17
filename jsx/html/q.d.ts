@@ -3,11 +3,6 @@ interface QuoteHTMLAttributes<T> extends HTMLAttributes<T> {
 	cite?: string
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface QuoteHTMLAttributes<T> extends HTMLAttributes<T> {
-	cite?: string
-}
-
 // Solid Next - https://www.solidjs.com/
 interface QuoteHTMLAttributes<T> extends HTMLAttributes<T> {
 	cite?: string | false

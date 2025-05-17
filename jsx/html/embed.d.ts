@@ -11,19 +11,6 @@ interface EmbedHTMLAttributes<T> extends HTMLAttributes<T> {
 	name?: string
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface EmbedHTMLAttributes<T> extends HTMLAttributes<T> {
-	height?: number | string
-	src?: string
-	type?: string
-	width?: number | string
-
-	/** @deprecated */
-	align?: 'left' | 'right' | 'justify' | 'center'
-	/** @deprecated */
-	name?: string
-}
-
 // Solid Next - https://www.solidjs.com/
 interface EmbedHTMLAttributes<T> extends HTMLAttributes<T> {
 	height?: number | string | false

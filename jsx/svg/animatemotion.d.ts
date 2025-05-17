@@ -45,53 +45,6 @@ interface ConditionalProcessingSVGAttributes {
 	systemLanguage?: string
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface AnimateMotionSVGAttributes<T> extends AnimationElementSVGAttributes<T>, AnimationTimingSVGAttributes, AnimationValueSVGAttributes, AnimationAdditionSVGAttributes {
-	keyPoints?: string
-	origin?: 'default'
-	path?: string
-	rotate?: number | string | 'auto' | 'auto-reverse'
-}
-
-interface AnimationElementSVGAttributes<T> extends CoreSVGAttributes<T>, ExternalResourceSVGAttributes, ConditionalProcessingSVGAttributes {}
-interface AnimationTimingSVGAttributes {
-	begin?: string
-	dur?: string
-	end?: string
-	fill?: 'freeze' | 'remove'
-	max?: string
-	min?: string
-	repeatCount?: number | 'indefinite'
-	repeatDur?: string
-	restart?: 'always' | 'whenNotActive' | 'never'
-}
-
-interface AnimationValueSVGAttributes {
-	by?: number | string
-	calcMode?: 'discrete' | 'linear' | 'paced' | 'spline'
-	from?: number | string
-	keySplines?: string
-	keyTimes?: string
-	to?: number | string
-	values?: string
-}
-
-interface AnimationAdditionSVGAttributes {
-	accumulate?: 'none' | 'sum'
-	additive?: 'replace' | 'sum'
-	attributeName?: string
-}
-
-interface ExternalResourceSVGAttributes {
-	externalResourcesRequired?: 'true' | 'false'
-}
-
-interface ConditionalProcessingSVGAttributes {
-	requiredExtensions?: string
-	requiredFeatures?: string
-	systemLanguage?: string
-}
-
 // Solid Next - https://www.solidjs.com/
 interface AnimateMotionSVGAttributes<T> extends AnimationElementSVGAttributes<T>, AnimationTimingSVGAttributes, AnimationValueSVGAttributes, AnimationAdditionSVGAttributes {
 	keyPoints?: string | false

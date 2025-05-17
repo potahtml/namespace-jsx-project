@@ -1,9 +1,6 @@
 // Solid Main - https://www.solidjs.com/
 interface MPathSVGAttributes<T> extends CoreSVGAttributes<T> {}
 
-// Solid Minor - https://www.solidjs.com/
-interface MPathSVGAttributes<T> extends CoreSVGAttributes<T> {}
-
 // Solid Next - https://www.solidjs.com/
 interface MPathSVGAttributes<T> extends CoreSVGAttributes<T> {}
 

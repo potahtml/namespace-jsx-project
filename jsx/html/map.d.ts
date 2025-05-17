@@ -3,11 +3,6 @@ interface MapHTMLAttributes<T> extends HTMLAttributes<T> {
 	name?: string
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface MapHTMLAttributes<T> extends HTMLAttributes<T> {
-	name?: string
-}
-
 // Solid Next - https://www.solidjs.com/
 interface MapHTMLAttributes<T> extends HTMLAttributes<T> {
 	name?: string | false

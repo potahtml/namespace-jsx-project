@@ -12,20 +12,6 @@ interface MathMLMsubsupElementAttributes<T> extends MathMLAttributes<T> {
 	superscriptshift?: string
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface MathMLMsubsupElementAttributes<T> extends MathMLAttributes<T> {
-	/**
-	 * @deprecated
-	 * @non-standard
-	 */
-	subscriptshift?: string
-	/**
-	 * @deprecated
-	 * @non-standard
-	 */
-	superscriptshift?: string
-}
-
 // Solid Next - https://www.solidjs.com/
 interface MathMLMsubsupElementAttributes<T> extends MathMLAttributes<T> {
 	/**

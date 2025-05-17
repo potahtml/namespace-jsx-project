@@ -37,46 +37,6 @@ interface ObjectHTMLAttributes<T> extends HTMLAttributes<T> {
 	typemustmatch?: boolean
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface ObjectHTMLAttributes<T> extends HTMLAttributes<T> {
-	data?: string
-	form?: string
-	height?: number | string
-	name?: string
-	type?: string
-	width?: number | string
-
-	/** @deprecated Use lowercase attributes */
-	useMap?: string
-
-	/** @deprecated */
-	align?: string
-	/** @deprecated */
-	archive?: string
-	/** @deprecated */
-	border?: string
-	/** @deprecated */
-	classid?: string
-	/** @deprecated */
-	code?: string
-	/** @deprecated */
-	codebase?: string
-	/** @deprecated */
-	codetype?: string
-	/** @deprecated */
-	declare?: '' | boolean
-	/** @deprecated */
-	hspace?: number | string
-	/** @deprecated */
-	standby?: string
-	/** @deprecated */
-	usemap?: string
-	/** @deprecated */
-	vspace?: number | string
-	/** @deprecated */
-	typemustmatch?: '' | boolean
-}
-
 // Solid Next - https://www.solidjs.com/
 interface ObjectHTMLAttributes<T> extends HTMLAttributes<T> {
 	data?: string | false

@@ -14,22 +14,6 @@ interface MathMLMfracElementAttributes<T> extends MathMLAttributes<T> {
 	numalign?: 'center' | 'left' | 'right'
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface MathMLMfracElementAttributes<T> extends MathMLAttributes<T> {
-	linethickness?: string
-
-	/**
-	 * @deprecated
-	 * @non-standard
-	 */
-	denomalign?: 'center' | 'left' | 'right'
-	/**
-	 * @deprecated
-	 * @non-standard
-	 */
-	numalign?: 'center' | 'left' | 'right'
-}
-
 // Solid Next - https://www.solidjs.com/
 interface MathMLMfracElementAttributes<T> extends MathMLAttributes<T> {
 	linethickness?: string | false

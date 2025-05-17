@@ -13,21 +13,6 @@ interface MathMLAttributes<T> extends HTMLAttributes<T> {
 	scriptlevel?: string
 }
 
-// Solid Minor - https://www.solidjs.com/
-interface MathMLAttributes<T> extends HTMLAttributes<T> {
-	displaystyle?: '' | boolean
-	/** @deprecated */
-	href?: string
-	/** @deprecated */
-	mathbackground?: string
-	/** @deprecated */
-	mathcolor?: string
-	/** @deprecated */
-	mathsize?: string
-	nonce?: string
-	scriptlevel?: string
-}
-
 // Solid Next - https://www.solidjs.com/
 interface MathMLAttributes<T> extends HTMLAttributes<T> {
 	xmlns?: string | false
