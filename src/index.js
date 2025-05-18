@@ -4,6 +4,7 @@ import {
 	prettier,
 	read,
 	remove,
+	removeFromArray,
 	stringifySorted,
 	unique,
 	uniqueTypes,
@@ -56,6 +57,7 @@ const DATA = {
 		booleans: [],
 		events: [],
 		eventsInterfaces: {},
+		eventsHierarchy: [],
 		globals: {
 			html: [],
 			svg: [],
@@ -198,7 +200,6 @@ for (const ns of NSGlobalInterfaces) {
 
 // create html, math, svg "global attributes"
 
-// @ts-ignore
 DATA.keys.globals.html = unique(
 	Object.keys(DATA.keys.HTMLElement.keys).map(
 		x => 'HTMLElement.' + x,
@@ -206,7 +207,6 @@ DATA.keys.globals.html = unique(
 	Object.keys(DATA.keys.Element.keys).map(x => 'Element.' + x),
 )
 
-// @ts-ignore
 DATA.keys.globals.math = unique(
 	Object.keys(DATA.keys.MathMLElement.keys).map(
 		x => 'MathMLElement.' + x,
@@ -214,7 +214,6 @@ DATA.keys.globals.math = unique(
 	Object.keys(DATA.keys.Element.keys).map(x => 'Element.' + x),
 )
 
-// @ts-ignore
 DATA.keys.globals.svg = unique(
 	Object.keys(DATA.keys.SVGElement.keys).map(x => 'SVGElement.' + x),
 	Object.keys(DATA.keys.Element.keys).map(x => 'Element.' + x),
@@ -319,13 +318,83 @@ for (const ns of NSGlobalInterfaces) {
 	}
 }
 
-// merge all events/booleans
+// merge all events
 
-// @ts-ignore
 DATA.keys.events = unique(chrome.events, firefox.events)
 
-// @ts-ignore
+// deduplicate events
+
+DATA.keys.eventsHierarchy = {
+	// events shared by all elements
+	elements: [],
+	// events defined on window that arent present in elements
+	window: [],
+	// $Element specific events
+	custom: [],
+}
+
+{
+	const remaining = DATA.keys.events.slice()
+
+	// copy Element events to Elements
+
+	DATA.keys.eventsHierarchy.elements = remaining
+		.filter(x => x.startsWith('Element.'))
+		.map(x => x.split('.')[1])
+
+	// deuplicate HTMLElement/SVGElement/MathMLElement
+
+	for (const event of remaining.slice()) {
+		const [interfaceName, eventName] = event.split('.')
+
+		if (
+			remaining.includes('HTMLElement.' + eventName) &&
+			remaining.includes('SVGElement.' + eventName) &&
+			remaining.includes('MathMLElement.' + eventName)
+		) {
+			DATA.keys.eventsHierarchy.elements.push(eventName)
+			removeFromArray(remaining, 'HTMLElement.' + eventName)
+			removeFromArray(remaining, 'SVGElement.' + eventName)
+			removeFromArray(remaining, 'MathMLElement.' + eventName)
+		}
+	}
+
+	// remove events already defined in Elements
+
+	for (const event of remaining.slice()) {
+		const [interfaceName, eventName] = event.split('.')
+
+		if (DATA.keys.eventsHierarchy.elements.includes(eventName)) {
+			removeFromArray(remaining, event)
+		}
+	}
+
+	// deuplicate HTMLBodyElement/HTMLFrameSetElement
+
+	for (const event of remaining.slice()) {
+		const [interfaceName, eventName] = event.split('.')
+
+		if (
+			remaining.includes('HTMLBodyElement.' + eventName) &&
+			remaining.includes('HTMLFrameSetElement.' + eventName)
+		) {
+			removeFromArray(remaining, 'HTMLBodyElement.' + eventName)
+			removeFromArray(remaining, 'HTMLFrameSetElement.' + eventName)
+
+			DATA.keys.eventsHierarchy.window.push(eventName)
+		}
+	}
+
+	// remove from window events defined on Elements
+
+	DATA.keys.eventsHierarchy.custom = remaining
+}
+
+// merge all booleans
+
 DATA.keys.booleans = unique(chrome.booleans, firefox.booleans)
+
+// remove from HTMLElement events defined in Element
 
 // merge tag attributes/properties from browser/frameworks
 
@@ -692,7 +761,6 @@ for (const [ns, tag] of entries(DATA.elements.html)) {
 				key.values.Firefox === 'boolean'
 			) {
 				if (/[A-Z]/.test(key.name)) {
-					// @ts-ignore
 					DATA.DOMExpressions.booleansWithCase.push(key.name)
 
 					const keyLower = key.name.toLowerCase()
@@ -705,18 +773,17 @@ for (const [ns, tag] of entries(DATA.elements.html)) {
 						tag.name.toUpperCase()
 					] = 1
 				}
-				// @ts-ignore
+
 				DATA.DOMExpressions.booleans.push(key.name.toLowerCase())
 			}
 		}
 	}
 }
 
-// @ts-ignore
 DATA.DOMExpressions.booleansWithCase = unique(
 	DATA.DOMExpressions.booleansWithCase,
 )
-// @ts-ignore
+
 DATA.DOMExpressions.booleans = unique(DATA.DOMExpressions.booleans)
 
 // save to json

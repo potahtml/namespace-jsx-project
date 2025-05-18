@@ -316,10 +316,10 @@ function run(data, dynamic) {
 		math: {},
 		svg: {},
 		keys: {
-			element: {},
-			htmlelement: {},
-			svgelement: {},
-			mathelement: {},
+			Element: {},
+			HTMLElement: {},
+			SVGElement: {},
+			MathMLElement: {},
 		},
 		events: [],
 		booleans: [],
@@ -410,28 +410,18 @@ function run(data, dynamic) {
 	)
 
 	result.keys = {
-		// @ts-ignore
 		Element: result.html.element,
-		// @ts-ignore
 		HTMLElement: result.html.htmlelement,
-		// @ts-ignore
 		SVGElement: result.svg.svgelement,
-		// @ts-ignore
 		MathMLElement: result.math.mathelement,
 	}
 
-	// @ts-ignore
 	delete result.html.element
-	// @ts-ignore
 	delete result.html.htmlelement
-	// @ts-ignore
 	delete result.svg.svgelement
-	// @ts-ignore
 	delete result.math.mathelement
 
-	// @ts-ignore
 	result.events = unique(result.events)
-	// @ts-ignore
 	result.booleans = unique(result.booleans)
 
 	function gatherPropertiesAttributes(
