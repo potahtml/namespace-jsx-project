@@ -56,12 +56,20 @@ const DATA = {
 		Element: { keys: {} },
 		booleans: [],
 		events: [],
+		eventsHierarchy: {
+			elements: [],
+			window: [],
+			custom: [],
+		},
 		eventsInterfaces: {},
-		eventsHierarchy: [],
 		globals: {
 			html: [],
 			svg: [],
 			math: [],
+		},
+		globalsHierarchy: {
+			elements: [],
+			custom: [],
 		},
 	},
 }
@@ -219,6 +227,62 @@ DATA.keys.globals.svg = unique(
 	Object.keys(DATA.keys.Element.keys).map(x => 'Element.' + x),
 )
 
+// deduplicate global keys
+
+DATA.keys.globalsHierarchy = {
+	elements: [],
+	custom: [],
+}
+
+{
+	const remaining = unique(
+		DATA.keys.globals.html,
+		DATA.keys.globals.math,
+		DATA.keys.globals.svg,
+	)
+
+	// copy Element keys to Elements
+
+	DATA.keys.globalsHierarchy.elements = remaining
+		.filter(x => x.startsWith('Element.'))
+		.map(x => x.split('.')[1])
+
+	// deuplicate HTMLElement/SVGElement/MathMLElement
+
+	for (const key of remaining.slice()) {
+		const [interfaceName, keyName] = key.split('.')
+
+		if (
+			remaining.includes('HTMLElement.' + keyName) &&
+			remaining.includes('SVGElement.' + keyName) &&
+			remaining.includes('MathMLElement.' + keyName)
+		) {
+			DATA.keys.globalsHierarchy.elements.push(keyName)
+			removeFromArray(remaining, 'HTMLElement.' + keyName)
+			removeFromArray(remaining, 'SVGElement.' + keyName)
+			removeFromArray(remaining, 'MathMLElement.' + keyName)
+		}
+	}
+
+	// remove keys already defined in Elements
+
+	for (const key of remaining.slice()) {
+		const [interfaceName, keyName] = key.split('.')
+
+		if (DATA.keys.globalsHierarchy.elements.includes(keyName)) {
+			removeFromArray(remaining, key)
+		}
+	}
+
+	// save in custom whats left
+
+	DATA.keys.globalsHierarchy.custom = remaining
+
+	DATA.keys.globalsHierarchy.elements =
+		DATA.keys.globalsHierarchy.elements.filter(
+			x => !x.startsWith('aria') && !x.startsWith('on'),
+		)
+}
 // merge framework global interfaces (Element, HTMLElement, SVGElement, MathMLElement)
 
 for (const ns of NSGlobalInterfaces) {

@@ -15297,7 +15297,7 @@
         "tagInterfaceName": "HTMLElement"
       },
       "noindex": {
-        "deprecated": true,
+        "deprecated": false,
         "description": "",
         "elementURL": "https://developer.mozilla.org/docs/Web/HTML/Element/noindex",
         "interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLUnknownElement",
@@ -86103,6 +86103,56 @@
         "SVGElement.style",
         "SVGElement.tabindex",
         "SVGElement.tabIndex"
+      ]
+    },
+    "globalsHierarchy": {
+      "custom": [
+        "HTMLElement.accesskey",
+        "HTMLElement.accessKey",
+        "HTMLElement.autocapitalize",
+        "HTMLElement.autocorrect",
+        "HTMLElement.contenteditable",
+        "HTMLElement.contentEditable",
+        "HTMLElement.dir",
+        "HTMLElement.draggable",
+        "HTMLElement.editContext",
+        "HTMLElement.enterkeyhint",
+        "HTMLElement.enterKeyHint",
+        "HTMLElement.hidden",
+        "HTMLElement.inert",
+        "HTMLElement.innerText",
+        "HTMLElement.inputmode",
+        "HTMLElement.inputMode",
+        "HTMLElement.lang",
+        "HTMLElement.outerText",
+        "HTMLElement.popover",
+        "HTMLElement.spellcheck",
+        "HTMLElement.title",
+        "HTMLElement.translate",
+        "HTMLElement.virtualkeyboardpolicy",
+        "HTMLElement.virtualKeyboardPolicy",
+        "HTMLElement.writingsuggestions",
+        "HTMLElement.writingSuggestions"
+      ],
+      "elements": [
+        "autofocus",
+        "class",
+        "classList",
+        "className",
+        "elementtiming",
+        "elementTiming",
+        "id",
+        "innerHTML",
+        "nonce",
+        "outerHTML",
+        "part",
+        "role",
+        "scrollLeft",
+        "scrollTop",
+        "slot",
+        "style",
+        "tabindex",
+        "tabIndex"
       ]
     },
     "HTMLElement": {

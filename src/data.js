@@ -25,7 +25,7 @@ export const data = {
 
 				// confirmed deprecated but not in mdn
 				applet basefont bgsound blink listing isindex
-				keygen menuitem multicol nextid noindex spacer
+				keygen menuitem multicol nextid spacer
 
 				// taken from dom-expressions
 				content portal image shadow
