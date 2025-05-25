@@ -9,37 +9,19 @@ interface DialogHtmlAttributes<T> extends HTMLAttributes<T> {
 	 * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog#usage_notes
 	 */
 	tabindex?: never
-
-	onClose?: EventHandlerUnion<T, Event>
-	'on:close'?: EventHandlerWithOptionsUnion<T, Event>
-	onclose?: EventHandlerUnion<T, Event>
-
-	onCancel?: EventHandlerUnion<T, Event>
-	'on:cancel'?: EventHandlerWithOptionsUnion<T, Event>
-	oncancel?: EventHandlerUnion<T, Event>
 }
 
 // Solid Next - https://www.solidjs.com/
 interface DialogHtmlAttributes<T> extends HTMLAttributes<T> {
 	open?: true | false | '' | false
 	/**
-	 * Do not add the tabindex property to the <dialog> element as it is not interactive and does
-	 * not receive focus. The dialog's contents, including the close button contained in the dialog,
-	 * can receive focus and be interactive.
+	 * Do not add the `tabindex` property to the `<dialog>` element as it is not interactive and
+	 * does not receive focus. The dialog's contents, including the close button contained in the
+	 * dialog, can receive focus and be interactive.
 	 *
 	 * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog#usage_notes
 	 */
 	tabindex?: never
-
-	onClose?: EventHandlerUnion<T, Event>
-	'on:close'?: EventHandlerWithOptionsUnion<T, Event>
-	/** @deprecated Use camelCase event handlers */
-	onclose?: EventHandlerUnion<T, Event>
-
-	onCancel?: EventHandlerUnion<T, Event>
-	'on:cancel'?: EventHandlerWithOptionsUnion<T, Event>
-	/** @deprecated Use camelCase event handlers */
-	oncancel?: EventHandlerUnion<T, Event>
 }
 
 // Voby - https://github.com/vobyjs/voby

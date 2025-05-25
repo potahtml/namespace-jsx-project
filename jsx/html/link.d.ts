@@ -2,6 +2,7 @@
 interface LinkHTMLAttributes<T> extends HTMLAttributes<T> {
 	as?: 'audio' | 'document' | 'embed' | 'fetch' | 'font' | 'image' | 'object' | 'script' | 'style' | 'track' | 'video' | 'worker'
 	blocking?: 'render'
+	color?: string
 	crossorigin?: 'anonymous' | 'use-credentials' | ''
 	disabled?: boolean
 	fetchpriority?: 'high' | 'low' | 'auto'
@@ -31,6 +32,7 @@ interface LinkHTMLAttributes<T> extends HTMLAttributes<T> {
 interface LinkHTMLAttributes<T> extends HTMLAttributes<T> {
 	as?: 'audio' | 'document' | 'embed' | 'fetch' | 'font' | 'image' | 'object' | 'script' | 'style' | 'track' | 'video' | 'worker' | false
 	blocking?: 'render' | false
+	color?: string | false
 	crossorigin?: 'anonymous' | 'use-credentials' | '' | true | false
 	disabled?: true | false | '' | false
 	fetchpriority?: 'high' | 'low' | 'auto' | false
@@ -44,11 +46,6 @@ interface LinkHTMLAttributes<T> extends HTMLAttributes<T> {
 	rel?: string | false
 	sizes?: string | false
 	type?: string | false
-
-	/** @deprecated Use lowercase attributes */
-	crossOrigin?: 'anonymous' | 'use-credentials' | '' | true | false
-	/** @deprecated Use lowercase attributes */
-	referrerPolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url' | false
 
 	/** @deprecated */
 	charset?: string | false

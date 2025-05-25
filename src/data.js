@@ -112,6 +112,9 @@ export const data = {
 			input.HTMLInputElement.popovertarget
 
 			input.HTMLInputElement.results
+
+			svg.SVGSVGElement.xmlns
+			math.MathMLElement.xmlns
 		`),
 		/** Confirmed deprecated */
 		deprecated: uniqueKeys(`

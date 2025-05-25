@@ -8,9 +8,6 @@ interface TimeHTMLAttributes<T> extends HTMLAttributes<T> {
 // Solid Next - https://www.solidjs.com/
 interface TimeHTMLAttributes<T> extends HTMLAttributes<T> {
 	datetime?: string | false
-
-	/** @deprecated Use lowercase attributes */
-	dateTime?: string | false
 }
 
 // Voby - https://github.com/vobyjs/voby

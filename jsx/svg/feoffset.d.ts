@@ -90,7 +90,7 @@ interface FeOffsetSVGAttributes<T> extends FilterPrimitiveElementSVGAttributes<T
 	dy?: number | string | false
 }
 
-interface FilterPrimitiveElementSVGAttributes<T> extends CoreSVGAttributes<T>, Pick<PresentationSVGAttributes, 'color-interpolation-filters'> {
+interface FilterPrimitiveElementSVGAttributes<T> extends SVGAttributes<T>, Pick<PresentationSVGAttributes, 'color-interpolation-filters'> {
 	height?: number | string | false
 	result?: string | false
 	width?: number | string | false

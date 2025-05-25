@@ -1,6 +1,7 @@
 // Solid Main - https://www.solidjs.com/
 interface TemplateHTMLAttributes<T> extends HTMLAttributes<T> {
 	shadowrootclonable?: boolean
+	shadowrootcustomelementregistry?: boolean
 	shadowrootdelegatesfocus?: boolean
 	shadowrootmode?: 'open' | 'closed'
 
@@ -13,12 +14,10 @@ interface TemplateHTMLAttributes<T> extends HTMLAttributes<T> {
 	shadowrootclonable?: true | false | '' | false
 	shadowrootdelegatesfocus?: true | false | '' | false
 	shadowrootmode?: 'open' | 'closed' | false
+	shadowrootcustomelementregistry?: true | false | '' | false
 
 	/** @experimental */
 	shadowrootserializable?: true | false | '' | false
-
-	/** @deprecated */
-	content?: DocumentFragment | false
 }
 
 // Voby - https://github.com/vobyjs/voby

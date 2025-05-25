@@ -3,14 +3,6 @@ interface CanvasHTMLAttributes<T> extends HTMLAttributes<T> {
 	height?: number | string
 	width?: number | string
 
-	onContextLost?: EventHandlerUnion<T, Event>
-	'on:contextlost'?: EventHandlerWithOptionsUnion<T, Event>
-	oncontextlost?: EventHandlerUnion<T, Event>
-
-	onContextRestored?: EventHandlerUnion<T, Event>
-	'on:contextrestored'?: EventHandlerWithOptionsUnion<T, Event>
-	oncontextrestored?: EventHandlerUnion<T, Event>
-
 	/**
 	 * @deprecated
 	 * @non-standard
@@ -22,16 +14,6 @@ interface CanvasHTMLAttributes<T> extends HTMLAttributes<T> {
 interface CanvasHTMLAttributes<T> extends HTMLAttributes<T> {
 	height?: number | string | false
 	width?: number | string | false
-
-	onContextLost?: EventHandlerUnion<T, Event>
-	'on:contextlost'?: EventHandlerWithOptionsUnion<T, Event>
-	/** @deprecated Use camelCase event handlers */
-	oncontextlost?: EventHandlerUnion<T, Event>
-
-	onContextRestored?: EventHandlerUnion<T, Event>
-	'on:contextrestored'?: EventHandlerWithOptionsUnion<T, Event>
-	/** @deprecated Use camelCase event handlers */
-	oncontextrestored?: EventHandlerUnion<T, Event>
 
 	/**
 	 * @deprecated

@@ -6,7 +6,7 @@ interface StylableSVGAttributes {
 }
 
 // Solid Next - https://www.solidjs.com/
-interface DescSVGAttributes<T> extends CoreSVGAttributes<T>, StylableSVGAttributes {}
+interface DescSVGAttributes<T> extends SVGAttributes<T>, StylableSVGAttributes {}
 interface StylableSVGAttributes {
 	class?: string | ClassList | false
 	style?: CSSProperties | string | false

@@ -100,7 +100,7 @@ interface ForeignObjectSVGAttributes<T> extends NewViewportSVGAttributes<T>, Con
 	y?: number | string | false
 }
 
-interface NewViewportSVGAttributes<T> extends CoreSVGAttributes<T>, Pick<PresentationSVGAttributes, 'overflow' | 'clip'> {
+interface NewViewportSVGAttributes<T> extends SVGAttributes<T>, Pick<PresentationSVGAttributes, 'overflow' | 'clip'> {
 	viewBox?: string | false
 }
 

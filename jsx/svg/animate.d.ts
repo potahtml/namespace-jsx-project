@@ -1,6 +1,22 @@
 // Solid Main - https://www.solidjs.com/
 interface AnimateSVGAttributes<T> extends AnimationElementSVGAttributes<T>, AnimationAttributeTargetSVGAttributes, AnimationTimingSVGAttributes, AnimationValueSVGAttributes, AnimationAdditionSVGAttributes, Pick<PresentationSVGAttributes, 'color-interpolation' | 'color-rendering'> {}
-interface AnimationElementSVGAttributes<T> extends CoreSVGAttributes<T>, ExternalResourceSVGAttributes, ConditionalProcessingSVGAttributes {}
+interface AnimationElementSVGAttributes<T> extends CoreSVGAttributes<T>, ExternalResourceSVGAttributes, ConditionalProcessingSVGAttributes {
+	// TODO TimeEvent is currently undefined on TS
+	onBegin?: EventHandlerUnion<T, Event>
+	onbegin?: EventHandlerUnion<T, Event>
+	'on:begin'?: EventHandlerWithOptionsUnion<T, Event>
+
+	// TODO TimeEvent is currently undefined on TS
+	onEnd?: EventHandlerUnion<T, Event>
+	onend?: EventHandlerUnion<T, Event>
+	'on:end'?: EventHandlerWithOptionsUnion<T, Event>
+
+	// TODO TimeEvent is currently undefined on TS
+	onRepeat?: EventHandlerUnion<T, Event>
+	onrepeat?: EventHandlerUnion<T, Event>
+	'on:repeat'?: EventHandlerWithOptionsUnion<T, Event>
+}
+
 interface AnimationAttributeTargetSVGAttributes {
 	attributeName?: string
 	attributeType?: 'CSS' | 'XML' | 'auto'
@@ -109,7 +125,20 @@ interface ConditionalProcessingSVGAttributes {
 
 // Solid Next - https://www.solidjs.com/
 interface AnimateSVGAttributes<T> extends AnimationElementSVGAttributes<T>, AnimationAttributeTargetSVGAttributes, AnimationTimingSVGAttributes, AnimationValueSVGAttributes, AnimationAdditionSVGAttributes, Pick<PresentationSVGAttributes, 'color-interpolation' | 'color-rendering'> {}
-interface AnimationElementSVGAttributes<T> extends CoreSVGAttributes<T>, ExternalResourceSVGAttributes, ConditionalProcessingSVGAttributes {}
+interface AnimationElementSVGAttributes<T> extends SVGAttributes<T>, ExternalResourceSVGAttributes, ConditionalProcessingSVGAttributes {
+	// TODO TimeEvent is currently undefined on TS
+	onBegin?: EventHandlerUnion<T, Event>
+	'on:begin'?: EventHandlerWithOptionsUnion<T, Event>
+
+	// TODO TimeEvent is currently undefined on TS
+	onEnd?: EventHandlerUnion<T, Event>
+	'on:end'?: EventHandlerWithOptionsUnion<T, Event>
+
+	// TODO TimeEvent is currently undefined on TS
+	onRepeat?: EventHandlerUnion<T, Event>
+	'on:repeat'?: EventHandlerWithOptionsUnion<T, Event>
+}
+
 interface AnimationAttributeTargetSVGAttributes {
 	attributeName?: string | false
 	attributeType?: 'CSS' | 'XML' | 'auto' | false

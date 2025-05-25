@@ -1,5 +1,5 @@
 // Solid Main - https://www.solidjs.com/
-interface SvgSVGAttributes<T> extends ContainerElementSVGAttributes<T>, NewViewportSVGAttributes<T>, ConditionalProcessingSVGAttributes, ExternalResourceSVGAttributes, StylableSVGAttributes, FitToViewBoxSVGAttributes, ZoomAndPanSVGAttributes, PresentationSVGAttributes, WindowEventMap<T>, ElementEventMap<T> {
+interface SvgSVGAttributes<T> extends ContainerElementSVGAttributes<T>, NewViewportSVGAttributes<T>, ConditionalProcessingSVGAttributes, ExternalResourceSVGAttributes, StylableSVGAttributes, FitToViewBoxSVGAttributes, ZoomAndPanSVGAttributes, PresentationSVGAttributes, WindowEventMap<T> {
 	'xmlns:xlink'?: string
 	contentScriptType?: string
 	contentStyleType?: string
@@ -182,28 +182,16 @@ interface WindowEventMap<T> {
 	'on:unload'?: EventHandlerWithOptionsUnion<T, Event>
 }
 
-interface ElementEventMap<T> {
-	onFullscreenChange?: EventHandlerUnion<T, Event>
-	onFullscreenError?: EventHandlerUnion<T, Event>
-
-	'on:fullscreenchange'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:fullscreenerror'?: EventHandlerWithOptionsUnion<T, Event>
-
-	onfullscreenchange?: EventHandlerUnion<T, Event>
-	onfullscreenerror?: EventHandlerUnion<T, Event>
-}
-
 interface ShapeElementSVGAttributes<T> extends CoreSVGAttributes<T>, Pick<PresentationSVGAttributes, 'color' | 'fill' | 'fill-rule' | 'fill-opacity' | 'stroke' | 'stroke-width' | 'stroke-linecap' | 'stroke-linejoin' | 'stroke-miterlimit' | 'stroke-dasharray' | 'stroke-dashoffset' | 'stroke-opacity' | 'shape-rendering' | 'pathLength'> {}
 
 // Solid Next - https://www.solidjs.com/
-interface SvgSVGAttributes<T> extends ContainerElementSVGAttributes<T>, NewViewportSVGAttributes<T>, ConditionalProcessingSVGAttributes, ExternalResourceSVGAttributes, StylableSVGAttributes, FitToViewBoxSVGAttributes, ZoomAndPanSVGAttributes, PresentationSVGAttributes, WindowEventMap<T>, ElementEventMap<T> {
+interface SvgSVGAttributes<T> extends ContainerElementSVGAttributes<T>, NewViewportSVGAttributes<T>, ConditionalProcessingSVGAttributes, ExternalResourceSVGAttributes, StylableSVGAttributes, FitToViewBoxSVGAttributes, ZoomAndPanSVGAttributes, PresentationSVGAttributes, WindowEventHandlers<T> {
 	'xmlns:xlink'?: string | false
 	contentScriptType?: string | false
 	contentStyleType?: string | false
 	height?: number | string | false
 	width?: number | string | false
 	x?: number | string | false
-	xmlns?: string | false
 	y?: number | string | false
 
 	/** @deprecated */
@@ -212,8 +200,8 @@ interface SvgSVGAttributes<T> extends ContainerElementSVGAttributes<T>, NewViewp
 	version?: string | false
 }
 
-interface ContainerElementSVGAttributes<T> extends CoreSVGAttributes<T>, ShapeElementSVGAttributes<T>, Pick<PresentationSVGAttributes, 'clip-path' | 'mask' | 'cursor' | 'opacity' | 'filter' | 'enable-background' | 'color-interpolation' | 'color-rendering'> {}
-interface NewViewportSVGAttributes<T> extends CoreSVGAttributes<T>, Pick<PresentationSVGAttributes, 'overflow' | 'clip'> {
+interface ContainerElementSVGAttributes<T> extends SVGAttributes<T>, ShapeElementSVGAttributes<T>, Pick<PresentationSVGAttributes, 'clip-path' | 'mask' | 'cursor' | 'opacity' | 'filter' | 'enable-background' | 'color-interpolation' | 'color-rendering'> {}
+interface NewViewportSVGAttributes<T> extends SVGAttributes<T>, Pick<PresentationSVGAttributes, 'overflow' | 'clip'> {
 	viewBox?: string | false
 }
 
@@ -308,7 +296,7 @@ interface PresentationSVGAttributes {
 	visibility?: 'visible' | 'hidden' | 'collapse' | 'inherit' | false
 }
 
-interface WindowEventMap<T> {
+interface WindowEventHandlers<T> {
 	onAfterPrint?: EventHandlerUnion<T, Event>
 	onBeforePrint?: EventHandlerUnion<T, Event>
 	onBeforeUnload?: EventHandlerUnion<T, BeforeUnloadEvent>
@@ -331,49 +319,6 @@ interface WindowEventMap<T> {
 	onStorage?: EventHandlerUnion<T, StorageEvent>
 	onUnhandledRejection?: EventHandlerUnion<T, PromiseRejectionEvent>
 	onUnload?: EventHandlerUnion<T, Event>
-
-	/** @deprecated Use camelCase event handlers */
-	onafterprint?: EventHandlerUnion<T, Event>
-	/** @deprecated Use camelCase event handlers */
-	onbeforeprint?: EventHandlerUnion<T, Event>
-	/** @deprecated Use camelCase event handlers */
-	onbeforeunload?: EventHandlerUnion<T, BeforeUnloadEvent>
-	/** @deprecated Use camelCase event handlers */
-	ongamepadconnected?: EventHandlerUnion<T, GamepadEvent>
-	/** @deprecated Use camelCase event handlers */
-	ongamepaddisconnected?: EventHandlerUnion<T, GamepadEvent>
-	/** @deprecated Use camelCase event handlers */
-	onhashchange?: EventHandlerUnion<T, HashChangeEvent>
-	/** @deprecated Use camelCase event handlers */
-	onlanguagechange?: EventHandlerUnion<T, Event>
-	/** @deprecated Use camelCase event handlers */
-	onmessage?: EventHandlerUnion<T, MessageEvent>
-	/** @deprecated Use camelCase event handlers */
-	onmessageerror?: EventHandlerUnion<T, MessageEvent>
-	/** @deprecated Use camelCase event handlers */
-	onoffline?: EventHandlerUnion<T, Event>
-	/** @deprecated Use camelCase event handlers */
-	ononline?: EventHandlerUnion<T, Event>
-	/** @deprecated Use camelCase event handlers */
-	onpagehide?: EventHandlerUnion<T, PageTransitionEvent>
-	// TODO `PageRevealEvent` is currently undefined in TS
-	/** @deprecated Use camelCase event handlers */
-	onpagereveal?: EventHandlerUnion<T, Event>
-	/** @deprecated Use camelCase event handlers */
-	onpageshow?: EventHandlerUnion<T, PageTransitionEvent>
-	// TODO `PageSwapEvent` is currently undefined in TS
-	/** @deprecated Use camelCase event handlers */
-	onpageswap?: EventHandlerUnion<T, Event>
-	/** @deprecated Use camelCase event handlers */
-	onpopstate?: EventHandlerUnion<T, PopStateEvent>
-	/** @deprecated Use camelCase event handlers */
-	onrejectionhandled?: EventHandlerUnion<T, PromiseRejectionEvent>
-	/** @deprecated Use camelCase event handlers */
-	onstorage?: EventHandlerUnion<T, StorageEvent>
-	/** @deprecated Use camelCase event handlers */
-	onunhandledrejection?: EventHandlerUnion<T, PromiseRejectionEvent>
-	/** @deprecated Use camelCase event handlers */
-	onunload?: EventHandlerUnion<T, Event>
 
 	'on:afterprint'?: EventHandlerWithOptionsUnion<T, Event>
 	'on:beforeprint'?: EventHandlerWithOptionsUnion<T, Event>
@@ -399,20 +344,7 @@ interface WindowEventMap<T> {
 	'on:unload'?: EventHandlerWithOptionsUnion<T, Event>
 }
 
-interface ElementEventMap<T> {
-	onFullscreenChange?: EventHandlerUnion<T, Event>
-	onFullscreenError?: EventHandlerUnion<T, Event>
-
-	'on:fullscreenchange'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:fullscreenerror'?: EventHandlerWithOptionsUnion<T, Event>
-
-	/** @deprecated Use camelCase event handlers */
-	onfullscreenchange?: EventHandlerUnion<T, Event>
-	/** @deprecated Use camelCase event handlers */
-	onfullscreenerror?: EventHandlerUnion<T, Event>
-}
-
-interface ShapeElementSVGAttributes<T> extends CoreSVGAttributes<T>, Pick<PresentationSVGAttributes, 'color' | 'fill' | 'fill-rule' | 'fill-opacity' | 'stroke' | 'stroke-width' | 'stroke-linecap' | 'stroke-linejoin' | 'stroke-miterlimit' | 'stroke-dasharray' | 'stroke-dashoffset' | 'stroke-opacity' | 'shape-rendering' | 'pathLength'> {}
+interface ShapeElementSVGAttributes<T> extends SVGAttributes<T>, Pick<PresentationSVGAttributes, 'color' | 'fill' | 'fill-rule' | 'fill-opacity' | 'stroke' | 'stroke-width' | 'stroke-linecap' | 'stroke-linejoin' | 'stroke-miterlimit' | 'stroke-dasharray' | 'stroke-dashoffset' | 'stroke-opacity' | 'shape-rendering' | 'pathLength'> {}
 
 // Voby - https://github.com/vobyjs/voby
 

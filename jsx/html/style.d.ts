@@ -2,7 +2,6 @@
 interface StyleHTMLAttributes<T> extends HTMLAttributes<T> {
 	blocking?: 'render'
 	media?: string
-	nonce?: string
 
 	/** @deprecated */
 	scoped?: boolean
@@ -14,7 +13,6 @@ interface StyleHTMLAttributes<T> extends HTMLAttributes<T> {
 interface StyleHTMLAttributes<T> extends HTMLAttributes<T> {
 	blocking?: 'render' | false
 	media?: string | false
-	nonce?: string | false
 
 	/** @deprecated */
 	scoped?: true | false | '' | false

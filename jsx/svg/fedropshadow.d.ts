@@ -82,13 +82,13 @@ interface PresentationSVGAttributes {
 }
 
 // Solid Next - https://www.solidjs.com/
-interface FeDropShadowSVGAttributes<T> extends CoreSVGAttributes<T>, FilterPrimitiveElementSVGAttributes<T>, StylableSVGAttributes, Pick<PresentationSVGAttributes, 'color' | 'flood-color' | 'flood-opacity'> {
+interface FeDropShadowSVGAttributes<T> extends SVGAttributes<T>, FilterPrimitiveElementSVGAttributes<T>, StylableSVGAttributes, Pick<PresentationSVGAttributes, 'color' | 'flood-color' | 'flood-opacity'> {
 	dx?: number | string | false
 	dy?: number | string | false
 	stdDeviation?: number | string | false
 }
 
-interface FilterPrimitiveElementSVGAttributes<T> extends CoreSVGAttributes<T>, Pick<PresentationSVGAttributes, 'color-interpolation-filters'> {
+interface FilterPrimitiveElementSVGAttributes<T> extends SVGAttributes<T>, Pick<PresentationSVGAttributes, 'color-interpolation-filters'> {
 	height?: number | string | false
 	result?: string | false
 	width?: number | string | false

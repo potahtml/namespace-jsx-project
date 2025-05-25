@@ -37,11 +37,6 @@ interface ThHTMLAttributes<T> extends HTMLAttributes<T> {
 	rowspan?: number | string | false
 	scope?: 'col' | 'row' | 'rowgroup' | 'colgroup' | false
 
-	/** @deprecated Use lowercase attributes */
-	colSpan?: number | string | false
-	/** @deprecated Use lowercase attributes */
-	rowSpan?: number | string | false
-
 	/** @deprecated */
 	align?: 'left' | 'center' | 'right' | 'justify' | 'char' | false
 	/** @deprecated */

@@ -72,7 +72,7 @@ interface PresentationSVGAttributes {
 }
 
 // Solid Next - https://www.solidjs.com/
-interface StopSVGAttributes<T> extends CoreSVGAttributes<T>, StylableSVGAttributes, Pick<PresentationSVGAttributes, 'color' | 'stop-color' | 'stop-opacity'> {
+interface StopSVGAttributes<T> extends SVGAttributes<T>, StylableSVGAttributes, Pick<PresentationSVGAttributes, 'color' | 'stop-color' | 'stop-opacity'> {
 	offset?: number | string | false
 }
 

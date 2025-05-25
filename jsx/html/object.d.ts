@@ -46,9 +46,6 @@ interface ObjectHTMLAttributes<T> extends HTMLAttributes<T> {
 	type?: string | false
 	width?: number | string | false
 
-	/** @deprecated Use lowercase attributes */
-	useMap?: string | false
-
 	/** @deprecated */
 	align?: string | false
 	/** @deprecated */

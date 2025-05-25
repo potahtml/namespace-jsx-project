@@ -1,5 +1,5 @@
 // Solid Main - https://www.solidjs.com/
-interface BodyHTMLAttributes<T> extends HTMLAttributes<T>, WindowEventMap<T>, ElementEventMap<T> {}
+interface BodyHTMLAttributes<T> extends HTMLAttributes<T>, WindowEventMap<T> {}
 interface WindowEventMap<T> {
 	onAfterPrint?: EventHandlerUnion<T, Event>
 	onBeforePrint?: EventHandlerUnion<T, Event>
@@ -69,22 +69,11 @@ interface WindowEventMap<T> {
 	'on:storage'?: EventHandlerWithOptionsUnion<T, StorageEvent>
 	'on:unhandledrejection'?: EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>
 	'on:unload'?: EventHandlerWithOptionsUnion<T, Event>
-}
-
-interface ElementEventMap<T> {
-	onFullscreenChange?: EventHandlerUnion<T, Event>
-	onFullscreenError?: EventHandlerUnion<T, Event>
-
-	'on:fullscreenchange'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:fullscreenerror'?: EventHandlerWithOptionsUnion<T, Event>
-
-	onfullscreenchange?: EventHandlerUnion<T, Event>
-	onfullscreenerror?: EventHandlerUnion<T, Event>
 }
 
 // Solid Next - https://www.solidjs.com/
-interface BodyHTMLAttributes<T> extends HTMLAttributes<T>, WindowEventMap<T>, ElementEventMap<T> {}
-interface WindowEventMap<T> {
+interface BodyHTMLAttributes<T> extends HTMLAttributes<T>, WindowEventHandlers<T> {}
+interface WindowEventHandlers<T> {
 	onAfterPrint?: EventHandlerUnion<T, Event>
 	onBeforePrint?: EventHandlerUnion<T, Event>
 	onBeforeUnload?: EventHandlerUnion<T, BeforeUnloadEvent>
@@ -108,49 +97,6 @@ interface WindowEventMap<T> {
 	onUnhandledRejection?: EventHandlerUnion<T, PromiseRejectionEvent>
 	onUnload?: EventHandlerUnion<T, Event>
 
-	/** @deprecated Use camelCase event handlers */
-	onafterprint?: EventHandlerUnion<T, Event>
-	/** @deprecated Use camelCase event handlers */
-	onbeforeprint?: EventHandlerUnion<T, Event>
-	/** @deprecated Use camelCase event handlers */
-	onbeforeunload?: EventHandlerUnion<T, BeforeUnloadEvent>
-	/** @deprecated Use camelCase event handlers */
-	ongamepadconnected?: EventHandlerUnion<T, GamepadEvent>
-	/** @deprecated Use camelCase event handlers */
-	ongamepaddisconnected?: EventHandlerUnion<T, GamepadEvent>
-	/** @deprecated Use camelCase event handlers */
-	onhashchange?: EventHandlerUnion<T, HashChangeEvent>
-	/** @deprecated Use camelCase event handlers */
-	onlanguagechange?: EventHandlerUnion<T, Event>
-	/** @deprecated Use camelCase event handlers */
-	onmessage?: EventHandlerUnion<T, MessageEvent>
-	/** @deprecated Use camelCase event handlers */
-	onmessageerror?: EventHandlerUnion<T, MessageEvent>
-	/** @deprecated Use camelCase event handlers */
-	onoffline?: EventHandlerUnion<T, Event>
-	/** @deprecated Use camelCase event handlers */
-	ononline?: EventHandlerUnion<T, Event>
-	/** @deprecated Use camelCase event handlers */
-	onpagehide?: EventHandlerUnion<T, PageTransitionEvent>
-	// TODO `PageRevealEvent` is currently undefined in TS
-	/** @deprecated Use camelCase event handlers */
-	onpagereveal?: EventHandlerUnion<T, Event>
-	/** @deprecated Use camelCase event handlers */
-	onpageshow?: EventHandlerUnion<T, PageTransitionEvent>
-	// TODO `PageSwapEvent` is currently undefined in TS
-	/** @deprecated Use camelCase event handlers */
-	onpageswap?: EventHandlerUnion<T, Event>
-	/** @deprecated Use camelCase event handlers */
-	onpopstate?: EventHandlerUnion<T, PopStateEvent>
-	/** @deprecated Use camelCase event handlers */
-	onrejectionhandled?: EventHandlerUnion<T, PromiseRejectionEvent>
-	/** @deprecated Use camelCase event handlers */
-	onstorage?: EventHandlerUnion<T, StorageEvent>
-	/** @deprecated Use camelCase event handlers */
-	onunhandledrejection?: EventHandlerUnion<T, PromiseRejectionEvent>
-	/** @deprecated Use camelCase event handlers */
-	onunload?: EventHandlerUnion<T, Event>
-
 	'on:afterprint'?: EventHandlerWithOptionsUnion<T, Event>
 	'on:beforeprint'?: EventHandlerWithOptionsUnion<T, Event>
 	'on:beforeunload'?: EventHandlerWithOptionsUnion<T, BeforeUnloadEvent>
@@ -173,19 +119,6 @@ interface WindowEventMap<T> {
 	'on:storage'?: EventHandlerWithOptionsUnion<T, StorageEvent>
 	'on:unhandledrejection'?: EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>
 	'on:unload'?: EventHandlerWithOptionsUnion<T, Event>
-}
-
-interface ElementEventMap<T> {
-	onFullscreenChange?: EventHandlerUnion<T, Event>
-	onFullscreenError?: EventHandlerUnion<T, Event>
-
-	'on:fullscreenchange'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:fullscreenerror'?: EventHandlerWithOptionsUnion<T, Event>
-
-	/** @deprecated Use camelCase event handlers */
-	onfullscreenchange?: EventHandlerUnion<T, Event>
-	/** @deprecated Use camelCase event handlers */
-	onfullscreenerror?: EventHandlerUnion<T, Event>
 }
 
 // Voby - https://github.com/vobyjs/voby

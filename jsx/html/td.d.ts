@@ -37,11 +37,6 @@ interface TdHTMLAttributes<T> extends HTMLAttributes<T> {
 	headers?: string | false
 	rowspan?: number | string | false
 
-	/** @deprecated Use lowercase attributes */
-	colSpan?: number | string | false
-	/** @deprecated Use lowercase attributes */
-	rowSpan?: number | string | false
-
 	/** @deprecated */
 	abbr?: string | false
 	/** @deprecated */

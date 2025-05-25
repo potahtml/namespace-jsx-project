@@ -7,7 +7,6 @@ interface ScriptHTMLAttributes<T> extends HTMLAttributes<T> {
 	fetchpriority?: 'high' | 'low' | 'auto'
 	integrity?: string
 	nomodule?: boolean
-	nonce?: string
 	referrerpolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
 	src?: string
 	type?: 'importmap' | 'module' | 'speculationrules' | (string & {})
@@ -36,20 +35,12 @@ interface ScriptHTMLAttributes<T> extends HTMLAttributes<T> {
 	fetchpriority?: 'high' | 'low' | 'auto' | false
 	integrity?: string | false
 	nomodule?: true | false | '' | false
-	nonce?: string | false
 	referrerpolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url' | false
 	src?: string | false
 	type?: 'importmap' | 'module' | 'speculationrules' | (string & {}) | false
 
 	/** @experimental */
 	attributionsrc?: string | false
-
-	/** @deprecated Use lowercase attributes */
-	crossOrigin?: 'anonymous' | 'use-credentials' | '' | true | false
-	/** @deprecated Use lowercase attributes */
-	noModule?: boolean | false
-	/** @deprecated Use lowercase attributes */
-	referrerPolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url' | false
 
 	/** @deprecated */
 	charset?: string | false

@@ -10,9 +10,6 @@ interface ModHTMLAttributes<T> extends HTMLAttributes<T> {
 interface ModHTMLAttributes<T> extends HTMLAttributes<T> {
 	cite?: string | false
 	datetime?: string | false
-
-	/** @deprecated Use lowercase attributes */
-	dateTime?: string | false
 }
 
 // Voby - https://github.com/vobyjs/voby

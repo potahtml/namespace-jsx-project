@@ -12,7 +12,7 @@ interface FeDistantLightSVGAttributes<T> extends LightSourceElementSVGAttributes
 	elevation?: number | string | false
 }
 
-interface LightSourceElementSVGAttributes<T> extends CoreSVGAttributes<T> {}
+interface LightSourceElementSVGAttributes<T> extends SVGAttributes<T> {}
 
 // Vue - https://vuejs.org/
 

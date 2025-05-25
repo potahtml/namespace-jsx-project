@@ -3,7 +3,6 @@ interface ImgHTMLAttributes<T> extends HTMLAttributes<T> {
 	alt?: string
 	crossorigin?: 'anonymous' | 'use-credentials' | ''
 	decoding?: 'sync' | 'async' | 'auto'
-	elementtiming?: string
 	fetchpriority?: 'high' | 'low' | 'auto'
 	height?: number | string
 	ismap?: boolean
@@ -49,7 +48,6 @@ interface ImgHTMLAttributes<T> extends HTMLAttributes<T> {
 	alt?: string | false
 	crossorigin?: 'anonymous' | 'use-credentials' | '' | true | false
 	decoding?: 'sync' | 'async' | 'auto' | false
-	elementtiming?: string | false
 	fetchpriority?: 'high' | 'low' | 'auto' | false
 	height?: number | string | false
 	ismap?: true | false | '' | false
@@ -65,17 +63,6 @@ interface ImgHTMLAttributes<T> extends HTMLAttributes<T> {
 	attributionsrc?: string | false
 	/** @experimental */
 	sharedstoragewritable?: true | false | '' | false
-
-	/** @deprecated Use lowercase attributes */
-	crossOrigin?: 'anonymous' | 'use-credentials' | '' | true | false
-	/** @deprecated Use lowercase attributes */
-	isMap?: boolean | false
-	/** @deprecated Use lowercase attributes */
-	referrerPolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url' | false
-	/** @deprecated Use lowercase attributes */
-	srcSet?: string | false
-	/** @deprecated Use lowercase attributes */
-	useMap?: string | false
 
 	/** @deprecated */
 	align?: 'top' | 'middle' | 'bottom' | 'left' | 'right' | false

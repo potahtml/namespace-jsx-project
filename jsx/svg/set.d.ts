@@ -1,5 +1,22 @@
 // Solid Main - https://www.solidjs.com/
-interface SetSVGAttributes<T> extends CoreSVGAttributes<T>, StylableSVGAttributes, AnimationTimingSVGAttributes {}
+interface SetSVGAttributes<T> extends AnimationElementSVGAttributes<T>, StylableSVGAttributes, AnimationTimingSVGAttributes {}
+interface AnimationElementSVGAttributes<T> extends CoreSVGAttributes<T>, ExternalResourceSVGAttributes, ConditionalProcessingSVGAttributes {
+	// TODO TimeEvent is currently undefined on TS
+	onBegin?: EventHandlerUnion<T, Event>
+	onbegin?: EventHandlerUnion<T, Event>
+	'on:begin'?: EventHandlerWithOptionsUnion<T, Event>
+
+	// TODO TimeEvent is currently undefined on TS
+	onEnd?: EventHandlerUnion<T, Event>
+	onend?: EventHandlerUnion<T, Event>
+	'on:end'?: EventHandlerWithOptionsUnion<T, Event>
+
+	// TODO TimeEvent is currently undefined on TS
+	onRepeat?: EventHandlerUnion<T, Event>
+	onrepeat?: EventHandlerUnion<T, Event>
+	'on:repeat'?: EventHandlerWithOptionsUnion<T, Event>
+}
+
 interface StylableSVGAttributes {
 	class?: string
 	style?: CSSProperties | string
@@ -17,8 +34,32 @@ interface AnimationTimingSVGAttributes {
 	restart?: 'always' | 'whenNotActive' | 'never'
 }
 
+interface ExternalResourceSVGAttributes {
+	externalResourcesRequired?: 'true' | 'false'
+}
+
+interface ConditionalProcessingSVGAttributes {
+	requiredExtensions?: string
+	requiredFeatures?: string
+	systemLanguage?: string
+}
+
 // Solid Next - https://www.solidjs.com/
-interface SetSVGAttributes<T> extends CoreSVGAttributes<T>, StylableSVGAttributes, AnimationTimingSVGAttributes {}
+interface SetSVGAttributes<T> extends AnimationElementSVGAttributes<T>, StylableSVGAttributes, AnimationTimingSVGAttributes {}
+interface AnimationElementSVGAttributes<T> extends SVGAttributes<T>, ExternalResourceSVGAttributes, ConditionalProcessingSVGAttributes {
+	// TODO TimeEvent is currently undefined on TS
+	onBegin?: EventHandlerUnion<T, Event>
+	'on:begin'?: EventHandlerWithOptionsUnion<T, Event>
+
+	// TODO TimeEvent is currently undefined on TS
+	onEnd?: EventHandlerUnion<T, Event>
+	'on:end'?: EventHandlerWithOptionsUnion<T, Event>
+
+	// TODO TimeEvent is currently undefined on TS
+	onRepeat?: EventHandlerUnion<T, Event>
+	'on:repeat'?: EventHandlerWithOptionsUnion<T, Event>
+}
+
 interface StylableSVGAttributes {
 	class?: string | ClassList | false
 	style?: CSSProperties | string | false
@@ -34,6 +75,16 @@ interface AnimationTimingSVGAttributes {
 	repeatCount?: number | 'indefinite' | false
 	repeatDur?: string | false
 	restart?: 'always' | 'whenNotActive' | 'never' | false
+}
+
+interface ExternalResourceSVGAttributes {
+	externalResourcesRequired?: 'false' | 'true' | false
+}
+
+interface ConditionalProcessingSVGAttributes {
+	requiredExtensions?: string | false
+	requiredFeatures?: string | false
+	systemLanguage?: string | false
 }
 
 // Preact - https://preactjs.com/

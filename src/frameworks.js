@@ -32,7 +32,7 @@ export const libs = [
 			elements: {
 				html: {
 					values: ['htmlelementtags', 'htmlelementdeprecatedtags'],
-					skip: ['htmlattributes', 'ariaattributes', 'domattributes'],
+					skip: ['ariaattributes', 'domattributes', 'htmlattributes'],
 				},
 				svg: {
 					values: ['svgelementtags'],
@@ -54,37 +54,29 @@ export const libs = [
 			keys: {
 				HTMLElement: {
 					/* HTMLElement interface */
-					values: [
-						'htmlattributes',
-						'customeventhandlerscamelcase',
-						'customeventhandlerslowercase',
-						'customeventhandlersnamespaced',
-					],
-					skip: ['ariaattributes', 'domattributes'],
+					values: ['htmlattributes'],
+					skip: ['domattributes'],
 				},
 				SVGElement: {
 					/* SVGElement interface */
 					values: ['coresvgattributes'],
-					skip: ['ariaattributes', 'domattributes'],
+					skip: ['domattributes'],
 				},
 				MathMLElement: {
 					/* MathMLElement interface */
 					values: ['mathmlattributes'],
-					skip: ['htmlattributes', 'domattributes'],
+					skip: ['domattributes'],
 				},
 				Element: {
 					/* Element interface */
 					values: [
 						'ariaattributes',
 						'domattributes',
-						'elementeventmap',
-					],
-					skip: [
-						// htmlelement events
 						'customeventhandlerscamelcase',
 						'customeventhandlerslowercase',
 						'customeventhandlersnamespaced',
-
+					],
+					skip: [
 						// custom
 						'customattributes',
 						'directiveattributes',
@@ -121,59 +113,41 @@ export const libs = [
 			elements: {
 				html: {
 					values: ['htmlelementtags', 'htmlelementdeprecatedtags'],
-					skip: ['htmlattributes', 'ariaattributes', 'domattributes'],
+					skip: ['htmlattributes'],
 				},
 				svg: {
 					values: ['svgelementtags'],
-					skip: [
-						'ariaattributes',
-						'domattributes',
-						'coresvgattributes',
-					],
+					skip: ['svgattributes'],
 				},
 				math: {
 					values: ['mathmlelementtags'],
-					skip: [
-						'ariaattributes',
-						'domattributes',
-						'mathmlattributes',
-					],
+					skip: ['mathmlattributes'],
 				},
 			},
 			keys: {
 				HTMLElement: {
 					/* HTMLElement interface */
-					values: [
-						'htmlattributes',
-						'customeventhandlerscamelcase',
-						'customeventhandlerslowercase',
-						'customeventhandlersnamespaced',
-					],
-					skip: ['ariaattributes', 'domattributes'],
+					values: ['htmlattributes'],
+					skip: ['elementattributes'],
 				},
 				SVGElement: {
 					/* SVGElement interface */
-					values: ['coresvgattributes'],
-					skip: ['ariaattributes', 'domattributes'],
+					values: ['svgattributes'],
+					skip: ['elementattributes'],
 				},
 				MathMLElement: {
 					/* MathMLElement interface */
 					values: ['mathmlattributes'],
-					skip: ['htmlattributes', 'domattributes'],
+					skip: ['elementattributes'],
 				},
 				Element: {
 					/* Element interface */
 					values: [
 						'ariaattributes',
-						'domattributes',
-						'elementeventmap',
+						'elementattributes',
+						'elementeventhandlers',
 					],
 					skip: [
-						// htmlelement events
-						'customeventhandlerscamelcase',
-						'customeventhandlerslowercase',
-						'customeventhandlersnamespaced',
-
 						// custom
 						'customattributes',
 						'directiveattributes',

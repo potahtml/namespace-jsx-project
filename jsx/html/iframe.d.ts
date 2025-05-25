@@ -65,9 +65,6 @@ interface IframeHTMLAttributes<T> extends HTMLAttributes<T> {
 	srcdoc?: string | false
 	width?: number | string | false
 
-	/** @deprecated Use lowercase attributes */
-	referrerPolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url' | false
-
 	/** @experimental */
 	adauctionheaders?: true | false | '' | false
 	/**

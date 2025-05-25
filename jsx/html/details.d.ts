@@ -25,6 +25,7 @@ interface DetailsHTMLAttributes extends HTMLAttributes {
 
 // Preact - https://preactjs.com/
 interface DetailsHTMLAttributes<T extends EventTarget = HTMLDetailsElement> extends HTMLAttributes<T> {
+	name?: string
 	open?: boolean
 }
 

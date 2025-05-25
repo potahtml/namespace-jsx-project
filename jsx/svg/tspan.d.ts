@@ -99,7 +99,7 @@ interface TSpanSVGAttributes<T> extends TextContentElementSVGAttributes<T>, Cond
 	y?: number | string | false
 }
 
-interface TextContentElementSVGAttributes<T> extends CoreSVGAttributes<T>, Pick<PresentationSVGAttributes, 'font-family' | 'font-style' | 'font-variant' | 'font-weight' | 'font-stretch' | 'font-size' | 'font-size-adjust' | 'kerning' | 'letter-spacing' | 'word-spacing' | 'text-decoration' | 'glyph-orientation-horizontal' | 'glyph-orientation-vertical' | 'direction' | 'unicode-bidi' | 'text-anchor' | 'dominant-baseline' | 'color' | 'fill' | 'fill-rule' | 'fill-opacity' | 'stroke' | 'stroke-width' | 'stroke-linecap' | 'stroke-linejoin' | 'stroke-miterlimit' | 'stroke-dasharray' | 'stroke-dashoffset' | 'stroke-opacity'> {}
+interface TextContentElementSVGAttributes<T> extends SVGAttributes<T>, Pick<PresentationSVGAttributes, 'font-family' | 'font-style' | 'font-variant' | 'font-weight' | 'font-stretch' | 'font-size' | 'font-size-adjust' | 'kerning' | 'letter-spacing' | 'word-spacing' | 'text-decoration' | 'glyph-orientation-horizontal' | 'glyph-orientation-vertical' | 'direction' | 'unicode-bidi' | 'text-anchor' | 'dominant-baseline' | 'color' | 'fill' | 'fill-rule' | 'fill-opacity' | 'stroke' | 'stroke-width' | 'stroke-linecap' | 'stroke-linejoin' | 'stroke-miterlimit' | 'stroke-dasharray' | 'stroke-dashoffset' | 'stroke-opacity'> {}
 interface ConditionalProcessingSVGAttributes {
 	requiredExtensions?: string | false
 	requiredFeatures?: string | false

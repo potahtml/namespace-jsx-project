@@ -1,6 +1,10 @@
 // Solid Main - https://www.solidjs.com/
-interface MathMLAttributes<T> extends HTMLAttributes<T> {
+interface MathMLAttributes<T> extends DOMAttributes<T> {
+	dir?: 'ltr' | 'rtl' | 'auto'
 	displaystyle?: boolean
+	scriptlevel?: string
+	xmlns?: string
+
 	/** @deprecated */
 	href?: string
 	/** @deprecated */
@@ -9,15 +13,15 @@ interface MathMLAttributes<T> extends HTMLAttributes<T> {
 	mathcolor?: string
 	/** @deprecated */
 	mathsize?: string
-	nonce?: string
-	scriptlevel?: string
 }
 
 // Solid Next - https://www.solidjs.com/
-interface MathMLAttributes<T> extends HTMLAttributes<T> {
+interface MathMLAttributes<T> extends ElementAttributes<T> {
+	dir?: 'ltr' | 'rtl' | 'auto' | false
+	displaystyle?: true | false | '' | false
+	scriptlevel?: string | false
 	xmlns?: string | false
 
-	displaystyle?: true | false | '' | false
 	/** @deprecated */
 	href?: string | false
 	/** @deprecated */
@@ -26,8 +30,6 @@ interface MathMLAttributes<T> extends HTMLAttributes<T> {
 	mathcolor?: string | false
 	/** @deprecated */
 	mathsize?: string | false
-	nonce?: string | false
-	scriptlevel?: string | false
 }
 
 // Voby - https://github.com/vobyjs/voby

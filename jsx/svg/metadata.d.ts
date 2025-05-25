@@ -2,7 +2,7 @@
 interface MetadataSVGAttributes<T> extends CoreSVGAttributes<T> {}
 
 // Solid Next - https://www.solidjs.com/
-interface MetadataSVGAttributes<T> extends CoreSVGAttributes<T> {}
+interface MetadataSVGAttributes<T> extends SVGAttributes<T> {}
 
 // Vue - https://vuejs.org/
 

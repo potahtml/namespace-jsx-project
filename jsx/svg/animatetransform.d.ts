@@ -3,7 +3,23 @@ interface AnimateTransformSVGAttributes<T> extends AnimationElementSVGAttributes
 	type?: 'translate' | 'scale' | 'rotate' | 'skewX' | 'skewY'
 }
 
-interface AnimationElementSVGAttributes<T> extends CoreSVGAttributes<T>, ExternalResourceSVGAttributes, ConditionalProcessingSVGAttributes {}
+interface AnimationElementSVGAttributes<T> extends CoreSVGAttributes<T>, ExternalResourceSVGAttributes, ConditionalProcessingSVGAttributes {
+	// TODO TimeEvent is currently undefined on TS
+	onBegin?: EventHandlerUnion<T, Event>
+	onbegin?: EventHandlerUnion<T, Event>
+	'on:begin'?: EventHandlerWithOptionsUnion<T, Event>
+
+	// TODO TimeEvent is currently undefined on TS
+	onEnd?: EventHandlerUnion<T, Event>
+	onend?: EventHandlerUnion<T, Event>
+	'on:end'?: EventHandlerWithOptionsUnion<T, Event>
+
+	// TODO TimeEvent is currently undefined on TS
+	onRepeat?: EventHandlerUnion<T, Event>
+	onrepeat?: EventHandlerUnion<T, Event>
+	'on:repeat'?: EventHandlerWithOptionsUnion<T, Event>
+}
+
 interface AnimationAttributeTargetSVGAttributes {
 	attributeName?: string
 	attributeType?: 'CSS' | 'XML' | 'auto'
@@ -52,7 +68,20 @@ interface AnimateTransformSVGAttributes<T> extends AnimationElementSVGAttributes
 	type?: 'translate' | 'scale' | 'rotate' | 'skewX' | 'skewY' | false
 }
 
-interface AnimationElementSVGAttributes<T> extends CoreSVGAttributes<T>, ExternalResourceSVGAttributes, ConditionalProcessingSVGAttributes {}
+interface AnimationElementSVGAttributes<T> extends SVGAttributes<T>, ExternalResourceSVGAttributes, ConditionalProcessingSVGAttributes {
+	// TODO TimeEvent is currently undefined on TS
+	onBegin?: EventHandlerUnion<T, Event>
+	'on:begin'?: EventHandlerWithOptionsUnion<T, Event>
+
+	// TODO TimeEvent is currently undefined on TS
+	onEnd?: EventHandlerUnion<T, Event>
+	'on:end'?: EventHandlerWithOptionsUnion<T, Event>
+
+	// TODO TimeEvent is currently undefined on TS
+	onRepeat?: EventHandlerUnion<T, Event>
+	'on:repeat'?: EventHandlerWithOptionsUnion<T, Event>
+}
+
 interface AnimationAttributeTargetSVGAttributes {
 	attributeName?: string | false
 	attributeType?: 'CSS' | 'XML' | 'auto' | false

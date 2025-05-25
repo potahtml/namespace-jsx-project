@@ -30,7 +30,7 @@ interface LinearGradientSVGAttributes<T> extends GradientElementSVGAttributes<T>
 	y2?: number | string | false
 }
 
-interface GradientElementSVGAttributes<T> extends CoreSVGAttributes<T>, ExternalResourceSVGAttributes, StylableSVGAttributes {
+interface GradientElementSVGAttributes<T> extends SVGAttributes<T>, ExternalResourceSVGAttributes, StylableSVGAttributes {
 	gradientTransform?: string | false
 	gradientUnits?: 'userSpaceOnUse' | 'objectBoundingBox' | false
 	href?: string | false

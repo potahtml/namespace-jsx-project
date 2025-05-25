@@ -1,8 +1,6 @@
 // Solid Main - https://www.solidjs.com/
 interface KeygenHTMLAttributes<T> extends HTMLAttributes<T> {
 	/** @deprecated */
-	autofocus?: boolean
-	/** @deprecated */
 	challenge?: string
 	/** @deprecated */
 	disabled?: boolean
@@ -18,8 +16,6 @@ interface KeygenHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface KeygenHTMLAttributes<T> extends HTMLAttributes<T> {
-	/** @deprecated */
-	autofocus?: true | false | '' | false
 	/** @deprecated */
 	challenge?: string | false
 	/** @deprecated */

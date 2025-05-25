@@ -1,16 +1,14 @@
 // Solid Main - https://www.solidjs.com/
 interface InputHTMLAttributes<T> extends HTMLAttributes<T> {
 	accept?: string
+	alpha?: boolean
 	alt?: string
 	autocomplete?: 'additional-name' | 'address-level1' | 'address-level2' | 'address-level3' | 'address-level4' | 'address-line1' | 'address-line2' | 'address-line3' | 'bday' | 'bday-day' | 'bday-month' | 'bday-year' | 'billing' | 'cc-additional-name' | 'cc-csc' | 'cc-exp' | 'cc-exp-month' | 'cc-exp-year' | 'cc-family-name' | 'cc-given-name' | 'cc-name' | 'cc-number' | 'cc-type' | 'country' | 'country-name' | 'current-password' | 'email' | 'family-name' | 'fax' | 'given-name' | 'home' | 'honorific-prefix' | 'honorific-suffix' | 'impp' | 'language' | 'mobile' | 'name' | 'new-password' | 'nickname' | 'off' | 'on' | 'organization' | 'organization-title' | 'pager' | 'photo' | 'postal-code' | 'sex' | 'shipping' | 'street-address' | 'tel' | 'tel-area-code' | 'tel-country-code' | 'tel-extension' | 'tel-local' | 'tel-local-prefix' | 'tel-local-suffix' | 'tel-national' | 'transaction-amount' | 'transaction-currency' | 'url' | 'username' | 'work' | (string & {})
-	autocorrect?: 'on' | 'off'
-	autofocus?: boolean
 	capture?: 'user' | 'environment'
 	checked?: boolean
-	crossorigin?: 'anonymous' | 'use-credentials' | ''
+	colorspace?: string
 	dirname?: string
 	disabled?: boolean
-	enterkeyhint?: 'enter' | 'done' | 'go' | 'next' | 'previous' | 'search' | 'send'
 	form?: string
 	formaction?: string
 	formenctype?: 'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'
@@ -43,7 +41,6 @@ interface InputHTMLAttributes<T> extends HTMLAttributes<T> {
 	/** @non-standard */
 	incremental?: boolean
 
-	crossOrigin?: 'anonymous' | 'use-credentials' | ''
 	formAction?: string
 	formEnctype?: 'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'
 	formMethod?: 'post' | 'get' | 'dialog'
@@ -62,16 +59,14 @@ interface InputHTMLAttributes<T> extends HTMLAttributes<T> {
 // Solid Next - https://www.solidjs.com/
 interface InputHTMLAttributes<T> extends HTMLAttributes<T> {
 	accept?: string | false
+	alpha?: true | false | '' | false
 	alt?: string | false
 	autocomplete?: 'additional-name' | 'address-level1' | 'address-level2' | 'address-level3' | 'address-level4' | 'address-line1' | 'address-line2' | 'address-line3' | 'bday' | 'bday-day' | 'bday-month' | 'bday-year' | 'billing' | 'cc-additional-name' | 'cc-csc' | 'cc-exp' | 'cc-exp-month' | 'cc-exp-year' | 'cc-family-name' | 'cc-given-name' | 'cc-name' | 'cc-number' | 'cc-type' | 'country' | 'country-name' | 'current-password' | 'email' | 'family-name' | 'fax' | 'given-name' | 'home' | 'honorific-prefix' | 'honorific-suffix' | 'impp' | 'language' | 'mobile' | 'name' | 'new-password' | 'nickname' | 'off' | 'on' | 'organization' | 'organization-title' | 'pager' | 'photo' | 'postal-code' | 'sex' | 'shipping' | 'street-address' | 'tel' | 'tel-area-code' | 'tel-country-code' | 'tel-extension' | 'tel-local' | 'tel-local-prefix' | 'tel-local-suffix' | 'tel-national' | 'transaction-amount' | 'transaction-currency' | 'url' | 'username' | 'work' | (string & {}) | false
-	autocorrect?: 'on' | 'off' | false
-	autofocus?: true | false | '' | false
 	capture?: 'user' | 'environment' | false
 	checked?: true | false | '' | false
-	crossorigin?: 'anonymous' | 'use-credentials' | '' | true | false
+	colorspace?: string | false
 	dirname?: string | false
 	disabled?: true | false | '' | false
-	enterkeyhint?: 'enter' | 'done' | 'go' | 'next' | 'previous' | 'search' | 'send' | false
 	form?: string | false
 	formaction?: string | false
 	formenctype?: 'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain' | false
@@ -103,25 +98,6 @@ interface InputHTMLAttributes<T> extends HTMLAttributes<T> {
 
 	/** @non-standard */
 	incremental?: true | false | '' | false
-
-	/** @deprecated Use lowercase attributes */
-	crossOrigin?: 'anonymous' | 'use-credentials' | '' | true | false
-	/** @deprecated Use lowercase attributes */
-	formAction?: string | false
-	/** @deprecated Use lowercase attributes */
-	formEnctype?: 'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain' | false
-	/** @deprecated Use lowercase attributes */
-	formMethod?: 'post' | 'get' | 'dialog' | false
-	/** @deprecated Use lowercase attributes */
-	formNoValidate?: boolean | false
-	/** @deprecated Use lowercase attributes */
-	formTarget?: string | false
-	/** @deprecated Use lowercase attributes */
-	maxLength?: number | string | false
-	/** @deprecated Use lowercase attributes */
-	minLength?: number | string | false
-	/** @deprecated Use lowercase attributes */
-	readOnly?: boolean | false
 
 	/** @deprecated */
 	align?: string | false

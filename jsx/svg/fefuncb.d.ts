@@ -10,7 +10,7 @@ interface FeFuncSVGAttributes<T> extends CoreSVGAttributes<T> {
 }
 
 // Solid Next - https://www.solidjs.com/
-interface FeFuncSVGAttributes<T> extends CoreSVGAttributes<T> {
+interface FeFuncSVGAttributes<T> extends SVGAttributes<T> {
 	amplitude?: number | string | false
 	exponent?: number | string | false
 	intercept?: number | string | false

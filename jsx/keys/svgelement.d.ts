@@ -1,20 +1,18 @@
 // Solid Main - https://www.solidjs.com/
-interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
-	id?: string
+interface CoreSVGAttributes<T> extends DOMAttributes<T> {
 	lang?: string
 	tabindex?: number | string
+	xmlns?: string
 
 	tabIndex?: number | string
 }
 
 // Solid Next - https://www.solidjs.com/
-interface CoreSVGAttributes<T> extends AriaAttributes, DOMAttributes<T> {
+interface SVGAttributes<T> extends ElementAttributes<T> {
 	id?: string | false
 	lang?: string | false
 	tabindex?: number | string | false
-
-	/** @deprecated Use lowercase attributes */
-	tabIndex?: number | string | false
+	xmlns?: string | false
 }
 
 // Voby - https://github.com/vobyjs/voby

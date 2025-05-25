@@ -1,6 +1,5 @@
 // Solid Main - https://www.solidjs.com/
 interface ButtonHTMLAttributes<T> extends HTMLAttributes<T> {
-	autofocus?: boolean
 	disabled?: boolean
 	form?: string
 	formaction?: string
@@ -30,7 +29,6 @@ interface ButtonHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface ButtonHTMLAttributes<T> extends HTMLAttributes<T> {
-	autofocus?: true | false | '' | false
 	disabled?: true | false | '' | false
 	form?: string | false
 	formaction?: string | false
@@ -48,21 +46,6 @@ interface ButtonHTMLAttributes<T> extends HTMLAttributes<T> {
 	command?: 'show-modal' | 'close' | 'show-popover' | 'hide-popover' | 'toggle-popover' | (string & {}) | false
 	/** @experimental */
 	commandfor?: string | false
-
-	/** @deprecated Use lowercase attributes */
-	formAction?: string | false
-	/** @deprecated Use lowercase attributes */
-	formEnctype?: 'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain' | false
-	/** @deprecated Use lowercase attributes */
-	formMethod?: 'post' | 'get' | 'dialog' | false
-	/** @deprecated Use lowercase attributes */
-	formNoValidate?: boolean | false
-	/** @deprecated Use lowercase attributes */
-	formTarget?: string | false
-	/** @deprecated Use lowercase attributes */
-	popoverTarget?: string | false
-	/** @deprecated Use lowercase attributes */
-	popoverTargetAction?: 'hide' | 'show' | 'toggle' | false
 }
 
 // Voby - https://github.com/vobyjs/voby

@@ -11,10 +11,6 @@ interface FormHTMLAttributes<T> extends HTMLAttributes<T> {
 	rel?: string
 	target?: '_self' | '_blank' | '_parent' | '_top' | (string & {})
 
-	onFormData?: EventHandlerUnion<T, FormDataEvent>
-	'on:formdata'?: EventHandlerWithOptionsUnion<T, FormDataEvent>
-	onformdata?: EventHandlerUnion<T, FormDataEvent>
-
 	noValidate?: boolean
 
 	/** @deprecated */
@@ -33,14 +29,6 @@ interface FormHTMLAttributes<T> extends HTMLAttributes<T> {
 	novalidate?: true | false | '' | false
 	rel?: string | false
 	target?: '_self' | '_blank' | '_parent' | '_top' | (string & {}) | false
-
-	onFormData?: EventHandlerUnion<T, FormDataEvent>
-	'on:formdata'?: EventHandlerWithOptionsUnion<T, FormDataEvent>
-	/** @deprecated Use camelCase event handlers */
-	onformdata?: EventHandlerUnion<T, FormDataEvent>
-
-	/** @deprecated Use lowercase attributes */
-	noValidate?: boolean | false
 
 	/** @deprecated */
 	accept?: string | false

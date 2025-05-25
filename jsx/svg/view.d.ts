@@ -21,7 +21,7 @@ interface ZoomAndPanSVGAttributes {
 }
 
 // Solid Next - https://www.solidjs.com/
-interface ViewSVGAttributes<T> extends CoreSVGAttributes<T>, ExternalResourceSVGAttributes, FitToViewBoxSVGAttributes, ZoomAndPanSVGAttributes {
+interface ViewSVGAttributes<T> extends SVGAttributes<T>, ExternalResourceSVGAttributes, FitToViewBoxSVGAttributes, ZoomAndPanSVGAttributes {
 	viewTarget?: string | false
 }
 

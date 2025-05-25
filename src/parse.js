@@ -10,7 +10,7 @@ import {
 import oxc from 'oxc-parser'
 
 /** This is used to parse framework interfaces */
-const dev = true
+const dev = false
 
 export async function parseFromURL(file, name, map = {}) {
 	let text

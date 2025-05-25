@@ -97,7 +97,7 @@ interface FeCompositeSVGAttributes<T> extends FilterPrimitiveElementSVGAttribute
 	operator?: 'over' | 'in' | 'out' | 'atop' | 'xor' | 'arithmetic' | false
 }
 
-interface FilterPrimitiveElementSVGAttributes<T> extends CoreSVGAttributes<T>, Pick<PresentationSVGAttributes, 'color-interpolation-filters'> {
+interface FilterPrimitiveElementSVGAttributes<T> extends SVGAttributes<T>, Pick<PresentationSVGAttributes, 'color-interpolation-filters'> {
 	height?: number | string | false
 	result?: string | false
 	width?: number | string | false

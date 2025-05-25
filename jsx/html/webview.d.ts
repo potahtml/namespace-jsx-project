@@ -16,7 +16,6 @@ interface WebViewHTMLAttributes<T> extends HTMLAttributes<T> {
 
 	// does this exists?
 	allowfullscreen?: boolean
-	autofocus?: boolean
 	autosize?: boolean
 
 	/** @deprecated */
@@ -45,7 +44,6 @@ interface WebViewHTMLAttributes<T> extends HTMLAttributes<T> {
 
 	// does this exists?
 	allowfullscreen?: true | false | '' | false
-	autofocus?: true | false | '' | false
 	autosize?: true | false | '' | false
 
 	/** @deprecated */

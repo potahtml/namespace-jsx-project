@@ -19,8 +19,6 @@ interface TrackHTMLAttributes<T> extends HTMLAttributes<T> {
 	src?: string | false
 	srclang?: string | false
 
-	/** @deprecated Use lowercase attributes */
-	mediaGroup?: string | false
 	/** @deprecated */
 	mediagroup?: string | false
 }

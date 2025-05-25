@@ -19,7 +19,7 @@ interface StylableSVGAttributes {
 }
 
 // Solid Next - https://www.solidjs.com/
-interface FilterSVGAttributes<T> extends CoreSVGAttributes<T>, ExternalResourceSVGAttributes, StylableSVGAttributes {
+interface FilterSVGAttributes<T> extends SVGAttributes<T>, ExternalResourceSVGAttributes, StylableSVGAttributes {
 	filterRes?: number | string | false
 	filterUnits?: 'userSpaceOnUse' | 'objectBoundingBox' | false
 	height?: number | string | false
