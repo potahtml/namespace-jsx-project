@@ -81662,7 +81662,7 @@
             "Preact": "string",
             "React": "string",
             "Solid Main": "string",
-            "Solid Next": "string  | false",
+            "Solid Next": "string | false",
             "Vue": "string"
           }
         },
@@ -81715,7 +81715,7 @@
             "Preact": "boolean | 'true' | 'false'",
             "React": "boolean | 'true' | 'false'",
             "Solid Main": "boolean | 'false' | 'true'",
-            "Solid Next": "'false' | 'true'  | false",
+            "Solid Next": "'false' | 'true' | false",
             "Vue": "boolean | 'true' | 'false'"
           }
         },
@@ -81760,7 +81760,7 @@
             "Preact": "'none' | 'inline' | 'list' | 'both'",
             "React": "'none' | 'inline' | 'list' | 'both'",
             "Solid Main": "'none' | 'inline' | 'list' | 'both'",
-            "Solid Next": "'none' | 'inline' | 'list' | 'both'  | false",
+            "Solid Next": "'none' | 'inline' | 'list' | 'both' | false",
             "Vue": "'none' | 'inline' | 'list' | 'both'"
           }
         },
@@ -81804,7 +81804,7 @@
             "Preact": "string",
             "React": "string",
             "Solid Main": "string",
-            "Solid Next": "string  | false"
+            "Solid Next": "string | false"
           }
         },
         "ariaBrailleLabel": {
@@ -81856,7 +81856,7 @@
             "Preact": "string",
             "React": "string",
             "Solid Main": "string",
-            "Solid Next": "string  | false"
+            "Solid Next": "string | false"
           }
         },
         "ariaBrailleRoleDescription": {
@@ -81899,7 +81899,7 @@
             "Preact": "boolean | 'true' | 'false'",
             "React": "boolean | 'true' | 'false'",
             "Solid Main": "boolean | 'false' | 'true'",
-            "Solid Next": "'false' | 'true'  | false",
+            "Solid Next": "'false' | 'true' | false",
             "Vue": "boolean | 'true' | 'false'"
           }
         },
@@ -81944,7 +81944,7 @@
             "Preact": "boolean | 'true' | 'false' | 'mixed'",
             "React": "boolean | 'false' | 'mixed' | 'true'",
             "Solid Main": "boolean | 'false' | 'mixed' | 'true'",
-            "Solid Next": "'false' | 'true' | 'mixed'  | false",
+            "Solid Next": "'false' | 'true' | 'mixed' | false",
             "Vue": "boolean | 'true' | 'false' | 'mixed'"
           }
         },
@@ -81989,7 +81989,7 @@
             "Preact": "number",
             "React": "number",
             "Solid Main": "number | string",
-            "Solid Next": "number | string  | false",
+            "Solid Next": "number | string | false",
             "Vue": "number | string"
           }
         },
@@ -82034,7 +82034,7 @@
             "Preact": "number",
             "React": "number",
             "Solid Main": "number | string",
-            "Solid Next": "number | string  | false",
+            "Solid Next": "number | string | false",
             "Vue": "number | string"
           }
         },
@@ -82078,7 +82078,7 @@
             "Preact": "string",
             "React": "string",
             "Solid Main": "number | string",
-            "Solid Next": "number | string  | false"
+            "Solid Next": "number | string | false"
           }
         },
         "ariaColIndexText": {
@@ -82121,7 +82121,7 @@
             "Preact": "number",
             "React": "number",
             "Solid Main": "number | string",
-            "Solid Next": "number | string  | false",
+            "Solid Next": "number | string | false",
             "Vue": "number | string"
           }
         },
@@ -82155,7 +82155,7 @@
             "Preact": "string",
             "React": "string",
             "Solid Main": "string",
-            "Solid Next": "string  | false",
+            "Solid Next": "string | false",
             "Vue": "string"
           }
         },
@@ -82189,7 +82189,7 @@
             "Preact": "boolean | 'true' | 'false' | 'page' | 'step' | 'location' | 'date' | 'time'",
             "React": "boolean | 'false' | 'true' | 'page' | 'step' | 'location' | 'date' | 'time'",
             "Solid Main": "boolean | 'false' | 'true' | 'page' | 'step' | 'location' | 'date' | 'time'",
-            "Solid Next": "'false' | 'true' | 'page' | 'step' | 'location' | 'date' | 'time'  | false",
+            "Solid Next": "'false' | 'true' | 'page' | 'step' | 'location' | 'date' | 'time' | false",
             "Vue": "boolean | 'true' | 'false' | 'page' | 'step' | 'location' | 'date' | 'time'"
           }
         },
@@ -82223,7 +82223,7 @@
             "Preact": "string",
             "React": "string",
             "Solid Main": "string",
-            "Solid Next": "string  | false",
+            "Solid Next": "string | false",
             "Vue": "string"
           }
         },
@@ -82256,7 +82256,7 @@
             "Preact": "string",
             "React": "string",
             "Solid Main": "string",
-            "Solid Next": "string  | false"
+            "Solid Next": "string | false"
           }
         },
         "ariaDescription": {
@@ -82289,7 +82289,7 @@
             "Preact": "string",
             "React": "string",
             "Solid Main": "string",
-            "Solid Next": "string  | false",
+            "Solid Next": "string | false",
             "Vue": "string"
           }
         },
@@ -82323,7 +82323,7 @@
             "Preact": "boolean | 'true' | 'false'",
             "React": "boolean | 'true' | 'false'",
             "Solid Main": "boolean | 'false' | 'true'",
-            "Solid Next": "'false' | 'true'  | false",
+            "Solid Next": "'false' | 'true' | false",
             "Vue": "boolean | 'true' | 'false'"
           }
         },
@@ -82357,7 +82357,7 @@
             "Preact": "'none' | 'copy' | 'execute' | 'link' | 'move' | 'popup'",
             "React": "'none' | 'copy' | 'execute' | 'link' | 'move' | 'popup'",
             "Solid Main": "'none' | 'copy' | 'execute' | 'link' | 'move' | 'popup'",
-            "Solid Next": "'none' | 'copy' | 'execute' | 'link' | 'move' | 'popup'  | false",
+            "Solid Next": "'none' | 'copy' | 'execute' | 'link' | 'move' | 'popup' | false",
             "Vue": "'none' | 'copy' | 'execute' | 'link' | 'move' | 'popup'"
           }
         },
@@ -82380,7 +82380,7 @@
             "Preact": "string",
             "React": "string",
             "Solid Main": "string",
-            "Solid Next": "string  | false",
+            "Solid Next": "string | false",
             "Vue": "string"
           }
         },
@@ -82414,7 +82414,7 @@
             "Preact": "boolean | 'true' | 'false'",
             "React": "boolean | 'true' | 'false'",
             "Solid Main": "boolean | 'false' | 'true'",
-            "Solid Next": "'false' | 'true'  | false",
+            "Solid Next": "'false' | 'true' | false",
             "Vue": "boolean | 'true' | 'false'"
           }
         },
@@ -82448,7 +82448,7 @@
             "Preact": "string",
             "React": "string",
             "Solid Main": "string",
-            "Solid Next": "string  | false",
+            "Solid Next": "string | false",
             "Vue": "string"
           }
         },
@@ -82471,7 +82471,7 @@
             "Preact": "boolean | 'true' | 'false'",
             "React": "boolean | 'true' | 'false'",
             "Solid Main": "boolean | 'false' | 'true'",
-            "Solid Next": "'false' | 'true'  | false",
+            "Solid Next": "'false' | 'true' | false",
             "Vue": "boolean | 'true' | 'false'"
           }
         },
@@ -82505,7 +82505,7 @@
             "Preact": "boolean | 'true' | 'false' | 'menu' | 'listbox' | 'tree' | 'grid' | 'dialog'",
             "React": "boolean | 'false' | 'true' | 'menu' | 'listbox' | 'tree' | 'grid' | 'dialog'",
             "Solid Main": "boolean | 'false' | 'true' | 'menu' | 'listbox' | 'tree' | 'grid' | 'dialog'",
-            "Solid Next": "'false' | 'true' | 'menu' | 'listbox' | 'tree' | 'grid' | 'dialog'  | false",
+            "Solid Next": "'false' | 'true' | 'menu' | 'listbox' | 'tree' | 'grid' | 'dialog' | false",
             "Vue": "boolean | 'true' | 'false' | 'menu' | 'listbox' | 'tree' | 'grid' | 'dialog'"
           }
         },
@@ -82550,7 +82550,7 @@
             "Preact": "boolean | 'true' | 'false'",
             "React": "boolean | 'true' | 'false'",
             "Solid Main": "boolean | 'false' | 'true'",
-            "Solid Next": "'false' | 'true'  | false",
+            "Solid Next": "'false' | 'true' | false",
             "Vue": "boolean | 'true' | 'false'"
           }
         },
@@ -82595,7 +82595,7 @@
             "Preact": "boolean | 'true' | 'false' | 'grammar' | 'spelling'",
             "React": "boolean | 'false' | 'true' | 'grammar' | 'spelling'",
             "Solid Main": "boolean | 'false' | 'true' | 'grammar' | 'spelling'",
-            "Solid Next": "'false' | 'true' | 'grammar' | 'spelling'  | false",
+            "Solid Next": "'false' | 'true' | 'grammar' | 'spelling' | false",
             "Vue": "boolean | 'true' | 'false' | 'grammar' | 'spelling'"
           }
         },
@@ -82640,7 +82640,7 @@
             "Preact": "string",
             "React": "string",
             "Solid Main": "string",
-            "Solid Next": "string  | false",
+            "Solid Next": "string | false",
             "Vue": "string"
           }
         },
@@ -82685,7 +82685,7 @@
             "Preact": "string",
             "React": "string",
             "Solid Main": "string",
-            "Solid Next": "string  | false",
+            "Solid Next": "string | false",
             "Vue": "string"
           }
         },
@@ -82719,7 +82719,7 @@
             "Preact": "string",
             "React": "string",
             "Solid Main": "string",
-            "Solid Next": "string  | false",
+            "Solid Next": "string | false",
             "Vue": "string"
           }
         },
@@ -82753,7 +82753,7 @@
             "Preact": "number",
             "React": "number",
             "Solid Main": "number | string",
-            "Solid Next": "number | string  | false",
+            "Solid Next": "number | string | false",
             "Vue": "number | string"
           }
         },
@@ -82798,7 +82798,7 @@
             "Preact": "'off' | 'assertive' | 'polite'",
             "React": "'off' | 'assertive' | 'polite'",
             "Solid Main": "'off' | 'assertive' | 'polite'",
-            "Solid Next": "'off' | 'assertive' | 'polite'  | false",
+            "Solid Next": "'off' | 'assertive' | 'polite' | false",
             "Vue": "'off' | 'assertive' | 'polite'"
           }
         },
@@ -82843,7 +82843,7 @@
             "Preact": "boolean | 'true' | 'false'",
             "React": "boolean | 'true' | 'false'",
             "Solid Main": "boolean | 'false' | 'true'",
-            "Solid Next": "'false' | 'true'  | false",
+            "Solid Next": "'false' | 'true' | false",
             "Vue": "boolean | 'true' | 'false'"
           }
         },
@@ -82888,7 +82888,7 @@
             "Preact": "boolean | 'true' | 'false'",
             "React": "boolean | 'true' | 'false'",
             "Solid Main": "boolean | 'false' | 'true'",
-            "Solid Next": "'false' | 'true'  | false",
+            "Solid Next": "'false' | 'true' | false",
             "Vue": "boolean | 'true' | 'false'"
           }
         },
@@ -82933,7 +82933,7 @@
             "Preact": "boolean | 'true' | 'false'",
             "React": "boolean | 'true' | 'false'",
             "Solid Main": "boolean | 'false' | 'true'",
-            "Solid Next": "'false' | 'true'  | false",
+            "Solid Next": "'false' | 'true' | false",
             "Vue": "boolean | 'true' | 'false'"
           }
         },
@@ -82978,7 +82978,7 @@
             "Preact": "'horizontal' | 'vertical'",
             "React": "'horizontal' | 'vertical'",
             "Solid Main": "'horizontal' | 'vertical'",
-            "Solid Next": "'horizontal' | 'vertical'  | false",
+            "Solid Next": "'horizontal' | 'vertical' | false",
             "Vue": "'horizontal' | 'vertical'"
           }
         },
@@ -83012,7 +83012,7 @@
             "Preact": "string",
             "React": "string",
             "Solid Main": "string",
-            "Solid Next": "string  | false",
+            "Solid Next": "string | false",
             "Vue": "string"
           }
         },
@@ -83046,7 +83046,7 @@
             "Preact": "string",
             "React": "string",
             "Solid Main": "string",
-            "Solid Next": "string  | false",
+            "Solid Next": "string | false",
             "Vue": "string"
           }
         },
@@ -83091,7 +83091,7 @@
             "Preact": "number",
             "React": "number",
             "Solid Main": "number | string",
-            "Solid Next": "number | string  | false",
+            "Solid Next": "number | string | false",
             "Vue": "number | string"
           }
         },
@@ -83136,7 +83136,7 @@
             "Preact": "boolean | 'true' | 'false' | 'mixed'",
             "React": "boolean | 'false' | 'mixed' | 'true'",
             "Solid Main": "boolean | 'false' | 'mixed' | 'true'",
-            "Solid Next": "'false' | 'true' | 'mixed'  | false",
+            "Solid Next": "'false' | 'true' | 'mixed' | false",
             "Vue": "boolean | 'true' | 'false' | 'mixed'"
           }
         },
@@ -83181,7 +83181,7 @@
             "Preact": "boolean | 'true' | 'false'",
             "React": "boolean | 'true' | 'false'",
             "Solid Main": "boolean | 'false' | 'true'",
-            "Solid Next": "'false' | 'true'  | false",
+            "Solid Next": "'false' | 'true' | false",
             "Vue": "boolean | 'true' | 'false'"
           }
         },
@@ -83226,7 +83226,7 @@
             "Preact": "'additions' | 'additions removals' | 'additions text' | 'all' | 'removals' | 'removals additions' | 'removals text' | 'text' | 'text additions' | 'text removals'",
             "React": "'additions' | 'additions removals' | 'additions text' | 'all' | 'removals' | 'removals additions' | 'removals text' | 'text' | 'text additions' | 'text removals'",
             "Solid Main": "'additions' | 'additions removals' | 'additions text' | 'all' | 'removals' | 'removals additions' | 'removals text' | 'text' | 'text additions' | 'text removals'",
-            "Solid Next": "'additions' | 'additions removals' | 'additions text' | 'all' | 'removals' | 'removals additions' | 'removals text' | 'text' | 'text additions' | 'text removals'  | false",
+            "Solid Next": "'additions' | 'additions removals' | 'additions text' | 'all' | 'removals' | 'removals additions' | 'removals text' | 'text' | 'text additions' | 'text removals' | false",
             "Vue": "'additions' | 'additions removals' | 'additions text' | 'all' | 'removals' | 'removals additions' | 'removals text' | 'text' | 'text additions' | 'text removals'"
           }
         },
@@ -83271,7 +83271,7 @@
             "Preact": "boolean | 'true' | 'false'",
             "React": "boolean | 'true' | 'false'",
             "Solid Main": "boolean | 'false' | 'true'",
-            "Solid Next": "'false' | 'true'  | false",
+            "Solid Next": "'false' | 'true' | false",
             "Vue": "boolean | 'true' | 'false'"
           }
         },
@@ -83316,7 +83316,7 @@
             "Preact": "string",
             "React": "string",
             "Solid Main": "string",
-            "Solid Next": "string  | false",
+            "Solid Next": "string | false",
             "Vue": "string"
           }
         },
@@ -83361,7 +83361,7 @@
             "Preact": "number",
             "React": "number",
             "Solid Main": "number | string",
-            "Solid Next": "number | string  | false",
+            "Solid Next": "number | string | false",
             "Vue": "number | string"
           }
         },
@@ -83406,7 +83406,7 @@
             "Preact": "number",
             "React": "number",
             "Solid Main": "number | string",
-            "Solid Next": "number | string  | false",
+            "Solid Next": "number | string | false",
             "Vue": "number | string"
           }
         },
@@ -83450,7 +83450,7 @@
             "Preact": "string",
             "React": "string",
             "Solid Main": "number | string",
-            "Solid Next": "number | string  | false"
+            "Solid Next": "number | string | false"
           }
         },
         "ariaRowIndexText": {
@@ -83493,7 +83493,7 @@
             "Preact": "number",
             "React": "number",
             "Solid Main": "number | string",
-            "Solid Next": "number | string  | false",
+            "Solid Next": "number | string | false",
             "Vue": "number | string"
           }
         },
@@ -83538,7 +83538,7 @@
             "Preact": "boolean | 'true' | 'false'",
             "React": "boolean | 'true' | 'false'",
             "Solid Main": "boolean | 'false' | 'true'",
-            "Solid Next": "'false' | 'true'  | false",
+            "Solid Next": "'false' | 'true' | false",
             "Vue": "boolean | 'true' | 'false'"
           }
         },
@@ -83583,7 +83583,7 @@
             "Preact": "number",
             "React": "number",
             "Solid Main": "number | string",
-            "Solid Next": "number | string  | false",
+            "Solid Next": "number | string | false",
             "Vue": "number | string"
           }
         },
@@ -83628,7 +83628,7 @@
             "Preact": "'none' | 'ascending' | 'descending' | 'other'",
             "React": "'none' | 'ascending' | 'descending' | 'other'",
             "Solid Main": "'none' | 'ascending' | 'descending' | 'other'",
-            "Solid Next": "'none' | 'ascending' | 'descending' | 'other'  | false",
+            "Solid Next": "'none' | 'ascending' | 'descending' | 'other' | false",
             "Vue": "'none' | 'ascending' | 'descending' | 'other'"
           }
         },
@@ -83673,7 +83673,7 @@
             "Preact": "number",
             "React": "number",
             "Solid Main": "number | string",
-            "Solid Next": "number | string  | false",
+            "Solid Next": "number | string | false",
             "Vue": "number | string"
           }
         },
@@ -83718,7 +83718,7 @@
             "Preact": "number",
             "React": "number",
             "Solid Main": "number | string",
-            "Solid Next": "number | string  | false",
+            "Solid Next": "number | string | false",
             "Vue": "number | string"
           }
         },
@@ -83763,7 +83763,7 @@
             "Preact": "number",
             "React": "number",
             "Solid Main": "number | string",
-            "Solid Next": "number | string  | false",
+            "Solid Next": "number | string | false",
             "Vue": "number | string"
           }
         },
@@ -83808,7 +83808,7 @@
             "Preact": "string",
             "React": "string",
             "Solid Main": "string",
-            "Solid Next": "string  | false",
+            "Solid Next": "string | false",
             "Vue": "string"
           }
         },
@@ -83839,7 +83839,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.autofocus",
           "values": {
             "Solid Main": "boolean",
-            "Solid Next": "true | false | ''  | false"
+            "Solid Next": "true | false | ''"
           }
         },
         "class": {
@@ -83860,7 +83860,7 @@
             "Chrome": "string",
             "Firefox": "string",
             "Solid Main": "string",
-            "Solid Next": "string | ClassList  | false"
+            "Solid Next": "string | ClassList | false"
           }
         },
         "classList": {
@@ -83915,7 +83915,7 @@
           "values": {
             "Chrome": "string",
             "Solid Main": "string",
-            "Solid Next": "string  | false"
+            "Solid Next": "string | false"
           }
         },
         "elementTiming": {
@@ -83951,7 +83951,7 @@
             "Chrome": "string",
             "Firefox": "string",
             "Solid Main": "string",
-            "Solid Next": "string  | false"
+            "Solid Next": "string | false"
           }
         },
         "innerHTML": {
@@ -83982,7 +83982,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.nonce",
           "values": {
             "Solid Main": "string",
-            "Solid Next": "string  | false"
+            "Solid Next": "string | false"
           }
         },
         "on:abort": {
@@ -87752,7 +87752,7 @@
             "Firefox": "string",
             "Pota": "'alert' | 'alertdialog' | 'application' | 'article' | 'banner' | 'button' | 'cell' | 'checkbox' | 'columnheader' | 'combobox' | 'complementary' | 'contentinfo' | 'definition' | 'dialog' | 'directory' | 'document' | 'feed' | 'figure' | 'form' | 'grid' | 'gridcell' | 'group' | 'heading' | 'img' | 'link' | 'list' | 'listbox' | 'listitem' | 'log' | 'main' | 'marquee' | 'math' | 'menu' | 'menubar' | 'menuitem' | 'menuitemcheckbox' | 'menuitemradio' | 'meter' | 'navigation' | 'none' | 'note' | 'option' | 'presentation' | 'progressbar' | 'radio' | 'radiogroup' | 'region' | 'row' | 'rowgroup' | 'rowheader' | 'scrollbar' | 'search' | 'searchbox' | 'separator' | 'slider' | 'spinbutton' | 'status' | 'switch' | 'tab' | 'table' | 'tablist' | 'tabpanel' | 'term' | 'textbox' | 'timer' | 'toolbar' | 'tooltip' | 'tree' | 'treegrid' | 'treeitem'",
             "Solid Main": "'alert' | 'alertdialog' | 'application' | 'article' | 'banner' | 'button' | 'cell' | 'checkbox' | 'columnheader' | 'combobox' | 'complementary' | 'contentinfo' | 'definition' | 'dialog' | 'directory' | 'document' | 'feed' | 'figure' | 'form' | 'grid' | 'gridcell' | 'group' | 'heading' | 'img' | 'link' | 'list' | 'listbox' | 'listitem' | 'log' | 'main' | 'marquee' | 'math' | 'menu' | 'menubar' | 'menuitem' | 'menuitemcheckbox' | 'menuitemradio' | 'meter' | 'navigation' | 'none' | 'note' | 'option' | 'presentation' | 'progressbar' | 'radio' | 'radiogroup' | 'region' | 'row' | 'rowgroup' | 'rowheader' | 'scrollbar' | 'search' | 'searchbox' | 'separator' | 'slider' | 'spinbutton' | 'status' | 'switch' | 'tab' | 'table' | 'tablist' | 'tabpanel' | 'term' | 'textbox' | 'timer' | 'toolbar' | 'tooltip' | 'tree' | 'treegrid' | 'treeitem'",
-            "Solid Next": "'alert' | 'alertdialog' | 'application' | 'article' | 'banner' | 'button' | 'cell' | 'checkbox' | 'columnheader' | 'combobox' | 'complementary' | 'contentinfo' | 'definition' | 'dialog' | 'directory' | 'document' | 'feed' | 'figure' | 'form' | 'grid' | 'gridcell' | 'group' | 'heading' | 'img' | 'link' | 'list' | 'listbox' | 'listitem' | 'log' | 'main' | 'marquee' | 'math' | 'menu' | 'menubar' | 'menuitem' | 'menuitemcheckbox' | 'menuitemradio' | 'meter' | 'navigation' | 'none' | 'note' | 'option' | 'presentation' | 'progressbar' | 'radio' | 'radiogroup' | 'region' | 'row' | 'rowgroup' | 'rowheader' | 'scrollbar' | 'search' | 'searchbox' | 'separator' | 'slider' | 'spinbutton' | 'status' | 'switch' | 'tab' | 'table' | 'tablist' | 'tabpanel' | 'term' | 'textbox' | 'timer' | 'toolbar' | 'tooltip' | 'tree' | 'treegrid' | 'treeitem'  | false"
+            "Solid Next": "'alert' | 'alertdialog' | 'application' | 'article' | 'banner' | 'button' | 'cell' | 'checkbox' | 'columnheader' | 'combobox' | 'complementary' | 'contentinfo' | 'definition' | 'dialog' | 'directory' | 'document' | 'feed' | 'figure' | 'form' | 'grid' | 'gridcell' | 'group' | 'heading' | 'img' | 'link' | 'list' | 'listbox' | 'listitem' | 'log' | 'main' | 'marquee' | 'math' | 'menu' | 'menubar' | 'menuitem' | 'menuitemcheckbox' | 'menuitemradio' | 'meter' | 'navigation' | 'none' | 'note' | 'option' | 'presentation' | 'progressbar' | 'radio' | 'radiogroup' | 'region' | 'row' | 'rowgroup' | 'rowheader' | 'scrollbar' | 'search' | 'searchbox' | 'separator' | 'slider' | 'spinbutton' | 'status' | 'switch' | 'tab' | 'table' | 'tablist' | 'tabpanel' | 'term' | 'textbox' | 'timer' | 'toolbar' | 'tooltip' | 'tree' | 'treegrid' | 'treeitem' | false"
           }
         },
         "scrollLeft": {
@@ -87811,7 +87811,7 @@
             "Chrome": "string",
             "Firefox": "string",
             "Solid Main": "string",
-            "Solid Next": "string  | false"
+            "Solid Next": "string | false"
           }
         },
         "style": {
@@ -87821,7 +87821,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.style",
           "values": {
             "Solid Main": "CSSProperties | string",
-            "Solid Next": "CSSProperties | string  | false"
+            "Solid Next": "CSSProperties | string | false"
           }
         },
         "tabindex": {
@@ -87831,7 +87831,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.tabindex",
           "values": {
             "Solid Main": "number | string",
-            "Solid Next": "number | string  | false"
+            "Solid Next": "number | string | false"
           }
         },
         "tabIndex": {
@@ -89417,7 +89417,7 @@
           "values": {
             "Preact": "string",
             "Solid Main": "string",
-            "Solid Next": "string  | false"
+            "Solid Next": "string | false"
           }
         },
         "accesskey": {
@@ -89439,7 +89439,7 @@
             "Firefox": "string",
             "Preact": "string",
             "Solid Main": "string",
-            "Solid Next": "string  | false"
+            "Solid Next": "string | false"
           }
         },
         "accessKey": {
@@ -89482,7 +89482,7 @@
             "Firefox": "string",
             "Preact": "'off' | 'none' | 'on' | 'sentences' | 'words' | 'characters'",
             "Solid Main": "'off' | 'none' | 'on' | 'sentences' | 'words' | 'characters'",
-            "Solid Next": "'off' | 'none' | 'on' | 'sentences' | 'words' | 'characters'  | false"
+            "Solid Next": "'off' | 'none' | 'on' | 'sentences' | 'words' | 'characters' | false"
           }
         },
         "autoCapitalize": {
@@ -89511,7 +89511,7 @@
             "Firefox": "boolean",
             "Preact": "string",
             "Solid Main": "'on' | 'off'",
-            "Solid Next": "'on' | 'off'  | false"
+            "Solid Next": "'on' | 'off' | false"
           }
         },
         "autoCorrect": {
@@ -89589,7 +89589,7 @@
             "Firefox": "string",
             "Preact": "boolean | 'true' | 'false' | '' | 'plaintext-only' | 'inherit'",
             "Solid Main": "'true' | 'false' | boolean | 'plaintext-only' | 'inherit'",
-            "Solid Next": "'false' | 'true' | '' | true | 'plaintext-only' | 'inherit'  | false"
+            "Solid Next": "'false' | 'true' | '' | true | 'plaintext-only' | 'inherit' | false"
           }
         },
         "contentEditable": {
@@ -89618,7 +89618,7 @@
           "url": "https://developer.mozilla.org/en-US/search?q=contextmenu",
           "values": {
             "Solid Main": "string",
-            "Solid Next": "string  | false"
+            "Solid Next": "string | false"
           }
         },
         "contextMenu": {
@@ -89634,7 +89634,7 @@
           "values": {
             "Preact": "string",
             "Solid Main": "string",
-            "Solid Next": "string  | false"
+            "Solid Next": "string | false"
           }
         },
         "dir": {
@@ -89656,7 +89656,7 @@
             "Firefox": "string",
             "Preact": "'auto' | 'rtl' | 'ltr'",
             "Solid Main": "'ltr' | 'rtl' | 'auto'",
-            "Solid Next": "'ltr' | 'rtl' | 'auto'  | false"
+            "Solid Next": "'ltr' | 'rtl' | 'auto' | false"
           }
         },
         "disablePictureInPicture": {
@@ -89685,7 +89685,7 @@
             "Firefox": "boolean",
             "Preact": "boolean",
             "Solid Main": "boolean | 'false' | 'true'",
-            "Solid Next": "'false' | 'true'  | false"
+            "Solid Next": "'false' | 'true' | false"
           }
         },
         "editContext": {
@@ -89740,7 +89740,7 @@
             "Firefox": "string",
             "Preact": "'enter' | 'done' | 'go' | 'next' | 'previous' | 'search' | 'send'",
             "Solid Main": "'enter' | 'done' | 'go' | 'next' | 'previous' | 'search' | 'send'",
-            "Solid Next": "'enter' | 'done' | 'go' | 'next' | 'previous' | 'search' | 'send'  | false"
+            "Solid Next": "'enter' | 'done' | 'go' | 'next' | 'previous' | 'search' | 'send' | false"
           }
         },
         "enterKeyHint": {
@@ -89768,7 +89768,7 @@
           "values": {
             "Preact": "string",
             "Solid Main": "string",
-            "Solid Next": "string  | false"
+            "Solid Next": "string | false"
           }
         },
         "exportParts": {
@@ -89797,7 +89797,7 @@
             "Firefox": "boolean",
             "Preact": "boolean | 'hidden' | 'until-found'",
             "Solid Main": "boolean | 'hidden' | 'until-found'",
-            "Solid Next": "'' | true | 'hidden' | 'until-found'  | false"
+            "Solid Next": "'' | true | 'hidden' | 'until-found' | false"
           }
         },
         "id": {
@@ -89828,7 +89828,7 @@
             "Firefox": "boolean",
             "Preact": "boolean",
             "Solid Main": "boolean",
-            "Solid Next": "true | false | ''  | false"
+            "Solid Next": "true | false | ''"
           }
         },
         "inlist": {
@@ -89837,7 +89837,7 @@
           "values": {
             "Preact": "any",
             "Solid Main": "any",
-            "Solid Next": "any  | false"
+            "Solid Next": "any | false"
           }
         },
         "innerText": {
@@ -89880,7 +89880,7 @@
             "Firefox": "string",
             "Preact": "string",
             "Solid Main": "'decimal' | 'email' | 'none' | 'numeric' | 'search' | 'tel' | 'text' | 'url'",
-            "Solid Next": "'decimal' | 'email' | 'none' | 'numeric' | 'search' | 'tel' | 'text' | 'url'  | false"
+            "Solid Next": "'decimal' | 'email' | 'none' | 'numeric' | 'search' | 'tel' | 'text' | 'url' | false"
           }
         },
         "inputMode": {
@@ -89910,7 +89910,7 @@
           "values": {
             "Preact": "string",
             "Solid Main": "string",
-            "Solid Next": "string  | false"
+            "Solid Next": "string | false"
           }
         },
         "itemid": {
@@ -89919,7 +89919,7 @@
           "values": {
             "Preact": "string",
             "Solid Main": "string",
-            "Solid Next": "string  | false"
+            "Solid Next": "string | false"
           }
         },
         "itemId": {
@@ -89942,7 +89942,7 @@
           "values": {
             "Preact": "string",
             "Solid Main": "string",
-            "Solid Next": "string  | false"
+            "Solid Next": "string | false"
           }
         },
         "itemProp": {
@@ -89959,7 +89959,7 @@
           "values": {
             "Preact": "string",
             "Solid Main": "string",
-            "Solid Next": "string  | false"
+            "Solid Next": "string | false"
           }
         },
         "itemRef": {
@@ -89976,7 +89976,7 @@
           "values": {
             "Preact": "boolean",
             "Solid Main": "boolean",
-            "Solid Next": "true | false | ''  | false"
+            "Solid Next": "true | false | ''"
           }
         },
         "itemScope": {
@@ -89993,7 +89993,7 @@
           "values": {
             "Preact": "string",
             "Solid Main": "string",
-            "Solid Next": "string  | false"
+            "Solid Next": "string | false"
           }
         },
         "itemType": {
@@ -90023,7 +90023,7 @@
             "Firefox": "string",
             "Preact": "string",
             "Solid Main": "string",
-            "Solid Next": "string  | false"
+            "Solid Next": "string | false"
           }
         },
         "nonce": {
@@ -93278,7 +93278,7 @@
           "values": {
             "Preact": "string",
             "Solid Main": "string",
-            "Solid Next": "string  | false"
+            "Solid Next": "string | false"
           }
         },
         "popover": {
@@ -93300,7 +93300,7 @@
             "Firefox": "string",
             "Preact": "'auto' | 'hint' | 'manual' | boolean",
             "Solid Main": "boolean | 'manual' | 'auto'",
-            "Solid Next": "'' | true | 'manual' | 'auto'  | false"
+            "Solid Next": "'' | true | 'manual' | 'auto' | false"
           }
         },
         "prefix": {
@@ -93309,7 +93309,7 @@
           "values": {
             "Preact": "string",
             "Solid Main": "string",
-            "Solid Next": "string  | false"
+            "Solid Next": "string | false"
           }
         },
         "property": {
@@ -93318,7 +93318,7 @@
           "values": {
             "Preact": "string",
             "Solid Main": "string",
-            "Solid Next": "string  | false"
+            "Solid Next": "string | false"
           }
         },
         "resource": {
@@ -93327,7 +93327,7 @@
           "values": {
             "Preact": "string",
             "Solid Main": "string",
-            "Solid Next": "string  | false"
+            "Solid Next": "string | false"
           }
         },
         "results": {
@@ -93374,7 +93374,7 @@
             "Firefox": "boolean",
             "Preact": "boolean",
             "Solid Main": "'true' | 'false' | boolean",
-            "Solid Next": "'false' | 'true' | '' | true  | false"
+            "Solid Next": "'false' | 'true' | '' | true | false"
           }
         },
         "style": {
@@ -93456,7 +93456,7 @@
             "Firefox": "string",
             "Preact": "string",
             "Solid Main": "string",
-            "Solid Next": "string  | false"
+            "Solid Next": "string | false"
           }
         },
         "translate": {
@@ -93478,7 +93478,7 @@
             "Firefox": "boolean",
             "Preact": "boolean",
             "Solid Main": "'yes' | 'no'",
-            "Solid Next": "'yes' | 'no'  | false"
+            "Solid Next": "'yes' | 'no' | false"
           }
         },
         "typeof": {
@@ -93487,7 +93487,7 @@
           "values": {
             "Preact": "string",
             "Solid Main": "string",
-            "Solid Next": "string  | false"
+            "Solid Next": "string | false"
           }
         },
         "virtualkeyboardpolicy": {
@@ -93526,7 +93526,7 @@
           "values": {
             "Preact": "string",
             "Solid Main": "string",
-            "Solid Next": "string  | false"
+            "Solid Next": "string | false"
           }
         },
         "writingsuggestions": {
@@ -93710,7 +93710,7 @@
           "values": {
             "Preact": "'ltr' | 'rtl'",
             "Solid Main": "'ltr' | 'rtl' | 'auto'",
-            "Solid Next": "'ltr' | 'rtl' | 'auto'  | false"
+            "Solid Next": "'ltr' | 'rtl' | 'auto' | false"
           }
         },
         "displaystyle": {
@@ -93719,7 +93719,7 @@
           "values": {
             "Preact": "boolean",
             "Solid Main": "boolean",
-            "Solid Next": "true | false | ''  | false"
+            "Solid Next": "true | false | ''"
           }
         },
         "href": {
@@ -93728,7 +93728,7 @@
           "values": {
             "Preact": "string",
             "Solid Main": "string",
-            "Solid Next": "string  | false"
+            "Solid Next": "string | false"
           }
         },
         "mathbackground": {
@@ -93737,7 +93737,7 @@
           "values": {
             "Preact": "string",
             "Solid Main": "string",
-            "Solid Next": "string  | false"
+            "Solid Next": "string | false"
           }
         },
         "mathcolor": {
@@ -93746,7 +93746,7 @@
           "values": {
             "Preact": "string",
             "Solid Main": "string",
-            "Solid Next": "string  | false"
+            "Solid Next": "string | false"
           }
         },
         "mathsize": {
@@ -93755,7 +93755,7 @@
           "values": {
             "Preact": "string",
             "Solid Main": "string",
-            "Solid Next": "string  | false"
+            "Solid Next": "string | false"
           }
         },
         "nonce": {
@@ -96985,7 +96985,7 @@
           "values": {
             "Preact": "string",
             "Solid Main": "string",
-            "Solid Next": "string  | false"
+            "Solid Next": "string | false"
           }
         },
         "style": {
@@ -97050,7 +97050,7 @@
           "url": "https://developer.mozilla.org/en-US/search?q=xmlns",
           "values": {
             "Solid Main": "string",
-            "Solid Next": "string  | false"
+            "Solid Next": "string | false"
           }
         }
       },
@@ -97205,7 +97205,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGElement#svgelement.id",
           "values": {
             "Firefox": "string",
-            "Solid Next": "string  | false"
+            "Solid Next": "string | false"
           }
         },
         "lang": {
@@ -97213,7 +97213,7 @@
           "url": "https://developer.mozilla.org/en-US/search?q=lang",
           "values": {
             "Solid Main": "string",
-            "Solid Next": "string  | false"
+            "Solid Next": "string | false"
           }
         },
         "nonce": {
@@ -100477,7 +100477,7 @@
             "Chrome": "number",
             "Firefox": "number",
             "Solid Main": "number | string",
-            "Solid Next": "number | string  | false"
+            "Solid Next": "number | string | false"
           }
         },
         "tabIndex": {
@@ -100505,7 +100505,7 @@
           "url": "https://developer.mozilla.org/en-US/search?q=xmlns",
           "values": {
             "Solid Main": "string",
-            "Solid Next": "string  | false"
+            "Solid Next": "string | false"
           }
         }
       },

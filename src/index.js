@@ -295,7 +295,9 @@ for (const ns of NSGlobalInterfaces) {
 					name: k,
 					values: {},
 				}
-				DATA.keys[ns].keys[k].values[lib.name] = lib.keys[ns][k]
+				DATA.keys[ns].keys[k].values[lib.name] = uniqueTypes(
+					lib.keys[ns][k],
+				)
 			}
 		}
 	}
@@ -584,7 +586,7 @@ for (const [ns, tags] of entries(tagNames)) {
 						)
 					) {
 						tag.keys[k] = tag.keys[k] || { values: {} }
-						tag.keys[k].values[lib.name] = value
+						tag.keys[k].values[lib.name] = uniqueTypes(value)
 					}
 				}
 			}
