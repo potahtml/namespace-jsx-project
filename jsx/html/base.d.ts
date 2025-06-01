@@ -35,7 +35,7 @@ interface BaseHTMLAttributes<T> extends HTMLAttributes<T> {
 }
 
 // Pota - https://github.com/potahtml/pota
-interface HTMLBaseElementAttributes {
+interface HTMLBaseElementAttributes<Element> extends HTMLAttributes<Element> {
 	href?: string
 	target?: '_self' | '_blank' | '_parent' | '_top' | (string & {})
 }

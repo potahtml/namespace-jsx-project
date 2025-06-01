@@ -40,7 +40,7 @@ interface MFracMathMLAttributes<T extends EventTarget> extends MathMLAttributes<
 }
 
 // Pota - https://github.com/potahtml/pota
-interface MathMLMfracElementAttributes {
+interface MathMLMfracElementAttributes<Element> extends MathMLAttributes<Element> {
 	linethickness?: string
 
 	/** @deprecated */

@@ -1,5 +1,5 @@
 // Pota - https://github.com/potahtml/pota
-interface HTMLDirectoryElementAttributes {
+interface HTMLDirectoryElementAttributes<Element> extends HTMLAttributes<Element> {
 	/** @deprecated */
-	compact?: 'true' | boolean
+	compact?: boolean | ''
 }

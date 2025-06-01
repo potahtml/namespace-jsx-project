@@ -8,4 +8,4 @@ interface MathMLMrootElementAttributes<T> extends MathMLAttributes<T> {}
 interface MRootMathMLAttributes<T extends EventTarget> extends MathMLAttributes<T> {}
 
 // Pota - https://github.com/potahtml/pota
-interface MathMLMrootElementAttributes {}
+interface MathMLMrootElementAttributes<Element> extends MathMLAttributes<Element> {}

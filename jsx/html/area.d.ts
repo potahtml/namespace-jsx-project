@@ -96,7 +96,7 @@ interface AreaHTMLAttributes<T> extends HTMLAttributes<T> {
 }
 
 // Pota - https://github.com/potahtml/pota
-interface HTMLAreaElementAttributes {
+interface HTMLAreaElementAttributes<Element> extends HTMLAttributes<Element> {
 	alt?: string
 	coords?: string
 	download?: string
@@ -107,6 +107,9 @@ interface HTMLAreaElementAttributes {
 	shape?: 'rect' | 'circle' | 'poly' | 'default'
 	target?: '_self' | '_blank' | '_parent' | '_top' | (string & {})
 
+	/** @experimental */
+	attributionsrc?: string
+
 	/** @deprecated */
-	nohref?: 'true' | boolean
+	nohref?: boolean | ''
 }

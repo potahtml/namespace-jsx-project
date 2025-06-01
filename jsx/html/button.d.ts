@@ -119,16 +119,15 @@ interface ButtonHTMLAttributes<T> extends HTMLAttributes<T> {
 }
 
 // Pota - https://github.com/potahtml/pota
-interface HTMLButtonElementAttributes {
-	autofocus?: boolean
+interface HTMLButtonElementAttributes<Element> extends HTMLAttributes<Element> {
 	command?: 'show-modal' | 'close' | 'show-popover' | 'hide-popover' | 'toggle-popover' | (string & {})
 	commandfor?: string
-	disabled?: 'true' | boolean
+	disabled?: boolean | ''
 	form?: string
 	formaction?: string
 	formenctype?: 'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'
 	formmethod?: 'post' | 'get' | 'dialog'
-	formnovalidate?: 'true' | boolean
+	formnovalidate?: boolean | ''
 	formtarget?: '_self' | '_blank' | '_parent' | '_top' | (string & {})
 	name?: string
 	popovertarget?: string

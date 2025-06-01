@@ -29,7 +29,7 @@ interface MTdMathMLAttributes<T extends EventTarget> extends MathMLAttributes<T>
 }
 
 // Pota - https://github.com/potahtml/pota
-interface MathMLMtdElementAttributes {
+interface MathMLMtdElementAttributes<Element> extends MathMLAttributes<Element> {
 	columnspan?: number | string
 	rowspan?: number | string
 	/** @non-standard */

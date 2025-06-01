@@ -16,7 +16,7 @@ interface MEncloseMathMLAttributes<T extends EventTarget> extends MathMLAttribut
 }
 
 // Pota - https://github.com/potahtml/pota
-interface MathMLMencloseElementAttributes {
+interface MathMLMencloseElementAttributes<Element> extends MathMLAttributes<Element> {
 	/** @non-standard */
 	notation?: string
 }

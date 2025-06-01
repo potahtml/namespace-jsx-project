@@ -11,7 +11,7 @@
 // React - https://react.dev/
 
 // Pota - https://github.com/potahtml/pota
-interface HTMLDListElementAttributes {
+interface HTMLDListElementAttributes<Element> extends HTMLAttributes<Element> {
 	/** @deprecated */
-	compact?: 'true' | boolean
+	compact?: boolean | ''
 }

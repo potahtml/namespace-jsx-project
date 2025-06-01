@@ -20,7 +20,7 @@ interface MFencedMathMLAttributes<T extends EventTarget> extends MathMLAttribute
 }
 
 // Pota - https://github.com/potahtml/pota
-interface MathMLMfencedElementAttributes {
+interface MathMLMfencedElementAttributes<Element> extends MathMLAttributes<Element> {
 	close?: string
 	open?: string
 	separators?: string

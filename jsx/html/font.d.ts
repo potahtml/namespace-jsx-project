@@ -1,5 +1,5 @@
 // Pota - https://github.com/potahtml/pota
-interface HTMLFontElementAttributes {
+interface HTMLFontElementAttributes<Element> extends HTMLAttributes<Element> {
 	/** @deprecated */
 	color?: string
 	/** @deprecated */

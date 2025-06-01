@@ -35,7 +35,7 @@ interface LabelHTMLAttributes<T> extends HTMLAttributes<T> {
 }
 
 // Pota - https://github.com/potahtml/pota
-interface HTMLLabelElementAttributes {
+interface HTMLLabelElementAttributes<Element> extends HTMLAttributes<Element> {
 	for?: string
 	form?: string
 }

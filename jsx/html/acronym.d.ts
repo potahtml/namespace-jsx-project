@@ -1,3 +1,2 @@
 // Pota - https://github.com/potahtml/pota
-interface HTMLElementAttributes {}
-interface HTMLElementAttributes {}
+interface HTMLElementAttributes<Element> extends HTMLAttributes<Element> {}

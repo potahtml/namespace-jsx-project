@@ -111,6 +111,7 @@ interface LinkHTMLAttributes<T extends EventTarget = HTMLLinkElement> extends HT
 // React - https://react.dev/
 interface LinkHTMLAttributes<T> extends HTMLAttributes<T> {
 	as?: string
+	blocking?: 'render' | (string & {})
 	crossOrigin?: 'anonymous' | 'use-credentials' | ''
 	fetchPriority?: 'high' | 'low' | 'auto'
 	href?: string
@@ -129,11 +130,11 @@ interface LinkHTMLAttributes<T> extends HTMLAttributes<T> {
 }
 
 // Pota - https://github.com/potahtml/pota
-interface HTMLLinkElementAttributes {
+interface HTMLLinkElementAttributes<Element> extends HTMLAttributes<Element> {
 	as?: 'audio' | 'document' | 'embed' | 'fetch' | 'font' | 'image' | 'object' | 'script' | 'style' | 'track' | 'video' | 'worker'
-
+	color?: string
 	crossorigin?: 'anonymous' | 'use-credentials' | ''
-	disabled?: 'true' | boolean
+	disabled?: boolean | ''
 	fetchpriority?: 'high' | 'low' | 'auto'
 	href?: string
 	hreflang?: string

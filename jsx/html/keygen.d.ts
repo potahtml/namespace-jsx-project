@@ -73,13 +73,11 @@ interface KeygenHTMLAttributes<T> extends HTMLAttributes<T> {
 }
 
 // Pota - https://github.com/potahtml/pota
-interface HTMLKeygenElementAttributes {
-	/** @deprecated */
-	autofocus?: boolean
+interface HTMLKeygenElementAttributes<Element> extends HTMLAttributes<Element> {
 	/** @deprecated */
 	challenge?: string
 	/** @deprecated */
-	disabled?: 'true' | boolean
+	disabled?: boolean | ''
 	/** @deprecated */
 	form?: string
 	/** @deprecated */

@@ -1,2 +1,2 @@
 // Pota - https://github.com/potahtml/pota
-interface HTMLUnknownElementAttributes {}
+interface HTMLUnknownElementAttributes<Element> extends HTMLAttributes<Element> {}

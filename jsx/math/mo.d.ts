@@ -51,19 +51,19 @@ interface MOMathMLAttributes<T extends EventTarget> extends MathMLAttributes<T> 
 }
 
 // Pota - https://github.com/potahtml/pota
-interface MathMLMoElementAttributes {
-	fence?: 'true' | boolean
+interface MathMLMoElementAttributes<Element> extends MathMLAttributes<Element> {
+	fence?: boolean | ''
 	form?: 'prefix' | 'infix' | 'postfix'
-	largeop?: 'true' | boolean
+	largeop?: boolean | ''
 	lspace?: string
 	maxsize?: string
 	minsize?: string
-	movablelimits?: 'true' | boolean
+	movablelimits?: boolean | ''
 	rspace?: string
-	separator?: 'true' | boolean
-	stretchy?: 'true' | boolean
-	symmetric?: 'true' | boolean
+	separator?: boolean | ''
+	stretchy?: boolean | ''
+	symmetric?: boolean | ''
 
 	/** @non-standard */
-	accent?: 'true' | boolean
+	accent?: boolean | ''
 }

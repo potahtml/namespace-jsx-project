@@ -16,6 +16,6 @@ interface MiMathMLAttributes<T extends EventTarget> extends MathMLAttributes<T> 
 }
 
 // Pota - https://github.com/potahtml/pota
-interface MathMLMiElementAttributes {
+interface MathMLMiElementAttributes<Element> extends MathMLAttributes<Element> {
 	mathvariant?: 'normal'
 }

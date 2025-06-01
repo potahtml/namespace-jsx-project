@@ -11,4 +11,4 @@
 // React - https://react.dev/
 
 // Pota - https://github.com/potahtml/pota
-interface HTMLDataListElementAttributes {}
+interface HTMLDataListElementAttributes<Element> extends HTMLAttributes<Element> {}

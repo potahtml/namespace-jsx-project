@@ -47,10 +47,10 @@ interface CanvasHTMLAttributes<T> extends HTMLAttributes<T> {
 }
 
 // Pota - https://github.com/potahtml/pota
-interface HTMLCanvasElementAttributes {
+interface HTMLCanvasElementAttributes<Element> extends HTMLAttributes<Element> {
 	height?: number | string
 	width?: number | string
 
 	/** @deprecated */
-	'moz-opaque'?: 'true' | boolean
+	'moz-opaque'?: boolean | ''
 }

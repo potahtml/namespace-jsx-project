@@ -38,7 +38,7 @@ interface InsHTMLAttributes<T> extends HTMLAttributes<T> {
 }
 
 // Pota - https://github.com/potahtml/pota
-interface HTMLModElementAttributes {
+interface HTMLModElementAttributes<Element> extends HTMLAttributes<Element> {
 	cite?: string
 	datetime?: string
 }

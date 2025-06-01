@@ -11,7 +11,7 @@
 // React - https://react.dev/
 
 // Pota - https://github.com/potahtml/pota
-interface HTMLHeadElementAttributes {
+interface HTMLHeadElementAttributes<Element> extends HTMLAttributes<Element> {
 	/** @deprecated */
 	profile?: string
 }

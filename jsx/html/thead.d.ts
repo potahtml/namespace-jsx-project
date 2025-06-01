@@ -11,7 +11,7 @@
 // React - https://react.dev/
 
 // Pota - https://github.com/potahtml/pota
-interface HTMLTableSectionHeadElementAttributes {
+interface HTMLTableSectionHeadElementAttributes<Element> extends HTMLAttributes<Element> {
 	/** @deprecated */
 	align?: 'left' | 'center' | 'right' | 'justify' | 'char'
 	/** @deprecated */

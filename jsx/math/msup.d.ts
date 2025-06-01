@@ -23,7 +23,7 @@ interface MSupMathMLAttributes<T extends EventTarget> extends MathMLAttributes<T
 }
 
 // Pota - https://github.com/potahtml/pota
-interface MathMLMsupElementAttributes {
+interface MathMLMsupElementAttributes<Element> extends MathMLAttributes<Element> {
 	/** @deprecated */
 	superscriptshift?: string
 }

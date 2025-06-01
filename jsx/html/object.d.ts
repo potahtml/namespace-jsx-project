@@ -45,6 +45,7 @@ interface ObjectHTMLAttributes<T> extends HTMLAttributes<T> {
 	name?: string | false
 	type?: string | false
 	width?: number | string | false
+	wmode?: string | false
 
 	/** @deprecated */
 	align?: string | false
@@ -128,13 +129,14 @@ interface ObjectHTMLAttributes<T> extends HTMLAttributes<T> {
 }
 
 // Pota - https://github.com/potahtml/pota
-interface HTMLObjectElementAttributes {
+interface HTMLObjectElementAttributes<Element> extends HTMLAttributes<Element> {
 	data?: string
 	form?: string
 	height?: number | string
 	name?: string
 	type?: string
 	width?: number | string
+	wmode?: string
 
 	/** @deprecated */
 	align?: string
@@ -151,13 +153,13 @@ interface HTMLObjectElementAttributes {
 	/** @deprecated */
 	codetype?: string
 	/** @deprecated */
-	declare?: 'true' | boolean
+	declare?: boolean | ''
 	/** @deprecated */
 	hspace?: number | string
 	/** @deprecated */
 	standby?: string
 	/** @deprecated */
-	typemustmatch?: boolean
+	typemustmatch?: boolean | ''
 	/** @deprecated */
 	usemap?: string
 	/** @deprecated */

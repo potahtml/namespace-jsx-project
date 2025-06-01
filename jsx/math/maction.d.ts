@@ -35,7 +35,7 @@ interface MActionMathMLAttributes<T extends EventTarget> extends MathMLAttribute
 }
 
 // Pota - https://github.com/potahtml/pota
-interface MathMLMactionElementAttributes {
+interface MathMLMactionElementAttributes<Element> extends MathMLAttributes<Element> {
 	/** @deprecated */
 	actiontype?: 'statusline' | 'toggle'
 	/** @deprecated */

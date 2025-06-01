@@ -8,4 +8,4 @@ interface MathMLMphantomElementAttributes<T> extends MathMLAttributes<T> {}
 interface MPhantomMathMLAttributes<T extends EventTarget> extends MathMLAttributes<T> {}
 
 // Pota - https://github.com/potahtml/pota
-interface MathMLMphantomElementAttributes {}
+interface MathMLMphantomElementAttributes<Element> extends MathMLAttributes<Element> {}

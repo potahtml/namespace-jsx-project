@@ -35,7 +35,7 @@ interface LiHTMLAttributes<T> extends HTMLAttributes<T> {
 }
 
 // Pota - https://github.com/potahtml/pota
-interface HTMLLIElementAttributes {
+interface HTMLLIElementAttributes<Element> extends HTMLAttributes<Element> {
 	value?: number | string
 
 	/** @deprecated */

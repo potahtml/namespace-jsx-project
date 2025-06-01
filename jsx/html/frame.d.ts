@@ -1,5 +1,5 @@
 // Pota - https://github.com/potahtml/pota
-interface HTMLFrameElementAttributes {
+interface HTMLFrameElementAttributes<Element> extends HTMLAttributes<Element> {
 	/** @deprecated */
 	frameborder?: string
 	/** @deprecated */
@@ -11,7 +11,7 @@ interface HTMLFrameElementAttributes {
 	/** @deprecated */
 	name?: string
 	/** @deprecated */
-	noresize?: 'true' | boolean
+	noresize?: boolean | ''
 	/** @deprecated */
 	scrolling?: 'yes' | 'no'
 	/** @deprecated */

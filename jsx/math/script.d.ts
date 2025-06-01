@@ -16,6 +16,7 @@ interface ScriptHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> 
 // React - https://react.dev/
 interface ScriptHTMLAttributes<T> extends HTMLAttributes<T> {
 	async?: boolean
+	blocking?: 'render' | (string & {})
 	/** @deprecated */
 	charSet?: string
 	crossOrigin?: 'anonymous' | 'use-credentials' | ''

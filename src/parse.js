@@ -205,6 +205,9 @@ function unwrapTypes(source, types) {
 		.replace(/ SignalLike<([^>]+)>\n/gi, '\n')
 		.replace(/Signalish<([^>]+)>/gi, '$1')
 
+		// pota
+		.replace(/Accessor<([^>]+)>/gi, '$1')
+
 		// react
 		.replace(/\| DO_NOT_USE[^\n]+\n/gi, '\n')
 

@@ -184,35 +184,31 @@ interface MediaHTMLAttributes<T> extends HTMLAttributes<T> {
 }
 
 // Pota - https://github.com/potahtml/pota
-interface HTMLVideoElementAttributes extends HTMLMediaHTMLAttributes {
-	disablepictureinpicture?: 'true' | boolean
+interface HTMLVideoElementAttributes<Element> extends HTMLAttributes<Element>, HTMLMediaHTMLAttributes<Element> {
+	disablepictureinpicture?: boolean | ''
 	height?: number | string
-	playsinline?: 'true' | boolean
+	playsinline?: boolean | ''
 	poster?: string
 	width?: number | string
-}
 
-interface HTMLVideoElementEvents<Element> extends HTMLMediaElementEvents<Element> {
 	'on:enterpictureinpicture'?: Events<PictureInPictureEvent, Element>
 	'on:leavepictureinpicture'?: Events<PictureInPictureEvent, Element>
 }
 
-interface HTMLMediaHTMLAttributes {
-	autoplay?: 'true' | boolean
-	controls?: 'true' | boolean
-	controlslist?: string
+interface HTMLMediaHTMLAttributes<Element> {
+	autoplay?: boolean | ''
+	controls?: boolean | ''
+	controlslist?: 'nodownload' | 'nofullscreen' | 'noplaybackrate' | 'noremoteplayback' | (string & {})
 	crossorigin?: 'anonymous' | 'use-credentials' | ''
-	disableremoteplayback?: 'true' | boolean
-	loop?: 'true' | boolean
-	muted?: 'true' | boolean
+	disableremoteplayback?: boolean | ''
+	loop?: boolean | ''
+	muted?: boolean | ''
 	preload?: 'none' | 'metadata' | 'auto' | ''
 	src?: string
 
-	/** @deprecated */
-	mediagroup?: string
-}
-
-interface HTMLMediaElementEvents<Element> extends HTMLEvents<Element> {
 	'on:encrypted'?: Events<MediaEncryptedEvent, Element>
 	'on:waitingforkey'?: Events<Event, Element>
+
+	/** @deprecated */
+	mediagroup?: string
 }

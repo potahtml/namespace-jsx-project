@@ -33,6 +33,7 @@ interface ScriptHTMLAttributes<T> extends HTMLAttributes<T> {
 	crossorigin?: 'anonymous' | 'use-credentials' | '' | true | false
 	defer?: true | false | '' | false
 	fetchpriority?: 'high' | 'low' | 'auto' | false
+	for?: string | false
 	integrity?: string | false
 	nomodule?: true | false | '' | false
 	referrerpolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url' | false
@@ -102,6 +103,7 @@ interface ScriptHTMLAttributes<T extends EventTarget = HTMLScriptElement> extend
 // React - https://react.dev/
 interface ScriptHTMLAttributes<T> extends HTMLAttributes<T> {
 	async?: boolean
+	blocking?: 'render' | (string & {})
 	/** @deprecated */
 	charSet?: string
 	crossOrigin?: 'anonymous' | 'use-credentials' | ''
@@ -114,14 +116,14 @@ interface ScriptHTMLAttributes<T> extends HTMLAttributes<T> {
 }
 
 // Pota - https://github.com/potahtml/pota
-interface HTMLScriptElementAttributes {
-	async?: 'true' | boolean
+interface HTMLScriptElementAttributes<Element> extends HTMLAttributes<Element> {
+	async?: boolean | ''
 	crossorigin?: 'anonymous' | 'use-credentials' | ''
-	defer?: 'true' | boolean
+	defer?: boolean | ''
 	fetchpriority?: 'high' | 'low' | 'auto'
+	for?: string
 	integrity?: string
-	nomodule?: 'true' | boolean
-	nonce?: string
+	nomodule?: boolean | ''
 	referrerpolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
 	src?: string
 	type?: 'importmap' | 'module' | 'speculationrules' | (string & {})
@@ -129,7 +131,7 @@ interface HTMLScriptElementAttributes {
 	/** @experimental */
 	attributionsrc?: string
 	/** @experimental */
-	blocking?: string
+	blocking?: 'render'
 
 	/** @deprecated */
 	charset?: string

@@ -85,7 +85,7 @@ interface MStyleMathMLAttributes<T extends EventTarget> extends MathMLAttributes
 }
 
 // Pota - https://github.com/potahtml/pota
-interface MathMLMstyleElementAttributes {
+interface MathMLMstyleElementAttributes<Element> extends MathMLAttributes<Element> {
 	/** @deprecated */
 	background?: string
 	/** @deprecated */

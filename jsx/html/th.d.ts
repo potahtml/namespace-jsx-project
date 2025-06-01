@@ -100,7 +100,7 @@ interface ThHTMLAttributes<T> extends HTMLAttributes<T> {
 }
 
 // Pota - https://github.com/potahtml/pota
-interface HTMLTableCellThElementAttributes {
+interface HTMLTableCellThElementAttributes<Element> extends HTMLAttributes<Element> {
 	abbr?: string
 	colspan?: number | string
 	headers?: string
@@ -120,7 +120,7 @@ interface HTMLTableCellThElementAttributes {
 	/** @deprecated */
 	height?: string
 	/** @deprecated */
-	nowrap?: 'true' | boolean
+	nowrap?: boolean | ''
 	/** @deprecated */
 	valign?: 'baseline' | 'bottom' | 'middle' | 'top'
 	/** @deprecated */

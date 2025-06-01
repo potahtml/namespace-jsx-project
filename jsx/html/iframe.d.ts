@@ -205,9 +205,9 @@ interface IframeHTMLAttributes<T> extends HTMLAttributes<T> {
 }
 
 // Pota - https://github.com/potahtml/pota
-interface HTMLIFrameElementAttributes {
+interface HTMLIFrameElementAttributes<Element> extends HTMLAttributes<Element> {
 	allow?: string
-	allowfullscreen?: 'true' | boolean
+	allowfullscreen?: boolean | ''
 	height?: number | string
 	loading?: 'eager' | 'lazy'
 	name?: string
@@ -218,18 +218,23 @@ interface HTMLIFrameElementAttributes {
 	width?: number | string
 
 	/** @non-standard */
-	browsingtopics?: 'true' | boolean
+	browsingtopics?: boolean | ''
+
 	/** @experimental */
-	credentialless?: 'true' | boolean
+	credentialless?: boolean | ''
 	/** @experimental */
 	csp?: string
 	/** @experimental */
-	sharedstoragewritable?: 'true' | boolean
+	sharedstoragewritable?: boolean | ''
+	/** @experimental */
+	adauctionheaders?: boolean | ''
+	/** @experimental */
+	privatetoken?: string
 
 	/** @deprecated */
-	allowpaymentrequest?: 'true' | boolean
+	allowpaymentrequest?: boolean | ''
 	/** @deprecated */
-	allowtransparency?: 'true' | boolean
+	allowtransparency?: boolean | ''
 	/** @deprecated */
 	align?: string
 	/** @deprecated */
@@ -243,5 +248,5 @@ interface HTMLIFrameElementAttributes {
 	/** @deprecated */
 	scrolling?: 'yes' | 'no' | 'auto'
 	/** @deprecated */
-	seamless?: 'true' | boolean
+	seamless?: boolean | ''
 }

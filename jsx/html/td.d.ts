@@ -116,7 +116,7 @@ interface TdHTMLAttributes<T> extends HTMLAttributes<T> {
 }
 
 // Pota - https://github.com/potahtml/pota
-interface HTMLTableCellTdElementAttributes {
+interface HTMLTableCellTdElementAttributes<Element> extends HTMLAttributes<Element> {
 	colspan?: number | string
 	headers?: string
 	rowspan?: number | string
@@ -136,7 +136,7 @@ interface HTMLTableCellTdElementAttributes {
 	/** @deprecated */
 	height?: number | string
 	/** @deprecated */
-	nowrap?: 'true' | boolean
+	nowrap?: boolean | ''
 	/** @deprecated */
 	scope?: 'col' | 'row' | 'rowgroup' | 'colgroup'
 	/** @deprecated */

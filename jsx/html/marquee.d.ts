@@ -14,7 +14,7 @@ interface MarqueeHTMLAttributes<T extends EventTarget = HTMLMarqueeElement> exte
 }
 
 // Pota - https://github.com/potahtml/pota
-interface HTMLMarqueeElementAttributes {
+interface HTMLMarqueeElementAttributes<Element> extends HTMLAttributes<Element> {
 	/** @deprecated */
 	behavior?: 'scroll' | 'slide' | 'alternate'
 	/** @deprecated */
@@ -32,7 +32,7 @@ interface HTMLMarqueeElementAttributes {
 	/** @deprecated */
 	scrolldelay?: number | string
 	/** @deprecated */
-	truespeed?: 'true' | boolean
+	truespeed?: boolean | ''
 	/** @deprecated */
 	vspace?: number | string
 	/** @deprecated */

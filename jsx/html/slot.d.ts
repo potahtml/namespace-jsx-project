@@ -24,6 +24,6 @@ interface SlotHTMLAttributes<T> extends HTMLAttributes<T> {
 }
 
 // Pota - https://github.com/potahtml/pota
-interface HTMLSlotElementAttributes {
+interface HTMLSlotElementAttributes<Element> extends HTMLAttributes<Element> {
 	name?: string
 }

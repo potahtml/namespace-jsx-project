@@ -46,6 +46,7 @@ interface ImgHTMLAttributes<T> extends HTMLAttributes<T> {
 // Solid Next - https://www.solidjs.com/
 interface ImgHTMLAttributes<T> extends HTMLAttributes<T> {
 	alt?: string | false
+	browsingtopics?: string | false
 	crossorigin?: 'anonymous' | 'use-credentials' | '' | true | false
 	decoding?: 'sync' | 'async' | 'auto' | false
 	fetchpriority?: 'high' | 'low' | 'auto' | false
@@ -150,15 +151,15 @@ interface ImgHTMLAttributes<T> extends HTMLAttributes<T> {
 }
 
 // Pota - https://github.com/potahtml/pota
-interface HTMLImageElementAttributes {
+interface HTMLImageElementAttributes<Element> extends HTMLAttributes<Element> {
 	alt?: string
 	attributionsrc?: string
+	browsingtopics?: string
 	crossorigin?: 'anonymous' | 'use-credentials' | ''
 	decoding?: 'sync' | 'async' | 'auto'
-	elementtiming?: string
 	fetchpriority?: 'high' | 'low' | 'auto'
 	height?: number | string
-	ismap?: 'true' | boolean
+	ismap?: boolean | ''
 	loading?: 'eager' | 'lazy'
 	referrerpolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
 	sizes?: string
@@ -166,6 +167,9 @@ interface HTMLImageElementAttributes {
 	srcset?: string
 	usemap?: string
 	width?: number | string
+
+	/** @experimental */
+	sharedstoragewritable?: boolean
 
 	/** @deprecated */
 	align?: 'top' | 'middle' | 'bottom' | 'left' | 'right'

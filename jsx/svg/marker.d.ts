@@ -189,4 +189,4 @@ interface SVGProps<T> extends SVGAttributes<T>, ClassAttributes<T> {}
 interface ClassAttributes<T> extends RefAttributes<T> {}
 
 // Pota - https://github.com/potahtml/pota
-interface SVGMarkerElementAttributes {}
+interface SVGMarkerElementAttributes<Element> extends SVGAttributes<Element> {}

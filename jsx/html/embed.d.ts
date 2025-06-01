@@ -57,7 +57,7 @@ interface EmbedHTMLAttributes<T> extends HTMLAttributes<T> {
 }
 
 // Pota - https://github.com/potahtml/pota
-interface HTMLEmbedElementAttributes {
+interface HTMLEmbedElementAttributes<Element> extends HTMLAttributes<Element> {
 	height?: number | string
 	src?: string
 	type?: string

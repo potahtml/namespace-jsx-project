@@ -75,11 +75,15 @@ interface HTMLAttributes<T> extends ElementAttributes<T> {
 	inputmode?: 'decimal' | 'email' | 'none' | 'numeric' | 'search' | 'tel' | 'text' | 'url' | false
 	is?: string | false
 	lang?: string | false
-	part?: string | false
 	popover?: '' | true | 'manual' | 'auto' | false
 	spellcheck?: 'false' | 'true' | '' | true | false
 	title?: string | false
 	translate?: 'yes' | 'no' | false
+
+	/** @experimental */
+	virtualkeyboardpolicy?: '' | true | 'auto' | 'manual' | false
+	/** @experimental */
+	writingsuggestions?: 'false' | 'true' | false
 
 	// Microdata
 	itemid?: string | false
@@ -178,3 +182,51 @@ interface HTMLAttributes<RefType extends EventTarget = EventTarget> extends Clas
 // React - https://react.dev/
 
 // Pota - https://github.com/potahtml/pota
+interface HTMLAttributes<Element> extends ElementAttributes<Element> {
+	// properties
+	innerText?: number | string
+
+	// attributes
+	accesskey?: string
+	autocapitalize?: 'off' | 'none' | 'on' | 'sentences' | 'words' | 'characters'
+	autocorrect?: 'on' | 'off'
+	contenteditable?: 'false' | 'true' | 'plaintext-only' | 'inherit' | ''
+	dir?: 'ltr' | 'rtl' | 'auto'
+	draggable?: 'false' | 'true'
+	enterkeyhint?: 'enter' | 'done' | 'go' | 'next' | 'previous' | 'search' | 'send'
+	exportparts?: string
+	hidden?: '' | 'hidden' | 'until-found'
+	inert?: boolean | ''
+	inputmode?: 'decimal' | 'email' | 'none' | 'numeric' | 'search' | 'tel' | 'text' | 'url'
+	is?: string
+	lang?: string
+	popover?: '' | 'manual' | 'auto' | 'hint'
+	spellcheck?: '' | 'false' | 'true'
+	title?: string
+	translate?: 'yes' | 'no'
+
+	// microdata
+	itemid?: string
+	itemprop?: string
+	itemref?: string
+	itemscope?: boolean | ''
+	itemtype?: string
+
+	// RDFa attributes
+	about?: string
+	datatype?: string
+	inlist?: any
+	prefix?: string
+	property?: string
+	resource?: string
+	typeof?: string
+	vocab?: string
+
+	/** @experimental */
+	virtualkeyboardpolicy?: '' | 'auto' | 'manual'
+	/** @experimental */
+	writingsuggestions?: 'false' | 'true'
+
+	/** @deprecated */
+	contextmenu?: string
+}

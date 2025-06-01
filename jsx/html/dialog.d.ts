@@ -22,6 +22,9 @@ interface DialogHtmlAttributes<T> extends HTMLAttributes<T> {
 	 * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog#usage_notes
 	 */
 	tabindex?: never
+
+	/** @experimental */
+	closedby: 'any' | 'closerequest' | 'none' | false
 }
 
 // Voby - https://github.com/vobyjs/voby
@@ -52,7 +55,10 @@ interface DialogHTMLAttributes<T> extends HTMLAttributes<T> {
 }
 
 // Pota - https://github.com/potahtml/pota
-interface HTMLDialogElementAttributes {
-	open?: 'true' | boolean
+interface HTMLDialogElementAttributes<Element> extends HTMLAttributes<Element> {
+	open?: boolean | ''
 	tabindex?: never
+
+	/** @experimental */
+	closedby?: 'any' | 'closerequest' | 'none'
 }

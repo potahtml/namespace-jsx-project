@@ -71,7 +71,7 @@ interface MTableMathMLAttributes<T extends EventTarget> extends MathMLAttributes
 }
 
 // Pota - https://github.com/potahtml/pota
-interface MathMLMtableElementAttributes {
+interface MathMLMtableElementAttributes<Element> extends MathMLAttributes<Element> {
 	/** @non-standard */
 	align?: 'axis' | 'baseline' | 'bottom' | 'center' | 'top'
 	/** @non-standard */

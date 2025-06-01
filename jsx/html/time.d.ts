@@ -32,6 +32,6 @@ interface TimeHTMLAttributes<T> extends HTMLAttributes<T> {
 }
 
 // Pota - https://github.com/potahtml/pota
-interface HTMLTimeElementAttributes {
+interface HTMLTimeElementAttributes<Element> extends HTMLAttributes<Element> {
 	datetime?: string
 }

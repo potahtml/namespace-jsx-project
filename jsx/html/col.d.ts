@@ -59,7 +59,7 @@ interface ColHTMLAttributes<T> extends HTMLAttributes<T> {
 }
 
 // Pota - https://github.com/potahtml/pota
-interface HTMLTableColElementAttributes {
+interface HTMLTableColElementAttributes<Element> extends HTMLAttributes<Element> {
 	span?: number | string
 
 	/** @deprecated */

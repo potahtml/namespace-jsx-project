@@ -20,7 +20,7 @@ interface MSpaceMathMLAttributes<T extends EventTarget> extends MathMLAttributes
 }
 
 // Pota - https://github.com/potahtml/pota
-interface MathMLMspaceElementAttributes {
+interface MathMLMspaceElementAttributes<Element> extends MathMLAttributes<Element> {
 	depth?: string
 	height?: string
 	width?: string

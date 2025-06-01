@@ -26,7 +26,7 @@ interface MPaddedMathMLAttributes<T extends EventTarget> extends MathMLAttribute
 }
 
 // Pota - https://github.com/potahtml/pota
-interface MathMLMpaddedElementAttributes {
+interface MathMLMpaddedElementAttributes<Element> extends MathMLAttributes<Element> {
 	depth?: string
 	height?: string
 	lspace?: string

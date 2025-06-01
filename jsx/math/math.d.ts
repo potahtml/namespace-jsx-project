@@ -14,6 +14,6 @@ interface MathMathMLAttributes<T extends EventTarget> extends MathMLAttributes<T
 }
 
 // Pota - https://github.com/potahtml/pota
-interface MathMLMathElementAttributes {
+interface MathMLMathElementAttributes<Element> extends MathMLAttributes<Element> {
 	display?: 'block' | 'inline'
 }

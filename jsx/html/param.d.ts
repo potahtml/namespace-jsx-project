@@ -47,7 +47,7 @@ interface ParamHTMLAttributes<T> extends HTMLAttributes<T> {
 }
 
 // Pota - https://github.com/potahtml/pota
-interface HTMLParamElementAttributes {
+interface HTMLParamElementAttributes<Element> extends HTMLAttributes<Element> {
 	/** @deprecated */
 	name?: string
 	/** @deprecated */

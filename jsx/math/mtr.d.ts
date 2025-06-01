@@ -23,7 +23,7 @@ interface MTrMathMLAttributes<T extends EventTarget> extends MathMLAttributes<T>
 }
 
 // Pota - https://github.com/potahtml/pota
-interface MathMLMtrElementAttributes {
+interface MathMLMtrElementAttributes<Element> extends MathMLAttributes<Element> {
 	/** @non-standard */
 	columnalign?: 'center' | 'left' | 'right'
 	/** @non-standard */

@@ -106,7 +106,7 @@ interface AnchorHTMLAttributes<T> extends HTMLAttributes<T> {
 }
 
 // Pota - https://github.com/potahtml/pota
-interface HTMLAnchorElementAttributes {
+interface HTMLAnchorElementAttributes<Element> extends HTMLAttributes<Element> {
 	download?: string
 	href?: string
 	hreflang?: string

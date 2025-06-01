@@ -32,6 +32,7 @@ interface LinkHTMLAttributes extends HTMLAttributes {
 // React - https://react.dev/
 interface LinkHTMLAttributes<T> extends HTMLAttributes<T> {
 	as?: string
+	blocking?: 'render' | (string & {})
 	crossOrigin?: 'anonymous' | 'use-credentials' | ''
 	fetchPriority?: 'high' | 'low' | 'auto'
 	href?: string

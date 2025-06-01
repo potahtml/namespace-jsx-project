@@ -11,7 +11,7 @@
 // React - https://react.dev/
 
 // Pota - https://github.com/potahtml/pota
-interface HTMLParagraphElementAttributes {
+interface HTMLParagraphElementAttributes<Element> extends HTMLAttributes<Element> {
 	/** @deprecated */
 	align?: 'left' | 'right' | 'justify' | 'center'
 }

@@ -8,6 +8,7 @@ interface StyleHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
 
 // React - https://react.dev/
 interface StyleHTMLAttributes<T> extends HTMLAttributes<T> {
+	blocking?: 'render' | (string & {})
 	media?: string
 	scoped?: boolean
 	type?: string

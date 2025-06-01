@@ -11,4 +11,4 @@
 // React - https://react.dev/
 
 // Pota - https://github.com/potahtml/pota
-interface HTMLTitleElementAttributes {}
+interface HTMLTitleElementAttributes<Element> extends HTMLAttributes<Element> {}

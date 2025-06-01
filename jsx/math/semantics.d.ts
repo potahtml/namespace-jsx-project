@@ -8,4 +8,4 @@ interface MathMLSemanticsElementAttributes<T> extends MathMLAttributes<T> {}
 interface SemanticsMathMLAttributes<T extends EventTarget> extends MathMLAttributes<T> {}
 
 // Pota - https://github.com/potahtml/pota
-interface MathMLSemanticsElementAttributes {}
+interface MathMLSemanticsElementAttributes<Element> extends MathMLAttributes<Element> {}

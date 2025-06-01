@@ -14,6 +14,6 @@ interface MOverMathMLAttributes<T extends EventTarget> extends MathMLAttributes<
 }
 
 // Pota - https://github.com/potahtml/pota
-interface MathMLMoverElementAttributes {
-	accent?: 'true' | boolean
+interface MathMLMoverElementAttributes<Element> extends MathMLAttributes<Element> {
+	accent?: boolean | ''
 }

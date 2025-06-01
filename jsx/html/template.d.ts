@@ -29,9 +29,10 @@ interface TemplateHTMLAttributes<T> extends HTMLAttributes<T> {
 // React - https://react.dev/
 
 // Pota - https://github.com/potahtml/pota
-interface HTMLTemplateElementAttributes {
-	shadowrootclonable?: 'true' | boolean
-	shadowrootdelegatesfocus?: 'true' | boolean
+interface HTMLTemplateElementAttributes<Element> extends HTMLAttributes<Element> {
+	shadowrootclonable?: boolean | ''
+	shadowrootcustomelementregistry?: boolean | ''
+	shadowrootdelegatesfocus?: boolean | ''
 	shadowrootmode?: 'open' | 'closed'
-	shadowrootserializable?: 'true' | boolean
+	shadowrootserializable?: boolean | ''
 }

@@ -65,7 +65,7 @@ interface MeterHTMLAttributes<T> extends HTMLAttributes<T> {
 }
 
 // Pota - https://github.com/potahtml/pota
-interface HTMLMeterElementAttributes {
+interface HTMLMeterElementAttributes<Element> extends HTMLAttributes<Element> {
 	form?: string
 	high?: number | string
 	low?: number | string

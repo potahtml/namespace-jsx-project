@@ -88,7 +88,7 @@ interface FormHTMLAttributes<T> extends HTMLAttributes<T> {
 }
 
 // Pota - https://github.com/potahtml/pota
-interface HTMLFormElementAttributes {
+interface HTMLFormElementAttributes<Element> extends HTMLAttributes<Element> {
 	'accept-charset'?: string
 	action?: string
 	autocomplete?: 'on' | 'off'
@@ -96,7 +96,7 @@ interface HTMLFormElementAttributes {
 	enctype?: 'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'
 	method?: 'post' | 'get' | 'dialog'
 	name?: string
-	novalidate?: 'true' | boolean
+	novalidate?: boolean | ''
 	rel?: string
 	target?: '_self' | '_blank' | '_parent' | '_top' | (string & {})
 

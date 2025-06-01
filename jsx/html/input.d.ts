@@ -267,39 +267,37 @@ interface InputHTMLAttributes<T> extends HTMLAttributes<T> {
 }
 
 // Pota - https://github.com/potahtml/pota
-interface HTMLInputElementAttributes {
+interface HTMLInputElementAttributes<Element> extends HTMLAttributes<Element> {
 	accept?: string
 	alt?: string
+	alpha?: boolean | ''
 	autocomplete?: 'additional-name' | 'address-level1' | 'address-level2' | 'address-level3' | 'address-level4' | 'address-line1' | 'address-line2' | 'address-line3' | 'bday' | 'bday-day' | 'bday-month' | 'bday-year' | 'billing' | 'cc-additional-name' | 'cc-csc' | 'cc-exp' | 'cc-exp-month' | 'cc-exp-year' | 'cc-family-name' | 'cc-given-name' | 'cc-name' | 'cc-number' | 'cc-type' | 'country' | 'country-name' | 'current-password' | 'email' | 'family-name' | 'fax' | 'given-name' | 'home' | 'honorific-prefix' | 'honorific-suffix' | 'impp' | 'language' | 'mobile' | 'name' | 'new-password' | 'nickname' | 'off' | 'on' | 'organization' | 'organization-title' | 'pager' | 'photo' | 'postal-code' | 'sex' | 'shipping' | 'street-address' | 'tel' | 'tel-area-code' | 'tel-country-code' | 'tel-extension' | 'tel-local' | 'tel-local-prefix' | 'tel-local-suffix' | 'tel-national' | 'transaction-amount' | 'transaction-currency' | 'url' | 'username' | 'work' | (string & {})
-	autocorrect?: 'on' | 'off'
-	autofocus?: boolean
 	capture?: 'user' | 'environment'
-	checked?: 'true' | boolean
-	crossorigin?: 'anonymous' | 'use-credentials' | ''
+	checked?: boolean | ''
+	colorspace?: string
 	dirname?: string
-	disabled?: 'true' | boolean
-	enterkeyhint?: 'enter' | 'done' | 'go' | 'next' | 'previous' | 'search' | 'send'
+	disabled?: boolean | ''
 	form?: string
 	formaction?: string
 	formenctype?: 'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'
 	formmethod?: 'post' | 'get' | 'dialog'
-	formnovalidate?: 'true' | boolean
+	formnovalidate?: boolean | ''
 	formtarget?: string
 	height?: number | string
-	incremental?: 'true' | boolean
+	incremental?: boolean | ''
 	list?: string
 	max?: number | string
 	maxlength?: number | string
 	min?: number | string
 	minlength?: number | string
-	multiple?: 'true' | boolean
+	multiple?: boolean | ''
 	name?: string
 	pattern?: string
 	placeholder?: string
 	popovertarget?: string
 	popovertargetaction?: 'hide' | 'show' | 'toggle'
-	readonly?: 'true' | boolean
-	required?: 'true' | boolean
+	readonly?: boolean | ''
+	required?: boolean | ''
 	results?: number | string
 	size?: number | string
 	src?: string

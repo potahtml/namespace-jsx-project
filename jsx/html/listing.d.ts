@@ -1,5 +1,5 @@
 // Pota - https://github.com/potahtml/pota
-interface HTMLPreElementListingAttributes {
+interface HTMLPreElementListingAttributes<Element> extends HTMLAttributes<Element> {
 	/** @deprecated */
 	width?: number | string
 }

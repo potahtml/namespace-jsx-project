@@ -17,6 +17,4 @@ interface BdoHTMLAttributes<T> extends HTMLAttributes<T> {
 // React - https://react.dev/
 
 // Pota - https://github.com/potahtml/pota
-interface HTMLBdoElementAttributes {
-	dir?: 'rtl' | 'ltr'
-}
+interface HTMLBdoElementAttributes<Element> extends HTMLAttributes<Element> {}

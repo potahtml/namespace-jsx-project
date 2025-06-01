@@ -60,7 +60,7 @@ interface MetaHTMLAttributes<T> extends HTMLAttributes<T> {
 }
 
 // Pota - https://github.com/potahtml/pota
-interface HTMLMetaElementAttributes {
+interface HTMLMetaElementAttributes<Element> extends HTMLAttributes<Element> {
 	charset?: string
 	content?: string
 	'http-equiv'?: 'content-security-policy' | 'content-type' | 'default-style' | 'x-ua-compatible' | 'refresh'

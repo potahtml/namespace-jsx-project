@@ -35,7 +35,7 @@ interface MmultiScriptsMathMLAttributes<T extends EventTarget> extends MathMLAtt
 }
 
 // Pota - https://github.com/potahtml/pota
-interface MathMLMmultiscriptsElementAttributes {
+interface MathMLMmultiscriptsElementAttributes<Element> extends MathMLAttributes<Element> {
 	/** @deprecated */
 	subscriptshift?: string
 	/** @deprecated */

@@ -14,6 +14,6 @@ interface MUnderMathMLAttributes<T extends EventTarget> extends MathMLAttributes
 }
 
 // Pota - https://github.com/potahtml/pota
-interface MathMLMunderElementAttributes {
-	accentunder?: 'true' | boolean
+interface MathMLMunderElementAttributes<Element> extends MathMLAttributes<Element> {
+	accentunder?: boolean | ''
 }

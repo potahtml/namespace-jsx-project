@@ -22,7 +22,7 @@ interface AnnotationXmlMathMLAttributes<T extends EventTarget> extends MathMLAtt
 }
 
 // Pota - https://github.com/potahtml/pota
-interface MathMLAnnotationXmlElementAttributes {
+interface MathMLAnnotationXmlElementAttributes<Element> extends MathMLAttributes<Element> {
 	encoding?: string
 
 	/** @deprecated */

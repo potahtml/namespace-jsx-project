@@ -40,7 +40,7 @@ interface TableHTMLAttributes<T> extends HTMLAttributes<T> {
 }
 
 // Pota - https://github.com/potahtml/pota
-interface HTMLTableElementAttributes {
+interface HTMLTableElementAttributes<Element> extends HTMLAttributes<Element> {
 	/** @deprecated */
 	align?: 'left' | 'center' | 'right'
 	/** @deprecated */

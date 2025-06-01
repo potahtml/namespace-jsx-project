@@ -35,7 +35,7 @@ interface MSubsupMathMLAttributes<T extends EventTarget> extends MathMLAttribute
 }
 
 // Pota - https://github.com/potahtml/pota
-interface MathMLMsubsupElementAttributes {
+interface MathMLMsubsupElementAttributes<Element> extends MathMLAttributes<Element> {
 	/** @deprecated */
 	subscriptshift?: string
 	/** @deprecated */

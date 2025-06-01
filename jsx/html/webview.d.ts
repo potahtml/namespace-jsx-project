@@ -117,30 +117,29 @@ interface WebViewHTMLAttributes<T> extends HTMLAttributes<T> {
 }
 
 // Pota - https://github.com/potahtml/pota
-interface HTMLWebViewElementAttributes {
-	allowpopups?: 'true' | boolean
+interface HTMLWebViewElementAttributes<Element> extends HTMLAttributes<Element> {
+	allowpopups?: boolean | ''
 	disableblinkfeatures?: string
-	disablewebsecurity?: 'true' | boolean
+	disablewebsecurity?: boolean | ''
 	enableblinkfeatures?: string
 	httpreferrer?: string
-	nodeintegration?: 'true' | boolean
-	nodeintegrationinsubframes?: 'true' | boolean
+	nodeintegration?: boolean | ''
+	nodeintegrationinsubframes?: boolean | ''
 	partition?: string
-	plugins?: 'true' | boolean
+	plugins?: boolean | ''
 	preload?: string
 	src?: string
 	useragent?: string
 	webpreferences?: string
 
 	// does this exists?
-	allowfullscreen?: boolean
-	autofocus?: boolean
-	autosize?: boolean
+	allowfullscreen?: boolean | ''
+	autosize?: boolean | ''
 
 	/** @deprecated */
 	blinkfeatures?: string
 	/** @deprecated */
-	disableguestresize?: 'true' | boolean
+	disableguestresize?: boolean | ''
 	/** @deprecated */
 	guestinstance?: string
 }

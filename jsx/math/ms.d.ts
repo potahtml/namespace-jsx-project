@@ -23,7 +23,7 @@ interface MSMathMLAttributes<T extends EventTarget> extends MathMLAttributes<T> 
 }
 
 // Pota - https://github.com/potahtml/pota
-interface MathMLMsElementAttributes {
+interface MathMLMsElementAttributes<Element> extends MathMLAttributes<Element> {
 	/** @deprecated */
 	lquote?: string
 	/** @deprecated */

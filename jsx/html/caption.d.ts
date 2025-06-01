@@ -19,7 +19,7 @@ interface CaptionHTMLAttributes<T> extends HTMLAttributes<T> {
 // React - https://react.dev/
 
 // Pota - https://github.com/potahtml/pota
-interface HTMLTableCaptionElementAttributes {
+interface HTMLTableCaptionElementAttributes<Element> extends HTMLAttributes<Element> {
 	/** @deprecated */
-	align?: 'left' | 'top' | 'right' | 'bottom'
+	align?: 'left' | 'center' | 'right'
 }

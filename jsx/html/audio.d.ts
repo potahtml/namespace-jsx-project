@@ -121,22 +121,20 @@ interface MediaHTMLAttributes<T> extends HTMLAttributes<T> {
 }
 
 // Pota - https://github.com/potahtml/pota
-interface HTMLAudioElementAttributes extends HTMLMediaHTMLAttributes {}
-interface HTMLMediaElementEvents<Element> extends HTMLEvents<Element> {
-	'on:encrypted'?: Events<MediaEncryptedEvent, Element>
-	'on:waitingforkey'?: Events<Event, Element>
-}
-
-interface HTMLMediaHTMLAttributes {
-	autoplay?: 'true' | boolean
-	controls?: 'true' | boolean
-	controlslist?: string
+interface HTMLAudioElementAttributes<Element> extends HTMLAttributes<Element>, HTMLMediaHTMLAttributes<Element> {}
+interface HTMLMediaHTMLAttributes<Element> {
+	autoplay?: boolean | ''
+	controls?: boolean | ''
+	controlslist?: 'nodownload' | 'nofullscreen' | 'noplaybackrate' | 'noremoteplayback' | (string & {})
 	crossorigin?: 'anonymous' | 'use-credentials' | ''
-	disableremoteplayback?: 'true' | boolean
-	loop?: 'true' | boolean
-	muted?: 'true' | boolean
+	disableremoteplayback?: boolean | ''
+	loop?: boolean | ''
+	muted?: boolean | ''
 	preload?: 'none' | 'metadata' | 'auto' | ''
 	src?: string
+
+	'on:encrypted'?: Events<MediaEncryptedEvent, Element>
+	'on:waitingforkey'?: Events<Event, Element>
 
 	/** @deprecated */
 	mediagroup?: string

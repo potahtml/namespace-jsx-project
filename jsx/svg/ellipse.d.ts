@@ -193,4 +193,4 @@ interface SVGProps<T> extends SVGAttributes<T>, ClassAttributes<T> {}
 interface ClassAttributes<T> extends RefAttributes<T> {}
 
 // Pota - https://github.com/potahtml/pota
-interface SVGEllipseElementAttributes {}
+interface SVGEllipseElementAttributes<Element> extends SVGAttributes<Element> {}

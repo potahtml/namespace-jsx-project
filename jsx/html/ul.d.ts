@@ -11,9 +11,9 @@
 // React - https://react.dev/
 
 // Pota - https://github.com/potahtml/pota
-interface HTMLUListElementAttributes {
+interface HTMLUListElementAttributes<Element> extends HTMLAttributes<Element> {
 	/** @deprecated */
-	compact?: 'true' | boolean
+	compact?: boolean | ''
 	/** @deprecated */
 	type?: 'circle' | 'disc' | 'square'
 }

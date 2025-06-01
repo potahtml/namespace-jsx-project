@@ -954,6 +954,7 @@ interface ElementAttributes<T> extends CustomAttributes<T>, DirectiveAttributes,
 	elementtiming?: string | false
 	id?: string | false
 	nonce?: string | false
+	part?: string | false
 	slot?: string | false
 	style?: CSSProperties | string | false
 	tabindex?: number | string | false
@@ -1871,6 +1872,35 @@ interface AriaAttributes {
 }
 
 // Pota - https://github.com/potahtml/pota
+interface CSSAttributes extends NSStyle {
+	class?: string
+	style?: CSSProperties | string
+
+	css?: string | CSSStyleSheet // TODO
+
+	// css
+	[attr: `class:${string}`]: any // TODO
+	[attr: `style:${string}`]: any // TODO
+	[attr: `var:${string}`]: string // TODO
+}
+interface ElementAttributes<Element> extends PotaAttributes<Element>, CSSAttributes, AriaAttributes, ElementEventHandlers<Element>, NSAttributes<Element> {
+	// properties
+	innerHTML?: number | string
+	textContent?: number | string
+
+	// xml
+	[attr: `xmlns:${string}`]: string
+	xmlns?: string
+
+	// attributes
+	autofocus?: boolean | ''
+	elementtiming?: string
+	id?: string
+	nonce?: string
+	part?: string
+	slot?: string
+	tabindex?: number | string
+}
 interface AriaAttributes {
 	/**
 	 * Identifies the currently active element when DOM focus is on a
@@ -1882,11 +1912,38 @@ interface AriaAttributes {
 	 * only parts of, the changed region based on the change
 	 * notifications defined by the aria-relevant attribute.
 	 */
-	'aria-atomic'?: boolean | 'false' | 'true'
+	'aria-atomic'?: 'false' | 'true'
 	/**
-	 * Indicates whether inputting text could trigger display of one or
-	 * more predictions of the user's intended value for an input and
-	 * specifies how predictions would be presented if they are made.
+	 * Similar to the global aria-label. Defines a string value that
+	 * labels the current element, which is intended to be converted
+	 * into Braille.
+	 *
+	 * @see aria-label.
+	 */
+	'aria-braillelabel'?: string
+	/**
+	 * Defines a human-readable, author-localized abbreviated
+	 * description for the role of an element intended to be converted
+	 * into Braille. Braille is not a one-to-one transliteration of
+	 * letters and numbers, but rather it includes various
+	 * abbreviations, contractions, and characters that represent
+	 * words (known as logograms).
+	 *
+	 * Instead of converting long role descriptions to Braille, the
+	 * aria-brailleroledescription attribute allows for providing an
+	 * abbreviated version of the aria-roledescription value, which is
+	 * a human-readable, author-localized description for the role of
+	 * an element, for improved user experience with braille
+	 * interfaces.
+	 *
+	 * @see aria-roledescription.
+	 */
+	'aria-brailleroledescription'?: string
+	/**
+	 * Indicates whether inputting text could trigger display of one
+	 * or more predictions of the user's intended value for an input
+	 * and specifies how predictions would be presented if they are
+	 * made.
 	 */
 	'aria-autocomplete'?: 'none' | 'inline' | 'list' | 'both'
 	/**
@@ -1894,14 +1951,14 @@ interface AriaAttributes {
 	 * technologies MAY want to wait until the modifications are
 	 * complete before exposing them to the user.
 	 */
-	'aria-busy'?: boolean | 'false' | 'true'
+	'aria-busy'?: 'false' | 'true'
 	/**
 	 * Indicates the current "checked" state of checkboxes, radio
 	 * buttons, and other widgets.
 	 *
 	 * @see aria-pressed @see aria-selected.
 	 */
-	'aria-checked'?: boolean | 'false' | 'mixed' | 'true'
+	'aria-checked'?: 'false' | 'true' | 'mixed'
 	/**
 	 * Defines the total number of columns in a table, grid, or
 	 * treegrid.
@@ -1910,12 +1967,17 @@ interface AriaAttributes {
 	 */
 	'aria-colcount'?: number | string
 	/**
-	 * Defines an element's column index or position with respect to the
-	 * total number of columns within a table, grid, or treegrid.
+	 * Defines an element's column index or position with respect to
+	 * the total number of columns within a table, grid, or treegrid.
 	 *
 	 * @see aria-colcount @see aria-colspan.
 	 */
 	'aria-colindex'?: number | string
+	/**
+	 * Defines a human-readable text alternative of the numeric
+	 * aria-colindex.
+	 */
+	'aria-colindextext'?: number | string
 	/**
 	 * Defines the number of columns spanned by a cell or gridcell
 	 * within a table, grid, or treegrid.
@@ -1934,13 +1996,20 @@ interface AriaAttributes {
 	 * Indicates the element that represents the current item within a
 	 * container or set of related elements.
 	 */
-	'aria-current'?: boolean | 'false' | 'true' | 'page' | 'step' | 'location' | 'date' | 'time'
+	'aria-current'?: 'false' | 'true' | 'page' | 'step' | 'location' | 'date' | 'time'
 	/**
 	 * Identifies the element (or elements) that describes the object.
 	 *
 	 * @see aria-labelledby
 	 */
 	'aria-describedby'?: string
+	/**
+	 * Defines a string value that describes or annotates the current
+	 * element.
+	 *
+	 * @see aria-describedby
+	 */
+	'aria-description'?: string
 	/**
 	 * Identifies the element that provides a detailed, extended
 	 * description for the object.
@@ -1949,12 +2018,12 @@ interface AriaAttributes {
 	 */
 	'aria-details'?: string
 	/**
-	 * Indicates that the element is perceivable but disabled, so it is
-	 * not editable or otherwise operable.
+	 * Indicates that the element is perceivable but disabled, so it
+	 * is not editable or otherwise operable.
 	 *
 	 * @see aria-hidden @see aria-readonly.
 	 */
-	'aria-disabled'?: boolean | 'false' | 'true'
+	'aria-disabled'?: 'false' | 'true'
 	/**
 	 * Indicates what functions can be performed when a dragged object
 	 * is released on the drop target.
@@ -1973,12 +2042,12 @@ interface AriaAttributes {
 	 * Indicates whether the element, or another grouping element it
 	 * controls, is currently expanded or collapsed.
 	 */
-	'aria-expanded'?: boolean | 'false' | 'true'
+	'aria-expanded'?: 'false' | 'true'
 	/**
-	 * Identifies the next element (or elements) in an alternate reading
-	 * order of content which, at the user's discretion, allows
-	 * assistive technology to override the general default of reading
-	 * in document source order.
+	 * Identifies the next element (or elements) in an alternate
+	 * reading order of content which, at the user's discretion,
+	 * allows assistive technology to override the general default of
+	 * reading in document source order.
 	 */
 	'aria-flowto'?: string
 	/**
@@ -1987,25 +2056,27 @@ interface AriaAttributes {
 	 *
 	 * @deprecated In ARIA 1.1
 	 */
-	'aria-grabbed'?: boolean | 'false' | 'true'
+	'aria-grabbed'?: 'false' | 'true'
 	/**
-	 * Indicates the availability and type of interactive popup element,
-	 * such as menu or dialog, that can be triggered by an element.
+	 * Indicates the availability and type of interactive popup
+	 * element, such as menu or dialog, that can be triggered by an
+	 * element.
 	 */
-	'aria-haspopup'?: boolean | 'false' | 'true' | 'menu' | 'listbox' | 'tree' | 'grid' | 'dialog'
+	'aria-haspopup'?: 'false' | 'true' | 'menu' | 'listbox' | 'tree' | 'grid' | 'dialog'
 	/**
-	 * Indicates whether the element is exposed to an accessibility API.
+	 * Indicates whether the element is exposed to an accessibility
+	 * API.
 	 *
 	 * @see aria-disabled.
 	 */
-	'aria-hidden'?: boolean | 'false' | 'true'
+	'aria-hidden'?: 'false' | 'true'
 	/**
 	 * Indicates the entered value does not conform to the format
 	 * expected by the application.
 	 *
 	 * @see aria-errormessage.
 	 */
-	'aria-invalid'?: boolean | 'false' | 'true' | 'grammar' | 'spelling'
+	'aria-invalid'?: 'false' | 'true' | 'grammar' | 'spelling'
 	/**
 	 * Indicates keyboard shortcuts that an author has implemented to
 	 * activate or give focus to an element.
@@ -2024,7 +2095,10 @@ interface AriaAttributes {
 	 * @see aria-describedby.
 	 */
 	'aria-labelledby'?: string
-	/** Defines the hierarchical level of an element within a structure. */
+	/**
+	 * Defines the hierarchical level of an element within a
+	 * structure.
+	 */
 	'aria-level'?: number | string
 	/**
 	 * Indicates that an element will be updated, and describes the
@@ -2033,35 +2107,36 @@ interface AriaAttributes {
 	 */
 	'aria-live'?: 'off' | 'assertive' | 'polite'
 	/** Indicates whether an element is modal when displayed. */
-	'aria-modal'?: boolean | 'false' | 'true'
+	'aria-modal'?: 'false' | 'true'
 	/**
 	 * Indicates whether a text box accepts multiple lines of input or
 	 * only a single line.
 	 */
-	'aria-multiline'?: boolean | 'false' | 'true'
+	'aria-multiline'?: 'false' | 'true'
 	/**
 	 * Indicates that the user may select more than one item from the
 	 * current selectable descendants.
 	 */
-	'aria-multiselectable'?: boolean | 'false' | 'true'
+	'aria-multiselectable'?: 'false' | 'true'
 	/**
 	 * Indicates whether the element's orientation is horizontal,
 	 * vertical, or unknown/ambiguous.
 	 */
 	'aria-orientation'?: 'horizontal' | 'vertical'
 	/**
-	 * Identifies an element (or elements) in order to define a visual,
-	 * functional, or contextual parent/child relationship between DOM
-	 * elements where the DOM hierarchy cannot be used to represent the
-	 * relationship.
+	 * Identifies an element (or elements) in order to define a
+	 * visual, functional, or contextual parent/child relationship
+	 * between DOM elements where the DOM hierarchy cannot be used to
+	 * represent the relationship.
 	 *
 	 * @see aria-controls.
 	 */
 	'aria-owns'?: string
 	/**
-	 * Defines a short hint (a word or short phrase) intended to aid the
-	 * user with data entry when the control has no value. A hint could
-	 * be a sample value or a brief description of the expected format.
+	 * Defines a short hint (a word or short phrase) intended to aid
+	 * the user with data entry when the control has no value. A hint
+	 * could be a sample value or a brief description of the expected
+	 * format.
 	 */
 	'aria-placeholder'?: string
 	/**
@@ -2077,17 +2152,17 @@ interface AriaAttributes {
 	 *
 	 * @see aria-checked @see aria-selected.
 	 */
-	'aria-pressed'?: boolean | 'false' | 'mixed' | 'true'
+	'aria-pressed'?: 'false' | 'true' | 'mixed'
 	/**
 	 * Indicates that the element is not editable, but is otherwise
 	 * operable.
 	 *
 	 * @see aria-disabled.
 	 */
-	'aria-readonly'?: boolean | 'false' | 'true'
+	'aria-readonly'?: 'false' | 'true'
 	/**
-	 * Indicates what notifications the user agent will trigger when the
-	 * accessibility tree within a live region is modified.
+	 * Indicates what notifications the user agent will trigger when
+	 * the accessibility tree within a live region is modified.
 	 *
 	 * @see aria-atomic.
 	 */
@@ -2096,7 +2171,7 @@ interface AriaAttributes {
 	 * Indicates that user input is required on the element before a
 	 * form may be submitted.
 	 */
-	'aria-required'?: boolean | 'false' | 'true'
+	'aria-required'?: 'false' | 'true'
 	/**
 	 * Defines a human-readable, author-localized description for the
 	 * role of an element.
@@ -2115,9 +2190,11 @@ interface AriaAttributes {
 	 * @see aria-rowcount @see aria-rowspan.
 	 */
 	'aria-rowindex'?: number | string
+	/** Defines a human-readable text alternative of aria-rowindex. */
+	'aria-rowindextext'?: number | string
 	/**
-	 * Defines the number of rows spanned by a cell or gridcell within a
-	 * table, grid, or treegrid.
+	 * Defines the number of rows spanned by a cell or gridcell within
+	 * a table, grid, or treegrid.
 	 *
 	 * @see aria-rowindex @see aria-colspan.
 	 */
@@ -2127,18 +2204,18 @@ interface AriaAttributes {
 	 *
 	 * @see aria-checked @see aria-pressed.
 	 */
-	'aria-selected'?: boolean | 'false' | 'true'
+	'aria-selected'?: 'false' | 'true'
 	/**
 	 * Defines the number of items in the current set of listitems or
-	 * treeitems. Not required if all elements in the set are present in
-	 * the DOM.
+	 * treeitems. Not required if all elements in the set are present
+	 * in the DOM.
 	 *
 	 * @see aria-posinset.
 	 */
 	'aria-setsize'?: number | string
 	/**
-	 * Indicates if items in a table or grid are sorted in ascending or
-	 * descending order.
+	 * Indicates if items in a table or grid are sorted in ascending
+	 * or descending order.
 	 */
 	'aria-sort'?: 'none' | 'ascending' | 'descending' | 'other'
 	/** Defines the maximum allowed value for a range widget. */
@@ -2152,11 +2229,112 @@ interface AriaAttributes {
 	 */
 	'aria-valuenow'?: number | string
 	/**
-	 * Defines the human readable text alternative of aria-valuenow for
-	 * a range widget.
+	 * Defines the human readable text alternative of aria-valuenow
+	 * for a range widget.
 	 */
 	'aria-valuetext'?: string
 	role?: 'alert' | 'alertdialog' | 'application' | 'article' | 'banner' | 'button' | 'cell' | 'checkbox' | 'columnheader' | 'combobox' | 'complementary' | 'contentinfo' | 'definition' | 'dialog' | 'directory' | 'document' | 'feed' | 'figure' | 'form' | 'grid' | 'gridcell' | 'group' | 'heading' | 'img' | 'link' | 'list' | 'listbox' | 'listitem' | 'log' | 'main' | 'marquee' | 'math' | 'menu' | 'menubar' | 'menuitem' | 'menuitemcheckbox' | 'menuitemradio' | 'meter' | 'navigation' | 'none' | 'note' | 'option' | 'presentation' | 'progressbar' | 'radio' | 'radiogroup' | 'region' | 'row' | 'rowgroup' | 'rowheader' | 'scrollbar' | 'search' | 'searchbox' | 'separator' | 'slider' | 'spinbutton' | 'status' | 'switch' | 'tab' | 'table' | 'tablist' | 'tabpanel' | 'term' | 'textbox' | 'timer' | 'toolbar' | 'tooltip' | 'tree' | 'treegrid' | 'treeitem'
 }
-interface HTMLEvents<Element> extends ElementEvents<Element>, GlobalEvents<Element> {}
-interface HTMLEvents<Element> extends JSX.HTMLEvents<Element> {}
+interface ElementEventHandlers<Element> {
+	'on:abort'?: Events<UIEvent, Element>
+	'on:animationcancel'?: Events<AnimationEvent, Element>
+	'on:animationend'?: Events<AnimationEvent, Element>
+	'on:animationiteration'?: Events<AnimationEvent, Element>
+	'on:animationstart'?: Events<AnimationEvent, Element>
+	'on:auxclick'?: Events<MouseEvent, Element>
+	'on:beforeinput'?: Events<InputEvent, Element>
+	'on:beforetoggle'?: Events<ToggleEvent, Element>
+	'on:blur'?: Events<FocusEvent, Element>
+	'on:cancel'?: Events<Event, Element>
+	'on:canplay'?: Events<Event, Element>
+	'on:canplaythrough'?: Events<Event, Element>
+	'on:change'?: Events<Event, Element>
+	'on:click'?: Events<MouseEvent, Element>
+	'on:close'?: Events<Event, Element>
+	'on:compositionend'?: Events<CompositionEvent, Element>
+	'on:compositionstart'?: Events<CompositionEvent, Element>
+	'on:compositionupdate'?: Events<CompositionEvent, Element>
+	'on:contextlost'?: Events<Event, Element>
+	'on:contextmenu'?: Events<MouseEvent, Element>
+	'on:contextrestored'?: Events<Event, Element>
+	'on:copy'?: Events<ClipboardEvent, Element>
+	'on:cuechange'?: Events<Event, Element>
+	'on:cut'?: Events<ClipboardEvent, Element>
+	'on:dblclick'?: Events<MouseEvent, Element>
+	'on:drag'?: Events<DragEvent, Element>
+	'on:dragend'?: Events<DragEvent, Element>
+	'on:dragenter'?: Events<DragEvent, Element>
+	'on:dragleave'?: Events<DragEvent, Element>
+	'on:dragover'?: Events<DragEvent, Element>
+	'on:dragstart'?: Events<DragEvent, Element>
+	'on:drop'?: Events<DragEvent, Element>
+	'on:durationchange'?: Events<Event, Element>
+	'on:emptied'?: Events<Event, Element>
+	'on:ended'?: Events<Event, Element>
+	'on:error'?: Events<ErrorEvent, Element>
+	'on:focus'?: Events<FocusEvent, Element>
+	'on:focusin'?: Events<FocusEvent, Element>
+	'on:focusout'?: Events<FocusEvent, Element>
+	'on:formdata'?: Events<FormDataEvent, Element>
+	'on:fullscreenchange'?: Events<Event, Element>
+	'on:fullscreenerror'?: Events<Event, Element>
+	'on:gotpointercapture'?: Events<PointerEvent, Element>
+	'on:input'?: Events<Event, Element>
+	'on:invalid'?: Events<Event, Element>
+	'on:keydown'?: Events<KeyboardEvent, Element>
+	'on:keypress'?: Events<KeyboardEvent, Element>
+	'on:keyup'?: Events<KeyboardEvent, Element>
+	'on:load'?: Events<Event, Element>
+	'on:loadeddata'?: Events<Event, Element>
+	'on:loadedmetadata'?: Events<Event, Element>
+	'on:loadstart'?: Events<Event, Element>
+	'on:lostpointercapture'?: Events<PointerEvent, Element>
+	'on:mousedown'?: Events<MouseEvent, Element>
+	'on:mouseenter'?: Events<MouseEvent, Element>
+	'on:mouseleave'?: Events<MouseEvent, Element>
+	'on:mousemove'?: Events<MouseEvent, Element>
+	'on:mouseout'?: Events<MouseEvent, Element>
+	'on:mouseover'?: Events<MouseEvent, Element>
+	'on:mouseup'?: Events<MouseEvent, Element>
+	'on:paste'?: Events<ClipboardEvent, Element>
+	'on:pause'?: Events<Event, Element>
+	'on:play'?: Events<Event, Element>
+	'on:playing'?: Events<Event, Element>
+	'on:pointercancel'?: Events<PointerEvent, Element>
+	'on:pointerdown'?: Events<PointerEvent, Element>
+	'on:pointerenter'?: Events<PointerEvent, Element>
+	'on:pointerleave'?: Events<PointerEvent, Element>
+	'on:pointermove'?: Events<PointerEvent, Element>
+	'on:pointerout'?: Events<PointerEvent, Element>
+	'on:pointerover'?: Events<PointerEvent, Element>
+	'on:pointerup'?: Events<PointerEvent, Element>
+	'on:progress'?: Events<ProgressEvent, Element>
+	'on:ratechange'?: Events<Event, Element>
+	'on:reset'?: Events<Event, Element>
+	'on:resize'?: Events<UIEvent, Element>
+	'on:scroll'?: Events<Event, Element>
+	'on:scrollend'?: Events<Event, Element>
+	'on:securitypolicyviolation'?: Events<SecurityPolicyViolationEvent, Element>
+	'on:seeked'?: Events<Event, Element>
+	'on:seeking'?: Events<Event, Element>
+	'on:select'?: Events<Event, Element>
+	'on:selectionchange'?: Events<Event, Element>
+	'on:selectstart'?: Events<Event, Element>
+	'on:slotchange'?: Events<Event, Element>
+	'on:stalled'?: Events<Event, Element>
+	'on:submit'?: Events<SubmitEvent, Element>
+	'on:suspend'?: Events<Event, Element>
+	'on:timeupdate'?: Events<Event, Element>
+	'on:toggle'?: Events<ToggleEvent, Element>
+	'on:touchcancel'?: Events<TouchEvent, Element>
+	'on:touchend'?: Events<TouchEvent, Element>
+	'on:touchmove'?: Events<TouchEvent, Element>
+	'on:touchstart'?: Events<TouchEvent, Element>
+	'on:transitioncancel'?: Events<TransitionEvent, Element>
+	'on:transitionend'?: Events<TransitionEvent, Element>
+	'on:transitionrun'?: Events<TransitionEvent, Element>
+	'on:transitionstart'?: Events<TransitionEvent, Element>
+	'on:volumechange'?: Events<Event, Element>
+	'on:waiting'?: Events<Event, Element>
+	'on:wheel'?: Events<WheelEvent, Element>
+}

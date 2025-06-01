@@ -426,32 +426,37 @@ export const libs = [
 						'htmldeprecatedelements',
 						'htmlwebviewelements',
 					],
-					skip: ['htmlevents'],
+					skip: ['elementattributes', 'htmlattributes'],
 				},
 				svg: {
 					values: ['svgelements', 'svgdeprecatedelements'],
-					skip: ['svgevents'],
+					skip: ['elementattributes', 'svgattributes'],
 				},
 				math: {
 					values: ['mathmlelements', 'mathmldeprecatedelements'],
-					skip: ['mathmlevents'],
+					skip: ['elementattributes', 'mathmlattributes'],
 				},
 			},
 			keys: {
 				HTMLElement: {
 					values: ['htmlattributes'],
-					skip: [],
+					skip: ['elementattributes'],
 				},
 				SVGElement: {
 					values: [],
-					skip: [],
+					skip: ['elementattributes'],
 				},
 				MathMLElement: {
 					values: ['mathmlattributes'],
-					skip: [],
+					skip: ['elementattributes'],
 				},
 				Element: {
-					values: ['ariaattributes', 'htmlevents'],
+					values: [
+						'cssattributes',
+						'elementattributes',
+						'ariaattributes',
+						'elementeventhandlers',
+					],
 				},
 			},
 		},

@@ -55,3 +55,17 @@ interface MathMLAttributes<Target extends EventTarget = MathMLElement> extends H
 // React - https://react.dev/
 
 // Pota - https://github.com/potahtml/pota
+interface MathMLAttributes<Element> extends ElementAttributes<Element> {
+	dir?: 'ltr' | 'rtl' | 'auto'
+	displaystyle?: boolean | ''
+	scriptlevel?: string
+
+	/** @deprecated */
+	href?: string
+	/** @deprecated */
+	mathbackground?: string
+	/** @deprecated */
+	mathcolor?: string
+	/** @deprecated */
+	mathsize?: string
+}

@@ -8,4 +8,4 @@ interface MathMLMerrorElementAttributes<T> extends MathMLAttributes<T> {}
 interface MErrorMathMLAttributes<T extends EventTarget> extends MathMLAttributes<T> {}
 
 // Pota - https://github.com/potahtml/pota
-interface MathMLMerrorElementAttributes {}
+interface MathMLMerrorElementAttributes<Element> extends MathMLAttributes<Element> {}

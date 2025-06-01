@@ -29,6 +29,6 @@ interface MapHTMLAttributes<T> extends HTMLAttributes<T> {
 }
 
 // Pota - https://github.com/potahtml/pota
-interface HTMLMapElementAttributes {
+interface HTMLMapElementAttributes<Element> extends HTMLAttributes<Element> {
 	name?: string
 }

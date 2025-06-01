@@ -45,6 +45,7 @@ interface StyleHTMLAttributes<T extends EventTarget = HTMLStyleElement> extends 
 
 // React - https://react.dev/
 interface StyleHTMLAttributes<T> extends HTMLAttributes<T> {
+	blocking?: 'render' | (string & {})
 	media?: string
 	scoped?: boolean
 	type?: string
@@ -55,16 +56,14 @@ interface StyleHTMLAttributes<T> extends HTMLAttributes<T> {
 }
 
 // Pota - https://github.com/potahtml/pota
-interface HTMLStyleElementAttributes {
+interface HTMLStyleElementAttributes<Element> extends HTMLAttributes<Element> {
 	media?: string
-	nonce?: string
-	title?: string
 
 	/** @experimental */
-	blocking?: string
+	blocking?: 'render'
 
 	/** @deprecated */
-	scoped?: 'true' | boolean
+	scoped?: boolean | ''
 	/** @deprecated */
 	type?: string
 }

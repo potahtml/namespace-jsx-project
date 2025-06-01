@@ -8,4 +8,4 @@ interface MathMLMsqrtElementAttributes<T> extends MathMLAttributes<T> {}
 interface MSqrtMathMLAttributes<T extends EventTarget> extends MathMLAttributes<T> {}
 
 // Pota - https://github.com/potahtml/pota
-interface MathMLMsqrtElementAttributes {}
+interface MathMLMsqrtElementAttributes<Element> extends MathMLAttributes<Element> {}
