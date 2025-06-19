@@ -1,4 +1,9 @@
-import { fetchCached, unique, uniqueKeys } from './utils.js'
+import {
+	fetchCached,
+	fetchJSON,
+	unique,
+	uniqueKeys,
+} from './utils.js'
 
 const mdnSkip = uniqueKeys(`
 	// elementMDN tags
@@ -172,26 +177,21 @@ export async function checkMDNMainValue(
 	tagInterfaceName,
 	valueName,
 ) {
-	const interfaceMDN = JSON.parse(
-		(
-			await fetchCached(InterfaceJSONURL(tagInterfaceName))
-		).toLowerCase(),
+	const interfaceMDN = await fetchJSON(
+		InterfaceJSONURL(tagInterfaceName),
+		true,
 	)
 
-	let elementMDN
-	try {
-		elementMDN = JSON.parse(
-			(await fetchCached(ElementJSONURL(ns, tagName))).toLowerCase(),
-		)
-	} catch (e) {
-		elementMDN = true
-	}
+	const elementMDN = await fetchJSON(
+		ElementJSONURL(ns, tagName),
+		true,
+	)
 
 	// take deprecated from interface name
 	return (
-		interfaceMDN.api[tagInterfaceName.toLowerCase()].__compat.status[
-			valueName
-		] ||
+		(interfaceMDN.api &&
+			interfaceMDN.api[tagInterfaceName.toLowerCase()].__compat
+				.status[valueName]) ||
 		// take deprecated from element
 		elementMDN[Object.keys(elementMDN)[0]]?.elements[
 			tagName.toLowerCase()
@@ -210,19 +210,14 @@ export async function checkMDNPropValue(
 ) {
 	propName = propName.toLowerCase()
 
-	let elementMDN
-	try {
-		elementMDN = JSON.parse(
-			(await fetchCached(ElementJSONURL(ns, tagName))).toLowerCase(),
-		)
-	} catch (e) {
-		elementMDN = true
-	}
+	const elementMDN = await fetchJSON(
+		ElementJSONURL(ns, tagName),
+		true,
+	)
 
-	const interfaceMDN = JSON.parse(
-		(
-			await fetchCached(InterfaceJSONURL(tagInterfaceName))
-		).toLowerCase(),
+	const interfaceMDN = await fetchJSON(
+		InterfaceJSONURL(tagInterfaceName),
+		true,
 	)
 
 	// do not merge this checks
@@ -256,9 +251,7 @@ export async function keysNotIncludedInMDN(
 		let mdnkeys = []
 
 		try {
-			const elementMDN = JSON.parse(
-				await fetchCached(ElementJSONURL(ns, tagName)),
-			)
+			const elementMDN = await fetchJSON(ElementJSONURL(ns, tagName))
 
 			mdnkeys = unique([
 				Object.keys(
@@ -272,8 +265,8 @@ export async function keysNotIncludedInMDN(
 		} catch (e) {}
 
 		try {
-			const interfaceMDN = JSON.parse(
-				await fetchCached(InterfaceJSONURL(tagInterfaceName)),
+			const interfaceMDN = await fetchJSON(
+				InterfaceJSONURL(tagInterfaceName),
 			)
 
 			mdnkeys = unique([
