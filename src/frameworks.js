@@ -403,7 +403,7 @@ export const libs = [
 	},
 	{
 		// POTA
-		file: 'https://raw.githubusercontent.com/potahtml/pota/refs/heads/master/jsx.d.ts',
+		file: 'https://raw.githubusercontent.com/potahtml/pota/refs/heads/master/src/jsx/jsx.d.ts',
 		name: 'Pota',
 		url: 'https://github.com/potahtml/pota',
 		interfaces: {},
