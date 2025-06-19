@@ -15,6 +15,51 @@
 			href="./index.css"
 			rel="stylesheet"
 		/>
+		<script type="importmap">
+			{
+				"imports": {
+					"pota": "../node_modules/pota/src/exports.js",
+
+					"pota/babel-preset": "../node_modules/pota/src/babel-preset/index.js",
+					"pota/jsx-runtime": "../node_modules/pota/src/jsx/jsx-runtime.js",
+					"pota/jsx-dev-runtime": "../node_modules/pota/src/jsx/jsx-runtime.js",
+
+					"pota/xml": "../node_modules/pota/src/core/xml.js",
+					"pota/components": "../node_modules/pota/src/components/@main.js",
+
+					"pota/use/animate": "../node_modules/pota/src/use/animate.js",
+					"pota/use/bind": "../node_modules/pota/src/use/bind.js",
+					"pota/use/browser": "../node_modules/pota/src/use/browser.js",
+					"pota/use/clickoutside": "../node_modules/pota/src/use/clickoutside.js",
+					"pota/use/clipboard": "../node_modules/pota/src/use/clipboard.js",
+					"pota/use/color": "../node_modules/pota/src/use/color.js",
+					"pota/use/css": "../node_modules/pota/src/use/css.js",
+					"pota/use/dom": "../node_modules/pota/src/use/dom.js",
+					"pota/use/emitter": "../node_modules/pota/src/use/emitter.js",
+					"pota/use/event": "../node_modules/pota/src/use/event.js",
+					"pota/use/focus": "../node_modules/pota/src/use/focus.js",
+					"pota/use/fullscreen": "../node_modules/pota/src/use/fullscreen.js",
+					"pota/use/location": "../node_modules/pota/src/use/location.js",
+					"pota/use/orientation": "../node_modules/pota/src/use/orientation.js",
+					"pota/use/paginate": "../node_modules/pota/src/use/paginate.js",
+					"pota/use/polyfills": "../node_modules/pota/src/use/polyfills.js",
+					"pota/use/random": "../node_modules/pota/src/use/random.js",
+					"pota/use/resize": "../node_modules/pota/src/use/resize.js",
+					"pota/use/scroll": "../node_modules/pota/src/use/scroll.js",
+					"pota/use/selection": "../node_modules/pota/src/use/selection.js",
+					"pota/use/selector": "../node_modules/pota/src/use/selector.js",
+					"pota/use/stream": "../node_modules/pota/src/use/stream.js",
+					"pota/use/string": "../node_modules/pota/src/use/string.js",
+					"pota/use/test": "../node_modules/pota/src/use/test.js",
+					"pota/use/time": "../node_modules/pota/src/use/time.js",
+					"pota/use/url": "../node_modules/pota/src/use/url.js",
+					"pota/use/visibility": "../node_modules/pota/src/use/visibility.js",
+
+					"pota/experiments": "../node_modules/pota/src/lib/experiments.js",
+					"pota/store": "../node_modules/pota/src/lib/store.js"
+				}
+			}
+		</script>
 	</head>
 	<body>
 		<section class="description">
@@ -269,7 +314,10 @@
 						return
 					}
 					const text = target.value.trim()
-					const search = text.replace(/^"/, '').replace(/"$/, '').trim()
+					const search = text
+						.replace(/^"/, '')
+						.replace(/"$/, '')
+						.trim()
 					const searchInsensitive = search.toLowerCase()
 					const isExact = text.startsWith('"') && text.endsWith('"')
 
@@ -282,15 +330,17 @@
 					}
 
 					// filter rows
-					const trs = document.querySelectorAll("tbody tr");
+					const trs = document.querySelectorAll('tbody tr')
 					for (const tr of [...trs]) {
 						tr.style.display = isExact
-							? tr.innerHTML.includes(">" + search + "<")
+							? tr.innerHTML.includes('>' + search + '<')
 								? null
-								: "none"
-							: tr.textContent.toLowerCase().includes(searchInsensitive)
+								: 'none'
+							: tr.textContent
+										.toLowerCase()
+										.includes(searchInsensitive)
 								? null
-								: "none";
+								: 'none'
 					}
 
 					// filter whole table and heading if nothing matched
@@ -340,10 +390,10 @@
 						'Vue',
 						'Preact',
 						'React',
-
 					]) {
 						store[name] = store[name] || 'true'
-						body.dataset[name.toLowerCase().replace(/ /g, '')] = store[name]
+						body.dataset[name.toLowerCase().replace(/ /g, '')] =
+							store[name]
 						$(`[value="${name}"]`).checked = store[name] === 'true'
 					}
 				}
@@ -370,7 +420,6 @@
 		</section>
 
 		<section class="content">
-			<script src="https://pota.quack.uy/importmap/importmap.quack.js"></script>
 			<script
 				type="module"
 				src="index.js"
