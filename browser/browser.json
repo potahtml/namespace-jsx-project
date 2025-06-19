@@ -2522,6 +2522,64 @@
         "readonly": [],
         "tagInterfaceName": "HTMLEmbedElement"
       },
+      "fencedframe": {
+        "booleans": [],
+        "events": [],
+        "keys": {
+          "allow": {
+            "attr": true,
+            "attrName": "allow",
+            "keyInterfaceName": "HTMLFencedFrameElement",
+            "name": "allow",
+            "prop": true,
+            "propName": "allow",
+            "readonly": false,
+            "value": "string"
+          },
+          "config": {
+            "attr": false,
+            "attrName": "",
+            "keyInterfaceName": "HTMLFencedFrameElement",
+            "name": "config",
+            "prop": true,
+            "propName": "config",
+            "readonly": false,
+            "value": "unknown"
+          },
+          "height": {
+            "attr": true,
+            "attrName": "height",
+            "keyInterfaceName": "HTMLFencedFrameElement",
+            "name": "height",
+            "prop": true,
+            "propName": "height",
+            "readonly": false,
+            "value": "string"
+          },
+          "sandbox": {
+            "attr": true,
+            "attrName": "sandbox",
+            "keyInterfaceName": "HTMLFencedFrameElement",
+            "name": "sandbox",
+            "prop": true,
+            "propName": "sandbox",
+            "readonly": false,
+            "value": "string"
+          },
+          "width": {
+            "attr": true,
+            "attrName": "width",
+            "keyInterfaceName": "HTMLFencedFrameElement",
+            "name": "width",
+            "prop": true,
+            "propName": "width",
+            "readonly": false,
+            "value": "string"
+          }
+        },
+        "readonly": [],
+        "tagInterfaceName": "HTMLFencedFrameElement"
+      },
       "fieldset": {
         "booleans": [
           "HTMLFieldSetElement.disabled"
@@ -6498,6 +6556,13 @@
           "HTMLSelectElement.willValidate"
         ],
         "tagInterfaceName": "HTMLSelectElement"
+      },
+      "selectedcontent": {
+        "booleans": [],
+        "events": [],
+        "keys": {},
+        "readonly": [],
+        "tagInterfaceName": "HTMLSelectedContentElement"
       },
       "shadow": {
         "booleans": [],
@@ -13668,7 +13733,28 @@
       "a": {
         "booleans": [],
         "events": [],
-        "keys": {},
+        "keys": {
+          "rel": {
+            "attr": true,
+            "attrName": "rel",
+            "keyInterfaceName": "SVGAElement",
+            "name": "rel",
+            "prop": true,
+            "propName": "relList",
+            "readonly": false,
+            "value": "string"
+          },
+          "relList": {
+            "attr": false,
+            "attrName": "rel",
+            "keyInterfaceName": "SVGAElement",
+            "name": "relList",
+            "prop": true,
+            "propName": "relList",
+            "readonly": false,
+            "value": "string"
+          }
+        },
         "readonly": [
           "SVGAElement.href",
           "SVGAElement.target",
@@ -15100,6 +15186,7 @@
       "HTMLElement.onanimationstart",
       "HTMLElement.onauxclick",
       "HTMLElement.onbeforeinput",
+      "HTMLElement.onbeforematch",
       "HTMLElement.onbeforetoggle",
       "HTMLElement.onblur",
       "HTMLElement.oncancel",
@@ -15218,6 +15305,7 @@
       "MathMLElement.onanimationstart",
       "MathMLElement.onauxclick",
       "MathMLElement.onbeforeinput",
+      "MathMLElement.onbeforematch",
       "MathMLElement.onbeforetoggle",
       "MathMLElement.onblur",
       "MathMLElement.oncancel",
@@ -15319,6 +15407,7 @@
       "SVGElement.onanimationstart",
       "SVGElement.onauxclick",
       "SVGElement.onbeforeinput",
+      "SVGElement.onbeforematch",
       "SVGElement.onbeforetoggle",
       "SVGElement.onblur",
       "SVGElement.oncancel",
@@ -17332,6 +17421,13 @@
         },
         "readonly": [],
         "tagInterfaceName": "HTMLEmbedElement"
+      },
+      "fencedframe": {
+        "booleans": [],
+        "events": [],
+        "keys": {},
+        "readonly": [],
+        "tagInterfaceName": "HTMLUnknownElement"
       },
       "fieldset": {
         "booleans": [
@@ -21042,6 +21138,13 @@
         ],
         "tagInterfaceName": "HTMLSelectElement"
       },
+      "selectedcontent": {
+        "booleans": [],
+        "events": [],
+        "keys": {},
+        "readonly": [],
+        "tagInterfaceName": "HTMLUnknownElement"
+      },
       "shadow": {
         "booleans": [],
         "events": [],
@@ -24032,6 +24135,7 @@
           "HTMLElement.onanimationstart",
           "HTMLElement.onauxclick",
           "HTMLElement.onbeforeinput",
+          "HTMLElement.onbeforematch",
           "HTMLElement.onbeforetoggle",
           "HTMLElement.onblur",
           "HTMLElement.oncancel",
@@ -24372,6 +24476,16 @@
             "name": "onbeforeinput",
             "prop": true,
             "propName": "onbeforeinput",
+            "readonly": false,
+            "value": "event"
+          },
+          "onbeforematch": {
+            "attr": true,
+            "attrName": "onbeforematch",
+            "keyInterfaceName": "HTMLElement",
+            "name": "onbeforematch",
+            "prop": true,
+            "propName": "onbeforematch",
             "readonly": false,
             "value": "event"
           },
@@ -25390,6 +25504,7 @@
           "MathMLElement.onanimationstart",
           "MathMLElement.onauxclick",
           "MathMLElement.onbeforeinput",
+          "MathMLElement.onbeforematch",
           "MathMLElement.onbeforetoggle",
           "MathMLElement.onblur",
           "MathMLElement.oncancel",
@@ -25560,6 +25675,16 @@
             "name": "onbeforeinput",
             "prop": true,
             "propName": "onbeforeinput",
+            "readonly": false,
+            "value": "event"
+          },
+          "onbeforematch": {
+            "attr": true,
+            "attrName": "onbeforematch",
+            "keyInterfaceName": "MathMLElement",
+            "name": "onbeforematch",
+            "prop": true,
+            "propName": "onbeforematch",
             "readonly": false,
             "value": "event"
           },
@@ -26521,6 +26646,7 @@
           "SVGElement.onanimationstart",
           "SVGElement.onauxclick",
           "SVGElement.onbeforeinput",
+          "SVGElement.onbeforematch",
           "SVGElement.onbeforetoggle",
           "SVGElement.onblur",
           "SVGElement.oncancel",
@@ -26711,6 +26837,16 @@
             "name": "onbeforeinput",
             "prop": true,
             "propName": "onbeforeinput",
+            "readonly": false,
+            "value": "event"
+          },
+          "onbeforematch": {
+            "attr": true,
+            "attrName": "onbeforematch",
+            "keyInterfaceName": "SVGElement",
+            "name": "onbeforematch",
+            "prop": true,
+            "propName": "onbeforematch",
             "readonly": false,
             "value": "event"
           },
