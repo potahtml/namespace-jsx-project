@@ -1,5 +1,5 @@
 import { render, signal } from 'pota'
-import { html } from 'pota/html'
+import { xml } from 'pota/xml'
 
 const columns = [
   'Chrome',
@@ -17,19 +17,19 @@ function xElements(props) {
   const namespace = props.namespace
   const elements = props.elements
 
-  return html`
+  return xml`
     <details open="">
       <summary><h2>${namespace}</h2></summary>
       <nav>
         <For each="${elements.filter(x => !x.deprecated)}"
           >${element =>
-            html`<a href="#${element.tagInterfaceName + '.' + element.name}"
+            xml`<a href="#${element.tagInterfaceName + '.' + element.name}"
                 >${element.name}</a
               >, `}
         </For>
         <For each="${elements.filter(x => x.deprecated)}"
           >${element =>
-            html`🗑️
+            xml`🗑️
               <a href="#${element.tagInterfaceName + '.' + element.name}"
                 >${element.name}
               </a> `}
@@ -37,10 +37,10 @@ function xElements(props) {
       </nav>
 
       <For each="${elements.filter(x => !x.deprecated)}"
-        >${element => html` <xElement element="${element}" />`}
+        >${element => xml` <xElement element="${element}" />`}
       </For>
       <For each="${elements.filter(x => x.deprecated)}"
-        >${element => html` <xElement element="${element}" />`}
+        >${element => xml` <xElement element="${element}" />`}
       </For>
     </details>
   `
@@ -72,7 +72,7 @@ function xElement(props) {
     }
   }
 
-  return html` <section
+  return xml` <section
     id="${element.tagInterfaceName + '.' + element.name}"
     class="table"
   >
@@ -102,14 +102,14 @@ function xElement(props) {
             <th>kind</th>
             <th>interface</th>
             <For each="${columns}"
-              >${value => html`<th data-col="${value}">${value}</th>`}
+              >${value => xml`<th data-col="${value}">${value}</th>`}
             </For>
           </tr>
         </Show>
       </thead>
       <tbody>
         <For each="${keys}"
-          >${value => html`<xElementKey value="${value}"  />`}
+          >${value => xml`<xElementKey value="${value}"  />`}
         </For>
       </tbody>
     </table>
@@ -122,7 +122,7 @@ function xElement(props) {
           <For each="${element.readonly}"
             >${value => {
               const data = value.split('.')
-              return html`<a
+              return xml`<a
                 target="_blank"
                 href="${KeyURL(element.name, data[0], data[1])}"
                 >${value}</a
@@ -135,7 +135,7 @@ function xElement(props) {
           MDN Not Included:
           <For each="${element.notIncludedMDN}"
             >${value =>
-              html`<a
+              xml`<a
                 target="_blank"
                 href="${KeyURL(element.name, element.tagInterfaceName, value)}"
                 >${value}</a
@@ -169,12 +169,12 @@ function xElementKey(props) {
   const experimental = value.experimental ? '☢' : ''
   const nonstandard = value.nonstandard ? '⚠' : ''
 
-  return html`<tr>
+  return xml`<tr>
     <td nowrap="">
       <a
         href="${value.url}"
         target="_blank"
-        >${props.warn ? html`<s>${value.name}</s>` : value.name}</a
+        >${props.warn ? xml`<s>${value.name}</s>` : value.name}</a
       >
       ${deprecated} ${warn} ${inherited} ${weird} ${experimental}
       ${nonstandard} ${danger}
@@ -183,7 +183,7 @@ function xElementKey(props) {
     <td nowrap="">${value.keyInterfaceName}${value.eventInterface && ' ' + value.eventInterface}</td>
     <For each="${columns}"
       >${col =>
-        html`<td data-col="${col}">
+        xml`<td data-col="${col}">
           ${value.values[col] !== undefined ? value.values[col] : '❌'}
         </td>`}
     </For>
@@ -202,9 +202,8 @@ function App() {
           .querySelector('[id="' + location.hash.slice(1) + '"]')
           .scrollIntoView()
     })
-
-  return html`<Show when="${read}">${data => {
-    return html`
+  return xml`<Show when="${read}">${data => {
+    return xml`
         <form>
           <input
             class="filter"
@@ -216,7 +215,7 @@ function App() {
         <For
           each="${['html', 'math']}"
         >
-          ${namespace => html`
+          ${namespace => xml`
             <xElements
               namespace="${namespace}"
               elements="${Object.values(data().elements[namespace])}"
@@ -226,7 +225,7 @@ function App() {
         <For
           each="${['Element', 'HTMLElement', 'MathMLElement', 'SVGElement']}"
         >
-            ${namespace => html`
+            ${namespace => xml`
                 <xInterfaces
                   namespace="${namespace}"
                   items="${Object.values(data().keys[namespace].keys)}"
@@ -280,7 +279,7 @@ function xInterfaces(props) {
     .filter(x => x)
     .join(' ')
 
-  return html`
+  return xml`
         <details open="" id="${namespaceTitle.replace(/ /g, '-')}">
             <summary><h2><a href="#${namespaceTitle.replace(/ /g, '-')}">#</a> ${namespaceTitle}</h2></summary>
             <section class="table">
@@ -294,18 +293,18 @@ function xInterfaces(props) {
                         <th>kind</th>
                         <th>interface</th>
                         <For each="${columns}"
-                          >${value => html`<th data-col="${value}">${value}</th>`}
+                          >${value => xml`<th data-col="${value}">${value}</th>`}
                         </For>
                       </tr>
                     </thead>
                     <tbody>
                       <For each="${items.filter(x => !x.deprecated)}"
                         >${value =>
-                          html` <xElementKey value="${value}" />`}
+                          xml` <xElementKey value="${value}" />`}
                       </For>
                       <For each="${items.filter(x => x.deprecated)}"
                         >${value =>
-                          html` <xElementKey value="${value}" />`}
+                          xml` <xElementKey value="${value}" />`}
                       </For>
                     </tbody>
                 </table>
@@ -314,7 +313,7 @@ function xInterfaces(props) {
 `
 }
 
-html.define({
+xml.define({
   xElements,
   xElement,
   xElementKey,
