@@ -26,6 +26,7 @@ interface LabelHTMLAttributes<T extends EventTarget = HTMLLabelElement> extends 
 	for?: string
 	form?: string
 	htmlFor?: string
+	role?: never
 }
 
 // React - https://react.dev/

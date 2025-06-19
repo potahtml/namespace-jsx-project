@@ -44,6 +44,7 @@ interface SourceHTMLAttributes extends HTMLAttributes {
 interface SourceHTMLAttributes<T extends EventTarget = HTMLSourceElement> extends HTMLAttributes<T> {
 	height?: number | string
 	media?: string
+	role?: never
 	sizes?: string
 	src?: string
 	srcset?: string

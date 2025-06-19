@@ -7,6 +7,9 @@
 // Vue - https://vuejs.org/
 
 // Preact - https://preactjs.com/
+interface FooterHTMLAttributes<T extends EventTarget = HTMLElement> extends HTMLAttributes<T> {
+	role?: 'contentinfo' | 'group' | 'none' | 'presentation' | 'doc-footnote'
+}
 
 // React - https://react.dev/
 

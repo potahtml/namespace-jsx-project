@@ -7,6 +7,9 @@
 // Vue - https://vuejs.org/
 
 // Preact - https://preactjs.com/
+interface ArticleHTMLAttributes<T extends EventTarget = HTMLElement> extends HTMLAttributes<T> {
+	role?: 'article' | 'application' | 'document' | 'feed' | 'main' | 'none' | 'presentation' | 'region'
+}
 
 // React - https://react.dev/
 

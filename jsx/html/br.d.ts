@@ -8,6 +8,9 @@ interface BrHTMLAttributes<T extends EventTarget> extends VoidHTMLAttributes<T> 
 // Vue - https://vuejs.org/
 
 // Preact - https://preactjs.com/
+interface BrHTMLAttributes<T extends EventTarget = HTMLBRElement> extends HTMLAttributes<T> {
+	role?: 'none' | 'presentation'
+}
 
 // React - https://react.dev/
 

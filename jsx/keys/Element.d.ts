@@ -325,10 +325,10 @@ interface CustomEventHandlersCamelCase<T> {
 	onClose?: EventHandlerUnion<T, Event>
 	// TODO `CommandEvent` is currently undefined in TS
 	onCommand?: EventHandlerUnion<T, Event>
-	onContentVisibilityAutoStateChange?: EventHandlerUnion<T, ContentVisibilityAutoStateChangeEvent>
 	onCompositionEnd?: EventHandlerUnion<T, CompositionEvent>
 	onCompositionStart?: EventHandlerUnion<T, CompositionEvent>
 	onCompositionUpdate?: EventHandlerUnion<T, CompositionEvent>
+	onContentVisibilityAutoStateChange?: EventHandlerUnion<T, ContentVisibilityAutoStateChangeEvent>
 	onContextLost?: EventHandlerUnion<T, Event>
 	onContextMenu?: EventHandlerUnion<T, PointerEvent>
 	onContextRestored?: EventHandlerUnion<T, Event>
@@ -442,10 +442,10 @@ interface CustomEventHandlersLowerCase<T> {
 	onclose?: EventHandlerUnion<T, Event>
 	// TODO `CommandEvent` is currently undefined in TS
 	oncommand?: EventHandlerUnion<T, Event>
-	oncontentvisibilityautostatechange?: EventHandlerUnion<T, ContentVisibilityAutoStateChangeEvent>
 	oncompositionend?: EventHandlerUnion<T, CompositionEvent>
 	oncompositionstart?: EventHandlerUnion<T, CompositionEvent>
 	oncompositionupdate?: EventHandlerUnion<T, CompositionEvent>
+	oncontentvisibilityautostatechange?: EventHandlerUnion<T, ContentVisibilityAutoStateChangeEvent>
 	oncontextlost?: EventHandlerUnion<T, Event>
 	oncontextmenu?: EventHandlerUnion<T, PointerEvent>
 	oncontextrestored?: EventHandlerUnion<T, Event>
@@ -545,24 +545,24 @@ interface CustomEventHandlersNamespaced<T> {
 	'on:auxclick'?: EventHandlerWithOptionsUnion<T, PointerEvent>
 	'on:beforecopy'?: EventHandlerWithOptionsUnion<T, ClipboardEvent>
 	'on:beforecut'?: EventHandlerWithOptionsUnion<T, ClipboardEvent>
+	'on:beforeinput'?: EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>
 	'on:beforematch'?: EventHandlerWithOptionsUnion<T, Event>
 	'on:beforepaste'?: EventHandlerWithOptionsUnion<T, ClipboardEvent>
-	'on:beforeinput'?: EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>
 	'on:beforetoggle'?: EventHandlerWithOptionsUnion<T, ToggleEvent>
 	'on:beforexrselect'?: EventHandlerWithOptionsUnion<T, Event>
 	'on:blur'?: EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>
 	'on:cancel'?: EventHandlerWithOptionsUnion<T, Event>
 	'on:canplay'?: EventHandlerWithOptionsUnion<T, Event>
 	'on:canplaythrough'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:close'?: EventHandlerWithOptionsUnion<T, Event>
 	'on:change'?: EventHandlerWithOptionsUnion<T, Event, ChangeEventHandler<T, Event>>
 	'on:click'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:close'?: EventHandlerWithOptionsUnion<T, Event>
 	// TODO `CommandEvent` is currently undefined in TS
 	'on:command'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:contentvisibilityautostatechange'?: EventHandlerWithOptionsUnion<T, ContentVisibilityAutoStateChangeEvent>
 	'on:compositionend'?: EventHandlerWithOptionsUnion<T, CompositionEvent>
 	'on:compositionstart'?: EventHandlerWithOptionsUnion<T, CompositionEvent>
 	'on:compositionupdate'?: EventHandlerWithOptionsUnion<T, CompositionEvent>
+	'on:contentvisibilityautostatechange'?: EventHandlerWithOptionsUnion<T, ContentVisibilityAutoStateChangeEvent>
 	'on:contextlost'?: EventHandlerWithOptionsUnion<T, Event>
 	'on:contextmenu'?: EventHandlerWithOptionsUnion<T, PointerEvent>
 	'on:contextrestored'?: EventHandlerWithOptionsUnion<T, Event>
@@ -580,7 +580,6 @@ interface CustomEventHandlersNamespaced<T> {
 	'on:drop'?: EventHandlerWithOptionsUnion<T, DragEvent>
 	'on:durationchange'?: EventHandlerWithOptionsUnion<T, Event>
 	'on:emptied'?: EventHandlerWithOptionsUnion<T, Event>
-
 	'on:ended'?: EventHandlerWithOptionsUnion<T, Event>
 	'on:error'?: EventHandlerWithOptionsUnion<T, ErrorEvent>
 	'on:focus'?: EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>
@@ -982,10 +981,10 @@ interface ElementEventHandlers<T> {
 	onClose?: EventHandlerUnion<T, Event>
 	// TODO `CommandEvent` is currently undefined in TS
 	onCommand?: EventHandlerUnion<T, Event>
-	onContentVisibilityAutoStateChange?: EventHandlerUnion<T, ContentVisibilityAutoStateChangeEvent>
 	onCompositionEnd?: EventHandlerUnion<T, CompositionEvent>
 	onCompositionStart?: EventHandlerUnion<T, CompositionEvent>
 	onCompositionUpdate?: EventHandlerUnion<T, CompositionEvent>
+	onContentVisibilityAutoStateChange?: EventHandlerUnion<T, ContentVisibilityAutoStateChangeEvent>
 	onContextLost?: EventHandlerUnion<T, Event>
 	onContextMenu?: EventHandlerUnion<T, PointerEvent>
 	onContextRestored?: EventHandlerUnion<T, Event>
@@ -1084,24 +1083,24 @@ interface ElementEventHandlers<T> {
 	'on:auxclick'?: EventHandlerWithOptionsUnion<T, PointerEvent>
 	'on:beforecopy'?: EventHandlerWithOptionsUnion<T, ClipboardEvent>
 	'on:beforecut'?: EventHandlerWithOptionsUnion<T, ClipboardEvent>
+	'on:beforeinput'?: EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>
 	'on:beforematch'?: EventHandlerWithOptionsUnion<T, Event>
 	'on:beforepaste'?: EventHandlerWithOptionsUnion<T, ClipboardEvent>
-	'on:beforeinput'?: EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>
 	'on:beforetoggle'?: EventHandlerWithOptionsUnion<T, ToggleEvent>
 	'on:beforexrselect'?: EventHandlerWithOptionsUnion<T, Event>
 	'on:blur'?: EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>
 	'on:cancel'?: EventHandlerWithOptionsUnion<T, Event>
 	'on:canplay'?: EventHandlerWithOptionsUnion<T, Event>
 	'on:canplaythrough'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:close'?: EventHandlerWithOptionsUnion<T, Event>
 	'on:change'?: EventHandlerWithOptionsUnion<T, Event, ChangeEventHandler<T, Event>>
 	'on:click'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:close'?: EventHandlerWithOptionsUnion<T, Event>
 	// TODO `CommandEvent` is currently undefined in TS
 	'on:command'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:contentvisibilityautostatechange'?: EventHandlerWithOptionsUnion<T, ContentVisibilityAutoStateChangeEvent>
 	'on:compositionend'?: EventHandlerWithOptionsUnion<T, CompositionEvent>
 	'on:compositionstart'?: EventHandlerWithOptionsUnion<T, CompositionEvent>
 	'on:compositionupdate'?: EventHandlerWithOptionsUnion<T, CompositionEvent>
+	'on:contentvisibilityautostatechange'?: EventHandlerWithOptionsUnion<T, ContentVisibilityAutoStateChangeEvent>
 	'on:contextlost'?: EventHandlerWithOptionsUnion<T, Event>
 	'on:contextmenu'?: EventHandlerWithOptionsUnion<T, PointerEvent>
 	'on:contextrestored'?: EventHandlerWithOptionsUnion<T, Event>
@@ -1873,26 +1872,24 @@ interface AriaAttributes {
 
 // Pota - https://github.com/potahtml/pota
 interface CSSAttributes extends NSStyle {
-	class?: string
+	class?: Record<string, string | boolean | number | null> | string
 	style?: CSSProperties | string
 
-	css?: string | CSSStyleSheet // TODO
+	'use:css'?: string
 
-	// css
-	[attr: `class:${string}`]: any // TODO
-	[attr: `style:${string}`]: any // TODO
-	[attr: `var:${string}`]: string // TODO
+	[attr: `class:${string}`]: string | boolean | number | null
 }
-interface ElementAttributes<Element> extends PotaAttributes<Element>, CSSAttributes, AriaAttributes, ElementEventHandlers<Element>, NSAttributes<Element> {
+interface ElementAttributes<Element> extends PotaAttributes<Element>, CSSAttributes, AriaAttributes, EventHandlersElement<Element> {
 	// properties
-	innerHTML?: number | string
-	textContent?: number | string
-
-	// xml
-	[attr: `xmlns:${string}`]: string
-	xmlns?: string
+	'prop:innerHTML'?: number | string
+	'prop:textContent'?: number | string
 
 	// attributes
+
+	// xml
+	xmlns?: string
+	[attr: `xmlns:${string}`]: string
+
 	autofocus?: boolean | ''
 	elementtiming?: string
 	id?: string
@@ -2234,107 +2231,4 @@ interface AriaAttributes {
 	 */
 	'aria-valuetext'?: string
 	role?: 'alert' | 'alertdialog' | 'application' | 'article' | 'banner' | 'button' | 'cell' | 'checkbox' | 'columnheader' | 'combobox' | 'complementary' | 'contentinfo' | 'definition' | 'dialog' | 'directory' | 'document' | 'feed' | 'figure' | 'form' | 'grid' | 'gridcell' | 'group' | 'heading' | 'img' | 'link' | 'list' | 'listbox' | 'listitem' | 'log' | 'main' | 'marquee' | 'math' | 'menu' | 'menubar' | 'menuitem' | 'menuitemcheckbox' | 'menuitemradio' | 'meter' | 'navigation' | 'none' | 'note' | 'option' | 'presentation' | 'progressbar' | 'radio' | 'radiogroup' | 'region' | 'row' | 'rowgroup' | 'rowheader' | 'scrollbar' | 'search' | 'searchbox' | 'separator' | 'slider' | 'spinbutton' | 'status' | 'switch' | 'tab' | 'table' | 'tablist' | 'tabpanel' | 'term' | 'textbox' | 'timer' | 'toolbar' | 'tooltip' | 'tree' | 'treegrid' | 'treeitem'
-}
-interface ElementEventHandlers<Element> {
-	'on:abort'?: Events<UIEvent, Element>
-	'on:animationcancel'?: Events<AnimationEvent, Element>
-	'on:animationend'?: Events<AnimationEvent, Element>
-	'on:animationiteration'?: Events<AnimationEvent, Element>
-	'on:animationstart'?: Events<AnimationEvent, Element>
-	'on:auxclick'?: Events<MouseEvent, Element>
-	'on:beforeinput'?: Events<InputEvent, Element>
-	'on:beforetoggle'?: Events<ToggleEvent, Element>
-	'on:blur'?: Events<FocusEvent, Element>
-	'on:cancel'?: Events<Event, Element>
-	'on:canplay'?: Events<Event, Element>
-	'on:canplaythrough'?: Events<Event, Element>
-	'on:change'?: Events<Event, Element>
-	'on:click'?: Events<MouseEvent, Element>
-	'on:close'?: Events<Event, Element>
-	'on:compositionend'?: Events<CompositionEvent, Element>
-	'on:compositionstart'?: Events<CompositionEvent, Element>
-	'on:compositionupdate'?: Events<CompositionEvent, Element>
-	'on:contextlost'?: Events<Event, Element>
-	'on:contextmenu'?: Events<MouseEvent, Element>
-	'on:contextrestored'?: Events<Event, Element>
-	'on:copy'?: Events<ClipboardEvent, Element>
-	'on:cuechange'?: Events<Event, Element>
-	'on:cut'?: Events<ClipboardEvent, Element>
-	'on:dblclick'?: Events<MouseEvent, Element>
-	'on:drag'?: Events<DragEvent, Element>
-	'on:dragend'?: Events<DragEvent, Element>
-	'on:dragenter'?: Events<DragEvent, Element>
-	'on:dragleave'?: Events<DragEvent, Element>
-	'on:dragover'?: Events<DragEvent, Element>
-	'on:dragstart'?: Events<DragEvent, Element>
-	'on:drop'?: Events<DragEvent, Element>
-	'on:durationchange'?: Events<Event, Element>
-	'on:emptied'?: Events<Event, Element>
-	'on:ended'?: Events<Event, Element>
-	'on:error'?: Events<ErrorEvent, Element>
-	'on:focus'?: Events<FocusEvent, Element>
-	'on:focusin'?: Events<FocusEvent, Element>
-	'on:focusout'?: Events<FocusEvent, Element>
-	'on:formdata'?: Events<FormDataEvent, Element>
-	'on:fullscreenchange'?: Events<Event, Element>
-	'on:fullscreenerror'?: Events<Event, Element>
-	'on:gotpointercapture'?: Events<PointerEvent, Element>
-	'on:input'?: Events<Event, Element>
-	'on:invalid'?: Events<Event, Element>
-	'on:keydown'?: Events<KeyboardEvent, Element>
-	'on:keypress'?: Events<KeyboardEvent, Element>
-	'on:keyup'?: Events<KeyboardEvent, Element>
-	'on:load'?: Events<Event, Element>
-	'on:loadeddata'?: Events<Event, Element>
-	'on:loadedmetadata'?: Events<Event, Element>
-	'on:loadstart'?: Events<Event, Element>
-	'on:lostpointercapture'?: Events<PointerEvent, Element>
-	'on:mousedown'?: Events<MouseEvent, Element>
-	'on:mouseenter'?: Events<MouseEvent, Element>
-	'on:mouseleave'?: Events<MouseEvent, Element>
-	'on:mousemove'?: Events<MouseEvent, Element>
-	'on:mouseout'?: Events<MouseEvent, Element>
-	'on:mouseover'?: Events<MouseEvent, Element>
-	'on:mouseup'?: Events<MouseEvent, Element>
-	'on:paste'?: Events<ClipboardEvent, Element>
-	'on:pause'?: Events<Event, Element>
-	'on:play'?: Events<Event, Element>
-	'on:playing'?: Events<Event, Element>
-	'on:pointercancel'?: Events<PointerEvent, Element>
-	'on:pointerdown'?: Events<PointerEvent, Element>
-	'on:pointerenter'?: Events<PointerEvent, Element>
-	'on:pointerleave'?: Events<PointerEvent, Element>
-	'on:pointermove'?: Events<PointerEvent, Element>
-	'on:pointerout'?: Events<PointerEvent, Element>
-	'on:pointerover'?: Events<PointerEvent, Element>
-	'on:pointerup'?: Events<PointerEvent, Element>
-	'on:progress'?: Events<ProgressEvent, Element>
-	'on:ratechange'?: Events<Event, Element>
-	'on:reset'?: Events<Event, Element>
-	'on:resize'?: Events<UIEvent, Element>
-	'on:scroll'?: Events<Event, Element>
-	'on:scrollend'?: Events<Event, Element>
-	'on:securitypolicyviolation'?: Events<SecurityPolicyViolationEvent, Element>
-	'on:seeked'?: Events<Event, Element>
-	'on:seeking'?: Events<Event, Element>
-	'on:select'?: Events<Event, Element>
-	'on:selectionchange'?: Events<Event, Element>
-	'on:selectstart'?: Events<Event, Element>
-	'on:slotchange'?: Events<Event, Element>
-	'on:stalled'?: Events<Event, Element>
-	'on:submit'?: Events<SubmitEvent, Element>
-	'on:suspend'?: Events<Event, Element>
-	'on:timeupdate'?: Events<Event, Element>
-	'on:toggle'?: Events<ToggleEvent, Element>
-	'on:touchcancel'?: Events<TouchEvent, Element>
-	'on:touchend'?: Events<TouchEvent, Element>
-	'on:touchmove'?: Events<TouchEvent, Element>
-	'on:touchstart'?: Events<TouchEvent, Element>
-	'on:transitioncancel'?: Events<TransitionEvent, Element>
-	'on:transitionend'?: Events<TransitionEvent, Element>
-	'on:transitionrun'?: Events<TransitionEvent, Element>
-	'on:transitionstart'?: Events<TransitionEvent, Element>
-	'on:volumechange'?: Events<Event, Element>
-	'on:waiting'?: Events<Event, Element>
-	'on:wheel'?: Events<WheelEvent, Element>
 }

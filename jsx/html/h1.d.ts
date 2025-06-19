@@ -7,6 +7,9 @@
 // Vue - https://vuejs.org/
 
 // Preact - https://preactjs.com/
+interface HeadingHTMLAttributes<T extends EventTarget = HTMLHeadingElement> extends HTMLAttributes<T> {
+	role?: 'heading' | 'none' | 'presentation' | 'tab' | 'doc-subtitle'
+}
 
 // React - https://react.dev/
 

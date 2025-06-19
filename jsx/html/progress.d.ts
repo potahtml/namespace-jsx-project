@@ -25,6 +25,7 @@ interface ProgressHTMLAttributes extends HTMLAttributes {
 // Preact - https://preactjs.com/
 interface ProgressHTMLAttributes<T extends EventTarget = HTMLProgressElement> extends HTMLAttributes<T> {
 	max?: number | string
+	role?: 'progressbar'
 	value?: string | number
 }
 

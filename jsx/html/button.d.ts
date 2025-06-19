@@ -100,6 +100,7 @@ interface ButtonHTMLAttributes<T extends EventTarget = HTMLButtonElement> extend
 	popoverTarget?: string
 	popovertargetaction?: 'hide' | 'show' | 'toggle'
 	popoverTargetAction?: 'hide' | 'show' | 'toggle'
+	role?: 'button' | 'checkbox' | 'combobox' | 'gridcell' | 'link' | 'menuitem' | 'menuitemcheckbox' | 'menuitemradio' | 'option' | 'radio' | 'separator' | 'slider' | 'switch' | 'tab' | 'treeitem'
 	type?: 'submit' | 'reset' | 'button'
 	value?: string | number
 }

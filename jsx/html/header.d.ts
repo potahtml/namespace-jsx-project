@@ -7,6 +7,9 @@
 // Vue - https://vuejs.org/
 
 // Preact - https://preactjs.com/
+interface HeaderHTMLAttributes<T extends EventTarget = HTMLElement> extends HTMLAttributes<T> {
+	role?: 'banner' | 'group' | 'none' | 'presentation'
+}
 
 // React - https://react.dev/
 

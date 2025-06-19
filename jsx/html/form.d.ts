@@ -72,6 +72,7 @@ interface FormHTMLAttributes<T extends EventTarget = HTMLFormElement> extends HT
 	novalidate?: boolean
 	noValidate?: boolean
 	rel?: string
+	role?: 'form' | 'none' | 'presentation' | 'search'
 	target?: string
 }
 

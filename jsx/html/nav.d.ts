@@ -7,6 +7,9 @@
 // Vue - https://vuejs.org/
 
 // Preact - https://preactjs.com/
+interface NavHTMLAttributes<T extends EventTarget = HTMLElement> extends HTMLAttributes<T> {
+	role?: 'navigation' | 'menu' | 'menubar' | 'none' | 'presentation' | 'tablist'
+}
 
 // React - https://react.dev/
 

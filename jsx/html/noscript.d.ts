@@ -7,6 +7,9 @@
 // Vue - https://vuejs.org/
 
 // Preact - https://preactjs.com/
+interface NoScriptHTMLAttributes<T extends EventTarget = HTMLElement> extends HTMLAttributes<T> {
+	role?: never
+}
 
 // React - https://react.dev/
 

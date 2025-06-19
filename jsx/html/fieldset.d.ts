@@ -31,6 +31,7 @@ interface FieldsetHTMLAttributes<T extends EventTarget = HTMLFieldSetElement> ex
 	disabled?: boolean
 	form?: string
 	name?: string
+	role?: 'group' | 'none' | 'presentation' | 'radiogroup'
 }
 
 // React - https://react.dev/

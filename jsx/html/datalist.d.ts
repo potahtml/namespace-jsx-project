@@ -7,6 +7,9 @@
 // Vue - https://vuejs.org/
 
 // Preact - https://preactjs.com/
+interface DataListHTMLAttributes<T extends EventTarget = HTMLDataListElement> extends HTMLAttributes<T> {
+	role?: 'listbox'
+}
 
 // React - https://react.dev/
 

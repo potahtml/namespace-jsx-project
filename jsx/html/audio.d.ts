@@ -80,7 +80,10 @@ interface MediaHTMLAttributes extends HTMLAttributes {
 }
 
 // Preact - https://preactjs.com/
-interface AudioHTMLAttributes<T extends EventTarget = HTMLAudioElement> extends MediaHTMLAttributes<T> {}
+interface AudioHTMLAttributes<T extends EventTarget = HTMLAudioElement> extends MediaHTMLAttributes<T> {
+	role?: 'application'
+}
+
 interface MediaHTMLAttributes<T extends EventTarget = HTMLMediaElement> extends HTMLAttributes<T> {
 	autoplay?: boolean
 	autoPlay?: boolean
@@ -123,6 +126,11 @@ interface MediaHTMLAttributes<T> extends HTMLAttributes<T> {
 // Pota - https://github.com/potahtml/pota
 interface HTMLAudioElementAttributes<Element> extends HTMLAttributes<Element>, HTMLMediaHTMLAttributes<Element> {}
 interface HTMLMediaHTMLAttributes<Element> {
+	// properties
+
+	'prop:srcObject'?: MediaStream | MediaSource | Blob | File
+
+	// attributes
 	autoplay?: boolean | ''
 	controls?: boolean | ''
 	controlslist?: 'nodownload' | 'nofullscreen' | 'noplaybackrate' | 'noremoteplayback' | (string & {})
@@ -133,8 +141,8 @@ interface HTMLMediaHTMLAttributes<Element> {
 	preload?: 'none' | 'metadata' | 'auto' | ''
 	src?: string
 
-	'on:encrypted'?: Events<MediaEncryptedEvent, Element>
-	'on:waitingforkey'?: Events<Event, Element>
+	'on:encrypted'?: EventHandler<MediaEncryptedEvent, Element>
+	'on:waitingforkey'?: EventHandler<Event, Element>
 
 	/** @deprecated */
 	mediagroup?: string

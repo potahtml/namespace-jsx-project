@@ -46,6 +46,7 @@ interface TrackHTMLAttributes<T extends EventTarget = HTMLTrackElement> extends 
 	default?: boolean
 	kind?: string
 	label?: string
+	role?: never
 	srclang?: string
 	srcLang?: string
 }

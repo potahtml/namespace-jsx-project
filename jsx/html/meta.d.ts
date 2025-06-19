@@ -48,6 +48,7 @@ interface MetaHTMLAttributes<T extends EventTarget = HTMLMetaElement> extends HT
 	httpEquiv?: string
 	name?: string
 	media?: string
+	role?: never
 }
 
 // React - https://react.dev/

@@ -79,19 +79,6 @@ interface AnchorHTMLAttributes extends HTMLAttributes {
 }
 
 // Preact - https://preactjs.com/
-interface AnchorHTMLAttributes<T extends EventTarget = HTMLAnchorElement> extends HTMLAttributes<T> {
-	download?: any
-	href?: string
-	hreflang?: string
-	hrefLang?: string
-	media?: string
-	ping?: string
-	rel?: string
-	target?: '_self' | '_blank' | '_parent' | '_top' | (string & {})
-	type?: string
-	referrerpolicy?: '' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
-	referrerPolicy?: '' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
-}
 
 // React - https://react.dev/
 interface AnchorHTMLAttributes<T> extends HTMLAttributes<T> {

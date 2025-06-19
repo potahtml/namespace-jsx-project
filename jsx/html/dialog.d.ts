@@ -9,6 +9,9 @@ interface DialogHtmlAttributes<T> extends HTMLAttributes<T> {
 	 * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog#usage_notes
 	 */
 	tabindex?: never
+
+	/** @experimental */
+	closedby: 'any' | 'closerequest' | 'none'
 }
 
 // Solid Next - https://www.solidjs.com/
@@ -45,6 +48,7 @@ interface DialogHTMLAttributes<T extends EventTarget = HTMLDialogElement> extend
 	open?: boolean
 	closedby?: 'none' | 'closerequest' | 'any'
 	closedBy?: 'none' | 'closerequest' | 'any'
+	role?: 'dialog' | 'alertdialog'
 }
 
 // React - https://react.dev/

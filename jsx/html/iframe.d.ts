@@ -170,6 +170,7 @@ interface IframeHTMLAttributes<T extends EventTarget = HTMLIFrameElement> extend
 	name?: string
 	referrerpolicy?: '' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
 	referrerPolicy?: '' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
+	role?: 'application' | 'document' | 'img' | 'none' | 'presentation'
 	sandbox?: string
 	/** @deprecated */
 	scrolling?: string

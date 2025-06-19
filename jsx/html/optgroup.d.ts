@@ -26,6 +26,7 @@ interface OptgroupHTMLAttributes extends HTMLAttributes {
 interface OptgroupHTMLAttributes<T extends EventTarget = HTMLOptGroupElement> extends HTMLAttributes<T> {
 	disabled?: boolean
 	label?: string
+	role?: 'group'
 }
 
 // React - https://react.dev/

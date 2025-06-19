@@ -131,6 +131,7 @@ interface VideoHTMLAttributes<T extends EventTarget = HTMLVideoElement> extends 
 	playsInline?: boolean
 	poster?: string
 	width?: number | string
+	role?: 'application'
 }
 
 interface MediaHTMLAttributes<T extends EventTarget = HTMLMediaElement> extends HTMLAttributes<T> {
@@ -191,11 +192,16 @@ interface HTMLVideoElementAttributes<Element> extends HTMLAttributes<Element>, H
 	poster?: string
 	width?: number | string
 
-	'on:enterpictureinpicture'?: Events<PictureInPictureEvent, Element>
-	'on:leavepictureinpicture'?: Events<PictureInPictureEvent, Element>
+	'on:enterpictureinpicture'?: EventHandler<PictureInPictureEvent, Element>
+	'on:leavepictureinpicture'?: EventHandler<PictureInPictureEvent, Element>
 }
 
 interface HTMLMediaHTMLAttributes<Element> {
+	// properties
+
+	'prop:srcObject'?: MediaStream | MediaSource | Blob | File
+
+	// attributes
 	autoplay?: boolean | ''
 	controls?: boolean | ''
 	controlslist?: 'nodownload' | 'nofullscreen' | 'noplaybackrate' | 'noremoteplayback' | (string & {})
@@ -206,8 +212,8 @@ interface HTMLMediaHTMLAttributes<Element> {
 	preload?: 'none' | 'metadata' | 'auto' | ''
 	src?: string
 
-	'on:encrypted'?: Events<MediaEncryptedEvent, Element>
-	'on:waitingforkey'?: Events<Event, Element>
+	'on:encrypted'?: EventHandler<MediaEncryptedEvent, Element>
+	'on:waitingforkey'?: EventHandler<Event, Element>
 
 	/** @deprecated */
 	mediagroup?: string

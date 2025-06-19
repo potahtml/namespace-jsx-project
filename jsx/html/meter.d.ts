@@ -50,6 +50,7 @@ interface MeterHTMLAttributes<T extends EventTarget = HTMLMeterElement> extends 
 	max?: number | string
 	min?: number | string
 	optimum?: number
+	role?: 'meter'
 	value?: string | number
 }
 

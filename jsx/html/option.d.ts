@@ -34,6 +34,7 @@ interface OptionHTMLAttributes extends HTMLAttributes {
 interface OptionHTMLAttributes<T extends EventTarget = HTMLOptionElement> extends HTMLAttributes<T> {
 	disabled?: boolean
 	label?: string
+	role?: 'option'
 	selected?: boolean
 	value?: string | number
 }

@@ -130,7 +130,7 @@ interface WindowEventHandlers<T> {
 // React - https://react.dev/
 
 // Pota - https://github.com/potahtml/pota
-interface HTMLBodyElementAttributes<Element> extends HTMLAttributes<Element>, WindowEventHandlers<Element> {
+interface HTMLBodyElementAttributes<Element> extends HTMLAttributes<Element>, EventHandlersWindow<Element> {
 	/** @deprecated */
 	alink?: string
 	/** @deprecated */
@@ -153,27 +153,27 @@ interface HTMLBodyElementAttributes<Element> extends HTMLAttributes<Element>, Wi
 	vlink?: string
 }
 
-interface WindowEventHandlers<Element> {
-	'on:afterprint'?: Events<Event, Element>
-	'on:beforeprint'?: Events<Event, Element>
-	'on:beforeunload'?: Events<BeforeUnloadEvent, Element>
-	'on:gamepadconnected'?: Events<GamepadEvent, Element>
-	'on:gamepaddisconnected'?: Events<GamepadEvent, Element>
-	'on:hashchange'?: Events<HashChangeEvent, Element>
-	'on:languagechange'?: Events<Event, Element>
-	'on:message'?: Events<MessageEvent, Element>
-	'on:messageerror'?: Events<MessageEvent, Element>
-	'on:offline'?: Events<Event, Element>
-	'on:online'?: Events<Event, Element>
-	'on:pagehide'?: Events<PageTransitionEvent, Element>
+interface EventHandlersWindow<Element> {
+	'on:afterprint'?: EventHandler<Event, Element>
+	'on:beforeprint'?: EventHandler<Event, Element>
+	'on:beforeunload'?: EventHandler<BeforeUnloadEvent, Element>
+	'on:gamepadconnected'?: EventHandler<GamepadEvent, Element>
+	'on:gamepaddisconnected'?: EventHandler<GamepadEvent, Element>
+	'on:hashchange'?: EventHandler<HashChangeEvent, Element>
+	'on:languagechange'?: EventHandler<Event, Element>
+	'on:message'?: EventHandler<MessageEvent, Element>
+	'on:messageerror'?: EventHandler<MessageEvent, Element>
+	'on:offline'?: EventHandler<Event, Element>
+	'on:online'?: EventHandler<Event, Element>
+	'on:pagehide'?: EventHandler<PageTransitionEvent, Element>
 	// TODO `PageRevealEvent` is currently undefined on TS
-	'on:pagereveal'?: Events<Event, Element>
-	'on:pageshow'?: Events<PageTransitionEvent, Element>
+	'on:pagereveal'?: EventHandler<Event, Element>
+	'on:pageshow'?: EventHandler<PageTransitionEvent, Element>
 	// TODO `PageSwapEvent` is currently undefined on TS
-	'on:pageswap'?: Events<Event, Element>
-	'on:popstate'?: Events<PopStateEvent, Element>
-	'on:rejectionhandled'?: Events<PromiseRejectionEvent, Element>
-	'on:storage'?: Events<StorageEvent, Element>
-	'on:unhandledrejection'?: Events<PromiseRejectionEvent, Element>
-	'on:unload'?: Events<Event, Element>
+	'on:pageswap'?: EventHandler<Event, Element>
+	'on:popstate'?: EventHandler<PopStateEvent, Element>
+	'on:rejectionhandled'?: EventHandler<PromiseRejectionEvent, Element>
+	'on:storage'?: EventHandler<StorageEvent, Element>
+	'on:unhandledrejection'?: EventHandler<PromiseRejectionEvent, Element>
+	'on:unload'?: EventHandler<Event, Element>
 }

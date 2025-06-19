@@ -148,6 +148,8 @@ interface HTMLAttributes<RefType extends EventTarget = EventTarget> extends Clas
 	translate?: boolean
 
 	// WAI-ARIA Attributes
+	// Most elements only allow a subset of roles and so this
+	// is overwritten in many of the per-element interfaces below
 	role?: AriaRole
 
 	// Non-standard Attributes
@@ -184,7 +186,7 @@ interface HTMLAttributes<RefType extends EventTarget = EventTarget> extends Clas
 // Pota - https://github.com/potahtml/pota
 interface HTMLAttributes<Element> extends ElementAttributes<Element> {
 	// properties
-	innerText?: number | string
+	'prop:innerText'?: number | string
 
 	// attributes
 	accesskey?: string

@@ -108,6 +108,7 @@ interface ObjectHTMLAttributes<T extends EventTarget = HTMLObjectElement> extend
 	form?: string
 	height?: number | string
 	name?: string
+	role?: 'application' | 'document' | 'img'
 	type?: string
 	usemap?: string
 	useMap?: string

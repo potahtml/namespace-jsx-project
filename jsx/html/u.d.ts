@@ -7,6 +7,9 @@
 // Vue - https://vuejs.org/
 
 // Preact - https://preactjs.com/
+interface UlHTMLAttributes<T extends EventTarget = HTMLUListElement> extends HTMLAttributes<T> {
+	role?: 'list' | 'group' | 'listbox' | 'menu' | 'menubar' | 'none' | 'presentation' | 'radiogroup' | 'tablist' | 'toolbar' | 'tree'
+}
 
 // React - https://react.dev/
 

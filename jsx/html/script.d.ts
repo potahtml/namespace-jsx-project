@@ -96,6 +96,7 @@ interface ScriptHTMLAttributes<T extends EventTarget = HTMLScriptElement> extend
 	noModule?: boolean
 	referrerpolicy?: '' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
 	referrerPolicy?: '' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
+	role?: never
 	src?: string
 	type?: string
 }

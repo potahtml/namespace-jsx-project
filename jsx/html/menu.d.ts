@@ -30,6 +30,7 @@ interface MenuHTMLAttributes extends HTMLAttributes {
 
 // Preact - https://preactjs.com/
 interface MenuHTMLAttributes<T extends EventTarget = HTMLMenuElement> extends HTMLAttributes<T> {
+	role: 'list' | 'group' | 'listbox' | 'menu' | 'menubar' | 'none' | 'presentation' | 'radiogroup' | 'tablist' | 'toolbar' | 'tree'
 	type?: string
 }
 

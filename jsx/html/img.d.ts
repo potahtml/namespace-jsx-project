@@ -114,25 +114,6 @@ interface ImgHTMLAttributes extends HTMLAttributes {
 }
 
 // Preact - https://preactjs.com/
-interface ImgHTMLAttributes<T extends EventTarget = HTMLImageElement> extends HTMLAttributes<T> {
-	alt?: string
-	crossorigin?: 'anonymous' | 'use-credentials'
-	crossOrigin?: 'anonymous' | 'use-credentials'
-	decoding?: 'async' | 'auto' | 'sync'
-	fetchpriority?: 'high' | 'auto' | 'low'
-	fetchPriority?: 'high' | 'auto' | 'low'
-	height?: number | string
-	loading?: 'eager' | 'lazy'
-	referrerpolicy?: '' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
-	referrerPolicy?: '' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
-	sizes?: string
-	src?: string
-	srcset?: string
-	srcSet?: string
-	usemap?: string
-	useMap?: string
-	width?: number | string
-}
 
 // React - https://react.dev/
 interface ImgHTMLAttributes<T> extends HTMLAttributes<T> {
@@ -169,7 +150,7 @@ interface HTMLImageElementAttributes<Element> extends HTMLAttributes<Element> {
 	width?: number | string
 
 	/** @experimental */
-	sharedstoragewritable?: boolean
+	sharedstoragewritable?: boolean | ''
 
 	/** @deprecated */
 	align?: 'top' | 'middle' | 'bottom' | 'left' | 'right'

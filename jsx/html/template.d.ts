@@ -25,6 +25,9 @@ interface TemplateHTMLAttributes<T> extends HTMLAttributes<T> {
 // Vue - https://vuejs.org/
 
 // Preact - https://preactjs.com/
+interface TemplateHTMLAttributes<T extends EventTarget = HTMLTemplateElement> extends HTMLAttributes<T> {
+	role?: never
+}
 
 // React - https://react.dev/
 

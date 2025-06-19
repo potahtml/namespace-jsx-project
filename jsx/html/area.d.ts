@@ -67,20 +67,6 @@ interface AreaHTMLAttributes extends HTMLAttributes {
 }
 
 // Preact - https://preactjs.com/
-interface AreaHTMLAttributes<T extends EventTarget = HTMLAreaElement> extends HTMLAttributes<T> {
-	alt?: string
-	coords?: string
-	download?: any
-	href?: string
-	hreflang?: string
-	hrefLang?: string
-	media?: string
-	referrerpolicy?: '' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
-	referrerPolicy?: '' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
-	rel?: string
-	shape?: string
-	target?: '_self' | '_blank' | '_parent' | '_top' | (string & {})
-}
 
 // React - https://react.dev/
 interface AreaHTMLAttributes<T> extends HTMLAttributes<T> {

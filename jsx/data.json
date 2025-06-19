@@ -265,7 +265,6 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "string",
-              "Preact": "any",
               "React": "any",
               "Solid Main": "string",
               "Solid Next": "string | false",
@@ -356,7 +355,6 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "string",
-              "Preact": "string",
               "React": "string",
               "Solid Main": "string",
               "Solid Next": "string | false",
@@ -384,7 +382,6 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "string",
-              "Preact": "string",
               "Solid Main": "string",
               "Solid Next": "string | false",
               "Vue": "string"
@@ -404,7 +401,6 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAnchorElement#htmlanchorelement.hreflang",
             "values": {
-              "Preact": "string",
               "React": "string",
               "Voby": "string"
             },
@@ -424,7 +420,6 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAnchorElement#htmlanchorelement.media",
             "values": {
-              "Preact": "string",
               "React": "string",
               "Voby": "string",
               "Vue": "string"
@@ -516,7 +511,6 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "string",
-              "Preact": "string",
               "React": "string",
               "Solid Main": "string",
               "Solid Next": "string | false",
@@ -586,7 +580,6 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
-              "Preact": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
               "Solid Main": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
               "Solid Next": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url' | false",
               "Vue": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'"
@@ -611,7 +604,6 @@
             "values": {
               "Chrome": "string",
               "Firefox": "string",
-              "Preact": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
               "React": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
               "Solid Main": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
               "Voby": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'"
@@ -637,7 +629,6 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "string",
-              "Preact": "string",
               "Solid Main": "string",
               "Solid Next": "string | false",
               "Voby": "string",
@@ -754,7 +745,6 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "'_self' | '_blank' | '_parent' | '_top' | (string & {})",
-              "Preact": "'_self' | '_blank' | '_parent' | '_top' | (string & {})",
               "React": "'_self' | '_blank' | '_parent' | '_top' | (string & {})",
               "Solid Main": "'_self' | '_blank' | '_parent' | '_top' | (string & {})",
               "Solid Next": "'_self' | '_blank' | '_parent' | '_top' | (string & {}) | false",
@@ -803,7 +793,6 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "string",
-              "Preact": "string",
               "React": "string",
               "Solid Main": "string",
               "Solid Next": "string | false",
@@ -920,7 +909,6 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "string",
-              "Preact": "string",
               "React": "string",
               "Solid Main": "string",
               "Solid Next": "string | false",
@@ -993,7 +981,6 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "string",
-              "Preact": "string",
               "React": "string",
               "Solid Main": "string",
               "Solid Next": "string | false",
@@ -1021,7 +1008,6 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "string",
-              "Preact": "any",
               "React": "any",
               "Solid Main": "string",
               "Solid Next": "string | false",
@@ -1112,7 +1098,6 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "string",
-              "Preact": "string",
               "React": "string",
               "Solid Main": "string",
               "Solid Next": "string | false",
@@ -1134,7 +1119,6 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAreaElement#htmlareaelement.hreflang",
             "values": {
-              "Preact": "string",
               "Vue": "string"
             }
           },
@@ -1151,7 +1135,6 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAreaElement#htmlareaelement.hreflang",
             "values": {
-              "Preact": "string",
               "React": "string",
               "Voby": "string"
             },
@@ -1171,7 +1154,6 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAreaElement#htmlareaelement.media",
             "values": {
-              "Preact": "string",
               "React": "string",
               "Voby": "string",
               "Vue": "string"
@@ -1350,7 +1332,6 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
-              "Preact": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
               "Solid Main": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
               "Solid Next": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url' | false",
               "Vue": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'"
@@ -1375,7 +1356,6 @@
             "values": {
               "Chrome": "string",
               "Firefox": "string",
-              "Preact": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
               "React": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
               "Solid Main": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
               "Voby": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'"
@@ -1401,7 +1381,6 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "string",
-              "Preact": "string",
               "Solid Main": "string",
               "Solid Next": "string | false",
               "Voby": "string",
@@ -1470,7 +1449,6 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "'rect' | 'circle' | 'poly' | 'default'",
-              "Preact": "string",
               "React": "string",
               "Solid Main": "'rect' | 'circle' | 'poly' | 'default'",
               "Solid Next": "'rect' | 'circle' | 'poly' | 'default' | false",
@@ -1498,7 +1476,6 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "'_self' | '_blank' | '_parent' | '_top' | (string & {})",
-              "Preact": "'_self' | '_blank' | '_parent' | '_top' | (string & {})",
               "React": "string",
               "Solid Main": "'_self' | '_blank' | '_parent' | '_top' | (string & {})",
               "Solid Next": "'_self' | '_blank' | '_parent' | '_top' | (string & {}) | false",
@@ -1541,7 +1518,26 @@
         "description": "The article element represents a complete, or self-contained, composition in a document, page, application, or site and that is, in principle, independently distributable or reusable, e.g. in syndication. This could be a forum post, a magazine or newspaper article, a blog entry, a user-submitted comment, an interactive widget or gadget, or any other independent item of content. Each article should be identified, typically by including a heading (h1–h6 element) as a child of the article element.",
         "elementURL": "https://developer.mozilla.org/docs/Web/HTML/Element/article",
         "interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement",
-        "keys": {},
+        "keys": {
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "'article' | 'application' | 'document' | 'feed' | 'main' | 'none' | 'presentation' | 'region'"
+            }
+          }
+        },
         "name": "article",
         "namespace": "http://www.w3.org/1999/xhtml",
         "notIncludedMDN": [],
@@ -1553,7 +1549,26 @@
         "description": "The aside element represents a section of a page that consists of content that is tangentially related to the content around the aside element, and which could be considered separate from that content. Such sections are often represented as sidebars in printed typography.",
         "elementURL": "https://developer.mozilla.org/docs/Web/HTML/Element/aside",
         "interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement",
-        "keys": {},
+        "keys": {
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "'complementary' | 'feed' | 'none' | 'note' | 'presentation' | 'region' | 'search' | 'doc-dedication' | 'doc-example' | 'doc-footnote' | 'doc-glossary' | 'doc-pullquote' | 'doc-tip'"
+            }
+          }
+        },
         "name": "aside",
         "namespace": "http://www.w3.org/1999/xhtml",
         "notIncludedMDN": [],
@@ -1964,7 +1979,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "Events<MediaEncryptedEvent, Element>",
+              "Pota": "EventHandler<MediaEncryptedEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>"
             }
@@ -2029,7 +2044,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "Events<Event, Element>",
+              "Pota": "EventHandler<Event, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
             }
@@ -2184,6 +2199,41 @@
               "Preact": "boolean"
             }
           },
+          "prop:srcObject": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "global": false,
+            "inherited": false,
+            "name": "prop:srcObject",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement#htmlaudioelement.prop:srcobject",
+            "values": {
+              "Pota": "MediaStream | MediaSource | Blob | File"
+            },
+            "warn": true
+          },
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "'application'"
+            }
+          },
           "src": {
             "attr": true,
             "attrChrome": true,
@@ -2327,6 +2377,24 @@
               "Solid Next": "string | false",
               "Voby": "string",
               "Vue": "string"
+            }
+          },
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "never"
             }
           },
           "target": {
@@ -2684,7 +2752,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "Events<Event, Element>",
+              "Pota": "EventHandler<Event, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
             }
@@ -2749,7 +2817,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "Events<Event, Element>",
+              "Pota": "EventHandler<Event, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
             }
@@ -2814,7 +2882,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "Events<BeforeUnloadEvent, Element>",
+              "Pota": "EventHandler<BeforeUnloadEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, BeforeUnloadEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, BeforeUnloadEvent>"
             }
@@ -2992,7 +3060,7 @@
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#gamepadconnected",
             "values": {
               "Firefox": "event",
-              "Pota": "Events<GamepadEvent, Element>",
+              "Pota": "EventHandler<GamepadEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, GamepadEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, GamepadEvent>"
             }
@@ -3054,7 +3122,7 @@
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#gamepaddisconnected",
             "values": {
               "Firefox": "event",
-              "Pota": "Events<GamepadEvent, Element>",
+              "Pota": "EventHandler<GamepadEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, GamepadEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, GamepadEvent>"
             }
@@ -3117,7 +3185,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "Events<HashChangeEvent, Element>",
+              "Pota": "EventHandler<HashChangeEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, HashChangeEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, HashChangeEvent>"
             }
@@ -3182,7 +3250,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "Events<Event, Element>",
+              "Pota": "EventHandler<Event, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
             }
@@ -3285,7 +3353,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "Events<MessageEvent, Element>",
+              "Pota": "EventHandler<MessageEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, MessageEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, MessageEvent>"
             }
@@ -3350,7 +3418,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "Events<MessageEvent, Element>",
+              "Pota": "EventHandler<MessageEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, MessageEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, MessageEvent>"
             }
@@ -3415,7 +3483,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "Events<Event, Element>",
+              "Pota": "EventHandler<Event, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
             }
@@ -3480,7 +3548,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "Events<Event, Element>",
+              "Pota": "EventHandler<Event, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
             }
@@ -3545,7 +3613,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "Events<PageTransitionEvent, Element>",
+              "Pota": "EventHandler<PageTransitionEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>"
             }
@@ -3607,7 +3675,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#pagereveal",
             "values": {
-              "Pota": "Events<Event, Element>",
+              "Pota": "EventHandler<Event, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
             }
@@ -3664,7 +3732,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "Events<PageTransitionEvent, Element>",
+              "Pota": "EventHandler<PageTransitionEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>"
             }
@@ -3726,7 +3794,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#pageswap",
             "values": {
-              "Pota": "Events<Event, Element>",
+              "Pota": "EventHandler<Event, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
             }
@@ -3783,7 +3851,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "Events<PopStateEvent, Element>",
+              "Pota": "EventHandler<PopStateEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, PopStateEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, PopStateEvent>"
             }
@@ -3848,7 +3916,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "Events<PromiseRejectionEvent, Element>",
+              "Pota": "EventHandler<PromiseRejectionEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>"
             }
@@ -3989,7 +4057,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "Events<StorageEvent, Element>",
+              "Pota": "EventHandler<StorageEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, StorageEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, StorageEvent>"
             }
@@ -4054,7 +4122,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "Events<PromiseRejectionEvent, Element>",
+              "Pota": "EventHandler<PromiseRejectionEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>"
             }
@@ -4119,7 +4187,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "Events<Event, Element>",
+              "Pota": "EventHandler<Event, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
             }
@@ -4299,6 +4367,24 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "string"
+            }
+          },
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "'none' | 'presentation'"
             }
           }
         },
@@ -4889,6 +4975,24 @@
               "Firefox": "Element"
             }
           },
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "'button' | 'checkbox' | 'combobox' | 'gridcell' | 'link' | 'menuitem' | 'menuitemcheckbox' | 'menuitemradio' | 'option' | 'radio' | 'separator' | 'slider' | 'switch' | 'tab' | 'treeitem'"
+            }
+          },
           "type": {
             "attr": true,
             "attrChrome": true,
@@ -5126,6 +5230,24 @@
               "Solid Main": "'left' | 'center' | 'right'",
               "Solid Next": "'left' | 'center' | 'right' | false"
             }
+          },
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "'caption'"
+            }
           }
         },
         "name": "caption",
@@ -5307,6 +5429,24 @@
             "values": {
               "Chrome": "string",
               "Firefox": "string"
+            }
+          },
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "never"
             }
           },
           "span": {
@@ -5556,6 +5696,24 @@
               "Firefox": "string"
             }
           },
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "never"
+            }
+          },
           "span": {
             "attr": true,
             "attrChrome": true,
@@ -5718,7 +5876,26 @@
         "description": "The datalist element represents a set of option elements that represent predefined options for other controls. In the rendering, the datalist element represents nothing and it, along with its children, should be hidden.",
         "elementURL": "https://developer.mozilla.org/docs/Web/HTML/Element/datalist",
         "interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLDataListElement",
-        "keys": {},
+        "keys": {
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "'listbox'"
+            }
+          }
+        },
         "name": "datalist",
         "namespace": "http://www.w3.org/1999/xhtml",
         "notIncludedMDN": [],
@@ -5732,7 +5909,26 @@
         "description": "The dd element represents the description, definition, or value, part of a term-description group in a description list (dl element).",
         "elementURL": "https://developer.mozilla.org/docs/Web/HTML/Element/dd",
         "interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement",
-        "keys": {},
+        "keys": {
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "never"
+            }
+          }
+        },
         "name": "dd",
         "namespace": "http://www.w3.org/1999/xhtml",
         "notIncludedMDN": [],
@@ -5942,6 +6138,24 @@
               "Voby": "boolean",
               "Vue": "boolean | 'true' | 'false'"
             }
+          },
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "'group'"
+            }
           }
         },
         "name": "details",
@@ -5989,6 +6203,7 @@
               "Chrome": "string",
               "Pota": "'any' | 'closerequest' | 'none'",
               "Preact": "'none' | 'closerequest' | 'any'",
+              "Solid Main": "'any' | 'closerequest' | 'none'",
               "Solid Next": "'any' | 'closerequest' | 'none' | false"
             }
           },
@@ -6166,6 +6381,24 @@
               "Firefox": "string"
             }
           },
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "'dialog' | 'alertdialog'"
+            }
+          },
           "tabindex": {
             "attr": false,
             "attrChrome": false,
@@ -6294,6 +6527,24 @@
               "Firefox": "boolean",
               "Pota": "boolean | ''"
             }
+          },
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "'group' | 'list' | 'none' | 'presentation'"
+            }
           }
         },
         "name": "dl",
@@ -6307,7 +6558,26 @@
         "description": "The dt element represents the term, or name, part of a term-description group in a description list (dl element).",
         "elementURL": "https://developer.mozilla.org/docs/Web/HTML/Element/dt",
         "interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement",
-        "keys": {},
+        "keys": {
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "'listitem'"
+            }
+          }
+        },
         "name": "dt",
         "namespace": "http://www.w3.org/1999/xhtml",
         "notIncludedMDN": [],
@@ -6408,6 +6678,24 @@
               "Solid Next": "string | false"
             }
           },
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "'application' | 'document' | 'img' | 'none' | 'presentation'"
+            }
+          },
           "src": {
             "attr": true,
             "attrChrome": true,
@@ -6499,6 +6787,125 @@
         "readonly": [],
         "tagInterfaceName": "HTMLEmbedElement"
       },
+      "fencedframe": {
+        "deprecated": false,
+        "description": "The fencedframe element represents a nested browsing context, embedding another HTML page into the current one.",
+        "elementURL": "https://developer.mozilla.org/docs/Web/HTML/Element/fencedframe",
+        "experimental": true,
+        "interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFencedFrameElement",
+        "keys": {
+          "allow": {
+            "attr": true,
+            "attrChrome": true,
+            "attrFirefox": false,
+            "attrName": "allow",
+            "danger": false,
+            "experimental": true,
+            "global": false,
+            "inherited": false,
+            "keyInterfaceName": "HTMLFencedFrameElement",
+            "name": "allow",
+            "prop": true,
+            "propChrome": true,
+            "propFirefox": false,
+            "propName": "allow",
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFencedFrameElement#htmlfencedframeelement.allow",
+            "values": {
+              "Chrome": "string"
+            }
+          },
+          "config": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "attrName": "",
+            "danger": false,
+            "experimental": true,
+            "global": false,
+            "inherited": false,
+            "keyInterfaceName": "HTMLFencedFrameElement",
+            "name": "config",
+            "prop": true,
+            "propChrome": true,
+            "propFirefox": false,
+            "propName": "config",
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFencedFrameElement#htmlfencedframeelement.config",
+            "values": {
+              "Chrome": "unknown"
+            }
+          },
+          "height": {
+            "attr": true,
+            "attrChrome": true,
+            "attrFirefox": false,
+            "attrName": "height",
+            "danger": false,
+            "experimental": true,
+            "global": false,
+            "inherited": false,
+            "keyInterfaceName": "HTMLFencedFrameElement",
+            "name": "height",
+            "prop": true,
+            "propChrome": true,
+            "propFirefox": false,
+            "propName": "height",
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFencedFrameElement#htmlfencedframeelement.height",
+            "values": {
+              "Chrome": "string"
+            }
+          },
+          "sandbox": {
+            "attr": true,
+            "attrChrome": true,
+            "attrFirefox": false,
+            "attrName": "sandbox",
+            "danger": false,
+            "experimental": true,
+            "global": false,
+            "inherited": false,
+            "keyInterfaceName": "HTMLFencedFrameElement",
+            "name": "sandbox",
+            "prop": true,
+            "propChrome": true,
+            "propFirefox": false,
+            "propName": "sandbox",
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFencedFrameElement#htmlfencedframeelement.sandbox",
+            "values": {
+              "Chrome": "string"
+            }
+          },
+          "width": {
+            "attr": true,
+            "attrChrome": true,
+            "attrFirefox": false,
+            "attrName": "width",
+            "danger": false,
+            "experimental": true,
+            "global": false,
+            "inherited": false,
+            "keyInterfaceName": "HTMLFencedFrameElement",
+            "name": "width",
+            "prop": true,
+            "propChrome": true,
+            "propFirefox": false,
+            "propName": "width",
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFencedFrameElement#htmlfencedframeelement.width",
+            "values": {
+              "Chrome": "string"
+            }
+          }
+        },
+        "name": "fencedframe",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "notIncludedMDN": [],
+        "readonly": [],
+        "tagInterfaceName": "HTMLFencedFrameElement"
+      },
       "fieldset": {
         "deprecated": false,
         "description": "The fieldset element represents a set of form controls optionally grouped under a common name.",
@@ -6583,6 +6990,24 @@
               "Voby": "string",
               "Vue": "string"
             }
+          },
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "'group' | 'none' | 'presentation' | 'radiogroup'"
+            }
           }
         },
         "name": "fieldset",
@@ -6603,7 +7028,26 @@
         "description": "The figcaption element represents a caption or legend for the rest of the contents of the figcaption element's parent figure element, if any.",
         "elementURL": "https://developer.mozilla.org/docs/Web/HTML/Element/figcaption",
         "interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement",
-        "keys": {},
+        "keys": {
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "'group' | 'none' | 'presentation'"
+            }
+          }
+        },
         "name": "figcaption",
         "namespace": "http://www.w3.org/1999/xhtml",
         "notIncludedMDN": [],
@@ -6706,7 +7150,26 @@
         "description": "The footer element represents a footer for its nearest ancestor sectioning content or sectioning root element. A footer typically contains information about its section such as who wrote it, links to related documents, copyright data, and the like.",
         "elementURL": "https://developer.mozilla.org/docs/Web/HTML/Element/footer",
         "interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement",
-        "keys": {},
+        "keys": {
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "'contentinfo' | 'group' | 'none' | 'presentation' | 'doc-footnote'"
+            }
+          }
+        },
         "name": "footer",
         "namespace": "http://www.w3.org/1999/xhtml",
         "notIncludedMDN": [],
@@ -7102,6 +7565,24 @@
               "Firefox": "string"
             }
           },
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "'form' | 'none' | 'presentation' | 'search'"
+            }
+          },
           "target": {
             "attr": true,
             "attrChrome": true,
@@ -7485,7 +7966,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "Events<Event, Element>"
+              "Pota": "EventHandler<Event, Element>"
             }
           },
           "onafterprint": {
@@ -7526,7 +8007,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "Events<Event, Element>"
+              "Pota": "EventHandler<Event, Element>"
             }
           },
           "onbeforeprint": {
@@ -7567,7 +8048,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "Events<BeforeUnloadEvent, Element>"
+              "Pota": "EventHandler<BeforeUnloadEvent, Element>"
             }
           },
           "onbeforeunload": {
@@ -7721,7 +8202,7 @@
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFrameSetElement#gamepadconnected",
             "values": {
               "Firefox": "event",
-              "Pota": "Events<GamepadEvent, Element>"
+              "Pota": "EventHandler<GamepadEvent, Element>"
             }
           },
           "ongamepadconnected": {
@@ -7760,7 +8241,7 @@
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFrameSetElement#gamepaddisconnected",
             "values": {
               "Firefox": "event",
-              "Pota": "Events<GamepadEvent, Element>"
+              "Pota": "EventHandler<GamepadEvent, Element>"
             }
           },
           "ongamepaddisconnected": {
@@ -7800,7 +8281,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "Events<HashChangeEvent, Element>"
+              "Pota": "EventHandler<HashChangeEvent, Element>"
             }
           },
           "onhashchange": {
@@ -7841,7 +8322,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "Events<Event, Element>"
+              "Pota": "EventHandler<Event, Element>"
             }
           },
           "onlanguagechange": {
@@ -7920,7 +8401,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "Events<MessageEvent, Element>"
+              "Pota": "EventHandler<MessageEvent, Element>"
             }
           },
           "onmessage": {
@@ -7961,7 +8442,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "Events<MessageEvent, Element>"
+              "Pota": "EventHandler<MessageEvent, Element>"
             }
           },
           "onmessageerror": {
@@ -8002,7 +8483,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "Events<Event, Element>"
+              "Pota": "EventHandler<Event, Element>"
             }
           },
           "onoffline": {
@@ -8043,7 +8524,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "Events<Event, Element>"
+              "Pota": "EventHandler<Event, Element>"
             }
           },
           "ononline": {
@@ -8084,7 +8565,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "Events<PageTransitionEvent, Element>"
+              "Pota": "EventHandler<PageTransitionEvent, Element>"
             }
           },
           "onpagehide": {
@@ -8122,7 +8603,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFrameSetElement#pagereveal",
             "values": {
-              "Pota": "Events<Event, Element>"
+              "Pota": "EventHandler<Event, Element>"
             }
           },
           "onpagereveal": {
@@ -8157,7 +8638,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "Events<PageTransitionEvent, Element>"
+              "Pota": "EventHandler<PageTransitionEvent, Element>"
             }
           },
           "onpageshow": {
@@ -8195,7 +8676,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFrameSetElement#pageswap",
             "values": {
-              "Pota": "Events<Event, Element>"
+              "Pota": "EventHandler<Event, Element>"
             }
           },
           "onpageswap": {
@@ -8230,7 +8711,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "Events<PopStateEvent, Element>"
+              "Pota": "EventHandler<PopStateEvent, Element>"
             }
           },
           "onpopstate": {
@@ -8271,7 +8752,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "Events<PromiseRejectionEvent, Element>"
+              "Pota": "EventHandler<PromiseRejectionEvent, Element>"
             }
           },
           "onrejectionhandled": {
@@ -8388,7 +8869,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "Events<StorageEvent, Element>"
+              "Pota": "EventHandler<StorageEvent, Element>"
             }
           },
           "onstorage": {
@@ -8429,7 +8910,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "Events<PromiseRejectionEvent, Element>"
+              "Pota": "EventHandler<PromiseRejectionEvent, Element>"
             }
           },
           "onunhandledrejection": {
@@ -8470,7 +8951,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "Events<Event, Element>"
+              "Pota": "EventHandler<Event, Element>"
             }
           },
           "onunload": {
@@ -8550,11 +9031,31 @@
               "Firefox": "string",
               "Pota": "'left' | 'right' | 'justify' | 'center'"
             }
+          },
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "'heading' | 'none' | 'presentation' | 'tab' | 'doc-subtitle'"
+            }
           }
         },
         "name": "h1",
         "namespace": "http://www.w3.org/1999/xhtml",
-        "notIncludedMDN": [],
+        "notIncludedMDN": [
+          "no_ua_styles_in_article_aside_nav_section"
+        ],
         "readonly": [],
         "tagInterfaceName": "HTMLHeadingElement"
       },
@@ -8584,6 +9085,24 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "'left' | 'right' | 'justify' | 'center'"
+            }
+          },
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "'heading' | 'none' | 'presentation' | 'tab' | 'doc-subtitle'"
             }
           }
         },
@@ -8620,6 +9139,24 @@
               "Firefox": "string",
               "Pota": "'left' | 'right' | 'justify' | 'center'"
             }
+          },
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "'heading' | 'none' | 'presentation' | 'tab' | 'doc-subtitle'"
+            }
           }
         },
         "name": "h3",
@@ -8654,6 +9191,24 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "'left' | 'right' | 'justify' | 'center'"
+            }
+          },
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "'heading' | 'none' | 'presentation' | 'tab' | 'doc-subtitle'"
             }
           }
         },
@@ -8690,6 +9245,24 @@
               "Firefox": "string",
               "Pota": "'left' | 'right' | 'justify' | 'center'"
             }
+          },
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "'heading' | 'none' | 'presentation' | 'tab' | 'doc-subtitle'"
+            }
           }
         },
         "name": "h5",
@@ -8725,6 +9298,24 @@
               "Firefox": "string",
               "Pota": "'left' | 'right' | 'justify' | 'center'"
             }
+          },
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "'heading' | 'none' | 'presentation' | 'tab' | 'doc-subtitle'"
+            }
           }
         },
         "name": "h6",
@@ -8755,6 +9346,24 @@
             "values": {
               "Pota": "string"
             }
+          },
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "never"
+            }
           }
         },
         "name": "head",
@@ -8768,7 +9377,26 @@
         "description": "The header element represents introductory content for its nearest ancestor sectioning content or sectioning root element. A header typically contains a group of introductory or navigational aids. When the nearest ancestor sectioning content or sectioning root element is the body element, then it applies to the whole page.",
         "elementURL": "https://developer.mozilla.org/docs/Web/HTML/Element/header",
         "interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement",
-        "keys": {},
+        "keys": {
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "'banner' | 'group' | 'none' | 'presentation'"
+            }
+          }
+        },
         "name": "header",
         "namespace": "http://www.w3.org/1999/xhtml",
         "notIncludedMDN": [],
@@ -8884,6 +9512,24 @@
               "Firefox": "boolean"
             }
           },
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "'separator' | 'none' | 'presentation' | 'doc-pagebreak'"
+            }
+          },
           "size": {
             "attr": true,
             "attrChrome": true,
@@ -8960,6 +9606,24 @@
               "React": "string",
               "Voby": "string",
               "Vue": "string"
+            }
+          },
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "'document'"
             }
           },
           "version": {
@@ -9727,6 +10391,24 @@
               "Voby": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'"
             }
           },
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "'application' | 'document' | 'img' | 'none' | 'presentation'"
+            }
+          },
           "sandbox": {
             "attr": true,
             "attrChrome": true,
@@ -10027,7 +10709,6 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "string",
-              "Preact": "string",
               "React": "string",
               "Solid Main": "string",
               "Solid Next": "string | false",
@@ -10166,7 +10847,6 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "'anonymous' | 'use-credentials' | ''",
-              "Preact": "'anonymous' | 'use-credentials'",
               "Solid Main": "'anonymous' | 'use-credentials' | ''",
               "Solid Next": "'anonymous' | 'use-credentials' | '' | true | false",
               "Vue": "'anonymous' | 'use-credentials' | ''"
@@ -10191,7 +10871,6 @@
             "values": {
               "Chrome": "string",
               "Firefox": "string",
-              "Preact": "'anonymous' | 'use-credentials'",
               "React": "'anonymous' | 'use-credentials' | ''",
               "Solid Main": "'anonymous' | 'use-credentials' | ''",
               "Voby": "'anonymous' | 'use-credentials' | ''"
@@ -10217,7 +10896,6 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "'sync' | 'async' | 'auto'",
-              "Preact": "'async' | 'auto' | 'sync'",
               "React": "'async' | 'auto' | 'sync'",
               "Solid Main": "'sync' | 'async' | 'auto'",
               "Solid Next": "'sync' | 'async' | 'auto' | false",
@@ -10245,7 +10923,6 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "'high' | 'low' | 'auto'",
-              "Preact": "'high' | 'auto' | 'low'",
               "Solid Main": "'high' | 'low' | 'auto'",
               "Solid Next": "'high' | 'low' | 'auto' | false"
             }
@@ -10269,7 +10946,6 @@
             "values": {
               "Chrome": "string",
               "Firefox": "string",
-              "Preact": "'high' | 'auto' | 'low'",
               "React": "'high' | 'low' | 'auto'"
             }
           },
@@ -10293,7 +10969,6 @@
               "Chrome": "number",
               "Firefox": "number",
               "Pota": "number | string",
-              "Preact": "number | string",
               "React": "number | string",
               "Solid Main": "number | string",
               "Solid Next": "number | string | false",
@@ -10410,7 +11085,6 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "'eager' | 'lazy'",
-              "Preact": "'eager' | 'lazy'",
               "React": "'eager' | 'lazy'",
               "Solid Main": "'eager' | 'lazy'",
               "Solid Next": "'eager' | 'lazy' | false",
@@ -10531,7 +11205,6 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
-              "Preact": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
               "Solid Main": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
               "Solid Next": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url' | false",
               "Vue": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'"
@@ -10556,7 +11229,6 @@
             "values": {
               "Chrome": "string",
               "Firefox": "string",
-              "Preact": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
               "React": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
               "Solid Main": "'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
               "Voby": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'"
@@ -10581,7 +11253,7 @@
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement#htmlimageelement.sharedstoragewritable",
             "values": {
               "Chrome": "boolean",
-              "Pota": "boolean",
+              "Pota": "boolean | ''",
               "Solid Main": "boolean",
               "Solid Next": "true | false | ''"
             }
@@ -10627,7 +11299,6 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "string",
-              "Preact": "string",
               "React": "string",
               "Solid Main": "string",
               "Solid Next": "string | false",
@@ -10655,7 +11326,6 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "string",
-              "Preact": "string",
               "React": "string",
               "Solid Main": "string",
               "Solid Next": "string | false",
@@ -10683,7 +11353,6 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "string",
-              "Preact": "string",
               "Solid Main": "string",
               "Solid Next": "string | false",
               "Vue": "string"
@@ -10703,7 +11372,6 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement#htmlimageelement.srcset",
             "values": {
-              "Preact": "string",
               "React": "string",
               "Solid Main": "string",
               "Voby": "string"
@@ -10730,7 +11398,6 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "string",
-              "Preact": "string",
               "Solid Main": "string",
               "Solid Next": "string | false",
               "Vue": "string"
@@ -10755,7 +11422,6 @@
             "values": {
               "Chrome": "string",
               "Firefox": "string",
-              "Preact": "string",
               "React": "string",
               "Solid Main": "string",
               "Voby": "string"
@@ -10805,7 +11471,6 @@
               "Chrome": "number",
               "Firefox": "number",
               "Pota": "number | string",
-              "Preact": "number | string",
               "React": "number | string",
               "Solid Main": "number | string",
               "Solid Next": "number | string | false",
@@ -10856,7 +11521,6 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "string",
-              "Preact": "string",
               "React": "string",
               "Solid Main": "string",
               "Solid Next": "string | false",
@@ -10928,7 +11592,6 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "string",
-              "Preact": "string",
               "React": "string",
               "Solid Main": "string",
               "Solid Next": "string | false",
@@ -10956,7 +11619,6 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "'additional-name' | 'address-level1' | 'address-level2' | 'address-level3' | 'address-level4' | 'address-line1' | 'address-line2' | 'address-line3' | 'bday' | 'bday-day' | 'bday-month' | 'bday-year' | 'billing' | 'cc-additional-name' | 'cc-csc' | 'cc-exp' | 'cc-exp-month' | 'cc-exp-year' | 'cc-family-name' | 'cc-given-name' | 'cc-name' | 'cc-number' | 'cc-type' | 'country' | 'country-name' | 'current-password' | 'email' | 'family-name' | 'fax' | 'given-name' | 'home' | 'honorific-prefix' | 'honorific-suffix' | 'impp' | 'language' | 'mobile' | 'name' | 'new-password' | 'nickname' | 'off' | 'on' | 'organization' | 'organization-title' | 'pager' | 'photo' | 'postal-code' | 'sex' | 'shipping' | 'street-address' | 'tel' | 'tel-area-code' | 'tel-country-code' | 'tel-extension' | 'tel-local' | 'tel-local-prefix' | 'tel-local-suffix' | 'tel-national' | 'transaction-amount' | 'transaction-currency' | 'url' | 'username' | 'work' | (string & {})",
-              "Preact": "string",
               "Solid Main": "'additional-name' | 'address-level1' | 'address-level2' | 'address-level3' | 'address-level4' | 'address-line1' | 'address-line2' | 'address-line3' | 'bday' | 'bday-day' | 'bday-month' | 'bday-year' | 'billing' | 'cc-additional-name' | 'cc-csc' | 'cc-exp' | 'cc-exp-month' | 'cc-exp-year' | 'cc-family-name' | 'cc-given-name' | 'cc-name' | 'cc-number' | 'cc-type' | 'country' | 'country-name' | 'current-password' | 'email' | 'family-name' | 'fax' | 'given-name' | 'home' | 'honorific-prefix' | 'honorific-suffix' | 'impp' | 'language' | 'mobile' | 'name' | 'new-password' | 'nickname' | 'off' | 'on' | 'organization' | 'organization-title' | 'pager' | 'photo' | 'postal-code' | 'sex' | 'shipping' | 'street-address' | 'tel' | 'tel-area-code' | 'tel-country-code' | 'tel-extension' | 'tel-local' | 'tel-local-prefix' | 'tel-local-suffix' | 'tel-national' | 'transaction-amount' | 'transaction-currency' | 'url' | 'username' | 'work' | (string & {})",
               "Solid Next": "'additional-name' | 'address-level1' | 'address-level2' | 'address-level3' | 'address-level4' | 'address-line1' | 'address-line2' | 'address-line3' | 'bday' | 'bday-day' | 'bday-month' | 'bday-year' | 'billing' | 'cc-additional-name' | 'cc-csc' | 'cc-exp' | 'cc-exp-month' | 'cc-exp-year' | 'cc-family-name' | 'cc-given-name' | 'cc-name' | 'cc-number' | 'cc-type' | 'country' | 'country-name' | 'current-password' | 'email' | 'family-name' | 'fax' | 'given-name' | 'home' | 'honorific-prefix' | 'honorific-suffix' | 'impp' | 'language' | 'mobile' | 'name' | 'new-password' | 'nickname' | 'off' | 'on' | 'organization' | 'organization-title' | 'pager' | 'photo' | 'postal-code' | 'sex' | 'shipping' | 'street-address' | 'tel' | 'tel-area-code' | 'tel-country-code' | 'tel-extension' | 'tel-local' | 'tel-local-prefix' | 'tel-local-suffix' | 'tel-national' | 'transaction-amount' | 'transaction-currency' | 'url' | 'username' | 'work' | (string & {}) | false",
               "Vue": "string"
@@ -10976,7 +11638,6 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement#htmlinputelement.autocomplete",
             "values": {
-              "Preact": "string",
               "React": "AutoFill | (string & {})",
               "Voby": "string"
             },
@@ -11033,7 +11694,6 @@
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement#htmlinputelement.capture",
             "values": {
               "Pota": "'user' | 'environment'",
-              "Preact": "'user' | 'environment'",
               "React": "boolean | 'user' | 'environment'",
               "Solid Main": "'user' | 'environment'",
               "Solid Next": "'user' | 'environment' | false",
@@ -11061,7 +11721,6 @@
               "Chrome": "boolean",
               "Firefox": "boolean",
               "Pota": "boolean | ''",
-              "Preact": "boolean",
               "React": "boolean",
               "Solid Main": "boolean",
               "Solid Next": "true | false | ''",
@@ -11141,8 +11800,7 @@
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement#htmlinputelement.defaultchecked",
             "values": {
               "Chrome": "boolean",
-              "Firefox": "boolean",
-              "Preact": "boolean"
+              "Firefox": "boolean"
             }
           },
           "defaultValue": {
@@ -11163,8 +11821,7 @@
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement#htmlinputelement.defaultvalue",
             "values": {
               "Chrome": "string",
-              "Firefox": "string",
-              "Preact": "string | number"
+              "Firefox": "string"
             }
           },
           "dirname": {
@@ -11232,7 +11889,6 @@
               "Chrome": "boolean",
               "Firefox": "boolean",
               "Pota": "boolean | ''",
-              "Preact": "boolean",
               "React": "boolean",
               "Solid Main": "boolean",
               "Solid Next": "true | false | ''",
@@ -11254,7 +11910,6 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement#htmlelement.enterkeyhint",
             "values": {
-              "Preact": "'enter' | 'done' | 'go' | 'next' | 'previous' | 'search' | 'send'",
               "Voby": "'enter' | 'done' | 'go' | 'next' | 'previous' | 'search' | 'send'",
               "Vue": "'enter' | 'done' | 'go' | 'next' | 'previous' | 'search' | 'send'"
             },
@@ -11296,7 +11951,6 @@
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement#htmlinputelement.form",
             "values": {
               "Pota": "string",
-              "Preact": "string",
               "React": "string",
               "Solid Main": "string",
               "Solid Next": "string | false",
@@ -11324,7 +11978,6 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "string",
-              "Preact": "string",
               "Solid Main": "string",
               "Solid Next": "string | false",
               "Vue": "string"
@@ -11349,7 +12002,6 @@
             "values": {
               "Chrome": "string",
               "Firefox": "string",
-              "Preact": "string",
               "React": "string | ((formData: FormData) => void | Promise<void>)",
               "Solid Main": "string",
               "Voby": "string"
@@ -11375,7 +12027,6 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'",
-              "Preact": "string",
               "Solid Main": "'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain'",
               "Solid Next": "'application/x-www-form-urlencoded' | 'multipart/form-data' | 'text/plain' | false",
               "Vue": "string"
@@ -11417,7 +12068,6 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement#htmlinputelement.formenctype",
             "values": {
-              "Preact": "string",
               "React": "string",
               "Voby": "string"
             },
@@ -11443,7 +12093,6 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "'post' | 'get' | 'dialog'",
-              "Preact": "string",
               "Solid Main": "'post' | 'get' | 'dialog'",
               "Solid Next": "'post' | 'get' | 'dialog' | false",
               "Vue": "string"
@@ -11468,7 +12117,6 @@
             "values": {
               "Chrome": "string",
               "Firefox": "string",
-              "Preact": "string",
               "React": "string",
               "Solid Main": "'post' | 'get' | 'dialog'",
               "Voby": "string"
@@ -11494,7 +12142,6 @@
               "Chrome": "boolean",
               "Firefox": "boolean",
               "Pota": "boolean | ''",
-              "Preact": "boolean",
               "Solid Main": "boolean",
               "Solid Next": "true | false | ''",
               "Vue": "boolean | 'true' | 'false'"
@@ -11519,7 +12166,6 @@
             "values": {
               "Chrome": "boolean",
               "Firefox": "boolean",
-              "Preact": "boolean",
               "React": "boolean",
               "Solid Main": "boolean",
               "Voby": "boolean"
@@ -11545,7 +12191,6 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "string",
-              "Preact": "string",
               "Solid Main": "string",
               "Solid Next": "string | false",
               "Vue": "string"
@@ -11570,7 +12215,6 @@
             "values": {
               "Chrome": "string",
               "Firefox": "string",
-              "Preact": "string",
               "React": "string",
               "Solid Main": "string",
               "Voby": "string"
@@ -11596,7 +12240,6 @@
               "Chrome": "number",
               "Firefox": "number",
               "Pota": "number | string",
-              "Preact": "number | string",
               "React": "number | string",
               "Solid Main": "number | string",
               "Solid Next": "number | string | false",
@@ -11647,7 +12290,7 @@
             "values": {
               "Chrome": "boolean",
               "Firefox": "boolean",
-              "Preact": "boolean",
+              "Pota": "boolean",
               "Voby": "boolean",
               "Vue": "boolean"
             }
@@ -11667,7 +12310,6 @@
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement#htmlinputelement.list",
             "values": {
               "Pota": "string",
-              "Preact": "string",
               "React": "string",
               "Solid Main": "string",
               "Solid Next": "string | false",
@@ -11695,7 +12337,6 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "number | string",
-              "Preact": "number | string",
               "React": "number | string",
               "Solid Main": "number | string",
               "Solid Next": "number | string | false",
@@ -11723,7 +12364,6 @@
               "Chrome": "number",
               "Firefox": "number",
               "Pota": "number | string",
-              "Preact": "number",
               "Solid Main": "number | string",
               "Solid Next": "number | string | false",
               "Vue": "number | string"
@@ -11748,7 +12388,6 @@
             "values": {
               "Chrome": "number",
               "Firefox": "number",
-              "Preact": "number",
               "React": "number",
               "Solid Main": "number | string",
               "Voby": "number"
@@ -11774,7 +12413,6 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "number | string",
-              "Preact": "number | string",
               "React": "number | string",
               "Solid Main": "number | string",
               "Solid Next": "number | string | false",
@@ -11802,7 +12440,6 @@
               "Chrome": "number",
               "Firefox": "number",
               "Pota": "number | string",
-              "Preact": "number",
               "Solid Main": "number | string",
               "Solid Next": "number | string | false",
               "Vue": "number | string"
@@ -11827,7 +12464,6 @@
             "values": {
               "Chrome": "number",
               "Firefox": "number",
-              "Preact": "number",
               "React": "number",
               "Solid Main": "number | string",
               "Voby": "number"
@@ -11853,7 +12489,6 @@
               "Chrome": "boolean",
               "Firefox": "boolean",
               "Pota": "boolean | ''",
-              "Preact": "boolean",
               "React": "boolean",
               "Solid Main": "boolean",
               "Solid Next": "true | false | ''",
@@ -11881,7 +12516,6 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "string",
-              "Preact": "string",
               "React": "string",
               "Solid Main": "string",
               "Solid Next": "string | false",
@@ -11936,7 +12570,6 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement#change",
             "values": {
-              "Preact": "GenericEventHandler<T>",
               "React": "ChangeEventHandler<T>",
               "Voby": "KeyboardEventHandler<T>"
             }
@@ -11961,7 +12594,6 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "string",
-              "Preact": "string",
               "React": "string",
               "Solid Main": "string",
               "Solid Next": "string | false",
@@ -11989,7 +12621,6 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "string",
-              "Preact": "string",
               "React": "string",
               "Solid Main": "string",
               "Solid Next": "string | false",
@@ -12102,7 +12733,6 @@
               "Chrome": "boolean",
               "Firefox": "boolean",
               "Pota": "boolean | ''",
-              "Preact": "boolean",
               "Solid Main": "boolean",
               "Solid Next": "true | false | ''",
               "Vue": "boolean | 'true' | 'false'"
@@ -12127,7 +12757,6 @@
             "values": {
               "Chrome": "boolean",
               "Firefox": "boolean",
-              "Preact": "boolean",
               "React": "boolean",
               "Solid Main": "boolean",
               "Voby": "boolean"
@@ -12153,7 +12782,6 @@
               "Chrome": "boolean",
               "Firefox": "boolean",
               "Pota": "boolean | ''",
-              "Preact": "boolean",
               "React": "boolean",
               "Solid Main": "boolean",
               "Solid Next": "true | false | ''",
@@ -12263,7 +12891,6 @@
               "Chrome": "number",
               "Firefox": "number",
               "Pota": "number | string",
-              "Preact": "number",
               "React": "number",
               "Solid Main": "number | string",
               "Solid Next": "number | string | false",
@@ -12291,7 +12918,6 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "string",
-              "Preact": "string",
               "React": "string",
               "Solid Main": "string",
               "Solid Next": "string | false",
@@ -12319,7 +12945,6 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "number | string",
-              "Preact": "number | string",
               "React": "number | string",
               "Solid Main": "number | string",
               "Solid Next": "number | string | false",
@@ -12347,7 +12972,6 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "'button' | 'checkbox' | 'color' | 'date' | 'datetime-local' | 'email' | 'file' | 'hidden' | 'image' | 'month' | 'number' | 'password' | 'radio' | 'range' | 'reset' | 'search' | 'submit' | 'tel' | 'text' | 'time' | 'url' | 'week'",
-              "Preact": "'button' | 'checkbox' | 'color' | 'date' | 'datetime-local' | 'email' | 'file' | 'hidden' | 'image' | 'month' | 'number' | 'password' | 'radio' | 'range' | 'reset' | 'search' | 'submit' | 'tel' | 'text' | 'time' | 'url' | 'week' | (string & {})",
               "React": "'button' | 'checkbox' | 'color' | 'date' | 'datetime-local' | 'email' | 'file' | 'hidden' | 'image' | 'month' | 'number' | 'password' | 'radio' | 'range' | 'reset' | 'search' | 'submit' | 'tel' | 'text' | 'time' | 'url' | 'week' | (string & {})",
               "Solid Main": "'button' | 'checkbox' | 'color' | 'date' | 'datetime-local' | 'email' | 'file' | 'hidden' | 'image' | 'month' | 'number' | 'password' | 'radio' | 'range' | 'reset' | 'search' | 'submit' | 'tel' | 'text' | 'time' | 'url' | 'week' | (string & {})",
               "Solid Next": "'button' | 'checkbox' | 'color' | 'date' | 'datetime-local' | 'email' | 'file' | 'hidden' | 'image' | 'month' | 'number' | 'password' | 'radio' | 'range' | 'reset' | 'search' | 'submit' | 'tel' | 'text' | 'time' | 'url' | 'week' | (string & {}) | false",
@@ -12420,7 +13044,6 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "number | string",
-              "Preact": "string | number",
               "React": "string | readonly string[] | number",
               "Solid Main": "string | string[] | number",
               "Solid Next": "string | string[] | number | false",
@@ -12512,7 +13135,6 @@
               "Chrome": "number",
               "Firefox": "number",
               "Pota": "number | string",
-              "Preact": "number | string",
               "React": "number | string",
               "Solid Main": "number | string",
               "Solid Next": "number | string | false",
@@ -12952,6 +13574,24 @@
               "React": "string",
               "Voby": "string"
             }
+          },
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "never"
+            }
           }
         },
         "name": "label",
@@ -12989,6 +13629,24 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "string"
+            }
+          },
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "never"
             }
           }
         },
@@ -13676,6 +14334,24 @@
               "Solid Next": "string | false"
             }
           },
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "never"
+            }
+          },
           "sizes": {
             "attr": true,
             "attrChrome": true,
@@ -13805,7 +14481,26 @@
         "description": "The main element represents the main content of the body of a document or application. The main content area consists of content that is directly related to or expands upon the central topic of a document or central functionality of an application.",
         "elementURL": "https://developer.mozilla.org/docs/Web/HTML/Element/main",
         "interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement",
-        "keys": {},
+        "keys": {
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "'main'"
+            }
+          }
+        },
         "name": "main",
         "namespace": "http://www.w3.org/1999/xhtml",
         "notIncludedMDN": [],
@@ -13844,6 +14539,24 @@
               "Solid Next": "string | false",
               "Voby": "string",
               "Vue": "string"
+            }
+          },
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "never"
             }
           }
         },
@@ -14273,6 +14986,24 @@
             },
             "weird": true
           },
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "'list' | 'group' | 'listbox' | 'menu' | 'menubar' | 'none' | 'presentation' | 'radiogroup' | 'tablist' | 'toolbar' | 'tree'"
+            }
+          },
           "type": {
             "attr": false,
             "attrChrome": false,
@@ -14512,6 +15243,24 @@
               "Vue": "string"
             }
           },
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "never"
+            }
+          },
           "scheme": {
             "attr": true,
             "attrChrome": true,
@@ -14712,6 +15461,24 @@
               "Vue": "number | string"
             }
           },
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "'meter'"
+            }
+          },
           "value": {
             "attr": true,
             "attrChrome": true,
@@ -14766,7 +15533,26 @@
         "description": "The nav element represents a section of a page that links to other pages or to parts within the page: a section with navigation links.",
         "elementURL": "https://developer.mozilla.org/docs/Web/HTML/Element/nav",
         "interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement",
-        "keys": {},
+        "keys": {
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "'navigation' | 'menu' | 'menubar' | 'none' | 'presentation' | 'tablist'"
+            }
+          }
+        },
         "name": "nav",
         "namespace": "http://www.w3.org/1999/xhtml",
         "notIncludedMDN": [],
@@ -14838,7 +15624,26 @@
         "description": "The noscript element represents nothing if scripting is enabled, and represents its children if scripting is disabled. It is used to present different markup to user agents that support scripting and those that don't support scripting, by affecting how the document is parsed.",
         "elementURL": "https://developer.mozilla.org/docs/Web/HTML/Element/noscript",
         "interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement",
-        "keys": {},
+        "keys": {
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "never"
+            }
+          }
+        },
         "name": "noscript",
         "namespace": "http://www.w3.org/1999/xhtml",
         "notIncludedMDN": [],
@@ -15232,6 +16037,24 @@
               "Vue": "string"
             }
           },
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "'application' | 'document' | 'img'"
+            }
+          },
           "standby": {
             "attr": true,
             "attrChrome": true,
@@ -15502,6 +16325,24 @@
               "Vue": "boolean | 'true' | 'false'"
             }
           },
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "'list' | 'group' | 'listbox' | 'menu' | 'menubar' | 'none' | 'presentation' | 'radiogroup' | 'tablist' | 'toolbar' | 'tree'"
+            }
+          },
           "start": {
             "attr": true,
             "attrChrome": true,
@@ -15626,6 +16467,24 @@
               "Voby": "string",
               "Vue": "string"
             }
+          },
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "'group'"
+            }
           }
         },
         "name": "optgroup",
@@ -15715,6 +16574,24 @@
               "Solid Next": "string | false",
               "Voby": "string",
               "Vue": "string"
+            }
+          },
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "'option'"
             }
           },
           "selected": {
@@ -16037,6 +16914,24 @@
               "Vue": "string"
             }
           },
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "never"
+            }
+          },
           "type": {
             "attr": true,
             "attrChrome": true,
@@ -16146,7 +17041,26 @@
         "description": "The picture element is a container which provides multiple sources to its contained img element to allow authors to declaratively control or give hints to the user agent about which image resource to use, based on the screen pixel density, viewport size, image format, and other factors. It represents its children.",
         "elementURL": "https://developer.mozilla.org/docs/Web/HTML/Element/picture",
         "interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLPictureElement",
-        "keys": {},
+        "keys": {
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "never"
+            }
+          }
+        },
         "name": "picture",
         "namespace": "http://www.w3.org/1999/xhtml",
         "notIncludedMDN": [],
@@ -16262,6 +17176,24 @@
               "Solid Next": "number | string | false",
               "Voby": "number | string",
               "Vue": "number | string"
+            }
+          },
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "'progressbar'"
             }
           },
           "value": {
@@ -16957,6 +17889,24 @@
               "Voby": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'"
             }
           },
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "never"
+            }
+          },
           "src": {
             "attr": true,
             "attrChrome": true,
@@ -17063,10 +18013,29 @@
       },
       "search": {
         "deprecated": false,
-        "description": "",
+        "description": "The search element represents the parts of the document or application with form controls or other content related to performing a search or filtering operation.",
         "elementURL": "https://developer.mozilla.org/docs/Web/HTML/Element/search",
         "interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement",
-        "keys": {},
+        "keys": {
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "'search' | 'form' | 'group' | 'none' | 'presentation' | 'region'"
+            }
+          }
+        },
         "name": "search",
         "namespace": "http://www.w3.org/1999/xhtml",
         "notIncludedMDN": [],
@@ -17111,7 +18080,6 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "'additional-name' | 'address-level1' | 'address-level2' | 'address-level3' | 'address-level4' | 'address-line1' | 'address-line2' | 'address-line3' | 'bday' | 'bday-day' | 'bday-month' | 'bday-year' | 'billing' | 'cc-additional-name' | 'cc-csc' | 'cc-exp' | 'cc-exp-month' | 'cc-exp-year' | 'cc-family-name' | 'cc-given-name' | 'cc-name' | 'cc-number' | 'cc-type' | 'country' | 'country-name' | 'current-password' | 'email' | 'family-name' | 'fax' | 'given-name' | 'home' | 'honorific-prefix' | 'honorific-suffix' | 'impp' | 'language' | 'mobile' | 'name' | 'new-password' | 'nickname' | 'off' | 'on' | 'organization' | 'organization-title' | 'pager' | 'photo' | 'postal-code' | 'sex' | 'shipping' | 'street-address' | 'tel' | 'tel-area-code' | 'tel-country-code' | 'tel-extension' | 'tel-local' | 'tel-local-prefix' | 'tel-local-suffix' | 'tel-national' | 'transaction-amount' | 'transaction-currency' | 'url' | 'username' | 'work' | (string & {})",
-              "Preact": "string",
               "Solid Main": "'additional-name' | 'address-level1' | 'address-level2' | 'address-level3' | 'address-level4' | 'address-line1' | 'address-line2' | 'address-line3' | 'bday' | 'bday-day' | 'bday-month' | 'bday-year' | 'billing' | 'cc-additional-name' | 'cc-csc' | 'cc-exp' | 'cc-exp-month' | 'cc-exp-year' | 'cc-family-name' | 'cc-given-name' | 'cc-name' | 'cc-number' | 'cc-type' | 'country' | 'country-name' | 'current-password' | 'email' | 'family-name' | 'fax' | 'given-name' | 'home' | 'honorific-prefix' | 'honorific-suffix' | 'impp' | 'language' | 'mobile' | 'name' | 'new-password' | 'nickname' | 'off' | 'on' | 'organization' | 'organization-title' | 'pager' | 'photo' | 'postal-code' | 'sex' | 'shipping' | 'street-address' | 'tel' | 'tel-area-code' | 'tel-country-code' | 'tel-extension' | 'tel-local' | 'tel-local-prefix' | 'tel-local-suffix' | 'tel-national' | 'transaction-amount' | 'transaction-currency' | 'url' | 'username' | 'work' | (string & {})",
               "Solid Next": "'additional-name' | 'address-level1' | 'address-level2' | 'address-level3' | 'address-level4' | 'address-line1' | 'address-line2' | 'address-line3' | 'bday' | 'bday-day' | 'bday-month' | 'bday-year' | 'billing' | 'cc-additional-name' | 'cc-csc' | 'cc-exp' | 'cc-exp-month' | 'cc-exp-year' | 'cc-family-name' | 'cc-given-name' | 'cc-name' | 'cc-number' | 'cc-type' | 'country' | 'country-name' | 'current-password' | 'email' | 'family-name' | 'fax' | 'given-name' | 'home' | 'honorific-prefix' | 'honorific-suffix' | 'impp' | 'language' | 'mobile' | 'name' | 'new-password' | 'nickname' | 'off' | 'on' | 'organization' | 'organization-title' | 'pager' | 'photo' | 'postal-code' | 'sex' | 'shipping' | 'street-address' | 'tel' | 'tel-area-code' | 'tel-country-code' | 'tel-extension' | 'tel-local' | 'tel-local-prefix' | 'tel-local-suffix' | 'tel-national' | 'transaction-amount' | 'transaction-currency' | 'url' | 'username' | 'work' | (string & {}) | false",
               "Vue": "string"
@@ -17131,7 +18099,6 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLSelectElement#htmlselectelement.autocomplete",
             "values": {
-              "Preact": "string",
               "React": "string",
               "Voby": "string"
             },
@@ -17173,23 +18140,6 @@
             },
             "warn": true
           },
-          "defaultValue": {
-            "attr": false,
-            "attrChrome": false,
-            "attrFirefox": false,
-            "global": false,
-            "inherited": false,
-            "name": "defaultValue",
-            "prop": false,
-            "propChrome": false,
-            "propFirefox": false,
-            "readonly": false,
-            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLSelectElement#htmlselectelement.defaultvalue",
-            "values": {
-              "Preact": "string | number"
-            },
-            "warn": true
-          },
           "disabled": {
             "attr": true,
             "attrChrome": true,
@@ -17210,7 +18160,6 @@
               "Chrome": "boolean",
               "Firefox": "boolean",
               "Pota": "boolean | ''",
-              "Preact": "boolean",
               "React": "boolean",
               "Solid Main": "boolean",
               "Solid Next": "true | false | ''",
@@ -17233,7 +18182,6 @@
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLSelectElement#htmlselectelement.form",
             "values": {
               "Pota": "string",
-              "Preact": "string",
               "React": "string",
               "Solid Main": "string",
               "Solid Next": "string | false",
@@ -17282,7 +18230,6 @@
               "Chrome": "boolean",
               "Firefox": "boolean",
               "Pota": "boolean | ''",
-              "Preact": "boolean",
               "React": "boolean",
               "Solid Main": "boolean",
               "Solid Next": "true | false | ''",
@@ -17310,7 +18257,6 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "string",
-              "Preact": "string",
               "React": "string",
               "Solid Main": "string",
               "Solid Next": "string | false",
@@ -17365,7 +18311,6 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement#change",
             "values": {
-              "Preact": "GenericEventHandler<T>",
               "React": "ChangeEventHandler<T>",
               "Voby": "KeyboardEventHandler<T>"
             }
@@ -17390,7 +18335,6 @@
               "Chrome": "boolean",
               "Firefox": "boolean",
               "Pota": "boolean | ''",
-              "Preact": "boolean",
               "React": "boolean",
               "Solid Main": "boolean",
               "Solid Next": "true | false | ''",
@@ -17439,7 +18383,6 @@
               "Chrome": "number",
               "Firefox": "number",
               "Pota": "number | string",
-              "Preact": "number",
               "React": "number",
               "Solid Main": "number | string",
               "Solid Next": "number | string | false",
@@ -17467,7 +18410,6 @@
               "Chrome": "string",
               "Firefox": "string",
               "Pota": "number | string",
-              "Preact": "string | number",
               "React": "string | readonly string[] | number",
               "Solid Main": "string | string[] | number",
               "Solid Next": "string | string[] | number | false",
@@ -17495,6 +18437,19 @@
           "HTMLSelectElement.willValidate"
         ],
         "tagInterfaceName": "HTMLSelectElement"
+      },
+      "selectedcontent": {
+        "deprecated": false,
+        "description": "The selectedcontent element can be used to display the content of the currently selected option element inside of a closed select element.",
+        "elementURL": "https://developer.mozilla.org/docs/Web/HTML/Element/selectedcontent",
+        "experimental": true,
+        "interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLSelectedContentElement",
+        "keys": {},
+        "name": "selectedcontent",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "notIncludedMDN": [],
+        "readonly": [],
+        "tagInterfaceName": "HTMLSelectedContentElement"
       },
       "shadow": {
         "deprecated": true,
@@ -17539,6 +18494,24 @@
               "Solid Main": "string",
               "Solid Next": "string | false",
               "Voby": "string"
+            }
+          },
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "never"
             }
           }
         },
@@ -17623,6 +18596,24 @@
               "Solid Next": "string | false",
               "Voby": "string",
               "Vue": "string"
+            }
+          },
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "never"
             }
           },
           "sizes": {
@@ -17933,6 +18924,24 @@
             "values": {
               "Voby": "string",
               "Vue": "string"
+            }
+          },
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "never"
             }
           },
           "scoped": {
@@ -19119,6 +20128,24 @@
         "elementURL": "https://developer.mozilla.org/docs/Web/HTML/Element/template",
         "interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTemplateElement",
         "keys": {
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "never"
+            }
+          },
           "shadowrootclonable": {
             "attr": true,
             "attrChrome": true,
@@ -19777,6 +20804,23 @@
               "Vue": "string"
             }
           },
+          "prop:value": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": true,
+            "global": false,
+            "inherited": false,
+            "name": "prop:value",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTextAreaElement#htmltextareaelement.prop:value",
+            "values": {
+              "Pota": "string"
+            }
+          },
           "readonly": {
             "attr": true,
             "attrChrome": true,
@@ -19853,6 +20897,24 @@
               "Solid Next": "true | false | ''",
               "Voby": "boolean",
               "Vue": "boolean | 'true' | 'false'"
+            }
+          },
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "'textbox'"
             }
           },
           "rows": {
@@ -19968,6 +21030,7 @@
               "Preact": "string | number",
               "React": "string | readonly string[] | number",
               "Solid Main": "string | string[] | number",
+              "Solid Next": "string | string[] | number | false",
               "Voby": "string | readonly string[] | number",
               "Vue": "string | readonly string[] | number | null"
             }
@@ -20979,6 +22042,24 @@
         "elementURL": "https://developer.mozilla.org/docs/Web/HTML/Element/title",
         "interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLTitleElement",
         "keys": {
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "never"
+            }
+          },
           "text": {
             "attr": false,
             "attrChrome": false,
@@ -21634,6 +22715,24 @@
             },
             "warn": true
           },
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "never"
+            }
+          },
           "src": {
             "attr": true,
             "attrChrome": true,
@@ -21769,7 +22868,26 @@
         "description": "The u element represents a span of text with an unarticulated, though explicitly rendered, non-textual annotation, such as labeling the text as being a proper name in Chinese text (a Chinese proper name mark), or labeling the text as being misspelt.",
         "elementURL": "https://developer.mozilla.org/docs/Web/HTML/Element/u",
         "interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement",
-        "keys": {},
+        "keys": {
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "'list' | 'group' | 'listbox' | 'menu' | 'menubar' | 'none' | 'presentation' | 'radiogroup' | 'tablist' | 'toolbar' | 'tree'"
+            }
+          }
+        },
         "name": "u",
         "namespace": "http://www.w3.org/1999/xhtml",
         "notIncludedMDN": [],
@@ -22329,7 +23447,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "Events<MediaEncryptedEvent, Element>",
+              "Pota": "EventHandler<MediaEncryptedEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>"
             }
@@ -22393,7 +23511,7 @@
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#enterpictureinpicture",
             "values": {
               "Chrome": "event",
-              "Pota": "Events<PictureInPictureEvent, Element>",
+              "Pota": "EventHandler<PictureInPictureEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, PictureInPictureEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, PictureInPictureEvent>"
             }
@@ -22455,7 +23573,7 @@
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#leavepictureinpicture",
             "values": {
               "Chrome": "event",
-              "Pota": "Events<PictureInPictureEvent, Element>",
+              "Pota": "EventHandler<PictureInPictureEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, PictureInPictureEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, PictureInPictureEvent>"
             }
@@ -22612,7 +23730,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "Events<Event, Element>",
+              "Pota": "EventHandler<Event, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
             }
@@ -22808,6 +23926,41 @@
               "Preact": "boolean"
             }
           },
+          "prop:srcObject": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "global": false,
+            "inherited": false,
+            "name": "prop:srcObject",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#htmlvideoelement.prop:srcobject",
+            "values": {
+              "Pota": "MediaStream | MediaSource | Blob | File"
+            },
+            "warn": true
+          },
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "'application'"
+            }
+          },
           "src": {
             "attr": true,
             "attrChrome": true,
@@ -22950,7 +24103,26 @@
         "description": "The wbr element represents a line break opportunity.",
         "elementURL": "https://developer.mozilla.org/docs/Web/HTML/Element/wbr",
         "interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement",
-        "keys": {},
+        "keys": {
+          "role": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": false,
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "Element",
+            "name": "role",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.role",
+            "values": {
+              "Preact": "'none' | 'presentation'"
+            }
+          }
+        },
         "name": "wbr",
         "namespace": "http://www.w3.org/1999/xhtml",
         "notIncludedMDN": [],
@@ -25373,7 +26545,7 @@
           },
           "rel": {
             "attr": true,
-            "attrChrome": false,
+            "attrChrome": true,
             "attrFirefox": true,
             "attrName": "rel",
             "global": false,
@@ -25381,12 +26553,13 @@
             "keyInterfaceName": "SVGAElement",
             "name": "rel",
             "prop": true,
-            "propChrome": false,
+            "propChrome": true,
             "propFirefox": true,
             "propName": "relList",
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGAElement#svgaelement.rel",
             "values": {
+              "Chrome": "string",
               "Firefox": "string",
               "Voby": "string",
               "Vue": "string"
@@ -25402,12 +26575,13 @@
             "keyInterfaceName": "SVGAElement",
             "name": "relList",
             "prop": true,
-            "propChrome": false,
+            "propChrome": true,
             "propFirefox": true,
             "propName": "relList",
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGAElement#svgaelement.rellist",
             "values": {
+              "Chrome": "string",
               "Firefox": "string"
             }
           },
@@ -72162,7 +73336,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#afterprint",
             "values": {
-              "Pota": "Events<Event, Element>",
+              "Pota": "EventHandler<Event, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
             }
@@ -72216,7 +73390,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#beforeprint",
             "values": {
-              "Pota": "Events<Event, Element>",
+              "Pota": "EventHandler<Event, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
             }
@@ -72270,7 +73444,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#beforeunload",
             "values": {
-              "Pota": "Events<BeforeUnloadEvent, Element>",
+              "Pota": "EventHandler<BeforeUnloadEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, BeforeUnloadEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, BeforeUnloadEvent>"
             }
@@ -72324,7 +73498,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#gamepadconnected",
             "values": {
-              "Pota": "Events<GamepadEvent, Element>",
+              "Pota": "EventHandler<GamepadEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, GamepadEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, GamepadEvent>"
             }
@@ -72378,7 +73552,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#gamepaddisconnected",
             "values": {
-              "Pota": "Events<GamepadEvent, Element>",
+              "Pota": "EventHandler<GamepadEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, GamepadEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, GamepadEvent>"
             }
@@ -72432,7 +73606,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#hashchange",
             "values": {
-              "Pota": "Events<HashChangeEvent, Element>",
+              "Pota": "EventHandler<HashChangeEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, HashChangeEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, HashChangeEvent>"
             }
@@ -72486,7 +73660,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#languagechange",
             "values": {
-              "Pota": "Events<Event, Element>",
+              "Pota": "EventHandler<Event, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
             }
@@ -72540,7 +73714,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#message",
             "values": {
-              "Pota": "Events<MessageEvent, Element>",
+              "Pota": "EventHandler<MessageEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, MessageEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, MessageEvent>"
             }
@@ -72594,7 +73768,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#messageerror",
             "values": {
-              "Pota": "Events<MessageEvent, Element>",
+              "Pota": "EventHandler<MessageEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, MessageEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, MessageEvent>"
             }
@@ -72648,7 +73822,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#offline",
             "values": {
-              "Pota": "Events<Event, Element>",
+              "Pota": "EventHandler<Event, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
             }
@@ -72702,7 +73876,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#line",
             "values": {
-              "Pota": "Events<Event, Element>",
+              "Pota": "EventHandler<Event, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
             }
@@ -72756,7 +73930,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#pagehide",
             "values": {
-              "Pota": "Events<PageTransitionEvent, Element>",
+              "Pota": "EventHandler<PageTransitionEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>"
             }
@@ -72810,7 +73984,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#pagereveal",
             "values": {
-              "Pota": "Events<Event, Element>",
+              "Pota": "EventHandler<Event, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
             }
@@ -72864,7 +74038,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#pageshow",
             "values": {
-              "Pota": "Events<PageTransitionEvent, Element>",
+              "Pota": "EventHandler<PageTransitionEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>"
             }
@@ -72918,7 +74092,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#pageswap",
             "values": {
-              "Pota": "Events<Event, Element>",
+              "Pota": "EventHandler<Event, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
             }
@@ -72972,7 +74146,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#popstate",
             "values": {
-              "Pota": "Events<PopStateEvent, Element>",
+              "Pota": "EventHandler<PopStateEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, PopStateEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, PopStateEvent>"
             }
@@ -73026,7 +74200,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#rejectionhandled",
             "values": {
-              "Pota": "Events<PromiseRejectionEvent, Element>",
+              "Pota": "EventHandler<PromiseRejectionEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>"
             }
@@ -73080,7 +74254,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#storage",
             "values": {
-              "Pota": "Events<StorageEvent, Element>",
+              "Pota": "EventHandler<StorageEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, StorageEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, StorageEvent>"
             }
@@ -73134,7 +74308,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#unhandledrejection",
             "values": {
-              "Pota": "Events<PromiseRejectionEvent, Element>",
+              "Pota": "EventHandler<PromiseRejectionEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>"
             }
@@ -73188,7 +74362,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#unload",
             "values": {
-              "Pota": "Events<Event, Element>",
+              "Pota": "EventHandler<Event, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
             }
@@ -81304,7 +82478,8 @@
         "namespace": "http://www.w3.org/2000/svg",
         "notIncludedMDN": [
           "data_uri",
-          "external_uri"
+          "external_uri",
+          "omit_external_fragment"
         ],
         "readonly": [
           "SVGGraphicsElement.farthestViewportElement",
@@ -83779,7 +84954,7 @@
           "values": {
             "Chrome": "string",
             "Firefox": "string",
-            "Pota": "string",
+            "Pota": "Record<string, string | boolean | number | null > | string",
             "Solid Main": "string",
             "Solid Next": "string | ClassList | false"
           }
@@ -83820,15 +84995,6 @@
           "values": {
             "Chrome": "string",
             "Firefox": "string"
-          }
-        },
-        "css": {
-          "inherited": false,
-          "keyInterfaceName": "Element",
-          "name": "css",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.css",
-          "values": {
-            "Pota": "string | CSSStyleSheet"
           }
         },
         "elementtiming": {
@@ -83903,7 +85069,6 @@
           "values": {
             "Chrome": "string",
             "Firefox": "string",
-            "Pota": "number | string",
             "Solid Main": "string",
             "Solid Next": "string"
           }
@@ -83926,7 +85091,6 @@
           "name": "on:abort",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#abort",
           "values": {
-            "Pota": "Events<UIEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, UIEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, UIEvent>"
           }
@@ -83959,7 +85123,6 @@
           "name": "on:animationcancel",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#animationcancel",
           "values": {
-            "Pota": "Events<AnimationEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, AnimationEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, AnimationEvent>"
           }
@@ -83992,7 +85155,6 @@
           "name": "on:animationend",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#animationend",
           "values": {
-            "Pota": "Events<AnimationEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, AnimationEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, AnimationEvent>"
           }
@@ -84025,7 +85187,6 @@
           "name": "on:animationiteration",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#animationiteration",
           "values": {
-            "Pota": "Events<AnimationEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, AnimationEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, AnimationEvent>"
           }
@@ -84058,7 +85219,6 @@
           "name": "on:animationstart",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#animationstart",
           "values": {
-            "Pota": "Events<AnimationEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, AnimationEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, AnimationEvent>"
           }
@@ -84091,7 +85251,6 @@
           "name": "on:auxclick",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#auxclick",
           "values": {
-            "Pota": "Events<MouseEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
           }
@@ -84202,7 +85361,6 @@
           "name": "on:beforeinput",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#beforeinput",
           "values": {
-            "Pota": "Events<InputEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>"
           }
@@ -84306,7 +85464,6 @@
           "name": "on:beforetoggle",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#beforetoggle",
           "values": {
-            "Pota": "Events<ToggleEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, ToggleEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, ToggleEvent>"
           }
@@ -84371,7 +85528,6 @@
           "name": "on:blur",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#blur",
           "values": {
-            "Pota": "Events<FocusEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>"
           }
@@ -84404,7 +85560,6 @@
           "name": "on:cancel",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#cancel",
           "values": {
-            "Pota": "Events<Event, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
@@ -84437,7 +85592,6 @@
           "name": "on:canplay",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#canplay",
           "values": {
-            "Pota": "Events<Event, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
@@ -84470,7 +85624,6 @@
           "name": "on:canplaythrough",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#canplaythrough",
           "values": {
-            "Pota": "Events<Event, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
@@ -84503,7 +85656,6 @@
           "name": "on:change",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#change",
           "values": {
-            "Pota": "Events<Event, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, Event, ChangeEventHandler<T, Event>>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, Event, ChangeEventHandler<T, Event>>"
           }
@@ -84536,7 +85688,6 @@
           "name": "on:click",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#click",
           "values": {
-            "Pota": "Events<MouseEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
           }
@@ -84569,7 +85720,6 @@
           "name": "on:close",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#close",
           "values": {
-            "Pota": "Events<Event, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
@@ -84634,7 +85784,6 @@
           "name": "on:compositionend",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#compositionend",
           "values": {
-            "Pota": "Events<CompositionEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, CompositionEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, CompositionEvent>"
           }
@@ -84667,7 +85816,6 @@
           "name": "on:compositionstart",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#compositionstart",
           "values": {
-            "Pota": "Events<CompositionEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, CompositionEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, CompositionEvent>"
           }
@@ -84700,7 +85848,6 @@
           "name": "on:compositionupdate",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#compositionupdate",
           "values": {
-            "Pota": "Events<CompositionEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, CompositionEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, CompositionEvent>"
           }
@@ -84765,7 +85912,6 @@
           "name": "on:contextlost",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#contextlost",
           "values": {
-            "Pota": "Events<Event, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
@@ -84798,7 +85944,6 @@
           "name": "on:contextmenu",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#contextmenu",
           "values": {
-            "Pota": "Events<MouseEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
           }
@@ -84831,7 +85976,6 @@
           "name": "on:contextrestored",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#contextrestored",
           "values": {
-            "Pota": "Events<Event, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
@@ -84864,7 +86008,6 @@
           "name": "on:copy",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#copy",
           "values": {
-            "Pota": "Events<ClipboardEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, ClipboardEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, ClipboardEvent>"
           }
@@ -84897,7 +86040,6 @@
           "name": "on:cuechange",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#cuechange",
           "values": {
-            "Pota": "Events<Event, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
@@ -84930,7 +86072,6 @@
           "name": "on:cut",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#cut",
           "values": {
-            "Pota": "Events<ClipboardEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, ClipboardEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, ClipboardEvent>"
           }
@@ -84963,7 +86104,6 @@
           "name": "on:dblclick",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#dblclick",
           "values": {
-            "Pota": "Events<MouseEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
           }
@@ -84996,7 +86136,6 @@
           "name": "on:drag",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#drag",
           "values": {
-            "Pota": "Events<DragEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
           }
@@ -85029,7 +86168,6 @@
           "name": "on:dragend",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#dragend",
           "values": {
-            "Pota": "Events<DragEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
           }
@@ -85062,7 +86200,6 @@
           "name": "on:dragenter",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#dragenter",
           "values": {
-            "Pota": "Events<DragEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
           }
@@ -85127,7 +86264,6 @@
           "name": "on:dragleave",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#dragleave",
           "values": {
-            "Pota": "Events<DragEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
           }
@@ -85160,7 +86296,6 @@
           "name": "on:dragover",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#dragover",
           "values": {
-            "Pota": "Events<DragEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
           }
@@ -85193,7 +86328,6 @@
           "name": "on:dragstart",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#dragstart",
           "values": {
-            "Pota": "Events<DragEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
           }
@@ -85226,7 +86360,6 @@
           "name": "on:drop",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#drop",
           "values": {
-            "Pota": "Events<DragEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
           }
@@ -85259,7 +86392,6 @@
           "name": "on:durationchange",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#durationchange",
           "values": {
-            "Pota": "Events<Event, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
@@ -85292,7 +86424,6 @@
           "name": "on:emptied",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#emptied",
           "values": {
-            "Pota": "Events<Event, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
@@ -85325,7 +86456,6 @@
           "name": "on:ended",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#ended",
           "values": {
-            "Pota": "Events<Event, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
@@ -85358,7 +86488,6 @@
           "name": "on:error",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#error",
           "values": {
-            "Pota": "Events<ErrorEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, ErrorEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, ErrorEvent>"
           }
@@ -85391,7 +86520,6 @@
           "name": "on:focus",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#focus",
           "values": {
-            "Pota": "Events<FocusEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>"
           }
@@ -85424,7 +86552,6 @@
           "name": "on:focusin",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#focusin",
           "values": {
-            "Pota": "Events<FocusEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>"
           }
@@ -85457,7 +86584,6 @@
           "name": "on:focusout",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#focusout",
           "values": {
-            "Pota": "Events<FocusEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>"
           }
@@ -85490,7 +86616,6 @@
           "name": "on:formdata",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#formdata",
           "values": {
-            "Pota": "Events<FormDataEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, FormDataEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, FormDataEvent>"
           }
@@ -85525,7 +86650,6 @@
           "values": {
             "Chrome": "event",
             "Firefox": "event",
-            "Pota": "Events<Event, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
@@ -85573,7 +86697,6 @@
           "values": {
             "Chrome": "event",
             "Firefox": "event",
-            "Pota": "Events<Event, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
@@ -85619,7 +86742,6 @@
           "name": "on:gotpointercapture",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#gotpointercapture",
           "values": {
-            "Pota": "Events<PointerEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
           }
@@ -85652,7 +86774,6 @@
           "name": "on:input",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#input",
           "values": {
-            "Pota": "Events<Event, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>"
           }
@@ -85685,7 +86806,6 @@
           "name": "on:invalid",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#invalid",
           "values": {
-            "Pota": "Events<Event, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
@@ -85718,7 +86838,6 @@
           "name": "on:keydown",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#keydown",
           "values": {
-            "Pota": "Events<KeyboardEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, KeyboardEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, KeyboardEvent>"
           }
@@ -85751,7 +86870,6 @@
           "name": "on:keypress",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#keypress",
           "values": {
-            "Pota": "Events<KeyboardEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, KeyboardEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, KeyboardEvent>"
           }
@@ -85784,7 +86902,6 @@
           "name": "on:keyup",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#keyup",
           "values": {
-            "Pota": "Events<KeyboardEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, KeyboardEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, KeyboardEvent>"
           }
@@ -85817,7 +86934,6 @@
           "name": "on:load",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#load",
           "values": {
-            "Pota": "Events<Event, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
@@ -85850,7 +86966,6 @@
           "name": "on:loadeddata",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#loadeddata",
           "values": {
-            "Pota": "Events<Event, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
@@ -85883,7 +86998,6 @@
           "name": "on:loadedmetadata",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#loadedmetadata",
           "values": {
-            "Pota": "Events<Event, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
@@ -85916,7 +87030,6 @@
           "name": "on:loadstart",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#loadstart",
           "values": {
-            "Pota": "Events<Event, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
@@ -85949,7 +87062,6 @@
           "name": "on:lostpointercapture",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#lostpointercapture",
           "values": {
-            "Pota": "Events<PointerEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
           }
@@ -85982,7 +87094,6 @@
           "name": "on:mousedown",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#mousedown",
           "values": {
-            "Pota": "Events<MouseEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
           }
@@ -86015,7 +87126,6 @@
           "name": "on:mouseenter",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#mouseenter",
           "values": {
-            "Pota": "Events<MouseEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
           }
@@ -86048,7 +87158,6 @@
           "name": "on:mouseleave",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#mouseleave",
           "values": {
-            "Pota": "Events<MouseEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
           }
@@ -86081,7 +87190,6 @@
           "name": "on:mousemove",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#mousemove",
           "values": {
-            "Pota": "Events<MouseEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
           }
@@ -86114,7 +87222,6 @@
           "name": "on:mouseout",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#mouseout",
           "values": {
-            "Pota": "Events<MouseEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
           }
@@ -86147,7 +87254,6 @@
           "name": "on:mouseover",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#mouseover",
           "values": {
-            "Pota": "Events<MouseEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
           }
@@ -86180,7 +87286,6 @@
           "name": "on:mouseup",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#mouseup",
           "values": {
-            "Pota": "Events<MouseEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
           }
@@ -86213,7 +87318,6 @@
           "name": "on:paste",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#paste",
           "values": {
-            "Pota": "Events<ClipboardEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, ClipboardEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, ClipboardEvent>"
           }
@@ -86246,7 +87350,6 @@
           "name": "on:pause",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#pause",
           "values": {
-            "Pota": "Events<Event, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
@@ -86279,7 +87382,6 @@
           "name": "on:play",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#play",
           "values": {
-            "Pota": "Events<Event, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
@@ -86312,7 +87414,6 @@
           "name": "on:playing",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#playing",
           "values": {
-            "Pota": "Events<Event, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
@@ -86345,7 +87446,6 @@
           "name": "on:pointercancel",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#pointercancel",
           "values": {
-            "Pota": "Events<PointerEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
           }
@@ -86378,7 +87478,6 @@
           "name": "on:pointerdown",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#pointerdown",
           "values": {
-            "Pota": "Events<PointerEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
           }
@@ -86411,7 +87510,6 @@
           "name": "on:pointerenter",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#pointerenter",
           "values": {
-            "Pota": "Events<PointerEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
           }
@@ -86444,7 +87542,6 @@
           "name": "on:pointerleave",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#pointerleave",
           "values": {
-            "Pota": "Events<PointerEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
           }
@@ -86477,7 +87574,6 @@
           "name": "on:pointermove",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#pointermove",
           "values": {
-            "Pota": "Events<PointerEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
           }
@@ -86510,7 +87606,6 @@
           "name": "on:pointerout",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#pointerout",
           "values": {
-            "Pota": "Events<PointerEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
           }
@@ -86543,7 +87638,6 @@
           "name": "on:pointerover",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#pointerover",
           "values": {
-            "Pota": "Events<PointerEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
           }
@@ -86570,7 +87664,7 @@
           }
         },
         "on:pointerrawupdate": {
-          "eventInterface": "PointerEvent",
+          "eventInterface": "Event",
           "inherited": false,
           "keyInterfaceName": "Element",
           "name": "on:pointerrawupdate",
@@ -86581,7 +87675,7 @@
           }
         },
         "onpointerrawupdate": {
-          "eventInterface": "PointerEvent",
+          "eventInterface": "Event",
           "inherited": false,
           "keyInterfaceName": "Element",
           "name": "onpointerrawupdate",
@@ -86591,7 +87685,7 @@
           }
         },
         "onPointerRawUpdate": {
-          "eventInterface": "PointerEvent",
+          "eventInterface": "Event",
           "inherited": false,
           "keyInterfaceName": "Element",
           "name": "onPointerRawUpdate",
@@ -86608,7 +87702,6 @@
           "name": "on:pointerup",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#pointerup",
           "values": {
-            "Pota": "Events<PointerEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
           }
@@ -86641,7 +87734,6 @@
           "name": "on:progress",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#progress",
           "values": {
-            "Pota": "Events<ProgressEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, ProgressEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, ProgressEvent>"
           }
@@ -86674,7 +87766,6 @@
           "name": "on:ratechange",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#ratechange",
           "values": {
-            "Pota": "Events<Event, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
@@ -86707,7 +87798,6 @@
           "name": "on:reset",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#reset",
           "values": {
-            "Pota": "Events<Event, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
@@ -86740,7 +87830,6 @@
           "name": "on:resize",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#resize",
           "values": {
-            "Pota": "Events<UIEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, UIEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, UIEvent>"
           }
@@ -86773,7 +87862,6 @@
           "name": "on:scroll",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#scroll",
           "values": {
-            "Pota": "Events<Event, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
@@ -86806,7 +87894,6 @@
           "name": "on:scrollend",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#scrollend",
           "values": {
-            "Pota": "Events<Event, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
@@ -86928,7 +88015,6 @@
           "name": "on:securitypolicyviolation",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#securitypolicyviolation",
           "values": {
-            "Pota": "Events<SecurityPolicyViolationEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, SecurityPolicyViolationEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, SecurityPolicyViolationEvent>"
           }
@@ -86961,7 +88047,6 @@
           "name": "on:seeked",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#seeked",
           "values": {
-            "Pota": "Events<Event, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
@@ -86994,7 +88079,6 @@
           "name": "on:seeking",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#seeking",
           "values": {
-            "Pota": "Events<Event, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
@@ -87027,7 +88111,6 @@
           "name": "on:select",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#select",
           "values": {
-            "Pota": "Events<Event, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
@@ -87060,7 +88143,6 @@
           "name": "on:selectionchange",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#selectionchange",
           "values": {
-            "Pota": "Events<Event, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
@@ -87093,7 +88175,6 @@
           "name": "on:selectstart",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#selectstart",
           "values": {
-            "Pota": "Events<Event, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
@@ -87126,7 +88207,6 @@
           "name": "on:slotchange",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#slotchange",
           "values": {
-            "Pota": "Events<Event, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
@@ -87159,7 +88239,6 @@
           "name": "on:stalled",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#stalled",
           "values": {
-            "Pota": "Events<Event, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
@@ -87192,7 +88271,6 @@
           "name": "on:submit",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#submit",
           "values": {
-            "Pota": "Events<SubmitEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, SubmitEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, SubmitEvent>"
           }
@@ -87225,7 +88303,6 @@
           "name": "on:suspend",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#suspend",
           "values": {
-            "Pota": "Events<Event, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
@@ -87258,7 +88335,6 @@
           "name": "on:timeupdate",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#timeupdate",
           "values": {
-            "Pota": "Events<Event, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
@@ -87291,7 +88367,6 @@
           "name": "on:toggle",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#toggle",
           "values": {
-            "Pota": "Events<ToggleEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, ToggleEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, ToggleEvent>"
           }
@@ -87324,7 +88399,6 @@
           "name": "on:touchcancel",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#touchcancel",
           "values": {
-            "Pota": "Events<TouchEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, TouchEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, TouchEvent>"
           }
@@ -87357,7 +88431,6 @@
           "name": "on:touchend",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#touchend",
           "values": {
-            "Pota": "Events<TouchEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, TouchEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, TouchEvent>"
           }
@@ -87390,7 +88463,6 @@
           "name": "on:touchmove",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#touchmove",
           "values": {
-            "Pota": "Events<TouchEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, TouchEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, TouchEvent>"
           }
@@ -87423,7 +88495,6 @@
           "name": "on:touchstart",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#touchstart",
           "values": {
-            "Pota": "Events<TouchEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, TouchEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, TouchEvent>"
           }
@@ -87456,7 +88527,6 @@
           "name": "on:transitioncancel",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#transitioncancel",
           "values": {
-            "Pota": "Events<TransitionEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, TransitionEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, TransitionEvent>"
           }
@@ -87489,7 +88559,6 @@
           "name": "on:transitionend",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#transitionend",
           "values": {
-            "Pota": "Events<TransitionEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, TransitionEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, TransitionEvent>"
           }
@@ -87522,7 +88591,6 @@
           "name": "on:transitionrun",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#transitionrun",
           "values": {
-            "Pota": "Events<TransitionEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, TransitionEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, TransitionEvent>"
           }
@@ -87555,7 +88623,6 @@
           "name": "on:transitionstart",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#transitionstart",
           "values": {
-            "Pota": "Events<TransitionEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, TransitionEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, TransitionEvent>"
           }
@@ -87588,7 +88655,6 @@
           "name": "on:volumechange",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#volumechange",
           "values": {
-            "Pota": "Events<Event, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
@@ -87621,7 +88687,6 @@
           "name": "on:waiting",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#waiting",
           "values": {
-            "Pota": "Events<Event, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
@@ -87704,7 +88769,6 @@
           "name": "on:wheel",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#wheel",
           "values": {
-            "Pota": "Events<WheelEvent, Element>",
             "Solid Main": "EventHandlerWithOptionsUnion<T, WheelEvent>",
             "Solid Next": "EventHandlerWithOptionsUnion<T, WheelEvent>"
           }
@@ -87768,6 +88832,24 @@
             "Firefox": "string",
             "Pota": "string",
             "Solid Next": "string | false"
+          }
+        },
+        "prop:innerHTML": {
+          "inherited": false,
+          "keyInterfaceName": "Element",
+          "name": "prop:innerHTML",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.prop:innerhtml",
+          "values": {
+            "Pota": "number | string"
+          }
+        },
+        "prop:textContent": {
+          "inherited": false,
+          "keyInterfaceName": "Element",
+          "name": "prop:textContent",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.prop:textcontent",
+          "values": {
+            "Pota": "number | string"
           }
         },
         "role": {
@@ -87889,9 +88971,17 @@
           "name": "textContent",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.textcontent",
           "values": {
-            "Pota": "number | string",
             "Solid Main": "string | number",
             "Solid Next": "string | number"
+          }
+        },
+        "use:css": {
+          "inherited": false,
+          "keyInterfaceName": "Element",
+          "name": "use:css",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.use:css",
+          "values": {
+            "Pota": "string"
           }
         },
         "xmlns": {
@@ -88557,7 +89647,7 @@
       "onpointermove": "PointerEvent",
       "onpointerout": "PointerEvent",
       "onpointerover": "PointerEvent",
-      "onpointerrawupdate": "PointerEvent",
+      "onpointerrawupdate": "Event",
       "onpointerup": "PointerEvent",
       "onpopstate": "PopStateEvent",
       "onprogress": "ProgressEvent",
@@ -89921,7 +91011,6 @@
           "values": {
             "Chrome": "string",
             "Firefox": "string",
-            "Pota": "number | string",
             "Solid Main": "string | number",
             "Solid Next": "string | number"
           }
@@ -90339,12 +91428,14 @@
           "name": "on:beforematch",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement#beforematch",
           "values": {
-            "Chrome": "event"
+            "Chrome": "event",
+            "Firefox": "event"
           }
         },
         "onbeforematch": {
           "attr": true,
           "attrChrome": true,
+          "attrFirefox": true,
           "attrName": "onbeforematch",
           "eventInterface": "Event",
           "inherited": false,
@@ -90352,11 +91443,13 @@
           "name": "onbeforematch",
           "prop": true,
           "propChrome": true,
+          "propFirefox": true,
           "propName": "onbeforematch",
           "readonly": false,
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement#beforematch",
           "values": {
-            "Chrome": "event"
+            "Chrome": "event",
+            "Firefox": "event"
           }
         },
         "on:beforetoggle": {
@@ -92314,7 +93407,7 @@
           }
         },
         "on:pointerrawupdate": {
-          "eventInterface": "PointerEvent",
+          "eventInterface": "Event",
           "inherited": false,
           "keyInterfaceName": "HTMLElement",
           "name": "on:pointerrawupdate",
@@ -92327,7 +93420,7 @@
           "attr": true,
           "attrChrome": true,
           "attrName": "onpointerrawupdate",
-          "eventInterface": "PointerEvent",
+          "eventInterface": "Event",
           "inherited": false,
           "keyInterfaceName": "HTMLElement",
           "name": "onpointerrawupdate",
@@ -93396,6 +94489,13 @@
             "Solid Next": "string | false"
           }
         },
+        "prop:innerText": {
+          "name": "prop:innerText",
+          "url": "https://developer.mozilla.org/en-US/search?q=prop%3AinnerText",
+          "values": {
+            "Pota": "number | string"
+          }
+        },
         "resource": {
           "name": "resource",
           "url": "https://developer.mozilla.org/en-US/search?q=resource",
@@ -94085,12 +95185,14 @@
           "name": "on:beforematch",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#beforematch",
           "values": {
-            "Chrome": "event"
+            "Chrome": "event",
+            "Firefox": "event"
           }
         },
         "onbeforematch": {
           "attr": true,
           "attrChrome": true,
+          "attrFirefox": true,
           "attrName": "onbeforematch",
           "eventInterface": "Event",
           "inherited": false,
@@ -94098,11 +95200,13 @@
           "name": "onbeforematch",
           "prop": true,
           "propChrome": true,
+          "propFirefox": true,
           "propName": "onbeforematch",
           "readonly": false,
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#beforematch",
           "values": {
-            "Chrome": "event"
+            "Chrome": "event",
+            "Firefox": "event"
           }
         },
         "on:beforetoggle": {
@@ -96060,7 +97164,7 @@
           }
         },
         "on:pointerrawupdate": {
-          "eventInterface": "PointerEvent",
+          "eventInterface": "Event",
           "inherited": false,
           "keyInterfaceName": "MathMLElement",
           "name": "on:pointerrawupdate",
@@ -96073,7 +97177,7 @@
           "attr": true,
           "attrChrome": true,
           "attrName": "onpointerrawupdate",
-          "eventInterface": "PointerEvent",
+          "eventInterface": "Event",
           "inherited": false,
           "keyInterfaceName": "MathMLElement",
           "name": "onpointerrawupdate",
@@ -97547,12 +98651,14 @@
           "name": "on:beforematch",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGElement#beforematch",
           "values": {
-            "Chrome": "event"
+            "Chrome": "event",
+            "Firefox": "event"
           }
         },
         "onbeforematch": {
           "attr": true,
           "attrChrome": true,
+          "attrFirefox": true,
           "attrName": "onbeforematch",
           "eventInterface": "Event",
           "inherited": false,
@@ -97560,11 +98666,13 @@
           "name": "onbeforematch",
           "prop": true,
           "propChrome": true,
+          "propFirefox": true,
           "propName": "onbeforematch",
           "readonly": false,
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGElement#beforematch",
           "values": {
-            "Chrome": "event"
+            "Chrome": "event",
+            "Firefox": "event"
           }
         },
         "on:beforetoggle": {
@@ -99522,7 +100630,7 @@
           }
         },
         "on:pointerrawupdate": {
-          "eventInterface": "PointerEvent",
+          "eventInterface": "Event",
           "inherited": false,
           "keyInterfaceName": "SVGElement",
           "name": "on:pointerrawupdate",
@@ -99535,7 +100643,7 @@
           "attr": true,
           "attrChrome": true,
           "attrName": "onpointerrawupdate",
-          "eventInterface": "PointerEvent",
+          "eventInterface": "Event",
           "inherited": false,
           "keyInterfaceName": "SVGElement",
           "name": "onpointerrawupdate",
