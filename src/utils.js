@@ -78,6 +78,15 @@ export function removeFromArray(array, value) {
 	if (index !== -1) array.splice(index, 1)
 }
 
+export async function fetchJSON(url, lower = false) {
+	const text = await fetchCached(url)
+	try {
+		return JSON.parse(lower ? text.toLowerCase() : text)
+	} catch (e) {
+		console.warn('unable to parse json from ', url, text)
+		return {}
+	}
+}
 const fetchCachedCache = {}
 export const fetchCached = async url => {
 	if (fetchCachedCache[url]) {
