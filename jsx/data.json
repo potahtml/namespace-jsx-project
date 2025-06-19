@@ -12290,7 +12290,6 @@
             "values": {
               "Chrome": "boolean",
               "Firefox": "boolean",
-              "Pota": "boolean",
               "Voby": "boolean",
               "Vue": "boolean"
             }
@@ -12711,6 +12710,23 @@
             "values": {
               "Chrome": "Element",
               "Firefox": "Element"
+            }
+          },
+          "prop:indeterminate": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "danger": true,
+            "global": false,
+            "inherited": false,
+            "name": "prop:indeterminate",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement#htmlinputelement.prop:indeterminate",
+            "values": {
+              "Pota": "boolean"
             }
           },
           "readonly": {

@@ -198,7 +198,6 @@ interface HTMLVideoElementAttributes<Element> extends HTMLAttributes<Element>, H
 
 interface HTMLMediaHTMLAttributes<Element> {
 	// properties
-
 	'prop:srcObject'?: MediaStream | MediaSource | Blob | File
 
 	// attributes

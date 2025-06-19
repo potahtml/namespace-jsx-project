@@ -127,7 +127,6 @@ interface MediaHTMLAttributes<T> extends HTMLAttributes<T> {
 interface HTMLAudioElementAttributes<Element> extends HTMLAttributes<Element>, HTMLMediaHTMLAttributes<Element> {}
 interface HTMLMediaHTMLAttributes<Element> {
 	// properties
-
 	'prop:srcObject'?: MediaStream | MediaSource | Blob | File
 
 	// attributes

@@ -223,7 +223,7 @@ interface InputHTMLAttributes<T> extends HTMLAttributes<T> {
 // Pota - https://github.com/potahtml/pota
 interface HTMLInputElementAttributes<Element> extends HTMLAttributes<Element> {
 	// properties
-	indeterminate?: boolean
+	'prop:indeterminate'?: boolean
 
 	// attributes
 	accept?: string
