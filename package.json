@@ -24,7 +24,6 @@
 		"arrowParens": "avoid",
 		"proseWrap": "never",
 		"endOfLine": "lf",
-		"singleAttributePerLine": true,
-		"embeddedLanguageFormatting": "off"
+		"singleAttributePerLine": true
 	}
 }
