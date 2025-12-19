@@ -111,8 +111,8 @@ interface HTMLMediaHTMLAttributes<Element> {
 	preload?: 'none' | 'metadata' | 'auto' | ''
 	src?: string
 
-	'on:encrypted'?: EventHandler<MediaEncryptedEvent, Element>
-	'on:waitingforkey'?: EventHandler<Event, Element>
+	'on:encrypted'?: EventHandlers<MediaEncryptedEvent, Element>
+	'on:waitingforkey'?: EventHandlers<Event, Element>
 
 	/** @deprecated */
 	mediagroup?: string

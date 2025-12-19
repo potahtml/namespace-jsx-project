@@ -1926,7 +1926,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "EventHandler<MediaEncryptedEvent, Element>",
+              "Pota": "EventHandlers<MediaEncryptedEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>"
             }
@@ -1991,7 +1991,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "EventHandler<Event, Element>",
+              "Pota": "EventHandlers<Event, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
             }
@@ -2654,7 +2654,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "EventHandler<Event, Element>",
+              "Pota": "EventHandlers<Event, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
             }
@@ -2719,7 +2719,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "EventHandler<Event, Element>",
+              "Pota": "EventHandlers<Event, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
             }
@@ -2784,7 +2784,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "EventHandler<BeforeUnloadEvent, Element>",
+              "Pota": "EventHandlers<BeforeUnloadEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, BeforeUnloadEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, BeforeUnloadEvent>"
             }
@@ -2962,7 +2962,7 @@
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#gamepadconnected",
             "values": {
               "Firefox": "event",
-              "Pota": "EventHandler<GamepadEvent, Element>",
+              "Pota": "EventHandlers<GamepadEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, GamepadEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, GamepadEvent>"
             }
@@ -3024,7 +3024,7 @@
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#gamepaddisconnected",
             "values": {
               "Firefox": "event",
-              "Pota": "EventHandler<GamepadEvent, Element>",
+              "Pota": "EventHandlers<GamepadEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, GamepadEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, GamepadEvent>"
             }
@@ -3087,7 +3087,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "EventHandler<HashChangeEvent, Element>",
+              "Pota": "EventHandlers<HashChangeEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, HashChangeEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, HashChangeEvent>"
             }
@@ -3152,7 +3152,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "EventHandler<Event, Element>",
+              "Pota": "EventHandlers<Event, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
             }
@@ -3255,7 +3255,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "EventHandler<MessageEvent, Element>",
+              "Pota": "EventHandlers<MessageEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, MessageEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, MessageEvent>"
             }
@@ -3320,7 +3320,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "EventHandler<MessageEvent, Element>",
+              "Pota": "EventHandlers<MessageEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, MessageEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, MessageEvent>"
             }
@@ -3385,7 +3385,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "EventHandler<Event, Element>",
+              "Pota": "EventHandlers<Event, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
             }
@@ -3450,7 +3450,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "EventHandler<Event, Element>",
+              "Pota": "EventHandlers<Event, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
             }
@@ -3515,7 +3515,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "EventHandler<PageTransitionEvent, Element>",
+              "Pota": "EventHandlers<PageTransitionEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>"
             }
@@ -3577,7 +3577,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#pagereveal",
             "values": {
-              "Pota": "EventHandler<Event, Element>",
+              "Pota": "EventHandlers<PageRevealEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
             }
@@ -3634,7 +3634,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "EventHandler<PageTransitionEvent, Element>",
+              "Pota": "EventHandlers<PageTransitionEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>"
             }
@@ -3696,7 +3696,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#pageswap",
             "values": {
-              "Pota": "EventHandler<Event, Element>",
+              "Pota": "EventHandlers<PageSwapEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
             }
@@ -3753,7 +3753,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "EventHandler<PopStateEvent, Element>",
+              "Pota": "EventHandlers<PopStateEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, PopStateEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, PopStateEvent>"
             }
@@ -3818,7 +3818,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "EventHandler<PromiseRejectionEvent, Element>",
+              "Pota": "EventHandlers<PromiseRejectionEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>"
             }
@@ -3959,7 +3959,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "EventHandler<StorageEvent, Element>",
+              "Pota": "EventHandlers<StorageEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, StorageEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, StorageEvent>"
             }
@@ -4024,7 +4024,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "EventHandler<PromiseRejectionEvent, Element>",
+              "Pota": "EventHandlers<PromiseRejectionEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>"
             }
@@ -4089,7 +4089,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "EventHandler<Event, Element>",
+              "Pota": "EventHandlers<Event, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
             }
@@ -7503,7 +7503,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "EventHandler<Event, Element>"
+              "Pota": "EventHandlers<Event, Element>"
             }
           },
           "onafterprint": {
@@ -7544,7 +7544,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "EventHandler<Event, Element>"
+              "Pota": "EventHandlers<Event, Element>"
             }
           },
           "onbeforeprint": {
@@ -7585,7 +7585,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "EventHandler<BeforeUnloadEvent, Element>"
+              "Pota": "EventHandlers<BeforeUnloadEvent, Element>"
             }
           },
           "onbeforeunload": {
@@ -7739,7 +7739,7 @@
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFrameSetElement#gamepadconnected",
             "values": {
               "Firefox": "event",
-              "Pota": "EventHandler<GamepadEvent, Element>"
+              "Pota": "EventHandlers<GamepadEvent, Element>"
             }
           },
           "ongamepadconnected": {
@@ -7778,7 +7778,7 @@
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFrameSetElement#gamepaddisconnected",
             "values": {
               "Firefox": "event",
-              "Pota": "EventHandler<GamepadEvent, Element>"
+              "Pota": "EventHandlers<GamepadEvent, Element>"
             }
           },
           "ongamepaddisconnected": {
@@ -7818,7 +7818,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "EventHandler<HashChangeEvent, Element>"
+              "Pota": "EventHandlers<HashChangeEvent, Element>"
             }
           },
           "onhashchange": {
@@ -7859,7 +7859,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "EventHandler<Event, Element>"
+              "Pota": "EventHandlers<Event, Element>"
             }
           },
           "onlanguagechange": {
@@ -7938,7 +7938,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "EventHandler<MessageEvent, Element>"
+              "Pota": "EventHandlers<MessageEvent, Element>"
             }
           },
           "onmessage": {
@@ -7979,7 +7979,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "EventHandler<MessageEvent, Element>"
+              "Pota": "EventHandlers<MessageEvent, Element>"
             }
           },
           "onmessageerror": {
@@ -8020,7 +8020,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "EventHandler<Event, Element>"
+              "Pota": "EventHandlers<Event, Element>"
             }
           },
           "onoffline": {
@@ -8061,7 +8061,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "EventHandler<Event, Element>"
+              "Pota": "EventHandlers<Event, Element>"
             }
           },
           "ononline": {
@@ -8102,7 +8102,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "EventHandler<PageTransitionEvent, Element>"
+              "Pota": "EventHandlers<PageTransitionEvent, Element>"
             }
           },
           "onpagehide": {
@@ -8140,7 +8140,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFrameSetElement#pagereveal",
             "values": {
-              "Pota": "EventHandler<Event, Element>"
+              "Pota": "EventHandlers<PageRevealEvent, Element>"
             }
           },
           "onpagereveal": {
@@ -8175,7 +8175,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "EventHandler<PageTransitionEvent, Element>"
+              "Pota": "EventHandlers<PageTransitionEvent, Element>"
             }
           },
           "onpageshow": {
@@ -8213,7 +8213,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFrameSetElement#pageswap",
             "values": {
-              "Pota": "EventHandler<Event, Element>"
+              "Pota": "EventHandlers<PageSwapEvent, Element>"
             }
           },
           "onpageswap": {
@@ -8248,7 +8248,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "EventHandler<PopStateEvent, Element>"
+              "Pota": "EventHandlers<PopStateEvent, Element>"
             }
           },
           "onpopstate": {
@@ -8289,7 +8289,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "EventHandler<PromiseRejectionEvent, Element>"
+              "Pota": "EventHandlers<PromiseRejectionEvent, Element>"
             }
           },
           "onrejectionhandled": {
@@ -8406,7 +8406,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "EventHandler<StorageEvent, Element>"
+              "Pota": "EventHandlers<StorageEvent, Element>"
             }
           },
           "onstorage": {
@@ -8447,7 +8447,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "EventHandler<PromiseRejectionEvent, Element>"
+              "Pota": "EventHandlers<PromiseRejectionEvent, Element>"
             }
           },
           "onunhandledrejection": {
@@ -8488,7 +8488,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "EventHandler<Event, Element>"
+              "Pota": "EventHandlers<Event, Element>"
             }
           },
           "onunload": {
@@ -21787,7 +21787,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "EventHandler<MediaEncryptedEvent, Element>",
+              "Pota": "EventHandlers<MediaEncryptedEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>"
             }
@@ -21851,7 +21851,7 @@
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#enterpictureinpicture",
             "values": {
               "Chrome": "event",
-              "Pota": "EventHandler<PictureInPictureEvent, Element>",
+              "Pota": "EventHandlers<PictureInPictureEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, PictureInPictureEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, PictureInPictureEvent>"
             }
@@ -21913,7 +21913,7 @@
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement#leavepictureinpicture",
             "values": {
               "Chrome": "event",
-              "Pota": "EventHandler<PictureInPictureEvent, Element>",
+              "Pota": "EventHandlers<PictureInPictureEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, PictureInPictureEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, PictureInPictureEvent>"
             }
@@ -22070,7 +22070,7 @@
             "values": {
               "Chrome": "event",
               "Firefox": "event",
-              "Pota": "EventHandler<Event, Element>",
+              "Pota": "EventHandlers<Event, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
             }
@@ -71561,7 +71561,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#afterprint",
             "values": {
-              "Pota": "EventHandler<Event, Element>",
+              "Pota": "EventHandlers<Event, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
             }
@@ -71615,7 +71615,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#beforeprint",
             "values": {
-              "Pota": "EventHandler<Event, Element>",
+              "Pota": "EventHandlers<Event, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
             }
@@ -71669,7 +71669,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#beforeunload",
             "values": {
-              "Pota": "EventHandler<BeforeUnloadEvent, Element>",
+              "Pota": "EventHandlers<BeforeUnloadEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, BeforeUnloadEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, BeforeUnloadEvent>"
             }
@@ -71723,7 +71723,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#gamepadconnected",
             "values": {
-              "Pota": "EventHandler<GamepadEvent, Element>",
+              "Pota": "EventHandlers<GamepadEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, GamepadEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, GamepadEvent>"
             }
@@ -71777,7 +71777,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#gamepaddisconnected",
             "values": {
-              "Pota": "EventHandler<GamepadEvent, Element>",
+              "Pota": "EventHandlers<GamepadEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, GamepadEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, GamepadEvent>"
             }
@@ -71831,7 +71831,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#hashchange",
             "values": {
-              "Pota": "EventHandler<HashChangeEvent, Element>",
+              "Pota": "EventHandlers<HashChangeEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, HashChangeEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, HashChangeEvent>"
             }
@@ -71885,7 +71885,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#languagechange",
             "values": {
-              "Pota": "EventHandler<Event, Element>",
+              "Pota": "EventHandlers<Event, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
             }
@@ -71939,7 +71939,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#message",
             "values": {
-              "Pota": "EventHandler<MessageEvent, Element>",
+              "Pota": "EventHandlers<MessageEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, MessageEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, MessageEvent>"
             }
@@ -71993,7 +71993,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#messageerror",
             "values": {
-              "Pota": "EventHandler<MessageEvent, Element>",
+              "Pota": "EventHandlers<MessageEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, MessageEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, MessageEvent>"
             }
@@ -72047,7 +72047,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#offline",
             "values": {
-              "Pota": "EventHandler<Event, Element>",
+              "Pota": "EventHandlers<Event, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
             }
@@ -72101,7 +72101,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#line",
             "values": {
-              "Pota": "EventHandler<Event, Element>",
+              "Pota": "EventHandlers<Event, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
             }
@@ -72155,7 +72155,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#pagehide",
             "values": {
-              "Pota": "EventHandler<PageTransitionEvent, Element>",
+              "Pota": "EventHandlers<PageTransitionEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>"
             }
@@ -72209,7 +72209,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#pagereveal",
             "values": {
-              "Pota": "EventHandler<Event, Element>",
+              "Pota": "EventHandlers<PageRevealEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
             }
@@ -72263,7 +72263,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#pageshow",
             "values": {
-              "Pota": "EventHandler<PageTransitionEvent, Element>",
+              "Pota": "EventHandlers<PageTransitionEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>"
             }
@@ -72317,7 +72317,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#pageswap",
             "values": {
-              "Pota": "EventHandler<Event, Element>",
+              "Pota": "EventHandlers<PageSwapEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
             }
@@ -72371,7 +72371,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#popstate",
             "values": {
-              "Pota": "EventHandler<PopStateEvent, Element>",
+              "Pota": "EventHandlers<PopStateEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, PopStateEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, PopStateEvent>"
             }
@@ -72425,7 +72425,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#rejectionhandled",
             "values": {
-              "Pota": "EventHandler<PromiseRejectionEvent, Element>",
+              "Pota": "EventHandlers<PromiseRejectionEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>"
             }
@@ -72479,7 +72479,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#storage",
             "values": {
-              "Pota": "EventHandler<StorageEvent, Element>",
+              "Pota": "EventHandlers<StorageEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, StorageEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, StorageEvent>"
             }
@@ -72533,7 +72533,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#unhandledrejection",
             "values": {
-              "Pota": "EventHandler<PromiseRejectionEvent, Element>",
+              "Pota": "EventHandlers<PromiseRejectionEvent, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>"
             }
@@ -72587,7 +72587,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGSVGElement#unload",
             "values": {
-              "Pota": "EventHandler<Event, Element>",
+              "Pota": "EventHandlers<Event, Element>",
               "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
               "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
             }

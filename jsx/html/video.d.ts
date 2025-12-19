@@ -157,8 +157,8 @@ interface HTMLVideoElementAttributes<Element> extends HTMLAttributes<Element>, H
 	poster?: string
 	width?: number | string
 
-	'on:enterpictureinpicture'?: EventHandler<PictureInPictureEvent, Element>
-	'on:leavepictureinpicture'?: EventHandler<PictureInPictureEvent, Element>
+	'on:enterpictureinpicture'?: EventHandlers<PictureInPictureEvent, Element>
+	'on:leavepictureinpicture'?: EventHandlers<PictureInPictureEvent, Element>
 }
 
 interface HTMLMediaHTMLAttributes<Element> {
@@ -176,8 +176,8 @@ interface HTMLMediaHTMLAttributes<Element> {
 	preload?: 'none' | 'metadata' | 'auto' | ''
 	src?: string
 
-	'on:encrypted'?: EventHandler<MediaEncryptedEvent, Element>
-	'on:waitingforkey'?: EventHandler<Event, Element>
+	'on:encrypted'?: EventHandlers<MediaEncryptedEvent, Element>
+	'on:waitingforkey'?: EventHandlers<Event, Element>
 
 	/** @deprecated */
 	mediagroup?: string
