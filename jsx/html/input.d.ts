@@ -154,7 +154,6 @@ interface InputHTMLAttributes extends HTMLAttributes {
 	checked?: boolean | 'true' | 'false' | any[] | Set<any> // for IDE v-model multi-checkbox support
 	crossorigin?: string
 	disabled?: boolean | 'true' | 'false'
-	enterKeyHint?: 'enter' | 'done' | 'go' | 'next' | 'previous' | 'search' | 'send'
 	form?: string
 	formaction?: string
 	formenctype?: string
@@ -180,6 +179,7 @@ interface InputHTMLAttributes extends HTMLAttributes {
 	type?: InputTypeHTMLAttribute
 	value?: any // we support :value to be bound to anything w/ v-model
 	width?: number | string
+	onCancel?: (payload: Event) => void
 }
 
 // React - https://react.dev/

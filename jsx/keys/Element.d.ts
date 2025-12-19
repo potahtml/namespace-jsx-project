@@ -958,6 +958,239 @@ interface ElementAttributes<T> extends CustomAttributes<T>, DirectiveAttributes,
 	style?: CSSProperties | string | false
 	tabindex?: number | string | false
 }
+interface EventHandlersElement<T> {
+	onAbort?: EventHandlerUnion<T, UIEvent>
+	onAnimationCancel?: EventHandlerUnion<T, AnimationEvent>
+	onAnimationEnd?: EventHandlerUnion<T, AnimationEvent>
+	onAnimationIteration?: EventHandlerUnion<T, AnimationEvent>
+	onAnimationStart?: EventHandlerUnion<T, AnimationEvent>
+	onAuxClick?: EventHandlerUnion<T, PointerEvent>
+	onBeforeCopy?: EventHandlerUnion<T, ClipboardEvent>
+	onBeforeCut?: EventHandlerUnion<T, ClipboardEvent>
+	onBeforeInput?: InputEventHandlerUnion<T, InputEvent>
+	onBeforeMatch?: EventHandlerUnion<T, Event>
+	onBeforePaste?: EventHandlerUnion<T, ClipboardEvent>
+	onBeforeToggle?: EventHandlerUnion<T, ToggleEvent>
+	onBeforeXRSelect?: EventHandlerUnion<T, Event>
+	onBlur?: FocusEventHandlerUnion<T, FocusEvent>
+	onCancel?: EventHandlerUnion<T, Event>
+	onCanPlay?: EventHandlerUnion<T, Event>
+	onCanPlayThrough?: EventHandlerUnion<T, Event>
+	onChange?: ChangeEventHandlerUnion<T, Event>
+	onClick?: EventHandlerUnion<T, MouseEvent>
+	onClose?: EventHandlerUnion<T, Event>
+	// TODO `CommandEvent` is currently undefined in TS
+	onCommand?: EventHandlerUnion<T, Event>
+	onCompositionEnd?: EventHandlerUnion<T, CompositionEvent>
+	onCompositionStart?: EventHandlerUnion<T, CompositionEvent>
+	onCompositionUpdate?: EventHandlerUnion<T, CompositionEvent>
+	onContentVisibilityAutoStateChange?: EventHandlerUnion<T, ContentVisibilityAutoStateChangeEvent>
+	onContextLost?: EventHandlerUnion<T, Event>
+	onContextMenu?: EventHandlerUnion<T, PointerEvent>
+	onContextRestored?: EventHandlerUnion<T, Event>
+	onCopy?: EventHandlerUnion<T, ClipboardEvent>
+	onCueChange?: EventHandlerUnion<T, Event>
+	onCut?: EventHandlerUnion<T, ClipboardEvent>
+	onDblClick?: EventHandlerUnion<T, MouseEvent>
+	onDrag?: EventHandlerUnion<T, DragEvent>
+	onDragEnd?: EventHandlerUnion<T, DragEvent>
+	onDragEnter?: EventHandlerUnion<T, DragEvent>
+	onDragExit?: EventHandlerUnion<T, DragEvent>
+	onDragLeave?: EventHandlerUnion<T, DragEvent>
+	onDragOver?: EventHandlerUnion<T, DragEvent>
+	onDragStart?: EventHandlerUnion<T, DragEvent>
+	onDrop?: EventHandlerUnion<T, DragEvent>
+	onDurationChange?: EventHandlerUnion<T, Event>
+	onEmptied?: EventHandlerUnion<T, Event>
+	onEnded?: EventHandlerUnion<T, Event>
+	onError?: EventHandlerUnion<T, ErrorEvent>
+	onFocus?: FocusEventHandlerUnion<T, FocusEvent>
+	onFocusIn?: FocusEventHandlerUnion<T, FocusEvent>
+	onFocusOut?: FocusEventHandlerUnion<T, FocusEvent>
+	onFormData?: EventHandlerUnion<T, FormDataEvent>
+	onFullscreenChange?: EventHandlerUnion<T, Event>
+	onFullscreenError?: EventHandlerUnion<T, Event>
+	onGotPointerCapture?: EventHandlerUnion<T, PointerEvent>
+	onInput?: InputEventHandlerUnion<T, InputEvent>
+	onInvalid?: EventHandlerUnion<T, Event>
+	onKeyDown?: EventHandlerUnion<T, KeyboardEvent>
+	onKeyPress?: EventHandlerUnion<T, KeyboardEvent>
+	onKeyUp?: EventHandlerUnion<T, KeyboardEvent>
+	onLoad?: EventHandlerUnion<T, Event>
+	onLoadedData?: EventHandlerUnion<T, Event>
+	onLoadedMetadata?: EventHandlerUnion<T, Event>
+	onLoadStart?: EventHandlerUnion<T, Event>
+	onLostPointerCapture?: EventHandlerUnion<T, PointerEvent>
+	onMouseDown?: EventHandlerUnion<T, MouseEvent>
+	onMouseEnter?: EventHandlerUnion<T, MouseEvent>
+	onMouseLeave?: EventHandlerUnion<T, MouseEvent>
+	onMouseMove?: EventHandlerUnion<T, MouseEvent>
+	onMouseOut?: EventHandlerUnion<T, MouseEvent>
+	onMouseOver?: EventHandlerUnion<T, MouseEvent>
+	onMouseUp?: EventHandlerUnion<T, MouseEvent>
+	onPaste?: EventHandlerUnion<T, ClipboardEvent>
+	onPause?: EventHandlerUnion<T, Event>
+	onPlay?: EventHandlerUnion<T, Event>
+	onPlaying?: EventHandlerUnion<T, Event>
+	onPointerCancel?: EventHandlerUnion<T, PointerEvent>
+	onPointerDown?: EventHandlerUnion<T, PointerEvent>
+	onPointerEnter?: EventHandlerUnion<T, PointerEvent>
+	onPointerLeave?: EventHandlerUnion<T, PointerEvent>
+	onPointerMove?: EventHandlerUnion<T, PointerEvent>
+	onPointerOut?: EventHandlerUnion<T, PointerEvent>
+	onPointerOver?: EventHandlerUnion<T, PointerEvent>
+	onPointerRawUpdate?: EventHandlerUnion<T, PointerEvent>
+	onPointerUp?: EventHandlerUnion<T, PointerEvent>
+	onProgress?: EventHandlerUnion<T, ProgressEvent>
+	onRateChange?: EventHandlerUnion<T, Event>
+	onReset?: EventHandlerUnion<T, Event>
+	onResize?: EventHandlerUnion<T, UIEvent>
+	onScroll?: EventHandlerUnion<T, Event>
+	onScrollEnd?: EventHandlerUnion<T, Event>
+	// todo `SnapEvent` is currently undefined in TS
+	onScrollSnapChange?: EventHandlerUnion<T, Event>
+	// todo `SnapEvent` is currently undefined in TS
+	onScrollSnapChanging?: EventHandlerUnion<T, Event>
+	onSecurityPolicyViolation?: EventHandlerUnion<T, SecurityPolicyViolationEvent>
+	onSeeked?: EventHandlerUnion<T, Event>
+	onSeeking?: EventHandlerUnion<T, Event>
+	onSelect?: EventHandlerUnion<T, Event>
+	onSelectionChange?: EventHandlerUnion<T, Event>
+	onSelectStart?: EventHandlerUnion<T, Event>
+	onSlotChange?: EventHandlerUnion<T, Event>
+	onStalled?: EventHandlerUnion<T, Event>
+	onSubmit?: EventHandlerUnion<T, SubmitEvent>
+	onSuspend?: EventHandlerUnion<T, Event>
+	onTimeUpdate?: EventHandlerUnion<T, Event>
+	onToggle?: EventHandlerUnion<T, ToggleEvent>
+	onTouchCancel?: EventHandlerUnion<T, TouchEvent>
+	onTouchEnd?: EventHandlerUnion<T, TouchEvent>
+	onTouchMove?: EventHandlerUnion<T, TouchEvent>
+	onTouchStart?: EventHandlerUnion<T, TouchEvent>
+	onTransitionCancel?: EventHandlerUnion<T, TransitionEvent>
+	onTransitionEnd?: EventHandlerUnion<T, TransitionEvent>
+	onTransitionRun?: EventHandlerUnion<T, TransitionEvent>
+	onTransitionStart?: EventHandlerUnion<T, TransitionEvent>
+	onVolumeChange?: EventHandlerUnion<T, Event>
+	onWaiting?: EventHandlerUnion<T, Event>
+	onWheel?: EventHandlerUnion<T, WheelEvent>
+
+	'on:abort'?: EventHandlerWithOptionsUnion<T, UIEvent>
+	'on:animationcancel'?: EventHandlerWithOptionsUnion<T, AnimationEvent>
+	'on:animationend'?: EventHandlerWithOptionsUnion<T, AnimationEvent>
+	'on:animationiteration'?: EventHandlerWithOptionsUnion<T, AnimationEvent>
+	'on:animationstart'?: EventHandlerWithOptionsUnion<T, AnimationEvent>
+	'on:auxclick'?: EventHandlerWithOptionsUnion<T, PointerEvent>
+	'on:beforecopy'?: EventHandlerWithOptionsUnion<T, ClipboardEvent>
+	'on:beforecut'?: EventHandlerWithOptionsUnion<T, ClipboardEvent>
+	'on:beforeinput'?: EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>
+	'on:beforematch'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:beforepaste'?: EventHandlerWithOptionsUnion<T, ClipboardEvent>
+	'on:beforetoggle'?: EventHandlerWithOptionsUnion<T, ToggleEvent>
+	'on:beforexrselect'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:blur'?: EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>
+	'on:cancel'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:canplay'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:canplaythrough'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:change'?: EventHandlerWithOptionsUnion<T, Event, ChangeEventHandler<T, Event>>
+	'on:click'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:close'?: EventHandlerWithOptionsUnion<T, Event>
+	// TODO `CommandEvent` is currently undefined in TS
+	'on:command'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:compositionend'?: EventHandlerWithOptionsUnion<T, CompositionEvent>
+	'on:compositionstart'?: EventHandlerWithOptionsUnion<T, CompositionEvent>
+	'on:compositionupdate'?: EventHandlerWithOptionsUnion<T, CompositionEvent>
+	'on:contentvisibilityautostatechange'?: EventHandlerWithOptionsUnion<T, ContentVisibilityAutoStateChangeEvent>
+	'on:contextlost'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:contextmenu'?: EventHandlerWithOptionsUnion<T, PointerEvent>
+	'on:contextrestored'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:copy'?: EventHandlerWithOptionsUnion<T, ClipboardEvent>
+	'on:cuechange'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:cut'?: EventHandlerWithOptionsUnion<T, ClipboardEvent>
+	'on:dblclick'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:drag'?: EventHandlerWithOptionsUnion<T, DragEvent>
+	'on:dragend'?: EventHandlerWithOptionsUnion<T, DragEvent>
+	'on:dragenter'?: EventHandlerWithOptionsUnion<T, DragEvent>
+	'on:dragexit'?: EventHandlerWithOptionsUnion<T, DragEvent>
+	'on:dragleave'?: EventHandlerWithOptionsUnion<T, DragEvent>
+	'on:dragover'?: EventHandlerWithOptionsUnion<T, DragEvent>
+	'on:dragstart'?: EventHandlerWithOptionsUnion<T, DragEvent>
+	'on:drop'?: EventHandlerWithOptionsUnion<T, DragEvent>
+	'on:durationchange'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:emptied'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:ended'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:error'?: EventHandlerWithOptionsUnion<T, ErrorEvent>
+	'on:focus'?: EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>
+	'on:focusin'?: EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>
+	'on:focusout'?: EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>
+	'on:formdata'?: EventHandlerWithOptionsUnion<T, FormDataEvent>
+	'on:fullscreenchange'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:fullscreenerror'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:gotpointercapture'?: EventHandlerWithOptionsUnion<T, PointerEvent>
+	'on:input'?: EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>
+	'on:invalid'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:keydown'?: EventHandlerWithOptionsUnion<T, KeyboardEvent>
+	'on:keypress'?: EventHandlerWithOptionsUnion<T, KeyboardEvent>
+	'on:keyup'?: EventHandlerWithOptionsUnion<T, KeyboardEvent>
+	'on:load'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:loadeddata'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:loadedmetadata'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:loadstart'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:lostpointercapture'?: EventHandlerWithOptionsUnion<T, PointerEvent>
+	'on:mousedown'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:mouseenter'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:mouseleave'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:mousemove'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:mouseout'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:mouseover'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:mouseup'?: EventHandlerWithOptionsUnion<T, MouseEvent>
+	'on:paste'?: EventHandlerWithOptionsUnion<T, ClipboardEvent>
+	'on:pause'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:play'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:playing'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:pointercancel'?: EventHandlerWithOptionsUnion<T, PointerEvent>
+	'on:pointerdown'?: EventHandlerWithOptionsUnion<T, PointerEvent>
+	'on:pointerenter'?: EventHandlerWithOptionsUnion<T, PointerEvent>
+	'on:pointerleave'?: EventHandlerWithOptionsUnion<T, PointerEvent>
+	'on:pointermove'?: EventHandlerWithOptionsUnion<T, PointerEvent>
+	'on:pointerout'?: EventHandlerWithOptionsUnion<T, PointerEvent>
+	'on:pointerover'?: EventHandlerWithOptionsUnion<T, PointerEvent>
+	'on:pointerrawupdate'?: EventHandlerWithOptionsUnion<T, PointerEvent>
+	'on:pointerup'?: EventHandlerWithOptionsUnion<T, PointerEvent>
+	'on:progress'?: EventHandlerWithOptionsUnion<T, ProgressEvent>
+	'on:ratechange'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:reset'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:resize'?: EventHandlerWithOptionsUnion<T, UIEvent>
+	'on:scroll'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:scrollend'?: EventHandlerWithOptionsUnion<T, Event>
+	// todo `SnapEvent` is currently undefined in TS
+	'on:scrollsnapchange'?: EventHandlerWithOptionsUnion<T, Event>
+	// todo `SnapEvent` is currently undefined in TS
+	'on:scrollsnapchanging'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:securitypolicyviolation'?: EventHandlerWithOptionsUnion<T, SecurityPolicyViolationEvent>
+	'on:seeked'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:seeking'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:select'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:selectionchange'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:selectstart'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:slotchange'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:stalled'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:submit'?: EventHandlerWithOptionsUnion<T, SubmitEvent>
+	'on:suspend'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:timeupdate'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:toggle'?: EventHandlerWithOptionsUnion<T, ToggleEvent>
+	'on:touchcancel'?: EventHandlerWithOptionsUnion<T, TouchEvent>
+	'on:touchend'?: EventHandlerWithOptionsUnion<T, TouchEvent>
+	'on:touchmove'?: EventHandlerWithOptionsUnion<T, TouchEvent>
+	'on:touchstart'?: EventHandlerWithOptionsUnion<T, TouchEvent>
+	'on:transitioncancel'?: EventHandlerWithOptionsUnion<T, TransitionEvent>
+	'on:transitionend'?: EventHandlerWithOptionsUnion<T, TransitionEvent>
+	'on:transitionrun'?: EventHandlerWithOptionsUnion<T, TransitionEvent>
+	'on:transitionstart'?: EventHandlerWithOptionsUnion<T, TransitionEvent>
+	'on:volumechange'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:waiting'?: EventHandlerWithOptionsUnion<T, Event>
+	'on:wheel'?: EventHandlerWithOptionsUnion<T, WheelEvent>
+}
 
 // Voby - https://github.com/vobyjs/voby
 interface AriaAttributes {
@@ -1418,7 +1651,8 @@ interface AriaAttributes {
 // Pota - https://github.com/potahtml/pota
 interface CSSAttributes extends NSStyle {
 	class?: Record<string, string | boolean | number | null> | string
-	style?: CSSProperties | string
+
+	style?: { [P in keyof CSSProperties]: CSSProperties[P] } | string
 
 	'use:css'?: string
 
@@ -1776,4 +2010,118 @@ interface AriaAttributes {
 	 */
 	'aria-valuetext'?: string
 	role?: 'alert' | 'alertdialog' | 'application' | 'article' | 'banner' | 'button' | 'cell' | 'checkbox' | 'columnheader' | 'combobox' | 'complementary' | 'contentinfo' | 'definition' | 'dialog' | 'directory' | 'document' | 'feed' | 'figure' | 'form' | 'grid' | 'gridcell' | 'group' | 'heading' | 'img' | 'link' | 'list' | 'listbox' | 'listitem' | 'log' | 'main' | 'marquee' | 'math' | 'menu' | 'menubar' | 'menuitem' | 'menuitemcheckbox' | 'menuitemradio' | 'meter' | 'navigation' | 'none' | 'note' | 'option' | 'presentation' | 'progressbar' | 'radio' | 'radiogroup' | 'region' | 'row' | 'rowgroup' | 'rowheader' | 'scrollbar' | 'search' | 'searchbox' | 'separator' | 'slider' | 'spinbutton' | 'status' | 'switch' | 'tab' | 'table' | 'tablist' | 'tabpanel' | 'term' | 'textbox' | 'timer' | 'toolbar' | 'tooltip' | 'tree' | 'treegrid' | 'treeitem'
+}
+interface EventHandlersElement<Element> {
+	'on:abort'?: EventHandlers<UIEvent, Element>
+	'on:animationcancel'?: EventHandlers<AnimationEvent, Element>
+	'on:animationend'?: EventHandlers<AnimationEvent, Element>
+	'on:animationiteration'?: EventHandlers<AnimationEvent, Element>
+	'on:animationstart'?: EventHandlers<AnimationEvent, Element>
+	'on:auxclick'?: EventHandlers<MouseEvent, Element>
+	'on:beforecopy'?: EventHandlers<ClipboardEvent, Element>
+	'on:beforecut'?: EventHandlers<ClipboardEvent, Element>
+	'on:beforeinput'?: EventHandlers<InputEvent, Element>
+	'on:beforematch'?: EventHandlers<Event, Element>
+	'on:beforepaste'?: EventHandlers<ClipboardEvent, Element>
+	'on:beforetoggle'?: EventHandlers<ToggleEvent, Element>
+	'on:beforexrselect'?: EventHandlers<Event, Element>
+	'on:blur'?: EventHandlers<FocusEvent, Element>
+	'on:cancel'?: EventHandlers<Event, Element>
+	'on:canplay'?: EventHandlers<Event, Element>
+	'on:canplaythrough'?: EventHandlers<Event, Element>
+	'on:change'?: EventHandlers<Event, Element>
+	'on:click'?: EventHandlers<MouseEvent, Element>
+	'on:close'?: EventHandlers<Event, Element>
+	'on:command'?: EventHandlers<Event, Element>
+	'on:compositionend'?: EventHandlers<CompositionEvent, Element>
+	'on:compositionstart'?: EventHandlers<CompositionEvent, Element>
+	'on:compositionupdate'?: EventHandlers<CompositionEvent, Element>
+	'on:contentvisibilityautostatechange'?: EventHandlers<ContentVisibilityAutoStateChangeEvent, Element>
+	'on:contextlost'?: EventHandlers<Event, Element>
+	'on:contextmenu'?: EventHandlers<MouseEvent, Element>
+	'on:contextrestored'?: EventHandlers<Event, Element>
+	'on:copy'?: EventHandlers<ClipboardEvent, Element>
+	'on:cuechange'?: EventHandlers<Event, Element>
+	'on:cut'?: EventHandlers<ClipboardEvent, Element>
+	'on:dblclick'?: EventHandlers<MouseEvent, Element>
+	'on:drag'?: EventHandlers<DragEvent, Element>
+	'on:dragend'?: EventHandlers<DragEvent, Element>
+	'on:dragenter'?: EventHandlers<DragEvent, Element>
+	'on:dragexit'?: EventHandlers<DragEvent, Element>
+	'on:dragleave'?: EventHandlers<DragEvent, Element>
+	'on:dragover'?: EventHandlers<DragEvent, Element>
+	'on:dragstart'?: EventHandlers<DragEvent, Element>
+	'on:drop'?: EventHandlers<DragEvent, Element>
+	'on:durationchange'?: EventHandlers<Event, Element>
+	'on:emptied'?: EventHandlers<Event, Element>
+	'on:ended'?: EventHandlers<Event, Element>
+	'on:error'?: EventHandlers<ErrorEvent, Element>
+	'on:focus'?: EventHandlers<FocusEvent, Element>
+	'on:focusin'?: EventHandlers<FocusEvent, Element>
+	'on:focusout'?: EventHandlers<FocusEvent, Element>
+	'on:formdata'?: EventHandlers<FormDataEvent, Element>
+	'on:fullscreenchange'?: EventHandlers<Event, Element>
+	'on:fullscreenerror'?: EventHandlers<Event, Element>
+	'on:gotpointercapture'?: EventHandlers<PointerEvent, Element>
+	'on:input'?: EventHandlers<Event, Element>
+	'on:invalid'?: EventHandlers<Event, Element>
+	'on:keydown'?: EventHandlers<KeyboardEvent, Element>
+	'on:keypress'?: EventHandlers<KeyboardEvent, Element>
+	'on:keyup'?: EventHandlers<KeyboardEvent, Element>
+	'on:load'?: EventHandlers<Event, Element>
+	'on:loadeddata'?: EventHandlers<Event, Element>
+	'on:loadedmetadata'?: EventHandlers<Event, Element>
+	'on:loadstart'?: EventHandlers<Event, Element>
+	'on:lostpointercapture'?: EventHandlers<PointerEvent, Element>
+	'on:mousedown'?: EventHandlers<MouseEvent, Element>
+	'on:mouseenter'?: EventHandlers<MouseEvent, Element>
+	'on:mouseleave'?: EventHandlers<MouseEvent, Element>
+	'on:mousemove'?: EventHandlers<MouseEvent, Element>
+	'on:mouseout'?: EventHandlers<MouseEvent, Element>
+	'on:mouseover'?: EventHandlers<MouseEvent, Element>
+	'on:mouseup'?: EventHandlers<MouseEvent, Element>
+	'on:paste'?: EventHandlers<ClipboardEvent, Element>
+	'on:pause'?: EventHandlers<Event, Element>
+	'on:play'?: EventHandlers<Event, Element>
+	'on:playing'?: EventHandlers<Event, Element>
+	'on:pointercancel'?: EventHandlers<PointerEvent, Element>
+	'on:pointerdown'?: EventHandlers<PointerEvent, Element>
+	'on:pointerenter'?: EventHandlers<PointerEvent, Element>
+	'on:pointerleave'?: EventHandlers<PointerEvent, Element>
+	'on:pointermove'?: EventHandlers<PointerEvent, Element>
+	'on:pointerout'?: EventHandlers<PointerEvent, Element>
+	'on:pointerover'?: EventHandlers<PointerEvent, Element>
+	'on:pointerrawupdate'?: EventHandlers<PointerEvent, Element>
+	'on:pointerup'?: EventHandlers<PointerEvent, Element>
+	'on:progress'?: EventHandlers<ProgressEvent, Element>
+	'on:ratechange'?: EventHandlers<Event, Element>
+	'on:reset'?: EventHandlers<Event, Element>
+	'on:resize'?: EventHandlers<UIEvent, Element>
+	'on:scroll'?: EventHandlers<Event, Element>
+	'on:scrollend'?: EventHandlers<Event, Element>
+	'on:scrollsnapchange'?: EventHandlers<Event, Element>
+	'on:scrollsnapchanging'?: EventHandlers<Event, Element>
+	'on:securitypolicyviolation'?: EventHandlers<SecurityPolicyViolationEvent, Element>
+	'on:seeked'?: EventHandlers<Event, Element>
+	'on:seeking'?: EventHandlers<Event, Element>
+	'on:select'?: EventHandlers<Event, Element>
+	'on:selectionchange'?: EventHandlers<Event, Element>
+	'on:selectstart'?: EventHandlers<Event, Element>
+	'on:slotchange'?: EventHandlers<Event, Element>
+	'on:stalled'?: EventHandlers<Event, Element>
+	'on:submit'?: EventHandlers<SubmitEvent, Element>
+	'on:suspend'?: EventHandlers<Event, Element>
+	'on:timeupdate'?: EventHandlers<Event, Element>
+	'on:toggle'?: EventHandlers<ToggleEvent, Element>
+	'on:touchcancel'?: EventHandlers<TouchEvent, Element>
+	'on:touchend'?: EventHandlers<TouchEvent, Element>
+	'on:touchmove'?: EventHandlers<TouchEvent, Element>
+	'on:touchstart'?: EventHandlers<TouchEvent, Element>
+	'on:transitioncancel'?: EventHandlers<TransitionEvent, Element>
+	'on:transitionend'?: EventHandlers<TransitionEvent, Element>
+	'on:transitionrun'?: EventHandlers<TransitionEvent, Element>
+	'on:transitionstart'?: EventHandlers<TransitionEvent, Element>
+	'on:volumechange'?: EventHandlers<Event, Element>
+	'on:waiting'?: EventHandlers<Event, Element>
+	'on:wheel'?: EventHandlers<WheelEvent, Element>
 }

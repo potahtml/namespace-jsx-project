@@ -863,3 +863,5 @@ write(
 
 prettier('./jsx/**/*.d.ts')
 prettier('./table/index.html')
+
+console.log('End')

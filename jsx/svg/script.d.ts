@@ -36,6 +36,7 @@ interface ScriptHTMLAttributes<T> extends HTMLAttributes<T> {
 	charSet?: string
 	crossOrigin?: 'anonymous' | 'use-credentials' | ''
 	defer?: boolean
+	fetchPriority?: 'high' | 'low' | 'auto'
 	integrity?: string
 	noModule?: boolean
 	referrerPolicy?: '' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'

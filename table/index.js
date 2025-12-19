@@ -9,7 +9,7 @@ const columns = [
   'Solid Next',
   'Voby',
   'Vue',
-  'Preact',
+  /* 'Preact',*/
   'React',
 ]
 

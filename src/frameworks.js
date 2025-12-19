@@ -145,7 +145,7 @@ export const libs = [
 					values: [
 						'ariaattributes',
 						'elementattributes',
-						'elementeventhandlers',
+						'eventhandlerselement',
 					],
 					skip: [
 						// custom
@@ -458,7 +458,7 @@ export const libs = [
 						'cssattributes',
 						'elementattributes',
 						'ariaattributes',
-						'elementeventhandlers',
+						'eventhandlerselement',
 					],
 				},
 			},

@@ -188,28 +188,30 @@ function getInterfaceFromLine(line, map, interfaces) {
 /** Unwraps types, this is slow and naive but it kinda works */
 
 function unwrapTypes(source, types) {
-	source = source
-		.replace(/\| undefined/gi, '')
+	for (let i = 0; i < 2; i++) {
+		source = source
+			.replace(/\| undefined/gi, '')
 
-		// solid
-		.replace(/\| SerializableAttributeValue/gi, '')
+			// solid
+			.replace(/\| SerializableAttributeValue/gi, '')
 
-		// voby
-		.replace(/FunctionMaybe<Nullable<([^\n]+)>>\n/gi, '$1\n')
-		.replace(/ObservableMaybe<([^\n]+)>\n/gi, '$1\n')
-		.replace(/Nullable<([^\n]+)>\n/gi, '$1\n')
-		.replace(/\| ReadonlyArray<([^> ]+)> /gi, '| readonly $1[] ')
+			// voby
+			.replace(/FunctionMaybe<Nullable<([^\n]+)>>\n/gi, '$1\n')
+			.replace(/ObservableMaybe<([^\n]+)>\n/gi, '$1\n')
+			.replace(/Nullable<([^\n]+)>\n/gi, '$1\n')
+			.replace(/\| ReadonlyArray<([^> ]+)> /gi, '| readonly $1[] ')
 
-		// preact
-		.replace(/\| SignalLike<([^>]+)>/gi, ' ')
-		.replace(/ SignalLike<([^>]+)>\n/gi, '\n')
-		.replace(/Signalish<([^>]+)>/gi, '$1')
+			// preact
+			.replace(/\| SignalLike<([^>]+)>/gi, ' ')
+			.replace(/ SignalLike<([^>]+)>\n/gi, '\n')
+			.replace(/Signalish<([^>]+)>/gi, '$1')
 
-		// pota
-		.replace(/Accessor<([^>]+)>/gi, '$1')
+			// pota
+			.replace(/Accessor<([^><]+)>/gi, '$1')
 
-		// react
-		.replace(/\| DO_NOT_USE[^\n]+\n/gi, '\n')
+			// react
+			.replace(/\| DO_NOT_USE[^\n]+\n/gi, '\n')
+	}
 
 	for (let i = 0; i < 2; i++) {
 		for (const type of types) {

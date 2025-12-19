@@ -8,7 +8,6 @@ interface DetailsHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T>
 interface DetailsHTMLAttributes extends HTMLAttributes {
 	name?: string
 	open?: boolean | 'true' | 'false'
-	onToggle?: (payload: ToggleEvent) => void
 }
 
 // React - https://react.dev/

@@ -103,6 +103,7 @@ interface ImgHTMLAttributes extends HTMLAttributes {
 	alt?: string
 	crossorigin?: 'anonymous' | 'use-credentials' | ''
 	decoding?: 'async' | 'auto' | 'sync'
+	fetchpriority?: 'high' | 'low' | 'auto'
 	height?: number | string
 	loading?: 'eager' | 'lazy'
 	referrerpolicy?: '' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'

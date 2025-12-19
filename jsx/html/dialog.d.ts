@@ -39,12 +39,12 @@ interface DialogHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> 
 interface DialogHTMLAttributes extends HTMLAttributes {
 	open?: boolean | 'true' | 'false'
 	onClose?: (payload: Event) => void
-}
 	onCancel?: (payload: Event) => void
 }
 
 // React - https://react.dev/
 interface DialogHTMLAttributes<T> extends HTMLAttributes<T> {
+	closedby?: 'any' | 'closerequest' | 'none'
 	onCancel?: ReactEventHandler<T>
 	onClose?: ReactEventHandler<T>
 	open?: boolean

@@ -5833,8 +5833,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement#toggle",
             "values": {
-              "Voby": "GenericEventHandler<T>",
-              "Vue": "(payload: ToggleEvent) => void"
+              "Voby": "GenericEventHandler<T>"
             }
           },
           "open": {
@@ -5982,8 +5981,8 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement#cancel",
             "values": {
-              "Preact": "GenericEventHandler<T>",
-              "React": "ReactEventHandler<T>"
+              "React": "ReactEventHandler<T>",
+              "Vue": "((payload: Event) => void)"
             }
           },
           "on:close": {
@@ -10243,7 +10242,8 @@
               "Firefox": "string",
               "Pota": "'high' | 'low' | 'auto'",
               "Solid Main": "'high' | 'low' | 'auto'",
-              "Solid Next": "'high' | 'low' | 'auto' | false"
+              "Solid Next": "'high' | 'low' | 'auto' | false",
+              "Vue": "'high' | 'low' | 'auto'"
             }
           },
           "fetchPriority": {
@@ -11838,6 +11838,56 @@
               "Solid Next": "string | false",
               "Voby": "string",
               "Vue": "string"
+            }
+          },
+          "on:cancel": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "eventInterface": "Event",
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "HTMLElement",
+            "name": "on:cancel",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement#cancel",
+            "values": {}
+          },
+          "oncancel": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "eventInterface": "Event",
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "HTMLElement",
+            "name": "oncancel",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement#cancel",
+            "values": {}
+          },
+          "onCancel": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "eventInterface": "Event",
+            "global": true,
+            "inherited": true,
+            "keyInterfaceName": "HTMLElement",
+            "name": "onCancel",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement#cancel",
+            "values": {
+              "Vue": "((payload: Event) => void)"
             }
           },
           "on:change": {
@@ -16586,7 +16636,8 @@
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLScriptElement#htmlscriptelement.fetchpriority",
             "values": {
               "Chrome": "string",
-              "Firefox": "string"
+              "Firefox": "string",
+              "React": "'high' | 'low' | 'auto'"
             }
           },
           "for": {
@@ -68916,6 +68967,22 @@
               "Vue": "boolean | 'true' | 'false'"
             }
           },
+          "fetchPriority": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "global": false,
+            "inherited": false,
+            "name": "fetchPriority",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGScriptElement#svgscriptelement.fetchpriority",
+            "values": {
+              "React": "'high' | 'low' | 'auto'"
+            }
+          },
           "integrity": {
             "attr": false,
             "attrChrome": false,
@@ -83263,7 +83330,9 @@
           "name": "on:abort",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#abort",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, UIEvent>"
+            "Pota": "EventHandlers<UIEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, UIEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, UIEvent>"
           }
         },
         "onabort": {
@@ -83283,7 +83352,8 @@
           "name": "onAbort",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#abort",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, UIEvent>"
+            "Solid Main": "EventHandlerUnion<T, UIEvent>",
+            "Solid Next": "EventHandlerUnion<T, UIEvent>"
           }
         },
         "on:animationcancel": {
@@ -83293,7 +83363,9 @@
           "name": "on:animationcancel",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#animationcancel",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, AnimationEvent>"
+            "Pota": "EventHandlers<AnimationEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, AnimationEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, AnimationEvent>"
           }
         },
         "onanimationcancel": {
@@ -83313,7 +83385,8 @@
           "name": "onAnimationCancel",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#animationcancel",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, AnimationEvent>"
+            "Solid Main": "EventHandlerUnion<T, AnimationEvent>",
+            "Solid Next": "EventHandlerUnion<T, AnimationEvent>"
           }
         },
         "on:animationend": {
@@ -83323,7 +83396,9 @@
           "name": "on:animationend",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#animationend",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, AnimationEvent>"
+            "Pota": "EventHandlers<AnimationEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, AnimationEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, AnimationEvent>"
           }
         },
         "onanimationend": {
@@ -83343,7 +83418,8 @@
           "name": "onAnimationEnd",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#animationend",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, AnimationEvent>"
+            "Solid Main": "EventHandlerUnion<T, AnimationEvent>",
+            "Solid Next": "EventHandlerUnion<T, AnimationEvent>"
           }
         },
         "on:animationiteration": {
@@ -83353,7 +83429,9 @@
           "name": "on:animationiteration",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#animationiteration",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, AnimationEvent>"
+            "Pota": "EventHandlers<AnimationEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, AnimationEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, AnimationEvent>"
           }
         },
         "onanimationiteration": {
@@ -83373,7 +83451,8 @@
           "name": "onAnimationIteration",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#animationiteration",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, AnimationEvent>"
+            "Solid Main": "EventHandlerUnion<T, AnimationEvent>",
+            "Solid Next": "EventHandlerUnion<T, AnimationEvent>"
           }
         },
         "on:animationstart": {
@@ -83383,7 +83462,9 @@
           "name": "on:animationstart",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#animationstart",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, AnimationEvent>"
+            "Pota": "EventHandlers<AnimationEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, AnimationEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, AnimationEvent>"
           }
         },
         "onanimationstart": {
@@ -83403,7 +83484,8 @@
           "name": "onAnimationStart",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#animationstart",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, AnimationEvent>"
+            "Solid Main": "EventHandlerUnion<T, AnimationEvent>",
+            "Solid Next": "EventHandlerUnion<T, AnimationEvent>"
           }
         },
         "on:auxclick": {
@@ -83413,7 +83495,9 @@
           "name": "on:auxclick",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#auxclick",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>"
+            "Pota": "EventHandlers<MouseEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
           }
         },
         "onauxclick": {
@@ -83433,7 +83517,8 @@
           "name": "onAuxClick",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#auxclick",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, PointerEvent>"
+            "Solid Main": "EventHandlerUnion<T, PointerEvent>",
+            "Solid Next": "EventHandlerUnion<T, PointerEvent>"
           }
         },
         "on:beforecopy": {
@@ -83443,7 +83528,9 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#beforecopy",
           "values": {
             "Chrome": "event",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, ClipboardEvent>"
+            "Pota": "EventHandlers<ClipboardEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, ClipboardEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, ClipboardEvent>"
           }
         },
         "onbeforecopy": {
@@ -83470,7 +83557,8 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#beforecopy",
           "values": {
             "Chrome": "event",
-            "Solid Main": "EventHandlerUnion<T, ClipboardEvent>"
+            "Solid Main": "EventHandlerUnion<T, ClipboardEvent>",
+            "Solid Next": "EventHandlerUnion<T, ClipboardEvent>"
           }
         },
         "on:beforecut": {
@@ -83480,7 +83568,9 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#beforecut",
           "values": {
             "Chrome": "event",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, ClipboardEvent>"
+            "Pota": "EventHandlers<ClipboardEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, ClipboardEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, ClipboardEvent>"
           }
         },
         "onbeforecut": {
@@ -83507,7 +83597,8 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#beforecut",
           "values": {
             "Chrome": "event",
-            "Solid Main": "EventHandlerUnion<T, ClipboardEvent>"
+            "Solid Main": "EventHandlerUnion<T, ClipboardEvent>",
+            "Solid Next": "EventHandlerUnion<T, ClipboardEvent>"
           }
         },
         "on:beforeinput": {
@@ -83517,7 +83608,9 @@
           "name": "on:beforeinput",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#beforeinput",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>"
+            "Pota": "EventHandlers<InputEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>"
           }
         },
         "onbeforeinput": {
@@ -83537,7 +83630,8 @@
           "name": "onBeforeInput",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#beforeinput",
           "values": {
-            "Solid Main": "InputEventHandlerUnion<T, InputEvent>"
+            "Solid Main": "InputEventHandlerUnion<T, InputEvent>",
+            "Solid Next": "InputEventHandlerUnion<T, InputEvent>"
           }
         },
         "on:beforematch": {
@@ -83547,7 +83641,9 @@
           "name": "on:beforematch",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#beforematch",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+            "Pota": "EventHandlers<Event, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onbeforematch": {
@@ -83567,7 +83663,8 @@
           "name": "onBeforeMatch",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#beforematch",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, Event>"
+            "Solid Main": "EventHandlerUnion<T, Event>",
+            "Solid Next": "EventHandlerUnion<T, Event>"
           }
         },
         "on:beforepaste": {
@@ -83577,7 +83674,9 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#beforepaste",
           "values": {
             "Chrome": "event",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, ClipboardEvent>"
+            "Pota": "EventHandlers<ClipboardEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, ClipboardEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, ClipboardEvent>"
           }
         },
         "onbeforepaste": {
@@ -83604,7 +83703,8 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#beforepaste",
           "values": {
             "Chrome": "event",
-            "Solid Main": "EventHandlerUnion<T, ClipboardEvent>"
+            "Solid Main": "EventHandlerUnion<T, ClipboardEvent>",
+            "Solid Next": "EventHandlerUnion<T, ClipboardEvent>"
           }
         },
         "on:beforetoggle": {
@@ -83614,7 +83714,9 @@
           "name": "on:beforetoggle",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#beforetoggle",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, ToggleEvent>"
+            "Pota": "EventHandlers<ToggleEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, ToggleEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, ToggleEvent>"
           }
         },
         "onbeforetoggle": {
@@ -83634,7 +83736,8 @@
           "name": "onBeforeToggle",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#beforetoggle",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, ToggleEvent>"
+            "Solid Main": "EventHandlerUnion<T, ToggleEvent>",
+            "Solid Next": "EventHandlerUnion<T, ToggleEvent>"
           }
         },
         "on:beforexrselect": {
@@ -83644,7 +83747,9 @@
           "name": "on:beforexrselect",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#beforexrselect",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+            "Pota": "EventHandlers<Event, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onbeforexrselect": {
@@ -83664,7 +83769,8 @@
           "name": "onBeforeXRSelect",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#beforexrselect",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, Event>"
+            "Solid Main": "EventHandlerUnion<T, Event>",
+            "Solid Next": "EventHandlerUnion<T, Event>"
           }
         },
         "on:blur": {
@@ -83674,7 +83780,9 @@
           "name": "on:blur",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#blur",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>"
+            "Pota": "EventHandlers<FocusEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>"
           }
         },
         "onblur": {
@@ -83694,7 +83802,8 @@
           "name": "onBlur",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#blur",
           "values": {
-            "Solid Main": "FocusEventHandlerUnion<T, FocusEvent>"
+            "Solid Main": "FocusEventHandlerUnion<T, FocusEvent>",
+            "Solid Next": "FocusEventHandlerUnion<T, FocusEvent>"
           }
         },
         "on:cancel": {
@@ -83704,7 +83813,9 @@
           "name": "on:cancel",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#cancel",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+            "Pota": "EventHandlers<Event, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "oncancel": {
@@ -83724,7 +83835,8 @@
           "name": "onCancel",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#cancel",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, Event>"
+            "Solid Main": "EventHandlerUnion<T, Event>",
+            "Solid Next": "EventHandlerUnion<T, Event>"
           }
         },
         "on:canplay": {
@@ -83734,7 +83846,9 @@
           "name": "on:canplay",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#canplay",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+            "Pota": "EventHandlers<Event, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "oncanplay": {
@@ -83754,7 +83868,8 @@
           "name": "onCanPlay",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#canplay",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, Event>"
+            "Solid Main": "EventHandlerUnion<T, Event>",
+            "Solid Next": "EventHandlerUnion<T, Event>"
           }
         },
         "on:canplaythrough": {
@@ -83764,7 +83879,9 @@
           "name": "on:canplaythrough",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#canplaythrough",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+            "Pota": "EventHandlers<Event, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "oncanplaythrough": {
@@ -83784,7 +83901,8 @@
           "name": "onCanPlayThrough",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#canplaythrough",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, Event>"
+            "Solid Main": "EventHandlerUnion<T, Event>",
+            "Solid Next": "EventHandlerUnion<T, Event>"
           }
         },
         "on:change": {
@@ -83794,7 +83912,9 @@
           "name": "on:change",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#change",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event, ChangeEventHandler<T, Event>>"
+            "Pota": "EventHandlers<Event, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event, ChangeEventHandler<T, Event>>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, Event, ChangeEventHandler<T, Event>>"
           }
         },
         "onchange": {
@@ -83814,7 +83934,8 @@
           "name": "onChange",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#change",
           "values": {
-            "Solid Main": "ChangeEventHandlerUnion<T, Event>"
+            "Solid Main": "ChangeEventHandlerUnion<T, Event>",
+            "Solid Next": "ChangeEventHandlerUnion<T, Event>"
           }
         },
         "on:click": {
@@ -83824,7 +83945,9 @@
           "name": "on:click",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#click",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>"
+            "Pota": "EventHandlers<MouseEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
           }
         },
         "onclick": {
@@ -83844,7 +83967,8 @@
           "name": "onClick",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#click",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, MouseEvent>"
+            "Solid Main": "EventHandlerUnion<T, MouseEvent>",
+            "Solid Next": "EventHandlerUnion<T, MouseEvent>"
           }
         },
         "on:close": {
@@ -83854,7 +83978,9 @@
           "name": "on:close",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#close",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+            "Pota": "EventHandlers<Event, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onclose": {
@@ -83874,7 +84000,8 @@
           "name": "onClose",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#close",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, Event>"
+            "Solid Main": "EventHandlerUnion<T, Event>",
+            "Solid Next": "EventHandlerUnion<T, Event>"
           }
         },
         "on:command": {
@@ -83884,7 +84011,9 @@
           "name": "on:command",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#command",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+            "Pota": "EventHandlers<Event, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "oncommand": {
@@ -83904,7 +84033,8 @@
           "name": "onCommand",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#command",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, Event>"
+            "Solid Main": "EventHandlerUnion<T, Event>",
+            "Solid Next": "EventHandlerUnion<T, Event>"
           }
         },
         "on:compositionend": {
@@ -83914,7 +84044,9 @@
           "name": "on:compositionend",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#compositionend",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, CompositionEvent>"
+            "Pota": "EventHandlers<CompositionEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, CompositionEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, CompositionEvent>"
           }
         },
         "oncompositionend": {
@@ -83934,7 +84066,8 @@
           "name": "onCompositionEnd",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#compositionend",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, CompositionEvent>"
+            "Solid Main": "EventHandlerUnion<T, CompositionEvent>",
+            "Solid Next": "EventHandlerUnion<T, CompositionEvent>"
           }
         },
         "on:compositionstart": {
@@ -83944,7 +84077,9 @@
           "name": "on:compositionstart",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#compositionstart",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, CompositionEvent>"
+            "Pota": "EventHandlers<CompositionEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, CompositionEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, CompositionEvent>"
           }
         },
         "oncompositionstart": {
@@ -83964,7 +84099,8 @@
           "name": "onCompositionStart",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#compositionstart",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, CompositionEvent>"
+            "Solid Main": "EventHandlerUnion<T, CompositionEvent>",
+            "Solid Next": "EventHandlerUnion<T, CompositionEvent>"
           }
         },
         "on:compositionupdate": {
@@ -83974,7 +84110,9 @@
           "name": "on:compositionupdate",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#compositionupdate",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, CompositionEvent>"
+            "Pota": "EventHandlers<CompositionEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, CompositionEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, CompositionEvent>"
           }
         },
         "oncompositionupdate": {
@@ -83994,7 +84132,8 @@
           "name": "onCompositionUpdate",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#compositionupdate",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, CompositionEvent>"
+            "Solid Main": "EventHandlerUnion<T, CompositionEvent>",
+            "Solid Next": "EventHandlerUnion<T, CompositionEvent>"
           }
         },
         "on:contentvisibilityautostatechange": {
@@ -84004,7 +84143,9 @@
           "name": "on:contentvisibilityautostatechange",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#contentvisibilityautostatechange",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, ContentVisibilityAutoStateChangeEvent>"
+            "Pota": "EventHandlers<ContentVisibilityAutoStateChangeEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, ContentVisibilityAutoStateChangeEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, ContentVisibilityAutoStateChangeEvent>"
           }
         },
         "oncontentvisibilityautostatechange": {
@@ -84024,7 +84165,8 @@
           "name": "onContentVisibilityAutoStateChange",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#contentvisibilityautostatechange",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, ContentVisibilityAutoStateChangeEvent>"
+            "Solid Main": "EventHandlerUnion<T, ContentVisibilityAutoStateChangeEvent>",
+            "Solid Next": "EventHandlerUnion<T, ContentVisibilityAutoStateChangeEvent>"
           }
         },
         "on:contextlost": {
@@ -84034,7 +84176,9 @@
           "name": "on:contextlost",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#contextlost",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+            "Pota": "EventHandlers<Event, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "oncontextlost": {
@@ -84054,7 +84198,8 @@
           "name": "onContextLost",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#contextlost",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, Event>"
+            "Solid Main": "EventHandlerUnion<T, Event>",
+            "Solid Next": "EventHandlerUnion<T, Event>"
           }
         },
         "on:contextmenu": {
@@ -84064,7 +84209,9 @@
           "name": "on:contextmenu",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#contextmenu",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>"
+            "Pota": "EventHandlers<MouseEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
           }
         },
         "oncontextmenu": {
@@ -84084,7 +84231,8 @@
           "name": "onContextMenu",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#contextmenu",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, PointerEvent>"
+            "Solid Main": "EventHandlerUnion<T, PointerEvent>",
+            "Solid Next": "EventHandlerUnion<T, PointerEvent>"
           }
         },
         "on:contextrestored": {
@@ -84094,7 +84242,9 @@
           "name": "on:contextrestored",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#contextrestored",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+            "Pota": "EventHandlers<Event, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "oncontextrestored": {
@@ -84114,7 +84264,8 @@
           "name": "onContextRestored",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#contextrestored",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, Event>"
+            "Solid Main": "EventHandlerUnion<T, Event>",
+            "Solid Next": "EventHandlerUnion<T, Event>"
           }
         },
         "on:copy": {
@@ -84124,7 +84275,9 @@
           "name": "on:copy",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#copy",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, ClipboardEvent>"
+            "Pota": "EventHandlers<ClipboardEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, ClipboardEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, ClipboardEvent>"
           }
         },
         "oncopy": {
@@ -84144,7 +84297,8 @@
           "name": "onCopy",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#copy",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, ClipboardEvent>"
+            "Solid Main": "EventHandlerUnion<T, ClipboardEvent>",
+            "Solid Next": "EventHandlerUnion<T, ClipboardEvent>"
           }
         },
         "on:cuechange": {
@@ -84154,7 +84308,9 @@
           "name": "on:cuechange",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#cuechange",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+            "Pota": "EventHandlers<Event, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "oncuechange": {
@@ -84174,7 +84330,8 @@
           "name": "onCueChange",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#cuechange",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, Event>"
+            "Solid Main": "EventHandlerUnion<T, Event>",
+            "Solid Next": "EventHandlerUnion<T, Event>"
           }
         },
         "on:cut": {
@@ -84184,7 +84341,9 @@
           "name": "on:cut",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#cut",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, ClipboardEvent>"
+            "Pota": "EventHandlers<ClipboardEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, ClipboardEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, ClipboardEvent>"
           }
         },
         "oncut": {
@@ -84204,7 +84363,8 @@
           "name": "onCut",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#cut",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, ClipboardEvent>"
+            "Solid Main": "EventHandlerUnion<T, ClipboardEvent>",
+            "Solid Next": "EventHandlerUnion<T, ClipboardEvent>"
           }
         },
         "on:dblclick": {
@@ -84214,7 +84374,9 @@
           "name": "on:dblclick",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#dblclick",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>"
+            "Pota": "EventHandlers<MouseEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
           }
         },
         "ondblclick": {
@@ -84234,7 +84396,8 @@
           "name": "onDblClick",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#dblclick",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, MouseEvent>"
+            "Solid Main": "EventHandlerUnion<T, MouseEvent>",
+            "Solid Next": "EventHandlerUnion<T, MouseEvent>"
           }
         },
         "on:drag": {
@@ -84244,7 +84407,9 @@
           "name": "on:drag",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#drag",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>"
+            "Pota": "EventHandlers<DragEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
           }
         },
         "ondrag": {
@@ -84264,7 +84429,8 @@
           "name": "onDrag",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#drag",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, DragEvent>"
+            "Solid Main": "EventHandlerUnion<T, DragEvent>",
+            "Solid Next": "EventHandlerUnion<T, DragEvent>"
           }
         },
         "on:dragend": {
@@ -84274,7 +84440,9 @@
           "name": "on:dragend",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#dragend",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>"
+            "Pota": "EventHandlers<DragEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
           }
         },
         "ondragend": {
@@ -84294,7 +84462,8 @@
           "name": "onDragEnd",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#dragend",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, DragEvent>"
+            "Solid Main": "EventHandlerUnion<T, DragEvent>",
+            "Solid Next": "EventHandlerUnion<T, DragEvent>"
           }
         },
         "on:dragenter": {
@@ -84304,7 +84473,9 @@
           "name": "on:dragenter",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#dragenter",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>"
+            "Pota": "EventHandlers<DragEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
           }
         },
         "ondragenter": {
@@ -84324,7 +84495,8 @@
           "name": "onDragEnter",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#dragenter",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, DragEvent>"
+            "Solid Main": "EventHandlerUnion<T, DragEvent>",
+            "Solid Next": "EventHandlerUnion<T, DragEvent>"
           }
         },
         "on:dragexit": {
@@ -84334,7 +84506,9 @@
           "name": "on:dragexit",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#dragexit",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>"
+            "Pota": "EventHandlers<DragEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
           }
         },
         "ondragexit": {
@@ -84354,7 +84528,8 @@
           "name": "onDragExit",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#dragexit",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, DragEvent>"
+            "Solid Main": "EventHandlerUnion<T, DragEvent>",
+            "Solid Next": "EventHandlerUnion<T, DragEvent>"
           }
         },
         "on:dragleave": {
@@ -84364,7 +84539,9 @@
           "name": "on:dragleave",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#dragleave",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>"
+            "Pota": "EventHandlers<DragEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
           }
         },
         "ondragleave": {
@@ -84384,7 +84561,8 @@
           "name": "onDragLeave",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#dragleave",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, DragEvent>"
+            "Solid Main": "EventHandlerUnion<T, DragEvent>",
+            "Solid Next": "EventHandlerUnion<T, DragEvent>"
           }
         },
         "on:dragover": {
@@ -84394,7 +84572,9 @@
           "name": "on:dragover",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#dragover",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>"
+            "Pota": "EventHandlers<DragEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
           }
         },
         "ondragover": {
@@ -84414,7 +84594,8 @@
           "name": "onDragOver",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#dragover",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, DragEvent>"
+            "Solid Main": "EventHandlerUnion<T, DragEvent>",
+            "Solid Next": "EventHandlerUnion<T, DragEvent>"
           }
         },
         "on:dragstart": {
@@ -84424,7 +84605,9 @@
           "name": "on:dragstart",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#dragstart",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>"
+            "Pota": "EventHandlers<DragEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
           }
         },
         "ondragstart": {
@@ -84444,7 +84627,8 @@
           "name": "onDragStart",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#dragstart",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, DragEvent>"
+            "Solid Main": "EventHandlerUnion<T, DragEvent>",
+            "Solid Next": "EventHandlerUnion<T, DragEvent>"
           }
         },
         "on:drop": {
@@ -84454,7 +84638,9 @@
           "name": "on:drop",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#drop",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>"
+            "Pota": "EventHandlers<DragEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
           }
         },
         "ondrop": {
@@ -84474,7 +84660,8 @@
           "name": "onDrop",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#drop",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, DragEvent>"
+            "Solid Main": "EventHandlerUnion<T, DragEvent>",
+            "Solid Next": "EventHandlerUnion<T, DragEvent>"
           }
         },
         "on:durationchange": {
@@ -84484,7 +84671,9 @@
           "name": "on:durationchange",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#durationchange",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+            "Pota": "EventHandlers<Event, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "ondurationchange": {
@@ -84504,7 +84693,8 @@
           "name": "onDurationChange",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#durationchange",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, Event>"
+            "Solid Main": "EventHandlerUnion<T, Event>",
+            "Solid Next": "EventHandlerUnion<T, Event>"
           }
         },
         "on:emptied": {
@@ -84514,7 +84704,9 @@
           "name": "on:emptied",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#emptied",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+            "Pota": "EventHandlers<Event, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onemptied": {
@@ -84534,7 +84726,8 @@
           "name": "onEmptied",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#emptied",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, Event>"
+            "Solid Main": "EventHandlerUnion<T, Event>",
+            "Solid Next": "EventHandlerUnion<T, Event>"
           }
         },
         "on:ended": {
@@ -84544,7 +84737,9 @@
           "name": "on:ended",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#ended",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+            "Pota": "EventHandlers<Event, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onended": {
@@ -84564,7 +84759,8 @@
           "name": "onEnded",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#ended",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, Event>"
+            "Solid Main": "EventHandlerUnion<T, Event>",
+            "Solid Next": "EventHandlerUnion<T, Event>"
           }
         },
         "on:error": {
@@ -84574,7 +84770,9 @@
           "name": "on:error",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#error",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, ErrorEvent>"
+            "Pota": "EventHandlers<ErrorEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, ErrorEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, ErrorEvent>"
           }
         },
         "onerror": {
@@ -84594,7 +84792,8 @@
           "name": "onError",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#error",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, ErrorEvent>"
+            "Solid Main": "EventHandlerUnion<T, ErrorEvent>",
+            "Solid Next": "EventHandlerUnion<T, ErrorEvent>"
           }
         },
         "on:focus": {
@@ -84604,7 +84803,9 @@
           "name": "on:focus",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#focus",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>"
+            "Pota": "EventHandlers<FocusEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>"
           }
         },
         "onfocus": {
@@ -84624,7 +84825,8 @@
           "name": "onFocus",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#focus",
           "values": {
-            "Solid Main": "FocusEventHandlerUnion<T, FocusEvent>"
+            "Solid Main": "FocusEventHandlerUnion<T, FocusEvent>",
+            "Solid Next": "FocusEventHandlerUnion<T, FocusEvent>"
           }
         },
         "on:focusin": {
@@ -84634,7 +84836,9 @@
           "name": "on:focusin",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#focusin",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>"
+            "Pota": "EventHandlers<FocusEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>"
           }
         },
         "onfocusin": {
@@ -84654,7 +84858,8 @@
           "name": "onFocusIn",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#focusin",
           "values": {
-            "Solid Main": "FocusEventHandlerUnion<T, FocusEvent>"
+            "Solid Main": "FocusEventHandlerUnion<T, FocusEvent>",
+            "Solid Next": "FocusEventHandlerUnion<T, FocusEvent>"
           }
         },
         "on:focusout": {
@@ -84664,7 +84869,9 @@
           "name": "on:focusout",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#focusout",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>"
+            "Pota": "EventHandlers<FocusEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>"
           }
         },
         "onfocusout": {
@@ -84684,7 +84891,8 @@
           "name": "onFocusOut",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#focusout",
           "values": {
-            "Solid Main": "FocusEventHandlerUnion<T, FocusEvent>"
+            "Solid Main": "FocusEventHandlerUnion<T, FocusEvent>",
+            "Solid Next": "FocusEventHandlerUnion<T, FocusEvent>"
           }
         },
         "on:formdata": {
@@ -84694,7 +84902,9 @@
           "name": "on:formdata",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#formdata",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, FormDataEvent>"
+            "Pota": "EventHandlers<FormDataEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, FormDataEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, FormDataEvent>"
           }
         },
         "onformdata": {
@@ -84714,7 +84924,8 @@
           "name": "onFormData",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#formdata",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, FormDataEvent>"
+            "Solid Main": "EventHandlerUnion<T, FormDataEvent>",
+            "Solid Next": "EventHandlerUnion<T, FormDataEvent>"
           }
         },
         "on:fullscreenchange": {
@@ -84726,7 +84937,9 @@
           "values": {
             "Chrome": "event",
             "Firefox": "event",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+            "Pota": "EventHandlers<Event, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onfullscreenchange": {
@@ -84759,7 +84972,8 @@
           "values": {
             "Chrome": "event",
             "Firefox": "event",
-            "Solid Main": "EventHandlerUnion<T, Event>"
+            "Solid Main": "EventHandlerUnion<T, Event>",
+            "Solid Next": "EventHandlerUnion<T, Event>"
           }
         },
         "on:fullscreenerror": {
@@ -84771,7 +84985,9 @@
           "values": {
             "Chrome": "event",
             "Firefox": "event",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+            "Pota": "EventHandlers<Event, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onfullscreenerror": {
@@ -84804,7 +85020,8 @@
           "values": {
             "Chrome": "event",
             "Firefox": "event",
-            "Solid Main": "EventHandlerUnion<T, Event>"
+            "Solid Main": "EventHandlerUnion<T, Event>",
+            "Solid Next": "EventHandlerUnion<T, Event>"
           }
         },
         "on:gotpointercapture": {
@@ -84814,7 +85031,9 @@
           "name": "on:gotpointercapture",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#gotpointercapture",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>"
+            "Pota": "EventHandlers<PointerEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
           }
         },
         "ongotpointercapture": {
@@ -84834,7 +85053,8 @@
           "name": "onGotPointerCapture",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#gotpointercapture",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, PointerEvent>"
+            "Solid Main": "EventHandlerUnion<T, PointerEvent>",
+            "Solid Next": "EventHandlerUnion<T, PointerEvent>"
           }
         },
         "on:input": {
@@ -84844,7 +85064,9 @@
           "name": "on:input",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#input",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>"
+            "Pota": "EventHandlers<Event, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>"
           }
         },
         "oninput": {
@@ -84864,7 +85086,8 @@
           "name": "onInput",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#input",
           "values": {
-            "Solid Main": "InputEventHandlerUnion<T, InputEvent>"
+            "Solid Main": "InputEventHandlerUnion<T, InputEvent>",
+            "Solid Next": "InputEventHandlerUnion<T, InputEvent>"
           }
         },
         "on:invalid": {
@@ -84874,7 +85097,9 @@
           "name": "on:invalid",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#invalid",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+            "Pota": "EventHandlers<Event, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "oninvalid": {
@@ -84894,7 +85119,8 @@
           "name": "onInvalid",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#invalid",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, Event>"
+            "Solid Main": "EventHandlerUnion<T, Event>",
+            "Solid Next": "EventHandlerUnion<T, Event>"
           }
         },
         "on:keydown": {
@@ -84904,7 +85130,9 @@
           "name": "on:keydown",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#keydown",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, KeyboardEvent>"
+            "Pota": "EventHandlers<KeyboardEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, KeyboardEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, KeyboardEvent>"
           }
         },
         "onkeydown": {
@@ -84924,7 +85152,8 @@
           "name": "onKeyDown",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#keydown",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, KeyboardEvent>"
+            "Solid Main": "EventHandlerUnion<T, KeyboardEvent>",
+            "Solid Next": "EventHandlerUnion<T, KeyboardEvent>"
           }
         },
         "on:keypress": {
@@ -84934,7 +85163,9 @@
           "name": "on:keypress",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#keypress",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, KeyboardEvent>"
+            "Pota": "EventHandlers<KeyboardEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, KeyboardEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, KeyboardEvent>"
           }
         },
         "onkeypress": {
@@ -84954,7 +85185,8 @@
           "name": "onKeyPress",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#keypress",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, KeyboardEvent>"
+            "Solid Main": "EventHandlerUnion<T, KeyboardEvent>",
+            "Solid Next": "EventHandlerUnion<T, KeyboardEvent>"
           }
         },
         "on:keyup": {
@@ -84964,7 +85196,9 @@
           "name": "on:keyup",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#keyup",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, KeyboardEvent>"
+            "Pota": "EventHandlers<KeyboardEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, KeyboardEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, KeyboardEvent>"
           }
         },
         "onkeyup": {
@@ -84984,7 +85218,8 @@
           "name": "onKeyUp",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#keyup",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, KeyboardEvent>"
+            "Solid Main": "EventHandlerUnion<T, KeyboardEvent>",
+            "Solid Next": "EventHandlerUnion<T, KeyboardEvent>"
           }
         },
         "on:load": {
@@ -84994,7 +85229,9 @@
           "name": "on:load",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#load",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+            "Pota": "EventHandlers<Event, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onload": {
@@ -85014,7 +85251,8 @@
           "name": "onLoad",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#load",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, Event>"
+            "Solid Main": "EventHandlerUnion<T, Event>",
+            "Solid Next": "EventHandlerUnion<T, Event>"
           }
         },
         "on:loadeddata": {
@@ -85024,7 +85262,9 @@
           "name": "on:loadeddata",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#loadeddata",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+            "Pota": "EventHandlers<Event, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onloadeddata": {
@@ -85044,7 +85284,8 @@
           "name": "onLoadedData",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#loadeddata",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, Event>"
+            "Solid Main": "EventHandlerUnion<T, Event>",
+            "Solid Next": "EventHandlerUnion<T, Event>"
           }
         },
         "on:loadedmetadata": {
@@ -85054,7 +85295,9 @@
           "name": "on:loadedmetadata",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#loadedmetadata",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+            "Pota": "EventHandlers<Event, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onloadedmetadata": {
@@ -85074,7 +85317,8 @@
           "name": "onLoadedMetadata",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#loadedmetadata",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, Event>"
+            "Solid Main": "EventHandlerUnion<T, Event>",
+            "Solid Next": "EventHandlerUnion<T, Event>"
           }
         },
         "on:loadstart": {
@@ -85084,7 +85328,9 @@
           "name": "on:loadstart",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#loadstart",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+            "Pota": "EventHandlers<Event, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onloadstart": {
@@ -85104,7 +85350,8 @@
           "name": "onLoadStart",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#loadstart",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, Event>"
+            "Solid Main": "EventHandlerUnion<T, Event>",
+            "Solid Next": "EventHandlerUnion<T, Event>"
           }
         },
         "on:lostpointercapture": {
@@ -85114,7 +85361,9 @@
           "name": "on:lostpointercapture",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#lostpointercapture",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>"
+            "Pota": "EventHandlers<PointerEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
           }
         },
         "onlostpointercapture": {
@@ -85134,7 +85383,8 @@
           "name": "onLostPointerCapture",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#lostpointercapture",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, PointerEvent>"
+            "Solid Main": "EventHandlerUnion<T, PointerEvent>",
+            "Solid Next": "EventHandlerUnion<T, PointerEvent>"
           }
         },
         "on:mousedown": {
@@ -85144,7 +85394,9 @@
           "name": "on:mousedown",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#mousedown",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>"
+            "Pota": "EventHandlers<MouseEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
           }
         },
         "onmousedown": {
@@ -85164,7 +85416,8 @@
           "name": "onMouseDown",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#mousedown",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, MouseEvent>"
+            "Solid Main": "EventHandlerUnion<T, MouseEvent>",
+            "Solid Next": "EventHandlerUnion<T, MouseEvent>"
           }
         },
         "on:mouseenter": {
@@ -85174,7 +85427,9 @@
           "name": "on:mouseenter",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#mouseenter",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>"
+            "Pota": "EventHandlers<MouseEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
           }
         },
         "onmouseenter": {
@@ -85194,7 +85449,8 @@
           "name": "onMouseEnter",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#mouseenter",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, MouseEvent>"
+            "Solid Main": "EventHandlerUnion<T, MouseEvent>",
+            "Solid Next": "EventHandlerUnion<T, MouseEvent>"
           }
         },
         "on:mouseleave": {
@@ -85204,7 +85460,9 @@
           "name": "on:mouseleave",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#mouseleave",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>"
+            "Pota": "EventHandlers<MouseEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
           }
         },
         "onmouseleave": {
@@ -85224,7 +85482,8 @@
           "name": "onMouseLeave",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#mouseleave",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, MouseEvent>"
+            "Solid Main": "EventHandlerUnion<T, MouseEvent>",
+            "Solid Next": "EventHandlerUnion<T, MouseEvent>"
           }
         },
         "on:mousemove": {
@@ -85234,7 +85493,9 @@
           "name": "on:mousemove",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#mousemove",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>"
+            "Pota": "EventHandlers<MouseEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
           }
         },
         "onmousemove": {
@@ -85254,7 +85515,8 @@
           "name": "onMouseMove",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#mousemove",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, MouseEvent>"
+            "Solid Main": "EventHandlerUnion<T, MouseEvent>",
+            "Solid Next": "EventHandlerUnion<T, MouseEvent>"
           }
         },
         "on:mouseout": {
@@ -85264,7 +85526,9 @@
           "name": "on:mouseout",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#mouseout",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>"
+            "Pota": "EventHandlers<MouseEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
           }
         },
         "onmouseout": {
@@ -85284,7 +85548,8 @@
           "name": "onMouseOut",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#mouseout",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, MouseEvent>"
+            "Solid Main": "EventHandlerUnion<T, MouseEvent>",
+            "Solid Next": "EventHandlerUnion<T, MouseEvent>"
           }
         },
         "on:mouseover": {
@@ -85294,7 +85559,9 @@
           "name": "on:mouseover",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#mouseover",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>"
+            "Pota": "EventHandlers<MouseEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
           }
         },
         "onmouseover": {
@@ -85314,7 +85581,8 @@
           "name": "onMouseOver",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#mouseover",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, MouseEvent>"
+            "Solid Main": "EventHandlerUnion<T, MouseEvent>",
+            "Solid Next": "EventHandlerUnion<T, MouseEvent>"
           }
         },
         "on:mouseup": {
@@ -85324,7 +85592,9 @@
           "name": "on:mouseup",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#mouseup",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>"
+            "Pota": "EventHandlers<MouseEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
           }
         },
         "onmouseup": {
@@ -85344,7 +85614,8 @@
           "name": "onMouseUp",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#mouseup",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, MouseEvent>"
+            "Solid Main": "EventHandlerUnion<T, MouseEvent>",
+            "Solid Next": "EventHandlerUnion<T, MouseEvent>"
           }
         },
         "on:paste": {
@@ -85354,7 +85625,9 @@
           "name": "on:paste",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#paste",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, ClipboardEvent>"
+            "Pota": "EventHandlers<ClipboardEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, ClipboardEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, ClipboardEvent>"
           }
         },
         "onpaste": {
@@ -85374,7 +85647,8 @@
           "name": "onPaste",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#paste",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, ClipboardEvent>"
+            "Solid Main": "EventHandlerUnion<T, ClipboardEvent>",
+            "Solid Next": "EventHandlerUnion<T, ClipboardEvent>"
           }
         },
         "on:pause": {
@@ -85384,7 +85658,9 @@
           "name": "on:pause",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#pause",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+            "Pota": "EventHandlers<Event, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onpause": {
@@ -85404,7 +85680,8 @@
           "name": "onPause",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#pause",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, Event>"
+            "Solid Main": "EventHandlerUnion<T, Event>",
+            "Solid Next": "EventHandlerUnion<T, Event>"
           }
         },
         "on:play": {
@@ -85414,7 +85691,9 @@
           "name": "on:play",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#play",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+            "Pota": "EventHandlers<Event, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onplay": {
@@ -85434,7 +85713,8 @@
           "name": "onPlay",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#play",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, Event>"
+            "Solid Main": "EventHandlerUnion<T, Event>",
+            "Solid Next": "EventHandlerUnion<T, Event>"
           }
         },
         "on:playing": {
@@ -85444,7 +85724,9 @@
           "name": "on:playing",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#playing",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+            "Pota": "EventHandlers<Event, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onplaying": {
@@ -85464,7 +85746,8 @@
           "name": "onPlaying",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#playing",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, Event>"
+            "Solid Main": "EventHandlerUnion<T, Event>",
+            "Solid Next": "EventHandlerUnion<T, Event>"
           }
         },
         "on:pointercancel": {
@@ -85474,7 +85757,9 @@
           "name": "on:pointercancel",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#pointercancel",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>"
+            "Pota": "EventHandlers<PointerEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
           }
         },
         "onpointercancel": {
@@ -85494,7 +85779,8 @@
           "name": "onPointerCancel",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#pointercancel",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, PointerEvent>"
+            "Solid Main": "EventHandlerUnion<T, PointerEvent>",
+            "Solid Next": "EventHandlerUnion<T, PointerEvent>"
           }
         },
         "on:pointerdown": {
@@ -85504,7 +85790,9 @@
           "name": "on:pointerdown",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#pointerdown",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>"
+            "Pota": "EventHandlers<PointerEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
           }
         },
         "onpointerdown": {
@@ -85524,7 +85812,8 @@
           "name": "onPointerDown",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#pointerdown",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, PointerEvent>"
+            "Solid Main": "EventHandlerUnion<T, PointerEvent>",
+            "Solid Next": "EventHandlerUnion<T, PointerEvent>"
           }
         },
         "on:pointerenter": {
@@ -85534,7 +85823,9 @@
           "name": "on:pointerenter",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#pointerenter",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>"
+            "Pota": "EventHandlers<PointerEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
           }
         },
         "onpointerenter": {
@@ -85554,7 +85845,8 @@
           "name": "onPointerEnter",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#pointerenter",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, PointerEvent>"
+            "Solid Main": "EventHandlerUnion<T, PointerEvent>",
+            "Solid Next": "EventHandlerUnion<T, PointerEvent>"
           }
         },
         "on:pointerleave": {
@@ -85564,7 +85856,9 @@
           "name": "on:pointerleave",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#pointerleave",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>"
+            "Pota": "EventHandlers<PointerEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
           }
         },
         "onpointerleave": {
@@ -85584,7 +85878,8 @@
           "name": "onPointerLeave",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#pointerleave",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, PointerEvent>"
+            "Solid Main": "EventHandlerUnion<T, PointerEvent>",
+            "Solid Next": "EventHandlerUnion<T, PointerEvent>"
           }
         },
         "on:pointermove": {
@@ -85594,7 +85889,9 @@
           "name": "on:pointermove",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#pointermove",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>"
+            "Pota": "EventHandlers<PointerEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
           }
         },
         "onpointermove": {
@@ -85614,7 +85911,8 @@
           "name": "onPointerMove",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#pointermove",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, PointerEvent>"
+            "Solid Main": "EventHandlerUnion<T, PointerEvent>",
+            "Solid Next": "EventHandlerUnion<T, PointerEvent>"
           }
         },
         "on:pointerout": {
@@ -85624,7 +85922,9 @@
           "name": "on:pointerout",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#pointerout",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>"
+            "Pota": "EventHandlers<PointerEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
           }
         },
         "onpointerout": {
@@ -85644,7 +85944,8 @@
           "name": "onPointerOut",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#pointerout",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, PointerEvent>"
+            "Solid Main": "EventHandlerUnion<T, PointerEvent>",
+            "Solid Next": "EventHandlerUnion<T, PointerEvent>"
           }
         },
         "on:pointerover": {
@@ -85654,7 +85955,9 @@
           "name": "on:pointerover",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#pointerover",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>"
+            "Pota": "EventHandlers<PointerEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
           }
         },
         "onpointerover": {
@@ -85674,7 +85977,8 @@
           "name": "onPointerOver",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#pointerover",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, PointerEvent>"
+            "Solid Main": "EventHandlerUnion<T, PointerEvent>",
+            "Solid Next": "EventHandlerUnion<T, PointerEvent>"
           }
         },
         "on:pointerrawupdate": {
@@ -85684,7 +85988,9 @@
           "name": "on:pointerrawupdate",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#pointerrawupdate",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>"
+            "Pota": "EventHandlers<PointerEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
           }
         },
         "onpointerrawupdate": {
@@ -85704,7 +86010,8 @@
           "name": "onPointerRawUpdate",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#pointerrawupdate",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, PointerEvent>"
+            "Solid Main": "EventHandlerUnion<T, PointerEvent>",
+            "Solid Next": "EventHandlerUnion<T, PointerEvent>"
           }
         },
         "on:pointerup": {
@@ -85714,7 +86021,9 @@
           "name": "on:pointerup",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#pointerup",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>"
+            "Pota": "EventHandlers<PointerEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
           }
         },
         "onpointerup": {
@@ -85734,7 +86043,8 @@
           "name": "onPointerUp",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#pointerup",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, PointerEvent>"
+            "Solid Main": "EventHandlerUnion<T, PointerEvent>",
+            "Solid Next": "EventHandlerUnion<T, PointerEvent>"
           }
         },
         "on:progress": {
@@ -85744,7 +86054,9 @@
           "name": "on:progress",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#progress",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, ProgressEvent>"
+            "Pota": "EventHandlers<ProgressEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, ProgressEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, ProgressEvent>"
           }
         },
         "onprogress": {
@@ -85764,7 +86076,8 @@
           "name": "onProgress",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#progress",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, ProgressEvent>"
+            "Solid Main": "EventHandlerUnion<T, ProgressEvent>",
+            "Solid Next": "EventHandlerUnion<T, ProgressEvent>"
           }
         },
         "on:ratechange": {
@@ -85774,7 +86087,9 @@
           "name": "on:ratechange",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#ratechange",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+            "Pota": "EventHandlers<Event, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onratechange": {
@@ -85794,7 +86109,8 @@
           "name": "onRateChange",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#ratechange",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, Event>"
+            "Solid Main": "EventHandlerUnion<T, Event>",
+            "Solid Next": "EventHandlerUnion<T, Event>"
           }
         },
         "on:reset": {
@@ -85804,7 +86120,9 @@
           "name": "on:reset",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#reset",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+            "Pota": "EventHandlers<Event, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onreset": {
@@ -85824,7 +86142,8 @@
           "name": "onReset",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#reset",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, Event>"
+            "Solid Main": "EventHandlerUnion<T, Event>",
+            "Solid Next": "EventHandlerUnion<T, Event>"
           }
         },
         "on:resize": {
@@ -85834,7 +86153,9 @@
           "name": "on:resize",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#resize",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, UIEvent>"
+            "Pota": "EventHandlers<UIEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, UIEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, UIEvent>"
           }
         },
         "onresize": {
@@ -85854,7 +86175,8 @@
           "name": "onResize",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#resize",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, UIEvent>"
+            "Solid Main": "EventHandlerUnion<T, UIEvent>",
+            "Solid Next": "EventHandlerUnion<T, UIEvent>"
           }
         },
         "on:scroll": {
@@ -85864,7 +86186,9 @@
           "name": "on:scroll",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#scroll",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+            "Pota": "EventHandlers<Event, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onscroll": {
@@ -85884,7 +86208,8 @@
           "name": "onScroll",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#scroll",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, Event>"
+            "Solid Main": "EventHandlerUnion<T, Event>",
+            "Solid Next": "EventHandlerUnion<T, Event>"
           }
         },
         "on:scrollend": {
@@ -85894,7 +86219,9 @@
           "name": "on:scrollend",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#scrollend",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+            "Pota": "EventHandlers<Event, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onscrollend": {
@@ -85914,7 +86241,8 @@
           "name": "onScrollEnd",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#scrollend",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, Event>"
+            "Solid Main": "EventHandlerUnion<T, Event>",
+            "Solid Next": "EventHandlerUnion<T, Event>"
           }
         },
         "on:scrollsnapchange": {
@@ -85924,7 +86252,9 @@
           "name": "on:scrollsnapchange",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#scrollsnapchange",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+            "Pota": "EventHandlers<Event, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onscrollsnapchange": {
@@ -85944,7 +86274,8 @@
           "name": "onScrollSnapChange",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#scrollsnapchange",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, Event>"
+            "Solid Main": "EventHandlerUnion<T, Event>",
+            "Solid Next": "EventHandlerUnion<T, Event>"
           }
         },
         "on:scrollsnapchanging": {
@@ -85954,7 +86285,9 @@
           "name": "on:scrollsnapchanging",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#scrollsnapchanging",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+            "Pota": "EventHandlers<Event, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onscrollsnapchanging": {
@@ -85974,7 +86307,8 @@
           "name": "onScrollSnapChanging",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#scrollsnapchanging",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, Event>"
+            "Solid Main": "EventHandlerUnion<T, Event>",
+            "Solid Next": "EventHandlerUnion<T, Event>"
           }
         },
         "on:search": {
@@ -86009,7 +86343,9 @@
           "name": "on:securitypolicyviolation",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#securitypolicyviolation",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, SecurityPolicyViolationEvent>"
+            "Pota": "EventHandlers<SecurityPolicyViolationEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, SecurityPolicyViolationEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, SecurityPolicyViolationEvent>"
           }
         },
         "onsecuritypolicyviolation": {
@@ -86029,7 +86365,8 @@
           "name": "onSecurityPolicyViolation",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#securitypolicyviolation",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, SecurityPolicyViolationEvent>"
+            "Solid Main": "EventHandlerUnion<T, SecurityPolicyViolationEvent>",
+            "Solid Next": "EventHandlerUnion<T, SecurityPolicyViolationEvent>"
           }
         },
         "on:seeked": {
@@ -86039,7 +86376,9 @@
           "name": "on:seeked",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#seeked",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+            "Pota": "EventHandlers<Event, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onseeked": {
@@ -86059,7 +86398,8 @@
           "name": "onSeeked",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#seeked",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, Event>"
+            "Solid Main": "EventHandlerUnion<T, Event>",
+            "Solid Next": "EventHandlerUnion<T, Event>"
           }
         },
         "on:seeking": {
@@ -86069,7 +86409,9 @@
           "name": "on:seeking",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#seeking",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+            "Pota": "EventHandlers<Event, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onseeking": {
@@ -86089,7 +86431,8 @@
           "name": "onSeeking",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#seeking",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, Event>"
+            "Solid Main": "EventHandlerUnion<T, Event>",
+            "Solid Next": "EventHandlerUnion<T, Event>"
           }
         },
         "on:select": {
@@ -86099,7 +86442,9 @@
           "name": "on:select",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#select",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+            "Pota": "EventHandlers<Event, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onselect": {
@@ -86119,7 +86464,8 @@
           "name": "onSelect",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#select",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, Event>"
+            "Solid Main": "EventHandlerUnion<T, Event>",
+            "Solid Next": "EventHandlerUnion<T, Event>"
           }
         },
         "on:selectionchange": {
@@ -86129,7 +86475,9 @@
           "name": "on:selectionchange",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#selectionchange",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+            "Pota": "EventHandlers<Event, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onselectionchange": {
@@ -86149,7 +86497,8 @@
           "name": "onSelectionChange",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#selectionchange",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, Event>"
+            "Solid Main": "EventHandlerUnion<T, Event>",
+            "Solid Next": "EventHandlerUnion<T, Event>"
           }
         },
         "on:selectstart": {
@@ -86159,7 +86508,9 @@
           "name": "on:selectstart",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#selectstart",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+            "Pota": "EventHandlers<Event, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onselectstart": {
@@ -86179,7 +86530,8 @@
           "name": "onSelectStart",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#selectstart",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, Event>"
+            "Solid Main": "EventHandlerUnion<T, Event>",
+            "Solid Next": "EventHandlerUnion<T, Event>"
           }
         },
         "on:slotchange": {
@@ -86189,7 +86541,9 @@
           "name": "on:slotchange",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#slotchange",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+            "Pota": "EventHandlers<Event, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onslotchange": {
@@ -86209,7 +86563,8 @@
           "name": "onSlotChange",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#slotchange",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, Event>"
+            "Solid Main": "EventHandlerUnion<T, Event>",
+            "Solid Next": "EventHandlerUnion<T, Event>"
           }
         },
         "on:stalled": {
@@ -86219,7 +86574,9 @@
           "name": "on:stalled",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#stalled",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+            "Pota": "EventHandlers<Event, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onstalled": {
@@ -86239,7 +86596,8 @@
           "name": "onStalled",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#stalled",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, Event>"
+            "Solid Main": "EventHandlerUnion<T, Event>",
+            "Solid Next": "EventHandlerUnion<T, Event>"
           }
         },
         "on:submit": {
@@ -86249,7 +86607,9 @@
           "name": "on:submit",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#submit",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, SubmitEvent>"
+            "Pota": "EventHandlers<SubmitEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, SubmitEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, SubmitEvent>"
           }
         },
         "onsubmit": {
@@ -86269,7 +86629,8 @@
           "name": "onSubmit",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#submit",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, SubmitEvent>"
+            "Solid Main": "EventHandlerUnion<T, SubmitEvent>",
+            "Solid Next": "EventHandlerUnion<T, SubmitEvent>"
           }
         },
         "on:suspend": {
@@ -86279,7 +86640,9 @@
           "name": "on:suspend",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#suspend",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+            "Pota": "EventHandlers<Event, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onsuspend": {
@@ -86299,7 +86662,8 @@
           "name": "onSuspend",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#suspend",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, Event>"
+            "Solid Main": "EventHandlerUnion<T, Event>",
+            "Solid Next": "EventHandlerUnion<T, Event>"
           }
         },
         "on:timeupdate": {
@@ -86309,7 +86673,9 @@
           "name": "on:timeupdate",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#timeupdate",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+            "Pota": "EventHandlers<Event, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "ontimeupdate": {
@@ -86329,7 +86695,8 @@
           "name": "onTimeUpdate",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#timeupdate",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, Event>"
+            "Solid Main": "EventHandlerUnion<T, Event>",
+            "Solid Next": "EventHandlerUnion<T, Event>"
           }
         },
         "on:toggle": {
@@ -86339,7 +86706,9 @@
           "name": "on:toggle",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#toggle",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, ToggleEvent>"
+            "Pota": "EventHandlers<ToggleEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, ToggleEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, ToggleEvent>"
           }
         },
         "ontoggle": {
@@ -86359,7 +86728,8 @@
           "name": "onToggle",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#toggle",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, ToggleEvent>"
+            "Solid Main": "EventHandlerUnion<T, ToggleEvent>",
+            "Solid Next": "EventHandlerUnion<T, ToggleEvent>"
           }
         },
         "on:touchcancel": {
@@ -86369,7 +86739,9 @@
           "name": "on:touchcancel",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#touchcancel",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, TouchEvent>"
+            "Pota": "EventHandlers<TouchEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, TouchEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, TouchEvent>"
           }
         },
         "ontouchcancel": {
@@ -86389,7 +86761,8 @@
           "name": "onTouchCancel",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#touchcancel",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, TouchEvent>"
+            "Solid Main": "EventHandlerUnion<T, TouchEvent>",
+            "Solid Next": "EventHandlerUnion<T, TouchEvent>"
           }
         },
         "on:touchend": {
@@ -86399,7 +86772,9 @@
           "name": "on:touchend",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#touchend",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, TouchEvent>"
+            "Pota": "EventHandlers<TouchEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, TouchEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, TouchEvent>"
           }
         },
         "ontouchend": {
@@ -86419,7 +86794,8 @@
           "name": "onTouchEnd",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#touchend",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, TouchEvent>"
+            "Solid Main": "EventHandlerUnion<T, TouchEvent>",
+            "Solid Next": "EventHandlerUnion<T, TouchEvent>"
           }
         },
         "on:touchmove": {
@@ -86429,7 +86805,9 @@
           "name": "on:touchmove",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#touchmove",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, TouchEvent>"
+            "Pota": "EventHandlers<TouchEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, TouchEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, TouchEvent>"
           }
         },
         "ontouchmove": {
@@ -86449,7 +86827,8 @@
           "name": "onTouchMove",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#touchmove",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, TouchEvent>"
+            "Solid Main": "EventHandlerUnion<T, TouchEvent>",
+            "Solid Next": "EventHandlerUnion<T, TouchEvent>"
           }
         },
         "on:touchstart": {
@@ -86459,7 +86838,9 @@
           "name": "on:touchstart",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#touchstart",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, TouchEvent>"
+            "Pota": "EventHandlers<TouchEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, TouchEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, TouchEvent>"
           }
         },
         "ontouchstart": {
@@ -86479,7 +86860,8 @@
           "name": "onTouchStart",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#touchstart",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, TouchEvent>"
+            "Solid Main": "EventHandlerUnion<T, TouchEvent>",
+            "Solid Next": "EventHandlerUnion<T, TouchEvent>"
           }
         },
         "on:transitioncancel": {
@@ -86489,7 +86871,9 @@
           "name": "on:transitioncancel",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#transitioncancel",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, TransitionEvent>"
+            "Pota": "EventHandlers<TransitionEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, TransitionEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, TransitionEvent>"
           }
         },
         "ontransitioncancel": {
@@ -86509,7 +86893,8 @@
           "name": "onTransitionCancel",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#transitioncancel",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, TransitionEvent>"
+            "Solid Main": "EventHandlerUnion<T, TransitionEvent>",
+            "Solid Next": "EventHandlerUnion<T, TransitionEvent>"
           }
         },
         "on:transitionend": {
@@ -86519,7 +86904,9 @@
           "name": "on:transitionend",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#transitionend",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, TransitionEvent>"
+            "Pota": "EventHandlers<TransitionEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, TransitionEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, TransitionEvent>"
           }
         },
         "ontransitionend": {
@@ -86539,7 +86926,8 @@
           "name": "onTransitionEnd",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#transitionend",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, TransitionEvent>"
+            "Solid Main": "EventHandlerUnion<T, TransitionEvent>",
+            "Solid Next": "EventHandlerUnion<T, TransitionEvent>"
           }
         },
         "on:transitionrun": {
@@ -86549,7 +86937,9 @@
           "name": "on:transitionrun",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#transitionrun",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, TransitionEvent>"
+            "Pota": "EventHandlers<TransitionEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, TransitionEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, TransitionEvent>"
           }
         },
         "ontransitionrun": {
@@ -86569,7 +86959,8 @@
           "name": "onTransitionRun",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#transitionrun",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, TransitionEvent>"
+            "Solid Main": "EventHandlerUnion<T, TransitionEvent>",
+            "Solid Next": "EventHandlerUnion<T, TransitionEvent>"
           }
         },
         "on:transitionstart": {
@@ -86579,7 +86970,9 @@
           "name": "on:transitionstart",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#transitionstart",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, TransitionEvent>"
+            "Pota": "EventHandlers<TransitionEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, TransitionEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, TransitionEvent>"
           }
         },
         "ontransitionstart": {
@@ -86599,7 +86992,8 @@
           "name": "onTransitionStart",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#transitionstart",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, TransitionEvent>"
+            "Solid Main": "EventHandlerUnion<T, TransitionEvent>",
+            "Solid Next": "EventHandlerUnion<T, TransitionEvent>"
           }
         },
         "on:volumechange": {
@@ -86609,7 +87003,9 @@
           "name": "on:volumechange",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#volumechange",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+            "Pota": "EventHandlers<Event, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onvolumechange": {
@@ -86629,7 +87025,8 @@
           "name": "onVolumeChange",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#volumechange",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, Event>"
+            "Solid Main": "EventHandlerUnion<T, Event>",
+            "Solid Next": "EventHandlerUnion<T, Event>"
           }
         },
         "on:waiting": {
@@ -86639,7 +87036,9 @@
           "name": "on:waiting",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#waiting",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
+            "Pota": "EventHandlers<Event, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onwaiting": {
@@ -86659,7 +87058,8 @@
           "name": "onWaiting",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#waiting",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, Event>"
+            "Solid Main": "EventHandlerUnion<T, Event>",
+            "Solid Next": "EventHandlerUnion<T, Event>"
           }
         },
         "on:webkitfullscreenchange": {
@@ -86719,7 +87119,9 @@
           "name": "on:wheel",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#wheel",
           "values": {
-            "Solid Main": "EventHandlerWithOptionsUnion<T, WheelEvent>"
+            "Pota": "EventHandlers<WheelEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, WheelEvent>",
+            "Solid Next": "EventHandlerWithOptionsUnion<T, WheelEvent>"
           }
         },
         "onwheel": {
@@ -86739,7 +87141,8 @@
           "name": "onWheel",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#wheel",
           "values": {
-            "Solid Main": "EventHandlerUnion<T, WheelEvent>"
+            "Solid Main": "EventHandlerUnion<T, WheelEvent>",
+            "Solid Next": "EventHandlerUnion<T, WheelEvent>"
           }
         },
         "outerHTML": {
@@ -86888,7 +87291,7 @@
           "name": "style",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#element.style",
           "values": {
-            "Pota": "CSSProperties | string",
+            "Pota": "{ [P in keyof CSSProperties]: CSSProperties[P] } | string",
             "Solid Main": "CSSProperties | string",
             "Solid Next": "CSSProperties | string | false"
           }

@@ -5,6 +5,7 @@ interface DialogHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> 
 
 // React - https://react.dev/
 interface DialogHTMLAttributes<T> extends HTMLAttributes<T> {
+	closedby?: 'any' | 'closerequest' | 'none'
 	onCancel?: ReactEventHandler<T>
 	onClose?: ReactEventHandler<T>
 	open?: boolean
