@@ -7,11 +7,6 @@ interface HrHTMLAttributes<T extends EventTarget> extends VoidHTMLAttributes<T> 
 
 // Vue - https://vuejs.org/
 
-// Preact - https://preactjs.com/
-interface HrHTMLAttributes<T extends EventTarget = HTMLHRElement> extends HTMLAttributes<T> {
-	role?: 'separator' | 'none' | 'presentation' | 'doc-pagebreak'
-}
-
 // React - https://react.dev/
 
 // Pota - https://github.com/potahtml/pota

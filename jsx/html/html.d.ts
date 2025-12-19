@@ -12,11 +12,6 @@ interface HtmlHTMLAttributes extends HTMLAttributes {
 	manifest?: string
 }
 
-// Preact - https://preactjs.com/
-interface HtmlHTMLAttributes<T extends EventTarget = HTMLHtmlElement> extends HTMLAttributes<T> {
-	role?: 'document'
-}
-
 // React - https://react.dev/
 interface HtmlHTMLAttributes<T> extends HTMLAttributes<T> {
 	manifest?: string

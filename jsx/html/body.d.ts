@@ -125,8 +125,6 @@ interface WindowEventHandlers<T> {
 
 // Vue - https://vuejs.org/
 
-// Preact - https://preactjs.com/
-
 // React - https://react.dev/
 
 // Pota - https://github.com/potahtml/pota

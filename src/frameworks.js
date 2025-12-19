@@ -291,9 +291,12 @@ export const libs = [
 			},
 		},
 	},
-	{
+	/*{
 		// PREACT
-		file: 'https://raw.githubusercontent.com/preactjs/preact/refs/heads/main/src/jsx.d.ts',
+		file: [
+			'https://raw.githubusercontent.com/preactjs/preact/refs/heads/main/src/jsx.d.ts',
+			'https://raw.githubusercontent.com/preactjs/preact/refs/heads/main/src/dom.d.ts',
+		],
 		name: 'Preact',
 		url: 'https://preactjs.com/',
 		interfaces: {},
@@ -346,7 +349,7 @@ export const libs = [
 				},
 			},
 		},
-	},
+	},*/
 	{
 		// REACT
 		file: 'https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/react/index.d.ts',

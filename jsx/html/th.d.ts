@@ -77,18 +77,6 @@ interface ThHTMLAttributes extends HTMLAttributes {
 	abbr?: string
 }
 
-// Preact - https://preactjs.com/
-interface ThHTMLAttributes<T extends EventTarget = HTMLTableCellElement> extends HTMLAttributes<T> {
-	align?: 'left' | 'center' | 'right' | 'justify' | 'char'
-	colspan?: number
-	colSpan?: number
-	headers?: string
-	rowspan?: number
-	rowSpan?: number
-	scope?: string
-	abbr?: string
-}
-
 // React - https://react.dev/
 interface ThHTMLAttributes<T> extends HTMLAttributes<T> {
 	align?: 'left' | 'center' | 'right' | 'justify' | 'char'

@@ -40,15 +40,6 @@ interface EmbedHTMLAttributes extends HTMLAttributes {
 	width?: number | string
 }
 
-// Preact - https://preactjs.com/
-interface EmbedHTMLAttributes<T extends EventTarget = HTMLEmbedElement> extends HTMLAttributes<T> {
-	height?: number | string
-	role?: 'application' | 'document' | 'img' | 'none' | 'presentation'
-	src?: string
-	type?: string
-	width?: number | string
-}
-
 // React - https://react.dev/
 interface EmbedHTMLAttributes<T> extends HTMLAttributes<T> {
 	height?: number | string

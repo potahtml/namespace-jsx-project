@@ -6,11 +6,6 @@
 
 // Vue - https://vuejs.org/
 
-// Preact - https://preactjs.com/
-interface LegendHTMLAttributes<T extends EventTarget = HTMLLegendElement> extends HTMLAttributes<T> {
-	role?: never
-}
-
 // React - https://react.dev/
 
 // Pota - https://github.com/potahtml/pota

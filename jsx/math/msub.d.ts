@@ -16,12 +16,6 @@ interface MathMLMsubElementAttributes<T> extends MathMLAttributes<T> {
 	subscriptshift?: string | false
 }
 
-// Preact - https://preactjs.com/
-interface MSubMathMLAttributes<T extends EventTarget> extends MathMLAttributes<T> {
-	/** @deprecated See https://developer.mozilla.org/en-US/docs/Web/MathML/Element/msub#subscriptshift */
-	subscriptshift?: string
-}
-
 // Pota - https://github.com/potahtml/pota
 interface MathMLMsubElementAttributes<Element> extends MathMLAttributes<Element> {
 	/** @deprecated */

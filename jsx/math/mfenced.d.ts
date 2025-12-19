@@ -12,13 +12,6 @@ interface MathMLMfencedElementAttributes<T> extends MathMLAttributes<T> {
 	separators?: string | false
 }
 
-// Preact - https://preactjs.com/
-interface MFencedMathMLAttributes<T extends EventTarget> extends MathMLAttributes<T> {
-	close?: string
-	open?: string
-	separators?: string
-}
-
 // Pota - https://github.com/potahtml/pota
 interface MathMLMfencedElementAttributes<Element> extends MathMLAttributes<Element> {
 	close?: string

@@ -14,11 +14,6 @@ interface CaptionHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Vue - https://vuejs.org/
 
-// Preact - https://preactjs.com/
-interface CaptionHTMLAttributes<T extends EventTarget = HTMLElement> extends HTMLAttributes<T> {
-	role?: 'caption'
-}
-
 // React - https://react.dev/
 
 // Pota - https://github.com/potahtml/pota

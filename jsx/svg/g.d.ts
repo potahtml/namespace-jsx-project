@@ -176,8 +176,6 @@ interface ShapeElementSVGAttributes<T> extends SVGAttributes<T>, Pick<Presentati
 
 // Vue - https://vuejs.org/
 
-// Preact - https://preactjs.com/
-
 // React - https://react.dev/
 interface SVGProps<T> extends SVGAttributes<T>, ClassAttributes<T> {}
 interface ClassAttributes<T> extends RefAttributes<T> {}

@@ -6,11 +6,6 @@
 
 // Vue - https://vuejs.org/
 
-// Preact - https://preactjs.com/
-interface DtHTMLAttributes<T extends EventTarget = HTMLElement> extends HTMLAttributes<T> {
-	role?: 'listitem'
-}
-
 // React - https://react.dev/
 
 // Pota - https://github.com/potahtml/pota

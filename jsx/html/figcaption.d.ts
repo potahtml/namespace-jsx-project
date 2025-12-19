@@ -6,11 +6,6 @@
 
 // Vue - https://vuejs.org/
 
-// Preact - https://preactjs.com/
-interface FigcaptionHTMLAttributes<T extends EventTarget = HTMLElement> extends HTMLAttributes<T> {
-	role?: 'group' | 'none' | 'presentation'
-}
-
 // React - https://react.dev/
 
 // Pota - https://github.com/potahtml/pota

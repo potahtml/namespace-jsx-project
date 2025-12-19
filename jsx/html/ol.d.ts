@@ -38,14 +38,6 @@ interface OlHTMLAttributes extends HTMLAttributes {
 	type?: '1' | 'a' | 'A' | 'i' | 'I'
 }
 
-// Preact - https://preactjs.com/
-interface OlHTMLAttributes<T extends EventTarget = HTMLOListElement> extends HTMLAttributes<T> {
-	reversed?: boolean
-	role?: 'list' | 'group' | 'listbox' | 'menu' | 'menubar' | 'none' | 'presentation' | 'radiogroup' | 'tablist' | 'toolbar' | 'tree'
-	start?: number
-	type?: '1' | 'a' | 'A' | 'i' | 'I'
-}
-
 // React - https://react.dev/
 interface OlHTMLAttributes<T> extends HTMLAttributes<T> {
 	reversed?: boolean

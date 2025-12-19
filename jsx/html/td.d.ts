@@ -87,21 +87,6 @@ interface TdHTMLAttributes extends HTMLAttributes {
 	valign?: 'top' | 'middle' | 'bottom' | 'baseline'
 }
 
-// Preact - https://preactjs.com/
-interface TdHTMLAttributes<T extends EventTarget = HTMLTableCellElement> extends HTMLAttributes<T> {
-	align?: 'left' | 'center' | 'right' | 'justify' | 'char'
-	colspan?: number
-	colSpan?: number
-	headers?: string
-	rowspan?: number
-	rowSpan?: number
-	scope?: string
-	abbr?: string
-	height?: number | string
-	width?: number | string
-	valign?: 'top' | 'middle' | 'bottom' | 'baseline'
-}
-
 // React - https://react.dev/
 interface TdHTMLAttributes<T> extends HTMLAttributes<T> {
 	align?: 'left' | 'center' | 'right' | 'justify' | 'char'

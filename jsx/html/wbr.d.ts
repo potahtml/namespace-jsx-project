@@ -7,11 +7,6 @@ interface WbrHTMLAttributes<T extends EventTarget> extends VoidHTMLAttributes<T>
 
 // Vue - https://vuejs.org/
 
-// Preact - https://preactjs.com/
-interface WbrHTMLAttributes<T extends EventTarget = HTMLElement> extends HTMLAttributes<T> {
-	role?: 'none' | 'presentation'
-}
-
 // React - https://react.dev/
 
 // Pota - https://github.com/potahtml/pota

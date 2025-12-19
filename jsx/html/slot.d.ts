@@ -13,12 +13,6 @@ interface SlotHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
 	name?: string
 }
 
-// Preact - https://preactjs.com/
-interface SlotHTMLAttributes<T extends EventTarget = HTMLSlotElement> extends HTMLAttributes<T> {
-	name?: string
-	role?: never
-}
-
 // React - https://react.dev/
 interface SlotHTMLAttributes<T> extends HTMLAttributes<T> {
 	name?: string

@@ -182,8 +182,6 @@ interface InputHTMLAttributes extends HTMLAttributes {
 	width?: number | string
 }
 
-// Preact - https://preactjs.com/
-
 // React - https://react.dev/
 interface InputHTMLAttributes<T> extends HTMLAttributes<T> {
 	accept?: string

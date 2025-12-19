@@ -44,12 +44,6 @@ interface ColgroupHTMLAttributes extends HTMLAttributes {
 	span?: number | string
 }
 
-// Preact - https://preactjs.com/
-interface ColgroupHTMLAttributes<T extends EventTarget = HTMLTableColElement> extends HTMLAttributes<T> {
-	role?: never
-	span?: number
-}
-
 // React - https://react.dev/
 interface ColgroupHTMLAttributes<T> extends HTMLAttributes<T> {
 	span?: number

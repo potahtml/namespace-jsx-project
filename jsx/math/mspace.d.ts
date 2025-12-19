@@ -12,13 +12,6 @@ interface MathMLMspaceElementAttributes<T> extends MathMLAttributes<T> {
 	width?: string | false
 }
 
-// Preact - https://preactjs.com/
-interface MSpaceMathMLAttributes<T extends EventTarget> extends MathMLAttributes<T> {
-	depth?: string
-	height?: string
-	width?: string
-}
-
 // Pota - https://github.com/potahtml/pota
 interface MathMLMspaceElementAttributes<Element> extends MathMLAttributes<Element> {
 	depth?: string

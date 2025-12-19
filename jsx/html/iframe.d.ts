@@ -152,35 +152,6 @@ interface IframeHTMLAttributes extends HTMLAttributes {
 	width?: number | string
 }
 
-// Preact - https://preactjs.com/
-interface IframeHTMLAttributes<T extends EventTarget = HTMLIFrameElement> extends HTMLAttributes<T> {
-	allow?: string
-	allowFullScreen?: boolean
-	allowTransparency?: boolean
-	/** @deprecated */
-	frameborder?: number | string
-	/** @deprecated */
-	frameBorder?: number | string
-	height?: number | string
-	loading?: 'eager' | 'lazy'
-	/** @deprecated */
-	marginHeight?: number
-	/** @deprecated */
-	marginWidth?: number
-	name?: string
-	referrerpolicy?: '' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
-	referrerPolicy?: '' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
-	role?: 'application' | 'document' | 'img' | 'none' | 'presentation'
-	sandbox?: string
-	/** @deprecated */
-	scrolling?: string
-	seamless?: boolean
-	src?: string
-	srcdoc?: string
-	srcDoc?: string
-	width?: number | string
-}
-
 // React - https://react.dev/
 interface IframeHTMLAttributes<T> extends HTMLAttributes<T> {
 	allow?: string

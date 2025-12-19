@@ -86,29 +86,6 @@ interface LinkHTMLAttributes extends HTMLAttributes {
 	charset?: string
 }
 
-// Preact - https://preactjs.com/
-interface LinkHTMLAttributes<T extends EventTarget = HTMLLinkElement> extends HTMLAttributes<T> {
-	as?: string
-	crossorigin?: 'anonymous' | 'use-credentials'
-	crossOrigin?: 'anonymous' | 'use-credentials'
-	fetchpriority?: 'high' | 'low' | 'auto'
-	fetchPriority?: 'high' | 'low' | 'auto'
-	href?: string
-	hreflang?: string
-	hrefLang?: string
-	integrity?: string
-	media?: string
-	imageSrcSet?: string
-	referrerpolicy?: '' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
-	referrerPolicy?: '' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
-	rel?: string
-	role?: never
-	sizes?: string
-	type?: string
-	charset?: string
-	charSet?: string
-}
-
 // React - https://react.dev/
 interface LinkHTMLAttributes<T> extends HTMLAttributes<T> {
 	as?: string

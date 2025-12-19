@@ -21,14 +21,6 @@ interface LabelHTMLAttributes extends HTMLAttributes {
 	form?: string
 }
 
-// Preact - https://preactjs.com/
-interface LabelHTMLAttributes<T extends EventTarget = HTMLLabelElement> extends HTMLAttributes<T> {
-	for?: string
-	form?: string
-	htmlFor?: string
-	role?: never
-}
-
 // React - https://react.dev/
 interface LabelHTMLAttributes<T> extends HTMLAttributes<T> {
 	form?: string

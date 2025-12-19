@@ -78,8 +78,6 @@ interface AnchorHTMLAttributes extends HTMLAttributes {
 	referrerpolicy?: '' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
 }
 
-// Preact - https://preactjs.com/
-
 // React - https://react.dev/
 interface AnchorHTMLAttributes<T> extends HTMLAttributes<T> {
 	download?: any

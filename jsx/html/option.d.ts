@@ -30,15 +30,6 @@ interface OptionHTMLAttributes extends HTMLAttributes {
 	value?: any // we support :value to be bound to anything w/ v-model
 }
 
-// Preact - https://preactjs.com/
-interface OptionHTMLAttributes<T extends EventTarget = HTMLOptionElement> extends HTMLAttributes<T> {
-	disabled?: boolean
-	label?: string
-	role?: 'option'
-	selected?: boolean
-	value?: string | number
-}
-
 // React - https://react.dev/
 interface OptionHTMLAttributes<T> extends HTMLAttributes<T> {
 	disabled?: boolean

@@ -49,8 +49,6 @@ interface SelectHTMLAttributes extends HTMLAttributes {
 	value?: any // we support :value to be bound to anything w/ v-model
 }
 
-// Preact - https://preactjs.com/
-
 // React - https://react.dev/
 interface SelectHTMLAttributes<T> extends HTMLAttributes<T> {
 	autoComplete?: string

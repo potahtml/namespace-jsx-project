@@ -34,22 +34,6 @@ interface MathMLMoElementAttributes<T> extends MathMLAttributes<T> {
 	accent?: true | false | '' | false
 }
 
-// Preact - https://preactjs.com/
-interface MOMathMLAttributes<T extends EventTarget> extends MathMLAttributes<T> {
-	/** Non-standard attribute See https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mo#accent */
-	accent?: boolean
-	fence?: boolean
-	largeop?: boolean
-	lspace?: string
-	maxsize?: string
-	minsize?: string
-	movablelimits?: boolean
-	rspace?: string
-	separator?: boolean
-	stretchy?: boolean
-	symmetric?: boolean
-}
-
 // Pota - https://github.com/potahtml/pota
 interface MathMLMoElementAttributes<Element> extends MathMLAttributes<Element> {
 	fence?: boolean | ''

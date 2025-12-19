@@ -18,12 +18,6 @@ interface MapHTMLAttributes extends HTMLAttributes {
 	name?: string
 }
 
-// Preact - https://preactjs.com/
-interface MapHTMLAttributes<T extends EventTarget = HTMLMapElement> extends HTMLAttributes<T> {
-	name?: string
-	role?: never
-}
-
 // React - https://react.dev/
 interface MapHTMLAttributes<T> extends HTMLAttributes<T> {
 	name?: string

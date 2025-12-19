@@ -87,7 +87,7 @@ interface ConditionalProcessingSVGAttributes {
 	systemLanguage?: string | false
 }
 
-// Preact - https://preactjs.com/
+// Vue - https://vuejs.org/
 
 // React - https://react.dev/
 interface SVGProps<T> extends SVGAttributes<T>, ClassAttributes<T> {}

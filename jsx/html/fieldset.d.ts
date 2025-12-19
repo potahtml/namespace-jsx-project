@@ -26,14 +26,6 @@ interface FieldsetHTMLAttributes extends HTMLAttributes {
 	name?: string
 }
 
-// Preact - https://preactjs.com/
-interface FieldsetHTMLAttributes<T extends EventTarget = HTMLFieldSetElement> extends HTMLAttributes<T> {
-	disabled?: boolean
-	form?: string
-	name?: string
-	role?: 'group' | 'none' | 'presentation' | 'radiogroup'
-}
-
 // React - https://react.dev/
 interface FieldsetHTMLAttributes<T> extends HTMLAttributes<T> {
 	disabled?: boolean

@@ -6,11 +6,6 @@
 
 // Vue - https://vuejs.org/
 
-// Preact - https://preactjs.com/
-interface DlHTMLAttributes<T extends EventTarget = HTMLDListElement> extends HTMLAttributes<T> {
-	role?: 'group' | 'list' | 'none' | 'presentation'
-}
-
 // React - https://react.dev/
 
 // Pota - https://github.com/potahtml/pota

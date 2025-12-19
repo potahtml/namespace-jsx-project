@@ -113,8 +113,6 @@ interface ImgHTMLAttributes extends HTMLAttributes {
 	width?: number | string
 }
 
-// Preact - https://preactjs.com/
-
 // React - https://react.dev/
 interface ImgHTMLAttributes<T> extends HTMLAttributes<T> {
 	alt?: string

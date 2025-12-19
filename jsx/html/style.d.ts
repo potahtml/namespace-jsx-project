@@ -36,14 +36,6 @@ interface StyleHTMLAttributes extends HTMLAttributes {
 	type?: string
 }
 
-// Preact - https://preactjs.com/
-interface StyleHTMLAttributes<T extends EventTarget = HTMLStyleElement> extends HTMLAttributes<T> {
-	media?: string
-	role?: never
-	scoped?: boolean
-	type?: string
-}
-
 // React - https://react.dev/
 interface StyleHTMLAttributes<T> extends HTMLAttributes<T> {
 	blocking?: 'render' | (string & {})

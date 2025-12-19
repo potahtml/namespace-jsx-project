@@ -42,18 +42,6 @@ interface MeterHTMLAttributes extends HTMLAttributes {
 	value?: string | readonly string[] | number
 }
 
-// Preact - https://preactjs.com/
-interface MeterHTMLAttributes<T extends EventTarget = HTMLMeterElement> extends HTMLAttributes<T> {
-	form?: string
-	high?: number
-	low?: number
-	max?: number | string
-	min?: number | string
-	optimum?: number
-	role?: 'meter'
-	value?: string | number
-}
-
 // React - https://react.dev/
 interface MeterHTMLAttributes<T> extends HTMLAttributes<T> {
 	form?: string

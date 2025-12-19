@@ -186,8 +186,6 @@ interface PresentationSVGAttributes {
 
 // Vue - https://vuejs.org/
 
-// Preact - https://preactjs.com/
-
 // React - https://react.dev/
 interface SVGLineElementAttributes<T> extends SVGProps<T> {}
 interface SVGProps<T> extends SVGAttributes<T>, ClassAttributes<T> {}

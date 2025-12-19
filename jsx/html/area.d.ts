@@ -66,8 +66,6 @@ interface AreaHTMLAttributes extends HTMLAttributes {
 	target?: string
 }
 
-// Preact - https://preactjs.com/
-
 // React - https://react.dev/
 interface AreaHTMLAttributes<T> extends HTMLAttributes<T> {
 	alt?: string

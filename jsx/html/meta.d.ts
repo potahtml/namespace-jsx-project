@@ -39,18 +39,6 @@ interface MetaHTMLAttributes extends HTMLAttributes {
 	name?: string
 }
 
-// Preact - https://preactjs.com/
-interface MetaHTMLAttributes<T extends EventTarget = HTMLMetaElement> extends HTMLAttributes<T> {
-	charset?: string
-	charSet?: string
-	content?: string
-	'http-equiv'?: string
-	httpEquiv?: string
-	name?: string
-	media?: string
-	role?: never
-}
-
 // React - https://react.dev/
 interface MetaHTMLAttributes<T> extends HTMLAttributes<T> {
 	charSet?: string

@@ -24,13 +24,6 @@ interface DelHTMLAttributes extends HTMLAttributes {
 	datetime?: string
 }
 
-// Preact - https://preactjs.com/
-interface DelHTMLAttributes<T extends EventTarget = HTMLModElement> extends HTMLAttributes<T> {
-	cite?: string
-	datetime?: string
-	dateTime?: string
-}
-
 // React - https://react.dev/
 interface DelHTMLAttributes<T> extends HTMLAttributes<T> {
 	cite?: string

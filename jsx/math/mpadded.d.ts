@@ -16,15 +16,6 @@ interface MathMLMpaddedElementAttributes<T> extends MathMLAttributes<T> {
 	width?: string | false
 }
 
-// Preact - https://preactjs.com/
-interface MPaddedMathMLAttributes<T extends EventTarget> extends MathMLAttributes<T> {
-	depth?: string
-	height?: string
-	lspace?: string
-	voffset?: string
-	width?: string
-}
-
 // Pota - https://github.com/potahtml/pota
 interface MathMLMpaddedElementAttributes<Element> extends MathMLAttributes<Element> {
 	depth?: string

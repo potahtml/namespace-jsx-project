@@ -123,41 +123,6 @@ interface MediaHTMLAttributes extends HTMLAttributes {
 	src?: string
 }
 
-// Preact - https://preactjs.com/
-interface VideoHTMLAttributes<T extends EventTarget = HTMLVideoElement> extends MediaHTMLAttributes<T> {
-	disablePictureInPicture?: boolean
-	height?: number | string
-	playsinline?: boolean
-	playsInline?: boolean
-	poster?: string
-	width?: number | string
-	role?: 'application'
-}
-
-interface MediaHTMLAttributes<T extends EventTarget = HTMLMediaElement> extends HTMLAttributes<T> {
-	autoplay?: boolean
-	autoPlay?: boolean
-	controls?: boolean
-	controlslist?: string
-	controlsList?: string
-	crossorigin?: 'anonymous' | 'use-credentials'
-	crossOrigin?: 'anonymous' | 'use-credentials'
-	currentTime?: number
-	defaultMuted?: boolean
-	defaultPlaybackRate?: number
-	disableremoteplayback?: boolean
-	disableRemotePlayback?: boolean
-	loop?: boolean
-	mediaGroup?: string
-	muted?: boolean
-	playbackRate?: number
-	preload?: 'auto' | 'metadata' | 'none'
-	preservesPitch?: boolean
-	src?: string
-	srcObject?: MediaStream | MediaSource | Blob | File | null
-	volume?: string | number
-}
-
 // React - https://react.dev/
 interface VideoHTMLAttributes<T> extends MediaHTMLAttributes<T> {
 	height?: number | string
