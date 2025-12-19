@@ -185,7 +185,7 @@ interface WindowEventMap<T> {
 interface ShapeElementSVGAttributes<T> extends CoreSVGAttributes<T>, Pick<PresentationSVGAttributes, 'color' | 'fill' | 'fill-rule' | 'fill-opacity' | 'stroke' | 'stroke-width' | 'stroke-linecap' | 'stroke-linejoin' | 'stroke-miterlimit' | 'stroke-dasharray' | 'stroke-dashoffset' | 'stroke-opacity' | 'shape-rendering' | 'pathLength'> {}
 
 // Solid Next - https://www.solidjs.com/
-interface SvgSVGAttributes<T> extends ContainerElementSVGAttributes<T>, NewViewportSVGAttributes<T>, ConditionalProcessingSVGAttributes, ExternalResourceSVGAttributes, StylableSVGAttributes, FitToViewBoxSVGAttributes, ZoomAndPanSVGAttributes, PresentationSVGAttributes, WindowEventHandlers<T> {
+interface SvgSVGAttributes<T> extends ContainerElementSVGAttributes<T>, NewViewportSVGAttributes<T>, ConditionalProcessingSVGAttributes, ExternalResourceSVGAttributes, StylableSVGAttributes, FitToViewBoxSVGAttributes, ZoomAndPanSVGAttributes, PresentationSVGAttributes, EventHandlersWindow<T> {
 	'xmlns:xlink'?: string | false
 	contentScriptType?: string | false
 	contentStyleType?: string | false
@@ -296,7 +296,7 @@ interface PresentationSVGAttributes {
 	visibility?: 'visible' | 'hidden' | 'collapse' | 'inherit' | false
 }
 
-interface WindowEventHandlers<T> {
+interface EventHandlersWindow<T> {
 	onAfterPrint?: EventHandlerUnion<T, Event>
 	onBeforePrint?: EventHandlerUnion<T, Event>
 	onBeforeUnload?: EventHandlerUnion<T, BeforeUnloadEvent>

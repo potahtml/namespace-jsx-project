@@ -72,8 +72,8 @@ interface WindowEventMap<T> {
 }
 
 // Solid Next - https://www.solidjs.com/
-interface BodyHTMLAttributes<T> extends HTMLAttributes<T>, WindowEventHandlers<T> {}
-interface WindowEventHandlers<T> {
+interface BodyHTMLAttributes<T> extends HTMLAttributes<T>, EventHandlersWindow<T> {}
+interface EventHandlersWindow<T> {
 	onAfterPrint?: EventHandlerUnion<T, Event>
 	onBeforePrint?: EventHandlerUnion<T, Event>
 	onBeforeUnload?: EventHandlerUnion<T, BeforeUnloadEvent>
