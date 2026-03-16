@@ -10940,7 +10940,7 @@
               "Pota": "'additional-name' | 'address-level1' | 'address-level2' | 'address-level3' | 'address-level4' | 'address-line1' | 'address-line2' | 'address-line3' | 'bday' | 'bday-day' | 'bday-month' | 'bday-year' | 'billing' | 'cc-additional-name' | 'cc-csc' | 'cc-exp' | 'cc-exp-month' | 'cc-exp-year' | 'cc-family-name' | 'cc-given-name' | 'cc-name' | 'cc-number' | 'cc-type' | 'country' | 'country-name' | 'current-password' | 'email' | 'family-name' | 'fax' | 'given-name' | 'home' | 'honorific-prefix' | 'honorific-suffix' | 'impp' | 'language' | 'mobile' | 'name' | 'new-password' | 'nickname' | 'off' | 'on' | 'organization' | 'organization-title' | 'pager' | 'photo' | 'postal-code' | 'sex' | 'shipping' | 'street-address' | 'tel' | 'tel-area-code' | 'tel-country-code' | 'tel-extension' | 'tel-local' | 'tel-local-prefix' | 'tel-local-suffix' | 'tel-national' | 'transaction-amount' | 'transaction-currency' | 'url' | 'username' | 'work' | (string & {})",
               "Solid Main": "'additional-name' | 'address-level1' | 'address-level2' | 'address-level3' | 'address-level4' | 'address-line1' | 'address-line2' | 'address-line3' | 'bday' | 'bday-day' | 'bday-month' | 'bday-year' | 'billing' | 'cc-additional-name' | 'cc-csc' | 'cc-exp' | 'cc-exp-month' | 'cc-exp-year' | 'cc-family-name' | 'cc-given-name' | 'cc-name' | 'cc-number' | 'cc-type' | 'country' | 'country-name' | 'current-password' | 'email' | 'family-name' | 'fax' | 'given-name' | 'home' | 'honorific-prefix' | 'honorific-suffix' | 'impp' | 'language' | 'mobile' | 'name' | 'new-password' | 'nickname' | 'off' | 'on' | 'organization' | 'organization-title' | 'pager' | 'photo' | 'postal-code' | 'sex' | 'shipping' | 'street-address' | 'tel' | 'tel-area-code' | 'tel-country-code' | 'tel-extension' | 'tel-local' | 'tel-local-prefix' | 'tel-local-suffix' | 'tel-national' | 'transaction-amount' | 'transaction-currency' | 'url' | 'username' | 'work' | (string & {})",
               "Solid Next": "'additional-name' | 'address-level1' | 'address-level2' | 'address-level3' | 'address-level4' | 'address-line1' | 'address-line2' | 'address-line3' | 'bday' | 'bday-day' | 'bday-month' | 'bday-year' | 'billing' | 'cc-additional-name' | 'cc-csc' | 'cc-exp' | 'cc-exp-month' | 'cc-exp-year' | 'cc-family-name' | 'cc-given-name' | 'cc-name' | 'cc-number' | 'cc-type' | 'country' | 'country-name' | 'current-password' | 'email' | 'family-name' | 'fax' | 'given-name' | 'home' | 'honorific-prefix' | 'honorific-suffix' | 'impp' | 'language' | 'mobile' | 'name' | 'new-password' | 'nickname' | 'off' | 'on' | 'organization' | 'organization-title' | 'pager' | 'photo' | 'postal-code' | 'sex' | 'shipping' | 'street-address' | 'tel' | 'tel-area-code' | 'tel-country-code' | 'tel-extension' | 'tel-local' | 'tel-local-prefix' | 'tel-local-suffix' | 'tel-national' | 'transaction-amount' | 'transaction-currency' | 'url' | 'username' | 'work' | (string & {}) | false",
-              "Vue": "string"
+              "Vue": "InputAutoCompleteAttribute"
             }
           },
           "autoComplete": {
@@ -11937,7 +11937,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement#change",
             "values": {
-              "React": "ChangeEventHandler<T>",
+              "React": "ChangeEventHandler<T, HTMLInputElement>",
               "Voby": "KeyboardEventHandler<T>"
             }
           },
@@ -17250,7 +17250,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement#change",
             "values": {
-              "React": "ChangeEventHandler<T>",
+              "React": "ChangeEventHandler<T, HTMLSelectElement>",
               "Voby": "KeyboardEventHandler<T>"
             }
           },
@@ -19599,7 +19599,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement#change",
             "values": {
-              "React": "ChangeEventHandler<T>",
+              "React": "ChangeEventHandler<T, HTMLTextAreaElement>",
               "Voby": "KeyboardEventHandler<T>"
             }
           },
@@ -22932,6 +22932,173 @@
       }
     },
     "math": {
+      "a": {
+        "deprecated": false,
+        "description": "If the a element has an href attribute, then it represents a hyperlink (a hypertext anchor) labeled by its contents.",
+        "elementURL": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/a",
+        "interfaceURL": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement",
+        "keys": {
+          "download": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "global": false,
+            "inherited": false,
+            "name": "download",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.download",
+            "values": {
+              "React": "any",
+              "Voby": "boolean"
+            }
+          },
+          "href": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "global": false,
+            "inherited": false,
+            "name": "href",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.href",
+            "values": {
+              "React": "string",
+              "Voby": "string"
+            }
+          },
+          "hrefLang": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "global": false,
+            "inherited": false,
+            "name": "hrefLang",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.hreflang",
+            "values": {
+              "React": "string",
+              "Voby": "string"
+            },
+            "warn": true
+          },
+          "media": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "global": false,
+            "inherited": false,
+            "name": "media",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.media",
+            "values": {
+              "React": "string",
+              "Voby": "string"
+            }
+          },
+          "ping": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "global": false,
+            "inherited": false,
+            "name": "ping",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.ping",
+            "values": {
+              "React": "string",
+              "Voby": "string"
+            }
+          },
+          "referrerPolicy": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "global": false,
+            "inherited": false,
+            "name": "referrerPolicy",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.referrerpolicy",
+            "values": {
+              "React": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'",
+              "Voby": "'' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'"
+            },
+            "warn": true
+          },
+          "rel": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "global": false,
+            "inherited": false,
+            "name": "rel",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.rel",
+            "values": {
+              "Voby": "string"
+            }
+          },
+          "target": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "global": false,
+            "inherited": false,
+            "name": "target",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.target",
+            "values": {
+              "React": "'_self' | '_blank' | '_parent' | '_top' | (string & {})",
+              "Voby": "'_self' | '_blank' | '_parent' | '_top'"
+            }
+          },
+          "type": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "global": false,
+            "inherited": false,
+            "name": "type",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#mathmlelement.type",
+            "values": {
+              "React": "string",
+              "Voby": "string"
+            }
+          }
+        },
+        "name": "a",
+        "namespace": "http://www.w3.org/1998/Math/MathML",
+        "notIncludedMDN": [],
+        "readonly": [],
+        "tagInterfaceName": "MathMLElement"
+      },
       "annotation": {
         "deprecated": false,
         "description": "",

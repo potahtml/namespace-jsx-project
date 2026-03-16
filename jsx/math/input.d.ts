@@ -70,5 +70,7 @@ interface InputHTMLAttributes<T> extends HTMLAttributes<T> {
 	value?: string | readonly string[] | number
 	width?: number | string
 
-	onChange?: ChangeEventHandler<T>
+	// No other element dispatching change events can be nested in a <input>
+	// so we know the target will be a HTMLInputElement.
+	onChange?: ChangeEventHandler<T, HTMLInputElement>
 }

@@ -13504,6 +13504,13 @@
       }
     },
     "math": {
+      "a": {
+        "booleans": [],
+        "events": [],
+        "keys": {},
+        "readonly": [],
+        "tagInterfaceName": "MathMLElement"
+      },
       "annotation": {
         "booleans": [],
         "events": [],
@@ -27801,6 +27808,13 @@
       }
     },
     "math": {
+      "a": {
+        "booleans": [],
+        "events": [],
+        "keys": {},
+        "readonly": [],
+        "tagInterfaceName": "MathMLElement"
+      },
       "annotation": {
         "booleans": [],
         "events": [],

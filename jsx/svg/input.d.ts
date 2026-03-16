@@ -41,7 +41,7 @@ interface InputHTMLAttributes<T extends EventTarget> extends VoidHTMLAttributes<
 interface InputHTMLAttributes extends HTMLAttributes {
 	accept?: string
 	alt?: string
-	autocomplete?: string
+	autocomplete?: InputAutoCompleteAttribute
 	autofocus?: boolean | 'true' | 'false'
 	capture?: boolean | 'user' | 'environment' // https://www.w3.org/tr/html-media-capture/#the-capture-attribute
 	checked?: boolean | 'true' | 'false' | any[] | Set<any> // for IDE v-model multi-checkbox support
@@ -108,5 +108,7 @@ interface InputHTMLAttributes<T> extends HTMLAttributes<T> {
 	value?: string | readonly string[] | number
 	width?: number | string
 
-	onChange?: ChangeEventHandler<T>
+	// No other element dispatching change events can be nested in a <input>
+	// so we know the target will be a HTMLInputElement.
+	onChange?: ChangeEventHandler<T, HTMLInputElement>
 }
