@@ -13,7 +13,7 @@ import { append, entries, write } from './utils.js'
 export const libs = [
 	{
 		// SOLID MAIN
-		file: 'https://raw.githubusercontent.com/titoBouzout/dom-expressions/refs/heads/main-types-update-0105/packages/dom-expressions/src/jsx.d.ts',
+		file: 'https://raw.githubusercontent.com/ryansolid/dom-expressions/refs/heads/main/packages/dom-expressions/src/jsx.d.ts',
 		name: 'Solid Main',
 		url: 'https://www.solidjs.com/',
 		interfaces: {},
@@ -94,7 +94,7 @@ export const libs = [
 	},
 	{
 		// SOLID NEXT
-		file: 'https://raw.githubusercontent.com/titoBouzout/dom-expressions/refs/heads/next-types-update-0105/packages/dom-expressions/src/jsx.d.ts',
+		file: 'https://raw.githubusercontent.com/ryansolid/dom-expressions/refs/heads/next/packages/dom-expressions/src/jsx.d.ts',
 		name: 'Solid Next',
 		url: 'https://www.solidjs.com/',
 		interfaces: {},

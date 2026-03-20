@@ -940,7 +940,7 @@ interface AriaAttributes {
 	'aria-valuetext'?: string | false
 	role?: 'alert' | 'alertdialog' | 'application' | 'article' | 'banner' | 'button' | 'cell' | 'checkbox' | 'columnheader' | 'combobox' | 'complementary' | 'contentinfo' | 'definition' | 'dialog' | 'directory' | 'document' | 'feed' | 'figure' | 'form' | 'grid' | 'gridcell' | 'group' | 'heading' | 'img' | 'link' | 'list' | 'listbox' | 'listitem' | 'log' | 'main' | 'marquee' | 'math' | 'menu' | 'menubar' | 'menuitem' | 'menuitemcheckbox' | 'menuitemradio' | 'meter' | 'navigation' | 'none' | 'note' | 'option' | 'presentation' | 'progressbar' | 'radio' | 'radiogroup' | 'region' | 'row' | 'rowgroup' | 'rowheader' | 'scrollbar' | 'search' | 'searchbox' | 'separator' | 'slider' | 'spinbutton' | 'status' | 'switch' | 'tab' | 'table' | 'tablist' | 'tabpanel' | 'term' | 'textbox' | 'timer' | 'toolbar' | 'tooltip' | 'tree' | 'treegrid' | 'treeitem' | false
 }
-interface ElementAttributes<T> extends CustomAttributes<T>, DirectiveAttributes, DirectiveFunctionAttributes<T>, PropAttributes, AttrAttributes, BoolAttributes, OnAttributes<T>, EventHandlersElement<T>, AriaAttributes {
+interface ElementAttributes<T> extends CustomAttributes<T>, PropAttributes, OnAttributes<T>, EventHandlersElement<T>, AriaAttributes {
 	// [key: ClassKeys]: boolean;
 
 	// properties
@@ -1658,7 +1658,7 @@ interface CSSAttributes extends NSStyle {
 
 	[attr: `class:${string}`]: string | boolean | number | null
 }
-interface ElementAttributes<Element> extends PotaAttributes<Element>, CSSAttributes, AriaAttributes, EventHandlersElement<Element> {
+interface ElementAttributes<Element> extends PotaAttributes<Element>, CSSAttributes, AriaAttributes, EventHandlersElement<Element>, ElementProperties<Element> {
 	// properties
 	'prop:innerHTML'?: number | string
 	'prop:textContent'?: number | string

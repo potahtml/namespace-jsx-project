@@ -28,7 +28,7 @@ interface AnchorHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface AnchorHTMLAttributes<T> extends HTMLAttributes<T> {
-	download?: string | false
+	download?: string | '' | true | false
 	href?: string | false
 	hreflang?: string | false
 	ping?: string | false
@@ -92,7 +92,7 @@ interface AnchorHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Pota - https://github.com/potahtml/pota
 interface HTMLAnchorElementAttributes<Element> extends HTMLAttributes<Element> {
-	download?: string
+	download?: string | boolean | ''
 	href?: string
 	hreflang?: string
 	ping?: string

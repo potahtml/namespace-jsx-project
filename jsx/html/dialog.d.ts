@@ -11,7 +11,7 @@ interface DialogHtmlAttributes<T> extends HTMLAttributes<T> {
 	tabindex?: never
 
 	/** @experimental */
-	closedby: 'any' | 'closerequest' | 'none'
+	closedby?: 'any' | 'closerequest' | 'none'
 }
 
 // Solid Next - https://www.solidjs.com/
@@ -27,7 +27,7 @@ interface DialogHtmlAttributes<T> extends HTMLAttributes<T> {
 	tabindex?: never
 
 	/** @experimental */
-	closedby: 'any' | 'closerequest' | 'none' | false
+	closedby?: 'any' | 'closerequest' | 'none' | false
 }
 
 // Voby - https://github.com/vobyjs/voby

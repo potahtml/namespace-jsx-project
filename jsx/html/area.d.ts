@@ -23,7 +23,7 @@ interface AreaHTMLAttributes<T> extends HTMLAttributes<T> {
 interface AreaHTMLAttributes<T> extends HTMLAttributes<T> {
 	alt?: string | false
 	coords?: string | false
-	download?: string | false
+	download?: string | '' | true | false
 	href?: string | false
 	ping?: string | false
 	referrerpolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url' | false
@@ -83,7 +83,7 @@ interface AreaHTMLAttributes<T> extends HTMLAttributes<T> {
 interface HTMLAreaElementAttributes<Element> extends HTMLAttributes<Element> {
 	alt?: string
 	coords?: string
-	download?: string
+	download?: string | boolean | ''
 	href?: string
 	ping?: string
 	referrerpolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
