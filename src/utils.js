@@ -56,7 +56,7 @@ export const prettier = async file => {
 	}
 }
 
-/** @returns String[] */
+/** @returns {string[]} Sorted unique strings; nested arrays are flattened */
 export const unique = (...a) => [...new Set(a.flat(Infinity))].sort()
 
 export const uniqueKeys = (...a) =>
