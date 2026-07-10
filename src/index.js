@@ -758,7 +758,7 @@ for (const [ns, tags] of entries(tagNames)) {
 
 // https://github.com/ryansolid/dom-expressions
 
-for (const [ns, tag] of entries(DATA.elements.html)) {
+for (const [tagName, tag] of entries(DATA.elements.html)) {
 	for (const [_, key] of entries(tag.keys)) {
 		if (key.prop) {
 			if (key.readonly || key.deprecated || key.nonstandard) {

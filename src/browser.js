@@ -65,14 +65,11 @@ export const fetchTable = async file => {
 	}
 }
 
-export const browserData = async (
-	browserData,
-	browser = 'chrome',
-) => {
+export const browserData = async (tagNames, browser = 'chrome') => {
 	const [navigatorInstance, page] = await startBrowser(browser)
 
 	try {
-		await page.exposeFunction('getData', () => browserData)
+		await page.exposeFunction('getData', () => tagNames)
 
 		const url = pathToFileURL(
 			process.cwd() + '/browser/index.html',

@@ -96,7 +96,7 @@ function xElement(props) {
       </caption>
 
       <thead>
-        <Show when="${Object.keys(keys).length}">
+        <Show when="${keys.length}">
           <tr>
             <th>key</th>
             <th>kind</th>
