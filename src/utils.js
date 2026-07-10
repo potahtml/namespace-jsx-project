@@ -97,7 +97,20 @@ export const fetchCached = async url => {
 	const file = './node_modules/.cache/' + name + '.txt'
 	if (!fs.existsSync(file)) {
 		console.log('fetching and caching', url)
-		const content = await fetch(url).then(x => x.text())
+		const response = await fetch(url)
+
+		// a `404` is expected for some urls (files that dont exists in
+		// mdn/bcd), but never cache other errors such rate limits
+		if (!response.ok && response.status !== 404) {
+			throw new Error(
+				'fetch failed with status ' +
+					response.status +
+					' for url ' +
+					url,
+			)
+		}
+
+		const content = await response.text()
 		if (content) {
 			write(file, content)
 		}
