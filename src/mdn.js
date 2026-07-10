@@ -223,16 +223,9 @@ export async function checkMDNPropValue(
 	const c1 =
 		elementMDN[Object.keys(elementMDN)[0]]?.elements?.[
 			tagName.toLowerCase()
-		]?.__compat?.[propName]?.status?.[valueName]
-
-	if (c1 !== undefined) return c1
-
-	const c2 =
-		elementMDN[Object.keys(elementMDN)[0]]?.elements?.[
-			tagName.toLowerCase()
 		]?.[propName]?.__compat?.status?.[valueName]
 
-	if (c2 !== undefined) return c2
+	if (c1 !== undefined) return c1
 
 	return interfaceMDN.api?.[tagInterfaceName.toLowerCase()]?.[
 		propName
