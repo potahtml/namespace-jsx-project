@@ -192,7 +192,7 @@ function xElementKey(props) {
 }
 
 function App() {
-  const [read, write] = signal()
+  const { read, write } = signal()
 
   fetch('../jsx/data.json')
     .then(x => x.json())
