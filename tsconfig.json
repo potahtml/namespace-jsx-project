@@ -6,6 +6,7 @@
 		"allowJs": true,
 		"checkJs": true,
 		"strict": true,
+		"skipLibCheck": true,
 
 		"module": "NodeNext",
 		"target": "ESNext",
@@ -17,5 +18,6 @@
 		"jsxImportSource": "pota",
 
 		"sourceMap": true
-	}
+	},
+	"include": ["src"]
 }
