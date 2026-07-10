@@ -1,3 +1,4 @@
+import { pathToFileURL } from 'node:url'
 import puppeteer from 'puppeteer'
 
 export const startBrowser = async (browser = 'chrome') => {
@@ -39,7 +40,7 @@ export const fetchTable = async file => {
 	const [navigatorInstance, page] = await startBrowser()
 
 	try {
-		const url = 'file:///' + process.cwd().replace(/\\/g, '/') + file
+		const url = pathToFileURL(process.cwd() + file).href
 
 		await page.goto(url, {
 			waitUntil: 'networkidle0',
@@ -62,10 +63,9 @@ export const browserData = async (
 	try {
 		await page.exposeFunction('getData', () => browserData)
 
-		const url =
-			'file:///' +
-			process.cwd().replace(/\\/g, '/') +
-			'/browser/index.html'
+		const url = pathToFileURL(
+			process.cwd() + '/browser/index.html',
+		).href
 
 		await page.goto(url, {
 			waitUntil: 'networkidle0',
