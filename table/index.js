@@ -356,4 +356,4 @@ function KeyURL(tagName, keyInterfaceName, key) {
   )
 }
 
-document.querySelector('script[type="importmap"]').remove()
+document.querySelector('script[type="importmap"]')?.remove()
