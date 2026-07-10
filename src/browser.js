@@ -45,7 +45,18 @@ export const fetchTable = async file => {
 		await page.goto(url, {
 			waitUntil: 'networkidle0',
 		})
-		await new Promise(resolve => setTimeout(resolve, 10000))
+		// wait until the table count exists and is stable between polls
+		await page.waitForFunction(
+			() => {
+				const count = document.querySelectorAll(
+					'.content table',
+				).length
+				const done = count && count === window.__tableCount
+				window.__tableCount = count
+				return done
+			},
+			{ polling: 500, timeout: 120_000 },
+		)
 		return await page.evaluate(() => {
 			return '<!DOCTYPE html>' + document.documentElement.outerHTML
 		})
