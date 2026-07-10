@@ -2,7 +2,6 @@ import {
 	copy,
 	entries,
 	prettier,
-	read,
 	remove,
 	removeFromArray,
 	stringifySorted,
@@ -10,11 +9,6 @@ import {
 	uniqueTypes,
 	write,
 } from './utils.js'
-import {
-	parseFromFile,
-	parseFromString,
-	parseFromURL,
-} from './parse.js'
 import { getLibs } from './frameworks.js'
 import { tsEventsInterfaces, tsTagNames } from './typescript.js'
 import { vsCode } from './vscode.js'
@@ -480,8 +474,6 @@ DATA.keys.eventsHierarchy = {
 
 DATA.keys.booleans = unique(chrome.booleans, firefox.booleans)
 
-// remove from HTMLElement events defined in Element
-
 // merge tag attributes/properties from browser/frameworks
 
 for (const [ns, tags] of entries(tagNames)) {
@@ -765,13 +757,6 @@ for (const [ns, tags] of entries(tagNames)) {
 }
 
 // https://github.com/ryansolid/dom-expressions
-
-DATA.DOMExpressions = {
-	url: 'https://github.com/ryansolid/dom-expressions',
-	booleans: [],
-	booleansWithCase: [],
-	PropAliases: {},
-}
 
 for (const [ns, tag] of entries(DATA.elements.html)) {
 	for (const [_, key] of entries(tag.keys)) {

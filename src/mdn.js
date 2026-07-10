@@ -79,7 +79,7 @@ const mdnSkip = uniqueKeys(`
 
 	// table
 
-	createCaption createTBody createTFoot createTHead deleteCaption deleteRow deleteTFoot deleteTHead insertRow deleteCell insertCell deleteCell insertCell
+	createCaption createTBody createTFoot createTHead deleteCaption deleteRow deleteTFoot deleteTHead insertRow deleteCell insertCell
 
 `)
 

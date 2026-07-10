@@ -156,7 +156,6 @@ function xElementKey(props) {
     value.readonly && 'prop readonly',
     value.global && 'global',
     value.attr && 'attr',
-    ,
   ]
     .filter(x => x)
     .join('/')
