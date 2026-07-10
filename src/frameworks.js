@@ -94,7 +94,7 @@ export const libs = [
 	},
 	{
 		// SOLID NEXT
-		file: 'https://raw.githubusercontent.com/ryansolid/dom-expressions/refs/heads/next/packages/dom-expressions/src/jsx.d.ts',
+		file: 'https://raw.githubusercontent.com/ryansolid/dom-expressions/refs/heads/next/packages/runtime/src/jsx.d.ts',
 		name: 'Solid Next',
 		url: 'https://www.solidjs.com/',
 		interfaces: {},
@@ -406,7 +406,7 @@ export const libs = [
 	},
 	{
 		// POTA
-		file: 'https://raw.githubusercontent.com/potahtml/pota/refs/heads/master/src/jsx/jsx.d.ts',
+		file: 'https://raw.githubusercontent.com/potahtml/pota/refs/heads/master/typescript/jsx/namespace.d.ts',
 		name: 'Pota',
 		url: 'https://github.com/potahtml/pota',
 		interfaces: {},
@@ -427,7 +427,7 @@ export const libs = [
 					values: [
 						'htmlelements',
 						'htmldeprecatedelements',
-						'htmlwebviewelements',
+						'htmlspecialelements',
 					],
 					skip: ['elementattributes', 'htmlattributes'],
 				},

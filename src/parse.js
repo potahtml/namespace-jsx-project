@@ -207,6 +207,7 @@ function unwrapTypes(source, types) {
 
 			// pota
 			.replace(/Accessor<([^><]+)>/gi, '$1')
+			.replace(/Attribute<([^><]+)>/gi, '$1')
 
 			// react
 			.replace(/\| DO_NOT_USE[^\n]+\n/gi, '\n')
