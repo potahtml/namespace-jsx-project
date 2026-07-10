@@ -196,12 +196,13 @@ function App() {
   fetch('../jsx/data.json')
     .then(x => x.json())
     .then(x => write(x))
-    .then(x => {
+    .then(() => {
       location.hash &&
         document
-          .querySelector('[id="' + location.hash.slice(1) + '"]')
-          .scrollIntoView()
+          .getElementById(location.hash.slice(1))
+          ?.scrollIntoView()
     })
+    .catch(e => console.error('failed to load data.json', e))
   return xml`<Show when="${read}">${data => {
     return xml`
         <form>
