@@ -12,20 +12,41 @@ import oxc from 'oxc-parser'
 /** This is used to parse framework interfaces */
 const dev = false
 
-export async function parseFromURL(file, name, map = {}) {
-	let text
+/** Fetches text, retrying once, and fails loudly on errors */
+async function fetchText(url) {
+	let response = await fetch(url)
 
-	text = dev
-		? await fetchCached(file)
-		: await fetch(file).then(v => v.text())
+	if (!response.ok) {
+		// try again, could be a transient error
+		response = await fetch(url)
+	}
+	if (!response.ok) {
+		throw new Error(
+			'fetch failed with status ' +
+				response.status +
+				' for url ' +
+				url,
+		)
+	}
+
+	let text = await response.text()
 
 	if (text === '') {
 		// try again
-		text = await fetch(file).then(v => v.text())
+		text = await fetch(url).then(v => v.text())
 		if (text === '') {
-			throw new Error('received empty file from url ' + file)
+			throw new Error('received empty file from url ' + url)
 		}
 	}
+
+	return text
+}
+
+export async function parseFromURL(file, name, map = {}) {
+	const text = dev
+		? await fetchCached(file)
+		: await fetchText(file)
+
 	file = './node_modules/.cache/' + name + '.d.ts'
 	write(file, text)
 	return parse(file, name, map)
