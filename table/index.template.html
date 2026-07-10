@@ -308,7 +308,7 @@
 					}
 				}
 
-				document.oninput = ({ target } = e) => {
+				document.oninput = ({ target }) => {
 					if (target.type !== 'search') {
 						setSettings(target)
 						return
