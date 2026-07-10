@@ -38,19 +38,19 @@ export const startBrowser = async (browser = 'chrome') => {
 export const fetchTable = async file => {
 	const [navigatorInstance, page] = await startBrowser()
 
-	const url = 'file:///' + process.cwd().replace(/\\/g, '/') + file
+	try {
+		const url = 'file:///' + process.cwd().replace(/\\/g, '/') + file
 
-	await page.goto(url, {
-		waitUntil: 'networkidle0',
-	})
-	await new Promise(resolve => setTimeout(resolve, 10000))
-	const result = await page.evaluate(() => {
-		return '<!DOCTYPE html>' + document.documentElement.outerHTML
-	})
-
-	navigatorInstance.close()
-
-	return result
+		await page.goto(url, {
+			waitUntil: 'networkidle0',
+		})
+		await new Promise(resolve => setTimeout(resolve, 10000))
+		return await page.evaluate(() => {
+			return '<!DOCTYPE html>' + document.documentElement.outerHTML
+		})
+	} finally {
+		await navigatorInstance.close()
+	}
 }
 
 export const browserData = async (
@@ -59,21 +59,23 @@ export const browserData = async (
 ) => {
 	const [navigatorInstance, page] = await startBrowser(browser)
 
-	await page.exposeFunction('getData', () => browserData)
+	try {
+		await page.exposeFunction('getData', () => browserData)
 
-	const url =
-		'file:///' +
-		process.cwd().replace(/\\/g, '/') +
-		'/browser/index.html'
+		const url =
+			'file:///' +
+			process.cwd().replace(/\\/g, '/') +
+			'/browser/index.html'
 
-	await page.goto(url, {
-		waitUntil: 'networkidle0',
-	})
-	await page.evaluate(() => window.runFromPuppeteer())
-	// await new Promise(resolve => setTimeout(resolve, 2000))
-	const result = await page.evaluate(() => document.body.textContent)
+		await page.goto(url, {
+			waitUntil: 'networkidle0',
+		})
+		await page.evaluate(() => window.runFromPuppeteer())
+		// await new Promise(resolve => setTimeout(resolve, 2000))
+		const result = await page.evaluate(() => document.body.textContent)
 
-	navigatorInstance.close()
-
-	return JSON.parse(result)
+		return JSON.parse(result)
+	} finally {
+		await navigatorInstance.close()
+	}
 }
