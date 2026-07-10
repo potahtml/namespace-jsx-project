@@ -9,8 +9,11 @@ window.runFromPuppeteer = async function () {
 }
 
 /**
- * This is test data, the data is not hardcoded. It is passed when run
- * in puppeteer
+ * This is test data, only used when opening `browser/index.html`
+ * directly in a browser. The real run (puppeteer) passes the tag
+ * names via `getData()`, merged in `src/index.js` from `src/data.js`,
+ * TypeScript, the frameworks and vscode - keep those as the source of
+ * truth; this list may drift and that is fine.
  */
 const testData = {
 	html: [
