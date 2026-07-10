@@ -174,7 +174,7 @@ function xElementKey(props) {
       <a
         href="${value.url}"
         target="_blank"
-        >${props.warn ? xml`<s>${value.name}</s>` : value.name}</a
+        >${value.warn ? xml`<s>${value.name}</s>` : value.name}</a
       >
       ${deprecated} ${warn} ${inherited} ${weird} ${experimental}
       ${nonstandard} ${danger}
