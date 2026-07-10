@@ -1,5 +1,6 @@
 {
 	"name": "pota.jsx",
+	"private": true,
 	"type": "module",
 	"scripts": {
 		"dev": "node src/index.js"
