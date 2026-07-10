@@ -114,7 +114,8 @@ function xElement(props) {
       </tbody>
     </table>
     <Show
-      when="${element.readonly?.length + element.notIncludedMDN?.length}"
+      when="${(element.readonly?.length || 0) +
+      (element.notIncludedMDN?.length || 0)}"
     >
       <footer>
         <Show when="${element.readonly?.length}">
