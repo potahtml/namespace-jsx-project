@@ -65,7 +65,7 @@ such a comprehensive data file doesn't exist yet).
 You can see the current table at
 https://potahtml.github.io/namespace-jsx-project/table/index.html
 
-Theres a `data.json` at
+There is a `data.json` at
 https://github.com/potahtml/namespace-jsx-project/blob/master/jsx/data.json
 which can be used to generate types.
 
@@ -99,11 +99,11 @@ idea!
    live.
 
 5. It may be possible that you run into a random error with puppeteer,
-   on which case you just run the whole thing again. Theres also the
-   need to install firefox via puppeteer. Then command is given to you
+   on which case you just run the whole thing again. There is also the
+   need to install firefox via puppeteer. The command is given to you
    by a console error from puppeteer. It could also give random
-   errors, as data is taken live from github, if a page fials to load
-   a random error will apppear, just run the command again.
+   errors, as data is taken live from github, if a page fails to load
+   a random error will appear, just run the command again.
 
 ## TODO
 

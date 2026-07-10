@@ -1,6 +1,6 @@
 /**
  * It has to run with data coming from the call because else the data
- * will be hardcoded on this file. We want to avoid harcoding things.
+ * will be hardcoded on this file. We want to avoid hardcoding things.
  */
 window.runFromPuppeteer = async function () {
 	return await window.getData().then(data => {
@@ -627,7 +627,7 @@ function run(data, dynamic) {
 							}
 						} else {
 							console.log(
-								'unkown type for ',
+								'unknown type for ',
 								tagInterfaceName,
 								keyWithInterfaceName,
 								name,

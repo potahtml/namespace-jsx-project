@@ -296,7 +296,7 @@ DATA.keys.globalsHierarchy = {
 		.filter(x => x.startsWith('Element.'))
 		.map(x => x.split('.')[1])
 
-	// deuplicate HTMLElement/SVGElement/MathMLElement
+	// deduplicate HTMLElement/SVGElement/MathMLElement
 
 	for (const key of remaining.slice()) {
 		const [interfaceName, keyName] = key.split('.')
@@ -422,7 +422,7 @@ DATA.keys.eventsHierarchy = {
 		.filter(x => x.startsWith('Element.'))
 		.map(x => x.split('.')[1])
 
-	// deuplicate HTMLElement/SVGElement/MathMLElement
+	// deduplicate HTMLElement/SVGElement/MathMLElement
 
 	for (const event of remaining.slice()) {
 		const [interfaceName, eventName] = event.split('.')
@@ -449,7 +449,7 @@ DATA.keys.eventsHierarchy = {
 		}
 	}
 
-	// deuplicate HTMLBodyElement/HTMLFrameSetElement
+	// deduplicate HTMLBodyElement/HTMLFrameSetElement
 
 	for (const event of remaining.slice()) {
 		const [interfaceName, eventName] = event.split('.')
@@ -577,7 +577,7 @@ for (const [ns, tags] of entries(tagNames)) {
 
 		copyEventVariants(tag.keys)
 
-		// noramlize
+		// normalize
 
 		for (const k in tag.keys) {
 			const kLower = k.toLowerCase()
