@@ -272,19 +272,17 @@ export function getInterfaceMergedFromPropertySource(
 		}
 	}
 
-	const parsed = parseFromString(result.source)
-	for (const inter of parsed) {
-		for (const [name, value] of entries(inter)) {
-			if (value.properties) {
-				for (const prop of value.properties) {
-					if (result.properties[prop.name]) {
-						result.properties[prop.name] += ' | ' + prop.source
-						result.properties[prop.name] = uniqueTypes(
-							result.properties[prop.name],
-						)
-					} else {
-						result.properties[prop.name] = uniqueTypes(prop.source)
-					}
+	const [, parsed] = parseFromString(result.source)
+	for (const [, value] of entries(parsed)) {
+		if (value.properties) {
+			for (const prop of value.properties) {
+				if (result.properties[prop.name]) {
+					result.properties[prop.name] += ' | ' + prop.source
+					result.properties[prop.name] = uniqueTypes(
+						result.properties[prop.name],
+					)
+				} else {
+					result.properties[prop.name] = uniqueTypes(prop.source)
 				}
 			}
 		}
