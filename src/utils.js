@@ -78,14 +78,22 @@ export function removeFromArray(array, value) {
 	if (index !== -1) array.splice(index, 1)
 }
 
+/** Callers share the parsed object and must not mutate it */
+const fetchJSONCache = {}
 export async function fetchJSON(url, lower = false) {
-	const text = await fetchCached(url)
-	try {
-		return JSON.parse(lower ? text.toLowerCase() : text)
-	} catch (e) {
-		console.warn('unable to parse json from ', url, text)
-		return {}
+	const key = url + '#' + lower
+	if (!(key in fetchJSONCache)) {
+		const text = await fetchCached(url)
+		try {
+			fetchJSONCache[key] = JSON.parse(
+				lower ? text.toLowerCase() : text,
+			)
+		} catch (e) {
+			console.warn('unable to parse json from ', url, text)
+			fetchJSONCache[key] = {}
+		}
 	}
+	return fetchJSONCache[key]
 }
 const fetchCachedCache = {}
 export const fetchCached = async url => {
