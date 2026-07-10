@@ -611,7 +611,17 @@ function run(data, dynamic) {
 							}
 						} else if (typeof value === 'object' && value !== null) {
 							type = 'object'
-							node[name] = 'test'
+							try {
+								node[name] = 'test'
+							} catch (e) {
+								// setters throw for wrong types, keep the run
+								// alive for object props not special-cased
+								console.log(
+									'setter threw for',
+									keyWithInterfaceName,
+									e,
+								)
+							}
 						} else {
 							console.log(
 								'unkown type for ',
