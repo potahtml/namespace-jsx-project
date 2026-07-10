@@ -23,8 +23,7 @@ export async function parseFromURL(file, name, map = {}) {
 		// try again
 		text = await fetch(file).then(v => v.text())
 		if (text === '') {
-			console.log('received empty file from url', file)
-			process.exit()
+			throw new Error('received empty file from url ' + file)
 		}
 	}
 	file = './node_modules/.cache/' + name + '.d.ts'

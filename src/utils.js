@@ -119,8 +119,7 @@ export const fetchCached = async url => {
 		fetchCachedCache[url] = read(file)
 	}
 	if (fetchCachedCache[url] === '') {
-		console.log('received empty file from url', url)
-		process.exit()
+		throw new Error('received empty file from url ' + url)
 	}
 	return fetchCachedCache[url]
 }
