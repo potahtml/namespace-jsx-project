@@ -74,6 +74,101 @@ const DATA = {
 	},
 }
 
+// helpers
+
+/**
+ * Merges chrome/firefox browser keys into `keys`. Chrome wins when
+ * both define a value.
+ */
+function mergeBrowserKeys(keys, chromeKeys, firefoxKeys) {
+	// chrome
+
+	for (const k in chromeKeys) {
+		keys[k] = keys[k] || {
+			name: k,
+			values: {},
+		}
+		const key = keys[k]
+
+		const d = chromeKeys[k]
+
+		key.values.Chrome = uniqueTypes(d.value)
+
+		key.propChrome = d.prop
+		key.attrChrome = d.attr
+
+		key.keyInterfaceName = d.keyInterfaceName
+		key.readonly = d.readonly
+
+		key.propName = d.propName
+		key.attrName = d.attrName
+	}
+
+	// firefox
+
+	for (const k in firefoxKeys) {
+		keys[k] = keys[k] || {
+			name: k,
+			values: {},
+		}
+		const key = keys[k]
+
+		const d = firefoxKeys[k]
+
+		key.values.Firefox = uniqueTypes(d.value)
+
+		key.propFirefox = d.prop
+		key.attrFirefox = d.attr
+
+		key.keyInterfaceName = key.keyInterfaceName || d.keyInterfaceName
+		key.readonly = key.readonly || d.readonly
+
+		key.propName = key.propName || d.propName
+		key.attrName = key.attrName || d.attrName
+	}
+}
+
+/**
+ * Creates `on:event` variants for `onevent`/`onEvent` keys and copies
+ * browser values/interface data from the lowercase `onevent` to the
+ * `on:event`/`onEvent` variants
+ */
+function copyEventVariants(keys) {
+	// copy onevent/onEvent to on:event
+
+	for (const k of Object.keys(keys)) {
+		if (k.startsWith('on') && !k.startsWith('on:')) {
+			const name = k.replace(/^on/, 'on:').toLowerCase()
+			keys[name] = keys[name] || {
+				name: name,
+				values: {},
+			}
+		}
+	}
+
+	// copy properties from onevent to on:event/onEvent
+
+	for (const k of Object.keys(keys)) {
+		if (k.startsWith('on')) {
+			const name = (
+				k.startsWith('on:') ? k.replace(/^on:/, 'on') : k
+			).toLowerCase()
+
+			keys[name] = keys[name] || {
+				name: name,
+				values: {},
+			}
+
+			keys[k].keyInterfaceName = keys[name].keyInterfaceName
+
+			keys[k].values.Chrome = keys[name].values.Chrome
+			keys[k].values.Firefox = keys[name].values.Firefox
+
+			keys[k].eventInterface = tsEventsInterfaces[name]
+		}
+	}
+}
+
 // program
 
 const libs = await getLibs()
@@ -152,51 +247,11 @@ for (const ns of NSGlobalInterfaces) {
 		),
 	}
 
-	// chrome
-
-	for (const k in chrome.keys[ns].keys) {
-		DATA.keys[ns].keys[k] = DATA.keys[ns].keys[k] || {
-			name: k,
-			values: {},
-		}
-		const key = DATA.keys[ns].keys[k]
-
-		const d = chrome.keys[ns].keys[k]
-
-		key.values.Chrome = uniqueTypes(d.value)
-
-		key.propChrome = d.prop
-		key.attrChrome = d.attr
-
-		key.keyInterfaceName = d.keyInterfaceName
-		key.readonly = d.readonly
-
-		key.propName = d.propName
-		key.attrName = d.attrName
-	}
-
-	// firefox
-
-	for (const k in firefox.keys[ns].keys) {
-		DATA.keys[ns].keys[k] = DATA.keys[ns].keys[k] || {
-			name: k,
-			values: {},
-		}
-		const key = DATA.keys[ns].keys[k]
-
-		const d = firefox.keys[ns].keys[k]
-
-		key.values.Firefox = uniqueTypes(d.value)
-
-		key.propFirefox = d.prop
-		key.attrFirefox = d.attr
-
-		key.keyInterfaceName = key.keyInterfaceName || d.keyInterfaceName
-		key.readonly = key.readonly || d.readonly
-
-		key.propName = key.propName || d.propName
-		key.attrName = key.attrName || d.attrName
-	}
+	mergeBrowserKeys(
+		DATA.keys[ns].keys,
+		chrome.keys[ns].keys,
+		firefox.keys[ns].keys,
+	)
 
 	for (const k in DATA.keys[ns].keys) {
 		const key = DATA.keys[ns].keys[k]
@@ -302,42 +357,7 @@ for (const ns of NSGlobalInterfaces) {
 		}
 	}
 
-	// copy onevent/onEvent to on:event
-
-	for (const k in DATA.keys[ns].keys) {
-		if (k.startsWith('on') && !k.startsWith('on:')) {
-			const name = k.replace(/^on/, 'on:').toLowerCase()
-			DATA.keys[ns].keys[name] = DATA.keys[ns].keys[name] || {
-				name: name,
-				values: {},
-			}
-		}
-	}
-
-	// copy properties from onevent to on:event/onEvent
-
-	for (const k in DATA.keys[ns].keys) {
-		if (k.startsWith('on')) {
-			const name = (
-				k.startsWith('on:') ? k.replace(/^on:/, 'on') : k
-			).toLowerCase()
-
-			DATA.keys[ns].keys[name] = DATA.keys[ns].keys[name] || {
-				name: name,
-				values: {},
-			}
-
-			DATA.keys[ns].keys[k].keyInterfaceName =
-				DATA.keys[ns].keys[name].keyInterfaceName
-
-			DATA.keys[ns].keys[k].values.Chrome =
-				DATA.keys[ns].keys[name].values.Chrome
-			DATA.keys[ns].keys[k].values.Firefox =
-				DATA.keys[ns].keys[name].values.Firefox
-
-			DATA.keys[ns].keys[k].eventInterface = tsEventsInterfaces[name]
-		}
-	}
+	copyEventVariants(DATA.keys[ns].keys)
 
 	for (const k in DATA.keys[ns].keys) {
 		const key = DATA.keys[ns].keys[k]
@@ -538,40 +558,11 @@ for (const [ns, tags] of entries(tagNames)) {
 
 		// copy browser keys
 
-		// chrome
-		for (const k in chrome[ns][tagName].keys) {
-			const key = chrome[ns][tagName].keys[k]
-
-			tag.keys[k] = tag.keys[k] || { values: {} }
-			tag.keys[k].values.Chrome = uniqueTypes(key.value)
-
-			tag.keys[k].propChrome = key.prop
-			tag.keys[k].attrChrome = key.attr
-
-			tag.keys[k].keyInterfaceName = key.keyInterfaceName
-			tag.keys[k].readonly = key.readonly
-
-			tag.keys[k].propName = key.propName
-			tag.keys[k].attrName = key.attrName
-		}
-
-		// firefox
-		for (const k in firefox[ns][tagName].keys) {
-			const key = firefox[ns][tagName].keys[k]
-
-			tag.keys[k] = tag.keys[k] || { values: {} }
-			tag.keys[k].values.Firefox = uniqueTypes(key.value)
-
-			tag.keys[k].propFirefox = key.prop
-			tag.keys[k].attrFirefox = key.attr
-
-			tag.keys[k].keyInterfaceName =
-				tag.keys[k].keyInterfaceName || key.keyInterfaceName
-			tag.keys[k].readonly = tag.keys[k].readonly || key.readonly
-
-			tag.keys[k].propName = tag.keys[k].propName || key.propName
-			tag.keys[k].attrName = tag.keys[k].attrName || key.attrName
-		}
+		mergeBrowserKeys(
+			tag.keys,
+			chrome[ns][tagName].keys,
+			firefox[ns][tagName].keys,
+		)
 
 		// copy libs keys
 
@@ -592,33 +583,7 @@ for (const [ns, tags] of entries(tagNames)) {
 			}
 		}
 
-		// copy onevent/onEvent to on:event
-
-		for (const k in tag.keys) {
-			if (k.startsWith('on') && !k.startsWith('on:')) {
-				const name = k.replace(/^on/, 'on:').toLowerCase()
-				tag.keys[name] = tag.keys[name] || { values: {} }
-			}
-		}
-
-		// copy properties from onevent to on:event/onEvent
-
-		for (const k in tag.keys) {
-			if (k.startsWith('on')) {
-				const name = (
-					k.startsWith('on:') ? k.replace(/^on:/, 'on') : k
-				).toLowerCase()
-
-				tag.keys[name] = tag.keys[name] || { values: {} }
-
-				tag.keys[k].keyInterfaceName = tag.keys[name].keyInterfaceName
-
-				tag.keys[k].values.Chrome = tag.keys[name].values.Chrome
-				tag.keys[k].values.Firefox = tag.keys[name].values.Firefox
-
-				tag.keys[k].eventInterface = tsEventsInterfaces[name]
-			}
-		}
+		copyEventVariants(tag.keys)
 
 		// noramlize
 
