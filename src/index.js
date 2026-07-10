@@ -726,21 +726,14 @@ for (const [ns, tags] of entries(tagNames)) {
 				)) ||
 				undefined
 
-			key.nonstandard = (await checkMDNPropValue(
-				ns,
-				tagName,
-				tag.tagInterfaceName,
-				k,
-				'standard_track',
-			))
-				? undefined
-				: (await checkMDNPropValue(
-							ns,
-							tagName,
-							tag.tagInterfaceName,
-							k,
-							'standard_track',
-					  )) === false
+			key.nonstandard =
+				(await checkMDNPropValue(
+					ns,
+					tagName,
+					tag.tagInterfaceName,
+					k,
+					'standard_track',
+				)) === false
 					? true
 					: undefined
 
