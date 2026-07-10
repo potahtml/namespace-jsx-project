@@ -189,13 +189,12 @@ export async function checkMDNMainValue(
 
 	// take deprecated from interface name
 	return (
-		(interfaceMDN.api &&
-			interfaceMDN.api[tagInterfaceName.toLowerCase()].__compat
-				.status[valueName]) ||
+		interfaceMDN.api?.[tagInterfaceName.toLowerCase()]?.__compat
+			?.status?.[valueName] ||
 		// take deprecated from element
-		elementMDN[Object.keys(elementMDN)[0]]?.elements[
+		elementMDN[Object.keys(elementMDN)[0]]?.elements?.[
 			tagName.toLowerCase()
-		]?.__compat.status[valueName] ||
+		]?.__compat?.status?.[valueName] ||
 		undefined
 	)
 }
@@ -222,21 +221,22 @@ export async function checkMDNPropValue(
 
 	// do not merge this checks
 	const c1 =
-		elementMDN[Object.keys(elementMDN)[0]]?.elements[
+		elementMDN[Object.keys(elementMDN)[0]]?.elements?.[
 			tagName.toLowerCase()
-		]?.__compat[propName]?.status[valueName]
+		]?.__compat?.[propName]?.status?.[valueName]
 
 	if (c1 !== undefined) return c1
 
 	const c2 =
-		elementMDN[Object.keys(elementMDN)[0]]?.elements[
+		elementMDN[Object.keys(elementMDN)[0]]?.elements?.[
 			tagName.toLowerCase()
-		][propName]?.__compat?.status[valueName]
+		]?.[propName]?.__compat?.status?.[valueName]
 
 	if (c2 !== undefined) return c2
 
-	return interfaceMDN.api[tagInterfaceName.toLowerCase()][propName]
-		?.__compat.status[valueName]
+	return interfaceMDN.api?.[tagInterfaceName.toLowerCase()]?.[
+		propName
+	]?.__compat?.status?.[valueName]
 }
 
 export async function keysNotIncludedInMDN(
