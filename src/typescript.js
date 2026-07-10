@@ -7,19 +7,26 @@ export const ts = await parseFromURL(
 	'typescript',
 )
 
+const tagNamesOf = (id, optional) => {
+	if (!ts[id]) {
+		if (optional) return []
+		throw new Error(
+			'interface ' + id + ' missing from typescript dom lib',
+		)
+	}
+	return ts[id].properties.map(p => p.name)
+}
+
 export const tsTagNames = {
-	html: ts.htmlelementtagnamemap.properties.map(p => p.name),
-	htmldeprecated: ts.htmlelementdeprecatedtagnamemap.properties.map(
-		p => p.name,
+	html: tagNamesOf('htmlelementtagnamemap'),
+	htmldeprecated: tagNamesOf('htmlelementdeprecatedtagnamemap'),
+	svg: tagNamesOf('svgelementtagnamemap'),
+	svgdeprecated: tagNamesOf('svgelementdeprecatedtagnamemap', true),
+	math: tagNamesOf('mathmlelementtagnamemap'),
+	mathdeprecated: tagNamesOf(
+		'mathmlelementdeprecatedtagnamemap',
+		true,
 	),
-	svg: ts.svgelementtagnamemap.properties.map(p => p.name),
-	svgdeprecated: ts.svgelementdeprecatedtagnamemap
-		? ts.svgelementdeprecatedtagnamemap.properties.map(p => p.name)
-		: [],
-	math: ts.mathmlelementtagnamemap.properties.map(p => p.name),
-	mathdeprecated: ts.mathmlelementdeprecatedtagnamemap
-		? ts.mathmlelementdeprecatedtagnamemap.properties.map(p => p.name)
-		: [],
 }
 
 // typescript events interfaces map
