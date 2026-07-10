@@ -1,8 +1,6 @@
 import fs from 'node:fs'
-import { execSync as $ } from 'child_process'
 import path from 'node:path'
-
-export { $ }
+import { format, resolveConfig } from 'prettier'
 
 export const read = name =>
 	fs.readFileSync(name, { encoding: 'utf8' })
@@ -38,10 +36,25 @@ export const mkdir = dir => {
 	return dir
 }
 
-export const prettier = file =>
-	$(
-		`prettier --config ./.prettierrc.json "${file}" --write --no-editorconfig --ignore-path="false"`,
-	)
+let prettierConfig
+
+export const prettier = async file => {
+	prettierConfig =
+		prettierConfig ||
+		(await resolveConfig(process.cwd(), {
+			config: './.prettierrc.json',
+		}))
+
+	for (const name of fs.globSync(file)) {
+		write(
+			name,
+			await format(read(name), {
+				...prettierConfig,
+				filepath: name,
+			}),
+		)
+	}
+}
 
 /** @returns String[] */
 export const unique = (...a) => [...new Set(a.flat(Infinity))].sort()

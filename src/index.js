@@ -819,7 +819,7 @@ write(
 	await fetchTable('/table/index.template.html'),
 )
 
-prettier('./jsx/**/*.d.ts')
-prettier('./table/index.html')
+await prettier('./jsx/**/*.d.ts')
+await prettier('./table/index.html')
 
 console.log('End')

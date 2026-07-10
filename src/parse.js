@@ -31,7 +31,7 @@ export async function parseFromURL(file, name, map = {}) {
 	return parse(file, name, map)
 }
 
-export function parse(file, name, map = {}) {
+export async function parse(file, name, map = {}) {
 	// copy from `node_modules/lib/jsx.d.ts` to `source/$lib.d.ts`
 	copy(file, `./jsx/source/${name}.d.ts`)
 	copy(file, `./jsx/original/${name}.d.ts`)
@@ -39,7 +39,7 @@ export function parse(file, name, map = {}) {
 	file = `./jsx/source/${name}.d.ts`
 
 	// parse
-	const [sourceWithoutInterfaces, interfaces] = parseFromFile(
+	const [sourceWithoutInterfaces, interfaces] = await parseFromFile(
 		file,
 		map,
 	)
@@ -47,7 +47,7 @@ export function parse(file, name, map = {}) {
 	// write source but without the lines we have used
 	write(file, sourceWithoutInterfaces)
 
-	prettier(file)
+	await prettier(file)
 
 	return interfaces
 }
@@ -59,9 +59,9 @@ export function parse(file, name, map = {}) {
  * prettify the file.
  */
 
-export function parseFromFile(file, map = {}) {
+export async function parseFromFile(file, map = {}) {
 	// pretty the file (easier to parse)
-	prettier(file)
+	await prettier(file)
 
 	// parse
 	const source = read(file)
