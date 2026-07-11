@@ -113,7 +113,7 @@ export function parseFromString(string, map = {}) {
 					removals.push([exportStart ?? node.start, node.end])
 					break
 				case 'TSTypeAliasDeclaration':
-					aliasNodes.push(node)
+					aliasNodes.push([node, exportStart])
 					break
 				case 'TSModuleDeclaration': {
 					// `namespace A.B {}` nests module declarations
@@ -133,7 +133,7 @@ export function parseFromString(string, map = {}) {
 
 	// for unwrapping simple types
 	const types = []
-	for (const t of aliasNodes) {
+	for (const [t] of aliasNodes) {
 		const text = source.slice(t.id.end + 2, t.end).trim()
 		// filter out complex types
 		if (/^[a-z0-9-_ \'\|()&{}/+;]+$/i.test(text)) {
@@ -153,6 +153,52 @@ export function parseFromString(string, map = {}) {
 				.replace(/\n[ \t]*}$/, '\n}') + '\n',
 			types,
 		)
+	}
+
+	// object-literal type aliases become pseudo-interfaces, so
+	// `type CSSAttributes = NSStyle & { class?: ... }` is reachable
+	// from `extends CSSAttributes`. Only the literal members become
+	// properties; reference parts of an intersection become `extends`
+	// (unresolvable ones, like mapped types, are dropped as before)
+	for (const [node, exportStart] of aliasNodes) {
+		const annotation = node.typeAnnotation
+		const parts =
+			annotation.type === 'TSIntersectionType'
+				? annotation.types
+				: [annotation]
+
+		const members = []
+		const heritage = []
+		for (const part of parts) {
+			if (part.type === 'TSTypeLiteral') {
+				for (const member of part.members) {
+					members.push(source.slice(member.start, member.end))
+				}
+			} else if (part.type === 'TSTypeReference') {
+				heritage.push(source.slice(part.start, part.end))
+			}
+		}
+
+		if (!members.length) {
+			continue
+		}
+
+		const typeParameters = node.typeParameters
+			? source.slice(node.typeParameters.start, node.typeParameters.end)
+			: ''
+
+		const inter = getInterfaceById(node.id.name, map, interfaces)
+		inter.source += unwrapTypes(
+			'interface ' +
+				node.id.name +
+				typeParameters +
+				(heritage.length ? ' extends ' + heritage.join(', ') : '') +
+				' {\n' +
+				members.join('\n') +
+				'\n}\n',
+			types,
+		)
+		removals.push([exportStart ?? node.start, node.end])
 	}
 
 	// parse the properties
@@ -240,6 +286,7 @@ function unwrapTypes(source, types) {
 			// pota
 			.replace(/Accessor<([^><]+)>/gi, '$1')
 			.replace(/Attribute<([^><]+)>/gi, '$1')
+			.replace(/Attribute<([^\n]+)>\n/gi, '$1\n')
 
 			// react
 			.replace(/\| DO_NOT_USE[^\n]+\n/gi, '\n')
