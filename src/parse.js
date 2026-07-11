@@ -90,7 +90,7 @@ export async function parseFromFile(file, map = {}) {
 }
 
 export function parseFromString(string, map = {}) {
-	const source = string
+	const source = stripComments(string)
 	const program = parseSync('file.d.ts', source).program
 
 	// collect interface and type alias declarations wherever they sit:
@@ -134,9 +134,14 @@ export function parseFromString(string, map = {}) {
 	// for unwrapping simple types
 	const types = []
 	for (const [t] of aliasNodes) {
-		const text = source.slice(t.id.end + 2, t.end).trim()
+		const text = source
+			.slice(t.id.end + 2, t.end)
+			.trim()
+			// prettier wraps long unions across lines
+			.replace(/\s+/g, ' ')
+			.replace(/^\| /, '')
 		// filter out complex types
-		if (/^[a-z0-9-_ \'\|()&{}/+;]+$/i.test(text)) {
+		if (/^[a-z0-9-_ \'\|()&{}/+;<>,\[\]]+$/i.test(text)) {
 			types.push({ name: t.id.name, source: text })
 		}
 	}
@@ -242,6 +247,21 @@ export function parseFromString(string, map = {}) {
 	leftover += source.slice(last)
 
 	return [leftover, interfaces]
+}
+
+/** Cuts every comment span out of the source */
+
+function stripComments(source) {
+	const comments = parseSync('file.d.ts', source).comments
+
+	let out = ''
+	let last = 0
+	for (const { start, end } of comments) {
+		out += source.slice(last, start)
+		last = end
+	}
+	out += source.slice(last)
+	return out
 }
 
 /** Returns an interface object if exists or creates one */
