@@ -90,104 +90,117 @@ export async function parseFromFile(file, map = {}) {
 }
 
 export function parseFromString(string, map = {}) {
-	// parse
 	const source = string
-	const lines = source.split('\n')
+	const program = parseSync('file.d.ts', source).program
+
+	// collect interface and type alias declarations wherever they sit:
+	// top level, behind `export`, or inside namespaces/modules
+	const interfaceNodes = []
+	const aliasNodes = []
+	// spans to cut from the leftover source, `export` prefix included
+	const removals = []
+
+	const collect = (nodes, exportStart) => {
+		for (const node of nodes) {
+			switch (node.type) {
+				case 'ExportNamedDeclaration':
+					if (node.declaration) {
+						collect([node.declaration], node.start)
+					}
+					break
+				case 'TSInterfaceDeclaration':
+					interfaceNodes.push(node)
+					removals.push([exportStart ?? node.start, node.end])
+					break
+				case 'TSTypeAliasDeclaration':
+					aliasNodes.push(node)
+					break
+				case 'TSModuleDeclaration': {
+					// `namespace A.B {}` nests module declarations
+					let body = node.body
+					while (body?.type === 'TSModuleDeclaration') {
+						body = body.body
+					}
+					if (body?.body) {
+						collect(body.body)
+					}
+					break
+				}
+			}
+		}
+	}
+	collect(program.body)
 
 	// for unwrapping simple types
 	const types = []
-	for (const line of lines) {
-		// oxc has a bug on which the `.end` will be incorrect if we parse the whole file. For this reason parse it line by line instead
-		const ast = parseSync('file.d.ts', line).program.body
-		if (ast.length) {
-			const t = ast[0]
-
-			if (t.type === 'TSTypeAliasDeclaration') {
-				const text = line.slice(t.id.end + 2, t.end).trim()
-				// filter out complex types
-				if (/^[a-z0-9-_ \'\|()&{}/+;]+$/i.test(text)) {
-					const typ = { name: t.id.name, source: text }
-					types.push(typ)
-				}
-			}
+	for (const t of aliasNodes) {
+		const text = source.slice(t.id.end + 2, t.end).trim()
+		// filter out complex types
+		if (/^[a-z0-9-_ \'\|()&{}/+;]+$/i.test(text)) {
+			types.push({ name: t.id.name, source: text })
 		}
 	}
 
 	const interfaces = {}
 
-	for (let i = 0; i < lines.length; i++) {
-		const line = lines[i]
+	// merge sources of same-name declarations
+	for (const node of interfaceNodes) {
+		const inter = getInterfaceById(node.id.name, map, interfaces)
+		inter.source += unwrapTypes(
+			source
+				.slice(node.start, node.end)
+				// dedent the closing brace of nested interfaces
+				.replace(/\n[ \t]*}$/, '\n}') + '\n',
+			types,
+		)
+	}
 
-		const match = line
-			.replace(/^\s*export\sinterface/, 'interface')
-			.replace(/^\s*export\stype/, 'type')
-			.trim()
+	// parse the properties
+	for (const [, inter] of entries(interfaces)) {
+		const ast = parseSync('file.d.ts', inter.source).program.body
 
-		if (match.startsWith('interface')) {
-			const inter = getInterfaceFromLine(match, map, interfaces)
-
-			if (!match.endsWith('{}')) {
-				const indent = line.replace(/^(\s*)[^\s].*/, '$1')
-
-				let text = match // remove the export
-				while (i < lines.length && text !== indent + '}') {
-					inter.source += text + '\n'
-
-					lines[i] = ''
-					text = lines[++i]
+		inter.properties = []
+		inter.extends = []
+		for (const i of ast) {
+			collectReferences(i.extends, inter.extends)
+			for (const property of i.body.body) {
+				// leave these cases
+				// code [property: string]: string | number | null
+				if (!property.key || !property.typeAnnotation) {
+					continue
 				}
-				inter.source += '}\n'
-			} else {
-				inter.source += match
+
+				// abc: value, vs, "abc-def": value
+				const name = property.key.name || property.key.value
+				inter.properties.push({
+					name: name,
+					optional: property.optional,
+					source: inter.source
+						.slice(
+							property.typeAnnotation.start + 1,
+							property.typeAnnotation.end,
+						)
+						.trim(),
+				})
 			}
-
-			inter.source = unwrapTypes(inter.source, types)
-
-			// parse the properties
-
-			const ast = parseSync('file.d.ts', inter.source).program.body
-
-			inter.properties = []
-			inter.extends = []
-			for (const i of ast) {
-				collectReferences(i.extends, inter.extends)
-				for (const property of i.body.body) {
-					// leave these cases
-					// code [property: string]: string | number | null
-					if (!property.key || !property.typeAnnotation) {
-						continue
-					}
-
-					// abc: value, vs, "abc-def": value
-					const name = property.key.name || property.key.value
-					inter.properties.push({
-						name: name,
-						optional: property.optional,
-						source: inter.source
-							.slice(
-								property.typeAnnotation.start + 1,
-								property.typeAnnotation.end,
-							)
-							.trim(),
-					})
-				}
-			}
-
-			// blank the line to know the differences
-			lines[i] = ''
-		} else {
-			// it removes the "export"
-			lines[i] = match
 		}
 	}
 
-	return [lines.join('\n'), interfaces]
+	// the source without the interfaces we have used
+	let leftover = ''
+	let last = 0
+	for (const [start, end] of removals.sort((a, b) => a[0] - b[0])) {
+		leftover += source.slice(last, start)
+		last = end
+	}
+	leftover += source.slice(last)
+
+	return [leftover, interfaces]
 }
 
 /** Returns an interface object if exists or creates one */
 
-function getInterfaceFromLine(line, map, interfaces) {
-	const id = line.replace(/^.*interface ([a-z0-9_\.]+).*$/i, '$1')
+function getInterfaceById(id, map, interfaces) {
 	const lower = id.toLowerCase()
 	const name = map[lower] || lower
 
