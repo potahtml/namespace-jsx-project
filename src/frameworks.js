@@ -75,18 +75,19 @@ export const libs = [
 						'customeventhandlerscamelcase',
 						'customeventhandlerslowercase',
 						'customeventhandlersnamespaced',
-					],
-					skip: [
-						// custom
-						'customattributes',
-						'directiveattributes',
-						'directivefunctionattributes',
 
-						// namespaced
+						// namespaced pattern keys
+						'directiveattributes',
 						'propattributes',
 						'attrattributes',
 						'boolattributes',
 						'onattributes',
+						'oncaptureattributes',
+					],
+					skip: [
+						// custom
+						'customattributes',
+						'directivefunctionattributes',
 					],
 				},
 			},
@@ -146,6 +147,9 @@ export const libs = [
 						'ariaattributes',
 						'elementattributes',
 						'eventhandlerselement',
+
+						// namespaced pattern keys
+						'propattributes',
 					],
 					skip: [
 						// custom
@@ -154,7 +158,6 @@ export const libs = [
 						'directivefunctionattributes',
 
 						// namespaced
-						'propattributes',
 						'attrattributes',
 						'boolattributes',
 						'onattributes',
@@ -232,7 +235,12 @@ export const libs = [
 					skip: [],
 				},
 				Element: {
-					values: ['ariaattributes'],
+					values: [
+						'ariaattributes',
+
+						// namespaced pattern keys
+						'directiveattributes',
+					],
 				},
 			},
 		},
@@ -459,6 +467,9 @@ export const libs = [
 						'elementattributes',
 						'ariaattributes',
 						'eventhandlerselement',
+
+						// namespaced pattern keys
+						'nsstyle',
 					],
 				},
 			},

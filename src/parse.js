@@ -181,6 +181,23 @@ export function parseFromString(string, map = {}) {
 				}
 			} else if (part.type === 'TSTypeReference') {
 				heritage.push(source.slice(part.start, part.end))
+			} else if (part.type === 'TSMappedType') {
+				// `[Key in keyof X as `use:${Key}`]?: X[Key]` becomes the
+				// pattern member `'use:*'?: X[Key]`
+				const name = patternName(part.nameType)
+				if (name && part.typeAnnotation) {
+					members.push(
+						"'" +
+							name +
+							"'" +
+							(part.optional ? '?' : '') +
+							': ' +
+							source.slice(
+								part.typeAnnotation.start,
+								part.typeAnnotation.end,
+							),
+					)
+				}
 			}
 		}
 
@@ -215,14 +232,23 @@ export function parseFromString(string, map = {}) {
 		for (const i of ast) {
 			collectReferences(i.extends, inter.extends)
 			for (const property of i.body.body) {
-				// leave these cases
-				// code [property: string]: string | number | null
-				if (!property.key || !property.typeAnnotation) {
+				if (!property.typeAnnotation) {
 					continue
 				}
 
-				// abc: value, vs, "abc-def": value
-				const name = property.key.name || property.key.value
+				// abc: value, vs, "abc-def": value, vs the pattern key of
+				// a template-literal index signature `class:${string}`.
+				// plain index signatures `[property: string]` have neither
+				// a key nor a pattern and are left out
+				const name = property.key
+					? property.key.name || property.key.value
+					: patternName(
+							property.parameters?.[0]?.typeAnnotation
+								?.typeAnnotation,
+						)
+				if (!name) {
+					continue
+				}
 				inter.properties.push({
 					name: name,
 					optional: property.optional,
@@ -247,6 +273,16 @@ export function parseFromString(string, map = {}) {
 	leftover += source.slice(last)
 
 	return [leftover, interfaces]
+}
+
+/**
+ * A template-literal type as a displayable pattern key, so
+ * `class:${string}` yields `class:*`
+ */
+function patternName(node) {
+	return node?.type === 'TSTemplateLiteralType'
+		? node.quasis.map(q => q.value.cooked ?? q.value.raw).join('*')
+		: null
 }
 
 /** Cuts every comment span out of the source */
