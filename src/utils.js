@@ -73,12 +73,49 @@ export const uniqueKeys = (...a) =>
 			.filter(x => x),
 	)
 
+/**
+ * Splits a union at top-level `|` only, so the `|` inside
+ * `Record<string, a | b>`, `(a | b)[]` or `{ a: b | c }` stays put.
+ * The `>` of `=>` does not close anything
+ */
+function splitUnion(a) {
+	const parts = []
+	let part = ''
+	let depth = 0
+	let prev = ''
+	for (const char of a) {
+		switch (char) {
+			case '<':
+			case '(':
+			case '[':
+			case '{':
+				depth++
+				break
+			case '>':
+				if (prev !== '=') depth--
+				break
+			case ')':
+			case ']':
+			case '}':
+				depth--
+				break
+		}
+		if (char === '|' && depth === 0) {
+			parts.push(part)
+			part = ''
+		} else {
+			part += char
+		}
+		prev = char
+	}
+	parts.push(part)
+	return parts
+}
+
 export const uniqueTypes = a =>
 	[
 		...new Set(
-			a
-				.replace(/\n/g, ' ')
-				.split('|')
+			splitUnion(a.replace(/\n/g, ' '))
 				.map(x => x.trim())
 				.filter(x => x),
 		),
