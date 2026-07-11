@@ -1927,8 +1927,7 @@
               "Chrome": "event",
               "Firefox": "event",
               "Pota": "EventHandlers<MediaEncryptedEvent, Element>",
-              "Solid Main": "EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>",
-              "Solid Next": "EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>"
+              "Solid Main": "EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>"
             }
           },
           "onencrypted": {
@@ -1992,8 +1991,7 @@
               "Chrome": "event",
               "Firefox": "event",
               "Pota": "EventHandlers<Event, Element>",
-              "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-              "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+              "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
             }
           },
           "onwaitingforkey": {
@@ -2655,8 +2653,7 @@
               "Chrome": "event",
               "Firefox": "event",
               "Pota": "EventHandlers<Event, Element>",
-              "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-              "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+              "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
             }
           },
           "onafterprint": {
@@ -2720,8 +2717,7 @@
               "Chrome": "event",
               "Firefox": "event",
               "Pota": "EventHandlers<Event, Element>",
-              "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-              "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+              "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
             }
           },
           "onbeforeprint": {
@@ -2785,8 +2781,7 @@
               "Chrome": "event",
               "Firefox": "event",
               "Pota": "EventHandlers<BeforeUnloadEvent, Element>",
-              "Solid Main": "EventHandlerWithOptionsUnion<T, BeforeUnloadEvent>",
-              "Solid Next": "EventHandlerWithOptionsUnion<T, BeforeUnloadEvent>"
+              "Solid Main": "EventHandlerWithOptionsUnion<T, BeforeUnloadEvent>"
             }
           },
           "onbeforeunload": {
@@ -2869,6 +2864,215 @@
             "values": {
               "Chrome": "event"
             }
+          },
+          "on:clipboardchange": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "global": false,
+            "inherited": false,
+            "name": "on:clipboardchange",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#clipboardchange",
+            "values": {
+              "Pota": "EventHandlers<Event, Element>"
+            }
+          },
+          "onclipboardchange": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "global": false,
+            "inherited": false,
+            "name": "onclipboardchange",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#clipboardchange",
+            "values": {}
+          },
+          "on:devicemotion": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "eventInterface": "DeviceMotionEvent",
+            "global": false,
+            "inherited": false,
+            "name": "on:devicemotion",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#devicemotion",
+            "values": {
+              "Pota": "EventHandlers<DeviceMotionEvent, Element>"
+            }
+          },
+          "ondevicemotion": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "eventInterface": "DeviceMotionEvent",
+            "global": false,
+            "inherited": false,
+            "name": "ondevicemotion",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#devicemotion",
+            "values": {}
+          },
+          "onDeviceMotion": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "eventInterface": "DeviceMotionEvent",
+            "global": false,
+            "inherited": false,
+            "name": "onDeviceMotion",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#devicemotion",
+            "values": {
+              "Solid Next": "EventHandlerUnion<T, DeviceMotionEvent>"
+            }
+          },
+          "on:deviceorientation": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "eventInterface": "DeviceOrientationEvent",
+            "global": false,
+            "inherited": false,
+            "name": "on:deviceorientation",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#deviceorientation",
+            "values": {
+              "Pota": "EventHandlers<DeviceOrientationEvent, Element>"
+            }
+          },
+          "ondeviceorientation": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "eventInterface": "DeviceOrientationEvent",
+            "global": false,
+            "inherited": false,
+            "name": "ondeviceorientation",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#deviceorientation",
+            "values": {}
+          },
+          "onDeviceOrientation": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "eventInterface": "DeviceOrientationEvent",
+            "global": false,
+            "inherited": false,
+            "name": "onDeviceOrientation",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#deviceorientation",
+            "values": {
+              "Solid Next": "EventHandlerUnion<T, DeviceOrientationEvent>"
+            }
+          },
+          "on:deviceorientationabsolute": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "eventInterface": "DeviceOrientationEvent",
+            "global": false,
+            "inherited": false,
+            "name": "on:deviceorientationabsolute",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#deviceorientationabsolute",
+            "values": {
+              "Pota": "EventHandlers<DeviceOrientationEvent, Element>"
+            }
+          },
+          "ondeviceorientationabsolute": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "eventInterface": "DeviceOrientationEvent",
+            "global": false,
+            "inherited": false,
+            "name": "ondeviceorientationabsolute",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#deviceorientationabsolute",
+            "values": {}
+          },
+          "onDeviceOrientationAbsolute": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "eventInterface": "DeviceOrientationEvent",
+            "global": false,
+            "inherited": false,
+            "name": "onDeviceOrientationAbsolute",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#deviceorientationabsolute",
+            "values": {
+              "Solid Next": "EventHandlerUnion<T, DeviceOrientationEvent>"
+            }
+          },
+          "on:DOMContentLoaded": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "eventInterface": "Event",
+            "global": false,
+            "inherited": false,
+            "name": "on:DOMContentLoaded",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#domcontentloaded",
+            "values": {
+              "Pota": "EventHandlers<Event, Element>"
+            }
+          },
+          "ondomcontentloaded": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "eventInterface": "Event",
+            "global": false,
+            "inherited": false,
+            "name": "ondomcontentloaded",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#domcontentloaded",
+            "values": {}
           },
           "on:error": {
             "attr": false,
@@ -2961,15 +3165,15 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#gamepadconnected",
             "values": {
+              "Chrome": "event",
               "Firefox": "event",
               "Pota": "EventHandlers<GamepadEvent, Element>",
-              "Solid Main": "EventHandlerWithOptionsUnion<T, GamepadEvent>",
-              "Solid Next": "EventHandlerWithOptionsUnion<T, GamepadEvent>"
+              "Solid Main": "EventHandlerWithOptionsUnion<T, GamepadEvent>"
             }
           },
           "ongamepadconnected": {
             "attr": true,
-            "attrChrome": false,
+            "attrChrome": true,
             "attrFirefox": true,
             "attrName": "ongamepadconnected",
             "eventInterface": "GamepadEvent",
@@ -2978,12 +3182,13 @@
             "keyInterfaceName": "HTMLBodyElement",
             "name": "ongamepadconnected",
             "prop": true,
-            "propChrome": false,
+            "propChrome": true,
             "propFirefox": true,
             "propName": "ongamepadconnected",
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#gamepadconnected",
             "values": {
+              "Chrome": "event",
               "Firefox": "event",
               "Solid Main": "EventHandlerUnion<T, GamepadEvent>"
             }
@@ -3003,6 +3208,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#gamepadconnected",
             "values": {
+              "Chrome": "event",
               "Firefox": "event",
               "Solid Main": "EventHandlerUnion<T, GamepadEvent>",
               "Solid Next": "EventHandlerUnion<T, GamepadEvent>"
@@ -3023,15 +3229,15 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#gamepaddisconnected",
             "values": {
+              "Chrome": "event",
               "Firefox": "event",
               "Pota": "EventHandlers<GamepadEvent, Element>",
-              "Solid Main": "EventHandlerWithOptionsUnion<T, GamepadEvent>",
-              "Solid Next": "EventHandlerWithOptionsUnion<T, GamepadEvent>"
+              "Solid Main": "EventHandlerWithOptionsUnion<T, GamepadEvent>"
             }
           },
           "ongamepaddisconnected": {
             "attr": true,
-            "attrChrome": false,
+            "attrChrome": true,
             "attrFirefox": true,
             "attrName": "ongamepaddisconnected",
             "eventInterface": "GamepadEvent",
@@ -3040,12 +3246,13 @@
             "keyInterfaceName": "HTMLBodyElement",
             "name": "ongamepaddisconnected",
             "prop": true,
-            "propChrome": false,
+            "propChrome": true,
             "propFirefox": true,
             "propName": "ongamepaddisconnected",
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#gamepaddisconnected",
             "values": {
+              "Chrome": "event",
               "Firefox": "event",
               "Solid Main": "EventHandlerUnion<T, GamepadEvent>"
             }
@@ -3065,6 +3272,7 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#gamepaddisconnected",
             "values": {
+              "Chrome": "event",
               "Firefox": "event",
               "Solid Main": "EventHandlerUnion<T, GamepadEvent>",
               "Solid Next": "EventHandlerUnion<T, GamepadEvent>"
@@ -3088,8 +3296,7 @@
               "Chrome": "event",
               "Firefox": "event",
               "Pota": "EventHandlers<HashChangeEvent, Element>",
-              "Solid Main": "EventHandlerWithOptionsUnion<T, HashChangeEvent>",
-              "Solid Next": "EventHandlerWithOptionsUnion<T, HashChangeEvent>"
+              "Solid Main": "EventHandlerWithOptionsUnion<T, HashChangeEvent>"
             }
           },
           "onhashchange": {
@@ -3153,8 +3360,7 @@
               "Chrome": "event",
               "Firefox": "event",
               "Pota": "EventHandlers<Event, Element>",
-              "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-              "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+              "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
             }
           },
           "onlanguagechange": {
@@ -3256,8 +3462,7 @@
               "Chrome": "event",
               "Firefox": "event",
               "Pota": "EventHandlers<MessageEvent, Element>",
-              "Solid Main": "EventHandlerWithOptionsUnion<T, MessageEvent>",
-              "Solid Next": "EventHandlerWithOptionsUnion<T, MessageEvent>"
+              "Solid Main": "EventHandlerWithOptionsUnion<T, MessageEvent>"
             }
           },
           "onmessage": {
@@ -3321,8 +3526,7 @@
               "Chrome": "event",
               "Firefox": "event",
               "Pota": "EventHandlers<MessageEvent, Element>",
-              "Solid Main": "EventHandlerWithOptionsUnion<T, MessageEvent>",
-              "Solid Next": "EventHandlerWithOptionsUnion<T, MessageEvent>"
+              "Solid Main": "EventHandlerWithOptionsUnion<T, MessageEvent>"
             }
           },
           "onmessageerror": {
@@ -3386,8 +3590,7 @@
               "Chrome": "event",
               "Firefox": "event",
               "Pota": "EventHandlers<Event, Element>",
-              "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-              "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+              "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
             }
           },
           "onoffline": {
@@ -3451,8 +3654,7 @@
               "Chrome": "event",
               "Firefox": "event",
               "Pota": "EventHandlers<Event, Element>",
-              "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-              "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+              "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
             }
           },
           "ononline": {
@@ -3498,6 +3700,55 @@
               "Solid Next": "EventHandlerUnion<T, Event>"
             }
           },
+          "on:orientationchange": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "eventInterface": "Event",
+            "global": false,
+            "inherited": false,
+            "name": "on:orientationchange",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#orientationchange",
+            "values": {
+              "Pota": "EventHandlers<Event, Element>"
+            }
+          },
+          "onorientationchange": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "eventInterface": "Event",
+            "global": false,
+            "inherited": false,
+            "name": "onorientationchange",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#orientationchange",
+            "values": {}
+          },
+          "onOrientationChange": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "eventInterface": "Event",
+            "global": false,
+            "inherited": false,
+            "name": "onOrientationChange",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#orientationchange",
+            "values": {
+              "Solid Next": "EventHandlerUnion<T, Event>"
+            }
+          },
           "on:pagehide": {
             "attr": false,
             "attrChrome": false,
@@ -3516,8 +3767,7 @@
               "Chrome": "event",
               "Firefox": "event",
               "Pota": "EventHandlers<PageTransitionEvent, Element>",
-              "Solid Main": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>",
-              "Solid Next": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>"
+              "Solid Main": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>"
             }
           },
           "onpagehide": {
@@ -3578,8 +3828,7 @@
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#pagereveal",
             "values": {
               "Pota": "EventHandlers<PageRevealEvent, Element>",
-              "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-              "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+              "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
             }
           },
           "onpagereveal": {
@@ -3614,7 +3863,7 @@
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#pagereveal",
             "values": {
               "Solid Main": "EventHandlerUnion<T, Event>",
-              "Solid Next": "EventHandlerUnion<T, Event>"
+              "Solid Next": "EventHandlerUnion<T, PageRevealEvent>"
             }
           },
           "on:pageshow": {
@@ -3635,8 +3884,7 @@
               "Chrome": "event",
               "Firefox": "event",
               "Pota": "EventHandlers<PageTransitionEvent, Element>",
-              "Solid Main": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>",
-              "Solid Next": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>"
+              "Solid Main": "EventHandlerWithOptionsUnion<T, PageTransitionEvent>"
             }
           },
           "onpageshow": {
@@ -3697,8 +3945,7 @@
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#pageswap",
             "values": {
               "Pota": "EventHandlers<PageSwapEvent, Element>",
-              "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-              "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+              "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
             }
           },
           "onpageswap": {
@@ -3733,8 +3980,72 @@
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#pageswap",
             "values": {
               "Solid Main": "EventHandlerUnion<T, Event>",
-              "Solid Next": "EventHandlerUnion<T, Event>"
+              "Solid Next": "EventHandlerUnion<T, PageSwapEvent>"
             }
+          },
+          "on:pointerlockchange": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "eventInterface": "Event",
+            "global": false,
+            "inherited": false,
+            "name": "on:pointerlockchange",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#pointerlockchange",
+            "values": {
+              "Pota": "EventHandlers<Event, Element>"
+            }
+          },
+          "onpointerlockchange": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "eventInterface": "Event",
+            "global": false,
+            "inherited": false,
+            "name": "onpointerlockchange",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#pointerlockchange",
+            "values": {}
+          },
+          "on:pointerlockerror": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "eventInterface": "Event",
+            "global": false,
+            "inherited": false,
+            "name": "on:pointerlockerror",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#pointerlockerror",
+            "values": {
+              "Pota": "EventHandlers<Event, Element>"
+            }
+          },
+          "onpointerlockerror": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "eventInterface": "Event",
+            "global": false,
+            "inherited": false,
+            "name": "onpointerlockerror",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#pointerlockerror",
+            "values": {}
           },
           "on:popstate": {
             "attr": false,
@@ -3754,8 +4065,7 @@
               "Chrome": "event",
               "Firefox": "event",
               "Pota": "EventHandlers<PopStateEvent, Element>",
-              "Solid Main": "EventHandlerWithOptionsUnion<T, PopStateEvent>",
-              "Solid Next": "EventHandlerWithOptionsUnion<T, PopStateEvent>"
+              "Solid Main": "EventHandlerWithOptionsUnion<T, PopStateEvent>"
             }
           },
           "onpopstate": {
@@ -3801,6 +4111,38 @@
               "Solid Next": "EventHandlerUnion<T, PopStateEvent>"
             }
           },
+          "on:readystatechange": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "eventInterface": "Event",
+            "global": false,
+            "inherited": false,
+            "name": "on:readystatechange",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#readystatechange",
+            "values": {
+              "Pota": "EventHandlers<Event, Element>"
+            }
+          },
+          "onreadystatechange": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "eventInterface": "Event",
+            "global": false,
+            "inherited": false,
+            "name": "onreadystatechange",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#readystatechange",
+            "values": {}
+          },
           "on:rejectionhandled": {
             "attr": false,
             "attrChrome": false,
@@ -3819,8 +4161,7 @@
               "Chrome": "event",
               "Firefox": "event",
               "Pota": "EventHandlers<PromiseRejectionEvent, Element>",
-              "Solid Main": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>",
-              "Solid Next": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>"
+              "Solid Main": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>"
             }
           },
           "onrejectionhandled": {
@@ -3960,8 +4301,7 @@
               "Chrome": "event",
               "Firefox": "event",
               "Pota": "EventHandlers<StorageEvent, Element>",
-              "Solid Main": "EventHandlerWithOptionsUnion<T, StorageEvent>",
-              "Solid Next": "EventHandlerWithOptionsUnion<T, StorageEvent>"
+              "Solid Main": "EventHandlerWithOptionsUnion<T, StorageEvent>"
             }
           },
           "onstorage": {
@@ -4025,8 +4365,7 @@
               "Chrome": "event",
               "Firefox": "event",
               "Pota": "EventHandlers<PromiseRejectionEvent, Element>",
-              "Solid Main": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>",
-              "Solid Next": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>"
+              "Solid Main": "EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>"
             }
           },
           "onunhandledrejection": {
@@ -4090,8 +4429,7 @@
               "Chrome": "event",
               "Firefox": "event",
               "Pota": "EventHandlers<Event, Element>",
-              "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-              "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+              "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
             }
           },
           "onunload": {
@@ -4136,6 +4474,38 @@
               "Solid Main": "EventHandlerUnion<T, Event>",
               "Solid Next": "EventHandlerUnion<T, Event>"
             }
+          },
+          "on:visibilitychange": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "eventInterface": "Event",
+            "global": false,
+            "inherited": false,
+            "name": "on:visibilitychange",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#visibilitychange",
+            "values": {
+              "Pota": "EventHandlers<Event, Element>"
+            }
+          },
+          "onvisibilitychange": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "eventInterface": "Event",
+            "global": false,
+            "inherited": false,
+            "name": "onvisibilitychange",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLBodyElement#visibilitychange",
+            "values": {}
           },
           "rightmargin": {
             "attr": false,
@@ -7646,6 +8016,164 @@
               "Chrome": "event"
             }
           },
+          "on:clipboardchange": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "global": false,
+            "inherited": false,
+            "name": "on:clipboardchange",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFrameSetElement#clipboardchange",
+            "values": {
+              "Pota": "EventHandlers<Event, Element>"
+            }
+          },
+          "onclipboardchange": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "global": false,
+            "inherited": false,
+            "name": "onclipboardchange",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFrameSetElement#clipboardchange",
+            "values": {}
+          },
+          "on:devicemotion": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "eventInterface": "DeviceMotionEvent",
+            "global": false,
+            "inherited": false,
+            "name": "on:devicemotion",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFrameSetElement#devicemotion",
+            "values": {
+              "Pota": "EventHandlers<DeviceMotionEvent, Element>"
+            }
+          },
+          "ondevicemotion": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "eventInterface": "DeviceMotionEvent",
+            "global": false,
+            "inherited": false,
+            "name": "ondevicemotion",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFrameSetElement#devicemotion",
+            "values": {}
+          },
+          "on:deviceorientation": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "eventInterface": "DeviceOrientationEvent",
+            "global": false,
+            "inherited": false,
+            "name": "on:deviceorientation",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFrameSetElement#deviceorientation",
+            "values": {
+              "Pota": "EventHandlers<DeviceOrientationEvent, Element>"
+            }
+          },
+          "ondeviceorientation": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "eventInterface": "DeviceOrientationEvent",
+            "global": false,
+            "inherited": false,
+            "name": "ondeviceorientation",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFrameSetElement#deviceorientation",
+            "values": {}
+          },
+          "on:deviceorientationabsolute": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "eventInterface": "DeviceOrientationEvent",
+            "global": false,
+            "inherited": false,
+            "name": "on:deviceorientationabsolute",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFrameSetElement#deviceorientationabsolute",
+            "values": {
+              "Pota": "EventHandlers<DeviceOrientationEvent, Element>"
+            }
+          },
+          "ondeviceorientationabsolute": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "eventInterface": "DeviceOrientationEvent",
+            "global": false,
+            "inherited": false,
+            "name": "ondeviceorientationabsolute",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFrameSetElement#deviceorientationabsolute",
+            "values": {}
+          },
+          "on:DOMContentLoaded": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "eventInterface": "Event",
+            "global": false,
+            "inherited": false,
+            "name": "on:DOMContentLoaded",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFrameSetElement#domcontentloaded",
+            "values": {
+              "Pota": "EventHandlers<Event, Element>"
+            }
+          },
+          "ondomcontentloaded": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "eventInterface": "Event",
+            "global": false,
+            "inherited": false,
+            "name": "ondomcontentloaded",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFrameSetElement#domcontentloaded",
+            "values": {}
+          },
           "on:error": {
             "attr": false,
             "attrChrome": false,
@@ -7737,13 +8265,14 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFrameSetElement#gamepadconnected",
             "values": {
+              "Chrome": "event",
               "Firefox": "event",
               "Pota": "EventHandlers<GamepadEvent, Element>"
             }
           },
           "ongamepadconnected": {
             "attr": true,
-            "attrChrome": false,
+            "attrChrome": true,
             "attrFirefox": true,
             "attrName": "ongamepadconnected",
             "eventInterface": "GamepadEvent",
@@ -7752,12 +8281,13 @@
             "keyInterfaceName": "HTMLFrameSetElement",
             "name": "ongamepadconnected",
             "prop": true,
-            "propChrome": false,
+            "propChrome": true,
             "propFirefox": true,
             "propName": "ongamepadconnected",
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFrameSetElement#gamepadconnected",
             "values": {
+              "Chrome": "event",
               "Firefox": "event"
             }
           },
@@ -7776,13 +8306,14 @@
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFrameSetElement#gamepaddisconnected",
             "values": {
+              "Chrome": "event",
               "Firefox": "event",
               "Pota": "EventHandlers<GamepadEvent, Element>"
             }
           },
           "ongamepaddisconnected": {
             "attr": true,
-            "attrChrome": false,
+            "attrChrome": true,
             "attrFirefox": true,
             "attrName": "ongamepaddisconnected",
             "eventInterface": "GamepadEvent",
@@ -7791,12 +8322,13 @@
             "keyInterfaceName": "HTMLFrameSetElement",
             "name": "ongamepaddisconnected",
             "prop": true,
-            "propChrome": false,
+            "propChrome": true,
             "propFirefox": true,
             "propName": "ongamepaddisconnected",
             "readonly": false,
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFrameSetElement#gamepaddisconnected",
             "values": {
+              "Chrome": "event",
               "Firefox": "event"
             }
           },
@@ -8084,6 +8616,38 @@
               "Firefox": "event"
             }
           },
+          "on:orientationchange": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "eventInterface": "Event",
+            "global": false,
+            "inherited": false,
+            "name": "on:orientationchange",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFrameSetElement#orientationchange",
+            "values": {
+              "Pota": "EventHandlers<Event, Element>"
+            }
+          },
+          "onorientationchange": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "eventInterface": "Event",
+            "global": false,
+            "inherited": false,
+            "name": "onorientationchange",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFrameSetElement#orientationchange",
+            "values": {}
+          },
           "on:pagehide": {
             "attr": false,
             "attrChrome": false,
@@ -8230,6 +8794,70 @@
             "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFrameSetElement#pageswap",
             "values": {}
           },
+          "on:pointerlockchange": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "eventInterface": "Event",
+            "global": false,
+            "inherited": false,
+            "name": "on:pointerlockchange",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFrameSetElement#pointerlockchange",
+            "values": {
+              "Pota": "EventHandlers<Event, Element>"
+            }
+          },
+          "onpointerlockchange": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "eventInterface": "Event",
+            "global": false,
+            "inherited": false,
+            "name": "onpointerlockchange",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFrameSetElement#pointerlockchange",
+            "values": {}
+          },
+          "on:pointerlockerror": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "eventInterface": "Event",
+            "global": false,
+            "inherited": false,
+            "name": "on:pointerlockerror",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFrameSetElement#pointerlockerror",
+            "values": {
+              "Pota": "EventHandlers<Event, Element>"
+            }
+          },
+          "onpointerlockerror": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "eventInterface": "Event",
+            "global": false,
+            "inherited": false,
+            "name": "onpointerlockerror",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFrameSetElement#pointerlockerror",
+            "values": {}
+          },
           "on:popstate": {
             "attr": false,
             "attrChrome": false,
@@ -8270,6 +8898,38 @@
               "Chrome": "event",
               "Firefox": "event"
             }
+          },
+          "on:readystatechange": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "eventInterface": "Event",
+            "global": false,
+            "inherited": false,
+            "name": "on:readystatechange",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFrameSetElement#readystatechange",
+            "values": {
+              "Pota": "EventHandlers<Event, Element>"
+            }
+          },
+          "onreadystatechange": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "eventInterface": "Event",
+            "global": false,
+            "inherited": false,
+            "name": "onreadystatechange",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFrameSetElement#readystatechange",
+            "values": {}
           },
           "on:rejectionhandled": {
             "attr": false,
@@ -8510,6 +9170,38 @@
               "Chrome": "event",
               "Firefox": "event"
             }
+          },
+          "on:visibilitychange": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "eventInterface": "Event",
+            "global": false,
+            "inherited": false,
+            "name": "on:visibilitychange",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFrameSetElement#visibilitychange",
+            "values": {
+              "Pota": "EventHandlers<Event, Element>"
+            }
+          },
+          "onvisibilitychange": {
+            "attr": false,
+            "attrChrome": false,
+            "attrFirefox": false,
+            "eventInterface": "Event",
+            "global": false,
+            "inherited": false,
+            "name": "onvisibilitychange",
+            "prop": false,
+            "propChrome": false,
+            "propFirefox": false,
+            "readonly": false,
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFrameSetElement#visibilitychange",
+            "values": {}
           },
           "rows": {
             "attr": true,
@@ -21839,8 +22531,7 @@
               "Chrome": "event",
               "Firefox": "event",
               "Pota": "EventHandlers<MediaEncryptedEvent, Element>",
-              "Solid Main": "EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>",
-              "Solid Next": "EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>"
+              "Solid Main": "EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>"
             }
           },
           "onencrypted": {
@@ -21903,8 +22594,7 @@
             "values": {
               "Chrome": "event",
               "Pota": "EventHandlers<PictureInPictureEvent, Element>",
-              "Solid Main": "EventHandlerWithOptionsUnion<T, PictureInPictureEvent>",
-              "Solid Next": "EventHandlerWithOptionsUnion<T, PictureInPictureEvent>"
+              "Solid Main": "EventHandlerWithOptionsUnion<T, PictureInPictureEvent>"
             }
           },
           "onenterpictureinpicture": {
@@ -21965,8 +22655,7 @@
             "values": {
               "Chrome": "event",
               "Pota": "EventHandlers<PictureInPictureEvent, Element>",
-              "Solid Main": "EventHandlerWithOptionsUnion<T, PictureInPictureEvent>",
-              "Solid Next": "EventHandlerWithOptionsUnion<T, PictureInPictureEvent>"
+              "Solid Main": "EventHandlerWithOptionsUnion<T, PictureInPictureEvent>"
             }
           },
           "onleavepictureinpicture": {
@@ -22122,8 +22811,7 @@
               "Chrome": "event",
               "Firefox": "event",
               "Pota": "EventHandlers<Event, Element>",
-              "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-              "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+              "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
             }
           },
           "onwaitingforkey": {
@@ -52872,8 +53560,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#abort",
           "values": {
             "Pota": "EventHandlers<UIEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, UIEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, UIEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, UIEvent>"
           }
         },
         "onabort": {
@@ -52905,8 +53592,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#animationcancel",
           "values": {
             "Pota": "EventHandlers<AnimationEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, AnimationEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, AnimationEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, AnimationEvent>"
           }
         },
         "onanimationcancel": {
@@ -52938,8 +53624,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#animationend",
           "values": {
             "Pota": "EventHandlers<AnimationEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, AnimationEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, AnimationEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, AnimationEvent>"
           }
         },
         "onanimationend": {
@@ -52971,8 +53656,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#animationiteration",
           "values": {
             "Pota": "EventHandlers<AnimationEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, AnimationEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, AnimationEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, AnimationEvent>"
           }
         },
         "onanimationiteration": {
@@ -53004,8 +53688,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#animationstart",
           "values": {
             "Pota": "EventHandlers<AnimationEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, AnimationEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, AnimationEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, AnimationEvent>"
           }
         },
         "onanimationstart": {
@@ -53036,9 +53719,8 @@
           "name": "on:auxclick",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#auxclick",
           "values": {
-            "Pota": "EventHandlers<MouseEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
+            "Pota": "EventHandlers<PointerEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>"
           }
         },
         "onauxclick": {
@@ -53070,8 +53752,7 @@
           "values": {
             "Chrome": "event",
             "Pota": "EventHandlers<ClipboardEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, ClipboardEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, ClipboardEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, ClipboardEvent>"
           }
         },
         "onbeforecopy": {
@@ -53110,8 +53791,7 @@
           "values": {
             "Chrome": "event",
             "Pota": "EventHandlers<ClipboardEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, ClipboardEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, ClipboardEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, ClipboardEvent>"
           }
         },
         "onbeforecut": {
@@ -53150,8 +53830,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#beforeinput",
           "values": {
             "Pota": "EventHandlers<InputEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>"
           }
         },
         "onbeforeinput": {
@@ -53183,8 +53862,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#beforematch",
           "values": {
             "Pota": "EventHandlers<Event, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onbeforematch": {
@@ -53216,8 +53894,7 @@
           "values": {
             "Chrome": "event",
             "Pota": "EventHandlers<ClipboardEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, ClipboardEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, ClipboardEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, ClipboardEvent>"
           }
         },
         "onbeforepaste": {
@@ -53256,8 +53933,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#beforetoggle",
           "values": {
             "Pota": "EventHandlers<ToggleEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, ToggleEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, ToggleEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, ToggleEvent>"
           }
         },
         "onbeforetoggle": {
@@ -53289,8 +53965,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#beforexrselect",
           "values": {
             "Pota": "EventHandlers<Event, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onbeforexrselect": {
@@ -53322,8 +53997,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#blur",
           "values": {
             "Pota": "EventHandlers<FocusEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>"
           }
         },
         "onblur": {
@@ -53355,8 +54029,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#cancel",
           "values": {
             "Pota": "EventHandlers<Event, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "oncancel": {
@@ -53388,8 +54061,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#canplay",
           "values": {
             "Pota": "EventHandlers<Event, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "oncanplay": {
@@ -53421,8 +54093,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#canplaythrough",
           "values": {
             "Pota": "EventHandlers<Event, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "oncanplaythrough": {
@@ -53454,8 +54125,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#change",
           "values": {
             "Pota": "EventHandlers<Event, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event, ChangeEventHandler<T, Event>>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, Event, ChangeEventHandler<T, Event>>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event, ChangeEventHandler<T, Event>>"
           }
         },
         "onchange": {
@@ -53486,9 +54156,8 @@
           "name": "on:click",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#click",
           "values": {
-            "Pota": "EventHandlers<MouseEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
+            "Pota": "EventHandlers<PointerEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>"
           }
         },
         "onclick": {
@@ -53520,8 +54189,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#close",
           "values": {
             "Pota": "EventHandlers<Event, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onclose": {
@@ -53552,9 +54220,8 @@
           "name": "on:command",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#command",
           "values": {
-            "Pota": "EventHandlers<Event, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+            "Pota": "EventHandlers<CommandEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "oncommand": {
@@ -53575,7 +54242,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#command",
           "values": {
             "Solid Main": "EventHandlerUnion<T, Event>",
-            "Solid Next": "EventHandlerUnion<T, Event>"
+            "Solid Next": "EventHandlerUnion<T, CommandEvent>"
           }
         },
         "on:compositionend": {
@@ -53586,8 +54253,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#compositionend",
           "values": {
             "Pota": "EventHandlers<CompositionEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, CompositionEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, CompositionEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, CompositionEvent>"
           }
         },
         "oncompositionend": {
@@ -53619,8 +54285,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#compositionstart",
           "values": {
             "Pota": "EventHandlers<CompositionEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, CompositionEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, CompositionEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, CompositionEvent>"
           }
         },
         "oncompositionstart": {
@@ -53652,8 +54317,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#compositionupdate",
           "values": {
             "Pota": "EventHandlers<CompositionEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, CompositionEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, CompositionEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, CompositionEvent>"
           }
         },
         "oncompositionupdate": {
@@ -53685,8 +54349,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#contentvisibilityautostatechange",
           "values": {
             "Pota": "EventHandlers<ContentVisibilityAutoStateChangeEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, ContentVisibilityAutoStateChangeEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, ContentVisibilityAutoStateChangeEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, ContentVisibilityAutoStateChangeEvent>"
           }
         },
         "oncontentvisibilityautostatechange": {
@@ -53718,8 +54381,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#contextlost",
           "values": {
             "Pota": "EventHandlers<Event, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "oncontextlost": {
@@ -53750,9 +54412,8 @@
           "name": "on:contextmenu",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#contextmenu",
           "values": {
-            "Pota": "EventHandlers<MouseEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
+            "Pota": "EventHandlers<PointerEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>"
           }
         },
         "oncontextmenu": {
@@ -53784,8 +54445,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#contextrestored",
           "values": {
             "Pota": "EventHandlers<Event, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "oncontextrestored": {
@@ -53817,8 +54477,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#copy",
           "values": {
             "Pota": "EventHandlers<ClipboardEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, ClipboardEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, ClipboardEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, ClipboardEvent>"
           }
         },
         "oncopy": {
@@ -53850,8 +54509,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#cuechange",
           "values": {
             "Pota": "EventHandlers<Event, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "oncuechange": {
@@ -53883,8 +54541,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#cut",
           "values": {
             "Pota": "EventHandlers<ClipboardEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, ClipboardEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, ClipboardEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, ClipboardEvent>"
           }
         },
         "oncut": {
@@ -53916,8 +54573,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#dblclick",
           "values": {
             "Pota": "EventHandlers<MouseEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>"
           }
         },
         "ondblclick": {
@@ -53949,8 +54605,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#drag",
           "values": {
             "Pota": "EventHandlers<DragEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>"
           }
         },
         "ondrag": {
@@ -53982,8 +54637,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#dragend",
           "values": {
             "Pota": "EventHandlers<DragEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>"
           }
         },
         "ondragend": {
@@ -54015,8 +54669,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#dragenter",
           "values": {
             "Pota": "EventHandlers<DragEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>"
           }
         },
         "ondragenter": {
@@ -54048,8 +54701,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#dragexit",
           "values": {
             "Pota": "EventHandlers<DragEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>"
           }
         },
         "ondragexit": {
@@ -54081,8 +54733,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#dragleave",
           "values": {
             "Pota": "EventHandlers<DragEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>"
           }
         },
         "ondragleave": {
@@ -54114,8 +54765,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#dragover",
           "values": {
             "Pota": "EventHandlers<DragEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>"
           }
         },
         "ondragover": {
@@ -54147,8 +54797,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#dragstart",
           "values": {
             "Pota": "EventHandlers<DragEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>"
           }
         },
         "ondragstart": {
@@ -54180,8 +54829,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#drop",
           "values": {
             "Pota": "EventHandlers<DragEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, DragEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, DragEvent>"
           }
         },
         "ondrop": {
@@ -54213,8 +54861,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#durationchange",
           "values": {
             "Pota": "EventHandlers<Event, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "ondurationchange": {
@@ -54246,8 +54893,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#emptied",
           "values": {
             "Pota": "EventHandlers<Event, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onemptied": {
@@ -54279,8 +54925,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#ended",
           "values": {
             "Pota": "EventHandlers<Event, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onended": {
@@ -54312,8 +54957,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#error",
           "values": {
             "Pota": "EventHandlers<ErrorEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, ErrorEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, ErrorEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, ErrorEvent>"
           }
         },
         "onerror": {
@@ -54345,8 +54989,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#focus",
           "values": {
             "Pota": "EventHandlers<FocusEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>"
           }
         },
         "onfocus": {
@@ -54378,8 +55021,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#focusin",
           "values": {
             "Pota": "EventHandlers<FocusEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>"
           }
         },
         "onfocusin": {
@@ -54411,8 +55053,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#focusout",
           "values": {
             "Pota": "EventHandlers<FocusEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>"
           }
         },
         "onfocusout": {
@@ -54444,8 +55085,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#formdata",
           "values": {
             "Pota": "EventHandlers<FormDataEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, FormDataEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, FormDataEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, FormDataEvent>"
           }
         },
         "onformdata": {
@@ -54479,8 +55119,7 @@
             "Chrome": "event",
             "Firefox": "event",
             "Pota": "EventHandlers<Event, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onfullscreenchange": {
@@ -54527,8 +55166,7 @@
             "Chrome": "event",
             "Firefox": "event",
             "Pota": "EventHandlers<Event, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onfullscreenerror": {
@@ -54573,8 +55211,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#gotpointercapture",
           "values": {
             "Pota": "EventHandlers<PointerEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>"
           }
         },
         "ongotpointercapture": {
@@ -54605,9 +55242,8 @@
           "name": "on:input",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#input",
           "values": {
-            "Pota": "EventHandlers<Event, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>"
+            "Pota": "EventHandlers<InputEvent, Element>",
+            "Solid Main": "EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>"
           }
         },
         "oninput": {
@@ -54639,8 +55275,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#invalid",
           "values": {
             "Pota": "EventHandlers<Event, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "oninvalid": {
@@ -54672,8 +55307,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#keydown",
           "values": {
             "Pota": "EventHandlers<KeyboardEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, KeyboardEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, KeyboardEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, KeyboardEvent>"
           }
         },
         "onkeydown": {
@@ -54705,8 +55339,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#keypress",
           "values": {
             "Pota": "EventHandlers<KeyboardEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, KeyboardEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, KeyboardEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, KeyboardEvent>"
           }
         },
         "onkeypress": {
@@ -54738,8 +55371,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#keyup",
           "values": {
             "Pota": "EventHandlers<KeyboardEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, KeyboardEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, KeyboardEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, KeyboardEvent>"
           }
         },
         "onkeyup": {
@@ -54771,8 +55403,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#load",
           "values": {
             "Pota": "EventHandlers<Event, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onload": {
@@ -54804,8 +55435,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#loadeddata",
           "values": {
             "Pota": "EventHandlers<Event, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onloadeddata": {
@@ -54837,8 +55467,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#loadedmetadata",
           "values": {
             "Pota": "EventHandlers<Event, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onloadedmetadata": {
@@ -54870,8 +55499,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#loadstart",
           "values": {
             "Pota": "EventHandlers<Event, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onloadstart": {
@@ -54903,8 +55531,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#lostpointercapture",
           "values": {
             "Pota": "EventHandlers<PointerEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>"
           }
         },
         "onlostpointercapture": {
@@ -54936,8 +55563,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#mousedown",
           "values": {
             "Pota": "EventHandlers<MouseEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>"
           }
         },
         "onmousedown": {
@@ -54969,8 +55595,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#mouseenter",
           "values": {
             "Pota": "EventHandlers<MouseEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>"
           }
         },
         "onmouseenter": {
@@ -55002,8 +55627,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#mouseleave",
           "values": {
             "Pota": "EventHandlers<MouseEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>"
           }
         },
         "onmouseleave": {
@@ -55035,8 +55659,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#mousemove",
           "values": {
             "Pota": "EventHandlers<MouseEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>"
           }
         },
         "onmousemove": {
@@ -55068,8 +55691,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#mouseout",
           "values": {
             "Pota": "EventHandlers<MouseEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>"
           }
         },
         "onmouseout": {
@@ -55101,8 +55723,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#mouseover",
           "values": {
             "Pota": "EventHandlers<MouseEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>"
           }
         },
         "onmouseover": {
@@ -55134,8 +55755,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#mouseup",
           "values": {
             "Pota": "EventHandlers<MouseEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, MouseEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, MouseEvent>"
           }
         },
         "onmouseup": {
@@ -55167,8 +55787,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#paste",
           "values": {
             "Pota": "EventHandlers<ClipboardEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, ClipboardEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, ClipboardEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, ClipboardEvent>"
           }
         },
         "onpaste": {
@@ -55200,8 +55819,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#pause",
           "values": {
             "Pota": "EventHandlers<Event, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onpause": {
@@ -55233,8 +55851,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#play",
           "values": {
             "Pota": "EventHandlers<Event, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onplay": {
@@ -55266,8 +55883,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#playing",
           "values": {
             "Pota": "EventHandlers<Event, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onplaying": {
@@ -55299,8 +55915,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#pointercancel",
           "values": {
             "Pota": "EventHandlers<PointerEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>"
           }
         },
         "onpointercancel": {
@@ -55332,8 +55947,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#pointerdown",
           "values": {
             "Pota": "EventHandlers<PointerEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>"
           }
         },
         "onpointerdown": {
@@ -55365,8 +55979,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#pointerenter",
           "values": {
             "Pota": "EventHandlers<PointerEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>"
           }
         },
         "onpointerenter": {
@@ -55398,8 +56011,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#pointerleave",
           "values": {
             "Pota": "EventHandlers<PointerEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>"
           }
         },
         "onpointerleave": {
@@ -55431,8 +56043,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#pointermove",
           "values": {
             "Pota": "EventHandlers<PointerEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>"
           }
         },
         "onpointermove": {
@@ -55464,8 +56075,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#pointerout",
           "values": {
             "Pota": "EventHandlers<PointerEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>"
           }
         },
         "onpointerout": {
@@ -55497,8 +56107,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#pointerover",
           "values": {
             "Pota": "EventHandlers<PointerEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>"
           }
         },
         "onpointerover": {
@@ -55530,8 +56139,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#pointerrawupdate",
           "values": {
             "Pota": "EventHandlers<PointerEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>"
           }
         },
         "onpointerrawupdate": {
@@ -55563,8 +56171,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#pointerup",
           "values": {
             "Pota": "EventHandlers<PointerEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, PointerEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, PointerEvent>"
           }
         },
         "onpointerup": {
@@ -55596,8 +56203,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#progress",
           "values": {
             "Pota": "EventHandlers<ProgressEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, ProgressEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, ProgressEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, ProgressEvent>"
           }
         },
         "onprogress": {
@@ -55629,8 +56235,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#ratechange",
           "values": {
             "Pota": "EventHandlers<Event, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onratechange": {
@@ -55662,8 +56267,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#reset",
           "values": {
             "Pota": "EventHandlers<Event, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onreset": {
@@ -55695,8 +56299,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#resize",
           "values": {
             "Pota": "EventHandlers<UIEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, UIEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, UIEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, UIEvent>"
           }
         },
         "onresize": {
@@ -55728,8 +56331,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#scroll",
           "values": {
             "Pota": "EventHandlers<Event, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onscroll": {
@@ -55761,8 +56363,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#scrollend",
           "values": {
             "Pota": "EventHandlers<Event, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onscrollend": {
@@ -55794,8 +56395,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#scrollsnapchange",
           "values": {
             "Pota": "EventHandlers<Event, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onscrollsnapchange": {
@@ -55816,7 +56416,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#scrollsnapchange",
           "values": {
             "Solid Main": "EventHandlerUnion<T, Event>",
-            "Solid Next": "EventHandlerUnion<T, Event>"
+            "Solid Next": "EventHandlerUnion<T, SnapEvent>"
           }
         },
         "on:scrollsnapchanging": {
@@ -55827,8 +56427,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#scrollsnapchanging",
           "values": {
             "Pota": "EventHandlers<Event, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onscrollsnapchanging": {
@@ -55849,7 +56448,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#scrollsnapchanging",
           "values": {
             "Solid Main": "EventHandlerUnion<T, Event>",
-            "Solid Next": "EventHandlerUnion<T, Event>"
+            "Solid Next": "EventHandlerUnion<T, SnapEvent>"
           }
         },
         "on:search": {
@@ -55885,8 +56484,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#securitypolicyviolation",
           "values": {
             "Pota": "EventHandlers<SecurityPolicyViolationEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, SecurityPolicyViolationEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, SecurityPolicyViolationEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, SecurityPolicyViolationEvent>"
           }
         },
         "onsecuritypolicyviolation": {
@@ -55918,8 +56516,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#seeked",
           "values": {
             "Pota": "EventHandlers<Event, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onseeked": {
@@ -55951,8 +56548,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#seeking",
           "values": {
             "Pota": "EventHandlers<Event, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onseeking": {
@@ -55984,8 +56580,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#select",
           "values": {
             "Pota": "EventHandlers<Event, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onselect": {
@@ -56017,8 +56612,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#selectionchange",
           "values": {
             "Pota": "EventHandlers<Event, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onselectionchange": {
@@ -56050,8 +56644,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#selectstart",
           "values": {
             "Pota": "EventHandlers<Event, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onselectstart": {
@@ -56083,8 +56676,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#slotchange",
           "values": {
             "Pota": "EventHandlers<Event, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onslotchange": {
@@ -56116,8 +56708,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#stalled",
           "values": {
             "Pota": "EventHandlers<Event, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onstalled": {
@@ -56149,8 +56740,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#submit",
           "values": {
             "Pota": "EventHandlers<SubmitEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, SubmitEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, SubmitEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, SubmitEvent>"
           }
         },
         "onsubmit": {
@@ -56182,8 +56772,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#suspend",
           "values": {
             "Pota": "EventHandlers<Event, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onsuspend": {
@@ -56215,8 +56804,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#timeupdate",
           "values": {
             "Pota": "EventHandlers<Event, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "ontimeupdate": {
@@ -56248,8 +56836,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#toggle",
           "values": {
             "Pota": "EventHandlers<ToggleEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, ToggleEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, ToggleEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, ToggleEvent>"
           }
         },
         "ontoggle": {
@@ -56281,8 +56868,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#touchcancel",
           "values": {
             "Pota": "EventHandlers<TouchEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, TouchEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, TouchEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, TouchEvent>"
           }
         },
         "ontouchcancel": {
@@ -56314,8 +56900,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#touchend",
           "values": {
             "Pota": "EventHandlers<TouchEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, TouchEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, TouchEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, TouchEvent>"
           }
         },
         "ontouchend": {
@@ -56347,8 +56932,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#touchmove",
           "values": {
             "Pota": "EventHandlers<TouchEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, TouchEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, TouchEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, TouchEvent>"
           }
         },
         "ontouchmove": {
@@ -56380,8 +56964,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#touchstart",
           "values": {
             "Pota": "EventHandlers<TouchEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, TouchEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, TouchEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, TouchEvent>"
           }
         },
         "ontouchstart": {
@@ -56413,8 +56996,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#transitioncancel",
           "values": {
             "Pota": "EventHandlers<TransitionEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, TransitionEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, TransitionEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, TransitionEvent>"
           }
         },
         "ontransitioncancel": {
@@ -56446,8 +57028,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#transitionend",
           "values": {
             "Pota": "EventHandlers<TransitionEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, TransitionEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, TransitionEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, TransitionEvent>"
           }
         },
         "ontransitionend": {
@@ -56479,8 +57060,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#transitionrun",
           "values": {
             "Pota": "EventHandlers<TransitionEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, TransitionEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, TransitionEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, TransitionEvent>"
           }
         },
         "ontransitionrun": {
@@ -56512,8 +57092,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#transitionstart",
           "values": {
             "Pota": "EventHandlers<TransitionEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, TransitionEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, TransitionEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, TransitionEvent>"
           }
         },
         "ontransitionstart": {
@@ -56545,8 +57124,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#volumechange",
           "values": {
             "Pota": "EventHandlers<Event, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onvolumechange": {
@@ -56578,8 +57156,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#waiting",
           "values": {
             "Pota": "EventHandlers<Event, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, Event>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, Event>"
           }
         },
         "onwaiting": {
@@ -56661,8 +57238,7 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element#wheel",
           "values": {
             "Pota": "EventHandlers<WheelEvent, Element>",
-            "Solid Main": "EventHandlerWithOptionsUnion<T, WheelEvent>",
-            "Solid Next": "EventHandlerWithOptionsUnion<T, WheelEvent>"
+            "Solid Main": "EventHandlerWithOptionsUnion<T, WheelEvent>"
           }
         },
         "onwheel": {
@@ -59030,11 +59606,13 @@
           "name": "on:animationcancel",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement#animationcancel",
           "values": {
+            "Chrome": "event",
             "Firefox": "event"
           }
         },
         "onanimationcancel": {
           "attr": true,
+          "attrChrome": true,
           "attrFirefox": true,
           "attrName": "onanimationcancel",
           "eventInterface": "AnimationEvent",
@@ -59042,11 +59620,13 @@
           "keyInterfaceName": "HTMLElement",
           "name": "onanimationcancel",
           "prop": true,
+          "propChrome": true,
           "propFirefox": true,
           "propName": "onanimationcancel",
           "readonly": false,
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement#animationcancel",
           "values": {
+            "Chrome": "event",
             "Firefox": "event"
           }
         },
@@ -59518,12 +60098,14 @@
           "name": "on:command",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement#command",
           "values": {
-            "Chrome": "event"
+            "Chrome": "event",
+            "Firefox": "event"
           }
         },
         "oncommand": {
           "attr": true,
           "attrChrome": true,
+          "attrFirefox": true,
           "attrName": "oncommand",
           "eventInterface": "CommandEvent",
           "inherited": false,
@@ -59531,11 +60113,13 @@
           "name": "oncommand",
           "prop": true,
           "propChrome": true,
+          "propFirefox": true,
           "propName": "oncommand",
           "readonly": false,
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement#command",
           "values": {
-            "Chrome": "event"
+            "Chrome": "event",
+            "Firefox": "event"
           }
         },
         "on:contentvisibilityautostatechange": {
@@ -61197,12 +61781,14 @@
           "name": "on:pointerrawupdate",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement#pointerrawupdate",
           "values": {
-            "Chrome": "event"
+            "Chrome": "event",
+            "Firefox": "event"
           }
         },
         "onpointerrawupdate": {
           "attr": true,
           "attrChrome": true,
+          "attrFirefox": true,
           "attrName": "onpointerrawupdate",
           "eventInterface": "Event",
           "inherited": false,
@@ -61210,11 +61796,13 @@
           "name": "onpointerrawupdate",
           "prop": true,
           "propChrome": true,
+          "propFirefox": true,
           "propName": "onpointerrawupdate",
           "readonly": false,
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement#pointerrawupdate",
           "values": {
-            "Chrome": "event"
+            "Chrome": "event",
+            "Firefox": "event"
           }
         },
         "on:pointerup": {
@@ -62742,11 +63330,13 @@
           "name": "on:animationcancel",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#animationcancel",
           "values": {
+            "Chrome": "event",
             "Firefox": "event"
           }
         },
         "onanimationcancel": {
           "attr": true,
+          "attrChrome": true,
           "attrFirefox": true,
           "attrName": "onanimationcancel",
           "eventInterface": "AnimationEvent",
@@ -62754,11 +63344,13 @@
           "keyInterfaceName": "MathMLElement",
           "name": "onanimationcancel",
           "prop": true,
+          "propChrome": true,
           "propFirefox": true,
           "propName": "onanimationcancel",
           "readonly": false,
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#animationcancel",
           "values": {
+            "Chrome": "event",
             "Firefox": "event"
           }
         },
@@ -63230,12 +63822,14 @@
           "name": "on:command",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#command",
           "values": {
-            "Chrome": "event"
+            "Chrome": "event",
+            "Firefox": "event"
           }
         },
         "oncommand": {
           "attr": true,
           "attrChrome": true,
+          "attrFirefox": true,
           "attrName": "oncommand",
           "eventInterface": "CommandEvent",
           "inherited": false,
@@ -63243,11 +63837,13 @@
           "name": "oncommand",
           "prop": true,
           "propChrome": true,
+          "propFirefox": true,
           "propName": "oncommand",
           "readonly": false,
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#command",
           "values": {
-            "Chrome": "event"
+            "Chrome": "event",
+            "Firefox": "event"
           }
         },
         "on:contentvisibilityautostatechange": {
@@ -64909,12 +65505,14 @@
           "name": "on:pointerrawupdate",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#pointerrawupdate",
           "values": {
-            "Chrome": "event"
+            "Chrome": "event",
+            "Firefox": "event"
           }
         },
         "onpointerrawupdate": {
           "attr": true,
           "attrChrome": true,
+          "attrFirefox": true,
           "attrName": "onpointerrawupdate",
           "eventInterface": "Event",
           "inherited": false,
@@ -64922,11 +65520,13 @@
           "name": "onpointerrawupdate",
           "prop": true,
           "propChrome": true,
+          "propFirefox": true,
           "propName": "onpointerrawupdate",
           "readonly": false,
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/MathMLElement#pointerrawupdate",
           "values": {
-            "Chrome": "event"
+            "Chrome": "event",
+            "Firefox": "event"
           }
         },
         "on:pointerup": {
@@ -66207,11 +66807,13 @@
           "name": "on:animationcancel",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGElement#animationcancel",
           "values": {
+            "Chrome": "event",
             "Firefox": "event"
           }
         },
         "onanimationcancel": {
           "attr": true,
+          "attrChrome": true,
           "attrFirefox": true,
           "attrName": "onanimationcancel",
           "eventInterface": "AnimationEvent",
@@ -66219,11 +66821,13 @@
           "keyInterfaceName": "SVGElement",
           "name": "onanimationcancel",
           "prop": true,
+          "propChrome": true,
           "propFirefox": true,
           "propName": "onanimationcancel",
           "readonly": false,
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGElement#animationcancel",
           "values": {
+            "Chrome": "event",
             "Firefox": "event"
           }
         },
@@ -66695,12 +67299,14 @@
           "name": "on:command",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGElement#command",
           "values": {
-            "Chrome": "event"
+            "Chrome": "event",
+            "Firefox": "event"
           }
         },
         "oncommand": {
           "attr": true,
           "attrChrome": true,
+          "attrFirefox": true,
           "attrName": "oncommand",
           "eventInterface": "CommandEvent",
           "inherited": false,
@@ -66708,11 +67314,13 @@
           "name": "oncommand",
           "prop": true,
           "propChrome": true,
+          "propFirefox": true,
           "propName": "oncommand",
           "readonly": false,
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGElement#command",
           "values": {
-            "Chrome": "event"
+            "Chrome": "event",
+            "Firefox": "event"
           }
         },
         "on:contentvisibilityautostatechange": {
@@ -68374,12 +68982,14 @@
           "name": "on:pointerrawupdate",
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGElement#pointerrawupdate",
           "values": {
-            "Chrome": "event"
+            "Chrome": "event",
+            "Firefox": "event"
           }
         },
         "onpointerrawupdate": {
           "attr": true,
           "attrChrome": true,
+          "attrFirefox": true,
           "attrName": "onpointerrawupdate",
           "eventInterface": "Event",
           "inherited": false,
@@ -68387,11 +68997,13 @@
           "name": "onpointerrawupdate",
           "prop": true,
           "propChrome": true,
+          "propFirefox": true,
           "propName": "onpointerrawupdate",
           "readonly": false,
           "url": "https://developer.mozilla.org/en-US/docs/Web/API/SVGElement#pointerrawupdate",
           "values": {
-            "Chrome": "event"
+            "Chrome": "event",
+            "Firefox": "event"
           }
         },
         "on:pointerup": {
