@@ -206,13 +206,28 @@ function App() {
     .catch(e => console.error('failed to load data.json', e))
   return xml`<Show when="${read}">${data => {
     return xml`
-        <form>
+        <form class="filter">
           <input
-            class="filter"
             name="search"
             type="search"
             placeholder="Filter…"
           />
+          <label
+            title="Show only rows where the visible frameworks type the key differently"
+            ><input
+              type="checkbox"
+              name="disagreements-values"
+            />
+            Value disagreements</label
+          >
+          <label
+            title="Show only rows where a visible framework lacks a key another one has"
+            ><input
+              type="checkbox"
+              name="disagreements-coverage"
+            />
+            Coverage disagreements</label
+          >
         </form>
         <For
           each="${['html', 'math']}"

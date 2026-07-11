@@ -308,12 +308,38 @@
 					}
 				}
 
+				const frameworkColumns = [
+					'Pota',
+					'Solid Main',
+					'Solid Next',
+					'Voby',
+					'Vue',
+					/*'Preact',*/
+					'React',
+				]
+
+				const filters = {
+					search: '',
+					values: false,
+					coverage: false,
+				}
+
 				document.oninput = ({ target }) => {
-					if (target.type !== 'search') {
+					if (target.name === 'search') {
+						filters.search = target.value
+					} else if (target.name === 'disagreements-values') {
+						filters.values = target.checked
+					} else if (target.name === 'disagreements-coverage') {
+						filters.coverage = target.checked
+					} else {
+						// column visibility may have changed, re-filter
 						setSettings(target)
-						return
 					}
-					const text = target.value.trim()
+					applyFilters()
+				}
+
+				function applyFilters() {
+					const text = filters.search.trim()
 					const search = text
 						.replace(/^"/, '')
 						.replace(/"$/, '')
@@ -321,7 +347,9 @@
 					const searchInsensitive = search.toLowerCase()
 					const isExact = text.startsWith('"') && text.endsWith('"')
 
-					if (!search) {
+					const disagreements = filters.values || filters.coverage
+
+					if (!search && !disagreements) {
 						const elements = document.querySelectorAll('tr, .table')
 						for (const el of [...elements]) {
 							el.style.display = null
@@ -329,18 +357,31 @@
 						return
 					}
 
+					// disagreements only consider the framework columns
+					// that are visible via the Data checkboxes
+					const visibleColumns = frameworkColumns.filter(
+						name =>
+							document.body.dataset[
+								name.toLowerCase().replace(/ /g, '')
+							] !== 'false',
+					)
+
 					// filter rows
 					const trs = document.querySelectorAll('tbody tr')
 					for (const tr of [...trs]) {
-						tr.style.display = isExact
-							? tr.innerHTML.includes('>' + search + '<')
-								? null
-								: 'none'
-							: tr.textContent
+						let show = search
+							? isExact
+								? tr.innerHTML.includes('>' + search + '<')
+								: tr.textContent
 										.toLowerCase()
 										.includes(searchInsensitive)
-								? null
-								: 'none'
+							: true
+
+						if (show && disagreements) {
+							show = disagrees(tr, visibleColumns)
+						}
+
+						tr.style.display = show ? null : 'none'
 					}
 
 					// filter whole table and heading if nothing matched
@@ -356,6 +397,26 @@
 						}
 						table.parentNode.style.display = 'none'
 					}
+				}
+
+				function disagrees(tr, visibleColumns) {
+					const values = []
+					let missing = 0
+					for (const td of tr.querySelectorAll('td[data-col]')) {
+						if (!visibleColumns.includes(td.dataset.col)) {
+							continue
+						}
+						const value = td.textContent.replace(/\s+/g, ' ').trim()
+						if (value === '❌') {
+							missing++
+						} else {
+							values.push(value)
+						}
+					}
+					return (
+						(filters.values && new Set(values).size > 1) ||
+						(filters.coverage && missing > 0 && values.length > 0)
+					)
 				}
 				// settings
 				const store = localStorage
