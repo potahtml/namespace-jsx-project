@@ -42,7 +42,7 @@ interface InputHTMLAttributes<T> extends HTMLAttributes<T> {
 	accept?: string
 	alt?: string
 	autoComplete?: AutoFill | (string & {})
-	capture?: boolean | 'user' | 'environment' // https://www.w3.org/TR/html-media-capture/#the-capture-attribute
+	capture?: boolean | 'user' | 'environment'
 	checked?: boolean
 	disabled?: boolean
 	form?: string
@@ -70,7 +70,5 @@ interface InputHTMLAttributes<T> extends HTMLAttributes<T> {
 	value?: string | readonly string[] | number
 	width?: number | string
 
-	// No other element dispatching change events can be nested in a <input>
-	// so we know the target will be a HTMLInputElement.
 	onChange?: ChangeEventHandler<T, HTMLInputElement>
 }

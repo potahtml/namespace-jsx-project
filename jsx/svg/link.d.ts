@@ -46,6 +46,5 @@ interface LinkHTMLAttributes<T> extends HTMLAttributes<T> {
 	type?: string
 	charSet?: string
 
-	// React props
 	precedence?: string
 }

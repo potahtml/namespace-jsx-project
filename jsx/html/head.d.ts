@@ -10,6 +10,5 @@
 
 // Pota - https://github.com/potahtml/pota
 interface HTMLHeadElementAttributes<Element> extends HTMLAttributes<Element> {
-	/** @deprecated */
 	profile?: string
 }

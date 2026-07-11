@@ -5,13 +5,12 @@ interface MathMLAttributes<T> extends DOMAttributes<T> {
 	scriptlevel?: string
 	xmlns?: string
 
-	/** @deprecated */
 	href?: string
-	/** @deprecated */
+
 	mathbackground?: string
-	/** @deprecated */
+
 	mathcolor?: string
-	/** @deprecated */
+
 	mathsize?: string
 }
 
@@ -22,13 +21,12 @@ interface MathMLAttributes<T> extends ElementAttributes<T> {
 	scriptlevel?: string | false
 	xmlns?: string | false
 
-	/** @deprecated */
 	href?: string | false
-	/** @deprecated */
+
 	mathbackground?: string | false
-	/** @deprecated */
+
 	mathcolor?: string | false
-	/** @deprecated */
+
 	mathsize?: string | false
 }
 
@@ -44,12 +42,11 @@ interface MathMLAttributes<Element> extends ElementAttributes<Element> {
 	displaystyle?: boolean | ''
 	scriptlevel?: string
 
-	/** @deprecated */
 	href?: string
-	/** @deprecated */
+
 	mathbackground?: string
-	/** @deprecated */
+
 	mathcolor?: string
-	/** @deprecated */
+
 	mathsize?: string
 }

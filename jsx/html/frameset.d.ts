@@ -1,8 +1,7 @@
 // Pota - https://github.com/potahtml/pota
 interface HTMLFrameSetElementAttributes<Element> extends HTMLAttributes<Element>, EventHandlersWindow<Element> {
-	/** @deprecated */
 	cols?: number | string
-	/** @deprecated */
+
 	rows?: number | string
 }
 
@@ -23,7 +22,7 @@ interface EventHandlersWindow<Element> {
 	'on:messageerror'?: EventHandlers<MessageEvent, Element>
 	'on:offline'?: EventHandlers<Event, Element>
 	'on:online'?: EventHandlers<Event, Element>
-	/** @deprecated */
+
 	'on:orientationchange'?: EventHandlers<Event, Element>
 	'on:pagehide'?: EventHandlers<PageTransitionEvent, Element>
 	'on:pagereveal'?: EventHandlers<PageRevealEvent, Element>

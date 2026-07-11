@@ -1,24 +1,22 @@
 // Solid Main - https://www.solidjs.com/
 interface ParamHTMLAttributes<T> extends HTMLAttributes<T> {
-	/** @deprecated */
 	name?: string
-	/** @deprecated */
+
 	type?: string
-	/** @deprecated */
+
 	value?: string | number
-	/** @deprecated */
+
 	valuetype?: 'data' | 'ref' | 'object'
 }
 
 // Solid Next - https://www.solidjs.com/
 interface ParamHTMLAttributes<T> extends HTMLAttributes<T> {
-	/** @deprecated */
 	name?: string | false
-	/** @deprecated */
+
 	type?: string | false
-	/** @deprecated */
+
 	value?: string | number | false
-	/** @deprecated */
+
 	valuetype?: 'data' | 'ref' | 'object' | false
 }
 
@@ -42,12 +40,11 @@ interface ParamHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Pota - https://github.com/potahtml/pota
 interface HTMLParamElementAttributes<Element> extends HTMLAttributes<Element> {
-	/** @deprecated */
 	name?: string
-	/** @deprecated */
+
 	value?: number | string
-	/** @deprecated */
+
 	type?: string
-	/** @deprecated */
+
 	valuetype?: 'data' | 'ref' | 'object'
 }

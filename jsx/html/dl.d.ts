@@ -10,6 +10,5 @@
 
 // Pota - https://github.com/potahtml/pota
 interface HTMLDListElementAttributes<Element> extends HTMLAttributes<Element> {
-	/** @deprecated */
 	compact?: boolean | ''
 }

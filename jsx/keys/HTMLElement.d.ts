@@ -27,7 +27,6 @@ interface HTMLAttributes<T> extends DOMAttributes<T> {
 	exportParts?: string
 	inputMode?: 'none' | 'text' | 'tel' | 'url' | 'email' | 'numeric' | 'decimal' | 'search'
 
-	// Microdata
 	itemid?: string
 	itemprop?: string
 	itemref?: string
@@ -40,7 +39,6 @@ interface HTMLAttributes<T> extends DOMAttributes<T> {
 	itemScope?: boolean
 	itemType?: string
 
-	// RDFa Attributes
 	about?: string
 	datatype?: string
 	inlist?: any
@@ -50,18 +48,15 @@ interface HTMLAttributes<T> extends DOMAttributes<T> {
 	typeof?: string
 	vocab?: string
 
-	/** @deprecated */
 	contextmenu?: string
-	/** @deprecated */
+
 	contextMenu?: string
 }
 
 // Solid Next - https://www.solidjs.com/
 interface HTMLAttributes<T> extends ElementAttributes<T> {
-	// properties
 	innerText?: string | number
 
-	// attributes
 	accesskey?: string | false
 	autocapitalize?: 'off' | 'none' | 'on' | 'sentences' | 'words' | 'characters' | false
 	autocorrect?: 'on' | 'off' | false
@@ -80,19 +75,16 @@ interface HTMLAttributes<T> extends ElementAttributes<T> {
 	title?: string | false
 	translate?: 'yes' | 'no' | false
 
-	/** @experimental */
 	virtualkeyboardpolicy?: '' | true | 'auto' | 'manual' | false
-	/** @experimental */
+
 	writingsuggestions?: 'false' | 'true' | false
 
-	// Microdata
 	itemid?: string | false
 	itemprop?: string | false
 	itemref?: string | false
 	itemscope?: true | false | '' | false
 	itemtype?: string | false
 
-	// RDFa Attributes
 	about?: string | false
 	datatype?: string | false
 	inlist?: any | false
@@ -102,7 +94,6 @@ interface HTMLAttributes<T> extends ElementAttributes<T> {
 	typeof?: string | false
 	vocab?: string | false
 
-	/** @deprecated */
 	contextmenu?: string | false
 }
 
@@ -114,10 +105,8 @@ interface HTMLAttributes<T> extends ElementAttributes<T> {
 
 // Pota - https://github.com/potahtml/pota
 interface HTMLAttributes<Element> extends ElementAttributes<Element> {
-	// properties
 	'prop:innerText'?: number | string
 
-	// attributes
 	accesskey?: string
 	anchor?: string
 	autocapitalize?: 'off' | 'none' | 'on' | 'sentences' | 'words' | 'characters'
@@ -137,14 +126,12 @@ interface HTMLAttributes<Element> extends ElementAttributes<Element> {
 	title?: string
 	translate?: 'yes' | 'no'
 
-	// microdata
 	itemid?: string
 	itemprop?: string
 	itemref?: string
 	itemscope?: boolean | ''
 	itemtype?: string
 
-	// RDFa attributes
 	about?: string
 	datatype?: string
 	inlist?: any
@@ -154,11 +141,9 @@ interface HTMLAttributes<Element> extends ElementAttributes<Element> {
 	typeof?: string
 	vocab?: string
 
-	/** @experimental */
 	virtualkeyboardpolicy?: '' | 'auto' | 'manual'
-	/** @experimental */
+
 	writingsuggestions?: 'false' | 'true'
 
-	/** @deprecated */
 	contextmenu?: string
 }

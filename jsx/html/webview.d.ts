@@ -14,15 +14,13 @@ interface WebViewHTMLAttributes<T> extends HTMLAttributes<T> {
 	useragent?: string
 	webpreferences?: string
 
-	// does this exists?
 	allowfullscreen?: boolean
 	autosize?: boolean
 
-	/** @deprecated */
 	blinkfeatures?: string
-	/** @deprecated */
+
 	disableguestresize?: boolean
-	/** @deprecated */
+
 	guestinstance?: string
 }
 
@@ -42,15 +40,13 @@ interface WebViewHTMLAttributes<T> extends HTMLAttributes<T> {
 	useragent?: string | false
 	webpreferences?: string | false
 
-	// does this exists?
 	allowfullscreen?: true | false | '' | false
 	autosize?: true | false | '' | false
 
-	/** @deprecated */
 	blinkfeatures?: string | false
-	/** @deprecated */
+
 	disableguestresize?: true | false | '' | false
-	/** @deprecated */
+
 	guestinstance?: string | false
 }
 
@@ -132,14 +128,12 @@ interface HTMLWebViewElementAttributes<Element> extends HTMLAttributes<Element> 
 	useragent?: string
 	webpreferences?: string
 
-	// does this exists?
 	allowfullscreen?: boolean | ''
 	autosize?: boolean | ''
 
-	/** @deprecated */
 	blinkfeatures?: string
-	/** @deprecated */
+
 	disableguestresize?: boolean | ''
-	/** @deprecated */
+
 	guestinstance?: string
 }

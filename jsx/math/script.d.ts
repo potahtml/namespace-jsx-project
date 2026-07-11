@@ -1,7 +1,7 @@
 // Voby - https://github.com/vobyjs/voby
 interface ScriptHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
 	async?: boolean
-	/** @deprecated */
+
 	charSet?: string
 	crossOrigin?: string
 	defer?: boolean
@@ -17,7 +17,7 @@ interface ScriptHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> 
 interface ScriptHTMLAttributes<T> extends HTMLAttributes<T> {
 	async?: boolean
 	blocking?: 'render' | (string & {})
-	/** @deprecated */
+
 	charSet?: string
 	crossOrigin?: 'anonymous' | 'use-credentials' | ''
 	defer?: boolean

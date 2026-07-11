@@ -13,7 +13,6 @@ interface FormHTMLAttributes<T> extends HTMLAttributes<T> {
 
 	noValidate?: boolean
 
-	/** @deprecated */
 	accept?: string
 }
 
@@ -30,7 +29,6 @@ interface FormHTMLAttributes<T> extends HTMLAttributes<T> {
 	rel?: string | false
 	target?: '_self' | '_blank' | '_parent' | '_top' | (string & {}) | false
 
-	/** @deprecated */
 	accept?: string | false
 }
 
@@ -83,6 +81,5 @@ interface HTMLFormElementAttributes<Element> extends HTMLAttributes<Element> {
 	rel?: string
 	target?: '_self' | '_blank' | '_parent' | '_top' | (string & {})
 
-	/** @deprecated */
 	accept?: string
 }

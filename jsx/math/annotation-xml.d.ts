@@ -2,7 +2,6 @@
 interface MathMLAnnotationXmlElementAttributes<T> extends MathMLAttributes<T> {
 	encoding?: string
 
-	/** @deprecated */
 	src?: string
 }
 
@@ -10,7 +9,6 @@ interface MathMLAnnotationXmlElementAttributes<T> extends MathMLAttributes<T> {
 interface MathMLAnnotationXmlElementAttributes<T> extends MathMLAttributes<T> {
 	encoding?: string | false
 
-	/** @deprecated */
 	src?: string | false
 }
 
@@ -18,6 +16,5 @@ interface MathMLAnnotationXmlElementAttributes<T> extends MathMLAttributes<T> {
 interface MathMLAnnotationXmlElementAttributes<Element> extends MathMLAttributes<Element> {
 	encoding?: string
 
-	/** @deprecated */
 	src?: string
 }

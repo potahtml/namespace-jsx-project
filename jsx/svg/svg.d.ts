@@ -9,13 +9,13 @@ interface SvgSVGAttributes<T> extends ContainerElementSVGAttributes<T>, NewViewp
 	xmlns?: string
 	y?: number | string
 
-	/** @deprecated */
 	baseProfile?: string
-	/** @deprecated */
+
 	version?: string
 }
 
 interface ContainerElementSVGAttributes<T> extends CoreSVGAttributes<T>, ShapeElementSVGAttributes<T>, Pick<PresentationSVGAttributes, 'clip-path' | 'mask' | 'cursor' | 'opacity' | 'filter' | 'enable-background' | 'color-interpolation' | 'color-rendering'> {}
+
 interface NewViewportSVGAttributes<T> extends CoreSVGAttributes<T>, Pick<PresentationSVGAttributes, 'overflow' | 'clip'> {
 	viewBox?: string
 }
@@ -41,10 +41,6 @@ interface FitToViewBoxSVGAttributes {
 }
 
 interface ZoomAndPanSVGAttributes {
-	/**
-	 * @deprecated
-	 * @non-standard
-	 */
 	zoomAndPan?: 'disable' | 'magnify'
 }
 
@@ -124,10 +120,10 @@ interface WindowEventMap<T> {
 	onOffline?: EventHandlerUnion<T, Event>
 	onOnline?: EventHandlerUnion<T, Event>
 	onPageHide?: EventHandlerUnion<T, PageTransitionEvent>
-	// TODO `PageRevealEvent` is currently undefined on TS
+
 	onPageReveal?: EventHandlerUnion<T, Event>
 	onPageShow?: EventHandlerUnion<T, PageTransitionEvent>
-	// TODO `PageSwapEvent` is currently undefined on TS
+
 	onPageSwap?: EventHandlerUnion<T, Event>
 	onPopstate?: EventHandlerUnion<T, PopStateEvent>
 	onRejectionHandled?: EventHandlerUnion<T, PromiseRejectionEvent>
@@ -147,10 +143,10 @@ interface WindowEventMap<T> {
 	onoffline?: EventHandlerUnion<T, Event>
 	ononline?: EventHandlerUnion<T, Event>
 	onpagehide?: EventHandlerUnion<T, PageTransitionEvent>
-	// TODO `PageRevealEvent` is currently undefined in TS
+
 	onpagereveal?: EventHandlerUnion<T, Event>
 	onpageshow?: EventHandlerUnion<T, PageTransitionEvent>
-	// TODO `PageSwapEvent` is currently undefined in TS
+
 	onpageswap?: EventHandlerUnion<T, Event>
 	onpopstate?: EventHandlerUnion<T, PopStateEvent>
 	onrejectionhandled?: EventHandlerUnion<T, PromiseRejectionEvent>
@@ -170,10 +166,10 @@ interface WindowEventMap<T> {
 	'on:offline'?: EventHandlerWithOptionsUnion<T, Event>
 	'on:online'?: EventHandlerWithOptionsUnion<T, Event>
 	'on:pagehide'?: EventHandlerWithOptionsUnion<T, PageTransitionEvent>
-	// TODO `PageRevealEvent` is currently undefined in TS
+
 	'on:pagereveal'?: EventHandlerWithOptionsUnion<T, Event>
 	'on:pageshow'?: EventHandlerWithOptionsUnion<T, PageTransitionEvent>
-	// TODO `PageSwapEvent` is currently undefined in TS
+
 	'on:pageswap'?: EventHandlerWithOptionsUnion<T, Event>
 	'on:popstate'?: EventHandlerWithOptionsUnion<T, PopStateEvent>
 	'on:rejectionhandled'?: EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>
@@ -183,6 +179,7 @@ interface WindowEventMap<T> {
 }
 
 interface ShapeElementSVGAttributes<T> extends CoreSVGAttributes<T>, Pick<PresentationSVGAttributes, 'color' | 'fill' | 'fill-rule' | 'fill-opacity' | 'stroke' | 'stroke-width' | 'stroke-linecap' | 'stroke-linejoin' | 'stroke-miterlimit' | 'stroke-dasharray' | 'stroke-dashoffset' | 'stroke-opacity' | 'shape-rendering' | 'pathLength'> {}
+
 // Pick<PresentationSVGAttributes, 'clip-path' | 'mask' | 'cursor' | 'opacity' | 'filter' | 'enable-background' | 'color-interpolation' | 'color-rendering'>
 interface PresentationSVGAttributes {
 	'clip-path'?: string
@@ -227,13 +224,13 @@ interface SvgSVGAttributes<T> extends ContainerElementSVGAttributes<T>, NewViewp
 	x?: number | string | false
 	y?: number | string | false
 
-	/** @deprecated */
 	baseProfile?: string | false
-	/** @deprecated */
+
 	version?: string | false
 }
 
 interface ContainerElementSVGAttributes<T> extends SVGAttributes<T>, ShapeElementSVGAttributes<T>, Pick<PresentationSVGAttributes, 'clip-path' | 'mask' | 'cursor' | 'opacity' | 'filter' | 'enable-background' | 'color-interpolation' | 'color-rendering'> {}
+
 interface NewViewportSVGAttributes<T> extends SVGAttributes<T>, Pick<PresentationSVGAttributes, 'overflow' | 'clip'> {
 	viewBox?: string | false
 }
@@ -249,20 +246,7 @@ interface ExternalResourceSVGAttributes {
 }
 
 interface StylableSVGAttributes {
-	/**
-	 * Class names to apply. Accepts a string, an object whose keys are class
-	 * names and values are booleans (`{ active: isActive() }` — truthy keys
-	 * are added), or an array merging strings/objects/nested arrays
-	 * (`["card", props.class, { active: isActive() }]`).
-	 *
-	 * For conditional classes, prefer the array+object form. Don't build
-	 * class strings manually with concatenation, template literals, or
-	 * `.filter(Boolean).join(" ")` — that's the React/`classnames` reflex
-	 * and the array+object form replaces it. The array+object form composes
-	 * with reactive values directly; manually-built strings re-run the whole
-	 * concatenation on every change instead of toggling the affected classes.
-	 */
-	class?: ClassValue | false
+	class?: string | number | boolean | null | Record<string, boolean> | ClassValue[] | false
 	style?: CSSProperties | string | false
 }
 
@@ -272,10 +256,6 @@ interface FitToViewBoxSVGAttributes {
 }
 
 interface ZoomAndPanSVGAttributes {
-	/**
-	 * @deprecated
-	 * @non-standard
-	 */
 	zoomAndPan?: 'disable' | 'magnify' | false
 }
 
@@ -357,7 +337,7 @@ interface EventHandlersWindow<T> {
 	onMessageError?: EventHandlerUnion<T, MessageEvent>
 	onOffline?: EventHandlerUnion<T, Event>
 	onOnline?: EventHandlerUnion<T, Event>
-	/** @deprecated Use `screen.orientation` (`ScreenOrientation.change`) instead. */
+
 	onOrientationChange?: EventHandlerUnion<T, Event>
 	onPageHide?: EventHandlerUnion<T, PageTransitionEvent>
 	onPageReveal?: EventHandlerUnion<T, PageRevealEvent>
@@ -368,11 +348,10 @@ interface EventHandlersWindow<T> {
 	onStorage?: EventHandlerUnion<T, StorageEvent>
 	onUnhandledRejection?: EventHandlerUnion<T, PromiseRejectionEvent>
 	onUnload?: EventHandlerUnion<T, Event>
-
-	/** @deprecated Use `screen.orientation` (`ScreenOrientation.change`) instead. */
 }
 
 interface ShapeElementSVGAttributes<T> extends SVGAttributes<T>, Pick<PresentationSVGAttributes, 'color' | 'fill' | 'fill-rule' | 'fill-opacity' | 'stroke' | 'stroke-width' | 'stroke-linecap' | 'stroke-linejoin' | 'stroke-miterlimit' | 'stroke-dasharray' | 'stroke-dashoffset' | 'stroke-opacity' | 'shape-rendering' | 'pathLength'> {}
+
 // Pick<PresentationSVGAttributes, 'clip-path' | 'mask' | 'cursor' | 'opacity' | 'filter' | 'enable-background' | 'color-interpolation' | 'color-rendering'>
 interface PresentationSVGAttributes {
 	'clip-path'?: string | false
@@ -413,10 +392,12 @@ interface PresentationSVGAttributes {
 
 // React - https://react.dev/
 interface SVGProps<T> extends SVGAttributes<T>, ClassAttributes<T> {}
+
 interface ClassAttributes<T> extends RefAttributes<T> {}
 
 // Pota - https://github.com/potahtml/pota
 interface SVGSVGElementAttributes<Element> extends SVGAttributes<Element>, EventHandlersWindow<Element> {}
+
 interface EventHandlersWindow<Element> {
 	'on:afterprint'?: EventHandlers<Event, Element>
 	'on:beforeprint'?: EventHandlers<Event, Element>
@@ -434,7 +415,7 @@ interface EventHandlersWindow<Element> {
 	'on:messageerror'?: EventHandlers<MessageEvent, Element>
 	'on:offline'?: EventHandlers<Event, Element>
 	'on:online'?: EventHandlers<Event, Element>
-	/** @deprecated */
+
 	'on:orientationchange'?: EventHandlers<Event, Element>
 	'on:pagehide'?: EventHandlers<PageTransitionEvent, Element>
 	'on:pagereveal'?: EventHandlers<PageRevealEvent, Element>

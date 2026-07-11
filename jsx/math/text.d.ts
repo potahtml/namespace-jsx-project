@@ -242,12 +242,17 @@ interface SVGAttributes<T extends EventTarget = SVGElement> extends HTMLAttribut
 	z?: number | string
 	zoomAndPan?: string
 
-	// XMLNS
 	'xlink:href'?: string
 	'xmlns:xlink'?: string
 }
 
+interface DirectiveAttributes {
+	'use:*'?: Directives[Directive] extends [infer U] ? U | [U] : Directives[Directive]
+}
+
 // React - https://react.dev/
 interface SVGTextElementAttributes<T> extends SVGProps<T> {}
+
 interface SVGProps<T> extends SVGAttributes<T>, ClassAttributes<T> {}
+
 interface ClassAttributes<T> extends RefAttributes<T> {}

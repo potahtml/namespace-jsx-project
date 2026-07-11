@@ -2,17 +2,16 @@
 interface ColgroupHTMLAttributes<T> extends HTMLAttributes<T> {
 	span?: number | string
 
-	/** @deprecated */
 	align?: 'left' | 'center' | 'right' | 'justify' | 'char'
-	/** @deprecated */
+
 	bgcolor?: string
-	/** @deprecated */
+
 	char?: string
-	/** @deprecated */
+
 	charoff?: string
-	/** @deprecated */
+
 	valign?: 'baseline' | 'bottom' | 'middle' | 'top'
-	/** @deprecated */
+
 	width?: number | string
 }
 
@@ -20,17 +19,16 @@ interface ColgroupHTMLAttributes<T> extends HTMLAttributes<T> {
 interface ColgroupHTMLAttributes<T> extends HTMLAttributes<T> {
 	span?: number | string | false
 
-	/** @deprecated */
 	align?: 'left' | 'center' | 'right' | 'justify' | 'char' | false
-	/** @deprecated */
+
 	bgcolor?: string | false
-	/** @deprecated */
+
 	char?: string | false
-	/** @deprecated */
+
 	charoff?: string | false
-	/** @deprecated */
+
 	valign?: 'baseline' | 'bottom' | 'middle' | 'top' | false
-	/** @deprecated */
+
 	width?: number | string | false
 }
 
@@ -53,16 +51,15 @@ interface ColgroupHTMLAttributes<T> extends HTMLAttributes<T> {
 interface HTMLTableColElementAttributes<Element> extends HTMLAttributes<Element> {
 	span?: number | string
 
-	/** @deprecated */
 	align?: 'left' | 'center' | 'right' | 'justify' | 'char'
-	/** @deprecated */
+
 	bgcolor?: string
-	/** @deprecated */
+
 	char?: string
-	/** @deprecated */
+
 	charoff?: string
-	/** @deprecated */
+
 	valign?: 'baseline' | 'bottom' | 'middle' | 'top'
-	/** @deprecated */
+
 	width?: number | string
 }

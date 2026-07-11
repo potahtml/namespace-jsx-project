@@ -4,17 +4,14 @@ interface AnimateTransformSVGAttributes<T> extends AnimationElementSVGAttributes
 }
 
 interface AnimationElementSVGAttributes<T> extends CoreSVGAttributes<T>, ExternalResourceSVGAttributes, ConditionalProcessingSVGAttributes {
-	// TODO TimeEvent is currently undefined on TS
 	onBegin?: EventHandlerUnion<T, Event>
 	onbegin?: EventHandlerUnion<T, Event>
 	'on:begin'?: EventHandlerWithOptionsUnion<T, Event>
 
-	// TODO TimeEvent is currently undefined on TS
 	onEnd?: EventHandlerUnion<T, Event>
 	onend?: EventHandlerUnion<T, Event>
 	'on:end'?: EventHandlerWithOptionsUnion<T, Event>
 
-	// TODO TimeEvent is currently undefined on TS
 	onRepeat?: EventHandlerUnion<T, Event>
 	onrepeat?: EventHandlerUnion<T, Event>
 	'on:repeat'?: EventHandlerWithOptionsUnion<T, Event>
@@ -123,6 +120,7 @@ interface ConditionalProcessingSVGAttributes {
 
 // React - https://react.dev/
 interface SVGProps<T> extends SVGAttributes<T>, ClassAttributes<T> {}
+
 interface ClassAttributes<T> extends RefAttributes<T> {}
 
 // Pota - https://github.com/potahtml/pota

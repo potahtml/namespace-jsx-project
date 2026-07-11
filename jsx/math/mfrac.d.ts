@@ -2,15 +2,8 @@
 interface MathMLMfracElementAttributes<T> extends MathMLAttributes<T> {
 	linethickness?: string
 
-	/**
-	 * @deprecated
-	 * @non-standard
-	 */
 	denomalign?: 'center' | 'left' | 'right'
-	/**
-	 * @deprecated
-	 * @non-standard
-	 */
+
 	numalign?: 'center' | 'left' | 'right'
 }
 
@@ -18,15 +11,8 @@ interface MathMLMfracElementAttributes<T> extends MathMLAttributes<T> {
 interface MathMLMfracElementAttributes<T> extends MathMLAttributes<T> {
 	linethickness?: string | false
 
-	/**
-	 * @deprecated
-	 * @non-standard
-	 */
 	denomalign?: 'center' | 'left' | 'right' | false
-	/**
-	 * @deprecated
-	 * @non-standard
-	 */
+
 	numalign?: 'center' | 'left' | 'right' | false
 }
 
@@ -34,8 +20,7 @@ interface MathMLMfracElementAttributes<T> extends MathMLAttributes<T> {
 interface MathMLMfracElementAttributes<Element> extends MathMLAttributes<Element> {
 	linethickness?: string
 
-	/** @deprecated */
 	denomalign?: 'center' | 'left' | 'right'
-	/** @deprecated */
+
 	numalign?: 'center' | 'left' | 'right'
 }

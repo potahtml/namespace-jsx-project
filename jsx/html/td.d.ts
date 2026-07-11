@@ -7,27 +7,26 @@ interface TdHTMLAttributes<T> extends HTMLAttributes<T> {
 	colSpan?: number | string
 	rowSpan?: number | string
 
-	/** @deprecated */
 	abbr?: string
-	/** @deprecated */
+
 	align?: 'left' | 'center' | 'right' | 'justify' | 'char'
-	/** @deprecated */
+
 	axis?: string
-	/** @deprecated */
+
 	bgcolor?: string
-	/** @deprecated */
+
 	char?: string
-	/** @deprecated */
+
 	charoff?: string
-	/** @deprecated */
+
 	height?: number | string
-	/** @deprecated */
+
 	nowrap?: boolean
-	/** @deprecated */
+
 	scope?: 'col' | 'row' | 'rowgroup' | 'colgroup'
-	/** @deprecated */
+
 	valign?: 'baseline' | 'bottom' | 'middle' | 'top'
-	/** @deprecated */
+
 	width?: number | string
 }
 
@@ -37,27 +36,26 @@ interface TdHTMLAttributes<T> extends HTMLAttributes<T> {
 	headers?: string | false
 	rowspan?: number | string | false
 
-	/** @deprecated */
 	abbr?: string | false
-	/** @deprecated */
+
 	align?: 'left' | 'center' | 'right' | 'justify' | 'char' | false
-	/** @deprecated */
+
 	axis?: string | false
-	/** @deprecated */
+
 	bgcolor?: string | false
-	/** @deprecated */
+
 	char?: string | false
-	/** @deprecated */
+
 	charoff?: string | false
-	/** @deprecated */
+
 	height?: number | string | false
-	/** @deprecated */
+
 	nowrap?: true | false | '' | false
-	/** @deprecated */
+
 	scope?: 'col' | 'row' | 'rowgroup' | 'colgroup' | false
-	/** @deprecated */
+
 	valign?: 'baseline' | 'bottom' | 'middle' | 'top' | false
-	/** @deprecated */
+
 	width?: number | string | false
 }
 
@@ -106,26 +104,25 @@ interface HTMLTableCellTdElementAttributes<Element> extends HTMLAttributes<Eleme
 	headers?: string
 	rowspan?: number | string
 
-	/** @deprecated */
 	abbr?: string
-	/** @deprecated */
+
 	align?: 'left' | 'center' | 'right' | 'justify' | 'char'
-	/** @deprecated */
+
 	axis?: string
-	/** @deprecated */
+
 	bgcolor?: string
-	/** @deprecated */
+
 	char?: string
-	/** @deprecated */
+
 	charoff?: string
-	/** @deprecated */
+
 	height?: number | string
-	/** @deprecated */
+
 	nowrap?: boolean | ''
-	/** @deprecated */
+
 	scope?: 'col' | 'row' | 'rowgroup' | 'colgroup'
-	/** @deprecated */
+
 	valign?: 'baseline' | 'bottom' | 'middle' | 'top'
-	/** @deprecated */
+
 	width?: number | string
 }

@@ -13,7 +13,6 @@ interface StyleHTMLAttributes<T> extends HTMLAttributes<T> {
 	scoped?: boolean
 	type?: string
 
-	// React props
 	href?: string
 	precedence?: string
 }

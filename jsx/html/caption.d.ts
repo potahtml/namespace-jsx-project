@@ -1,12 +1,10 @@
 // Solid Main - https://www.solidjs.com/
 interface CaptionHTMLAttributes<T> extends HTMLAttributes<T> {
-	/** @deprecated */
 	align?: 'left' | 'center' | 'right'
 }
 
 // Solid Next - https://www.solidjs.com/
 interface CaptionHTMLAttributes<T> extends HTMLAttributes<T> {
-	/** @deprecated */
 	align?: 'left' | 'center' | 'right' | false
 }
 
@@ -18,6 +16,5 @@ interface CaptionHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Pota - https://github.com/potahtml/pota
 interface HTMLTableCaptionElementAttributes<Element> extends HTMLAttributes<Element> {
-	/** @deprecated */
 	align?: 'left' | 'center' | 'right'
 }

@@ -1,5 +1,6 @@
 // Solid Main - https://www.solidjs.com/
 interface BodyHTMLAttributes<T> extends HTMLAttributes<T>, WindowEventMap<T> {}
+
 interface WindowEventMap<T> {
 	onAfterPrint?: EventHandlerUnion<T, Event>
 	onBeforePrint?: EventHandlerUnion<T, Event>
@@ -13,10 +14,10 @@ interface WindowEventMap<T> {
 	onOffline?: EventHandlerUnion<T, Event>
 	onOnline?: EventHandlerUnion<T, Event>
 	onPageHide?: EventHandlerUnion<T, PageTransitionEvent>
-	// TODO `PageRevealEvent` is currently undefined on TS
+
 	onPageReveal?: EventHandlerUnion<T, Event>
 	onPageShow?: EventHandlerUnion<T, PageTransitionEvent>
-	// TODO `PageSwapEvent` is currently undefined on TS
+
 	onPageSwap?: EventHandlerUnion<T, Event>
 	onPopstate?: EventHandlerUnion<T, PopStateEvent>
 	onRejectionHandled?: EventHandlerUnion<T, PromiseRejectionEvent>
@@ -36,10 +37,10 @@ interface WindowEventMap<T> {
 	onoffline?: EventHandlerUnion<T, Event>
 	ononline?: EventHandlerUnion<T, Event>
 	onpagehide?: EventHandlerUnion<T, PageTransitionEvent>
-	// TODO `PageRevealEvent` is currently undefined in TS
+
 	onpagereveal?: EventHandlerUnion<T, Event>
 	onpageshow?: EventHandlerUnion<T, PageTransitionEvent>
-	// TODO `PageSwapEvent` is currently undefined in TS
+
 	onpageswap?: EventHandlerUnion<T, Event>
 	onpopstate?: EventHandlerUnion<T, PopStateEvent>
 	onrejectionhandled?: EventHandlerUnion<T, PromiseRejectionEvent>
@@ -59,10 +60,10 @@ interface WindowEventMap<T> {
 	'on:offline'?: EventHandlerWithOptionsUnion<T, Event>
 	'on:online'?: EventHandlerWithOptionsUnion<T, Event>
 	'on:pagehide'?: EventHandlerWithOptionsUnion<T, PageTransitionEvent>
-	// TODO `PageRevealEvent` is currently undefined in TS
+
 	'on:pagereveal'?: EventHandlerWithOptionsUnion<T, Event>
 	'on:pageshow'?: EventHandlerWithOptionsUnion<T, PageTransitionEvent>
-	// TODO `PageSwapEvent` is currently undefined in TS
+
 	'on:pageswap'?: EventHandlerWithOptionsUnion<T, Event>
 	'on:popstate'?: EventHandlerWithOptionsUnion<T, PopStateEvent>
 	'on:rejectionhandled'?: EventHandlerWithOptionsUnion<T, PromiseRejectionEvent>
@@ -73,6 +74,7 @@ interface WindowEventMap<T> {
 
 // Solid Next - https://www.solidjs.com/
 interface BodyHTMLAttributes<T> extends HTMLAttributes<T>, EventHandlersWindow<T> {}
+
 interface EventHandlersWindow<T> {
 	onAfterPrint?: EventHandlerUnion<T, Event>
 	onBeforePrint?: EventHandlerUnion<T, Event>
@@ -88,7 +90,7 @@ interface EventHandlersWindow<T> {
 	onMessageError?: EventHandlerUnion<T, MessageEvent>
 	onOffline?: EventHandlerUnion<T, Event>
 	onOnline?: EventHandlerUnion<T, Event>
-	/** @deprecated Use `screen.orientation` (`ScreenOrientation.change`) instead. */
+
 	onOrientationChange?: EventHandlerUnion<T, Event>
 	onPageHide?: EventHandlerUnion<T, PageTransitionEvent>
 	onPageReveal?: EventHandlerUnion<T, PageRevealEvent>
@@ -99,8 +101,6 @@ interface EventHandlersWindow<T> {
 	onStorage?: EventHandlerUnion<T, StorageEvent>
 	onUnhandledRejection?: EventHandlerUnion<T, PromiseRejectionEvent>
 	onUnload?: EventHandlerUnion<T, Event>
-
-	/** @deprecated Use `screen.orientation` (`ScreenOrientation.change`) instead. */
 }
 
 // Voby - https://github.com/vobyjs/voby
@@ -111,25 +111,24 @@ interface EventHandlersWindow<T> {
 
 // Pota - https://github.com/potahtml/pota
 interface HTMLBodyElementAttributes<Element> extends HTMLAttributes<Element>, EventHandlersWindow<Element> {
-	/** @deprecated */
 	alink?: string
-	/** @deprecated */
+
 	background?: string
-	/** @deprecated */
+
 	bgcolor?: string
-	/** @deprecated */
+
 	bottommargin?: number | string
-	/** @deprecated */
+
 	leftmargin?: number | string
-	/** @deprecated */
+
 	link?: string
-	/** @deprecated */
+
 	rightmargin?: number | string
-	/** @deprecated */
+
 	text?: string
-	/** @deprecated */
+
 	topmargin?: number | string
-	/** @deprecated */
+
 	vlink?: string
 }
 
@@ -150,7 +149,7 @@ interface EventHandlersWindow<Element> {
 	'on:messageerror'?: EventHandlers<MessageEvent, Element>
 	'on:offline'?: EventHandlers<Event, Element>
 	'on:online'?: EventHandlers<Event, Element>
-	/** @deprecated */
+
 	'on:orientationchange'?: EventHandlers<Event, Element>
 	'on:pagehide'?: EventHandlers<PageTransitionEvent, Element>
 	'on:pagereveal'?: EventHandlers<PageRevealEvent, Element>

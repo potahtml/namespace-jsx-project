@@ -11,14 +11,13 @@ interface HrHTMLAttributes<T extends EventTarget> extends VoidHTMLAttributes<T> 
 
 // Pota - https://github.com/potahtml/pota
 interface HTMLHRElementAttributes<Element> extends HTMLAttributes<Element> {
-	/** @deprecated */
 	align?: string
-	/** @deprecated */
+
 	color?: string
-	/** @deprecated */
+
 	noshade?: boolean | ''
-	/** @deprecated */
+
 	size?: string
-	/** @deprecated */
+
 	width?: string
 }

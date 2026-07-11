@@ -20,11 +20,10 @@ interface LinkHTMLAttributes<T> extends HTMLAttributes<T> {
 	crossOrigin?: 'anonymous' | 'use-credentials' | ''
 	referrerPolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
 
-	/** @deprecated */
 	charset?: string
-	/** @deprecated */
+
 	rev?: string
-	/** @deprecated */
+
 	target?: string
 }
 
@@ -47,11 +46,10 @@ interface LinkHTMLAttributes<T> extends HTMLAttributes<T> {
 	sizes?: string | false
 	type?: string | false
 
-	/** @deprecated */
 	charset?: string | false
-	/** @deprecated */
+
 	rev?: string | false
-	/** @deprecated */
+
 	target?: string | false
 }
 
@@ -103,7 +101,6 @@ interface LinkHTMLAttributes<T> extends HTMLAttributes<T> {
 	type?: string
 	charSet?: string
 
-	// React props
 	precedence?: string
 }
 
@@ -125,13 +122,11 @@ interface HTMLLinkElementAttributes<Element> extends HTMLAttributes<Element> {
 	sizes?: string
 	type?: string
 
-	/** @experimental */
 	blocking?: 'render'
 
-	/** @deprecated */
 	charset?: string
-	/** @deprecated */
+
 	rev?: string
-	/** @deprecated */
+
 	target?: string
 }

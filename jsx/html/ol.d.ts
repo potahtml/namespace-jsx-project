@@ -4,10 +4,6 @@ interface OlHTMLAttributes<T> extends HTMLAttributes<T> {
 	start?: number | string
 	type?: '1' | 'a' | 'A' | 'i' | 'I'
 
-	/**
-	 * @deprecated
-	 * @non-standard
-	 */
 	compact?: boolean
 }
 
@@ -17,10 +13,6 @@ interface OlHTMLAttributes<T> extends HTMLAttributes<T> {
 	start?: number | string | false
 	type?: '1' | 'a' | 'A' | 'i' | 'I' | false
 
-	/**
-	 * @deprecated
-	 * @non-standard
-	 */
 	compact?: true | false | '' | false
 }
 
@@ -51,6 +43,5 @@ interface HTMLOListElementAttributes<Element> extends HTMLAttributes<Element> {
 	start?: number | string
 	type?: '1' | 'a' | 'A' | 'i' | 'I'
 
-	/** @deprecated */
 	compact?: boolean | ''
 }

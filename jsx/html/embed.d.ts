@@ -5,9 +5,8 @@ interface EmbedHTMLAttributes<T> extends HTMLAttributes<T> {
 	type?: string
 	width?: number | string
 
-	/** @deprecated */
 	align?: 'left' | 'right' | 'justify' | 'center'
-	/** @deprecated */
+
 	name?: string
 }
 
@@ -18,9 +17,8 @@ interface EmbedHTMLAttributes<T> extends HTMLAttributes<T> {
 	type?: string | false
 	width?: number | string | false
 
-	/** @deprecated */
 	align?: 'left' | 'right' | 'justify' | 'center' | false
-	/** @deprecated */
+
 	name?: string | false
 }
 
@@ -55,8 +53,7 @@ interface HTMLEmbedElementAttributes<Element> extends HTMLAttributes<Element> {
 	type?: string
 	width?: number | string
 
-	/** @deprecated */
 	align?: 'left' | 'right' | 'justify' | 'center'
-	/** @deprecated */
+
 	name?: string
 }

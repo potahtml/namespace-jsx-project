@@ -9,31 +9,30 @@ interface ObjectHTMLAttributes<T> extends HTMLAttributes<T> {
 
 	useMap?: string
 
-	/** @deprecated */
 	align?: string
-	/** @deprecated */
+
 	archive?: string
-	/** @deprecated */
+
 	border?: string
-	/** @deprecated */
+
 	classid?: string
-	/** @deprecated */
+
 	code?: string
-	/** @deprecated */
+
 	codebase?: string
-	/** @deprecated */
+
 	codetype?: string
-	/** @deprecated */
+
 	declare?: boolean
-	/** @deprecated */
+
 	hspace?: number | string
-	/** @deprecated */
+
 	standby?: string
-	/** @deprecated */
+
 	usemap?: string
-	/** @deprecated */
+
 	vspace?: number | string
-	/** @deprecated */
+
 	typemustmatch?: boolean
 }
 
@@ -47,31 +46,30 @@ interface ObjectHTMLAttributes<T> extends HTMLAttributes<T> {
 	width?: number | string | false
 	wmode?: string | false
 
-	/** @deprecated */
 	align?: string | false
-	/** @deprecated */
+
 	archive?: string | false
-	/** @deprecated */
+
 	border?: string | false
-	/** @deprecated */
+
 	classid?: string | false
-	/** @deprecated */
+
 	code?: string | false
-	/** @deprecated */
+
 	codebase?: string | false
-	/** @deprecated */
+
 	codetype?: string | false
-	/** @deprecated */
+
 	declare?: true | false | '' | false
-	/** @deprecated */
+
 	hspace?: number | string | false
-	/** @deprecated */
+
 	standby?: string | false
-	/** @deprecated */
+
 	usemap?: string | false
-	/** @deprecated */
+
 	vspace?: number | string | false
-	/** @deprecated */
+
 	typemustmatch?: true | false | '' | false
 }
 
@@ -124,30 +122,29 @@ interface HTMLObjectElementAttributes<Element> extends HTMLAttributes<Element> {
 	width?: number | string
 	wmode?: string
 
-	/** @deprecated */
 	align?: string
-	/** @deprecated */
+
 	archive?: string
-	/** @deprecated */
+
 	border?: string
-	/** @deprecated */
+
 	classid?: string
-	/** @deprecated */
+
 	code?: string
-	/** @deprecated */
+
 	codebase?: string
-	/** @deprecated */
+
 	codetype?: string
-	/** @deprecated */
+
 	declare?: boolean | ''
-	/** @deprecated */
+
 	hspace?: number | string
-	/** @deprecated */
+
 	standby?: string
-	/** @deprecated */
+
 	typemustmatch?: boolean | ''
-	/** @deprecated */
+
 	usemap?: string
-	/** @deprecated */
+
 	vspace?: number | string
 }

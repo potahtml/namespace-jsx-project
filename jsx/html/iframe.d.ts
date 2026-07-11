@@ -13,42 +13,34 @@ interface IframeHTMLAttributes<T> extends HTMLAttributes<T> {
 
 	referrerPolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
 
-	/** @experimental */
 	adauctionheaders?: boolean
-	/**
-	 * @non-standard
-	 * @experimental
-	 */
+
 	browsingtopics?: boolean
-	/** @experimental */
+
 	credentialless?: boolean
-	/** @experimental */
+
 	csp?: string
-	/** @experimental */
+
 	privatetoken?: string
-	/** @experimental */
+
 	sharedstoragewritable?: boolean
 
-	/** @deprecated */
 	align?: string
-	/**
-	 * @deprecated
-	 * @non-standard
-	 */
+
 	allowpaymentrequest?: boolean
-	/** @deprecated */
+
 	allowtransparency?: boolean
-	/** @deprecated */
+
 	frameborder?: number | string
-	/** @deprecated */
+
 	longdesc?: string
-	/** @deprecated */
+
 	marginheight?: number | string
-	/** @deprecated */
+
 	marginwidth?: number | string
-	/** @deprecated */
+
 	scrolling?: 'yes' | 'no' | 'auto'
-	/** @deprecated */
+
 	seamless?: boolean
 }
 
@@ -65,42 +57,34 @@ interface IframeHTMLAttributes<T> extends HTMLAttributes<T> {
 	srcdoc?: string | false
 	width?: number | string | false
 
-	/** @experimental */
 	adauctionheaders?: true | false | '' | false
-	/**
-	 * @non-standard
-	 * @experimental
-	 */
+
 	browsingtopics?: true | false | '' | false
-	/** @experimental */
+
 	credentialless?: true | false | '' | false
-	/** @experimental */
+
 	csp?: string | false
-	/** @experimental */
+
 	privatetoken?: string | false
-	/** @experimental */
+
 	sharedstoragewritable?: true | false | '' | false
 
-	/** @deprecated */
 	align?: string | false
-	/**
-	 * @deprecated
-	 * @non-standard
-	 */
+
 	allowpaymentrequest?: true | false | '' | false
-	/** @deprecated */
+
 	allowtransparency?: true | false | '' | false
-	/** @deprecated */
+
 	frameborder?: number | string | false
-	/** @deprecated */
+
 	longdesc?: string | false
-	/** @deprecated */
+
 	marginheight?: number | string | false
-	/** @deprecated */
+
 	marginwidth?: number | string | false
-	/** @deprecated */
+
 	scrolling?: 'yes' | 'no' | 'auto' | false
-	/** @deprecated */
+
 	seamless?: true | false | '' | false
 }
 
@@ -109,18 +93,18 @@ interface IframeHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> 
 	allow?: string
 	allowFullScreen?: boolean
 	allowTransparency?: boolean
-	/** @deprecated */
+
 	frameBorder?: number | string
 	height?: number | string
 	loading?: 'eager' | 'lazy'
-	/** @deprecated */
+
 	marginHeight?: number
-	/** @deprecated */
+
 	marginWidth?: number
 	name?: string
 	referrerPolicy?: '' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
 	sandbox?: string
-	/** @deprecated */
+
 	scrolling?: string
 	seamless?: boolean
 	src?: string
@@ -133,18 +117,18 @@ interface IframeHTMLAttributes extends HTMLAttributes {
 	allow?: string
 	allowfullscreen?: boolean | 'true' | 'false'
 	allowtransparency?: boolean | 'true' | 'false'
-	/** @deprecated */
+
 	frameborder?: number | string
 	height?: number | string
 	loading?: 'eager' | 'lazy'
-	/** @deprecated */
+
 	marginheight?: number | string
-	/** @deprecated */
+
 	marginwidth?: number | string
 	name?: string
 	referrerpolicy?: '' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
 	sandbox?: string
-	/** @deprecated */
+
 	scrolling?: string
 	seamless?: boolean | 'true' | 'false'
 	src?: string
@@ -157,18 +141,18 @@ interface IframeHTMLAttributes<T> extends HTMLAttributes<T> {
 	allow?: string
 	allowFullScreen?: boolean
 	allowTransparency?: boolean
-	/** @deprecated */
+
 	frameBorder?: number | string
 	height?: number | string
 	loading?: 'eager' | 'lazy'
-	/** @deprecated */
+
 	marginHeight?: number
-	/** @deprecated */
+
 	marginWidth?: number
 	name?: string
 	referrerPolicy?: '' | 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
 	sandbox?: string
-	/** @deprecated */
+
 	scrolling?: string
 	seamless?: boolean
 	src?: string
@@ -189,36 +173,33 @@ interface HTMLIFrameElementAttributes<Element> extends HTMLAttributes<Element> {
 	srcdoc?: string
 	width?: number | string
 
-	/** @non-standard */
 	browsingtopics?: boolean | ''
 
-	/** @experimental */
 	credentialless?: boolean | ''
-	/** @experimental */
+
 	csp?: string
-	/** @experimental */
+
 	sharedstoragewritable?: boolean | ''
-	/** @experimental */
+
 	adauctionheaders?: boolean | ''
-	/** @experimental */
+
 	privatetoken?: string
 
-	/** @deprecated */
 	allowpaymentrequest?: boolean | ''
-	/** @deprecated */
+
 	allowtransparency?: boolean | ''
-	/** @deprecated */
+
 	align?: string
-	/** @deprecated */
+
 	frameborder?: number | string
-	/** @deprecated */
+
 	longdesc?: string
-	/** @deprecated */
+
 	marginheight?: number | string
-	/** @deprecated */
+
 	marginwidth?: number | string
-	/** @deprecated */
+
 	scrolling?: 'yes' | 'no' | 'auto'
-	/** @deprecated */
+
 	seamless?: boolean | ''
 }

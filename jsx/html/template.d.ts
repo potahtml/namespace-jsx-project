@@ -5,7 +5,6 @@ interface TemplateHTMLAttributes<T> extends HTMLAttributes<T> {
 	shadowrootdelegatesfocus?: boolean
 	shadowrootmode?: 'open' | 'closed'
 
-	/** @experimental */
 	shadowrootserializable?: boolean
 }
 
@@ -16,7 +15,6 @@ interface TemplateHTMLAttributes<T> extends HTMLAttributes<T> {
 	shadowrootmode?: 'open' | 'closed' | false
 	shadowrootcustomelementregistry?: true | false | '' | false
 
-	/** @experimental */
 	shadowrootserializable?: true | false | '' | false
 }
 

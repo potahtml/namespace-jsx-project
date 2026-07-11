@@ -7,7 +7,7 @@ interface TrackHTMLAttributes<T> extends HTMLAttributes<T> {
 	srclang?: string
 
 	mediaGroup?: string
-	/** @deprecated */
+
 	mediagroup?: string
 }
 
@@ -19,7 +19,6 @@ interface TrackHTMLAttributes<T> extends HTMLAttributes<T> {
 	src?: string | false
 	srclang?: string | false
 
-	/** @deprecated */
 	mediagroup?: string | false
 }
 
@@ -53,18 +52,7 @@ interface TrackHTMLAttributes<T> extends HTMLAttributes<T> {
 // Pota - https://github.com/potahtml/pota
 interface HTMLTrackElementAttributes<Element> extends HTMLAttributes<Element> {
 	default?: boolean | ''
-	kind?:
-		| 'alternative'
-		| 'descriptions'
-		| 'main'
-		| 'main-desc'
-		| 'translation'
-		| 'commentary'
-		// ??
-		| 'subtitles'
-		| 'captions'
-		| 'chapters'
-		| 'metadata'
+	kind?: 'alternative' | 'descriptions' | 'main' | 'main-desc' | 'translation' | 'commentary' | 'subtitles' | 'captions' | 'chapters' | 'metadata'
 
 	label?: string
 	src?: string

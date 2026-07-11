@@ -33,22 +33,21 @@ interface TableHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Pota - https://github.com/potahtml/pota
 interface HTMLTableElementAttributes<Element> extends HTMLAttributes<Element> {
-	/** @deprecated */
 	align?: 'left' | 'center' | 'right'
-	/** @deprecated */
+
 	bgcolor?: string
-	/** @deprecated */
+
 	border?: number | string
-	/** @deprecated */
+
 	cellpadding?: number | string
-	/** @deprecated */
+
 	cellspacing?: number | string
-	/** @deprecated */
+
 	frame?: 'void' | 'above' | 'below' | 'hsides' | 'vsides' | 'lhs' | 'rhs' | 'box' | 'border'
-	/** @deprecated */
+
 	rules?: 'none' | 'groups' | 'rows' | 'cols' | 'all'
-	/** @deprecated */
+
 	summary?: string
-	/** @deprecated */
+
 	width?: number | string
 }

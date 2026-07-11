@@ -20,22 +20,16 @@ interface SelectHTMLAttributes<T> extends HTMLAttributes<T> {
 	required?: true | false | '' | false
 	size?: number | string | false
 
-	// special cases locked to properties
-
 	value?: string | string[] | number
-	/** @error use `<select value={..}/>` instead */
+
 	'prop:value'?: never
 
-	// for sanity
-
-	/** @error use `<option defaultSelected={..}/>` instead */
 	defaultSelected?: never
-	/** @error use `<option defaultSelected={..}/>` instead */
+
 	'prop:defaultSelected'?: never
 
-	/** @error use `<option defaultSelected={..}/>` instead */
 	selected?: never
-	/** @error use `<option defaultSelected={..}/>` instead */
+
 	'prop:selected'?: never
 }
 
@@ -63,7 +57,7 @@ interface SelectHTMLAttributes extends HTMLAttributes {
 	name?: string
 	required?: boolean | 'true' | 'false'
 	size?: number | string
-	value?: any // we support :value to be bound to anything w/ v-model
+	value?: any
 }
 
 // React - https://react.dev/
@@ -76,8 +70,7 @@ interface SelectHTMLAttributes<T> extends HTMLAttributes<T> {
 	required?: boolean
 	size?: number
 	value?: string | readonly string[] | number
-	// No other element dispatching change events can be nested in a <select>
-	// so we know the target will be a HTMLSelectElement.
+
 	onChange?: ChangeEventHandler<T, HTMLSelectElement>
 }
 

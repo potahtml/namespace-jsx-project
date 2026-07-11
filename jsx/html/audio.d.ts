@@ -1,5 +1,6 @@
 // Solid Main - https://www.solidjs.com/
 interface AudioHTMLAttributes<T> extends MediaHTMLAttributes<T> {}
+
 interface MediaHTMLAttributes<T> extends HTMLAttributes<T> {
 	autoplay?: boolean
 	controls?: boolean
@@ -22,12 +23,13 @@ interface MediaHTMLAttributes<T> extends HTMLAttributes<T> {
 	crossOrigin?: 'anonymous' | 'use-credentials' | ''
 
 	mediaGroup?: string
-	/** @deprecated */
+
 	mediagroup?: string
 }
 
 // Solid Next - https://www.solidjs.com/
 interface AudioHTMLAttributes<T> extends MediaHTMLAttributes<T> {}
+
 interface MediaHTMLAttributes<T> extends HTMLAttributes<T> {
 	autoplay?: true | false | '' | false
 	controls?: true | false | '' | false
@@ -42,22 +44,20 @@ interface MediaHTMLAttributes<T> extends HTMLAttributes<T> {
 	onEncrypted?: EventHandlerUnion<T, MediaEncryptedEvent>
 	onWaitingForKey?: EventHandlerUnion<T, Event>
 
-	/** @deprecated */
 	mediagroup?: string | false
 
-	// special cases locked to properties
-
 	muted?: true | false
-	/** @error use `<video/audio muted={..}/>` instead */
+
 	'prop:muted'?: never
 
 	defaultMuted?: true | false
-	/** @error use `<video/audio defaultMuted={..}/>` instead */
+
 	'prop:defaultMuted'?: never
 }
 
 // Voby - https://github.com/vobyjs/voby
 interface AudioHTMLAttributes<T extends EventTarget> extends MediaHTMLAttributes<T> {}
+
 interface MediaHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
 	autoPlay?: boolean
 	controls?: boolean
@@ -73,6 +73,7 @@ interface MediaHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
 
 // Vue - https://vuejs.org/
 interface AudioHTMLAttributes extends MediaHTMLAttributes {}
+
 interface MediaHTMLAttributes extends HTMLAttributes {
 	autoplay?: boolean | 'true' | 'false'
 	controls?: boolean | 'true' | 'false'
@@ -88,6 +89,7 @@ interface MediaHTMLAttributes extends HTMLAttributes {
 
 // React - https://react.dev/
 interface AudioHTMLAttributes<T> extends MediaHTMLAttributes<T> {}
+
 interface MediaHTMLAttributes<T> extends HTMLAttributes<T> {
 	autoPlay?: boolean
 	controls?: boolean
@@ -103,8 +105,8 @@ interface MediaHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Pota - https://github.com/potahtml/pota
 interface HTMLAudioElementAttributes<Element> extends HTMLAttributes<Element>, HTMLMediaHTMLAttributes<Element> {}
+
 interface HTMLMediaHTMLAttributes<Element> {
-	// attributes
 	autoplay?: boolean | ''
 	controls?: boolean | ''
 	controlslist?: 'nodownload' | 'nofullscreen' | 'noplaybackrate' | 'noremoteplayback' | (string & {})
@@ -118,6 +120,5 @@ interface HTMLMediaHTMLAttributes<Element> {
 	'on:encrypted'?: EventHandlers<MediaEncryptedEvent, Element>
 	'on:waitingforkey'?: EventHandlers<Event, Element>
 
-	/** @deprecated */
 	mediagroup?: string
 }

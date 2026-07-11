@@ -10,8 +10,7 @@
 
 // Pota - https://github.com/potahtml/pota
 interface HTMLPreElementAttributes<Element> extends HTMLAttributes<Element> {
-	/** @deprecated */
 	width?: number | string
-	/** @deprecated */
+
 	wrap?: string
 }

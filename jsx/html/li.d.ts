@@ -2,7 +2,6 @@
 interface LiHTMLAttributes<T> extends HTMLAttributes<T> {
 	value?: number | string
 
-	/** @deprecated */
 	type?: '1' | 'a' | 'A' | 'i' | 'I'
 }
 
@@ -10,7 +9,6 @@ interface LiHTMLAttributes<T> extends HTMLAttributes<T> {
 interface LiHTMLAttributes<T> extends HTMLAttributes<T> {
 	value?: number | string | false
 
-	/** @deprecated */
 	type?: '1' | 'a' | 'A' | 'i' | 'I' | false
 }
 
@@ -33,6 +31,5 @@ interface LiHTMLAttributes<T> extends HTMLAttributes<T> {
 interface HTMLLIElementAttributes<Element> extends HTMLAttributes<Element> {
 	value?: number | string
 
-	/** @deprecated */
 	type?: '1' | 'a' | 'A' | 'i' | 'I'
 }

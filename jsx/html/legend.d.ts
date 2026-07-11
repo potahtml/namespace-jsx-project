@@ -10,6 +10,5 @@
 
 // Pota - https://github.com/potahtml/pota
 interface HTMLLegendElementAttributes<Element> extends HTMLAttributes<Element> {
-	/** @deprecated */
 	align?: string
 }

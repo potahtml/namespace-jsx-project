@@ -3,9 +3,8 @@ interface StyleHTMLAttributes<T> extends HTMLAttributes<T> {
 	blocking?: 'render'
 	media?: string
 
-	/** @deprecated */
 	scoped?: boolean
-	/** @deprecated */
+
 	type?: string
 }
 
@@ -14,9 +13,8 @@ interface StyleHTMLAttributes<T> extends HTMLAttributes<T> {
 	blocking?: 'render' | false
 	media?: string | false
 
-	/** @deprecated */
 	scoped?: true | false | '' | false
-	/** @deprecated */
+
 	type?: string | false
 }
 
@@ -43,7 +41,6 @@ interface StyleHTMLAttributes<T> extends HTMLAttributes<T> {
 	scoped?: boolean
 	type?: string
 
-	// React props
 	href?: string
 	precedence?: string
 }
@@ -52,11 +49,9 @@ interface StyleHTMLAttributes<T> extends HTMLAttributes<T> {
 interface HTMLStyleElementAttributes<Element> extends HTMLAttributes<Element> {
 	media?: string
 
-	/** @experimental */
 	blocking?: 'render'
 
-	/** @deprecated */
 	scoped?: boolean | ''
-	/** @deprecated */
+
 	type?: string
 }

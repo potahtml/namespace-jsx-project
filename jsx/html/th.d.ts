@@ -9,23 +9,22 @@ interface ThHTMLAttributes<T> extends HTMLAttributes<T> {
 	colSpan?: number | string
 	rowSpan?: number | string
 
-	/** @deprecated */
 	align?: 'left' | 'center' | 'right' | 'justify' | 'char'
-	/** @deprecated */
+
 	axis?: string
-	/** @deprecated */
+
 	bgcolor?: string
-	/** @deprecated */
+
 	char?: string
-	/** @deprecated */
+
 	charoff?: string
-	/** @deprecated */
+
 	height?: string
-	/** @deprecated */
+
 	nowrap?: boolean
-	/** @deprecated */
+
 	valign?: 'baseline' | 'bottom' | 'middle' | 'top'
-	/** @deprecated */
+
 	width?: number | string
 }
 
@@ -37,23 +36,22 @@ interface ThHTMLAttributes<T> extends HTMLAttributes<T> {
 	rowspan?: number | string | false
 	scope?: 'col' | 'row' | 'rowgroup' | 'colgroup' | false
 
-	/** @deprecated */
 	align?: 'left' | 'center' | 'right' | 'justify' | 'char' | false
-	/** @deprecated */
+
 	axis?: string | false
-	/** @deprecated */
+
 	bgcolor?: string | false
-	/** @deprecated */
+
 	char?: string | false
-	/** @deprecated */
+
 	charoff?: string | false
-	/** @deprecated */
+
 	height?: string | false
-	/** @deprecated */
+
 	nowrap?: true | false | '' | false
-	/** @deprecated */
+
 	valign?: 'baseline' | 'bottom' | 'middle' | 'top' | false
-	/** @deprecated */
+
 	width?: number | string | false
 }
 
@@ -95,22 +93,21 @@ interface HTMLTableCellThElementAttributes<Element> extends HTMLAttributes<Eleme
 	rowspan?: number | string
 	scope?: 'col' | 'row' | 'rowgroup' | 'colgroup'
 
-	/** @deprecated */
 	align?: 'left' | 'center' | 'right' | 'justify' | 'char'
-	/** @deprecated */
+
 	axis?: string
-	/** @deprecated */
+
 	bgcolor?: string
-	/** @deprecated */
+
 	char?: string
-	/** @deprecated */
+
 	charoff?: string
-	/** @deprecated */
+
 	height?: string
-	/** @deprecated */
+
 	nowrap?: boolean | ''
-	/** @deprecated */
+
 	valign?: 'baseline' | 'bottom' | 'middle' | 'top'
-	/** @deprecated */
+
 	width?: number | string
 }

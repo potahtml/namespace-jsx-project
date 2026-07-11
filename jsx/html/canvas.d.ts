@@ -3,10 +3,6 @@ interface CanvasHTMLAttributes<T> extends HTMLAttributes<T> {
 	height?: number | string
 	width?: number | string
 
-	/**
-	 * @deprecated
-	 * @non-standard
-	 */
 	'moz-opaque'?: boolean
 }
 
@@ -15,10 +11,6 @@ interface CanvasHTMLAttributes<T> extends HTMLAttributes<T> {
 	height?: number | string | false
 	width?: number | string | false
 
-	/**
-	 * @deprecated
-	 * @non-standard
-	 */
 	'moz-opaque'?: true | false | '' | false
 }
 
@@ -45,6 +37,5 @@ interface HTMLCanvasElementAttributes<Element> extends HTMLAttributes<Element> {
 	height?: number | string
 	width?: number | string
 
-	/** @deprecated */
 	'moz-opaque'?: boolean | ''
 }

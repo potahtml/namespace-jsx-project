@@ -1,33 +1,19 @@
 // Solid Main - https://www.solidjs.com/
 interface DialogHtmlAttributes<T> extends HTMLAttributes<T> {
 	open?: boolean
-	/**
-	 * Do not add the tabindex property to the <dialog> element as it is not interactive and does
-	 * not receive focus. The dialog's contents, including the close button contained in the dialog,
-	 * can receive focus and be interactive.
-	 *
-	 * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog#usage_notes
-	 */
+
 	tabindex?: never
 
-	/** @experimental */
 	closedby?: 'any' | 'closerequest' | 'none'
 }
 
 // Solid Next - https://www.solidjs.com/
 interface DialogHtmlAttributes<T> extends HTMLAttributes<T> {
 	open?: true | false | '' | false
-	/**
-	 * Do not add the `tabindex` property to the `<dialog>` element as it is not interactive and
-	 * does not receive focus. The dialog's contents, including the close button contained in the
-	 * dialog, can receive focus and be interactive.
-	 *
-	 * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog#usage_notes
-	 */
+
 	tabindex?: never
 	'prop:tabIndex'?: never
 
-	/** @experimental */
 	closedby?: 'any' | 'closerequest' | 'none' | false
 }
 
@@ -57,6 +43,5 @@ interface HTMLDialogElementAttributes<Element> extends HTMLAttributes<Element> {
 	tabindex?: never
 	'prop:tabindex'?: never
 
-	/** @experimental */
 	closedby?: 'any' | 'closerequest' | 'none'
 }

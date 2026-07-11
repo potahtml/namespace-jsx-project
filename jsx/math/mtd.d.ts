@@ -2,9 +2,9 @@
 interface MathMLMtdElementAttributes<T> extends MathMLAttributes<T> {
 	columnspan?: number | string
 	rowspan?: number | string
-	/** @non-standard */
+
 	columnalign?: 'center' | 'left' | 'right'
-	/** @non-standard */
+
 	rowalign?: 'axis' | 'baseline' | 'bottom' | 'center' | 'top'
 }
 
@@ -12,9 +12,9 @@ interface MathMLMtdElementAttributes<T> extends MathMLAttributes<T> {
 interface MathMLMtdElementAttributes<T> extends MathMLAttributes<T> {
 	columnspan?: number | string | false
 	rowspan?: number | string | false
-	/** @non-standard */
+
 	columnalign?: 'center' | 'left' | 'right' | false
-	/** @non-standard */
+
 	rowalign?: 'axis' | 'baseline' | 'bottom' | 'center' | 'top' | false
 }
 
@@ -22,8 +22,8 @@ interface MathMLMtdElementAttributes<T> extends MathMLAttributes<T> {
 interface MathMLMtdElementAttributes<Element> extends MathMLAttributes<Element> {
 	columnspan?: number | string
 	rowspan?: number | string
-	/** @non-standard */
+
 	columnalign?: 'center' | 'left' | 'right'
-	/** @non-standard */
+
 	rowalign?: 'axis' | 'baseline' | 'bottom' | 'center' | 'top'
 }

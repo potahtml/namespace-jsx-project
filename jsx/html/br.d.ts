@@ -11,6 +11,5 @@ interface BrHTMLAttributes<T extends EventTarget> extends VoidHTMLAttributes<T> 
 
 // Pota - https://github.com/potahtml/pota
 interface HTMLBRElementAttributes<Element> extends HTMLAttributes<Element> {
-	/** @deprecated */
 	clear?: string
 }

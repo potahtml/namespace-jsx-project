@@ -13,10 +13,6 @@ interface FitToViewBoxSVGAttributes {
 }
 
 interface ZoomAndPanSVGAttributes {
-	/**
-	 * @deprecated
-	 * @non-standard
-	 */
 	zoomAndPan?: 'disable' | 'magnify'
 }
 
@@ -35,10 +31,6 @@ interface FitToViewBoxSVGAttributes {
 }
 
 interface ZoomAndPanSVGAttributes {
-	/**
-	 * @deprecated
-	 * @non-standard
-	 */
 	zoomAndPan?: 'disable' | 'magnify' | false
 }
 
@@ -46,6 +38,7 @@ interface ZoomAndPanSVGAttributes {
 
 // React - https://react.dev/
 interface SVGProps<T> extends SVGAttributes<T>, ClassAttributes<T> {}
+
 interface ClassAttributes<T> extends RefAttributes<T> {}
 
 // Pota - https://github.com/potahtml/pota

@@ -22,7 +22,7 @@ interface SelectHTMLAttributes extends HTMLAttributes {
 	name?: string
 	required?: boolean | 'true' | 'false'
 	size?: number | string
-	value?: any // we support :value to be bound to anything w/ v-model
+	value?: any
 }
 
 // React - https://react.dev/
@@ -35,7 +35,6 @@ interface SelectHTMLAttributes<T> extends HTMLAttributes<T> {
 	required?: boolean
 	size?: number
 	value?: string | readonly string[] | number
-	// No other element dispatching change events can be nested in a <select>
-	// so we know the target will be a HTMLSelectElement.
+
 	onChange?: ChangeEventHandler<T, HTMLSelectElement>
 }

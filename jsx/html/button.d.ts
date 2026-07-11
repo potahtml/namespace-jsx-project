@@ -13,9 +13,8 @@ interface ButtonHTMLAttributes<T> extends HTMLAttributes<T> {
 	type?: 'submit' | 'reset' | 'button' | 'menu'
 	value?: string
 
-	/** @experimental */
 	command?: 'show-modal' | 'close' | 'show-popover' | 'hide-popover' | 'toggle-popover' | (string & {})
-	/** @experimental */
+
 	commandfor?: string
 
 	formAction?: string
@@ -42,9 +41,8 @@ interface ButtonHTMLAttributes<T> extends HTMLAttributes<T> {
 	type?: 'submit' | 'reset' | 'button' | 'menu' | false
 	value?: string | false
 
-	/** @experimental */
 	command?: 'show-modal' | 'close' | 'show-popover' | 'hide-popover' | 'toggle-popover' | (string & {}) | false
-	/** @experimental */
+
 	commandfor?: string | false
 }
 

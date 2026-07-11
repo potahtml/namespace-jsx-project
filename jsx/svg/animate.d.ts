@@ -1,17 +1,15 @@
 // Solid Main - https://www.solidjs.com/
 interface AnimateSVGAttributes<T> extends AnimationElementSVGAttributes<T>, AnimationAttributeTargetSVGAttributes, AnimationTimingSVGAttributes, AnimationValueSVGAttributes, AnimationAdditionSVGAttributes, Pick<PresentationSVGAttributes, 'color-interpolation' | 'color-rendering'> {}
+
 interface AnimationElementSVGAttributes<T> extends CoreSVGAttributes<T>, ExternalResourceSVGAttributes, ConditionalProcessingSVGAttributes {
-	// TODO TimeEvent is currently undefined on TS
 	onBegin?: EventHandlerUnion<T, Event>
 	onbegin?: EventHandlerUnion<T, Event>
 	'on:begin'?: EventHandlerWithOptionsUnion<T, Event>
 
-	// TODO TimeEvent is currently undefined on TS
 	onEnd?: EventHandlerUnion<T, Event>
 	onend?: EventHandlerUnion<T, Event>
 	'on:end'?: EventHandlerWithOptionsUnion<T, Event>
 
-	// TODO TimeEvent is currently undefined on TS
 	onRepeat?: EventHandlerUnion<T, Event>
 	onrepeat?: EventHandlerUnion<T, Event>
 	'on:repeat'?: EventHandlerWithOptionsUnion<T, Event>
@@ -68,6 +66,7 @@ interface PresentationSVGAttributes {
 
 // Solid Next - https://www.solidjs.com/
 interface AnimateSVGAttributes<T> extends AnimationElementSVGAttributes<T>, AnimationAttributeTargetSVGAttributes, AnimationTimingSVGAttributes, AnimationValueSVGAttributes, AnimationAdditionSVGAttributes, Pick<PresentationSVGAttributes, 'color-interpolation' | 'color-rendering'> {}
+
 interface AnimationElementSVGAttributes<T> extends SVGAttributes<T>, ExternalResourceSVGAttributes, ConditionalProcessingSVGAttributes {
 	onBegin?: EventHandlerUnion<T, TimeEvent>
 	onEnd?: EventHandlerUnion<T, TimeEvent>
@@ -129,6 +128,7 @@ interface PresentationSVGAttributes {
 
 // React - https://react.dev/
 interface SVGProps<T> extends SVGAttributes<T>, ClassAttributes<T> {}
+
 interface ClassAttributes<T> extends RefAttributes<T> {}
 
 // Pota - https://github.com/potahtml/pota

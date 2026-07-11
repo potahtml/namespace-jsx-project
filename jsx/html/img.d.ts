@@ -14,9 +14,8 @@ interface ImgHTMLAttributes<T> extends HTMLAttributes<T> {
 	usemap?: string
 	width?: number | string
 
-	/** @experimental */
 	attributionsrc?: string
-	/** @experimental */
+
 	sharedstoragewritable?: boolean
 
 	crossOrigin?: 'anonymous' | 'use-credentials' | ''
@@ -25,21 +24,20 @@ interface ImgHTMLAttributes<T> extends HTMLAttributes<T> {
 	srcSet?: string
 	useMap?: string
 
-	/** @deprecated */
 	align?: 'top' | 'middle' | 'bottom' | 'left' | 'right'
-	/** @deprecated */
+
 	border?: string
-	/** @deprecated */
+
 	hspace?: number | string
-	/** @deprecated */
+
 	intrinsicsize?: string
-	/** @deprecated */
+
 	longdesc?: string
-	/** @deprecated */
+
 	lowsrc?: string
-	/** @deprecated */
+
 	name?: string
-	/** @deprecated */
+
 	vspace?: number | string
 }
 
@@ -60,26 +58,24 @@ interface ImgHTMLAttributes<T> extends HTMLAttributes<T> {
 	usemap?: string | false
 	width?: number | string | false
 
-	/** @experimental */
 	attributionsrc?: string | false
-	/** @experimental */
+
 	sharedstoragewritable?: true | false | '' | false
 
-	/** @deprecated */
 	align?: 'top' | 'middle' | 'bottom' | 'left' | 'right' | false
-	/** @deprecated */
+
 	border?: string | false
-	/** @deprecated */
+
 	hspace?: number | string | false
-	/** @deprecated */
+
 	intrinsicsize?: string | false
-	/** @deprecated */
+
 	longdesc?: string | false
-	/** @deprecated */
+
 	lowsrc?: string | false
-	/** @deprecated */
+
 	name?: string | false
-	/** @deprecated */
+
 	vspace?: number | string | false
 }
 
@@ -148,23 +144,21 @@ interface HTMLImageElementAttributes<Element> extends HTMLAttributes<Element> {
 	usemap?: string
 	width?: number | string
 
-	/** @experimental */
 	sharedstoragewritable?: boolean | ''
 
-	/** @deprecated */
 	align?: 'top' | 'middle' | 'bottom' | 'left' | 'right'
-	/** @deprecated */
+
 	border?: string
-	/** @deprecated */
+
 	hspace?: number | string
-	/** @deprecated */
+
 	intrinsicsize?: string
-	/** @deprecated */
+
 	longdesc?: string
-	/** @deprecated */
+
 	lowsrc?: string
-	/** @deprecated */
+
 	name?: string
-	/** @deprecated */
+
 	vspace?: number | string
 }

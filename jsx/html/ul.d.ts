@@ -10,8 +10,7 @@
 
 // Pota - https://github.com/potahtml/pota
 interface HTMLUListElementAttributes<Element> extends HTMLAttributes<Element> {
-	/** @deprecated */
 	compact?: boolean | ''
-	/** @deprecated */
+
 	type?: 'circle' | 'disc' | 'square'
 }

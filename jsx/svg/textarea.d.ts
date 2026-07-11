@@ -54,7 +54,5 @@ interface TextareaHTMLAttributes<T> extends HTMLAttributes<T> {
 	value?: string | readonly string[] | number
 	wrap?: string
 
-	// No other element dispatching change events can be nested in a <textarea>
-	// so we know the target will be a HTMLTextAreaElement.
 	onChange?: ChangeEventHandler<T, HTMLTextAreaElement>
 }

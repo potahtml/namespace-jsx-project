@@ -1,7 +1,7 @@
 // Voby - https://github.com/vobyjs/voby
 interface ScriptHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
 	async?: boolean
-	/** @deprecated */
+
 	charSet?: string
 	crossOrigin?: string
 	defer?: boolean
@@ -16,7 +16,7 @@ interface ScriptHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> 
 // Vue - https://vuejs.org/
 interface ScriptHTMLAttributes extends HTMLAttributes {
 	async?: boolean | 'true' | 'false'
-	/** @deprecated */
+
 	charset?: string
 	crossorigin?: string
 	defer?: boolean | 'true' | 'false'
@@ -32,7 +32,7 @@ interface ScriptHTMLAttributes extends HTMLAttributes {
 interface ScriptHTMLAttributes<T> extends HTMLAttributes<T> {
 	async?: boolean
 	blocking?: 'render' | (string & {})
-	/** @deprecated */
+
 	charSet?: string
 	crossOrigin?: 'anonymous' | 'use-credentials' | ''
 	defer?: boolean

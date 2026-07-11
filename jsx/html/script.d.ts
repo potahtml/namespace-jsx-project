@@ -11,18 +11,16 @@ interface ScriptHTMLAttributes<T> extends HTMLAttributes<T> {
 	src?: string
 	type?: 'importmap' | 'module' | 'speculationrules' | (string & {})
 
-	/** @experimental */
 	attributionsrc?: string
 
 	crossOrigin?: 'anonymous' | 'use-credentials' | ''
 	noModule?: boolean
 	referrerPolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
 
-	/** @deprecated */
 	charset?: string
-	/** @deprecated */
+
 	event?: string
-	/** @deprecated */
+
 	language?: string
 }
 
@@ -40,21 +38,19 @@ interface ScriptHTMLAttributes<T> extends HTMLAttributes<T> {
 	src?: string | false
 	type?: 'importmap' | 'module' | 'speculationrules' | (string & {}) | false
 
-	/** @experimental */
 	attributionsrc?: string | false
 
-	/** @deprecated */
 	charset?: string | false
-	/** @deprecated */
+
 	event?: string | false
-	/** @deprecated */
+
 	language?: string | false
 }
 
 // Voby - https://github.com/vobyjs/voby
 interface ScriptHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> {
 	async?: boolean
-	/** @deprecated */
+
 	charSet?: string
 	crossOrigin?: string
 	defer?: boolean
@@ -69,7 +65,7 @@ interface ScriptHTMLAttributes<T extends EventTarget> extends HTMLAttributes<T> 
 // Vue - https://vuejs.org/
 interface ScriptHTMLAttributes extends HTMLAttributes {
 	async?: boolean | 'true' | 'false'
-	/** @deprecated */
+
 	charset?: string
 	crossorigin?: string
 	defer?: boolean | 'true' | 'false'
@@ -85,7 +81,7 @@ interface ScriptHTMLAttributes extends HTMLAttributes {
 interface ScriptHTMLAttributes<T> extends HTMLAttributes<T> {
 	async?: boolean
 	blocking?: 'render' | (string & {})
-	/** @deprecated */
+
 	charSet?: string
 	crossOrigin?: 'anonymous' | 'use-credentials' | ''
 	defer?: boolean
@@ -110,15 +106,13 @@ interface HTMLScriptElementAttributes<Element> extends HTMLAttributes<Element> {
 	src?: string
 	type?: 'importmap' | 'module' | 'speculationrules' | (string & {})
 
-	/** @experimental */
 	attributionsrc?: string
-	/** @experimental */
+
 	blocking?: 'render'
 
-	/** @deprecated */
 	charset?: string
-	/** @deprecated */
+
 	event?: string
-	/** @deprecated */
+
 	language?: string
 }

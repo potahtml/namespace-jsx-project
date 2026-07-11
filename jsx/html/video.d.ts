@@ -37,7 +37,7 @@ interface MediaHTMLAttributes<T> extends HTMLAttributes<T> {
 	crossOrigin?: 'anonymous' | 'use-credentials' | ''
 
 	mediaGroup?: string
-	/** @deprecated */
+
 	mediagroup?: string
 }
 
@@ -67,17 +67,14 @@ interface MediaHTMLAttributes<T> extends HTMLAttributes<T> {
 	onEncrypted?: EventHandlerUnion<T, MediaEncryptedEvent>
 	onWaitingForKey?: EventHandlerUnion<T, Event>
 
-	/** @deprecated */
 	mediagroup?: string | false
 
-	// special cases locked to properties
-
 	muted?: true | false
-	/** @error use `<video/audio muted={..}/>` instead */
+
 	'prop:muted'?: never
 
 	defaultMuted?: true | false
-	/** @error use `<video/audio defaultMuted={..}/>` instead */
+
 	'prop:defaultMuted'?: never
 }
 
@@ -166,7 +163,6 @@ interface HTMLVideoElementAttributes<Element> extends HTMLAttributes<Element>, H
 }
 
 interface HTMLMediaHTMLAttributes<Element> {
-	// attributes
 	autoplay?: boolean | ''
 	controls?: boolean | ''
 	controlslist?: 'nodownload' | 'nofullscreen' | 'noplaybackrate' | 'noremoteplayback' | (string & {})
@@ -180,6 +176,5 @@ interface HTMLMediaHTMLAttributes<Element> {
 	'on:encrypted'?: EventHandlers<MediaEncryptedEvent, Element>
 	'on:waitingforkey'?: EventHandlers<Event, Element>
 
-	/** @deprecated */
 	mediagroup?: string
 }

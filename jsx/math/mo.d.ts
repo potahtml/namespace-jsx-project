@@ -12,7 +12,6 @@ interface MathMLMoElementAttributes<T> extends MathMLAttributes<T> {
 	stretchy?: boolean
 	symmetric?: boolean
 
-	/** @non-standard */
 	accent?: boolean
 }
 
@@ -30,7 +29,6 @@ interface MathMLMoElementAttributes<T> extends MathMLAttributes<T> {
 	stretchy?: true | false | '' | false
 	symmetric?: true | false | '' | false
 
-	/** @non-standard */
 	accent?: true | false | '' | false
 }
 
@@ -48,6 +46,5 @@ interface MathMLMoElementAttributes<Element> extends MathMLAttributes<Element> {
 	stretchy?: boolean | ''
 	symmetric?: boolean | ''
 
-	/** @non-standard */
 	accent?: boolean | ''
 }

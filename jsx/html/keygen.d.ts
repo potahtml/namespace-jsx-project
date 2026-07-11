@@ -1,32 +1,30 @@
 // Solid Main - https://www.solidjs.com/
 interface KeygenHTMLAttributes<T> extends HTMLAttributes<T> {
-	/** @deprecated */
 	challenge?: string
-	/** @deprecated */
+
 	disabled?: boolean
-	/** @deprecated */
+
 	form?: string
-	/** @deprecated */
+
 	keyparams?: string
-	/** @deprecated */
+
 	keytype?: string
-	/** @deprecated */
+
 	name?: string
 }
 
 // Solid Next - https://www.solidjs.com/
 interface KeygenHTMLAttributes<T> extends HTMLAttributes<T> {
-	/** @deprecated */
 	challenge?: string | false
-	/** @deprecated */
+
 	disabled?: true | false | '' | false
-	/** @deprecated */
+
 	form?: string | false
-	/** @deprecated */
+
 	keyparams?: string | false
-	/** @deprecated */
+
 	keytype?: string | false
-	/** @deprecated */
+
 	name?: string | false
 }
 
@@ -64,16 +62,15 @@ interface KeygenHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Pota - https://github.com/potahtml/pota
 interface HTMLKeygenElementAttributes<Element> extends HTMLAttributes<Element> {
-	/** @deprecated */
 	challenge?: string
-	/** @deprecated */
+
 	disabled?: boolean | ''
-	/** @deprecated */
+
 	form?: string
-	/** @deprecated */
+
 	keyparams?: string
-	/** @deprecated */
+
 	keytype?: string
-	/** @deprecated */
+
 	name?: string
 }

@@ -22,7 +22,6 @@ interface SelectHTMLAttributes<T> extends HTMLAttributes<T> {
 	required?: boolean
 	size?: number
 	value?: string | readonly string[] | number
-	// No other element dispatching change events can be nested in a <select>
-	// so we know the target will be a HTMLSelectElement.
+
 	onChange?: ChangeEventHandler<T, HTMLSelectElement>
 }

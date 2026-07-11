@@ -9,20 +9,18 @@ interface AnchorHTMLAttributes<T> extends HTMLAttributes<T> {
 	target?: '_self' | '_blank' | '_parent' | '_top' | (string & {})
 	type?: string
 
-	/** @experimental */
 	attributionsrc?: string
 
 	referrerPolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
 
-	/** @deprecated */
 	charset?: string
-	/** @deprecated */
+
 	coords?: string
-	/** @deprecated */
+
 	name?: string
-	/** @deprecated */
+
 	rev?: string
-	/** @deprecated */
+
 	shape?: 'rect' | 'circle' | 'poly' | 'default'
 }
 
@@ -37,18 +35,16 @@ interface AnchorHTMLAttributes<T> extends HTMLAttributes<T> {
 	target?: '_self' | '_blank' | '_parent' | '_top' | (string & {}) | false
 	type?: string | false
 
-	/** @experimental */
 	attributionsrc?: string | false
 
-	/** @deprecated */
 	charset?: string | false
-	/** @deprecated */
+
 	coords?: string | false
-	/** @deprecated */
+
 	name?: string | false
-	/** @deprecated */
+
 	rev?: string | false
-	/** @deprecated */
+
 	shape?: 'rect' | 'circle' | 'poly' | 'default' | false
 }
 
@@ -101,17 +97,15 @@ interface HTMLAnchorElementAttributes<Element> extends HTMLAttributes<Element> {
 	target?: '_self' | '_blank' | '_parent' | '_top' | (string & {})
 	type?: string
 
-	/** @experimental */
 	attributionsrc?: string
 
-	/** @deprecated */
 	charset?: string
-	/** @deprecated */
+
 	coords?: string
-	/** @deprecated */
+
 	name?: string
-	/** @deprecated */
+
 	rev?: string
-	/** @deprecated */
+
 	shape?: 'rect' | 'circle' | 'poly' | 'default'
 }

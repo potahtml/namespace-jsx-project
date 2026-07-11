@@ -41,10 +41,10 @@ interface InputHTMLAttributes<T extends EventTarget> extends VoidHTMLAttributes<
 interface InputHTMLAttributes extends HTMLAttributes {
 	accept?: string
 	alt?: string
-	autocomplete?: InputAutoCompleteAttribute
+	autocomplete?: AutoFill | (string & {})
 	autofocus?: boolean | 'true' | 'false'
-	capture?: boolean | 'user' | 'environment' // https://www.w3.org/tr/html-media-capture/#the-capture-attribute
-	checked?: boolean | 'true' | 'false' | any[] | Set<any> // for IDE v-model multi-checkbox support
+	capture?: boolean | 'user' | 'environment'
+	checked?: boolean | 'true' | 'false' | any[] | Set<any>
 	crossorigin?: string
 	disabled?: boolean | 'true' | 'false'
 	form?: string
@@ -69,8 +69,8 @@ interface InputHTMLAttributes extends HTMLAttributes {
 	size?: number | string
 	src?: string
 	step?: number | string
-	type?: InputTypeHTMLAttribute
-	value?: any // we support :value to be bound to anything w/ v-model
+	type?: 'button' | 'checkbox' | 'color' | 'date' | 'datetime-local' | 'email' | 'file' | 'hidden' | 'image' | 'month' | 'number' | 'password' | 'radio' | 'range' | 'reset' | 'search' | 'submit' | 'tel' | 'text' | 'time' | 'url' | 'week' | (string & {})
+	value?: any
 	width?: number | string
 	onCancel?: (payload: Event) => void
 }
@@ -80,7 +80,7 @@ interface InputHTMLAttributes<T> extends HTMLAttributes<T> {
 	accept?: string
 	alt?: string
 	autoComplete?: AutoFill | (string & {})
-	capture?: boolean | 'user' | 'environment' // https://www.w3.org/TR/html-media-capture/#the-capture-attribute
+	capture?: boolean | 'user' | 'environment'
 	checked?: boolean
 	disabled?: boolean
 	form?: string
@@ -108,7 +108,5 @@ interface InputHTMLAttributes<T> extends HTMLAttributes<T> {
 	value?: string | readonly string[] | number
 	width?: number | string
 
-	// No other element dispatching change events can be nested in a <input>
-	// so we know the target will be a HTMLInputElement.
 	onChange?: ChangeEventHandler<T, HTMLInputElement>
 }

@@ -6,7 +6,6 @@ interface MetaHTMLAttributes<T> extends HTMLAttributes<T> {
 	media?: string
 	name?: string
 
-	/** @deprecated */
 	scheme?: string
 }
 
@@ -18,7 +17,6 @@ interface MetaHTMLAttributes<T> extends HTMLAttributes<T> {
 	media?: string | false
 	name?: string | false
 
-	/** @deprecated */
 	scheme?: string | false
 }
 
@@ -56,6 +54,5 @@ interface HTMLMetaElementAttributes<Element> extends HTMLAttributes<Element> {
 	media?: string
 	name?: string
 
-	/** @deprecated */
 	scheme?: string
 }

@@ -1,20 +1,18 @@
 // Solid Main - https://www.solidjs.com/
 interface MenuHTMLAttributes<T> extends HTMLAttributes<T> {
-	/** @deprecated */
 	compact?: boolean
-	/** @deprecated */
+
 	label?: string
-	/** @deprecated */
+
 	type?: 'context' | 'toolbar'
 }
 
 // Solid Next - https://www.solidjs.com/
 interface MenuHTMLAttributes<T> extends HTMLAttributes<T> {
-	/** @deprecated */
 	compact?: true | false | '' | false
-	/** @deprecated */
+
 	label?: string | false
-	/** @deprecated */
+
 	type?: 'context' | 'toolbar' | false
 }
 
@@ -35,10 +33,9 @@ interface MenuHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Pota - https://github.com/potahtml/pota
 interface HTMLMenuElementAttributes<Element> extends HTMLAttributes<Element> {
-	/** @deprecated */
 	compact?: boolean | ''
-	/** @deprecated */
+
 	label?: string
-	/** @deprecated */
+
 	type?: 'context' | 'toolbar'
 }

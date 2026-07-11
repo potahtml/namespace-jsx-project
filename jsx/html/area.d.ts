@@ -10,12 +10,10 @@ interface AreaHTMLAttributes<T> extends HTMLAttributes<T> {
 	shape?: 'rect' | 'circle' | 'poly' | 'default'
 	target?: '_self' | '_blank' | '_parent' | '_top' | (string & {})
 
-	/** @experimental */
 	attributionsrc?: string
 
 	referrerPolicy?: 'no-referrer' | 'no-referrer-when-downgrade' | 'origin' | 'origin-when-cross-origin' | 'same-origin' | 'strict-origin' | 'strict-origin-when-cross-origin' | 'unsafe-url'
 
-	/** @deprecated */
 	nohref?: boolean
 }
 
@@ -31,10 +29,8 @@ interface AreaHTMLAttributes<T> extends HTMLAttributes<T> {
 	shape?: 'rect' | 'circle' | 'poly' | 'default' | false
 	target?: '_self' | '_blank' | '_parent' | '_top' | (string & {}) | false
 
-	/** @experimental */
 	attributionsrc?: string | false
 
-	/** @deprecated */
 	nohref?: true | false | '' | false
 }
 
@@ -91,9 +87,7 @@ interface HTMLAreaElementAttributes<Element> extends HTMLAttributes<Element> {
 	shape?: 'rect' | 'circle' | 'poly' | 'default'
 	target?: '_self' | '_blank' | '_parent' | '_top' | (string & {})
 
-	/** @experimental */
 	attributionsrc?: string
 
-	/** @deprecated */
 	nohref?: boolean | ''
 }
