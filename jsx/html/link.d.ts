@@ -109,7 +109,7 @@ interface LinkHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Pota - https://github.com/potahtml/pota
 interface HTMLLinkElementAttributes<Element> extends HTMLAttributes<Element> {
-	as?: 'audio' | 'document' | 'embed' | 'fetch' | 'font' | 'image' | 'object' | 'script' | 'style' | 'track' | 'video' | 'worker'
+	as?: 'audio' | 'document' | 'embed' | 'fetch' | 'font' | 'image' | 'manifest' | 'object' | 'script' | 'style' | 'track' | 'video' | 'worker'
 	color?: string
 	crossorigin?: 'anonymous' | 'use-credentials' | ''
 	disabled?: boolean | ''

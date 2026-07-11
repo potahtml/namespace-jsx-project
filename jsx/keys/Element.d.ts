@@ -940,7 +940,7 @@ interface AriaAttributes {
 	'aria-valuetext'?: string | false
 	role?: 'alert' | 'alertdialog' | 'application' | 'article' | 'banner' | 'button' | 'cell' | 'checkbox' | 'columnheader' | 'combobox' | 'complementary' | 'contentinfo' | 'definition' | 'dialog' | 'directory' | 'document' | 'feed' | 'figure' | 'form' | 'grid' | 'gridcell' | 'group' | 'heading' | 'img' | 'link' | 'list' | 'listbox' | 'listitem' | 'log' | 'main' | 'marquee' | 'math' | 'menu' | 'menubar' | 'menuitem' | 'menuitemcheckbox' | 'menuitemradio' | 'meter' | 'navigation' | 'none' | 'note' | 'option' | 'presentation' | 'progressbar' | 'radio' | 'radiogroup' | 'region' | 'row' | 'rowgroup' | 'rowheader' | 'scrollbar' | 'search' | 'searchbox' | 'separator' | 'slider' | 'spinbutton' | 'status' | 'switch' | 'tab' | 'table' | 'tablist' | 'tabpanel' | 'term' | 'textbox' | 'timer' | 'toolbar' | 'tooltip' | 'tree' | 'treegrid' | 'treeitem' | false
 }
-interface ElementAttributes<T> extends CustomAttributes<T>, PropAttributes, OnAttributes<T>, EventHandlersElement<T>, AriaAttributes {
+interface ElementAttributes<T> extends CustomAttributes<T>, PropAttributes, EventHandlersElement<T>, AriaAttributes {
 	// [key: ClassKeys]: boolean;
 
 	// properties
@@ -949,7 +949,20 @@ interface ElementAttributes<T> extends CustomAttributes<T>, PropAttributes, OnAt
 
 	// attributes
 	autofocus?: true | false | '' | false
-	class?: string | ClassList | false
+	/**
+	 * Class names to apply. Accepts a string, an object whose keys are class
+	 * names and values are booleans (`{ active: isActive() }` — truthy keys
+	 * are added), or an array merging strings/objects/nested arrays
+	 * (`["card", props.class, { active: isActive() }]`).
+	 *
+	 * For conditional classes, prefer the array+object form. Don't build
+	 * class strings manually with concatenation, template literals, or
+	 * `.filter(Boolean).join(" ")` — that's the React/`classnames` reflex
+	 * and the array+object form replaces it. The array+object form composes
+	 * with reactive values directly; manually-built strings re-run the whole
+	 * concatenation on every change instead of toggling the affected classes.
+	 */
+	class?: ClassValue | false
 	elementtiming?: string | false
 	id?: string | false
 	nonce?: string | false
@@ -979,8 +992,7 @@ interface EventHandlersElement<T> {
 	onChange?: ChangeEventHandlerUnion<T, Event>
 	onClick?: EventHandlerUnion<T, MouseEvent>
 	onClose?: EventHandlerUnion<T, Event>
-	// TODO `CommandEvent` is currently undefined in TS
-	onCommand?: EventHandlerUnion<T, Event>
+	onCommand?: EventHandlerUnion<T, CommandEvent>
 	onCompositionEnd?: EventHandlerUnion<T, CompositionEvent>
 	onCompositionStart?: EventHandlerUnion<T, CompositionEvent>
 	onCompositionUpdate?: EventHandlerUnion<T, CompositionEvent>
@@ -1047,10 +1059,8 @@ interface EventHandlersElement<T> {
 	onResize?: EventHandlerUnion<T, UIEvent>
 	onScroll?: EventHandlerUnion<T, Event>
 	onScrollEnd?: EventHandlerUnion<T, Event>
-	// todo `SnapEvent` is currently undefined in TS
-	onScrollSnapChange?: EventHandlerUnion<T, Event>
-	// todo `SnapEvent` is currently undefined in TS
-	onScrollSnapChanging?: EventHandlerUnion<T, Event>
+	onScrollSnapChange?: EventHandlerUnion<T, SnapEvent>
+	onScrollSnapChanging?: EventHandlerUnion<T, SnapEvent>
 	onSecurityPolicyViolation?: EventHandlerUnion<T, SecurityPolicyViolationEvent>
 	onSeeked?: EventHandlerUnion<T, Event>
 	onSeeking?: EventHandlerUnion<T, Event>
@@ -1074,122 +1084,6 @@ interface EventHandlersElement<T> {
 	onVolumeChange?: EventHandlerUnion<T, Event>
 	onWaiting?: EventHandlerUnion<T, Event>
 	onWheel?: EventHandlerUnion<T, WheelEvent>
-
-	'on:abort'?: EventHandlerWithOptionsUnion<T, UIEvent>
-	'on:animationcancel'?: EventHandlerWithOptionsUnion<T, AnimationEvent>
-	'on:animationend'?: EventHandlerWithOptionsUnion<T, AnimationEvent>
-	'on:animationiteration'?: EventHandlerWithOptionsUnion<T, AnimationEvent>
-	'on:animationstart'?: EventHandlerWithOptionsUnion<T, AnimationEvent>
-	'on:auxclick'?: EventHandlerWithOptionsUnion<T, PointerEvent>
-	'on:beforecopy'?: EventHandlerWithOptionsUnion<T, ClipboardEvent>
-	'on:beforecut'?: EventHandlerWithOptionsUnion<T, ClipboardEvent>
-	'on:beforeinput'?: EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>
-	'on:beforematch'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:beforepaste'?: EventHandlerWithOptionsUnion<T, ClipboardEvent>
-	'on:beforetoggle'?: EventHandlerWithOptionsUnion<T, ToggleEvent>
-	'on:beforexrselect'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:blur'?: EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>
-	'on:cancel'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:canplay'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:canplaythrough'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:change'?: EventHandlerWithOptionsUnion<T, Event, ChangeEventHandler<T, Event>>
-	'on:click'?: EventHandlerWithOptionsUnion<T, MouseEvent>
-	'on:close'?: EventHandlerWithOptionsUnion<T, Event>
-	// TODO `CommandEvent` is currently undefined in TS
-	'on:command'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:compositionend'?: EventHandlerWithOptionsUnion<T, CompositionEvent>
-	'on:compositionstart'?: EventHandlerWithOptionsUnion<T, CompositionEvent>
-	'on:compositionupdate'?: EventHandlerWithOptionsUnion<T, CompositionEvent>
-	'on:contentvisibilityautostatechange'?: EventHandlerWithOptionsUnion<T, ContentVisibilityAutoStateChangeEvent>
-	'on:contextlost'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:contextmenu'?: EventHandlerWithOptionsUnion<T, PointerEvent>
-	'on:contextrestored'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:copy'?: EventHandlerWithOptionsUnion<T, ClipboardEvent>
-	'on:cuechange'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:cut'?: EventHandlerWithOptionsUnion<T, ClipboardEvent>
-	'on:dblclick'?: EventHandlerWithOptionsUnion<T, MouseEvent>
-	'on:drag'?: EventHandlerWithOptionsUnion<T, DragEvent>
-	'on:dragend'?: EventHandlerWithOptionsUnion<T, DragEvent>
-	'on:dragenter'?: EventHandlerWithOptionsUnion<T, DragEvent>
-	'on:dragexit'?: EventHandlerWithOptionsUnion<T, DragEvent>
-	'on:dragleave'?: EventHandlerWithOptionsUnion<T, DragEvent>
-	'on:dragover'?: EventHandlerWithOptionsUnion<T, DragEvent>
-	'on:dragstart'?: EventHandlerWithOptionsUnion<T, DragEvent>
-	'on:drop'?: EventHandlerWithOptionsUnion<T, DragEvent>
-	'on:durationchange'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:emptied'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:ended'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:error'?: EventHandlerWithOptionsUnion<T, ErrorEvent>
-	'on:focus'?: EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>
-	'on:focusin'?: EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>
-	'on:focusout'?: EventHandlerWithOptionsUnion<T, FocusEvent, FocusEventHandler<T, FocusEvent>>
-	'on:formdata'?: EventHandlerWithOptionsUnion<T, FormDataEvent>
-	'on:fullscreenchange'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:fullscreenerror'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:gotpointercapture'?: EventHandlerWithOptionsUnion<T, PointerEvent>
-	'on:input'?: EventHandlerWithOptionsUnion<T, InputEvent, InputEventHandler<T, InputEvent>>
-	'on:invalid'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:keydown'?: EventHandlerWithOptionsUnion<T, KeyboardEvent>
-	'on:keypress'?: EventHandlerWithOptionsUnion<T, KeyboardEvent>
-	'on:keyup'?: EventHandlerWithOptionsUnion<T, KeyboardEvent>
-	'on:load'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:loadeddata'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:loadedmetadata'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:loadstart'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:lostpointercapture'?: EventHandlerWithOptionsUnion<T, PointerEvent>
-	'on:mousedown'?: EventHandlerWithOptionsUnion<T, MouseEvent>
-	'on:mouseenter'?: EventHandlerWithOptionsUnion<T, MouseEvent>
-	'on:mouseleave'?: EventHandlerWithOptionsUnion<T, MouseEvent>
-	'on:mousemove'?: EventHandlerWithOptionsUnion<T, MouseEvent>
-	'on:mouseout'?: EventHandlerWithOptionsUnion<T, MouseEvent>
-	'on:mouseover'?: EventHandlerWithOptionsUnion<T, MouseEvent>
-	'on:mouseup'?: EventHandlerWithOptionsUnion<T, MouseEvent>
-	'on:paste'?: EventHandlerWithOptionsUnion<T, ClipboardEvent>
-	'on:pause'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:play'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:playing'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:pointercancel'?: EventHandlerWithOptionsUnion<T, PointerEvent>
-	'on:pointerdown'?: EventHandlerWithOptionsUnion<T, PointerEvent>
-	'on:pointerenter'?: EventHandlerWithOptionsUnion<T, PointerEvent>
-	'on:pointerleave'?: EventHandlerWithOptionsUnion<T, PointerEvent>
-	'on:pointermove'?: EventHandlerWithOptionsUnion<T, PointerEvent>
-	'on:pointerout'?: EventHandlerWithOptionsUnion<T, PointerEvent>
-	'on:pointerover'?: EventHandlerWithOptionsUnion<T, PointerEvent>
-	'on:pointerrawupdate'?: EventHandlerWithOptionsUnion<T, PointerEvent>
-	'on:pointerup'?: EventHandlerWithOptionsUnion<T, PointerEvent>
-	'on:progress'?: EventHandlerWithOptionsUnion<T, ProgressEvent>
-	'on:ratechange'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:reset'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:resize'?: EventHandlerWithOptionsUnion<T, UIEvent>
-	'on:scroll'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:scrollend'?: EventHandlerWithOptionsUnion<T, Event>
-	// todo `SnapEvent` is currently undefined in TS
-	'on:scrollsnapchange'?: EventHandlerWithOptionsUnion<T, Event>
-	// todo `SnapEvent` is currently undefined in TS
-	'on:scrollsnapchanging'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:securitypolicyviolation'?: EventHandlerWithOptionsUnion<T, SecurityPolicyViolationEvent>
-	'on:seeked'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:seeking'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:select'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:selectionchange'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:selectstart'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:slotchange'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:stalled'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:submit'?: EventHandlerWithOptionsUnion<T, SubmitEvent>
-	'on:suspend'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:timeupdate'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:toggle'?: EventHandlerWithOptionsUnion<T, ToggleEvent>
-	'on:touchcancel'?: EventHandlerWithOptionsUnion<T, TouchEvent>
-	'on:touchend'?: EventHandlerWithOptionsUnion<T, TouchEvent>
-	'on:touchmove'?: EventHandlerWithOptionsUnion<T, TouchEvent>
-	'on:touchstart'?: EventHandlerWithOptionsUnion<T, TouchEvent>
-	'on:transitioncancel'?: EventHandlerWithOptionsUnion<T, TransitionEvent>
-	'on:transitionend'?: EventHandlerWithOptionsUnion<T, TransitionEvent>
-	'on:transitionrun'?: EventHandlerWithOptionsUnion<T, TransitionEvent>
-	'on:transitionstart'?: EventHandlerWithOptionsUnion<T, TransitionEvent>
-	'on:volumechange'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:waiting'?: EventHandlerWithOptionsUnion<T, Event>
-	'on:wheel'?: EventHandlerWithOptionsUnion<T, WheelEvent>
 }
 
 // Voby - https://github.com/vobyjs/voby
@@ -1649,16 +1543,7 @@ interface AriaAttributes {
 }
 
 // Pota - https://github.com/potahtml/pota
-interface CSSAttributes extends NSStyle {
-	class?: Record<string, string | boolean | number | null> | string
-
-	style?: { [P in keyof CSSProperties]: CSSProperties[P] } | string
-
-	'use:css'?: string
-
-	[attr: `class:${string}`]: string | boolean | number | null
-}
-interface ElementAttributes<Element> extends PotaAttributes<Element>, CSSAttributes, AriaAttributes, EventHandlersElement<Element>, ElementProperties<Element> {
+interface ElementAttributes<Element> extends PotaAttributes<Element>, CSSAttributes, AriaAttributes, EventHandlersElement<Element> {
 	// properties
 	'prop:innerHTML'?: number | string
 	'prop:textContent'?: number | string
@@ -2009,7 +1894,7 @@ interface AriaAttributes {
 	 * for a range widget.
 	 */
 	'aria-valuetext'?: string
-	role?: 'alert' | 'alertdialog' | 'application' | 'article' | 'banner' | 'button' | 'cell' | 'checkbox' | 'columnheader' | 'combobox' | 'complementary' | 'contentinfo' | 'definition' | 'dialog' | 'directory' | 'document' | 'feed' | 'figure' | 'form' | 'grid' | 'gridcell' | 'group' | 'heading' | 'img' | 'link' | 'list' | 'listbox' | 'listitem' | 'log' | 'main' | 'marquee' | 'math' | 'menu' | 'menubar' | 'menuitem' | 'menuitemcheckbox' | 'menuitemradio' | 'meter' | 'navigation' | 'none' | 'note' | 'option' | 'presentation' | 'progressbar' | 'radio' | 'radiogroup' | 'region' | 'row' | 'rowgroup' | 'rowheader' | 'scrollbar' | 'search' | 'searchbox' | 'separator' | 'slider' | 'spinbutton' | 'status' | 'switch' | 'tab' | 'table' | 'tablist' | 'tabpanel' | 'term' | 'textbox' | 'timer' | 'toolbar' | 'tooltip' | 'tree' | 'treegrid' | 'treeitem'
+	role?: 'alert' | 'alertdialog' | 'application' | 'article' | 'banner' | 'blockquote' | 'button' | 'caption' | 'cell' | 'checkbox' | 'code' | 'columnheader' | 'combobox' | 'complementary' | 'contentinfo' | 'definition' | 'deletion' | 'dialog' | 'directory' | 'document' | 'emphasis' | 'feed' | 'figure' | 'form' | 'generic' | 'grid' | 'gridcell' | 'group' | 'heading' | 'img' | 'insertion' | 'link' | 'list' | 'listbox' | 'listitem' | 'log' | 'main' | 'mark' | 'marquee' | 'math' | 'menu' | 'menubar' | 'menuitem' | 'menuitemcheckbox' | 'menuitemradio' | 'meter' | 'navigation' | 'none' | 'note' | 'option' | 'paragraph' | 'presentation' | 'progressbar' | 'radio' | 'radiogroup' | 'region' | 'row' | 'rowgroup' | 'rowheader' | 'scrollbar' | 'search' | 'searchbox' | 'separator' | 'slider' | 'spinbutton' | 'status' | 'strong' | 'subscript' | 'suggestion' | 'superscript' | 'switch' | 'tab' | 'table' | 'tablist' | 'tabpanel' | 'term' | 'textbox' | 'time' | 'timer' | 'toolbar' | 'tooltip' | 'tree' | 'treegrid' | 'treeitem'
 }
 interface EventHandlersElement<Element> {
 	'on:abort'?: EventHandlers<UIEvent, Element>
@@ -2017,7 +1902,7 @@ interface EventHandlersElement<Element> {
 	'on:animationend'?: EventHandlers<AnimationEvent, Element>
 	'on:animationiteration'?: EventHandlers<AnimationEvent, Element>
 	'on:animationstart'?: EventHandlers<AnimationEvent, Element>
-	'on:auxclick'?: EventHandlers<MouseEvent, Element>
+	'on:auxclick'?: EventHandlers<PointerEvent, Element>
 	'on:beforecopy'?: EventHandlers<ClipboardEvent, Element>
 	'on:beforecut'?: EventHandlers<ClipboardEvent, Element>
 	'on:beforeinput'?: EventHandlers<InputEvent, Element>
@@ -2030,15 +1915,15 @@ interface EventHandlersElement<Element> {
 	'on:canplay'?: EventHandlers<Event, Element>
 	'on:canplaythrough'?: EventHandlers<Event, Element>
 	'on:change'?: EventHandlers<Event, Element>
-	'on:click'?: EventHandlers<MouseEvent, Element>
+	'on:click'?: EventHandlers<PointerEvent, Element>
 	'on:close'?: EventHandlers<Event, Element>
-	'on:command'?: EventHandlers<Event, Element>
+	'on:command'?: EventHandlers<CommandEvent, Element>
 	'on:compositionend'?: EventHandlers<CompositionEvent, Element>
 	'on:compositionstart'?: EventHandlers<CompositionEvent, Element>
 	'on:compositionupdate'?: EventHandlers<CompositionEvent, Element>
 	'on:contentvisibilityautostatechange'?: EventHandlers<ContentVisibilityAutoStateChangeEvent, Element>
 	'on:contextlost'?: EventHandlers<Event, Element>
-	'on:contextmenu'?: EventHandlers<MouseEvent, Element>
+	'on:contextmenu'?: EventHandlers<PointerEvent, Element>
 	'on:contextrestored'?: EventHandlers<Event, Element>
 	'on:copy'?: EventHandlers<ClipboardEvent, Element>
 	'on:cuechange'?: EventHandlers<Event, Element>
@@ -2063,7 +1948,7 @@ interface EventHandlersElement<Element> {
 	'on:fullscreenchange'?: EventHandlers<Event, Element>
 	'on:fullscreenerror'?: EventHandlers<Event, Element>
 	'on:gotpointercapture'?: EventHandlers<PointerEvent, Element>
-	'on:input'?: EventHandlers<Event, Element>
+	'on:input'?: EventHandlers<InputEvent, Element>
 	'on:invalid'?: EventHandlers<Event, Element>
 	'on:keydown'?: EventHandlers<KeyboardEvent, Element>
 	'on:keypress'?: EventHandlers<KeyboardEvent, Element>

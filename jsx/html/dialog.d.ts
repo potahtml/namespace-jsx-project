@@ -25,6 +25,7 @@ interface DialogHtmlAttributes<T> extends HTMLAttributes<T> {
 	 * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog#usage_notes
 	 */
 	tabindex?: never
+	'prop:tabIndex'?: never
 
 	/** @experimental */
 	closedby?: 'any' | 'closerequest' | 'none' | false
@@ -54,6 +55,7 @@ interface DialogHTMLAttributes<T> extends HTMLAttributes<T> {
 interface HTMLDialogElementAttributes<Element> extends HTMLAttributes<Element> {
 	open?: boolean | ''
 	tabindex?: never
+	'prop:tabindex'?: never
 
 	/** @experimental */
 	closedby?: 'any' | 'closerequest' | 'none'

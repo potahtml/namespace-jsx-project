@@ -69,17 +69,9 @@ interface AnimateTransformSVGAttributes<T> extends AnimationElementSVGAttributes
 }
 
 interface AnimationElementSVGAttributes<T> extends SVGAttributes<T>, ExternalResourceSVGAttributes, ConditionalProcessingSVGAttributes {
-	// TODO TimeEvent is currently undefined on TS
-	onBegin?: EventHandlerUnion<T, Event>
-	'on:begin'?: EventHandlerWithOptionsUnion<T, Event>
-
-	// TODO TimeEvent is currently undefined on TS
-	onEnd?: EventHandlerUnion<T, Event>
-	'on:end'?: EventHandlerWithOptionsUnion<T, Event>
-
-	// TODO TimeEvent is currently undefined on TS
-	onRepeat?: EventHandlerUnion<T, Event>
-	'on:repeat'?: EventHandlerWithOptionsUnion<T, Event>
+	onBegin?: EventHandlerUnion<T, TimeEvent>
+	onEnd?: EventHandlerUnion<T, TimeEvent>
+	onRepeat?: EventHandlerUnion<T, TimeEvent>
 }
 
 interface AnimationAttributeTargetSVGAttributes {

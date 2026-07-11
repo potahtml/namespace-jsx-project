@@ -35,18 +35,25 @@ interface MediaHTMLAttributes<T> extends HTMLAttributes<T> {
 	crossorigin?: 'anonymous' | 'use-credentials' | '' | true | false
 	disableremoteplayback?: true | false | '' | false
 	loop?: true | false | '' | false
-	muted?: true | false | '' | false
+
 	preload?: 'none' | 'metadata' | 'auto' | '' | true | false
 	src?: string | false
 
 	onEncrypted?: EventHandlerUnion<T, MediaEncryptedEvent>
-	'on:encrypted'?: EventHandlerWithOptionsUnion<T, MediaEncryptedEvent>
-
 	onWaitingForKey?: EventHandlerUnion<T, Event>
-	'on:waitingforkey'?: EventHandlerWithOptionsUnion<T, Event>
 
 	/** @deprecated */
 	mediagroup?: string | false
+
+	// special cases locked to properties
+
+	muted?: true | false
+	/** @error use `<video/audio muted={..}/>` instead */
+	'prop:muted'?: never
+
+	defaultMuted?: true | false
+	/** @error use `<video/audio defaultMuted={..}/>` instead */
+	'prop:defaultMuted'?: never
 }
 
 // Voby - https://github.com/vobyjs/voby
@@ -97,9 +104,6 @@ interface MediaHTMLAttributes<T> extends HTMLAttributes<T> {
 // Pota - https://github.com/potahtml/pota
 interface HTMLAudioElementAttributes<Element> extends HTMLAttributes<Element>, HTMLMediaHTMLAttributes<Element> {}
 interface HTMLMediaHTMLAttributes<Element> {
-	// properties
-	'prop:srcObject'?: MediaStream | MediaSource | Blob | File
-
 	// attributes
 	autoplay?: boolean | ''
 	controls?: boolean | ''

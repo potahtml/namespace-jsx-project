@@ -44,7 +44,20 @@ interface ExternalResourceSVGAttributes {
 }
 
 interface StylableSVGAttributes {
-	class?: string | ClassList | false
+	/**
+	 * Class names to apply. Accepts a string, an object whose keys are class
+	 * names and values are booleans (`{ active: isActive() }` — truthy keys
+	 * are added), or an array merging strings/objects/nested arrays
+	 * (`["card", props.class, { active: isActive() }]`).
+	 *
+	 * For conditional classes, prefer the array+object form. Don't build
+	 * class strings manually with concatenation, template literals, or
+	 * `.filter(Boolean).join(" ")` — that's the React/`classnames` reflex
+	 * and the array+object form replaces it. The array+object form composes
+	 * with reactive values directly; manually-built strings re-run the whole
+	 * concatenation on every change instead of toggling the affected classes.
+	 */
+	class?: ClassValue | false
 	style?: CSSProperties | string | false
 }
 

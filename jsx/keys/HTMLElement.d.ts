@@ -75,7 +75,7 @@ interface HTMLAttributes<T> extends ElementAttributes<T> {
 	inputmode?: 'decimal' | 'email' | 'none' | 'numeric' | 'search' | 'tel' | 'text' | 'url' | false
 	is?: string | false
 	lang?: string | false
-	popover?: '' | true | 'manual' | 'auto' | false
+	popover?: '' | true | 'manual' | 'auto' | 'hint' | false
 	spellcheck?: 'false' | 'true' | '' | true | false
 	title?: string | false
 	translate?: 'yes' | 'no' | false
@@ -119,6 +119,7 @@ interface HTMLAttributes<Element> extends ElementAttributes<Element> {
 
 	// attributes
 	accesskey?: string
+	anchor?: string
 	autocapitalize?: 'off' | 'none' | 'on' | 'sentences' | 'words' | 'characters'
 	autocorrect?: 'on' | 'off'
 	contenteditable?: 'false' | 'true' | 'plaintext-only' | 'inherit' | ''

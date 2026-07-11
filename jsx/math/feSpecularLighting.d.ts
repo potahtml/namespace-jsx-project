@@ -247,10 +247,6 @@ interface SVGAttributes<T extends EventTarget = SVGElement> extends HTMLAttribut
 	'xmlns:xlink'?: string
 }
 
-interface SVGElement {
-	cloneNode(deep?: boolean): SVGElement
-}
-
 // React - https://react.dev/
 interface SVGProps<T> extends SVGAttributes<T>, ClassAttributes<T> {}
 interface ClassAttributes<T> extends RefAttributes<T> {}

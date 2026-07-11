@@ -19,7 +19,24 @@ interface SelectHTMLAttributes<T> extends HTMLAttributes<T> {
 	name?: string | false
 	required?: true | false | '' | false
 	size?: number | string | false
-	value?: string | string[] | number | false
+
+	// special cases locked to properties
+
+	value?: string | string[] | number
+	/** @error use `<select value={..}/>` instead */
+	'prop:value'?: never
+
+	// for sanity
+
+	/** @error use `<option defaultSelected={..}/>` instead */
+	defaultSelected?: never
+	/** @error use `<option defaultSelected={..}/>` instead */
+	'prop:defaultSelected'?: never
+
+	/** @error use `<option defaultSelected={..}/>` instead */
+	selected?: never
+	/** @error use `<option defaultSelected={..}/>` instead */
+	'prop:selected'?: never
 }
 
 // Voby - https://github.com/vobyjs/voby

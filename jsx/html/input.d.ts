@@ -63,7 +63,7 @@ interface InputHTMLAttributes<T> extends HTMLAttributes<T> {
 	alt?: string | false
 	autocomplete?: 'additional-name' | 'address-level1' | 'address-level2' | 'address-level3' | 'address-level4' | 'address-line1' | 'address-line2' | 'address-line3' | 'bday' | 'bday-day' | 'bday-month' | 'bday-year' | 'billing' | 'cc-additional-name' | 'cc-csc' | 'cc-exp' | 'cc-exp-month' | 'cc-exp-year' | 'cc-family-name' | 'cc-given-name' | 'cc-name' | 'cc-number' | 'cc-type' | 'country' | 'country-name' | 'current-password' | 'email' | 'family-name' | 'fax' | 'given-name' | 'home' | 'honorific-prefix' | 'honorific-suffix' | 'impp' | 'language' | 'mobile' | 'name' | 'new-password' | 'nickname' | 'off' | 'on' | 'organization' | 'organization-title' | 'pager' | 'photo' | 'postal-code' | 'sex' | 'shipping' | 'street-address' | 'tel' | 'tel-area-code' | 'tel-country-code' | 'tel-extension' | 'tel-local' | 'tel-local-prefix' | 'tel-local-suffix' | 'tel-national' | 'transaction-amount' | 'transaction-currency' | 'url' | 'username' | 'work' | (string & {}) | false
 	capture?: 'user' | 'environment' | false
-	checked?: true | false | '' | false
+
 	colorspace?: string | false
 	dirname?: string | false
 	disabled?: true | false | '' | false
@@ -93,8 +93,8 @@ interface InputHTMLAttributes<T> extends HTMLAttributes<T> {
 	src?: string | false
 	step?: number | string | false
 	type?: 'button' | 'checkbox' | 'color' | 'date' | 'datetime-local' | 'email' | 'file' | 'hidden' | 'image' | 'month' | 'number' | 'password' | 'radio' | 'range' | 'reset' | 'search' | 'submit' | 'tel' | 'text' | 'time' | 'url' | 'week' | (string & {}) | false
-	value?: string | string[] | number | false
 	width?: number | string | false
+	webkitdirectory?: true | false | '' | false
 
 	/** @non-standard */
 	incremental?: true | false | '' | false
@@ -103,6 +103,24 @@ interface InputHTMLAttributes<T> extends HTMLAttributes<T> {
 	align?: string | false
 	/** @deprecated */
 	usemap?: string | false
+
+	// special cases locked to properties
+
+	checked?: true | false
+	/** @error use `<input checked={..}/>` instead */
+	'prop:checked'?: never
+
+	defaultChecked?: true | false
+	/** @error use `<input defaultChecked={..}/>` instead */
+	'prop:defaultChecked'?: never
+
+	value?: string | string[] | number
+	/** @error use `<input value={..}/>` instead */
+	'prop:value'?: never
+
+	defaultValue?: string | string[] | number
+	/** @error use `<input defaultValue={..}/>` instead */
+	'prop:defaultValue'?: never
 }
 
 // Voby - https://github.com/vobyjs/voby
@@ -222,15 +240,12 @@ interface InputHTMLAttributes<T> extends HTMLAttributes<T> {
 
 // Pota - https://github.com/potahtml/pota
 interface HTMLInputElementAttributes<Element> extends HTMLAttributes<Element> {
-	// properties
-	'prop:indeterminate'?: boolean
-
 	// attributes
 	accept?: string
 	alt?: string
 	alpha?: boolean | ''
 	autocomplete?: 'additional-name' | 'address-level1' | 'address-level2' | 'address-level3' | 'address-level4' | 'address-line1' | 'address-line2' | 'address-line3' | 'bday' | 'bday-day' | 'bday-month' | 'bday-year' | 'billing' | 'cc-additional-name' | 'cc-csc' | 'cc-exp' | 'cc-exp-month' | 'cc-exp-year' | 'cc-family-name' | 'cc-given-name' | 'cc-name' | 'cc-number' | 'cc-type' | 'country' | 'country-name' | 'current-password' | 'email' | 'family-name' | 'fax' | 'given-name' | 'home' | 'honorific-prefix' | 'honorific-suffix' | 'impp' | 'language' | 'mobile' | 'name' | 'new-password' | 'nickname' | 'off' | 'on' | 'organization' | 'organization-title' | 'pager' | 'photo' | 'postal-code' | 'sex' | 'shipping' | 'street-address' | 'tel' | 'tel-area-code' | 'tel-country-code' | 'tel-extension' | 'tel-local' | 'tel-local-prefix' | 'tel-local-suffix' | 'tel-national' | 'transaction-amount' | 'transaction-currency' | 'url' | 'username' | 'work' | (string & {})
-	capture?: 'user' | 'environment'
+	capture?: 'user' | 'environment' | boolean | '' | (string & {})
 	checked?: boolean | ''
 	colorspace?: string
 	dirname?: string
@@ -262,6 +277,7 @@ interface HTMLInputElementAttributes<Element> extends HTMLAttributes<Element> {
 	step?: number | string
 	type?: 'button' | 'checkbox' | 'color' | 'date' | 'datetime-local' | 'email' | 'file' | 'hidden' | 'image' | 'month' | 'number' | 'password' | 'radio' | 'range' | 'reset' | 'search' | 'submit' | 'tel' | 'text' | 'time' | 'url' | 'week'
 	value?: number | string
+	webkitdirectory?: boolean | ''
 	width?: number | string
 
 	/** @deprecated */
