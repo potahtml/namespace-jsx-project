@@ -4,6 +4,7 @@ import { xml } from 'pota/xml'
 const columns = [
   'Chrome',
   'Firefox',
+  'Webkit',
   'Pota',
   'Solid Main',
   'Solid Next',

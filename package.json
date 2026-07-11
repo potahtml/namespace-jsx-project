@@ -7,6 +7,7 @@
 	},
 	"dependencies": {
 		"oxc-parser": "^0.139.0",
+		"playwright": "^1.61.1",
 		"pota": "file:../pota",
 		"prettier": "^3.9.5",
 		"puppeteer": "^25.3.0",

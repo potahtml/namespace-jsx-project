@@ -1,7 +1,23 @@
 import { pathToFileURL } from 'node:url'
 import puppeteer from 'puppeteer'
+import { webkit } from 'playwright'
 
 export const startBrowser = async (browser = 'chrome') => {
+	/**
+	 * Playwright's webkit build targets ubuntu. On fedora the headless
+	 * bundle lacks two library sonames; drop them into the bundle once
+	 * per playwright upgrade (from the ubuntu debs `libicu74` and
+	 * `libjpeg-turbo8`, extracted with `ar x` + `tar --zstd -xf`):
+	 *
+	 *     cp libicu*.so.74* libjpeg.so.8* \
+	 *       ~/.cache/ms-playwright/webkit-*\/minibrowser-wpe/sys/lib/
+	 */
+	if (browser === 'webkit') {
+		const navigatorInstance = await webkit.launch({ headless: true })
+		const page = await navigatorInstance.newPage()
+		return [navigatorInstance, page]
+	}
+
 	const navigatorInstance = await puppeteer.launch({
 		headless: true,
 		browser,
@@ -76,7 +92,8 @@ export const browserData = async (tagNames, browser = 'chrome') => {
 		).href
 
 		await page.goto(url, {
-			waitUntil: 'networkidle0',
+			// playwright spells it without the `0`
+			waitUntil: browser === 'webkit' ? 'networkidle' : 'networkidle0',
 		})
 		await page.evaluate(() => window.runFromPuppeteer())
 		// await new Promise(resolve => setTimeout(resolve, 2000))

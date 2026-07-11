@@ -71,10 +71,10 @@ const DATA = {
 // helpers
 
 /**
- * Merges chrome/firefox browser keys into `keys`. Chrome wins when
- * both define a value.
+ * Merges chrome/firefox/webkit browser keys into `keys`. Chrome wins
+ * when more than one defines a value.
  */
-function mergeBrowserKeys(keys, chromeKeys, firefoxKeys) {
+function mergeBrowserKeys(keys, chromeKeys, firefoxKeys, webkitKeys) {
 	// chrome
 
 	for (const k in chromeKeys) {
@@ -120,6 +120,29 @@ function mergeBrowserKeys(keys, chromeKeys, firefoxKeys) {
 		key.propName = key.propName || d.propName
 		key.attrName = key.attrName || d.attrName
 	}
+
+	// webkit
+
+	for (const k in webkitKeys) {
+		keys[k] = keys[k] || {
+			name: k,
+			values: {},
+		}
+		const key = keys[k]
+
+		const d = webkitKeys[k]
+
+		key.values.Webkit = uniqueTypes(d.value)
+
+		key.propWebkit = d.prop
+		key.attrWebkit = d.attr
+
+		key.keyInterfaceName = key.keyInterfaceName || d.keyInterfaceName
+		key.readonly = key.readonly || d.readonly
+
+		key.propName = key.propName || d.propName
+		key.attrName = key.attrName || d.attrName
+	}
 }
 
 /**
@@ -157,6 +180,7 @@ function copyEventVariants(keys) {
 
 			keys[k].values.Chrome = keys[name].values.Chrome
 			keys[k].values.Firefox = keys[name].values.Firefox
+			keys[k].values.Webkit = keys[name].values.Webkit
 
 			keys[k].eventInterface = tsEventsInterfaces[name]
 		}
@@ -211,12 +235,16 @@ const tagNames = {
 
 const chrome = await browserData(tagNames, 'chrome')
 const firefox = await browserData(tagNames, 'firefox')
+const webkit = await browserData(tagNames, 'webkit')
 
-if (!chrome.dynamic || !firefox.dynamic) {
+if (!chrome.dynamic || !firefox.dynamic || !webkit.dynamic) {
 	throw new Error('data from browsers wasnt dynamically created')
 }
 
-write(`./browser/browser.json`, stringifySorted({ chrome, firefox }))
+write(
+	`./browser/browser.json`,
+	stringifySorted({ chrome, firefox, webkit }),
+)
 
 // save typescript events interfaces
 
@@ -228,16 +256,23 @@ for (const ns of NSGlobalInterfaces) {
 	DATA.keys[ns] = {
 		interfaceName:
 			chrome.keys[ns].tagInterfaceName ||
-			firefox.keys[ns].tagInterfaceName,
+			firefox.keys[ns].tagInterfaceName ||
+			webkit.keys[ns].tagInterfaceName,
 		readonly: unique(
 			chrome.keys[ns].readonly,
 			firefox.keys[ns].readonly,
+			webkit.keys[ns].readonly,
 		),
 		keys: {},
-		events: unique(chrome.keys[ns].events, firefox.keys[ns].events),
+		events: unique(
+			chrome.keys[ns].events,
+			firefox.keys[ns].events,
+			webkit.keys[ns].events,
+		),
 		booleans: unique(
 			chrome.keys[ns].booleans,
 			firefox.keys[ns].booleans,
+			webkit.keys[ns].booleans,
 		),
 	}
 
@@ -245,13 +280,14 @@ for (const ns of NSGlobalInterfaces) {
 		DATA.keys[ns].keys,
 		chrome.keys[ns].keys,
 		firefox.keys[ns].keys,
+		webkit.keys[ns].keys,
 	)
 
 	for (const k in DATA.keys[ns].keys) {
 		const key = DATA.keys[ns].keys[k]
 
-		key.prop = key.propChrome || key.propFirefox
-		key.attr = key.attrChrome || key.attrFirefox
+		key.prop = key.propChrome || key.propFirefox || key.propWebkit
+		key.attr = key.attrChrome || key.attrFirefox || key.attrWebkit
 	}
 }
 
@@ -400,7 +436,11 @@ for (const ns of NSGlobalInterfaces) {
 
 // merge all events
 
-DATA.keys.events = unique(chrome.events, firefox.events)
+DATA.keys.events = unique(
+	chrome.events,
+	firefox.events,
+	webkit.events,
+)
 
 // deduplicate events
 
@@ -472,7 +512,11 @@ DATA.keys.eventsHierarchy = {
 
 // merge all booleans
 
-DATA.keys.booleans = unique(chrome.booleans, firefox.booleans)
+DATA.keys.booleans = unique(
+	chrome.booleans,
+	firefox.booleans,
+	webkit.booleans,
+)
 
 // merge tag attributes/properties from browser/frameworks
 
@@ -488,7 +532,8 @@ for (const [ns, tags] of entries(tagNames)) {
 		const globalKeys = nsGlobalKeys.filter(
 			x =>
 				!(x in chrome[ns][tagName].keys) &&
-				!(x in firefox[ns][tagName].keys),
+				!(x in firefox[ns][tagName].keys) &&
+				!(x in webkit[ns][tagName].keys),
 		)
 
 		const tag = {}
@@ -503,12 +548,14 @@ for (const [ns, tags] of entries(tagNames)) {
 		tag.elementURL = ElementURL(ns, tagName)
 		tag.tagInterfaceName =
 			chrome[ns][tagName].tagInterfaceName ||
-			firefox[ns][tagName].tagInterfaceName
+			firefox[ns][tagName].tagInterfaceName ||
+			webkit[ns][tagName].tagInterfaceName
 		tag.interfaceURL = InterfaceURL(ns, tagName, tag.tagInterfaceName)
 		tag.keys = {}
 		tag.readonly = unique([
 			chrome[ns][tagName].readonly,
 			firefox[ns][tagName].readonly,
+			webkit[ns][tagName].readonly,
 		])
 		tag.deprecated = undefined
 		tag.nonstandard = undefined
@@ -554,6 +601,7 @@ for (const [ns, tags] of entries(tagNames)) {
 			tag.keys,
 			chrome[ns][tagName].keys,
 			firefox[ns][tagName].keys,
+			webkit[ns][tagName].keys,
 		)
 
 		// copy libs keys
@@ -636,8 +684,9 @@ for (const [ns, tags] of entries(tagNames)) {
 
 			key.propChrome = key.propChrome || false
 			key.propFirefox = key.propFirefox || false
+			key.propWebkit = key.propWebkit || false
 
-			key.prop = key.propChrome || key.propFirefox
+			key.prop = key.propChrome || key.propFirefox || key.propWebkit
 
 			// attr
 
@@ -648,8 +697,10 @@ for (const [ns, tags] of entries(tagNames)) {
 			key.attrChrome = key.attrChrome || isConfirmedAttribute || false
 			key.attrFirefox =
 				key.attrFirefox || isConfirmedAttribute || false
+			key.attrWebkit = key.attrWebkit || isConfirmedAttribute || false
 
-			key.attr = key.attrChrome || key.attrFirefox || false
+			key.attr =
+				key.attrChrome || key.attrFirefox || key.attrWebkit || false
 
 			key.global =
 				!data.hardcoded.notglobal.includes(idInterface) &&
@@ -767,7 +818,8 @@ for (const [tagName, tag] of entries(DATA.elements.html)) {
 
 			if (
 				key.values.Chrome === 'boolean' ||
-				key.values.Firefox === 'boolean'
+				key.values.Firefox === 'boolean' ||
+				key.values.Webkit === 'boolean'
 			) {
 				if (/[A-Z]/.test(key.name)) {
 					DATA.DOMExpressions.booleansWithCase.push(key.name)
