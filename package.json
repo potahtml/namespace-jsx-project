@@ -6,11 +6,11 @@
 		"dev": "node src/index.js"
 	},
 	"dependencies": {
-		"oxc-parser": "^0.30.5",
-		"prettier": "^3.5.3",
-		"puppeteer": "^24.6.1",
-		"vscode-html-languageservice": "^5.3.3",
-		"pota": "file:../pota"
+		"oxc-parser": "^0.139.0",
+		"pota": "file:../pota",
+		"prettier": "^3.9.5",
+		"puppeteer": "^25.3.0",
+		"vscode-html-languageservice": "^5.6.2"
 	},
 	"prettier": {
 		"printWidth": 70,

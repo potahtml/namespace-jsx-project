@@ -7,7 +7,7 @@ import {
 	uniqueTypes,
 	write,
 } from './utils.js'
-import oxc from 'oxc-parser'
+import { parseSync } from 'oxc-parser'
 
 /** This is used to parse framework interfaces */
 const dev = false
@@ -98,9 +98,7 @@ export function parseFromString(string, map = {}) {
 	const types = []
 	for (const line of lines) {
 		// oxc has a bug on which the `.end` will be incorrect if we parse the whole file. For this reason parse it line by line instead
-		const ast = JSON.parse(
-			oxc.parseSync(line, { sourceFilename: 'file.d.ts' }).program,
-		).body
+		const ast = parseSync('file.d.ts', line).program.body
 		if (ast.length) {
 			const t = ast[0]
 
@@ -147,10 +145,7 @@ export function parseFromString(string, map = {}) {
 
 			// parse the properties
 
-			const ast = JSON.parse(
-				oxc.parseSync(inter.source, { sourceFilename: 'file.d.ts' })
-					.program,
-			).body
+			const ast = parseSync('file.d.ts', inter.source).program.body
 
 			inter.properties = []
 			inter.extends = []
@@ -291,13 +286,13 @@ function referenceHead(node) {
 			return node.expression?.type === 'Identifier'
 				? {
 						name: node.expression.name,
-						args: node.typeParameters?.params,
+						args: node.typeArguments?.params,
 					}
 				: null
 		case 'TSTypeReference':
 			return {
 				name: referenceName(node.typeName),
-				args: node.typeParameters?.params,
+				args: node.typeArguments?.params,
 			}
 		default:
 			return null
@@ -308,7 +303,7 @@ function referenceHead(node) {
 function literalKeys(node) {
 	if (
 		node.type === 'TSLiteralType' &&
-		node.literal?.type === 'StringLiteral'
+		typeof node.literal?.value === 'string'
 	) {
 		return [node.literal.value]
 	}
@@ -377,11 +372,8 @@ function collectReferences(node, refs) {
 
 /** Interface references found in a type expression such as `X<T> & Y` */
 function getTypeReferences(string) {
-	const ast = JSON.parse(
-		oxc.parseSync('type __T = ' + string, {
-			sourceFilename: 'file.d.ts',
-		}).program,
-	).body
+	const ast = parseSync('file.d.ts', 'type __T = ' + string).program
+		.body
 
 	const refs = []
 	if (ast.length && ast[0].typeAnnotation) {
