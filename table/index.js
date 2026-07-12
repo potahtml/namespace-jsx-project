@@ -213,33 +213,6 @@ function App() {
             type="search"
             placeholder="Filter…"
           />
-          <fieldset title="Show only keys of the checked kinds">
-            <label><input type="checkbox" name="kind-attr" /> attr</label>
-            <label><input type="checkbox" name="kind-prop" /> prop</label>
-            <label><input type="checkbox" name="kind-event" /> event</label>
-            <label><input type="checkbox" name="kind-aria" /> aria</label>
-          </fieldset>
-          <fieldset title="Show only keys with the checked flags">
-            <label><input type="checkbox" name="flag-deprecated" /> 🗑️ deprecated</label>
-            <label><input type="checkbox" name="flag-warn" /> 🛑 warn</label>
-            <label><input type="checkbox" name="flag-danger" /> ❗ danger</label>
-          </fieldset>
-          <label
-            title="Show only rows where the visible frameworks type the key differently"
-            ><input
-              type="checkbox"
-              name="disagreements-values"
-            />
-            Value disagreements</label
-          >
-          <label
-            title="Show only rows where a visible framework lacks a key another one has"
-            ><input
-              type="checkbox"
-              name="disagreements-coverage"
-            />
-            Coverage disagreements</label
-          >
         </form>
         <For
           each="${['html', 'svg', 'math']}"

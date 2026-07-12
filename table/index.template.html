@@ -301,6 +301,80 @@
 						Svelte</label
 					>
 				</fieldset>
+				<fieldset title="Show only keys of the checked kinds">
+					<legend>Kind:</legend>
+					<label
+						><input
+							type="checkbox"
+							name="kind-attr"
+						/>
+						attr</label
+					>
+					<label
+						><input
+							type="checkbox"
+							name="kind-prop"
+						/>
+						prop</label
+					>
+					<label
+						><input
+							type="checkbox"
+							name="kind-event"
+						/>
+						event</label
+					>
+					<label
+						><input
+							type="checkbox"
+							name="kind-aria"
+						/>
+						aria</label
+					>
+				</fieldset>
+				<fieldset title="Show only keys with the checked flags">
+					<legend>Flags:</legend>
+					<label
+						><input
+							type="checkbox"
+							name="flag-deprecated"
+						/>
+						🗑️ deprecated</label
+					>
+					<label
+						><input
+							type="checkbox"
+							name="flag-warn"
+						/>
+						🛑 warn</label
+					>
+					<label
+						><input
+							type="checkbox"
+							name="flag-danger"
+						/>
+						❗ danger</label
+					>
+				</fieldset>
+				<fieldset>
+					<legend>Disagreements:</legend>
+					<label
+						title="Show only rows where the visible frameworks type the key differently"
+						><input
+							type="checkbox"
+							name="disagreements-values"
+						/>
+						Values</label
+					>
+					<label
+						title="Show only rows where a visible framework lacks a key another one has"
+						><input
+							type="checkbox"
+							name="disagreements-coverage"
+						/>
+						Coverage</label
+					>
+				</fieldset>
 			</form>
 			<style
 				type="text/css"
