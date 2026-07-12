@@ -120,16 +120,16 @@ export const uniqueTypes = a => {
 				.filter(x => x),
 		),
 	]
-	// a union holding both bare literal types `true` and `false` is
-	// just `boolean`. only whole top-level parts count, so the string
-	// literals in `'true' | 'false'` are not confused with them
-	if (parts.includes('true') && parts.includes('false')) {
+	// a union holding both bare literal types `true` and `false`, or
+	// one of them next to a `boolean`, is just `boolean`. only whole
+	// top-level parts count, so the string literals in
+	// `'true' | 'false'` are not confused with them
+	const bools = ['boolean', 'true', 'false'].filter(x =>
+		parts.includes(x),
+	)
+	if (bools.length > 1) {
 		parts = [
-			...new Set(
-				parts.map(x =>
-					x === 'true' || x === 'false' ? 'boolean' : x,
-				),
-			),
+			...new Set(parts.map(x => (bools.includes(x) ? 'boolean' : x))),
 		]
 	}
 	// sorted so the same set of types always prints the same way
