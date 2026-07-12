@@ -43,9 +43,16 @@ async function fetchText(url) {
 }
 
 export async function parseFromURL(file, name, map = {}) {
-	const text = dev
-		? await fetchCached(file)
-		: await fetchText(file)
+	// frameworks that split their types across files (such preact's
+	// jsx.d.ts + dom.d.ts) list them as an array and get the texts
+	// concatenated before parsing
+	const files = Array.isArray(file) ? file : [file]
+
+	let text = ''
+	for (const url of files) {
+		text +=
+			(dev ? await fetchCached(url) : await fetchText(url)) + '\n'
+	}
 
 	file = './node_modules/.cache/' + name + '.d.ts'
 	write(file, text)
@@ -168,7 +175,11 @@ export function parseFromString(string, map = {}) {
 	for (const [node, exportStart] of aliasNodes) {
 		const annotation = node.typeAnnotation
 		const parts =
-			annotation.type === 'TSIntersectionType'
+			annotation.type === 'TSIntersectionType' ||
+			// a union where every branch is an object literal, like
+			// preact's `AnchorAriaRoles`, merges the branches' members
+			(annotation.type === 'TSUnionType' &&
+				annotation.types.every(t => t.type === 'TSTypeLiteral'))
 				? annotation.types
 				: [annotation]
 
@@ -177,6 +188,14 @@ export function parseFromString(string, map = {}) {
 		for (const part of parts) {
 			if (part.type === 'TSTypeLiteral') {
 				for (const member of part.members) {
+					// `href?: never` marks a key as disallowed in this
+					// branch, it is not a value type
+					if (
+						member.typeAnnotation?.typeAnnotation?.type ===
+						'TSNeverKeyword'
+					) {
+						continue
+					}
 					members.push(source.slice(member.start, member.end))
 				}
 			} else if (part.type === 'TSTypeReference') {
@@ -201,7 +220,15 @@ export function parseFromString(string, map = {}) {
 			}
 		}
 
-		if (!members.length) {
+		// an intersection of references alone, like preact's
+		// `Omit<PartialAnchorHTMLAttributes<T>, 'role'> & AnchorAriaRoles`,
+		// still resolves: the references become `extends` heritage
+		if (
+			!members.length &&
+			!(
+				annotation.type === 'TSIntersectionType' && heritage.length
+			)
+		) {
 			continue
 		}
 
