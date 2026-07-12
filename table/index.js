@@ -231,7 +231,7 @@ function App() {
           >
         </form>
         <For
-          each="${['html', 'math']}"
+          each="${['html', 'svg', 'math']}"
         >
           ${namespace => xml`
             <xElements
