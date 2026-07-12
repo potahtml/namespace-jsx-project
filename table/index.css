@@ -121,6 +121,9 @@ body[data-table-fixed='yes'] table td[nowrap] {
 	white-space: normal;
 }
 
+body[data-chrome='false'] [data-col='Chrome'],
+body[data-firefox='false'] [data-col='Firefox'],
+body[data-webkit='false'] [data-col='Webkit'],
 body[data-solidmain='false'] [data-col='Solid Main'],
 body[data-solidnext='false'] [data-col='Solid Next'],
 body[data-pota='false'] [data-col='Pota'],
