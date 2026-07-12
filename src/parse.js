@@ -245,7 +245,12 @@ export function parseFromString(string, map = {}) {
 				' {\n' +
 				members.join('\n') +
 				'\n}\n',
-			types,
+			// a reference-only intersection alias, like solid's
+			// `EventType = ExtractEventType<...> & ExtractEventType<...>`,
+			// also passes the simple-types filter above; inlining it into
+			// its own declaration would replace the interface name with
+			// the aliased expression
+			types.filter(type => type.name !== node.id.name),
 		)
 		removals.push([exportStart ?? node.start, node.end])
 	}
