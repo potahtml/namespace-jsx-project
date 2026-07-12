@@ -123,9 +123,9 @@ function xElement(props) {
         <Show when="${element.readonly?.length}">
           Read only properties:
           <For each="${element.readonly}"
-            >${value => {
+            >${(value, index) => {
               const data = value.split('.')
-              return xml`<a
+              return xml`${index ? ', ' : ' '}<a
                 target="_blank"
                 href="${KeyURL(element.name, data[0], data[1])}"
                 >${value}</a
@@ -137,8 +137,8 @@ function xElement(props) {
         <Show when="${element.notIncludedMDN?.length}">
           MDN Not Included:
           <For each="${element.notIncludedMDN}"
-            >${value =>
-              xml`<a
+            >${(value, index) =>
+              xml`${index ? ', ' : ' '}<a
                 target="_blank"
                 href="${KeyURL(element.name, element.tagInterfaceName, value)}"
                 >${value}</a
