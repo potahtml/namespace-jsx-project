@@ -10,8 +10,9 @@ const columns = [
   'Solid Next',
   'Voby',
   'Vue',
-  /* 'Preact',*/
+  'Preact',
   'React',
+  'Svelte',
 ]
 
 function xElements(props) {

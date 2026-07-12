@@ -162,6 +162,7 @@
 					<a href="https://preactjs.com/">https://preactjs.com/</a>
 				</li>
 				<li><a href="https://react.dev/">https://react.dev/</a></li>
+				<li><a href="https://svelte.dev/">https://svelte.dev/</a></li>
 				<li>
 					<a
 						href="https://github.com/microsoft/vscode-html-languageservice"
@@ -276,7 +277,7 @@
 						/>
 						Vue</label
 					>
-					<!-- 	<label
+					<label
 						><input
 							type="checkbox"
 							name="Preact"
@@ -284,7 +285,7 @@
 							checked
 						/>
 						Preact</label
-					> -->
+					>
 					<label
 						><input
 							type="checkbox"
@@ -293,6 +294,15 @@
 							checked
 						/>
 						React</label
+					>
+					<label
+						><input
+							type="checkbox"
+							name="Svelte"
+							value="Svelte"
+							checked
+						/>
+						Svelte</label
 					>
 				</fieldset>
 			</form>
@@ -314,8 +324,9 @@
 					'Solid Next',
 					'Voby',
 					'Vue',
-					/*'Preact',*/
+					'Preact',
 					'React',
+					'Svelte',
 				]
 
 				const filters = {
@@ -449,8 +460,9 @@
 						'pota',
 						'Voby',
 						'Vue',
-						/*'Preact',*/
+						'Preact',
 						'React',
+						'Svelte',
 					]) {
 						store[name] = store[name] || 'true'
 						body.dataset[name.toLowerCase().replace(/ /g, '')] =

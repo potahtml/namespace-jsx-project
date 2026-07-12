@@ -299,7 +299,7 @@ export const libs = [
 			},
 		},
 	},
-	/*{
+	{
 		// PREACT
 		file: [
 			'https://raw.githubusercontent.com/preactjs/preact/refs/heads/main/src/jsx.d.ts',
@@ -322,12 +322,8 @@ export const libs = [
 		map: {
 			elements: {
 				html: {
-					values: ['intrinsicelements'],
-					skip: [
-						'intrinsicmathmlelements',
-						'intrinsicsvgelements',
-						'htmlattributes',
-					],
+					values: ['intrinsichtmlelements'],
+					skip: ['htmlattributes'],
 				},
 				svg: {
 					values: ['intrinsicsvgelements'],
@@ -344,7 +340,7 @@ export const libs = [
 					skip: ['domattributes', 'ariaattributes'],
 				},
 				SVGElement: {
-					values: [],
+					values: ['svgattributes'],
 					skip: ['htmlattributes'],
 				},
 				MathMLElement: {
@@ -352,12 +348,12 @@ export const libs = [
 					skip: ['htmlattributes'],
 				},
 				Element: {
-					values: ['ariaattributes'],
+					values: ['ariaattributes', 'domattributes'],
 					skip: [],
 				},
 			},
 		},
-	},*/
+	},
 	{
 		// REACT
 		file: 'https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/react/index.d.ts',
@@ -408,6 +404,60 @@ export const libs = [
 				},
 				Element: {
 					values: ['ariaattributes'],
+				},
+			},
+		},
+	},
+	{
+		// SVELTE
+		file: 'https://raw.githubusercontent.com/sveltejs/svelte/refs/heads/main/packages/svelte/elements.d.ts',
+		name: 'Svelte',
+		url: 'https://svelte.dev/',
+		interfaces: {},
+		elements: {
+			html: {},
+			svg: {},
+			math: {},
+		},
+		keys: {
+			HTMLElement: {},
+			SVGElement: {},
+			MathMLElement: {},
+			Element: {},
+		},
+		map: {
+			elements: {
+				html: {
+					values: ['sveltehtmlelements'],
+					skip: ['htmlattributes', 'svgattributes'],
+					include: false,
+				},
+				svg: {
+					values: ['sveltehtmlelements'],
+					skip: ['htmlattributes', 'svgattributes'],
+					include: false,
+				},
+				math: {
+					values: [],
+					skip: [],
+					include: false,
+				},
+			},
+			keys: {
+				HTMLElement: {
+					values: ['htmlattributes'],
+					skip: ['ariaattributes', 'domattributes'],
+				},
+				SVGElement: {
+					values: ['svgattributes'],
+					skip: ['ariaattributes', 'domattributes'],
+				},
+				MathMLElement: {
+					values: [],
+					skip: [],
+				},
+				Element: {
+					values: ['ariaattributes', 'domattributes'],
 				},
 			},
 		},

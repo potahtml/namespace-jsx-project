@@ -126,7 +126,8 @@ body[data-solidnext='false'] [data-col='Solid Next'],
 body[data-pota='false'] [data-col='Pota'],
 body[data-voby='false'] [data-col='Voby'],
 body[data-vue='false'] [data-col='Vue'],
-/*body[data-preact='false'] [data-col='Preact'],*/
-body[data-react='false'] [data-col='React'] {
+body[data-preact='false'] [data-col='Preact'],
+body[data-react='false'] [data-col='React'],
+body[data-svelte='false'] [data-col='Svelte'] {
 	display: none;
 }

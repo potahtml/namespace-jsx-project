@@ -71,7 +71,7 @@ which can be used to generate types.
 
 ## Frameworks
 
-List of frameworks so far: Solid, Voby, Pota, Vue, React.
+List of frameworks so far: Solid, Voby, Pota, Vue, Preact, React, Svelte.
 
 ## Usage
 
