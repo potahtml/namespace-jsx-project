@@ -112,14 +112,28 @@ function splitUnion(a) {
 	return parts
 }
 
-export const uniqueTypes = a =>
-	[
+export const uniqueTypes = a => {
+	let parts = [
 		...new Set(
 			splitUnion(a.replace(/\n/g, ' '))
 				.map(x => x.trim())
 				.filter(x => x),
 		),
-	].join(' | ')
+	]
+	// a union holding both bare literal types `true` and `false` is
+	// just `boolean`. only whole top-level parts count, so the string
+	// literals in `'true' | 'false'` are not confused with them
+	if (parts.includes('true') && parts.includes('false')) {
+		parts = [
+			...new Set(
+				parts.map(x =>
+					x === 'true' || x === 'false' ? 'boolean' : x,
+				),
+			),
+		]
+	}
+	return parts.join(' | ')
+}
 
 export const entries = Object.entries
 
