@@ -371,10 +371,11 @@ function unwrapTypes(source, types) {
 			.replace(/ SignalLike<([^>]+)>\n/gi, '\n')
 			.replace(/Signalish<([^>]+)>/gi, '$1')
 
-			// pota
+			// pota — `Attribute<T>` is `T | false` once the reactive
+			// wrappers are dropped
 			.replace(/Accessor<([^><]+)>/gi, '$1')
-			.replace(/Attribute<([^><]+)>/gi, '$1')
-			.replace(/Attribute<([^\n]+)>\n/gi, '$1\n')
+			.replace(/Attribute<([^><]+)>/gi, '$1 | false')
+			.replace(/Attribute<([^\n]+)>\n/gi, '$1 | false\n')
 
 			// react
 			.replace(/\| DO_NOT_USE[^\n]+\n/gi, '\n')
