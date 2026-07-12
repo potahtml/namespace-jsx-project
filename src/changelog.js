@@ -5,10 +5,10 @@ import { read, unique, write } from './utils.js'
 /**
  * Maintains `changelog.md`: walks every committed version of
  * `jsx/data.json`, diffs each with the previous one, and writes a
- * summary table plus a section per version listing what was
- * added/removed/changed. The table doubles as the record of which
- * versions were already computed, so re-running only appends
- * commits that aren't listed yet.
+ * summary table plus a section per version with a table per tag
+ * listing what was added/removed/changed. The summary table
+ * doubles as the record of which versions were already computed,
+ * so re-running only appends commits that aren't listed yet.
  *
  *     npm run changelog
  *
@@ -90,7 +90,7 @@ function diffData(oldData, newData) {
 	return changes
 }
 
-// render changes as markdown bullets
+// render changes as markdown: a table per tag/section
 
 const display = v =>
 	Array.isArray(v)
@@ -104,6 +104,10 @@ const code = v => {
 	}
 	return display(v)
 }
+
+// `\|` even inside code spans — gfm splits table cells on raw
+// pipes before inline parsing, `string | false` would break rows
+const escapeCell = s => String(s).replace(/\|/g, '\\|')
 
 // old data.json versions keyed `elements` by namespace URI
 const namespaceNames = {
@@ -122,50 +126,58 @@ const detail = (name, change) => {
 				code(change.value)
 }
 
+const words = { '+': 'added', '-': 'removed', '~': 'changed' }
+
 function renderChanges(changes) {
 	// tag additions/removals per namespace, they come first and
 	// deliberately without their content — the tag being new/gone
 	// is the news
 	const tags = new Map()
 	// everything else grouped: per tag, per `keys` interface, or
-	// per top-level section
+	// per top-level section; each group becomes its own table
 	const buckets = new Map()
-	const bucket = label => {
+	const bucket = (label, kind) => {
 		if (!buckets.has(label)) {
 			buckets.set(label, {
-				news: [],
+				kind,
+				added: [],
 				removed: [],
 				changed: new Map(),
-				details: [],
+				rows: [],
 			})
 		}
 		return buckets.get(label)
 	}
-	const keyChange = (label, key, name, change) => {
-		const changed = bucket(label).changed
-		if (!changed.has(key)) {
-			changed.set(key, [])
-		}
-		changed.get(key).push(detail(name, change))
-	}
+	// for metadata fields and array items: one table row per change
+	const row = (name, change) =>
+		change.sign === '~'
+			? [
+					'changed',
+					name && '_' + name + '_',
+					code(change.old) + ' → ' + code(change.new),
+				]
+			: name
+				? [words[change.sign], '_' + name + '_', code(change.value)]
+				: [words[change.sign], code(change.value), '']
 
 	for (const change of changes) {
 		const { sign, path } = change
 
 		if (path[0] === 'elements' && path.length === 3 && sign !== '~') {
-			if (!tags.has(namespaceName(path[1]))) {
-				tags.set(namespaceName(path[1]), { news: [], removed: [] })
+			const ns = namespaceName(path[1])
+			if (!tags.has(ns)) {
+				tags.set(ns, { added: [], removed: [] })
 			}
-			tags
-				.get(namespaceName(path[1]))
-				[sign === '+' ? 'news' : 'removed'].push(path[2])
+			tags.get(ns)[sign === '+' ? 'added' : 'removed'].push(path[2])
 			continue
 		}
 
-		// `elements.ns.tag.keys.key[...]` and `keys.Interface.keys.key[...]`
-		// get the per-key treatment: new/removed keys are a bare
-		// mention, changed keys list exactly what changed
+		// `elements.ns.tag.keys.key[...]` and
+		// `keys.Interface.keys.key[...]` get the per-key treatment:
+		// new/removed keys are a bare mention, changed keys list
+		// exactly what changed
 		let label
+		let kind
 		let keyIndex = -1
 		if (
 			path[0] === 'elements' &&
@@ -173,6 +185,7 @@ function renderChanges(changes) {
 			path[3] === 'keys'
 		) {
 			label = namespaceName(path[1]) + ' `<' + path[2] + '>`'
+			kind = 'elements'
 			keyIndex = 4
 		} else if (
 			path[0] === 'keys' &&
@@ -180,76 +193,103 @@ function renderChanges(changes) {
 			path[2] === 'keys'
 		) {
 			label = 'keys.' + path[1]
+			kind = 'keys'
 			keyIndex = 3
 		}
 
 		if (keyIndex !== -1) {
+			const b = bucket(label, kind)
 			const key = path[keyIndex]
 			if (path.length === keyIndex + 1 && sign !== '~') {
-				bucket(label)[sign === '+' ? 'news' : 'removed'].push(key)
+				b[sign === '+' ? 'added' : 'removed'].push(key)
 			} else {
 				const sub = path.slice(keyIndex + 1)
 				const name = (sub[0] === 'values' ? sub.slice(1) : sub).join(
 					'.',
 				)
-				keyChange(label, key, name, change)
+				if (!b.changed.has(key)) {
+					b.changed.set(key, [])
+				}
+				b.changed.get(key).push(detail(name, change))
 			}
 		} else if (path[0] === 'elements' && path.length > 3) {
 			// tag metadata (description, deprecated, readonly…)
 			bucket(
 				namespaceName(path[1]) + ' `<' + path[2] + '>`',
-			).details.push(detail(path.slice(3).join('.'), change))
+				'elements',
+			).rows.push(row(path.slice(3).join('.'), change))
 		} else {
-			bucket(path.slice(0, 2).join('.')).details.push(
-				detail(path.slice(2).join('.'), change),
+			const label = path.slice(0, 2).join('.')
+			bucket(label, path[0] === 'keys' ? 'keys' : 'other').rows.push(
+				row(path.slice(2).join('.'), change),
 			)
 		}
 	}
 
-	const lines = []
-	for (const [ns, { news, removed }] of tags) {
-		if (news.length) {
-			lines.push(
-				`- ${ns}: new tag${news.length > 1 ? 's' : ''} ` +
-					news.map(x => code('<' + x + '>')).join(', '),
+	const blocks = []
+	// counted at the level the tables show: a key with many field
+	// changes is one changed key
+	const counts = { added: 0, removed: 0, changed: 0 }
+
+	const bullets = []
+	for (const [ns, { added, removed }] of tags) {
+		counts.added += added.length
+		counts.removed += removed.length
+		if (added.length) {
+			bullets.push(
+				`- ${ns}: new tag${added.length > 1 ? 's' : ''} ` +
+					added.map(x => code('<' + x + '>')).join(', '),
 			)
 		}
 		if (removed.length) {
-			lines.push(
+			bullets.push(
 				`- ${ns}: removed tag${removed.length > 1 ? 's' : ''} ` +
 					removed.map(x => code('<' + x + '>')).join(', '),
 			)
 		}
 	}
-	for (const [
-		label,
-		{ news, removed, changed, details },
-	] of buckets) {
-		if (news.length) {
-			lines.push(`- ${label}: new ${news.map(code).join(', ')}`)
-		}
-		if (removed.length) {
-			lines.push(
-				`- ${label}: removed ${removed.map(code).join(', ')}`,
+	if (bullets.length) {
+		blocks.push(bullets.join('\n'))
+	}
+
+	// elements first, the `keys` interfaces after, the rest last
+	for (const kind of ['elements', 'keys', 'other']) {
+		for (const [label, b] of buckets) {
+			if (b.kind !== kind) {
+				continue
+			}
+			const rows = [
+				...b.added.map(key => ['added', code(key), '']),
+				...b.removed.map(key => ['removed', code(key), '']),
+				...[...b.changed].map(([key, details]) => [
+					'changed',
+					code(key),
+					details.join('<br>'),
+				]),
+				...b.rows,
+			]
+			for (const [word] of rows) {
+				counts[word]++
+			}
+			// the details column only when something uses it
+			const columns = rows.some(r => r[2]) ? 3 : 2
+			const line = cells =>
+				'| ' + cells.slice(0, columns).join(' | ') + ' |'
+			blocks.push(
+				`**${label}**\n\n` +
+					line(['change', 'key', 'details']) +
+					'\n' +
+					line(['-', '-', '-']) +
+					'\n' +
+					rows.map(r => line(r.map(escapeCell))).join('\n'),
 			)
 		}
-		for (const [key, keyDetails] of changed) {
-			lines.push(`- ${label} ${code(key)}: ${keyDetails.join('; ')}`)
-		}
-		for (const d of details) {
-			lines.push(`- ${label}: ${d}`)
-		}
 	}
-	return lines
+	return { content: blocks.join('\n\n'), counts }
 }
 
-const countChanges = changes => {
-	const totals = { '+': 0, '-': 0, '~': 0 }
-	for (const { sign } of changes) {
-		totals[sign]++
-	}
-	return totals
-}
+const summary = counts =>
+	`${counts.added} added, ${counts.removed} removed, ${counts.changed} changed`
 
 // console mode: compare two revisions ad-hoc
 
@@ -269,11 +309,9 @@ if (oldRev) {
 		console.log('no changes')
 		process.exit()
 	}
-	console.log(renderChanges(changes).join('\n'))
-	const totals = countChanges(changes)
-	console.log(
-		`\n${totals['+']} added, ${totals['-']} removed, ${totals['~']} changed`,
-	)
+	const { content, counts } = renderChanges(changes)
+	console.log(content)
+	console.log('\n' + summary(counts))
 	process.exit()
 }
 
@@ -293,6 +331,17 @@ const history = git([
 		const [hash, date, ...subject] = line.split('\t')
 		return { hash, date, subject: subject.join('\t') }
 	})
+
+// link each version to its commit when origin is github
+let commitURL = ''
+try {
+	const remote = /github\.com[:/](.+?)(?:\.git)?$/.exec(
+		git(['remote', 'get-url', 'origin']).trim(),
+	)
+	if (remote) {
+		commitURL = `https://github.com/${remote[1]}/commit/`
+	}
+} catch (e) {}
 
 // what the existing file already computed: reuse its table rows
 // and sections verbatim so re-runs only add missing versions
@@ -325,8 +374,6 @@ const loadVersion = hash => {
 	return cache.get(hash)
 }
 
-const escapeCell = s => s.replace(/\|/g, '\\|')
-
 const rows = []
 const sections = []
 let computed = 0
@@ -353,14 +400,16 @@ for (const [index, { hash, date, subject }] of history.entries()) {
 		loadVersion(history[index - 1].hash),
 		loadVersion(hash),
 	)
-	const totals = countChanges(changes)
+	const { content, counts } = renderChanges(changes)
 	rows.push(
 		`| [\`${hash}\`](#${hash}) | ${date} | ${escapeCell(subject)} ` +
-			`| ${totals['+']} | ${totals['-']} | ${totals['~']} |`,
+			`| ${counts.added} | ${counts.removed} | ${counts.changed} |`,
 	)
 	sections.push(
-		`## ${hash}\n\n${date} — ${subject}\n\n` +
-			(renderChanges(changes).join('\n') || '- no changes'),
+		`## ${hash}\n\n${date} — ${subject}` +
+			(commitURL ? ` ([diff](${commitURL}${hash}))` : '') +
+			` — ${summary(counts)}\n\n` +
+			(content || '- no changes'),
 	)
 	computed++
 }

@@ -109,11 +109,11 @@ idea!
 
 `npm run changelog` maintains `changelog.md`: it walks every
 committed version of `jsx/data.json`, diffs each with the previous
-one, and writes a summary table plus a section per version listing
-what was added/removed/changed (new tags/keys are a bare mention,
-changed keys list exactly what changed). The table at the top
-records which versions were already computed, so re-running only
-appends commits that aren't listed yet.
+one, and writes a summary table plus a section per version with a
+table per tag listing what was added/removed/changed (new tags/keys
+are a bare mention, changed keys list exactly what changed). The
+table at the top records which versions were already computed, so
+re-running only appends commits that aren't listed yet.
 
 For an ad-hoc comparison printed to the console (never written to
 `changelog.md`), pass revisions—anything `git show` accepts:
