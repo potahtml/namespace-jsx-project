@@ -93,6 +93,19 @@ h3 {
 	display: block;
 	user-select: none;
 }
+.filter fieldset {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+.filter fieldset label {
+	display: inline-block;
+	margin-left: 6px;
+}
+::highlight(search) {
+	background-color: #f2cc60;
+	color: #0d1117;
+}
 .description {
 	max-width: min(750px, 100%);
 	margin: 0 auto;

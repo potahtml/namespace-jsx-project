@@ -338,12 +338,21 @@
 						filters.values = target.checked
 					} else if (target.name === 'disagreements-coverage') {
 						filters.coverage = target.checked
+					} else if (/^(kind|flag)-/.test(target.name)) {
+						// read live from the checkboxes in applyFilters
 					} else {
 						// column visibility may have changed, re-filter
 						setSettings(target)
 					}
 					applyFilters()
 				}
+
+				const checked = prefix =>
+					[
+						...document.querySelectorAll(
+							`input[name^="${prefix}"]:checked`,
+						),
+					].map(x => x.name.slice(prefix.length))
 
 				function applyFilters() {
 					const text = filters.search.trim()
@@ -354,13 +363,22 @@
 					const searchInsensitive = search.toLowerCase()
 					const isExact = text.startsWith('"') && text.endsWith('"')
 
+					const kinds = checked('kind-')
+					const flags = checked('flag-')
+
 					const disagreements = filters.values || filters.coverage
 
-					if (!search && !disagreements) {
+					if (
+						!search &&
+						!disagreements &&
+						!kinds.length &&
+						!flags.length
+					) {
 						const elements = document.querySelectorAll('tr, .table')
 						for (const el of [...elements]) {
 							el.style.display = null
 						}
+						highlightSearch('')
 						return
 					}
 
@@ -373,36 +391,130 @@
 							] !== 'false',
 					)
 
-					// filter rows
-					const trs = document.querySelectorAll('tbody tr')
-					for (const tr of [...trs]) {
-						let show = search
-							? isExact
-								? tr.innerHTML.includes('>' + search + '<')
-								: tr.textContent
-										.toLowerCase()
-										.includes(searchInsensitive)
-							: true
-
-						if (show && disagreements) {
-							show = disagrees(tr, visibleColumns)
-						}
-
-						tr.style.display = show ? null : 'none'
-					}
-
-					// filter whole table and heading if nothing matched
+					// filter rows, then the whole table and heading if
+					// nothing in it matched
 					const tables = document.querySelectorAll('table')
 					for (const table of [...tables]) {
-						if (
-							[...table.querySelectorAll('tbody tr')].some(
-								tr => tr.style.display !== 'none',
-							)
-						) {
-							table.parentNode.style.display = null
+						// a search matching the tag name itself keeps the
+						// whole table (element sections have `Interface.tag`
+						// ids, interface sections have none)
+						const tagName = (table.parentNode.id || '').split('.')[1]
+						const tagMatches =
+							!!search &&
+							!!tagName &&
+							(isExact
+								? tagName === search
+								: tagName.toLowerCase().includes(searchInsensitive))
+
+						let shown = 0
+						for (const tr of table.querySelectorAll('tbody tr')) {
+							let show =
+								!search ||
+								tagMatches ||
+								(isExact
+									? tr.innerHTML.includes('>' + search + '<')
+									: tr.textContent
+											.toLowerCase()
+											.includes(searchInsensitive))
+
+							if (show && kinds.length) {
+								show = kinds.some(kind => rowIsKind(tr, kind))
+							}
+							if (show && flags.length) {
+								show = flags.some(flag => rowHasFlag(tr, flag))
+							}
+							if (show && disagreements) {
+								show = disagrees(tr, visibleColumns)
+							}
+
+							tr.style.display = show ? null : 'none'
+							shown += show
+						}
+						table.parentNode.style.display = shown ? null : 'none'
+					}
+
+					highlightSearch(search, isExact)
+				}
+
+				function rowIsKind(tr, kind) {
+					switch (kind) {
+						case 'event':
+							return tr.cells[0].textContent.trim().startsWith('on')
+						case 'aria':
+							return tr.cells[0].textContent
+								.trim()
+								.startsWith('aria-')
+						default:
+							// 'attr' / 'prop' live in the kind cell
+							return tr.cells[1].textContent.includes(kind)
+					}
+				}
+
+				function rowHasFlag(tr, flag) {
+					const text = tr.cells[0].textContent
+					switch (flag) {
+						case 'deprecated':
+							return text.includes('🗑️')
+						case 'warn':
+							return text.includes('🛑')
+						case 'danger':
+							return text.includes('❗')
+					}
+				}
+
+				// highlights search matches in the visible rows/captions
+				// using the CSS custom highlight api, see ::highlight() in
+				// index.css. does nothing on browsers without support
+				function highlightSearch(search, isExact) {
+					if (!CSS.highlights) return
+					CSS.highlights.delete('search')
+					if (!search || search.length < 2) return
+
+					const insensitive = search.toLowerCase()
+					const ranges = []
+					for (const table of document.querySelectorAll('table')) {
+						if (table.parentNode.style.display === 'none') {
 							continue
 						}
-						table.parentNode.style.display = 'none'
+						const walker = document.createTreeWalker(
+							table,
+							NodeFilter.SHOW_TEXT,
+						)
+						let node
+						while (
+							(node = walker.nextNode()) &&
+							ranges.length < 2000
+						) {
+							const tr = node.parentElement.closest('tr')
+							if (tr && tr.style.display === 'none') {
+								continue
+							}
+							if (isExact) {
+								// exact mode matches whole cell values only
+								if (node.data.trim() === search) {
+									const start = node.data.indexOf(search)
+									const range = new Range()
+									range.setStart(node, start)
+									range.setEnd(node, start + search.length)
+									ranges.push(range)
+								}
+							} else {
+								const data = node.data.toLowerCase()
+								let index = -1
+								while (
+									(index = data.indexOf(insensitive, index + 1)) !==
+									-1
+								) {
+									const range = new Range()
+									range.setStart(node, index)
+									range.setEnd(node, index + search.length)
+									ranges.push(range)
+								}
+							}
+						}
+					}
+					if (ranges.length) {
+						CSS.highlights.set('search', new Highlight(...ranges))
 					}
 				}
 
