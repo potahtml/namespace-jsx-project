@@ -105,20 +105,26 @@ idea!
    errors, as data is taken live from github, if a page fails to load
    a random error will appear, just run the command again.
 
-## Changelog between revisions
+## Changelog
 
-`data.json` is written sorted, so it diffs cleanly between commits.
-For a readable summary of what changed—added/removed/changed keys
-grouped per tag—run:
+`npm run changelog` maintains `changelog.md`: it walks every
+committed version of `jsx/data.json`, diffs each with the previous
+one, and writes a summary table plus a section per version listing
+what was added/removed/changed (new tags/keys are a bare mention,
+changed keys list exactly what changed). The table at the top
+records which versions were already computed, so re-running only
+appends commits that aren't listed yet.
+
+For an ad-hoc comparison printed to the console (never written to
+`changelog.md`), pass revisions—anything `git show` accepts:
 
 ```
-npm run changelog -- [old] [new]
+npm run changelog -- <old> [new]
 ```
 
-Revisions are anything `git show` accepts (hash, tag, `HEAD~5`).
-`old` defaults to `HEAD` and `new` to the working tree, so after
-regenerating the data a plain `npm run changelog` shows what the
-regeneration changed.
+`new` defaults to the working tree, so after regenerating the data
+`npm run changelog -- HEAD` shows what the regeneration changed
+before committing it.
 
 ## Related
 
