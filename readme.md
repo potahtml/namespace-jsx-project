@@ -105,10 +105,20 @@ idea!
    errors, as data is taken live from github, if a page fails to load
    a random error will appear, just run the command again.
 
-## TODO
+## Changelog between revisions
 
-- add some sort of log of what changed, maybe comparing old data.json
-  with new data.json
+`data.json` is written sorted, so it diffs cleanly between commits.
+For a readable summary of what changed—added/removed/changed keys
+grouped per tag—run:
+
+```
+npm run changelog -- [old] [new]
+```
+
+Revisions are anything `git show` accepts (hash, tag, `HEAD~5`).
+`old` defaults to `HEAD` and `new` to the working tree, so after
+regenerating the data a plain `npm run changelog` shows what the
+regeneration changed.
 
 ## Related
 

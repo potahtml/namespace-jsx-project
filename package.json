@@ -3,7 +3,8 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"dev": "node src/index.js"
+		"dev": "node src/index.js",
+		"changelog": "node src/changelog.js"
 	},
 	"dependencies": {
 		"oxc-parser": "^0.139.0",
