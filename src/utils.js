@@ -132,7 +132,10 @@ export const uniqueTypes = a => {
 			),
 		]
 	}
-	return parts.join(' | ')
+	// sorted so the same set of types always prints the same way
+	// regardless of merge order, keeping data diffs free of pure
+	// reorderings
+	return parts.sort().join(' | ')
 }
 
 export const entries = Object.entries
